@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model 
+   href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_allPlus.rng"
+   type="application/xml"
+   schematypens="http://relaxng.org/ns/structure/1.0"
+  ?><!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ 
+  <teiHeader>
+   <fileDesc>
+    <titleStmt>
+     <title level="s">Søren Kierkegaards Skrifter</title>
+     <title>Journalen CC</title>
+     
+     <title type="short">CC</title>
+  <author>
+   <name>Niels W. Bruun</name><name>Finn Gredal Jensen</name>
+  </author>
+ 
+     
+  <editor>
+   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Jette Knudsen</name><name>Johnny Kondrup</name><name>Alastair McKinnon</name>
+  </editor>
+ 
+  <respStmt>
+   <resp>udgivet af</resp>
+   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Jette Knudsen</name><name>Johnny Kondrup</name>
+  </respStmt>
+ 
+  <respStmt>
+   <resp>redigeret af</resp>
+   <name>udgiverne</name><name>Peter Tudvad</name>
+  </respStmt>
+ 
+  <respStmt>
+   <resp>elektronisk redigeret af</resp>
+   <name>Karsten Kynde</name><name>Kim Ravn</name>
+  </respStmt>
+ 
+    </titleStmt>
+    <publicationStmt>
+     <authority>Søren Kierkegaard Forskningscenteret 2000</authority>
+     <availability status="restricted"><p>copyright</p></availability>
+    </publicationStmt>
+    <seriesStmt>
+     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+     <biblScope unit="volume">K17</biblScope>
+     <biblScope unit="file">http://sks.dk/cc/txr.xml</biblScope>
+    </seriesStmt>
+    <sourceDesc>
+      
+      
+       <bibl copyOf="#SKS"/>
+      
+    </sourceDesc>
+   </fileDesc>
+   
+   <encodingDesc>
+    
+    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition xml:id="sub" scheme="css">vertical-align: sub; font-size: 80%;</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
+   </encodingDesc>
+   <revisionDesc>
+    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
+    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
+    <change when="20120720">XML/txr, <bibl><idno type="version">1.6</idno>, <biblScope unit="file">http://sks.dk/cc/txr.xml</biblScope></bibl></change>
+   </revisionDesc>
+  </teiHeader>
+ 
+
+
+  <text type="TextCriticalAccount" subtype="journalsAndPapers"><body><div><head type="topText" n="Tekstredegørelse"/>
+    <head><pb xml:id="ss267" n="267" edRef="#SKS"/>Tekstredegørelse </head>
+    <list type="TOC">
+     <item>1. Manuskriptbeskrivelse <ptr type="chapter" target="#k1" n="267"/> </item>
+     <item>2. Datering og kronologi <ptr type="chapter" target="#k2" n="269"/> </item>
+     <item>3. Indhold <ptr type="chapter" target="#k3" n="273"/> </item>
+    </list>
+
+  <div type="level1" xml:id="k1">
+    <head>1. Manuskriptbeskrivelse</head>
+    <p>Journalen CC er en indbundet bog, beskrevet både forfra og bagfra. Forfra rummer den latinske bibeloversættelser, og bagfra har den været beskrevet med optegnelser på dansk. Bogen er af SK selv mærket »CC«. Den har oprindelig bestået af 91 blade, men 23 (de danske optegnelser) er gået tabt.<note>    <p> <hi rendition="#ita">B-fort.</hi> 439. <persName key="Barfod, Hans Peter">Barfod</persName> har registreret optegnelserne på s. 1-46, hvoraf »Side 35-41 [ere] ubeskrevne.« Han angiver derpå: »Resten bagfra fyldt med Ap. Gj. osv. paa Latin.« </p></note> Den tabte tekst er imidlertid indirekte overleveret i <persName key="Barfod, Hans Peter">H.P. Barfod</persName>s udgave <hi rendition="#ita">Af Søren Kierkegaards Efterladte Papirer </hi>(<hi rendition="#ita">EP</hi>)<hi rendition="#ita">.</hi><note>    <p> <hi rendition="#ita">EP I-II</hi>, s. 10-23. Optegnelserne har if. <hi rendition="#ita">B-fort. </hi>stået i journalen på s. 1-46 bagfra. Ved en intern kollation mellem to eksemplarer af <hi rendition="#ita">EP I-II </hi>er der konstateret afvigelserne »Comedie« for »Comoedie« (<hi rendition="#ita">EP I-II, </hi>s. 11, l. 31 (<ref target="../CC/txt.xml#ss199" type="journalsAndPapers" n="199"><hi rendition="#ita">SKS</hi> 17, 199,33</ref>)), »ad Ryggen« for »af Ryggen« (<hi rendition="#ita">EP I-II, </hi>s. 14, l. 31 (<ref target="../CC/txt.xml#ss202" type="journalsAndPapers" n="202"><hi rendition="#ita">SKS </hi>17, 202,4</ref>)) og »Forsøg« for »et Forsøg« (<hi rendition="#ita">EP I-II, </hi>s. 14, l. 31 (<ref target="../CC/txt.xml#ss202" type="journalsAndPapers" n="202"><hi rendition="#ita">SKS </hi>17, 202,4</ref>)). Afvigelserne findes i samme trykark i <hi rendition="#ita">EP I-II</hi>. At der i eksemplaret med »Comedie« m.fl. også optræder fejlen »Thimotheus« (<hi rendition="#ita">EP I-II, </hi>s. 9, l. 18), som i eksemplaret med »Comoedie« m.fl. er ændret til det korrekte »Timotheus«, må tages som udtryk for, at det sidstnævnte eksemplar er det rettede, hvorfor <hi rendition="#ita">SKS </hi>benytter dette som tekstgrundlag. </p></note> Journalen findes i Kierkegaard Arkivet (KA) på <placeName key="Kongelige Bibliotek, Det">Det Kongelige Bibliotek</placeName>.</p>
+    <p><pb xml:id="ss269" n="269" edRef="#SKS"/>Det bevarede manuskript består af et halvbind af brunt skind og brunligt marmoreret overtrækspapir med 68 blade i 4<hi rendition="#sup">o</hi>.<note>    <p> Udgangspunktet er formatbetegnelsen helark (ca. 440 x 560 mm), som ved fortsat halvering giver formaterne folio(ark), kvart(blad) og oktav(blad). Irregulære, fx afrevne enheder betegnes som lapper. </p></note> Bindet er på indersiden af bagpermen mærket »CC«. Ryggen er påklæbet en mørkeblå etiket med påskriften »CC« skrevet med sort blæk.<note>    <p> Om påskriften på denne etiket, se s. <ref target="../CC/txr.xml#ss273" type="textCriticalAccount" n="273">273</ref>. </p></note> </p>
+    <p>Ingen paginering. S. [1]-[46] bagfra mangler. </p>
+    <p>Papir: svært, ribbet; vandmærke: en bikube stående på en sokkel med bogstaverne Honig. Mål: 201 x 165 mm.<note>    <p> Der måles så vidt muligt bredde (øverste kant) x højde (venstre kant). Hvis det ved en lap eller et løst blad ikke kan afgøres, hvad der er bredde og højde, angives målet for den korte led først, uanset tekstens placering. Kan et mål ikke fastslås, fx pga. afrivning, markeres det med spørgsmålstegn, fx 202 x ? mm. </p></note> </p>
+    <p>Bladene er foldet på langs; inderspalten rummer tekst, yderspalten få tilføjelser. </p>
+    <p>Håndskriften er omhyggelig (se <ref target="../CC/txr.xml#ill_k8" type="figure">illustration 8</ref><figure xml:id="ill_k8" rend="verso" n="49v"><graphic url="../CC/ill_k8.jpg"/>
+    <head>8. Journalen CC, bl. [49v]. Smuk overskrift og sirlig håndskrift samt rettelser og tilføjelser</head></figure>), sine steder dog præget af hastværk. Latinsk hånd i oversættelser og marginalier, gotisk hånd i en dansksproget marginalnote (jf. <ref target="../CC/txr.xml#ill_k10" type="figure">illustration 10</ref>). </p>
+    <p>En del korrektioner. </p>
+    <p>(<hi rendition="#ita">B-fort.</hi> 439; KA, C pk. 1 læg 2; <hi rendition="#ita">Pap.</hi> I A 328-341 + <hi rendition="#ita">Pap.</hi> I og XII C 11-12 + 36 + 42-44)</p>
+  </div>
+
+  <div type="level1" xml:id="k2">
+    <head>2. Datering og kronologi </head>
+    <p>SKs oversættelser fra græsk af Det Nye Testamente omfatter følgende skrifter: Apostlenes Gerninger 1-4 og 24-27; Filipperbrevet; Kolossenserbrevet; Første og Andet Brev til Thessalonikerne; Første og Andet Brev til Timotheus; Brevet til Titus; Brevet til Filemon; Hebræerbrevet; Jakobs Brev 1-4,15. Disse oversættelser i journalen CC, skrevet forfra, indeholder ingen konkrete angivelser, som gør det muligt med sikker<pb xml:id="ss270" n="270" edRef="#SKS"/>hed at fastsætte affattelsestidspunktet. Der kan dog ikke herske tvivl om, at SKs oversættervirksomhed er knyttet til hans teologiske studium, der blev påbegyndt i 1830 og først afsluttet 10 år senere. </p>
+    <p rendition="#ind">Udgiverne af <hi rendition="#ita">Pap</hi>. har fremsat den formodning, at oversættelserne afspejler SKs deltagelse i nogle af de eksegetiske forelæsninger og øvelser ved Det Teologiske Fakultet i årene 1833-36, og at oversættelsen af ApG kan sættes i forbindelse med <persName key="Clausen, Henrik Nicolai">H.N. Clausen</persName>s forelæsninger over »de vanskeligere Dele af <hi rendition="#ita">Apostlernes Gjerninger</hi>«,<note>    <p> <hi rendition="#ita">Forelæsninger ved Kjøbenhavns Universitet i Vintersemestret 1833-1834,</hi> s. 3. </p></note> der blev afholdt i vintersemestret 1833-34.<note>    <p> Et vintersemester løb fra 1. nov. det ene år til slutningen af marts det følgende år. Sommersemestret løb fra 1. maj til udgangen af september. </p></note> </p>
+    <p rendition="#ind">I lektionskatalogen for vintersemestret 1834-35 hedder det, at »Mag. <persName key="Scharling, Carl Emil">C. E. Scharling</persName> <hi rendition="#ita">(...)</hi> vil i offentlige Forelæsninger <hi rendition="#ita">(...)</hi> forklare <hi rendition="#ita">Pauli Breve til Ephesierne, Colossenserne og Philippenserne</hi>.«<note>    <p> <hi rendition="#ita">Forelæsninger ved Kjøbenhavns Universitet (...) i Vintersemestret 1834-1835,</hi> s. 2. </p></note> Denne forelæsningsrække kan have inspireret SK til at oversætte Fil og Kol; Ef sprang han over, og på egen hånd oversatte han 1-2 Thess.<note>    <p> Udgiverne af <hi rendition="#ita">Pap</hi>. angiver til optegnelse <ref target="../CC/txt.xml#n2-5" type="journalsAndPapers" n="2-5">I C 36</ref> urigtigt, at <persName key="Scharling, Carl Emil">Scharling</persName>s eksegetiske forelæsninger i vintersemestret 1834-35 også omfattede 1-2 Thess; bd. I, s. 205. </p></note> </p>
+    <p rendition="#ind">Sommersemestret 1835<note>    <p> <hi rendition="#ita">Index lectionum in Universitate Regia Hauniensi (...) per semestre æstivum a Kalendis Majis A. MDCCCXXXV habendarum,</hi> s. 2. </p></note> forelæste professor <persName key="Engelstoft, Christian Thorning">C.T. Engelstoft</persName> over pastoralbrevene.<note>    <p> Pastoralbreve eller hyrdebreve er betegnelsen på 1-2 Tim og Tit, der traditionelt tillægges <persName key="Paulus">Paulus</persName>. Udgiverne af <hi rendition="#ita">Pap.</hi> angiver til optegnelse <ref target="../CC/txt.xml#n6-9" type="journalsAndPapers" n="6-9">I C 42</ref> urigtigt, at <persName key="Engelstoft, Christian Thorning">Engelstoft</persName> i sin gennemgang af Pastoralbrevene også inddrog Filem; bd. I, s. 209. </p></note> Det er tænkeligt, at SKs oversættelser af 1-2 Tim og Tit knytter sig til denne øvelsesrække, men oversættelsen af Filem har han tilsyneladende udarbejdet af egen tilskyndelse. </p>
+    <p rendition="#ind">Det fremgår af lektionskatalogen for vintersemestret 1835-36, s. 2, at »<hi rendition="#ita">Mag. C. E. Scharling</hi> <hi rendition="#ita">(...)</hi> vil <hi rendition="#ita">(...)</hi> forklare <hi rendition="#ita">Pauli Brev til Galaterne, Jacobs <pb xml:id="ss271" n="271" edRef="#SKS"/> Brev, Peters to Breve </hi>og <hi rendition="#ita">Juda Brev</hi>«, og på samme side annonceres det, at »<hi rendition="#ita">Ernst Vilhelm Kolthoff (...)</hi> holder privatissime et Repetitorium over Brevet til Ebræerne«. SKs oversættelse af Jak, som han ikke fik færdiggjort, og af Hebr vil således kunne sættes i forbindelse med disse to undervisningstilbud. </p>
+    <p rendition="#ind">Hvorvidt SK virkelig har deltaget i nogen af de ovenfor anførte forelæsninger, kan ganske vist ikke afgøres, eftersom deltagerlisterne fra de pågældende forelæsninger og øvelser er forsvundet.<note>    <p> Overleveringen af forelæsningslister fra den periode er yderst mangelfuld. Se <persName key="Ammundsen, Valdemar">V. Ammundsen</persName> <hi rendition="#ita">Søren Kierkegaards Ungdom</hi>, <placeName key="København">Kbh.</placeName> 1912, s. 86ff. </p></note> Det forekommer dog meget sandsynligt, at oversættelserne, som den eksamensforberedelse de også var, i lighed med flere andre af SKs studiemæssige optegnelser i nogen grad har været foranlediget af hans deltagelse i undervisningen ved <placeName>Københavns Universitet</placeName>. </p>
+    <p>De danske optegnelser, skrevet bagfra i journalen, indeholder kun to datoangivelser;<note>    <p> <ref target="../CC/txt.xml#n14" type="journalsAndPapers" n="14">CC:14</ref>: »d. 2. Dec.« [1836]. I <ref target="../CC/txt.xml#n13" type="journalsAndPapers" n="13">CC:13</ref> afsluttes et tilsyneladende fiktivt brev med underskriften: »Din Broder. <formula xmlns:m="http://www.w3.org/1998/Math/MathML" notation="mathml"><m:math><m:mfrac><m:mi>+</m:mi><m:mi>1</m:mi></m:mfrac></m:math></formula>«. Denne brøklignende angivelse betegner formodentlig januar måned [1837], hvor det af <persName key="Barfod, Hans Peter">Barfod</persName> gengivne <hi rendition="#ita">+</hi> antagelig skal læses x, der bruges som en ubestemt angivelse af månedsdagen. </p></note> men til gengæld finder vi udtalelser og dagsaktuelle henvisninger, som gør en omtrentlig tidsbestemmelse mulig. </p>
+    <p rendition="#ind">I <ref target="../CC/txt.xml#n12" type="journalsAndPapers" n="12">CC:12</ref> anfører SK: »Men naar man seer, hvor nødvendigt det i den senere Tid er bleven at begynde ethvert philosophisk Værk med den Sætning: 'Der var en Gang en Mand, der hed Cartesius'«. Dette er formentlig en hentydning til <persName key="Martensen, Hans Lassen">H.L. Martensen</persName>s anmeldelse<note>    <p> <hi rendition="#ita">Maanedsskrift for Litteratur </hi>bd. 16, <placeName key="København">Kbh.</placeName> 1836, s. 515-528. Da den afsluttende artikel er dateret den 28. dec., må decemberheftet være udkommet i jan. 1837. </p></note> af <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s <hi rendition="#ita">Indlednings-Foredrag til det i November 1834 begyndte logiske Cursus paa den kongelige militaire Høiskole</hi>, hvor Martensen fastslår: »Det var som bekiendt <hi rendition="#ita">Cartesius</hi>, der optraadte som Philosophiens Reformator« (s. 517f.). </p>
+    <p rendition="#ind">I samme optegnelse hedder det lidt senere: »Og det forundrede mig <pb xml:id="ss272" n="272" edRef="#SKS"/> derfor ikke, at min Skomager havde udfundet, at den [dvs. <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>s logiske trehed] ogsaa lod sig anvende paa Støvlers Udvikling«. Denne betragtning må antages at bygge på en optegnelse, der er skrevet på en løs lap og dateret »d. 5 Jan. 37«:<note>    <p> KA, A pk. 1, trykt som <ref target="../p48/txt.xml#n81-2" type="journalsAndPapers" n="pap:IA317" rend="Papir 81:2"><hi rendition="#ita">Pap.</hi> I A 317</ref>. </p></note> </p>
+    <p rendition="#ind"/> <quote>
+    <p>Man kan naturligviis gjøre ved Hegels logiske Trehed, hvad man kan gjøre ved Alt – outrere den, ved at overføre den paa de allersimpleste Gjenstande, hvor den vel er sand; men desuagtet latterlig. Saaledes som hvis Een vilde gjennemføre den paa Støvler, vise det umidd. Standpunct, derpaa det dialectiske (at de begynde at knarke) dette tredie Eenhedens. – </p></quote>
+    <p>Når SK i <ref target="../CC/txt.xml#n12" type="journalsAndPapers" n="12">CC:12</ref> også udtaler: »men da det formodenlig ikke vil lykkes, saa vil vi idetmindste med vore Finantsmænd tilraabe dem: Besparelser, energiske og gjennemgribende Besparelser«, så afspejler det ikke blot pressens gentagne beskæftigelse i 1836 med de skrantende statsfinanser,<note>    <p> Se <hi rendition="#ita">Kjøbenhavnsposten</hi> nr. 69 (9. marts), nr. 88 (25. marts), nr. 92 (28. marts) og nr. 316 (9. nov.) 1836. </p></note> men er sandsynligvis en direkte henvisning til en artikel af <persName key="Algreen-Ussing, Tage">Tage Algreen-Ussing</persName> i <hi rendition="#ita">Kjøbenhavnsposten</hi> nr. 340, 3. dec. 1836 (s. 1376), hvor han fortæller, at »alle Landets fire Stænderforsamlinger <hi rendition="#ita">(...)</hi> have udtalt: <hi rendition="#ita">Gjennemgribende, energiske Besparelser</hi>.« </p>
+    <p rendition="#ind">En reference (i <ref target="../CC/txt.xml#n12" type="journalsAndPapers" n="12.3">CC:12.3</ref>) til første bind af <persName key="Görres, Johann Joseph von">Görres</persName> <hi rendition="#ita">Die christliche Mystik</hi>, <placeName>Regensburg</placeName> og <placeName>Landshut</placeName> 1836, som SK anskaffede den 11. nov. 1836,<note>    <p> Jf. regning af 31. dec. fra C.A. Reitzels boghandel, KA, D pk. 8 læg 1. Trykt i <persName key="Rohde, Hermann Peter">H.P. Rohde</persName> »Om Søren Kierkegaard som bogsamler. Studier i hans efterladte papirer og bøger paa Det kongelige Bibliotek« i <hi rendition="#ita">Fund og Forskning i Det kongelige Biblioteks Samlinger </hi>bd. 8, <placeName key="København">Kbh.</placeName> 1961, s. 79-127; s. 116f. Jf. ktl. 528-532. </p></note> giver sammen med de øvrige indikationer det indtryk, at de danske optegnelser må være nedskrevet i slutningen af 1836 og afsluttet først på året 1837. </p>
+    <p><pb xml:id="ss273" n="273" edRef="#SKS"/>Journalens mulige tilblivelseshistorie og kronologi kan sammenfattes på følgende måde: De latinske bibeloversættelser er skrevet først. Arbejdet med disse er sandsynligvis påbegyndt i okt. 1833 og afsluttet i marts 1836. Da SK mod slutningen af 1836 besluttede sig for at anvende bogen til et ganske andet formål, påbegyndte han bagfra skrivningen af de danske optegnelser.<note>    <p> I perioden 1835-37 skrev SK også i journalerne AA (se <ref target="../AA/txr.xml#ss15" type="textCriticalAccount" n="15">tekstredegørelsen hertil, s.15f</ref>.) og BB (se <ref target="../BB/txr.xml#ss136" type="textCriticalAccount" n="136">tekstredegørelsen hertil, s.136</ref>). I tiden 13. sept. 1836 til sept. 1838 skrev han ligeledes en række optegnelser, som indgår i <ref target="../FF/txt.xml" type="journalsAndPapers">journalen FF</ref>. Desuden beskrev SK <ref target="../DD/txt.xml#n1" type="journalsAndPapers" n="1">journalen DD</ref> bagfra i foråret 1837, forfra 29. maj 1837 til 28. jan. 1839 (se <ref target="../DD/txr.xml#ss361" type="textCriticalAccount" n="361">tekstredegørelsen hertil, s.361-364</ref>). </p></note> På et tidspunkt senere end ibrugtagningen<note>    <p> Jf. »<!--refx type="ret" id="1.3"-->Tekstkritiske retningslinier for <hi rendition="#ita">Søren Kierkegaards Skrifter</hi>. Journaler, notesbøger og papirer« pkt. 1.3, <hi rendition="#ita">SKS </hi>17, 305<!--/refx-->. </p></note> har han på indersiden af bagpermen med tyk pen tegnet et markant »CC«.<note>    <p> Det er til denne påskrift, <persName key="Barfod, Hans Peter">Barfod</persName> sigter (selv ignorerede han etiketten på bogens ryg, måske fordi han troede, at den ikke havde nogen påskrift), når han i <hi rendition="#ita">B-fort.</hi> angiver, at bogen er »mærket CC«, og det er denne indvendige mærkning, der får Barfod til at klæbe en papiretiket på bagpermens yderside med påskriften »CC« og registrantnummeret »439«, vedføjet bemærkningen »Uden Aarstal«. Som en naturlig konsekvens heraf var det hans opfattelse, at journalen <hi rendition="#ita">forfra</hi> var beskrevet med de danske optegnelser og <hi rendition="#ita">bagfra</hi> med de latinske oversættelser af Det Nye Testamente. </p></note> </p>
+    <p rendition="#ind">På bogens ryg klæbede SK en mørkeblå mærkat beskrevet med mørkt blæk. Det er overvejende sandsynligt, at det skrevne, som i dag kun med vanskelighed kan skimtes, skal læses »CC«. Bogstavernes hældning er imidlertid tydelig nok og sætter os i stand til at fastslå, at den blå etiket er anbragt på ryggens øverste halvdel. Det bekræfter formodningen om, at bibeloversættelserne er skrevet <hi rendition="#ita">forfra</hi> og de danske optegnelser dermed <hi rendition="#ita">bagfra</hi>. Når den indvendige bogstavmarkering af journalen er foretaget på bagpermen og ikke på forpermen, skyldes det efter al sandsynlighed, at SK kun henregnede de danske optegnelser til journalen CC. </p>
+  </div>
+
+  <div type="level1" xml:id="k3">
+    <head><pb xml:id="ss274" n="274" edRef="#SKS"/>3. Indhold</head>
+    <p>De danske optegnelser, skrevet bagfra i journalen, er indholdsmæssigt meget forskellige og unddrager sig en samlet karakteristik. <ref target="../CC/txt.xml#n12" type="journalsAndPapers" n="12">CC:12</ref> indeholder kritiske betragtninger over samtiden og minder om et udkast til en dagbladsartikel. <ref target="../CC/txt.xml#n13" type="journalsAndPapers" n="13">CC:13</ref> er udformet som et brev, men har ingen adressat; optegnelsen er foranlediget af en broders død, hvis begravelse skildres med satirisk nerve. I denne optegnelse findes følgende betragtning, som SK genbruger i <hi rendition="#ita"><ref target="../EE1/txt.xml#ss27" type="publishedWritings" n="27">Enten – Eller</ref>:</hi><note>    <p> <hi rendition="#ita">SKS</hi> 2, 27. </p></note> </p> <quote>
+    <p>Derfor vil man vist og lægge Mærke til, at man i Begyndelsen lader Børnene – paa et af de Spørgsmaal, som [gjøres] ethvert Barn i det korte Indbegreb af Viden, der bibringes dem: »hvad skal Barnet have?« – [svare]: »Da-Da«; og med slige sørgelige Betragtninger begynder Barnets første dog vel meest uskyldige Periode, – og desuagtet nægter man Arvesynden!<note>    <p> I denne passage har <persName key="Barfod, Hans Peter">Barfod</persName> suppleret verberne »gjøres« og »svare« og meddeler i en anmærkning følgende: »I Slutningen af dette Punktum har det været nødvendigt at tilføje et Par Ord og ændre lidt paa Ordstillingen, som i Haandskriftet var meningsløs, rimeligvis paa Grund af det kjendeligt særdeles store Hastværk, hvormed hele dette Afsnit er nedskrevet.«<hi rendition="#ita"> </hi>(<hi rendition="#ita">EP I-II, </hi>s. 186, anm. 8). </p></note> </p></quote>
+    <p><ref target="../CC/txt.xml#n15" type="journalsAndPapers" n="15">CC:15</ref> har ligeledes brevkarakter og indeholder sammen med <ref target="../CC/txt.xml#n14" type="journalsAndPapers" n="14">CC:14</ref> og <ref target="../CC/txt.xml#n16" type="journalsAndPapers" n="16">CC:16-26</ref> en række diapsalmatiske stemninger og refleksioner, eller, med <persName key="Barfod, Hans Peter">Barfod</persName>s ord, »Bidrag til S.K.s Ungdoms Stemninger.«<note>    <p> <hi rendition="#ita">B-fort.</hi> 439. </p></note> Som eksempel kan nævnes <ref target="../CC/txt.xml#n19" type="journalsAndPapers" n="19">CC:19</ref>:</p> <quote>
+    <p>Det er den Vei, vi Alle maae gaae – over Sukkenes Bro ind i Evigheden.<note>    <p> Samme tanke genfindes i journalen FF, trykt som <ref target="../FF/txt.xml#n48" type="journalsAndPapers" n="pap:IIA611" rend="FF:48"><hi rendition="#ita">Pap.</hi> II A 611</ref>. </p></note> </p></quote>
+    <p><pb xml:id="ss275" n="275" edRef="#SKS"/>I en anden optegnelse, <ref target="../CC/txt.xml#n24" type="journalsAndPapers" n="24">CC:24</ref>, hedder det:</p> <quote>
+    <p>Jeg taler helst med gamle Fruentimmer, der føre Familievrøvl, dernæst med Afsindige – og tilsidst med meget fornuftige Folk.<note>    <p> Jf. <hi rendition="#ita"><ref target="../EE1/txt.xml#ss27" type="publishedWritings" n="27">Enten – Eller</ref> </hi>i<hi rendition="#ita"> SKS</hi> 2, 27. </p></note> </p></quote>
+    <p>De latinske oversættelser af Det Nye Testamente, skrevet forfra i journalen, omfatter som nævnt følgende skrifter: Apostlenes Gerninger 1-4 og 24-27; Filipperbrevet; Kolossenserbrevet; Første og Andet Brev til Thessalonikerne; Første og Andet Brev til Timotheus; Brevet til Titus; Brevet til Filemon; Hebræerbrevet; Jakobs Brev 1-4,15. Herom nærmere i <ref target="../CC/int_1.xml" type="introduction">indledningen til bibeloversættelserne</ref>. </p>
+    <p rendition="#ind"> </p>
+  </div>
+  </div></body></text>
+
+</TEI>

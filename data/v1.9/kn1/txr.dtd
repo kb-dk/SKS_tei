@@ -1,0 +1,204 @@
+  <!--
+    Tekstredegorelser DokumentTypeDefinition
+    (C) 2003-10 by Soren Kierkegaard Forskningscenteret
+    Karsten Kynde, v. 1.8, 2013-01-24
+  -->
+
+<!ENTITY	% KN1ent
+	PUBLIC	"-//SKC//ENTITIES KN1 entities//DA"
+				"KN1ent.ent"	>
+%KN1ent;
+<!ENTITY	% KN1g
+	PUBLIC	"-//SKC//ENTITIES KN1 greek letters//DA"
+				"KN1g.ent">
+%KN1g;
+<!ENTITY	% KN1h
+	PUBLIC	"-//SKC//ENTITIES KN1 hebrew letters//DA"
+				"KN1h.ent">
+%KN1h;
+
+<!ELEMENT	txr		( kolofon , kap0, ill* )>
+<!ATTLIST	txr	xml:space	( preserve | default ) "default"
+                        kat     ( ts | uts | jp | bd ) "jp" >
+
+<!ENTITY	% typ.sig	" ant | spa | kur | fed | bue | typ | gra | hoj | lav | stang | vulg | rod | slet | udg | pers | sted | lit">
+<!ENTITY	% ext.ref	" refkx | opt | refx | kor | a | bib ">
+<!ENTITY	% int.ref	" ref | refi | refs ">
+<!ENTITY	% samh.tx	" #PCDATA | %typ.sig; | %ext.ref; | %int.ref; | meta ">
+
+<!ELEMENT	kolofon		( titel , i , bind , korttit, txrforf , intro*, ekom?, komforf
+                                , red? , udg.af? , red.af? , kodning 
+				, copyright , fil, dato, ered?, vers? )>
+<!ELEMENT	titel		( %samh.tx; )*>
+<!ELEMENT   i         ( #PCDATA )>
+<!ELEMENT   bind      ( #PCDATA )>
+<!ELEMENT	korttit		( #PCDATA )>
+<!ELEMENT	forf		( #PCDATA )>
+<!ELEMENT	txrforf		( #PCDATA )>
+<!ELEMENT	intro		( titel, forf? )>
+<!ELEMENT	ekom		  EMPTY >
+<!ELEMENT	komforf		( #PCDATA )>
+<!ELEMENT	red		( #PCDATA )>
+<!ELEMENT	udg.af		( #PCDATA )>
+<!ELEMENT	red.af		( #PCDATA )>
+<!ELEMENT	kodning		( #PCDATA )>
+<!ELEMENT	copyright	( #PCDATA )>
+<!ELEMENT	fil		( #PCDATA )>
+<!ELEMENT	dato		( #PCDATA )>
+<!ELEMENT	ered		( #PCDATA )>
+<!ELEMENT	vers		( #PCDATA )>
+
+<!ELEMENT	indhold		( irub )*>
+<!ELEMENT	irub		( %samh.tx; )*>
+
+<!ELEMENT	kap0	( rub, indhold?, kap1* )>
+<!ATTLIST	kap0	klum	CDATA		#REQUIRED>
+
+<!ELEMENT	kap1	( rub , ( lin | blok | lis | mslis | cit | kap2 )* )>
+<!ATTLIST	kap1	id	ID		#IMPLIED>
+
+<!ELEMENT	kap2	( rub , ( lin | blok | lis | mslis | cit | kap3 )* )>
+
+<!ELEMENT	kap3	( rub , ( lin | blok | lis | cit )* )>
+
+<!ELEMENT	rub	( %samh.tx; )*>
+
+<!ENTITY % rykattr " init | ind | ind2 | ud | indud
+                   | kort | lang | xlang | cen | bag
+                   | x1lang | x2lang | x3lang | x4lang | x5lang | x6lang | x7lang | x8lang | x9lang
+                   | kortind | langind | xlangind
+                   | bagind | baglang | versbrud ">
+
+<!ELEMENT	lin	( %samh.tx; | tab )*>
+<!ATTLIST	lin	ryk	( %rykattr; ) #IMPLIED
+			dek	( klum | skil | dobskil | skilbag | ast | ast2
+				| ast3| ast3op | ast3ned | streg3 | dobstreg| dobkors 
+				| dobkorsblank | edobkors | blg | blgskil | blgskilpunkt | S
+				| kors | vig-dd | vig-n1-1 | vig-n1-2 | ee-178
+				| kors3ned | blank )	#IMPLIED>
+
+<!ELEMENT	blok	( lin )*>
+<!ATTLIST	blok	ryk	( tab | lyrik )	#REQUIRED
+			kol	NMTOKEN		#IMPLIED>
+
+<!ELEMENT	tab	( %samh.tx; )*>
+<!ATTLIST	tab	ryk		( cen )	#IMPLIED
+			klumspan	NMTOKEN	#IMPLIED
+			linspan		NMTOKEN	#IMPLIED>
+
+<!ELEMENT	cit	( %samh.tx; | lin | blok )*>
+
+<!ELEMENT	lis	( l )*>
+<!ELEMENT	l	( lid?, ltx )*>
+<!ELEMENT	lid	( %samh.tx; )*>
+<!ELEMENT	ltx	( %samh.tx; )*>
+
+<!ELEMENT	mslis	( msl )*>
+<!ELEMENT	msl	( msid, mstx )>
+<!ELEMENT	msid	( %samh.tx; )*>
+<!ELEMENT	mstx	( lin | mslis )*>
+
+<!ELEMENT	not	( %samh.tx; | lin )*>
+
+<!ELEMENT	ill	( illfil*, lin )*>
+<!ATTLIST	ill	id	NMTOKEN		#IMPLIED>
+<!ATTLIST	ill	tving	( recto | verso | ops | sep )
+						#REQUIRED>
+<!ATTLIST	ill	nr	NMTOKEN		#IMPLIED>
+<!ATTLIST	ill	side	NMTOKEN		#IMPLIED>
+
+<!ELEMENT	illfil	EMPTY>
+<!ATTLIST	illfil	id	CDATA		#REQUIRED>
+
+<!ELEMENT	ant	( %samh.tx; )*>
+
+<!ELEMENT	spa	( %samh.tx; )*>
+<!ATTLIST	spa	gen	( sic )		#IMPLIED>
+
+<!ELEMENT	kur	( %samh.tx; )*>
+
+<!ELEMENT	fed	( %samh.tx; )*>
+
+<!ELEMENT	bue	( %samh.tx; )*>
+
+<!ELEMENT	typ	( %samh.tx; )*>
+
+<!ATTLIST	typ	art	( schw | init | capi )
+						#REQUIRED>
+
+<!ELEMENT	gra	( %samh.tx; )*>
+<!ATTLIST	gra	str	CDATA		#REQUIRED
+			skyd	CDATA		#IMPLIED>
+
+<!ELEMENT	hoj	( %samh.tx; )*>
+
+<!ELEMENT	lav	( %samh.tx; )*>
+
+<!ELEMENT   vulg ( hoj, lav )*>
+
+<!ELEMENT	stang	( hoj, lav )*>
+
+<!ELEMENT	rod	( %samh.tx; )*>
+
+<!ELEMENT	slet	( %samh.tx; )*>
+
+<!ELEMENT	udg	( %samh.tx; )*>
+<!ATTLIST	udg	spec	( tvivl | supp | slet | var )
+						#REQUIRED
+			txt	CDATA		#IMPLIED>
+
+<!ELEMENT	ref	( not )>
+
+<!ELEMENT	refs	( %samh.tx; )*>
+<!ATTLIST	refs	id	IDREF		#REQUIRED>
+
+<!ELEMENT	refi	( ill )*>
+
+<!ELEMENT	refkx	EMPTY>
+<!ATTLIST	refkx	tit	NMTOKEN		#REQUIRED
+			id	NMTOKEN 	#REQUIRED
+			side	CDATA		#IMPLIED
+			linie	CDATA		#IMPLIED>
+
+<!ELEMENT	opt	EMPTY>
+<!ATTLIST	opt	pap	CDATA		#IMPLIED
+			sks	CDATA		#IMPLIED>
+
+<!ELEMENT	refx	( %samh.tx; )*>
+<!ATTLIST	refx	type	( ts | uts | jp | bd | dok | kom | int | txr | ill | ret | e )
+						#REQUIRED
+			tit	NMTOKEN		#IMPLIED
+			id	NMTOKEN		#IMPLIED
+			nr	NMTOKEN		#IMPLIED
+			pap	CDATA		#IMPLIED
+			ba	CDATA		#IMPLIED
+			sv2	CDATA		#IMPLIED
+			blart	CDATA		#IMPLIED
+			side	NMTOKEN		#IMPLIED
+			linie	NMTOKEN		#IMPLIED>
+
+<!ELEMENT	a	( %samh.tx; )*>
+<!ATTLIST	a	href	CDATA		#REQUIRED>
+
+<!ELEMENT	meta	( #PCDATA )>
+
+<!ELEMENT	kor	EMPTY>
+<!ATTLIST	kor	kil	( SKS )		"SKS"
+			id	NMTOKEN		#IMPLIED>
+
+<!ELEMENT	pers	( %samh.tx; )*>
+<!ATTLIST	pers	norm 	CDATA	#REQUIRED
+			alt 	CDATA	#IMPLIED
+			init 	CDATA	#IMPLIED>
+
+<!ELEMENT	sted	( %samh.tx; )*>
+<!ATTLIST	sted	norm 	CDATA	#IMPLIED>
+
+<!ELEMENT	lit	( %samh.tx; )*>
+<!ATTLIST	lit	id	CDATA	#IMPLIED
+			forf 	CDATA	#IMPLIED
+			tit 	CDATA	#IMPLIED>
+
+<!ELEMENT	bib	( %samh.tx; )*>
+<!ATTLIST	bib	id	CDATA	#IMPLIED>
+
