@@ -1,89 +1,238 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>»'De første Rudimenter til Enten – Eller. den grønne Bog. nogle Enkeltheder som ikke bleve brugte'«</title>
-     
-     <title type="short">P271</title>
-  <author>
-   <name>Niels Jørgen Cappelørn</name><name>Stine Holst Petersen</name><name>Jon Tafdrup</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Jon Tafdrup; Citater</name><name>henvisninger kontrolleret af Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2011</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K27</biblScope>
-     <biblScope unit="file">http://sks.dk/p271/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition xml:id="capiTyp" scheme="free">Some spectacular type setting, in SKS rendered in small caps</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20121212">txr/XML, <bibl><idno type="version">1.8</idno>, <biblScope unit="file">http://sks.dk/p271/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id7ed2d287-d8d4-4983-af84-99c51446ea2f">
+    <fileDesc xml:id="id2da15379-7b5a-4e0b-aafe-f606b8b4994e">
+      <titleStmt xml:id="id49027db3-72d7-46d1-b1f9-230f05ee6ed5">
+        <title xml:id="id9f35efb4-d2eb-4a06-9ac9-621920ba0753" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id70cc0641-84e1-4c19-8d0d-5886971c3967">»'De første Rudimenter til Enten – Eller. den grønne Bog. nogle Enkeltheder som ikke bleve brugte'«</title>
+        <title xml:id="id35236bb7-ecad-454e-84bb-077fcef06e52" type="short">P271</title>
+        <author xml:id="id95dec45f-9d21-4fa3-99d9-2b7de8affc97">
+          <name xml:id="id36e21c4c-2016-4964-933b-a5e2aed26bf5">Niels Jørgen Cappelørn</name>
+          <name xml:id="ida71b7c1c-a943-497f-8086-ae730eb8df29">Stine Holst Petersen</name>
+          <name xml:id="id1c900ce1-29e0-4cd2-8793-cf18780e7406">Jon Tafdrup</name>
+        </author>
+        <editor xml:id="idcd414f87-db6c-44ae-a50d-612b86ad05c9">
+          <name xml:id="idc5899f44-58b1-4676-9a3b-ba033b9ebdf3">Niels Jørgen Cappelørn</name>
+          <name xml:id="idc4807d38-255f-4531-b3f4-774eaddad24c">Joakim Garff</name>
+          <name xml:id="id4c04adaf-750f-42f4-ad6d-c927559bc92d">Johnny Kondrup</name>
+          <name xml:id="id5b8c1757-06fa-4ec1-aa67-b5aef6e50584">Tonny Aagaard Olesen</name>
+          <name xml:id="idb7c3c7a9-3cbf-414b-9bb2-2f3aeb681639">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="id57a90c90-02a1-482b-9215-9f4e1c7340dd">
+          <resp xml:id="idc05e911f-aad4-41f7-9f52-dd4c29505c82">redigeret af</resp>
+          <name xml:id="id8316f899-8962-499a-819e-0f04b5bff33d">Jon Tafdrup; Citater</name>
+          <name xml:id="iddaeab6c9-538a-4113-aa81-53963269e710">henvisninger kontrolleret af Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="id555a1e52-bc7e-4d50-bcf6-f6764da6c07b">
+          <resp xml:id="id98e1db5b-3f87-4ed4-8e7d-600072a1eb81">elektronisk redigeret af</resp>
+          <name xml:id="idc0f8b089-bb04-4a74-a3d2-53ce46c248e3">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="ida7d3151b-308a-47a0-bf01-b57cd2317f19">
+        <authority xml:id="idbe619113-e8a2-4a57-b098-414309fb5bc5">Søren Kierkegaard Forskningscenteret 2011</authority>
+        <availability xml:id="id994c593a-cc46-436b-91d3-83d035f05e00" status="restricted">
+          <p xml:id="idbbeaa68e-6921-4ab3-b1a9-063d6c250233">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id90a198e5-3d58-4f29-810f-cca58b8ddc72">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="id93254f55-148e-414c-95f6-9d234d4d8010" unit="volume">K27</biblScope>
+        <biblScope xml:id="id14d86925-7d6f-425d-a0af-7a77a5ef4737" unit="file">http://sks.dk/p271/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="idcbda842b-bf17-40fb-9906-d9c39ff86e58">
+        <bibl xml:id="id6c827190-9df9-408f-807c-20d53235caae" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="ida49f9757-f231-45ac-a37f-96fb1c785ad9">
+      <tagsDecl xml:id="ide8aeba42-c5bd-463f-9189-feaa48562384">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition xml:id="capiTyp" scheme="free">Some spectacular type setting, in SKS rendered in small caps</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id67ac9e1b-c83b-463d-bc24-f7aaf73785ca">
+      <change xml:id="ide2c15303-27d1-4cfe-970a-badea9f65d79">Transformed to TEI by style sheet <bibl xml:id="id6c26884c-f7c2-4aea-b13b-222780b7bcbd" type="file">txr2tei.xsl</bibl> version as of <date xml:id="idabc4b916-a935-42c5-84b7-910ab39c9f00">2017-02-15</date> importing <bibl xml:id="id9be3ff1f-52ca-4f24-a3a1-229c7a0ca6c1" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="ide277f663-1e42-4371-94c9-a005145d70e1">Transformed to TEI by style sheet <bibl xml:id="id8e3fe8ff-ed5e-46f7-93c3-8a93d3854c44" type="file">kn12tei.xsl</bibl> version <idno xml:id="id71937ed2-fb9c-49fc-bcf6-243fa7630e6d" type="version">1.9</idno> as of <date xml:id="idd4042ac9-9e7b-490d-82b1-3f02819b4870">2017-02-21</date> by <name xml:id="id12fd7e85-90cb-4b1f-942a-b1030c364f82">Karsten Kynde</name>, <orgName xml:id="id19d5cd39-47b0-461d-b531-9004d4f33b02">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="id80b28ab7-deea-4ffc-8c61-5c9d9c0990e7">København</placeName></change>
+      <change xml:id="idc2ad277a-4836-4035-92cd-96b596d9de57" when="20121212">txr/XML, <bibl xml:id="id1e6e676c-dc5c-4b59-b82c-635f1eb9ce40"><idno xml:id="idcd1ebb68-9b0a-403b-9673-706c0ef57301" type="version">1.8</idno>, <biblScope xml:id="id82542c1f-ead2-4657-a703-8339da8e5cc6" unit="file">http://sks.dk/p271/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="TextCriticalAccount" subtype="journalsAndPapers"><body><div><head type="topText" n="Tekstredegørelse"/>
-    <head><pb xml:id="ss591" n="591" edRef="#SKS"/>Tekstredegørelse</head>
-    <list type="TOC">
-      <item>1. Manuskriptbeskrivelse <ptr type="chapter" target="#k1" n="591"/> </item>
-      <item>2. Datering og kronologi <ptr type="chapter" target="#k2" n="593"/> </item>
-    </list>
-    <div type="level1" xml:id="k1">
-      <head>1. Manuskriptbeskrivelse</head>
-      <p>»'De første Rudimenter til Enten – Eller. den grønne Bog. nogle Enkeltheder som ikke bleve brugte'«<note>
-          »den grønne Bog« er ikke medtaget i <hi rendition="#ita">SKS</hi> 27, men er omtalt som ms. 17 i <ref target="../EE1/txr.xml#ss29" type="textCriticalAccount" n="29">tekstredegørelsen til <hi rendition="#ita">Enten – Eller</hi></ref> i <hi rendition="#ita">SKS</hi> K 2-3, 29. </note> har nr. 288 i <hi rendition="#ita">L-fort.</hi> og <hi rendition="#ita">B-fort.</hi> og lå i en konvolut i »det øverste Rum af selve Pjedestalen« ved SKs død.<note> Jf. <persName key="Lund, Henrik">Henrik Lund</persName>s <hi rendition="#ita">Ordenen af Papirerne</hi>, vedlagt <hi rendition="#ita">L-fort.</hi>\. </note> Manuskripterne befinder sig i Kierkegaard Arkivet (KA) på
-        <placeName key="Kongelige Bibliotek, Det">Det Kongelige Bibliotek</placeName>.<note> Der findes på rettelsesbladet i <hi rendition="#ita">EP I-II</hi>, s. XXII, følgende oplysning om yderligere et manuskript til <hi rendition="#ita">Enten – Eller:</hi>
-          »<hi rendition="#ita">(...)</hi> at et Visitkort med Datum 20. Decbr. 1839 næsten Ord til andet indeholder det i 'Enten – Eller', I, blandt 'Diapsalmata' <hi rendition="#ita">(...)</hi> indlemmede Stykke: 'Hvor besynderlig veemodigt blev jeg ikke stemt ved' - osv.« Det omtalte ms. er ikke nævnt i <persName key="Barfod, Hans Peter">H.P. Barfod</persName>s fortegnelse over SKs efterladte papirer og findes heller ikke i Kierkegaard Arkivet (KA).\. </note></p>
-      <msDesc><msIdentifier><collection>P271</collection></msIdentifier>
-        <msPart xml:id="physDesc.271" next="#additional.271"><msIdentifier><idno>271</idno></msIdentifier><physDesc><p><ref target="../P271/txt.xml#n271" type="journalsAndPapers" n="271">Papir 271</ref> (<hi rendition="#ita">SKS</hi> 27, 261).</p><p>1 ark foldet til omslag.<note> Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Irregulære, fx afrevne, enheder betegnes som lapper. Dobbeltblad betegner et stykke papir, der er ombøjet (foldet) til blade. </note></p><p>Ingen paginering.</p><p>Papir: gulligt skrivepapir, ribbet; vandmærke: muslingeskal, derunder <hi rendition="#capiTyp"><placeName>Holland</placeName>.</hi> Mål: ca. 282 × 208 mm.<note> Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant). Målene vedrører de faktisk overleverede enheder, ikke de oprindelige blade. </note> Både inderst og yderst på omslagets bagside findes et rødt laksegl med signeten »SK«.</p><p><pb xml:id="ss592" n="592" edRef="#SKS"/>Teksten er placeret øverst til venstre på omslagets forside.</p></physDesc></msPart><msPart xml:id="additional.271" prev="#physDesc.271"><msIdentifier><idno>271</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort</hi> + <hi rendition="#ita">B-fort.</hi> 288; KA, A pk. 42; <hi rendition="#ita">Pap.</hi> III A 242-246 og III B 31-39.187)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.272" next="#additional.272"><msIdentifier><idno>272</idno></msIdentifier><physDesc><p><ref target="../P271/txt.xml#n272" type="journalsAndPapers" n="272">Papir 272</ref> (<hi rendition="#ita">SKS</hi> 27, 261).</p><p>1 løs lap med ureglmæssigt afrevet kant nederst.</p><p>Ingen paginering.</p><p>Papir: gulligt velin, glat. Mål: 215 × 112-146 mm.</p><p>Lappen har efter beskrivning været foldet en gang på tværs og tre gange på langs. Versosiden er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.272" prev="#physDesc.272"><msIdentifier><idno>272</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort</hi> + <hi rendition="#ita">B-fort.</hi> 288; KA, A pk. 42; <hi rendition="#ita">Pap.</hi> III A 242 og 243)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.273" next="#additional.273"><msIdentifier><idno>273</idno></msIdentifier><physDesc><p><ref target="../P271/txt.xml#n273" type="journalsAndPapers" n="273">Papir 273</ref> (<hi rendition="#ita">SKS</hi> 27, 261).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt velin, glat. Mål: 218 × 267 mm.</p><p>Dobbeltbladet har været foldet en gang på langs i venstre side. Teksten findes øverst på bl. [2v], bl. [1r]-[2r] er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.273" prev="#physDesc.273"><msIdentifier><idno>273</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort</hi> + <hi rendition="#ita">B-fort.</hi> 288; KA, A pk. 42; <hi rendition="#ita">Pap.</hi> III A 244)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.274" next="#additional.274"><msIdentifier><idno>274</idno></msIdentifier><physDesc><p><ref target="../P271/txt.xml#n274" type="journalsAndPapers" n="274">Papir 274</ref> (<hi rendition="#ita">SKS</hi> 27, 261-262).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrevet kant øverst og beklippede kanter i venstre side samt nederst.</p><p>Ingen paginering.</p><p>Papir: kitfarvet koncept, groft. Mål: ca. 208 × 253 mm.</p><p>Bladet har efter beskrivning været foldet to gange på langs. Bl. [1v] er kun beskrevet øverst med en linje.</p></physDesc></msPart><msPart xml:id="additional.274" prev="#physDesc.274"><msIdentifier><idno>274</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort</hi> + <hi rendition="#ita">B-fort.</hi> 288; KA, A pk. 42; <hi rendition="#ita">Pap.</hi> III A 245 og 246)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.275" next="#additional.275"><msIdentifier><idno>275</idno></msIdentifier><physDesc><p><ref target="../P271/txt.xml#n275" type="journalsAndPapers" n="275">Papir 275</ref> (<hi rendition="#ita">SKS</hi> 27, 262).</p><p>Et folioark foldet til et dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt post-velin, glat. Mål: 218 × 266 mm.</p><p>Øverste halvdel af bl. [1r] og to tredjedele af bl. [2r] er beskrevet; bl. [1v] og [2v] er ubeskrevet.</p><p>Under noten på bl. [2r] findes enkelte penneprøver i form af to ansigter i profil samt en trappe; tilføjelsen til noten (<hi rendition="#ita">SKS</hi> 27, 262,25) er skrevet med blyant (se <ref target="../P271/txt.xml#ill_23" type="figure" n="263">illustration 23</ref>, <hi rendition="#ita">SKS</hi> 27, 263).</p></physDesc></msPart><msPart xml:id="additional.275" prev="#physDesc.275"><msIdentifier><idno>275</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 288; KA, B pk. 4 læg 1; <hi rendition="#ita">Pap.</hi> III B 31 og 32)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.276" next="#additional.276"><msIdentifier><idno>276</idno></msIdentifier><physDesc><p><ref target="../P271/txt.xml#n276" type="journalsAndPapers" n="276">Papir 276</ref> (<hi rendition="#ita">SKS</hi> 27, 264-265).</p><p>Et folioark foldet til et dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt post-velin, glat. Mål: 218 × 266 mm.</p><p><pb xml:id="ss593" n="593" edRef="#SKS"/>Bl. [1v] er halvt beskrevet og bl. [2r] beskrevet i en enkelt linje; bl. [2v] er ubeskrevet.</p><p>Den første passage på bl. [1r] (<hi rendition="#ita">SKS</hi> 27, 264,1-3) er skrevet og slettet med blyant. Tilføjelsen oven for overskriften (<hi rendition="#ita">SKS</hi> 27, 264,4-5) er skrevet på skrå.</p></physDesc></msPart><msPart xml:id="additional.276" prev="#physDesc.276"><msIdentifier><idno>276</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 288; KA, B pk. 4 læg 1; <hi rendition="#ita">Pap.</hi> III B 33-39)</p></note></adminInfo></additional></msPart>
-      </msDesc>
-      <p>(<hi rendition="#ita">L-fort</hi> + <hi rendition="#ita">B-fort.</hi> 288; KA, A pk. 42 og B pk 4 læg 1; <hi rendition="#ita">Pap.</hi> III A 242-246 og III B 31-39)</p>
-    </div>
-    <div type="level1" xml:id="k2">
-      <head>2. Datering og kronologi</head>
-      <p>Påskriften på omslaget (<ref target="../P271/txt.xml#n271" type="journalsAndPapers" n="271">Papir 271</ref>), hvori <ref target="../P271/txt.xml#n272" type="journalsAndPapers" n="272">Papir 272</ref>-276 har været samlet, angiver, at papirerne er ordnet af SK engang efter udgivelsen af <hi rendition="#ita">Enten – Eller</hi> (1843). Hvilke af manuskripterne SK kalder »nogle Enkeltheder som ikke bleve brugte«, og hvilke han kalder »De første Rudimenter til Enten – Eller«, kan imidlertid ikke entydigt bestemmes, da ingen af teksterne, som de præsenterer sig i mss., er at finde i <hi rendition="#ita">Enten – Eller,</hi> og da alle teksterne i et vist omfang kan kategoriseres som »Rudimenter«. <ref target="../P271/txt.xml#n272" type="journalsAndPapers" n="272">Papir 272</ref>-274 synes dog at være fra et tidligere stadie i værkets tilblivelse end <ref target="../P271/txt.xml#n275" type="journalsAndPapers" n="275">Papir 275</ref>-276 og regnes derfor her for »De første Rudimenter til Enten – Eller«.<note> <ref target="../P271/txt.xml#n275" type="journalsAndPapers" n="275">Papir 275</ref>-276 er i <ref target="../EE1/txr.xml#ss46" type="textCriticalAccount" n="46">tekstredegørelsen til <hi rendition="#ita">Enten – Eller</hi></ref> vurderet til at være »De første Rudimenter til Enten – Eller«, jf. <hi rendition="#ita">SKS</hi> K2-3, 46. </note></p>
-      <p rendition="#ind">Papirerne er udateret, men synes at stamme fra tiden umiddelbart forud for SKs afrejse til <placeName>Berlin</placeName> den 25. okt. 1841. SK omtaler i flere af sine breve til vennen <persName key="Boesen, Emil Ferdinand">Emil Boesen</persName> et værk, som han nyligt er begyndt at skrive på, den 14. dec. 1841 lyder det: »Jeg skriver paa Liv og Død. Jeg har nu skrevet 14 trykte Ark. Dermed har jeg fuldendt en Deel af en Afhandling, som jeg <hi rendition="#ita">volente deo</hi> engang skal forelægge Dig«, og den 1. jan. 1842 nævner han det ved titel, da han skriver »Du spørger, hvad det er jeg arbeider paa <hi rendition="#ita">(...)</hi> det er den videre Udførelse af Enten Eller«<note> Jf. <ref target="../p592/txt.xml#n595" type="journalsAndPapers" n="ba:81"><hi rendition="#ita">B&amp;A,</hi> bd. 1, s. 81</ref>-<ref target="../b79/txt.xml#n89" type="lettersAndDedications" n="ba:82" rend="Brev 89">82</ref> og <ref target="../b79/txt.xml#n93" type="lettersAndDedications" n="ba:90" rend="Brev 93">90</ref>. </note> .</p>
-      <p rendition="#ind">Når dateringen er henlagt til forud for afrejsen til <placeName>Berlin</placeName>, skyldes det, at SK i et af sine kladdehæfter fra opholdet i <placeName>Berlin</placeName> henviser til »Brev fra <hi rendition="#bol">den Forførte</hi>«, dvs. <ref target="../P271/txt.xml#n276-3" type="journalsAndPapers" n="276:3">Papir 276:3</ref>, med ordene »Billeten maa findes mell: mine Papirer. Jeg havde udarbeidet den før min Afreise«.<note> Jf. <ref target="../EE1/txr.xml#ss46" type="textCriticalAccount" n="46"><hi rendition="#ita">SKS</hi> K2-3, 46</ref>. </note></p>
-    </div>
-  </div></body></text>
+  <text xml:id="id5fcc32ff-77ce-4669-a9cf-e11a94e63390" type="TextCriticalAccount" subtype="journalsAndPapers">
+    <body xml:id="id9ce12266-6fb7-4b22-96de-a68b1f92100f">
+      <div xml:id="id6075544c-c162-45bc-b136-a7b23e0e5fc7">
+        <head xml:id="id3154679e-e94c-4327-819c-aef6660f205e" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="idf1f4c79b-2ac2-47cc-b640-25a84c205c84"><pb xml:id="ss591" n="591" edRef="#SKS"/>Tekstredegørelse</head>
+        <list xml:id="id3a9d74a2-ba26-4af5-8131-17da1d5e217a" type="TOC">
+          <item xml:id="idab80d630-e193-423c-8dd1-a4377b9924b4">1. Manuskriptbeskrivelse <ptr xml:id="idc8d44dbf-ec0d-4c6f-a575-5045d6cf5ef5" type="chapter" target="#k1" n="591"/> </item>
+          <item xml:id="id3c9c561c-8b36-4d5f-a3a5-b6faea8f3c95">2. Datering og kronologi <ptr xml:id="id1b79347e-1b31-4b50-82f7-e3bd20ca4c9e" type="chapter" target="#k2" n="593"/> </item>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="idb42f9c38-d788-471f-9687-55297e80f90f">1. Manuskriptbeskrivelse</head>
+          <p xml:id="idb70f4b0e-7462-4e39-8c3d-dfa76fdd72ec">»'De første Rudimenter til Enten – Eller. den grønne Bog. nogle Enkeltheder som ikke bleve brugte'«<note xml:id="id86ed2048-ff60-4deb-8254-e5176e4380a1">
+          »den grønne Bog« er ikke medtaget i <hi xml:id="id77b2b4df-625b-4553-93bd-0cfeeaea18f9" rendition="#ita">SKS</hi> 27, men er omtalt som ms. 17 i <ref xml:id="idb80b00c4-8952-49d5-8265-a8974c667226" target="../EE1/txr.xml#ss29" type="textCriticalAccount" n="29">tekstredegørelsen til <hi xml:id="id45e09c2e-9d9d-4339-8ed7-8d7444f8c1fc" rendition="#ita">Enten – Eller</hi></ref> i <hi xml:id="id77fe5f8f-611d-4a79-92a6-764fcbd320ad" rendition="#ita">SKS</hi> K 2-3, 29. </note> har nr. 288 i <hi xml:id="idc8f3dc56-bd20-4a97-b212-c1209a19d5c2" rendition="#ita">L-fort.</hi> og <hi xml:id="id147f5fbc-e264-4a27-b80d-77960c73e6f4" rendition="#ita">B-fort.</hi> og lå i en konvolut i »det øverste Rum af selve Pjedestalen« ved SKs død.<note xml:id="id2c146693-7387-4e02-85ee-540289f881e1"> Jf. <persName xml:id="ide17cdf3b-5f1b-4be7-911d-b70d50335f69" key="Lund, Henrik">Henrik Lund</persName>s <hi xml:id="idded2e478-b31f-4c8a-af74-8eef3b8dd78e" rendition="#ita">Ordenen af Papirerne</hi>, vedlagt <hi xml:id="ide9bd8ce7-8755-4aba-ad0e-30e5d13566e3" rendition="#ita">L-fort.</hi>\. </note> Manuskripterne befinder sig i Kierkegaard Arkivet (KA) på
+        <placeName xml:id="id5d6b90cc-cd55-48db-a6ec-606a1b9ed99e" key="Kongelige Bibliotek, Det">Det Kongelige Bibliotek</placeName>.<note xml:id="ida498bc93-6fa9-4b25-9e77-88646da31532"> Der findes på rettelsesbladet i <hi xml:id="idfa8cd049-86f5-4458-8773-a10d8fa12ef4" rendition="#ita">EP I-II</hi>, s. XXII, følgende oplysning om yderligere et manuskript til <hi xml:id="id86fd8ea3-42d6-4b7d-86bc-2dd22f601e9e" rendition="#ita">Enten – Eller:</hi>
+          »<hi xml:id="id5a4f61dc-9179-498b-9d73-6860eebe1c0a" rendition="#ita">(...)</hi> at et Visitkort med Datum 20. Decbr. 1839 næsten Ord til andet indeholder det i 'Enten – Eller', I, blandt 'Diapsalmata' <hi xml:id="id39b0a386-3eec-4348-b2fa-361d35b20e88" rendition="#ita">(...)</hi> indlemmede Stykke: 'Hvor besynderlig veemodigt blev jeg ikke stemt ved' - osv.« Det omtalte ms. er ikke nævnt i <persName xml:id="idaff724c6-e8de-4197-8e5a-31d1d3ae70eb" key="Barfod, Hans Peter">H.P. Barfod</persName>s fortegnelse over SKs efterladte papirer og findes heller ikke i Kierkegaard Arkivet (KA).\. </note></p>
+          <msDesc xml:id="id77d25599-170d-43ab-9334-ccd1214fc184">
+            <msIdentifier xml:id="iddabc7717-7d4c-437a-87d7-0a3998968120">
+              <collection xml:id="id4eaf76c2-5422-481f-b8f2-d9458d62d63b">P271</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.271" next="#additional.271">
+              <msIdentifier xml:id="idd23fae38-e3d7-4103-a07b-0fcd57cd4c13">
+                <idno xml:id="idf64b170d-31e8-4a94-b97b-b599c91f9304">271</idno>
+              </msIdentifier>
+              <physDesc xml:id="id9230a959-5db4-4067-831e-a60ce092b546">
+                <p xml:id="id2cb214e0-faa3-43cc-9334-0ab0914dcf37"><ref xml:id="id9e200f34-dd92-403a-a6f1-a3603b7a91bb" target="../P271/txt.xml#n271" type="journalsAndPapers" n="271">Papir 271</ref> (<hi xml:id="id8e92db25-7ec9-4b0d-8a22-058d3a921463" rendition="#ita">SKS</hi> 27, 261).</p>
+                <p xml:id="idbeb787a7-7e16-4f5a-a494-e22f3a53ef5b">1 ark foldet til omslag.<note xml:id="id7e2f44d7-414d-49d8-bdea-6e47de26815a"> Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Irregulære, fx afrevne, enheder betegnes som lapper. Dobbeltblad betegner et stykke papir, der er ombøjet (foldet) til blade. </note></p>
+                <p xml:id="id077b47f4-2248-409e-9a4c-79686ce07963">Ingen paginering.</p>
+                <p xml:id="id53e4c578-b6bc-4856-bc9f-9f7a70b5f9f1">Papir: gulligt skrivepapir, ribbet; vandmærke: muslingeskal, derunder <hi xml:id="id67c45c15-fa92-4cf8-9fe1-77f66e300c65" rendition="#capiTyp"><placeName xml:id="ide8a688c1-c338-43ed-b9cf-29696cf307e0">Holland</placeName>.</hi> Mål: ca. 282 × 208 mm.<note xml:id="id9d4b6f49-1382-449b-beb1-98b767b5a861"> Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant). Målene vedrører de faktisk overleverede enheder, ikke de oprindelige blade. </note> Både inderst og yderst på omslagets bagside findes et rødt laksegl med signeten »SK«.</p>
+                <p xml:id="id890de08f-b868-4cd5-9135-c277e0963223"><pb xml:id="ss592" n="592" edRef="#SKS"/>Teksten er placeret øverst til venstre på omslagets forside.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.271" prev="#physDesc.271">
+              <msIdentifier xml:id="id3634acbd-1b33-4b3f-885d-2ddd2e7b96fe">
+                <idno xml:id="id89378461-213a-4bb5-a582-daa3d9d2446e">271</idno>
+              </msIdentifier>
+              <additional xml:id="ida93a265c-4180-4cfc-8660-81ba75255441">
+                <adminInfo xml:id="id944e1259-31ce-4d26-9f03-6e472f9aeb3b">
+                  <note xml:id="id0c03fd98-203f-41be-ae92-c9669c101fbb">
+                    <p xml:id="id7a5651c0-f06c-4259-b33f-aa2583f64f5a">(<hi xml:id="id9c80f4cb-b312-4970-b256-6e81e67a0865" rendition="#ita">L-fort</hi> + <hi xml:id="iddc010460-a259-4e60-950c-ee369938fbce" rendition="#ita">B-fort.</hi> 288; KA, A pk. 42; <hi xml:id="idc0bfbf84-c079-4115-84d7-e344b542b734" rendition="#ita">Pap.</hi> III A 242-246 og III B 31-39.187)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.272" next="#additional.272">
+              <msIdentifier xml:id="idfefc7dac-3e59-42e6-bfba-831ea07b4a3b">
+                <idno xml:id="id6b66938d-ff4b-4b4a-86be-f56e8038ad5c">272</idno>
+              </msIdentifier>
+              <physDesc xml:id="id1f2ddb7d-44dd-4c92-ab55-b8b5d286af8d">
+                <p xml:id="ide1b630f8-d7f0-4cf3-997a-bc00bacec3f0"><ref xml:id="id4e8620ce-1332-40b2-b792-a9a9f9582a33" target="../P271/txt.xml#n272" type="journalsAndPapers" n="272">Papir 272</ref> (<hi xml:id="id0301417c-53a2-483a-bbca-7b32b222a405" rendition="#ita">SKS</hi> 27, 261).</p>
+                <p xml:id="id500cbedd-1763-4294-b3ed-d912de643388">1 løs lap med ureglmæssigt afrevet kant nederst.</p>
+                <p xml:id="id5f571b6d-65b2-496b-9801-9aa3eb2eca55">Ingen paginering.</p>
+                <p xml:id="id00028310-bcc5-4c4e-bf1f-10b6388189b9">Papir: gulligt velin, glat. Mål: 215 × 112-146 mm.</p>
+                <p xml:id="id464ec0af-6d22-49af-a73c-86321db79309">Lappen har efter beskrivning været foldet en gang på tværs og tre gange på langs. Versosiden er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.272" prev="#physDesc.272">
+              <msIdentifier xml:id="idbcb39fd0-9ca8-4c58-a1af-c009b07d9640">
+                <idno xml:id="id583301e5-6c86-4d27-ae9a-8383221e146f">272</idno>
+              </msIdentifier>
+              <additional xml:id="id11f4d3ba-d8da-415e-a6f0-11e35475fdcf">
+                <adminInfo xml:id="ida1d6e962-aa06-4b34-97e8-d698cf054102">
+                  <note xml:id="ida058cea9-1bca-4741-aab8-b0cb872be1b0">
+                    <p xml:id="idf23a9292-fef1-4454-99a3-05e8de1d139e">(<hi xml:id="id2b7839ec-a291-477b-a400-2ee23f675d00" rendition="#ita">L-fort</hi> + <hi xml:id="id473e6527-715c-46b1-8d54-52bae80c63a9" rendition="#ita">B-fort.</hi> 288; KA, A pk. 42; <hi xml:id="id2cf9f613-0523-43cc-8ca5-b6699b7faa0f" rendition="#ita">Pap.</hi> III A 242 og 243)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.273" next="#additional.273">
+              <msIdentifier xml:id="id6096aa51-2b76-4518-8227-23b1eada3761">
+                <idno xml:id="id1f2f36b1-646e-4077-bd3d-59992a365bd8">273</idno>
+              </msIdentifier>
+              <physDesc xml:id="idc45c1f59-f96b-4b02-9cd6-c7ae5395d945">
+                <p xml:id="id4e4f782f-2be0-468e-a536-9ea46a787022"><ref xml:id="id4edaf9b9-10b5-4909-988a-3d5e6b34056f" target="../P271/txt.xml#n273" type="journalsAndPapers" n="273">Papir 273</ref> (<hi xml:id="id9f3c1ea5-3d18-4652-b4fd-a5cc189905aa" rendition="#ita">SKS</hi> 27, 261).</p>
+                <p xml:id="idf7bd6d9d-ea4f-4716-bdc9-b4358d1ca83b">1 dobbeltblad i 4<hi xml:id="id488e7ecd-a9c7-4ee9-bd22-6e63264b3b1e" rendition="#sup">o</hi>.</p>
+                <p xml:id="id4bdd467b-518d-4369-ba04-9cc9ca9119f3">Ingen paginering.</p>
+                <p xml:id="idcb1455b2-abd3-4b87-ad17-60217d5a4eb5">Papir: gulligt velin, glat. Mål: 218 × 267 mm.</p>
+                <p xml:id="idd680d86a-e7da-4785-ac25-58afd1237f30">Dobbeltbladet har været foldet en gang på langs i venstre side. Teksten findes øverst på bl. [2v], bl. [1r]-[2r] er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.273" prev="#physDesc.273">
+              <msIdentifier xml:id="id329322b1-f2d9-406d-99ff-08c0e0b52ddc">
+                <idno xml:id="id79f4c6cf-8465-4a93-829f-634cf216e2d2">273</idno>
+              </msIdentifier>
+              <additional xml:id="id11bda4d9-1e13-45e9-b556-d8c3c5d7e8d2">
+                <adminInfo xml:id="id70e3d34f-f0b2-4c5d-b989-566aa44a6b8e">
+                  <note xml:id="id4ad3299a-b265-449f-ab63-183c43455872">
+                    <p xml:id="idfce4617d-70c7-4c75-b085-a28b8d3d3717">(<hi xml:id="id855bcaa4-f960-4c18-b449-90f34b35b14e" rendition="#ita">L-fort</hi> + <hi xml:id="id9a8e3643-ca4f-4ffb-bfdd-aecac8d241c5" rendition="#ita">B-fort.</hi> 288; KA, A pk. 42; <hi xml:id="id46dafcef-618e-4a20-9d81-7c84dc579b9d" rendition="#ita">Pap.</hi> III A 244)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.274" next="#additional.274">
+              <msIdentifier xml:id="id6a23700b-ccb1-4aae-8b7b-91234daf22b3">
+                <idno xml:id="id2f1f2a98-a1da-4491-9480-cece9e211fae">274</idno>
+              </msIdentifier>
+              <physDesc xml:id="idebbabb8a-817e-4ce7-b956-96eabc5c08a9">
+                <p xml:id="idcf94b51a-ed55-4535-bb65-a227ee212e2d"><ref xml:id="id833a5d90-4acf-4399-b850-ced2ec358bbf" target="../P271/txt.xml#n274" type="journalsAndPapers" n="274">Papir 274</ref> (<hi xml:id="ide0ec17c5-2a96-40af-8a5e-a06cb60bae9a" rendition="#ita">SKS</hi> 27, 261-262).</p>
+                <p xml:id="id44915fcb-726b-42cd-bf43-123c373dc2d6">1 løst blad i 4<hi xml:id="ide1f84bf0-02aa-4d80-9188-b932db989ca2" rendition="#sup">o</hi> med afrevet kant øverst og beklippede kanter i venstre side samt nederst.</p>
+                <p xml:id="id2fe11855-ce78-498a-84e1-b06d3861dfbf">Ingen paginering.</p>
+                <p xml:id="id2dbefdb5-d792-4d46-9311-ba61dfe6efc6">Papir: kitfarvet koncept, groft. Mål: ca. 208 × 253 mm.</p>
+                <p xml:id="idb4a4db92-af3e-414b-bcf8-814c9d269d7e">Bladet har efter beskrivning været foldet to gange på langs. Bl. [1v] er kun beskrevet øverst med en linje.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.274" prev="#physDesc.274">
+              <msIdentifier xml:id="id07902076-552c-49ca-97b0-d2a397bfa1d5">
+                <idno xml:id="id69c5adf8-5980-4b34-a95e-3036d8a58827">274</idno>
+              </msIdentifier>
+              <additional xml:id="id2d15cff0-3958-4e0d-974b-7cd458ee22aa">
+                <adminInfo xml:id="idc01b7ef6-91e2-4d7f-9fa4-4c64525aba5e">
+                  <note xml:id="id0e86229e-c1cf-4b31-aba1-6f57d70239c4">
+                    <p xml:id="id0aefa2d6-79c2-4e13-ba72-798ccb959835">(<hi xml:id="id0a20a684-3c8b-4146-b9dc-bb0fbc34db07" rendition="#ita">L-fort</hi> + <hi xml:id="id71a89bb0-6960-40c7-a0ed-ff4ce8302fdf" rendition="#ita">B-fort.</hi> 288; KA, A pk. 42; <hi xml:id="id54691372-8e7c-48d4-9546-f106f15d9a3a" rendition="#ita">Pap.</hi> III A 245 og 246)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.275" next="#additional.275">
+              <msIdentifier xml:id="id5f974aeb-b3ff-4e2e-89b1-c1d4dc6b5ddc">
+                <idno xml:id="id08a733c6-f46b-4203-a84e-e83a4931adc1">275</idno>
+              </msIdentifier>
+              <physDesc xml:id="id972fe7a9-4c98-41c5-8528-48c76c999867">
+                <p xml:id="id55ca519c-3695-4255-8682-5cf28522e9df"><ref xml:id="id02e24a68-4e14-4589-940d-5322540d5301" target="../P271/txt.xml#n275" type="journalsAndPapers" n="275">Papir 275</ref> (<hi xml:id="id4b377d53-901e-4d35-87b2-110e3e685bb9" rendition="#ita">SKS</hi> 27, 262).</p>
+                <p xml:id="id6c9c7f3e-ea7a-4509-aad3-c572df2f008b">Et folioark foldet til et dobbeltblad i 4<hi xml:id="idca78456d-0490-4ca7-aa3e-35dfcc0b5027" rendition="#sup">o</hi>.</p>
+                <p xml:id="id9d7c273a-3853-48ce-8174-a76605d377bb">Ingen paginering.</p>
+                <p xml:id="id63532132-7689-4992-9b96-5d40e42e9ad6">Papir: gulligt post-velin, glat. Mål: 218 × 266 mm.</p>
+                <p xml:id="iddff12664-b40e-453d-bf27-bd15551d188a">Øverste halvdel af bl. [1r] og to tredjedele af bl. [2r] er beskrevet; bl. [1v] og [2v] er ubeskrevet.</p>
+                <p xml:id="id0cda02e7-bb41-4246-8121-b9bbd22481c5">Under noten på bl. [2r] findes enkelte penneprøver i form af to ansigter i profil samt en trappe; tilføjelsen til noten (<hi xml:id="id6a89c3b9-a0d1-4a74-8e5d-9c23d760f9e3" rendition="#ita">SKS</hi> 27, 262,25) er skrevet med blyant (se <ref xml:id="idc947f0a9-0be5-42b9-a848-0d9a1c5f8f5c" target="../P271/txt.xml#ill_23" type="figure" n="263">illustration 23</ref>, <hi xml:id="id46061650-7447-461c-9205-f3fab1410a19" rendition="#ita">SKS</hi> 27, 263).</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.275" prev="#physDesc.275">
+              <msIdentifier xml:id="ide981f7e7-e5e4-4972-aa54-1bc4b7e1cbdf">
+                <idno xml:id="id1f7c9b20-4368-4ca5-9ecd-fadd7f3861fd">275</idno>
+              </msIdentifier>
+              <additional xml:id="id3d19c34a-f465-49f9-b1c1-2a6b70bc50be">
+                <adminInfo xml:id="idf6d24610-6a87-4c84-9867-a8c8d41299de">
+                  <note xml:id="idf4519532-c93c-41cc-9c4e-c1d522623ff0">
+                    <p xml:id="idecacef0a-f9f5-4652-b135-9d9c488f7283">(<hi xml:id="idc6acd95f-e883-4c4f-bd0f-311fff121997" rendition="#ita">L-fort.</hi> + <hi xml:id="id218f120a-853a-43d3-bc67-5aacbf9db35b" rendition="#ita">B-fort.</hi> 288; KA, B pk. 4 læg 1; <hi xml:id="idc23ed708-8a38-4dcd-b610-60b50b54ec82" rendition="#ita">Pap.</hi> III B 31 og 32)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.276" next="#additional.276">
+              <msIdentifier xml:id="iddc773215-035d-4cbc-ba4e-8c029d068357">
+                <idno xml:id="idb3e41b90-c3ec-48f5-a089-0eef75eec38c">276</idno>
+              </msIdentifier>
+              <physDesc xml:id="id5371a422-c3e2-4688-af33-7b3b4c0b5117">
+                <p xml:id="idbb6f7134-1ecc-45b6-82a6-cd7c83e5017f"><ref xml:id="id69daf47b-820c-453e-a9fa-e9456f6d13f6" target="../P271/txt.xml#n276" type="journalsAndPapers" n="276">Papir 276</ref> (<hi xml:id="idb37a32a8-651c-4b3f-a3f4-aad37d0f5e29" rendition="#ita">SKS</hi> 27, 264-265).</p>
+                <p xml:id="ide1bba42f-d003-4843-94b8-e5d99751dd1d">Et folioark foldet til et dobbeltblad i 4<hi xml:id="idb58b7375-1925-419c-bf9c-14460c51ec10" rendition="#sup">o</hi>.</p>
+                <p xml:id="id5af3f270-3cdf-4420-ad3d-9f97fc206715">Ingen paginering.</p>
+                <p xml:id="id9555ad7f-9d14-48fe-a9fc-ac4a75a29cd6">Papir: gulligt post-velin, glat. Mål: 218 × 266 mm.</p>
+                <p xml:id="idf343e6c8-e5d8-4bc4-a4c7-ae20046fe28d"><pb xml:id="ss593" n="593" edRef="#SKS"/>Bl. [1v] er halvt beskrevet og bl. [2r] beskrevet i en enkelt linje; bl. [2v] er ubeskrevet.</p>
+                <p xml:id="id87cd4f3a-94db-4224-9592-69993cc32e30">Den første passage på bl. [1r] (<hi xml:id="idf5c50194-ad59-4490-86f8-831cfd019712" rendition="#ita">SKS</hi> 27, 264,1-3) er skrevet og slettet med blyant. Tilføjelsen oven for overskriften (<hi xml:id="id67060432-2d56-4a0a-90e8-ad15da71e94f" rendition="#ita">SKS</hi> 27, 264,4-5) er skrevet på skrå.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.276" prev="#physDesc.276">
+              <msIdentifier xml:id="id78cff1fe-ba51-42f9-949e-b9fd9052fc21">
+                <idno xml:id="id22cf5183-cdb6-4ab0-b63b-fb7bd9a51467">276</idno>
+              </msIdentifier>
+              <additional xml:id="id9ed81cce-49b1-45e7-a88b-dad1407dabbd">
+                <adminInfo xml:id="id9dc4a04b-0615-4b5b-b5b3-66944924ea7a">
+                  <note xml:id="id5194e1dc-aac0-413e-b887-2c61106e3d68">
+                    <p xml:id="idd8a36f5f-cf00-4f59-8e54-9d9dca34cafe">(<hi xml:id="idc69c2d05-6ec5-4a9b-a8b1-9fc61d4fae85" rendition="#ita">L-fort.</hi> + <hi xml:id="id2dec3b41-6688-4211-ba1c-9fdaeb81c6e1" rendition="#ita">B-fort.</hi> 288; KA, B pk. 4 læg 1; <hi xml:id="idaf2675aa-1821-4044-ae14-39ec04cbbcd6" rendition="#ita">Pap.</hi> III B 33-39)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+          <p xml:id="id796003f6-4c6b-40c5-92c3-475b2ed2430f">(<hi xml:id="id945bb516-6d34-4c35-b01a-7ebc5d7e175c" rendition="#ita">L-fort</hi> + <hi xml:id="id7c3e7506-52b9-4043-afc9-e86a86c5fd77" rendition="#ita">B-fort.</hi> 288; KA, A pk. 42 og B pk 4 læg 1; <hi xml:id="idb515df28-055b-4ed1-bf23-5fc401ecef99" rendition="#ita">Pap.</hi> III A 242-246 og III B 31-39)</p>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="id3141a784-b9fd-4748-898d-045f1756a47d">2. Datering og kronologi</head>
+          <p xml:id="id7fa52175-8e25-4f6f-9f89-637595f74a03">Påskriften på omslaget (<ref xml:id="id40635d09-ae29-4957-8f1b-14b3847582d1" target="../P271/txt.xml#n271" type="journalsAndPapers" n="271">Papir 271</ref>), hvori <ref xml:id="id4a3ccc7d-0599-41bf-8e2d-8ebedcd9cd1e" target="../P271/txt.xml#n272" type="journalsAndPapers" n="272">Papir 272</ref>-276 har været samlet, angiver, at papirerne er ordnet af SK engang efter udgivelsen af <hi xml:id="idd76b5fd5-cbc0-4565-a7f2-6248cdb0c22a" rendition="#ita">Enten – Eller</hi> (1843). Hvilke af manuskripterne SK kalder »nogle Enkeltheder som ikke bleve brugte«, og hvilke han kalder »De første Rudimenter til Enten – Eller«, kan imidlertid ikke entydigt bestemmes, da ingen af teksterne, som de præsenterer sig i mss., er at finde i <hi xml:id="id1a3d1ee0-074f-465d-afb5-74b3b768d553" rendition="#ita">Enten – Eller,</hi> og da alle teksterne i et vist omfang kan kategoriseres som »Rudimenter«. <ref xml:id="ida2ae1ffd-526f-4287-b8e7-4f50ae0f7f6f" target="../P271/txt.xml#n272" type="journalsAndPapers" n="272">Papir 272</ref>-274 synes dog at være fra et tidligere stadie i værkets tilblivelse end <ref xml:id="id7ef7e1fc-d0eb-4820-a1e9-1bf1592d231b" target="../P271/txt.xml#n275" type="journalsAndPapers" n="275">Papir 275</ref>-276 og regnes derfor her for »De første Rudimenter til Enten – Eller«.<note xml:id="idc199f9fa-72da-4914-b1d8-9eb27c729012"><ref xml:id="id47d68532-b83c-4516-8c1f-71e2fc93871c" target="../P271/txt.xml#n275" type="journalsAndPapers" n="275">Papir 275</ref>-276 er i <ref xml:id="ida17a0c88-3e96-4a04-9567-d010f3ec3eb3" target="../EE1/txr.xml#ss46" type="textCriticalAccount" n="46">tekstredegørelsen til <hi xml:id="id76964b0d-d00f-4833-8424-689ca387d388" rendition="#ita">Enten – Eller</hi></ref> vurderet til at være »De første Rudimenter til Enten – Eller«, jf. <hi xml:id="id37fb4bb7-12c1-4291-a1bc-eb6c8257a5c7" rendition="#ita">SKS</hi> K2-3, 46. </note></p>
+          <p xml:id="id1e6684de-d884-421e-b494-c7d9bf6fb4e9" rendition="#ind">Papirerne er udateret, men synes at stamme fra tiden umiddelbart forud for SKs afrejse til <placeName xml:id="id13268a99-e674-478c-b555-57263a3ba4f9">Berlin</placeName> den 25. okt. 1841. SK omtaler i flere af sine breve til vennen <persName xml:id="id692e822f-2b9c-41d6-a567-e336758cdc55" key="Boesen, Emil Ferdinand">Emil Boesen</persName> et værk, som han nyligt er begyndt at skrive på, den 14. dec. 1841 lyder det: »Jeg skriver paa Liv og Død. Jeg har nu skrevet 14 trykte Ark. Dermed har jeg fuldendt en Deel af en Afhandling, som jeg <hi xml:id="id8984f91f-13f4-496c-9f15-89811cd80003" rendition="#ita">volente deo</hi> engang skal forelægge Dig«, og den 1. jan. 1842 nævner han det ved titel, da han skriver »Du spørger, hvad det er jeg arbeider paa <hi xml:id="id9b66d581-c5be-4c60-91c5-64d30f88cb2a" rendition="#ita">(...)</hi> det er den videre Udførelse af Enten Eller«<note xml:id="id14c4b2eb-24fd-493d-a9c0-434efb191f9e"> Jf. <ref xml:id="id3a96424e-887a-4059-94a8-8d3ed1ae91bb" target="../p592/txt.xml#n595" type="journalsAndPapers" n="ba:81"><hi xml:id="id2a2c096f-ce46-45b4-acb5-439bfe7030e9" rendition="#ita">B&amp;A,</hi> bd. 1, s. 81</ref>-<ref xml:id="idb7b781e2-f041-4c88-81e1-9ee52f8fd724" target="../b79/txt.xml#n89" type="lettersAndDedications" n="ba:82" rend="Brev 89">82</ref> og <ref xml:id="id93100ff7-5e2f-4ee4-857c-a5d121c88ca3" target="../b79/txt.xml#n93" type="lettersAndDedications" n="ba:90" rend="Brev 93">90</ref>. </note> .</p>
+          <p xml:id="id0a4b4cce-234b-4561-99ef-35a943262a44" rendition="#ind">Når dateringen er henlagt til forud for afrejsen til <placeName xml:id="id643b2435-6d5b-4697-9ffa-7e0dca4ef6e9">Berlin</placeName>, skyldes det, at SK i et af sine kladdehæfter fra opholdet i <placeName xml:id="idce6fd638-59c6-4511-854f-2516027113ec">Berlin</placeName> henviser til »Brev fra <hi xml:id="idc869a13f-be23-4ca2-ae84-35c50f808407" rendition="#bol">den Forførte</hi>«, dvs. <ref xml:id="id05658ece-e60c-48ac-a992-ea3b0e1b2dd6" target="../P271/txt.xml#n276-3" type="journalsAndPapers" n="276:3">Papir 276:3</ref>, med ordene »Billeten maa findes mell: mine Papirer. Jeg havde udarbeidet den før min Afreise«.<note xml:id="id7b1444c3-5e9d-4811-8a03-c415fab94a0d"> Jf. <ref xml:id="id7337168e-2b7e-480d-a1b4-5fbc7a560618" target="../EE1/txr.xml#ss46" type="textCriticalAccount" n="46"><hi xml:id="id26a06a3f-8a08-44d1-a868-9b918fba3a0d" rendition="#ita">SKS</hi> K2-3, 46</ref>. </note></p>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

@@ -1,201 +1,869 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE kn1 SYSTEM "http://sks.dk/kn1/kn1.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5">
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Journalen HH</title>
-     
-     <title type="short">HH</title>
-     
-  <author>
-   <name>Niels Jørgen Cappelørn</name><name>Christian Fink Tolstrup</name>
-  </author>
- 
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Jette Knudsen</name><name>Alastair McKinnon</name>
-  </editor>
- 
-  <respStmt>
-   <resp>udgivet af</resp>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Jette Knudsen</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>udgiverne</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name><name>Kim Ravn</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2001</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K18</biblScope>
-     <biblScope unit="file">http://sks.dk/hh/kom.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20110324">Kierkegaard Normalformat vers. 1, <bibl><idno type="version">1.6</idno>, <biblScope unit="file">http://sks.dk/hh/kom.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id37da7741-f4b0-4a3e-989e-55dca1fcebc9">
+    <fileDesc xml:id="iddfd9f547-f47f-4bc4-9030-4d4c3a062d81">
+      <titleStmt xml:id="id1117f2d7-ea9c-44ab-8036-c34ac4d118c0">
+        <title xml:id="idf5e35c86-2bca-4e0d-90ba-49688904b89d" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="idb63a400f-cfc5-46eb-9127-19ed440d1f7f">Journalen HH</title>
+        <title xml:id="id9e2bf944-5d93-4538-abd7-cce71ff7c963" type="short">HH</title>
+        <author xml:id="ide4917cc4-5d54-4156-b897-f795af179289">
+          <name xml:id="id6d1d95b4-193e-4a34-91d7-0a32f94eab51">Niels Jørgen Cappelørn</name>
+          <name xml:id="id3686e555-e5f4-49d5-a33c-39338b5c4686">Christian Fink Tolstrup</name>
+        </author>
+        <editor xml:id="id24f05904-dee1-4efa-a943-c9331f9f0655">
+          <name xml:id="id8dedfe57-3bbb-4f62-ab6d-66ed7edf9110">Niels Jørgen Cappelørn</name>
+          <name xml:id="id03c92aef-33bb-404c-854d-edb73a4ac8c9">Joakim Garff</name>
+          <name xml:id="id55a453ed-fe6c-4049-9829-d21fd9baf541">Johnny Kondrup</name>
+          <name xml:id="id949525b1-78a3-407d-8bf6-f9e2b271c5dd">Jette Knudsen</name>
+          <name xml:id="idc0737632-5f07-470e-aba8-4d222742bc59">Alastair McKinnon</name>
+        </editor>
+        <respStmt xml:id="id697cdca0-4483-411d-91b7-36df25484b5f">
+          <resp xml:id="id4e5dac13-41be-48a5-8ab5-3a19c180de4f">udgivet af</resp>
+          <name xml:id="ida7c6b0d5-a621-4b96-8976-295515fd26de">Niels Jørgen Cappelørn</name>
+          <name xml:id="id178de165-dc9e-447d-87f1-a50cd3c23d05">Joakim Garff</name>
+          <name xml:id="idca5c6bd6-98a1-4617-812b-95a1504f319d">Johnny Kondrup</name>
+          <name xml:id="id65f7c10f-820b-4bc6-a039-1ed7f03a1e1f">Jette Knudsen</name>
+        </respStmt>
+        <respStmt xml:id="id40830407-2af1-4ce0-ad3b-865fa02e3f14">
+          <resp xml:id="id3ff8669b-d898-4580-ac05-64fcd768853c">redigeret af</resp>
+          <name xml:id="id02e40c35-01fb-4a13-a95a-64f20c0743d4">udgiverne</name>
+        </respStmt>
+        <respStmt xml:id="id0c872bcb-94ba-4f21-95d9-2bef6e21fd43">
+          <resp xml:id="id0c48e6aa-0a03-4b5e-b141-db1a4b39477e">elektronisk redigeret af</resp>
+          <name xml:id="idb5e7fac2-64b0-4c49-97a1-1973c4870e06">Karsten Kynde</name>
+          <name xml:id="id9b23e198-8ac9-4b2f-8918-08218d8ec182">Kim Ravn</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id88755ac1-9aff-4cdb-818e-4569e9b9f660">
+        <authority xml:id="id465bfda0-c83f-44a8-bd90-e0b2f488be2f">Søren Kierkegaard Forskningscenteret 2001</authority>
+        <availability xml:id="id6b10e147-722f-4250-8372-0b60b09e4793" status="restricted">
+          <p xml:id="id87eba521-271f-4258-b4e2-ae6f9b1b863e">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="iddea5376a-451b-4884-89e1-4f797472f688">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="id0a80042b-c88a-495b-949f-8dfe7d35ae20" unit="volume">K18</biblScope>
+        <biblScope xml:id="ida3ebad73-e7d3-487d-b59d-adbe0d6f817d" unit="file">http://sks.dk/hh/kom.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="ida6a31cb2-691f-4b21-9963-b6d425600f95">
+        <bibl xml:id="ide5b45337-5bc6-4a3a-9fea-f458613d1e30" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id3ac8ac10-f87e-4958-a411-7a7ae2fd4d2d">
+      <tagsDecl xml:id="id17a1b0b7-3c88-4d03-8f51-b00976a650cb">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id28d1484e-71c7-47f3-8642-37c2442d3890">
+      <change xml:id="id5be6f58d-946d-491b-a94b-4e8c94d7bb4d">Transformed to TEI by style sheet <bibl xml:id="id50906d06-ad91-4a36-86cb-e73044a05fd1" type="file">kn12tei.xsl</bibl> version <idno xml:id="id9ecab3c4-ef8f-446b-8b73-61d570afc71e" type="version">1.9</idno> as of <date xml:id="id9fe1473e-4348-4ef6-a6ec-2029a9979921">2017-02-21</date> by <name xml:id="id81e04764-13c8-48db-b821-4c763aa1c4bb">Karsten Kynde</name>, <orgName xml:id="id6a86e434-1312-4a4b-9fd5-6fd6fbc8e265">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="id3f2d1d16-b782-417b-b698-c93d2c1e01ed">København</placeName></change>
+      <change xml:id="id4a24e214-f657-4fdd-8c48-280656fd64a2" when="20110324">Kierkegaard Normalformat vers. 1, <bibl xml:id="id6e348597-4954-4c4d-a62c-65d5ab21b6e2"><idno xml:id="id932185c3-7925-459d-a9a2-44a4e43d51df" type="version">1.6</idno>, <biblScope xml:id="idd39481ac-6611-4a12-93e9-f318dbc6ac45" unit="file">http://sks.dk/hh/kom.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
-
- <text type="commentary" subtype="jp"><body><div>
-  <note type="commentary" xml:id="hh-1" n="125,1"><label><hi rendition="#bol">d. 14 Juni 1840</hi></label> <p>trinitatis søndag; evangelieteksten var <rs type="bible">Joh 3,1-15</rs>, Jesu natlige samtale med farisæeren <persName key="Nikodemus">Nikodemus</persName>, hvor Jesus bl.a. siger: »Den, der ikke bliver født på ny, kan ikke se Guds rige« (v. 3); og: »I må fødes på ny« (v. 7), <ptr type="commentary" target="#hh-80" n="135,11"/>.</p></note>
-  <note type="commentary" xml:id="hh-2" n="125,2"><label><hi rendition="#bol">Alt er Nyt i Christo</hi></label> <p>hentyder til <rs type="bible">2 Kor 5,17</rs>: »Saa at, dersom Nogen er i Christo, da er han en ny Skabning: det Gamle er forbiganget, see, Alt er blevet nyt« (NT-1819).</p></note>
-  <note type="commentary" xml:id="hh-5" n="125,11"><label><hi rendition="#bol">en ny Lap paa et gammelt Klædebon</hi></label> <p>spiller på <rs type="bible">Matt 9,16</rs>: »Ingen sætter en Klud af nyt Klæde paa et gammelt Klædebon, thi Kluden river Noget fra Klædebonnet, og Hullet bliver værre« (NT-1819). <persName key="Luther, Martin">Luther</persName> gengiver verset således: »Niemand flickt ein altes Kleid mit einem Lappen von neuem Tuch; denn der Lappe reißt doch wieder vom Kleide, und der Riß wird ärger«, jf. <hi rendition="#ita">Die Bibel oder die ganze heilige Schrift nach der deutschen Übersetzung Dr. Martin Luthers mit einer Vorrede vom Dr. Hüffel,</hi> <placeName key="Karlsruhe">Carlsruhe</placeName> og <placeName>Leipzig</placeName> 1836, ktl. 3.</p></note>
-  <note type="commentary" xml:id="hh-6" n="125,12"><label><hi rendition="#bol">Foryngelses-Drik</hi></label> <p>hentyder til den trylledrik, som <persName key="Faust">Faust</persName> får, umiddelbart før han møder <persName key="Gretchen">Margarete</persName>, og som skal give ham ungdommelig drift, jf. scenen i heksekøkkenet, i <persName key="Goethe, Johann Wolfgang von">Goethe</persName>s <hi rendition="#ita">Faust. Eine Tragödie,</hi> i <hi rendition="#ita">Goethe's Werke. Vollständige Ausgabe letzter Hand</hi> bd. 1-60, <placeName>Stuttgart</placeName> og <placeName>Tübingen</placeName> 1828-42 (ktl. 1641-1668, bd. 1-55, 1828-33); bd. 12, 1828, s. 128-132. – Måske polemisk vendt mod <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s afhandling »En logisk Bemærkning i Anledning af H. H. Hr. Biskop Dr. <hi rendition="#ita">Mynsters</hi> Afhandling om Rationalisme og Supranaturalisme, i forrige Hefter af dette Tidsskrift« i <hi rendition="#ita">Tidsskrift for Litteratur og Kritik,</hi> udg. <persName key="Petersen, Frederik Christian">F.C. Petersen</persName>, bd. 1, <placeName key="København">Kbh</placeName>. 1839, s. 441-456; jf. fx s. 455f.: »saaledes har <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName> bragt Philosophien til det Punkt, hvor en pludselig Omskiftning af Standpunkter, der blot kunne naaes ved et Spring, ikke længere vil finde Sted, men alt Nyt vil fremkomme ved constitutionnel Udvikling af det Bestaaende, altsaa kun forsaavidt dette holdes i Ære. <hi rendition="#ita">(...)</hi> Saaledes er da Philosophiens constitutionnelle Form tilveiebragt og denne bærer selv Kilden til sin Foryngelse i sig.«</p></note>
-  <note type="commentary" xml:id="hh-7" n="125,13"><label><hi rendition="#bol">Det comparative Standpunkt ... Intet er Nyt under Solen</hi></label> <p>jf. fx <persName key="Mynster, Jakob Peter">J.P. Mynster</persName>s afhandling »Rationalisme. Supranaturalisme« i <hi rendition="#ita">Tidsskrift for Litteratur og Kritik</hi> (<ptr type="commentary" target="#hh-6" n="125,12"/>) bd. 1, s. 260, hvor han citerer fra <persName key="Weiße, Christian Hermann">C.H. Weiße</persName> <hi rendition="#ita">Die evangelische Geschichte kritisch und philosophisch bearbeitet</hi> bd. 1-2, <placeName>Leipzig</placeName> 1838: »'Vi negte – siger han – de Mirakler, ved hvilke Gud, først før Christus, men kun i det israelitiske Folk, derefter i Christus selv, skal have aabenbaret sin udvortes Magt over Naturen i en Giennembrydelse af det lovmæssige Naturløb, og erkiende kun saadanne Undere, som bestaae i Manifestationen af Aandens Magt ogsaa inden Grændser, der i de sædvanlige Tilstande blive den utilgængelige; men om disse Undere paastaae vi, at de ikke mindre have tildraget sig blandt Hedninger end blandt Jøder, og i Christus kun paa en mere udmærket Maade, end andensteds.'« – <hi rendition="#bol">Intet er Nyt under Solen:</hi> jf. <rs type="bible">Præd 1,9</rs>.</p></note>
-  <note type="commentary" xml:id="hh-8" n="125,20"><label><hi rendition="#bol">Mediationens Idee, den nyere Philosophies Løsen</hi></label> <p>Udtrykket 'Mediation', der ikke forekommer hos <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>, anvendes af de da. hegelianere som gengivelse af det hegelske begreb 'Vermittlung', 'formidling' el. 'forsoning'. Jf. fx <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> »Det logiske System« i <hi rendition="#ita">Perseus, Journal for den speculative Idee,</hi> udg. af Heiberg, nr. 1-2, <placeName key="København">Kbh</placeName>. 1837-38, ktl. 569; nr. 2, s. 18, s. 21 og især s. 30. Jf. også SKs referat af <persName key="Martensen, Hans Lassen">H.L. Martensen</persName>s forelæsninger over »Speculativ Dogmatik«, § 6, se <ref target="../KK/txt.xml#ss377" type="journalsAndPapers" n="377,21">KK:11</ref>, s. 377,21-28, og § 16, se <ref target="../KK/txt.xml#ss383" type="journalsAndPapers" n="383,4">KK:11</ref>, s. 383,4-8. Jf. endvidere Martensens afhandling »Rationalisme, Supranaturalisme og <hi rendition="#ita">principium exclusi medii</hi> (I Anledning af H.H. Biskop <persName key="Mynster, Jakob Peter">Mynster</persName>s Afhandling herom i dette Tidsskrifts forrige Hefte)« i <hi rendition="#ita">Tidsskrift for Litteratur og Kritik</hi> (<ptr type="commentary" target="#hh-6" n="125,12"/>) bd. 1, s. 456-473; især s. 458: »Christendommens Middelpunct, Incarnationslæren, Læren om Gudmennesket, viser jo netop, at den christelige Metaphysik ikke kan hvile i et Enten Eller, men at den kun finder Sandheden i <hi rendition="#ita">det Tredie</hi> som hiint Princip [princippet om det udelukkede tredje] udelukker.« Og videre s. 459, hvor Martensen hævder, »at Begrebet om det Overnaturlige ikke kan blive virkeligt uden ved at medieres gjennem det Naturlige, og altsaa maa indeholde dette som sit egent Moment«.</p></note>
-  <note type="commentary" xml:id="hh-9" n="125,21"><label><hi rendition="#bol">Modsætningen til det Chr:</hi></label> <p>jf. <persName key="Mynster, Jakob Peter">Mynster</persName>s afhandling »Rationalisme. Supranaturalisme« i <hi rendition="#ita">Tidsskrift for Litteratur og Kritik</hi> (<ptr type="commentary" target="#hh-6" n="125,12"/>) bd. 1, s. 249-268, især s. 261f.: »dersom Christus, den absolut Syndfrie, Hellige og Salige, kunde fremtræde efter Naturens Løb, ved Menneskehedens naturlige Udviklings-Proces, da er Menneskenaturen ikke fordærvet, men da er den endnu, hvad den oprindeligen var, en reen Emanation eller Manifestation af Guddommen <hi rendition="#ita">(...).</hi> Men hvis ikke, da er vor Frelse ikke ved nogen Menneskehedens Act, <hi rendition="#ita">(...)</hi> og ligesom den første Skabelse ikke kunde ligge i nogen forhenværende Række, ikke kunde have hvad vi kalde Natursammenhæng – hvorvel vistnok Sammenhæng med den guddommelige Natur – saaledes er ogsaa den nye Skabelse i Christus, skiøndt forberedet ved guddommelige Foranstaltninger, det første Led i en ny Række, en ny umiddelbar Indgydelse af det guddommelige Liv i det menneskelige.« Hertil skriver <persName key="Martensen, Hans Lassen">Martensen</persName> i sin afhandling (se foregående kommentar): »Det maa indrømmes og det maa høiligt urgeres, at Christus ikke fremtræder 'efter Naturens Løb, at den nye Skabelse i Christus er det første Led i en ny Række, en ny umiddelbar Indgydelse af det guddommelige Liv i det menneskelige.' Christus er ikke Menneskeslægtens <hi rendition="#ita">Product,</hi> hans Indtrædelse i Historien er ikke <hi rendition="#ita">Resultatet</hi> af Slægtens Udviklingsproces, skiøndt vel medieret ved denne«, s. 463.</p></note>
-  <note type="commentary" xml:id="hh-10" n="125,25"><label><hi rendition="#bol">mediert</hi></label> <p>medieret (se foregående kommentar).</p></note>
-  <note type="commentary" xml:id="hh-11" n="125,27"><label><hi rendition="#bol">det der ikke opgik i noget Msks Tanke</hi></label> <p>spiller på <rs type="bible">1 Kor 2,9</rs>, hvor <persName key="Paulus">Paulus</persName> taler om 'Guds visdom', som er skjult for denne verdens vismænd: »hvad intet Øie har seet, og intet Øre har hørt, og ikke er opkommet i noget Menneskes Hierte, hvad Gud haver beredt dem, som ham elske« (NT-1819). Jf. i øvrigt <persName key="Mynster, Jakob Peter">Mynster</persName>s afhandling »Rationalisme. Supranaturalisme« i <hi rendition="#ita">Tidsskrift for Litteratur og Kritik</hi> (<ptr type="commentary" target="#hh-6" n="125,12"/>) bd. 1, s. 258, hvor han kritisk karakteriserer rationalismen som »intet Andet end Indbegrebet af de Erkiendelser om Gud og de guddommelige Ting, som Fornuften selv kan give«.</p></note>
-  <note type="commentary" xml:id="hh-16" n="125m,1"><label><hi rendition="#bol">fortes fortuna</hi></label> <p>egl. »fortes fortuna adiuvat«, lat. »lykken står de kække bi«, citat fra <hi rendition="#ita">Phormio,</hi> 2. akt, 2. scene (v. 203), jf. <hi rendition="#ita">P. Terentii Afri Comoediae sex,</hi> udg. af B.<persName key="Schmieder, F.">F. Schmieder</persName> og F. Schmieder, 2. udg., <placeName>Halle</placeName> 1819 [1794], ktl. 1291, s. 425. Jf. også <persName key="Terents" sameAs="Publius Terentius Afer">Publius Terentius Afer</persName> <hi rendition="#ita">Andria, Selvplageren og Formio, tre latinske Lystspil,</hi> overs. af <persName key="Rathje, Mathias">Mathias Rathje</persName>, <placeName key="København">Kbh</placeName>. 1797, ktl. 1295, 2. del, s. 124, hvor udtrykket gengives således: »den, som vover, han vinder«.</p></note>
-  <note type="commentary" xml:id="hh-17" n="125m,2"><label><hi rendition="#bol">Gud er mægtig i de Svage</hi></label> <p>spiller på <rs type="bible">2 Kor 12,9</rs>, hvor Gud siger til <persName key="Paulus">Paulus</persName>: »Min nåde er dig nok, for min magt udøves i magtesløshed.« Jf. også <rs type="bible">2 Kor 13,4</rs>.</p></note>
-  <note type="commentary" xml:id="hh-18" n="125m,6"><label><hi rendition="#bol">Genialitæt</hi></label> <p>skaberkraft; åndelige selvstændighed; ånd.</p></note>
-  <note type="commentary" xml:id="hh-19" n="125m,7"><label><hi rendition="#bol">harmonia præstabilita</hi></label> <p>lat. 'forudbestemt harmoni'. En filosofisk term præget af den ty. filosof og naturvidenskabsmand <persName key="Leibniz, Gottfried Wilhelm" n="*">Gottfried Wilhelm Leibniz</persName> (1646-1716), som bringer »die Lehre von der vorherbestimmten Harmonie« til udtryk i § 59 i første del af »Des Versuchs Von der Güte Gottes, von der Freyheit des Menschen, und vom Ursprunge des Bösen« i <hi rendition="#ita">Theodicee</hi> (1710), jf. <hi rendition="#ita">Theodicee,</hi> udg. af <persName key="Gottsched, Johann Christoph">J.C. Gottscheden</persName>, 5. udg., <placeName>Hannover</placeName> og <placeName>Leipzig</placeName> 1763, ktl. 619, s. 212-215. Leibniz anvender udtrykket »l'Harmonie préétablie« i § 80 i <hi rendition="#ita">La monadologie</hi> (1714), jf. <hi rendition="#ita">God. Guil. Leibnitii Opera philosophica, quae exstant,</hi> udg. af <persName key="Erdmann, Johann Eduard">J.E. Erdmann</persName>, bd. 1-2, <placeName>Berlin</placeName> 1839-40, ktl. 620; bd. 2, s. 711.</p></note>
-  <note type="commentary" xml:id="hh-12" n="125,32"><label><hi rendition="#bol">den gudl. Metaphysik, Treenigheden</hi></label> <p>læren om Guds indre væsen som en treenighed af Fader, Søn og Helligånd.</p></note>
-  <note type="commentary" xml:id="hh-13" n="125,34"><label><hi rendition="#bol">Aabenbarings-Begrebets Gyldighed</hi></label> <p>Jf. fx <persName key="Mynster, Jakob Peter">Mynster</persName>s afhandling »Rationalisme. Supranaturalisme« i <hi rendition="#ita">Tidsskrift for Litteratur og Kritik</hi> (<ptr type="commentary" target="#hh-6" n="125,12"/>) bd. 1, s. 249-268, hvor han hævder åbenbaringens virkelighed og gyldighed, fx s. 266; her kritiserer han rationalismen og naturalismen for at »forkaste Nødvendigheden og Virkeligheden af en Aabenbaring som en paa overnaturlig Maade foranstaltet Meddelelse af Gud til Menneskene« og tilslutter sig supranaturalismen, der »just grunder sig paa en saadan Aabenbaring«.</p></note>
-  <note type="commentary" xml:id="hh-14" n="126,3"><label><hi rendition="#bol">Alt er nyt i Χsto ... verdenshistorisk speculativ Anskuelse</hi></label> <p><ptr type="commentary" target="#hh-9" n="125,21"/>, og jf. <persName key="Mynster, Jakob Peter">Mynster</persName>s kritik af <persName key="Weiße, Christian Hermann">C.H. Weiße</persName> (<ptr type="commentary" target="#hh-7" n="125,13"/>): »Ogsaa efter ham er Guds Menneskevordelse i Christus ligesaavel en Act af Menneskeheden som af Guddommen, og den ligger i Rækken af alle andre fremtrædende Tildragelser i Menneskehedens verdenshistoriske Udviklings-Proces«, <hi rendition="#ita">Tidsskrift for Litteratur og Kritik</hi> (<ptr type="commentary" target="#hh-6" n="125,12"/>) bd. 1, s. 260.</p></note>
-  <note type="commentary" xml:id="hh-21" n="126,10"><label><hi rendition="#bol">Enhver ved sin Ankomst til Elysium maatte drikke af Lethe</hi></label> <p>sigter til den almindelige forestilling i den pytagoræiske og platonske filosofi, at de udødelige sjæle skulle drikke af <placeName key="Lethe" sameAs="Glemslens Flod">Glemslens Flod</placeName>, som udsprang fra <placeName>Elysium</placeName>, for at glemme alt fra deres tidligere liv på jorden og i underverdenen, inden de igen kunne tage bolig i en krop. I <persName key="Platon">Platon</persName>s <hi rendition="#ita">Staten,</hi> 10. bog, 621a-b, er der tale om, at de udødelige sjæle skal vandre til <placeName>Glemslens Slette</placeName> og drikke af <placeName>Sorgløshedens Flod</placeName> for at glemme alt. – <hi rendition="#bol">Lethe:</hi> da. gengivelse af det gr. Λήϑη (Lēthē), glemsel, forglemmelse; især kendt fra sammensætningen ὁ τής Λήϑης ποταμός (hó tēs Lēthēs potamós) Glemslens Flod.</p></note>
-  <note type="commentary" xml:id="hh-22" n="126,12"><label><hi rendition="#bol">skal gjøre Regnskab for hvert utilbørligt Ord</hi></label> <p>hentyder til <rs type="bible">Matt 12,36</rs>: »Men jeg siger Eder, at Menneskene skulle giøre Regnskab paa Dommens Dag for hvert utilbørligt Ord, som de have talet« (NT-1819).</p></note>
-  <note type="commentary" xml:id="hh-23" n="126,14"><label><hi rendition="#bol">Præsents</hi></label> <p>nærværelse, tilstedeværelse; her måske med den bibetydning, at 'det forbigangne' er present i den forstand, at det huskes fuldt ud.</p></note>
-  <note type="commentary" xml:id="hh-25" n="129,1"><label><hi rendition="#bol">og Gud fristede Abr: ... Abraham svarede her er jeg</hi></label> <p>jf. 1 Mos 22,1: »Og det skede derefter, at Gud fristede <persName key="Abraham">Abraham</persName>, og sagde til ham: Abraham, og han sagde: see, her er jeg« (GT-1740). – <hi rendition="#bol">Abr:</hi> Abraham; det israelitiske folks stamfader gennem sin søn <persName key="Isak">Isak</persName> og sønnesønnen <persName key="Jakob">Jakob</persName>; han er den første af disse tre patriarker. Gud indgår en pagt med Abraham, som bl.a. indeholder en forjættelse om, at hans afkom gennem Isak skal blive talrigt som stjernerne og have Kana'ans land til ejendom, <rs type="bible">1 Mos 15</rs> og 17; beretningerne om Abraham findes i øvrigt i <rs type="bible">1 Mos 12-25</rs>.</p></note>
-  <note type="commentary" xml:id="hh-26" n="129,9"><label><hi rendition="#bol">Bjergene ville skjule os</hi></label> <p>spiller på <rs type="bible">Luk 23,30</rs>, hvor Jesus siger til de kvinder, der følger ham på vej til <placeName>Golgata</placeName>, at de ikke skal græde over ham, men over sig selv og deres børn, for der vil komme frygtelige dage: »Da skal man sige til bjergene: Fald ned over os! Og til højene: Skjul os!«</p></note>
-  <note type="commentary" xml:id="hh-27" n="129,10"><label><hi rendition="#bol">vælte Byrden fra os over paa Andre</hi></label> <p>spiller formentlig på <rs type="bible">Gal 6,2</rs>: »Bær hinandens byrder«.</p></note>
-  <note type="commentary" xml:id="hh-28" n="129,12"><label><hi rendition="#bol">af Banen</hi></label> <p>ad banen.</p></note>
-  <note type="commentary" xml:id="hh-29" n="129,13"><label><hi rendition="#bol">Ab:</hi></label> <p><persName key="Abraham">Abraham</persName>.</p></note>
-  <note type="commentary" xml:id="hh-30" n="129,14"><label><hi rendition="#bol">Sara</hi></label> <p><persName key="Abraham">Abraham</persName>s kone.</p></note>
-  <note type="commentary" xml:id="hh-31" n="129,16"><label><hi rendition="#bol">Isaak</hi></label> <p><persName key="Isak">Isak</persName>, <persName key="Abraham">Abraham</persName>s og <persName key="Sara">Sara</persName>s eneste barn, en af de tre jødiske patriarker (<ptr type="commentary" target="#hh-25" n="129,1"/>).</p></note>
-  <note type="commentary" xml:id="hh-32" n="129,16"><label><hi rendition="#bol">Eleezar den tro Tjener</hi></label> <p>I <rs type="bible">1 Mos 15,2-3</rs> nævnes <persName key="Eliezer">Eliezer</persName> som den hustræl, der skal arve <persName key="Abraham">Abraham</persName>, hvis han ikke får et barn.</p></note>
-  <note type="commentary" xml:id="hh-33" n="129,17"><label><hi rendition="#bol">Vi læse: han stod tidlig op ... han drog Kniven</hi></label> <p><rs type="bible">1 Mos 22,3-10</rs>: »Saa stod <persName key="Abraham">Abraham</persName> aarle op om Morgenen, og sadlede sit Asen, og tog to af sine Drenge med sig, og Isaak sin Søn; og han kløvede Vedden [brændet] til Brænde-Offeret, giorde sig rede, og gik til Steden, som Gud havde sagt ham. Paa den tredie Dag, da opløftede Abraham sine Øine, og saae Steden langt borte. Da sagde Abraham til sine Drenge: bliver her for eder med Asenet, og jeg og Drengen vi vil gaae derhen; og vi vil tilbede, og komme til eder igien. Og Abraham tog Vedden til Brænde-Offeret, og lagde paa Isaak sin Søn, men han tog Ilden og Kniven i sin Haand; og de gik begge tilsammen. Da talede Isaak til Abraham sin Fader, og sagde: min Fader, og han sagde: see, her er jeg, min Søn! og han sagde: see, Ilden og Vedden, men hvor er Lammet til Brænd-Offeret? Og Abraham sagde: Gud skal see sig om Lammet til Brænde-Offeret, min Søn! saa gik de begge tilsammen. Og der de kom til den Sted, som Gud havde sagt ham, da bygde Abraham der et Alter, og lavede Vedden, og han bandt Isaak sin Søn, og lagde ham paa Alteret oven paa Vedden. Og Abraham rakte sin Haand ud, og greb Kniven, for at slagte sin Søn« (GT-1740).</p></note>
-  <note type="commentary" xml:id="hh-34" n="129,22"><label><hi rendition="#bol">Min T:</hi></label> <p>Min Tilhører.</p></note>
-  <note type="commentary" xml:id="hh-35" n="129,25"><label><hi rendition="#bol">Forjættelsens Barn som Isaak var det</hi></label> <p>(<ptr type="commentary" target="#hh-25" n="129,1"/>); spiller på <rs type="bible">Gal 4,28</rs>, hvor <persName key="Paulus">Paulus</persName> skriver: »Men vi, Brødre, ere Forjættelsens Børn, som Isaak var« (NT-1819). Jf. også <rs type="bible">Rom 9,8</rs>.</p></note>
-  <note type="commentary" xml:id="hh-36" n="129,27"><label><hi rendition="#bol">Guds almægtige og urandsagelige Styrelse</hi></label> <p>jf. <hi rendition="#ita">Lærebog i den Evangelisk-christelige Religion, indrettet til Brug i de danske Skoler</hi> (af <persName key="Balle, Nicolaj Edinger">N.E. Balle</persName> og <persName key="Bastholm, Christian">C.B. Bastholm</persName>, oftest omtalt som <hi rendition="#ita">Balles Lærebog</hi>), <placeName key="København">Kbh</placeName>. 1824 [1791], ktl. 183, kap. 1, »Om Gud og hans Egenskaber«, afsnit 3, § 3: »Gud er <hi rendition="#ita">almægtig,</hi> og kan giøre alt, hvad han vil, uden Møie. Men han giør ikkun det, som er viist og godt, fordi han ikke vil andet, end det alene«, s. 13. Og kap. 2, »Om Guds Gierninger«, afsnit 2, § 5: »<hi rendition="#ita">Hvad der møder os i Livet,</hi> enten det er sørgeligt eller glædeligt, bliver os <hi rendition="#ita">tilskikket af Gud i de bedste Hensigter,</hi> saa at vi altid have Aarsag til at være fornøiede med hans Regiering og Bestyrelse«, s. 25. – <hi rendition="#bol">urandsagelige:</hi> spiller på <rs type="bible">Rom 11,33</rs>, hvor <persName key="Paulus">Paulus</persName> skriver: »Hvor uransagelige er hans [Guds] domme, og hvor usporlige hans veje!«</p></note>
-  <note type="commentary" xml:id="hh-37" n="129,30"><label><hi rendition="#bol">Hiob</hi></label> <p>gammel form for <persName key="Job">Job</persName>, hovedpersonen i Jobs Bog.</p></note>
-  <note type="commentary" xml:id="hh-38" n="129,30"><label><hi rendition="#bol">Herren gav Herren tog</hi></label> <p>jf. <rs type="bible">Job 1,21</rs>: »Nøgen kom jeg ud af moders liv, / nøgen vender jeg tilbage! / Herren gav, Herren tog, / Herrens navn være lovet.«</p></note>
-  <note type="commentary" xml:id="hh-39" n="129,32"><label><hi rendition="#bol">Isaaks Skjebne var med Kniven lagt i Abr: Haand</hi></label> <p><ptr type="commentary" target="#hh-33" n="129,17"/>.</p></note>
-  <note type="commentary" xml:id="hh-40" n="129,33"><label><hi rendition="#bol">aarle paa Bjerget</hi></label> <p><ptr type="commentary" target="#hh-33" n="129,17"/>.</p></note>
-  <note type="commentary" xml:id="hh-41" n="129,33"><label><hi rendition="#bol">gl.</hi></label> <p>gamle.</p></note>
-  <note type="commentary" xml:id="hh-42" n="129,34"><label><hi rendition="#bol">sit eneste Haab</hi></label> <p>spiller formentlig på <rs type="bible">Rom 4,18</rs>, hvor <persName key="Paulus">Paulus</persName> skriver om <persName key="Abraham">Abraham</persName>: »Med håb imod håb troede han, at han skulle blive fader til en mængde folkeslag, som det var sagt ham: 'Så mange skal dine efterkommere blive.'« Jf. også <rs type="bible">1 Mos 17,15-21</rs>: »Gud sagde til Abraham: '<hi rendition="#ita">(...).</hi> Jeg vil velsigne hende [<persName key="Sara">Sara</persName>], og jeg vil give dig en søn med hende. Jeg vil velsigne hende, og hun skal blive til folkeslag, ja, folkekonger skal nedstamme fra hende.' Da kastede Abraham sig ned og lo, mens han tænkte: 'Mon en hundredårig kan blive far? Og mon Sara, som er halvfems år, kan få børn?' Og Abraham sagde til Gud: 'Måtte <persName key="Ismael">Ismael</persName> leve for dit ansigt!' Men Gud sagde: 'Nej, din kone Sara skal føde dig en søn, og du skal give ham navnet <persName key="Isak">Isak</persName>. Med ham vil jeg oprette min pagt som en evig pagt for hans efterkommere. Men med hensyn til Ismael bønhører jeg dig. Jeg vil velsigne ham og gøre ham uhyre frugtbar og talrig. Tolv høvdinge skal han blive far til, og jeg vil gøre ham til et stort folk. Men min pagt opretter jeg med Isak, som Sara skal føde dig næste år ved denne tid'«. Ismael var Abrahams første søn med Saras trælkvinde <persName key="Hagar">Hagar</persName>.</p></note>
-  <note type="commentary" xml:id="hh-43" n="129,34"><label><hi rendition="#bol">han tvivlede ikke</hi></label> <p>hentyder til <rs type="bible">Rom 4,20</rs>, hvor <persName key="Paulus">Paulus</persName> skriver om <persName key="Abraham">Abraham</persName>, at »han tvivlede ikke i vantro på Guds løfte«.</p></note>
-  <note type="commentary" xml:id="hh-45" n="130,1"><label><hi rendition="#bol">Udfaldet paa Historien</hi></label> <p>if. 1 Mos 22,12 bryder Guds engel ind, idet <persName key="Abraham">Abraham</persName> vil dræbe <persName key="Isak">Isak</persName>, og siger: »leg ikke din Haand paa Drengen, og giør ham intet«, og videre i v. 13: »Da opløftede Abraham sine Øine, og saae, og see, en Væder bag ham hengde i Busken ved sine Horn; og Abraham gik og tog Væderen, og ofrede den til Brænd-Offer i sin Søns Sted« (GT-1740).</p></note>
-  <note type="commentary" xml:id="hh-46" n="130,5"><label><hi rendition="#bol">Han drog hjem</hi></label> <p>jf. 1 Mos 22,19: »Saa gik <persName key="Abraham">Abraham</persName> tilbage til sine Drenge, og de giorde sig rede, og fore tilsammen til Beershaba; thi Abraham boede i Beershaba« (GT-1740).</p></note>
-  <note type="commentary" xml:id="hh-47" n="130,9"><label><hi rendition="#bol">den Vædder, der skulde frelse hans Søn</hi></label> <p><ptr type="commentary" target="#hh-45" n="130,1"/>.</p></note>
-  <note type="commentary" xml:id="hh-48" n="130,13"><label><hi rendition="#bol">den himmelske Røst fra Himlen</hi></label> <p>jf. 1 Mos 22,15-18: »Og HERRENS Engel raabte til <persName key="Abraham">Abraham</persName> anden Gang af Himmelen. Og han sagde: jeg haver soret [svoret] ved mig, siger HERREN, at fordi du giorde dette Stykke, og ikke sparede din Søn, din eeneste. Derfor vil jeg storligen velsigne dig, og meget mangfoldiggiøre din Sæd, som Stiernerne paa Himmelen, og som Sand, der er hos Havets Bredde; og din Sæd skal eie Fienders Port. Og udi din Sæd skal alle Folk paa Jorden velsignes; fordi at du lydde min Røst« (GT-1740).</p></note>
-  <note type="commentary" xml:id="hh-49" n="130,16"><label><hi rendition="#bol">Abraham sagde ... ikke, nu er jeg bleven en gl. Mand</hi></label> <p>hentyder formentlig til <rs type="bible">Rom 4,19-21</rs>, hvor <persName key="Paulus">Paulus</persName> skriver om <persName key="Abraham">Abraham</persName>: »Og uden at blive svag i troen så han, at hans krop allerede var uden livskraft – han var næsten hundrede år gammel – og at <persName key="Sara">Sara</persName>s moderliv var dødt; og han tvivlede ikke i vantro på Guds løfte, han blev tværtimod styrket i troen og gav Gud æren og var fuldt overbevist om, at det, som Gud har lovet, har han også magt til at gøre.«</p></note>
-  <note type="commentary" xml:id="hh-50" n="130,22"><label><hi rendition="#bol">min Alderdoms Trøst</hi></label> <p>dvs. Isaak.</p></note>
-  <note type="commentary" xml:id="hh-52" n="130,25"><label><hi rendition="#bol">mistvivle</hi></label> <p>nære overdreven mistro.</p></note>
-  <note type="commentary" xml:id="hh-53" n="130,35"><label><hi rendition="#bol">jeg ... raabte ... Ingen svarede ... ingen ... Beroligelse</hi></label> <p>spiller måske på <rs type="bible">Sl 22,3</rs>: »Min Gud, jeg råber om dagen, men du svarer ikke, / og om natten, men jeg finder ikke ro.« Jf. også <rs type="bible">Job 30,20</rs>.</p></note>
-  <note type="commentary" xml:id="hh-54" n="131,6"><label><hi rendition="#bol">Sophisme</hi></label> <p>spidsfindigt argument, ordkløveri.</p></note>
-  <note type="commentary" xml:id="hh-56" n="131,25"><label><hi rendition="#bol">m:T:</hi></label> <p>min Tilhører.</p></note>
-  <note type="commentary" xml:id="hh-57" n="132,14"><label><hi rendition="#bol">Guds Prøvelser ere grundede i Kjærlighed</hi></label> <p><ptr type="commentary" target="#hh-61" n="132,25"/>.</p></note>
-  <note type="commentary" xml:id="hh-58" n="132,20"><label><hi rendition="#bol">opbebier</hi></label> <p>oppebier, venter, forholder sig afventende til.</p></note>
-  <note type="commentary" xml:id="hh-59" n="132,21"><label><hi rendition="#bol">han altid er med os</hi></label> <p>hentyder måske til <rs type="bible">Matt 28,20</rs>, hvor Jesus siger: »Og se, jeg er med jer alle dage indtil verdens ende.«</p></note>
-  <note type="commentary" xml:id="hh-60" n="132,22"><label><hi rendition="#bol">den almægtige Gud</hi></label> <p><ptr type="commentary" target="#hh-36" n="129,27"/>.</p></note>
-  <note type="commentary" xml:id="hh-61" n="132,25"><label><hi rendition="#bol">opdragende</hi></label> <p>jf. <rs type="bible">Hebr 12,5-6</rs>: »Min søn, foragt ikke Herrens opdragelse, / mist ikke modet, når du irettesættes af ham; / for Herren tugter den, han elsker, / han straffer hver søn, han holder af.« Jf. også <rs type="bible">Ordsp 3,11-12</rs>.</p></note>
-  <note type="commentary" xml:id="hh-62" n="133,1"><label><hi rendition="#bol">der er ei Grund ... hver Løvte som en Skygge</hi></label> <p>citat fra <persName key="Kingo, Thomas">Thomas Kingo</persName>s salme »Ak, Herre, see / Min Hjerte-Vee«, 8. strofe, jf. nr. 221 i <hi rendition="#ita">Psalmer og aandelige Sange af Thomas Kingo,</hi> udg. af <persName key="Fenger, Peter Andreas">P.A. Fenger</persName>, <placeName key="København">Kbh</placeName>. 1827, ktl. 203, s. 491f. Salmen udkom som »Dend IV. Sang. Sorrigfuld og dog Trøstefuld« i <hi rendition="#ita">Thomas Kingos Aandelige Siunge-koors Anden Part</hi> (1681). Ortografiske afvigelser.</p></note>
-  <note type="commentary" xml:id="hh-63" n="133,17"><label><hi rendition="#bol">Du er den som ophøier og den som nedtrykker</hi></label> <p>hentyder til <rs type="bible">1 Sam 2,7</rs>: »HERREN er den, som giør fattig, og giør riig; som nedtrykker, ja og den, som ophøier« (GT-1740). Jf. også <rs type="bible">Sl 75,8</rs>.</p></note>
-  <note type="commentary" xml:id="hh-64" n="133,22"><label><hi rendition="#bol">Idræt</hi></label> <p>gerning, handling.</p></note>
-  <note type="commentary" xml:id="hh-65" n="133,22"><label><hi rendition="#bol">Haab i Verden</hi></label> <p>spiller på <rs type="bible">Ef 2,12</rs>, hvor <persName key="Paulus">Paulus</persName> skriver til efeserne: »husk, at I dengang var adskilt fra Kristus, udelukket fra borgerret i <placeName>Israel</placeName> og fremmede for forjættelsens pagter, uden håb og uden Gud i verden.«</p></note>
-  <note type="commentary" xml:id="hh-66" n="133,22"><label><hi rendition="#bol">fandt Naade for dine Øine</hi></label> <p>ofte anvendt udtryk i GT, jf. fx <rs type="bible">1 Mos 6,8</rs>; 18,3; 19,19.</p></note>
-  <note type="commentary" xml:id="hh-67" n="133,26"><label><hi rendition="#bol">dit Øie, som skuer i Løndom</hi></label> <p>spiller på <rs type="bible">Matt 6,4</rs> og 6,18, hvor udtrykket »din Fader, som seer i Løndom« (NT-1819) forekommer.</p></note>
-  <note type="commentary" xml:id="hh-68" n="133,28"><label><hi rendition="#bol">Forlængsel</hi></label> <p>inderlig længsel; spiller måske på <rs type="bible">Rom 8,19</rs>, hvor <persName key="Paulus">Paulus</persName> skriver: »Derfor venter og Skabningens Forlængsel paa Guds Børns Aabenbarelse« (NT-1819).</p></note>
-  <note type="commentary" xml:id="hh-69" n="134,2"><label><hi rendition="#bol">skal Guds Naade overskygge dig</hi></label> <p>spiller på <rs type="bible">Luk 1,35</rs>, hvor englen siger til <persName key="Maria">Maria</persName>: »Helligånden skal komme over dig, og den Højestes kraft skal overskygge dig.«</p></note>
-  <note type="commentary" xml:id="hh-70" n="134,6"><label><hi rendition="#bol">han alle Tings almægtige Skaber</hi></label> <p>jf. <hi rendition="#ita">Balles Lærebog</hi> (<ptr type="commentary" target="#hh-36" n="129,27"/>), kap. 2, »Om Guds Gierninger«, afsnit 1, § 1: »<hi rendition="#ita">Gud haver fra Begyndelsen skabt Himmel og Jord af intet,</hi> ved din egen almægtige Kraft alene, til Gavn og Glæde for alle sine levende Skabninger«, s. 17.</p></note>
-  <note type="commentary" xml:id="hh-71" n="134,7"><label><hi rendition="#bol">Alles fælleds Fader</hi></label> <p>jf. forklaringen til indledningen i Fadervor: »Fader vor, du som er i Himlene. / Det er: Gud indbyder os kjerligen med denne liden Fortale, at vi skulle sandeligen troe, at han er vor rette Fader, og vi ere hans rette Børn«, <hi rendition="#ita">Doct. Morten Luthers liden (eller mindre) Catechismus,</hi> <placeName key="København">Kbh</placeName>. u.å. [o. 1820].</p></note>
-  <note type="commentary" xml:id="hh-72" n="134,21"><label><hi rendition="#bol">ham, der sørger for Alle</hi></label> <p>jf. <hi rendition="#ita">Balles Lærebog</hi> (<ptr type="commentary" target="#hh-36" n="129,27"/>), kap. 2, »Om Guds Gierninger«, afsnit 2, § 2.a: »<hi rendition="#ita">Gud sørger for alle sine Skabninger, de mindste med de største,</hi> og skaffer dem alle det fornødne til deres Ophold, samt vogter og beskiermer dem«, s. 22.</p></note>
-  <note type="commentary" xml:id="hh-73" n="134,22"><label><hi rendition="#bol">mægtig i den Svage</hi></label> <p><ptr type="commentary" target="#hh-17" n="125m,2"/>.</p></note>
-  <note type="commentary" xml:id="hh-74" n="134,33"><label><hi rendition="#bol">Skriften siger ... al Faderlighed har Navn ... paa Jorden</hi></label> <p>sigter til <rs type="bible">Ef 3,14-15</rs>, hvor <persName key="Paulus">Paulus</persName> skriver: »For denne Sags Skyld bøier jeg mine Knæe for vor Herres Jesu Christi Fader, af hvem al Faderlighed kaldes i Himlene og paa Jorden« (NT-1819).</p></note>
-  <note type="commentary" xml:id="hh-75" n="135,4"><label><hi rendition="#bol">en Skygge</hi></label> <p>spiller formentlig på udtrykket, 'kun en skygge af det, som skal komme', i <rs type="bible">Kol 2,17</rs>; jf. også <rs type="bible">Hebr 8,5</rs>; 10,1.</p></note>
-  <note type="commentary" xml:id="hh-76" n="135,4"><label><hi rendition="#bol">en Afglands, et Billede</hi></label> <p>spiller formentlig på <rs type="bible">1 Kor 11,7</rs>, hvor <persName key="Paulus">Paulus</persName> siger, at manden er »Guds billede og afglans«.</p></note>
-  <note type="commentary" xml:id="hh-77" n="135,5"><label><hi rendition="#bol">en mørk Tale</hi></label> <p>spiller på <rs type="bible">1 Kor 13,12</rs>, hvor <persName key="Paulus">Paulus</persName> skriver: »Thi nu see vi ved et Speil, i en mørk Tale, men da skulle vi see Ansigt til Ansigt« (NT-1819).</p></note>
-  <note type="commentary" xml:id="hh-78" n="135,5"><label><hi rendition="#bol">den Faderlighed ... al Fad. ... paa J.</hi></label> <p><ptr type="commentary" target="#hh-74" n="134,33"/>. – <hi rendition="#bol">Fad.:</hi> Faderlighed. – <hi rendition="#bol">J.:</hi> Jorden.</p></note>
-  <note type="commentary" xml:id="hh-79" n="135,6"><label><hi rendition="#bol">m: T:</hi></label> <p>min Tilhører.</p></note>
-  <note type="commentary" xml:id="hh-80" n="135,11"><label><hi rendition="#bol">Ev: om Nicodemus</hi></label> <p><rs type="bible">Joh 3,1-15</rs>, som er evangeliet til trinitatis søndag, jf. <hi rendition="#ita">Forordnet Alter-Bog for Danmark,</hi> <placeName key="København">Kbh</placeName>. 1830 [1688], ktl. 381 (forkortet <hi rendition="#ita">Forordnet Alter-Bog</hi>), s. 104-106: »Men der var en Mand af Pharisæerne, han hedde Nicodemus, en Øverste iblandt Jøderne. 2. Han kom til Jesum om Natten, og sagde til ham: Mester! vi vide, at du er en Lærer kommen fra Gud; thi Ingen kan giøre de Tegn, som du giør, uden Gud er med ham. 3. JEsus svarede, og sagde til ham: sandelig, sandelig siger jeg dig: uden Nogen bliver fød paa ny, kan han ikke see Guds Rige. 4. Nicodemus siger til ham: hvorledes kan et Menneske fødes, naar han er gammel? Mon han kan anden Gang komme ind i sin Moders Liv, og fødes? 5. JEsus svarede: sandelig, sandelig siger jeg dig: uden Nogen bliver fød af Vand og Aand, kan han ikke indkomme i Guds Rige. 6. Hvad som fød er af Kiødet, er Kiød; og hvad som fød er af Aanden, er Aand. 7. Forundre dig ikke, at jeg sagde til dig: det bør Eder at fødes paa ny. 8. Veiret blæser, hvorhen det vil, og du hører dets Susen, men du veed ikke, hvorfra det kommer, og hvor det farer hen; saaledes er det med Hver, som er fød af Aanden. 9 Nicodemus svarede, og sagde til ham: hvorledes kan dette skee? 10. JEsus svarede og sagde til ham: er du en <placeName>Israel</placeName>s Lærer, og veed ikke dette? 11. Sandelig, sandelig siger jeg dig: vi tale det, vi vide, og vidne det, vi have seet; og I annamme ikke vort Vidnesbyrd. 12. Dersom jeg siger Eder de jordiske Ting, og I ikke troe; hvorledes skulde I troe, om jeg sagde Eder de himmelske? 13. Og Ingen farer op til Himmelen uden den, som foer ned af Himmelen, Menneskens Søn, som er i Himmelen. 14. Og ligesom <persName key="Moses">Moses</persName> ophøiede Slangen i Ørken, saa bør det Menneskens Søn at ophøies: 15 paa det at hver den, som troer paa ham, ikke skal fortabes, men have et evigt liv.« – <hi rendition="#bol">Nicodemus:</hi> <persName key="Nikodemus">Nikodemus</persName>, farisæer, medlem af det jødiske råd, Synedriet, lærer; forsvarer Jesus over for farisæernes angreb, <rs type="bible">Joh 7,50-52</rs>; sørger sammen med <persName key="Josef af Arimatæa">Josef af Aritmatæa</persName> for Jesu gravlæggelse, <rs type="bible">Joh 19,38-42</rs>.</p></note>
-  <note type="commentary" xml:id="hh-81" n="135,19"><label><hi rendition="#bol">Besøgelsens Time</hi></label> <p>spiller på <rs type="bible">Luk 19,44</rs>, hvor Jesus forudsiger <placeName>Jerusalem</placeName>s ødelæggelse, fordi den ikke kendte sin »Besøgelses Tid« (NT-1819).</p></note>
-  <note type="commentary" xml:id="hh-82" n="135,25"><label><hi rendition="#bol">Du ikke vil lade Dig uden Vidnedsbyrd</hi></label> <p>spiller på <rs type="bible">ApG 14,17</rs>, hvor <persName key="Paulus">Paulus</persName> siger om Gud, at »han haver ikke ladet sig selv uden Vidnesbyrd, i det han giorde os godt, og gav os Regn og frugtbare Tider af Himmelen, i det han fyldte os med Føde, og vore Hierter med Glæde« (NT-1819).</p></note>
-  <note type="commentary" xml:id="hh-83" n="135,26"><label><hi rendition="#bol">en Kilde</hi></label> <p>spiller formentlig på <rs type="bible">Joh 4,14</rs>, hvor Jesus siger til den samaritanske kvinde: »Men hvo som drikker af det Vand, som jeg vil give ham, skal til evig Tiid ikke tørste; men det Vand, som jeg vil give ham, skal blive i ham en Kilde af Vand, som opvælder til et evigt Liv« (NT-1819).</p></note>
-  <note type="commentary" xml:id="hh-85" n="135,28"><label><hi rendition="#bol">Vi formaae ikke at bestemme Tid og Sted</hi></label> <p>spiller formentlig på <rs type="bible">ApG 1,7</rs>, hvor Jesus siger til disciplene: »Det er ikke jeres sag at kende tider og timer, som Faderen har fastsat af egen magt.« Jf. også fx <rs type="bible">Matt 24,36</rs>; 25,13 og <rs type="bible">1 Thess 5,1</rs>.</p></note>
-  <note type="commentary" xml:id="hh-84" n="135,30"><label><hi rendition="#bol">det beleilige Øieblik</hi></label> <p>spiller på <rs type="bible">Ef 5,16</rs>, hvor <persName key="Paulus">Paulus</persName> skriver til efeserne: »kiøber den beleilige Tiid, fordi Dagene ere onde« (NT-1819).</p></note>
-  <note type="commentary" xml:id="hh-86" n="135,34"><label><hi rendition="#bol">en uudtømmelig aandelig Skat</hi></label> <p>spiller på <rs type="bible">Luk 12,33</rs>, hvor Jesus siger til disciplene: »Skaf jer punge, som ikke slides op, en uudtømmelig skat i himlene, hvor ingen tyv kommer, og intet møl ødelægger.«</p></note>
-  <note type="commentary" xml:id="hh-5000" n="136,2"><label><hi rendition="#bol">forsøge sig i Alt</hi></label> <p>spiller måske på <rs type="bible">1 Thess 5,21</rs>: »Prøv alt, hold fast ved det gode.«</p></note>
-  <note type="commentary" xml:id="hh-87" n="136,12"><label><hi rendition="#bol">ungdl.</hi></label> <p>ungdommelige.</p></note>
-  <note type="commentary" xml:id="hh-140" n="136,21"><label><hi rendition="#bol">udv:</hi></label> <p>udvortes.</p></note>
-  <note type="commentary" xml:id="hh-88" n="136,21"><label><hi rendition="#bol">vidste Time og Klokkeslet</hi></label> <p><ptr type="commentary" target="#hh-85" n="135,28"/>.</p></note>
-  <note type="commentary" xml:id="hh-89" n="136,37"><label><hi rendition="#bol">Aandens Virksomhed ... hvor den farer hen</hi></label> <p>jf. <rs type="bible">Joh 3,8</rs> (<ptr type="commentary" target="#hh-80" n="135,11"/>).</p></note>
-  <note type="commentary" xml:id="hh-90" n="137,1"><label><hi rendition="#bol">Herrens Huus</hi></label> <p>i GT fast udtryk for templet, i NT for kirken, jf. <rs type="bible">1 Tim 3,15</rs>, hvor der tales om at »færdes i Guds hus – det er den levende Guds kirke«.</p></note>
-  <note type="commentary" xml:id="hh-91" n="137,2"><label><hi rendition="#bol">hans Tempel</hi></label> <p>her udtryk for Guds kirke (se foregående kommentar).</p></note>
-  <note type="commentary" xml:id="hh-92" n="137,16"><label><hi rendition="#bol">vi Intet formaae uden Gud, men Alt, naar Gud er med os</hi></label> <p>spiller formentlig på <rs type="bible">Fil 4,13</rs>, hvor <persName key="Paulus">Paulus</persName> skriver: »Alt formår jeg i ham [Gud], der giver mig kraft.«</p></note>
-  <note type="commentary" xml:id="hh-93" n="137,20"><label><hi rendition="#bol">en Styrelse</hi></label> <p><ptr type="commentary" target="#hh-36" n="129,27"/>.</p></note>
-  <note type="commentary" xml:id="hh-94" n="137,24"><label><hi rendition="#bol">være vaagne <hi rendition="#ita">(...)</hi> ikke indslumrede</hi></label> <p>hentyder til beretningen om Jesus i <placeName key="Getsemane">Getsemane Have</placeName>, <rs type="bible">Matt 26,36-46</rs>, hvor det fortælles, at disciplene faldt i søvn, mens Jesus tre gange efterlod dem for at bede; da han første gang kom tilbage og fandt dem sovende, sagde han til dem: »Så kunne I da ikke våge blot en time sammen med mig? Våg, og bed om ikke at falde i fristelse. Ånden er rede, men kødet er skrøbeligt«, v. 40-41.</p></note>
-  <note type="commentary" xml:id="hh-95" n="137,34"><label><hi rendition="#bol">Gud skal gjøre Fristelsen ... saa vi det kunne bære</hi></label> <p>jf. <rs type="bible">1 Kor 10,13</rs>: »Eder er ingen Fristelse paakommen, uden menneskelig; men Gud er trofast, som skal ikke lade Eder fristes over Eders Formue, men skal giøre baade Fristelsen og dens Udgang saaledes, at I det kunne taale« (NT-1819).</p></note>
-  <note type="commentary" xml:id="hh-96" n="137,35"><label><hi rendition="#bol">m: T:</hi></label> <p>min Tilhører.</p></note>
-  <note type="commentary" xml:id="hh-97" n="137,35"><label><hi rendition="#bol">forsøgt</hi></label> <p>prøvet, fristet.</p></note>
-  <note type="commentary" xml:id="hh-98" n="138,1"><label><hi rendition="#bol">streed maaskee ofte den gode Strid</hi></label> <p>hentyder til <rs type="bible">2 Tim 4,7</rs>, hvor <persName key="Paulus">Paulus</persName> skriver: »Jeg har stridt den gode strid, fuldført løbet og bevaret troen.«</p></note>
-  <note type="commentary" xml:id="hh-99" n="138,7"><label><hi rendition="#bol">vinker</hi></label> <p>lokker, frister.</p></note>
-  <note type="commentary" xml:id="hh-100" n="138,12"><label><hi rendition="#bol">ædru og vaagen</hi></label> <p>spiller på <rs type="bible">1 Thess 5,6</rs>, hvor <persName key="Paulus">Paulus</persName> skriver: »Så skal vi da ikke sove som de andre, men være vågne og ædru.«</p></note>
-  <note type="commentary" xml:id="hh-101" n="138,13"><label><hi rendition="#bol">Menighedens Forhold til Χstus ... Brudens til Brudg.</hi></label> <p>Et tilsvarende billede anvendes i <persName key="Johannes">Johannes</persName>' Åbenbaring, jf <rs type="bible">Åb 21,2</rs>: »Og den hellige by, det ny <placeName>Jerusalem</placeName>, så jeg [Johannes] komme ned fra himlen fra Gud, rede som en brud, der er smykket for sin brudgom.« Billedet har senere fundet vid anvendelse i prædikener, opbyggelseslitteratur (ikke mindst i mystikken og i pietismen) og salmer.</p></note>
-  <note type="commentary" xml:id="hh-102" n="138,19"><label><hi rendition="#bol">leie</hi></label> <p>fejl for 'lege'.</p></note>
-  <note type="commentary" xml:id="hh-103" n="138,24"><label><hi rendition="#bol">hele Livet jo er Forlovelsens Tid</hi></label> <p>hentyder til den forestilling i mystikken og pietismen, at den troende i livet på jorden er forlovet med Kristus og ved døden vil blive hentet som bruden af sin brudgom for at indgå i det evige liv i himlen.</p></note>
-  <note type="commentary" xml:id="hh-104" n="138,24"><label><hi rendition="#bol">Graven er Brudekamret</hi></label> <p>hentyder til den forestilling i mystikken og pietismen, at graven er det brudekammer, hvor den troende som bruden møder Kristus som brudgommen, for at de kan forenes i himlen.</p></note>
-  <note type="commentary" xml:id="hh-105" n="139,6"><label><hi rendition="#bol">afarbeide</hi></label> <p>arbejde (en gæld) af.</p></note>
-  <note type="commentary" xml:id="hh-106" n="139,16"><label><hi rendition="#bol">forklaret</hi></label> <p>afklaret; forvandlet.</p></note>
-  <note type="commentary" xml:id="hh-107" n="139,18"><label><hi rendition="#bol">Gud ... har i Χsto forligt sig med Verden</hi></label> <p>jf. fx <rs type="bible">2 Kor 5,18-19</rs>: »Men alt dette skyldes Gud, som forligte os med sig selv ved Kristus og gav os forligelsens tjeneste, for det var Gud, der i Kristus forligte verden med sig selv og ikke tilregnede dem deres overtrædelser, men betroede os ordet om forligelsen.«</p></note>
-  <note type="commentary" xml:id="hh-108" n="139,27"><label><hi rendition="#bol">blyfærdig</hi></label> <p>blufærdig, bly.</p></note>
-  <note type="commentary" xml:id="hh-109" n="139,29"><label><hi rendition="#bol">den venstre Haand ... hvad den høier gjør</hi></label> <p>jf. <rs type="bible">Matt 6,3</rs>, hvor Jesus siger: »Når du giver almisse, må din venstre hånd ikke vide, hvad din højre gør«.</p></note>
-  <note type="commentary" xml:id="hh-110" n="140,5"><label><hi rendition="#bol">uudsigelige Taler</hi></label> <p>spiller måske på <rs type="bible">2 Kor 12,4</rs>, hvor <persName key="Paulus">Paulus</persName> fortæller om et menneske – formentlig ham selv, »at det blev rykket bort til <placeName>Paradis</placeName> og hørte uudsigelige Ord, som et menneske ikke må udtale«.</p></note>
-  <note type="commentary" xml:id="hh-111" n="140,5"><label><hi rendition="#bol">herovenfra</hi></label> <p>fra himlen.</p></note>
-  <note type="commentary" xml:id="hh-112" n="140,8"><label><hi rendition="#bol">lær Du os at bede rettelig</hi></label> <p>spiller på <rs type="bible">Luk 11,1</rs>, hvor en af disciplene, inden Jesus lærer dem 'Fadervor', beder ham: »Herre, lær os at bede, ligesom Johannes lærte sine disciple det.«</p></note>
-  <note type="commentary" xml:id="hh-113" n="140,12"><label><hi rendition="#bol">tjene til dens Fred</hi></label> <p>spiller på <rs type="bible">Luk 19,42</rs>, hvor Jesus siger til <placeName>Jerusalem</placeName>: »Vidste blot også du på denne dag, hvad der tjener til din fred.«</p></note>
-  <note type="commentary" xml:id="hh-114" n="140,16"><label><hi rendition="#bol">overvundet Verden</hi></label> <p>spiller på <rs type="bible">1 Joh 5,4-5</rs>: »For alt, hvad der er født af Gud, overvinder verden; og den sejr, som har overvundet verden, er vor tro. Og hvem andre kan overvinde verden end den, som tror, at Jesus er Guds søn?«</p></note>
-  <note type="commentary" xml:id="hh-115" n="140,17"><label><hi rendition="#bol">Χstus sidder jo ikke altid ved Faderens høire Haand</hi></label> <p>Om Kristi sæde ved Guds højre hånd, jf. fx <rs type="bible">Mark 16,19</rs>; <rs type="bible">Luk 22,69</rs>; <rs type="bible">Ef 1,20</rs>; <rs type="bible">Kol 3,1</rs>; <rs type="bible">Hebr 10,12</rs> samt 2. art. i Den apostolske Trosbekendelse: »siddende ved Gud Faders, den almægtiges, højre hånd«.</p></note>
-  <note type="commentary" xml:id="hh-116" n="140,19"><label><hi rendition="#bol">Stephanus saae ham staaende ved Faderens Høire</hi></label> <p>hentyder til beretningen om <persName key="Stefanus">Stefanus</persName>' stening, <rs type="bible">ApG 7,54-60</rs>, hvor det forælles: »Men fuld af Helligånden stirrede Stefanus mod himlene, og han så Guds herlighed og Jesus stående ved Guds højre side. Og han sagde: 'Nu ser jeg himlen åben og Menneskesønnen stå ved Guds højre side'«, v. 55-56. – <hi rendition="#bol">Stephanus:</hi> den mest fremtrædende blandt de syv fattigforstandere, som blev indsat for at varetage 'tjenesten ved bordene', jf. <rs type="bible">ApG 6,1-6</rs>; forkynder af evangeliet på linie med apostlene; bringes for det jødiske råd, Synedriet, anklaget for at have talt imod templet og Moseloven, holder her en forsvarstale, <rs type="bible">ApG 7,2-53</rs>, men bliver slæbt uden for byen og stenet.</p></note>
-  <note type="commentary" xml:id="hh-117" n="140,21"><label><hi rendition="#bol">Ev: om Nicodemus</hi></label> <p><rs type="bible">Joh 3,1-15</rs> (<ptr type="commentary" target="#hh-80" n="135,11"/>).</p></note>
-  <note type="commentary" xml:id="hh-118" n="140,22"><label><hi rendition="#bol">Om det at ville gjøre Erfaring</hi></label> <p>se <ref target="../HH/txt.xml#n19" type="journalsAndPapers" n="19">HH:19</ref>. Jf. <ref target="../HH/txr.xml#ss183" type="textCriticalAccount" n="183">tekstredegørelsen, s. 183</ref>.</p></note>
-  <note type="commentary" xml:id="hh-5001" n="140,26"><label><hi rendition="#bol">Ogsaa denne Andagtens Time ... Din Sorg</hi></label> <p>se <ref target="../HH/txt.xml#n19" type="journalsAndPapers" n="19">HH:19</ref>. Jf. <ref target="../HH/txr.xml#ss183" type="textCriticalAccount" n="183">tekstredegørelsen, s. 183</ref>.</p></note>
-  <note type="commentary" xml:id="hh-119" n="140,30"><label><hi rendition="#bol">hvo kjender Aandens Virksomhed ... farer hen</hi></label> <p>jf. <rs type="bible">Joh 3,8</rs> (<ptr type="commentary" target="#hh-80" n="135,11"/> og <ptr type="commentary" target="#hh-89" n="136,37"/>).</p></note>
-  <note type="commentary" xml:id="hh-120" n="141,3"><label><hi rendition="#bol">Herrens Huus</hi></label> <p><ptr type="commentary" target="#hh-90" n="137,1"/>.</p></note>
-  <note type="commentary" xml:id="hh-121" n="141,3"><label><hi rendition="#bol">Tempel</hi></label> <p><ptr type="commentary" target="#hh-91" n="137,2"/>.</p></note>
-  <note type="commentary" xml:id="hh-122" n="141,7"><label><hi rendition="#bol">.... Og naar da Fristelserne ... med Gud formaae Alt</hi></label> <p>se <ref target="../HH/txt.xml#n19" type="journalsAndPapers" n="19">HH:19</ref>. Jf. <ref target="../HH/txr.xml#ss183" type="textCriticalAccount" n="183">tekstredegørelsen, s. 183</ref>.</p></note>
-  <note type="commentary" xml:id="hh-123" n="141,17"><label><hi rendition="#bol">vi vide, at vi Intet formaae uden Gud </hi><hi rendition="#ita">(...)</hi> <hi rendition="#bol">vi med Gud formaae Alt</hi></label> <p><ptr type="commentary" target="#hh-92" n="137,16"/>.</p></note>
-  <note type="commentary" xml:id="hh-124" n="141m,1"><label><hi rendition="#bol">at vi ikke indslumre ... Tillid til Gud</hi></label> <p>se <ref target="../HH/txt.xml#n19" type="journalsAndPapers" n="19">HH:19</ref>. Jf. <ref target="../HH/txr.xml#ss183" type="textCriticalAccount" n="183">tekstredegørelsen, s. 183</ref>.</p></note>
-  <note type="commentary" xml:id="hh-125" n="141,21"><label><hi rendition="#bol">Samfund med Χstus</hi></label> <p>fællesskab med Kristus; udtrykket forekommer et par gange i NT, jf. <rs type="bible">1 Kor 1,9</rs> og <rs type="bible">1 Joh 1,6</rs> (NT-1819).</p></note>
-  <note type="commentary" xml:id="hh-126" n="141,22"><label><hi rendition="#bol">Homilie</hi></label> <p>gr. samvær, samtale; i oldkirken praktisk formaningstale efter de troendes samtale om et oplæst skriftsted ved gudstjenestens slutning, herefter en udarbejdet tale holdt i menigheden af dem, der besad prædikeembedet, derpå prædiken af præsten i kirken (modsat den missionerende forkyndelse for ikke-troende).</p></note>
-  <note type="commentary" xml:id="hh-127" n="141,23"><label><hi rendition="#bol">Rom: »hverken Engle, Djævle, ...</hi></label> <p>sigter til <rs type="bible">Rom 8,38-39</rs>, hvor <persName key="Paulus">Paulus</persName> skriver: »Thi jeg er vis paa, at hverken Død, ei heller Liv, ei heller Engle, ei heller Fyrstendømmer, ei heller Magter, ei heller det Nærværende, ei heller det Tilkommende, ei heller det Høie, ei heller det Dybe, ei heller nogen anden Skabning skal kunne Skille os fra Guds Kierlighed i Christo Jesu vor Herre« (NT-1819).</p></note>
-  <note type="commentary" xml:id="hh-128" n="141,24"><label><hi rendition="#bol">Engle (Gal. 1., 8.</hi></label> <p>»Men dersom endog vi, eller en Engel af Himmelen prædiker Eder Evangelium anderledes, end vi have prædiket Eder det, han være en Forbandelse« (NT-1819).</p></note>
-  <note type="commentary" xml:id="hh-129" n="141,25"><label><hi rendition="#bol">Djævle (Eph.)</hi></label> <p>hentyder til <rs type="bible">Ef 6,11</rs>: »Ifører Guds fulde Rustning, at I kunne være mægtige til at staae imod Diævelens snedige Anløb« (NT-1819).</p></note>
-  <note type="commentary" xml:id="hh-130" n="141,26"><label><hi rendition="#bol">Nærv:</hi></label> <p>(det) Nærværende (<ptr type="commentary" target="#hh-127" n="141,23"/>).</p></note>
-  <note type="commentary" xml:id="hh-131" n="141,27"><label><hi rendition="#bol">Tilkomd.</hi></label> <p>(det) Tilkommende (<ptr type="commentary" target="#hh-127" n="141,23"/>).</p></note>
-  <note type="commentary" xml:id="hh-132" n="141,30"><label><hi rendition="#bol">Paulus</hi></label> <p>fra <placeName>Tarsus</placeName>, opfattede sig selv som apostel, jf. fx <rs type="bible">Rom 1,1-2</rs>, hvor han skriver: »Fra <persName key="Paulus">Paulus</persName>, Kristi Jesu tjener, kaldet til apostel, udset til at forkynde det evangelium, som Gud forud har lovet ved sine profeter i De hellige Skrifter«. Forfatter af de 13 første breve i NT.</p></note>
-  <note type="commentary" xml:id="hh-133" n="141,31"><label><hi rendition="#bol">Herrens Apostel</hi></label> <p>se foregående kommentar.</p></note>
-  <note type="commentary" xml:id="hh-134" n="142,1"><label><hi rendition="#bol">Menigheden som Χsti Brud</hi></label> <p><ptr type="commentary" target="#hh-101" n="138,13"/>.</p></note>
-  <note type="commentary" xml:id="hh-135" n="142,2"><label><hi rendition="#bol">det Evangelium om en Konge ... sin Søns Bryllup</hi></label> <p>sigter til <rs type="bible">Matt 22,1-14</rs>, der er evangeliet til 20. søndag efter trinitatis, jf. <hi rendition="#ita">Forordnet Alter-Bog</hi> (<ptr type="commentary" target="#hh-80" n="135,11"/>), s. 160f.: »Og JEsus svarede, og talede atter ved Lignelser til dem, og sagde: 2. Himmeriges Rige lignes ved en Konge, som giorde sin Søns Bryllup. 3. Og han udsendte sine Tienere, at kalde de Budne til Bryllup; men de vilde ikke komme. 4. Han udsendte atter andre Tienere, og sagde: siger de Budne: see, jeg haver beredt mit Maaltid, mine Øxen og det fede Qvæg er slagtet, og Alting er rede; kommer til Bryllup. 5. Men de foragtede det, og gik hen, den Ene paa sin Ager, den Anden til sit Kiøbmandskab. 6. Andre grebe hans Tienere, forhaanede og ihjelsloge dem. 7. Men der Kongen det hørte, blev han vred, og skikkede sine Hære ud, og ødelagde disse Manddrabere, og satte Ild paa deres Stad. 8. Da sagde han til sine Tienere: Brylluppet er vel beredt, men de Budne vare det ikke værd. 9. Gaaer derfor ud paa Veiskiellene, og byder til Bryllup saa Mange, som I finde. 10. Og de Tienere gik ud paa Veien, og samlede alle dem, de fandt, baade onde og gode; og Bryllups-Huset blev fuldt af Giester. 11. Da gik Kongen ind, at besee Giesterne; og han saae der et Menneske, som ikke var iført Bryllups-Klædningen. 12. Og han sagde til ham: Ven! hvorledes er du kommen hid ind, og haver ikke Bryllups-Klædningen paa? Men han taug. 13. Da sagde Kongen til Tienerne: binder Hænder og Fødder paa ham, og kaster ham ud i det yderste Mørke; der skal være Graad og Tænders Gnidsel. 14. Thi Mange ere kaldede, men Faa udvalgte.«</p></note>
-  <note type="commentary" xml:id="hh-136" n="142,9"><label><hi rendition="#bol">Han lærte af hvad han leed</hi></label> <p>hentyder til <rs type="bible">Hebr 5,8</rs>, hvor det hedder om Kristus: »Skønt han var søn, måtte han lære lydighed af det, han led«.</p></note>
-  <note type="commentary" xml:id="hh-137" n="142,10"><label><hi rendition="#bol">hvis nogen skulde have været fritaget ... vel ham</hi></label> <p>hentyder måske til <rs type="bible">Matt 26,39</rs>, hvor Jesus beder: »Min fader, hvis det er muligt, så lad dette bæger gå mig forbi. Dog, ikke som jeg vil, men som du vil.«</p></note>
-  <note type="commentary" xml:id="hh-138" n="142,12"><label><hi rendition="#bol">vidste Alt</hi></label> <p>jf. fx <rs type="bible">Joh 18,4</rs>: »Jesus, som vidste alt, hvad der skulle ske med ham«.</p></note>
- </div></body></text>
-
+  <text xml:id="id070ac875-b458-4d53-bb2d-4b48281f5f84" type="commentary" subtype="jp">
+    <body xml:id="idd6607ee5-0649-4e99-9bd9-bff2dc8636b8">
+      <div xml:id="id761b1d8d-8943-4087-88b2-ddbba947807d">
+        <note type="commentary" xml:id="hh-1" n="125,1">
+          <label xml:id="id82fcbb1f-699b-4fc6-b1d2-15a1494b4ae6">
+            <hi xml:id="idbbea8f5a-81f7-4843-8b69-3af2c9460733" rendition="#bol">d. 14 Juni 1840</hi>
+          </label>
+          <p xml:id="idcf835c0d-5315-4ac5-9695-10d9106df073">trinitatis søndag; evangelieteksten var <rs xml:id="id89cd7aa0-e446-42a0-9f72-d45838850a17" type="bible">Joh 3,1-15</rs>, Jesu natlige samtale med farisæeren <persName xml:id="id265fe472-bc9c-4136-942e-99f86e704da1" key="Nikodemus">Nikodemus</persName>, hvor Jesus bl.a. siger: »Den, der ikke bliver født på ny, kan ikke se Guds rige« (v. 3); og: »I må fødes på ny« (v. 7), <ptr xml:id="idbaf931ea-1e26-464b-b040-c2477fe19e81" type="commentary" target="#hh-80" n="135,11"/>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-2" n="125,2">
+          <label xml:id="id23f2f414-b363-4420-ada3-d0feaf07abbf">
+            <hi xml:id="id81182522-3f31-4a12-acc4-e673a9c89f35" rendition="#bol">Alt er Nyt i Christo</hi>
+          </label>
+          <p xml:id="idf48a8751-46ed-4b17-a969-f580d0d9f409">hentyder til <rs xml:id="id721c11c9-291a-4b65-a16a-9f24347e7671" type="bible">2 Kor 5,17</rs>: »Saa at, dersom Nogen er i Christo, da er han en ny Skabning: det Gamle er forbiganget, see, Alt er blevet nyt« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hh-5" n="125,11">
+          <label xml:id="id0471e5db-73c2-4b9b-8d9b-ae8b935d58bb">
+            <hi xml:id="ide58c2a4c-7ebe-4b13-b4a1-14d7d4f5d140" rendition="#bol">en ny Lap paa et gammelt Klædebon</hi>
+          </label>
+          <p xml:id="id10a611de-b645-4e26-a76d-e2307ff17dfb">spiller på <rs xml:id="id055bb9d6-a8e1-4b8d-a51d-d437d3c1ddef" type="bible">Matt 9,16</rs>: »Ingen sætter en Klud af nyt Klæde paa et gammelt Klædebon, thi Kluden river Noget fra Klædebonnet, og Hullet bliver værre« (NT-1819). <persName xml:id="id744bbaa4-6dab-4932-857d-203759585c23" key="Luther, Martin">Luther</persName> gengiver verset således: »Niemand flickt ein altes Kleid mit einem Lappen von neuem Tuch; denn der Lappe reißt doch wieder vom Kleide, und der Riß wird ärger«, jf. <hi xml:id="id62ba65bf-413c-4093-bd76-817fd1680ac5" rendition="#ita">Die Bibel oder die ganze heilige Schrift nach der deutschen Übersetzung Dr. Martin Luthers mit einer Vorrede vom Dr. Hüffel,</hi> <placeName xml:id="idfc03bf05-82b6-46b5-8e23-c2b5b63de1a3" key="Karlsruhe">Carlsruhe</placeName> og <placeName xml:id="id677d119e-6f15-436c-ab49-c591474f3ba1">Leipzig</placeName> 1836, ktl. 3.</p>
+        </note>
+        <note type="commentary" xml:id="hh-6" n="125,12">
+          <label xml:id="ida26ad445-8fa7-4d1e-b509-b7b6740c6bdb">
+            <hi xml:id="id93608587-676b-405b-8f4b-c33afe79a36f" rendition="#bol">Foryngelses-Drik</hi>
+          </label>
+          <p xml:id="id94ae7369-0f25-48ec-aa21-9f85fdae0925">hentyder til den trylledrik, som <persName xml:id="id39549dad-4df4-45e7-abc7-eda07cbc6f3a" key="Faust">Faust</persName> får, umiddelbart før han møder <persName xml:id="id7234f782-129c-4c94-9ec1-e36c3adafafd" key="Gretchen">Margarete</persName>, og som skal give ham ungdommelig drift, jf. scenen i heksekøkkenet, i <persName xml:id="idc4aaa1ce-9c00-4645-8983-1fe0f35867b6" key="Goethe, Johann Wolfgang von">Goethe</persName>s <hi xml:id="id63c29a90-a4e7-449a-850a-cad0210f9bae" rendition="#ita">Faust. Eine Tragödie,</hi> i <hi xml:id="idf7cc0d31-86c9-4ee3-9c57-7ab1e5456cf4" rendition="#ita">Goethe's Werke. Vollständige Ausgabe letzter Hand</hi> bd. 1-60, <placeName xml:id="idb63d1bb8-1e19-49e8-8ace-9c70c0778b27">Stuttgart</placeName> og <placeName xml:id="id940aa0a6-cfd3-4cc8-97c6-51ded2dc8231">Tübingen</placeName> 1828-42 (ktl. 1641-1668, bd. 1-55, 1828-33); bd. 12, 1828, s. 128-132. – Måske polemisk vendt mod <persName xml:id="idc9b1e962-335d-43db-894b-4b8fda24e2a9" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s afhandling »En logisk Bemærkning i Anledning af H. H. Hr. Biskop Dr. <hi xml:id="id01090756-3901-4f36-b527-1e93422e12fd" rendition="#ita">Mynsters</hi> Afhandling om Rationalisme og Supranaturalisme, i forrige Hefter af dette Tidsskrift« i <hi xml:id="idfb7d917d-fe38-47b1-801f-c0e320555382" rendition="#ita">Tidsskrift for Litteratur og Kritik,</hi> udg. <persName xml:id="id6bd1c979-0f6e-400d-8551-82d504a9d4ce" key="Petersen, Frederik Christian">F.C. Petersen</persName>, bd. 1, <placeName xml:id="id2cb93d4f-a37e-40e5-a7de-9b35cc1efc02" key="København">Kbh</placeName>. 1839, s. 441-456; jf. fx s. 455f.: »saaledes har <persName xml:id="idb2d45226-5c8f-4773-9e59-69eef5ee2759" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName> bragt Philosophien til det Punkt, hvor en pludselig Omskiftning af Standpunkter, der blot kunne naaes ved et Spring, ikke længere vil finde Sted, men alt Nyt vil fremkomme ved constitutionnel Udvikling af det Bestaaende, altsaa kun forsaavidt dette holdes i Ære. <hi xml:id="idb3973cab-b799-4e38-9fe3-a1066c0b31a0" rendition="#ita">(...)</hi> Saaledes er da Philosophiens constitutionnelle Form tilveiebragt og denne bærer selv Kilden til sin Foryngelse i sig.«</p>
+        </note>
+        <note type="commentary" xml:id="hh-7" n="125,13">
+          <label xml:id="id7f135744-4ea0-4e47-8696-789061a7e884">
+            <hi xml:id="ida4a79dcf-8c1c-4a5e-b4d4-7958778718fe" rendition="#bol">Det comparative Standpunkt ... Intet er Nyt under Solen</hi>
+          </label>
+          <p xml:id="id02fdff78-45f8-46f9-8022-3697ed63d2c4">jf. fx <persName xml:id="idb42902f4-3f09-4fa3-813b-855e752b9c05" key="Mynster, Jakob Peter">J.P. Mynster</persName>s afhandling »Rationalisme. Supranaturalisme« i <hi xml:id="id8127c458-2775-4671-8957-405856e52ca4" rendition="#ita">Tidsskrift for Litteratur og Kritik</hi> (<ptr xml:id="idf2512673-27b6-4241-9796-e2891dfd8a7a" type="commentary" target="#hh-6" n="125,12"/>) bd. 1, s. 260, hvor han citerer fra <persName xml:id="id1d376291-15db-49fd-a3c7-7b561750ce3b" key="Weiße, Christian Hermann">C.H. Weiße</persName> <hi xml:id="id646d50a1-e28d-4a54-a92d-be8546dcef53" rendition="#ita">Die evangelische Geschichte kritisch und philosophisch bearbeitet</hi> bd. 1-2, <placeName xml:id="ida5ac69dd-bc1c-4966-83ea-be5812833415">Leipzig</placeName> 1838: »'Vi negte – siger han – de Mirakler, ved hvilke Gud, først før Christus, men kun i det israelitiske Folk, derefter i Christus selv, skal have aabenbaret sin udvortes Magt over Naturen i en Giennembrydelse af det lovmæssige Naturløb, og erkiende kun saadanne Undere, som bestaae i Manifestationen af Aandens Magt ogsaa inden Grændser, der i de sædvanlige Tilstande blive den utilgængelige; men om disse Undere paastaae vi, at de ikke mindre have tildraget sig blandt Hedninger end blandt Jøder, og i Christus kun paa en mere udmærket Maade, end andensteds.'« – <hi xml:id="id6e27060e-5e05-4fbd-b908-78057bc15278" rendition="#bol">Intet er Nyt under Solen:</hi> jf. <rs xml:id="id485c2a28-b2cb-4787-9889-7de0f961f47e" type="bible">Præd 1,9</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-8" n="125,20">
+          <label xml:id="iddcb151f3-2b59-4d3d-86b9-13890ad67314">
+            <hi xml:id="id2f641b8b-6d78-4782-b9ac-a569b49ea658" rendition="#bol">Mediationens Idee, den nyere Philosophies Løsen</hi>
+          </label>
+          <p xml:id="id83000306-623f-4fa6-9ee2-6f4ef7825089">Udtrykket 'Mediation', der ikke forekommer hos <persName xml:id="id19fe333c-6688-4729-9e99-e25056a8c080" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>, anvendes af de da. hegelianere som gengivelse af det hegelske begreb 'Vermittlung', 'formidling' el. 'forsoning'. Jf. fx <persName xml:id="id5d7b93aa-654c-49dd-8d7e-8689654dd065" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> »Det logiske System« i <hi xml:id="id5c041a3c-b482-448c-b91f-fe45d5677953" rendition="#ita">Perseus, Journal for den speculative Idee,</hi> udg. af Heiberg, nr. 1-2, <placeName xml:id="id3e7fd723-1a73-4d4d-a6f1-8cf9fe2d94df" key="København">Kbh</placeName>. 1837-38, ktl. 569; nr. 2, s. 18, s. 21 og især s. 30. Jf. også SKs referat af <persName xml:id="id6de65dfd-db60-4fc0-84e2-2c5263455483" key="Martensen, Hans Lassen">H.L. Martensen</persName>s forelæsninger over »Speculativ Dogmatik«, § 6, se <ref xml:id="id6bde8a81-d218-439d-acd4-1f7dbaca9c11" target="../KK/txt.xml#ss377" type="journalsAndPapers" n="377,21">KK:11</ref>, s. 377,21-28, og § 16, se <ref xml:id="id6fbd3304-b439-4a7b-b62d-c6183cf21b66" target="../KK/txt.xml#ss383" type="journalsAndPapers" n="383,4">KK:11</ref>, s. 383,4-8. Jf. endvidere Martensens afhandling »Rationalisme, Supranaturalisme og <hi xml:id="idda5f85ca-a29e-4d64-88ed-a9ebd4c1e2d7" rendition="#ita">principium exclusi medii</hi> (I Anledning af H.H. Biskop <persName xml:id="id130ea480-e7fa-4007-be44-4ad10d6f0fd3" key="Mynster, Jakob Peter">Mynster</persName>s Afhandling herom i dette Tidsskrifts forrige Hefte)« i <hi xml:id="id2d776515-7349-494d-8a26-9f1e0d36389d" rendition="#ita">Tidsskrift for Litteratur og Kritik</hi> (<ptr xml:id="ida83a6047-6f3b-48fd-8c35-bcc2634083ff" type="commentary" target="#hh-6" n="125,12"/>) bd. 1, s. 456-473; især s. 458: »Christendommens Middelpunct, Incarnationslæren, Læren om Gudmennesket, viser jo netop, at den christelige Metaphysik ikke kan hvile i et Enten Eller, men at den kun finder Sandheden i <hi xml:id="id458c8d8f-9ed2-4419-bc98-45b0d1db9ec3" rendition="#ita">det Tredie</hi> som hiint Princip [princippet om det udelukkede tredje] udelukker.« Og videre s. 459, hvor Martensen hævder, »at Begrebet om det Overnaturlige ikke kan blive virkeligt uden ved at medieres gjennem det Naturlige, og altsaa maa indeholde dette som sit egent Moment«.</p>
+        </note>
+        <note type="commentary" xml:id="hh-9" n="125,21">
+          <label xml:id="ida30702ed-beaa-472d-b770-f783455dbd96">
+            <hi xml:id="idd1e816d6-c918-4e19-af8e-aa02e9560958" rendition="#bol">Modsætningen til det Chr:</hi>
+          </label>
+          <p xml:id="idc728ff5a-d101-418c-9ae5-45d5d4b6b2d3">jf. <persName xml:id="id14ab4988-161b-4628-a7b6-7f722db21e45" key="Mynster, Jakob Peter">Mynster</persName>s afhandling »Rationalisme. Supranaturalisme« i <hi xml:id="id2801b171-848f-45d0-85e0-3aec0add3a94" rendition="#ita">Tidsskrift for Litteratur og Kritik</hi> (<ptr xml:id="id82453447-deb2-41b6-a7dc-4158d0a5f19f" type="commentary" target="#hh-6" n="125,12"/>) bd. 1, s. 249-268, især s. 261f.: »dersom Christus, den absolut Syndfrie, Hellige og Salige, kunde fremtræde efter Naturens Løb, ved Menneskehedens naturlige Udviklings-Proces, da er Menneskenaturen ikke fordærvet, men da er den endnu, hvad den oprindeligen var, en reen Emanation eller Manifestation af Guddommen <hi xml:id="id7b84701a-5265-4515-b78d-71c24415949f" rendition="#ita">(...).</hi> Men hvis ikke, da er vor Frelse ikke ved nogen Menneskehedens Act, <hi xml:id="id0e817b42-90e4-434e-a30b-20f83d010523" rendition="#ita">(...)</hi> og ligesom den første Skabelse ikke kunde ligge i nogen forhenværende Række, ikke kunde have hvad vi kalde Natursammenhæng – hvorvel vistnok Sammenhæng med den guddommelige Natur – saaledes er ogsaa den nye Skabelse i Christus, skiøndt forberedet ved guddommelige Foranstaltninger, det første Led i en ny Række, en ny umiddelbar Indgydelse af det guddommelige Liv i det menneskelige.« Hertil skriver <persName xml:id="id0ac0e518-5858-4aaa-b430-b4a91af5cd1b" key="Martensen, Hans Lassen">Martensen</persName> i sin afhandling (se foregående kommentar): »Det maa indrømmes og det maa høiligt urgeres, at Christus ikke fremtræder 'efter Naturens Løb, at den nye Skabelse i Christus er det første Led i en ny Række, en ny umiddelbar Indgydelse af det guddommelige Liv i det menneskelige.' Christus er ikke Menneskeslægtens <hi xml:id="idf7182f06-a5f0-4338-bcca-d3ad61aa6f85" rendition="#ita">Product,</hi> hans Indtrædelse i Historien er ikke <hi xml:id="iddc9ccfdd-15c2-4b81-9831-98dc2f76e814" rendition="#ita">Resultatet</hi> af Slægtens Udviklingsproces, skiøndt vel medieret ved denne«, s. 463.</p>
+        </note>
+        <note type="commentary" xml:id="hh-10" n="125,25">
+          <label xml:id="id54df4c0e-5fd3-4875-aec9-91a23ca08878">
+            <hi xml:id="idedc3c1df-7ecc-41b6-8aa8-2a86593e050d" rendition="#bol">mediert</hi>
+          </label>
+          <p xml:id="id03c5c547-6064-49e1-a300-0e050a98ceca">medieret (se foregående kommentar).</p>
+        </note>
+        <note type="commentary" xml:id="hh-11" n="125,27">
+          <label xml:id="id3feafd2f-1674-49bf-9f1d-595aacd5edc5">
+            <hi xml:id="id1a0de80e-a02d-4d36-a752-20d7d8581650" rendition="#bol">det der ikke opgik i noget Msks Tanke</hi>
+          </label>
+          <p xml:id="iddc7b191a-cc15-48e2-a9eb-d456bfae666f">spiller på <rs xml:id="idbcc8c6d9-1f50-4392-b648-f645eff522e5" type="bible">1 Kor 2,9</rs>, hvor <persName xml:id="iddae27e57-a5b6-4c6b-bffd-a25ebd4f3de2" key="Paulus">Paulus</persName> taler om 'Guds visdom', som er skjult for denne verdens vismænd: »hvad intet Øie har seet, og intet Øre har hørt, og ikke er opkommet i noget Menneskes Hierte, hvad Gud haver beredt dem, som ham elske« (NT-1819). Jf. i øvrigt <persName xml:id="idb105898c-d1f1-48ab-b220-d4e1e174ec50" key="Mynster, Jakob Peter">Mynster</persName>s afhandling »Rationalisme. Supranaturalisme« i <hi xml:id="idaf7e2e3a-896e-4986-9bff-7995867b9f68" rendition="#ita">Tidsskrift for Litteratur og Kritik</hi> (<ptr xml:id="ide61a18ac-f73d-4233-8da3-8bbcb4892284" type="commentary" target="#hh-6" n="125,12"/>) bd. 1, s. 258, hvor han kritisk karakteriserer rationalismen som »intet Andet end Indbegrebet af de Erkiendelser om Gud og de guddommelige Ting, som Fornuften selv kan give«.</p>
+        </note>
+        <note type="commentary" xml:id="hh-16" n="125m,1">
+          <label xml:id="id6527d4b9-8ab9-494f-a791-8b7ce56d9537">
+            <hi xml:id="idacaa7feb-127a-48b9-82c6-026506c73fc7" rendition="#bol">fortes fortuna</hi>
+          </label>
+          <p xml:id="id6c65aff3-745e-43d9-b143-5d98784433f2">egl. »fortes fortuna adiuvat«, lat. »lykken står de kække bi«, citat fra <hi xml:id="id3f3c8870-5f03-4dc0-9faf-09dc96b4fd44" rendition="#ita">Phormio,</hi> 2. akt, 2. scene (v. 203), jf. <hi xml:id="ida0abf37d-666b-47b0-b3ff-a1d386df1eb4" rendition="#ita">P. Terentii Afri Comoediae sex,</hi> udg. af B.<persName xml:id="idfa794f8e-1294-4fcc-9326-c65ed6534cfb" key="Schmieder, F.">F. Schmieder</persName> og F. Schmieder, 2. udg., <placeName xml:id="idfa3f2911-f121-45b2-a5c1-9a7501ab2401">Halle</placeName> 1819 [1794], ktl. 1291, s. 425. Jf. også <persName xml:id="idf4fc59cd-4317-4fca-934b-395fe9347913" key="Terents" sameAs="Publius Terentius Afer">Publius Terentius Afer</persName> <hi xml:id="idb4439622-b36e-4123-b585-a965baba48e4" rendition="#ita">Andria, Selvplageren og Formio, tre latinske Lystspil,</hi> overs. af <persName xml:id="id90bcf3ac-88dc-4f9b-a61b-ff03b145e025" key="Rathje, Mathias">Mathias Rathje</persName>, <placeName xml:id="id49dc7ead-a7f6-4d8a-bd71-c668881be128" key="København">Kbh</placeName>. 1797, ktl. 1295, 2. del, s. 124, hvor udtrykket gengives således: »den, som vover, han vinder«.</p>
+        </note>
+        <note type="commentary" xml:id="hh-17" n="125m,2">
+          <label xml:id="iddbcec49a-88bb-4227-a389-aa3024dbb297">
+            <hi xml:id="id4cb0ef13-a2dd-4d23-b208-9da3cc120ad1" rendition="#bol">Gud er mægtig i de Svage</hi>
+          </label>
+          <p xml:id="id61f8a94d-897c-4340-9fa7-8ec62e6bdd6d">spiller på <rs xml:id="id5e7ce2b4-f0e3-49fd-881f-bd6bd6c1de8a" type="bible">2 Kor 12,9</rs>, hvor Gud siger til <persName xml:id="id9268e7d0-f31f-4cf3-aee5-fc9b754bdb46" key="Paulus">Paulus</persName>: »Min nåde er dig nok, for min magt udøves i magtesløshed.« Jf. også <rs xml:id="id736e4546-c2b4-46e2-a3f7-e0bcfae49f21" type="bible">2 Kor 13,4</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-18" n="125m,6">
+          <label xml:id="id2f0ebf06-103a-46ce-ab1b-803d133fc4e8">
+            <hi xml:id="id3a59fc41-1c7c-4d3a-9e78-915f71bfb383" rendition="#bol">Genialitæt</hi>
+          </label>
+          <p xml:id="id0fa6a55a-79df-4af5-8460-2df095c2acff">skaberkraft; åndelige selvstændighed; ånd.</p>
+        </note>
+        <note type="commentary" xml:id="hh-19" n="125m,7">
+          <label xml:id="id0468dcab-e081-4dba-83c1-b0017aa1255b">
+            <hi xml:id="idb8943d8b-4257-49fe-9125-774173ecfd4b" rendition="#bol">harmonia præstabilita</hi>
+          </label>
+          <p xml:id="idcb8eb763-aa35-4981-9131-261d70388cdf">lat. 'forudbestemt harmoni'. En filosofisk term præget af den ty. filosof og naturvidenskabsmand <persName xml:id="id6a622de4-3170-4ff9-b6c5-78898848f6f4" key="Leibniz, Gottfried Wilhelm" n="*">Gottfried Wilhelm Leibniz</persName> (1646-1716), som bringer »die Lehre von der vorherbestimmten Harmonie« til udtryk i § 59 i første del af »Des Versuchs Von der Güte Gottes, von der Freyheit des Menschen, und vom Ursprunge des Bösen« i <hi xml:id="idd1970b77-0d2e-4d5d-9f38-fe470bdd0d86" rendition="#ita">Theodicee</hi> (1710), jf. <hi xml:id="idf09c5fdf-a799-4624-b72a-5c4789d82bd9" rendition="#ita">Theodicee,</hi> udg. af <persName xml:id="ide6f9365d-f695-45ff-a3cc-bd9977161a2f" key="Gottsched, Johann Christoph">J.C. Gottscheden</persName>, 5. udg., <placeName xml:id="id18803ac6-ea80-4dea-8139-1958fc7f755b">Hannover</placeName> og <placeName xml:id="id4e1695f5-11f0-4a74-890c-d63b69ad0dbb">Leipzig</placeName> 1763, ktl. 619, s. 212-215. Leibniz anvender udtrykket »l'Harmonie préétablie« i § 80 i <hi xml:id="idb156600b-861d-4dc7-aef8-d7122be470c1" rendition="#ita">La monadologie</hi> (1714), jf. <hi xml:id="idb8db0f0f-c086-48ad-b6aa-02425ec4093a" rendition="#ita">God. Guil. Leibnitii Opera philosophica, quae exstant,</hi> udg. af <persName xml:id="ideb90d495-0000-4b58-bb49-f481648e0ba9" key="Erdmann, Johann Eduard">J.E. Erdmann</persName>, bd. 1-2, <placeName xml:id="ided802719-6ca1-4d6d-9795-f3f711ce452b">Berlin</placeName> 1839-40, ktl. 620; bd. 2, s. 711.</p>
+        </note>
+        <note type="commentary" xml:id="hh-12" n="125,32">
+          <label xml:id="idd61627ee-55e1-4a6a-ac04-7f522cbf4f53">
+            <hi xml:id="id382a97fd-8981-4d27-bd5b-90c6805411f7" rendition="#bol">den gudl. Metaphysik, Treenigheden</hi>
+          </label>
+          <p xml:id="id7cde321c-cf81-4a1e-9d0b-b379349ebcfe">læren om Guds indre væsen som en treenighed af Fader, Søn og Helligånd.</p>
+        </note>
+        <note type="commentary" xml:id="hh-13" n="125,34">
+          <label xml:id="idc3a904f6-6385-4235-ba2e-5d61fbaaf65d">
+            <hi xml:id="id95e39cc0-da95-4ed7-8ce2-2683ea567cce" rendition="#bol">Aabenbarings-Begrebets Gyldighed</hi>
+          </label>
+          <p xml:id="id739143fb-dcf7-4a88-92ba-0d3d7190d0a8">Jf. fx <persName xml:id="idd4b33203-244c-4aec-b5fa-9e047d4f3065" key="Mynster, Jakob Peter">Mynster</persName>s afhandling »Rationalisme. Supranaturalisme« i <hi xml:id="id5e0da469-7524-430d-8a4a-a3d7af5a8012" rendition="#ita">Tidsskrift for Litteratur og Kritik</hi> (<ptr xml:id="id70e571d3-e4cc-4721-94e2-1a13ea68935b" type="commentary" target="#hh-6" n="125,12"/>) bd. 1, s. 249-268, hvor han hævder åbenbaringens virkelighed og gyldighed, fx s. 266; her kritiserer han rationalismen og naturalismen for at »forkaste Nødvendigheden og Virkeligheden af en Aabenbaring som en paa overnaturlig Maade foranstaltet Meddelelse af Gud til Menneskene« og tilslutter sig supranaturalismen, der »just grunder sig paa en saadan Aabenbaring«.</p>
+        </note>
+        <note type="commentary" xml:id="hh-14" n="126,3">
+          <label xml:id="idef3f41ac-286b-43c0-bc3a-3b86f3ebf822">
+            <hi xml:id="ida4aae30f-f5da-4a06-806a-f3ce2b6350ed" rendition="#bol">Alt er nyt i Χsto ... verdenshistorisk speculativ Anskuelse</hi>
+          </label>
+          <p xml:id="id114c334b-ffe3-4e48-9a93-7df3d85c3d67"><ptr xml:id="id6f54acbb-c204-4beb-bc55-fc5f2a12454f" type="commentary" target="#hh-9" n="125,21"/>, og jf. <persName xml:id="idb4113384-a2e2-490d-b829-ddcb90334832" key="Mynster, Jakob Peter">Mynster</persName>s kritik af <persName xml:id="idae7d528d-e90f-4e05-ae1e-a8f57f3ba509" key="Weiße, Christian Hermann">C.H. Weiße</persName> (<ptr xml:id="id2c258306-bcc7-4e89-916b-9c9559c03bba" type="commentary" target="#hh-7" n="125,13"/>): »Ogsaa efter ham er Guds Menneskevordelse i Christus ligesaavel en Act af Menneskeheden som af Guddommen, og den ligger i Rækken af alle andre fremtrædende Tildragelser i Menneskehedens verdenshistoriske Udviklings-Proces«, <hi xml:id="idad494453-e0fb-4c9b-a9f6-9417aa6be0fe" rendition="#ita">Tidsskrift for Litteratur og Kritik</hi> (<ptr xml:id="id0239d4de-f6c6-4747-a1f1-be632c528f39" type="commentary" target="#hh-6" n="125,12"/>) bd. 1, s. 260.</p>
+        </note>
+        <note type="commentary" xml:id="hh-21" n="126,10">
+          <label xml:id="id28b699a9-df57-415d-8ad2-6e6e6f35fc98">
+            <hi xml:id="idd60d81cb-cfd5-43b6-8a5e-1fe196afe3df" rendition="#bol">Enhver ved sin Ankomst til Elysium maatte drikke af Lethe</hi>
+          </label>
+          <p xml:id="id97cf4125-a9f6-4412-afb1-ef403b59e618">sigter til den almindelige forestilling i den pytagoræiske og platonske filosofi, at de udødelige sjæle skulle drikke af <placeName xml:id="id077b534d-ae14-4ad9-aa76-251a341e8aa0" key="Lethe" sameAs="Glemslens Flod">Glemslens Flod</placeName>, som udsprang fra <placeName xml:id="idb1e2f110-7658-441f-827d-3a96c721aeb2">Elysium</placeName>, for at glemme alt fra deres tidligere liv på jorden og i underverdenen, inden de igen kunne tage bolig i en krop. I <persName xml:id="id364a5c14-f97e-4c39-bec3-1841b60ebbe3" key="Platon">Platon</persName>s <hi xml:id="id21d81a2d-c5e6-407b-a0e8-0a4e8ae8178e" rendition="#ita">Staten,</hi> 10. bog, 621a-b, er der tale om, at de udødelige sjæle skal vandre til <placeName xml:id="id99636103-0620-4805-ae83-e329f1e9f191">Glemslens Slette</placeName> og drikke af <placeName xml:id="ide37e1835-faf5-4d4c-a6e9-8e8224d6aac7">Sorgløshedens Flod</placeName> for at glemme alt. – <hi xml:id="id70271624-4e31-49a7-be7b-bb732f8756ea" rendition="#bol">Lethe:</hi> da. gengivelse af det gr. Λήϑη (Lēthē), glemsel, forglemmelse; især kendt fra sammensætningen ὁ τής Λήϑης ποταμός (hó tēs Lēthēs potamós) Glemslens Flod.</p>
+        </note>
+        <note type="commentary" xml:id="hh-22" n="126,12">
+          <label xml:id="ide4859a2f-6176-4b1f-b650-090d2e2dbe67">
+            <hi xml:id="id5be98e7c-df64-45aa-9a00-a9d2dc1abcdf" rendition="#bol">skal gjøre Regnskab for hvert utilbørligt Ord</hi>
+          </label>
+          <p xml:id="idea89c246-d4eb-4581-9222-ae5d4ac420ea">hentyder til <rs xml:id="id9d58b3be-be3f-41ec-ab87-8e9c8e850be6" type="bible">Matt 12,36</rs>: »Men jeg siger Eder, at Menneskene skulle giøre Regnskab paa Dommens Dag for hvert utilbørligt Ord, som de have talet« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hh-23" n="126,14">
+          <label xml:id="id27784baa-a626-4d7c-be81-f3526fcffc18">
+            <hi xml:id="id600a5a88-3219-49c1-9fc5-e615c05343b9" rendition="#bol">Præsents</hi>
+          </label>
+          <p xml:id="id01536462-580a-4c12-8e70-7894eeeb2d04">nærværelse, tilstedeværelse; her måske med den bibetydning, at 'det forbigangne' er present i den forstand, at det huskes fuldt ud.</p>
+        </note>
+        <note type="commentary" xml:id="hh-25" n="129,1">
+          <label xml:id="id38ae9f7e-cdeb-4dcd-83e2-8cdc98306104">
+            <hi xml:id="id84e80f12-34c5-4ce7-aa90-44a8934cb88f" rendition="#bol">og Gud fristede Abr: ... Abraham svarede her er jeg</hi>
+          </label>
+          <p xml:id="id6ecf1f21-d464-45fd-989e-7876475e4a26">jf. 1 Mos 22,1: »Og det skede derefter, at Gud fristede <persName xml:id="idcb3f0112-f910-4530-bc66-fccd02530c46" key="Abraham">Abraham</persName>, og sagde til ham: Abraham, og han sagde: see, her er jeg« (GT-1740). – <hi xml:id="id9ec62729-fb71-4830-a6b7-3990031d981a" rendition="#bol">Abr:</hi> Abraham; det israelitiske folks stamfader gennem sin søn <persName xml:id="id43719b74-84b9-4945-adf4-075af2ba4b12" key="Isak">Isak</persName> og sønnesønnen <persName xml:id="id3a89d0ff-c6e3-40e6-9d72-37ff145bc344" key="Jakob">Jakob</persName>; han er den første af disse tre patriarker. Gud indgår en pagt med Abraham, som bl.a. indeholder en forjættelse om, at hans afkom gennem Isak skal blive talrigt som stjernerne og have Kana'ans land til ejendom, <rs xml:id="idc20dc9a5-1694-488c-a756-b5fbff3723af" type="bible">1 Mos 15</rs> og 17; beretningerne om Abraham findes i øvrigt i <rs xml:id="id82def785-f745-4871-839c-ea30a466b8c1" type="bible">1 Mos 12-25</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-26" n="129,9">
+          <label xml:id="id813a06d1-22c7-40af-a704-d9c6eb6e6674">
+            <hi xml:id="iddb23a7d7-faee-4e66-8030-abe41340e308" rendition="#bol">Bjergene ville skjule os</hi>
+          </label>
+          <p xml:id="id00cd4429-0ff1-4df2-8b6c-1cfb06c6ee38">spiller på <rs xml:id="idb4e33752-843b-43eb-b2bb-c0d0454595df" type="bible">Luk 23,30</rs>, hvor Jesus siger til de kvinder, der følger ham på vej til <placeName xml:id="id74fb4dea-a534-4c29-87ed-7fd0fe19ea38">Golgata</placeName>, at de ikke skal græde over ham, men over sig selv og deres børn, for der vil komme frygtelige dage: »Da skal man sige til bjergene: Fald ned over os! Og til højene: Skjul os!«</p>
+        </note>
+        <note type="commentary" xml:id="hh-27" n="129,10">
+          <label xml:id="idbdf2d185-83a4-4c1f-aba4-951be75de5fa">
+            <hi xml:id="id0ced6993-d89a-429d-810c-b10b774088a2" rendition="#bol">vælte Byrden fra os over paa Andre</hi>
+          </label>
+          <p xml:id="id728636e5-b654-4a95-8e06-d8d0aaec44a4">spiller formentlig på <rs xml:id="id69f72753-d598-4671-958c-27150fa4ff82" type="bible">Gal 6,2</rs>: »Bær hinandens byrder«.</p>
+        </note>
+        <note type="commentary" xml:id="hh-28" n="129,12">
+          <label xml:id="id8c5fd1a7-3770-4e16-8006-c2db519e96dc">
+            <hi xml:id="id2b966b94-76f5-4a99-8bb9-217c509f27ad" rendition="#bol">af Banen</hi>
+          </label>
+          <p xml:id="id9c00559b-2745-4ca1-9a17-4f56f0111e8e">ad banen.</p>
+        </note>
+        <note type="commentary" xml:id="hh-29" n="129,13">
+          <label xml:id="idb1a1829e-51d0-4065-90f6-1a9fdb8fcde7">
+            <hi xml:id="ida8c9d40f-15cb-4e17-a615-35e7f7d1f749" rendition="#bol">Ab:</hi>
+          </label>
+          <p xml:id="idefcaf04a-78ae-497f-8143-eb88accb6311"><persName xml:id="id58ae9b7a-297e-4c8e-8d53-c293da864580" key="Abraham">Abraham</persName>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-30" n="129,14">
+          <label xml:id="id4f6f2f20-5993-46d0-94d2-fb78ecbce5f9">
+            <hi xml:id="id59ceeeae-29d7-4a70-8566-9f50cae6b526" rendition="#bol">Sara</hi>
+          </label>
+          <p xml:id="id96cf8a24-95c8-47e9-96db-93c13f8e1717"><persName xml:id="id5e6acfbd-fef3-4b00-9b79-65229438b539" key="Abraham">Abraham</persName>s kone.</p>
+        </note>
+        <note type="commentary" xml:id="hh-31" n="129,16">
+          <label xml:id="id1d8d3801-ac7b-4cab-bf58-f54c198585a1">
+            <hi xml:id="id9b9a255e-a141-48c3-b4ff-42dcf5833d37" rendition="#bol">Isaak</hi>
+          </label>
+          <p xml:id="idb3b5ec4a-17c0-4759-bfff-73a98b782d31"><persName xml:id="id0ac181d3-10fa-4d75-a480-bc889394900f" key="Isak">Isak</persName>, <persName xml:id="id08708076-0491-465e-967f-e01db9b86621" key="Abraham">Abraham</persName>s og <persName xml:id="id065307ca-a456-462e-94ed-29247f5b519f" key="Sara">Sara</persName>s eneste barn, en af de tre jødiske patriarker (<ptr xml:id="ida8d92876-0241-40d3-850e-00d462297b21" type="commentary" target="#hh-25" n="129,1"/>).</p>
+        </note>
+        <note type="commentary" xml:id="hh-32" n="129,16">
+          <label xml:id="id7545ba5c-1fe7-44e5-898e-3214c41048ce">
+            <hi xml:id="idd0e8829e-0267-4ecd-8df1-459bb312bd1a" rendition="#bol">Eleezar den tro Tjener</hi>
+          </label>
+          <p xml:id="id55caf78b-f0b8-47a7-affa-1ded23463c40">I <rs xml:id="idc8457d4a-f03b-4ad9-837b-b9c3ad2181b6" type="bible">1 Mos 15,2-3</rs> nævnes <persName xml:id="idad1f631c-69ea-490b-8c06-370085609e94" key="Eliezer">Eliezer</persName> som den hustræl, der skal arve <persName xml:id="idc464d4e0-21e4-47d2-bcc3-995a6783b903" key="Abraham">Abraham</persName>, hvis han ikke får et barn.</p>
+        </note>
+        <note type="commentary" xml:id="hh-33" n="129,17">
+          <label xml:id="ide5f54cbb-8ea9-4548-b2d4-cb9138777534">
+            <hi xml:id="id695c84a7-c9eb-4b6f-97a6-67d4cbe2d9c4" rendition="#bol">Vi læse: han stod tidlig op ... han drog Kniven</hi>
+          </label>
+          <p xml:id="id53bfea58-e9e0-4347-b3e9-a84e6cdeecdc"><rs xml:id="id069ed1a4-2d05-488f-bd4e-747f5b7929b6" type="bible">1 Mos 22,3-10</rs>: »Saa stod <persName xml:id="ide69a6d9d-0837-4665-adfd-e50754e9153a" key="Abraham">Abraham</persName> aarle op om Morgenen, og sadlede sit Asen, og tog to af sine Drenge med sig, og Isaak sin Søn; og han kløvede Vedden [brændet] til Brænde-Offeret, giorde sig rede, og gik til Steden, som Gud havde sagt ham. Paa den tredie Dag, da opløftede Abraham sine Øine, og saae Steden langt borte. Da sagde Abraham til sine Drenge: bliver her for eder med Asenet, og jeg og Drengen vi vil gaae derhen; og vi vil tilbede, og komme til eder igien. Og Abraham tog Vedden til Brænde-Offeret, og lagde paa Isaak sin Søn, men han tog Ilden og Kniven i sin Haand; og de gik begge tilsammen. Da talede Isaak til Abraham sin Fader, og sagde: min Fader, og han sagde: see, her er jeg, min Søn! og han sagde: see, Ilden og Vedden, men hvor er Lammet til Brænd-Offeret? Og Abraham sagde: Gud skal see sig om Lammet til Brænde-Offeret, min Søn! saa gik de begge tilsammen. Og der de kom til den Sted, som Gud havde sagt ham, da bygde Abraham der et Alter, og lavede Vedden, og han bandt Isaak sin Søn, og lagde ham paa Alteret oven paa Vedden. Og Abraham rakte sin Haand ud, og greb Kniven, for at slagte sin Søn« (GT-1740).</p>
+        </note>
+        <note type="commentary" xml:id="hh-34" n="129,22">
+          <label xml:id="id33dbba66-1b44-4ec5-9811-649e44fad804">
+            <hi xml:id="idd4b865a1-2beb-4d88-89a2-29beadbf1239" rendition="#bol">Min T:</hi>
+          </label>
+          <p xml:id="idbacb98bf-78d1-4583-a77e-1eb77d25d643">Min Tilhører.</p>
+        </note>
+        <note type="commentary" xml:id="hh-35" n="129,25">
+          <label xml:id="id4c4f27f1-ea7f-4605-8c6e-e6561146fe9a">
+            <hi xml:id="id1024acd8-c240-4c82-a821-d0893946b60b" rendition="#bol">Forjættelsens Barn som Isaak var det</hi>
+          </label>
+          <p xml:id="id560e0d37-0bcf-4d2d-82a4-b5bbbfe67b3a">(<ptr xml:id="id15fbdb53-06f1-46c2-99eb-39adc5e4e1f5" type="commentary" target="#hh-25" n="129,1"/>); spiller på <rs xml:id="id9cae591c-8a62-4174-84fd-26bd85837ab6" type="bible">Gal 4,28</rs>, hvor <persName xml:id="id1f0ebd12-58d8-484a-8a59-11f446fd2dca" key="Paulus">Paulus</persName> skriver: »Men vi, Brødre, ere Forjættelsens Børn, som Isaak var« (NT-1819). Jf. også <rs xml:id="id4dd8665a-753c-45a0-9056-35e9e880acbf" type="bible">Rom 9,8</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-36" n="129,27">
+          <label xml:id="idfe0f34dc-3e92-4cc9-bd87-d38b3b009f72">
+            <hi xml:id="id7be599cd-fff4-4189-aa70-8f9ad9efcf99" rendition="#bol">Guds almægtige og urandsagelige Styrelse</hi>
+          </label>
+          <p xml:id="id395d2808-bd20-4902-a44d-c38bde47c08e">jf. <hi xml:id="id9543862d-bebb-43d6-80f0-cd3ed31b3836" rendition="#ita">Lærebog i den Evangelisk-christelige Religion, indrettet til Brug i de danske Skoler</hi> (af <persName xml:id="ida7f3dfc4-96e3-440e-b62e-27fc18421cd0" key="Balle, Nicolaj Edinger">N.E. Balle</persName> og <persName xml:id="id5a0e3cc2-9f49-4582-8872-a768fbb23bf6" key="Bastholm, Christian">C.B. Bastholm</persName>, oftest omtalt som <hi xml:id="id55c3e503-1e5d-40d7-bf83-af73e689ab3c" rendition="#ita">Balles Lærebog</hi>), <placeName xml:id="idc66405f9-3bbe-4142-b345-80a79f6f68b0" key="København">Kbh</placeName>. 1824 [1791], ktl. 183, kap. 1, »Om Gud og hans Egenskaber«, afsnit 3, § 3: »Gud er <hi xml:id="id95c0fb7f-d8fe-457f-89fb-a6447d9c1c9e" rendition="#ita">almægtig,</hi> og kan giøre alt, hvad han vil, uden Møie. Men han giør ikkun det, som er viist og godt, fordi han ikke vil andet, end det alene«, s. 13. Og kap. 2, »Om Guds Gierninger«, afsnit 2, § 5: »<hi xml:id="id203c61f6-c38c-4cab-8ba6-de17e42f0126" rendition="#ita">Hvad der møder os i Livet,</hi> enten det er sørgeligt eller glædeligt, bliver os <hi xml:id="id3a157f17-ce58-4622-97e2-97773c8ae1c0" rendition="#ita">tilskikket af Gud i de bedste Hensigter,</hi> saa at vi altid have Aarsag til at være fornøiede med hans Regiering og Bestyrelse«, s. 25. – <hi xml:id="idf796561a-44b0-47a9-a36b-12fe31eaf45f" rendition="#bol">urandsagelige:</hi> spiller på <rs xml:id="id2dc41738-6480-434d-95b9-be44a7db3afa" type="bible">Rom 11,33</rs>, hvor <persName xml:id="idc411708e-9923-4ec9-88b5-b199b4c6b1bd" key="Paulus">Paulus</persName> skriver: »Hvor uransagelige er hans [Guds] domme, og hvor usporlige hans veje!«</p>
+        </note>
+        <note type="commentary" xml:id="hh-37" n="129,30">
+          <label xml:id="id7ea0cff3-7a98-4da6-94ac-0bd0cb0e0eed">
+            <hi xml:id="idb7c5966d-3d7f-4297-a51e-a8981aded9c4" rendition="#bol">Hiob</hi>
+          </label>
+          <p xml:id="id4dfbe9af-2b5e-4de9-872f-85ad257e3862">gammel form for <persName xml:id="idf26960cf-ba2d-472a-8aa5-f0261ab97f67" key="Job">Job</persName>, hovedpersonen i Jobs Bog.</p>
+        </note>
+        <note type="commentary" xml:id="hh-38" n="129,30">
+          <label xml:id="idab9f9e49-8307-4bb9-8468-1ea06fe78d1c">
+            <hi xml:id="id7d9f5df8-b464-4b73-8bfe-80b978c37582" rendition="#bol">Herren gav Herren tog</hi>
+          </label>
+          <p xml:id="id68960e37-cb67-43eb-a302-6d48a2c83829">jf. <rs xml:id="id91cd7ff8-6f89-4cdd-a4ae-8c7f3b00d877" type="bible">Job 1,21</rs>: »Nøgen kom jeg ud af moders liv, / nøgen vender jeg tilbage! / Herren gav, Herren tog, / Herrens navn være lovet.«</p>
+        </note>
+        <note type="commentary" xml:id="hh-39" n="129,32">
+          <label xml:id="ideddb3e40-6a2d-43c8-b8f3-8df08d8765ea">
+            <hi xml:id="id02228581-12fd-4f21-bd83-80a51f9db69f" rendition="#bol">Isaaks Skjebne var med Kniven lagt i Abr: Haand</hi>
+          </label>
+          <p xml:id="idc1bcd2fe-62b1-4d3f-833a-81f20f040c69"><ptr xml:id="id5ada8868-653e-410b-87ce-e60dfa78b5ce" type="commentary" target="#hh-33" n="129,17"/>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-40" n="129,33">
+          <label xml:id="id0fb729c1-2ccc-428c-8599-78972a1d521b">
+            <hi xml:id="ida9b579af-10f7-4534-b75e-e09684fe0fa6" rendition="#bol">aarle paa Bjerget</hi>
+          </label>
+          <p xml:id="id6308419b-5896-4293-baeb-c9b207489c8f"><ptr xml:id="idcd8b118b-75f9-461b-b410-9e7874ce2ced" type="commentary" target="#hh-33" n="129,17"/>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-41" n="129,33">
+          <label xml:id="id0218de54-b9df-4ee9-8c1d-31ecd1314c18">
+            <hi xml:id="id5b0cae88-1018-41d2-94e2-fa70fde34a2b" rendition="#bol">gl.</hi>
+          </label>
+          <p xml:id="id77065872-8faf-491a-8a2d-f384d59af813">gamle.</p>
+        </note>
+        <note type="commentary" xml:id="hh-42" n="129,34">
+          <label xml:id="id9957c73d-66af-4931-9a7e-64db88204c3e">
+            <hi xml:id="id53bd92a5-6101-4425-87e9-2d0d2f9ee56e" rendition="#bol">sit eneste Haab</hi>
+          </label>
+          <p xml:id="id5423ae5a-9946-43a2-8e9d-92788776c55d">spiller formentlig på <rs xml:id="id6673e426-6538-4553-867f-9d3aba5ab6e5" type="bible">Rom 4,18</rs>, hvor <persName xml:id="id794eab66-7da4-4bbb-9d02-554f87900d18" key="Paulus">Paulus</persName> skriver om <persName xml:id="ide40a7d95-47d0-4012-b268-728477d753ac" key="Abraham">Abraham</persName>: »Med håb imod håb troede han, at han skulle blive fader til en mængde folkeslag, som det var sagt ham: 'Så mange skal dine efterkommere blive.'« Jf. også <rs xml:id="idcb8adbcc-4f2f-4c82-9822-50589609a0d6" type="bible">1 Mos 17,15-21</rs>: »Gud sagde til Abraham: '<hi xml:id="idb3175c03-7a2f-4c0c-945c-d0a4bbc608c3" rendition="#ita">(...).</hi> Jeg vil velsigne hende [<persName xml:id="id6eaf5396-2d60-4968-89e6-684e8656b07b" key="Sara">Sara</persName>], og jeg vil give dig en søn med hende. Jeg vil velsigne hende, og hun skal blive til folkeslag, ja, folkekonger skal nedstamme fra hende.' Da kastede Abraham sig ned og lo, mens han tænkte: 'Mon en hundredårig kan blive far? Og mon Sara, som er halvfems år, kan få børn?' Og Abraham sagde til Gud: 'Måtte <persName xml:id="id179556ae-9040-44fa-92e1-6296906662e2" key="Ismael">Ismael</persName> leve for dit ansigt!' Men Gud sagde: 'Nej, din kone Sara skal føde dig en søn, og du skal give ham navnet <persName xml:id="id48812257-d8b6-4df0-9bee-27ac9b0548b3" key="Isak">Isak</persName>. Med ham vil jeg oprette min pagt som en evig pagt for hans efterkommere. Men med hensyn til Ismael bønhører jeg dig. Jeg vil velsigne ham og gøre ham uhyre frugtbar og talrig. Tolv høvdinge skal han blive far til, og jeg vil gøre ham til et stort folk. Men min pagt opretter jeg med Isak, som Sara skal føde dig næste år ved denne tid'«. Ismael var Abrahams første søn med Saras trælkvinde <persName xml:id="id2cc2c033-1367-4bfa-9716-efbc6b5311f9" key="Hagar">Hagar</persName>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-43" n="129,34">
+          <label xml:id="id7e222cc2-2553-4a36-b9b6-a6229a0cc3af">
+            <hi xml:id="idacf16b74-2bdf-415c-922d-cd0218ec27e0" rendition="#bol">han tvivlede ikke</hi>
+          </label>
+          <p xml:id="id993f4fb5-8f18-4feb-bef6-e782a93fe794">hentyder til <rs xml:id="id70a678d9-ad76-4f13-ade7-c4cb487bd4f8" type="bible">Rom 4,20</rs>, hvor <persName xml:id="ideb810768-91ff-417e-88c8-e0ce716e65a6" key="Paulus">Paulus</persName> skriver om <persName xml:id="ida42c2dab-8906-4a37-b505-a25803ea87e5" key="Abraham">Abraham</persName>, at »han tvivlede ikke i vantro på Guds løfte«.</p>
+        </note>
+        <note type="commentary" xml:id="hh-45" n="130,1">
+          <label xml:id="iddc6a1a3d-f247-476b-9a9e-f9d3a23deeed">
+            <hi xml:id="id05010d92-254c-46c8-a062-ca3249c51e56" rendition="#bol">Udfaldet paa Historien</hi>
+          </label>
+          <p xml:id="id052c448d-877d-47b2-a03c-3f2ccafd685f">if. 1 Mos 22,12 bryder Guds engel ind, idet <persName xml:id="ida1e3fc4a-e83a-4c94-9fdc-53ae01efa692" key="Abraham">Abraham</persName> vil dræbe <persName xml:id="idda7e5638-341d-43a8-abaf-818ce86ad5b0" key="Isak">Isak</persName>, og siger: »leg ikke din Haand paa Drengen, og giør ham intet«, og videre i v. 13: »Da opløftede Abraham sine Øine, og saae, og see, en Væder bag ham hengde i Busken ved sine Horn; og Abraham gik og tog Væderen, og ofrede den til Brænd-Offer i sin Søns Sted« (GT-1740).</p>
+        </note>
+        <note type="commentary" xml:id="hh-46" n="130,5">
+          <label xml:id="ida369e621-ff9b-4a88-94d8-816ba34f6836">
+            <hi xml:id="idceced3f7-fa8c-43c4-b893-38468b575ed4" rendition="#bol">Han drog hjem</hi>
+          </label>
+          <p xml:id="id18c7190d-2d35-4508-ab52-ed26189d0b8a">jf. 1 Mos 22,19: »Saa gik <persName xml:id="idb82afd08-c3b7-4415-8116-f2a383cb8a4d" key="Abraham">Abraham</persName> tilbage til sine Drenge, og de giorde sig rede, og fore tilsammen til Beershaba; thi Abraham boede i Beershaba« (GT-1740).</p>
+        </note>
+        <note type="commentary" xml:id="hh-47" n="130,9">
+          <label xml:id="id3908fc98-f6b0-4c77-996d-6895ccf629d4">
+            <hi xml:id="id76f152fa-6fb6-40f3-bf3a-9a9607bbe52d" rendition="#bol">den Vædder, der skulde frelse hans Søn</hi>
+          </label>
+          <p xml:id="id9167d171-979b-43c3-9954-547af045d237"><ptr xml:id="ide126daa1-f03f-4c6c-9acc-0fda5046e47f" type="commentary" target="#hh-45" n="130,1"/>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-48" n="130,13">
+          <label xml:id="id305bd521-5db2-4b1f-82f1-343201db04bf">
+            <hi xml:id="idf0ae2bac-fbb4-4ae4-9e01-2428d79642f6" rendition="#bol">den himmelske Røst fra Himlen</hi>
+          </label>
+          <p xml:id="idb443b9b7-6a22-411a-833b-cd502902e529">jf. 1 Mos 22,15-18: »Og HERRENS Engel raabte til <persName xml:id="id09be6fb5-55ed-497b-a151-ee92f333e59e" key="Abraham">Abraham</persName> anden Gang af Himmelen. Og han sagde: jeg haver soret [svoret] ved mig, siger HERREN, at fordi du giorde dette Stykke, og ikke sparede din Søn, din eeneste. Derfor vil jeg storligen velsigne dig, og meget mangfoldiggiøre din Sæd, som Stiernerne paa Himmelen, og som Sand, der er hos Havets Bredde; og din Sæd skal eie Fienders Port. Og udi din Sæd skal alle Folk paa Jorden velsignes; fordi at du lydde min Røst« (GT-1740).</p>
+        </note>
+        <note type="commentary" xml:id="hh-49" n="130,16">
+          <label xml:id="id0f7c3779-b17a-42ce-a61a-2ae60451e47a">
+            <hi xml:id="idf2a19db4-b5b2-4509-a75c-fb5ec1c867f1" rendition="#bol">Abraham sagde ... ikke, nu er jeg bleven en gl. Mand</hi>
+          </label>
+          <p xml:id="idc201210b-76e2-41ee-adc6-671339b063dd">hentyder formentlig til <rs xml:id="id6596d670-6db8-409c-81b8-8942ea7a9741" type="bible">Rom 4,19-21</rs>, hvor <persName xml:id="id55e6af15-8553-4f28-8ad9-9aadefaf68b3" key="Paulus">Paulus</persName> skriver om <persName xml:id="id076cf094-710c-489a-8cd0-841580c55c96" key="Abraham">Abraham</persName>: »Og uden at blive svag i troen så han, at hans krop allerede var uden livskraft – han var næsten hundrede år gammel – og at <persName xml:id="idce8e2978-e129-4909-8d33-ddbfe9f4d6c1" key="Sara">Sara</persName>s moderliv var dødt; og han tvivlede ikke i vantro på Guds løfte, han blev tværtimod styrket i troen og gav Gud æren og var fuldt overbevist om, at det, som Gud har lovet, har han også magt til at gøre.«</p>
+        </note>
+        <note type="commentary" xml:id="hh-50" n="130,22">
+          <label xml:id="idcc45207f-65aa-407c-aaf7-b4ae133e1618">
+            <hi xml:id="idda3791fe-4617-42de-9519-f11fdf75c05a" rendition="#bol">min Alderdoms Trøst</hi>
+          </label>
+          <p xml:id="id566709a7-94cf-441f-a5ac-ef68a5cc217d">dvs. Isaak.</p>
+        </note>
+        <note type="commentary" xml:id="hh-52" n="130,25">
+          <label xml:id="idc76fe999-471f-4c05-b586-b8ab3becb8d8">
+            <hi xml:id="id330d081f-2806-4229-baa6-b1f05cc41ea9" rendition="#bol">mistvivle</hi>
+          </label>
+          <p xml:id="id7494d8a0-e776-40d9-9971-8467b4836dcc">nære overdreven mistro.</p>
+        </note>
+        <note type="commentary" xml:id="hh-53" n="130,35">
+          <label xml:id="idbb67144d-c815-403f-a8ce-baf2af41de0f">
+            <hi xml:id="id51e76538-06a8-4e4f-9232-cf8efe94a535" rendition="#bol">jeg ... raabte ... Ingen svarede ... ingen ... Beroligelse</hi>
+          </label>
+          <p xml:id="id121d61ec-fe46-49a6-9a36-f06c7d643787">spiller måske på <rs xml:id="id5c1b8060-995e-4cc6-8c32-0bd0de06b88e" type="bible">Sl 22,3</rs>: »Min Gud, jeg råber om dagen, men du svarer ikke, / og om natten, men jeg finder ikke ro.« Jf. også <rs xml:id="id89a8aa32-8a3c-4bb0-845d-c0a274d529e6" type="bible">Job 30,20</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-54" n="131,6">
+          <label xml:id="id3edd8683-53f8-4fa0-8fd9-3cb00ec32e58">
+            <hi xml:id="id707e4048-42ed-4fad-9d40-13d334f6737f" rendition="#bol">Sophisme</hi>
+          </label>
+          <p xml:id="id9623df3c-bf8f-426e-8f01-6a4103be9239">spidsfindigt argument, ordkløveri.</p>
+        </note>
+        <note type="commentary" xml:id="hh-56" n="131,25">
+          <label xml:id="id29412794-4d08-4232-92e0-dbb3423b3a5b">
+            <hi xml:id="idc6550bdb-293d-48ce-a457-1c3918bd7859" rendition="#bol">m:T:</hi>
+          </label>
+          <p xml:id="id831f093d-5fcf-4c4c-a47e-1dd344fb3e0f">min Tilhører.</p>
+        </note>
+        <note type="commentary" xml:id="hh-57" n="132,14">
+          <label xml:id="ide5af72dc-4dce-4e80-8e2e-24d021da6534">
+            <hi xml:id="ide8af2ee5-fa2f-4740-8d3a-c50233075e1f" rendition="#bol">Guds Prøvelser ere grundede i Kjærlighed</hi>
+          </label>
+          <p xml:id="id0724ebf3-88fa-41cd-8ced-771bfab7975a"><ptr xml:id="id00c80806-6429-4236-87c6-9e9b3f54d846" type="commentary" target="#hh-61" n="132,25"/>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-58" n="132,20">
+          <label xml:id="ide67e686f-278f-4a0f-b304-c5f7beca464f">
+            <hi xml:id="id63f4c0da-6b46-44c7-b89d-4d86a1277ced" rendition="#bol">opbebier</hi>
+          </label>
+          <p xml:id="id9befbd65-3ccd-4045-a169-f84d1bdeba1e">oppebier, venter, forholder sig afventende til.</p>
+        </note>
+        <note type="commentary" xml:id="hh-59" n="132,21">
+          <label xml:id="id50794a3e-03ec-4329-92b2-e82ec69e5d89">
+            <hi xml:id="ide788f80e-c5d6-4f97-be4a-a0fa7fb49427" rendition="#bol">han altid er med os</hi>
+          </label>
+          <p xml:id="ide286c6ca-99a0-477c-b739-60d4151d76e2">hentyder måske til <rs xml:id="id8378deec-3d93-49d5-8b43-eecada47ba6d" type="bible">Matt 28,20</rs>, hvor Jesus siger: »Og se, jeg er med jer alle dage indtil verdens ende.«</p>
+        </note>
+        <note type="commentary" xml:id="hh-60" n="132,22">
+          <label xml:id="ida2f9f3a6-35a4-4dbb-80db-0317da5cee6c">
+            <hi xml:id="id237410f6-5b11-4a07-a3ae-7ec1279587da" rendition="#bol">den almægtige Gud</hi>
+          </label>
+          <p xml:id="id1fdb93e4-e42a-4414-8d37-849e3369718a"><ptr xml:id="idf5902d0d-0acf-4313-a597-bfd236f33c9d" type="commentary" target="#hh-36" n="129,27"/>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-61" n="132,25">
+          <label xml:id="id3793c69b-b4c4-4999-93c6-3b78fcf4aa00">
+            <hi xml:id="id2fc3de9b-b124-4d8b-8322-640254ad023d" rendition="#bol">opdragende</hi>
+          </label>
+          <p xml:id="id057fb483-bbef-475b-b2f6-4b2756323c8b">jf. <rs xml:id="id99cc58b8-0eaf-4a43-bfe9-e94ef1f46c59" type="bible">Hebr 12,5-6</rs>: »Min søn, foragt ikke Herrens opdragelse, / mist ikke modet, når du irettesættes af ham; / for Herren tugter den, han elsker, / han straffer hver søn, han holder af.« Jf. også <rs xml:id="id8288f1d8-0552-4679-b9f0-b6589f354dea" type="bible">Ordsp 3,11-12</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-62" n="133,1">
+          <label xml:id="id308e9fac-c8f8-4519-9efc-64071cc3fb77">
+            <hi xml:id="idf85eae07-4403-4981-a33e-9311b74ed4cc" rendition="#bol">der er ei Grund ... hver Løvte som en Skygge</hi>
+          </label>
+          <p xml:id="id9383e240-192f-46a5-9f93-361f9dbcda77">citat fra <persName xml:id="idf04e5c12-f337-4705-828a-ddc9878b0c72" key="Kingo, Thomas">Thomas Kingo</persName>s salme »Ak, Herre, see / Min Hjerte-Vee«, 8. strofe, jf. nr. 221 i <hi xml:id="id44f93c72-bc72-41d2-80c3-16ea0fee440a" rendition="#ita">Psalmer og aandelige Sange af Thomas Kingo,</hi> udg. af <persName xml:id="id0a18653f-bde6-48d2-8f1e-d35db17a5299" key="Fenger, Peter Andreas">P.A. Fenger</persName>, <placeName xml:id="id2be0bc4f-be42-483b-909d-2bcc19dde6f7" key="København">Kbh</placeName>. 1827, ktl. 203, s. 491f. Salmen udkom som »Dend IV. Sang. Sorrigfuld og dog Trøstefuld« i <hi xml:id="idf1a63438-07a9-411e-b88d-c869b3e9158c" rendition="#ita">Thomas Kingos Aandelige Siunge-koors Anden Part</hi> (1681). Ortografiske afvigelser.</p>
+        </note>
+        <note type="commentary" xml:id="hh-63" n="133,17">
+          <label xml:id="idb1874aca-727c-413f-9dbf-43aaa3fa3683">
+            <hi xml:id="id3aa45be9-2f4e-4d6a-b4a2-0ecaa7db548b" rendition="#bol">Du er den som ophøier og den som nedtrykker</hi>
+          </label>
+          <p xml:id="idc57cedf4-874d-419c-b320-f0572d1f6d0d">hentyder til <rs xml:id="id73fba97c-5a7f-4fbb-b703-b53fe37c88e0" type="bible">1 Sam 2,7</rs>: »HERREN er den, som giør fattig, og giør riig; som nedtrykker, ja og den, som ophøier« (GT-1740). Jf. også <rs xml:id="ide66fe478-d575-40b0-a107-f19bee962124" type="bible">Sl 75,8</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-64" n="133,22">
+          <label xml:id="id0ac1e394-4e8d-4972-b0c2-dfbd1c0bd09f">
+            <hi xml:id="id0ba79177-bbaf-47d8-8525-e60eca27cba4" rendition="#bol">Idræt</hi>
+          </label>
+          <p xml:id="idecf025e3-babe-43aa-8fa8-177be12cb5ea">gerning, handling.</p>
+        </note>
+        <note type="commentary" xml:id="hh-65" n="133,22">
+          <label xml:id="iddc6eaae9-d759-4d45-b648-fff9021ef5c0">
+            <hi xml:id="id962d6311-a1d6-4540-9fcd-6f7ea6791163" rendition="#bol">Haab i Verden</hi>
+          </label>
+          <p xml:id="id7c257775-3d25-48b4-912d-ee24f35ddbaf">spiller på <rs xml:id="id862ba41b-552b-4b17-b565-6340b26c2796" type="bible">Ef 2,12</rs>, hvor <persName xml:id="id1619b83b-8829-49f0-8a13-983c29bac661" key="Paulus">Paulus</persName> skriver til efeserne: »husk, at I dengang var adskilt fra Kristus, udelukket fra borgerret i <placeName xml:id="id47764f6e-f298-4b55-b6cd-68010e300f74">Israel</placeName> og fremmede for forjættelsens pagter, uden håb og uden Gud i verden.«</p>
+        </note>
+        <note type="commentary" xml:id="hh-66" n="133,22">
+          <label xml:id="id4f0e55b3-9711-47ec-8996-7234eadce5c2">
+            <hi xml:id="id39c14697-1887-4643-9708-313d1be3478e" rendition="#bol">fandt Naade for dine Øine</hi>
+          </label>
+          <p xml:id="id24a410c1-c402-4158-8aa0-b66b1cab457b">ofte anvendt udtryk i GT, jf. fx <rs xml:id="id20ee12f6-b902-4214-bc65-238fb6ecd3f2" type="bible">1 Mos 6,8</rs>; 18,3; 19,19.</p>
+        </note>
+        <note type="commentary" xml:id="hh-67" n="133,26">
+          <label xml:id="id151b96c7-4bf3-4a4c-b194-4bf3e41db23e">
+            <hi xml:id="idf2ea631c-85b9-49aa-bbc5-ce2e0c50fa8b" rendition="#bol">dit Øie, som skuer i Løndom</hi>
+          </label>
+          <p xml:id="id48bf0a93-f2f4-49de-8d4c-000c17b33f4b">spiller på <rs xml:id="id893757be-2a57-40af-a426-aa9552e385e9" type="bible">Matt 6,4</rs> og 6,18, hvor udtrykket »din Fader, som seer i Løndom« (NT-1819) forekommer.</p>
+        </note>
+        <note type="commentary" xml:id="hh-68" n="133,28">
+          <label xml:id="id353ebed5-a187-4ddb-8951-5721e9253cc6">
+            <hi xml:id="id62fa5e45-6db8-425a-b0c7-3d1a2b57eee7" rendition="#bol">Forlængsel</hi>
+          </label>
+          <p xml:id="id5b257a52-6299-4f34-9d0a-f90351195836">inderlig længsel; spiller måske på <rs xml:id="id8c546745-84be-4bb3-a7a6-7c9f3ebde50a" type="bible">Rom 8,19</rs>, hvor <persName xml:id="id498b617c-720f-42e9-9d64-ac244fa011cb" key="Paulus">Paulus</persName> skriver: »Derfor venter og Skabningens Forlængsel paa Guds Børns Aabenbarelse« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hh-69" n="134,2">
+          <label xml:id="id2f02ebfa-cc29-4faa-9ad3-68b4ea9a70bc">
+            <hi xml:id="id49e77e33-bbf6-4b04-901b-d9e5a7884e4a" rendition="#bol">skal Guds Naade overskygge dig</hi>
+          </label>
+          <p xml:id="id111e0fd6-3628-408b-8f01-d8883a51e650">spiller på <rs xml:id="id8bde77cf-40d9-4ed9-94ff-4911d9fcc9a1" type="bible">Luk 1,35</rs>, hvor englen siger til <persName xml:id="id2299ce4f-7e3e-4f3b-af70-992efc432b6f" key="Maria">Maria</persName>: »Helligånden skal komme over dig, og den Højestes kraft skal overskygge dig.«</p>
+        </note>
+        <note type="commentary" xml:id="hh-70" n="134,6">
+          <label xml:id="ide4a58a48-177f-4a13-a5f7-e62050142d06">
+            <hi xml:id="ide8ff2451-d0d3-4140-8edc-9f25b3a72170" rendition="#bol">han alle Tings almægtige Skaber</hi>
+          </label>
+          <p xml:id="ide83aec47-0f7d-49c5-ad48-0485e75f3263">jf. <hi xml:id="id40b862e6-b5b1-4ba7-8101-e5bed6c3d1ad" rendition="#ita">Balles Lærebog</hi> (<ptr xml:id="idc4f50c15-bd49-45d1-9f9e-036a26895d67" type="commentary" target="#hh-36" n="129,27"/>), kap. 2, »Om Guds Gierninger«, afsnit 1, § 1: »<hi xml:id="ideede7959-5a07-44de-89ec-e0168fd0923e" rendition="#ita">Gud haver fra Begyndelsen skabt Himmel og Jord af intet,</hi> ved din egen almægtige Kraft alene, til Gavn og Glæde for alle sine levende Skabninger«, s. 17.</p>
+        </note>
+        <note type="commentary" xml:id="hh-71" n="134,7">
+          <label xml:id="idd3ab4e20-cbab-4433-99ff-e64bfe35817b">
+            <hi xml:id="id5041719d-862a-4fd2-8e0c-3d7617cea881" rendition="#bol">Alles fælleds Fader</hi>
+          </label>
+          <p xml:id="id7486c3d1-e354-4e93-b833-bd89f935d4de">jf. forklaringen til indledningen i Fadervor: »Fader vor, du som er i Himlene. / Det er: Gud indbyder os kjerligen med denne liden Fortale, at vi skulle sandeligen troe, at han er vor rette Fader, og vi ere hans rette Børn«, <hi xml:id="id4a9ab471-9d4d-46b4-be70-090c5ecc06f1" rendition="#ita">Doct. Morten Luthers liden (eller mindre) Catechismus,</hi> <placeName xml:id="id6b420638-420b-4f8c-ac9a-10b32242b6ce" key="København">Kbh</placeName>. u.å. [o. 1820].</p>
+        </note>
+        <note type="commentary" xml:id="hh-72" n="134,21">
+          <label xml:id="id1f810a10-5341-4131-8486-99ef5af8fc2d">
+            <hi xml:id="id5d4860c1-37e8-4876-a768-2a956518940a" rendition="#bol">ham, der sørger for Alle</hi>
+          </label>
+          <p xml:id="id1beb37e1-9e6f-4ef7-a94c-00b57a6c1a55">jf. <hi xml:id="ideed30dd0-86e4-4d29-8e93-7f90496ef651" rendition="#ita">Balles Lærebog</hi> (<ptr xml:id="id527257ce-bc69-4190-ad8d-e54c1b648d8a" type="commentary" target="#hh-36" n="129,27"/>), kap. 2, »Om Guds Gierninger«, afsnit 2, § 2.a: »<hi xml:id="id971175fe-8a66-4a16-8864-03a3f78e42ba" rendition="#ita">Gud sørger for alle sine Skabninger, de mindste med de største,</hi> og skaffer dem alle det fornødne til deres Ophold, samt vogter og beskiermer dem«, s. 22.</p>
+        </note>
+        <note type="commentary" xml:id="hh-73" n="134,22">
+          <label xml:id="id3a0e6a0e-4d44-4e55-b7d1-b6c9a9da4550">
+            <hi xml:id="idfede21a7-a45d-41d1-b59b-5c7085173f18" rendition="#bol">mægtig i den Svage</hi>
+          </label>
+          <p xml:id="id8e8c6d1c-dc6b-4b98-ae22-5bd088f5904f"><ptr xml:id="ida7cc0776-bf7f-44c2-96b5-a0806618f0ba" type="commentary" target="#hh-17" n="125m,2"/>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-74" n="134,33">
+          <label xml:id="ide3099e4a-f7f5-435c-9085-6044dd0c624a">
+            <hi xml:id="idd0124976-c0a9-46d7-a83b-d20c63459f1b" rendition="#bol">Skriften siger ... al Faderlighed har Navn ... paa Jorden</hi>
+          </label>
+          <p xml:id="id73fb00ce-6cc4-4cb4-a3c2-2c5cf41de215">sigter til <rs xml:id="id9316f913-ad69-4de6-8ee6-5d7719dfb953" type="bible">Ef 3,14-15</rs>, hvor <persName xml:id="id9c863a1b-879d-4315-8820-a0b67ef3224b" key="Paulus">Paulus</persName> skriver: »For denne Sags Skyld bøier jeg mine Knæe for vor Herres Jesu Christi Fader, af hvem al Faderlighed kaldes i Himlene og paa Jorden« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hh-75" n="135,4">
+          <label xml:id="id3a4638d4-e0db-4877-99e8-8a3bfaf20678">
+            <hi xml:id="id112fea9d-ffe1-47db-8c31-4e836dfceb50" rendition="#bol">en Skygge</hi>
+          </label>
+          <p xml:id="id7dc298d6-53f8-4958-99cc-7946964c5849">spiller formentlig på udtrykket, 'kun en skygge af det, som skal komme', i <rs xml:id="id92149b2a-7879-48c7-b981-5c0265218d8c" type="bible">Kol 2,17</rs>; jf. også <rs xml:id="idca67b8f8-7300-45f6-8355-798958209ef2" type="bible">Hebr 8,5</rs>; 10,1.</p>
+        </note>
+        <note type="commentary" xml:id="hh-76" n="135,4">
+          <label xml:id="idf8ebc44b-c618-4a99-ae53-721de73f2225">
+            <hi xml:id="idc2e017a7-4563-41dc-b84f-0a60941c1015" rendition="#bol">en Afglands, et Billede</hi>
+          </label>
+          <p xml:id="id102890e3-3639-4422-bba5-ede1e2ce6bef">spiller formentlig på <rs xml:id="idfd2a906a-742f-4a5e-adf3-3bfb3703b2ef" type="bible">1 Kor 11,7</rs>, hvor <persName xml:id="id19c5bbd0-17f7-42eb-87b1-4407605e50e8" key="Paulus">Paulus</persName> siger, at manden er »Guds billede og afglans«.</p>
+        </note>
+        <note type="commentary" xml:id="hh-77" n="135,5">
+          <label xml:id="id138c3448-3049-4c24-9837-334e0ad31288">
+            <hi xml:id="id0aeeea20-5366-4209-9cc7-9a51e8d07e10" rendition="#bol">en mørk Tale</hi>
+          </label>
+          <p xml:id="idd9b3a48e-b206-436c-8405-ea59b25a677a">spiller på <rs xml:id="idd7f6ad7c-ecb5-476c-8d8c-3e42f754fc00" type="bible">1 Kor 13,12</rs>, hvor <persName xml:id="id28a3f207-f5e7-4008-8e63-0dda7e55f9c4" key="Paulus">Paulus</persName> skriver: »Thi nu see vi ved et Speil, i en mørk Tale, men da skulle vi see Ansigt til Ansigt« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hh-78" n="135,5">
+          <label xml:id="id6d1e756a-30df-4ecd-9926-98fbcd13960a">
+            <hi xml:id="id11fb0c21-9423-46c2-b1af-d92606004496" rendition="#bol">den Faderlighed ... al Fad. ... paa J.</hi>
+          </label>
+          <p xml:id="id265b8538-8a6e-4d64-88e1-9d305c0f918c"><ptr xml:id="id8f88cefb-841c-45eb-98e0-694e791946c7" type="commentary" target="#hh-74" n="134,33"/>. – <hi xml:id="idc7697b15-fb62-4c46-992d-1b95858002e8" rendition="#bol">Fad.:</hi> Faderlighed. – <hi xml:id="idd0505de7-7eb7-47e8-af7a-53685bc8a7bf" rendition="#bol">J.:</hi> Jorden.</p>
+        </note>
+        <note type="commentary" xml:id="hh-79" n="135,6">
+          <label xml:id="idc0b63760-051a-4389-ab6a-cebf768763ff">
+            <hi xml:id="id5aeb933c-4095-413c-8405-54af4146dd76" rendition="#bol">m: T:</hi>
+          </label>
+          <p xml:id="ida6caf7d4-74f3-4209-8675-5af6652de651">min Tilhører.</p>
+        </note>
+        <note type="commentary" xml:id="hh-80" n="135,11">
+          <label xml:id="id3e5cec3e-0f1d-450a-96ab-2ffde140cc15">
+            <hi xml:id="idfb358283-d354-4962-82d0-cd946678de68" rendition="#bol">Ev: om Nicodemus</hi>
+          </label>
+          <p xml:id="id6a63c628-9c42-4bd8-88a3-c8194904dc0a"><rs xml:id="id0fbc2d7c-bc67-463b-998d-1fad531f7445" type="bible">Joh 3,1-15</rs>, som er evangeliet til trinitatis søndag, jf. <hi xml:id="id20385e81-7d71-4d78-acfb-7dfe4ca8c479" rendition="#ita">Forordnet Alter-Bog for Danmark,</hi> <placeName xml:id="id713683ba-4fc8-42ad-8ba1-efaf1c50d889" key="København">Kbh</placeName>. 1830 [1688], ktl. 381 (forkortet <hi xml:id="id411bba1e-dd8b-4e92-a7b6-1dddf4309659" rendition="#ita">Forordnet Alter-Bog</hi>), s. 104-106: »Men der var en Mand af Pharisæerne, han hedde Nicodemus, en Øverste iblandt Jøderne. 2. Han kom til Jesum om Natten, og sagde til ham: Mester! vi vide, at du er en Lærer kommen fra Gud; thi Ingen kan giøre de Tegn, som du giør, uden Gud er med ham. 3. JEsus svarede, og sagde til ham: sandelig, sandelig siger jeg dig: uden Nogen bliver fød paa ny, kan han ikke see Guds Rige. 4. Nicodemus siger til ham: hvorledes kan et Menneske fødes, naar han er gammel? Mon han kan anden Gang komme ind i sin Moders Liv, og fødes? 5. JEsus svarede: sandelig, sandelig siger jeg dig: uden Nogen bliver fød af Vand og Aand, kan han ikke indkomme i Guds Rige. 6. Hvad som fød er af Kiødet, er Kiød; og hvad som fød er af Aanden, er Aand. 7. Forundre dig ikke, at jeg sagde til dig: det bør Eder at fødes paa ny. 8. Veiret blæser, hvorhen det vil, og du hører dets Susen, men du veed ikke, hvorfra det kommer, og hvor det farer hen; saaledes er det med Hver, som er fød af Aanden. 9 Nicodemus svarede, og sagde til ham: hvorledes kan dette skee? 10. JEsus svarede og sagde til ham: er du en <placeName xml:id="idb5f61a83-0b3d-4f1d-84d5-38b1363e138d">Israel</placeName>s Lærer, og veed ikke dette? 11. Sandelig, sandelig siger jeg dig: vi tale det, vi vide, og vidne det, vi have seet; og I annamme ikke vort Vidnesbyrd. 12. Dersom jeg siger Eder de jordiske Ting, og I ikke troe; hvorledes skulde I troe, om jeg sagde Eder de himmelske? 13. Og Ingen farer op til Himmelen uden den, som foer ned af Himmelen, Menneskens Søn, som er i Himmelen. 14. Og ligesom <persName xml:id="id1addab69-3fb9-4172-aee2-3e639ba1d0cb" key="Moses">Moses</persName> ophøiede Slangen i Ørken, saa bør det Menneskens Søn at ophøies: 15 paa det at hver den, som troer paa ham, ikke skal fortabes, men have et evigt liv.« – <hi xml:id="id6ef90f53-16a1-4b64-ab9c-be70dbd69419" rendition="#bol">Nicodemus:</hi> <persName xml:id="idda7e4f51-3589-4c56-b1dc-93594d36109f" key="Nikodemus">Nikodemus</persName>, farisæer, medlem af det jødiske råd, Synedriet, lærer; forsvarer Jesus over for farisæernes angreb, <rs xml:id="id83e1417d-0435-4cce-9fec-4779fcf8555c" type="bible">Joh 7,50-52</rs>; sørger sammen med <persName xml:id="id1b7e8c0e-21b9-4017-83e0-66e6b77694b4" key="Josef af Arimatæa">Josef af Aritmatæa</persName> for Jesu gravlæggelse, <rs xml:id="id6468166d-bc01-49ec-a268-14dad80985a4" type="bible">Joh 19,38-42</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-81" n="135,19">
+          <label xml:id="id07626670-416a-4eaf-8003-305604e946d2">
+            <hi xml:id="id939bcbb3-0ac2-46d3-80e5-2a399dd80d5b" rendition="#bol">Besøgelsens Time</hi>
+          </label>
+          <p xml:id="id27642a25-0423-4d27-a8c5-c5be17ba3988">spiller på <rs xml:id="id65f092c9-d7f7-4adb-b36f-a19b421d6c27" type="bible">Luk 19,44</rs>, hvor Jesus forudsiger <placeName xml:id="id6c2868c0-cbc4-453a-b6ad-7bd72a45456e">Jerusalem</placeName>s ødelæggelse, fordi den ikke kendte sin »Besøgelses Tid« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hh-82" n="135,25">
+          <label xml:id="idd2042340-c028-4a69-930f-f0a072f92141">
+            <hi xml:id="idb2d11665-6eeb-48d0-be00-fd15a95e4789" rendition="#bol">Du ikke vil lade Dig uden Vidnedsbyrd</hi>
+          </label>
+          <p xml:id="id2875e17d-75d8-430c-929e-8a4d8dd3887d">spiller på <rs xml:id="iddb3f7e1c-7f94-4b0d-8dff-5c08d399a9e5" type="bible">ApG 14,17</rs>, hvor <persName xml:id="id6886c5ed-3d07-48cb-b75e-d23e699bda84" key="Paulus">Paulus</persName> siger om Gud, at »han haver ikke ladet sig selv uden Vidnesbyrd, i det han giorde os godt, og gav os Regn og frugtbare Tider af Himmelen, i det han fyldte os med Føde, og vore Hierter med Glæde« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hh-83" n="135,26">
+          <label xml:id="idd7f655ab-bb07-4790-a0d3-f435cd161402">
+            <hi xml:id="id46da60a3-28cd-4c26-b061-1506e9222155" rendition="#bol">en Kilde</hi>
+          </label>
+          <p xml:id="id4ea14b47-2745-455c-9d27-f17b3ab37a8c">spiller formentlig på <rs xml:id="id934a0a84-ffd4-4209-ab6b-a6e88cabd0d4" type="bible">Joh 4,14</rs>, hvor Jesus siger til den samaritanske kvinde: »Men hvo som drikker af det Vand, som jeg vil give ham, skal til evig Tiid ikke tørste; men det Vand, som jeg vil give ham, skal blive i ham en Kilde af Vand, som opvælder til et evigt Liv« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hh-85" n="135,28">
+          <label xml:id="id358f1b33-aeb4-484b-9227-0214e35625ea">
+            <hi xml:id="id7d92a393-be6e-4e47-a246-de44c4e5ee76" rendition="#bol">Vi formaae ikke at bestemme Tid og Sted</hi>
+          </label>
+          <p xml:id="id8b6ffa05-988c-442b-8f94-fc9bd9aaf9eb">spiller formentlig på <rs xml:id="idc966e287-1373-4ff0-abc5-7cae6e73c129" type="bible">ApG 1,7</rs>, hvor Jesus siger til disciplene: »Det er ikke jeres sag at kende tider og timer, som Faderen har fastsat af egen magt.« Jf. også fx <rs xml:id="idbac2e3a4-b952-423e-8630-9e0dfc04b935" type="bible">Matt 24,36</rs>; 25,13 og <rs xml:id="id4e1b2869-04aa-417f-b692-3e5b40bb4baf" type="bible">1 Thess 5,1</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-84" n="135,30">
+          <label xml:id="id66ac5e5d-f9ff-44f3-85d1-334f7f6a2c06">
+            <hi xml:id="id88d95833-f9d8-47d5-bdc9-a081a074e9fc" rendition="#bol">det beleilige Øieblik</hi>
+          </label>
+          <p xml:id="idd9f71dbf-3a80-453f-a442-2e5249ebcc72">spiller på <rs xml:id="idf7c33a21-e9e1-4d35-a551-cb0a9fcab3cd" type="bible">Ef 5,16</rs>, hvor <persName xml:id="idb5002171-db10-4585-9b0c-0e0486bf7863" key="Paulus">Paulus</persName> skriver til efeserne: »kiøber den beleilige Tiid, fordi Dagene ere onde« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hh-86" n="135,34">
+          <label xml:id="id46213489-5f13-4902-bb6a-a7e6b5f62318">
+            <hi xml:id="idf6c8cd77-86e8-4568-897c-ec61a2f6c647" rendition="#bol">en uudtømmelig aandelig Skat</hi>
+          </label>
+          <p xml:id="id828ec064-e264-4599-9506-2cd3f2f70446">spiller på <rs xml:id="iddc455214-e8cc-4ad2-866f-a8336ba6c13c" type="bible">Luk 12,33</rs>, hvor Jesus siger til disciplene: »Skaf jer punge, som ikke slides op, en uudtømmelig skat i himlene, hvor ingen tyv kommer, og intet møl ødelægger.«</p>
+        </note>
+        <note type="commentary" xml:id="hh-5000" n="136,2">
+          <label xml:id="idd9e86da8-9cba-42a0-a747-712a325ae623">
+            <hi xml:id="ida776b5f8-9231-452c-8e42-03c8ae9da542" rendition="#bol">forsøge sig i Alt</hi>
+          </label>
+          <p xml:id="idb7965243-05bc-46f5-b1fc-71e1a91ea833">spiller måske på <rs xml:id="idb19f3412-6887-44cc-a3bb-c603eefaea75" type="bible">1 Thess 5,21</rs>: »Prøv alt, hold fast ved det gode.«</p>
+        </note>
+        <note type="commentary" xml:id="hh-87" n="136,12">
+          <label xml:id="id56bc97ee-31f8-47a9-a2c8-037023a99e9a">
+            <hi xml:id="id66904ca9-9a1b-4dbd-ae70-74b263d49883" rendition="#bol">ungdl.</hi>
+          </label>
+          <p xml:id="id1d5fa55e-7073-439e-b802-2453f56a6495">ungdommelige.</p>
+        </note>
+        <note type="commentary" xml:id="hh-140" n="136,21">
+          <label xml:id="id9d66606d-2881-46ff-a5c0-71a01f782595">
+            <hi xml:id="id051ba283-e659-466d-b52c-767fa0e5d36c" rendition="#bol">udv:</hi>
+          </label>
+          <p xml:id="id9549c0ec-ae74-4eeb-abb7-195b32537b1a">udvortes.</p>
+        </note>
+        <note type="commentary" xml:id="hh-88" n="136,21">
+          <label xml:id="idf4b936e7-bf7a-4038-8c17-b8b99885ed58">
+            <hi xml:id="ide51fc95b-52c2-4bec-9003-14578aae68f9" rendition="#bol">vidste Time og Klokkeslet</hi>
+          </label>
+          <p xml:id="ida46e989d-55eb-4ecd-ac18-74d837f54178"><ptr xml:id="idb96e194f-4b4f-4c9b-9e49-11dc1c512f23" type="commentary" target="#hh-85" n="135,28"/>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-89" n="136,37">
+          <label xml:id="id820d47db-9df8-4d20-ba8e-e259a3cc7ad7">
+            <hi xml:id="id53b340b1-8886-4e4d-a3e5-4beaf42761c5" rendition="#bol">Aandens Virksomhed ... hvor den farer hen</hi>
+          </label>
+          <p xml:id="idf485daaa-4c3c-4ce8-aec4-9354e751f86b">jf. <rs xml:id="id942e43c9-942c-421b-961f-0073a8181d18" type="bible">Joh 3,8</rs> (<ptr xml:id="id86bab18f-a3d5-4f69-9827-e70ad72ff24a" type="commentary" target="#hh-80" n="135,11"/>).</p>
+        </note>
+        <note type="commentary" xml:id="hh-90" n="137,1">
+          <label xml:id="id5a36e266-6305-405b-a5da-4057f2c7950c">
+            <hi xml:id="ide77e9494-6ba0-4ecd-8276-dc51ba3d7388" rendition="#bol">Herrens Huus</hi>
+          </label>
+          <p xml:id="id5b468188-61ea-47ea-b592-874e0277d4db">i GT fast udtryk for templet, i NT for kirken, jf. <rs xml:id="id7d41823a-6a62-4081-9757-27ff5828d994" type="bible">1 Tim 3,15</rs>, hvor der tales om at »færdes i Guds hus – det er den levende Guds kirke«.</p>
+        </note>
+        <note type="commentary" xml:id="hh-91" n="137,2">
+          <label xml:id="idb69ab517-2611-49d2-8e52-b0904e9ddb82">
+            <hi xml:id="ida75a309c-05ee-491a-ade0-45c44262e271" rendition="#bol">hans Tempel</hi>
+          </label>
+          <p xml:id="ide2e953d1-e7f6-4c30-ba46-26a044262c3f">her udtryk for Guds kirke (se foregående kommentar).</p>
+        </note>
+        <note type="commentary" xml:id="hh-92" n="137,16">
+          <label xml:id="id39dad036-f0c0-40f6-87d0-c429514d0b21">
+            <hi xml:id="idc25d1f09-8400-47b4-a577-7d19ff5da187" rendition="#bol">vi Intet formaae uden Gud, men Alt, naar Gud er med os</hi>
+          </label>
+          <p xml:id="id9756a974-88fe-41e4-adf4-7afaf199e4c9">spiller formentlig på <rs xml:id="idd5752734-0d19-4f20-b39a-6f0f86249656" type="bible">Fil 4,13</rs>, hvor <persName xml:id="idedb2a27a-c8e3-41c7-b3ae-3a36d57a122c" key="Paulus">Paulus</persName> skriver: »Alt formår jeg i ham [Gud], der giver mig kraft.«</p>
+        </note>
+        <note type="commentary" xml:id="hh-93" n="137,20">
+          <label xml:id="id1b0804df-1235-49d3-9ea4-9a302df4a31a">
+            <hi xml:id="id9982d914-5f58-4f2b-a2f8-2374acff794a" rendition="#bol">en Styrelse</hi>
+          </label>
+          <p xml:id="id732a67ba-4859-460d-9c79-ceb683d9d9ee"><ptr xml:id="id1704271a-05b1-4842-ae10-24b8a6dab234" type="commentary" target="#hh-36" n="129,27"/>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-94" n="137,24">
+          <label xml:id="id8a1d3e11-1e37-4dfa-9f7c-01616efb2a05">
+            <hi xml:id="id40f24ddf-84d6-4542-b9fe-cfcd570190a8" rendition="#bol">være vaagne <hi xml:id="idfd610d90-189b-4ebb-8f99-d78d995aee7b" rendition="#ita">(...)</hi> ikke indslumrede</hi>
+          </label>
+          <p xml:id="id77f812be-8c97-4c4c-91a5-c318982895ce">hentyder til beretningen om Jesus i <placeName xml:id="id78ba9786-418f-4cea-a939-0284ee7a8f24" key="Getsemane">Getsemane Have</placeName>, <rs xml:id="id3686fa81-5cb5-41c1-8a38-d78e41b35039" type="bible">Matt 26,36-46</rs>, hvor det fortælles, at disciplene faldt i søvn, mens Jesus tre gange efterlod dem for at bede; da han første gang kom tilbage og fandt dem sovende, sagde han til dem: »Så kunne I da ikke våge blot en time sammen med mig? Våg, og bed om ikke at falde i fristelse. Ånden er rede, men kødet er skrøbeligt«, v. 40-41.</p>
+        </note>
+        <note type="commentary" xml:id="hh-95" n="137,34">
+          <label xml:id="id4749ac69-ea96-49f9-9f7f-1d8cfac18625">
+            <hi xml:id="id7d2c5026-f56c-4878-8d63-f9a21fb7f991" rendition="#bol">Gud skal gjøre Fristelsen ... saa vi det kunne bære</hi>
+          </label>
+          <p xml:id="id9e827b00-38bb-4f0a-ad67-4b54585fc14c">jf. <rs xml:id="id12827e2a-2508-4434-980e-e30ad9f97cd2" type="bible">1 Kor 10,13</rs>: »Eder er ingen Fristelse paakommen, uden menneskelig; men Gud er trofast, som skal ikke lade Eder fristes over Eders Formue, men skal giøre baade Fristelsen og dens Udgang saaledes, at I det kunne taale« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hh-96" n="137,35">
+          <label xml:id="idd81fe3b1-ea14-4693-bdf7-3d88ecf4bbaa">
+            <hi xml:id="idae1344e4-5f78-4a77-b01e-25855e5bc317" rendition="#bol">m: T:</hi>
+          </label>
+          <p xml:id="id9f0c79eb-937d-4756-a978-0e93b420b02c">min Tilhører.</p>
+        </note>
+        <note type="commentary" xml:id="hh-97" n="137,35">
+          <label xml:id="id556c2270-982b-48d5-8990-13f5f30752cd">
+            <hi xml:id="id5eac1fc8-5bff-48b4-b346-8752a05a7c75" rendition="#bol">forsøgt</hi>
+          </label>
+          <p xml:id="idb2c9d2c8-b009-42ed-bafd-1622f25d24f8">prøvet, fristet.</p>
+        </note>
+        <note type="commentary" xml:id="hh-98" n="138,1">
+          <label xml:id="id13e463c4-b0a4-4001-8895-ae7ebe39600d">
+            <hi xml:id="id9b60535b-16ec-4b25-9085-ee67cc85ae3a" rendition="#bol">streed maaskee ofte den gode Strid</hi>
+          </label>
+          <p xml:id="id3ab2d911-ced0-4617-928b-20fd28f60b66">hentyder til <rs xml:id="id882680e1-f466-4676-8452-701303c881e1" type="bible">2 Tim 4,7</rs>, hvor <persName xml:id="id9e64784a-9271-4140-b499-e97a5e594ca6" key="Paulus">Paulus</persName> skriver: »Jeg har stridt den gode strid, fuldført løbet og bevaret troen.«</p>
+        </note>
+        <note type="commentary" xml:id="hh-99" n="138,7">
+          <label xml:id="id9d170833-af3c-41c4-87a2-0478301005c9">
+            <hi xml:id="id24c9c9e4-8a8a-4cbc-b516-0458d22d2020" rendition="#bol">vinker</hi>
+          </label>
+          <p xml:id="id35f0a8e4-21f5-48cc-bb18-1555e30dce15">lokker, frister.</p>
+        </note>
+        <note type="commentary" xml:id="hh-100" n="138,12">
+          <label xml:id="id34290cf1-08b6-4495-97ee-bb05d8f68b61">
+            <hi xml:id="id95b084f0-9aba-463e-b79a-c83cd16b4736" rendition="#bol">ædru og vaagen</hi>
+          </label>
+          <p xml:id="ida17b79b9-574d-40fc-a1a8-0bcd9ba8fb61">spiller på <rs xml:id="idcebc5628-d06d-40c3-abef-af7bc249b7e9" type="bible">1 Thess 5,6</rs>, hvor <persName xml:id="idb78c5f31-d0d4-4640-b9ae-6576070c1c8d" key="Paulus">Paulus</persName> skriver: »Så skal vi da ikke sove som de andre, men være vågne og ædru.«</p>
+        </note>
+        <note type="commentary" xml:id="hh-101" n="138,13">
+          <label xml:id="id67f55bc5-1978-483d-bfcc-cd2299fe4ad4">
+            <hi xml:id="id38bc8463-01bd-43cc-a909-11f2a67916d1" rendition="#bol">Menighedens Forhold til Χstus ... Brudens til Brudg.</hi>
+          </label>
+          <p xml:id="id75e1c4dc-e6f5-435b-8291-4f4ba195a583">Et tilsvarende billede anvendes i <persName xml:id="id02d03bde-2973-4960-918c-688bf107ae93" key="Johannes">Johannes</persName>' Åbenbaring, jf <rs xml:id="id3a1a2bf2-8bf5-484c-8936-31dae924ab72" type="bible">Åb 21,2</rs>: »Og den hellige by, det ny <placeName xml:id="id4963ead7-1517-4b9f-bd49-3f865e727eb5">Jerusalem</placeName>, så jeg [Johannes] komme ned fra himlen fra Gud, rede som en brud, der er smykket for sin brudgom.« Billedet har senere fundet vid anvendelse i prædikener, opbyggelseslitteratur (ikke mindst i mystikken og i pietismen) og salmer.</p>
+        </note>
+        <note type="commentary" xml:id="hh-102" n="138,19">
+          <label xml:id="id9ebdfedb-ddfd-4f05-a629-a4730f251a2e">
+            <hi xml:id="id20649e73-c2f3-480b-ad6e-c6fc8a3bb41a" rendition="#bol">leie</hi>
+          </label>
+          <p xml:id="ide1df16a1-4de4-448d-bc81-6731c87cb388">fejl for 'lege'.</p>
+        </note>
+        <note type="commentary" xml:id="hh-103" n="138,24">
+          <label xml:id="ida2c3ca53-406d-422a-a937-cb5e5c3cd7f9">
+            <hi xml:id="id6e869136-0e8f-4615-b6d6-b7986b5064f4" rendition="#bol">hele Livet jo er Forlovelsens Tid</hi>
+          </label>
+          <p xml:id="id5f2f2f44-316b-4a92-8331-db17e693c0f8">hentyder til den forestilling i mystikken og pietismen, at den troende i livet på jorden er forlovet med Kristus og ved døden vil blive hentet som bruden af sin brudgom for at indgå i det evige liv i himlen.</p>
+        </note>
+        <note type="commentary" xml:id="hh-104" n="138,24">
+          <label xml:id="id6d549802-6681-426a-b171-6cafba13a55f">
+            <hi xml:id="id5ebfb97b-2032-488a-8ec1-c3ee3f41c834" rendition="#bol">Graven er Brudekamret</hi>
+          </label>
+          <p xml:id="id137e4187-5b90-4722-934a-906537a5fb98">hentyder til den forestilling i mystikken og pietismen, at graven er det brudekammer, hvor den troende som bruden møder Kristus som brudgommen, for at de kan forenes i himlen.</p>
+        </note>
+        <note type="commentary" xml:id="hh-105" n="139,6">
+          <label xml:id="id38e0afa7-9044-47fd-a2b1-d209d3260bed">
+            <hi xml:id="id72ace8de-b887-4917-82a8-4362dfadcb2c" rendition="#bol">afarbeide</hi>
+          </label>
+          <p xml:id="id0b0cf19d-06de-4ae6-8504-8673dee19fc5">arbejde (en gæld) af.</p>
+        </note>
+        <note type="commentary" xml:id="hh-106" n="139,16">
+          <label xml:id="id9f99d3cd-c71b-4d69-8b3b-30304c45fa7b">
+            <hi xml:id="id73bd7419-7623-4757-999e-1448e5f13656" rendition="#bol">forklaret</hi>
+          </label>
+          <p xml:id="idd6586194-579a-491c-83c2-40c16567ed76">afklaret; forvandlet.</p>
+        </note>
+        <note type="commentary" xml:id="hh-107" n="139,18">
+          <label xml:id="id457b17b0-e0e8-4df0-b16f-481cefab63d0">
+            <hi xml:id="ida4182c8f-3476-4a3c-bdc3-68c97e348193" rendition="#bol">Gud ... har i Χsto forligt sig med Verden</hi>
+          </label>
+          <p xml:id="id622698b5-5a47-4372-b695-48f60b1b7e99">jf. fx <rs xml:id="id70fa5aa9-5c73-4ee2-852b-d917fbc05143" type="bible">2 Kor 5,18-19</rs>: »Men alt dette skyldes Gud, som forligte os med sig selv ved Kristus og gav os forligelsens tjeneste, for det var Gud, der i Kristus forligte verden med sig selv og ikke tilregnede dem deres overtrædelser, men betroede os ordet om forligelsen.«</p>
+        </note>
+        <note type="commentary" xml:id="hh-108" n="139,27">
+          <label xml:id="iddec79b35-eb16-484c-8118-8c5540b3f231">
+            <hi xml:id="iddbc8a330-86e8-4a98-910a-4077f16f339f" rendition="#bol">blyfærdig</hi>
+          </label>
+          <p xml:id="id401966d9-bcf8-4c03-94cd-0d79b408b2ab">blufærdig, bly.</p>
+        </note>
+        <note type="commentary" xml:id="hh-109" n="139,29">
+          <label xml:id="id6281dc73-b76d-42fa-a086-378c6f882204">
+            <hi xml:id="id86e09831-5d78-44d3-b6c7-61bdf5f2981a" rendition="#bol">den venstre Haand ... hvad den høier gjør</hi>
+          </label>
+          <p xml:id="ida51ef6ba-e6fc-42bf-aaeb-ae0318c9d6c6">jf. <rs xml:id="id0b25b302-f402-4235-9421-9252d3a4bfb4" type="bible">Matt 6,3</rs>, hvor Jesus siger: »Når du giver almisse, må din venstre hånd ikke vide, hvad din højre gør«.</p>
+        </note>
+        <note type="commentary" xml:id="hh-110" n="140,5">
+          <label xml:id="id6e43405f-391b-4ac8-aad8-53e1375801ea">
+            <hi xml:id="idb1437ea6-6ae7-40ee-a006-baf3cda8fde7" rendition="#bol">uudsigelige Taler</hi>
+          </label>
+          <p xml:id="id71548ea9-44d1-44e2-aa2f-5ee0dcb29ff1">spiller måske på <rs xml:id="idecb6d7f7-d66e-43a7-9607-7f9f7d72e403" type="bible">2 Kor 12,4</rs>, hvor <persName xml:id="id808e0510-47cb-4777-8f5b-290b2b9e7ecb" key="Paulus">Paulus</persName> fortæller om et menneske – formentlig ham selv, »at det blev rykket bort til <placeName xml:id="idd2650eef-5b5a-4fbe-be50-30f4b9e1e77e">Paradis</placeName> og hørte uudsigelige Ord, som et menneske ikke må udtale«.</p>
+        </note>
+        <note type="commentary" xml:id="hh-111" n="140,5">
+          <label xml:id="id8ab91d9a-c988-43ed-9def-9c90a5950e47">
+            <hi xml:id="ida20767f7-64c9-48a7-98d6-1f6c1928eb72" rendition="#bol">herovenfra</hi>
+          </label>
+          <p xml:id="id44eff47b-010b-439d-83d8-2835e31221c4">fra himlen.</p>
+        </note>
+        <note type="commentary" xml:id="hh-112" n="140,8">
+          <label xml:id="id7687a366-f4b3-44f8-9882-a80f985de999">
+            <hi xml:id="id30df37a0-8568-453c-862a-3dd1d2f11edb" rendition="#bol">lær Du os at bede rettelig</hi>
+          </label>
+          <p xml:id="idd84b2df0-1e97-41d6-8a69-c228ee1e27b3">spiller på <rs xml:id="idf5810a39-0e6f-4822-8ff7-53cbebd24f4e" type="bible">Luk 11,1</rs>, hvor en af disciplene, inden Jesus lærer dem 'Fadervor', beder ham: »Herre, lær os at bede, ligesom Johannes lærte sine disciple det.«</p>
+        </note>
+        <note type="commentary" xml:id="hh-113" n="140,12">
+          <label xml:id="ida0458da1-9330-407e-8869-1eaba9081377">
+            <hi xml:id="id2537b82c-99ab-41c8-a1fb-eab6edd1c878" rendition="#bol">tjene til dens Fred</hi>
+          </label>
+          <p xml:id="idaeb21914-9478-471e-97cb-025e44389a22">spiller på <rs xml:id="id59e3866f-06b7-48b5-8c39-a0b9d3a640ad" type="bible">Luk 19,42</rs>, hvor Jesus siger til <placeName xml:id="id345fed0a-50d0-4a99-b1e0-8a4bd4301d0e">Jerusalem</placeName>: »Vidste blot også du på denne dag, hvad der tjener til din fred.«</p>
+        </note>
+        <note type="commentary" xml:id="hh-114" n="140,16">
+          <label xml:id="id93167aa0-3006-4725-b02b-f466d2b6ed94">
+            <hi xml:id="idad310323-c989-40e5-876b-455d19bae729" rendition="#bol">overvundet Verden</hi>
+          </label>
+          <p xml:id="idcb901f42-db26-44a4-8e20-30b2761ee99e">spiller på <rs xml:id="id77dd1389-7fe5-424e-acd4-bfa55aeefe08" type="bible">1 Joh 5,4-5</rs>: »For alt, hvad der er født af Gud, overvinder verden; og den sejr, som har overvundet verden, er vor tro. Og hvem andre kan overvinde verden end den, som tror, at Jesus er Guds søn?«</p>
+        </note>
+        <note type="commentary" xml:id="hh-115" n="140,17">
+          <label xml:id="id1f74aec8-fced-48b3-a3f7-52cc46a28428">
+            <hi xml:id="id9651a827-a9d5-4e08-8d49-291888934292" rendition="#bol">Χstus sidder jo ikke altid ved Faderens høire Haand</hi>
+          </label>
+          <p xml:id="id50b8e8c1-8339-456f-93d5-2ae0ad4cc9f8">Om Kristi sæde ved Guds højre hånd, jf. fx <rs xml:id="id38019464-5694-43c7-a909-6bccf999c1a0" type="bible">Mark 16,19</rs>; <rs xml:id="idadc4ca88-51d8-4e37-b8b1-00ea3a78e929" type="bible">Luk 22,69</rs>; <rs xml:id="id5c293b2c-06c3-4ac8-8afb-fc586db8eb3f" type="bible">Ef 1,20</rs>; <rs xml:id="ide03171cc-621a-4765-abe9-18c70e5ce140" type="bible">Kol 3,1</rs>; <rs xml:id="iddf6106ca-47bf-4a7c-aa5a-eb3bf85778b6" type="bible">Hebr 10,12</rs> samt 2. art. i Den apostolske Trosbekendelse: »siddende ved Gud Faders, den almægtiges, højre hånd«.</p>
+        </note>
+        <note type="commentary" xml:id="hh-116" n="140,19">
+          <label xml:id="idbe9fa4a3-1cff-4ff4-967a-4a3ae8f13827">
+            <hi xml:id="id75833b45-ee97-4b6f-8bb6-9970189f1dc5" rendition="#bol">Stephanus saae ham staaende ved Faderens Høire</hi>
+          </label>
+          <p xml:id="id55da3cfc-ea2e-4b4e-ad22-fa1e5185d166">hentyder til beretningen om <persName xml:id="idda8b0b32-a455-40bd-9270-f5c9bf5fce5c" key="Stefanus">Stefanus</persName>' stening, <rs xml:id="ida950e4ba-65e1-4e63-a6dd-36e7b19afbe8" type="bible">ApG 7,54-60</rs>, hvor det forælles: »Men fuld af Helligånden stirrede Stefanus mod himlene, og han så Guds herlighed og Jesus stående ved Guds højre side. Og han sagde: 'Nu ser jeg himlen åben og Menneskesønnen stå ved Guds højre side'«, v. 55-56. – <hi xml:id="id2d68648a-381d-4091-9328-fc4c60be25ac" rendition="#bol">Stephanus:</hi> den mest fremtrædende blandt de syv fattigforstandere, som blev indsat for at varetage 'tjenesten ved bordene', jf. <rs xml:id="idd378f6c2-eb2f-4867-930e-391554ab7459" type="bible">ApG 6,1-6</rs>; forkynder af evangeliet på linie med apostlene; bringes for det jødiske råd, Synedriet, anklaget for at have talt imod templet og Moseloven, holder her en forsvarstale, <rs xml:id="id87329b29-9b51-4377-915b-58c6d6397e94" type="bible">ApG 7,2-53</rs>, men bliver slæbt uden for byen og stenet.</p>
+        </note>
+        <note type="commentary" xml:id="hh-117" n="140,21">
+          <label xml:id="ided3202e8-28e8-41c4-a9a4-637b273ca567">
+            <hi xml:id="id88e1a96b-822c-4153-a48d-c95b61799cde" rendition="#bol">Ev: om Nicodemus</hi>
+          </label>
+          <p xml:id="id3b9d1238-c040-4180-ae39-5b60cebcc7ee"><rs xml:id="idef719389-9b25-4134-99e4-8547b0be95be" type="bible">Joh 3,1-15</rs> (<ptr xml:id="id30159443-ffa5-4bff-ad4e-fdc725bd0bd5" type="commentary" target="#hh-80" n="135,11"/>).</p>
+        </note>
+        <note type="commentary" xml:id="hh-118" n="140,22">
+          <label xml:id="id58c35803-fdb2-4422-b56d-84d74a86f0bf">
+            <hi xml:id="idb523ce25-9518-4dad-b08a-cdf00539ee25" rendition="#bol">Om det at ville gjøre Erfaring</hi>
+          </label>
+          <p xml:id="id56e1d672-14d2-4798-9de6-118f20604a16">se <ref xml:id="id2ec79b7e-bd81-41c4-a02f-5cc5598d2648" target="../HH/txt.xml#n19" type="journalsAndPapers" n="19">HH:19</ref>. Jf. <ref xml:id="id8b69bbc0-78d3-4954-bcaa-c92fb2f278d4" target="../HH/txr.xml#ss183" type="textCriticalAccount" n="183">tekstredegørelsen, s. 183</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-5001" n="140,26">
+          <label xml:id="id7c4c0a79-f0a8-4558-b574-c2b1056a54b4">
+            <hi xml:id="id4fd04689-4d96-48ce-8741-f80ab09c6b01" rendition="#bol">Ogsaa denne Andagtens Time ... Din Sorg</hi>
+          </label>
+          <p xml:id="id029e3d1a-c54c-4b37-9aec-1dc3accc3c89">se <ref xml:id="id5ccc9c86-d414-449f-a567-34c89d2d9658" target="../HH/txt.xml#n19" type="journalsAndPapers" n="19">HH:19</ref>. Jf. <ref xml:id="id49c002d9-8b7e-473c-b8fd-0208a7c73654" target="../HH/txr.xml#ss183" type="textCriticalAccount" n="183">tekstredegørelsen, s. 183</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-119" n="140,30">
+          <label xml:id="ide87dec34-f264-4e68-bf13-ed5ff37c29a4">
+            <hi xml:id="id6fc738f6-abe8-4676-8a5b-602c0cb9c74c" rendition="#bol">hvo kjender Aandens Virksomhed ... farer hen</hi>
+          </label>
+          <p xml:id="idd1c15d48-e714-4dca-9648-e66ca5ea9cbe">jf. <rs xml:id="ida7d34fef-96d7-4096-8a85-301783f526e3" type="bible">Joh 3,8</rs> (<ptr xml:id="id94651ead-d17c-4e4d-a894-390111d544d6" type="commentary" target="#hh-80" n="135,11"/> og <ptr xml:id="idcd1f557a-2c48-48bd-97b1-29e3b2a64e89" type="commentary" target="#hh-89" n="136,37"/>).</p>
+        </note>
+        <note type="commentary" xml:id="hh-120" n="141,3">
+          <label xml:id="id11535ade-1693-4ab1-8aa5-a86b02a2080b">
+            <hi xml:id="idd28a3c2c-bd65-4522-bd5a-e9e436769170" rendition="#bol">Herrens Huus</hi>
+          </label>
+          <p xml:id="idfe68deba-cbdb-4fc6-ae2c-fff8e8ff4fa8"><ptr xml:id="id650e807a-4b76-41cd-b42f-a7409bcfb6d3" type="commentary" target="#hh-90" n="137,1"/>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-121" n="141,3">
+          <label xml:id="id50b63625-3173-4404-888e-a4f2220289cc">
+            <hi xml:id="id9f5e17d7-0182-450f-8289-43561a3fb98b" rendition="#bol">Tempel</hi>
+          </label>
+          <p xml:id="id5561b65c-060c-4aff-a4e4-d752cba1389b"><ptr xml:id="id84d94721-7ee4-47a1-9e09-801ef5530d53" type="commentary" target="#hh-91" n="137,2"/>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-122" n="141,7">
+          <label xml:id="id06216dfe-8779-418d-8a78-b90aab939cb0">
+            <hi xml:id="ida810ce76-f838-463e-bfd2-4210e6fb426d" rendition="#bol">.... Og naar da Fristelserne ... med Gud formaae Alt</hi>
+          </label>
+          <p xml:id="idd29ac7b3-fecd-407e-8adb-fd2aff11c579">se <ref xml:id="idc4d7fc5b-52bd-47e6-b836-4808683d173d" target="../HH/txt.xml#n19" type="journalsAndPapers" n="19">HH:19</ref>. Jf. <ref xml:id="id1d2cbeae-1143-4072-bb89-a40030c052bd" target="../HH/txr.xml#ss183" type="textCriticalAccount" n="183">tekstredegørelsen, s. 183</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-123" n="141,17">
+          <label xml:id="idd98fabeb-f34f-43cd-b339-d88fd6d4c2b3">
+            <hi xml:id="idf0302041-297c-4d57-b29c-b02faa07f4de" rendition="#bol">vi vide, at vi Intet formaae uden Gud </hi>
+            <hi xml:id="idfc3b1fe3-4e1e-49f1-8cee-93510324d9a6" rendition="#ita">(...)</hi>
+            <hi xml:id="idc903dc63-5a84-46a6-8494-6a97c66be6c5" rendition="#bol">vi med Gud formaae Alt</hi>
+          </label>
+          <p xml:id="idb866127a-80d6-47e7-8236-c16ca69ecf30"><ptr xml:id="idfc55289e-1181-4487-bf3a-a2f885178414" type="commentary" target="#hh-92" n="137,16"/>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-124" n="141m,1">
+          <label xml:id="id9b5884e8-d678-45f5-90dc-3b82335d0df3">
+            <hi xml:id="ideb013ef8-b086-4b56-84f3-4ff97b4c77d5" rendition="#bol">at vi ikke indslumre ... Tillid til Gud</hi>
+          </label>
+          <p xml:id="id4664b9c8-e435-4747-8f92-79176c0ac591">se <ref xml:id="idab02cc88-f816-40ef-98da-7ef4fa044b60" target="../HH/txt.xml#n19" type="journalsAndPapers" n="19">HH:19</ref>. Jf. <ref xml:id="id11817cf9-56bf-41b0-88ac-60da775f17a0" target="../HH/txr.xml#ss183" type="textCriticalAccount" n="183">tekstredegørelsen, s. 183</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-125" n="141,21">
+          <label xml:id="ida901b51c-b41b-4e7e-88b8-62ab7580625a">
+            <hi xml:id="idedbba5e6-d3bb-4750-8467-bbca89a40f5b" rendition="#bol">Samfund med Χstus</hi>
+          </label>
+          <p xml:id="id73d4ce06-907f-4b6d-9667-6fd0024c1cf0">fællesskab med Kristus; udtrykket forekommer et par gange i NT, jf. <rs xml:id="id7f46c839-f2a8-413d-8b38-c636106e1d8c" type="bible">1 Kor 1,9</rs> og <rs xml:id="id67825346-8591-4a53-88ce-ec97a256fd00" type="bible">1 Joh 1,6</rs> (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hh-126" n="141,22">
+          <label xml:id="id8fa9c1d3-fddf-4645-85d1-69f5760c2bbe">
+            <hi xml:id="id626932aa-1b9c-436b-b29a-d0e5cc491bf7" rendition="#bol">Homilie</hi>
+          </label>
+          <p xml:id="idb1cc9a36-9496-4f27-aa83-284e075f2841">gr. samvær, samtale; i oldkirken praktisk formaningstale efter de troendes samtale om et oplæst skriftsted ved gudstjenestens slutning, herefter en udarbejdet tale holdt i menigheden af dem, der besad prædikeembedet, derpå prædiken af præsten i kirken (modsat den missionerende forkyndelse for ikke-troende).</p>
+        </note>
+        <note type="commentary" xml:id="hh-127" n="141,23">
+          <label xml:id="id40c6ee41-db1e-44ce-b646-3c1fff4f9096">
+            <hi xml:id="ide8d0d8df-9dcd-44b4-a60d-70756c62535c" rendition="#bol">Rom: »hverken Engle, Djævle, ...</hi>
+          </label>
+          <p xml:id="id57ecf5c4-a350-409b-9033-28a90639fe09">sigter til <rs xml:id="idf5c70e39-3774-4ab9-915d-62653e77d585" type="bible">Rom 8,38-39</rs>, hvor <persName xml:id="id72215370-0581-4797-9d53-7adbafe67b03" key="Paulus">Paulus</persName> skriver: »Thi jeg er vis paa, at hverken Død, ei heller Liv, ei heller Engle, ei heller Fyrstendømmer, ei heller Magter, ei heller det Nærværende, ei heller det Tilkommende, ei heller det Høie, ei heller det Dybe, ei heller nogen anden Skabning skal kunne Skille os fra Guds Kierlighed i Christo Jesu vor Herre« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hh-128" n="141,24">
+          <label xml:id="idbc9916a7-8edd-42ef-b341-a0e2d39174bb">
+            <hi xml:id="idbc0100cd-4570-4a5b-a532-22386d135475" rendition="#bol">Engle (Gal. 1., 8.</hi>
+          </label>
+          <p xml:id="ide9d30fbc-3645-4eb3-be75-2646c9028342">»Men dersom endog vi, eller en Engel af Himmelen prædiker Eder Evangelium anderledes, end vi have prædiket Eder det, han være en Forbandelse« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hh-129" n="141,25">
+          <label xml:id="id5a7919cc-cbd2-41d6-9f78-f31f0b0b8c1b">
+            <hi xml:id="id1197c58f-5538-4e40-b66b-9ff877e706e7" rendition="#bol">Djævle (Eph.)</hi>
+          </label>
+          <p xml:id="id34de69d1-4b48-4c34-8ef0-cab783b6ff6b">hentyder til <rs xml:id="idae57c0f8-b2b2-47da-b254-d3a322c222c1" type="bible">Ef 6,11</rs>: »Ifører Guds fulde Rustning, at I kunne være mægtige til at staae imod Diævelens snedige Anløb« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hh-130" n="141,26">
+          <label xml:id="idaa5cdaf2-076d-4082-afd6-1f7ad3200012">
+            <hi xml:id="idb948eebd-9a98-48ff-a1de-3ccb84a31e65" rendition="#bol">Nærv:</hi>
+          </label>
+          <p xml:id="id1a127ad9-11c9-43db-bd56-08f31db89881">(det) Nærværende (<ptr xml:id="idc468d1d9-3e51-458b-b961-765f495c2403" type="commentary" target="#hh-127" n="141,23"/>).</p>
+        </note>
+        <note type="commentary" xml:id="hh-131" n="141,27">
+          <label xml:id="idae4f82ea-b241-4e00-8e6d-ce7ea5e4c2dc">
+            <hi xml:id="id58473acb-7fdc-4a64-a319-74e2e1db4fa2" rendition="#bol">Tilkomd.</hi>
+          </label>
+          <p xml:id="idb3e8e779-06c6-42a3-8a0e-31e737cbe89b">(det) Tilkommende (<ptr xml:id="idbfdbb576-0a32-4efd-8c7b-68094a37e414" type="commentary" target="#hh-127" n="141,23"/>).</p>
+        </note>
+        <note type="commentary" xml:id="hh-132" n="141,30">
+          <label xml:id="id684b4bef-c6d1-41aa-ad9d-5c2817232614">
+            <hi xml:id="idf7866183-cf78-4c0e-9344-abb7087a030e" rendition="#bol">Paulus</hi>
+          </label>
+          <p xml:id="id61b87d1c-027e-4940-bdd6-6d28ffb701c6">fra <placeName xml:id="ide1422984-d83d-41e0-bd2e-9d83b8e104b7">Tarsus</placeName>, opfattede sig selv som apostel, jf. fx <rs xml:id="ide389802b-6b88-4874-95b3-8c18e87c3c27" type="bible">Rom 1,1-2</rs>, hvor han skriver: »Fra <persName xml:id="id9876845a-6a0c-44f6-baee-145d4d4edca4" key="Paulus">Paulus</persName>, Kristi Jesu tjener, kaldet til apostel, udset til at forkynde det evangelium, som Gud forud har lovet ved sine profeter i De hellige Skrifter«. Forfatter af de 13 første breve i NT.</p>
+        </note>
+        <note type="commentary" xml:id="hh-133" n="141,31">
+          <label xml:id="id79a724f5-193c-4da0-9456-1dd169e1d9fa">
+            <hi xml:id="ide29c4b5d-a51c-45f3-9390-597a21ec154e" rendition="#bol">Herrens Apostel</hi>
+          </label>
+          <p xml:id="id57160940-30cb-4af5-9b22-dd0677d42c1c">se foregående kommentar.</p>
+        </note>
+        <note type="commentary" xml:id="hh-134" n="142,1">
+          <label xml:id="id39ea8a2c-031e-496e-8771-544b3a8eef09">
+            <hi xml:id="ide372729f-a05f-469f-9544-7cdeb4845805" rendition="#bol">Menigheden som Χsti Brud</hi>
+          </label>
+          <p xml:id="id3697a992-87e1-40ad-9827-fcb592130c80"><ptr xml:id="id7dc097c6-ae33-40e9-b0f1-d49d8bd87b3d" type="commentary" target="#hh-101" n="138,13"/>.</p>
+        </note>
+        <note type="commentary" xml:id="hh-135" n="142,2">
+          <label xml:id="id95bd721d-662e-4ebd-822b-fddd02c67e1e">
+            <hi xml:id="id02e17808-4016-4311-9fb4-070279faf60f" rendition="#bol">det Evangelium om en Konge ... sin Søns Bryllup</hi>
+          </label>
+          <p xml:id="id0ca0a943-28a9-4497-8f16-55df24f4d72d">sigter til <rs xml:id="ideb15cada-5d18-4d7c-9d9c-93e470d2c993" type="bible">Matt 22,1-14</rs>, der er evangeliet til 20. søndag efter trinitatis, jf. <hi xml:id="idedb2c65e-a12c-4c9e-a6a6-ff3be4ff7fbb" rendition="#ita">Forordnet Alter-Bog</hi> (<ptr xml:id="id174a1a59-7bda-4dac-bdd2-27def48cb152" type="commentary" target="#hh-80" n="135,11"/>), s. 160f.: »Og JEsus svarede, og talede atter ved Lignelser til dem, og sagde: 2. Himmeriges Rige lignes ved en Konge, som giorde sin Søns Bryllup. 3. Og han udsendte sine Tienere, at kalde de Budne til Bryllup; men de vilde ikke komme. 4. Han udsendte atter andre Tienere, og sagde: siger de Budne: see, jeg haver beredt mit Maaltid, mine Øxen og det fede Qvæg er slagtet, og Alting er rede; kommer til Bryllup. 5. Men de foragtede det, og gik hen, den Ene paa sin Ager, den Anden til sit Kiøbmandskab. 6. Andre grebe hans Tienere, forhaanede og ihjelsloge dem. 7. Men der Kongen det hørte, blev han vred, og skikkede sine Hære ud, og ødelagde disse Manddrabere, og satte Ild paa deres Stad. 8. Da sagde han til sine Tienere: Brylluppet er vel beredt, men de Budne vare det ikke værd. 9. Gaaer derfor ud paa Veiskiellene, og byder til Bryllup saa Mange, som I finde. 10. Og de Tienere gik ud paa Veien, og samlede alle dem, de fandt, baade onde og gode; og Bryllups-Huset blev fuldt af Giester. 11. Da gik Kongen ind, at besee Giesterne; og han saae der et Menneske, som ikke var iført Bryllups-Klædningen. 12. Og han sagde til ham: Ven! hvorledes er du kommen hid ind, og haver ikke Bryllups-Klædningen paa? Men han taug. 13. Da sagde Kongen til Tienerne: binder Hænder og Fødder paa ham, og kaster ham ud i det yderste Mørke; der skal være Graad og Tænders Gnidsel. 14. Thi Mange ere kaldede, men Faa udvalgte.«</p>
+        </note>
+        <note type="commentary" xml:id="hh-136" n="142,9">
+          <label xml:id="iddf8b2919-fc71-40ec-a46b-cc27f3c81d1d">
+            <hi xml:id="id526887e1-88f6-4955-aec2-826c21c3b26e" rendition="#bol">Han lærte af hvad han leed</hi>
+          </label>
+          <p xml:id="id22e1412f-c4d2-4fc8-b820-021e99339769">hentyder til <rs xml:id="id24ce7c35-0e91-4410-9b19-f302da97243e" type="bible">Hebr 5,8</rs>, hvor det hedder om Kristus: »Skønt han var søn, måtte han lære lydighed af det, han led«.</p>
+        </note>
+        <note type="commentary" xml:id="hh-137" n="142,10">
+          <label xml:id="idab76e308-c771-4464-af0c-9b89c0678c7b">
+            <hi xml:id="id0f408c7a-3437-4401-8500-bc6da05218a2" rendition="#bol">hvis nogen skulde have været fritaget ... vel ham</hi>
+          </label>
+          <p xml:id="id800526a1-dfcd-48e9-947d-d8d37876ca6c">hentyder måske til <rs xml:id="id85ac6b3a-9017-4513-a633-cefa3dec74a5" type="bible">Matt 26,39</rs>, hvor Jesus beder: »Min fader, hvis det er muligt, så lad dette bæger gå mig forbi. Dog, ikke som jeg vil, men som du vil.«</p>
+        </note>
+        <note type="commentary" xml:id="hh-138" n="142,12">
+          <label xml:id="idf6b028a1-7bee-4ad1-a090-9b44339acf7d">
+            <hi xml:id="idd9ed8323-cb7f-42c8-9f79-69a1ccc75e5c" rendition="#bol">vidste Alt</hi>
+          </label>
+          <p xml:id="id7db7711a-9d0f-4e53-ae07-14150f43b70c">jf. fx <rs xml:id="id26547498-9934-4820-9c64-b9335f918fd2" type="bible">Joh 18,4</rs>: »Jesus, som vidste alt, hvad der skulle ske med ham«.</p>
+        </note>
+      </div>
+    </body>
+  </text>
 </TEI>

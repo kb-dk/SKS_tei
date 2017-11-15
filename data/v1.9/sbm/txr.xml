@@ -1,168 +1,321 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Stridspunktet med Biskop Martensen; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende</title>
-     
-     <title type="short">SBM</title>
-  <author>
-   <name>Lena Wienecke Andersen</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Niels Jørgen Cappelørn</name><name>Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2010</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K14</biblScope>
-     <biblScope unit="file">http://sks.dk/sbm/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition><!--spaced out, in SKS rendered italic--><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition xml:id="lineHight1" scheme="css">line-height:150%</rendition><rendition xml:id="lineHight2" scheme="css">line-height:200%</rendition><rendition xml:id="lth" scheme="css">text-decoration: line-through</rendition><rendition xml:id="size-1" scheme="css">font-size: 83%</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20120823">txr/XML, <bibl><idno type="version">1.7</idno>, <biblScope unit="file">http://sks.dk/sbm/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id1ff53b1f-282d-45b6-aa9e-d2edf103c342">
+    <fileDesc xml:id="idbb98efe3-3109-43f0-b89f-b8dd0e4a8562">
+      <titleStmt xml:id="id4ebd5009-7652-405f-86c1-bab6def45ca2">
+        <title xml:id="idb3be30ed-8022-49dc-a060-7ae127843354" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id3c800a6c-399b-4c1a-9722-af7949976e82">Stridspunktet med Biskop Martensen; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende</title>
+        <title xml:id="idc61a67d5-8d89-4e53-9c86-174a1f5c2f24" type="short">SBM</title>
+        <author xml:id="id0f28b621-b3a7-452a-ae0e-565fecebb46d">
+          <name xml:id="id7a265d3b-d8af-4b56-8c33-95a7ad794074">Lena Wienecke Andersen</name>
+        </author>
+        <editor xml:id="id8ffd6763-3ccb-40ca-b7a2-de0df445e34d">
+          <name xml:id="id409c9ab1-9262-4ed8-a503-c5c811958dcd">Niels Jørgen Cappelørn</name>
+          <name xml:id="ideb9babe9-5131-410e-a901-b1b6ae892187">Joakim Garff</name>
+          <name xml:id="idf3b65a3d-83a7-4b2d-af9f-f6357ef766ec">Johnny Kondrup</name>
+          <name xml:id="id8ad6e19f-d9e8-4dbd-9276-2042b7a27714">Tonny Aagaard Olesen</name>
+          <name xml:id="id788e6e9e-80c4-428c-a3ef-1106872c6744">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="id9ab50c21-2982-4a19-95c3-315cea44500c">
+          <resp xml:id="iddaa465c4-77c2-4f23-8eee-27af9d2c63b5">redigeret af</resp>
+          <name xml:id="idb405d1d8-f8f3-4b8b-823e-8639fba85840">Niels Jørgen Cappelørn</name>
+          <name xml:id="id101281f4-46bc-4950-acdc-fcda624aedfa">Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="id8e2f4716-8d59-4a95-a8f6-3f6c729209bd">
+          <resp xml:id="idd7946b08-3688-4e57-b9a2-81b4a0fbc3c6">elektronisk redigeret af</resp>
+          <name xml:id="id3f79fa6c-d0d0-4611-b08d-a42eaa17aebf">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id6d31ec47-8f03-416d-9f08-8f09d2e3659f">
+        <authority xml:id="idac30b2a5-c591-4c03-8be6-116f26a4b23b">Søren Kierkegaard Forskningscenteret 2010</authority>
+        <availability xml:id="iddb9f7dda-2b09-4c3d-a23f-8573109a0250" status="restricted">
+          <p xml:id="id731e85b8-b5ce-4b56-b8f7-07c81b71379b">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="idde203e64-c6fe-4a3a-af20-75fb08f12d21">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="idad2de9ab-4e87-434a-851b-130178c06a1d" unit="volume">K14</biblScope>
+        <biblScope xml:id="idcad9b584-c6f7-4b44-8cdb-08dc108ea047" unit="file">http://sks.dk/sbm/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id2eb9b9a4-9566-40bc-8a53-a402a178e012">
+        <bibl xml:id="id6f4323cf-7004-46d0-be97-72cb23081e53" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id136010fc-4f6f-4b54-af7f-59f63010d532">
+      <tagsDecl xml:id="ide5284190-cbf8-4073-84f3-055e617c7893">
+        <rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition>
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition xml:id="lineHight1" scheme="css">line-height:150%</rendition>
+        <rendition xml:id="lineHight2" scheme="css">line-height:200%</rendition>
+        <rendition xml:id="lth" scheme="css">text-decoration: line-through</rendition>
+        <rendition xml:id="size-1" scheme="css">font-size: 83%</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id50ca1606-2204-4203-80d7-97b609e1b41e">
+      <change xml:id="ide728974e-6332-490d-ac54-37f3b9c6aaed">Transformed to TEI by style sheet <bibl xml:id="id475330a2-6aca-492f-8311-f6f67fef818e" type="file">txr2tei.xsl</bibl> version as of <date xml:id="id698a1735-f41d-49a5-8c12-76ef127cd775">2017-02-15</date> importing <bibl xml:id="idb9196245-0e76-4616-b85d-173083a4aa21" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="id72f81020-40b6-46c2-856a-9ed24a0fbdb3">Transformed to TEI by style sheet <bibl xml:id="ida83d688d-5690-4293-80c2-4997a8b478de" type="file">kn12tei.xsl</bibl> version <idno xml:id="idf5f0f621-081f-46c4-b224-9284278aba88" type="version">1.9</idno> as of <date xml:id="id640639cd-5e60-4838-9c7a-68cbf7c58573">2017-02-21</date> by <name xml:id="id053492e5-94ca-441d-9af8-1323535feac5">Karsten Kynde</name>, <orgName xml:id="id5b74515a-37ef-446f-b797-b79f526bc23d">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="idad16699e-3176-462a-af52-780f9b484803">København</placeName></change>
+      <change xml:id="id7c5ee6e1-15ed-46b7-a459-4500b32cf221" when="20120823">txr/XML, <bibl xml:id="idc524ace8-8900-4295-83d4-5243d029bc45"><idno xml:id="id0b48437e-9c7a-48e5-bcaf-0500dd09cf1b" type="version">1.7</idno>, <biblScope xml:id="idfd6e6120-0e80-4a7e-9d03-38f5dc6a91fe" unit="file">http://sks.dk/sbm/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="TextCriticalAccount" subtype="publishedWritings"><body><div><head type="topText" n="Tekstredegørelse"/>
-  <head><pb xml:id="ss437" n="437" edRef="#SKS"/>Tekstredegørelse</head>
-  <list type="TOC"> 
-   <item>1. Bibliografisk beskrivelse
-    <ptr type="chapter" target="#k1" n="437"/>
+  <text xml:id="id3df2a688-29bc-4bf5-8bde-8b8f78e6b4da" type="TextCriticalAccount" subtype="publishedWritings">
+    <body xml:id="ide3d7bf90-79e5-4df0-91d5-02ad7586b8c8">
+      <div xml:id="id074b7ddf-2fd6-46b3-a3e7-0107551816ad">
+        <head xml:id="idc5f67a85-ba94-4adc-b901-25eb3880fc0f" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="idb184aa6d-f5de-42b5-a3fb-ab33140608f2"><pb xml:id="ss437" n="437" edRef="#SKS"/>Tekstredegørelse</head>
+        <list xml:id="id32d8ee89-c0da-4866-ab52-900b9aa84d1a" type="TOC">
+          <item xml:id="idf040afa6-bf63-4473-bb78-3809366ed1b8">1. Bibliografisk beskrivelse
+    <ptr xml:id="idc56b3ca2-d5ea-4abd-a798-c123dd97a05c" type="chapter" target="#k1" n="437"/>
    </item>
-   <item>2. Manuskriptbeskrivelse
-    <ptr type="chapter" target="#k2" n="443"/>
+          <item xml:id="id5d713dcc-532c-4629-b2fb-ba38998fef6b">2. Manuskriptbeskrivelse
+    <ptr xml:id="idb0ded133-8882-44ad-b617-386a2b8e7613" type="chapter" target="#k2" n="443"/>
    </item>
-   <item>3. Tilblivelseshistorie
-    <ptr type="chapter" target="#k3" n="446"/>
+          <item xml:id="id14d95944-8801-4f4f-a707-2f0badae825e">3. Tilblivelseshistorie
+    <ptr xml:id="idd26f052a-6f08-44db-b570-b2e4c949b4c1" type="chapter" target="#k3" n="446"/>
    </item>
-   <item>4. Udgivelsesmåde
-    <ptr type="chapter" target="#k4" n="447"/>
+          <item xml:id="idbfe04e4d-6439-47b6-85ef-93ebfc4458fb">4. Udgivelsesmåde
+    <ptr xml:id="idad976a0f-2522-4f16-a93c-e5d751fd4415" type="chapter" target="#k4" n="447"/>
    </item>
-  </list>
-  <div type="level1" xml:id="k1">
-   <head>1. Bibliografisk beskrivelse</head>
-   <p>»Stridspunktet med Biskop <persName key="Martensen, Hans Lassen">Martensen</persName>; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende.« blev trykt i <hi rendition="#ita">Fædrelandet,</hi> 16. årgang, nr. 24, mandag den 29. jan. 1855. Artiklen er signeret »S. Kjerkegaard«. <hi rendition="#ita">Fædrelandet</hi> blev udgivet af <persName key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName key="Ploug, Carl">C. Ploug</persName>; sidstnævnte fungerede også som ansvarlig redaktør. Avisen blev trykt hos <persName key="Klein, Louis">Louis Klein</persName> i <placeName>København</placeName> og lå færdig fra trykkeriet kl. 20.30. Prisen var 6 skilling i løssalg, 5 mark pr. måned, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName>København</placeName>.</p>
-   <p>Artiklen er blevet kollationeret i fire eksemplarer af <hi rendition="#ita">Fædrelandet,</hi> nr. 24, den 29. jan. 1855:</p>
-   <list> 
-     
-     <label>A</label>
-     <item>SKs eget eksemplar, uindbundet og ubeskåret, KA, D pk. 17.</item>
-    
-     
-     <label>B</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>B er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p> </note></item>
-    
-     
-     <label>C</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>C er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p> </note></item>
-    
-     
-     <label>D</label>
-     <item>Udskrift af digitalfotograferet originaleksemplar, Kungl. biblioteket, <placeName>Stockholm</placeName>.<note> <p>Fotografiet er i filformatet jpeg og har en opløsning på 300 ppi. I det svenske bibliotekssystems nationale katalog LIBRIS er <hi rendition="#ita">Fædrelandet</hi> registreret med nr. 2145045.</p> </note></item>
-    
-   </list>
-   <p><pb xml:id="ss438" n="438" edRef="#SKS"/>Ved den interne kollation af de fire eksemplarer blev der konstateret en enkelt afvigelse. Ordet »Nar« er i eksemplarerne A, B og C fejlsat »Mar« (<ref target="../SBM/txt.xml#ss142" type="publishedWritings" n="142"><hi rendition="#ita">SKS</hi> 14, 142</ref>,53); i eksemplar D er fejlen rettet. Fejlen formodes rettet under et kort ophold i trykningen, idet de kollationerede eksemplarer har angivet samme tidspunkt fra trykkeriet. Eksemplar A danner grundlag for den følgende beskrivelse.<note> <p>Da <hi rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes i tekstredegørelsen.</p> </note></p>
-   <div type="level2">
-    <head>Format og paginering</head>
-    <p>Formatet er folio.<note> <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p> </note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet ark. Avisen er trespaltet; forsiden er ydermere opdelt af en tværgående, fed-fin dobbeltskillestreg trykt ca. to tredjedele nede på siden. Pagineringen 97-100 er på forsiden angivet under spalterne, på avisens øvrige sider over. Spalterne er unummereret.<note> <p>I <ref target="../SBM/txt.xml#ss141" type="publishedWritings" n="141"><hi rendition="#ita">SKS</hi> 14, 141</ref>-143, angives sidetallet i marginen; de følgende spalteskift angives med en lodret streg i teksten og et suppleret spaltetal i kantet parentes i marginen; ved sideskift angives kun sidetallet.</p> </note></p>
-    <p rendition="#ind">»Stridspunktet med Biskop <persName key="Martensen, Hans Lassen">Martensen</persName>; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende.« fylder forsidens øverste del (s. 97) og knap en halv spalte på anden side (s. 98). Derudover indeholder avisen endnu en artikel af SK, nemlig føljetonen »To nye Sandhedsvidner«,<note> <p><ref target="../TNS/txt.xml#ss147" type="publishedWritings" n="147"><hi rendition="#ita">SKS</hi> 14, 147</ref>-148. I ordet »føljeton«s oprindelige betydning, »bilag«, betegnede det artikler vedlagt en avis. Siden brugtes det om artikler på den nederste del af en avisside, dvs. under tværstregen; disse kaldtes føljetoner eller føljetonartikler. Sidenhen udvidedes betydningen til en tekst, der var opdelt og udkom over flere numre af en avis. I <hi rendition="#ita">Fædrelandet,</hi> nr. 24, fra den 29. jan. 1855 ses således en føljeton i betydningen: artikel placeret nederst på avissiden, under en tværstreg.</p> </note> nyheder fra ind- og udland samt annoncer. Se <ref target="../SBM/txr.xml#ill_k21" type="figure">illustration 21</ref>.</p>
-   </div>
-   <div type="level2">
-    <head><pb xml:id="ss439" n="439" edRef="#SKS"/>Beskrivelse af eksemplar A</head>
-    <p>Avisen måler ca. 347 × 518 mm.<note> <p>Størrelsen måles som bredde (øverste kant) × højde (venstre kant).</p> </note></p>
-    <div type="level3">
-     <head>Papir</head>
-     <p>Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
-    </div>
-    <div type="level3">
-     <head>Typografi</head>
-     <p>Det fremherskende skriftsnit i avisen er antikva. Fremhævet tekst er sat med fed eller spatieret skrift.</p>
-     <p rendition="#ind">På forsiden findes avisens hoved og datolinje. Hovedet består af et bredt centralfelt og to smalle felter hhv. til venstre og højre herfor. Datolinjen adskiller hovedet fra avisens øvrige tekst.</p>
-     <p rendition="#ind">Det centrale felt har ordlyden: <figure xml:id="ill_k21" rend="opening"><graphic url="../SBM/ill_k21.jpg"/> <head>21. SKs eksemplar af <hi rendition="#ita">Fædrelandet,</hi> nr. 24, den 29. januar 1855, forside med to artikler af SK</head> </figure> </p>
-     <quote><p><hi rendition="#bol">Fædrelandet.</hi> | <hi rendition="#bol"><hi rendition="#spa">1855.</hi></hi> | Abonnementspris i <placeName key="København">Kjøbenhavn</placeName> 15 Mk. pr. Qvartal, 5 Mk. pr. Maaned; enkelte Nr. 6 Sk.; udenfor <placeName key="København">Kjøbenhavn</placeName> 3 Rdl. | pr. Qvartal frit i Huset. Hver Søgne-Aften udgaaer et Numer.<note> <p>Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p> </note></p></quote>
-     <p>Det smalle felt til venstre har følgende ordlyd:</p>
-     <quote><p>Bladets Comptoir, store Kjøb-|magergade Nr. 54, er aabent | hver Søgnedags Formiddag fra | Kl. 11–1.</p></quote>
-     <p>Det smalle felt til højre:</p>
-     <quote><p><hi rendition="#bol">Bekjendtgjørelser</hi> | indrykkes mod en Betaling af | 4 Sk. for Petitlinien. Ifølge en | Overenskomst med <hi rendition="#bol">»Afton-|bladet«</hi> i <placeName>Stockholm</placeName>, <hi rendition="#bol">»Chri-|stianiaposten«</hi> i <placeName key="Oslo">Christiania</placeName> | og <hi rendition="#bol">»Handels- och Sjö-|farts-Tidningen«</hi> i Gö-|theborg kunne de ogsaa blive | indførte i disse mod en lignende | Betaling for hvert Blad.</p></quote>
-     <p>Derunder er datolinjen placeret, indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Datolinjen har ordlyden:</p>
-     <quote><p><pb xml:id="ss442" n="442" edRef="#SKS"/><hi rendition="#bol">16</hi><hi rendition="#sup">de</hi> <hi rendition="#bol">Aarg.</hi> <hi rendition="#bol">Mandagen den 29. Januar.</hi> <hi rendition="#bol">Nr. 24.</hi></p></quote>
-     <p>Oplysningen om årgang er venstrestillet, dateringen centreret, og avisnummeret højrestillet.<note> <p>En uddybende beskrivelse af avishovedet findes i <ref target="../PPM/txr.xml#ss416" type="textCriticalAccount" n="416">tekstredegørelsen til »En Opfordring til mig fra Pastor <persName key="Paludan-Müller, Jens">Paludan-Müller</persName>«, s. 416</ref>ff.</p> </note></p>
-     <p rendition="#ind">Nederst i avisens sidste spalte, adskilt fra en foregående notits af en skillestreg i hele spaltens bredde, er trykketidspunktet angivet:</p>
-     <quote><p>Færdigt fra Trykkeriet Kl. 8½.</p></quote>
-     <p>Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående, fed-fin dobbeltskillestreg og har ordlyden:</p>
-     <quote><p>Udgivere: <hi rendition="#bol"><persName key="Giødwad, Jens Finsteen">J. F. Giødwad</persName></hi> og <hi rendition="#bol"><persName key="Ploug, Carl">C. Ploug</persName>;</hi> ansvarlig: <hi rendition="#bol"><persName key="Ploug, Carl">C. Ploug</persName>.</hi> | [Skillestreg] | Trykt med Hurtigpresse hos <hi rendition="#spa"><persName key="Klein, Louis">Louis Klein</persName>.</hi></p></quote>
-     <p>Første del af artiklens overskrift, »Stridspunktet med Biskop <persName key="Martensen, Hans Lassen">Martensen</persName>;«, der er fed og centreret i spalten, er sat med en punktstørrelse ca. 1 grad større end brødteksten.<note> <p>Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 10; tekst, der er 1 grad større, er sat med punktstørrelse 12, og 2 grader større med punktstørrelse 14, mens tekst, der er 1 grad mindre, er sat med punktstørrelse 8, og 2 grader mindre med punktstørrelse 6.</p> </note> Anden del, »som, christeligt, afgjørende for det i For-|veien, christeligt seet, mislige kirkelige | Bestaande.«, der også er fed og centreret i spalten, er sat med samme punktstørrelse som brødteksten. Under en kort skillestreg følger dateringen »D. 26. Jan.« og den spatierede signatur »S. Kjerkegaard.« indrykket fra hhv. for- og bagkant på samme linje.</p>
-     <p rendition="#ind">Artiklen indledes af en uncial, der er fed og sat med en punktstørrelse ca. 2 grader større end brødteksten. I artiklens anden spalte er teksten delt med tre asterisker. Efter artiklen er trykt en længere skillestreg, der afgrænser SKs tekst fra den øvrige tekst i spalten.</p>
-     <p rendition="#ind">Spaltekolumnen måler ca. 88 mm i bredden, og der er op til 52 linjer i hver af artiklens spalter. Mellem spalterne er sat en fed, lodret skillestreg. Brødteksten er sat med en skriftstørrelse svarende til ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum.</p>
-     <p><pb xml:id="ss443" n="443" edRef="#SKS"/>Der er en del sætter- og trykfejl i artiklen. Fire sætterfejl er registreret: et fejlsat komma efter »Præst det« (<ref target="../SBM/txt.xml#ss141" type="publishedWritings" n="141"><hi rendition="#ita">SKS</hi> 14, 141</ref>,66) og to omvendte typer, hhv. et omvendt 'm' i »mig« (142,28) og et omvendt 'a' i stedet for det andet 'e' i »bedre« (142,53); som tidligere nævnt ses også »Mar« fejlsat for »Nar« (142,53). Et 'r', der ikke holder linje, ses sidst i »fortryder« (143,31). To på hinanden følgende linjer afsluttes med t'er, i hhv. »at« og »sæt«, der ikke holder linje (143,48 og 143,49). Endvidere ses to steder, at et 'l' er faldet ud i ordet »skal« (143,34, første forekomst, og 143,77). I »Myn-|ster« (143,70) synes der at være et større mellemrum mellem 's' og 't' end mellem de øvrige typer. Hertil kommer en lang række læderede typer.<note> <p>Eksempler på læderede typer: 'e' i »kirkelig« (<ref target="../SBM/txt.xml#ss141" type="publishedWritings" n="141"><hi rendition="#ita">SKS</hi> 14, 141</ref>,18), endnu et 'e' i »et« (141,20), 'i' i »ikke« (141,58), det første 'e' i »ere« (142,16), et 'r' i »Dommeren« (142,26), 'd' i »dem« (142,64, første forekomst), bindestregen ved linjeskift i »hel-|lere« (142,71, anden forekomst) og 'i' i »til« (143,2).</p> </note></p>
-    </div>
-   </div>
-  </div>
-  <div type="level1" xml:id="k2">
-   <head>2. Manuskriptbeskrivelse</head>
-   <p>Til »Stridspunktet med Biskop <persName key="Martensen, Hans Lassen">Martensen</persName>; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende.« findes følgende manuskripter i Kierkegaard Arkivet (KA) på <placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
-   <msDesc><msIdentifier><collection>SBM</collection></msIdentifier> 
-    <msPart xml:id="physDesc.1" next="#additional.1"><msIdentifier><idno>1</idno></msIdentifier><physDesc><p>Kladde til »Stridspunktet med Biskop <persName key="Martensen, Hans Lassen">Martensen</persName>; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende.«, fordelt på 3 dobbeltblade og 1 løst blad.</p></physDesc> 
-       <msPart xml:id="physDesc.1.1" next="#additional.1.1"><msIdentifier><idno>1.1</idno></msIdentifier><physDesc><p>Kladde til artiklen (<ref target="../SBM/txt.xml#ss141" type="publishedWritings" n="141"><hi rendition="#ita">SKS</hi> 14, 141</ref>-142,49 til »Alvor« og 143,5-82 fra »altsaa for Gud,«).</p><p>3 dobbeltblade, i alt 6 blade i 4<hi rendition="#sup">o</hi>.<note> <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p> </note></p><p>Ingen paginering. Dobbeltbladene er med blyant nummereret 1-3.</p><p>Papir: gulligt koncept, glat. Mål: 167 × 208 mm.<note> <p>Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p> </note></p><p><pb xml:id="ss444" n="444" edRef="#SKS"/>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladene er efter beskrivning blevet foldet på tværs.</p><p>På bl. [1r] findes overskriften »<del rendition="#lth"><hi rendition="#spa">Stridspunktet, nu som / afgjørende for hele det kirkelige Bestaaende.</hi></del>«. Til venstre herfor erstattes »<del rendition="#lth"><hi rendition="#spa">afgjørende</hi></del>« af »<del rendition="#lth"><hi rendition="#spa">som graverende critisk</hi></del>«, og i marginen til højre findes en passage (indvist før »<hi rendition="#spa"><del rendition="#lth">kirkelige</del></hi>« i inderspalten), som i sig selv bliver overskriftens undertitel: »<hi rendition="#spa">som, christeligt, afgjørende for det iforveien, christeligt seet, mislige kirkelige Bestaaende.</hi>«. Oven over den slettede overskrift er den endelige overskrift skrevet: »<hi rendition="#bol">Stridspunktet med Biskop <persName key="Martensen, Hans Lassen">Martensen</persName>;</hi>«. I inderspalten følger herefter en ufuldstændig datering, »d.«, og signaturen <hi rendition="#ant">»S.K.«.</hi> På bl. [4r] findes lige under midten to asterisker. I marginen på bl. [4v] findes et dobbeltkors og henvisningen <hi rendition="#ant">»cfr Hoslagte«</hi>, begge skrevet med blyant; henvisningen gælder ms. 1.1.1. Nederst på bl. [6r] ses et dobbeltkors og redigeringsbemærkningen »Ny Udgang«, begge ligeledes med blyant.</p><p>Mange korrektioner, både marginaltilføjelser og sletninger. Der findes større blyantsletninger på bl. [2v] (fire linjer), bl. [5r] (fire linjer) og bl. [6r] (syv linjer i hovedspalten og ni linjer i marginen). Derudover er der foretaget en del mindre blyantsletninger.</p><p>Hertil hører følgende:</p></physDesc> 
-          <msPart xml:id="physDesc.1.1.1" next="#additional.1.1.1"><msIdentifier><idno>1.1.1</idno></msIdentifier><physDesc><p>Kladde til en længere passage (<ref target="../SBM/txt.xml#ss142" type="publishedWritings" n="142"><hi rendition="#ita">SKS</hi> 14, 142</ref>,49-143,5 fra »; ja jeg vil heller« til »Men fra Prædikestolen«).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrivningskant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 166 × 204 mm.</p><p>Bladet er foldet en gang på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladet er efter beskrivning blevet foldet en gang på tværs.</p><p>Øverst på rectosiden findes et dobbeltkors i blyant, hvormed teksten indvises på bl. [4v] i ms. 1.1. Versosiden afsluttes med sætningen »Men fra Prædikestolen o:s:v.«, der erstatter »Fra Prædikestolen«, der er overstreget lige efter indvisningstegnet i ms. 1.1.</p><p><pb xml:id="ss445" n="445" edRef="#SKS"/>Få korrektioner, herunder en enkelt sletning med blyant.</p></physDesc></msPart><msPart xml:id="additional.1.1.1" prev="#physDesc.1.1.1"><msIdentifier><idno>1.1.1</idno></msIdentifier><additional><adminInfo><note/></adminInfo></additional></msPart>
-         </msPart><msPart xml:id="additional.1.1" prev="#physDesc.1.1"><msIdentifier><idno>1.1</idno></msIdentifier><additional><adminInfo><note/></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.1" prev="#physDesc.1"><msIdentifier><idno>1</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 52, læg 1; <hi rendition="#ita">Pap.</hi> XI 3 B 218)<note> <p>I KA, B pk. 52, læg 1, findes et omslag, som ikke beskrives af <hi rendition="#ita">Pap.,</hi> men som <hi rendition="#ita">Pap.</hi> har mærket »[XI 3 B 217-218]«. Omslaget er et stykke groft, blåt konceptpapir, der er foldet til konvolut og bærer påskrifterne »<hi rendition="#ita">4</hi>« skrevet med rødkridt, formentlig af <persName key="Lund, Henrik">H. Lund</persName>, »<hi rendition="#spa">26/1 55:</hi> / <hi rendition="#spa">Første Concept</hi> / til / <hi rendition="#spa">Stridspunktet med Biskop <persName key="Martensen, Hans Lassen">Martensen</persName>;</hi> / (osv) / (+ <hi rendition="#spa">en anden Concept.</hi>)« og »'Fædrel.' 29/1 55.«, formentlig skrevet af <persName key="Barfod, Hans Peter">H.P. Barfod</persName>. I omslaget ligger en bronzefarvet silkesløjfe.</p> </note></p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.2" next="#additional.2"><msIdentifier><idno>2</idno></msIdentifier><physDesc><p>Renskrift af »Stridspunktet med Biskop <persName key="Martensen, Hans Lassen">Martensen</persName>; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende.«. Renskriften, der har været benyttet som trykmanuskript,<note> <p>Der ses enkelte sættermarkeringer, indført med blyant; dateringen er fuldført »26. Jan«, og signaturen er fuldført »jerkegaard«. Desuden ses påskriften »GlB.«, uvist i hvis hånd. Lignende påskrifter ses i enkelte andre af SKs renskrifter; fælles er, at der til de pågældende renskrifter hører mindst én indvist passage. Det kan betyde, at SK først har indleveret en renskrift og siden noget mere, i form af en eller flere indviste passager. Det først indleverede har så muligvis fået påskriften »GlB.« for »Gammelt Blad«.</p> </note> består af 1 dobbeltblad og 5 løse blade.</p></physDesc> 
-       <msPart xml:id="physDesc.2.1" next="#additional.2.1"><msIdentifier><idno>2.1</idno></msIdentifier><physDesc><p>Renskrift af artiklen (<ref target="../SBM/txt.xml#ss141" type="publishedWritings" n="141"><hi rendition="#ita">SKS</hi> 14, 141</ref>-142,49 til »Alvor« og 143,5-82 fra »altsaa for Gud«).</p><p>4 løse blade (oprindelig et læg af 2 dobbeltblade) og 1 dobbeltblad, i alt 6 blade i 4<hi rendition="#sup">o</hi>. De løse blade har afrivningskant i venstre side.</p><p>Bladene er pagineret 1-11 med blyant; bl. [6v] er upagineret.</p><p>Papir: gulligt koncept, glat. Mål: 165 × 203 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladene er efter beskrivning blevet foldet en gang på tværs. En tredjedel af bl. [6r] er beskrevet; bl. [6v] er ubeskrevet.</p><p>Øverst på s. 1 findes overskriften »<del rendition="#lth"><hi rendition="#spa">Stridspunktet, nu som / Indsigelse for hele det kirkelige Bestaaende</hi></del>«. Til venstre herfor erstattes »<del rendition="#lth">Indsigelse</del>« først af »<del rendition="#lth">afgjørende for</del>« og siden af »<del rendition="#lth"><hi rendition="#spa">som graverende critisk</hi></del>«, og i marginen til højre findes en passage (indvist før »<del rendition="#lth"><hi rendition="#spa">kirkelige</hi></del>«), som i sig selv bliver overskrif<pb xml:id="ss446" n="446" edRef="#SKS"/>tens undertitel: »<hi rendition="#spa">som, christeligt, afgjørende, for det / iforveien, christeligt seet, mis-/lige kirkelige Bestaaende.</hi>«. Oven over den slettede overskrift er den endelige overskrift skrevet: <hi rendition="#bol">»Stridspunktet med Biskop <persName key="Martensen, Hans Lassen">Martensen</persName>;«</hi>. I inderspalten følger herefter en ufuldstændig datering, »d.«, og signaturen <hi rendition="#ant">»S.K.«.</hi> S. 7 indledes med to asterisker, og omtrent halvvejs nede på siden findes i marginen redigeringsbemærkningen <hi rendition="#ant">»cfr Hoslagte«</hi>, skrevet med blyant og indvist i teksten med et dobbeltkors, også med blyant; henvisningen gælder ms. 2.1.1.</p><p>En del korrektioner, både marginaltilføjelser og sletninger. Der findes blyantsletninger på bl. [1r], bl. [2], bl. [3r], bl. [4r] og bl. [5v].</p><p>Hertil hører følgende:</p></physDesc> 
-          <msPart xml:id="physDesc.2.1.1" next="#additional.2.1.1"><msIdentifier><idno>2.1.1</idno></msIdentifier><physDesc><p>Renskrift af en længere passage (<ref target="../SBM/txt.xml#ss142" type="publishedWritings" n="142"><hi rendition="#ita">SKS</hi> 14, 142</ref>,49-143,5 fra »; ja jeg vil heller« til »Men fra Prædikestolen«).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrivningskant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 166 × 203 mm.</p><p>Bladet er foldet en gang på langs; en bred inderspalte rummer tekst. Bladet er efter beskrivning blevet foldet en gang på tværs. Teksten afsluttes på versosiden lige under midten.</p><p>Øverst på rectosiden findes et dobbeltkors i blyant og bemærkningen »ad pag 7.«; henvisningen gælder ms. 2.1. Versosiden afsluttes med sætningen »Men fra Prædikestolen«, der erstatter »Fra Prædikestolen«, der er overstreget lige efter indvisningstegnet i ms. 2.1.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.2.1.1" prev="#physDesc.2.1.1"><msIdentifier><idno>2.1.1</idno></msIdentifier><additional><adminInfo><note/></adminInfo></additional></msPart>
-         </msPart><msPart xml:id="additional.2.1" prev="#physDesc.2.1"><msIdentifier><idno>2.1</idno></msIdentifier><additional><adminInfo><note/></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.2" prev="#physDesc.2"><msIdentifier><idno>2</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 52, læg 1; <hi rendition="#ita">Pap.</hi> XI 3 B 217)</p></note></adminInfo></additional></msPart>
-   </msDesc>
-   <p>(KA, B pk. 52, læg 1; <ref type="preparatoryManuscript" n="pap:XI3B217-218" rend="SBM,ms.2"><hi rendition="#ita">Pap.</hi> XI 3 B 217-218</ref>)</p>
-  </div>
-  <div type="level1" xml:id="k3">
-   <head><pb xml:id="ss447" n="447" edRef="#SKS"/>3. Tilblivelseshistorie</head>
-   <p>SK angreb den officielle kristendomsforkyndelse i <placeName>Danmark</placeName>, først med 21 artikler i <hi rendition="#ita">Fædrelandet</hi> (fra den 18. dec. 1854 til den 26. maj 1855), dernæst med sit tidsskrift <hi rendition="#ita">Øieblikket.</hi><note> <p>Se <hi rendition="#ita">SKS</hi> 13.</p> </note> Artiklen »Stridspunktet med Biskop <persName key="Martensen, Hans Lassen">Martensen</persName>; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende.« var SKs fjerde indlæg i denne kirkestrid.</p>
-   <p rendition="#ind">Dateringen er ufuldstændig fra SKs hånd, både i kladde (ms. 1.1) og i renskrift (ms. 2.1). Alligevel fremgår det, at teksten er blevet til i januar 1855, tidligst påbegyndt den 10. og afleveret i sætteriet den 26. jan. I kladde og renskrift (ms. 1.1, bl. [6r]-[6v], og ms. 2.1, s. 10) står der nemlig, at de første artikler i kirkestriden har vakt forargelse:</p>
-   <quote><p>Men naar det Forargelige er skeet, skal Forargelsen vækkes mod det, og man skal ikke som Prof. <persName key="Nielsen, Rasmus">Nielsen</persName> bukke og beklage, at mit Skridt desto værre har vakt saa stor Forargelse, nei, det har snarere endnu ikke vakt Forargelse nok <hi rendition="#ita">(...)</hi></p></quote>
-   <p>Ordene »som Prof. <persName key="Nielsen, Rasmus">Nielsen</persName> bukke og«,<note> <p>Trykt som <ref type="preparatoryManuscript" n="pap:XI3B217" rend="SBM,ms.2"><hi rendition="#ita">Pap.</hi> XI 3 B 217</ref>, s. 359.</p> </note> der er overstreget, henviser til <persName key="Nielsen, Rasmus">Rasmus Nielsen</persName>s indlæg i <hi rendition="#ita">Fædrelandet,</hi> nr. 8, den 10. jan. 1855.<note> <p>»En god Gjerning«; trykt i <hi rendition="#ita">Bl.art.,</hi> s. 249-254. Uddrag af artiklen er gengivet i kommentaren til 143,<hi rendition="#size-1">65</hi>, til »Hvad jeg vil?« 179,<hi rendition="#size-1">3</hi> og til »At Biskop <persName key="Martensen, Hans Lassen">Martensen</persName>s Taushed er 1) christeligt uforsvarlig; 2) latterlig; 3) dum-klog; 4) i mere end een Henseende foragtelig.« 217,<hi rendition="#size-1">41</hi>.</p> </note></p>
-   <p rendition="#ind">Passagen (mss. 1.1.1 og 2.1.1), der indvises både i kladde og i renskrift, er først kommet til, efter at renskriften forelå; både i passagen og i den øvrige tekst ses tilbageførsler af sletninger fra renskrift til kladde. Disse tilbageførsler har formentlig fundet sted for at sikre, at rettelserne blev bevaret, selvom renskriften skulle blive beskadiget eller gå tabt. Men i øvrigt synes artiklens opbygning ikke at have voldt problemer.</p>
-   <p rendition="#ind">Datoen »26. Jan« blev sandsynligvis tilføjet SKs artikel ved indleveringen til sætteriet og fremgår derfor af den trykte artikel, der udkom den 30. jan. 1855.</p>
-  </div>
-  <div type="level1" xml:id="k4">
-   <head><pb xml:id="ss448" n="448" edRef="#SKS"/>4. Udgivelsesmåde</head>
-   <p>»Stridspunktet med Biskop <persName key="Martensen, Hans Lassen">Martensen</persName>; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende.« blev som nævnt trykt i <hi rendition="#ita">Fædrelandet.</hi><note> <p>En nærmere redegørelse for <hi rendition="#ita">Fædrelandets</hi> redaktionelle forhold, periodicitet og oplagstal findes i <ref target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til »Aabenbart Skriftemaal«, s. 112</ref>f.</p> </note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
-   <p rendition="#ind">Dele af artiklen blev allerede i SKs levetid frit oversat til svensk; bogen <hi rendition="#ita">Den officiella kristendomen är icke det nya testamentets kristendom. Framställning af dr. <persName key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>'s polemik mot statskyrkan i <placeName>Danmark</placeName>,</hi> hvori de fleste af SKs artikler fra kirkestriden er blevet oversat i uddrag, udkom i <placeName>København</placeName> i 1855.<note> <p>Et dedikationseksemplar fastslår, at det var den svenske journalist <persName key="Sturzen-Becker, O.P.">O.P. Sturzen-Becker</persName>, på det tidspunkt bosiddende i <placeName>København</placeName>, der anonymt udgav bogen. Dedikationseksemplaret findes på Kungl. biblioteket i <placeName>Stockholm</placeName> med signaturen Rar. 726. Eksemplaret var ikke blandt SKs efterladte bøger, og det formodes derfor, at SK har sendt det retur til forfatteren, jf. <persName key="Kabell, Aage">Aage Kabell</persName> <hi rendition="#ita">Kierkegaardstudiet i <placeName>Norden</placeName>,</hi> <placeName key="København">Kbh.</placeName> 1948, s. 73.</p> </note> De fragmentariske oversættelser strækker sig til og med artiklen »Et Resultat«, trykt i <hi rendition="#ita">Fædrelandet,</hi> nr. 107, den 10. maj 1855; den anonyme redaktør har sandsynligvis antaget, at SK under denne overskrift afsluttede sit angreb på kirken, og har herefter ladet bogen trykke.</p>
-   <p rendition="#ind">Af stor betydning for receptionen i SKs umiddelbare eftertid var <persName key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi rendition="#ita"><persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 <hi rendition="#ita">(Bl.art.).</hi> Heri indgår størstedelen af SKs artikler, også »Stridspunktet med Biskop <persName key="Martensen, Hans Lassen">Martensen</persName>; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende.«.<note> <p>Artiklen er trykt i <hi rendition="#ita">Bl.art.,</hi> s. 74-78. SK havde selv planer om, men fik ikke realiseret, en samlet udgivelse af kirkestridsartiklerne, jf. <ref type="preparatoryManuscript" n="pap:XI3B128-135"><hi rendition="#ita">Pap.</hi> XI 3 B 128-135</ref>.</p> </note></p>
-  </div>
- </div></body></text>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="id4f9067a5-008e-44e1-b38b-49d761529961">1. Bibliografisk beskrivelse</head>
+          <p xml:id="ida2a1df7f-9fc4-43fe-bc41-2a706f13b980">»Stridspunktet med Biskop <persName xml:id="ideb1be235-ca53-495b-84b5-b244e182c05a" key="Martensen, Hans Lassen">Martensen</persName>; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende.« blev trykt i <hi xml:id="idd439b1f3-9c89-4583-b31f-161d07e2f2a1" rendition="#ita">Fædrelandet,</hi> 16. årgang, nr. 24, mandag den 29. jan. 1855. Artiklen er signeret »S. Kjerkegaard«. <hi xml:id="id01fa1732-93b4-4072-a03b-f4da2c3fde58" rendition="#ita">Fædrelandet</hi> blev udgivet af <persName xml:id="id317da253-d188-4e32-9b90-bd7c941b030f" key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName xml:id="id721948e1-a766-4bbb-a3cf-cc372c9d3146" key="Ploug, Carl">C. Ploug</persName>; sidstnævnte fungerede også som ansvarlig redaktør. Avisen blev trykt hos <persName xml:id="id403dea48-b890-4295-b505-8f8d409a4cf3" key="Klein, Louis">Louis Klein</persName> i <placeName xml:id="id46547fb8-79a4-4da2-ab3c-5d1a32e13fed">København</placeName> og lå færdig fra trykkeriet kl. 20.30. Prisen var 6 skilling i løssalg, 5 mark pr. måned, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName xml:id="id354a39ee-9eff-4a42-ac9f-2bf16bd99cb6">København</placeName>.</p>
+          <p xml:id="id93fa8091-d878-4b48-a487-dc0150f42b9e">Artiklen er blevet kollationeret i fire eksemplarer af <hi xml:id="id1cacb1b2-d4aa-416c-9d5b-678a18652322" rendition="#ita">Fædrelandet,</hi> nr. 24, den 29. jan. 1855:</p>
+          <list xml:id="id72172959-44f2-4a0e-a288-baccf531da79">
+            <label xml:id="id8505a991-d311-43ba-9ab1-3f84408d105f">A</label>
+            <item xml:id="idfaadf46b-6bdf-4250-9502-f724f2c067bd">SKs eget eksemplar, uindbundet og ubeskåret, KA, D pk. 17.</item>
+            <label xml:id="id904ad166-c634-48ba-ab3c-7bb27dbf411a">B</label>
+            <item xml:id="ided11c0bd-4b40-4e72-a83d-470dfc9c6e7c"><placeName xml:id="id0521bf0d-177b-428c-86b4-3d373cb6b426" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="id5d5c8c08-4553-4874-9143-d3eb926b3e08"><p xml:id="id9c253cb2-ae40-409a-ad33-4e00d66973b6">B er indbundet sammen med resten af <hi xml:id="idf020d015-be8f-42a4-87ae-68768c1b262c" rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p></note></item>
+            <label xml:id="idec2ab2e0-4c0b-4876-ac6a-672cdf94dd25">C</label>
+            <item xml:id="id9138da71-fb89-4f47-b867-046ec3a60e26"><placeName xml:id="idadc0260e-8f57-4755-be0a-4ffaa8312fc6" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="id031eb117-c0cf-4fd4-b32c-308cec221659"><p xml:id="id711aa417-946a-47df-b917-4e65f2ff6311">C er indbundet sammen med resten af <hi xml:id="id736fa3bf-8cda-4812-94a1-089579d48a78" rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p></note></item>
+            <label xml:id="id65d2b04e-5c3f-4218-8870-a03518d38e65">D</label>
+            <item xml:id="id3d0674c5-2bde-416b-a9b9-bac590ea5d6a">Udskrift af digitalfotograferet originaleksemplar, Kungl. biblioteket, <placeName xml:id="idbd81ea1d-1cd7-40ba-9cee-11e15bfb3ecd">Stockholm</placeName>.<note xml:id="id4dfadd08-a1be-468d-b80b-e9269c43d10c"><p xml:id="idcfeb7075-10c3-4f20-9fcc-1543a7d2f0ae">Fotografiet er i filformatet jpeg og har en opløsning på 300 ppi. I det svenske bibliotekssystems nationale katalog LIBRIS er <hi xml:id="idfe5462c6-d4db-4906-9209-e9fd5dbee11e" rendition="#ita">Fædrelandet</hi> registreret med nr. 2145045.</p></note></item>
+          </list>
+          <p xml:id="idc2cf7451-6550-4b66-9618-232b79ffc03e"><pb xml:id="ss438" n="438" edRef="#SKS"/>Ved den interne kollation af de fire eksemplarer blev der konstateret en enkelt afvigelse. Ordet »Nar« er i eksemplarerne A, B og C fejlsat »Mar« (<ref xml:id="id1562f85d-88b3-40d9-a8ae-b1ded5aa5b7e" target="../SBM/txt.xml#ss142" type="publishedWritings" n="142"><hi xml:id="ida35a75fa-73b4-448d-8790-49e94296f45d" rendition="#ita">SKS</hi> 14, 142</ref>,53); i eksemplar D er fejlen rettet. Fejlen formodes rettet under et kort ophold i trykningen, idet de kollationerede eksemplarer har angivet samme tidspunkt fra trykkeriet. Eksemplar A danner grundlag for den følgende beskrivelse.<note xml:id="idca58415e-7319-4908-8747-d47e669e0c0e"><p xml:id="idfe9b21f2-c052-4d08-92c9-02b7bfc16a05">Da <hi xml:id="id441131f5-8d6b-4e48-bd95-b13b341d05b7" rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes i tekstredegørelsen.</p></note></p>
+          <div xml:id="id8e5a9561-19f8-4589-ba59-a45deb984a90" type="level2">
+            <head xml:id="idfb8fd19e-fda0-4eea-8bf4-4aca02884558">Format og paginering</head>
+            <p xml:id="id489f5f25-e75c-42f4-b0a8-1492210076cb">Formatet er folio.<note xml:id="id70ef1909-d887-4f02-8ab5-d3b036fa74ad"><p xml:id="idc7acf471-64a9-4fca-be03-8946b511696a">Udgangspunktet for formatbetegnelsen er plane helark (ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p></note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet ark. Avisen er trespaltet; forsiden er ydermere opdelt af en tværgående, fed-fin dobbeltskillestreg trykt ca. to tredjedele nede på siden. Pagineringen 97-100 er på forsiden angivet under spalterne, på avisens øvrige sider over. Spalterne er unummereret.<note xml:id="id0c8487a3-6f59-4daf-b616-ee602efd287c"><p xml:id="id9e58a5b7-6ceb-4c15-8c82-6fc0778725e7">I <ref xml:id="id4550303a-9517-48bb-a2fc-ce48d626783f" target="../SBM/txt.xml#ss141" type="publishedWritings" n="141"><hi xml:id="id88736a30-67c4-4255-aa46-026b5c1c958e" rendition="#ita">SKS</hi> 14, 141</ref>-143, angives sidetallet i marginen; de følgende spalteskift angives med en lodret streg i teksten og et suppleret spaltetal i kantet parentes i marginen; ved sideskift angives kun sidetallet.</p></note></p>
+            <p xml:id="idc699a13f-62f0-41fa-9a9d-bafefaf3c4e1" rendition="#ind">»Stridspunktet med Biskop <persName xml:id="id25a8f90d-b66d-4ce5-bf2f-ad912cfc8623" key="Martensen, Hans Lassen">Martensen</persName>; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende.« fylder forsidens øverste del (s. 97) og knap en halv spalte på anden side (s. 98). Derudover indeholder avisen endnu en artikel af SK, nemlig føljetonen »To nye Sandhedsvidner«,<note xml:id="id5b2f0997-0d7f-4a3c-9494-ac68fba204ac"><p xml:id="id2f518bca-3084-4cd1-a169-fe4f432feb9f"><ref xml:id="idfa8619fa-4b15-414d-b2b2-1727157ea069" target="../TNS/txt.xml#ss147" type="publishedWritings" n="147"><hi xml:id="idce003f92-9dc0-4c26-802d-c32325149588" rendition="#ita">SKS</hi> 14, 147</ref>-148. I ordet »føljeton«s oprindelige betydning, »bilag«, betegnede det artikler vedlagt en avis. Siden brugtes det om artikler på den nederste del af en avisside, dvs. under tværstregen; disse kaldtes føljetoner eller føljetonartikler. Sidenhen udvidedes betydningen til en tekst, der var opdelt og udkom over flere numre af en avis. I <hi xml:id="idf7b437c5-c558-46cd-994f-ff04e3f0683e" rendition="#ita">Fædrelandet,</hi> nr. 24, fra den 29. jan. 1855 ses således en føljeton i betydningen: artikel placeret nederst på avissiden, under en tværstreg.</p></note> nyheder fra ind- og udland samt annoncer. Se <ref xml:id="ida5c51e07-42ca-494d-a52b-4e68fbf7698a" target="../SBM/txr.xml#ill_k21" type="figure">illustration 21</ref>.</p>
+          </div>
+          <div xml:id="id668b2d86-9164-40bb-bce3-635c5160de75" type="level2">
+            <head xml:id="ideaa8004e-1d7d-4c33-9f1a-c9b3f2213232"><pb xml:id="ss439" n="439" edRef="#SKS"/>Beskrivelse af eksemplar A</head>
+            <p xml:id="ide01326f4-5df9-4b74-8a77-ab78b1b41c24">Avisen måler ca. 347 × 518 mm.<note xml:id="id3953687b-cd32-4af9-b10b-d1a91d85c21f"><p xml:id="id97ddff2a-2640-4bf1-bbd1-875d03f202e2">Størrelsen måles som bredde (øverste kant) × højde (venstre kant).</p></note></p>
+            <div xml:id="id8f04f4e7-63dd-457d-a5ef-160e9eebddaa" type="level3">
+              <head xml:id="ida3e26167-c7d8-4d07-803f-8f88884264f9">Papir</head>
+              <p xml:id="idfd68f2a7-c6c0-419d-ae37-14142ef05da8">Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
+            </div>
+            <div xml:id="id9663e6dc-7f76-48c0-a2d0-08adc1513d6e" type="level3">
+              <head xml:id="id3eb2d0be-8f93-45d7-a05d-456aba0dfb82">Typografi</head>
+              <p xml:id="idd1fe4c7b-a5ed-45f5-b9c4-dc5e129c362d">Det fremherskende skriftsnit i avisen er antikva. Fremhævet tekst er sat med fed eller spatieret skrift.</p>
+              <p xml:id="id154b39cc-bf93-43a0-9449-51871392d3cb" rendition="#ind">På forsiden findes avisens hoved og datolinje. Hovedet består af et bredt centralfelt og to smalle felter hhv. til venstre og højre herfor. Datolinjen adskiller hovedet fra avisens øvrige tekst.</p>
+              <p xml:id="id1bf29e07-c159-4bc5-b9ff-797d38724a62" rendition="#ind">Det centrale felt har ordlyden: <figure xml:id="ill_k21" rend="opening"><graphic xml:id="ida5edc79b-5f8e-4817-842d-e5403c6c59e7" url="../SBM/ill_k21.jpg"/><head xml:id="id16c3d360-b271-4cce-90d3-df0238d6496b">21. SKs eksemplar af <hi xml:id="idf6c0aba5-5676-49fb-810a-277fbe3ab7cc" rendition="#ita">Fædrelandet,</hi> nr. 24, den 29. januar 1855, forside med to artikler af SK</head></figure> </p>
+              <quote xml:id="id22c69615-5a51-454d-ad67-97d3d7341bc9">
+                <p xml:id="idd13c8ccf-9971-42b7-b318-2c835d9f4a87"><hi xml:id="id4fd18324-83f9-4896-aa79-94777e470749" rendition="#bol">Fædrelandet.</hi> | <hi xml:id="id3fe8c617-cb2a-4762-a359-63e83513dc8d" rendition="#bol"><hi xml:id="idd7515dd1-b2ef-4d48-99e7-03ee7c3e444a" rendition="#spa">1855.</hi></hi> | Abonnementspris i <placeName xml:id="idb4f87c47-bcc2-4977-ad87-f0a33f78c48d" key="København">Kjøbenhavn</placeName> 15 Mk. pr. Qvartal, 5 Mk. pr. Maaned; enkelte Nr. 6 Sk.; udenfor <placeName xml:id="idd1e9e045-72f8-4917-92b8-59b8eb2f8b38" key="København">Kjøbenhavn</placeName> 3 Rdl. | pr. Qvartal frit i Huset. Hver Søgne-Aften udgaaer et Numer.<note xml:id="idfe7ce0e2-4eda-40d0-b13e-b390309ae23b"><p xml:id="id72eee6a1-6093-4193-9662-b9b3cd49c74a">Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p></note></p>
+              </quote>
+              <p xml:id="id54fba814-b14c-4bd4-aa0b-789fa044949c">Det smalle felt til venstre har følgende ordlyd:</p>
+              <quote xml:id="id19025a0e-9189-4377-8cc2-01f5960039de">
+                <p xml:id="id5bc488b5-25cb-403f-8bd6-7fde26a952b6">Bladets Comptoir, store Kjøb-|magergade Nr. 54, er aabent | hver Søgnedags Formiddag fra | Kl. 11–1.</p>
+              </quote>
+              <p xml:id="id6a56d2e6-258e-4371-a12b-1fbefc8e4adb">Det smalle felt til højre:</p>
+              <quote xml:id="ide57415c7-c24d-40d9-828f-5abd9e632b9c">
+                <p xml:id="id38ad606e-00fc-4a58-b619-af9bf27b6582"><hi xml:id="idb0213370-02f8-429c-9c23-3098d8ac1911" rendition="#bol">Bekjendtgjørelser</hi> | indrykkes mod en Betaling af | 4 Sk. for Petitlinien. Ifølge en | Overenskomst med <hi xml:id="id735734aa-b50a-44c4-9606-ffde66451a5b" rendition="#bol">»Afton-|bladet«</hi> i <placeName xml:id="id93c631cc-a7b3-407f-820a-fc011caa879d">Stockholm</placeName>, <hi xml:id="id636b61b1-e4e2-4ec6-a95c-b85815202e67" rendition="#bol">»Chri-|stianiaposten«</hi> i <placeName xml:id="id68020077-f098-43c4-9474-55966989e3ba" key="Oslo">Christiania</placeName> | og <hi xml:id="id38288e08-6829-4290-8404-11cf0db11c92" rendition="#bol">»Handels- och Sjö-|farts-Tidningen«</hi> i Gö-|theborg kunne de ogsaa blive | indførte i disse mod en lignende | Betaling for hvert Blad.</p>
+              </quote>
+              <p xml:id="id5ed37a8c-7a31-424a-ae5e-654c07812112">Derunder er datolinjen placeret, indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Datolinjen har ordlyden:</p>
+              <quote xml:id="id69e54bda-b8cf-4b16-8e99-0b02190783d7">
+                <p xml:id="id8f2e487d-8950-4474-a01d-c547a2a23d80">
+                  <pb xml:id="ss442" n="442" edRef="#SKS"/>
+                  <hi xml:id="idfd4a7875-c76e-452e-b99f-1a50e38e3872" rendition="#bol">16</hi>
+                  <hi xml:id="idff4f9645-541c-41e3-9f2a-96a09687f810" rendition="#sup">de</hi>
+                  <hi xml:id="id2d37cdcf-29f2-471c-8754-895417476c3c" rendition="#bol">Aarg.</hi>
+                  <hi xml:id="id2ce2b754-1899-4095-ac4e-ee74b0710b9c" rendition="#bol">Mandagen den 29. Januar.</hi>
+                  <hi xml:id="id44be2f6c-ec20-495b-b11a-d0689368a9fa" rendition="#bol">Nr. 24.</hi>
+                </p>
+              </quote>
+              <p xml:id="id2b8c1787-b265-4b5e-b79d-8d313b67bd94">Oplysningen om årgang er venstrestillet, dateringen centreret, og avisnummeret højrestillet.<note xml:id="id0562b6cd-21ec-4754-aa05-533c10875fb0"><p xml:id="id3072dd11-9c97-409e-9e0a-0e278151b371">En uddybende beskrivelse af avishovedet findes i <ref xml:id="iddcaa160b-4463-409f-8281-8fbe6c72ded2" target="../PPM/txr.xml#ss416" type="textCriticalAccount" n="416">tekstredegørelsen til »En Opfordring til mig fra Pastor <persName xml:id="iddc32cdf4-c974-49bd-9e5e-10a988854d26" key="Paludan-Müller, Jens">Paludan-Müller</persName>«, s. 416</ref>ff.</p></note></p>
+              <p xml:id="id4b1a8adb-fc2b-48f7-8217-673f23900177" rendition="#ind">Nederst i avisens sidste spalte, adskilt fra en foregående notits af en skillestreg i hele spaltens bredde, er trykketidspunktet angivet:</p>
+              <quote xml:id="idb9e837c3-519f-4591-b0b7-29c0e651ffb3">
+                <p xml:id="idba6ff72b-97bf-4844-a273-e5e17777e6a1">Færdigt fra Trykkeriet Kl. 8½.</p>
+              </quote>
+              <p xml:id="id1bd95526-c2c9-42c9-9723-38b6f54e9169">Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående, fed-fin dobbeltskillestreg og har ordlyden:</p>
+              <quote xml:id="id205642f2-8046-46c8-8164-1721ea9ad615">
+                <p xml:id="idece58c3c-09c5-482f-b119-d05b2883939a">Udgivere: <hi xml:id="id6f043502-6a7b-49ae-b684-e2253a7de464" rendition="#bol"><persName xml:id="id2c2fd9e5-bef9-416a-8a0c-092441fa76d3" key="Giødwad, Jens Finsteen">J. F. Giødwad</persName></hi> og <hi xml:id="idab269180-7a6b-4362-bab3-7118e9e97754" rendition="#bol"><persName xml:id="id569a08f6-506c-4aac-a826-8c92aa5194f2" key="Ploug, Carl">C. Ploug</persName>;</hi> ansvarlig: <hi xml:id="ide8add8b7-f6b8-4689-bde8-b4f9d3808059" rendition="#bol"><persName xml:id="id36703473-4047-490a-b5f7-86eb0bcbff99" key="Ploug, Carl">C. Ploug</persName>.</hi> | [Skillestreg] | Trykt med Hurtigpresse hos <hi xml:id="idea6ff7d3-4955-412d-be0c-d0130fca1854" rendition="#spa"><persName xml:id="ide0995089-5f57-4c2e-8b65-ce60fe1e0465" key="Klein, Louis">Louis Klein</persName>.</hi></p>
+              </quote>
+              <p xml:id="id56d42cfe-e3cb-4349-8639-246b3782033c">Første del af artiklens overskrift, »Stridspunktet med Biskop <persName xml:id="id87487b92-70d3-4b57-8bb1-6137b954aad2" key="Martensen, Hans Lassen">Martensen</persName>;«, der er fed og centreret i spalten, er sat med en punktstørrelse ca. 1 grad større end brødteksten.<note xml:id="id6f41f724-a96e-4ca7-85c7-558fa7ba0a8d"><p xml:id="id38c764b7-ff80-4c7d-973d-498a8868d426">Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 10; tekst, der er 1 grad større, er sat med punktstørrelse 12, og 2 grader større med punktstørrelse 14, mens tekst, der er 1 grad mindre, er sat med punktstørrelse 8, og 2 grader mindre med punktstørrelse 6.</p></note> Anden del, »som, christeligt, afgjørende for det i For-|veien, christeligt seet, mislige kirkelige | Bestaande.«, der også er fed og centreret i spalten, er sat med samme punktstørrelse som brødteksten. Under en kort skillestreg følger dateringen »D. 26. Jan.« og den spatierede signatur »S. Kjerkegaard.« indrykket fra hhv. for- og bagkant på samme linje.</p>
+              <p xml:id="idb30fcddc-ddcb-430f-864d-6eb171c0339a" rendition="#ind">Artiklen indledes af en uncial, der er fed og sat med en punktstørrelse ca. 2 grader større end brødteksten. I artiklens anden spalte er teksten delt med tre asterisker. Efter artiklen er trykt en længere skillestreg, der afgrænser SKs tekst fra den øvrige tekst i spalten.</p>
+              <p xml:id="ida977e116-b00b-4eff-963e-b60cc078414c" rendition="#ind">Spaltekolumnen måler ca. 88 mm i bredden, og der er op til 52 linjer i hver af artiklens spalter. Mellem spalterne er sat en fed, lodret skillestreg. Brødteksten er sat med en skriftstørrelse svarende til ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum.</p>
+              <p xml:id="idb1df022b-a044-4881-9301-ac59b36d64ef"><pb xml:id="ss443" n="443" edRef="#SKS"/>Der er en del sætter- og trykfejl i artiklen. Fire sætterfejl er registreret: et fejlsat komma efter »Præst det« (<ref xml:id="id8c6801b3-1b7b-4749-ac5d-2c4336ffa0ec" target="../SBM/txt.xml#ss141" type="publishedWritings" n="141"><hi xml:id="idbaf282b9-f491-4a68-8453-dbfe81b535c3" rendition="#ita">SKS</hi> 14, 141</ref>,66) og to omvendte typer, hhv. et omvendt 'm' i »mig« (142,28) og et omvendt 'a' i stedet for det andet 'e' i »bedre« (142,53); som tidligere nævnt ses også »Mar« fejlsat for »Nar« (142,53). Et 'r', der ikke holder linje, ses sidst i »fortryder« (143,31). To på hinanden følgende linjer afsluttes med t'er, i hhv. »at« og »sæt«, der ikke holder linje (143,48 og 143,49). Endvidere ses to steder, at et 'l' er faldet ud i ordet »skal« (143,34, første forekomst, og 143,77). I »Myn-|ster« (143,70) synes der at være et større mellemrum mellem 's' og 't' end mellem de øvrige typer. Hertil kommer en lang række læderede typer.<note xml:id="id20912b9a-e278-4c52-affe-6709cc0af62e"><p xml:id="id73a99e61-ab5f-4e2b-9497-0f11b7375e2f">Eksempler på læderede typer: 'e' i »kirkelig« (<ref xml:id="id6b62efb3-a649-4797-b3f0-fdd061bf931a" target="../SBM/txt.xml#ss141" type="publishedWritings" n="141"><hi xml:id="id028d3e7c-bbc6-4dfe-9669-72505419c8be" rendition="#ita">SKS</hi> 14, 141</ref>,18), endnu et 'e' i »et« (141,20), 'i' i »ikke« (141,58), det første 'e' i »ere« (142,16), et 'r' i »Dommeren« (142,26), 'd' i »dem« (142,64, første forekomst), bindestregen ved linjeskift i »hel-|lere« (142,71, anden forekomst) og 'i' i »til« (143,2).</p></note></p>
+            </div>
+          </div>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="ide2b09377-afcb-48f5-9c5b-dfcd615da9f2">2. Manuskriptbeskrivelse</head>
+          <p xml:id="idfb82d280-2016-454a-aec8-fe6b77b356ec">Til »Stridspunktet med Biskop <persName xml:id="id583dfb20-5815-4263-aeb7-33cde6219570" key="Martensen, Hans Lassen">Martensen</persName>; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende.« findes følgende manuskripter i Kierkegaard Arkivet (KA) på <placeName xml:id="id9ec6be6d-9807-42bb-aeda-164aa3976a1a" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
+          <msDesc xml:id="ide291ee79-bc25-4578-81ad-c0c0e6c3570f">
+            <msIdentifier xml:id="idc89c517e-ce8c-429c-9818-a37c01e88b18">
+              <collection xml:id="id2d3f5e18-db71-4120-b56b-9302dfe1f078">SBM</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.1" next="#additional.1">
+              <msIdentifier xml:id="id7e95c07b-6b91-4dba-8855-9b9c2aefa11c">
+                <idno xml:id="iddae81394-141a-4468-84f9-4e77655a3d78">1</idno>
+              </msIdentifier>
+              <physDesc xml:id="id3be67af5-af70-4c15-9f85-a7d6eff205eb">
+                <p xml:id="id1621762a-0e0d-4a7c-8598-e8db283d3fcf">Kladde til »Stridspunktet med Biskop <persName xml:id="id77aa0d44-05d5-4d10-b2ca-0dda8698dd79" key="Martensen, Hans Lassen">Martensen</persName>; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende.«, fordelt på 3 dobbeltblade og 1 løst blad.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.1.1" next="#additional.1.1">
+                <msIdentifier xml:id="ide9428017-28c7-41f8-a585-aeec7094f5c7">
+                  <idno xml:id="idb807c921-e925-4a1b-90fb-8ad1c74a67d2">1.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id834f650e-15da-42a3-98d0-d115d8b6fc7f">
+                  <p xml:id="id89c07d7b-3034-4456-b548-a50c3a2fcebe">Kladde til artiklen (<ref xml:id="id9e036af3-918c-4c5b-97c7-05ecc7aa633a" target="../SBM/txt.xml#ss141" type="publishedWritings" n="141"><hi xml:id="id0c31d642-4c53-4702-bd39-b104c965ff32" rendition="#ita">SKS</hi> 14, 141</ref>-142,49 til »Alvor« og 143,5-82 fra »altsaa for Gud,«).</p>
+                  <p xml:id="id751a032d-b7c1-41b5-b86e-cc90bf0213ea">3 dobbeltblade, i alt 6 blade i 4<hi xml:id="id6dc8243f-abf6-4dee-822d-5d2c6657fd33" rendition="#sup">o</hi>.<note xml:id="id427a0518-ebdf-4ca7-93b6-54acc5434c4f"><p xml:id="id635447d6-8a0d-473b-9b5c-e05a8a61c273">Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p></note></p>
+                  <p xml:id="id63caeeba-1ef7-4ae5-b4dc-3012bea6a651">Ingen paginering. Dobbeltbladene er med blyant nummereret 1-3.</p>
+                  <p xml:id="idc633a262-dabe-4538-a745-f19acbdede3a">Papir: gulligt koncept, glat. Mål: 167 × 208 mm.<note xml:id="idef75ce0b-ce92-44fb-9400-52ab3c88a915"><p xml:id="ide4ec3d83-aa5e-496c-82be-c8ec7c1c37a1">Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p></note></p>
+                  <p xml:id="id1d5b36ac-d554-46ac-bd45-85a841bde18f"><pb xml:id="ss444" n="444" edRef="#SKS"/>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladene er efter beskrivning blevet foldet på tværs.</p>
+                  <p xml:id="id8a631044-3bb6-4c80-a951-c3db3957f19b">På bl. [1r] findes overskriften »<del xml:id="id94245702-51f6-4ada-be87-6d4c656db2e7" rendition="#lth"><hi xml:id="id70460456-cef9-4137-aa25-94c4dca2c3ee" rendition="#spa">Stridspunktet, nu som / afgjørende for hele det kirkelige Bestaaende.</hi></del>«. Til venstre herfor erstattes »<del xml:id="id38419f98-3651-4faf-89ab-20963088dce4" rendition="#lth"><hi xml:id="id11a4b9c8-7b59-4d26-9604-f3684b451408" rendition="#spa">afgjørende</hi></del>« af »<del xml:id="id73fecad1-30ce-46e3-b38d-db1a586d2b25" rendition="#lth"><hi xml:id="id1a1a20c9-9204-4fde-8e24-93609b5b939f" rendition="#spa">som graverende critisk</hi></del>«, og i marginen til højre findes en passage (indvist før »<hi xml:id="id0a350d6d-243b-41ec-b5a4-e20bf9360326" rendition="#spa"><del xml:id="idaeed1ea9-b8e2-4cf8-b95f-55da80bcf211" rendition="#lth">kirkelige</del></hi>« i inderspalten), som i sig selv bliver overskriftens undertitel: »<hi xml:id="id32392e12-53f1-485c-be91-f03238a7ae4d" rendition="#spa">som, christeligt, afgjørende for det iforveien, christeligt seet, mislige kirkelige Bestaaende.</hi>«. Oven over den slettede overskrift er den endelige overskrift skrevet: »<hi xml:id="ide43298d2-1473-470c-9eae-2ad2fdb61277" rendition="#bol">Stridspunktet med Biskop <persName xml:id="id4e47bf73-3b35-45ac-ac80-09f77c849ced" key="Martensen, Hans Lassen">Martensen</persName>;</hi>«. I inderspalten følger herefter en ufuldstændig datering, »d.«, og signaturen <hi xml:id="idb5419452-2e37-40fd-adeb-c6004d50ddc2" rendition="#ant">»S.K.«.</hi> På bl. [4r] findes lige under midten to asterisker. I marginen på bl. [4v] findes et dobbeltkors og henvisningen <hi xml:id="id0e2b9766-c24e-4f86-a37d-5aa533832224" rendition="#ant">»cfr Hoslagte«</hi>, begge skrevet med blyant; henvisningen gælder ms. 1.1.1. Nederst på bl. [6r] ses et dobbeltkors og redigeringsbemærkningen »Ny Udgang«, begge ligeledes med blyant.</p>
+                  <p xml:id="id6095ff33-8716-4f26-b0ad-37b3cd8ffa2b">Mange korrektioner, både marginaltilføjelser og sletninger. Der findes større blyantsletninger på bl. [2v] (fire linjer), bl. [5r] (fire linjer) og bl. [6r] (syv linjer i hovedspalten og ni linjer i marginen). Derudover er der foretaget en del mindre blyantsletninger.</p>
+                  <p xml:id="idd38ca188-a166-45ae-9b69-36c164bcda11">Hertil hører følgende:</p>
+                </physDesc>
+                <msPart xml:id="physDesc.1.1.1" next="#additional.1.1.1">
+                  <msIdentifier xml:id="ide04b4885-503e-49d4-b85c-43ed8c400835">
+                    <idno xml:id="id9daa792f-c0fc-4323-ae02-660d84eb47d4">1.1.1</idno>
+                  </msIdentifier>
+                  <physDesc xml:id="id0b3a92e5-5607-4d20-bf4d-0c88230c1c0a">
+                    <p xml:id="idc6bd215e-5ca6-4a6f-af7e-26d9e1be696f">Kladde til en længere passage (<ref xml:id="id431b0f64-0af6-4983-8814-dcf383908454" target="../SBM/txt.xml#ss142" type="publishedWritings" n="142"><hi xml:id="id4cf340d9-698f-4141-b75c-70e098468433" rendition="#ita">SKS</hi> 14, 142</ref>,49-143,5 fra »; ja jeg vil heller« til »Men fra Prædikestolen«).</p>
+                    <p xml:id="id2a0ffca1-047e-4130-95fc-11f7e326fafb">1 løst blad i 4<hi xml:id="id5e394fd5-b4e4-4448-ac60-7c85c417f79b" rendition="#sup">o</hi> med afrivningskant i venstre side.</p>
+                    <p xml:id="id26c36574-3204-4643-a118-03a7ccaa39d1">Ingen paginering.</p>
+                    <p xml:id="idb85566b2-12c1-4d8b-ab63-e85e17ec3f15">Papir: gulligt koncept, glat. Mål: 166 × 204 mm.</p>
+                    <p xml:id="id6f062fea-0fd7-4fae-af51-b45f58d0e8ca">Bladet er foldet en gang på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladet er efter beskrivning blevet foldet en gang på tværs.</p>
+                    <p xml:id="id633afcaf-be00-454e-b265-8758b81298ff">Øverst på rectosiden findes et dobbeltkors i blyant, hvormed teksten indvises på bl. [4v] i ms. 1.1. Versosiden afsluttes med sætningen »Men fra Prædikestolen o:s:v.«, der erstatter »Fra Prædikestolen«, der er overstreget lige efter indvisningstegnet i ms. 1.1.</p>
+                    <p xml:id="id2acdd92e-2f30-4b06-8ffa-49ad98713c66"><pb xml:id="ss445" n="445" edRef="#SKS"/>Få korrektioner, herunder en enkelt sletning med blyant.</p>
+                  </physDesc>
+                </msPart>
+                <msPart xml:id="additional.1.1.1" prev="#physDesc.1.1.1">
+                  <msIdentifier xml:id="id6f5e6cd2-fb96-4bbd-b4cf-c368c00c6f82">
+                    <idno xml:id="id87643190-cfc8-4cd4-b8b6-e9573200807b">1.1.1</idno>
+                  </msIdentifier>
+                  <additional xml:id="idcb1a9937-6886-40c9-b1ae-4b53dff8349e">
+                    <adminInfo xml:id="id6e1827dc-eb61-4729-988b-de4200f505ce">
+                      <note xml:id="ide1072ec8-713b-4c64-9583-75d728f0144c"/>
+                    </adminInfo>
+                  </additional>
+                </msPart>
+              </msPart>
+              <msPart xml:id="additional.1.1" prev="#physDesc.1.1">
+                <msIdentifier xml:id="id4e63e947-1ca5-41cc-964c-5f66f5901cc5">
+                  <idno xml:id="id0cab9d2a-ff7d-456e-a30d-a3211a2f5e72">1.1</idno>
+                </msIdentifier>
+                <additional xml:id="id648654ac-a471-4f1b-bb93-6aa9e574bdf3">
+                  <adminInfo xml:id="id60e43538-a05c-40e5-9d19-01cf8272fda8">
+                    <note xml:id="id7158ed70-3ad1-466d-b595-141ca3474f3a"/>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.1" prev="#physDesc.1">
+              <msIdentifier xml:id="id6af3feb3-6824-4679-9f1c-2eec81dc3ad6">
+                <idno xml:id="id530fcdd9-fd6b-4a0a-ae99-7fceaedd00fb">1</idno>
+              </msIdentifier>
+              <additional xml:id="id33ada6dd-0e4a-4cd1-a067-9192c33e14b1">
+                <adminInfo xml:id="id29d775b0-0e22-439d-bf3b-e37637cd44cc">
+                  <note xml:id="id4edbd530-6829-4eb0-abae-6c0b0eb7f547">
+                    <p xml:id="id90f3e076-04e4-4825-9daf-f037a36baaec">(KA, B pk. 52, læg 1; <hi xml:id="id3593560d-20a5-48a8-a3bf-a5887b1f0c00" rendition="#ita">Pap.</hi> XI 3 B 218)<note xml:id="ida0712da6-a680-475c-9dec-e211b7ccd52e"><p xml:id="idc305102a-f6f3-4ea3-b2d1-ba2367ae5d92">I KA, B pk. 52, læg 1, findes et omslag, som ikke beskrives af <hi xml:id="ide2e84caf-5dfc-4e2d-878b-e2b149986872" rendition="#ita">Pap.,</hi> men som <hi xml:id="id682ee856-d0d0-4fd9-a598-452a3f0cf664" rendition="#ita">Pap.</hi> har mærket »[XI 3 B 217-218]«. Omslaget er et stykke groft, blåt konceptpapir, der er foldet til konvolut og bærer påskrifterne »<hi xml:id="ide965495d-7b32-4de5-9e1d-4df9d2b196cd" rendition="#ita">4</hi>« skrevet med rødkridt, formentlig af <persName xml:id="id5339f18a-bca0-4504-a74b-81cd5440f2a4" key="Lund, Henrik">H. Lund</persName>, »<hi xml:id="id4b9ce2ca-63f5-4997-b585-3e5674019560" rendition="#spa">26/1 55:</hi> / <hi xml:id="id637ceba0-97ec-4838-8f87-1efb958a80b3" rendition="#spa">Første Concept</hi> / til / <hi xml:id="id6aa4186e-dca9-4658-afda-8d2102718ea4" rendition="#spa">Stridspunktet med Biskop <persName xml:id="id882a43cb-fffb-4d09-9668-39a78580a0a3" key="Martensen, Hans Lassen">Martensen</persName>;</hi> / (osv) / (+ <hi xml:id="id0f013180-2205-447a-83c0-99d5220d7b4b" rendition="#spa">en anden Concept.</hi>)« og »'Fædrel.' 29/1 55.«, formentlig skrevet af <persName xml:id="id7ad0ca22-c9d2-4799-9213-4e37c1a7e747" key="Barfod, Hans Peter">H.P. Barfod</persName>. I omslaget ligger en bronzefarvet silkesløjfe.</p></note></p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.2" next="#additional.2">
+              <msIdentifier xml:id="id43702320-3d75-47b5-bd83-6a22c2c21e42">
+                <idno xml:id="id3e264fce-0cc7-4883-ae24-b9ae68f320a6">2</idno>
+              </msIdentifier>
+              <physDesc xml:id="id165e9774-c333-455a-abc2-97ddd272a933">
+                <p xml:id="id478a427f-25a6-4a72-a9a9-4cabb8337c4a">Renskrift af »Stridspunktet med Biskop <persName xml:id="id64ff9e68-66a8-44b5-b52b-c2b5d8f4a2f3" key="Martensen, Hans Lassen">Martensen</persName>; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende.«. Renskriften, der har været benyttet som trykmanuskript,<note xml:id="id33751065-d6fd-4b10-ba5b-e5bfa40d70bf"><p xml:id="id611b14da-d05a-42f0-93ad-ef6afa78c838">Der ses enkelte sættermarkeringer, indført med blyant; dateringen er fuldført »26. Jan«, og signaturen er fuldført »jerkegaard«. Desuden ses påskriften »GlB.«, uvist i hvis hånd. Lignende påskrifter ses i enkelte andre af SKs renskrifter; fælles er, at der til de pågældende renskrifter hører mindst én indvist passage. Det kan betyde, at SK først har indleveret en renskrift og siden noget mere, i form af en eller flere indviste passager. Det først indleverede har så muligvis fået påskriften »GlB.« for »Gammelt Blad«.</p></note> består af 1 dobbeltblad og 5 løse blade.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.2.1" next="#additional.2.1">
+                <msIdentifier xml:id="id4c4c0363-7f21-4c0a-b4dd-8f403c8da145">
+                  <idno xml:id="ide80d710a-483c-479f-93f6-1cb3bc14715e">2.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id5f7ad6d9-f6d1-4d7a-be74-2ab37a9ffe40">
+                  <p xml:id="ida48a0a41-c5eb-4440-a91f-7fb5c9865a6f">Renskrift af artiklen (<ref xml:id="id41d5e223-a610-447b-b1ce-cb8208bf4d9b" target="../SBM/txt.xml#ss141" type="publishedWritings" n="141"><hi xml:id="idf5d5d9ac-eee9-4fb1-b694-4159eee8faba" rendition="#ita">SKS</hi> 14, 141</ref>-142,49 til »Alvor« og 143,5-82 fra »altsaa for Gud«).</p>
+                  <p xml:id="id90361612-c8ab-4ca2-92e8-e2ee596efff9">4 løse blade (oprindelig et læg af 2 dobbeltblade) og 1 dobbeltblad, i alt 6 blade i 4<hi xml:id="id7bb53629-ac56-4512-9229-97fe0e876741" rendition="#sup">o</hi>. De løse blade har afrivningskant i venstre side.</p>
+                  <p xml:id="id725bc74f-1a2d-4729-9564-d5acf13167ea">Bladene er pagineret 1-11 med blyant; bl. [6v] er upagineret.</p>
+                  <p xml:id="idcce227fc-525a-4ada-b323-483c8b1910ab">Papir: gulligt koncept, glat. Mål: 165 × 203 mm.</p>
+                  <p xml:id="id66b656e5-31c5-4869-8109-40de70e5d6dd">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladene er efter beskrivning blevet foldet en gang på tværs. En tredjedel af bl. [6r] er beskrevet; bl. [6v] er ubeskrevet.</p>
+                  <p xml:id="id07d2ddcf-8f07-4d98-9c69-4e9472be876d">Øverst på s. 1 findes overskriften »<del xml:id="idad659af0-d827-4a0e-9d48-65bd5f6ed59d" rendition="#lth"><hi xml:id="id43184d3b-a1da-4d74-9e01-828b70cfac90" rendition="#spa">Stridspunktet, nu som / Indsigelse for hele det kirkelige Bestaaende</hi></del>«. Til venstre herfor erstattes »<del xml:id="id35fa23c9-6f38-445e-a6d9-278dafe5e164" rendition="#lth">Indsigelse</del>« først af »<del xml:id="idd3b0bcb8-ab36-4f75-a32b-c8d8cb330411" rendition="#lth">afgjørende for</del>« og siden af »<del xml:id="idf94048f3-8199-42c7-8d8d-fdeabe90d54e" rendition="#lth"><hi xml:id="id8997a1a8-bc90-4c4e-972b-12e95f62b14e" rendition="#spa">som graverende critisk</hi></del>«, og i marginen til højre findes en passage (indvist før »<del xml:id="idb6d133c9-f767-4104-a9ee-98746ade739b" rendition="#lth"><hi xml:id="idfa53f36d-57ce-4b94-9454-31fd16bbbdc2" rendition="#spa">kirkelige</hi></del>«), som i sig selv bliver overskrif<pb xml:id="ss446" n="446" edRef="#SKS"/>tens undertitel: »<hi xml:id="id000b70b2-7c85-4aea-ad20-41f0a2d61ed2" rendition="#spa">som, christeligt, afgjørende, for det / iforveien, christeligt seet, mis-/lige kirkelige Bestaaende.</hi>«. Oven over den slettede overskrift er den endelige overskrift skrevet: <hi xml:id="iddf9e4d0d-0a47-4823-82bd-a33123ac8459" rendition="#bol">»Stridspunktet med Biskop <persName xml:id="idc5c7c7f6-ed52-4965-ab4e-76729a9356fe" key="Martensen, Hans Lassen">Martensen</persName>;«</hi>. I inderspalten følger herefter en ufuldstændig datering, »d.«, og signaturen <hi xml:id="id60e0ddf9-37ad-4114-8113-2ac6e7c5d8dd" rendition="#ant">»S.K.«.</hi> S. 7 indledes med to asterisker, og omtrent halvvejs nede på siden findes i marginen redigeringsbemærkningen <hi xml:id="id5ef7426a-2dc1-4a8c-aaa9-c28700a85e7e" rendition="#ant">»cfr Hoslagte«</hi>, skrevet med blyant og indvist i teksten med et dobbeltkors, også med blyant; henvisningen gælder ms. 2.1.1.</p>
+                  <p xml:id="id01475e97-6e19-42b2-9df0-21418c0f12cb">En del korrektioner, både marginaltilføjelser og sletninger. Der findes blyantsletninger på bl. [1r], bl. [2], bl. [3r], bl. [4r] og bl. [5v].</p>
+                  <p xml:id="idf4d65dfa-0e46-4213-aaa5-cb51d48b102d">Hertil hører følgende:</p>
+                </physDesc>
+                <msPart xml:id="physDesc.2.1.1" next="#additional.2.1.1">
+                  <msIdentifier xml:id="idf63e9b95-46db-4ad2-ba32-c85f632fd7ef">
+                    <idno xml:id="ida838eca1-7297-4e42-a584-e14bf109f987">2.1.1</idno>
+                  </msIdentifier>
+                  <physDesc xml:id="id53dec6e6-2704-4d3d-af6c-1ae1f6c9acae">
+                    <p xml:id="id2ac6dce9-f9f5-4e69-ae58-3446914440e7">Renskrift af en længere passage (<ref xml:id="id8e1bba67-a92c-4757-af9c-34cc7643659f" target="../SBM/txt.xml#ss142" type="publishedWritings" n="142"><hi xml:id="id6667ff0e-f69c-4159-a5fe-753f0bdf87b5" rendition="#ita">SKS</hi> 14, 142</ref>,49-143,5 fra »; ja jeg vil heller« til »Men fra Prædikestolen«).</p>
+                    <p xml:id="idb329f7dc-bd2f-4016-b14d-02b071043289">1 løst blad i 4<hi xml:id="idcba00007-3472-45f7-bf7e-620748e5885f" rendition="#sup">o</hi> med afrivningskant i venstre side.</p>
+                    <p xml:id="idb924f166-34e3-41d5-8846-9bbd28d5391a">Ingen paginering.</p>
+                    <p xml:id="idf36fd72c-2c14-4283-b45e-9e9e8d23d73f">Papir: gulligt koncept, glat. Mål: 166 × 203 mm.</p>
+                    <p xml:id="idd5baf004-478b-4d1c-b2eb-5693bb66b7af">Bladet er foldet en gang på langs; en bred inderspalte rummer tekst. Bladet er efter beskrivning blevet foldet en gang på tværs. Teksten afsluttes på versosiden lige under midten.</p>
+                    <p xml:id="id2e08eda7-ed08-4797-ab08-8e5d57611737">Øverst på rectosiden findes et dobbeltkors i blyant og bemærkningen »ad pag 7.«; henvisningen gælder ms. 2.1. Versosiden afsluttes med sætningen »Men fra Prædikestolen«, der erstatter »Fra Prædikestolen«, der er overstreget lige efter indvisningstegnet i ms. 2.1.</p>
+                    <p xml:id="id11f732e7-deba-4127-bd38-18a09f949bd0">Få korrektioner.</p>
+                  </physDesc>
+                </msPart>
+                <msPart xml:id="additional.2.1.1" prev="#physDesc.2.1.1">
+                  <msIdentifier xml:id="idcd07bafa-d776-45ae-82f9-b92c7d4c9ccb">
+                    <idno xml:id="ide13e6220-666b-4813-a6fc-8a299e770793">2.1.1</idno>
+                  </msIdentifier>
+                  <additional xml:id="id5bad373a-a716-4518-aae1-da7e80354b52">
+                    <adminInfo xml:id="id6552076b-de90-4625-9511-036dbf6fe0f4">
+                      <note xml:id="ide9da6ec3-0be7-4d28-9c28-d46239382f46"/>
+                    </adminInfo>
+                  </additional>
+                </msPart>
+              </msPart>
+              <msPart xml:id="additional.2.1" prev="#physDesc.2.1">
+                <msIdentifier xml:id="id681fba31-e4fd-40b9-a82d-2bec64c1e9e6">
+                  <idno xml:id="idc9a2264b-c808-4f91-a282-090af536921a">2.1</idno>
+                </msIdentifier>
+                <additional xml:id="id154da891-8be2-4915-b8b1-aaabd498d4c6">
+                  <adminInfo xml:id="ideee41daa-623e-4eb9-9068-1d7aed5b975e">
+                    <note xml:id="id63710567-3e02-40a0-b9fb-7158188b16bb"/>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.2" prev="#physDesc.2">
+              <msIdentifier xml:id="id9f53c175-3513-4ea7-9a3f-ea281c1edf60">
+                <idno xml:id="idea2b5382-b6f2-4e72-a86b-19eea45f884e">2</idno>
+              </msIdentifier>
+              <additional xml:id="id3a359a95-bdb2-4608-9be4-7323d2a03ec7">
+                <adminInfo xml:id="id55924659-f421-4111-a7cc-190603571764">
+                  <note xml:id="id67f25a73-a524-4185-93a5-a81f40bb683e">
+                    <p xml:id="id23722aa5-e438-4d16-ac95-a372bb0765eb">(KA, B pk. 52, læg 1; <hi xml:id="idfb632abf-db03-4ca0-8ca4-d171c5ca982b" rendition="#ita">Pap.</hi> XI 3 B 217)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+          <p xml:id="id237898c5-ff99-43bb-ab14-68ab5a4f4b59">(KA, B pk. 52, læg 1; <ref xml:id="id431f3b1c-c435-43f0-a0bb-f47f005d78ee" type="preparatoryManuscript" n="pap:XI3B217-218" rend="SBM,ms.2"><hi xml:id="id5970d2d2-1e98-429a-ad02-43cec59af632" rendition="#ita">Pap.</hi> XI 3 B 217-218</ref>)</p>
+        </div>
+        <div type="level1" xml:id="k3">
+          <head xml:id="id748dda85-fddb-4dfd-bbb5-eec89beb2fc3"><pb xml:id="ss447" n="447" edRef="#SKS"/>3. Tilblivelseshistorie</head>
+          <p xml:id="id3fb3b98c-be7b-4e7f-a521-8cfa21d2ad21">SK angreb den officielle kristendomsforkyndelse i <placeName xml:id="id15aecd03-16eb-4d1b-bf6d-a726aedb1bbd">Danmark</placeName>, først med 21 artikler i <hi xml:id="id9072af91-6950-4bd9-a95e-0a8400610b94" rendition="#ita">Fædrelandet</hi> (fra den 18. dec. 1854 til den 26. maj 1855), dernæst med sit tidsskrift <hi xml:id="id9798e59c-0298-40f0-856a-35281e18273d" rendition="#ita">Øieblikket.</hi><note xml:id="id84257295-87f8-4a74-bd4e-fb07768ca8ab"><p xml:id="idae2f73c1-def8-46c0-9fac-41e46369bdf5">Se <hi xml:id="id93c6d5b0-4a41-4d5b-82f9-f488ab0b013c" rendition="#ita">SKS</hi> 13.</p></note> Artiklen »Stridspunktet med Biskop <persName xml:id="id009869dd-48b5-4c64-9f21-039df219e685" key="Martensen, Hans Lassen">Martensen</persName>; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende.« var SKs fjerde indlæg i denne kirkestrid.</p>
+          <p xml:id="id8c19cbc3-9a0e-4a60-bdfc-d0dac3a29200" rendition="#ind">Dateringen er ufuldstændig fra SKs hånd, både i kladde (ms. 1.1) og i renskrift (ms. 2.1). Alligevel fremgår det, at teksten er blevet til i januar 1855, tidligst påbegyndt den 10. og afleveret i sætteriet den 26. jan. I kladde og renskrift (ms. 1.1, bl. [6r]-[6v], og ms. 2.1, s. 10) står der nemlig, at de første artikler i kirkestriden har vakt forargelse:</p>
+          <quote xml:id="id74119c17-2cd8-41bb-8fa6-10bb841cf91d">
+            <p xml:id="idb5e47f93-b6f2-4a96-badc-d56f159e1766">Men naar det Forargelige er skeet, skal Forargelsen vækkes mod det, og man skal ikke som Prof. <persName xml:id="id33253efa-8c82-40ba-ae02-bc14aae2dca8" key="Nielsen, Rasmus">Nielsen</persName> bukke og beklage, at mit Skridt desto værre har vakt saa stor Forargelse, nei, det har snarere endnu ikke vakt Forargelse nok <hi xml:id="idcf385a09-86ab-4342-a19e-85f5277ab1c5" rendition="#ita">(...)</hi></p>
+          </quote>
+          <p xml:id="id37411216-e93b-4f30-aaa5-99c431645228">Ordene »som Prof. <persName xml:id="id28d32863-655d-475a-9a10-9cc266f687b0" key="Nielsen, Rasmus">Nielsen</persName> bukke og«,<note xml:id="id31cb698f-bea0-4ca6-9049-40eecf783fe3"><p xml:id="idd8102dbe-6e77-497d-9515-87de11e7698b">Trykt som <ref xml:id="idd1ade03a-f7ae-43a9-a517-e0310dd387a5" type="preparatoryManuscript" n="pap:XI3B217" rend="SBM,ms.2"><hi xml:id="id49b83d87-c2b9-4e97-99c9-c08418583268" rendition="#ita">Pap.</hi> XI 3 B 217</ref>, s. 359.</p></note> der er overstreget, henviser til <persName xml:id="idfb271a2d-9120-46a8-8317-8a442c4ae99f" key="Nielsen, Rasmus">Rasmus Nielsen</persName>s indlæg i <hi xml:id="id4237e7b0-bf87-4c5d-897d-723bf7ca8ac2" rendition="#ita">Fædrelandet,</hi> nr. 8, den 10. jan. 1855.<note xml:id="id2bbd35cf-1cab-41f1-97d1-2a9ea8052bb3"><p xml:id="id4cf50470-eda1-4045-aff5-e588596e1e2f">»En god Gjerning«; trykt i <hi xml:id="id51320c87-ba6b-4c08-8b70-78d8240a6882" rendition="#ita">Bl.art.,</hi> s. 249-254. Uddrag af artiklen er gengivet i kommentaren til 143,<hi xml:id="id63e36b00-fcb6-4676-8cc3-adf89ed096b2" rendition="#size-1">65</hi>, til »Hvad jeg vil?« 179,<hi xml:id="id3e9a174c-dfb4-4bb3-89cd-91e390ef9be8" rendition="#size-1">3</hi> og til »At Biskop <persName xml:id="iddcaa1eb1-3fdd-49ee-b71b-1ce15d9fa5bc" key="Martensen, Hans Lassen">Martensen</persName>s Taushed er 1) christeligt uforsvarlig; 2) latterlig; 3) dum-klog; 4) i mere end een Henseende foragtelig.« 217,<hi xml:id="id9852f378-64b1-458a-ba57-28dad2da2e7b" rendition="#size-1">41</hi>.</p></note></p>
+          <p xml:id="id034f02ec-63e0-40e2-856b-e9f9840ae916" rendition="#ind">Passagen (mss. 1.1.1 og 2.1.1), der indvises både i kladde og i renskrift, er først kommet til, efter at renskriften forelå; både i passagen og i den øvrige tekst ses tilbageførsler af sletninger fra renskrift til kladde. Disse tilbageførsler har formentlig fundet sted for at sikre, at rettelserne blev bevaret, selvom renskriften skulle blive beskadiget eller gå tabt. Men i øvrigt synes artiklens opbygning ikke at have voldt problemer.</p>
+          <p xml:id="id58a76860-f58d-4eae-8e18-6a8405ff0286" rendition="#ind">Datoen »26. Jan« blev sandsynligvis tilføjet SKs artikel ved indleveringen til sætteriet og fremgår derfor af den trykte artikel, der udkom den 30. jan. 1855.</p>
+        </div>
+        <div type="level1" xml:id="k4">
+          <head xml:id="id4130bb8b-0780-48f4-a824-8ded1ea615b2"><pb xml:id="ss448" n="448" edRef="#SKS"/>4. Udgivelsesmåde</head>
+          <p xml:id="id20ed9cf2-0fac-4f2e-b9cc-77a60ed5d0f0">»Stridspunktet med Biskop <persName xml:id="idd4232d05-4798-4f7a-8636-828f50c4c355" key="Martensen, Hans Lassen">Martensen</persName>; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende.« blev som nævnt trykt i <hi xml:id="id7d32a08f-601b-4278-af58-08152ff0a950" rendition="#ita">Fædrelandet.</hi><note xml:id="idd2eb6d35-b8e2-4a5b-9543-4287032a8f92"><p xml:id="id3bfc52d4-5ac2-4a3f-a15b-ea2e87a682f8">En nærmere redegørelse for <hi xml:id="id50e6d980-a291-4efb-a3fc-eca4ebf0a1a4" rendition="#ita">Fædrelandets</hi> redaktionelle forhold, periodicitet og oplagstal findes i <ref xml:id="idff2f1b12-8131-4b76-ae18-2c6643ef1dd9" target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til »Aabenbart Skriftemaal«, s. 112</ref>f.</p></note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
+          <p xml:id="id8e90e872-8253-4ea2-94b3-1d4df47e8b4b" rendition="#ind">Dele af artiklen blev allerede i SKs levetid frit oversat til svensk; bogen <hi xml:id="id5a381244-d885-430e-9e8f-b800812633b1" rendition="#ita">Den officiella kristendomen är icke det nya testamentets kristendom. Framställning af dr. <persName xml:id="id5cbf49ad-dab2-4614-a9ea-3392717ccd16" key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>'s polemik mot statskyrkan i <placeName xml:id="id4ebeb9e2-caf3-448b-a7b6-24be3ecf13c5">Danmark</placeName>,</hi> hvori de fleste af SKs artikler fra kirkestriden er blevet oversat i uddrag, udkom i <placeName xml:id="idea746f04-2131-4c5d-8d85-20e3b4337da3">København</placeName> i 1855.<note xml:id="id0835fb49-e9ba-4ae1-82fc-439b31b042e1"><p xml:id="id18a77d9e-4e53-47de-966d-74cd47f144e5">Et dedikationseksemplar fastslår, at det var den svenske journalist <persName xml:id="id5fad6431-1045-4ffa-a5e3-23f04b5797d8" key="Sturzen-Becker, O.P.">O.P. Sturzen-Becker</persName>, på det tidspunkt bosiddende i <placeName xml:id="id35e0086f-a4aa-4665-bcdd-e52f9db4afe1">København</placeName>, der anonymt udgav bogen. Dedikationseksemplaret findes på Kungl. biblioteket i <placeName xml:id="id7f8a7ec2-6747-47c6-8721-99845d3ea694">Stockholm</placeName> med signaturen Rar. 726. Eksemplaret var ikke blandt SKs efterladte bøger, og det formodes derfor, at SK har sendt det retur til forfatteren, jf. <persName xml:id="id041057d3-8e8f-46d8-9447-8e7c4cb8db93" key="Kabell, Aage">Aage Kabell</persName> <hi xml:id="id62d69c36-ec4f-477c-997a-f6e346d2895f" rendition="#ita">Kierkegaardstudiet i <placeName xml:id="id6e519aaa-87b8-4ccc-980e-8c2cfcac1f90">Norden</placeName>,</hi> <placeName xml:id="ide2e0d53f-a09b-4734-9354-2891f87d4af9" key="København">Kbh.</placeName> 1948, s. 73.</p></note> De fragmentariske oversættelser strækker sig til og med artiklen »Et Resultat«, trykt i <hi xml:id="id7ba97f24-b4c7-40bf-b192-d1a6dd6443fb" rendition="#ita">Fædrelandet,</hi> nr. 107, den 10. maj 1855; den anonyme redaktør har sandsynligvis antaget, at SK under denne overskrift afsluttede sit angreb på kirken, og har herefter ladet bogen trykke.</p>
+          <p xml:id="idc1a5ea07-115f-4a6e-b065-d9a535d6dc08" rendition="#ind">Af stor betydning for receptionen i SKs umiddelbare eftertid var <persName xml:id="id202c31ea-8c50-4e04-baab-f2ca8910e21f" key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi xml:id="id44823a2b-ffb5-4448-9eb8-976816143414" rendition="#ita"><persName xml:id="idb0e981ed-80a1-4ff1-bd91-311ccc5daae4" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 <hi xml:id="id96bac8e0-5643-420a-8dad-8abd38f4127a" rendition="#ita">(Bl.art.).</hi> Heri indgår størstedelen af SKs artikler, også »Stridspunktet med Biskop <persName xml:id="id650e9ff4-b9b6-4d99-9c1d-1a19496b5271" key="Martensen, Hans Lassen">Martensen</persName>; som, christeligt, afgjørende for det i Forveien, christeligt seet, mislige kirkelige Bestaaende.«.<note xml:id="id62bf15bc-9156-4603-b51d-e2f8519fef13"><p xml:id="id30fd0075-ea13-4da2-9edb-681839290a72">Artiklen er trykt i <hi xml:id="id5b42583c-ac72-4737-bf6c-1bad7e0e6d3b" rendition="#ita">Bl.art.,</hi> s. 74-78. SK havde selv planer om, men fik ikke realiseret, en samlet udgivelse af kirkestridsartiklerne, jf. <ref xml:id="id2374b399-fb12-4aa6-b5d6-238f3a232c8b" type="preparatoryManuscript" n="pap:XI3B128-135"><hi xml:id="id74eaf0d9-739d-4f4a-b22c-bafcf00ba598" rendition="#ita">Pap.</hi> XI 3 B 128-135</ref>.</p></note></p>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

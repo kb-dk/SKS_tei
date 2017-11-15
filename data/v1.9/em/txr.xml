@@ -1,150 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>En Monolog</title>
-     
-     <title type="short">EM</title>
-  <author>
-   <name>Lena Wienecke Andersen</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Niels Jørgen Cappelørn</name><name>Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2010</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K14</biblScope>
-     <biblScope unit="file">http://sks.dk/em/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition><!--spaced out, in SKS rendered italic--><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20120314">txr/XML, <bibl><idno type="version">1.6</idno>, <biblScope unit="file">http://sks.dk/em/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id97219e8e-781d-4462-8fd6-cd88dcc0bb04">
+    <fileDesc xml:id="idd3001b06-e7fb-45e1-9253-ac906ef01408">
+      <titleStmt xml:id="idd25afb67-9c5d-427a-a3d7-6f0a6dfb3f6b">
+        <title xml:id="id73ae1836-59d7-411e-a8c8-972a77641f47" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="idb225016a-1e77-4281-9e76-d2a8cd739b80">En Monolog</title>
+        <title xml:id="id6ac441d4-a7f4-4dec-9c30-4b2b3209d51b" type="short">EM</title>
+        <author xml:id="idae15b862-a55e-42cc-8093-546906229235">
+          <name xml:id="id3fcd0448-641a-47ba-8726-b9d8800854ad">Lena Wienecke Andersen</name>
+        </author>
+        <editor xml:id="id6af1201c-8262-40aa-85a2-beb2f17a6c36">
+          <name xml:id="idcaf71c1c-d652-45dc-bd5e-51327ad1c7a3">Niels Jørgen Cappelørn</name>
+          <name xml:id="id3b8dd110-ba3b-4c61-8d7c-a172e8103cf9">Joakim Garff</name>
+          <name xml:id="idcf062f66-449e-43dc-8407-e5a03223918f">Johnny Kondrup</name>
+          <name xml:id="iddf4cadb3-8750-49c6-a553-d72b114754ee">Tonny Aagaard Olesen</name>
+          <name xml:id="id68e67e84-62ee-425e-ba4f-acee902d2c3c">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="idf82e4c7d-105d-47c9-b3d2-ab7eefa7c0a0">
+          <resp xml:id="id13107c19-515e-4ae5-a89b-7b888691e0fc">redigeret af</resp>
+          <name xml:id="id56e773f9-836e-4898-b028-2861a3817294">Niels Jørgen Cappelørn</name>
+          <name xml:id="idf51e85e1-b541-4db8-9634-785506b9deb9">Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="idf6f9d1fd-97fd-43d8-804d-b618d0db0d67">
+          <resp xml:id="id89f57b33-f618-4fe2-a257-746fdebb2d66">elektronisk redigeret af</resp>
+          <name xml:id="idfc52aca2-5b7e-41f9-97c0-268ceece7c50">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id9ec52424-fa5c-4c4f-9b8c-c1b1910dc0a6">
+        <authority xml:id="id103e4f6b-a719-4139-87f3-196626d44f74">Søren Kierkegaard Forskningscenteret 2010</authority>
+        <availability xml:id="id534504e5-6095-412b-b38d-5f6f36900b2a" status="restricted">
+          <p xml:id="idc195163f-97e3-4764-a38e-6c5537200b08">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id9aac062d-5f35-4f21-b4a8-4bda3ee25ba5">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="id8f3f76fa-9278-4c84-a67b-67f63de25331" unit="volume">K14</biblScope>
+        <biblScope xml:id="idb087105f-701b-4a32-a229-7e86ba3a15e5" unit="file">http://sks.dk/em/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="ida18dde9b-feb4-431c-a94d-3f5eb501c21c">
+        <bibl xml:id="id0d7f6af3-72cb-480f-9395-586dc41c52cc" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id0166bd64-efc3-415e-accc-4404f3296c94">
+      <tagsDecl xml:id="id669cb8ca-1e59-49b8-b739-eb2552aff854">
+        <rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition>
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id305384b0-d407-4506-b3d6-b19dbea6beb9">
+      <change xml:id="id2e716319-a105-4709-aecc-c4842ca9e932">Transformed to TEI by style sheet <bibl xml:id="id9239b9f3-82a3-4f3c-b6b6-c23c63ba2890" type="file">txr2tei.xsl</bibl> version as of <date xml:id="idc1191d46-a07a-4813-b42e-707660e7d264">2017-02-15</date> importing <bibl xml:id="id48eada26-e6c8-425f-9082-465b622d1714" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="id2134fab6-572a-49c3-812b-c60f5d50dc58">Transformed to TEI by style sheet <bibl xml:id="id78f7bc6c-4bd2-4f00-b405-58383c5a3a00" type="file">kn12tei.xsl</bibl> version <idno xml:id="id7c703829-9b78-4f2b-9658-f47a1b174789" type="version">1.9</idno> as of <date xml:id="id8bbc820c-58e8-4fef-9465-857594cde3e0">2017-02-21</date> by <name xml:id="ide02db72a-787b-450f-a9ce-3dabff100467">Karsten Kynde</name>, <orgName xml:id="id17acb156-d3d4-48dc-b929-9ad0289c65f3">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="id8cb3be89-a761-4c1a-806f-30dab6ffa3a9">København</placeName></change>
+      <change xml:id="id31a07572-12c5-48c5-915e-5db5e6aad199" when="20120314">txr/XML, <bibl xml:id="idc71832b4-96e2-4895-849c-1a6fa038b738"><idno xml:id="id94abb83c-9a14-47f8-baec-070363ce3960" type="version">1.6</idno>, <biblScope xml:id="id5bbd5688-e6bd-443a-8409-831f22bfb518" unit="file">http://sks.dk/em/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="TextCriticalAccount" subtype="publishedWritings"><body><div><head type="topText" n="Tekstredegørelse"/>
-  <head><pb xml:id="ss647" n="647" edRef="#SKS"/>Tekstredegørelse</head>
-  <list type="TOC"> 
-   <item>1. Bibliografisk beskrivelse
-    <ptr type="chapter" target="#k1" n="647"/>
+  <text xml:id="id92b9564e-2b2c-44c8-88c7-d4af3e797a78" type="TextCriticalAccount" subtype="publishedWritings">
+    <body xml:id="id8cdb5aee-3142-4fef-8b89-a104502eeb7b">
+      <div xml:id="id3b88dc74-4ba6-41df-b4b3-40e938a331ac">
+        <head xml:id="id08dd5974-2565-4ef4-ab31-c94293161399" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="id5abcf926-0624-46ad-adb6-f0afe99ddc97"><pb xml:id="ss647" n="647" edRef="#SKS"/>Tekstredegørelse</head>
+        <list xml:id="id33886e9e-c03d-4d70-9e94-70053553cc39" type="TOC">
+          <item xml:id="idecb7c39c-4e3d-4596-9fec-897ea113af94">1. Bibliografisk beskrivelse
+    <ptr xml:id="idf22eced5-ac35-4d43-b885-f0b9ae4bfee0" type="chapter" target="#k1" n="647"/>
    </item>
-   <item>2. Manuskriptbeskrivelse
-    <ptr type="chapter" target="#k2" n="651"/>
+          <item xml:id="idbd156629-c0ed-4a1c-8421-7d82e57b0a3e">2. Manuskriptbeskrivelse
+    <ptr xml:id="iddd5e7461-ca36-493f-bca0-823f06e2b8b5" type="chapter" target="#k2" n="651"/>
    </item>
-   <item>3. Tilblivelseshistorie
-    <ptr type="chapter" target="#k3" n="652"/>
+          <item xml:id="id28043b02-f490-4c25-96cf-00b514f971d6">3. Tilblivelseshistorie
+    <ptr xml:id="id16875713-0fb5-479b-aef2-0d662c2df915" type="chapter" target="#k3" n="652"/>
    </item>
-   <item>4. Udgivelsesmåde
-    <ptr type="chapter" target="#k4" n="653"/>
+          <item xml:id="idd5936ade-80b8-4e07-9262-788dc46acfef">4. Udgivelsesmåde
+    <ptr xml:id="idea026855-1005-4dd6-bf3b-26ff00469033" type="chapter" target="#k4" n="653"/>
    </item>
-  </list>
-  <div type="level1" xml:id="k1">
-   <head>1. Bibliografisk beskrivelse</head>
-   <p>»En Monolog« blev trykt i <hi rendition="#ita">Fædrelandet,</hi> 16. årgang, nr. 107, torsdag den 10. maj 1855. Artiklen er signeret »S. <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>«. <hi rendition="#ita">Fædrelandet</hi> blev udgivet af <persName key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName key="Ploug, Carl">C. Ploug</persName>; sidstnævnte fungerede også som ansvarlig redaktør. Avisen blev trykt hos <persName key="Klein, Louis">Louis Klein</persName> i <placeName>København</placeName> og lå færdig fra trykkeriet kl. 20. Prisen var 6 skilling i løssalg, 5 mark pr. måned, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName>København</placeName>. <figure xml:id="ill_k27" rend="recto"><graphic url="../EM/ill_k27.jpg"/> <head>27. SKs eksemplar af <hi rendition="#ita">Fædrelandet,</hi> nr. 107, den 10. maj 1855, anden side med SKs artikel placeret som føljeton, udsnit</head> </figure> </p>
-   <p>Artiklen er blevet kollationeret i tre eksemplarer af <hi rendition="#ita">Fædrelandet,</hi> nr. 107, den 10. maj 1855:</p>
-   <list> 
-     
-     <label>A</label>
-     <item>SKs eget eksemplar, uindbundet og ubeskåret, KA, D pk. 17.</item>
-    
-     
-     <label>B</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>Eksemplar B er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p> </note></item>
-    
-     
-     <label>C</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>Eksemplar C er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p> </note></item>
-    
-   </list>
-   <p>Ved den interne kollation af de tre eksemplarer blev der ikke konstateret afvigelser.<note> <p>Da <hi rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes her.</p> </note> Eksemplar A danner grundlag for den følgende beskrivelse.</p>
-   <div type="level2">
-    <head><pb xml:id="ss649" n="649" edRef="#SKS"/>Format og paginering</head>
-    <p>Formatet er folio.<note> <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p> </note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet ark. Avisen er trespaltet; avisens anden, tredje og noget af fjerde side er endvidere opdelt af en tværgående, fed-fin dobbeltskillestreg trykt ca. to tredjedele nede på hver side. Pagineringen 441-444 er på forsiden angivet under spalterne, på avisens øvrige sider over. Spalterne er unummereret.<note> <p>I <ref target="../EM/txt.xml#ss205" type="publishedWritings" n="205"><hi rendition="#ita">SKS</hi> 14, 205</ref>, angives sidetallet i marginen; de følgende spalteskift angives med en lodret streg i teksten og et suppleret spaltetal i kantet parentes i marginen.</p> </note></p>
-    <p rendition="#ind">»En Monolog« er placeret på anden side (s. 442) som føljeton,<note> <p>I ordet »føljeton«s oprindelige betydning, »bilag«, betegnede det artikler vedlagt en avis. Siden brugtes det om artikler på den nederste del af en avisside, dvs. under tværstregen; disse kaldtes føljetoner eller føljetonartikler. Sidenhen udvidedes betydningen til en tekst, der var opdelt og udkom over flere numre af en avis. I <hi rendition="#ita">Fædrelandet,</hi> nr. 107, fra den 10. maj 1855 ses således to typer føljetoner: Den ene, SKs »En Monolog«, er placeret nederst på siden; den anden, »Det gaaer galt, hvor Alle ville raade. (Efter 'Household Words'.) II. (Sidste Artikel.)«, er placeret nederst på siden og løber over flere numre af avisen.</p> </note> dvs. nederst på siden; artiklen fylder halvanden af de nederste spalter. Se <ref target="../EM/txr.xml#ill_k27" type="figure">illustration 27</ref>. Derudover indeholder avisen endnu en artikel af SK, nemlig »Et Resultat«,<note> <p><ref target="../ER/txt.xml#ss201" type="publishedWritings" n="201"><hi rendition="#ita">SKS</hi> 14, 201</ref>-202.</p> </note> nyheder fra ind- og udland, endnu en føljeton samt annoncer.</p>
-   </div>
-   <div type="level2">
-    <head>Beskrivelse af eksemplar A</head>
-    <p>Avisen måler ca. 346 × 519 mm.<note> <p>Størrelsen måles som bredde (øverste kant) × højde (venstre kant).</p> </note></p>
-    <div type="level3">
-     <head>Papir</head>
-     <p>Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
-    </div>
-    <div type="level3">
-     <head><pb xml:id="ss650" n="650" edRef="#SKS"/>Typografi</head>
-     <p>Det fremherskende skriftsnit i avisen er antikva. Fremhævet tekst er sat med fed eller spatieret skrift.</p>
-     <p rendition="#ind">På forsiden findes avisens hoved og datolinje. Hovedet består af et bredt centralfelt og to smalle felter hhv. til venstre og højre herfor. Datolinjen adskiller hovedet fra avisens øvrige tekst.</p>
-     <p>Det centrale felt har ordlyden:</p>
-     <quote><p><hi rendition="#bol">Fædrelandet.</hi> | <hi rendition="#bol"><hi rendition="#spa">1855.</hi></hi> | Abonnementspris i <placeName key="København">Kjøbenhavn</placeName> 15 Mk. pr. Qvartal, 5 Mk. pr. Maaned; enkelte Nr. 6 Sk.; udenfor <placeName key="København">Kjøbenhavn</placeName> 3 Rdl. | pr. Qvartal frit i Huset. Hver Søgne-Aften udgaaer et Numer.<note> <p>Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p> </note></p></quote>
-     <p>Det smalle felt til venstre har følgende ordlyd:</p>
-     <quote><p>Bladets Comptoir, store Kjøb-|magergade Nr. 54, er aabent | hver Søgnedags Formiddag fra | Kl. 11–1.</p></quote>
-     <p>Det smalle felt til højre:</p>
-     <quote><p><hi rendition="#bol">Bekjendtgjørelser</hi> | indrykkes mod en Betaling af | 4 Sk. for Petitlinien. Ifølge en | Overenskomst med »<hi rendition="#bol">Afton-|bladet</hi>« i <placeName>Stockholm</placeName>, »<hi rendition="#bol">Chri-|stianiaposten</hi>« i <placeName key="Oslo">Christiania</placeName> | og »<hi rendition="#bol">Handels- och Sjö-|farts-Tidningen</hi>« i Gö-|theborg kunne de ogsaa blive | indførte i disse mod en lignende | Betaling for hvert Blad.</p></quote>
-     <p>Derunder er datolinjen placeret, indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Datolinjen har ordlyden:</p>
-     <quote><p><hi rendition="#bol">16</hi><hi rendition="#sup">de</hi> <hi rendition="#bol">Aarg.</hi> <hi rendition="#bol">Torsdagen den 10. Mai.</hi> <hi rendition="#bol">Nr. 107.</hi></p></quote>
-     <p>Oplysningen om årgang er venstrestillet, dateringen centreret, og avisnummeret højrestillet.<note> <p>En uddybende beskrivelse af avishovedet findes i <ref target="../PPM/txr.xml#ss416" type="textCriticalAccount" n="416">tekstredegørelsen til »En Opfordring til mig fra Pastor <persName key="Paludan-Müller, Jens">Paludan-Müller</persName>«, s. 416</ref>ff. Det skal bemærkes, at i den uddybende beskrivelse tages udgangspunkt i en brødtekst på ca. 10 punkt (korpus); brødteksten i artiklen »En Monolog« er sat med en punktstørrelse svarende til ca. 8 punkt (petit).</p> </note></p>
-     <p rendition="#ind"><pb xml:id="ss651" n="651" edRef="#SKS"/>Nederst i avisens sidste spalte, adskilt fra den foregående notits af en skillestreg i hele spaltens bredde, er trykketidspunktet angivet:</p>
-     <quote><p>Færdigt fra Trykkeriet Kl. 8</p></quote>
-     <p>Bagsidens fod er adskilt fra avisens øvrige tekst med en tværgående, fed-fin dobbeltskillestreg og har ordlyden:</p>
-     <quote><p>Udgivere: <hi rendition="#bol"><persName key="Giødwad, Jens Finsteen">J. F. Giødwad</persName></hi> og <hi rendition="#bol"><persName key="Ploug, Carl">C. Ploug</persName>;</hi> ansvarlig: <hi rendition="#bol"><persName key="Ploug, Carl">C. Ploug</persName>.</hi> | [Skillestreg] | Trykt med Hurtigpresse hos <hi rendition="#spa"><persName key="Klein, Louis">Louis Klein</persName></hi>.</p></quote>
-     <p>Artiklens overskrift »En Monolog.«, der er fed og centreret i spalten, er sat med en punktstørrelse ca. 2 grader større end brødteksten.<note> <p>Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 8; tekst, der er 2 grader større, er sat med punktstørrelse 12.</p> </note> Derunder er trykt en kort skillestreg.</p>
-     <p rendition="#ind">Artiklen indledes med fire punktummer indrykket fra forkant. Efter artiklen står dateringen »Den 6te Mai.« og den spatierede signatur »S. <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.« indrykket fra hhv. for- og bagkant på samme linje. Efter artiklen er trykt en prydbjælke, der adskiller SKs tekst fra den øvrige tekst i spalten.</p>
-     <p rendition="#ind">Spaltekolumnen måler ca. 88 mm i bredden, og der er op til 30 linjer i hver af artiklens spalter. Mellem spalterne er sat en fed, lodret skillestreg. Brødteksten er sat med en skriftstørrelse svarende til ca. 8 punkt (petit). Der er dobbelt ordmellemrum efter punktum.</p>
-     <p rendition="#ind">Der er flere sætter- og trykfejl i artiklen. De tre sidste linjer i første spalte holder ikke forkant; den tredjesidste er sat en anelse længere til højre end de øvrige linjer i spalten, de to sidste en anelse længere til venstre (<ref target="../EM/txt.xml#ss205" type="publishedWritings" n="205"><hi rendition="#ita">SKS</hi> 14, 205</ref>,35-38 (fra »hermed« til spalteskift)). To typer holder ikke linje: det andet 'a' i »saa« (205,29 første forekomst) og 'e' i »vinde« (205,47). Derudover skyldes trykfejl læderede typer.<note> <p>Eksempler på læderede typer: prikken over »i« (<ref target="../EM/txt.xml#ss205" type="publishedWritings" n="205"><hi rendition="#ita">SKS</hi> 14, 205</ref>,7 første forekomst), 't' i »langt« (205,20), 'o' i »og« (205,20), det første 'e' i »sammenlignet« (205,34), 'r' i »staaer« (205,36) og 'v' i »vor« (205,41).</p> </note></p>
-    </div>
-   </div>
-  </div>
-  <div type="level1" xml:id="k2">
-   <head><pb xml:id="ss652" n="652" edRef="#SKS"/>2. Manuskriptbeskrivelse</head>
-   <p>Til »En Monolog« findes følgende manuskript i Kierkegaard Arkivet (KA) på <placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
-   <msDesc><msIdentifier><collection>EM</collection></msIdentifier> 
-    <msPart xml:id="physDesc.1" next="#additional.1"><msIdentifier><idno>1</idno></msIdentifier><physDesc><p>Kladde til »En Monolog« (<ref target="../EM/txt.xml#ss205" type="publishedWritings" n="205"><hi rendition="#ita">SKS</hi> 14, 205</ref>).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.<note> <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p> </note></p><p>Ingen paginering.</p><p>Papir: gulligt koncept, ribbet. Mål: 167 × 203 mm.<note> <p>Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p> </note></p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladene er efter beskrivning blevet foldet en gang på tværs. Bl. [2v] er kun halvt beskrevet.</p><p>Øverst på bl. [1r] står overskriften »<hi rendition="#spa">En Monolog.</hi>«, og nederst i marginen er et indvisningstegn skrevet med blyant. På bl. [2v] findes dateringen »d. 6 Mai« samt signaturen <hi rendition="#ant">»S.K.«</hi>.</p><p>Nogle korrektioner, især sletninger. På alle blade findes sletninger af enkelte ord med blyant: tre sletninger på bl. [1r], to på bl. [1v], en på bl. [2r] og en på bl. [2v]. På bl. [2r] er endvidere først en linje, dernæst to linjer streget over med blyant.</p></physDesc></msPart><msPart xml:id="additional.1" prev="#physDesc.1"><msIdentifier><idno>1</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 52, læg 1; <hi rendition="#ita">Pap.</hi> XI 3 B 234)<note> <p>I KA, B pk. 52, læg 1, findes et omslag, som ikke beskrives af <hi rendition="#ita">Pap.,</hi> men som <hi rendition="#ita">Pap.</hi> har mærket »[XI 3 B 234]«. Omslaget er et stykke groft, blåt konceptpapir, der er foldet til konvolut og bærer påskrifterne »<hi rendition="#ita">18</hi>« skrevet med rødkridt, formentlig af <persName key="Lund, Henrik">H. Lund</persName>, »<hi rendition="#spa">6/5 55</hi> / <hi rendition="#spa">Concept</hi> til: / <hi rendition="#bol">En Monolog.</hi>« og »<hi rendition="#spa">'Fædreland.'</hi> 10/5-55«, formentlig skrevet af <persName key="Barfod, Hans Peter">H.P. Barfod</persName>.</p> </note></p></note></adminInfo></additional></msPart>
-   </msDesc>
-  </div>
-  <div type="level1" xml:id="k3">
-   <head><pb xml:id="ss653" n="653" edRef="#SKS"/>3. Tilblivelseshistorie</head>
-   <p>SK angreb den officielle kristendomsforkyndelse i <placeName>Danmark</placeName>, først med 21 artikler i <hi rendition="#ita">Fædrelandet</hi> (fra den 18. dec. 1854 til den 26. maj 1855), dernæst med sit tidsskrift <hi rendition="#ita">Øieblikket</hi>.<note> <p>Se <hi rendition="#ita">SKS</hi> 13.</p> </note> Artiklen »En Monolog« var SKs 18. indlæg i denne kirkestrid.</p>
-   <p rendition="#ind">Kladden er baseret på en journaloptegnelse fra november 1854 (<ref target="../NB33/txt.xml#n2" type="journalsAndPapers" n="2">NB33:2</ref>, <hi rendition="#ita">SKS</hi> 26, 247). Teksten er blevet bearbejdet og derefter dateret »d. 6 Mai«, dvs. fire dage før artiklen blev trykt.</p>
-   <p rendition="#ind">Der foreligger ingen renskrift (trykmanuskript) til artiklen.</p>
-  </div>
-  <div type="level1" xml:id="k4">
-   <head>4. Udgivelsesmåde</head>
-   <p>»En Monolog« blev som nævnt trykt i <hi rendition="#ita">Fædrelandet</hi>.<note> <p>En nærmere redegørelse for <hi rendition="#ita">Fædrelandets</hi> redaktionelle forhold, periodicitet og oplagstal findes i <ref target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til »Aabenbart Skriftemaal«, s. 112</ref>f.</p> </note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
-   <p rendition="#ind">Af stor betydning for receptionen i SKs umiddelbare eftertid var <persName key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi rendition="#ita"><persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 (<hi rendition="#ita">Bl.art.</hi>). Heri indgår størstedelen af SKs artikler, også »En Monolog«.<note> <p>Artiklen er trykt i <hi rendition="#ita">Bl.art.,</hi> s. 118-119. SK havde selv planer om, men fik ikke realiseret, en samlet udgivelse af kirkestridsartiklerne, jf. <ref type="preparatoryManuscript" n="pap:XI3B128-135"><hi rendition="#ita">Pap.</hi> XI 3 B 128-135</ref>.</p> </note></p>
-  </div>
- </div></body></text>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="id8fa4f4df-1d56-4e84-8cf3-f08d28f9834f">1. Bibliografisk beskrivelse</head>
+          <p xml:id="id2cd698a2-d775-4982-92aa-b3d7534a0c97">»En Monolog« blev trykt i <hi xml:id="id5564c33e-2973-4e4e-a78a-85087b4bcac0" rendition="#ita">Fædrelandet,</hi> 16. årgang, nr. 107, torsdag den 10. maj 1855. Artiklen er signeret »S. <persName xml:id="idceb84733-3dd2-4806-83de-abec2746b42b" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>«. <hi xml:id="id9fd4203a-73ae-4b02-b56c-687c2f337427" rendition="#ita">Fædrelandet</hi> blev udgivet af <persName xml:id="ida7c4f652-8bf8-4dfb-99ec-07a24ec25cf1" key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName xml:id="ida10ad9e8-ab17-4744-80e7-870c540f9375" key="Ploug, Carl">C. Ploug</persName>; sidstnævnte fungerede også som ansvarlig redaktør. Avisen blev trykt hos <persName xml:id="id6fe160da-b80b-4e6c-8816-1983be77c113" key="Klein, Louis">Louis Klein</persName> i <placeName xml:id="id5742c4f8-afbc-400c-8140-fdf0909e7618">København</placeName> og lå færdig fra trykkeriet kl. 20. Prisen var 6 skilling i løssalg, 5 mark pr. måned, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName xml:id="id6a30e44c-adf9-427a-a3d9-046bea2d76a8">København</placeName>. <figure xml:id="ill_k27" rend="recto"><graphic xml:id="id22e34891-32c1-4be3-9276-1a32ecaf105c" url="../EM/ill_k27.jpg"/><head xml:id="ide39bd312-a1db-4a10-a2e2-922fa9fced0a">27. SKs eksemplar af <hi xml:id="idd0653ea4-c143-4fd1-86cf-035411fdd5ab" rendition="#ita">Fædrelandet,</hi> nr. 107, den 10. maj 1855, anden side med SKs artikel placeret som føljeton, udsnit</head></figure> </p>
+          <p xml:id="ide704f99e-cf1b-479f-a944-54aaee4d276a">Artiklen er blevet kollationeret i tre eksemplarer af <hi xml:id="id2661d4b3-32c1-4d88-95c4-d59b549ac130" rendition="#ita">Fædrelandet,</hi> nr. 107, den 10. maj 1855:</p>
+          <list xml:id="ide2051638-2390-4df8-9738-01b7d07ba29e">
+            <label xml:id="id783386d2-7f30-440f-a408-f81d449d7cac">A</label>
+            <item xml:id="id9878ff92-0079-4c86-bbf3-8c447fa1693e">SKs eget eksemplar, uindbundet og ubeskåret, KA, D pk. 17.</item>
+            <label xml:id="id19f90787-aac1-4d3a-879a-8a2af058b1ff">B</label>
+            <item xml:id="id0a1ea7ec-1509-4068-a24b-aa0b4734843b"><placeName xml:id="id98f4f0b6-9e52-4454-a609-b3120dfca667" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="idb9760e95-64f6-4b53-99cb-44429ba7e4fe"><p xml:id="ida3874c41-25fd-4003-a4e5-79feb1610530">Eksemplar B er indbundet sammen med resten af <hi xml:id="idcaaaf88f-f8bf-4a24-a796-0cd9c911ef03" rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p></note></item>
+            <label xml:id="id41348e83-88a3-4aa6-b8ae-7f3ad65860df">C</label>
+            <item xml:id="id2f0203af-d97b-4f2e-bbb6-a439a665ba31"><placeName xml:id="id727eb8ba-8aba-44bb-bc41-f9e51c101405" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="idc73a7cf8-2c07-4ecf-b855-1fa75ceddbbe"><p xml:id="id05efea74-d9f2-4899-a99a-2709aefe3b2e">Eksemplar C er indbundet sammen med resten af <hi xml:id="id5d44e377-c51a-4f7b-bc46-22959b718ae1" rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p></note></item>
+          </list>
+          <p xml:id="id8fa781bd-278b-4376-8d49-f96f3c2846e7">Ved den interne kollation af de tre eksemplarer blev der ikke konstateret afvigelser.<note xml:id="id085b0120-5366-46f6-913a-f1b17c25e43f"><p xml:id="ida000a4dd-28dc-4f3a-97ff-6dd6619998e8">Da <hi xml:id="id03bbe30b-6ace-45a1-b8f4-d809b99c1f49" rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes her.</p></note> Eksemplar A danner grundlag for den følgende beskrivelse.</p>
+          <div xml:id="id7f6a12b6-2004-4d98-8262-21ebcaf5a27c" type="level2">
+            <head xml:id="idc2aed540-2455-40a7-be2a-ecdd3d294f97"><pb xml:id="ss649" n="649" edRef="#SKS"/>Format og paginering</head>
+            <p xml:id="id8963fd36-accb-4151-8907-c2788117d35c">Formatet er folio.<note xml:id="idf61fc175-2e5f-4517-ae7f-9d6c7ab231ee"><p xml:id="idddcaa989-4e67-436c-a604-eb44e2c4988a">Udgangspunktet for formatbetegnelsen er plane helark (ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p></note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet ark. Avisen er trespaltet; avisens anden, tredje og noget af fjerde side er endvidere opdelt af en tværgående, fed-fin dobbeltskillestreg trykt ca. to tredjedele nede på hver side. Pagineringen 441-444 er på forsiden angivet under spalterne, på avisens øvrige sider over. Spalterne er unummereret.<note xml:id="id509979cc-6f01-43e4-8059-9f393c8b3f54"><p xml:id="idf0ae7245-7cf2-438e-9eac-b430a7b3c2ff">I <ref xml:id="idceefd8f9-3384-4f97-8fa7-0b63f0d8ea28" target="../EM/txt.xml#ss205" type="publishedWritings" n="205"><hi xml:id="id818c8036-9abe-4a89-8636-007346f76f58" rendition="#ita">SKS</hi> 14, 205</ref>, angives sidetallet i marginen; de følgende spalteskift angives med en lodret streg i teksten og et suppleret spaltetal i kantet parentes i marginen.</p></note></p>
+            <p xml:id="id4323bd4f-e154-4575-b4f8-b541007fb1af" rendition="#ind">»En Monolog« er placeret på anden side (s. 442) som føljeton,<note xml:id="id2ea3b679-5184-48f1-b19c-0aceb9f9a300"><p xml:id="id8141abb3-8d5d-4ce0-8012-b33dff942091">I ordet »føljeton«s oprindelige betydning, »bilag«, betegnede det artikler vedlagt en avis. Siden brugtes det om artikler på den nederste del af en avisside, dvs. under tværstregen; disse kaldtes føljetoner eller føljetonartikler. Sidenhen udvidedes betydningen til en tekst, der var opdelt og udkom over flere numre af en avis. I <hi xml:id="ida494a3c0-b2cd-4230-9000-dbeefdf0049f" rendition="#ita">Fædrelandet,</hi> nr. 107, fra den 10. maj 1855 ses således to typer føljetoner: Den ene, SKs »En Monolog«, er placeret nederst på siden; den anden, »Det gaaer galt, hvor Alle ville raade. (Efter 'Household Words'.) II. (Sidste Artikel.)«, er placeret nederst på siden og løber over flere numre af avisen.</p></note> dvs. nederst på siden; artiklen fylder halvanden af de nederste spalter. Se <ref xml:id="idd4cbbeea-323a-438d-af69-3217a888524f" target="../EM/txr.xml#ill_k27" type="figure">illustration 27</ref>. Derudover indeholder avisen endnu en artikel af SK, nemlig »Et Resultat«,<note xml:id="idcba48ca4-aa8f-46a2-b36d-83b1cdcb0c80"><p xml:id="idb1f926ac-478f-4c34-a7b1-5d92b325983d"><ref xml:id="idd83cb34f-ba23-45ef-8c18-a89a1fda1ce9" target="../ER/txt.xml#ss201" type="publishedWritings" n="201"><hi xml:id="id5b900784-c954-446b-a13f-1dfb53d7f64e" rendition="#ita">SKS</hi> 14, 201</ref>-202.</p></note> nyheder fra ind- og udland, endnu en føljeton samt annoncer.</p>
+          </div>
+          <div xml:id="ide63bdb58-2586-46b4-a8dd-bdfc823531f0" type="level2">
+            <head xml:id="ide167e06d-4f08-42fd-b75e-f5c902e9d0fd">Beskrivelse af eksemplar A</head>
+            <p xml:id="ideedcbbe3-e2d4-4837-adf7-9e7485891e89">Avisen måler ca. 346 × 519 mm.<note xml:id="id1f6a40be-8d03-4eb1-aaba-7005495f6d05"><p xml:id="id5086d2e7-ee86-4b92-b57a-b2a14b2f2fc6">Størrelsen måles som bredde (øverste kant) × højde (venstre kant).</p></note></p>
+            <div xml:id="id1c2afd14-4d5a-4a99-bb24-6e62e58cdc0a" type="level3">
+              <head xml:id="id268fb7ae-4a58-4bd3-a030-9855b56d04a0">Papir</head>
+              <p xml:id="idd18c775e-92f3-4d89-bb9e-c3a830424a2a">Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
+            </div>
+            <div xml:id="id3a5adc11-7e6b-4aa0-93fe-d99cbf7426b5" type="level3">
+              <head xml:id="id1c42b798-1676-493a-a4e6-7480cbbf8b7e"><pb xml:id="ss650" n="650" edRef="#SKS"/>Typografi</head>
+              <p xml:id="id79a20495-8119-4abf-9362-7a3c21720321">Det fremherskende skriftsnit i avisen er antikva. Fremhævet tekst er sat med fed eller spatieret skrift.</p>
+              <p xml:id="id127c0113-1bab-4db4-be75-3f9fa0e5351d" rendition="#ind">På forsiden findes avisens hoved og datolinje. Hovedet består af et bredt centralfelt og to smalle felter hhv. til venstre og højre herfor. Datolinjen adskiller hovedet fra avisens øvrige tekst.</p>
+              <p xml:id="id9555c6db-1d07-4fca-acb9-78c832938f2e">Det centrale felt har ordlyden:</p>
+              <quote xml:id="id555fbd7d-0704-46ca-9611-efd000317c42">
+                <p xml:id="id4768be03-9887-4b74-b8b0-1aafd3787ba3"><hi xml:id="id357999bc-c371-405f-a210-4b96e314ea7f" rendition="#bol">Fædrelandet.</hi> | <hi xml:id="ida5bd1810-be9c-421c-80f1-716e20508555" rendition="#bol"><hi xml:id="id0621d96f-4016-45a9-a860-f0ea590abee1" rendition="#spa">1855.</hi></hi> | Abonnementspris i <placeName xml:id="id875b5444-039f-448c-be5e-8a70f02cb474" key="København">Kjøbenhavn</placeName> 15 Mk. pr. Qvartal, 5 Mk. pr. Maaned; enkelte Nr. 6 Sk.; udenfor <placeName xml:id="id20fe4944-8531-420c-862e-b84aa1174e37" key="København">Kjøbenhavn</placeName> 3 Rdl. | pr. Qvartal frit i Huset. Hver Søgne-Aften udgaaer et Numer.<note xml:id="id37337d13-4408-4e05-adf0-ce3c91cb06b5"><p xml:id="id57453d79-ee24-4e01-8a91-935515dfa19e">Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p></note></p>
+              </quote>
+              <p xml:id="idae4df98f-f99f-4ff6-8044-e881cc2ae2ba">Det smalle felt til venstre har følgende ordlyd:</p>
+              <quote xml:id="id39634b6c-1a76-4018-b411-e32ee23979c5">
+                <p xml:id="id93fd4e76-b77a-463f-9d36-3ee94d805e3a">Bladets Comptoir, store Kjøb-|magergade Nr. 54, er aabent | hver Søgnedags Formiddag fra | Kl. 11–1.</p>
+              </quote>
+              <p xml:id="id90655b2d-0abf-4324-8655-d277e4d77579">Det smalle felt til højre:</p>
+              <quote xml:id="id693f0b17-f8af-49d7-a447-cba1eb60609a">
+                <p xml:id="id2b43d7e7-9c6b-4b8d-a4f0-6bc0c63e4026"><hi xml:id="idf5159862-5a94-436e-a76b-7c231db03edb" rendition="#bol">Bekjendtgjørelser</hi> | indrykkes mod en Betaling af | 4 Sk. for Petitlinien. Ifølge en | Overenskomst med »<hi xml:id="id19ee0fc9-8744-439b-b2e7-210c98f82b99" rendition="#bol">Afton-|bladet</hi>« i <placeName xml:id="id9290bc74-4868-478e-b471-c371e3f17791">Stockholm</placeName>, »<hi xml:id="ida36a8f9c-9495-4049-a0e7-e0d9894a62ee" rendition="#bol">Chri-|stianiaposten</hi>« i <placeName xml:id="idadffe141-0356-438e-91d7-9a5fd67f588d" key="Oslo">Christiania</placeName> | og »<hi xml:id="ide034eb47-4918-402e-876b-c05b256b839e" rendition="#bol">Handels- och Sjö-|farts-Tidningen</hi>« i Gö-|theborg kunne de ogsaa blive | indførte i disse mod en lignende | Betaling for hvert Blad.</p>
+              </quote>
+              <p xml:id="idaa5e2329-013a-4923-86da-993e102c12b2">Derunder er datolinjen placeret, indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Datolinjen har ordlyden:</p>
+              <quote xml:id="id6edc74f1-af2d-4b0c-806d-926ecfb9e335">
+                <p xml:id="id32840c52-943f-47bb-8726-de08786ab10c">
+                  <hi xml:id="ide759dfc2-c4c6-4038-9add-008c87dad6bf" rendition="#bol">16</hi>
+                  <hi xml:id="idf2e6b0d3-c3cb-4d15-88bb-cbbe13e34fdf" rendition="#sup">de</hi>
+                  <hi xml:id="id283f718f-a0e4-42cf-887d-15442fb208ee" rendition="#bol">Aarg.</hi>
+                  <hi xml:id="id2790da73-5bf1-47da-902b-84797ef1b624" rendition="#bol">Torsdagen den 10. Mai.</hi>
+                  <hi xml:id="id4524f212-8e51-4345-b36b-3a83f5c0664b" rendition="#bol">Nr. 107.</hi>
+                </p>
+              </quote>
+              <p xml:id="id5ce9de79-8389-42fd-b321-8396224058ff">Oplysningen om årgang er venstrestillet, dateringen centreret, og avisnummeret højrestillet.<note xml:id="ide0d22e49-be6d-42cf-b363-8a2403c3595e"><p xml:id="idaf8bcc16-7048-4168-ad3f-bd79a53448ca">En uddybende beskrivelse af avishovedet findes i <ref xml:id="idf2a0640f-1603-4ff4-a45a-2536e0740397" target="../PPM/txr.xml#ss416" type="textCriticalAccount" n="416">tekstredegørelsen til »En Opfordring til mig fra Pastor <persName xml:id="idaeb88cf8-0fb6-427f-a26a-9ed56a103bbf" key="Paludan-Müller, Jens">Paludan-Müller</persName>«, s. 416</ref>ff. Det skal bemærkes, at i den uddybende beskrivelse tages udgangspunkt i en brødtekst på ca. 10 punkt (korpus); brødteksten i artiklen »En Monolog« er sat med en punktstørrelse svarende til ca. 8 punkt (petit).</p></note></p>
+              <p xml:id="idb3bc2bd0-615f-41a7-afca-7d1b257aa486" rendition="#ind"><pb xml:id="ss651" n="651" edRef="#SKS"/>Nederst i avisens sidste spalte, adskilt fra den foregående notits af en skillestreg i hele spaltens bredde, er trykketidspunktet angivet:</p>
+              <quote xml:id="ida00c0695-6117-4901-a9d7-abdc5a65a481">
+                <p xml:id="id619814e3-c2e4-40f6-badf-ecdbc7be09ea">Færdigt fra Trykkeriet Kl. 8</p>
+              </quote>
+              <p xml:id="idff963c8a-a7d6-41d5-bfa0-90a5aa713eaf">Bagsidens fod er adskilt fra avisens øvrige tekst med en tværgående, fed-fin dobbeltskillestreg og har ordlyden:</p>
+              <quote xml:id="id8accfe07-1428-4188-9db9-6c4314cac938">
+                <p xml:id="id58c427eb-c4b8-4302-8d2f-bae24f8a56f3">Udgivere: <hi xml:id="idfebaca49-48a2-4b3a-be33-e5f11f3879ef" rendition="#bol"><persName xml:id="id109aa089-e6a7-4106-9c45-d19589e34d91" key="Giødwad, Jens Finsteen">J. F. Giødwad</persName></hi> og <hi xml:id="id992b37fc-e873-45e0-9a3e-abaffeeb5f1e" rendition="#bol"><persName xml:id="id2175d25b-d7a4-46d9-980c-8499bdb68102" key="Ploug, Carl">C. Ploug</persName>;</hi> ansvarlig: <hi xml:id="id7b3ea7d7-3187-4f3b-8189-337cdfaf7865" rendition="#bol"><persName xml:id="id21b49543-1dd5-46de-85a0-925097386031" key="Ploug, Carl">C. Ploug</persName>.</hi> | [Skillestreg] | Trykt med Hurtigpresse hos <hi xml:id="id93fbf43f-2506-4372-ab51-68602f47326d" rendition="#spa"><persName xml:id="id8dd7ffc6-b9cd-4830-8a00-05c91bb1c2b0" key="Klein, Louis">Louis Klein</persName></hi>.</p>
+              </quote>
+              <p xml:id="id472ac691-b0d8-4e7d-b608-26851f18791c">Artiklens overskrift »En Monolog.«, der er fed og centreret i spalten, er sat med en punktstørrelse ca. 2 grader større end brødteksten.<note xml:id="idc93b83d3-f82f-443c-a5a9-dc9ce268b502"><p xml:id="idfd365c14-f877-490c-ba0e-f1be56444be3">Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 8; tekst, der er 2 grader større, er sat med punktstørrelse 12.</p></note> Derunder er trykt en kort skillestreg.</p>
+              <p xml:id="ide9a193e8-6120-406a-9977-da6ed547ee9c" rendition="#ind">Artiklen indledes med fire punktummer indrykket fra forkant. Efter artiklen står dateringen »Den 6te Mai.« og den spatierede signatur »S. <persName xml:id="id918b5595-b584-4db4-b613-11cbc739e1df" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.« indrykket fra hhv. for- og bagkant på samme linje. Efter artiklen er trykt en prydbjælke, der adskiller SKs tekst fra den øvrige tekst i spalten.</p>
+              <p xml:id="idd0ebfc22-f250-4c29-a543-b0c472d873c5" rendition="#ind">Spaltekolumnen måler ca. 88 mm i bredden, og der er op til 30 linjer i hver af artiklens spalter. Mellem spalterne er sat en fed, lodret skillestreg. Brødteksten er sat med en skriftstørrelse svarende til ca. 8 punkt (petit). Der er dobbelt ordmellemrum efter punktum.</p>
+              <p xml:id="id6086e56d-d330-40c7-855f-045c4b258ce1" rendition="#ind">Der er flere sætter- og trykfejl i artiklen. De tre sidste linjer i første spalte holder ikke forkant; den tredjesidste er sat en anelse længere til højre end de øvrige linjer i spalten, de to sidste en anelse længere til venstre (<ref xml:id="ida6272519-468f-45e6-994b-cfb13befd4e5" target="../EM/txt.xml#ss205" type="publishedWritings" n="205"><hi xml:id="idf5481ffe-20d6-4899-af09-f647b949bad8" rendition="#ita">SKS</hi> 14, 205</ref>,35-38 (fra »hermed« til spalteskift)). To typer holder ikke linje: det andet 'a' i »saa« (205,29 første forekomst) og 'e' i »vinde« (205,47). Derudover skyldes trykfejl læderede typer.<note xml:id="id3960f958-eda6-434d-af0e-961456156cf1"><p xml:id="id07186b45-bd10-4e7b-ab15-b049f9128008">Eksempler på læderede typer: prikken over »i« (<ref xml:id="id9c9b568f-4155-4576-823f-e4a186747f48" target="../EM/txt.xml#ss205" type="publishedWritings" n="205"><hi xml:id="id15a8710c-1894-4219-80db-bf4cc3fc58b9" rendition="#ita">SKS</hi> 14, 205</ref>,7 første forekomst), 't' i »langt« (205,20), 'o' i »og« (205,20), det første 'e' i »sammenlignet« (205,34), 'r' i »staaer« (205,36) og 'v' i »vor« (205,41).</p></note></p>
+            </div>
+          </div>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="id5b2f061f-5828-487a-b402-85864264dd68"><pb xml:id="ss652" n="652" edRef="#SKS"/>2. Manuskriptbeskrivelse</head>
+          <p xml:id="idf7b3dcee-ddd8-40e3-ab33-159039921cd8">Til »En Monolog« findes følgende manuskript i Kierkegaard Arkivet (KA) på <placeName xml:id="idc981ad50-07c7-4067-9951-ad5beb25af81" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
+          <msDesc xml:id="ide5d1f5a0-12b5-46a6-b76c-95988307522c">
+            <msIdentifier xml:id="ida1b1584a-0c74-474a-82bc-86aa3d009203">
+              <collection xml:id="id5698cdf3-3235-4752-ae7d-947ad05fd827">EM</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.1" next="#additional.1">
+              <msIdentifier xml:id="id70a5ad49-a095-44d7-bb38-0ecb4bb087d9">
+                <idno xml:id="id53318300-9bd4-4dbf-97b7-a5a9f67a311e">1</idno>
+              </msIdentifier>
+              <physDesc xml:id="id4e4cb489-f217-4272-a5e8-4451f8354460">
+                <p xml:id="ida40c4b7d-4eb6-461a-9c45-26bf80463325">Kladde til »En Monolog« (<ref xml:id="id7b393273-94bf-4d74-ad0b-2ad3fb95dcee" target="../EM/txt.xml#ss205" type="publishedWritings" n="205"><hi xml:id="id528bcad8-3642-47d3-8daa-17c6dbc32e76" rendition="#ita">SKS</hi> 14, 205</ref>).</p>
+                <p xml:id="id55ff8031-10d1-4758-8932-e6d3f85357d0">1 dobbeltblad i 4<hi xml:id="id24be256a-9d5c-4288-9946-2a140ee9cdb8" rendition="#sup">o</hi>.<note xml:id="id6e4c5e52-d487-41eb-8116-84c2c6cb41b3"><p xml:id="id48a84b7b-7e2b-400b-8399-ad0a24186c02">Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p></note></p>
+                <p xml:id="ida5adfc57-009a-45b0-a21f-379891eb7bd7">Ingen paginering.</p>
+                <p xml:id="idbb81f7a6-294f-4c37-a502-7e1dbc205f71">Papir: gulligt koncept, ribbet. Mål: 167 × 203 mm.<note xml:id="idffe0cb5e-1caf-4f9d-9a5a-c243a1041365"><p xml:id="id41da3de3-1dba-44d9-8715-4c3e3091d460">Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p></note></p>
+                <p xml:id="id789ac40f-4846-45df-98ac-884a8cea73b6">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladene er efter beskrivning blevet foldet en gang på tværs. Bl. [2v] er kun halvt beskrevet.</p>
+                <p xml:id="idae79ebab-be17-4171-8158-1d269894de61">Øverst på bl. [1r] står overskriften »<hi xml:id="id1c9e037a-2839-4fd6-9bf3-a68aad17c0b7" rendition="#spa">En Monolog.</hi>«, og nederst i marginen er et indvisningstegn skrevet med blyant. På bl. [2v] findes dateringen »d. 6 Mai« samt signaturen <hi xml:id="id788ed963-7016-4e44-bb91-f335c99b5f93" rendition="#ant">»S.K.«</hi>.</p>
+                <p xml:id="id23e7f539-5efa-4dab-b0e7-40157e91d7cb">Nogle korrektioner, især sletninger. På alle blade findes sletninger af enkelte ord med blyant: tre sletninger på bl. [1r], to på bl. [1v], en på bl. [2r] og en på bl. [2v]. På bl. [2r] er endvidere først en linje, dernæst to linjer streget over med blyant.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.1" prev="#physDesc.1">
+              <msIdentifier xml:id="idcc43e2e3-d785-479a-8bd2-3e4ea6eb434a">
+                <idno xml:id="id183027dd-c1d7-41a4-8139-f57f0cf9f603">1</idno>
+              </msIdentifier>
+              <additional xml:id="idefacc786-8709-4e3e-83b2-5c724326b01d">
+                <adminInfo xml:id="id89176c71-c051-4531-80a9-e01492f832a3">
+                  <note xml:id="idd6086062-0860-4980-ad8a-9e2072154137">
+                    <p xml:id="idd6c8c0a1-5dbd-45ec-9c93-1eb3751662a8">(KA, B pk. 52, læg 1; <hi xml:id="id323668d7-58e1-4ec0-a4e7-76ce5ed630a1" rendition="#ita">Pap.</hi> XI 3 B 234)<note xml:id="idf86143ea-1dee-4ad1-bfb9-57b7f820e9da"><p xml:id="id93fa41f4-7d99-47e1-b441-71452fd06d12">I KA, B pk. 52, læg 1, findes et omslag, som ikke beskrives af <hi xml:id="id0038897b-2d64-460c-9c9c-c730846a32da" rendition="#ita">Pap.,</hi> men som <hi xml:id="idcb9ff863-d021-442e-a571-14ed62dc4fb7" rendition="#ita">Pap.</hi> har mærket »[XI 3 B 234]«. Omslaget er et stykke groft, blåt konceptpapir, der er foldet til konvolut og bærer påskrifterne »<hi xml:id="id727f9ab2-9441-43c2-b616-a4fa905ba8be" rendition="#ita">18</hi>« skrevet med rødkridt, formentlig af <persName xml:id="id348c3163-d225-43e1-8c9f-21625ac7f5d3" key="Lund, Henrik">H. Lund</persName>, »<hi xml:id="id693dd0c0-bf36-4bad-8226-1782aacc72cd" rendition="#spa">6/5 55</hi> / <hi xml:id="id660af6c8-8695-423a-b1a8-87bd3679819b" rendition="#spa">Concept</hi> til: / <hi xml:id="id86867f0f-240c-45fb-950e-3b27bc42c3a6" rendition="#bol">En Monolog.</hi>« og »<hi xml:id="id42f553b4-ba15-4cd0-a9b7-ceed75193ca3" rendition="#spa">'Fædreland.'</hi> 10/5-55«, formentlig skrevet af <persName xml:id="ida9370d2f-8f9e-4a9e-9d7b-c87b3f10ee85" key="Barfod, Hans Peter">H.P. Barfod</persName>.</p></note></p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+        </div>
+        <div type="level1" xml:id="k3">
+          <head xml:id="id733f18ff-3f33-4d8b-9e47-bb648a8d293a"><pb xml:id="ss653" n="653" edRef="#SKS"/>3. Tilblivelseshistorie</head>
+          <p xml:id="id206f7e48-2fba-4d7d-9b5e-fdb76e1dcfd0">SK angreb den officielle kristendomsforkyndelse i <placeName xml:id="id632c8563-156d-4310-91f8-aeeaa0b78c18">Danmark</placeName>, først med 21 artikler i <hi xml:id="id45992aa2-0e51-408d-a3c1-5ac90c1bdd6a" rendition="#ita">Fædrelandet</hi> (fra den 18. dec. 1854 til den 26. maj 1855), dernæst med sit tidsskrift <hi xml:id="id2b2e0c93-8402-4622-a71e-802295e1ff39" rendition="#ita">Øieblikket</hi>.<note xml:id="idfee738db-9030-4d3f-ba16-983bce569a1c"><p xml:id="id23b25291-50f2-49f3-8a2e-362f943ab46e">Se <hi xml:id="idd2271c2b-01fe-46d9-921d-32e832a27efa" rendition="#ita">SKS</hi> 13.</p></note> Artiklen »En Monolog« var SKs 18. indlæg i denne kirkestrid.</p>
+          <p xml:id="id9226b819-c8f2-46f1-99a1-18f070184ecb" rendition="#ind">Kladden er baseret på en journaloptegnelse fra november 1854 (<ref xml:id="idfa101d97-5f49-4a5c-8c14-c79661d0e3a1" target="../NB33/txt.xml#n2" type="journalsAndPapers" n="2">NB33:2</ref>, <hi xml:id="idbb38e9c2-28ef-4680-85fc-0d2373e6d7c1" rendition="#ita">SKS</hi> 26, 247). Teksten er blevet bearbejdet og derefter dateret »d. 6 Mai«, dvs. fire dage før artiklen blev trykt.</p>
+          <p xml:id="id646317b9-4ecc-4dee-b529-a55b99f0f038" rendition="#ind">Der foreligger ingen renskrift (trykmanuskript) til artiklen.</p>
+        </div>
+        <div type="level1" xml:id="k4">
+          <head xml:id="id066f4578-1979-4248-adfc-f0c4e1549545">4. Udgivelsesmåde</head>
+          <p xml:id="ide429f6a2-9eba-4e2d-80d9-2c7d68a9124d">»En Monolog« blev som nævnt trykt i <hi xml:id="ide634680e-331f-48df-a07f-9fbd9c2889de" rendition="#ita">Fædrelandet</hi>.<note xml:id="idd823b9fd-6706-4b4c-a708-b2c850c92570"><p xml:id="idc5ba2816-2303-4707-a8a1-1ee89248f517">En nærmere redegørelse for <hi xml:id="idf2e831de-32ed-4894-b0f7-9f8cf0331e7e" rendition="#ita">Fædrelandets</hi> redaktionelle forhold, periodicitet og oplagstal findes i <ref xml:id="id4e2070e5-db00-4086-b3b3-fcd8004f40cb" target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til »Aabenbart Skriftemaal«, s. 112</ref>f.</p></note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
+          <p xml:id="idf538bd45-6c2a-47cb-85f7-a36c73b6ab8c" rendition="#ind">Af stor betydning for receptionen i SKs umiddelbare eftertid var <persName xml:id="idff1313c5-83ad-4d92-9289-399d3abc9831" key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi xml:id="id86b21041-2a30-4ff0-b256-d5f6ecf14fff" rendition="#ita"><persName xml:id="id9aef6d99-6738-4005-813c-75e4a1751ffa" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 (<hi xml:id="id42ca7faa-e926-47aa-b340-52f490ae6fd2" rendition="#ita">Bl.art.</hi>). Heri indgår størstedelen af SKs artikler, også »En Monolog«.<note xml:id="id091302b7-73e0-4759-8f22-1c281a89d064"><p xml:id="id07c4d18e-2233-4596-b086-4018d30b671f">Artiklen er trykt i <hi xml:id="id74418aa2-8a4e-4ec1-b0f7-b83af3decbcb" rendition="#ita">Bl.art.,</hi> s. 118-119. SK havde selv planer om, men fik ikke realiseret, en samlet udgivelse af kirkestridsartiklerne, jf. <ref xml:id="id64b32e28-3ba6-4577-b511-c5b3c6dcfb31" type="preparatoryManuscript" n="pap:XI3B128-135"><hi xml:id="idb17b4de7-8d0f-4b81-8609-e1eb9ff8e87f" rendition="#ita">Pap.</hi> XI 3 B 128-135</ref>.</p></note></p>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

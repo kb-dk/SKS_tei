@@ -1,122 +1,391 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE kn1 SYSTEM "http://sks.dk/kn1/kn1.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5">
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Notesbog 5</title>
-     
-     <title type="short">Not5</title>
-     
-  <author>
-   <name>Niels Jørgen Cappelørn</name>
-  </author>
- 
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Jette Knudsen</name><name>Alastair McKinnon</name>
-  </editor>
- 
-  <respStmt>
-   <resp>udgivet af</resp>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Jette Knudsen</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Johnny Kondrup</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name><name>Kim Ravn</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2001</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K19</biblScope>
-     <biblScope unit="file">http://sks.dk/not5/kom.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20120309">Kierkegaard Normalformat vers. 1, <bibl><idno type="version">1.6</idno>, <biblScope unit="file">http://sks.dk/not5/kom.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="idf4b919df-3415-4b88-9a33-86879ffda031">
+    <fileDesc xml:id="id40aab84b-7dd3-4544-94d5-c0620d993d50">
+      <titleStmt xml:id="id98bbc4ff-1b24-4671-8ed5-a53b306fa5ef">
+        <title xml:id="id6b2738af-ccef-456d-aefd-253aa500bbdb" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id5e53ac51-4d4c-4bb5-ab28-71b79053e6e5">Notesbog 5</title>
+        <title xml:id="id184fb6b5-aa39-4727-8279-496967a16c9b" type="short">Not5</title>
+        <author xml:id="id8da5aba6-d5c7-472e-8d22-98bfe241191f">
+          <name xml:id="id4b8bd595-145f-475f-a18f-1077e8bca1eb">Niels Jørgen Cappelørn</name>
+        </author>
+        <editor xml:id="id82840516-3e76-447c-9651-73857b316519">
+          <name xml:id="idfb318fc6-521a-4d2e-b63a-9541b31f9c1e">Niels Jørgen Cappelørn</name>
+          <name xml:id="id48cbfcaa-7142-44e4-bcd2-7853c5feba44">Joakim Garff</name>
+          <name xml:id="id65431324-44d9-43c5-a127-4ee4644dac75">Johnny Kondrup</name>
+          <name xml:id="idf3f2b2d7-319d-4cb1-840e-65067cc71f27">Jette Knudsen</name>
+          <name xml:id="id5a9257fe-0495-4842-a9e2-5b10a86f96a1">Alastair McKinnon</name>
+        </editor>
+        <respStmt xml:id="idcc02953b-7d1a-4c0e-88e3-978a81134f2c">
+          <resp xml:id="id6db46290-3d06-482c-8a38-ece41d60af85">udgivet af</resp>
+          <name xml:id="id4b886737-b5bc-432f-ab20-42a35bf6ad45">Niels Jørgen Cappelørn</name>
+          <name xml:id="id5503b693-b634-407c-9c13-0b0959f4851a">Joakim Garff</name>
+          <name xml:id="id14b158ad-23cd-4522-a436-32285ecab6ab">Johnny Kondrup</name>
+          <name xml:id="id68de61c0-922f-414c-be43-b3f738523edf">Jette Knudsen</name>
+        </respStmt>
+        <respStmt xml:id="id644a5cfc-7729-4b09-b8b7-46636ad00099">
+          <resp xml:id="id13d0f259-7770-44b3-8cd6-46660ea1dddc">redigeret af</resp>
+          <name xml:id="id0d3ceab0-791a-4eda-859e-7868b33bc440">Johnny Kondrup</name>
+        </respStmt>
+        <respStmt xml:id="idd27ce1d8-2ac3-435d-8b2a-3844f1196526">
+          <resp xml:id="idb359a384-b1a9-470e-825c-10013906b9de">elektronisk redigeret af</resp>
+          <name xml:id="idbef4d354-d347-4014-8ae3-aea7ddd75c4b">Karsten Kynde</name>
+          <name xml:id="idbeb3cef7-9d8e-41c4-ab9f-3bf3ccfd4501">Kim Ravn</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id8541b070-c5cd-4730-9c9d-03526f87dd4b">
+        <authority xml:id="ida3c3653e-10d3-4efd-ac61-f6a09184fc00">Søren Kierkegaard Forskningscenteret 2001</authority>
+        <availability xml:id="id2e9b731e-6643-4b09-ba5e-6db8aee13192" status="restricted">
+          <p xml:id="idb9237642-b278-4af1-be4d-70d36714a1a4">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id2a03693f-20e5-419a-b60a-ec8db01534cf">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="id3cfa088b-43c5-46a2-bf1f-aee657126c47" unit="volume">K19</biblScope>
+        <biblScope xml:id="id78aecb40-75c2-40fd-b2a6-0bc1164f77f9" unit="file">http://sks.dk/not5/kom.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id9e255cf0-a796-4a33-b5bd-f823e04ebdd6">
+        <bibl xml:id="id2305e822-71f2-4d18-b822-265078ed006f" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id844f5914-f419-4123-90b2-e26cc7aed29e">
+      <tagsDecl xml:id="id631b7a63-7115-459b-8aca-b2215ec22cb4">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="idbcc31783-2821-4dc2-a038-46e632d155e3">
+      <change xml:id="id373f30f4-c1c4-4e9d-a907-d63a9b882db2">Transformed to TEI by style sheet <bibl xml:id="iddf5ae7d5-34e0-44a5-8bf8-ef3370b81cae" type="file">kn12tei.xsl</bibl> version <idno xml:id="id49136b05-f7bb-454a-bb5c-44ddb28bc619" type="version">1.9</idno> as of <date xml:id="id63fa1d35-8b68-491d-b6f2-90f933f979b2">2017-02-21</date> by <name xml:id="ide2ed806f-e49b-4326-ac94-a050a878950e">Karsten Kynde</name>, <orgName xml:id="ide5c6f926-8e1c-478c-a564-becb741cbe85">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="ida2c154cc-bbf9-4010-b56b-c5d407ac169f">København</placeName></change>
+      <change xml:id="idc93046d7-6635-42f4-a4be-6ae994ebd3f1" when="20120309">Kierkegaard Normalformat vers. 1, <bibl xml:id="id70f3cce2-b9c1-4a1a-a2b7-f9b4a37c0d6a"><idno xml:id="idcd9ea332-2c0b-4703-a9b1-940e86ebc748" type="version">1.6</idno>, <biblScope xml:id="idf295a12a-b4d3-4aa3-973b-e35f6d12e0ab" unit="file">http://sks.dk/not5/kom.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
-
- <text type="commentary" subtype="jp"><body><div>
-  <note type="commentary" xml:id="not5-1" n="175,1"><label><hi rendition="#bol">Phantasier for et Posthorn</hi></label> <p>sml. journalen <ref target="../FF/txt.xml#n160" type="journalsAndPapers" n="160">FF:160</ref> i <hi rendition="#ita">SKS</hi> 18, 106. – <hi rendition="#bol">Posthorn:</hi> signalhorn, brugt af postillonen (<ptr type="commentary" target="#not5-4" n="175,5"/>) til at signalere post- og befordringsvognens ankomst el. afgang, men også til at advare andre vogne, som havde vigepligt, jf. forordning af 27. jan. 1804, § 37.</p></note>
-  <note type="commentary" xml:id="not5-3" n="175,4"><label><hi rendition="#bol">man nu ønsker, at Posthornet skal afløses af en ordl. Trompet</hi></label> <p>Oplysningen har ikke kunnet verificeres. – <hi rendition="#bol">ordl.:</hi> ordentlig, dvs. almindelig.</p></note>
-  <note type="commentary" xml:id="not5-4" n="175,5"><label><hi rendition="#bol">at Postilloner skal underkastes en Examen i Foredraget</hi></label> <p>Oplysningen har ikke kunnet verificeres. – <hi rendition="#bol">Postilloner:</hi> kuske på post- og befordringsvogne (se næste kommentar). – <hi rendition="#bol">Foredraget:</hi> den kunstneriske fremførelse.</p></note>
-  <note type="commentary" xml:id="not5-5" n="175,7"><label><hi rendition="#bol">Befordringsvæsenet</hi></label> <p>institution bestyret af <placeName>Generalpostdirektionen</placeName> (indtil 1809 under navnet <placeName>Generalpostamtet</placeName>), der if. en detaljeret og omfattende forordning af 27. jan. 1804 gav landruter og en del færgeoverfarter i entreprise til vognmænd (suppleret af befordringspligtige borgere) og skibsredere. Befordringen til lands skete, når den fulgte postens ordinære rute- og tidsplan, med diligence el. postvogn, og når den ikke gjorde, med 'ekstrapost' el. (fra 1829) især 'dagvogn'.</p></note>
-  <note type="commentary" xml:id="not5-6" n="175,15"><label><hi rendition="#bol">Echo</hi></label> <p>If. gr. mytologi forelskede nymfen <persName key="Ekko">Ekko</persName> sig i den smukke yngling <persName key="Narcissos">Narcissos</persName>, men da han ikke gengældte hendes kærlighed, hentæredes hun af græmmelse, så der tilbage af hende kun blev stemmen, som gav genlyd fra klippespalter og skove.</p></note>
-  <note type="commentary" xml:id="not5-7" n="175,21"><label><hi rendition="#bol">Vildttydsker</hi></label> <p>egl. vildtysker, en uciviliseret, udannet tysker.</p></note>
-  <note type="commentary" xml:id="not5-2" n="176,1"><label><hi rendition="#bol">Fatum</hi></label> <p>skæbne.</p></note>
-  <note type="commentary" xml:id="not5-8" n="176,9"><label><hi rendition="#bol">Postillonen</hi></label> <p><ptr type="commentary" target="#not5-3" n="175,4"/>.</p></note>
-  <note type="commentary" xml:id="not5-9" n="176,9"><label><hi rendition="#bol">naar han blæser ... blæser Fidtet af Suppen</hi></label> <p>Talemåden har ikke kunnet identificeres.</p></note>
-  <note type="commentary" xml:id="not5-10" n="176,11"><label><hi rendition="#bol">Posthoren</hi></label> <p><ptr type="commentary" target="#not5-1" n="175,1"/>.</p></note>
-  <note type="commentary" xml:id="not5-11" n="176,16"><label><hi rendition="#bol">Iil</hi></label> <p>fart, hast.</p></note>
-  <note type="commentary" xml:id="not5-12" n="176,17"><label><hi rendition="#bol">Knippelbro</hi></label> <p>egl. <placeName>Knippelsbro</placeName>, vindebro, der fra enden af <placeName>Nybørs</placeName> førte over havneløbet til <placeName>Christianshavn</placeName>, hvorfor den også i daglig tale kaldtes <placeName>Christianshavns Bro</placeName> (<ref target="../kort/kbh_C3.htm" type="map" n="kbh"><hi rendition="#ita">se kort 2, C3</hi></ref>).</p></note>
-  <note type="commentary" xml:id="not5-13" n="176,22"><label><hi rendition="#bol">Semipelagianismen</hi></label> <p>som især skyldtes munken <persName key="Cassianus, Johannes" n="*">Johannes Cassianus</persName> (død o. 435), hævdede, at Gud tilbyder alle mennesker sin frelsende nåde, men at de i kraft af deres frie vilje har mulighed for at afvise den. Denne lære vandt i den grad tilslutning i <placeName>Sydgallien</placeName>, at en synode i 470'erne fordømte <persName key="Augustin, Aurelius">Augustin</persName>s prædestinationslære, dvs. læren om Guds evige forudbestemmelse af hvert enkelt menneskes frelse el. fortabelse. Det fremkaldte en så stærk reaktion fra tilhængerne af den augustinske nådelære, især ledet af biskop <persName key="Cæsarius af Arles" n="*">Cæsarius af Arles</persName> (død 543), at en synode i <placeName>Orange</placeName> i 529 fordømte semipelagianismen og antog en modificeret augustinsk nådelære. På synoden blev det på den ene side fastslået, at frelsen alene afhænger af Guds nåde på grund af menneskets absolutte syndighed, og på den anden side afvist, at Gud har forudbestemt mennesker til at gøre det onde. Og da det samtidig blev understreget, at menneskets vilje er befriet af Guds nåde og med hans bistand kan og skal øve de gerninger, der belønnes med evigt liv, blev der åbnet plads for tanken om menneskets ansvarlige medvirken til sin egen frelse. <placeName>Orangesynoden</placeName>s vedtagne opfattelse blev bekræftet af den rom. biskop i 531 og vandt således anerkendelse som den vestlige kirkes officielle nådelære.</p></note>
-  <note type="commentary" xml:id="not5-14" n="176,23"><label><hi rendition="#bol">semper numularii instar deum ... semper anxie</hi></label> <p>lat. »udstyrer altid Gud ligesom en vekselerer med en regnskabsbog; skønt altid under våben tilvejebringer den aldrig hverken lyksalig fred eller glædelig sejr; handler altid nøjeregnende«. Kilden har ikke kunnet identificeres.</p></note>
-  <note type="commentary" xml:id="not5-15" n="176,29"><label><hi rendition="#bol">semper indagans ... valeant vivant cum illa</hi></label> <p>lat. »er altid granskende, vidtløftig, snakkesalig, når aldrig frem til sit mål. De må gerne have den for sig selv, og så kan de ellers have det så godt med den«. Kilden har ikke kunnet identificeres.</p></note>
-  <note type="commentary" xml:id="not5-16" n="177,4"><label><hi rendition="#bol">Si philosophi hujus ævi ... pugnandum est</hi></label> <p>lat. »Selv om vor tids filosoffer med rette hævder, at man ikke ustraffet kan ignorere deres afhandlinger og store fortjenester inden for filosofien, ja, endnu mindre kan undlade at omsætte dem i saft og kraft, så vil jeg imidlertid for mit eget vedkommende ikke undlade at udtale den overbevisning, at sandheden vil være bedre hjulpet, hvis vi undlader at følge deres mønster ved ikke at opdele og fortolke livet ud fra systemet, men omsider lader systemet opstå af og udgå fra erfaringen, for kampen skal føres fra begge sider«. Kilden har ikke kunnet identificeres. – <hi rendition="#bol">ph.:</hi> philosophia.</p></note>
-  <note type="commentary" xml:id="not5-17" n="177,11"><label><hi rendition="#bol">ved det chr. opgaaer et heelt nyt Liv i Msk</hi></label> <p>hentyder formentlig til <rs type="bible">2 Kor 5,17</rs>, hvor <persName key="Paulus">Paulus</persName> skriver: »Saa at, dersom Nogen er i Christo, da er han en ny Skabning: det Gamle er forbiganget, see, Alt er blevet nyt« (NT-1819). Se journalen <ref target="../HH/txt.xml#n2" type="journalsAndPapers" n="2">HH:2</ref>-3 i <hi rendition="#ita">SKS</hi> 18, 125f. Jf. også <rs type="bible">Rom 6,4</rs> og <rs type="bible">Ef 4,23-24</rs>.</p></note>
-  <note type="commentary" xml:id="not5-18" n="177,19"><label><hi rendition="#bol">den aandelige Fødsel</hi></label> <p>hentyder formentlig til beretningen om Jesu natlige samtale med farisæeren <persName key="Nikodemus">Nikodemus</persName> i <rs type="bible">Joh 3,1-16</rs>, hvor Jesus bl.a. siger: »Den, der ikke bliver født på ny, kan ikke se Guds rige« (v. 3); og: »I må fødes på ny« (v. 7).</p></note>
-  <note type="commentary" xml:id="not5-20" n="178,1"><label><hi rendition="#bol">Det er umuligt – siger Du etc</hi></label> <p>se journalen <ref target="../HH/txt.xml#n25" type="journalsAndPapers" n="25">HH:25</ref> i <hi rendition="#ita">SKS</hi> 18, 139.</p></note>
-  <note type="commentary" xml:id="not5-21" n="179,1"><label><hi rendition="#bol">om gode Gjerninger</hi></label> <p>se journalen <ref target="../HH/txt.xml#n26" type="journalsAndPapers" n="26">HH:26</ref> i <hi rendition="#ita">SKS</hi> 18, 139.</p></note>
-  <note type="commentary" xml:id="not5-22" n="179,2"><label><hi rendition="#bol">den høire Haand ... den venstre gjør</hi></label> <p>jf. <rs type="bible">Matt 6,3</rs>, hvor Jesus siger: »Når du giver almisse, må din venstre hånd ikke vide, hvad din højre gør«.</p></note>
-  <note type="commentary" xml:id="not5-23" n="180,2"><label><hi rendition="#bol">Guds Faderkjærlighed</hi></label> <p>se journalen <ref target="../HH/txt.xml#n17" type="journalsAndPapers" n="17">HH:17</ref> i <hi rendition="#ita">SKS</hi> 18, 134f.</p></note>
-  <note type="commentary" xml:id="not5-24" n="181,1"><label><hi rendition="#bol">eller saae Du ham aldrig ... Kjærligheds-Samfund</hi></label> <p>se journalen <ref target="../HH/txt.xml#n12" type="journalsAndPapers" n="12">HH:12</ref> i <hi rendition="#ita">SKS</hi> 18, 131f. – <hi rendition="#bol">opdragende:</hi> jf. <rs type="bible">Hebr 12,5-6</rs>: »Min søn, foragt ikke Herrens opdragelse, / mist ikke modet, når du irettesættes af ham; / for Herren tugter den, han elsker, / han straffer hver søn, han holder af.« Jf. også <rs type="bible">Ordsp 3,11-12</rs>.</p></note>
-  <note type="commentary" xml:id="not5-25" n="182,1"><label><hi rendition="#bol">de der bleve kaldte ved den 11<hi rendition="#sup">te</hi> Time</hi></label> <p>hentyder til Jesu lignelse om arbejderne i vingården, <rs type="bible">Matt 20,1-16</rs>. Heri fortælles om en vingårdsejer, der går hen på torvet tidligt om morgenen og igen ved den tredje, den sjette og den niende time for at leje de ledige arbejdere til sin vingård. »Ved den ellevte time gik han derhen og fandt endnu nogle stående dér, og han spurgte dem: Hvorfor har I stået ledige her hele dagen? De svarede ham: Fordi ingen har lejet os. Han sagde til dem: Gå I også hen i min vingård«, v. 6-7. Se journalen <ref target="../EE/txt.xml#n194" type="journalsAndPapers" n="194">EE:194</ref> i <hi rendition="#ita">SKS</hi> 18, 68f.</p></note>
-  <note type="commentary" xml:id="not5-26" n="185,1"><label><hi rendition="#bol">Hegel er en Parenthes i Schelling ... at den skal sluttes</hi></label> <p>hentyder formentlig til, at Schelling allerede i 1820'erne havde annonceret en 'positiv' filosofi, der skulle overvinde Hegels 'negative'. Skønt Schelling tidligere havde vundet anerkendelse for sin 'negative' filosofi, som på en måde blev videreført af Hegel, blev han i 1820'erne fortrængt af Hegels store berømmelse. Efter Hegels død blev Schelling omtalt som hans mulige efterfølger i <placeName>Berlin</placeName>, hvorved Hegels 'negative' filosofi billedlig talt ville blive en parentes i Schellings 'positive' filosofi, ikke blot historisk, men også indholdsmæssigt. – <hi rendition="#bol">Hegel:</hi> <persName key="Hegel, Georg Wilhelm Friedrich" n="*">Georg Wilhelm Friedrich Hegel</persName> (1770-1831), ty. filosof, studerede filosofi og teologi sammen med Schelling i <placeName>Tübingen</placeName>, 1801-06 privatdocent (ekstraordinær prof.) i <placeName>Jena</placeName>, 1816-18 prof. i <placeName>Heidelberg</placeName> og fra 1818 til sin død prof. i Berlin. – <hi rendition="#bol">Schelling:</hi> <persName key="Schelling, Friedrich Wilhelm Joseph" n="*">Friedrich Wilhelm Joseph Schelling</persName> (1775-1854), ty. filosof, studerede filosofi og teologi sammen med Hegel i Tübingen, blev 1798 ekstraordinær prof. i Jena, fra 1803 prof. i <placeName>Würzburg</placeName> og fra 1806 generalsekretær i Akademiet for de bildende Kunster i <placeName>München</placeName>. Herefter blev han marginaliseret af Hegel, men fra 1827 blev han prof. i München, herfra kaldet til prof. i Berlin 1841 for at modvirke venstrehegelianismen (se notesbog 11 i <hi rendition="#ita">SKS</hi> 19); trak sig tilbage i 1846.</p></note>
-  <note type="commentary" xml:id="not5-28" n="185,4"><label><hi rendition="#bol">Min Examenslæsning er den længste Parenthes</hi></label> <p>SK påbegyndte sin eksamenslæsning i efteråret 1838 og afsluttede sin teologiske embedseksamen 3. juli 1840.</p></note>
-  <note type="commentary" xml:id="not5-30" n="185,9"><label><hi rendition="#bol">Forvisningen om Seir <rs type="bible">Rom 8</rs></hi></label> <p>jf. især <rs type="bible">Rom 8,37-39</rs>.</p></note>
-  <note type="commentary" xml:id="not5-31" n="185,10"><label><hi rendition="#bol">Hegel</hi></label> <p><ptr type="commentary" target="#not5-26" n="185,1"/>.</p></note>
-  <note type="commentary" xml:id="not5-32" n="185,10"><label><hi rendition="#bol">den nærmest foran gaaende Philosophie</hi></label> <p>dvs. <persName key="Kant, Immanuel">Kant</persName>s filosofi (<ptr type="commentary" target="#not5-34" n="185,12"/>).</p></note>
-  <note type="commentary" xml:id="not5-33" n="185,11"><label><hi rendition="#bol">Sproget var til for at skjule Tankerne</hi></label> <p>hentyder til en udtalelse af den fr. biskop og statsmand <persName key="Talleyrand-Périgord, Charles Maurice de">Charles-Maurice de Talleyrand</persName>, som han i 1807 skal have fremsat over for den sp. gesandt <persName key="Isquierdo">Isquierdo</persName>: »La parole a été donnée à l'homme pour déguiser sa pensée« (»Sprogets/talens gave har mennesket fået for at skjule sin tanke«).</p></note>
-  <note type="commentary" xml:id="not5-34" n="185,12"><label><hi rendition="#bol">das Ding an sich</hi></label> <p>hentyder til <persName key="Kant, Immanuel">Immanuel Kant</persName>s erkendelsesteori fremsat i <hi rendition="#ita">Kritik der reinen Vernunft</hi> (1781, jf. ktl. 595, 4. udg., <placeName>Riga</placeName> 1794). If. Kant er viden kun mulig inden for erfaringens grænser; vi kan kun opnå viden om vore forestillinger som bestemt af forstandskategorierne og de sanselige anskuelsesformer, men aldrig viden om 'tingen, som den er i sig selv' ('das Ding an sich'), adskilt fra disse erkendelsesformer.</p></note>
-  <note type="commentary" xml:id="not5-35" n="185,13"><label><hi rendition="#bol">Hegel viser, at Sproget ... Famlen om Tingen</hi></label> <p>hentyder måske til <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>s bemærkninger om sprogets forrang og sprogets forhold til tænkning i fortalen til 2. udg. af <hi rendition="#ita">Wissenschaft der Logik:</hi> »Die Denkformen sind zunächst in der <hi rendition="#ita">Sprache</hi> des Menschen herausgesetzt und niedergelegt, es kann in unseren Tagen nicht oft genug daran erinnert werden, daß das, wodurch sich der Mensch vom Thiere unterscheidet, das Denken ist. In Alles, was ihm zu einem Innerlichen, zur Vorstellung überhaupt, wird, was er zu dem Seinigen macht, hat sich die Sprache eingedrängt, und was er zur Sprache macht und in ihr äußert, enthält eingehüllter, vermischter, oder herausgearbeitet, eine Kategorie; so sehr natürlich ist ihm das Logische, oder vielmehr dasselbige ist seine eigenthümliche <hi rendition="#ita">Natur</hi> selbst«, <hi rendition="#ita">Wissenschaft der Logik,</hi> udg. af <persName key="Henning, L. von">L. v. Henning</persName>, bd. 1-2, <placeName>Berlin</placeName> 1833-34 [1812-16], ktl. 552-554; bd. 1,2, i <hi rendition="#ita">Georg Wilhelm Friedrich Hegel's Werke. Vollständige Ausgabe</hi> bd. 1-18, Berlin 1832-45 (forkortet <hi rendition="#ita">Hegel's Werke</hi>) bd. 3, s. 11 (<hi rendition="#ita">Jub.</hi> bd. 4, s. 21). I da. sammenhæng udtrykker <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> den samme sag, at logikken, dvs. teorien om kategorierne, former den basale struktur, der ligger til grund for al virkelighed; denne struktur viser sig også i sproget. Jf. hans <hi rendition="#ita">Indlednings-Foredrag til det i November 1834 begyndte logiske Cursus paa den kongelige militaire Høiskole,</hi><placeName key="København">Kbh</placeName>. 1835, s. 36-41. – <hi rendition="#bol">er udfoldet i dette:</hi> dvs. at tanken er udfoldet i sproget.</p></note>
-  <note type="commentary" xml:id="not5-36" n="185,21"><label><hi rendition="#bol">Pantheisme</hi></label> <p>den tro el. lære, der – modsat teismen – hævder enheden af det værende (verden) og Gud.</p></note>
-  <note type="commentary" xml:id="not5-37" n="185,22"><label><hi rendition="#bol">Theisme</hi></label> <p>den tro el. lære, som hævder, at Gud både er personlig og adskilt el. forskellig fra verden, og at han ikke blot har skabt verden, men også opretholder og styrer den.</p></note>
-  <note type="commentary" xml:id="not5-38" n="185,25"><label><hi rendition="#bol">i Aand</hi></label> <p>d.s.s. 'i ånden', dvs. i overført el. indre betydning. Her altså: en general af indre, skønt ikke af ydre rang.</p></note>
-  <note type="commentary" xml:id="not5-100" n="185,26"><label>seer man <hi rendition="#bol">og</hi></label> <p>også.</p></note>
-  <note type="commentary" xml:id="not5-39" n="185,26"><label><hi rendition="#bol">Tro er en concretere Bestemmelse end det umidd.</hi></label> <p>hentyder til den treleddede bevægelse i <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>s dialektik, der er kendetegnet ved 1. 'Unmittelbarkeit', 2. 'Vermittlung' og 3. 'vermittelte Unmittelbarkeit' el. ved 1. den første position af noget, 2. dets overgang til sin modstæning og 3. dets tilbagevenden til sig selv. Jf. <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s beskrivelse i hans »Recension over Hr. Dr. Rothes <hi rendition="#ita">Treenigheds- og Forsoningslære</hi>« i <hi rendition="#ita">Perseus, Journal for den speculative Idee,</hi> udg. af Heiberg, nr. 1-2, <placeName key="København">Kbh</placeName>. 1837-38 (jf. ktl. 569); nr. 1, juni 1837, s. 35f.: »Som bekjendt, bevæger det hegelske System sig gjennem lutter Trilogier. I enhver saadan er det første Led Umiddelbarheden (relativt, nemlig i denne eller hiin bestemte Trehed), det andet Mediationen eller Udviklingen af det første, og endelig det tredie den ved Mediationen frembragte nye og synthetiske Eenhed, der ikke længere er umiddelbar.« Se også <ref target="../Not5/txt.xml#n19" type="journalsAndPapers" n="19">Not5:19</ref>.</p></note>
-  <note type="commentary" xml:id="not5-40" n="186,4"><label><hi rendition="#bol">Viden fremgaar af Tvivl</hi></label> <p>hentyder til <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>s metode, som – især i <persName key="Martensen, Hans Lassen">H.L. Martensen</persName>s beskrivelse af den – begynder med en systematisk, cartesiansk tvivl om alt og derpå bevæger sig fremad i kraft af behovet for indre konsekvens for endelig at stile mod sand erkendelse. Se Martensens forelæsninger over »Philosophiens Historie fra <persName key="Kant, Immanuel">Kant</persName> til Hegel«, hvor han giver følgende beskrivelse af Hegels dialektiske metode: »Methoden hvorved Processen kommer istand, er det <hi rendition="#ita">Negative.</hi> Enhver Tanke indeholder sin egen <hi rendition="#ita">Negation,</hi> sit eget Modsatte, Forskjel. Men denne Negation maa ophæves og Harmonien bringes tilveie. Dette er H.<hi rendition="#sup">s</hi> Hovedtanke, altsaa 1) det <hi rendition="#ita">Umiddelbare,</hi> 2) det <hi rendition="#ita">Særskilte</hi> (<hi rendition="#ita">Reflex.</hi><hi rendition="#ita"><hi rendition="#sup">s</hi></hi>), [3)] det <hi rendition="#ita">Enkelte</hi> (Ideens Stan[d]punkt) <hi rendition="#ita">(...)</hi> Det 3<hi rendition="#sup">die</hi> Standpunkt er nu det, hvor Msket igjen vinder Tilfredsheden tilbage efter at have gjennemgaaet alle Tvivl« (<ref type="journalsAndPapers" n="pap:IIC25"><hi rendition="#ita">Pap.</hi> II C 25, i bd. XII, s. 321</ref>).</p></note>
-  <note type="commentary" xml:id="not5-41" n="186,14"><label><hi rendition="#bol">i Engeland et Gravmonument ... den ulykkeligste</hi></label> <p>sigter til en grav med indskriften »Miserrimus« (lat. 'den elendigste, den ulykkeligste') i <placeName>Worcester Cathedral</placeName>.</p></note>
-  <note type="commentary" xml:id="not5-42" n="186,18"><label><hi rendition="#bol">under Billedet af den forlorne Søn</hi></label> <p>se følgende kommentar.</p></note>
-  <note type="commentary" xml:id="not5-43" n="186,19"><label><hi rendition="#bol">som Sønnen ... lad os erholde den os tilkommende Arv</hi></label> <p>sigter til Jesu lignelse om den forlorne, dvs. fortabte søn, der kræver skifte af sin far og sin del af arven udbetalt før tiden. Han rejser udenlands og ødsler sin formue bort i et udsvævende liv, men går senere i sig selv, vender hjem og bliver taget til nåde af sin far, <rs type="bible">Luk 15,11-32</rs>. – <hi rendition="#bol">Ev.:</hi> Evangeliet.</p></note>
-  <note type="commentary" xml:id="not5-44" n="186,22"><label><hi rendition="#bol">Troels Lund</hi></label> <p>(1802-76), da. kunstmaler, fra 1835 medlem af <placeName>Kunstakademiet</placeName> og fra 1842 arkitekturmaler ved <placeName key="Kongelige Teater, Det">Det kgl. Teater</placeName>; bror til SKs svoger <persName key="Lund, Henrik Ferdinand">H.F. Lund</persName>s anden kone.</p></note>
-  <note type="commentary" xml:id="not5-45" n="187,2"><label><hi rendition="#bol">nihil extra deum ... præter deum</hi></label> <p>lat. 'intet uden Gud / intet ud over Gud'.</p></note>
-  <note type="commentary" xml:id="not5-46" n="187,4"><label><hi rendition="#bol">de to Mysterier</hi></label> <p>Der tænkes formentlig på det guddommelige mysterium og det diabolske mysterium, jf. journalen <ref target="../FF/txt.xml#n197" type="journalsAndPapers" n="197">FF:197</ref> i <hi rendition="#ita">SKS</hi> 18, 113; se også journalen <ref target="../DD/txt.xml#n6" type="journalsAndPapers" n="6">DD:6</ref> i <hi rendition="#ita">SKS</hi> 17, 216f.</p></note>
-  <note type="commentary" xml:id="not5-47" n="187,7"><label><hi rendition="#bol">det Rige</hi></label> <p>Guds (evige) rige.</p></note>
-  <note type="commentary" xml:id="not5-48" n="187,8"><label><hi rendition="#bol">Solen aldrig gaaer ned deri</hi></label> <p>spiller på udtalelsen: 'Solen går aldrig ned i mine lande', der som regel tillægges den ty. kejser <persName key="Karl V">Karl V</persName>, men som af <persName key="Schiller, Friedrich">Friedrich Schiller</persName> i <hi rendition="#ita">Don Carlos</hi> lægges i munden på Karl V's søn, <persName key="Philip II">Philip II</persName> af <placeName>Spanien</placeName>.</p></note>
-  <note type="commentary" xml:id="not5-49" n="187,10"><label><hi rendition="#bol">Det at Philosophien ... ikke ansees som en Feil</hi></label> <p>I den ty. idealisme spillede spørgsmålet om filosofiens begyndelse en central rolle. Hovedsagen, først tematiseret af <persName key="Fichte, Johann Gottlieb">J.G. Fichte</persName>, var, hvorledes man kan begynde et system uden at betjene sig af visse forudsætninger, som er indeholdt i det system, man prøver at udfolde. Fichte forsøgte det med sit første princip om viden, Jeg = Jeg. <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName> argumenterede for, at filosofien må begynde med den mest abstrakte kategori, dvs. den rene væren (jf. <hi rendition="#ita">Wissenschaft der Logik</hi> (<ptr type="commentary" target="#not5-35" n="185,13"/>) bd. 1,2, i <hi rendition="#ita">Hegel's Werke</hi> bd. 3, s. 59-111 (<hi rendition="#ita">Jub.</hi> bd. 4, s. 69-121)); Hegels beskrivelse af filosofiens begyndelse blev kritiseret af bl.a. <persName key="Schelling, Friedrich Wilhelm Joseph">F.W.J. Schelling</persName>, <persName key="Fichte, Immanuel Hermann">I.H. Fichte</persName> og <persName key="Trendelenburg, Friedrich Adolph">F.A. Trendelenburg</persName>. Sagen blev også genstand for debat i <placeName>Danmark</placeName> pga. <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s forsvar for den hegelske position, bl.a. fremført i »Recension over Hr. Dr. Rothes <hi rendition="#ita">Treenigheds- og Forsoningslære</hi>« (<ptr type="commentary" target="#not5-39" n="185,26"/>). <persName key="Sibbern, Frederik Christian">F.C. Sibbern</persName> kritiserede dette i første del af sin lange anmeldelse af Heibergs tidsskrift <hi rendition="#ita">Perseus</hi> nr. 1 (<ptr type="commentary" target="#not5-35" n="185,26"/>) i <hi rendition="#ita">Maanedsskrift for Litteratur</hi> bd. 19, <placeName key="København">Kbh</placeName>. 1838, s. 315-360. Heiberg svarede igen i artiklen »Det logiske System« i <hi rendition="#ita">Perseus</hi> nr. 2, s. 1-45, som blev positivt anmeldt af <persName key="Adler, Adolph Peter">A.P. Adler</persName> i <hi rendition="#ita">Tidsskrift for Litteratur og Kritik,</hi> udg. af <persName key="Petersen, Frederik Christian">F.C. Petersen</persName>, bd. 3, <placeName key="København">Kbh</placeName>. 1840, s. 474-482. I hele denne diskussion blev det af alle forstået som en svaghed el. en 'fejl', hvis en skjult forudsætning kunne afdækkes i éns forsøg på at begynde et system.</p></note>
-  <note type="commentary" xml:id="not5-50" n="187,13"><label><hi rendition="#bol">Bevidstheden som den tomme Form</hi></label> <p>hentyder formentlig til teorierne om bevidsthed i den transcendentale filosofi, if. hvilke bevidsthed er ren form el. et formalt princip for viden. Blandt de mest kendte af disse teorier er <persName key="Kant, Immanuel">Immanuel Kant</persName>s 'transzendentale Einheit der Apperzeption' (jf. <hi rendition="#ita">Kritik der reinen Vernunft,</hi> 4. udg., <placeName>Riga</placeName> 1794 [1781], ktl. 595, s. 129-146). For at man kan have en bestemt 'forestilling' om genstande, er det if. Kant nødvendigt, at mangfoldigheden af individuelle 'forestillinger' forenes i en enkelt bevidsthedsenhed; uden en sådan bevidsthedsenhed ville bestemte 'forestillinger' om genstande ikke være mulig. Tilsvarende er for <persName key="Fichte, Johann Gottlieb">J.G. Fichte</persName> det tænkende subjekts selv-sættende handling det højeste princip for tænkning og grundlaget for al viden. Det ubetvivlelige, første ubetingede princip for viden er, at der gives et selv-identisk tænkende subjekt, udtrykt af J.G. Fichte med en variant af loven om identitet, Jeg = Jeg (jf. <hi rendition="#ita">Grundlage der gesammten Wissenschaftslehre,</hi> 2. udg., <placeName>Jena</placeName> og <placeName>Leipzig</placeName> 1802 [1794], s. 1-16). Både hos Kant og Fichte er denne form for bevidsthed 'tom', da den kun er et formalt princip og ikke et virkeligt, empirisk subjekt.</p></note>
-  <note type="commentary" xml:id="not5-51" n="187,15"><label><hi rendition="#bol">Arbitrium</hi></label> <p>lat. 'kendelse'; 'valg'; 'vilje'.</p></note>
-  <note type="commentary" xml:id="not5-52" n="187,19"><label><hi rendition="#bol">liberum arbitrium</hi></label> <p>lat. 'frit valg', 'fri vilje', 'vilkårlig frihed'; filosofisk begreb fra den tidligste middelalder brugt som betegnelse for menneskets evne til at vælge lige frit mellem to eller flere muligheder.</p></note>
-  <note type="commentary" xml:id="not5-53" n="187,24"><label><hi rendition="#bol">det ene Glas forstørrer <hi rendition="#ita">(...)</hi> formindsker</hi></label> <p>dvs. 'det ene glas forstørrer, det andet formindsker', jf. journalen <ref target="../DD/txt.xml#n90" type="journalsAndPapers" n="90">DD:90</ref> i <hi rendition="#ita">SKS</hi> 17, 250.</p></note>
-  <note type="commentary" xml:id="not5-54" n="187,24"><label><hi rendition="#bol">et Græsstraa er mere værd end al Kløgt</hi></label> <p>Hvis der er en kilde, har den ikke kunnet identificeres.</p></note>
-  <note type="commentary" xml:id="not5-55" n="187,25"><label><hi rendition="#bol">høre Viisdom af en Pharisæers Mund ... af en Apostel</hi></label> <p>jf. <persName key="Hamann, Johann Georg">J.G. Hamann</persName>s brev af 12. okt. 1759 til vennen <persName key="Lindner, Johann Gotthelf">J.G. Lindner</persName>, hvori det hedder: »<persName key="Baumgarten, Siegmund Jacob">Baumgarten</persName>, Forstmann, Reichel, <persName key="Paulus">Paulus</persName> und Kephas sind Menschen, und ich höre öfterst mit mehr Freude das Wort Gottes im Munde eines Pharisäers, als eines Zeugen wider seinen Willen, als aus dem Munde eines Engels des Lichts.« <hi rendition="#ita">Hamann's Schriften,</hi> udg. af <persName key="Roth, Friedrich">Fr. Roth</persName> og <persName key="Wiener, Gustav Adolph">G.A. Wiener</persName>, bd. 1-7, <placeName>Berlin</placeName> og <placeName>Leipzig</placeName> 1821-25, og bd. 8,1-2 (registerbind), Berlin 1842-43, ktl. 536-544; bd. 1, s. 497. Se journalen <ref target="../BB/txt.xml#n27" type="journalsAndPapers" n="27">BB:27</ref> i <hi rendition="#ita">SKS</hi> 17, 120.</p></note>
-  <note type="commentary" xml:id="not5-56" n="188,1"><label><hi rendition="#bol">Nyhavn 282 Charlottenborgssiden</hi></label> <p>If. folketællingslisten fra feb. 1840 boede i stuen og på første sal: major og grosserer <persName key="Sass, Mathias Wilhlem">Mathias Wilhlem Sass</persName> med familie, heriblandt en ugift søn, handelsbetjent <persName key="Sass, Lorentz Waage">Lorentz Waage Sass</persName>, 22 år gammel; på anden sal: krigsråd og kontorchef <persName key="Børgesen, Peter">Peter Børgesen</persName> med familie, heriblandt to ugifte sønner, fuldmægtig i søetaten <persName key="Børgesen, Guillaume">Guillaume Børgesen</persName>, 28 år gammel, og sekondløjtnant i første livregiment <persName key="Børgesen, Viggo">Viggo Børgesen</persName>, 26 år gammel; i kælderen: værtshusholder <persName key="Petersen, Carl Ludvig">Carl Ludvig Petersen</persName> med familie, heriblandt en ugift datter, <persName key="Petersen, Emilie Frederike">Emilie Frederike Petersen</persName>, 21 år. – M.W. Sass havde overfarten Århus-<placeName>Kalundborg</placeName> i entreprise og ejede både den smakke, som SK benyttede, da han 19. juli 1840 rejste til <placeName>Jylland</placeName>, og det dampskib, »Christian den Ottende«, som han sejlede med på hjemturen 6. aug. (jf. <ref target="../Not6/txt.xml#n1" type="journalsAndPapers" n="1">Not6:1</ref> med kommentarer).</p></note>
- </div></body></text>
-
+  <text xml:id="id5255f67c-91f7-4a3b-9f14-62d22c9e0721" type="commentary" subtype="jp">
+    <body xml:id="id48b1b5eb-08c9-42d1-b830-1f9b94c246b3">
+      <div xml:id="id83dc7296-0228-4412-a711-89232b37e008">
+        <note type="commentary" xml:id="not5-1" n="175,1">
+          <label xml:id="id3a332777-361b-4df8-839e-df65df11c5be">
+            <hi xml:id="idf1c1e05b-fd53-4c23-96bc-b05fdfe090ae" rendition="#bol">Phantasier for et Posthorn</hi>
+          </label>
+          <p xml:id="id486df3b4-3db1-452a-bac4-fd6e0b404b29">sml. journalen <ref xml:id="id43384de0-e8e4-419d-b523-590e2ec0ef99" target="../FF/txt.xml#n160" type="journalsAndPapers" n="160">FF:160</ref> i <hi xml:id="idca4b6b28-2a7b-490d-8271-e9e308834db7" rendition="#ita">SKS</hi> 18, 106. – <hi xml:id="idea6da846-7322-4b74-8691-f8f75e8b054e" rendition="#bol">Posthorn:</hi> signalhorn, brugt af postillonen (<ptr xml:id="ida9cceea4-afc4-4025-a0fb-4080488e7cf1" type="commentary" target="#not5-4" n="175,5"/>) til at signalere post- og befordringsvognens ankomst el. afgang, men også til at advare andre vogne, som havde vigepligt, jf. forordning af 27. jan. 1804, § 37.</p>
+        </note>
+        <note type="commentary" xml:id="not5-3" n="175,4">
+          <label xml:id="iddd6f5c78-e421-468b-8d08-2c99fe972c82">
+            <hi xml:id="idb03f57b0-eb33-4114-a375-b6a8a98a5aae" rendition="#bol">man nu ønsker, at Posthornet skal afløses af en ordl. Trompet</hi>
+          </label>
+          <p xml:id="id00e50328-c475-4c71-b089-5f6ff50ec86f">Oplysningen har ikke kunnet verificeres. – <hi xml:id="idb7fbdb15-7828-49c0-9b9f-f32378108825" rendition="#bol">ordl.:</hi> ordentlig, dvs. almindelig.</p>
+        </note>
+        <note type="commentary" xml:id="not5-4" n="175,5">
+          <label xml:id="id60f42686-cee6-44f8-a901-57f5ea8e7892">
+            <hi xml:id="id0245da80-209d-4214-b5d0-da31c0fe9ae1" rendition="#bol">at Postilloner skal underkastes en Examen i Foredraget</hi>
+          </label>
+          <p xml:id="idc7ed9a74-6f14-4744-ba6c-38b25f77a04c">Oplysningen har ikke kunnet verificeres. – <hi xml:id="id4af047c9-efec-4887-88ce-7a55378d14ba" rendition="#bol">Postilloner:</hi> kuske på post- og befordringsvogne (se næste kommentar). – <hi xml:id="id9c1fea7e-8143-4807-b486-1f0e16e56c52" rendition="#bol">Foredraget:</hi> den kunstneriske fremførelse.</p>
+        </note>
+        <note type="commentary" xml:id="not5-5" n="175,7">
+          <label xml:id="id4c616ff6-3123-4fc4-ac46-a0d01db43005">
+            <hi xml:id="id87127f57-db22-4b50-8100-9e493904cd7b" rendition="#bol">Befordringsvæsenet</hi>
+          </label>
+          <p xml:id="idac2054d6-ec3d-489e-8f79-7e0f15eca8d3">institution bestyret af <placeName xml:id="idf44176fd-7dbf-40e6-9588-5537b92609c1">Generalpostdirektionen</placeName> (indtil 1809 under navnet <placeName xml:id="id3dbe8c38-d1b7-42fe-9b4a-8da94c9684ea">Generalpostamtet</placeName>), der if. en detaljeret og omfattende forordning af 27. jan. 1804 gav landruter og en del færgeoverfarter i entreprise til vognmænd (suppleret af befordringspligtige borgere) og skibsredere. Befordringen til lands skete, når den fulgte postens ordinære rute- og tidsplan, med diligence el. postvogn, og når den ikke gjorde, med 'ekstrapost' el. (fra 1829) især 'dagvogn'.</p>
+        </note>
+        <note type="commentary" xml:id="not5-6" n="175,15">
+          <label xml:id="ida4bbb694-921a-4eed-ace3-237575684659">
+            <hi xml:id="id830a4ee3-01d8-46ca-93c6-8f96265d8d3b" rendition="#bol">Echo</hi>
+          </label>
+          <p xml:id="id6bcdc11e-44fe-495b-a688-195ff5323f8f">If. gr. mytologi forelskede nymfen <persName xml:id="idae45c3e1-ac62-4c09-ad88-57ada91ca7c0" key="Ekko">Ekko</persName> sig i den smukke yngling <persName xml:id="id638fc6f2-5f6e-47b4-b81a-25d661fc38ec" key="Narcissos">Narcissos</persName>, men da han ikke gengældte hendes kærlighed, hentæredes hun af græmmelse, så der tilbage af hende kun blev stemmen, som gav genlyd fra klippespalter og skove.</p>
+        </note>
+        <note type="commentary" xml:id="not5-7" n="175,21">
+          <label xml:id="idc04494c1-767a-4aeb-a0e3-38c54e0116bf">
+            <hi xml:id="id370cb028-d8a5-48fe-8344-3e9c4804a673" rendition="#bol">Vildttydsker</hi>
+          </label>
+          <p xml:id="id86df17c3-daa7-4621-9a50-eab5933b9835">egl. vildtysker, en uciviliseret, udannet tysker.</p>
+        </note>
+        <note type="commentary" xml:id="not5-2" n="176,1">
+          <label xml:id="id7ace09c6-3d9c-4442-95bd-c3defc6b68f4">
+            <hi xml:id="idd3eb7ae9-9ec4-40b1-83f4-fb757fd129d2" rendition="#bol">Fatum</hi>
+          </label>
+          <p xml:id="id5f1964de-ca4d-44a8-84fb-e0c559bdc32d">skæbne.</p>
+        </note>
+        <note type="commentary" xml:id="not5-8" n="176,9">
+          <label xml:id="id8d7c981e-4e7b-4b50-a375-216c35f0ba08">
+            <hi xml:id="id0168b74e-253a-4389-bffa-06f1e0979416" rendition="#bol">Postillonen</hi>
+          </label>
+          <p xml:id="idc397f65a-bb6c-46dd-b662-fe22a059f7ad"><ptr xml:id="id5890fb82-a0c5-4f1f-ac2c-40e1e7140921" type="commentary" target="#not5-3" n="175,4"/>.</p>
+        </note>
+        <note type="commentary" xml:id="not5-9" n="176,9">
+          <label xml:id="id2af3f5ed-6fae-4557-891c-1e4627ae6d2c">
+            <hi xml:id="id85c6c766-c564-48bf-948e-2b3261c63063" rendition="#bol">naar han blæser ... blæser Fidtet af Suppen</hi>
+          </label>
+          <p xml:id="id977eebb7-503c-4b1f-888e-539a79f5f17d">Talemåden har ikke kunnet identificeres.</p>
+        </note>
+        <note type="commentary" xml:id="not5-10" n="176,11">
+          <label xml:id="id1fed4195-0e67-4b1e-9ebc-a96c1940c0cb">
+            <hi xml:id="id8fcb1279-f7dc-4510-88d1-5f483fe2945c" rendition="#bol">Posthoren</hi>
+          </label>
+          <p xml:id="idc1d1a87c-bf56-415f-aa2d-8e5c9c748645"><ptr xml:id="idf38355b6-345b-4071-b59a-48912fb4ee17" type="commentary" target="#not5-1" n="175,1"/>.</p>
+        </note>
+        <note type="commentary" xml:id="not5-11" n="176,16">
+          <label xml:id="id4c0084cb-cf91-43d5-b72e-a86c76ad7407">
+            <hi xml:id="id5f117287-3451-4a0e-b13a-2af5fdeee3f0" rendition="#bol">Iil</hi>
+          </label>
+          <p xml:id="id4d8fcb28-8753-4188-90e7-f4f78df1d02b">fart, hast.</p>
+        </note>
+        <note type="commentary" xml:id="not5-12" n="176,17">
+          <label xml:id="id709ebae9-5ece-48be-8856-f9f17f5c781c">
+            <hi xml:id="id6de56fed-1cbc-4240-8a21-152f7329f0f6" rendition="#bol">Knippelbro</hi>
+          </label>
+          <p xml:id="idbfcdefe9-961d-4565-b865-01100b505d59">egl. <placeName xml:id="idf1003416-d21b-4857-8843-a7340e98e8e4">Knippelsbro</placeName>, vindebro, der fra enden af <placeName xml:id="id26005937-7c2b-4626-b22c-8435249f549e">Nybørs</placeName> førte over havneløbet til <placeName xml:id="id0f65b39e-d89f-45e4-bf7b-fdf07ca46296">Christianshavn</placeName>, hvorfor den også i daglig tale kaldtes <placeName xml:id="idba7d8abd-6c57-4ceb-acb6-a1f3f8409c45">Christianshavns Bro</placeName> (<ref xml:id="id911484c0-3176-4710-abff-5a47d30e557a" target="../kort/kbh_C3.htm" type="map" n="kbh"><hi xml:id="id3d1896f8-16cd-4f92-b84d-7de22f5972a3" rendition="#ita">se kort 2, C3</hi></ref>).</p>
+        </note>
+        <note type="commentary" xml:id="not5-13" n="176,22">
+          <label xml:id="id3fd8f5ed-4291-43b1-be5f-0674571ef43e">
+            <hi xml:id="id4913bc64-9135-48aa-8712-6fd40f69e10d" rendition="#bol">Semipelagianismen</hi>
+          </label>
+          <p xml:id="idebf4fee2-6001-4203-89ca-4cf5984dbff2">som især skyldtes munken <persName xml:id="id8de9f12c-ade9-4ab6-9a71-038c4fadd04f" key="Cassianus, Johannes" n="*">Johannes Cassianus</persName> (død o. 435), hævdede, at Gud tilbyder alle mennesker sin frelsende nåde, men at de i kraft af deres frie vilje har mulighed for at afvise den. Denne lære vandt i den grad tilslutning i <placeName xml:id="id363e6dca-876f-4dc8-86da-a1f8006aa6ff">Sydgallien</placeName>, at en synode i 470'erne fordømte <persName xml:id="idd95352fe-e116-4ef0-bb00-e466bfb06c61" key="Augustin, Aurelius">Augustin</persName>s prædestinationslære, dvs. læren om Guds evige forudbestemmelse af hvert enkelt menneskes frelse el. fortabelse. Det fremkaldte en så stærk reaktion fra tilhængerne af den augustinske nådelære, især ledet af biskop <persName xml:id="idf947e78f-2362-4f0e-8ff1-feabcc99d139" key="Cæsarius af Arles" n="*">Cæsarius af Arles</persName> (død 543), at en synode i <placeName xml:id="id9a738188-e21b-425d-8eab-aa3c10364929">Orange</placeName> i 529 fordømte semipelagianismen og antog en modificeret augustinsk nådelære. På synoden blev det på den ene side fastslået, at frelsen alene afhænger af Guds nåde på grund af menneskets absolutte syndighed, og på den anden side afvist, at Gud har forudbestemt mennesker til at gøre det onde. Og da det samtidig blev understreget, at menneskets vilje er befriet af Guds nåde og med hans bistand kan og skal øve de gerninger, der belønnes med evigt liv, blev der åbnet plads for tanken om menneskets ansvarlige medvirken til sin egen frelse. <placeName xml:id="id83ec8ae2-4b52-4850-b6ca-f1c0f0e50300">Orangesynoden</placeName>s vedtagne opfattelse blev bekræftet af den rom. biskop i 531 og vandt således anerkendelse som den vestlige kirkes officielle nådelære.</p>
+        </note>
+        <note type="commentary" xml:id="not5-14" n="176,23">
+          <label xml:id="ida2f90a53-53f2-4042-80b2-9a4cb37c9113">
+            <hi xml:id="id04576097-34ca-42de-8c9a-8565db684e5f" rendition="#bol">semper numularii instar deum ... semper anxie</hi>
+          </label>
+          <p xml:id="id5fbeef44-ff87-4913-b0dd-2dec43cacd74">lat. »udstyrer altid Gud ligesom en vekselerer med en regnskabsbog; skønt altid under våben tilvejebringer den aldrig hverken lyksalig fred eller glædelig sejr; handler altid nøjeregnende«. Kilden har ikke kunnet identificeres.</p>
+        </note>
+        <note type="commentary" xml:id="not5-15" n="176,29">
+          <label xml:id="id1f38337e-9f52-43d9-a8df-a01012d54ff8">
+            <hi xml:id="id37c87f2f-e8a6-4945-ac9d-20c07a863502" rendition="#bol">semper indagans ... valeant vivant cum illa</hi>
+          </label>
+          <p xml:id="idb7d94538-8fa3-4ad9-b1a1-a1532f90fa81">lat. »er altid granskende, vidtløftig, snakkesalig, når aldrig frem til sit mål. De må gerne have den for sig selv, og så kan de ellers have det så godt med den«. Kilden har ikke kunnet identificeres.</p>
+        </note>
+        <note type="commentary" xml:id="not5-16" n="177,4">
+          <label xml:id="id068763b2-8fa8-4409-9595-df97e9ab2a5a">
+            <hi xml:id="id3a1bcc0e-12a7-449e-8479-3e258ae59c3b" rendition="#bol">Si philosophi hujus ævi ... pugnandum est</hi>
+          </label>
+          <p xml:id="id0f376a8f-7725-47ee-8f01-47f9592d5590">lat. »Selv om vor tids filosoffer med rette hævder, at man ikke ustraffet kan ignorere deres afhandlinger og store fortjenester inden for filosofien, ja, endnu mindre kan undlade at omsætte dem i saft og kraft, så vil jeg imidlertid for mit eget vedkommende ikke undlade at udtale den overbevisning, at sandheden vil være bedre hjulpet, hvis vi undlader at følge deres mønster ved ikke at opdele og fortolke livet ud fra systemet, men omsider lader systemet opstå af og udgå fra erfaringen, for kampen skal føres fra begge sider«. Kilden har ikke kunnet identificeres. – <hi xml:id="idb1d25eb8-be64-42f2-8c14-64fcbbd6ac77" rendition="#bol">ph.:</hi> philosophia.</p>
+        </note>
+        <note type="commentary" xml:id="not5-17" n="177,11">
+          <label xml:id="id493981b8-a205-4713-a91a-e49756fce4f0">
+            <hi xml:id="id54697923-17ae-46d0-9ef6-6392f550c3f5" rendition="#bol">ved det chr. opgaaer et heelt nyt Liv i Msk</hi>
+          </label>
+          <p xml:id="id654dd73c-a133-4f9e-b722-4f55ba661b06">hentyder formentlig til <rs xml:id="id13256938-86ad-4cdf-9a92-c11cd495157a" type="bible">2 Kor 5,17</rs>, hvor <persName xml:id="id45cbd483-5496-42a8-9d17-37362ee24c85" key="Paulus">Paulus</persName> skriver: »Saa at, dersom Nogen er i Christo, da er han en ny Skabning: det Gamle er forbiganget, see, Alt er blevet nyt« (NT-1819). Se journalen <ref xml:id="idb99cedb4-784c-4316-9a9b-1304eacab66a" target="../HH/txt.xml#n2" type="journalsAndPapers" n="2">HH:2</ref>-3 i <hi xml:id="ida00d8fbe-4ad1-4f42-a54d-48aee86ac6d7" rendition="#ita">SKS</hi> 18, 125f. Jf. også <rs xml:id="ida46085a2-fcb6-4391-baf1-fb3a616a92cb" type="bible">Rom 6,4</rs> og <rs xml:id="id31a57504-2c94-4052-8b1d-4c3395c52193" type="bible">Ef 4,23-24</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="not5-18" n="177,19">
+          <label xml:id="id809a538a-d224-4ceb-827d-fa5ac89ff162">
+            <hi xml:id="ide0cbf25c-53dd-420c-8064-7a140708cef9" rendition="#bol">den aandelige Fødsel</hi>
+          </label>
+          <p xml:id="idfdbe6bcd-cafc-4363-a7c2-46806471a6cc">hentyder formentlig til beretningen om Jesu natlige samtale med farisæeren <persName xml:id="idfea8c160-c94f-4d09-bd79-533c49399f62" key="Nikodemus">Nikodemus</persName> i <rs xml:id="id5575f0f7-13db-4f90-968f-8fa63c38538d" type="bible">Joh 3,1-16</rs>, hvor Jesus bl.a. siger: »Den, der ikke bliver født på ny, kan ikke se Guds rige« (v. 3); og: »I må fødes på ny« (v. 7).</p>
+        </note>
+        <note type="commentary" xml:id="not5-20" n="178,1">
+          <label xml:id="idad3d17e6-ad69-4655-9a05-a599256f5fe4">
+            <hi xml:id="id02b8f753-d6f2-4d77-b2c7-77272d196ece" rendition="#bol">Det er umuligt – siger Du etc</hi>
+          </label>
+          <p xml:id="idb723e553-f45a-4a9a-a223-da811f98f2ea">se journalen <ref xml:id="id3029b0b4-51a5-4471-a30f-688340550795" target="../HH/txt.xml#n25" type="journalsAndPapers" n="25">HH:25</ref> i <hi xml:id="id5b392f7b-6793-4eeb-84bd-86b7299eb610" rendition="#ita">SKS</hi> 18, 139.</p>
+        </note>
+        <note type="commentary" xml:id="not5-21" n="179,1">
+          <label xml:id="idccdd600d-ecf6-4ee9-85f6-f6ff0f1f69e1">
+            <hi xml:id="id507edf2f-3711-4f47-be0f-3170e4322b1c" rendition="#bol">om gode Gjerninger</hi>
+          </label>
+          <p xml:id="id089f8b7f-4c60-40d4-8880-b2ef5d08e9e4">se journalen <ref xml:id="ida2846059-1fba-4414-aff4-aa0cedd13578" target="../HH/txt.xml#n26" type="journalsAndPapers" n="26">HH:26</ref> i <hi xml:id="id9a07b32a-34ad-4b53-8207-c5e216d764e4" rendition="#ita">SKS</hi> 18, 139.</p>
+        </note>
+        <note type="commentary" xml:id="not5-22" n="179,2">
+          <label xml:id="id9d2eb76f-fb3b-44ae-9f56-a30de85214ff">
+            <hi xml:id="id45da6d47-a03b-4aef-8c11-7f021a26a004" rendition="#bol">den høire Haand ... den venstre gjør</hi>
+          </label>
+          <p xml:id="id7eced68d-2616-4490-83e5-cf785f05463e">jf. <rs xml:id="idb00d2fd8-0e30-41e6-912b-7d1fb9664f8f" type="bible">Matt 6,3</rs>, hvor Jesus siger: »Når du giver almisse, må din venstre hånd ikke vide, hvad din højre gør«.</p>
+        </note>
+        <note type="commentary" xml:id="not5-23" n="180,2">
+          <label xml:id="id0ec15a82-d733-458e-86d3-069c7ffa0fa9">
+            <hi xml:id="id62687547-6022-462d-a14d-a5447908b1ab" rendition="#bol">Guds Faderkjærlighed</hi>
+          </label>
+          <p xml:id="id862f4dce-cb1d-4f22-9f3f-dd9deb187471">se journalen <ref xml:id="id001b8ec5-3bc8-441a-8cb2-b3731b45a4bc" target="../HH/txt.xml#n17" type="journalsAndPapers" n="17">HH:17</ref> i <hi xml:id="id6dae8d93-7710-4c04-9f57-950fb98e8c66" rendition="#ita">SKS</hi> 18, 134f.</p>
+        </note>
+        <note type="commentary" xml:id="not5-24" n="181,1">
+          <label xml:id="id83ae1ea8-54b0-407b-a586-0b0a13866954">
+            <hi xml:id="id3a995903-2788-42d5-b41b-8ad12c589fbc" rendition="#bol">eller saae Du ham aldrig ... Kjærligheds-Samfund</hi>
+          </label>
+          <p xml:id="id6d0659a6-552d-4969-8d62-9834b5c5120c">se journalen <ref xml:id="id8f72784c-0bce-4076-a356-5344294c4843" target="../HH/txt.xml#n12" type="journalsAndPapers" n="12">HH:12</ref> i <hi xml:id="id61147788-6db7-49e4-9381-b15a2ee7321e" rendition="#ita">SKS</hi> 18, 131f. – <hi xml:id="idf56cd4bf-e65a-4fb5-b97e-27126f3aca39" rendition="#bol">opdragende:</hi> jf. <rs xml:id="id7ac63b37-2759-4f8d-ac17-418c79928c67" type="bible">Hebr 12,5-6</rs>: »Min søn, foragt ikke Herrens opdragelse, / mist ikke modet, når du irettesættes af ham; / for Herren tugter den, han elsker, / han straffer hver søn, han holder af.« Jf. også <rs xml:id="id54776365-1c2f-46b9-b3c8-08396be574ee" type="bible">Ordsp 3,11-12</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="not5-25" n="182,1">
+          <label xml:id="id3c07a095-b0eb-4d8c-875c-ce7562623860">
+            <hi xml:id="idd43fe3e3-a8ff-48bf-9d83-3f6edee432f9" rendition="#bol">de der bleve kaldte ved den 11<hi xml:id="id66c594ff-42a7-4eae-809b-adcc0f7a1712" rendition="#sup">te</hi> Time</hi>
+          </label>
+          <p xml:id="idd908b325-ab53-44fe-9395-e0d93b9630ec">hentyder til Jesu lignelse om arbejderne i vingården, <rs xml:id="id680d050c-6701-4835-9238-eac196f87075" type="bible">Matt 20,1-16</rs>. Heri fortælles om en vingårdsejer, der går hen på torvet tidligt om morgenen og igen ved den tredje, den sjette og den niende time for at leje de ledige arbejdere til sin vingård. »Ved den ellevte time gik han derhen og fandt endnu nogle stående dér, og han spurgte dem: Hvorfor har I stået ledige her hele dagen? De svarede ham: Fordi ingen har lejet os. Han sagde til dem: Gå I også hen i min vingård«, v. 6-7. Se journalen <ref xml:id="ida25e003c-41fe-4f43-9bda-10bef1821560" target="../EE/txt.xml#n194" type="journalsAndPapers" n="194">EE:194</ref> i <hi xml:id="id110a6d28-aadf-4b17-b9c2-d6269e5726c6" rendition="#ita">SKS</hi> 18, 68f.</p>
+        </note>
+        <note type="commentary" xml:id="not5-26" n="185,1">
+          <label xml:id="id2a5b013b-fa99-438d-a332-35b652ea6780">
+            <hi xml:id="id44508f90-7820-4c6d-945b-21702d5a9faa" rendition="#bol">Hegel er en Parenthes i Schelling ... at den skal sluttes</hi>
+          </label>
+          <p xml:id="id86ff214a-36f5-4362-bdf9-d5f7224233cf">hentyder formentlig til, at Schelling allerede i 1820'erne havde annonceret en 'positiv' filosofi, der skulle overvinde Hegels 'negative'. Skønt Schelling tidligere havde vundet anerkendelse for sin 'negative' filosofi, som på en måde blev videreført af Hegel, blev han i 1820'erne fortrængt af Hegels store berømmelse. Efter Hegels død blev Schelling omtalt som hans mulige efterfølger i <placeName xml:id="idd78d1a1d-e96a-476e-a479-c7745302de3a">Berlin</placeName>, hvorved Hegels 'negative' filosofi billedlig talt ville blive en parentes i Schellings 'positive' filosofi, ikke blot historisk, men også indholdsmæssigt. – <hi xml:id="id2fab1b15-8a23-48a6-92d5-30466578bc7f" rendition="#bol">Hegel:</hi> <persName xml:id="idddacd229-370c-4ecc-a5ab-8742f7901104" key="Hegel, Georg Wilhelm Friedrich" n="*">Georg Wilhelm Friedrich Hegel</persName> (1770-1831), ty. filosof, studerede filosofi og teologi sammen med Schelling i <placeName xml:id="id52007651-4953-445d-9b82-b5d818190256">Tübingen</placeName>, 1801-06 privatdocent (ekstraordinær prof.) i <placeName xml:id="id29d155c9-1ef6-4af2-8124-11a0c9dd9822">Jena</placeName>, 1816-18 prof. i <placeName xml:id="id9e4feada-8e22-4636-8bf1-8b4559faf0f1">Heidelberg</placeName> og fra 1818 til sin død prof. i Berlin. – <hi xml:id="id86487f49-41c9-406a-98e9-f434f73ffe4f" rendition="#bol">Schelling:</hi> <persName xml:id="id498066ce-f409-4e88-b83f-a9466923a5df" key="Schelling, Friedrich Wilhelm Joseph" n="*">Friedrich Wilhelm Joseph Schelling</persName> (1775-1854), ty. filosof, studerede filosofi og teologi sammen med Hegel i Tübingen, blev 1798 ekstraordinær prof. i Jena, fra 1803 prof. i <placeName xml:id="idafe4ba66-3759-410a-a44e-50f50f5e125c">Würzburg</placeName> og fra 1806 generalsekretær i Akademiet for de bildende Kunster i <placeName xml:id="ide317ef40-28b3-4c65-9dd5-456f25d8346a">München</placeName>. Herefter blev han marginaliseret af Hegel, men fra 1827 blev han prof. i München, herfra kaldet til prof. i Berlin 1841 for at modvirke venstrehegelianismen (se notesbog 11 i <hi xml:id="id92b2ada4-8443-43cf-b3c8-62ff679013ec" rendition="#ita">SKS</hi> 19); trak sig tilbage i 1846.</p>
+        </note>
+        <note type="commentary" xml:id="not5-28" n="185,4">
+          <label xml:id="id330974d6-ccd3-44ba-98e6-57c661518fab">
+            <hi xml:id="id9fac9667-0e29-4178-8689-a17b47782cf8" rendition="#bol">Min Examenslæsning er den længste Parenthes</hi>
+          </label>
+          <p xml:id="id04168953-8ea8-45a3-aa7c-32433b05a2bc">SK påbegyndte sin eksamenslæsning i efteråret 1838 og afsluttede sin teologiske embedseksamen 3. juli 1840.</p>
+        </note>
+        <note type="commentary" xml:id="not5-30" n="185,9">
+          <label xml:id="idaf4bed19-3ea3-4533-bcc9-ff91f45597df">
+            <hi xml:id="id454671e7-5786-4af3-a277-a3dbdc1fb66f" rendition="#bol">Forvisningen om Seir <rs xml:id="id12fd54a0-977e-47d3-9be4-b94453bfe8b8" type="bible">Rom 8</rs></hi>
+          </label>
+          <p xml:id="idc9c9ab82-895b-4ff1-9d3d-3ae47bdc357c">jf. især <rs xml:id="ide8b8485a-c6bf-4797-86ce-39a7248e0d0b" type="bible">Rom 8,37-39</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="not5-31" n="185,10">
+          <label xml:id="id86fbdeec-b1dd-460b-8f4b-87b4c692e04d">
+            <hi xml:id="id6a3a4a4c-a12a-4289-8501-af763c27b16d" rendition="#bol">Hegel</hi>
+          </label>
+          <p xml:id="ida501b01f-35df-4f6d-9ad0-3ae712248377"><ptr xml:id="idc0b41f6c-e295-48a8-9417-735a5b62f989" type="commentary" target="#not5-26" n="185,1"/>.</p>
+        </note>
+        <note type="commentary" xml:id="not5-32" n="185,10">
+          <label xml:id="idbe80d5bc-1443-4307-8caf-8a71ff195573">
+            <hi xml:id="id3111bf9e-689a-4bcc-a66d-df447ae4aa51" rendition="#bol">den nærmest foran gaaende Philosophie</hi>
+          </label>
+          <p xml:id="id41ee1356-5ddd-42b9-b908-d817809f6618">dvs. <persName xml:id="id95f1f29e-c12a-4055-84b5-2262ae305a4d" key="Kant, Immanuel">Kant</persName>s filosofi (<ptr xml:id="ide9a75c24-87e1-4e53-a415-735cfe7b08cd" type="commentary" target="#not5-34" n="185,12"/>).</p>
+        </note>
+        <note type="commentary" xml:id="not5-33" n="185,11">
+          <label xml:id="id164f622f-18e7-4ee9-acfa-a783fdfa6d57">
+            <hi xml:id="id5ef44c82-76a2-4218-ac04-2baf531c7e40" rendition="#bol">Sproget var til for at skjule Tankerne</hi>
+          </label>
+          <p xml:id="idd4b601f0-1830-4313-bdd7-79e55a493594">hentyder til en udtalelse af den fr. biskop og statsmand <persName xml:id="id6c671d5d-0ac8-46f9-abe3-f8e81a9869c1" key="Talleyrand-Périgord, Charles Maurice de">Charles-Maurice de Talleyrand</persName>, som han i 1807 skal have fremsat over for den sp. gesandt <persName xml:id="idb2c69d7d-17ba-4bd2-8ad3-08283f788e30" key="Isquierdo">Isquierdo</persName>: »La parole a été donnée à l'homme pour déguiser sa pensée« (»Sprogets/talens gave har mennesket fået for at skjule sin tanke«).</p>
+        </note>
+        <note type="commentary" xml:id="not5-34" n="185,12">
+          <label xml:id="id7e8d17be-5b15-43f8-b3e9-726cddb57443">
+            <hi xml:id="idd47e370e-cbe8-476e-a0e7-44ff951084cf" rendition="#bol">das Ding an sich</hi>
+          </label>
+          <p xml:id="id85d42dd0-6cc2-44aa-a8d2-b3f730b5895f">hentyder til <persName xml:id="id97d28920-b2e8-4fc3-95b2-626b6aaba6c9" key="Kant, Immanuel">Immanuel Kant</persName>s erkendelsesteori fremsat i <hi xml:id="id8788cac2-3c5a-4ef4-af12-d6f332da1cdb" rendition="#ita">Kritik der reinen Vernunft</hi> (1781, jf. ktl. 595, 4. udg., <placeName xml:id="id21b696a7-5102-41df-9137-95bfcf9de425">Riga</placeName> 1794). If. Kant er viden kun mulig inden for erfaringens grænser; vi kan kun opnå viden om vore forestillinger som bestemt af forstandskategorierne og de sanselige anskuelsesformer, men aldrig viden om 'tingen, som den er i sig selv' ('das Ding an sich'), adskilt fra disse erkendelsesformer.</p>
+        </note>
+        <note type="commentary" xml:id="not5-35" n="185,13">
+          <label xml:id="idc446f9fa-228e-4666-98eb-7fac55ff7189">
+            <hi xml:id="idab3712fc-c95b-42f6-975b-952391079d82" rendition="#bol">Hegel viser, at Sproget ... Famlen om Tingen</hi>
+          </label>
+          <p xml:id="id7d128548-0ee3-4554-95d3-494b8b2e13c4">hentyder måske til <persName xml:id="id077f1e2b-b8ca-4868-a8f1-5d6eb20f4dc1" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>s bemærkninger om sprogets forrang og sprogets forhold til tænkning i fortalen til 2. udg. af <hi xml:id="id3dfbf2ec-65cb-4044-b20d-64106b1fda26" rendition="#ita">Wissenschaft der Logik:</hi> »Die Denkformen sind zunächst in der <hi xml:id="ida80b6843-2b03-498a-9191-5ba29a23bf61" rendition="#ita">Sprache</hi> des Menschen herausgesetzt und niedergelegt, es kann in unseren Tagen nicht oft genug daran erinnert werden, daß das, wodurch sich der Mensch vom Thiere unterscheidet, das Denken ist. In Alles, was ihm zu einem Innerlichen, zur Vorstellung überhaupt, wird, was er zu dem Seinigen macht, hat sich die Sprache eingedrängt, und was er zur Sprache macht und in ihr äußert, enthält eingehüllter, vermischter, oder herausgearbeitet, eine Kategorie; so sehr natürlich ist ihm das Logische, oder vielmehr dasselbige ist seine eigenthümliche <hi xml:id="idbe25dee2-27da-4d41-920a-780492626089" rendition="#ita">Natur</hi> selbst«, <hi xml:id="id985a15c3-fa2d-46be-b5d2-e7aca8f93f8d" rendition="#ita">Wissenschaft der Logik,</hi> udg. af <persName xml:id="ida62ec2ed-835a-4ebd-a5b8-9f7700076582" key="Henning, L. von">L. v. Henning</persName>, bd. 1-2, <placeName xml:id="id0822458c-b8c6-47e9-8461-911e7a57b09a">Berlin</placeName> 1833-34 [1812-16], ktl. 552-554; bd. 1,2, i <hi xml:id="id5b162d9e-145d-4de2-90b3-1cc423af44d4" rendition="#ita">Georg Wilhelm Friedrich Hegel's Werke. Vollständige Ausgabe</hi> bd. 1-18, Berlin 1832-45 (forkortet <hi xml:id="id9d69adf8-8b8d-4e54-ae41-2dfa8d12caf6" rendition="#ita">Hegel's Werke</hi>) bd. 3, s. 11 (<hi xml:id="ida7d909dc-8ccf-4f82-ae70-c06746ba952f" rendition="#ita">Jub.</hi> bd. 4, s. 21). I da. sammenhæng udtrykker <persName xml:id="id9c526329-ee58-4fe8-bb0e-f62c2faa47ab" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> den samme sag, at logikken, dvs. teorien om kategorierne, former den basale struktur, der ligger til grund for al virkelighed; denne struktur viser sig også i sproget. Jf. hans <hi xml:id="id4fae7704-76b3-4eb0-ba87-ec7b9bb5e1a2" rendition="#ita">Indlednings-Foredrag til det i November 1834 begyndte logiske Cursus paa den kongelige militaire Høiskole,</hi><placeName xml:id="id4e37e6f6-0e8a-4385-b565-2c5c4236fc0a" key="København">Kbh</placeName>. 1835, s. 36-41. – <hi xml:id="idab9b10ef-b9f4-4668-9514-fabe20b9a7f3" rendition="#bol">er udfoldet i dette:</hi> dvs. at tanken er udfoldet i sproget.</p>
+        </note>
+        <note type="commentary" xml:id="not5-36" n="185,21">
+          <label xml:id="id56505579-81ec-42f5-8e0c-457ab76d0765">
+            <hi xml:id="idcfbee910-b8d9-4dc2-a51e-27f59accbaca" rendition="#bol">Pantheisme</hi>
+          </label>
+          <p xml:id="id2c4ae5f0-09bc-47ec-8d95-9c280345f19d">den tro el. lære, der – modsat teismen – hævder enheden af det værende (verden) og Gud.</p>
+        </note>
+        <note type="commentary" xml:id="not5-37" n="185,22">
+          <label xml:id="id3de31d04-1b2e-4b3d-9609-bda2ed804b9e">
+            <hi xml:id="id84b09ca1-07c4-4e59-bfa4-8fe8d921a866" rendition="#bol">Theisme</hi>
+          </label>
+          <p xml:id="id76185e07-6193-45bc-8525-5f7889ddb762">den tro el. lære, som hævder, at Gud både er personlig og adskilt el. forskellig fra verden, og at han ikke blot har skabt verden, men også opretholder og styrer den.</p>
+        </note>
+        <note type="commentary" xml:id="not5-38" n="185,25">
+          <label xml:id="id90d59dc5-bb56-4b66-b2e8-c0d4a391b99f">
+            <hi xml:id="id4a1ff964-b610-426a-b395-a2a49cedcddd" rendition="#bol">i Aand</hi>
+          </label>
+          <p xml:id="id45e1b910-fcf9-45f0-a630-e84d0b555760">d.s.s. 'i ånden', dvs. i overført el. indre betydning. Her altså: en general af indre, skønt ikke af ydre rang.</p>
+        </note>
+        <note type="commentary" xml:id="not5-100" n="185,26">
+          <label xml:id="idbe3ff574-3856-4892-8dcc-3cca1f33e1ef">seer man <hi xml:id="id938441ec-80b4-477e-9734-6fb0507e0833" rendition="#bol">og</hi></label>
+          <p xml:id="id9a87a0e6-dc02-4a94-a842-d4f0d36288de">også.</p>
+        </note>
+        <note type="commentary" xml:id="not5-39" n="185,26">
+          <label xml:id="id9e3665c0-a604-437f-b9bc-57280980db59">
+            <hi xml:id="id6274bdb9-8c22-4ac9-b878-b63dc082bd28" rendition="#bol">Tro er en concretere Bestemmelse end det umidd.</hi>
+          </label>
+          <p xml:id="id647eb94c-c32f-4e5a-bf0a-db9b0463c5c3">hentyder til den treleddede bevægelse i <persName xml:id="id6014ada4-16fe-4e8f-9b87-24d5c3bf2fae" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>s dialektik, der er kendetegnet ved 1. 'Unmittelbarkeit', 2. 'Vermittlung' og 3. 'vermittelte Unmittelbarkeit' el. ved 1. den første position af noget, 2. dets overgang til sin modstæning og 3. dets tilbagevenden til sig selv. Jf. <persName xml:id="ida9daabeb-0bd0-4267-8d14-29b7d0ea2145" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s beskrivelse i hans »Recension over Hr. Dr. Rothes <hi xml:id="idd973753f-aa23-431a-8116-8f2cc9345354" rendition="#ita">Treenigheds- og Forsoningslære</hi>« i <hi xml:id="idf39ab320-9353-48c4-b096-17bb59eafe29" rendition="#ita">Perseus, Journal for den speculative Idee,</hi> udg. af Heiberg, nr. 1-2, <placeName xml:id="idde8b982b-8bc2-44e2-916b-8c9c55950f67" key="København">Kbh</placeName>. 1837-38 (jf. ktl. 569); nr. 1, juni 1837, s. 35f.: »Som bekjendt, bevæger det hegelske System sig gjennem lutter Trilogier. I enhver saadan er det første Led Umiddelbarheden (relativt, nemlig i denne eller hiin bestemte Trehed), det andet Mediationen eller Udviklingen af det første, og endelig det tredie den ved Mediationen frembragte nye og synthetiske Eenhed, der ikke længere er umiddelbar.« Se også <ref xml:id="idfa6e90d8-80b7-46a0-a43e-91106b2052a6" target="../Not5/txt.xml#n19" type="journalsAndPapers" n="19">Not5:19</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="not5-40" n="186,4">
+          <label xml:id="id747ade08-8149-4e1f-951a-65759d6e2faf">
+            <hi xml:id="idff8d7ab6-f651-4f31-acfc-0ae567f4e28b" rendition="#bol">Viden fremgaar af Tvivl</hi>
+          </label>
+          <p xml:id="id838b4ac3-947b-475e-9325-bfafcc302b6f">hentyder til <persName xml:id="idb8db253b-0e25-45d4-a310-0c753f451457" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>s metode, som – især i <persName xml:id="idc51edb4c-5941-48e1-83b9-ad4da012f19b" key="Martensen, Hans Lassen">H.L. Martensen</persName>s beskrivelse af den – begynder med en systematisk, cartesiansk tvivl om alt og derpå bevæger sig fremad i kraft af behovet for indre konsekvens for endelig at stile mod sand erkendelse. Se Martensens forelæsninger over »Philosophiens Historie fra <persName xml:id="idb4035338-572e-40fe-9b78-beb2416d25a8" key="Kant, Immanuel">Kant</persName> til Hegel«, hvor han giver følgende beskrivelse af Hegels dialektiske metode: »Methoden hvorved Processen kommer istand, er det <hi xml:id="id0a6d87cb-37c3-44ff-93b3-0c26a24b9fc0" rendition="#ita">Negative.</hi> Enhver Tanke indeholder sin egen <hi xml:id="id8be9c023-eb59-48b6-9273-1a33bbe04b66" rendition="#ita">Negation,</hi> sit eget Modsatte, Forskjel. Men denne Negation maa ophæves og Harmonien bringes tilveie. Dette er H.<hi xml:id="ida98b1f2f-ae77-4383-be74-3ae294857cf8" rendition="#sup">s</hi> Hovedtanke, altsaa 1) det <hi xml:id="id66c37424-5665-4078-9048-0846ce7a1235" rendition="#ita">Umiddelbare,</hi> 2) det <hi xml:id="idfa7b5497-5cb9-432a-ae61-9d0e86ea9d63" rendition="#ita">Særskilte</hi> (<hi xml:id="idac5057c1-51d1-40ae-8683-5719d525814c" rendition="#ita">Reflex.</hi><hi xml:id="id78ad3252-ffdd-4987-b8eb-b38e55f68c51" rendition="#ita"><hi xml:id="id034ea5a9-ca42-4164-85bb-dfb3d6533501" rendition="#sup">s</hi></hi>), [3)] det <hi xml:id="id7cde5767-1691-411b-b5bd-46ddfbceb36d" rendition="#ita">Enkelte</hi> (Ideens Stan[d]punkt) <hi xml:id="id97281718-60ca-46f9-b8d5-068a48587ec9" rendition="#ita">(...)</hi> Det 3<hi xml:id="idbf77c67f-085a-4491-8754-ecdf0b20cc03" rendition="#sup">die</hi> Standpunkt er nu det, hvor Msket igjen vinder Tilfredsheden tilbage efter at have gjennemgaaet alle Tvivl« (<ref xml:id="iddc54c473-a12a-4563-9886-237a134c9fb0" type="journalsAndPapers" n="pap:IIC25"><hi xml:id="id8e8bd2dd-5f06-4c57-80c2-b10681a4f2b4" rendition="#ita">Pap.</hi> II C 25, i bd. XII, s. 321</ref>).</p>
+        </note>
+        <note type="commentary" xml:id="not5-41" n="186,14">
+          <label xml:id="id3571312c-32ac-41e4-8256-82134a1b0a16">
+            <hi xml:id="id94c0c8c9-9570-437c-b8d1-9eacfe7e50ab" rendition="#bol">i Engeland et Gravmonument ... den ulykkeligste</hi>
+          </label>
+          <p xml:id="idddfaeec4-657d-49b4-9528-1ba6832f8a2f">sigter til en grav med indskriften »Miserrimus« (lat. 'den elendigste, den ulykkeligste') i <placeName xml:id="id91374d2e-8500-45c3-8222-68872b7caad8">Worcester Cathedral</placeName>.</p>
+        </note>
+        <note type="commentary" xml:id="not5-42" n="186,18">
+          <label xml:id="id58d34be5-be12-402e-8f13-287e2d13202c">
+            <hi xml:id="id1954de9a-23b4-4ac8-b186-2067fcc585be" rendition="#bol">under Billedet af den forlorne Søn</hi>
+          </label>
+          <p xml:id="id00754809-acde-4ed3-a51b-1de3b4cb09bd">se følgende kommentar.</p>
+        </note>
+        <note type="commentary" xml:id="not5-43" n="186,19">
+          <label xml:id="idd7475531-465b-4ca5-96e4-f99cfdb8ab3a">
+            <hi xml:id="id0b6dff4b-5e52-465e-a76e-7d74397b7014" rendition="#bol">som Sønnen ... lad os erholde den os tilkommende Arv</hi>
+          </label>
+          <p xml:id="idbf1cf362-7b3c-4ad0-bc0f-429722a62ba9">sigter til Jesu lignelse om den forlorne, dvs. fortabte søn, der kræver skifte af sin far og sin del af arven udbetalt før tiden. Han rejser udenlands og ødsler sin formue bort i et udsvævende liv, men går senere i sig selv, vender hjem og bliver taget til nåde af sin far, <rs xml:id="idc8b0a876-d87b-4797-b3ca-790107fac070" type="bible">Luk 15,11-32</rs>. – <hi xml:id="idec317da9-1ddd-4965-8841-b13f143497d2" rendition="#bol">Ev.:</hi> Evangeliet.</p>
+        </note>
+        <note type="commentary" xml:id="not5-44" n="186,22">
+          <label xml:id="id137a3562-1bee-4536-9c43-7e2e142008fe">
+            <hi xml:id="idc85e8bbe-191f-4b07-acc5-98e656686d9f" rendition="#bol">Troels Lund</hi>
+          </label>
+          <p xml:id="ida6ed21f2-eafc-4f94-9f10-b77a4aff1af6">(1802-76), da. kunstmaler, fra 1835 medlem af <placeName xml:id="ida6f7bacd-c4fc-4e02-a1ab-96a4f9a92ce2">Kunstakademiet</placeName> og fra 1842 arkitekturmaler ved <placeName xml:id="id1d47638f-4ee1-4023-9fc6-79f80f09ef33" key="Kongelige Teater, Det">Det kgl. Teater</placeName>; bror til SKs svoger <persName xml:id="id1b41901e-40a6-444e-81e9-9a61493b9c83" key="Lund, Henrik Ferdinand">H.F. Lund</persName>s anden kone.</p>
+        </note>
+        <note type="commentary" xml:id="not5-45" n="187,2">
+          <label xml:id="id297c63e8-bf29-43c0-82af-4bc7cbe08f23">
+            <hi xml:id="id0d6c7970-1224-445b-9f59-391f17e07c51" rendition="#bol">nihil extra deum ... præter deum</hi>
+          </label>
+          <p xml:id="id393df9f3-cb98-4d5d-ba3a-57a594c45a22">lat. 'intet uden Gud / intet ud over Gud'.</p>
+        </note>
+        <note type="commentary" xml:id="not5-46" n="187,4">
+          <label xml:id="id159a3b3f-0136-4f27-995c-de55182aa19a">
+            <hi xml:id="id78375c6b-49c0-4ee8-a012-e9404c6e2d59" rendition="#bol">de to Mysterier</hi>
+          </label>
+          <p xml:id="id254b492d-c203-4b40-a5be-11db2cfd41ef">Der tænkes formentlig på det guddommelige mysterium og det diabolske mysterium, jf. journalen <ref xml:id="id22de10c9-0417-46da-8835-c600ca2db8f5" target="../FF/txt.xml#n197" type="journalsAndPapers" n="197">FF:197</ref> i <hi xml:id="ide492b2e6-a709-413a-b8ec-ec1b3fa21c26" rendition="#ita">SKS</hi> 18, 113; se også journalen <ref xml:id="idd46bad79-7fd1-4fb0-bffd-21f2ef52215c" target="../DD/txt.xml#n6" type="journalsAndPapers" n="6">DD:6</ref> i <hi xml:id="id3a41c5fc-59ac-4c05-b9ea-a0c2a708fbf0" rendition="#ita">SKS</hi> 17, 216f.</p>
+        </note>
+        <note type="commentary" xml:id="not5-47" n="187,7">
+          <label xml:id="idbeae8fd8-a3fa-44aa-8c33-5093c2142154">
+            <hi xml:id="idbe1c96ee-2fd8-4621-bb60-58d07fc42c6f" rendition="#bol">det Rige</hi>
+          </label>
+          <p xml:id="id67c06da6-9a32-446b-acaa-994065f14124">Guds (evige) rige.</p>
+        </note>
+        <note type="commentary" xml:id="not5-48" n="187,8">
+          <label xml:id="id7b07f102-36bb-47ca-bd8c-78e75139a374">
+            <hi xml:id="id869f772c-d459-499b-8cf8-e0228fdee5b0" rendition="#bol">Solen aldrig gaaer ned deri</hi>
+          </label>
+          <p xml:id="id305b2b96-6ce6-4a20-bae6-566d7f348500">spiller på udtalelsen: 'Solen går aldrig ned i mine lande', der som regel tillægges den ty. kejser <persName xml:id="idb33ee245-fd8b-4dca-81e0-a16994a27f6d" key="Karl V">Karl V</persName>, men som af <persName xml:id="idbbb712e8-4729-4995-85aa-100889c5cf51" key="Schiller, Friedrich">Friedrich Schiller</persName> i <hi xml:id="id364f4243-db13-4a06-ab9f-32893445b25a" rendition="#ita">Don Carlos</hi> lægges i munden på Karl V's søn, <persName xml:id="id88cf39d3-5378-4d2a-9b13-a00a7da237fc" key="Philip II">Philip II</persName> af <placeName xml:id="idef124c0e-d296-4d64-8252-b6c8ffeab751">Spanien</placeName>.</p>
+        </note>
+        <note type="commentary" xml:id="not5-49" n="187,10">
+          <label xml:id="ida5c47942-7c28-47ce-b0a9-fef826e1fe6e">
+            <hi xml:id="id14962f3d-5d20-4213-b14d-95b0f345950d" rendition="#bol">Det at Philosophien ... ikke ansees som en Feil</hi>
+          </label>
+          <p xml:id="id6499544b-5ccd-4229-81a5-226fc8912bd2">I den ty. idealisme spillede spørgsmålet om filosofiens begyndelse en central rolle. Hovedsagen, først tematiseret af <persName xml:id="id3af432c8-6aec-42ab-9502-96a552504da3" key="Fichte, Johann Gottlieb">J.G. Fichte</persName>, var, hvorledes man kan begynde et system uden at betjene sig af visse forudsætninger, som er indeholdt i det system, man prøver at udfolde. Fichte forsøgte det med sit første princip om viden, Jeg = Jeg. <persName xml:id="id05f69a3d-b4d7-4a8e-995d-ddff6f0c0f85" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName> argumenterede for, at filosofien må begynde med den mest abstrakte kategori, dvs. den rene væren (jf. <hi xml:id="idb0dbeb0f-3c57-451c-83f6-cb5d367cec2b" rendition="#ita">Wissenschaft der Logik</hi> (<ptr xml:id="id3b64f8a3-5d65-4963-86ab-436052e5e25d" type="commentary" target="#not5-35" n="185,13"/>) bd. 1,2, i <hi xml:id="id519c3f6f-9cea-40e5-9614-8eb3a3399049" rendition="#ita">Hegel's Werke</hi> bd. 3, s. 59-111 (<hi xml:id="id510a64b5-cfef-48e9-887a-d50998df92eb" rendition="#ita">Jub.</hi> bd. 4, s. 69-121)); Hegels beskrivelse af filosofiens begyndelse blev kritiseret af bl.a. <persName xml:id="id3d37b912-828d-4ab3-9118-52795519f8f7" key="Schelling, Friedrich Wilhelm Joseph">F.W.J. Schelling</persName>, <persName xml:id="ide4066bc7-7410-4e14-ad3a-4159eeb269d6" key="Fichte, Immanuel Hermann">I.H. Fichte</persName> og <persName xml:id="id54f9f1b3-0b03-4ac4-a1d2-5f5ad62f34fd" key="Trendelenburg, Friedrich Adolph">F.A. Trendelenburg</persName>. Sagen blev også genstand for debat i <placeName xml:id="ida03eeaf7-1ee0-4da6-899f-d7b11ea1857a">Danmark</placeName> pga. <persName xml:id="id07955c67-b10a-4124-8d69-012f433de1d5" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s forsvar for den hegelske position, bl.a. fremført i »Recension over Hr. Dr. Rothes <hi xml:id="ided1a84a2-1d7e-4a4b-9e30-413c027a9603" rendition="#ita">Treenigheds- og Forsoningslære</hi>« (<ptr xml:id="id416dd5ff-1176-404b-8a37-e61c236ee29c" type="commentary" target="#not5-39" n="185,26"/>). <persName xml:id="id65f20d49-e367-44ff-a56e-64a90a4331de" key="Sibbern, Frederik Christian">F.C. Sibbern</persName> kritiserede dette i første del af sin lange anmeldelse af Heibergs tidsskrift <hi xml:id="id0629747e-ecfd-473f-b0fc-0d398518533c" rendition="#ita">Perseus</hi> nr. 1 (<ptr xml:id="id3c4886c8-a73d-4e6a-9967-4668241cca57" type="commentary" target="#not5-35" n="185,26"/>) i <hi xml:id="idfb8ac5bf-01f5-45a2-90cc-04ebaa047e31" rendition="#ita">Maanedsskrift for Litteratur</hi> bd. 19, <placeName xml:id="id2b004984-28f7-4169-8ac9-c9e91c682bf1" key="København">Kbh</placeName>. 1838, s. 315-360. Heiberg svarede igen i artiklen »Det logiske System« i <hi xml:id="id1a300c9d-1d20-4735-8cfa-2658746bfeeb" rendition="#ita">Perseus</hi> nr. 2, s. 1-45, som blev positivt anmeldt af <persName xml:id="idfb36d31a-167f-4577-b42e-91035334c981" key="Adler, Adolph Peter">A.P. Adler</persName> i <hi xml:id="idbd125064-40d9-432e-86d4-b3a14eb180a5" rendition="#ita">Tidsskrift for Litteratur og Kritik,</hi> udg. af <persName xml:id="id42831e70-6cc4-4118-a057-b46c60821b6b" key="Petersen, Frederik Christian">F.C. Petersen</persName>, bd. 3, <placeName xml:id="id9bc21412-c667-45c8-b330-fd8cb12008aa" key="København">Kbh</placeName>. 1840, s. 474-482. I hele denne diskussion blev det af alle forstået som en svaghed el. en 'fejl', hvis en skjult forudsætning kunne afdækkes i éns forsøg på at begynde et system.</p>
+        </note>
+        <note type="commentary" xml:id="not5-50" n="187,13">
+          <label xml:id="ideff28c63-66e4-4e58-9544-0d750e766b67">
+            <hi xml:id="idfef031a5-35a0-4bed-87d0-15b616206d9e" rendition="#bol">Bevidstheden som den tomme Form</hi>
+          </label>
+          <p xml:id="id6badeaf4-f96a-4d58-93f3-f185374ac9dc">hentyder formentlig til teorierne om bevidsthed i den transcendentale filosofi, if. hvilke bevidsthed er ren form el. et formalt princip for viden. Blandt de mest kendte af disse teorier er <persName xml:id="id406e9c45-1e47-401d-82ba-24fa88fafb8a" key="Kant, Immanuel">Immanuel Kant</persName>s 'transzendentale Einheit der Apperzeption' (jf. <hi xml:id="id615a6555-15e0-4979-88a2-27bfed8498cf" rendition="#ita">Kritik der reinen Vernunft,</hi> 4. udg., <placeName xml:id="id25590165-b7cf-4504-9bff-ee97b65ffd5f">Riga</placeName> 1794 [1781], ktl. 595, s. 129-146). For at man kan have en bestemt 'forestilling' om genstande, er det if. Kant nødvendigt, at mangfoldigheden af individuelle 'forestillinger' forenes i en enkelt bevidsthedsenhed; uden en sådan bevidsthedsenhed ville bestemte 'forestillinger' om genstande ikke være mulig. Tilsvarende er for <persName xml:id="idadfa2c10-9193-46ef-bb6e-8bec2b5a0eaa" key="Fichte, Johann Gottlieb">J.G. Fichte</persName> det tænkende subjekts selv-sættende handling det højeste princip for tænkning og grundlaget for al viden. Det ubetvivlelige, første ubetingede princip for viden er, at der gives et selv-identisk tænkende subjekt, udtrykt af J.G. Fichte med en variant af loven om identitet, Jeg = Jeg (jf. <hi xml:id="id7326e5cc-7172-41c8-b621-62b6eedbedcb" rendition="#ita">Grundlage der gesammten Wissenschaftslehre,</hi> 2. udg., <placeName xml:id="id5f1b8462-c18c-4f07-b788-2ba0a1d29a9c">Jena</placeName> og <placeName xml:id="ide3ef0e16-d2e9-42f2-ab68-742e714e5a73">Leipzig</placeName> 1802 [1794], s. 1-16). Både hos Kant og Fichte er denne form for bevidsthed 'tom', da den kun er et formalt princip og ikke et virkeligt, empirisk subjekt.</p>
+        </note>
+        <note type="commentary" xml:id="not5-51" n="187,15">
+          <label xml:id="idd356d8d7-83da-4a6e-a4f8-58b1bbfbad2e">
+            <hi xml:id="id3b91b3ae-7002-40ef-9738-03bb7d4b12ce" rendition="#bol">Arbitrium</hi>
+          </label>
+          <p xml:id="id59235950-d2a1-4132-b1da-a6c1a770632e">lat. 'kendelse'; 'valg'; 'vilje'.</p>
+        </note>
+        <note type="commentary" xml:id="not5-52" n="187,19">
+          <label xml:id="id5a2a992c-c562-47f0-a869-f79049774163">
+            <hi xml:id="id8a5c4702-a186-4872-9a0c-bd490086685e" rendition="#bol">liberum arbitrium</hi>
+          </label>
+          <p xml:id="ide934387b-f6db-4d87-a704-5fd8c35d2c9b">lat. 'frit valg', 'fri vilje', 'vilkårlig frihed'; filosofisk begreb fra den tidligste middelalder brugt som betegnelse for menneskets evne til at vælge lige frit mellem to eller flere muligheder.</p>
+        </note>
+        <note type="commentary" xml:id="not5-53" n="187,24">
+          <label xml:id="idc4dca975-3ffc-4373-a787-523208fb75e8">
+            <hi xml:id="ide7b9b94c-2b70-4e37-b217-efd68aefc9b3" rendition="#bol">det ene Glas forstørrer <hi xml:id="id8d27ddbb-8203-4f51-b3d2-125ca0059ac5" rendition="#ita">(...)</hi> formindsker</hi>
+          </label>
+          <p xml:id="id0c307cdb-8d9d-4bc4-85bd-59254c09e981">dvs. 'det ene glas forstørrer, det andet formindsker', jf. journalen <ref xml:id="idca31c8a2-0244-4d64-bd30-d954d1fa5b91" target="../DD/txt.xml#n90" type="journalsAndPapers" n="90">DD:90</ref> i <hi xml:id="id4b1a950d-4c5f-421b-aeeb-2fd5e1660106" rendition="#ita">SKS</hi> 17, 250.</p>
+        </note>
+        <note type="commentary" xml:id="not5-54" n="187,24">
+          <label xml:id="id283cbb7a-a7d5-4f13-80e8-78952623600d">
+            <hi xml:id="id8f3a8f35-720a-4854-89a2-d7b94c2ac865" rendition="#bol">et Græsstraa er mere værd end al Kløgt</hi>
+          </label>
+          <p xml:id="id66c87da0-0454-4cf3-91c9-97bd6aeebdd8">Hvis der er en kilde, har den ikke kunnet identificeres.</p>
+        </note>
+        <note type="commentary" xml:id="not5-55" n="187,25">
+          <label xml:id="id5e141457-563a-427b-a1e9-1bed027c5ec4">
+            <hi xml:id="id4ee487be-af1f-4875-bbe8-9ea3ab6f8c8b" rendition="#bol">høre Viisdom af en Pharisæers Mund ... af en Apostel</hi>
+          </label>
+          <p xml:id="ida080a391-0030-473f-a1bf-86a301339663">jf. <persName xml:id="ide6adc122-ac96-408c-84da-6bd5746c75ae" key="Hamann, Johann Georg">J.G. Hamann</persName>s brev af 12. okt. 1759 til vennen <persName xml:id="id7575e832-1382-4d53-89e2-b01afebb3ccc" key="Lindner, Johann Gotthelf">J.G. Lindner</persName>, hvori det hedder: »<persName xml:id="idcb5adbf3-85f8-460f-b1d7-eb7f748a3d7b" key="Baumgarten, Siegmund Jacob">Baumgarten</persName>, Forstmann, Reichel, <persName xml:id="idb26b9e51-9c7e-4776-934e-9eb6e7b8046b" key="Paulus">Paulus</persName> und Kephas sind Menschen, und ich höre öfterst mit mehr Freude das Wort Gottes im Munde eines Pharisäers, als eines Zeugen wider seinen Willen, als aus dem Munde eines Engels des Lichts.« <hi xml:id="id7ea6c6fa-be97-4613-aa14-197724e60300" rendition="#ita">Hamann's Schriften,</hi> udg. af <persName xml:id="id29c00030-0b44-44d1-9d7d-be028e15730e" key="Roth, Friedrich">Fr. Roth</persName> og <persName xml:id="id1f0d9105-9c1a-43e4-9e4a-131d2e413628" key="Wiener, Gustav Adolph">G.A. Wiener</persName>, bd. 1-7, <placeName xml:id="id35c4d846-36ef-459b-8762-fcabb8898f68">Berlin</placeName> og <placeName xml:id="id797426af-8909-4d21-aeb6-0526010aa779">Leipzig</placeName> 1821-25, og bd. 8,1-2 (registerbind), Berlin 1842-43, ktl. 536-544; bd. 1, s. 497. Se journalen <ref xml:id="id772f9861-ffaa-4deb-ba9f-e710b79207ec" target="../BB/txt.xml#n27" type="journalsAndPapers" n="27">BB:27</ref> i <hi xml:id="idce731f9e-7360-43db-9bad-d2c28c9da4df" rendition="#ita">SKS</hi> 17, 120.</p>
+        </note>
+        <note type="commentary" xml:id="not5-56" n="188,1">
+          <label xml:id="id623bd48a-1bcb-4ddb-b4f8-11977cdb9d16">
+            <hi xml:id="ide24050bf-3a05-4389-a418-4d3a57435d9a" rendition="#bol">Nyhavn 282 Charlottenborgssiden</hi>
+          </label>
+          <p xml:id="id2c39f000-e74b-438a-8d77-c72f9dcb8824">If. folketællingslisten fra feb. 1840 boede i stuen og på første sal: major og grosserer <persName xml:id="id0e7ba57c-640d-4c3e-9f16-c1dd925f2931" key="Sass, Mathias Wilhlem">Mathias Wilhlem Sass</persName> med familie, heriblandt en ugift søn, handelsbetjent <persName xml:id="idb02ea640-2f5e-4caf-9ebe-639337354f79" key="Sass, Lorentz Waage">Lorentz Waage Sass</persName>, 22 år gammel; på anden sal: krigsråd og kontorchef <persName xml:id="id681313ec-e466-4398-a284-cdedbcd7ba6f" key="Børgesen, Peter">Peter Børgesen</persName> med familie, heriblandt to ugifte sønner, fuldmægtig i søetaten <persName xml:id="id0322c374-e3c3-48a9-a06b-9d2c86b89409" key="Børgesen, Guillaume">Guillaume Børgesen</persName>, 28 år gammel, og sekondløjtnant i første livregiment <persName xml:id="id8a62f8d7-28c2-4de9-82a4-fa4ebebf121b" key="Børgesen, Viggo">Viggo Børgesen</persName>, 26 år gammel; i kælderen: værtshusholder <persName xml:id="id774b3b4f-1092-4fcd-8bbf-4100dc56fe14" key="Petersen, Carl Ludvig">Carl Ludvig Petersen</persName> med familie, heriblandt en ugift datter, <persName xml:id="idf57f91ec-524d-4f70-9ca1-9e5ff876ded1" key="Petersen, Emilie Frederike">Emilie Frederike Petersen</persName>, 21 år. – M.W. Sass havde overfarten Århus-<placeName xml:id="id0f828688-7844-41a9-ac51-fbbe362ab8e1">Kalundborg</placeName> i entreprise og ejede både den smakke, som SK benyttede, da han 19. juli 1840 rejste til <placeName xml:id="id11230d13-18e2-4f9b-b7b2-987b6ca83dd5">Jylland</placeName>, og det dampskib, »Christian den Ottende«, som han sejlede med på hjemturen 6. aug. (jf. <ref xml:id="idd6e5ca69-b6e9-49d5-918c-2ef34886df3e" target="../Not6/txt.xml#n1" type="journalsAndPapers" n="1">Not6:1</ref> med kommentarer).</p>
+        </note>
+      </div>
+    </body>
+  </text>
 </TEI>

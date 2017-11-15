@@ -1,198 +1,248 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Var det rigtigst nu at »standse med Klemtningen«?</title>
-     
-     <title type="short">RK</title>
-  <author>
-   <name>Lena Wienecke Andersen</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Niels Jørgen Cappelørn</name><name>Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2010</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K14</biblScope>
-     <biblScope unit="file">http://sks.dk/rk/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition><!--spaced out, in SKS rendered italic--><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition xml:id="lineHight1" scheme="css">line-height:150%</rendition><rendition xml:id="lineHight2" scheme="css">line-height:200%</rendition><rendition xml:id="lth" scheme="css">text-decoration: line-through</rendition><rendition xml:id="size-1" scheme="css">font-size: 83%</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20120413">txr/XML, <bibl><idno type="version">1.6</idno>, <biblScope unit="file">http://sks.dk/rk/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id7bb640e5-1d8d-4a6b-adea-b48d4c359a2c">
+    <fileDesc xml:id="id063c72e9-816f-4e72-a44c-3babde434c4c">
+      <titleStmt xml:id="idef35548c-abe2-40c3-8820-1167077a1b9c">
+        <title xml:id="idf8c27017-4350-4f80-ad64-974a2e5fcfad" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="idb61c738d-5632-4554-86fa-f10cf467b328">Var det rigtigst nu at »standse med Klemtningen«?</title>
+        <title xml:id="id34a9ac82-82d4-421b-9af4-db11bd2d2d0e" type="short">RK</title>
+        <author xml:id="idf8429a2b-29b1-4162-b530-82e8a91ef7e8">
+          <name xml:id="id324ed96e-8f0e-4c26-ad8b-ad99eca276d9">Lena Wienecke Andersen</name>
+        </author>
+        <editor xml:id="id5f3ec724-41bc-450d-a314-733ee8b53a4c">
+          <name xml:id="idf74f32b7-a35c-4056-b6f3-3e24fec655a2">Niels Jørgen Cappelørn</name>
+          <name xml:id="id21043ebb-9006-4f1f-bb12-262ba3bd4446">Joakim Garff</name>
+          <name xml:id="id2c98d398-4889-4681-be17-53898b0e59bd">Johnny Kondrup</name>
+          <name xml:id="idad3985b7-610d-4192-ba5b-03371c29d314">Tonny Aagaard Olesen</name>
+          <name xml:id="id1849b30c-f923-41bb-88a5-9a47e62c14cf">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="id9eaf087e-2ea8-4f28-841b-941b1c248494">
+          <resp xml:id="id86b888cf-0622-4b86-bab5-de5031cf400b">redigeret af</resp>
+          <name xml:id="iddb4f6436-297a-4eeb-94ea-e31089636b6b">Niels Jørgen Cappelørn</name>
+          <name xml:id="id9f8faf7d-fcc4-4db8-b2c5-8c0bfe7564b2">Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="ide362bf75-080f-454f-8712-20f15585a596">
+          <resp xml:id="idf41c29ab-21e9-439c-9031-75c489fc47da">elektronisk redigeret af</resp>
+          <name xml:id="id40ea63c2-e421-4b81-b7e8-1cbccf525140">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id31a0dd44-e4e3-4b36-b7c6-78e7878a3282">
+        <authority xml:id="id067cb497-52fa-4ebc-9efa-bd5cd0af91de">Søren Kierkegaard Forskningscenteret 2010</authority>
+        <availability xml:id="idb332ca11-4d90-44a3-ac2d-6120cfa6d18f" status="restricted">
+          <p xml:id="id69466d58-444d-48e3-a9de-0a25f1d8469a">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id468e30cb-6876-415d-8ee7-d6e9c92fa0da">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="ide097159f-01e6-4c05-9a15-0931e68dc3c6" unit="volume">K14</biblScope>
+        <biblScope xml:id="id681f85eb-60a9-4013-b6ef-859aec5a2538" unit="file">http://sks.dk/rk/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id2929db67-975a-4699-95c3-930535b8229d">
+        <bibl xml:id="id1005e0fa-6255-4786-a33b-af59eb9ab7e5" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id6e71052d-be72-4724-bf42-c474bfdc2669">
+      <tagsDecl xml:id="id59f5be74-ef7c-478e-a8a9-53cd599dc336">
+        <rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition>
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition xml:id="lineHight1" scheme="css">line-height:150%</rendition>
+        <rendition xml:id="lineHight2" scheme="css">line-height:200%</rendition>
+        <rendition xml:id="lth" scheme="css">text-decoration: line-through</rendition>
+        <rendition xml:id="size-1" scheme="css">font-size: 83%</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id0484b5e3-559d-475d-aadb-c5e12a7d5016">
+      <change xml:id="id2f451276-511e-4034-903f-77855f4cbb06">Transformed to TEI by style sheet <bibl xml:id="idcb6e9b5a-a0c9-4b7b-829a-a23a9a90984a" type="file">txr2tei.xsl</bibl> version as of <date xml:id="ideb594a94-6999-4871-854e-55f7c19b196a">2017-02-15</date> importing <bibl xml:id="id01d2b26c-c901-4acd-84d0-99814194ec13" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="idb24e2a08-9629-4c39-8a2b-7967d5f40988">Transformed to TEI by style sheet <bibl xml:id="idd9deb6d9-f3d2-4fc7-a2b7-0da201404aaa" type="file">kn12tei.xsl</bibl> version <idno xml:id="id8154b644-964a-44f4-967b-932dfb26b051" type="version">1.9</idno> as of <date xml:id="idf44b5829-b3a3-489b-b042-423a1134d514">2017-02-21</date> by <name xml:id="id64b321cf-54ca-4bab-9c2f-7d96f5a998e5">Karsten Kynde</name>, <orgName xml:id="id494abc3c-47cf-44e2-a727-aaf8a362c845">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="idacaf9556-74ff-4255-b31f-1af68fd0fa34">København</placeName></change>
+      <change xml:id="id9c5c8392-26be-417f-8409-e3a0d2e9e5ad" when="20120413">txr/XML, <bibl xml:id="id9b2e2c92-576d-42d8-841d-d69a28a508d1"><idno xml:id="idd355e396-1ac8-4576-99ae-c4adc233aec3" type="version">1.6</idno>, <biblScope xml:id="id3a331ae1-e5b5-4a3b-8552-9efb7b5381d4" unit="file">http://sks.dk/rk/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="TextCriticalAccount" subtype="publishedWritings"><body><div><head type="topText" n="Tekstredegørelse"/>
-    <head><pb xml:id="ss585" n="585" edRef="#SKS"/>Tekstredegørelse</head>
-    <list type="TOC">
-      <item>1. Bibliografisk beskrivelse <ptr type="chapter" target="#k1" n="585"/> </item>
-      <item>2. Manuskriptbeskrivelse <ptr type="chapter" target="#k2" n="588"/> </item>
-      <item>3. Tilblivelseshistorie <ptr type="chapter" target="#k3" n="590"/> </item>
-      <item>4. Udgivelsesmåde <ptr type="chapter" target="#k4" n="591"/> </item>
-    </list>
-    <div type="level1" xml:id="k1">
-      <head>1. Bibliografisk beskrivelse</head>
-      <p>»Var det rigtigst nu at 'standse med Klemtningen'?« blev trykt i <hi rendition="#ita">Fædrelandet,</hi> 16. årgang, nr. 83, onsdag den 11. april 1855. Artiklen er signeret »S. <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>«. <hi rendition="#ita">Fædrelandet</hi> blev udgivet af <persName key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName key="Ploug, Carl">C. Ploug</persName>; sidstnævnte fungerede også som ansvarlig redaktør. Avisen blev trykt hos <persName key="Klein, Louis">Louis Klein</persName> i <placeName>København</placeName> og lå færdig fra trykkeriet kl. 20. Prisen var 6 skilling i løssalg, 5 mark pr. måned, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName>København</placeName>.</p>
-      <p>Artiklen er blevet kollationeret i tre eksemplarer af <hi rendition="#ita">Fædrelandet,</hi> nr. 83, den 11. april 1855:</p>
-      <list>
-        
-          <label>A</label>
-          <item>SKs eget eksemplar, uindbundet og ubeskåret, KA, D pk. 17.</item>
-        
-        
-          <label>B</label>
-          <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note>
-              <p>Eksemplar B er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p>
-            </note></item>
-        
-        
-          <label>C</label>
-          <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note>
-              <p>Eksemplar C er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p>
-            </note></item>
-        
-      </list>
-      <p>Ved den interne kollation blev der ikke konstateret afvigelser.<note>
-          <p>Da <hi rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes her.</p>
-        </note> Eksemplar A danner grundlag for den følgende beskrivelse.</p>
-      <div type="level2">
-        <head><pb xml:id="ss586" n="586" edRef="#SKS"/>Format og paginering</head>
-        <p>Formatet er folio.<note>
-            <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p>
-          </note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet ark. Avisen er trespaltet; hver side opdeles ydermere af en tværgående fed-fin dobbeltskillestreg trykt ca. to tredjedele nede på siden. Pagineringen 341-344 er på forsiden angivet under spalterne, på avisens øvrige sider over. Spalterne er unummereret.<note> <p>I <ref target="../RK/txt.xml#ss189" type="publishedWritings" n="189"><hi rendition="#ita">SKS</hi> 14, 189</ref>-190, angives sidetallet i marginen; de følgende spalteskift angives med en lodret streg i teksten og et suppleret spaltetal i kantet parentes i marginen.</p>
-          </note></p>
-        <p rendition="#ind">»Var det rigtigst nu at 'standse med Klemtningen'?« er placeret på forsidens øverste del (s. 341) og indledes i første spalte; i anden spalte følger »En Efterskrift«, hvorefter artiklen, ligeledes i anden spalte, afsluttes. Derudover indeholder avisen endnu en artikel af SK, nemlig føljetonen<note>
-            <p>I ordet »føljeton«s oprindelige betydning, »bilag«, betegnede det artikler vedlagt en avis. Siden brugtes det om artikler på den nederste del af en avisside, dvs. under tværstregen; disse kaldtes føljetoner eller føljetonartikler. Sidenhen udvidedes betydningen til en tekst, der var opdelt og udkom over flere numre af en avis. I <hi rendition="#ita">Fædrelandet,</hi> nr. 83, fra den 11. april 1855 ses to typer føljetoner: Den ene, SKs »Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling«, er placeret nederst på siden; den anden, »Sir Hudson Lowe og Fangenskabet paa St <persName key="Helena">Helena</persName>. I.«, er placeret nederst på siden og løber over flere numre af avisen.</p>
-          </note> »Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling«,<note> <p><ref target="../CK/txt.xml#ss193" type="publishedWritings" n="193"><hi rendition="#ita">SKS</hi> 14, 193</ref>.</p> </note> endnu en føljeton, nyheder fra ind- og udland samt annoncer.</p>
-      </div>
-      <div type="level2">
-        <head>Beskrivelse af eksemplar A</head>
-        <p>Avisen måler ca. 346 × 515 mm.<note>
-            <p>Størrelsen måles som bredde (øverste kant) × højde (venstre kant).</p>
-          </note></p>
-        <div type="level3">
-          <head><pb xml:id="ss587" n="587" edRef="#SKS"/>Papir</head>
-          <p>Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
+  <text xml:id="id4cd8cc2b-23e7-4f0d-ac65-17d5dba58b8e" type="TextCriticalAccount" subtype="publishedWritings">
+    <body xml:id="idf6a08de0-7b77-4fbe-b3f6-15ac6a044f8d">
+      <div xml:id="idbbca8f8a-ff73-4937-84c0-a8e1a95bebe3">
+        <head xml:id="id36bfb6fb-e338-4f1a-885e-77701eb6f49a" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="idf6acca0a-d9f8-47bb-aa10-e6d51189afc5"><pb xml:id="ss585" n="585" edRef="#SKS"/>Tekstredegørelse</head>
+        <list xml:id="idf8e97e9e-ad33-441c-b904-071722d57fd0" type="TOC">
+          <item xml:id="id1ca4c466-cac3-4011-8652-5bedf5e27061">1. Bibliografisk beskrivelse <ptr xml:id="id947ce288-660a-4cef-b7b1-1ba95c4da77f" type="chapter" target="#k1" n="585"/> </item>
+          <item xml:id="idd2b3acfe-a81e-4237-b7b3-4af2782006b0">2. Manuskriptbeskrivelse <ptr xml:id="idffb163e8-df5f-4926-8e55-9f47b8ae7f9f" type="chapter" target="#k2" n="588"/> </item>
+          <item xml:id="id6eb8eb7c-1a35-43fa-a07a-4a77cef1a549">3. Tilblivelseshistorie <ptr xml:id="id5e91959b-9e5a-4f90-9055-79da0bd05c6a" type="chapter" target="#k3" n="590"/> </item>
+          <item xml:id="ided0062dd-2ecc-4fd4-baad-eeb67761c90d">4. Udgivelsesmåde <ptr xml:id="id4152b474-ca29-465e-9018-a16abf9163e6" type="chapter" target="#k4" n="591"/> </item>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="id116d912c-a9b8-483b-9169-0813851b0ede">1. Bibliografisk beskrivelse</head>
+          <p xml:id="ida1e477f2-8bfc-4b22-8bac-7ae95bf0e577">»Var det rigtigst nu at 'standse med Klemtningen'?« blev trykt i <hi xml:id="id3a73d13e-c673-491c-aaf4-626e7514b857" rendition="#ita">Fædrelandet,</hi> 16. årgang, nr. 83, onsdag den 11. april 1855. Artiklen er signeret »S. <persName xml:id="id77ea14f8-e0c7-4076-bcd3-3b0c63290902" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>«. <hi xml:id="idaadb9f3d-e0c6-4dd5-af8c-871f1338f57f" rendition="#ita">Fædrelandet</hi> blev udgivet af <persName xml:id="id3b2aa044-7849-4d8d-85f2-11d41c29b85b" key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName xml:id="ida96ef17d-cc7e-45ff-a5d3-317af827e028" key="Ploug, Carl">C. Ploug</persName>; sidstnævnte fungerede også som ansvarlig redaktør. Avisen blev trykt hos <persName xml:id="id36451471-6737-4e12-9c65-a8fea5163076" key="Klein, Louis">Louis Klein</persName> i <placeName xml:id="id5ce8e3db-647b-426f-8fd8-329b27c702dd">København</placeName> og lå færdig fra trykkeriet kl. 20. Prisen var 6 skilling i løssalg, 5 mark pr. måned, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName xml:id="idce095f78-ea9d-45a5-ac45-03d7a9881163">København</placeName>.</p>
+          <p xml:id="id8eb8b410-f365-4d3d-93fc-57e5f1439fea">Artiklen er blevet kollationeret i tre eksemplarer af <hi xml:id="id7bc3013e-88d2-406b-aa98-d39892625e0f" rendition="#ita">Fædrelandet,</hi> nr. 83, den 11. april 1855:</p>
+          <list xml:id="idab72e252-55af-40a2-99bb-e9e0581805a6">
+            <label xml:id="id222856a2-8cbc-497a-9a00-725e78afd2ea">A</label>
+            <item xml:id="id7c8609f9-89e0-4467-bcf0-e3897d7cf69b">SKs eget eksemplar, uindbundet og ubeskåret, KA, D pk. 17.</item>
+            <label xml:id="id31c78bd1-a280-42d7-a437-766d8af527bd">B</label>
+            <item xml:id="idbf633519-e3c2-405c-a294-e227696a548e"><placeName xml:id="id5957dbf8-d9dc-4e22-8a80-73dbd52bd272" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="id66fdb5e4-66f8-4654-ab07-833c5f9742e7"><p xml:id="id024fabf5-e24c-42bc-a2d6-309ff90bf46a">Eksemplar B er indbundet sammen med resten af <hi xml:id="idd8ebcf3e-7353-4136-a339-680d5d794e9e" rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p></note></item>
+            <label xml:id="id01d2795e-b502-4fbc-b694-379e24a59ee8">C</label>
+            <item xml:id="ide8a9f192-0693-48b8-bbbc-ea8c38d2361f"><placeName xml:id="id9a67f308-fb8b-4535-9bf4-abfee87c0cff" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="id60b4ee4b-4a54-490e-87ca-2b8eb283a8cc"><p xml:id="id470ff46c-419b-4743-a396-a39cc71d013c">Eksemplar C er indbundet sammen med resten af <hi xml:id="id67102bb2-ea77-4257-898a-53c61c09b2ca" rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p></note></item>
+          </list>
+          <p xml:id="id5cd67577-eba4-4370-ba45-692fe2aa6146">Ved den interne kollation blev der ikke konstateret afvigelser.<note xml:id="id6c6c4218-cbeb-4261-a79c-ab8cb1f76051"><p xml:id="id31f9c5e0-5f0f-4446-974a-5993215a28c4">Da <hi xml:id="idedb93712-cdbc-4b7b-9e9d-e6f5bf13c3bf" rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes her.</p></note> Eksemplar A danner grundlag for den følgende beskrivelse.</p>
+          <div xml:id="ide1ed191a-68f5-4d1d-942b-e058180d03da" type="level2">
+            <head xml:id="idaca59cb1-2158-48e7-b25c-426990522621"><pb xml:id="ss586" n="586" edRef="#SKS"/>Format og paginering</head>
+            <p xml:id="id1293b5e7-e573-46b4-b45f-30c79afab122">Formatet er folio.<note xml:id="idfbb16e01-6b94-4f2e-8173-29d105e73fb4"><p xml:id="id2940e2ca-3b33-45ed-b551-05a97f1b9c42">Udgangspunktet for formatbetegnelsen er plane helark (ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p></note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet ark. Avisen er trespaltet; hver side opdeles ydermere af en tværgående fed-fin dobbeltskillestreg trykt ca. to tredjedele nede på siden. Pagineringen 341-344 er på forsiden angivet under spalterne, på avisens øvrige sider over. Spalterne er unummereret.<note xml:id="id19ab454f-e301-4d3e-a081-1f9288dcc7d8"><p xml:id="id6ea7e618-aeb9-4b57-b2e7-62886fb7d537">I <ref xml:id="id4acddbc6-39e6-4765-80c8-a3001bc93f9d" target="../RK/txt.xml#ss189" type="publishedWritings" n="189"><hi xml:id="id47e67c9b-bc5f-442a-a3a0-98314c711a2b" rendition="#ita">SKS</hi> 14, 189</ref>-190, angives sidetallet i marginen; de følgende spalteskift angives med en lodret streg i teksten og et suppleret spaltetal i kantet parentes i marginen.</p></note></p>
+            <p xml:id="id20231608-5b2d-4889-9054-156d2a54a3ed" rendition="#ind">»Var det rigtigst nu at 'standse med Klemtningen'?« er placeret på forsidens øverste del (s. 341) og indledes i første spalte; i anden spalte følger »En Efterskrift«, hvorefter artiklen, ligeledes i anden spalte, afsluttes. Derudover indeholder avisen endnu en artikel af SK, nemlig føljetonen<note xml:id="id172ce269-7cd0-428f-94b9-1f2f04fa6d73"><p xml:id="id29239a45-ffce-4367-997f-1c15a7102e85">I ordet »føljeton«s oprindelige betydning, »bilag«, betegnede det artikler vedlagt en avis. Siden brugtes det om artikler på den nederste del af en avisside, dvs. under tværstregen; disse kaldtes føljetoner eller føljetonartikler. Sidenhen udvidedes betydningen til en tekst, der var opdelt og udkom over flere numre af en avis. I <hi xml:id="idc79d7e20-aaab-40d5-882d-7dc493f0af71" rendition="#ita">Fædrelandet,</hi> nr. 83, fra den 11. april 1855 ses to typer føljetoner: Den ene, SKs »Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling«, er placeret nederst på siden; den anden, »Sir Hudson Lowe og Fangenskabet paa St <persName xml:id="id20ec549f-3ea1-4af2-a902-5363c9d15fdd" key="Helena">Helena</persName>. I.«, er placeret nederst på siden og løber over flere numre af avisen.</p></note> »Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling«,<note xml:id="id11ec8521-82d9-44b6-b987-140f7267c9bd"><p xml:id="id16079258-0815-4682-83f9-5b9cb6492995"><ref xml:id="id7a443889-73e9-44a7-98c4-6f9a0b718abc" target="../CK/txt.xml#ss193" type="publishedWritings" n="193"><hi xml:id="idb5e165ac-361f-4896-a6de-967d63bb2b6f" rendition="#ita">SKS</hi> 14, 193</ref>.</p></note> endnu en føljeton, nyheder fra ind- og udland samt annoncer.</p>
+          </div>
+          <div xml:id="idafdf3fef-7718-4a72-981c-71c88d06be8f" type="level2">
+            <head xml:id="id3667ecf6-1520-4738-a5ff-bc8042332ff9">Beskrivelse af eksemplar A</head>
+            <p xml:id="idc0005ed9-c65b-4041-9e94-9d550e700717">Avisen måler ca. 346 × 515 mm.<note xml:id="id4fd269fa-020d-4676-8350-81cb37527ffc"><p xml:id="id21dce181-240a-4f54-934f-e962ebdbfd80">Størrelsen måles som bredde (øverste kant) × højde (venstre kant).</p></note></p>
+            <div xml:id="id376960ec-150d-4d51-88f6-a76a749b379a" type="level3">
+              <head xml:id="id04319db7-37ff-41fd-b972-3df2d3bbcfda"><pb xml:id="ss587" n="587" edRef="#SKS"/>Papir</head>
+              <p xml:id="ide07fff50-2ba8-4a3a-8e51-43d34354d6f2">Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
+            </div>
+            <div xml:id="id3680c1a5-a326-4a77-bd04-4abee56613bd" type="level3">
+              <head xml:id="id78b43edb-7876-43ae-a92c-4986fe4c8482">Typografi</head>
+              <p xml:id="ide887c5e7-e647-4183-bd28-657b0ee56c9d">Det fremherskende skriftsnit i avisen er antikva. Fremhævet tekst er sat med fed eller spatieret skrift.</p>
+              <p xml:id="id17c68041-15cd-422e-8010-efdaab6e2c2a" rendition="#ind">På forsiden findes avisens hoved og datolinje. Hovedet består af et bredt centralfelt og to smalle felter hhv. til venstre og højre herfor. Datolinjen adskiller hovedet fra avisens øvrige tekst.</p>
+              <p xml:id="id2af5d929-9d49-48f9-8bdc-5fae64b8f7ed" rendition="#ind">Det centrale felt har ordlyden:</p>
+              <quote xml:id="idd4ff4df4-33a4-46aa-9349-cc39b5d82d61">
+                <p xml:id="id8f962b17-e5be-4d30-8d77-829087ef2f10"><hi xml:id="iddef35a66-1dbd-44ac-8982-b8e89e62c617" rendition="#bol">Fædrelandet.</hi> | <hi xml:id="iddff7c2a7-9e56-43c5-b8c3-33fe2846b9a3" rendition="#bol"><hi xml:id="ide8d15eba-e9ca-4823-ae28-459916d63511" rendition="#spa">1855.</hi></hi> | Abonnementspris i <placeName xml:id="ida81c0a45-a8e6-442b-9463-99e6ef3342fb" key="København">Kjøbenhavn</placeName> 15 Mk. pr. Qvartal, 5 Mk. pr. Maaned; enkelte Nr. 6 Sk.; udenfor <placeName xml:id="idae591488-e6dc-4274-9053-a2581a6e8696" key="København">Kjøbenhavn</placeName> 3 Rdl. | pr. Qvartal frit i Huset. Hver Søgne-Aften udgaaer et Numer.<note xml:id="idadb2d3ec-683e-43fe-a1ac-25e6f209f370"><p xml:id="id3a48adae-c8b7-495b-80c7-21e3eea5b9b5">Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p></note></p>
+              </quote>
+              <p xml:id="id1a681493-8313-4e57-ad7c-99fcfafbbfac">Det smalle felt til venstre har følgende ordlyd:</p>
+              <quote xml:id="id3a6ee1e3-0688-4419-8909-85ac44b94590">
+                <p xml:id="id88ff9f93-907b-45e1-a79d-2841b1fb8695">Bladets Comptoir, store Kjøb-|magergade Nr. 54, er aabent | hver Søgnedags Formiddag fra | Kl. 11–1.</p>
+              </quote>
+              <p xml:id="idce7f0d86-0e5d-4331-8990-4b31eb1524c5">Det smalle felt til højre:</p>
+              <quote xml:id="idb9029bc0-62f4-4804-9db9-d120ef09d1f7">
+                <p xml:id="iddddbbc4a-e310-4493-81c6-93446d56bc68"><hi xml:id="idee35bbff-9ef9-4bdf-884f-a853e0c0838e" rendition="#bol">Bekjendtgjørelser</hi> | indrykkes mod en Betaling af | 4 Sk. for Petitlinien. Ifølge en | Overenskomst med »<hi xml:id="id1b8b4c11-ed33-47c1-ba90-75afb95ae51b" rendition="#bol">Afton-|bladet</hi>« i <placeName xml:id="id2e148fb3-f980-45a8-ab4e-c496b526fdbb">Stockholm</placeName>, »<hi xml:id="id6379c878-eafe-497f-96d5-781745ee1d40" rendition="#bol">Chri-|stianiaposten</hi>« i <placeName xml:id="id7ea6c0f9-55b9-44f5-bdf3-a34ee65a2f79" key="Oslo">Christiania</placeName> | og »<hi xml:id="id529db385-74c8-423b-bc9d-6b56b41ba50b" rendition="#bol">Handels- och Sjö-|farts-Tidningen</hi>« i Gö-|theborg kunne de ogsaa blive | indførte i disse mod en lignende | Betaling for hvert Blad.</p>
+              </quote>
+              <p xml:id="id563941f0-39a3-4013-a648-8625afdb311a">Derunder er datolinjen placeret, indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Datolinjen har ordlyden:</p>
+              <quote xml:id="id26f3c242-3928-40bc-8031-08d50424651d">
+                <p xml:id="id1845632a-2e86-4c42-8094-1431a36307de">
+                  <hi xml:id="id49fd3ef7-fa18-44f5-8878-05de45a43f42" rendition="#bol">16</hi>
+                  <hi xml:id="id5b59b5dc-edab-4a7f-9403-575dbba5a08c" rendition="#sup">de</hi>
+                  <hi xml:id="id6bea138f-965f-4fd1-b28f-04afeffb7d45" rendition="#bol">Aarg.</hi>
+                  <hi xml:id="id2517bf7c-dd16-452b-a404-728fc1205be1" rendition="#bol">Onsdagen den 11. April.</hi>
+                  <hi xml:id="id756142fa-2937-4c1d-a6d3-b9574f2d0c41" rendition="#bol">Nr. 83.</hi>
+                </p>
+              </quote>
+              <p xml:id="idfa27ba39-29b4-4f5a-a8e4-8350c61919a2">Oplysningen om årgang er venstrestillet, dateringen centreret, og avisnummeret højrestillet.<note xml:id="id0ea579e2-2396-4eb5-a9f0-6c44577e5d93"><p xml:id="idb828b4a2-3ee0-4fdf-9c95-1e84757b8f5a">En uddybende beskrivelse af avishovedet findes i <ref xml:id="id02b6be4a-0239-48d6-98b3-5dbed72e3787" target="../PPM/txr.xml#ss416" type="textCriticalAccount" n="416">tekstredegørelsen til »En Opfordring til mig fra Pastor <persName xml:id="id83e33d76-30bc-4600-9f12-3db217bab0bc" key="Paludan-Müller, Jens">Paludan-Müller</persName>«, s. 416</ref>ff.</p></note></p>
+              <p xml:id="ida18f2d71-eb9f-4aca-923c-570100e2ed2d" rendition="#ind"><pb xml:id="ss588" n="588" edRef="#SKS"/>Nederst i avisens sidste spalte, på avisens øverste del, adskilt fra den foregående notits af en vandret skillestreg i hele spaltens bredde, er trykketidspunktet angivet:</p>
+              <quote xml:id="idb2ab4153-0b60-4878-9cb6-5d3eb98910eb">
+                <p xml:id="idf9a04c0a-72b7-4846-a34d-62b3906bf49f">Færdigt fra Trykkeriet Kl. 8</p>
+              </quote>
+              <p xml:id="id3117fcf9-0e2f-48bd-9766-ae8cfd6872f1">Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående, fed-fin dobbeltskillestreg og har ordlyden:</p>
+              <quote xml:id="id3a38a274-83e4-409c-8f79-58bd6550cf15">
+                <p xml:id="idc6a267e7-42cc-4e3d-8194-bf7b434ca4c1">Udgivere: <hi xml:id="id778ee7be-d69b-44c5-b54b-c5c621b329f9" rendition="#bol"><persName xml:id="id70664ecc-cf30-48d2-a016-d66d56b3ffdc" key="Giødwad, Jens Finsteen">J. F. Giødwad</persName></hi> og <hi xml:id="idc3fa8eeb-6bd1-4ca7-93a6-1ff20ec15c43" rendition="#bol"><persName xml:id="id0458665f-7d27-461a-a723-667fa08a43d8" key="Ploug, Carl">C. Ploug</persName>;</hi> ansvarlig: <hi xml:id="ide8215f9e-0e8a-43f7-966e-3705a092b982" rendition="#bol"><persName xml:id="idda92c89c-acae-4b1a-b3f8-042039de8b00" key="Ploug, Carl">C. Ploug</persName>.</hi> | [Skillestreg] | Trykt med Hurtigpresse hos <hi xml:id="id7d51fd07-6703-4f35-b291-7c6fd028044c" rendition="#spa"><persName xml:id="idd36ed0db-7230-4703-a3fd-8d89ca8425fc" key="Klein, Louis">Louis Klein</persName></hi>.</p>
+              </quote>
+              <p xml:id="ide68f4bbf-286e-4b1c-ad5d-b5ed90e687ed">Artiklens overskrift »Var det rigtigst nu at 'standse med | Klemtningen'?«, der er fed og centreret i spalten, er sat med en punktstørrelse ca. 1 grad større end brødteksten.<note xml:id="id65073757-0d4f-475c-99ad-07a78c688272"><p xml:id="id8a86e97c-9e7f-4312-8d49-73c9e2d88517">Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 10; tekst, der er 1 grad større, er sat med punktstørrelse 12, og 2 grader større med punktstørrelse 14.</p></note> Nedenunder følger datoen »D. 7de April 1855.« og den spatierede signatur »S. <persName xml:id="id4168416f-2b51-4436-85a3-c4ea4e4edb83" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.« indrykket fra hhv. for- og bagkant på samme linje. Derunder er trykt en kort skillestreg.</p>
+              <p xml:id="id00880f96-b48b-48c8-9e09-ca5bbbde7d34" rendition="#ind">Artiklen indledes med en uncial, der er fed og sat med en punktstørrelse ca. 2 grader større end brødteksten. Mellemrubrikken »En Efterskrift.« er sat spatieret og centreret i spalten. Efter artiklen er trykt en længere skillestreg, der afgrænser SKs tekst fra den øvrige tekst i spalten.</p>
+              <p xml:id="id1ff565f7-af90-4e25-a8dd-47dc856ac049" rendition="#ind">Spaltekolumnen måler ca. 88 mm i bredden, og der er op til 52 linjer i hver af artiklens spalter. Mellem spalterne er sat en fed, lodret skillestreg. Brødteksten er sat med en skriftstørrelse svarende til ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum.</p>
+              <p xml:id="id631f7866-15f2-4215-b6ce-bd874a7a76c3">Der er få trykfejl i artiklen. I overskriften ses en type, 'n' i »nu« (<ref xml:id="id1c57b853-6681-438b-8e3c-a3f7b7751eee" target="../RK/txt.xml#ss189" type="publishedWritings" n="189"><hi xml:id="id5c50caf4-26a5-4626-a9bd-aa1f9b7fcb6b" rendition="#ita">SKS</hi> 14, 189</ref>,1), der ikke holder linje. Længere nede i teksten ses aftrykket fra en mellemrumstype, der er blevet skubbet op fra sin plads, resulterende i en svag lodret streg, en såkaldt spis, foran »'ube-|rettiget« (189,55). Derudover skyldes trykfejl let læderede typer.<note xml:id="ide4864d5a-dd6e-47cb-baab-1a863b850bc6"><p xml:id="id7c19820b-5be3-4c86-b338-a04350481dd2">Eksempler på læderede typer: 'd' i »det« (<ref xml:id="id54d6dd1a-1f75-406a-8f27-d5f6c821eae3" target="../RK/txt.xml#ss189" type="publishedWritings" n="189"><hi xml:id="idfbc2984e-e6a1-4009-8496-2d20ac3b46b1" rendition="#ita">SKS</hi> 14, 189</ref>,75 anden forekomst), 'i' i »gaae i« (189,78), 'e' i »er« (190,26) og det andet 'e' i »protegere« (190,40).</p></note></p>
+            </div>
+          </div>
         </div>
-        <div type="level3">
-          <head>Typografi</head>
-          <p>Det fremherskende skriftsnit i avisen er antikva. Fremhævet tekst er sat med fed eller spatieret skrift.</p>
-          <p rendition="#ind">På forsiden findes avisens hoved og datolinje. Hovedet består af et bredt centralfelt og to smalle felter hhv. til venstre og højre herfor. Datolinjen adskiller hovedet fra avisens øvrige tekst.</p>
-          <p rendition="#ind">Det centrale felt har ordlyden:</p>
-          <quote>
-            <p><hi rendition="#bol">Fædrelandet.</hi> | <hi rendition="#bol"><hi rendition="#spa">1855.</hi></hi> | Abonnementspris i <placeName key="København">Kjøbenhavn</placeName> 15 Mk. pr. Qvartal, 5 Mk. pr. Maaned; enkelte Nr. 6 Sk.; udenfor <placeName key="København">Kjøbenhavn</placeName> 3 Rdl. | pr. Qvartal frit i Huset. Hver Søgne-Aften udgaaer et Numer.<note>
-                <p>Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p>
-              </note></p>
+        <div type="level1" xml:id="k2">
+          <head xml:id="idd877117e-3dbe-4cff-8f96-0168825d8cb4"><pb xml:id="ss589" n="589" edRef="#SKS"/>2. Manuskriptbeskrivelse</head>
+          <p xml:id="id0c84d12f-83a9-4302-85fa-66909d07966c">Til »Var det rigtigst nu at 'standse med Klemtningen'?« findes følgende manuskripter i Kierkegaard Arkivet (KA) på
+        <placeName xml:id="id0f05b41b-aa86-4374-8a2d-13d6ccad4c72" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
+          <msDesc xml:id="id76d4482f-a563-441a-b604-8ce3830a2004">
+            <msIdentifier xml:id="idcec71217-86a9-4bf9-8ecb-7a930e9ba117">
+              <collection xml:id="id342b1a0d-da56-42ec-81ed-cec933a02d95">RK</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.1" next="#additional.1">
+              <msIdentifier xml:id="idf97075e6-1695-499e-93d6-3eaf0ae05175">
+                <idno xml:id="id2c6dbc3d-ccdc-4b54-8baa-e6d0488e2b4f">1</idno>
+              </msIdentifier>
+              <physDesc xml:id="id2c6bd912-137a-4e54-be40-1ae021ae3bc4">
+                <p xml:id="idb3028d75-1ee3-46c2-91a1-ccbbd9732ec9">Kladde til »Var det rigtigst nu at 'standse med Klemtningen'?«, fordelt på 1 dobbeltblad og 4 løse blade.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.1.1" next="#additional.1.1">
+                <msIdentifier xml:id="idce5d6073-f62a-419b-bef6-9344ccca7c91">
+                  <idno xml:id="id6142a311-56d1-43db-835b-4922669be9e8">1.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="idf29aab85-3390-47b5-add5-a80426fd52db">
+                  <p xml:id="id33bc8411-7adc-4d93-89b1-0b3905d4db32">Kladde til artiklen (<ref xml:id="id180c8624-6310-4725-8ddf-4ea7533c9954" target="../RK/txt.xml#ss189" type="publishedWritings" n="189"><hi xml:id="id7f3346f0-dd33-483d-9b64-3f24bbfa9510" rendition="#ita">SKS</hi> 14, 189</ref>-190,21).</p>
+                  <p xml:id="id367523d7-7db9-4de0-bb93-3aedeb16de32">2 løse blade og 1 dobbeltblad, i alt 4 blade i 4<hi xml:id="idc9690206-3d67-4dcd-bce1-d3328d8ee9b2" rendition="#sup">o</hi>.<note xml:id="id04d089ba-d3e0-4ec2-ba38-e0b3840cd47f"><p xml:id="id48aa4124-4240-40b7-a098-3e1c2017cc88">Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p></note> De løse blade har afrivningskant i venstre side.</p>
+                  <p xml:id="id6781c4d3-41a3-4e21-a27c-ae74800a7c8d">Ingen paginering.</p>
+                  <p xml:id="id78d5a959-1226-4bfb-afa7-01f283ee7ea3">Papir: gulligt koncept, glat. Mål: 168 × 208 mm.<note xml:id="id6d6dca55-deff-47ae-b043-bd9d29f30d97"><p xml:id="id876d94ab-d0bd-4819-9e29-81e2fb2fbed7">Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p></note></p>
+                  <p xml:id="id9a2c3d62-b5ce-437c-b100-cf0e0e9ee9f0">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladene er efter beskrivning blevet foldet på tværs. Af bl. [1r] er kun halvdelen beskrevet; bl. [1v] og [4v] er ubeskrevet.</p>
+                  <p xml:id="id4c7c482c-1490-4435-a59b-1e7235c84210">På bl. [1r] står artiklens overskrift »Var det rigtigst nu at 'standse med / Klemtningen'?«, hvor anførselstegnene er tilføjet senere med blyant. Under overskriften står dateringen <hi xml:id="iddb3db210-fdf2-4f6d-aab2-2412f822375f" rendition="#ant">»d. 7 April 1855.«</hi> og signaturen <hi xml:id="id16e64584-b634-4913-8268-5b931371afdd" rendition="#ant">»S.K.«</hi>. Bl. [4r] afsluttes: »Anmærkningen fra den Artikel: bør / jeg angribes anonymt / anbringes her som: / En Efterskrift.«.</p>
+                  <p xml:id="id71c2415c-06c7-49b5-b702-1f2a07a03248">Mange korrektioner, både i form af marginaltilføjelser og sletninger. På bl. [2r] er størstedelen af teksten slettet med blækstreger og -løkker eller med vandrette og skrå blyantstreger. På bl. [2v] er flere linjer slettet med blyant, på bl. [3r] enkelte ord. På bl. [3v] og [4r] er et udkast til afslutningen slettet med store kryds, overstregninger og løkker skrevet med blyant. På bl. [1r], [2r], [2v] og [3v] er marginaltilføjelser indvist i teksten med blyanttegn.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.1" prev="#physDesc.1.1">
+                <msIdentifier xml:id="id099fd6f3-b619-41a3-aa69-9d1647872cda">
+                  <idno xml:id="ide559089a-3549-4ff1-b33e-ad55454d2bdc">1.1</idno>
+                </msIdentifier>
+                <additional xml:id="idc1bcd7cb-085c-4a8b-b5b4-d337b7f575d0">
+                  <adminInfo xml:id="id15794feb-1bea-463f-a5d1-6c139f4411f1">
+                    <note xml:id="id23ae4dc2-0819-46d9-86ab-1134343bc53a">
+                      <p xml:id="id6183fe82-b3fa-4c99-b487-1851f72557b9">(KA, B pk. 52, læg 1; <hi xml:id="id393e9986-c7b9-40df-b50f-73b37437a812" rendition="#ita">Pap.</hi> XI 3 B 229)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.2" next="#additional.1.2">
+                <msIdentifier xml:id="ide2f82c43-3f9b-446c-826c-184d8a278f71">
+                  <idno xml:id="ide89637d4-f803-4694-aec6-f4eb44d244bd">1.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="id71fcb875-b3a6-4fc5-8949-f67493f55ecb">
+                  <p xml:id="id915f3f76-22d7-48e2-a40a-e45d89c44f0e"><pb xml:id="ss590" n="590" edRef="#SKS"/>Kladde, der bl.a. indeholder artiklens efterskrift (<ref xml:id="id617c59e2-ff3c-4734-9e4e-c33204e3ff3a" target="../RK/txt.xml#ss190" type="publishedWritings" n="190"><hi xml:id="idb74cde45-bd86-4ccb-bf77-8e338acdccdd" rendition="#ita">SKS</hi> 14, 190</ref>,22-41), men ellers er ubenyttet.</p>
+                  <p xml:id="id5fa70c39-2540-47cd-b054-f379299bad64">2 løse blade i 4<hi xml:id="id180c2f3a-f7aa-409d-8b16-d5f4685aaf26" rendition="#sup">o</hi> med afrivningskant i venstre side. Spor af sammenhæftning.</p>
+                  <p xml:id="id2af6ed24-168c-438c-bab7-01f7536f49fb">Paginering: Bl. [1r]-[2r] er litreret fra a til c, muligvis af SK; bl. [2v] er ikke litreret.</p>
+                  <p xml:id="id0b829599-b128-4ad5-84fa-99d863eca9da">Papir: gulligt koncept, glat. Mål: 169 × 207 mm.</p>
+                  <p xml:id="id1aa56bd9-9902-422c-9db1-ce5660db8199">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser.</p>
+                  <p xml:id="id694e9beb-80a3-42a4-b659-29a18f1f14d9">På side a findes tre udkast til en overskrift: først »
+                    <del xml:id="id283eb0cf-7c0a-434d-8d97-f26d38973712" rendition="#lth">I Anledning af en anonym Opfordring til mig i dette Blad N<hi xml:id="id56573dc0-335a-4881-9275-348ad6ee4bd3" rendition="#sup">o</hi></del>« (blyantsletning), derefter »<del xml:id="id963d5a6b-0ef5-4a09-973f-2a9953fe3424" rendition="#lth">Bør jeg angribes anonymt?</del>« (blyantsletning) og endelig »Om anonyme Angreb paa mig«. Derunder står dateringen <hi xml:id="id4c4857dc-73e6-412b-8fe7-21de5dedb640" rendition="#ant">»d. <del xml:id="idd263def1-4c97-40d4-b242-f804a91d5a83" rendition="#lth">4</del>
+                    <del xml:id="id8b0ce7e2-6f18-45c6-8601-d08cb26f11c5" rendition="#lth">8</del> 7 April 1855.«</hi>, hvor <hi xml:id="id2d01d82c-61d8-4154-8148-a0c990fd25f9" rendition="#ant">»8«</hi> er slettet og <hi xml:id="id8179ac70-9bce-4302-9358-a0b9dd49a327" rendition="#ant">»7«</hi> skrevet med blyant, samt signaturen <hi xml:id="id1605ad8e-d95c-40f3-aaf2-da1ce5a56d58" rendition="#ant">»S.K.«</hi>. Side c afsluttes: »<del xml:id="id369c0603-528e-4f62-a771-f5b52cf9ce6a" rendition="#lth">Anmærkningen bliver: / En Efterskrift.</del>«, og et <hi xml:id="id3d106c56-6cfe-4878-b2a2-ec8bd3b7fb86" rendition="#ant">»<del xml:id="id14742ea0-93dd-42bb-8481-f1b8b6efe1a0" rendition="#lth">NB</del>«</hi>, skrevet med rødkridt og overstreget med blyant, indviser en anmærkning, der er skrevet i marginen på side b-c, også overstreget med blyant.</p>
+                  <p xml:id="id4fb785c2-afa1-4f77-98d2-e6e1fd780850">En del korrektioner i form af marginaltilføjelser og sletninger. På side a er en passage i marginen, der er indvist med et blyantskrevet dobbeltkors, igen overstreget med store blyantløkker; det samme er dobbeltkorset i hovedteksten. På side b er store dele af teksten slettet med blyant, enten med kryds, vandrette eller skrå streger. De nederste linjer på side c er ligeledes slettet med skrå blyantstreger, herunder den omtalte henvisning til efterskriften i marginen. Endelig er hele teksten på bl. [2v] slettet med et stort blyantkryds.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.2" prev="#physDesc.1.2">
+                <msIdentifier xml:id="id116b7524-6554-45b9-b0a0-92ec5d9023be">
+                  <idno xml:id="idbfaf5b14-fc44-495c-a1ca-ba0448e9e30d">1.2</idno>
+                </msIdentifier>
+                <additional xml:id="idfe701cd5-174d-48c0-8022-3fbaef521009">
+                  <adminInfo xml:id="id859bb14c-3cf6-4e64-b75d-afcbfbebf7ef">
+                    <note xml:id="id24006f74-048d-4377-a083-80ed0fd21afb">
+                      <p xml:id="idc927b8f5-43ac-4d03-b6d6-dee021daf862">(<hi xml:id="id17ddc1d8-3e92-4a34-86b1-b433da0631be" rendition="#ita">L-fort. + B-fort.</hi> 231; KA, B pk 51, læg 2[1]; <hi xml:id="id6b82e20c-d11f-4965-9ef0-a04959c364e1" rendition="#ita">Pap.</hi> XI 3 B 117-118)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.1" prev="#physDesc.1">
+              <msIdentifier xml:id="ida24e1f99-566a-4cd7-b212-949944be12b1">
+                <idno xml:id="id5021560e-183b-4a55-b1bf-e225bc51851b">1</idno>
+              </msIdentifier>
+              <additional xml:id="id679b8fdb-f6e7-4864-8f83-adf1397e403b">
+                <adminInfo xml:id="id70999d3d-d43d-4718-8e0b-dc253f818529">
+                  <note xml:id="idf117118e-31d3-4a24-891e-c44d88bbf165">
+                    <p xml:id="id0957bdd4-4bea-4662-9174-18267c954fda">(<hi xml:id="id071b297a-d732-43da-bc06-af6b7a3a6306" rendition="#ita">L-fort. + B-fort.</hi> 231; KA, B pk. 51, læg 2[1], og B pk. 52, læg 1; <hi xml:id="id44e162e1-8384-4867-a3eb-ae842d3b1f2e" rendition="#ita">Pap.</hi> XI 3 B 117-118 + 229)<note xml:id="idb72bb9b1-de9b-4d09-914e-f37c38d1639c"><p xml:id="id12ecb876-6479-482a-aa3c-f4c1bffc0ee5">I KA, B pk. 52, læg 1, findes et omslag, som ikke beskrives af <hi xml:id="idac7176c5-d581-4b79-90c9-06972aaa2a3f" rendition="#ita">Pap.,</hi> men som <hi xml:id="id9a4f895a-412a-4151-ac04-aba0a4ecf0a8" rendition="#ita">Pap.</hi> har mærket »[XI 3 B 229]«. Omslaget er et stykke groft, blåt konceptpapir, der er foldet til konvolut og bærer påskrifterne »<hi xml:id="id7e8caf39-2b49-45fd-be4c-b9b972451323" rendition="#ita">14</hi>«, skrevet med rødkridt, formentlig af <persName xml:id="ide396d790-cca5-43dd-bfa6-dfd21b3516a1" key="Lund, Henrik">H. Lund</persName>, og »<hi xml:id="id7ae231a5-e2df-47c3-be8e-5a490988dae3" rendition="#spa">7/4 1855</hi> / 'Fædrel.' 11/4. 55: / <hi xml:id="id28ca5e62-bb43-45d6-8273-15558a6cdffb" rendition="#spa">'Var det rigtigst nu at standse med</hi> / <hi xml:id="id9ed8f698-bb9a-47c1-830e-bd086f103bf2" rendition="#spa">Klemtningen?'</hi> / <hi xml:id="idcc6e8046-ef05-49e5-97e4-c15b949bd048" rendition="#spa">Første Udkast</hi>«, formentlig skrevet af <persName xml:id="id0b188d52-c313-438c-9da3-b29ea5816f0d" key="Barfod, Hans Peter">H.P. Barfod</persName>.</p></note></p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+        </div>
+        <div type="level1" xml:id="k3">
+          <head xml:id="ide25f9b0e-f3c0-4c97-9d9e-ef1fff4f416c"><pb xml:id="ss591" n="591" edRef="#SKS"/>3. Tilblivelseshistorie</head>
+          <p xml:id="id1fa71017-258b-48b1-bf23-849bcdd0e3aa">Artiklen »Var det rigtigst nu at 'standse med Klemtningen'?« er ligesom »I Anledning af et anonymt Forslag til mig i dette Blads Nr. 79« (<ref xml:id="idc194a28c-953b-4ce5-9b49-6b6f2da1ada2" target="../AF/txt.xml#ss185" type="publishedWritings" n="185"><hi xml:id="id6ff4f39e-97ab-4abf-8b43-8ffdb0e1d46b" rendition="#ita">SKS</hi> 14, 185</ref>) en reaktion på artiklen »Forslag til Hr. Dr. <persName xml:id="idbba44baf-7598-420e-b1d5-18ffed47ecdc" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>«, trykt i <hi xml:id="idb81c01b0-8e82-44f0-a458-bfe0baeb3e1c" rendition="#ita">Fædrelandet,</hi> nr. 79, den 3. april 1855, og signeret »N-n.«.<note xml:id="id6e88cd5d-7861-42d2-a542-5d8a49061e71"><p xml:id="id3ad87205-47b4-45b0-9d23-c919280733ec">Trykt i <hi xml:id="idefba142d-a55c-431a-8875-9b81961a082b" rendition="#ita">Bl.art.,</hi> s. 256-259. Artiklen er også gengivet i kommentaren til »I Anledning af et anonymt Forslag til mig i dette Blads Nr. 79« 185,<hi xml:id="ide9eafecc-33ab-426f-9723-27f7853ebf65" rendition="#size-1">1</hi>.</p></note> Den anonyme forfatter skriver om SKs hidtidige indlæg i kirkestriden:<note xml:id="id7684cc00-a531-40ae-8c73-55266959a8c7"><p xml:id="idb03cde30-4bb4-4a8f-89a3-a47d5fa8a2f2">Alle tre indlæg skriver sig ind i kirkestriden; en strid, hvortil SK bidrog med 21 artikler i <hi xml:id="id318fdfba-21be-450c-abf3-da3910ef07d7" rendition="#ita">Fædrelandet</hi> (fra den 18. dec. 1854 til den 26. maj 1855) og derpå med tidsskriftet <hi xml:id="id0cd74ff5-dbe9-44c6-8dfe-a30258058089" rendition="#ita">Øieblikket</hi> (se <hi xml:id="id30b617f9-05bd-4b59-8712-8081e970319d" rendition="#ita">SKS</hi> 13).</p></note></p>
+          <quote xml:id="id1260bea0-2110-45ae-aeac-11c6094aea70">
+            <p xml:id="id39537649-71d4-4205-80bc-131a59963898">Thi Alting har sin Tid, og maa derfor have sin Ende. Er der Tid til at klemte og raabe Brand, saa maa Tiden ogsaa komme til at tage fat paa Slukningsarbeidet; er der Tid til at rive ned, saa maa der komme en Tid til atter at bygge op. Ogsaa <hi xml:id="id1461a4aa-590a-4cb1-a3da-59e401b93093" rendition="#ant">Dr.</hi>
+          <persName xml:id="id572e326f-1eff-4348-86ac-444a7a06eedc" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>s Opraab maatte man troe, skulde være Indledning til noget Mere. Men til Dato er det ikke blevet til Mere: fra Tid til Tid den samme Klemtning, det samme Anskrig!<note xml:id="id7e784e98-c026-4745-8e3e-66f6d91cee65"><p xml:id="idf91934d9-e1ae-4b9b-9b12-6e30b6e7a6e9"><hi xml:id="id3db14e69-7791-476d-9c4b-654e8679f337" rendition="#ita">Bl.art.,</hi> s. 256.</p></note></p>
           </quote>
-          <p>Det smalle felt til venstre har følgende ordlyd:</p>
-          <quote>
-            <p>Bladets Comptoir, store Kjøb-|magergade Nr. 54, er aabent | hver Søgnedags Formiddag fra | Kl. 11–1.</p>
-          </quote>
-          <p>Det smalle felt til højre:</p>
-          <quote>
-            <p><hi rendition="#bol">Bekjendtgjørelser</hi> | indrykkes mod en Betaling af | 4 Sk. for Petitlinien. Ifølge en | Overenskomst med »<hi rendition="#bol">Afton-|bladet</hi>« i <placeName>Stockholm</placeName>, »<hi rendition="#bol">Chri-|stianiaposten</hi>« i <placeName key="Oslo">Christiania</placeName> | og »<hi rendition="#bol">Handels- och Sjö-|farts-Tidningen</hi>« i Gö-|theborg kunne de ogsaa blive | indførte i disse mod en lignende | Betaling for hvert Blad.</p>
-          </quote>
-          <p>Derunder er datolinjen placeret, indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Datolinjen har ordlyden:</p>
-          <quote>
-            <p><hi rendition="#bol">16</hi><hi rendition="#sup">de</hi> <hi rendition="#bol">Aarg.</hi> <hi rendition="#bol">Onsdagen den 11. April.</hi>
-              <hi rendition="#bol">Nr. 83.</hi></p>
-          </quote>
-          <p>Oplysningen om årgang er venstrestillet, dateringen centreret, og avisnummeret højrestillet.<note> <p>En uddybende beskrivelse af avishovedet findes i <ref target="../PPM/txr.xml#ss416" type="textCriticalAccount" n="416">tekstredegørelsen til »En Opfordring til mig fra Pastor <persName key="Paludan-Müller, Jens">Paludan-Müller</persName>«, s. 416</ref>ff.</p> </note></p>
-          <p rendition="#ind"><pb xml:id="ss588" n="588" edRef="#SKS"/>Nederst i avisens sidste spalte, på avisens øverste del, adskilt fra den foregående notits af en vandret skillestreg i hele spaltens bredde, er trykketidspunktet angivet:</p>
-          <quote>
-            <p>Færdigt fra Trykkeriet Kl. 8</p>
-          </quote>
-          <p>Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående, fed-fin dobbeltskillestreg og har ordlyden:</p>
-          <quote>
-            <p>Udgivere: <hi rendition="#bol"><persName key="Giødwad, Jens Finsteen">J. F. Giødwad</persName></hi> og <hi rendition="#bol"><persName key="Ploug, Carl">C. Ploug</persName>;</hi> ansvarlig: <hi rendition="#bol"><persName key="Ploug, Carl">C. Ploug</persName>.</hi> | [Skillestreg] | Trykt med Hurtigpresse hos <hi rendition="#spa"><persName key="Klein, Louis">Louis Klein</persName></hi>.</p>
-          </quote>
-          <p>Artiklens overskrift »Var det rigtigst nu at 'standse med | Klemtningen'?«, der er fed og centreret i spalten, er sat med en punktstørrelse ca. 1 grad større end brødteksten.<note>
-              <p>Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 10; tekst, der er 1 grad større, er sat med punktstørrelse 12, og 2 grader større med punktstørrelse 14.</p>
-            </note> Nedenunder følger datoen »D. 7de April 1855.« og den spatierede signatur »S. <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.« indrykket fra hhv. for- og bagkant på samme linje. Derunder er trykt en kort skillestreg.</p>
-          <p rendition="#ind">Artiklen indledes med en uncial, der er fed og sat med en punktstørrelse ca. 2 grader større end brødteksten. Mellemrubrikken »En Efterskrift.« er sat spatieret og centreret i spalten. Efter artiklen er trykt en længere skillestreg, der afgrænser SKs tekst fra den øvrige tekst i spalten.</p>
-          <p rendition="#ind">Spaltekolumnen måler ca. 88 mm i bredden, og der er op til 52 linjer i hver af artiklens spalter. Mellem spalterne er sat en fed, lodret skillestreg. Brødteksten er sat med en skriftstørrelse svarende til ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum.</p>
-          <p>Der er få trykfejl i artiklen. I overskriften ses en type, 'n' i »nu« (<ref target="../RK/txt.xml#ss189" type="publishedWritings" n="189"><hi rendition="#ita">SKS</hi> 14, 189</ref>,1), der ikke holder linje. Længere nede i teksten ses aftrykket fra en mellemrumstype, der er blevet skubbet op fra sin plads, resulterende i en svag lodret streg, en såkaldt spis, foran »'ube-|rettiget« (189,55). Derudover skyldes trykfejl let læderede typer.<note> <p>Eksempler på læderede typer: 'd' i »det« (<ref target="../RK/txt.xml#ss189" type="publishedWritings" n="189"><hi rendition="#ita">SKS</hi> 14, 189</ref>,75 anden forekomst), 'i' i »gaae i« (189,78), 'e' i »er« (190,26) og det andet 'e' i »protegere« (190,40).</p>
-            </note></p>
+          <p xml:id="id9cf4f298-9198-4948-b200-ccb40b373c91">SK svarer igen med »Var det rigtigst nu at 'standse med Klemtningen'?«, dateret den 7. april og trykt den 11. april 1855.</p>
+          <p xml:id="idd9768064-f048-49f6-bc7d-d4929ede3117" rendition="#ind">Artiklens efterskrift er hentet fra en anden, i øvrigt ubenyttet artikel (ms. 1.2). Formentlig skrev SK først denne ubenyttede artikel som reaktion på det anonyme indlæg, med kritisk fokus på det at ville debattere anonymt; manuskriptet er dateret <hi xml:id="idecfd4423-ce73-4b59-a2a4-e33222569072" rendition="#ant">»d. <del xml:id="id9f1e47fe-dace-4249-9dee-41532d470e32" rendition="#lth">4</del>
+        <del xml:id="id66d425da-f0b2-484f-85b7-8c601e5b697f" rendition="#lth">8</del> 7 April 1855«</hi>. Umiddelbart herefter valgte SK imidlertid at henlægge artiklen og i stedet skrive en kortere tekst, hvor fokus er på hans bidrag til kirkestriden. Denne tekst blev trykt som »I Anledning af et anonymt Forslag til mig i dette Blads Nr. 79«, dateret den 4. april og trykt den 7. april 1855. Et par dage efter valgte SK så alligevel at bruge efterskriften fra den henlagte artikel til artiklen »Var det rigtigst nu at 'standse med Klemtningen'?«, mens resten af manuskriptet forblev ubenyttet.</p>
+          <p xml:id="id5e8eeb10-7b05-4053-ac52-edd7a57744e9" rendition="#ind">Der foreligger ingen renskrift (trykmanuskript) til artiklen.</p>
+        </div>
+        <div type="level1" xml:id="k4">
+          <head xml:id="ideca7e6e6-5067-47d7-8852-b4b304bb94fd"><pb xml:id="ss592" n="592" edRef="#SKS"/>4. Udgivelsesmåde</head>
+          <p xml:id="id54a1bb4e-483e-43a7-aae2-6e9099542c7d">»Var det rigtigst nu at 'standse med Klemtningen'?« blev som nævnt trykt i <hi xml:id="iddd907b13-f31f-4749-8da0-3ec28d62905e" rendition="#ita">Fædrelandet</hi>.<note xml:id="iddd78b0c1-b709-4bbc-9524-df01e63f8f57"><p xml:id="idc3ee0a5f-4a66-4a1c-acee-aaef53e11024">En nærmere redegørelse for <hi xml:id="iddc5744b6-3a70-42b0-92bc-80d1e8ec7d88" rendition="#ita">Fædrelandets</hi> redaktionelle forhold, periodicitet og oplagstal findes i <ref xml:id="ided4f07ae-e139-4573-8351-4f0e3e5a8cdd" target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til »Aabenbart Skriftemaal«, s. 112</ref>f.</p></note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
+          <p xml:id="id85433d90-c2f9-4632-b5a9-034627bc8243" rendition="#ind">Dele af artiklen blev frit oversat til svensk allerede i SKs levetid; bogen <hi xml:id="id8ec127ae-379f-4b89-980b-61bee7879b75" rendition="#ita">Den officiella kristendomen är icke det nya testamentets kristendom. Framställning af dr. <persName xml:id="ida07bb969-9940-456d-942c-35a98264d46b" key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>'s polemik mot statskyrkan i <placeName xml:id="id41acd818-6272-43ce-afa8-c396fec5ee85">Danmark</placeName>,</hi> hvori de fleste af SKs artikler fra kirkestriden er blevet oversat i uddrag, udkom i <placeName xml:id="id796c6486-db7d-4ff9-bad9-1ba3d39ba307">København</placeName> i 1855.<note xml:id="id694fa7eb-a8f3-4454-8bfd-a5e51b338ae9"><p xml:id="idc068c39b-c442-4c01-91c1-ca01c04daa6a">Et dedikationseksemplar fastslår, at det var den svenske journalist <persName xml:id="id2c859ac9-fc6f-4524-b229-852e94ea490a" key="Sturzen-Becker, O.P.">O.P. Sturzen-Becker</persName>, på det tidspunkt bosiddende i <placeName xml:id="id50822824-6d17-4a1f-9f6e-88c666b1fba9">København</placeName>, der anonymt udgav bogen. Dedikationseksemplaret findes på Kungl. biblioteket i <placeName xml:id="id9d310210-1b9e-4d93-bf34-8877c909a2b4">Stockholm</placeName> med signaturen Rar. 726. Eksemplaret var ikke blandt SKs efterladte bøger, og det formodes derfor, at SK har sendt det retur til forfatteren, jf. <persName xml:id="id29fd24f3-0bda-42da-9ddf-f8c5cd943b92" key="Kabell, Aage">Aage Kabell</persName>
+          <hi xml:id="iddc62e79c-846d-477c-8a5f-c3efe48b230b" rendition="#ita">Kierkegaardstudiet i <placeName xml:id="idfcf21d61-715f-47f8-a9b1-159839a325f3">Norden</placeName>,</hi> <placeName xml:id="idbf7e59e1-3823-41d0-82af-9bc6e59a566f" key="København">Kbh.</placeName> 1948, s. 73.</p></note> De fragmentariske oversættelser strækker sig til og med artiklen »Et Resultat«, trykt i <hi xml:id="id4a3f31fe-ae33-443e-80ee-b542cb06bf1c" rendition="#ita">Fædrelandet,</hi> nr. 107, den 10. maj 1855; den anonyme redaktør har sandsynligvis antaget, at SK under denne overskrift afsluttede sit angreb på kirken, og har herefter ladet bogen trykke.</p>
+          <p xml:id="ide678f38a-2feb-4cd6-8125-154f9894edda" rendition="#ind">Af stor betydning for receptionen i SKs umiddelbare eftertid var <persName xml:id="idfa06dbfb-1ece-47f9-b346-b6b25ac481bb" key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi xml:id="id452fec79-dbf8-4a08-b5c9-4d07db95b710" rendition="#ita"><persName xml:id="idaea447ef-d0d9-4488-89c3-9fb0d0797510" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 (<hi xml:id="id488e49d1-2258-429e-bba0-fdee8cd7dcdc" rendition="#ita">Bl.art.</hi>). Heri indgår størstedelen af SKs artikler, også »Var det rigtigst nu at 'standse med Klemtningen'?«.<note xml:id="id31405493-23ea-455e-bc2e-de7f9bf0bb0e"><p xml:id="id074f9b56-5cba-40b7-82ad-20973894ad20">Artiklen er trykt i <hi xml:id="idf1f03885-9ebe-4769-9090-531724e65f2f" rendition="#ita">Bl.art.,</hi> s. 105-107. SK havde selv planer om, men fik ikke realiseret, en samlet udgivelse af kirkestridsartiklerne, jf. <ref xml:id="id12e5d15e-4cea-41b5-8163-afc50544d7fe" type="preparatoryManuscript" n="pap:XI3B128-135"><hi xml:id="idea8d4191-4731-4844-b0d6-de9f3a6fec94" rendition="#ita">Pap.</hi> XI 3 B 128-135</ref>.</p></note></p>
         </div>
       </div>
-    </div>
-    <div type="level1" xml:id="k2">
-      <head><pb xml:id="ss589" n="589" edRef="#SKS"/>2. Manuskriptbeskrivelse</head>
-      <p>Til »Var det rigtigst nu at 'standse med Klemtningen'?« findes følgende manuskripter i Kierkegaard Arkivet (KA) på
-        <placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
-      <msDesc><msIdentifier><collection>RK</collection></msIdentifier>
-        <msPart xml:id="physDesc.1" next="#additional.1"><msIdentifier><idno>1</idno></msIdentifier><physDesc><p>Kladde til »Var det rigtigst nu at 'standse med Klemtningen'?«, fordelt på 1 dobbeltblad og 4 løse blade.</p></physDesc>
-              <msPart xml:id="physDesc.1.1" next="#additional.1.1"><msIdentifier><idno>1.1</idno></msIdentifier><physDesc><p>Kladde til artiklen (<ref target="../RK/txt.xml#ss189" type="publishedWritings" n="189"><hi rendition="#ita">SKS</hi> 14, 189</ref>-190,21).</p><p>2 løse blade og 1 dobbeltblad, i alt 4 blade i 4<hi rendition="#sup">o</hi>.<note>
-                      <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p>
-                    </note> De løse blade har afrivningskant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 168 × 208 mm.<note>
-                      <p>Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p>
-                    </note></p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladene er efter beskrivning blevet foldet på tværs. Af bl. [1r] er kun halvdelen beskrevet; bl. [1v] og [4v] er ubeskrevet.</p><p>På bl. [1r] står artiklens overskrift »Var det rigtigst nu at 'standse med / Klemtningen'?«, hvor anførselstegnene er tilføjet senere med blyant. Under overskriften står dateringen <hi rendition="#ant">»d. 7 April 1855.«</hi> og signaturen <hi rendition="#ant">»S.K.«</hi>. Bl. [4r] afsluttes: »Anmærkningen fra den Artikel: bør / jeg angribes anonymt / anbringes her som: / En Efterskrift.«.</p><p>Mange korrektioner, både i form af marginaltilføjelser og sletninger. På bl. [2r] er størstedelen af teksten slettet med blækstreger og -løkker eller med vandrette og skrå blyantstreger. På bl. [2v] er flere linjer slettet med blyant, på bl. [3r] enkelte ord. På bl. [3v] og [4r] er et udkast til afslutningen slettet med store kryds, overstregninger og løkker skrevet med blyant. På bl. [1r], [2r], [2v] og [3v] er marginaltilføjelser indvist i teksten med blyanttegn.</p></physDesc></msPart><msPart xml:id="additional.1.1" prev="#physDesc.1.1"><msIdentifier><idno>1.1</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 52, læg 1; <hi rendition="#ita">Pap.</hi> XI 3 B 229)</p></note></adminInfo></additional></msPart>
-              <msPart xml:id="physDesc.1.2" next="#additional.1.2"><msIdentifier><idno>1.2</idno></msIdentifier><physDesc><p><pb xml:id="ss590" n="590" edRef="#SKS"/>Kladde, der bl.a. indeholder artiklens efterskrift (<ref target="../RK/txt.xml#ss190" type="publishedWritings" n="190"><hi rendition="#ita">SKS</hi> 14, 190</ref>,22-41), men ellers er ubenyttet.</p><p>2 løse blade i 4<hi rendition="#sup">o</hi> med afrivningskant i venstre side. Spor af sammenhæftning.</p><p>Paginering: Bl. [1r]-[2r] er litreret fra a til c, muligvis af SK; bl. [2v] er ikke litreret.</p><p>Papir: gulligt koncept, glat. Mål: 169 × 207 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser.</p><p>På side a findes tre udkast til en overskrift: først »
-                    <del rendition="#lth">I Anledning af en anonym Opfordring til mig i dette Blad N<hi rendition="#sup">o</hi></del>« (blyantsletning), derefter »<del rendition="#lth">Bør jeg angribes anonymt?</del>« (blyantsletning) og endelig »Om anonyme Angreb paa mig«. Derunder står dateringen <hi rendition="#ant">»d. <del rendition="#lth">4</del>
-                    <del rendition="#lth">8</del> 7 April 1855.«</hi>, hvor <hi rendition="#ant">»8«</hi> er slettet og <hi rendition="#ant">»7«</hi> skrevet med blyant, samt signaturen <hi rendition="#ant">»S.K.«</hi>. Side c afsluttes: »<del rendition="#lth">Anmærkningen bliver: / En Efterskrift.</del>«, og et <hi rendition="#ant">»<del rendition="#lth">NB</del>«</hi>, skrevet med rødkridt og overstreget med blyant, indviser en anmærkning, der er skrevet i marginen på side b-c, også overstreget med blyant.</p><p>En del korrektioner i form af marginaltilføjelser og sletninger. På side a er en passage i marginen, der er indvist med et blyantskrevet dobbeltkors, igen overstreget med store blyantløkker; det samme er dobbeltkorset i hovedteksten. På side b er store dele af teksten slettet med blyant, enten med kryds, vandrette eller skrå streger. De nederste linjer på side c er ligeledes slettet med skrå blyantstreger, herunder den omtalte henvisning til efterskriften i marginen. Endelig er hele teksten på bl. [2v] slettet med et stort blyantkryds.</p></physDesc></msPart><msPart xml:id="additional.1.2" prev="#physDesc.1.2"><msIdentifier><idno>1.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort. + B-fort.</hi> 231; KA, B pk 51, læg 2[1]; <hi rendition="#ita">Pap.</hi> XI 3 B 117-118)</p></note></adminInfo></additional></msPart>
-            </msPart><msPart xml:id="additional.1" prev="#physDesc.1"><msIdentifier><idno>1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort. + B-fort.</hi> 231; KA, B pk. 51, læg 2[1], og B pk. 52, læg 1; <hi rendition="#ita">Pap.</hi> XI 3 B 117-118 + 229)<note>
-                <p>I KA, B pk. 52, læg 1, findes et omslag, som ikke beskrives af <hi rendition="#ita">Pap.,</hi> men som <hi rendition="#ita">Pap.</hi> har mærket »[XI 3 B 229]«. Omslaget er et stykke groft, blåt konceptpapir, der er foldet til konvolut og bærer påskrifterne »<hi rendition="#ita">14</hi>«, skrevet med rødkridt, formentlig af <persName key="Lund, Henrik">H. Lund</persName>, og »<hi rendition="#spa">7/4 1855</hi> / 'Fædrel.' 11/4. 55: / <hi rendition="#spa">'Var det rigtigst nu at standse med</hi> / <hi rendition="#spa">Klemtningen?'</hi> / <hi rendition="#spa">Første Udkast</hi>«, formentlig skrevet af <persName key="Barfod, Hans Peter">H.P. Barfod</persName>.</p> </note></p></note></adminInfo></additional></msPart>
-      </msDesc>
-    </div>
-    <div type="level1" xml:id="k3">
-      <head><pb xml:id="ss591" n="591" edRef="#SKS"/>3. Tilblivelseshistorie</head>
-      <p>Artiklen »Var det rigtigst nu at 'standse med Klemtningen'?« er ligesom »I Anledning af et anonymt Forslag til mig i dette Blads Nr. 79« (<ref target="../AF/txt.xml#ss185" type="publishedWritings" n="185"><hi rendition="#ita">SKS</hi> 14, 185</ref>) en reaktion på artiklen »Forslag til Hr. Dr. <persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>«, trykt i <hi rendition="#ita">Fædrelandet,</hi> nr. 79, den 3. april 1855, og signeret »N-n.«.<note>
-          <p>Trykt i <hi rendition="#ita">Bl.art.,</hi> s. 256-259. Artiklen er også gengivet i kommentaren til »I Anledning af et anonymt Forslag til mig i dette Blads Nr. 79« 185,<hi rendition="#size-1">1</hi>.</p> </note> Den anonyme forfatter skriver om SKs hidtidige indlæg i kirkestriden:<note>
-          <p>Alle tre indlæg skriver sig ind i kirkestriden; en strid, hvortil SK bidrog med 21 artikler i <hi rendition="#ita">Fædrelandet</hi> (fra den 18. dec. 1854 til den 26. maj 1855) og derpå med tidsskriftet <hi rendition="#ita">Øieblikket</hi> (se <hi rendition="#ita">SKS</hi> 13).</p>
-        </note></p>
-      <quote>
-        <p>Thi Alting har sin Tid, og maa derfor have sin Ende. Er der Tid til at klemte og raabe Brand, saa maa Tiden ogsaa komme til at tage fat paa Slukningsarbeidet; er der Tid til at rive ned, saa maa der komme en Tid til atter at bygge op. Ogsaa <hi rendition="#ant">Dr.</hi>
-          <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>s Opraab maatte man troe, skulde være Indledning til noget Mere. Men til Dato er det ikke blevet til Mere: fra Tid til Tid den samme Klemtning, det samme Anskrig!<note> <p><hi rendition="#ita">Bl.art.,</hi> s. 256.</p> </note></p>
-      </quote>
-      <p>SK svarer igen med »Var det rigtigst nu at 'standse med Klemtningen'?«, dateret den 7. april og trykt den 11. april 1855.</p>
-      <p rendition="#ind">Artiklens efterskrift er hentet fra en anden, i øvrigt ubenyttet artikel (ms. 1.2). Formentlig skrev SK først denne ubenyttede artikel som reaktion på det anonyme indlæg, med kritisk fokus på det at ville debattere anonymt; manuskriptet er dateret <hi rendition="#ant">»d. <del rendition="#lth">4</del>
-        <del rendition="#lth">8</del> 7 April 1855«</hi>. Umiddelbart herefter valgte SK imidlertid at henlægge artiklen og i stedet skrive en kortere tekst, hvor fokus er på hans bidrag til kirkestriden. Denne tekst blev trykt som »I Anledning af et anonymt Forslag til mig i dette Blads Nr. 79«, dateret den 4. april og trykt den 7. april 1855. Et par dage efter valgte SK så alligevel at bruge efterskriften fra den henlagte artikel til artiklen »Var det rigtigst nu at 'standse med Klemtningen'?«, mens resten af manuskriptet forblev ubenyttet.</p>
-      <p rendition="#ind">Der foreligger ingen renskrift (trykmanuskript) til artiklen.</p>
-    </div>
-    <div type="level1" xml:id="k4">
-      <head><pb xml:id="ss592" n="592" edRef="#SKS"/>4. Udgivelsesmåde</head>
-      <p>»Var det rigtigst nu at 'standse med Klemtningen'?« blev som nævnt trykt i <hi rendition="#ita">Fædrelandet</hi>.<note>
-          <p>En nærmere redegørelse for <hi rendition="#ita">Fædrelandets</hi> redaktionelle forhold, periodicitet og oplagstal findes i <ref target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til »Aabenbart Skriftemaal«, s. 112</ref>f.</p>
-        </note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
-      <p rendition="#ind">Dele af artiklen blev frit oversat til svensk allerede i SKs levetid; bogen <hi rendition="#ita">Den officiella kristendomen är icke det nya testamentets kristendom. Framställning af dr. <persName key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>'s polemik mot statskyrkan i <placeName>Danmark</placeName>,</hi> hvori de fleste af SKs artikler fra kirkestriden er blevet oversat i uddrag, udkom i <placeName>København</placeName> i 1855.<note> <p>Et dedikationseksemplar fastslår, at det var den svenske journalist <persName key="Sturzen-Becker, O.P.">O.P. Sturzen-Becker</persName>, på det tidspunkt bosiddende i <placeName>København</placeName>, der anonymt udgav bogen. Dedikationseksemplaret findes på Kungl. biblioteket i <placeName>Stockholm</placeName> med signaturen Rar. 726. Eksemplaret var ikke blandt SKs efterladte bøger, og det formodes derfor, at SK har sendt det retur til forfatteren, jf. <persName key="Kabell, Aage">Aage Kabell</persName>
-          <hi rendition="#ita">Kierkegaardstudiet i <placeName>Norden</placeName>,</hi> <placeName key="København">Kbh.</placeName> 1948, s. 73.</p> </note> De fragmentariske oversættelser strækker sig til og med artiklen »Et Resultat«, trykt i <hi rendition="#ita">Fædrelandet,</hi> nr. 107, den 10. maj 1855; den anonyme redaktør har sandsynligvis antaget, at SK under denne overskrift afsluttede sit angreb på kirken, og har herefter ladet bogen trykke.</p>
-      <p rendition="#ind">Af stor betydning for receptionen i SKs umiddelbare eftertid var <persName key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi rendition="#ita"><persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 (<hi rendition="#ita">Bl.art.</hi>). Heri indgår størstedelen af SKs artikler, også »Var det rigtigst nu at 'standse med Klemtningen'?«.<note>
-          <p>Artiklen er trykt i <hi rendition="#ita">Bl.art.,</hi> s. 105-107. SK havde selv planer om, men fik ikke realiseret, en samlet udgivelse af kirkestridsartiklerne, jf. <ref type="preparatoryManuscript" n="pap:XI3B128-135"><hi rendition="#ita">Pap.</hi> XI 3 B 128-135</ref>.</p> </note></p>
-    </div>
-  </div></body></text>
+    </body>
+  </text>
 </TEI>

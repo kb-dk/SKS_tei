@@ -1,149 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling</title>
-     
-     <title type="short">CK</title>
-  <author>
-   <name>Lena Wienecke Andersen</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Niels Jørgen Cappelørn</name><name>Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2010</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K14</biblScope>
-     <biblScope unit="file">http://sks.dk/ck/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition><!--spaced out, in SKS rendered italic--><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition xml:id="lineHight1" scheme="css">line-height:150%</rendition><rendition xml:id="lineHight2" scheme="css">line-height:200%</rendition><rendition xml:id="size-1" scheme="css">font-size: 83%</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20120314">txr/XML, <bibl><idno type="version">1.6</idno>, <biblScope unit="file">http://sks.dk/ck/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="ide541a3de-e6ea-4c77-bac6-84bbd770dbb7">
+    <fileDesc xml:id="ide59b4568-3afd-4201-b82b-fe0a6c16d17a">
+      <titleStmt xml:id="idb30d5ae1-2cef-492a-8724-96b9ce658b42">
+        <title xml:id="ida95e4a1c-14f2-4202-b971-6bbc04df4e39" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id75f35880-aee5-4435-af36-4c2ae872b25b">Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling</title>
+        <title xml:id="idb22c6e7d-946b-440d-be2f-834fb01d7a7b" type="short">CK</title>
+        <author xml:id="id9e987559-6ee9-4eb5-941e-b348cadaf293">
+          <name xml:id="id63fcf721-b5b6-4f76-aa3c-d216d1f5dc1b">Lena Wienecke Andersen</name>
+        </author>
+        <editor xml:id="id2c85c3a2-1edf-4307-b640-4de0a54c4afe">
+          <name xml:id="id1cbe09d5-3001-4db2-846d-acede011401c">Niels Jørgen Cappelørn</name>
+          <name xml:id="id83dff204-dc00-4a6b-9502-d2fd85dfc098">Joakim Garff</name>
+          <name xml:id="idc5972d75-56bd-47b6-983d-850ebea972b0">Johnny Kondrup</name>
+          <name xml:id="id939a284f-3235-40ba-acac-ce96f9d29c3b">Tonny Aagaard Olesen</name>
+          <name xml:id="id6f02c87d-f01e-48f9-9764-2649d427aa3e">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="idf81e3def-0fe1-4caf-8dad-fe4926b2beec">
+          <resp xml:id="idbcf82c06-0a8f-4c95-8ac7-f23b079f0c9d">redigeret af</resp>
+          <name xml:id="id6da29ead-45ed-48c5-b02b-aac1c2107469">Niels Jørgen Cappelørn</name>
+          <name xml:id="id4d345170-4e81-4de5-861d-2bb2a5b6bf8c">Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="id74647619-38e0-41e2-a8e9-83456d0b1dc3">
+          <resp xml:id="iddf4cb198-696b-4b3d-b321-b5914419953d">elektronisk redigeret af</resp>
+          <name xml:id="id569fcc74-ff30-48ef-9eae-76d452cbd930">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id88cda06b-fdf4-48aa-93a0-6b559b0605a1">
+        <authority xml:id="id78ff8361-8dfc-41d2-9eaa-fd2ad3c948f5">Søren Kierkegaard Forskningscenteret 2010</authority>
+        <availability xml:id="id7819e698-c81d-4ed4-9943-75215ba30f86" status="restricted">
+          <p xml:id="idc26950bb-185d-453f-a07d-587cd4de3f41">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id15d6dbd1-8719-4b25-bd51-345646ad54e4">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="iddb9c62d0-7e01-451b-ae0b-ee181e444a9c" unit="volume">K14</biblScope>
+        <biblScope xml:id="id93a9171e-4a09-45fd-9ca6-7832d168d060" unit="file">http://sks.dk/ck/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="idd8e50157-7592-48f5-8820-daaacbd3ad54">
+        <bibl xml:id="idabb9b572-15f5-4142-847f-46aa4a972a38" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="idf3d94ba6-f931-442c-b89a-042dcb265fa6">
+      <tagsDecl xml:id="idbd4f2073-0f9a-423f-b33f-713e4c6b94b2">
+        <rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition>
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition xml:id="lineHight1" scheme="css">line-height:150%</rendition>
+        <rendition xml:id="lineHight2" scheme="css">line-height:200%</rendition>
+        <rendition xml:id="size-1" scheme="css">font-size: 83%</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="idaca3a21f-7c95-4c88-b07b-ff64b4d09d19">
+      <change xml:id="id3c9d9aa6-6e34-459d-a713-9a64e375f52f">Transformed to TEI by style sheet <bibl xml:id="idfb69e4d3-2914-4550-9c69-72876948998b" type="file">txr2tei.xsl</bibl> version as of <date xml:id="id1ac3f64c-601d-46d8-86e4-81ed7b79f741">2017-02-15</date> importing <bibl xml:id="id6a38a962-30c2-433f-a665-14c5935224e2" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="idc54065a9-2a8b-4b94-9467-5cae2befd6ed">Transformed to TEI by style sheet <bibl xml:id="idf64b9c29-8da5-444f-aa4c-f7ac6404300a" type="file">kn12tei.xsl</bibl> version <idno xml:id="id3e79f4f6-8847-4950-85bb-2e318bcf98d0" type="version">1.9</idno> as of <date xml:id="idd67b5db1-d8ea-49e0-a09c-e0d1f49944ef">2017-02-21</date> by <name xml:id="idf6cd029a-5876-444c-974c-e78eee50de8d">Karsten Kynde</name>, <orgName xml:id="idbacf5eff-39a3-4961-98a5-01f868f96ff3">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="id185b8037-a045-47fd-b420-3e7719c94a62">København</placeName></change>
+      <change xml:id="id3ed469fe-186f-4a90-9bd4-76f0250305e4" when="20120314">txr/XML, <bibl xml:id="id418bdf80-5bd5-42b4-bc0c-d04dc15ea61b"><idno xml:id="id70b79563-cad9-4f42-9c37-7ee21edf8440" type="version">1.6</idno>, <biblScope xml:id="ide7c25c07-b962-4e09-87f8-d178eee8b21a" unit="file">http://sks.dk/ck/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="TextCriticalAccount" subtype="publishedWritings"><body><div><head type="topText" n="Tekstredegørelse"/>
-  <head><pb xml:id="ss601" n="601" edRef="#SKS"/>Tekstredegørelse</head>
-  <list type="TOC"> 
-   <item>1. Bibliografisk beskrivelse
-    <ptr type="chapter" target="#k1" n="601"/>
+  <text xml:id="idf523c6e0-2bbc-4db9-8214-96495d79d928" type="TextCriticalAccount" subtype="publishedWritings">
+    <body xml:id="id8c410ddd-acb8-485a-a0da-b66120444eb2">
+      <div xml:id="id6bd0a6e5-2d41-4c49-ad2e-c09e19c31c17">
+        <head xml:id="id318771d2-6db6-4bd9-9a45-f35c3bf50696" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="id0ae49240-de67-4331-889b-28370e02c8a0"><pb xml:id="ss601" n="601" edRef="#SKS"/>Tekstredegørelse</head>
+        <list xml:id="id5d084876-0005-47da-8b22-d4421c78a880" type="TOC">
+          <item xml:id="id53a918d6-5666-428d-9385-0735444e8240">1. Bibliografisk beskrivelse
+    <ptr xml:id="id0a0b779e-b9d0-4b7e-b9aa-70fba6fff6a2" type="chapter" target="#k1" n="601"/>
    </item>
-   <item>2. Manuskriptbeskrivelse
-    <ptr type="chapter" target="#k2" n="604"/>
+          <item xml:id="id99065dfc-35a5-4b6b-ac4e-0f89537b5eed">2. Manuskriptbeskrivelse
+    <ptr xml:id="id83832cd3-035b-4f82-aedc-88c4eaa43d77" type="chapter" target="#k2" n="604"/>
    </item>
-   <item>3. Tilblivelseshistorie
-    <ptr type="chapter" target="#k3" n="605"/>
+          <item xml:id="ida760c77c-c716-4176-bcb0-ddbf499018fc">3. Tilblivelseshistorie
+    <ptr xml:id="id3de191a7-6c74-4b42-a9b0-9992f181d8b8" type="chapter" target="#k3" n="605"/>
    </item>
-   <item>4. Udgivelsesmåde
-    <ptr type="chapter" target="#k4" n="606"/>
+          <item xml:id="id37a817bf-f3c2-4ceb-8e59-b876688c3bb0">4. Udgivelsesmåde
+    <ptr xml:id="id61a545fb-0fac-45e2-b5a6-c2415b7fb3ff" type="chapter" target="#k4" n="606"/>
    </item>
-  </list>
-  <div type="level1" xml:id="k1">
-   <head>1. Bibliografisk beskrivelse</head>
-   <p>»Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling« blev trykt i <hi rendition="#ita">Fædrelandet,</hi> 16. årgang, nr. 83, onsdag den 11. april 1855. Artiklen er signeret »S. <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>«. <hi rendition="#ita">Fædrelandet</hi> blev udgivet af <persName key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName key="Ploug, Carl">C. Ploug</persName>; sidstnævnte fungerede også som ansvarlig redaktør. Avisen blev trykt hos <persName key="Klein, Louis">Louis Klein</persName> i <placeName>København</placeName> og lå færdig fra trykkeriet kl. 20. Prisen var 6 skilling i løssalg, 5 mark pr. måned, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName>København</placeName>.</p>
-   <p>Artiklen er blevet kollationeret i tre eksemplarer af <hi rendition="#ita">Fædrelandet,</hi> nr. 83, den 11. april 1855:</p>
-   <list> 
-     
-     <label>A</label>
-     <item>SKs eget eksemplar, uindbundet og ubeskåret, KA, D pk. 17.</item>
-    
-     
-     <label>B</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>Eksemplar B er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p> </note></item>
-    
-     
-     <label>C</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>Eksemplar C er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p> </note></item>
-    
-   </list>
-   <p>Ved den interne kollation blev der ikke konstateret afvigelser.<note> <p>Da <hi rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes her.</p> </note> Eksemplar A danner grundlag for den følgende beskrivelse.</p>
-   <div type="level2">
-    <head><pb xml:id="ss602" n="602" edRef="#SKS"/>Format og paginering</head>
-    <p>Formatet er folio.<note> <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p> </note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet ark. Avisen er trespaltet; hver side opdeles af en fed-fin dobbeltskillestreg trykt ca. to tredjedele nede på siden. Pagineringen 341-344 er på forsiden angivet under spalterne, på avisens øvrige sider over. Spalterne er unummereret.<note> <p>I <ref target="../CK/txt.xml#ss193" type="publishedWritings" n="193"><hi rendition="#ita">SKS</hi> 14, 193</ref>, angives sidetallet i marginen; de følgende spalteskift angives med en lodret streg i teksten og et suppleret spaltetal i kantet parentes i marginen.</p> </note></p>
-    <p rendition="#ind">»Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling« er placeret på forsiden (s. 341) som føljeton,<note> <p>I ordet »føljeton«s oprindelige betydning, »bilag«, betegnede det artikler vedlagt en avis. Siden brugtes det om artikler på den nederste del af en avisside, dvs. under tværstregen; disse kaldtes føljetoner eller føljetonartikler. Sidenhen udvidedes betydningen til en tekst, der var opdelt og udkom over flere numre af en avis. I <hi rendition="#ita">Fædrelandet,</hi> nr. 83, fra den 11. april 1855 ses således to typer føljetoner: Den ene, SKs »Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling«, er placeret nederst på siden; den anden, »Sir Hudson Lowe og Fangenskabet paa St <persName key="Helena">Helena</persName>. I.«, er placeret nederst på siden og løber over flere numre af avisen.</p> </note> dvs. nederst på siden; artiklen fylder størstedelen af første og anden spalte. Derudover indeholder avisen endnu en artikel af SK, nemlig »Var det rigtigst nu at 'standse med Klemtningen'?«,<note> <p><ref target="../RK/txt.xml#ss189" type="publishedWritings" n="189"><hi rendition="#ita">SKS</hi> 14, 189</ref>-190.</p> </note> nyheder fra ind- og udland, endnu en føljeton samt annoncer.</p>
-   </div>
-   <div type="level2">
-    <head>Beskrivelse af eksemplar A</head>
-    <p>Avisen måler ca. 346 × 515 mm.<note> <p>Størrelsen måles som bredde (øverste kant) × højde (venstre kant).</p> </note></p>
-    <div type="level3">
-     <head><pb xml:id="ss603" n="603" edRef="#SKS"/>Papir</head>
-     <p>Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
-    </div>
-    <div type="level3">
-     <head>Typografi</head>
-     <p>Det fremherskende skriftsnit i avisen er antikva. Fremhævet tekst er sat med fed eller spatieret skrift.</p>
-     <p rendition="#ind">På forsiden findes avisens hoved og datolinje. Hovedet består af et bredt centralfelt og to smalle felter hhv. til venstre og højre herfor. Datolinjen adskiller hovedet fra avisens øvrige tekst.</p>
-     <p rendition="#ind">Det centrale felt har ordlyden:</p>
-     <quote><p><hi rendition="#bol">Fædrelandet.</hi> | <hi rendition="#bol"><hi rendition="#spa">1855.</hi></hi> | Abonnementspris i <placeName key="København">Kjøbenhavn</placeName> 15 Mk. pr. Qvartal, 5 Mk. pr. Maaned; enkelte Nr. 6 Sk.; udenfor <placeName key="København">Kjøbenhavn</placeName> 3 Rdl. | pr. Qvartal frit i Huset. Hver Søgne-Aften udgaaer et Numer.<note> <p>Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p> </note></p></quote>
-     <p>Det smalle felt til venstre har følgende ordlyd:</p>
-     <quote><p>Bladets Comptoir, store Kjøb-|magergade Nr. 54, er aabent | hver Søgnedags Formiddag fra | Kl. 11–1.</p></quote>
-     <p>Det smalle felt til højre:</p>
-     <quote><p><hi rendition="#bol">Bekjendtgjørelser</hi> | indrykkes mod en Betaling af | 4 Sk. for Petitlinien. Ifølge en | Overenskomst med »<hi rendition="#bol">Afton-|bladet</hi>« i <placeName>Stockholm</placeName>, »<hi rendition="#bol">Chri-|stianiaposten</hi>« i <placeName key="Oslo">Christiania</placeName> | og »<hi rendition="#bol">Handels- och Sjö-|farts-Tidningen</hi>« i Gö-|theborg kunne de ogsaa blive | indførte i disse mod en lignende | Betaling for hvert Blad.</p></quote>
-     <p>Derunder er datolinjen placeret, indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Datolinjen har ordlyden:</p>
-     <quote><p><hi rendition="#bol">16</hi><hi rendition="#sup">de</hi> <hi rendition="#bol">Aarg.</hi> <hi rendition="#bol">Onsdagen den 11. April.</hi> <hi rendition="#bol">Nr. 83.</hi></p></quote>
-     <p>Oplysningen om årgang er venstrestillet, dateringen centreret, og avisnummeret højrestillet.<note> <p>En uddybende beskrivelse af avishovedet findes i <ref target="../PPM/txr.xml#ss416" type="textCriticalAccount" n="416">tekstredegørelsen til »En Opfordring til mig fra Pastor <persName key="Paludan-Müller, Jens">Paludan-Müller</persName>«, s. 416</ref>ff. Det skal bemærkes, at i den uddybende beskrivelse tages udgangspunkt i en brødtekst på ca. 10 punkt (korpus); brødteksten i artiklen »Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling« er sat med en punktstørrelse svarende til ca. 8 punkt (petit).</p> </note></p>
-     <p rendition="#ind"><pb xml:id="ss604" n="604" edRef="#SKS"/>Nederst i avisens sidste spalte, på avisens øverste del, adskilt fra den foregående notits af en vandret skillestreg i hele spaltens bredde, er trykketidspunktet angivet:</p>
-     <quote><p>Færdigt fra Trykkeriet Kl. 8</p></quote>
-     <p>Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående, fed-fin dobbeltskillestreg og har ordlyden:</p>
-     <quote><p>Udgivere: <hi rendition="#bol"><persName key="Giødwad, Jens Finsteen">J. F. Giødwad</persName></hi> og <hi rendition="#bol"><persName key="Ploug, Carl">C. Ploug</persName>;</hi> ansvarlig: <hi rendition="#bol"><persName key="Ploug, Carl">C. Ploug</persName>.</hi> | [Skillestreg] | Trykt med Hurtigpresse hos <hi rendition="#spa"><persName key="Klein, Louis">Louis Klein</persName></hi>.</p></quote>
-     <p>Artiklens overskrift »Christendom med kongelig Bestalling | og | Christendom uden kongelig Bestalling.«, der er fed og centreret i spalten, er sat med en punktstørrelse ca. 2 grader større end brødteksten; dog er »og« sat med samme punktstørrelse som brødteksten.<note> <p>Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 8; tekst, der er 2 grader større, er sat med punktstørrelse 12, og 3 grader større med punktstørrelse 14.</p> </note> Under en kort skillestreg følger datoen »D. 8de April 1855.« og den spatierede signatur »S. <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.« indrykket fra hhv. for- og bagkant på samme linje.</p>
-     <p rendition="#ind">Artiklen indledes med en uncial, der er fed og sat med en punktstørrelse ca. 3 grader større end brødteksten. Efter artiklen er der sat en prydbjælke til at udfylde resten af spalten.</p>
-     <p rendition="#ind">Spaltekolumnen måler ca. 88 mm i bredden, og der er op til 30 linjer i hver af artiklens spalter. Mellem spalterne er sat en fed, lodret skillestreg. Brødteksten er sat med en skriftstørrelse svarende til ca. 8 punkt (petit). Der er dobbelt ordmellemrum efter punktum.</p>
-     <p rendition="#ind">Der er en del trykfejl i artiklen. Flere typer holder ikke linje: tredje 't' i »maattet« (<ref target="../CK/txt.xml#ss193" type="publishedWritings" n="193"><hi rendition="#ita">SKS</hi> 14, 193</ref>,37), 'l' i »vel« (193,43), 't' i ordet »at« (193,44) og første 'l' i »latterlig« (193,63). Ellers skyldes trykfejl læderede typer.<note> <p>Eksempler på læderede typer: lighedstegnet i »Bestalling = 0« (<ref target="../CK/txt.xml#ss193" type="publishedWritings" n="193"><hi rendition="#ita">SKS</hi> 14, 193</ref>,20), 'd' i »mod« (193,25), 'v' i »have« (193,35), 'f' i »af« (193,42) og 'h' i »have« (193,45).</p> </note></p>
-    </div>
-   </div>
-  </div>
-  <div type="level1" xml:id="k2">
-   <head><pb xml:id="ss605" n="605" edRef="#SKS"/>2. Manuskriptbeskrivelse</head>
-   <p>Til »Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling« findes følgende manuskript i Kierkegaard Arkivet (KA) på <placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
-   <msDesc><msIdentifier><collection>CK</collection></msIdentifier> 
-    <msPart xml:id="physDesc.1" next="#additional.1"><msIdentifier><idno>1</idno></msIdentifier><physDesc><p>Kladde til »Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling« (<ref target="../CK/txt.xml#ss193" type="publishedWritings" n="193"><hi rendition="#ita">SKS</hi> 14, 193</ref>).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrivningskant i venstre side.<note> <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav.</p> </note></p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 168 × 208 mm.<note> <p>Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p> </note></p><p>Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladet er efter beskrivning blevet foldet endnu en gang på langs og en gang på tværs. Teksten afsluttes i marginen på versosiden.</p><p>Øverst på rectosiden står artiklens overskrift »Christendom med kongelig Bestalling / og / Christendom uden kongelig Bestalling.« og derunder dateringen <hi rendition="#ant">»d. 8 April 55.«</hi>.</p><p>En del korrektioner i form af marginaltilføjelser og sletninger. På rectosiden er enkelte ord slettet, og en marginaltilføjelse er slettet med et blyantkryds; på versosiden er enkeltord slettet med vandrette blyantstreger eller -løkker. På versosiden fortsættes teksten fra hovedspalten i nederste hjørne af marginen; fortsættelsen afsluttes med et indvisningstegn skrevet med blyant. Umiddelbart ovenover står endnu en tilføjelse med det tilsvarende indvisningstegn. Også denne tilføjelse afsluttes med et indvisningstegn, skrevet med rødkridt, og oven over denne findes endnu en tilføjelse (som afslutter teksten) med det tilsvarende indvisningstegn skrevet med rødkridt.</p></physDesc></msPart><msPart xml:id="additional.1" prev="#physDesc.1"><msIdentifier><idno>1</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 52, læg 1; <hi rendition="#ita">Pap.</hi> XI 3 B 230)<note> <p>I KA, B pk. 52, læg 1, findes et omslag, som ikke beskrives af <hi rendition="#ita">Pap.,</hi> men som <hi rendition="#ita">Pap.</hi> har mærket »[XI 3 B 230]«. Omslaget er et stykke groft, blåt konceptpapir, der er foldet til konvolut og bærer påskrifterne »<hi rendition="#spa">15</hi>« skrevet med rødkridt, formentlig af <persName key="Lund, Henrik">H. Lund</persName>, »<hi rendition="#spa">8/4. 1855</hi> / <hi rendition="#spa">'Fædrelandet' 11/4. 55</hi> (Feuilleton) / <hi rendition="#spa">'Christendom med kongelig Bestalling</hi> / <hi rendition="#spa">og</hi> / <hi rendition="#spa">Christendom uden kongelig Bestalling'</hi> / Første Udkast«, formentlig skrevet af <persName key="Barfod, Hans Peter">H.P. Barfod</persName>.</p> </note></p></note></adminInfo></additional></msPart>
-   </msDesc>
-  </div>
-  <div type="level1" xml:id="k3">
-   <head><pb xml:id="ss606" n="606" edRef="#SKS"/>3. Tilblivelseshistorie</head>
-   <p>Artiklen »Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling« placerer sig i kirkestriden,<note> <p>SK angreb den officielle kristendomsforkyndelse i <placeName>Danmark</placeName>, først med 21 artikler i <hi rendition="#ita">Fædrelandet</hi> (fra den 18. dec. 1854 til den 26. maj 1855), dernæst med sit tidsskrift <hi rendition="#ita">Øieblikket</hi> (se <hi rendition="#ita">SKS</hi> 13).</p> </note> bl.a. med henvisningen til »Biskop <persName key="Martensen, Hans Lassen">Martensen</persName>s Myndigheds-Artikel mod mig«. Henvisningen gælder <persName key="Martensen, Hans Lassen">H.L. Martensen</persName>s artikel den 28. dec. 1854,<note> <p>»I Anledning af Dr. <persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>s Artikel i 'Fædrelandet' Nr. 295«, <hi rendition="#ita">Berlingske Tidende,</hi> nr. 302, den 28. dec. 1854. Trykt i <hi rendition="#ita">Bl.art.,</hi> s. 242-246, og <hi rendition="#ita">SV1</hi> 14, 11-14. Artiklen er gengivet i kommentaren til »Derved bliver det!« 129,<hi rendition="#size-1">14</hi>.</p> </note> der var en reaktion på SKs første indlæg i kirkestriden.<note> <p>»Var Biskop <persName key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?« (<ref target="../BMS/txt.xml#ss123" type="publishedWritings" n="123"><hi rendition="#ita">SKS</hi> 14, 123</ref>-126).</p> </note> Den foreliggende kladde er dateret den 8. april 1855, dvs. tre dage før artiklen blev trykt i <hi rendition="#ita">Fædrelandet</hi>.</p>
-   <p rendition="#ind">Der foreligger ingen renskrift (trykmanuskript) til artiklen.</p>
-  </div>
-  <div type="level1" xml:id="k4">
-   <head>4. Udgivelsesmåde</head>
-   <p>»Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling« blev som nævnt trykt i <hi rendition="#ita">Fædrelandet</hi>.<note> <p>En nærmere redegørelse for <hi rendition="#ita">Fædrelandets</hi> redaktionelle forhold, periodicitet og oplagstal findes i <ref target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til »Aabenbart Skriftemaal«, s. 112</ref>f.</p> </note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
-   <p rendition="#ind">Af stor betydning for receptionen i SKs umiddelbare eftertid var <persName key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi rendition="#ita"><persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 (<hi rendition="#ita">Bl.art.</hi>). Heri indgår størstedelen af SKs artikler, også »Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling«.<note> <p>Artiklen er trykt i <hi rendition="#ita">Bl.art.,</hi> s. 108-109. SK havde selv planer om, men fik ikke realiseret, en samlet udgivelse af kirkestridsartiklerne, jf. <ref type="preparatoryManuscript" n="pap:XI3B128-135"><hi rendition="#ita">Pap.</hi> XI 3 B 128-135</ref>.</p> </note></p>
-  </div>
- </div></body></text>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="id1b2b940d-801a-40ec-a9a2-70f98819f980">1. Bibliografisk beskrivelse</head>
+          <p xml:id="idcbddf69b-9f21-4440-9ca6-68a94fc95600">»Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling« blev trykt i <hi xml:id="id73c4e49f-d613-4afe-ad44-8f31b121c867" rendition="#ita">Fædrelandet,</hi> 16. årgang, nr. 83, onsdag den 11. april 1855. Artiklen er signeret »S. <persName xml:id="id463a49d5-34d1-42cd-be7b-802a172660b4" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>«. <hi xml:id="idae817062-be6e-4665-b0d4-6c47a85f48b9" rendition="#ita">Fædrelandet</hi> blev udgivet af <persName xml:id="id9d6448b0-ebeb-4725-8571-99b06a44eb42" key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName xml:id="ide757ec2f-837c-4735-9c72-5c666757f746" key="Ploug, Carl">C. Ploug</persName>; sidstnævnte fungerede også som ansvarlig redaktør. Avisen blev trykt hos <persName xml:id="id065be708-ddaf-4f7c-81b4-2c40edbfac83" key="Klein, Louis">Louis Klein</persName> i <placeName xml:id="id9e3d138b-aeda-4df7-81bb-8fe4513ed7f8">København</placeName> og lå færdig fra trykkeriet kl. 20. Prisen var 6 skilling i løssalg, 5 mark pr. måned, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName xml:id="idee34f0e0-2e49-4f5b-82ef-a7c6a01f6dd3">København</placeName>.</p>
+          <p xml:id="id02429861-625d-4008-b46f-a64b0afca852">Artiklen er blevet kollationeret i tre eksemplarer af <hi xml:id="idb6014f80-9588-4b23-9fc2-2a8c812cb39b" rendition="#ita">Fædrelandet,</hi> nr. 83, den 11. april 1855:</p>
+          <list xml:id="idf3571be0-9348-43c2-9b1a-57d2bf5aae76">
+            <label xml:id="ideb997c6b-d52f-4cb6-a91d-6d098eff52bb">A</label>
+            <item xml:id="id6a15741b-27fe-4289-bc3f-cb7e6e4fd68e">SKs eget eksemplar, uindbundet og ubeskåret, KA, D pk. 17.</item>
+            <label xml:id="idda61cbff-8064-4413-b8e6-0dc5b5344aa2">B</label>
+            <item xml:id="idbfb7a25d-e68a-4fbe-89b9-958fff3e1c65"><placeName xml:id="id3bd8d51e-abdf-4259-8537-d982a80d6450" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="id2fea46d3-2e72-4b66-9d9c-7e54991f2771"><p xml:id="id61a8d8f3-5655-4efa-8597-c26d10046b46">Eksemplar B er indbundet sammen med resten af <hi xml:id="id02836dea-8ec5-4754-aaaf-002bb52e9dc2" rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p></note></item>
+            <label xml:id="id6736f305-2523-4122-8986-13c45af1dfec">C</label>
+            <item xml:id="id6d245f16-0f33-4ae1-91bc-f629af566520"><placeName xml:id="idff090070-59c5-4ea8-aae1-9f5b7ea934f3" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="ide7d63d84-8bab-4785-8f68-2eced1fee5cf"><p xml:id="id950a8834-d4fb-400e-9e4e-12408d0826c5">Eksemplar C er indbundet sammen med resten af <hi xml:id="id5cfc4f15-29b3-44cb-b69d-d9103147470b" rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p></note></item>
+          </list>
+          <p xml:id="id94c81b04-8069-4bdf-a205-ee00af4e484a">Ved den interne kollation blev der ikke konstateret afvigelser.<note xml:id="id5afee93b-5ea4-45b2-8989-d192a55a63b5"><p xml:id="id3b822991-91aa-4e13-9451-802734b4d7c6">Da <hi xml:id="id36889a80-f1bd-4e80-86a8-723198bc6077" rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes her.</p></note> Eksemplar A danner grundlag for den følgende beskrivelse.</p>
+          <div xml:id="ide9b7a5be-6d8f-4fe7-a92d-935ac3a83e48" type="level2">
+            <head xml:id="id64f439d8-2a6b-40cc-a4c6-89da7238e203"><pb xml:id="ss602" n="602" edRef="#SKS"/>Format og paginering</head>
+            <p xml:id="id0b6f2731-fee6-49af-94c1-db992acc1e08">Formatet er folio.<note xml:id="id8b12f35c-29f4-4040-9aab-a57e50526cea"><p xml:id="idfc57f237-14f4-4290-964b-dcddfb1279e7">Udgangspunktet for formatbetegnelsen er plane helark (ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p></note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet ark. Avisen er trespaltet; hver side opdeles af en fed-fin dobbeltskillestreg trykt ca. to tredjedele nede på siden. Pagineringen 341-344 er på forsiden angivet under spalterne, på avisens øvrige sider over. Spalterne er unummereret.<note xml:id="idd5ae5d07-0b67-49e7-a5e4-9a78f19ca343"><p xml:id="id4cadefbb-2fa8-4a11-b5fa-47f3324a7288">I <ref xml:id="idfd61313f-504e-4090-a73a-f4417d1b4278" target="../CK/txt.xml#ss193" type="publishedWritings" n="193"><hi xml:id="id15ef3923-66c9-4cc9-9d1b-ca74dafc0bb5" rendition="#ita">SKS</hi> 14, 193</ref>, angives sidetallet i marginen; de følgende spalteskift angives med en lodret streg i teksten og et suppleret spaltetal i kantet parentes i marginen.</p></note></p>
+            <p xml:id="idd2f336bd-7d83-4760-b459-feb658b61274" rendition="#ind">»Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling« er placeret på forsiden (s. 341) som føljeton,<note xml:id="id1ee80dc7-7464-419a-a4f6-34bb08ce4418"><p xml:id="idad71151f-32ad-4c2a-888a-5be72eb6a6ac">I ordet »føljeton«s oprindelige betydning, »bilag«, betegnede det artikler vedlagt en avis. Siden brugtes det om artikler på den nederste del af en avisside, dvs. under tværstregen; disse kaldtes føljetoner eller føljetonartikler. Sidenhen udvidedes betydningen til en tekst, der var opdelt og udkom over flere numre af en avis. I <hi xml:id="id652710c7-9b79-43d6-bfa0-7baab9b0e01a" rendition="#ita">Fædrelandet,</hi> nr. 83, fra den 11. april 1855 ses således to typer føljetoner: Den ene, SKs »Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling«, er placeret nederst på siden; den anden, »Sir Hudson Lowe og Fangenskabet paa St <persName xml:id="id3fa4c8d2-0cea-408c-9085-0c0d3f0035c7" key="Helena">Helena</persName>. I.«, er placeret nederst på siden og løber over flere numre af avisen.</p></note> dvs. nederst på siden; artiklen fylder størstedelen af første og anden spalte. Derudover indeholder avisen endnu en artikel af SK, nemlig »Var det rigtigst nu at 'standse med Klemtningen'?«,<note xml:id="iddbe27a2d-0632-4649-904d-dfc602c407bb"><p xml:id="id006326cf-b4e6-4874-80ef-7bee14d3a0b0"><ref xml:id="idbf009757-3774-42b0-9ac8-2439ed540b17" target="../RK/txt.xml#ss189" type="publishedWritings" n="189"><hi xml:id="idfbed52a8-cbc0-4c1c-8663-0cb329b75fe0" rendition="#ita">SKS</hi> 14, 189</ref>-190.</p></note> nyheder fra ind- og udland, endnu en føljeton samt annoncer.</p>
+          </div>
+          <div xml:id="idbfb7c079-19b3-41be-a7e6-0915321d3850" type="level2">
+            <head xml:id="id399cd1cf-a6a4-4061-91b6-53faaf2f399b">Beskrivelse af eksemplar A</head>
+            <p xml:id="id57058468-7c36-4c36-8258-7667e9a05cec">Avisen måler ca. 346 × 515 mm.<note xml:id="idb786b433-e88d-44e9-89ca-81065fc4514d"><p xml:id="id6031b58b-40aa-4c6a-8f27-bcaed72faca4">Størrelsen måles som bredde (øverste kant) × højde (venstre kant).</p></note></p>
+            <div xml:id="id37d8ba8a-560e-45e3-8fb9-221361603f26" type="level3">
+              <head xml:id="idd56d738b-fa0c-4f1f-a6b8-651a41f8b739"><pb xml:id="ss603" n="603" edRef="#SKS"/>Papir</head>
+              <p xml:id="id4d890aca-93e6-4b17-b86d-a769b00fa7d3">Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
+            </div>
+            <div xml:id="id68a88485-6b55-4ad7-8679-f63a9e3f553c" type="level3">
+              <head xml:id="idb4cd0481-ff43-4ae7-aea1-3ce5341be9d0">Typografi</head>
+              <p xml:id="ida2a23b22-584a-47c0-a5bf-5f5dab62629c">Det fremherskende skriftsnit i avisen er antikva. Fremhævet tekst er sat med fed eller spatieret skrift.</p>
+              <p xml:id="id032cd461-a8eb-4e5c-b015-f811a7085513" rendition="#ind">På forsiden findes avisens hoved og datolinje. Hovedet består af et bredt centralfelt og to smalle felter hhv. til venstre og højre herfor. Datolinjen adskiller hovedet fra avisens øvrige tekst.</p>
+              <p xml:id="id8223fea9-0673-48b6-95c3-46009d32fc62" rendition="#ind">Det centrale felt har ordlyden:</p>
+              <quote xml:id="id32b2aaa0-933d-4432-8aaa-f8c06ebb4ba4">
+                <p xml:id="ida58c33c8-7993-405d-adc6-f5b7256d24ca"><hi xml:id="idc6d8696e-5e47-46cf-936e-c17a1efe278d" rendition="#bol">Fædrelandet.</hi> | <hi xml:id="id09f9ab7b-fbd0-4b51-b254-f1b87cf2e137" rendition="#bol"><hi xml:id="idc0133447-9e56-4a85-a3f4-4f205b3c6c12" rendition="#spa">1855.</hi></hi> | Abonnementspris i <placeName xml:id="idb18b410c-39a9-4360-844c-1d13a875f044" key="København">Kjøbenhavn</placeName> 15 Mk. pr. Qvartal, 5 Mk. pr. Maaned; enkelte Nr. 6 Sk.; udenfor <placeName xml:id="id39fbeb43-1ae5-46b6-9507-ba59a479f099" key="København">Kjøbenhavn</placeName> 3 Rdl. | pr. Qvartal frit i Huset. Hver Søgne-Aften udgaaer et Numer.<note xml:id="ide3e73114-e1d9-49e9-9fbc-0404f185b50a"><p xml:id="idb4f79220-2f31-4ced-9b70-e4990a43b0a7">Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p></note></p>
+              </quote>
+              <p xml:id="id8e2a2946-2bec-4e5a-85cb-b663a725602d">Det smalle felt til venstre har følgende ordlyd:</p>
+              <quote xml:id="id95ebd270-0c58-464f-94e4-c0ac6675974d">
+                <p xml:id="ide5021375-badb-4cef-b0a7-a23ffc1bc080">Bladets Comptoir, store Kjøb-|magergade Nr. 54, er aabent | hver Søgnedags Formiddag fra | Kl. 11–1.</p>
+              </quote>
+              <p xml:id="id5bb90fa1-55d3-4f74-a6b1-d5bd528ae7ab">Det smalle felt til højre:</p>
+              <quote xml:id="id77746365-1aeb-4dab-80e1-1d29c5041d6d">
+                <p xml:id="idc42aba67-6134-480d-83e4-74f6459c54b9"><hi xml:id="idf9385a55-b176-4b46-8674-c7b0bd248842" rendition="#bol">Bekjendtgjørelser</hi> | indrykkes mod en Betaling af | 4 Sk. for Petitlinien. Ifølge en | Overenskomst med »<hi xml:id="id43ef0b4d-b672-4e30-b5e3-a429e27f2594" rendition="#bol">Afton-|bladet</hi>« i <placeName xml:id="id6ac97b4c-b588-4153-8dde-0e6fe3ad9bfc">Stockholm</placeName>, »<hi xml:id="idc50cc094-009c-42f2-a3de-bbe3277ebe35" rendition="#bol">Chri-|stianiaposten</hi>« i <placeName xml:id="id196b7654-520b-4fbe-8ed4-c58bd6278c39" key="Oslo">Christiania</placeName> | og »<hi xml:id="idd791e399-7da3-4d2f-80d4-f180a250b2d6" rendition="#bol">Handels- och Sjö-|farts-Tidningen</hi>« i Gö-|theborg kunne de ogsaa blive | indførte i disse mod en lignende | Betaling for hvert Blad.</p>
+              </quote>
+              <p xml:id="idf015cee6-01a3-42e9-b955-4315fd4228b8">Derunder er datolinjen placeret, indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Datolinjen har ordlyden:</p>
+              <quote xml:id="id3e0436e3-3ede-4832-a0f0-ddc9c5d1e1c5">
+                <p xml:id="idecad1e44-7bc6-4134-a18e-b889cb8097be">
+                  <hi xml:id="idc0451d6c-b3ab-4192-b859-51714106430a" rendition="#bol">16</hi>
+                  <hi xml:id="id88bd80ca-cb27-4e04-a532-95b6792610fb" rendition="#sup">de</hi>
+                  <hi xml:id="id06c4a345-a77e-4c1e-8aa1-17cae279aa0e" rendition="#bol">Aarg.</hi>
+                  <hi xml:id="id46d448c1-0510-415b-9f65-1460f77a254c" rendition="#bol">Onsdagen den 11. April.</hi>
+                  <hi xml:id="id883a1804-5f27-466f-8bdd-f3a8366e0252" rendition="#bol">Nr. 83.</hi>
+                </p>
+              </quote>
+              <p xml:id="id4dc40d48-590b-401c-a903-db314ee8e222">Oplysningen om årgang er venstrestillet, dateringen centreret, og avisnummeret højrestillet.<note xml:id="id52298021-f764-46fb-95c0-fd6199f9a5e7"><p xml:id="id417e273c-a6ba-4b86-847b-57a4e23a295b">En uddybende beskrivelse af avishovedet findes i <ref xml:id="id0fd45744-9ebc-4c85-8363-81b7721cbf47" target="../PPM/txr.xml#ss416" type="textCriticalAccount" n="416">tekstredegørelsen til »En Opfordring til mig fra Pastor <persName xml:id="id30601155-5349-4e25-b08c-f2f2751b60a6" key="Paludan-Müller, Jens">Paludan-Müller</persName>«, s. 416</ref>ff. Det skal bemærkes, at i den uddybende beskrivelse tages udgangspunkt i en brødtekst på ca. 10 punkt (korpus); brødteksten i artiklen »Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling« er sat med en punktstørrelse svarende til ca. 8 punkt (petit).</p></note></p>
+              <p xml:id="id951f20f3-7282-4455-85d2-178ce905d003" rendition="#ind"><pb xml:id="ss604" n="604" edRef="#SKS"/>Nederst i avisens sidste spalte, på avisens øverste del, adskilt fra den foregående notits af en vandret skillestreg i hele spaltens bredde, er trykketidspunktet angivet:</p>
+              <quote xml:id="id9592a5f0-b11e-4a47-a77d-2f6ab11cb9bf">
+                <p xml:id="id10da935c-dff3-4ca4-927f-b7c4246db97f">Færdigt fra Trykkeriet Kl. 8</p>
+              </quote>
+              <p xml:id="id68fb1cdb-01ab-4735-ad5a-398fe7fd333e">Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående, fed-fin dobbeltskillestreg og har ordlyden:</p>
+              <quote xml:id="id4f9ce39c-135c-479b-9ac9-fa38777067cc">
+                <p xml:id="id0cc515e4-52fd-4353-990f-0d3e2f856a88">Udgivere: <hi xml:id="id9ce4c56d-9c3e-448d-ba5b-8a9972d02e83" rendition="#bol"><persName xml:id="id0ac91cfe-975c-4f1f-abb0-6568957f2a67" key="Giødwad, Jens Finsteen">J. F. Giødwad</persName></hi> og <hi xml:id="id05254262-1479-4d00-bd0d-db89a3c1939a" rendition="#bol"><persName xml:id="id6fe8e958-bc3a-47c8-8ec6-2d96b97f5fc6" key="Ploug, Carl">C. Ploug</persName>;</hi> ansvarlig: <hi xml:id="id2218eff7-9539-42e7-8ae2-5a64f0f0e8f4" rendition="#bol"><persName xml:id="id5014c40b-4597-4a95-bd2d-cd33533435b5" key="Ploug, Carl">C. Ploug</persName>.</hi> | [Skillestreg] | Trykt med Hurtigpresse hos <hi xml:id="idc140170e-f3b6-40a4-9bf3-bb51031eda2c" rendition="#spa"><persName xml:id="id56c5fe9b-056f-42b6-8dc5-230d2f614822" key="Klein, Louis">Louis Klein</persName></hi>.</p>
+              </quote>
+              <p xml:id="id70839e73-c692-49f9-a1cd-44ecce6ca221">Artiklens overskrift »Christendom med kongelig Bestalling | og | Christendom uden kongelig Bestalling.«, der er fed og centreret i spalten, er sat med en punktstørrelse ca. 2 grader større end brødteksten; dog er »og« sat med samme punktstørrelse som brødteksten.<note xml:id="id41561e3c-fc7d-4dee-9291-aa917d70956a"><p xml:id="id3dd40f2c-6827-442c-b6af-6351aab05642">Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 8; tekst, der er 2 grader større, er sat med punktstørrelse 12, og 3 grader større med punktstørrelse 14.</p></note> Under en kort skillestreg følger datoen »D. 8de April 1855.« og den spatierede signatur »S. <persName xml:id="id4fe72076-e15e-4a5e-9f75-0e934996c874" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.« indrykket fra hhv. for- og bagkant på samme linje.</p>
+              <p xml:id="idd3db1f80-4a44-4e5f-83ce-83b4aedb9ca9" rendition="#ind">Artiklen indledes med en uncial, der er fed og sat med en punktstørrelse ca. 3 grader større end brødteksten. Efter artiklen er der sat en prydbjælke til at udfylde resten af spalten.</p>
+              <p xml:id="id073b0810-5e18-4409-885a-bd65ecac3977" rendition="#ind">Spaltekolumnen måler ca. 88 mm i bredden, og der er op til 30 linjer i hver af artiklens spalter. Mellem spalterne er sat en fed, lodret skillestreg. Brødteksten er sat med en skriftstørrelse svarende til ca. 8 punkt (petit). Der er dobbelt ordmellemrum efter punktum.</p>
+              <p xml:id="id708e10c8-06a3-48dd-ace5-1bbf57e30577" rendition="#ind">Der er en del trykfejl i artiklen. Flere typer holder ikke linje: tredje 't' i »maattet« (<ref xml:id="id331d5ebe-adee-42f9-b206-38de5d2df853" target="../CK/txt.xml#ss193" type="publishedWritings" n="193"><hi xml:id="id18b42890-4ad1-478a-9369-31068a1abf10" rendition="#ita">SKS</hi> 14, 193</ref>,37), 'l' i »vel« (193,43), 't' i ordet »at« (193,44) og første 'l' i »latterlig« (193,63). Ellers skyldes trykfejl læderede typer.<note xml:id="id475ce82d-92b6-4e84-a1db-9d81304c25bb"><p xml:id="id63c81a44-3814-4c15-8464-6b551fa94ecb">Eksempler på læderede typer: lighedstegnet i »Bestalling = 0« (<ref xml:id="id4d21362b-2528-405e-a43f-3fbee466f2a3" target="../CK/txt.xml#ss193" type="publishedWritings" n="193"><hi xml:id="id436bdaad-0dd8-4bf0-8d49-d88f0d875032" rendition="#ita">SKS</hi> 14, 193</ref>,20), 'd' i »mod« (193,25), 'v' i »have« (193,35), 'f' i »af« (193,42) og 'h' i »have« (193,45).</p></note></p>
+            </div>
+          </div>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="id1c73b59c-457f-4ea1-8b4e-c6b9c3eac676"><pb xml:id="ss605" n="605" edRef="#SKS"/>2. Manuskriptbeskrivelse</head>
+          <p xml:id="id7b99108a-2ad8-49ef-a0e8-957415569858">Til »Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling« findes følgende manuskript i Kierkegaard Arkivet (KA) på <placeName xml:id="ida6e4092c-20e7-432a-b454-0caba579e75a" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
+          <msDesc xml:id="id2a3040ed-0ca1-4a35-b65f-02474d88265d">
+            <msIdentifier xml:id="idde3dd409-fcc9-4b62-82a1-19bcd3fbabc6">
+              <collection xml:id="id03138bcd-9660-45af-a8cc-43a993a95b57">CK</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.1" next="#additional.1">
+              <msIdentifier xml:id="id044719d5-00d0-4a5e-8306-a0a040aec643">
+                <idno xml:id="idbfc2f0d4-f5c0-4c58-bdbb-095a854bff59">1</idno>
+              </msIdentifier>
+              <physDesc xml:id="idf3a6e882-2db7-45b7-96e2-77e048065720">
+                <p xml:id="id3067f8b6-db34-4e60-a2d3-bc3924123204">Kladde til »Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling« (<ref xml:id="id7ac894fb-eaa6-4cb2-b631-6b80ff8fc9bb" target="../CK/txt.xml#ss193" type="publishedWritings" n="193"><hi xml:id="id9970da65-63a7-40af-91c2-5982eadced1e" rendition="#ita">SKS</hi> 14, 193</ref>).</p>
+                <p xml:id="ide0a2f862-5a4d-436b-a981-2f1373684821">1 løst blad i 4<hi xml:id="id136c2664-4aa9-40ff-bd40-4dc4c9becd4c" rendition="#sup">o</hi> med afrivningskant i venstre side.<note xml:id="ida3e626d8-500b-425b-8fa2-cc5e36950950"><p xml:id="idda0f257f-4427-4d84-bed0-92711e6b0900">Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav.</p></note></p>
+                <p xml:id="id539516dd-4fea-4037-ba2a-97dc8d40532e">Ingen paginering.</p>
+                <p xml:id="id9d7d1712-4b6a-4a67-b3c5-de4ac8f1d502">Papir: gulligt koncept, glat. Mål: 168 × 208 mm.<note xml:id="id1b5bb24a-fa9c-460e-8b16-697812e02660"><p xml:id="idab6c3c52-1ed9-4452-9fcf-3efb3e45257a">Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p></note></p>
+                <p xml:id="id7b887c28-392b-4e90-95e8-2d4272f84c38">Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladet er efter beskrivning blevet foldet endnu en gang på langs og en gang på tværs. Teksten afsluttes i marginen på versosiden.</p>
+                <p xml:id="idc77cbd2b-56ca-4e7a-8157-b7629f30c101">Øverst på rectosiden står artiklens overskrift »Christendom med kongelig Bestalling / og / Christendom uden kongelig Bestalling.« og derunder dateringen <hi xml:id="id6de23a85-94e0-4024-a4b8-7486da507f0d" rendition="#ant">»d. 8 April 55.«</hi>.</p>
+                <p xml:id="ida313fa7c-c81a-420d-afd3-12c66d6eeb60">En del korrektioner i form af marginaltilføjelser og sletninger. På rectosiden er enkelte ord slettet, og en marginaltilføjelse er slettet med et blyantkryds; på versosiden er enkeltord slettet med vandrette blyantstreger eller -løkker. På versosiden fortsættes teksten fra hovedspalten i nederste hjørne af marginen; fortsættelsen afsluttes med et indvisningstegn skrevet med blyant. Umiddelbart ovenover står endnu en tilføjelse med det tilsvarende indvisningstegn. Også denne tilføjelse afsluttes med et indvisningstegn, skrevet med rødkridt, og oven over denne findes endnu en tilføjelse (som afslutter teksten) med det tilsvarende indvisningstegn skrevet med rødkridt.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.1" prev="#physDesc.1">
+              <msIdentifier xml:id="ide34af83c-0247-458f-b67c-4ce1b725d1d0">
+                <idno xml:id="id0d881dc1-5fff-4bde-88ee-f4874b0ad5e9">1</idno>
+              </msIdentifier>
+              <additional xml:id="idc30162bf-b88f-4c1c-843f-a6e03ec966c3">
+                <adminInfo xml:id="id9d509aac-05b0-4bba-9160-29e9110f6f5a">
+                  <note xml:id="id10ae536c-d3e8-47ec-a75b-425fd3dd41c8">
+                    <p xml:id="id1ca5c56b-b3a7-44a9-8810-4a8b9241e675">(KA, B pk. 52, læg 1; <hi xml:id="ide642d34e-7cbe-443b-b1e3-efa3ff2276ee" rendition="#ita">Pap.</hi> XI 3 B 230)<note xml:id="id0929ac7c-404a-4816-affe-5e0351f0dcb3"><p xml:id="idde7148f2-5be9-4f18-b455-7a34a56e6afd">I KA, B pk. 52, læg 1, findes et omslag, som ikke beskrives af <hi xml:id="id7e9a795a-3982-4d82-9d56-fb3bb3f4db9a" rendition="#ita">Pap.,</hi> men som <hi xml:id="idbebc02f6-62ab-4c62-bd12-4f9dfeda2781" rendition="#ita">Pap.</hi> har mærket »[XI 3 B 230]«. Omslaget er et stykke groft, blåt konceptpapir, der er foldet til konvolut og bærer påskrifterne »<hi xml:id="id6e53db8b-6d98-476f-a1f3-60cca4d6d645" rendition="#spa">15</hi>« skrevet med rødkridt, formentlig af <persName xml:id="id24164371-7f48-4bf1-a269-fe88b55e1ac9" key="Lund, Henrik">H. Lund</persName>, »<hi xml:id="id22eb337f-33bc-4629-9db1-3e664e497c3e" rendition="#spa">8/4. 1855</hi> / <hi xml:id="ide474ebd3-0ef4-455b-98c8-bce03996324c" rendition="#spa">'Fædrelandet' 11/4. 55</hi> (Feuilleton) / <hi xml:id="id67a40168-5b94-450d-89ed-fecdc9dc8406" rendition="#spa">'Christendom med kongelig Bestalling</hi> / <hi xml:id="id3187c7ac-f16c-46c0-815c-5427641b13aa" rendition="#spa">og</hi> / <hi xml:id="id5ec89663-2fed-48bf-8dfe-9a83b66ab108" rendition="#spa">Christendom uden kongelig Bestalling'</hi> / Første Udkast«, formentlig skrevet af <persName xml:id="id619fd488-531e-4fdd-9079-1075dc3d7e2d" key="Barfod, Hans Peter">H.P. Barfod</persName>.</p></note></p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+        </div>
+        <div type="level1" xml:id="k3">
+          <head xml:id="id8f602376-8c48-48fb-8bcd-f72c0ac71b00"><pb xml:id="ss606" n="606" edRef="#SKS"/>3. Tilblivelseshistorie</head>
+          <p xml:id="idbd5dc379-ebcc-4119-9d5e-8849d7b393e1">Artiklen »Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling« placerer sig i kirkestriden,<note xml:id="id451252de-fa5a-40ad-b29c-8797663617fc"><p xml:id="id4a8ddaa3-f4c0-4220-8cc4-d6ca3bad4040">SK angreb den officielle kristendomsforkyndelse i <placeName xml:id="id93ac25e7-b061-4052-95e5-839b751a088e">Danmark</placeName>, først med 21 artikler i <hi xml:id="idafe7e4a4-1bcb-45fa-8253-d23d1888b7dd" rendition="#ita">Fædrelandet</hi> (fra den 18. dec. 1854 til den 26. maj 1855), dernæst med sit tidsskrift <hi xml:id="id74102817-9f43-426f-a979-2df5b1fff6cd" rendition="#ita">Øieblikket</hi> (se <hi xml:id="idb388d644-a5df-4918-a40a-06b181600bc7" rendition="#ita">SKS</hi> 13).</p></note> bl.a. med henvisningen til »Biskop <persName xml:id="id6625d32d-b021-490a-bf0e-1df5798ebbb7" key="Martensen, Hans Lassen">Martensen</persName>s Myndigheds-Artikel mod mig«. Henvisningen gælder <persName xml:id="id72e3360d-74fe-484d-aecc-5e96d3904023" key="Martensen, Hans Lassen">H.L. Martensen</persName>s artikel den 28. dec. 1854,<note xml:id="id8e17238e-41b1-4685-8efd-ca000b7f62f6"><p xml:id="id8fc6d852-5dc3-4b9a-a2e4-d2937df7a708">»I Anledning af Dr. <persName xml:id="id97421eec-bf6b-4217-9ea1-86ccb4108092" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>s Artikel i 'Fædrelandet' Nr. 295«, <hi xml:id="id09e2d673-9fae-4848-b040-c41e7e39305b" rendition="#ita">Berlingske Tidende,</hi> nr. 302, den 28. dec. 1854. Trykt i <hi xml:id="idef79ef4a-06f9-4e14-a51a-037cb3805473" rendition="#ita">Bl.art.,</hi> s. 242-246, og <hi xml:id="idf7983fe8-bded-4fae-bf66-d9756ffd5e04" rendition="#ita">SV1</hi> 14, 11-14. Artiklen er gengivet i kommentaren til »Derved bliver det!« 129,<hi xml:id="idefb24ff7-842d-42e2-ae41-6cefa5c1b515" rendition="#size-1">14</hi>.</p></note> der var en reaktion på SKs første indlæg i kirkestriden.<note xml:id="id11329337-52dd-496e-bd90-36ed792b937b"><p xml:id="id56d18af7-e838-4a26-ac5b-8c2a76c1adb8">»Var Biskop <persName xml:id="id38e9f4e9-da30-4288-bfe3-41e1c4dd0d04" key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?« (<ref xml:id="ida879968a-c563-49d3-9019-7ecd0195c389" target="../BMS/txt.xml#ss123" type="publishedWritings" n="123"><hi xml:id="idac130719-7159-403b-8585-6875f8be01ed" rendition="#ita">SKS</hi> 14, 123</ref>-126).</p></note> Den foreliggende kladde er dateret den 8. april 1855, dvs. tre dage før artiklen blev trykt i <hi xml:id="id18933df2-e79b-468c-9c6b-06aa9e66e340" rendition="#ita">Fædrelandet</hi>.</p>
+          <p xml:id="id9194d266-452d-4129-bd4c-bb91584e6cfc" rendition="#ind">Der foreligger ingen renskrift (trykmanuskript) til artiklen.</p>
+        </div>
+        <div type="level1" xml:id="k4">
+          <head xml:id="idd60c6089-0535-4ec3-be0e-70c3c2ac95ff">4. Udgivelsesmåde</head>
+          <p xml:id="idd5cf7efb-6da5-494d-9ac2-ecc566c64efd">»Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling« blev som nævnt trykt i <hi xml:id="id2f6363c5-6f5f-4051-a3f2-8b18c4dd4432" rendition="#ita">Fædrelandet</hi>.<note xml:id="id10781439-4d9b-4ab4-8fb7-28ab8d070e07"><p xml:id="id2e86a437-f2bb-4987-a7da-8c957395d8d3">En nærmere redegørelse for <hi xml:id="id3ff75db4-8218-4717-9b24-2263058538de" rendition="#ita">Fædrelandets</hi> redaktionelle forhold, periodicitet og oplagstal findes i <ref xml:id="id5c6a7efb-36ad-426e-a905-f86b081fd910" target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til »Aabenbart Skriftemaal«, s. 112</ref>f.</p></note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
+          <p xml:id="idfaf300a0-8477-4f25-94d6-ea52018d2bc9" rendition="#ind">Af stor betydning for receptionen i SKs umiddelbare eftertid var <persName xml:id="id3f3d0a6a-b32c-450a-b5ed-3540f57e4d8e" key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi xml:id="idce558056-5ba1-4180-b109-3613626f8df8" rendition="#ita"><persName xml:id="id3e68dc6a-795c-4d1e-94a9-1467a3efbf8e" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 (<hi xml:id="id55af3977-171b-453c-b7cb-4470d228a155" rendition="#ita">Bl.art.</hi>). Heri indgår størstedelen af SKs artikler, også »Christendom med kongelig Bestalling og Christendom uden kongelig Bestalling«.<note xml:id="id84361d73-ecb0-4ca1-8d10-919d888925b7"><p xml:id="id5b9a0079-6514-4a61-8916-7a50284aa8c6">Artiklen er trykt i <hi xml:id="idbce86f10-794a-42e1-be87-d6064618c11f" rendition="#ita">Bl.art.,</hi> s. 108-109. SK havde selv planer om, men fik ikke realiseret, en samlet udgivelse af kirkestridsartiklerne, jf. <ref xml:id="id92499ed6-21e7-44e2-890b-d05d501ad284" type="preparatoryManuscript" n="pap:XI3B128-135"><hi xml:id="id2ac25eb6-f6d6-4a16-898a-af7d4c14bdd3" rendition="#ita">Pap.</hi> XI 3 B 128-135</ref>.</p></note></p>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

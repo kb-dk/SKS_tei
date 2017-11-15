@@ -1,157 +1,359 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>En omreisende Æsthetikers Virksomhed, og hvorledes han dog kom til at betale Gjæstebudet</title>
-     
-     <title type="short">AeV</title>
-  <author>
-   <name>Jon Tafdrup</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Johnny Kondrup</name><name>Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2010</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K14</biblScope>
-     <biblScope unit="file">http://sks.dk/aev/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition><!--spaced out, in SKS rendered italic--><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20120823">txr/XML, <bibl><idno type="version">1.7</idno>, <biblScope unit="file">http://sks.dk/aev/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id86753c52-ba22-4064-9a75-e99d81fa9037">
+    <fileDesc xml:id="idd237a5dd-64a5-478c-9aff-9c3c4dd2431f">
+      <titleStmt xml:id="id3a2efa1c-7be6-49f2-bad6-31b915890c41">
+        <title xml:id="id32b46db4-73ff-47b6-ab72-098c4e663b1b" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="idec16d381-2663-4357-adf9-a9f0254ba7c7">En omreisende Æsthetikers Virksomhed, og hvorledes han dog kom til at betale Gjæstebudet</title>
+        <title xml:id="id95a30dcf-e5f4-4d49-819d-cff747705873" type="short">AeV</title>
+        <author xml:id="idefd322b4-0236-4732-ad80-ffcdeca75d6e">
+          <name xml:id="ida1576155-52af-46f6-848c-d1dad1945c76">Jon Tafdrup</name>
+        </author>
+        <editor xml:id="id10ed4896-f352-4489-b1ac-a95e41f099cd">
+          <name xml:id="id6ff72d33-3769-44b2-bbda-47d25caace1e">Niels Jørgen Cappelørn</name>
+          <name xml:id="ide6a06ff9-e562-4996-a30b-9761b99d28c2">Joakim Garff</name>
+          <name xml:id="idfe69eba1-1225-4a7f-9c41-eb55f4c4c00c">Johnny Kondrup</name>
+          <name xml:id="ide13cb246-2b3d-4c45-8651-eeced87c61fa">Tonny Aagaard Olesen</name>
+          <name xml:id="id8af1d2e9-7e33-4131-8484-828f0190ac7d">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="id888bb6f6-301a-4fce-8bc0-14577924bafe">
+          <resp xml:id="idd3c3a2ee-070c-4a19-a2ca-e1a1cf2cd4c2">redigeret af</resp>
+          <name xml:id="id141c6e10-2da9-4afe-ba9f-66f13f1cc8f0">Johnny Kondrup</name>
+          <name xml:id="idd5bf2818-f72f-47f7-8fb8-c5a2bc23783e">Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="id1a929c05-9571-4485-89c4-65fd426c8427">
+          <resp xml:id="idec01be44-dcda-4125-9101-1194caccab4f">elektronisk redigeret af</resp>
+          <name xml:id="idddc1228c-509c-4db6-9647-c9ece27275f0">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id0fa2d10f-726e-4195-b6d6-6c0458899251">
+        <authority xml:id="id1f4e1d27-a6a9-4746-8d64-9f9af19dadb5">Søren Kierkegaard Forskningscenteret 2010</authority>
+        <availability xml:id="id18a99d26-c60e-4d41-9aeb-4cc0e5cf1c5e" status="restricted">
+          <p xml:id="id08e2141b-d965-41c3-9404-f19413f36a27">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="idf60cb948-65f4-422b-99fe-ce710a26e2f1">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="id87dd8cf2-f673-4730-940b-0a3d54429147" unit="volume">K14</biblScope>
+        <biblScope xml:id="id86eb9e0d-4d8d-4ee3-82f7-564fc3fe24b5" unit="file">http://sks.dk/aev/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id62987b4d-944f-46ab-b321-8d6939af5e44">
+        <bibl xml:id="id92cc7c6e-8db7-4a35-9092-17a1478af816" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id16e74f51-893f-4ac3-8d6a-c58b90622c8d">
+      <tagsDecl xml:id="id0ed36b51-4f14-4402-ab67-ba2003fecd6d">
+        <rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition>
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id4a6cc2b3-3943-4161-a6ea-12c5b48ff5f6">
+      <change xml:id="id2184b61f-be58-4867-9850-58bebcc260a8">Transformed to TEI by style sheet <bibl xml:id="idcd175b79-9458-40f1-8195-614b36a4098b" type="file">txr2tei.xsl</bibl> version as of <date xml:id="id8a8bc759-a28a-4f13-86a8-23807ff0329e">2017-02-15</date> importing <bibl xml:id="id6290f963-5b39-4c4b-886a-2e20345f4802" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="id3c902e3e-2427-44e4-8d34-945386ca77ea">Transformed to TEI by style sheet <bibl xml:id="id355cccd0-6a8a-4306-b716-482ac9304781" type="file">kn12tei.xsl</bibl> version <idno xml:id="idae2f0ce3-13f6-4171-8316-e1614f6a6fda" type="version">1.9</idno> as of <date xml:id="id6980649c-e4a8-40be-a9ed-255856aed80b">2017-02-21</date> by <name xml:id="id4e30d9eb-6bdc-411c-a5fd-9ecbe7c23726">Karsten Kynde</name>, <orgName xml:id="id6b1745b5-c4ce-462d-b13d-077e3ab0038c">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="idecea8454-c31e-49a8-aaad-23a97eda6301">København</placeName></change>
+      <change xml:id="id3486a432-f6bd-4b81-b21b-216834e07992" when="20120823">txr/XML, <bibl xml:id="idbed2273a-9975-41dc-a9a3-9f1b4192a704"><idno xml:id="idf3ac85a8-ab92-4f05-8497-a23a6be3edf7" type="version">1.7</idno>, <biblScope xml:id="idc63296aa-6246-4c0c-b090-801799e6936c" unit="file">http://sks.dk/aev/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="TextCriticalAccount" subtype="publishedWritings"><body><div><head type="topText" n="Tekstredegørelse"/>
-  <head><pb xml:id="ss217" n="217" edRef="#SKS"/>Tekstredegørelse</head>
-  <list type="TOC"> 
-   <item>1. Bibliografisk beskrivelse
-    <ptr type="chapter" target="#k1" n="217"/>
+  <text xml:id="ida4d4e41e-31fc-43da-8272-7d594640283e" type="TextCriticalAccount" subtype="publishedWritings">
+    <body xml:id="id94c5556b-7615-437a-8666-07e918461528">
+      <div xml:id="ide831b63b-ff47-420d-b000-482b59e4097e">
+        <head xml:id="id6ff5466b-049f-4f3c-815b-30ea17e26f8a" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="idd46bae94-d73d-4344-9547-1b2d71bdbadb"><pb xml:id="ss217" n="217" edRef="#SKS"/>Tekstredegørelse</head>
+        <list xml:id="idc29e67e9-5018-4c67-8ff3-fea7481fa0aa" type="TOC">
+          <item xml:id="id66889452-dc65-4423-8c66-9a98e58f5ab7">1. Bibliografisk beskrivelse
+    <ptr xml:id="ida876a7d6-688b-484c-bb23-9b32a5cea450" type="chapter" target="#k1" n="217"/>
    </item>
-   <item>2. Manuskriptbeskrivelse
-    <ptr type="chapter" target="#k2" n="220"/>
+          <item xml:id="id3fd902a8-abf7-4f60-8292-b30c35c6f1e2">2. Manuskriptbeskrivelse
+    <ptr xml:id="idd8d194c8-d8d5-4048-a17a-04b5a8722976" type="chapter" target="#k2" n="220"/>
    </item>
-   <item>3. Tilblivelseshistorie
-    <ptr type="chapter" target="#k3" n="223"/>
+          <item xml:id="ida7361b2d-6acb-473f-889a-1fa0560403d0">3. Tilblivelseshistorie
+    <ptr xml:id="id5c944e98-28c2-4e00-99f3-a0014a75f4af" type="chapter" target="#k3" n="223"/>
    </item>
-   <item>4. Udgivelsesmåde
-    <ptr type="chapter" target="#k4" n="225"/>
+          <item xml:id="id79b7f91d-e99b-42e6-adc8-89f2671dbfce">4. Udgivelsesmåde
+    <ptr xml:id="idabb5fa35-8649-4d0c-ab12-4278776d7603" type="chapter" target="#k4" n="225"/>
    </item>
-  </list>
-  <div type="level1" xml:id="k1">
-   <head>1. Bibliografisk beskrivelse</head>
-   <p>»En omreisende Æsthetikers Virksomhed, og hvorledes han dog kom til at betale Gjæstebudet.« blev trykt i <hi rendition="#ita">Fædrelandet,</hi> 6. årgang, nr. 2078, lørdag den 27. dec. 1845. Artiklen er signeret »<persName key="Frater Taciturnus">Frater Taciturnus</persName>, Høvidsmand for 3die Afdeling af 'Stadier paa Livets Vei'«. <hi rendition="#ita">Fædrelandet</hi> blev udgivet af <persName key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName key="Ploug, Carl">C. Ploug</persName>, ansvarlig redaktør var <persName key="Ströhm, S.G.M.">Sv.G.M. Ströhm</persName>. Avisen blev trykt i det Brünnichske bogtrykkeri i <placeName>København</placeName> og lå færdig fra trykkeriet kl. 22. Prisen var 6 skilling i løssalg, 5 mark pr. måned, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName>København</placeName>.</p>
-   <p>Artiklen er blevet kollationeret i tre eksemplarer af <hi rendition="#ita">Fædrelandet,</hi> nr. 2078, den 27. dec. 1845:</p>
-   <list> 
-     
-     <label>A</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>Eksemplar A er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 6. årgang, 1845.</p> </note></item>
-    
-     
-     <label>B</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>Eksemplar B er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 6. årgang 1845, 2. halvår.</p> </note></item>
-    
-     
-     <label>C</label>
-     <item>Statsbibliotekets eksemplar, indbundet og beskåret.<note> <p>Eksemplar C er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 6. årgang, 1845.</p> </note></item>
-    
-   </list>
-   <p><pb xml:id="ss218" n="218" edRef="#SKS"/>Ved den interne kollation af de tre eksemplarer blev der ikke konstateret afvigelser.<note> <p>Da <hi rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes i tekstredegørelsen.</p> </note> Eksemplar A danner grundlag for følgende beskrivelse.</p>
-   <div type="level2">
-    <head>Format og paginering</head>
-    <p>Formatet svarer til en stor kvart.<note> <p>Eksemplaret er som nævnt beskåret og indbundet, men udgangspunktet for formatbetegnelsen er plane helark (formentlig ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p> </note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet halvark. På hver side er der to spalter. Spalterne er nummereret 16653-16660; på forsiden er numrene angivet under spalterne, på de øvrige sider over.</p>
-    <p rendition="#ind">SKs artikel har et omfang på ca. fem spalter. Den begynder øverst i sp. 16653 på forsiden og afsluttes øverst i sp. 16658 på tredje side. Avisens øvrige spalteplads udfyldes af efterretninger og kortere notitser.</p>
-   </div>
-   <div type="level2">
-    <head>Beskrivelse af eksemplar A</head>
-    <p>Avisen måler ca. 250 × 330 mm.<note> <p>Der måles bredde (øverste kant) × højde (venstre kant).</p> </note></p>
-    <div type="level3">
-     <head>Papir</head>
-     <p>Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
-    </div>
-    <div type="level3">
-     <head>Typografi</head>
-     <p>Avisens fremherskende skriftsnit er fraktur; til latinsk tekst er benyttet antikva, og fremhævet tekst er sat med fed eller spatieret skrift.</p>
-     <p rendition="#ind">På forsiden er avisens navn sat med tekstur (gotisk) og hovedets øvrige oplysninger med fraktur. Avishovedet er adskilt fra den øvrige tekst af en datolinje og har følgende ordlyd:</p>
-     <quote><p><hi rendition="#bol">Fædrelandet.</hi> | [Skillestreg] | Abonnementspris i <placeName key="København">Kjøbenhavn</placeName> 15 ℳpr. Qvartal, 5 ℳpr. Maaned, enkelte Nr. 6 ß; udenfor <placeName key="København">Kjøbenhavn</placeName> 3 ℛ pr. Qvartal frit i Huset | Hver Søgne-Aften udgaaer et Numer. Bladets Con<pb xml:id="ss219" n="219" edRef="#SKS"/>toir, store <placeName key="Købmagergade">Kjøbmagergade</placeName> Nr. 54, anden Sal, er aabent om Formiddagen Kl. 11–1.<note> <p>ℳ = Mark; ß = Skilling; ℛ = Rigsbankdaler. Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p> </note></p></quote>
-     <p>Datolinjen er indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Imellem står følgende:</p>
-     <quote><p>6<hi rendition="#sup">te</hi> Aarg. <hi rendition="#bol">Løverdagen den 27. December 1845.</hi> Nr. 2078.</p></quote>
-     <p>Årgangsnummeret er venstrestillet, datoen centreret, og avisnummeret højrestillet.<note> <p>En uddybende beskrivelse af <hi rendition="#ita">Fædrelandets</hi> hoved kan ses i <ref target="../AaS/txr.xml#ss107" type="textCriticalAccount" n="107">tekstredegørelsen til »Aabenbart Skriftemaal«, s. 107</ref>.</p> </note></p>
-     <p rendition="#ind">Nederst i avisens sidste spalte, adskilt fra en foregående notits af en vandret skillestreg i hele kolumnens bredde, er trykketidspunktet angivet:</p>
-     <quote><p>Færdigt fra Trykkeriet Kl. 10.</p></quote>
-     <p>Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående, fed-fin dobbeltstreg og har ordlyden:</p>
-     <quote><p>Udgivere: <hi rendition="#bol">J. F. <persName key="Giødwad, Jens Finsteen">Giødwad</persName></hi> og <hi rendition="#bol"><persName key="Ploug, Carl">C. Ploug</persName>.</hi> – Ansvarlig Redacteur: <hi rendition="#bol"><persName key="Ströhm, S.G.M.">Sv. G. M. Ströhm</persName>.</hi> | [Skillestreg] | Trykt med Hurtigpresse i det <hi rendition="#spa">Brünnichske</hi> Bogtrykkeri ved <hi rendition="#spa"><persName key="Lund, Johan Christian">J. C. Lund</persName>.</hi></p></quote>
-     <p>Artiklens overskrift »En omreisende Æsthetikers Virksomhed, og hvor-|ledes han dog kom til at betale Gjæstebudet.« er centreret i spalten og sat med fed ca. 1 grad større end brødteksten.<note> <p>Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 10; tekst, der er 1 grad større, er sat med punktstørrelse 12, og 2 grader større med punktstørrelse 14, mens tekst, der er 1 grad mindre, er sat med punktstørrelse 8.</p> </note> Artiklen indledes med en fed uncial ca. 2 grader større end brødteksten. Fodnoter, der er placeret nederst i spalterne under en kort, venstrestillet streg, er sat ca. 1 grad mindre end brødteksten. I signaturen er »<persName key="Frater Taciturnus">Frater Taciturnus</persName>,« sat med antikva <pb xml:id="ss220" n="220" edRef="#SKS"/>i samme størrelse som brødteksten, spatieret og indrykket fra højre; »Høvidsmand for 3die Afdeling af 'Stadier paa | Livets Vei'.«, er sat med fraktur i samme punktstørrelse som brødteksten, højrestillet og centreret under navnet.</p>
-     <p rendition="#ind">Mellem overskrift og brødtekst er sat en kort, vandret skillestreg. I spalte 16656 markerer en længere skillestreg et større ophold i teksten ved nyt afsnit, og efter artiklen er sat en vandret skillestreg i hele kolumnens bredde. Spalterne adskilles overalt af en lodret, fin-fed-fin tripelstreg.</p>
-     <p rendition="#ind">Spaltekolumnen måler ca. 96 mm i bredden, og en spalte har op til 65 linjer. Artiklens brødtekst er sat med lille skydning og en skriftstørrelse svarende til ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum.</p>
-     <p>Generelt fremstår trykket gnidret med udtværede marginer. Der findes en del sætter- og trykfejl i artiklen. Der er flere eksempler på udfaldne eller manglende typer: »Keiserens Palads« er sat »Keiseren Palads« (<ref target="../AeV/txt.xml#ss81" type="publishedWritings" n="81"><hi rendition="#ita">SKS</hi> 14, 81</ref>,35), »Hr. <persName key="Møller, Peder Ludvig">P. L. Møller</persName>« er sat »Hr <persName key="Møller, Peder Ludvig">P. L. Møller</persName>« (82,71), og »til <placeName>Sorø</placeName>« er sat »ti <placeName>Sorø</placeName>« (83,75). Manglende typer ses i »snyltende«, der er sat »snyltede« (79,44), og i »svækker«, der er sat »sækker« (82,49). Der er også eksempler på omvendte typer: I »P. L. Møller« svæver det første punktum over linjen (83,7), og »Paatrængenheden« er sat »Paatræugenheden« (84,35). En fejlsat type ses i »Interessen«, der er sat »Interelsen« (81,38). I »tvertimod« er 'e' sat med en punktstørrelse ca. 1 grad mindre end de øvrige (83,41). Trykfejl i øvrigt skyldes læderede typer.<note> <p>Eksempler på læderede typer er: 't' i »hineinguckt« (<ref target="../AeV/txt.xml#ss80" type="publishedWritings" n="80"><hi rendition="#ita">SKS</hi> 14, 80</ref>,6), det første 'a' i »Galimathias« (81,33), det andet 'e' i »Interessen« (81,41), 'e' i »Mening« (81,47), det første 'e' i »Experimentator« (81,68), første, andet og tredje 'e' i »Dobbelt-Reflexionens« (83,27), det første 'o' og 'i' i »psychologisk« (84,1), 'f' i »Afskedens« (84,24) og 'a' i »latterlige« (84,56).</p> </note></p>
-    </div>
-   </div>
-  </div>
-  <div type="level1" xml:id="k2">
-   <head>2. Manuskriptbeskrivelse</head>
-   <p>Til »En omreisende Æsthetikers Virksomhed, og hvorledes han dog kom til at betale Gjæstebudet.« findes følgende manuskripter i Kierkegaard Arkivet (KA) på <placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
-   <msDesc><msIdentifier><collection>AeV</collection></msIdentifier> 
-    <msPart xml:id="physDesc.1" next="#additional.1"><msIdentifier><idno>1</idno></msIdentifier><physDesc><p><pb xml:id="ss221" n="221" edRef="#SKS"/>Kladder og udkast til »En omreisende Æsthetikers Virksomhed, og hvorledes han dog kom til at betale Gjæstebudet.«, fordelt på 2 dobbeltblade, 3 løse blade og 3 løse lapper, i alt 7 blade og 3 løse lapper.</p></physDesc> 
-       <msPart xml:id="physDesc.1.1" next="#additional.1.1"><msIdentifier><idno>1.1</idno></msIdentifier><physDesc><p>Kladde til hele artiklen (<ref target="../AeV/txt.xml#ss79" type="publishedWritings" n="79"><hi rendition="#ita">SKS</hi> 14, 79</ref>-84).</p><p>1 dobbeltblad og 1 løst blad, i alt 3 blade i 4<hi rendition="#sup">o</hi>.<note> <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Irregulære, fx afrevne, enheder betegnes lapper. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p> </note> Bladene har spor fra sammenhæftning.<note> <p>Midt på bladenes højrekant er papiret yderligere beskadiget, evt. efter at have været sammenrullet og fikseret med et stykke snor. I øvrigt fremstår papiret stærkt medtaget; det er mørknet og har mange pletter.</p> </note></p><p>Bladene er med blyant litreret A-F (muligvis ikke af SK).</p><p>Papir: gulligt koncept, groft. Mål: 196 × 242 mm.<note> <p>Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p> </note></p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. På side B breder en tilføjelse sig til inderspalten. Side F er kun beskrevet tre fjerdedele.</p><p>På side A findes overskriften: <hi rendition="#bol">»En omreisende Æsthetikers Virksomhed.«.</hi></p><p>Enkelte korrektioner. Få udstregninger i den løbende tekst; på side C er en passage på fem linjer slettet med skrå blyantstreger. Flere marginaltilføjelser.</p></physDesc></msPart><msPart xml:id="additional.1.1" prev="#physDesc.1.1"><msIdentifier><idno>1.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VII 1 B 1)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.2" next="#additional.1.2"><msIdentifier><idno>1.2</idno></msIdentifier><physDesc><p>Udkast til artiklen, indarbejdet i den første note (omkring <ref target="../AeV/txt.xml#ss80" type="publishedWritings" n="80"><hi rendition="#ita">SKS</hi> 14, 80</ref>,28-81,69).</p><p>1 løs lap. Afrivningskant nederst. Halveret 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, groft. Mål: ca. 205 × 110-112 mm.</p><p>Lappen er beskrevet på den lange led til lige under midten og kun på den ene side. Efter beskrivningen har lappen været foldet to gange på langs og en gang på tværs.</p><p>En enkelt korrektion ved udstregning samt en tilføjelse.</p></physDesc></msPart><msPart xml:id="additional.1.2" prev="#physDesc.1.2"><msIdentifier><idno>1.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VII 1 B 2)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.3" next="#additional.1.3"><msIdentifier><idno>1.3</idno></msIdentifier><physDesc><p><pb xml:id="ss222" n="222" edRef="#SKS"/>Udkast til passage i artiklen.</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>. Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 174 × 213 mm.</p><p>Bl. [1v] er beskrevet ca. en tredjedel, og bl. [2v] er ubeskrevet.</p><p>På bl. [1r] findes en marginaltilføjelse skrevet på langs. På bl. [1v] har SK i tredjesidste linje rettet et punktum til et semikolon og udvidet teksten med en tilføjelse, der forlænger linjen til bl. [2r], hvor tilføjelsens resterende 12 linjer er skrevet. Tilføjelsen optager derved plads ca. midt på bl. [2r], der i øvrigt er ubeskrevet.</p><p>Enkelte korrektioner i form af udstregning af enkeltord. Tre marginaltilføjelser findes på bl. [1r]. I følgende passage: »En Opfattelse af <persName key="Møller, Peder Ludvig">P. L. M.</persName> er ikke dialektisk vanskelig, <hi rendition="#ita">(...)</hi>« er ordet 'ikke' tilføjet med blyant mellem linjerne og indvist med en blyantstreg.</p></physDesc></msPart><msPart xml:id="additional.1.3" prev="#physDesc.1.3"><msIdentifier><idno>1.3</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VII 1 B 3)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.4" next="#additional.1.4"><msIdentifier><idno>1.4</idno></msIdentifier><physDesc><p>Udkast til artiklen, benyttet sidst i artiklen.</p><p>1 løst blad i 4<hi rendition="#sup">o</hi>. Afrivningskant i højre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 167-171 × 207 mm.</p><p>Begge sider har en enkelt påskrift.</p><p>Begyndende i øverste venstre hjørne på bl. [1r] står med blyant skrevet: »Reisen til <placeName>Sorø</placeName> / Pakæsler Mad og Drikke / Postillonen paa Dagvognen«.</p><p>Øverst på bl. [1v] er med blyant skrevet: <hi rendition="#ant">»ubi spiritus ibi ecclesia / ubi <persName key="Møller, Peder Ludvig">P. L. M.</persName> ibi Corsaren«.</hi></p></physDesc></msPart><msPart xml:id="additional.1.4" prev="#physDesc.1.4"><msIdentifier><idno>1.4</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VII 1 B 4-5)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.5" next="#additional.1.5"><msIdentifier><idno>1.5</idno></msIdentifier><physDesc><p>Udkast til artiklen (<ref target="../AeV/txt.xml#ss84" type="publishedWritings" n="84"><hi rendition="#ita">SKS</hi> 14, 84</ref>,43-44 og 84,61-63).</p><p>1 løs lap. Afrevet med tre uregelmæssige kanter.</p><p>Ingen paginering.</p><p>Papir: gulligt post-velin med vandmærke, hvoraf kan læses: »TMAN | 38«.<note> <p>Dvs. »I WHATMAN / 1838«.</p> </note> Mål: 110-124 × 113-121 mm.</p><p>Lappens ene side er beskrevet.</p><p>Øverst står: «Hilarius Bogbinder min Chef, / er bleven smigret i Corsaren.« Nederst, indrykket fra højre, står med latinsk hånd: <hi rendition="#ant">»<persName key="Frater Taciturnus">Frater Taciturnus</persName>«,</hi> derunder med gotisk: »Høvidsmand for 3<hi rendition="#sup">d</hi> Afdeling i 'Stadier paa Livets Vei.'«.</p></physDesc></msPart><msPart xml:id="additional.1.5" prev="#physDesc.1.5"><msIdentifier><idno>1.5</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VII 1 B 6)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.6" next="#additional.1.6"><msIdentifier><idno>1.6</idno></msIdentifier><physDesc><p><pb xml:id="ss223" n="223" edRef="#SKS"/>Udkast til artiklen.</p><p>1 lap. Afrevet med uregelmæssig nedre kant.</p><p>Ingen paginering.</p><p>Papir: tyndt koncept, gulligt. Mål: ca. 198-225 × 267-170 mm.</p><p>Lappen har efter beskrivningen været foldet en gang på langs og tre gange på tværs. Kun den ene side er beskrevet.</p><p>SK har med blæk øverst på siden med rimelig margin til papirets top og venstre kant skrevet »Seer«, hvor 'er' er lettere utydeligt. Et par centimeter længere nede på siden med samme marginafstand til venstrekanten har han med blyant skrevet: »Seer Du min gode Corsar«, og han fortsætter med blæk: »dersom Du hver Gang kunde <hi rendition="#ita">(...)</hi>«. Den resterende tekst er skrevet med blæk og afsluttes ca. tre fjerdedele nede på siden.<note> <p>En tænkelig forklaring på tekstens udseende er, at SK har haft problemer med skrivetøjet; blækket er ikke løbet ordentligt fra pennen. Han har så grebet en blyant og er begyndt forfra på sætningen; efterfølgende har han alligevel fortrudt og er vendt tilbage til en pen.</p> </note></p><p>En enkelt korrektion.</p></physDesc></msPart><msPart xml:id="additional.1.6" prev="#physDesc.1.6"><msIdentifier><idno>1.6</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VII 1 B 7)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.7" next="#additional.1.7"><msIdentifier><idno>1.7</idno></msIdentifier><physDesc><p>Udkast til artiklen.</p><p>1 løst blad i 4<hi rendition="#sup">o</hi>. Afrivningskant i venstre side.<note> <p>Afrivningen modsvarer afrivningskanten på det blad, der udgør ms. 1.4.</p> </note></p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål 170 × 206 mm.</p><p>Bl. [1v] er ubeskrevet.</p><p>Øverst findes et afsnit på seks linjer; ovenover har SK skrevet en tilføjelse og indvist med indvisningstegn. Neden for første afsnit ses en centreret påskrift: »saa Det om Corsaren.«. Under denne følger et afsnit på seks linjer. Nederst på siden findes endnu et afsnit, der afsluttes på sidens bund.</p><p>Få korrektioner</p></physDesc></msPart><msPart xml:id="additional.1.7" prev="#physDesc.1.7"><msIdentifier><idno>1.7</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VII 1 B 8)</p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.1" prev="#physDesc.1"><msIdentifier><idno>1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 296; KA, B pk. 30; <hi rendition="#ita">Pap.</hi> VII 1 B 1-8)</p></note></adminInfo></additional></msPart>
-   </msDesc>
-  </div>
-  <div type="level1" xml:id="k3">
-   <head><pb xml:id="ss224" n="224" edRef="#SKS"/>3. Tilblivelseshistorie</head>
-   <p>»En omreisende Æsthetikers Virksomhed, og hvorledes han dog kom til at betale Gjæstebudet.« blev som nævnt trykt og publiceret den 27. dec. 1845 i <hi rendition="#ita">Fædrelandet,</hi> nr. 2078. Der er ingen dateringer i manuskriptmaterialet, men indirekte lader det omtrentlige affattelsestidspunkt sig fastlægge på to måder: For det første er artiklen en reaktion på <persName key="Møller, Peder Ludvig">P.L. Møller</persName>s essay »Et Besøg i <placeName>Sorø</placeName>«, hvor <persName key="Møller, Peder Ludvig">Møller</persName> bl.a. kritiserede <hi rendition="#ita">Stadier paa Livets Vei.</hi> Essayet udkom den 22. dec. 1845 i <persName key="Møller, Peder Ludvig">Møller</persName>s æstetiske årbog <hi rendition="#ita">Gæa</hi> for 1846,<note> <p><hi rendition="#ita">Gæa, æsthetisk Aarbog,</hi> udgivet af <persName key="Møller, Peder Ludvig">P.L. Møller</persName>, <placeName key="København">Kbh.</placeName> 1846, s. 144-187.</p> </note> hvorfor SK først kan have påbegyndt sit modsvar herefter. For det andet har SK i et tilbageblik selv berørt tilblivelsesperioden. I optegnelsen <ref target="../NB/txt.xml#n7" type="journalsAndPapers" n="7">NB:7</ref>, dateret den 9. marts 1846, noterer han således:</p>
-   <quote><p>Artiklen mod <persName key="Møller, Peder Ludvig">P.L. Møller</persName> var skrevet i megen Frygt og Bæven, jeg brugte Helligdagene dertil, og forsømte hverken at gaae i Kirke eller at læse min Prædiken for at danne den regulerende Modstand.<note> <p><ref target="../NB/txt.xml#ss15" type="journalsAndPapers" n="15"><hi rendition="#ita">SKS</hi> 20, 15</ref>,40-16,3.</p> </note></p></quote>
-   <p>Altså en tilblivelsesperiode på små fem dage hen over julen.</p>
-   <p rendition="#ind">Det bevarede manuskriptmateriale, der ikke indeholder en renskrift (trykmanuskript), sammenholdt med den relativt korte tilblivelsesperiode, lader ane en skriveproces, der er styret af mange indfald. Det er forklaringen på de tre løse blade med spredte udkast samt det tilsvarende antal løse lapper.</p>
-   <p rendition="#ind">Ms. 1.1 udgør et nogenlunde sammenhængende manuskript. Det er det fyldigste stykke, og længere passager og ansatser herfra har fundet vej til den endelige artikel. Det øvrige manuskriptmateriale forekommer at være tilføjelser til ms. 1.1; det er ideer og udkast, der overvejende er indarbejdet i den endelige artikels afsluttende del samt i en note. Den løse lap, der udgør ms. 1.2, er således indarbejdet i artiklens første note (hovedsageligt omkring <ref target="../AeV/txt.xml#ss80" type="publishedWritings" n="80"><hi rendition="#ita">SKS</hi> 14, 80</ref>,28-40 og 81,59-69), hvis ansatser i det små også kan fremdrages af den nederste marginaltilføjelse fra side B i ms. 1.1. Ms. 1.3 er et udkast, som i en senere bearbejdelse har fundet vej til den del af artiklen, der indledes efter skillestregen (<ref target="../AeV/txt.xml#ss83" type="publishedWritings" n="83"><hi rendition="#ita">SKS</hi> 14, 83</ref>,13). Hovedteksten i ms. 1.3 afsluttes på bl. [1v] med ordene: »Gid jeg saa blot snart maatte <pb xml:id="ss225" n="225" edRef="#SKS"/>komme i Corsaren«, en vending, der let omskrevet indleder artiklens sidste afsnit (<ref target="../AeV/txt.xml#ss84" type="publishedWritings" n="84"><hi rendition="#ita">SKS</hi> 14, 84</ref>,38).</p>
-   <p rendition="#ind">De to påskrifter, én på hver side af det blad, der udgør ms. 1.4, er også benyttet i den endelige artikels sidste afsnit; den latinske vending på bl. [1r] næsten ordret (<ref target="../AeV/txt.xml#ss84" type="publishedWritings" n="84"><hi rendition="#ita">SKS</hi> 14, 84</ref>,48-49). I ms. 1.5 er også to påskrifter, der senere finder anvendelse sidst i artiklen (<ref target="../AeV/txt.xml#ss84" type="publishedWritings" n="84"><hi rendition="#ita">SKS</hi> 14, 84</ref>,43-44 og 84,61-63); bl.a. findes signaturen i sin fulde ordlyd her.</p>
-   <p rendition="#ind">SK har ikke gjort direkte brug af hverken ms. 1.6 eller 1.7. Begge manuskripter kredser om <hi rendition="#ita">Corsaren</hi> og har næsten enslydende formuleringer. For eksempel findes i ms. 1.6 flg.: »Seer Du min gode Corsar dersom Du hver Gang kunde skrive saa moersom en Artikel – <hi rendition="#ita">(...)</hi>«.<note> <p>Trykt som <ref type="preparatoryManuscript" n="pap:VII1B7" rend="AeV,ms.1.6"><hi rendition="#ita">Pap.</hi> VII 1 B 7</ref>, s. 169.</p> </note> I ms. 1.7 skriver SK: »Thi seer Du vel min gode Corsar! Hvis Du hver Gang kunde skrive saa moersom en Artikel – <hi rendition="#ita">(...)</hi>«.<note> <p>Trykt som <ref type="preparatoryManuscript" n="pap:VII1B8" rend="AeV,ms.1.7"><hi rendition="#ita">Pap.</hi> VII 1 B 8</ref>, s. 169.</p> </note> I ms. 1.7 gør han sig desuden nogle tanker om <hi rendition="#ita">Corsarens</hi> redaktør <persName key="Goldschmidt, Meïr Aron">M.A. Goldschmidt</persName>; tanker, som også formuleres i manuskriptmaterialet til SKs næste artikel i <hi rendition="#ita">Fædrelandet,</hi> nr. 9, den 10. jan. 1846, »Det dialektiske Resultat af en literair Politi-Forretning« (<ref target="../PF/txt.xml#ss87" type="publishedWritings" n="87"><hi rendition="#ita">SKS</hi> 14, 87</ref>-89).<note> <p>Jf. <ref target="../PF/txr.xml#ss245" type="textCriticalAccount" n="245">tekstredegørelsen til »Det dialektiske Resultat af en literair Politi-Forretning«, s. 245</ref>-258.</p> </note></p>
-  </div>
-  <div type="level1" xml:id="k4">
-   <head>4. Udgivelsesmåde</head>
-   <p>»En omreisende Æsthetikers Virksomhed, og hvorledes han dog kom til at betale Gjæstebudet.« blev som nævnt trykt i <hi rendition="#ita">Fædrelandet.</hi><note> <p>En nærmere redegørelse for avisens redaktionelle forhold, periodicitet og oplagstal findes i <ref target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til artiklen »Aabenbart Skriftemaal«, s. 112</ref>f.</p> </note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
-   <p rendition="#ind">Af stor betydning for receptionen i SKs umiddelbare eftertid var <persName key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi rendition="#ita"><persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 <hi rendition="#ita">(Bl.art.).</hi> Heri indgår størstedelen af SKs artikler, også »En omreisende Æsthetikers Virksomhed, og hvorledes han dog kom til at betale Gjæstebudet.«.<note> <p>Artiklen er trykt i <hi rendition="#ita">Bl.art.,</hi> s. 140-148.</p> </note></p>
-  </div>
- </div></body></text>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="id499c6e59-0cf0-4f5d-97ad-4e1326c3b83c">1. Bibliografisk beskrivelse</head>
+          <p xml:id="id24c26d2d-e408-46c4-83ec-6c58035dda82">»En omreisende Æsthetikers Virksomhed, og hvorledes han dog kom til at betale Gjæstebudet.« blev trykt i <hi xml:id="idadad8743-f617-4d21-8fe8-de072232cd95" rendition="#ita">Fædrelandet,</hi> 6. årgang, nr. 2078, lørdag den 27. dec. 1845. Artiklen er signeret »<persName xml:id="idc18905ba-1809-4854-a32d-c3b03cc95bbc" key="Frater Taciturnus">Frater Taciturnus</persName>, Høvidsmand for 3die Afdeling af 'Stadier paa Livets Vei'«. <hi xml:id="id6497e688-6f22-4534-bdb5-7666fd4315cf" rendition="#ita">Fædrelandet</hi> blev udgivet af <persName xml:id="idaaae3391-5b92-49cd-b357-25a82e1c21be" key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName xml:id="idbee33eb5-fcfc-48ba-99e5-e33fdfa0fdad" key="Ploug, Carl">C. Ploug</persName>, ansvarlig redaktør var <persName xml:id="id03c6ffaf-7ea2-4ad4-b5f4-9580f17ee5b4" key="Ströhm, S.G.M.">Sv.G.M. Ströhm</persName>. Avisen blev trykt i det Brünnichske bogtrykkeri i <placeName xml:id="ide6c0393d-491d-4a95-8182-106ca1c5eaf8">København</placeName> og lå færdig fra trykkeriet kl. 22. Prisen var 6 skilling i løssalg, 5 mark pr. måned, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName xml:id="idc3845057-357d-4885-9b96-262749c0b95e">København</placeName>.</p>
+          <p xml:id="ide5b3c001-b8e4-4d15-a42b-5d849426b621">Artiklen er blevet kollationeret i tre eksemplarer af <hi xml:id="idcb7a9835-e3a8-4e52-ab6a-659cf2efae95" rendition="#ita">Fædrelandet,</hi> nr. 2078, den 27. dec. 1845:</p>
+          <list xml:id="id647883e9-5b4c-4d7a-afb9-07eda1c42fd1">
+            <label xml:id="id7a3be0ea-dbe2-4824-b2ee-b806b6ca46bf">A</label>
+            <item xml:id="id8a0f2e1b-4583-4986-81af-33a0957847d9"><placeName xml:id="id6285ce23-7c17-4782-a703-ce2cc991a835" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="id1f7c872e-ad5f-434f-87d9-9fe75e4d7b47"><p xml:id="idc272347b-ecc0-472f-adc4-1be08a6a724b">Eksemplar A er indbundet sammen med resten af <hi xml:id="id76f7f6de-3b0e-49cd-8fb2-dff6501ca7ab" rendition="#ita">Fædrelandet,</hi> 6. årgang, 1845.</p></note></item>
+            <label xml:id="id191accc3-f522-4cfd-bf88-137e7a24b0c4">B</label>
+            <item xml:id="idf734fb49-54dc-4754-ad48-7124f28bbfe0"><placeName xml:id="id45f1ceac-3b5c-4ac7-a669-791c72049cd1" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="id1e035f51-e623-4603-b124-a2f0001307d7"><p xml:id="id370f5057-f346-4ebb-919d-cdcda3112d6a">Eksemplar B er indbundet sammen med resten af <hi xml:id="ida2447dc3-8c11-4876-8d8d-5f23307c2a28" rendition="#ita">Fædrelandet,</hi> 6. årgang 1845, 2. halvår.</p></note></item>
+            <label xml:id="id9386116e-7288-4acb-a8d7-2ace978e5581">C</label>
+            <item xml:id="id5a1c5997-3089-4076-bd14-4866f654668f">Statsbibliotekets eksemplar, indbundet og beskåret.<note xml:id="id59820a9c-d5e6-44cc-9087-a860e9e9ec60"><p xml:id="id5166dee7-878d-44a3-a37e-56833b9704a1">Eksemplar C er indbundet sammen med resten af <hi xml:id="id3f1df360-4c91-41d5-9f22-c0f40685449a" rendition="#ita">Fædrelandet,</hi> 6. årgang, 1845.</p></note></item>
+          </list>
+          <p xml:id="id82094df4-90f5-429e-ad65-08f5230cccc8"><pb xml:id="ss218" n="218" edRef="#SKS"/>Ved den interne kollation af de tre eksemplarer blev der ikke konstateret afvigelser.<note xml:id="ide3ed0919-cc95-4b5f-8704-610b070c9bfa"><p xml:id="idc1990eec-38f5-4bd9-ac37-f155bbd00f03">Da <hi xml:id="id259419cb-b5d5-4e5a-a93c-9c6ffc15deaa" rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes i tekstredegørelsen.</p></note> Eksemplar A danner grundlag for følgende beskrivelse.</p>
+          <div xml:id="id56d71650-352b-4ceb-9108-c986d3cf9585" type="level2">
+            <head xml:id="id5257ef7a-7216-4c16-9ed6-4a8a9bcbbc11">Format og paginering</head>
+            <p xml:id="id334b16c4-9c8c-4d12-88ee-5998edac464d">Formatet svarer til en stor kvart.<note xml:id="id0a76ce1e-d8fe-430c-9b38-fce5136b9611"><p xml:id="id1409f207-34cb-4373-b7b7-1ad9cd38a1d3">Eksemplaret er som nævnt beskåret og indbundet, men udgangspunktet for formatbetegnelsen er plane helark (formentlig ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p></note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet halvark. På hver side er der to spalter. Spalterne er nummereret 16653-16660; på forsiden er numrene angivet under spalterne, på de øvrige sider over.</p>
+            <p xml:id="id7f6b76e1-fea6-44fc-a9c5-68648290b59e" rendition="#ind">SKs artikel har et omfang på ca. fem spalter. Den begynder øverst i sp. 16653 på forsiden og afsluttes øverst i sp. 16658 på tredje side. Avisens øvrige spalteplads udfyldes af efterretninger og kortere notitser.</p>
+          </div>
+          <div xml:id="id3ca26863-69fe-48eb-a8d9-2966bf41e2fb" type="level2">
+            <head xml:id="id91d9ccee-7e87-4e83-bbbc-f73c946c8948">Beskrivelse af eksemplar A</head>
+            <p xml:id="id6efb67d8-76d1-4d54-b6f8-032f6de8ae2e">Avisen måler ca. 250 × 330 mm.<note xml:id="idda95d02c-1e1d-442a-8341-6550f77d72d7"><p xml:id="id829ed798-54ff-4e24-af6e-a7001df9d065">Der måles bredde (øverste kant) × højde (venstre kant).</p></note></p>
+            <div xml:id="idf4e868dc-777e-4bd9-884e-ed15140fb613" type="level3">
+              <head xml:id="ideb952afe-3d0e-4100-bb60-4ec358cee7b8">Papir</head>
+              <p xml:id="id4a5e5351-656a-42f8-80ba-f6aee6dfefc2">Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
+            </div>
+            <div xml:id="id0dd47fad-fd5d-41e1-9fa3-8b79f85906f3" type="level3">
+              <head xml:id="id8dbf6a9b-852a-486d-a847-eef5899fcd81">Typografi</head>
+              <p xml:id="id4c076f18-9578-43fe-9022-54ba9d7bb08e">Avisens fremherskende skriftsnit er fraktur; til latinsk tekst er benyttet antikva, og fremhævet tekst er sat med fed eller spatieret skrift.</p>
+              <p xml:id="id4d87cc5a-eef3-47c3-881e-5994c784872a" rendition="#ind">På forsiden er avisens navn sat med tekstur (gotisk) og hovedets øvrige oplysninger med fraktur. Avishovedet er adskilt fra den øvrige tekst af en datolinje og har følgende ordlyd:</p>
+              <quote xml:id="id14cbde01-f192-40c8-9621-d125f4006735">
+                <p xml:id="id798c4c59-7f0e-456f-8a25-cbb12f497f77"><hi xml:id="idfc8bca6b-29d2-43f5-80cb-d845a5349551" rendition="#bol">Fædrelandet.</hi> | [Skillestreg] | Abonnementspris i <placeName xml:id="id6baf1243-cda0-4944-9031-7e1becee2b6a" key="København">Kjøbenhavn</placeName> 15 ℳpr. Qvartal, 5 ℳpr. Maaned, enkelte Nr. 6 ß; udenfor <placeName xml:id="id55deadc0-a68a-4cc2-9b7b-28e035acdc9a" key="København">Kjøbenhavn</placeName> 3 ℛ pr. Qvartal frit i Huset | Hver Søgne-Aften udgaaer et Numer. Bladets Con<pb xml:id="ss219" n="219" edRef="#SKS"/>toir, store <placeName xml:id="id957763dd-ddae-46d3-96d6-93cbec1e5a3f" key="Købmagergade">Kjøbmagergade</placeName> Nr. 54, anden Sal, er aabent om Formiddagen Kl. 11–1.<note xml:id="id6bd2acbc-4611-49f8-9900-0063edd476e3"><p xml:id="id28bb0787-18e2-4f2e-be30-5a800532b3d1">ℳ = Mark; ß = Skilling; ℛ = Rigsbankdaler. Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p></note></p>
+              </quote>
+              <p xml:id="id512cbdee-9084-44c4-9d41-4e89ec89cad9">Datolinjen er indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Imellem står følgende:</p>
+              <quote xml:id="id56c4fcf8-5116-482d-b329-4be2502a5dc1">
+                <p xml:id="id515e18bd-3db5-4412-9995-fe4bea4d6d32">6<hi xml:id="id611019f9-2b98-4c7b-97fa-49b3ba4cba08" rendition="#sup">te</hi> Aarg. <hi xml:id="idc298f9e9-141b-41bb-9d66-4f2652ecea0c" rendition="#bol">Løverdagen den 27. December 1845.</hi> Nr. 2078.</p>
+              </quote>
+              <p xml:id="id36ba42f3-ec46-43dc-be00-f9665717e280">Årgangsnummeret er venstrestillet, datoen centreret, og avisnummeret højrestillet.<note xml:id="id270d7874-ee3e-467d-b1bd-eff726abe174"><p xml:id="idc2f2698b-d8c3-4b11-876e-058effa34850">En uddybende beskrivelse af <hi xml:id="idfbc768d7-cc3d-4e6c-bc99-403f1267cb98" rendition="#ita">Fædrelandets</hi> hoved kan ses i <ref xml:id="id51e6f0fd-ae42-456d-ad5f-7acebb20b8cf" target="../AaS/txr.xml#ss107" type="textCriticalAccount" n="107">tekstredegørelsen til »Aabenbart Skriftemaal«, s. 107</ref>.</p></note></p>
+              <p xml:id="id19573f74-3688-4f04-9b0b-8e2f608ddbdd" rendition="#ind">Nederst i avisens sidste spalte, adskilt fra en foregående notits af en vandret skillestreg i hele kolumnens bredde, er trykketidspunktet angivet:</p>
+              <quote xml:id="idbb9ecf89-c51b-4078-8467-1b38d47ddee9">
+                <p xml:id="idc015fd4a-2697-44cf-95a0-ddaeb97e0d9f">Færdigt fra Trykkeriet Kl. 10.</p>
+              </quote>
+              <p xml:id="idbca1c0a0-eccb-41a8-ba78-75bad2807476">Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående, fed-fin dobbeltstreg og har ordlyden:</p>
+              <quote xml:id="id4c5a4254-e269-406a-a56d-c75760748084">
+                <p xml:id="id4f4ab5ba-81cf-4707-bd4f-f134a20bd38a">Udgivere: <hi xml:id="id0ba9dcec-4d90-45c8-9be2-e217c3a44c09" rendition="#bol">J. F. <persName xml:id="ida2040b90-cb65-48ba-bcc8-10d3646da7f8" key="Giødwad, Jens Finsteen">Giødwad</persName></hi> og <hi xml:id="idcc4aad85-ccd8-4995-9f3e-e5a076140e52" rendition="#bol"><persName xml:id="id1a8ef23a-65d3-4f35-84f1-a0ba857d025d" key="Ploug, Carl">C. Ploug</persName>.</hi> – Ansvarlig Redacteur: <hi xml:id="id05887100-5eaf-40d2-bc3a-e1c1f75c2e5e" rendition="#bol"><persName xml:id="ida2dcdc64-bc34-48fe-9801-4767bda00371" key="Ströhm, S.G.M.">Sv. G. M. Ströhm</persName>.</hi> | [Skillestreg] | Trykt med Hurtigpresse i det <hi xml:id="id402401c8-6e2d-4387-a9b4-3347ac280b0c" rendition="#spa">Brünnichske</hi> Bogtrykkeri ved <hi xml:id="id2c59e16e-7e02-492b-8ab9-3a9c1ba9734f" rendition="#spa"><persName xml:id="id8ca3791f-00bf-49c5-91ef-024ec530bb86" key="Lund, Johan Christian">J. C. Lund</persName>.</hi></p>
+              </quote>
+              <p xml:id="id06049c33-d14a-4a1a-aa03-1a86d98cd70a">Artiklens overskrift »En omreisende Æsthetikers Virksomhed, og hvor-|ledes han dog kom til at betale Gjæstebudet.« er centreret i spalten og sat med fed ca. 1 grad større end brødteksten.<note xml:id="ide4136173-cc35-4e54-a941-d26ba0dcea5d"><p xml:id="id3f6378cd-a456-4ac7-9108-032473cef8bf">Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 10; tekst, der er 1 grad større, er sat med punktstørrelse 12, og 2 grader større med punktstørrelse 14, mens tekst, der er 1 grad mindre, er sat med punktstørrelse 8.</p></note> Artiklen indledes med en fed uncial ca. 2 grader større end brødteksten. Fodnoter, der er placeret nederst i spalterne under en kort, venstrestillet streg, er sat ca. 1 grad mindre end brødteksten. I signaturen er »<persName xml:id="idbdd4b149-76dc-4714-aa76-02f1baa6ed1c" key="Frater Taciturnus">Frater Taciturnus</persName>,« sat med antikva <pb xml:id="ss220" n="220" edRef="#SKS"/>i samme størrelse som brødteksten, spatieret og indrykket fra højre; »Høvidsmand for 3die Afdeling af 'Stadier paa | Livets Vei'.«, er sat med fraktur i samme punktstørrelse som brødteksten, højrestillet og centreret under navnet.</p>
+              <p xml:id="id83a43102-cdfe-4470-b6f7-e6fe3f953074" rendition="#ind">Mellem overskrift og brødtekst er sat en kort, vandret skillestreg. I spalte 16656 markerer en længere skillestreg et større ophold i teksten ved nyt afsnit, og efter artiklen er sat en vandret skillestreg i hele kolumnens bredde. Spalterne adskilles overalt af en lodret, fin-fed-fin tripelstreg.</p>
+              <p xml:id="id6740dbee-c1c7-42b3-a200-f8afc9c41362" rendition="#ind">Spaltekolumnen måler ca. 96 mm i bredden, og en spalte har op til 65 linjer. Artiklens brødtekst er sat med lille skydning og en skriftstørrelse svarende til ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum.</p>
+              <p xml:id="id8a4b4c32-380c-4380-8b07-f86581eac219">Generelt fremstår trykket gnidret med udtværede marginer. Der findes en del sætter- og trykfejl i artiklen. Der er flere eksempler på udfaldne eller manglende typer: »Keiserens Palads« er sat »Keiseren Palads« (<ref xml:id="idd31ed56b-1d54-4f51-a631-31e8e308cd15" target="../AeV/txt.xml#ss81" type="publishedWritings" n="81"><hi xml:id="id9031f2ad-694d-4333-98eb-06b71ac1fe55" rendition="#ita">SKS</hi> 14, 81</ref>,35), »Hr. <persName xml:id="id0e5cd17d-7c41-465a-ad58-7b36167de3b4" key="Møller, Peder Ludvig">P. L. Møller</persName>« er sat »Hr <persName xml:id="id402c897f-445e-4c16-9aa7-a66a5796a764" key="Møller, Peder Ludvig">P. L. Møller</persName>« (82,71), og »til <placeName xml:id="id6196e7cf-ce09-4955-8524-9a38b9ab6402">Sorø</placeName>« er sat »ti <placeName xml:id="id32357c75-5564-417b-8781-91c495092405">Sorø</placeName>« (83,75). Manglende typer ses i »snyltende«, der er sat »snyltede« (79,44), og i »svækker«, der er sat »sækker« (82,49). Der er også eksempler på omvendte typer: I »P. L. Møller« svæver det første punktum over linjen (83,7), og »Paatrængenheden« er sat »Paatræugenheden« (84,35). En fejlsat type ses i »Interessen«, der er sat »Interelsen« (81,38). I »tvertimod« er 'e' sat med en punktstørrelse ca. 1 grad mindre end de øvrige (83,41). Trykfejl i øvrigt skyldes læderede typer.<note xml:id="id3dc6b715-2920-4b47-80b4-ae8aeb2cdb27"><p xml:id="idacbb5b45-6eee-4401-990a-951da1ba17be">Eksempler på læderede typer er: 't' i »hineinguckt« (<ref xml:id="id06bf2ff7-d564-4a9f-bf9a-e8347e3536ea" target="../AeV/txt.xml#ss80" type="publishedWritings" n="80"><hi xml:id="idc6955f92-5c55-4941-adb2-424bc20d79aa" rendition="#ita">SKS</hi> 14, 80</ref>,6), det første 'a' i »Galimathias« (81,33), det andet 'e' i »Interessen« (81,41), 'e' i »Mening« (81,47), det første 'e' i »Experimentator« (81,68), første, andet og tredje 'e' i »Dobbelt-Reflexionens« (83,27), det første 'o' og 'i' i »psychologisk« (84,1), 'f' i »Afskedens« (84,24) og 'a' i »latterlige« (84,56).</p></note></p>
+            </div>
+          </div>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="id5a850457-0c97-4de3-9ce6-c4f00685687d">2. Manuskriptbeskrivelse</head>
+          <p xml:id="iddd80dc62-b634-4b5d-a87b-aa8423432fe3">Til »En omreisende Æsthetikers Virksomhed, og hvorledes han dog kom til at betale Gjæstebudet.« findes følgende manuskripter i Kierkegaard Arkivet (KA) på <placeName xml:id="id51885538-a59c-45d2-b996-d938c8fcb35a" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
+          <msDesc xml:id="id9a2f5266-9878-49dd-aa70-6bae731e12ca">
+            <msIdentifier xml:id="id8df35fa1-53a9-4a12-84ce-39aed000d8ec">
+              <collection xml:id="idf4461242-7845-405c-bf81-4b0f378357e3">AeV</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.1" next="#additional.1">
+              <msIdentifier xml:id="idafb44615-6244-47e5-8198-63f97734881d">
+                <idno xml:id="id9bf674cb-a68b-42f3-9584-3422f3f8f7cd">1</idno>
+              </msIdentifier>
+              <physDesc xml:id="idb549e20c-a3b7-45dc-8c18-52ec57550e89">
+                <p xml:id="id8761d449-cd6f-4039-913a-6f12cb613bf9"><pb xml:id="ss221" n="221" edRef="#SKS"/>Kladder og udkast til »En omreisende Æsthetikers Virksomhed, og hvorledes han dog kom til at betale Gjæstebudet.«, fordelt på 2 dobbeltblade, 3 løse blade og 3 løse lapper, i alt 7 blade og 3 løse lapper.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.1.1" next="#additional.1.1">
+                <msIdentifier xml:id="id09586e4e-a15e-4abc-a315-75a0d81c3def">
+                  <idno xml:id="id115d6a83-a9ac-41ac-8087-8834365e54fb">1.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id890b9453-7116-4a18-bf5e-ff6f1be84d28">
+                  <p xml:id="id32b9ebb5-c3f2-496c-b73a-89bca6fd1e31">Kladde til hele artiklen (<ref xml:id="id8bd16cbd-9331-4e62-abfc-ec01cd300f9c" target="../AeV/txt.xml#ss79" type="publishedWritings" n="79"><hi xml:id="id25148d20-e89c-4e4b-b56f-4431f0834f12" rendition="#ita">SKS</hi> 14, 79</ref>-84).</p>
+                  <p xml:id="id9d70a0ff-0559-44f6-9f22-79a822677012">1 dobbeltblad og 1 løst blad, i alt 3 blade i 4<hi xml:id="idd565704b-f716-44e3-a96c-114fbb186ca0" rendition="#sup">o</hi>.<note xml:id="ideffb71e0-5de5-4f0d-8840-1d1569c73fd2"><p xml:id="id5634c17d-9c30-4952-9e27-429f70ced32f">Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Irregulære, fx afrevne, enheder betegnes lapper. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p></note> Bladene har spor fra sammenhæftning.<note xml:id="id33ebd073-4a96-47ef-8780-8bce4162a7b9"><p xml:id="idfb3bd7a9-b264-4127-abd5-8df7126a6dd2">Midt på bladenes højrekant er papiret yderligere beskadiget, evt. efter at have været sammenrullet og fikseret med et stykke snor. I øvrigt fremstår papiret stærkt medtaget; det er mørknet og har mange pletter.</p></note></p>
+                  <p xml:id="id897a83f0-7405-4d20-95c0-2cbe437bf5dd">Bladene er med blyant litreret A-F (muligvis ikke af SK).</p>
+                  <p xml:id="id8e9d857e-93aa-4d29-a7ba-e01cd34631e8">Papir: gulligt koncept, groft. Mål: 196 × 242 mm.<note xml:id="id803ae76e-34dc-4965-8c83-e7363d7a4eab"><p xml:id="id61fe0ed0-ec48-4bc9-852f-b6140038ffd1">Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p></note></p>
+                  <p xml:id="idc70daa38-5933-4f08-813e-e53f4027db17">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. På side B breder en tilføjelse sig til inderspalten. Side F er kun beskrevet tre fjerdedele.</p>
+                  <p xml:id="ida2cd7302-d01e-4e23-9134-fc53b3d87090">På side A findes overskriften: <hi xml:id="id539692b6-bd8b-4242-9f39-31af23a40a31" rendition="#bol">»En omreisende Æsthetikers Virksomhed.«.</hi></p>
+                  <p xml:id="ida103c05b-29f5-424d-b8a9-0289a7d6b4f1">Enkelte korrektioner. Få udstregninger i den løbende tekst; på side C er en passage på fem linjer slettet med skrå blyantstreger. Flere marginaltilføjelser.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.1" prev="#physDesc.1.1">
+                <msIdentifier xml:id="idbf155158-5f65-4734-b611-456b8058c316">
+                  <idno xml:id="idfd55c84c-2643-433a-a7de-b0c10d706147">1.1</idno>
+                </msIdentifier>
+                <additional xml:id="id3cfc6e7d-ef85-4828-b0e3-674adbea0435">
+                  <adminInfo xml:id="id486e89c9-7dbc-4cb3-87af-92c7b694701a">
+                    <note xml:id="id7af7a6e8-e6c5-407e-9e5b-a62f8beabdda">
+                      <p xml:id="id1a46518d-aa22-4f2b-9d11-d9024caf893a">(<hi xml:id="id850f25a9-dd57-4c36-9b06-c9a142f9f6d0" rendition="#ita">Pap.</hi> VII 1 B 1)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.2" next="#additional.1.2">
+                <msIdentifier xml:id="id6bb0fa8a-6b54-44ca-a20f-d67c655c277e">
+                  <idno xml:id="id7e74a36b-90ea-417d-8163-5e2b0245b474">1.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="idf389db44-716f-4232-a9dd-4e2e8f3788dd">
+                  <p xml:id="id14718300-7310-443b-88ad-0c0d2a61a7f0">Udkast til artiklen, indarbejdet i den første note (omkring <ref xml:id="id8564870b-8ee4-4303-ba5b-95c5112de2f4" target="../AeV/txt.xml#ss80" type="publishedWritings" n="80"><hi xml:id="id0e53645d-e642-41b3-8ff0-1d6aedcc0c2b" rendition="#ita">SKS</hi> 14, 80</ref>,28-81,69).</p>
+                  <p xml:id="id956c967c-cdee-4f0a-9845-d158c3ea4f51">1 løs lap. Afrivningskant nederst. Halveret 4<hi xml:id="iddb9b0688-9e5a-4664-b7bb-bdfd2a51760d" rendition="#sup">o</hi>.</p>
+                  <p xml:id="id9e978432-0fb3-4a58-8eb7-9dc9e9500480">Ingen paginering.</p>
+                  <p xml:id="idb664aa37-a400-4c9a-baaa-35040e3f9be7">Papir: gulligt koncept, groft. Mål: ca. 205 × 110-112 mm.</p>
+                  <p xml:id="ide6340222-dfff-4070-8dd8-c3439f570d03">Lappen er beskrevet på den lange led til lige under midten og kun på den ene side. Efter beskrivningen har lappen været foldet to gange på langs og en gang på tværs.</p>
+                  <p xml:id="id6aeb0361-165d-4e2d-82c7-0a0cd550c646">En enkelt korrektion ved udstregning samt en tilføjelse.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.2" prev="#physDesc.1.2">
+                <msIdentifier xml:id="idf7c6e93d-f7aa-4a75-bcbd-5f24f0781528">
+                  <idno xml:id="id4f404f94-f248-4014-8e20-f3ede2d455b4">1.2</idno>
+                </msIdentifier>
+                <additional xml:id="id32d0561d-4244-478b-a2f2-30c00cf1f8a6">
+                  <adminInfo xml:id="idabe92caf-d73b-49a6-83d8-d0412ecfbf5a">
+                    <note xml:id="id507b874f-0e74-46db-8c62-18a2cfd84a51">
+                      <p xml:id="iddd7bf695-c995-48f5-ac43-5457bbd057da">(<hi xml:id="id7348b016-0966-4434-ba4d-8075b1781614" rendition="#ita">Pap.</hi> VII 1 B 2)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.3" next="#additional.1.3">
+                <msIdentifier xml:id="id30d07271-433e-462b-b513-119d0c099d85">
+                  <idno xml:id="id86338798-d4ea-45a0-8d5b-7e2ded77a766">1.3</idno>
+                </msIdentifier>
+                <physDesc xml:id="id7dd8c509-f913-4bd3-b517-fb4941ca896e">
+                  <p xml:id="ide7863f4f-577b-4fec-a30f-897d82c9ee8c"><pb xml:id="ss222" n="222" edRef="#SKS"/>Udkast til passage i artiklen.</p>
+                  <p xml:id="id912bb325-49d1-44ba-a79f-c557e0ba7b79">1 dobbeltblad i 4<hi xml:id="id5f19aff6-da0b-45e8-8465-3bfb17c424cf" rendition="#sup">o</hi>. Ingen paginering.</p>
+                  <p xml:id="id2d91ebe1-498f-4d2e-b6b1-1c4ad1c82298">Papir: gulligt koncept, glat. Mål: 174 × 213 mm.</p>
+                  <p xml:id="iddedd0e75-3b90-4377-afde-f6410f00c159">Bl. [1v] er beskrevet ca. en tredjedel, og bl. [2v] er ubeskrevet.</p>
+                  <p xml:id="id3b96077f-d74b-4375-94f4-d0e94961cc1a">På bl. [1r] findes en marginaltilføjelse skrevet på langs. På bl. [1v] har SK i tredjesidste linje rettet et punktum til et semikolon og udvidet teksten med en tilføjelse, der forlænger linjen til bl. [2r], hvor tilføjelsens resterende 12 linjer er skrevet. Tilføjelsen optager derved plads ca. midt på bl. [2r], der i øvrigt er ubeskrevet.</p>
+                  <p xml:id="id99815f98-c8e9-4ed1-9336-abf55e25f67d">Enkelte korrektioner i form af udstregning af enkeltord. Tre marginaltilføjelser findes på bl. [1r]. I følgende passage: »En Opfattelse af <persName xml:id="id8fad1952-7301-48af-92fc-bde66e7a549f" key="Møller, Peder Ludvig">P. L. M.</persName> er ikke dialektisk vanskelig, <hi xml:id="id6e359561-b412-48b7-aa47-9ab37f3c7559" rendition="#ita">(...)</hi>« er ordet 'ikke' tilføjet med blyant mellem linjerne og indvist med en blyantstreg.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.3" prev="#physDesc.1.3">
+                <msIdentifier xml:id="id5dceadf5-cf5a-43b2-b1e5-4a37843b0069">
+                  <idno xml:id="id0247aee7-262c-45a5-b14b-16190793cb01">1.3</idno>
+                </msIdentifier>
+                <additional xml:id="idb586d56b-25fb-466d-aa1e-7493896ba6a5">
+                  <adminInfo xml:id="id1d521bd8-7b9c-4a74-84d7-c242e1fafa57">
+                    <note xml:id="id3ca7e176-4c0b-4904-996d-970fc5845f8a">
+                      <p xml:id="idb65628c1-f00e-44cb-8bd5-873c44a5110a">(<hi xml:id="id9b856153-9e79-43dc-b19a-d3af42b6bef6" rendition="#ita">Pap.</hi> VII 1 B 3)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.4" next="#additional.1.4">
+                <msIdentifier xml:id="idee2b28a0-0428-40bb-8495-f8b01ccee62e">
+                  <idno xml:id="id67d9c37b-8aa9-4ec1-b9be-a8f42e8d55a6">1.4</idno>
+                </msIdentifier>
+                <physDesc xml:id="id27a5845a-20b3-4af6-b04b-95e1bee9cf14">
+                  <p xml:id="id4cae28b0-2bf7-4254-b764-4fc36435e23e">Udkast til artiklen, benyttet sidst i artiklen.</p>
+                  <p xml:id="id86304f8a-c2f7-446e-9c00-b8bfdf524dee">1 løst blad i 4<hi xml:id="idac2978eb-bd7e-44de-88c2-8de5712c78aa" rendition="#sup">o</hi>. Afrivningskant i højre side.</p>
+                  <p xml:id="idc8bf1bda-3e3b-4da7-85ed-afe882cce67c">Ingen paginering.</p>
+                  <p xml:id="id5cebe774-d654-4cf5-a3f9-aad94e2b47ae">Papir: gulligt koncept, glat. Mål: 167-171 × 207 mm.</p>
+                  <p xml:id="id81bf0d74-865b-4b9d-b8cd-23e69b806db2">Begge sider har en enkelt påskrift.</p>
+                  <p xml:id="id2fbec3e9-746d-48a3-8bea-2719aae1fac6">Begyndende i øverste venstre hjørne på bl. [1r] står med blyant skrevet: »Reisen til <placeName xml:id="id495be46f-5bb3-4c73-840d-13b11cee6111">Sorø</placeName> / Pakæsler Mad og Drikke / Postillonen paa Dagvognen«.</p>
+                  <p xml:id="id0bca2d8c-bfd2-4bdc-8eb2-75c165a1c8eb">Øverst på bl. [1v] er med blyant skrevet: <hi xml:id="id43b14327-b0c4-46f6-b9d0-42a16a1b7610" rendition="#ant">»ubi spiritus ibi ecclesia / ubi <persName xml:id="idba264e33-3e17-43b9-a0a1-64d89fe5f346" key="Møller, Peder Ludvig">P. L. M.</persName> ibi Corsaren«.</hi></p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.4" prev="#physDesc.1.4">
+                <msIdentifier xml:id="id32e158ff-4325-4800-8301-5e57c36b3055">
+                  <idno xml:id="idb5f05c11-d4d3-491d-a3f8-8b3b82d3722c">1.4</idno>
+                </msIdentifier>
+                <additional xml:id="id6b373ccc-863c-41e4-a274-4143dd111c66">
+                  <adminInfo xml:id="id3e99a5ed-f3e9-4a2a-81ec-2fc7676d3cb9">
+                    <note xml:id="id23b59d7c-6101-4a84-af7e-1b880a44d938">
+                      <p xml:id="id32e11b62-acae-4937-84aa-0ea54a92cc49">(<hi xml:id="id258b8d56-025c-4787-a656-538f1872c69c" rendition="#ita">Pap.</hi> VII 1 B 4-5)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.5" next="#additional.1.5">
+                <msIdentifier xml:id="idbd51edbd-b9ca-4e0b-bc01-79e4287cbf62">
+                  <idno xml:id="id11d6d409-75cd-45a8-b413-811fb2668860">1.5</idno>
+                </msIdentifier>
+                <physDesc xml:id="iddae20ab2-1f57-4d5b-ba34-a6d321f6b612">
+                  <p xml:id="id7ddfeee9-8533-403d-b289-1e189e05f093">Udkast til artiklen (<ref xml:id="id0b3fcac7-17e7-4cc7-9398-7f120a76e6fb" target="../AeV/txt.xml#ss84" type="publishedWritings" n="84"><hi xml:id="id6950dae6-8b1c-490a-b6fc-fee8fdc43acd" rendition="#ita">SKS</hi> 14, 84</ref>,43-44 og 84,61-63).</p>
+                  <p xml:id="id2d23763f-b2c3-4bce-9c27-452b4467c3fe">1 løs lap. Afrevet med tre uregelmæssige kanter.</p>
+                  <p xml:id="id50476f74-2390-445c-8d46-0ab113fb9f0e">Ingen paginering.</p>
+                  <p xml:id="idc861aecb-b3ad-48c4-af0b-394ef1bae1f3">Papir: gulligt post-velin med vandmærke, hvoraf kan læses: »TMAN | 38«.<note xml:id="id5ae42661-13c5-4620-8fec-6d676ae6ba9b"><p xml:id="id832ade1a-8f77-493a-bf18-15f31a971fa2">Dvs. »I WHATMAN / 1838«.</p></note> Mål: 110-124 × 113-121 mm.</p>
+                  <p xml:id="ide0d620ea-a75c-4e2e-8662-4c9b7c0089e7">Lappens ene side er beskrevet.</p>
+                  <p xml:id="id58b48bb6-d12d-4797-bd63-e181e00a9fad">Øverst står: «Hilarius Bogbinder min Chef, / er bleven smigret i Corsaren.« Nederst, indrykket fra højre, står med latinsk hånd: <hi xml:id="id9214c538-dc81-4c5c-a45c-1bbbff9cb9be" rendition="#ant">»<persName xml:id="id18b6b240-6b65-4fe6-be20-d83b69bbe98b" key="Frater Taciturnus">Frater Taciturnus</persName>«,</hi> derunder med gotisk: »Høvidsmand for 3<hi xml:id="id7a487873-397e-48c4-b5ec-1ee79df9f804" rendition="#sup">d</hi> Afdeling i 'Stadier paa Livets Vei.'«.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.5" prev="#physDesc.1.5">
+                <msIdentifier xml:id="idcb3f82b9-23e7-4511-a878-abf762102720">
+                  <idno xml:id="id96896a5d-28b7-4835-963a-2cbf9e172363">1.5</idno>
+                </msIdentifier>
+                <additional xml:id="idb0a3fb90-7353-4a5e-ac51-e8a728e9086e">
+                  <adminInfo xml:id="id33f85e09-6263-4ea6-8fea-361d79347c4e">
+                    <note xml:id="id50ce75be-fbef-4ec2-b84a-2e4389d6961d">
+                      <p xml:id="ida14ab352-5ae7-4a9d-bb50-0f4b3bbdb84f">(<hi xml:id="idb105a5fd-dbd5-4f3b-af56-3a95ef4bee70" rendition="#ita">Pap.</hi> VII 1 B 6)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.6" next="#additional.1.6">
+                <msIdentifier xml:id="idf1dfbef6-e9ab-409c-8a2f-0fb1978b4c88">
+                  <idno xml:id="idfb42d6e5-1acd-4eb1-8804-8ab113bfd286">1.6</idno>
+                </msIdentifier>
+                <physDesc xml:id="id897e6f6b-6770-494a-b6fe-a41459319453">
+                  <p xml:id="idee71d5e5-e4f2-43fb-92af-0a774a1f7f9d"><pb xml:id="ss223" n="223" edRef="#SKS"/>Udkast til artiklen.</p>
+                  <p xml:id="idce1eaee6-af19-4c2d-bce0-a1f74224e352">1 lap. Afrevet med uregelmæssig nedre kant.</p>
+                  <p xml:id="idfb76b7f8-e944-4727-b32a-107b293a72d9">Ingen paginering.</p>
+                  <p xml:id="idc74415a0-83c0-4126-b835-352546ea03e5">Papir: tyndt koncept, gulligt. Mål: ca. 198-225 × 267-170 mm.</p>
+                  <p xml:id="id47cfc615-192e-482d-ab1d-01c8be775605">Lappen har efter beskrivningen været foldet en gang på langs og tre gange på tværs. Kun den ene side er beskrevet.</p>
+                  <p xml:id="id40a366d3-195e-4344-a041-39dd4c93b20e">SK har med blæk øverst på siden med rimelig margin til papirets top og venstre kant skrevet »Seer«, hvor 'er' er lettere utydeligt. Et par centimeter længere nede på siden med samme marginafstand til venstrekanten har han med blyant skrevet: »Seer Du min gode Corsar«, og han fortsætter med blæk: »dersom Du hver Gang kunde <hi xml:id="id5a1294c4-a63f-4190-abf0-7d674beb764c" rendition="#ita">(...)</hi>«. Den resterende tekst er skrevet med blæk og afsluttes ca. tre fjerdedele nede på siden.<note xml:id="id7ba94da4-f740-4a19-9b8a-0817add92d8f"><p xml:id="id0e45c111-c017-4170-84fb-114cfd7e63e4">En tænkelig forklaring på tekstens udseende er, at SK har haft problemer med skrivetøjet; blækket er ikke løbet ordentligt fra pennen. Han har så grebet en blyant og er begyndt forfra på sætningen; efterfølgende har han alligevel fortrudt og er vendt tilbage til en pen.</p></note></p>
+                  <p xml:id="id978cc601-f0cb-4b7f-817c-6eccaaf51ba5">En enkelt korrektion.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.6" prev="#physDesc.1.6">
+                <msIdentifier xml:id="id8307280f-f9f9-46dc-80ae-325834784cb3">
+                  <idno xml:id="id7d19e3ea-c4bd-4c33-b1b5-ec8fe0e6b21f">1.6</idno>
+                </msIdentifier>
+                <additional xml:id="ida47c6d37-d1c1-445c-bebc-538021d1be4b">
+                  <adminInfo xml:id="id92490489-820a-44e4-81b2-e5d61d8c6c32">
+                    <note xml:id="id17989c4a-8dac-4bb4-a9e6-fd6a423a41ff">
+                      <p xml:id="id6a091bb1-eb33-4779-9c45-c94651e3ce19">(<hi xml:id="id2c3422a0-1d4a-4f86-879f-286799fd2c86" rendition="#ita">Pap.</hi> VII 1 B 7)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.7" next="#additional.1.7">
+                <msIdentifier xml:id="id9aaf90f3-d9ad-438f-94df-22fb85ca4040">
+                  <idno xml:id="id0d749871-ff73-4bbb-ab8b-2cf846f8e55b">1.7</idno>
+                </msIdentifier>
+                <physDesc xml:id="ida443885e-149a-424f-9766-abb817653148">
+                  <p xml:id="ide16a1771-b156-4f82-8ddf-52bfad7541c4">Udkast til artiklen.</p>
+                  <p xml:id="id6200ff40-b701-4360-90c8-cacfe497da2b">1 løst blad i 4<hi xml:id="id5651e2e4-500c-4322-b99f-47aba8246f9d" rendition="#sup">o</hi>. Afrivningskant i venstre side.<note xml:id="id39db29bc-68ad-4720-8e08-662e3a42cf13"><p xml:id="id932a101a-6c38-404c-8d77-b7785f62a2f1">Afrivningen modsvarer afrivningskanten på det blad, der udgør ms. 1.4.</p></note></p>
+                  <p xml:id="id28b57b0e-eab0-4224-8492-b415a18a7970">Ingen paginering.</p>
+                  <p xml:id="id790cf110-e631-438a-a1a4-94123460a7cc">Papir: gulligt koncept, glat. Mål 170 × 206 mm.</p>
+                  <p xml:id="id4f6b6a71-6a16-4b83-a11a-b6c49a2659c1">Bl. [1v] er ubeskrevet.</p>
+                  <p xml:id="id1a7749f7-7f26-4429-b7f2-8b46e6565912">Øverst findes et afsnit på seks linjer; ovenover har SK skrevet en tilføjelse og indvist med indvisningstegn. Neden for første afsnit ses en centreret påskrift: »saa Det om Corsaren.«. Under denne følger et afsnit på seks linjer. Nederst på siden findes endnu et afsnit, der afsluttes på sidens bund.</p>
+                  <p xml:id="idab97b4ca-1c93-4b6a-86fe-ca31a7bef458">Få korrektioner</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.7" prev="#physDesc.1.7">
+                <msIdentifier xml:id="id4d4b2b2f-1bf2-4816-9c6e-2b2fd116bd7e">
+                  <idno xml:id="id6f5dfadc-8883-406d-89e3-bfebc89fbbfc">1.7</idno>
+                </msIdentifier>
+                <additional xml:id="ide3d0aa24-2e8d-4092-a671-ad23cb4750c8">
+                  <adminInfo xml:id="ida144eba9-969e-492b-9164-94a2dac50b27">
+                    <note xml:id="idb32f026d-bf0e-40b5-82b1-d68d8357e2e5">
+                      <p xml:id="id51191385-6264-4e3a-9b6d-62f6cdf24afa">(<hi xml:id="idbc6f6107-a44f-4aae-b8c9-eaecfcecebc8" rendition="#ita">Pap.</hi> VII 1 B 8)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.1" prev="#physDesc.1">
+              <msIdentifier xml:id="id55bfc76d-e2b6-4579-878c-450ad0957ae3">
+                <idno xml:id="id14c6bfa1-6a00-450d-b4be-d2efda522b3c">1</idno>
+              </msIdentifier>
+              <additional xml:id="idcdfbdd66-6012-487c-9186-d8b40c6192d1">
+                <adminInfo xml:id="id6d0fdc15-b7d4-4fd0-961e-ce8deb5233c7">
+                  <note xml:id="idcb52e385-0097-4679-ab44-5bb5010e116b">
+                    <p xml:id="idadbdcb76-3437-4548-bbde-bec1fdcb7620">(<hi xml:id="id4bb20180-7634-43ab-b498-82e33941c196" rendition="#ita">L-fort.</hi> + <hi xml:id="ideeab8ce1-85e8-414e-8c0d-1d63ccfe3cbc" rendition="#ita">B-fort.</hi> 296; KA, B pk. 30; <hi xml:id="idb193ee05-cc56-4624-ad23-2206d80d2e0a" rendition="#ita">Pap.</hi> VII 1 B 1-8)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+        </div>
+        <div type="level1" xml:id="k3">
+          <head xml:id="id69415b36-b572-4bbc-a80f-23aebe8fd519"><pb xml:id="ss224" n="224" edRef="#SKS"/>3. Tilblivelseshistorie</head>
+          <p xml:id="id109ab7b8-a0ad-4fe1-a6d3-8a23715bc0aa">»En omreisende Æsthetikers Virksomhed, og hvorledes han dog kom til at betale Gjæstebudet.« blev som nævnt trykt og publiceret den 27. dec. 1845 i <hi xml:id="idbb25293d-5e82-4721-81b0-0f6700552cf4" rendition="#ita">Fædrelandet,</hi> nr. 2078. Der er ingen dateringer i manuskriptmaterialet, men indirekte lader det omtrentlige affattelsestidspunkt sig fastlægge på to måder: For det første er artiklen en reaktion på <persName xml:id="idcfa6008e-9f19-4a89-906c-04d8544b7c2d" key="Møller, Peder Ludvig">P.L. Møller</persName>s essay »Et Besøg i <placeName xml:id="id527c44fd-6748-4ce3-addd-766d591deff8">Sorø</placeName>«, hvor <persName xml:id="idf743c17a-c705-40dc-a026-c8f99e11fffc" key="Møller, Peder Ludvig">Møller</persName> bl.a. kritiserede <hi xml:id="idb163b68c-086a-4068-bca9-ed4fbd4bfd3e" rendition="#ita">Stadier paa Livets Vei.</hi> Essayet udkom den 22. dec. 1845 i <persName xml:id="idb81eeb0b-7106-4e84-a478-ad77593df6bb" key="Møller, Peder Ludvig">Møller</persName>s æstetiske årbog <hi xml:id="id2cca4659-b882-48a4-81cc-fcda68f22876" rendition="#ita">Gæa</hi> for 1846,<note xml:id="id7ca5ff92-c5f0-4e45-8423-d0763e841755"><p xml:id="id6a0a52b5-b760-42ec-8491-61f90141a879"><hi xml:id="id2d901158-f759-4b4c-a8d8-5a28de7d82f7" rendition="#ita">Gæa, æsthetisk Aarbog,</hi> udgivet af <persName xml:id="idc26ed9ce-b9c4-4a8e-8968-58ca95ac2a75" key="Møller, Peder Ludvig">P.L. Møller</persName>, <placeName xml:id="idf66a6987-86b1-4b02-9370-2c2fc6274193" key="København">Kbh.</placeName> 1846, s. 144-187.</p></note> hvorfor SK først kan have påbegyndt sit modsvar herefter. For det andet har SK i et tilbageblik selv berørt tilblivelsesperioden. I optegnelsen <ref xml:id="iddf6ac7f1-9612-4ad7-b56b-cf48ad4eb671" target="../NB/txt.xml#n7" type="journalsAndPapers" n="7">NB:7</ref>, dateret den 9. marts 1846, noterer han således:</p>
+          <quote xml:id="idaac0b224-db76-40b3-9911-ec0df67fd935">
+            <p xml:id="id41f3fa41-b049-4136-b4bb-11cff0a3ce19">Artiklen mod <persName xml:id="id495d648a-cfd1-45b5-be1d-b2ca54b58384" key="Møller, Peder Ludvig">P.L. Møller</persName> var skrevet i megen Frygt og Bæven, jeg brugte Helligdagene dertil, og forsømte hverken at gaae i Kirke eller at læse min Prædiken for at danne den regulerende Modstand.<note xml:id="id24ae8486-4c67-4c37-91bb-03067c427baf"><p xml:id="id22ed6e0f-b126-4b73-b9bb-7b0d8e8f6566"><ref xml:id="id1a52b9fe-0950-4eeb-9dbf-946b7cf733ac" target="../NB/txt.xml#ss15" type="journalsAndPapers" n="15"><hi xml:id="ide2a2cc88-dac8-4132-bceb-fba179102005" rendition="#ita">SKS</hi> 20, 15</ref>,40-16,3.</p></note></p>
+          </quote>
+          <p xml:id="id392b20fc-123e-42d0-bf2c-bc0af953289f">Altså en tilblivelsesperiode på små fem dage hen over julen.</p>
+          <p xml:id="id38f990e7-d2d1-4b3f-b758-3d642e908804" rendition="#ind">Det bevarede manuskriptmateriale, der ikke indeholder en renskrift (trykmanuskript), sammenholdt med den relativt korte tilblivelsesperiode, lader ane en skriveproces, der er styret af mange indfald. Det er forklaringen på de tre løse blade med spredte udkast samt det tilsvarende antal løse lapper.</p>
+          <p xml:id="id191d2bb9-eb77-48a9-b4d3-ee214e89a12b" rendition="#ind">Ms. 1.1 udgør et nogenlunde sammenhængende manuskript. Det er det fyldigste stykke, og længere passager og ansatser herfra har fundet vej til den endelige artikel. Det øvrige manuskriptmateriale forekommer at være tilføjelser til ms. 1.1; det er ideer og udkast, der overvejende er indarbejdet i den endelige artikels afsluttende del samt i en note. Den løse lap, der udgør ms. 1.2, er således indarbejdet i artiklens første note (hovedsageligt omkring <ref xml:id="idc4becc3a-10b1-464c-b584-b726e145a57c" target="../AeV/txt.xml#ss80" type="publishedWritings" n="80"><hi xml:id="idd8583d82-06e1-4e10-bf84-4686d9b2e0ee" rendition="#ita">SKS</hi> 14, 80</ref>,28-40 og 81,59-69), hvis ansatser i det små også kan fremdrages af den nederste marginaltilføjelse fra side B i ms. 1.1. Ms. 1.3 er et udkast, som i en senere bearbejdelse har fundet vej til den del af artiklen, der indledes efter skillestregen (<ref xml:id="id3b15a794-cb2d-4a63-91c5-8209d5f766e3" target="../AeV/txt.xml#ss83" type="publishedWritings" n="83"><hi xml:id="idfeca08ab-eaf0-4e95-8c07-98a8e166d973" rendition="#ita">SKS</hi> 14, 83</ref>,13). Hovedteksten i ms. 1.3 afsluttes på bl. [1v] med ordene: »Gid jeg saa blot snart maatte <pb xml:id="ss225" n="225" edRef="#SKS"/>komme i Corsaren«, en vending, der let omskrevet indleder artiklens sidste afsnit (<ref xml:id="id0e197249-f364-45c0-ba4e-99621e68ec10" target="../AeV/txt.xml#ss84" type="publishedWritings" n="84"><hi xml:id="id8bd8acc0-915c-40af-a3e9-04e20f07c397" rendition="#ita">SKS</hi> 14, 84</ref>,38).</p>
+          <p xml:id="id620babe4-d415-4d87-8ad8-ec607391c2b4" rendition="#ind">De to påskrifter, én på hver side af det blad, der udgør ms. 1.4, er også benyttet i den endelige artikels sidste afsnit; den latinske vending på bl. [1r] næsten ordret (<ref xml:id="id66c63550-5c65-4db7-89fc-d3db7da1d2fd" target="../AeV/txt.xml#ss84" type="publishedWritings" n="84"><hi xml:id="idc2be34b3-6864-48e5-a1c8-a9188ff2d57b" rendition="#ita">SKS</hi> 14, 84</ref>,48-49). I ms. 1.5 er også to påskrifter, der senere finder anvendelse sidst i artiklen (<ref xml:id="id20476759-c026-4914-b5f1-34b06bf7b694" target="../AeV/txt.xml#ss84" type="publishedWritings" n="84"><hi xml:id="id6fcf35f8-7269-4b50-a5ac-da7318a7ef36" rendition="#ita">SKS</hi> 14, 84</ref>,43-44 og 84,61-63); bl.a. findes signaturen i sin fulde ordlyd her.</p>
+          <p xml:id="id11f647c7-f692-42d1-babe-227506fbd240" rendition="#ind">SK har ikke gjort direkte brug af hverken ms. 1.6 eller 1.7. Begge manuskripter kredser om <hi xml:id="id53733597-6a94-4afb-a3f2-8081e8e77424" rendition="#ita">Corsaren</hi> og har næsten enslydende formuleringer. For eksempel findes i ms. 1.6 flg.: »Seer Du min gode Corsar dersom Du hver Gang kunde skrive saa moersom en Artikel – <hi xml:id="id8ed9d632-3e05-4789-bcc8-80ca61f01c0e" rendition="#ita">(...)</hi>«.<note xml:id="id28d6d961-f08e-4232-bb26-3e48ad8db685"><p xml:id="idbf27e524-788c-4ffc-b028-f83ad3ab1887">Trykt som <ref xml:id="id5050e746-b6e5-44a2-bcc3-d4fa610d2e81" type="preparatoryManuscript" n="pap:VII1B7" rend="AeV,ms.1.6"><hi xml:id="id136a9097-10eb-41d1-b5fd-455b3196bf54" rendition="#ita">Pap.</hi> VII 1 B 7</ref>, s. 169.</p></note> I ms. 1.7 skriver SK: »Thi seer Du vel min gode Corsar! Hvis Du hver Gang kunde skrive saa moersom en Artikel – <hi xml:id="id8c85a017-4560-4878-86d3-3c4a67ec8eb0" rendition="#ita">(...)</hi>«.<note xml:id="idbcefe1d9-04a9-47f2-8a75-6101666bd5ee"><p xml:id="id2d515339-9359-4874-8bbc-dcf528d9c05d">Trykt som <ref xml:id="id712122a6-e5c2-48bd-98aa-86670147704d" type="preparatoryManuscript" n="pap:VII1B8" rend="AeV,ms.1.7"><hi xml:id="idc7fc59ef-f9a7-4d1e-8fa9-f9e7b2ac68fb" rendition="#ita">Pap.</hi> VII 1 B 8</ref>, s. 169.</p></note> I ms. 1.7 gør han sig desuden nogle tanker om <hi xml:id="idf831f678-8361-48be-b161-befc165f1a7a" rendition="#ita">Corsarens</hi> redaktør <persName xml:id="id0bd5344a-9c67-49fe-813c-655c7a36b74c" key="Goldschmidt, Meïr Aron">M.A. Goldschmidt</persName>; tanker, som også formuleres i manuskriptmaterialet til SKs næste artikel i <hi xml:id="id5eeb9005-7b36-41f3-8407-2c35c5b3e801" rendition="#ita">Fædrelandet,</hi> nr. 9, den 10. jan. 1846, »Det dialektiske Resultat af en literair Politi-Forretning« (<ref xml:id="id25f92d87-f3cf-4f56-972c-706bdec33b8b" target="../PF/txt.xml#ss87" type="publishedWritings" n="87"><hi xml:id="id655a4907-b682-4e68-9b7b-0f1581eb2fbf" rendition="#ita">SKS</hi> 14, 87</ref>-89).<note xml:id="id23e5464c-5b38-4359-b4b7-35d1e03f3420"><p xml:id="idcc292e28-8bd0-45df-8ea5-e3f63f638e2c">Jf. <ref xml:id="id43957669-60d2-4555-9b55-2440af0eedae" target="../PF/txr.xml#ss245" type="textCriticalAccount" n="245">tekstredegørelsen til »Det dialektiske Resultat af en literair Politi-Forretning«, s. 245</ref>-258.</p></note></p>
+        </div>
+        <div type="level1" xml:id="k4">
+          <head xml:id="ida3b5d3a9-c34b-4eaf-867f-c64c9393f754">4. Udgivelsesmåde</head>
+          <p xml:id="id3e77c3e5-bf4d-41b9-aa66-bbac956f54bf">»En omreisende Æsthetikers Virksomhed, og hvorledes han dog kom til at betale Gjæstebudet.« blev som nævnt trykt i <hi xml:id="id67ef814e-dffe-4067-b822-a9f56cff316c" rendition="#ita">Fædrelandet.</hi><note xml:id="ide95f3a19-acea-4685-83a4-1dcb70527fac"><p xml:id="id28140236-16c3-4d70-a852-4b025dac4d0d">En nærmere redegørelse for avisens redaktionelle forhold, periodicitet og oplagstal findes i <ref xml:id="id508fb7fa-74a5-4f20-afd4-862a2d094cbe" target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til artiklen »Aabenbart Skriftemaal«, s. 112</ref>f.</p></note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
+          <p xml:id="id57db3470-1810-43dd-85ad-bed988b111e3" rendition="#ind">Af stor betydning for receptionen i SKs umiddelbare eftertid var <persName xml:id="id7349e362-716f-4216-8ae4-85dde10f549e" key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi xml:id="idc272c5c1-6564-47a5-9e2c-c1d4b9ffdd9e" rendition="#ita"><persName xml:id="idc8410894-7da0-4032-beca-8f41d76af642" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 <hi xml:id="id080d6c48-3dc8-48b0-8622-ee1e7ead9903" rendition="#ita">(Bl.art.).</hi> Heri indgår størstedelen af SKs artikler, også »En omreisende Æsthetikers Virksomhed, og hvorledes han dog kom til at betale Gjæstebudet.«.<note xml:id="ida0ac9fca-6d91-424c-b05e-a566c7279720"><p xml:id="idb271e5d7-6072-4daf-a701-340e87e57a4b">Artiklen er trykt i <hi xml:id="id5c8cda5b-066b-431f-a1f9-d657530ae43d" rendition="#ita">Bl.art.,</hi> s. 140-148.</p></note></p>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

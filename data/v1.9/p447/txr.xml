@@ -1,114 +1,633 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Efter sidste flytning Oktober 1852 – oktober 1853</title>
-     
-     <title type="short">P447</title>
-  <author>
-   <name>Niels Jørgen Cappelørn</name><name>Thomas Eske Rasmussen</name><name>Jon Tafdrup</name><name>Steen Tullberg</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Johnny Kondrup; Citater</name><name>henvisninger kontrolleret af Bjarke Mørkøre Hansen</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2011</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K27</biblScope>
-     <biblScope unit="file">http://sks.dk/p447/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition xml:id="capiTyp" scheme="free">Some spectacular type setting, in SKS rendered in small caps</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20130220">txr/XML, <bibl><idno type="version">1.8</idno>, <biblScope unit="file">http://sks.dk/p447/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="ideb86284e-a303-43c9-8416-bf1f8f750f69">
+    <fileDesc xml:id="id6f411e00-a80f-4d8b-bcd3-378e248b6e4a">
+      <titleStmt xml:id="id210455c1-5410-4388-a8dc-b4fdf6250ee5">
+        <title xml:id="idaf22e19f-8d36-4c56-8783-48ce780142c0" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="ide8b91eda-74c2-44e4-8a53-db037e33e298">Efter sidste flytning Oktober 1852 – oktober 1853</title>
+        <title xml:id="idfadc12a8-4b67-4e22-968b-93dad9021fa8" type="short">P447</title>
+        <author xml:id="id6fb754db-f879-4ec6-8606-ffc290eb40c1">
+          <name xml:id="idc2a6aff1-86c3-482f-8682-841132a7dc09">Niels Jørgen Cappelørn</name>
+          <name xml:id="idc92c4c2a-1140-445c-9e56-71a5235c9ea1">Thomas Eske Rasmussen</name>
+          <name xml:id="id5a8710bc-dcd9-4072-993d-ea7270054f7c">Jon Tafdrup</name>
+          <name xml:id="id4c53d0c1-0c9b-436c-84f9-ffb6f7910d59">Steen Tullberg</name>
+        </author>
+        <editor xml:id="id8730497d-b6e0-4949-9aa3-bce4dbb17770">
+          <name xml:id="idaff8f803-335a-462e-96e4-e21c158a2aba">Niels Jørgen Cappelørn</name>
+          <name xml:id="id29f0f496-db04-408e-b55b-d336dc486877">Joakim Garff</name>
+          <name xml:id="id773ed8db-c2c6-41c9-92bd-81e620e918e8">Johnny Kondrup</name>
+          <name xml:id="idfc2f15c7-b1cb-4a8b-b5a3-45917fefeea3">Tonny Aagaard Olesen</name>
+          <name xml:id="id12bc2665-fb93-4686-94b4-a855e3938036">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="idb04cb094-17df-458d-a47e-528358e2fd64">
+          <resp xml:id="id24855e79-ce0c-44d1-8d91-8b10510dea01">redigeret af</resp>
+          <name xml:id="id64feaad2-d0f6-4bb8-9bbf-543acdfd152d">Johnny Kondrup; Citater</name>
+          <name xml:id="id4e6c696b-2e7f-4735-b7d2-22c3716f5d34">henvisninger kontrolleret af Bjarke Mørkøre Hansen</name>
+        </respStmt>
+        <respStmt xml:id="id9789841d-b972-4587-941f-8fbebd56e8f5">
+          <resp xml:id="id4556aec1-2b10-4363-a956-a405cd20e52e">elektronisk redigeret af</resp>
+          <name xml:id="id5da88ad2-abfd-48fc-b26a-7943f5bf02c3">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="ida423144c-46bb-4b28-bad7-3aa0256cea04">
+        <authority xml:id="id3529b8fa-fd0b-42f2-b4cf-d60b55e55f6d">Søren Kierkegaard Forskningscenteret 2011</authority>
+        <availability xml:id="id258a73aa-4b9d-4e7f-866e-edc536cc9638" status="restricted">
+          <p xml:id="idd3b80046-6383-4e25-902b-4ba03afb79d1">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id13d2bbba-1209-4275-9be5-fbb74dd9e95e">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="id39ca503e-fac4-4be3-be71-acc9af46dc0d" unit="volume">K27</biblScope>
+        <biblScope xml:id="ide5892e34-ffbf-4a5b-8ca5-8f8d32894c16" unit="file">http://sks.dk/p447/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id92deac54-22ba-48b5-9aab-7e16e37e4b8e">
+        <bibl xml:id="idbed2accb-5a0f-4d6d-80d7-bb074aa8a711" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id881de9c7-63a5-4dfb-bcef-fbd20e4d043a">
+      <tagsDecl xml:id="id2ce61c22-cd8c-457a-a7ca-4a5dc70bfd86">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition xml:id="capiTyp" scheme="free">Some spectacular type setting, in SKS rendered in small caps</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id9106c958-259b-4161-8da4-b3b8e4b99656">
+      <change xml:id="id96edb0b5-1768-43d7-856c-eac9d31f18c1">Transformed to TEI by style sheet <bibl xml:id="idc79c0968-2c50-4866-b6f6-e97835a80c7e" type="file">txr2tei.xsl</bibl> version as of <date xml:id="idab15df36-e111-45c9-b156-a9305a2d267b">2017-02-15</date> importing <bibl xml:id="id39f44ba4-6f9b-4d4e-b609-0ac1eccf9c03" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="ide348c4e8-eab7-4259-9e13-b147c7035a94">Transformed to TEI by style sheet <bibl xml:id="idfe6db063-617b-47c0-a13f-5417eb89b86d" type="file">kn12tei.xsl</bibl> version <idno xml:id="idff34da95-9174-4b10-a2fa-f5882d065662" type="version">1.9</idno> as of <date xml:id="id1da6a4b2-40ac-4eb9-9506-edb8d7fb055a">2017-02-21</date> by <name xml:id="id8032df2f-a43e-4eb7-a909-11bed28113fd">Karsten Kynde</name>, <orgName xml:id="ide8960f51-fab1-456c-a7cf-a8ff4b619fd7">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="id6815c9aa-b543-4916-ba9d-ae2f5dc7f7d3">København</placeName></change>
+      <change xml:id="idd6a6895a-f58c-4940-b730-177eacb631bb" when="20130220">txr/XML, <bibl xml:id="idc6d4e8b7-fcce-444e-b4ee-e4b08a7bcd50"><idno xml:id="id6368fa31-d2a7-4db4-9083-8280348f0cb4" type="version">1.8</idno>, <biblScope xml:id="id42d0e32f-d542-4b81-a00f-5a130655a521" unit="file">http://sks.dk/p447/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="TextCriticalAccount" subtype="journalsAndPapers"><body><div><head type="topText" n="Tekstredegørelse"/>
-    <head><pb xml:id="ss997" n="997" edRef="#SKS"/>Tekstredegørelse</head>
-    <list type="TOC">
-      <item>1. Manuskriptbeskrivelse <ptr type="chapter" target="#k1" n="997"/> </item>
-      <item>2. Datering og kronologi <ptr type="chapter" target="#k2" n="1002"/> </item>
-    </list>
-    <div type="level1" xml:id="k1">
-      <head>1. Manuskriptbeskrivelse</head>
-      <p>»Efter sidste flytning«<note> <p>Navnet er givet af <hi rendition="#ita">SKS,</hi> jf. <ref target="../P1/int_1.xml#ss11" type="introduction" n="11">»Introduktion til <hi rendition="#ita">Løse papirer</hi>«</ref>, s. 11-12.</p>
-        </note> indeholder <hi rendition="#ita">L-fort.</hi> og <hi rendition="#ita">B-fort.</hi> numrene 13-18, 31-33, 37-47 og 50-51. If. <persName key="Lund, Henrik">Henrik Lund</persName>s »Ordenen af Papirerne« lå nr. 13-18 »I Pulten«, mens resten lå
-        »I nedre Pultskuffe« (se <ref target="../P1/txr.xml#ill_k3" type="figure" n="15">illustration 3</ref>, s. 15). Manuskripterne befinder sig i Kierkegaard Arkivet (KA) på
-        <placeName key="Kongelige Bibliotek, Det">Det Kongelige Bibliotek</placeName>.</p>
-      <msDesc><msIdentifier><collection>P447</collection></msIdentifier>
-        <msPart xml:id="physDesc.447" next="#additional.447"><msIdentifier><idno>447</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n447" type="journalsAndPapers" n="447">Papir 447</ref> (<hi rendition="#ita">SKS</hi> 27, 551).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.<note>
-                <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Dobbeltblad betegner et stykke papir, der er ombøjet (foldet) til blade.</p>
-              </note></p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 163 × 199 mm.<note>
-                <p>Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p>
-              </note></p><p>Bladene er foldet på langs; en bred inderspalte rummer teksten.<note>
-                <p>I flere af mss. kan det være svært at afgøre, om der er tale om en foldning eller en bukkefals. Ved bukkefals eller bukkestreg menes den fordybning i papiret, der går forud for foldningen. Bukkefalsen præges med et instrument fremstillet af koben, et såkaldt falseben, og kan være foretaget af enten SK selv eller hans papirhandler. Papirerne er som regel efterfølgende blevet foldet langs falsen.</p>
-              </note></p><p>Bl. [1v]-[2v] er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.447" prev="#physDesc.447"><msIdentifier><idno>447</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 18; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 287)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.448" next="#additional.448"><msIdentifier><idno>448</idno></msIdentifier><physDesc><p><pb xml:id="ss998" n="998" edRef="#SKS"/><ref target="../P447/txt.xml#n448" type="journalsAndPapers" n="448">Papir 448</ref> (<hi rendition="#ita">SKS</hi> 27, 551-553).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 162 × 199 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer teksten.</p></physDesc></msPart><msPart xml:id="additional.448" prev="#physDesc.448"><msIdentifier><idno>448</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 17; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 284-286)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.449" next="#additional.449"><msIdentifier><idno>449</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n449" type="journalsAndPapers" n="449">Papir 449</ref> (<hi rendition="#ita">SKS</hi> 27, 553-554).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>. Den nederste del af bl. [2] er uregelmæssigt afrevet lige under midten.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 163 × 199 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bladene har efter beskrivning været foldet en gang på tværs. Bl. [2v] er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.449" prev="#physDesc.449"><msIdentifier><idno>449</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 16; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 283)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.450" next="#additional.450"><msIdentifier><idno>450</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n450" type="journalsAndPapers" n="450">Papir 450</ref> (<hi rendition="#ita">SKS</hi> 27, 554).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 163 × 199 mm.</p><p>Bladet har efter beskrivning været foldet en gang på tværs.</p><p>Bl. [1r] er tre fjerdedele beskrevet, versosiden ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.450" prev="#physDesc.450"><msIdentifier><idno>450</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 15; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 282)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.451" next="#additional.451"><msIdentifier><idno>451</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n451" type="journalsAndPapers" n="451">Papir 451</ref> (<hi rendition="#ita">SKS</hi> 27, 555-557).</p><p>1 dobbeltblad + 1 løst blad, i alt 3 blade i 4<hi rendition="#sup">o</hi>. Det løse blad har afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 162 × 199 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bladene har efter beskrivning været foldet en gang på tværs.</p><p>Tekstens afslutning på bl. [3v] er skrevet på langs i yderspalten.</p><p>I overskriften på bl. [1r] er »eller / 'det er Mængden der skal gjøre det'« slettet med blyant (<hi rendition="#ita">SKS</hi> 27, 555,3-4).</p></physDesc></msPart><msPart xml:id="additional.451" prev="#physDesc.451"><msIdentifier><idno>451</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 14; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 281)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.452" next="#additional.452"><msIdentifier><idno>452</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n452" type="journalsAndPapers" n="452">Papir 452</ref> (<hi rendition="#ita">SKS</hi> 27, 557-558).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 149 × 199 mm.</p><p>Bladet er foldet på langs; en bred inderspalte rummer teksten, yderspal<pb xml:id="ss999" n="999" edRef="#SKS"/>ten tilføjelser. Bladet har efter beskrivning været foldet en gang på tværs.</p><p>Tekstens afslutning på bl. [1v] er skrevet på langs i yderspalten.</p></physDesc></msPart><msPart xml:id="additional.452" prev="#physDesc.452"><msIdentifier><idno>452</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 13; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 280)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.453" next="#additional.453"><msIdentifier><idno>453</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n453" type="journalsAndPapers" n="453">Papir 453</ref> (<hi rendition="#ita">SKS</hi> 27, 558-560).</p><p>1 dobbeltblad + 1 løst blad, i alt 3 blade i 4<hi rendition="#sup">o</hi>. Det løse blad har uregelmæssigt afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 162 × 199 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bladene er efter beskrivning foldet en gang på tværs. Bl. [3v] er halvt beskrevet.</p></physDesc></msPart><msPart xml:id="additional.453" prev="#physDesc.453"><msIdentifier><idno>453</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 51; KA, B pk. 51 læg 2[I]; <hi rendition="#ita">Pap.</hi> XI 3 B 105)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.454" next="#additional.454"><msIdentifier><idno>454</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n454" type="journalsAndPapers" n="454">Papir 454</ref> (<hi rendition="#ita">SKS</hi> 27, 560-563).</p><p>2 løse blade + 1 dobbeltblad, i alt 4 blade i 4<hi rendition="#sup">o</hi>. De løse blade har udgjort et dobbeltblad.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 163 × 199 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bladene har efter beskrivning været foldet en gang på tværs. Bl. [4r] er halvt beskrevet, bl. [4v] ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.454" prev="#physDesc.454"><msIdentifier><idno>454</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 50; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 306)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.455" next="#additional.455"><msIdentifier><idno>455</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n455" type="journalsAndPapers" n="455">Papir 455</ref> (<hi rendition="#ita">SKS</hi> 27, 563-567).</p><p>1 sammenhæftning af 2 dobbeltblade + 1 løst blad, i alt 5 blade i 4<hi rendition="#sup">o</hi>. Det løse blad har afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat; bl. [2] og [3], der udgør et dobbeltblad, har vandmærke: <hi rendition="#capiTyp">Klippan</hi>. Mål: 169 × 206 mm. Hæftetråd af rød silke.</p><p>Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser.</p><p>Tekstens afslutning nederst på bl. [5v] er skrevet på langs i yderspalten.</p></physDesc></msPart><msPart xml:id="additional.455" prev="#physDesc.455"><msIdentifier><idno>455</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 47; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 305)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.456" next="#additional.456"><msIdentifier><idno>456</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n456" type="journalsAndPapers" n="456">Papir 456</ref> (<hi rendition="#ita">SKS</hi> 27, 567-569).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 169 × 206 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser.</p><p>På bl. [1r] er en uindvist marginaltilføjelse skrevet på langs i yderspalten. Tekstens afslutning nederst på bl. [2v] er skrevet ad to omgange på <pb xml:id="ss1000" n="1000" edRef="#SKS"/>langs i yderspalten: Den er påbegyndt nederst i spalten og afsluttet ovenover.</p></physDesc></msPart><msPart xml:id="additional.456" prev="#physDesc.456"><msIdentifier><idno>456</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 46; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 303-304)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.457" next="#additional.457"><msIdentifier><idno>457</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n457" type="journalsAndPapers" n="457">Papir 457</ref> (<hi rendition="#ita">SKS</hi> 27, 569-570).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 169 × 206 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bl. [2v] er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.457" prev="#physDesc.457"><msIdentifier><idno>457</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 45; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 302)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.458" next="#additional.458"><msIdentifier><idno>458</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n458" type="journalsAndPapers" n="458">Papir 458</ref> (<hi rendition="#ita">SKS</hi> 27, 570-573).</p><p>1 løst blad + 1 dobbeltblad + 1 løst blad, i alt 4 blade i 4<hi rendition="#sup">o</hi>. Bl. [1] og [4] har udgjort et dobbeltblad. Bladene har været sammenhæftet. Hæftetråd af rød silke.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat; dobbeltbladet har rest af vandmærke: <hi rendition="#capiTyp">Klippa[n]</hi>. Mål: 169 × 206 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser.</p><p>På bl. [4r] er en marginaltilføjelse indvist med et dobbeltkors skrevet med blyant.</p></physDesc></msPart><msPart xml:id="additional.458" prev="#physDesc.458"><msIdentifier><idno>458</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 44; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 301)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.459" next="#additional.459"><msIdentifier><idno>459</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n459" type="journalsAndPapers" n="459">Papir 459</ref> (<hi rendition="#ita">SKS</hi> 27, 574-580).</p><p>4 løse blade + 2 dobbeltblade, i alt 8 blade i 4<hi rendition="#sup">o</hi>. De løse blade har afrivningskant i venstre side; bl. [3] og [4] har udgjort et dobbeltblad. Samtlige blade har spor efter sammenhæftning</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat; på nær bl. [1] og [3] har alle blade vandmærke eller rest af vandmærke: <hi rendition="#capiTyp">Klippan</hi>. Mål: 169 × 206 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bl. [8v] er en fjerdedel beskrevet.</p><p>På bl. [4v] er to linjer slettet med blyant.</p></physDesc></msPart><msPart xml:id="additional.459" prev="#physDesc.459"><msIdentifier><idno>459</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 43; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 300)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.460" next="#additional.460"><msIdentifier><idno>460</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n460" type="journalsAndPapers" n="460">Papir 460</ref> (<hi rendition="#ita">SKS</hi> 27, 580-589).</p><p>1 sammenhæftning af 4 dobbeltblade, i alt 8 blade i 4<hi rendition="#sup">o</hi>. Hæftetråd af rød silke; det ene dobbeltblad, bl. [4r]-[5v], har desuden en hvid hæftetråd.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat; alle dobbeltblade har vandmærke eller rest af vandmærke: <hi rendition="#capiTyp">Klippan</hi>. Mål: 169 × 206 mm.</p><p><pb xml:id="ss1001" n="1001" edRef="#SKS"/>Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser.</p><p>På bl. [2v] er en marginalnote indvist med kors i blyant. På bl. [5v] er en marginaltilføjelse slettet med blyant, og på bl. [6v]-[7r] er 7½ linje ligeledes slettet med blyant (se <ref target="../P447/txt.xml#ill_30" type="figure" n="585">illustration 30</ref>, <hi rendition="#ita">SKS</hi> 27, 585). På bl. [6v]-[7r] findes desuden et spejlvendt aftryk af en avisside.</p></physDesc></msPart><msPart xml:id="additional.460" prev="#physDesc.460"><msIdentifier><idno>460</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 42; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 299)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.461" next="#additional.461"><msIdentifier><idno>461</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n461" type="journalsAndPapers" n="461">Papir 461</ref> (<hi rendition="#ita">SKS</hi> 27, 589-590).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat; rest af vandmærke: <hi rendition="#capiTyp">Kl[ippan]</hi>. Mål: 169 × 206 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser.</p></physDesc></msPart><msPart xml:id="additional.461" prev="#physDesc.461"><msIdentifier><idno>461</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 41; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 298)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.462" next="#additional.462"><msIdentifier><idno>462</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n462" type="journalsAndPapers" n="462">Papir 462</ref> (<hi rendition="#ita">SKS</hi> 27, 591-592).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat; vandmærke: <hi rendition="#capiTyp">Klippan</hi>. Mål: 168 × 206 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer teksten. De har efter beskrivning været foldet en gang på tværs. Bl. [2r] er tre fjerdedele beskrevet, bl. [2v] er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.462" prev="#physDesc.462"><msIdentifier><idno>462</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 40; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 297)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.463" next="#additional.463"><msIdentifier><idno>463</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n463" type="journalsAndPapers" n="463">Papir 463</ref> (<hi rendition="#ita">SKS</hi> 27, 592-593).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat; rest af vandmærke: <hi rendition="#capiTyp">Kl[ippan]</hi>. Mål: 169 × 206 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bl. [2v] er halvt beskrevet.</p></physDesc></msPart><msPart xml:id="additional.463" prev="#physDesc.463"><msIdentifier><idno>463</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 39; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 296)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.464" next="#additional.464"><msIdentifier><idno>464</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n464" type="journalsAndPapers" n="464">Papir 464</ref> (<hi rendition="#ita">SKS</hi> 27, 593-594).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat; vandmærke: <hi rendition="#capiTyp">Klippan</hi>. Mål: 168 × 206 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bl. [2v] er halvt beskrevet.</p><p>En marginalnote på bl. [1v] er ført ind i inderspalten og afgrænset fra brødteksten med en tynd blækstreg.</p></physDesc></msPart><msPart xml:id="additional.464" prev="#physDesc.464"><msIdentifier><idno>464</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 38; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 295)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.465" next="#additional.465"><msIdentifier><idno>465</idno></msIdentifier><physDesc><p><pb xml:id="ss1002" n="1002" edRef="#SKS"/><ref target="../P447/txt.xml#n465" type="journalsAndPapers" n="465">Papir 465</ref> (<hi rendition="#ita">SKS</hi> 27, 595-596).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: glat koncept, gulligt. Mål: 169 × 206 mm.</p><p>Bladet er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bladet har efter beskrivning været foldet en gang på tværs. Bl. [2v] er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.465" prev="#physDesc.465"><msIdentifier><idno>465</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 37; KA, A pk. 51; <hi rendition="#ita">Pap.</hi> X 5 A 167)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.466" next="#additional.466"><msIdentifier><idno>466</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n466" type="journalsAndPapers" n="466">Papir 466</ref> (<hi rendition="#ita">SKS</hi> 27, 596-597).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 166 × 204 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bl. [2r] er en fjerdedel beskrevet, bl. [2v] ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.466" prev="#physDesc.466"><msIdentifier><idno>466</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 33; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 294)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.467" next="#additional.467"><msIdentifier><idno>467</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n467" type="journalsAndPapers" n="467">Papir 467</ref> (<hi rendition="#ita">SKS</hi> 27, 597-598).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 166 × 204 mm.</p><p>Bladet er foldet på langs; en bred inderspalte rummer teksten. Versosiden er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.467" prev="#physDesc.467"><msIdentifier><idno>467</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 32; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 292-293)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.468" next="#additional.468"><msIdentifier><idno>468</idno></msIdentifier><physDesc><p><ref target="../P447/txt.xml#n468" type="journalsAndPapers" n="468">Papir 468</ref> (<hi rendition="#ita">SKS</hi> 27, 598).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 167 × 204 mm.</p><p>Bladet er foldet på langs; en bred inderspalte rummer teksten. Versosiden er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.468" prev="#physDesc.468"><msIdentifier><idno>468</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 31; KA, A pk. 52[I]; <hi rendition="#ita">Pap.</hi> XI 2 A 291)</p></note></adminInfo></additional></msPart>
-      </msDesc>
-      <p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 13-18, 31-33, 37-47, 50-51; KA, A pk. 51 og 52[I]; B pk. 51 læg 2[I]; <hi rendition="#ita">Pap.</hi> X 5 A 167; XI 2 A 280-287 og 291-306; XI 3 B 105)</p>
-    </div>
-    <div type="level1" xml:id="k2">
-      <head>2. Datering og kronologi</head>
-      <p>Ingen af de 22 papirer er dateret.</p>
-      <p rendition="#ind">Rækkefølgen og dermed kronologien af papirerne i det følgende er bestemt af, hvorledes <persName key="Lund, Henrik">Henrik Lund</persName> må have fundet dem, og hvorledes han har grebet arbejdet med sin fortegnelse over papirerne an. Dette fremgår dels af hans fortegnelse (<hi rendition="#ita">L-fort.</hi>), dels af hans oversigt, »Ordenen af Papirerne«. Af disse <pb xml:id="ss1003" n="1003" edRef="#SKS"/>kan det sluttes, at det højeste nummer i <hi rendition="#ita">L-fort.</hi> må være det først skrevne inden for en given bunke af manuskripter. <persName key="Lund, Henrik">Lund</persName> har m.a.o. nummereret papirerne 'bagfra', så det, der har ligget øverst i bunkerne, er blevet registreret først.<note> <p>Jf. <ref target="../P1/int_1.xml#ss6" type="introduction" n="6">»Introduktion til <hi rendition="#ita">Løse papirer</hi>«</ref>, s. 6-9.</p> </note></p>
-      <p rendition="#ind"><ref target="../P447/txt.xml#n447" type="journalsAndPapers" n="447">Papir 447</ref>-452 har ligget for sig selv i SKs skrivepult på et ikke nærmere angivet sted (se <ref target="../P1/txr.xml#ill_k3" type="figure" n="15">illustration 3</ref>, s. 15, hvor en mulighed er vist). Materialet har ikke ligget sammen med udkast og kladder til artikler i forbindelse med kirkestriden, hvilket er tilfældet for mange af de løse papirer fra tidsrummet 1852-55. Dette antyder, at papirerne 447-452 er skrevet længe før det materiale, der i <hi rendition="#ita">L-fort.</hi> omgiver det, dvs. før 1854. Da SK den 19. okt. 1852 flyttede fra <placeName>Østerbro</placeName> til Klædeboderne og i forbindelse hermed ordnede en del af sine papirer, kan de formodes at være skrevet umiddelbart efter denne flytning.</p>
-      <p rendition="#ind"><ref target="../P447/txt.xml#n453" type="journalsAndPapers" n="453">Papir 453</ref>-468 har ligget i den nederste skuffe i SKs skrivepult sammen med bl.a. flere kladder dateret i 1853.<note> <p>Jf. <hi rendition="#ita">Pap.</hi> X 6 B 100, 232-234 og 235.</p> </note> <ref target="../P447/txt.xml#n453" type="journalsAndPapers" n="453">Papir 453</ref> er formentlig fra tiden omkring eller kort efter årsskiftet 1852/53, da det har ligget umiddelbart efter et par udkast til artikler om <persName key="Nielsen, Rasmus">Rasmus Nielsen</persName> fra marts 1853.<note> <p>Jf. <hi rendition="#ita">Pap.</hi> X 6 B 101 og 102.</p> </note> De mange optegnelser om biskop <persName key="Mynster, Jakob Peter">J.P. Mynster</persName> bærer desuden præg af at være skrevet inden dennes død i jan. 1854.</p>
-      <p rendition="#ind">Det afsluttende <ref target="../P447/txt.xml#n468" type="journalsAndPapers" n="468">Papir 468</ref> følges i <hi rendition="#ita">L-fort.</hi> af et manuskript (<ref target="../P469/txt.xml#n474" type="journalsAndPapers" n="474">Papir 474</ref>), der er skrevet efter <persName key="Martensen, Hans Lassen">H.L. Martensen</persName>s indsættelse som biskop i juni 1854. Dette markante spring i tid modsvares af et tidsspring mellem nogle optegnelser i SKs journal fra samme periode, hhv. <ref target="../NB28/txt.xml#n54" type="journalsAndPapers" n="54">NB28:54</ref> fra den 13. okt. 1853, <ref target="../NB28/txt.xml#n55" type="journalsAndPapers" n="55">NB28:55</ref> fra den 2. nov. 1853 og endelig <ref target="../NB28/txt.xml#n56" type="journalsAndPapers" n="56">NB28:56</ref> fra den 1. marts 1854. I sidstnævnte omtales for første gang biskop <persName key="Mynster, Jakob Peter">J.P. Mynster</persName>s død den 30. jan. 1854.<note> <p>Jf. <hi rendition="#ita">SKS</hi> 25, 257-262.</p> </note> SK er med andre ord holdt op med at føre sin journal i okt.-nov. 1853 og tager den først frem igen i marts 1854. Det er udgivernes vurdering, at dette interval går igen mellem <ref target="../P447/txt.xml#n468" type="journalsAndPapers" n="468">Papir 468</ref> og <ref target="../P469/txt.xml#n469" type="journalsAndPapers" n="469">469</ref>, idet <ref target="../P469/txt.xml#n469" type="journalsAndPapers" n="469">Papir 469</ref> synes at være det første løse papir, der nævner <persName key="Mynster, Jakob Peter">Mynster</persName>s død.<note> <p>Jf. <hi rendition="#ita">SKS</hi> 27, 602,11-12: »den nu afdøde Biskop <persName key="Mynster, Jakob Peter">Mynster</persName>.«</p> </note></p>
-      <p rendition="#ind">Sammenfattende sandsynliggør dette, at papirerne er skrevet i tidsrummet fra okt. 1852-okt. 1853.</p>
-    </div>
-  </div></body></text>
+  <text xml:id="id3f3115b7-8dfa-4793-a78d-207387abeb1a" type="TextCriticalAccount" subtype="journalsAndPapers">
+    <body xml:id="idc01c9a37-0a25-4b92-8e44-81982a7c7289">
+      <div xml:id="id4c460eb9-4e0c-4b29-acb3-91b43c85fd4f">
+        <head xml:id="id93d5f60f-17aa-4ffc-9163-89ebd75a04ca" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="id398eaaf2-a743-45cc-a43b-d16d2b5bc245"><pb xml:id="ss997" n="997" edRef="#SKS"/>Tekstredegørelse</head>
+        <list xml:id="id68e6c837-915c-4908-8c92-a1bb12d2bad9" type="TOC">
+          <item xml:id="id32ff0171-d18e-40fe-a074-78abccc15cf4">1. Manuskriptbeskrivelse <ptr xml:id="id612e1a40-bb2a-45bd-8388-f5ae93e0078b" type="chapter" target="#k1" n="997"/> </item>
+          <item xml:id="id138cfff0-e7b0-4ffb-9198-d38928a27be4">2. Datering og kronologi <ptr xml:id="idd03fb4bb-68a6-4f3e-97e2-780982747f16" type="chapter" target="#k2" n="1002"/> </item>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="id49dc9d30-601e-41c1-9e73-3bef66b23ec8">1. Manuskriptbeskrivelse</head>
+          <p xml:id="ide0416c49-47fa-4886-8654-22d55f201efe">»Efter sidste flytning«<note xml:id="idd4ce464a-5121-4cd6-a985-1530af8e8684"><p xml:id="id395b4cf7-1e19-421c-8e95-80fe42c705f0">Navnet er givet af <hi xml:id="idd6f3b3e6-540a-4781-afe4-196aa6a4a79a" rendition="#ita">SKS,</hi> jf. <ref xml:id="id521aa90d-7116-45f5-9d67-8bfae6611352" target="../P1/int_1.xml#ss11" type="introduction" n="11">»Introduktion til <hi xml:id="id4f9c9d89-f608-4ba7-bb77-89426816e81d" rendition="#ita">Løse papirer</hi>«</ref>, s. 11-12.</p></note> indeholder <hi xml:id="id0c4079c1-e673-4c96-bfe2-5b1480eef8de" rendition="#ita">L-fort.</hi> og <hi xml:id="id5b956909-f714-4e33-9252-72fe6167ccf2" rendition="#ita">B-fort.</hi> numrene 13-18, 31-33, 37-47 og 50-51. If. <persName xml:id="ida4d492b7-191d-46fc-882f-1471bb0d2e84" key="Lund, Henrik">Henrik Lund</persName>s »Ordenen af Papirerne« lå nr. 13-18 »I Pulten«, mens resten lå
+        »I nedre Pultskuffe« (se <ref xml:id="idda9f3a71-b51b-4e46-83cf-52a2b23a2c82" target="../P1/txr.xml#ill_k3" type="figure" n="15">illustration 3</ref>, s. 15). Manuskripterne befinder sig i Kierkegaard Arkivet (KA) på
+        <placeName xml:id="iddb131366-e377-4599-93b6-cc0716b965cf" key="Kongelige Bibliotek, Det">Det Kongelige Bibliotek</placeName>.</p>
+          <msDesc xml:id="idcfe305dc-d1f5-43b1-8294-9b233b543b82">
+            <msIdentifier xml:id="idb2903dd9-830a-469a-a3fe-aa8de4145b20">
+              <collection xml:id="idfd519fa8-3124-46ea-a4dd-7275ecfc8556">P447</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.447" next="#additional.447">
+              <msIdentifier xml:id="id5e8f6c6f-35de-48ea-9839-db3cff5a2bf2">
+                <idno xml:id="idd11a4e1e-4ba9-41c8-8856-9b023663cb15">447</idno>
+              </msIdentifier>
+              <physDesc xml:id="id0e753f4c-cf2f-434a-9d6a-3479cf506083">
+                <p xml:id="ide10b9b63-1a54-4a97-9bfa-5f51625dc54c"><ref xml:id="id90690623-d5c7-4c8f-a309-0a2461d474fd" target="../P447/txt.xml#n447" type="journalsAndPapers" n="447">Papir 447</ref> (<hi xml:id="idf118bc91-bfea-4871-a1f9-842d95edf2ca" rendition="#ita">SKS</hi> 27, 551).</p>
+                <p xml:id="id0d32dbd2-2f31-4f65-8f73-61348ab2ba3b">1 dobbeltblad i 4<hi xml:id="idf206cccc-8f09-4f1c-99eb-efb6a7ed06e5" rendition="#sup">o</hi>.<note xml:id="id4f4c9f08-06f3-4434-a6df-19f8fcd246c1"><p xml:id="id5549d6b4-961e-4f2a-99ee-dfb44342a313">Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Dobbeltblad betegner et stykke papir, der er ombøjet (foldet) til blade.</p></note></p>
+                <p xml:id="id919cdb57-9566-4f4c-8cb0-54e40d58ba92">Ingen paginering.</p>
+                <p xml:id="idb425bd0d-98d1-461b-88a1-49d7d646fe8d">Papir: gulligt koncept, glat. Mål: 163 × 199 mm.<note xml:id="idb0d71983-6ed9-49cb-8aef-ecc5da7e8148"><p xml:id="id6bde2a3c-81ad-4ed0-a54b-ba65e5d0079d">Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p></note></p>
+                <p xml:id="id0c58a7ce-d063-4122-8652-b060361c154c">Bladene er foldet på langs; en bred inderspalte rummer teksten.<note xml:id="id2c7bc062-de0e-4e1c-a380-693429b33d1d"><p xml:id="idf0cdeb61-ed62-49fd-9697-3bb80db32aa0">I flere af mss. kan det være svært at afgøre, om der er tale om en foldning eller en bukkefals. Ved bukkefals eller bukkestreg menes den fordybning i papiret, der går forud for foldningen. Bukkefalsen præges med et instrument fremstillet af koben, et såkaldt falseben, og kan være foretaget af enten SK selv eller hans papirhandler. Papirerne er som regel efterfølgende blevet foldet langs falsen.</p></note></p>
+                <p xml:id="id806272ce-f018-4958-864d-b138541b38cd">Bl. [1v]-[2v] er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.447" prev="#physDesc.447">
+              <msIdentifier xml:id="id3ace8b9b-7d26-4b71-9e84-84e0aeaf1837">
+                <idno xml:id="idb20a0745-8e56-4c8b-b77f-c062f75b8f4b">447</idno>
+              </msIdentifier>
+              <additional xml:id="id98a09d90-bf2c-485c-926d-c0f95f322728">
+                <adminInfo xml:id="id92ee0b75-5e89-4433-82b1-6e80555e965b">
+                  <note xml:id="id363ee04c-9048-487a-865c-280abbb6b459">
+                    <p xml:id="idf423975c-4afb-453d-81a2-a554bc9643c6">(<hi xml:id="id981ff956-dbb8-4eaa-a698-29f2ff689fce" rendition="#ita">L-fort.</hi> + <hi xml:id="idd12eb811-6493-4660-9281-dbaebd57e35b" rendition="#ita">B-fort.</hi> 18; KA, A pk. 52[I]; <hi xml:id="id4004e347-3901-4f72-b3c9-ff1eeefe058b" rendition="#ita">Pap.</hi> XI 2 A 287)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.448" next="#additional.448">
+              <msIdentifier xml:id="idcafff24e-e4fd-4128-a66c-dffc5d9f8d25">
+                <idno xml:id="id3d097718-1312-473d-b1ea-9c659b501ca8">448</idno>
+              </msIdentifier>
+              <physDesc xml:id="id8c501572-c237-484f-b21d-6c67cb56c3e3">
+                <p xml:id="id66ef36cc-181e-416c-8db4-bef5a73206ba"><pb xml:id="ss998" n="998" edRef="#SKS"/><ref xml:id="id480193a2-0e4b-481b-b03a-507f3be54511" target="../P447/txt.xml#n448" type="journalsAndPapers" n="448">Papir 448</ref> (<hi xml:id="id47fb5a76-bb29-4b9d-a09d-6d7cbcd10531" rendition="#ita">SKS</hi> 27, 551-553).</p>
+                <p xml:id="ide6dfb180-6961-4891-bbb5-5d01e7158666">1 dobbeltblad i 4<hi xml:id="id36e82e94-676b-4554-b46a-f492ea65accd" rendition="#sup">o</hi>.</p>
+                <p xml:id="idd304c8e0-24a6-48f5-a5c4-971f3f01948f">Ingen paginering.</p>
+                <p xml:id="id564ff5fc-4fd2-4055-adc3-5d4f02c81557">Papir: gulligt koncept, glat. Mål: 162 × 199 mm.</p>
+                <p xml:id="id7b23c8f5-23a5-454e-b5f9-04e66806b727">Bladene er foldet på langs; en bred inderspalte rummer teksten.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.448" prev="#physDesc.448">
+              <msIdentifier xml:id="id97deba47-7791-4945-b1b2-0a78a2bbe5a8">
+                <idno xml:id="id58725e27-e384-489a-9d73-2adcbfcd49e8">448</idno>
+              </msIdentifier>
+              <additional xml:id="idfbd23eb3-f57e-400c-98f7-6246d85c5323">
+                <adminInfo xml:id="id0f7bc9b4-2955-4919-beb5-e429d63a5481">
+                  <note xml:id="id8a69b5bb-1083-4d33-b868-2e18a500d0f6">
+                    <p xml:id="id4562282a-f3a8-4af0-a61e-9e4e31e03bc5">(<hi xml:id="idc4b6c5a7-d357-4457-a597-863787ef2f77" rendition="#ita">L-fort.</hi> + <hi xml:id="id68296dec-4c8b-4a96-b679-e382db95ba69" rendition="#ita">B-fort.</hi> 17; KA, A pk. 52[I]; <hi xml:id="id53fe44b9-af55-4d4a-ad7e-120906875d90" rendition="#ita">Pap.</hi> XI 2 A 284-286)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.449" next="#additional.449">
+              <msIdentifier xml:id="id8bd40dc1-004b-4de4-ab3e-51c4b70e8fb5">
+                <idno xml:id="id5a55616e-e52d-4970-bee5-02cf738586d0">449</idno>
+              </msIdentifier>
+              <physDesc xml:id="id7d897e67-601d-477f-a2b6-1843cee1a1bb">
+                <p xml:id="id4c5c5e81-a95c-4b87-a28d-2075dcf322df"><ref xml:id="id60e57ba5-7c1a-4471-8a1c-2fc55022f0c1" target="../P447/txt.xml#n449" type="journalsAndPapers" n="449">Papir 449</ref> (<hi xml:id="id142ddcae-2ef5-412e-9c3f-adca7a12760b" rendition="#ita">SKS</hi> 27, 553-554).</p>
+                <p xml:id="id96f82f85-5d73-48cd-8d35-cd0bc7df83f1">1 dobbeltblad i 4<hi xml:id="id4e76d66a-529f-43cf-89f5-6991dca2d110" rendition="#sup">o</hi>. Den nederste del af bl. [2] er uregelmæssigt afrevet lige under midten.</p>
+                <p xml:id="id4a70a1f8-222a-4afd-a0e6-d7dbcc35fd53">Ingen paginering.</p>
+                <p xml:id="idb157f717-3922-4778-9ddd-dbde3ccf3785">Papir: gulligt koncept, glat. Mål: 163 × 199 mm.</p>
+                <p xml:id="ide0daae1f-c84b-4d86-b6dc-a649b2abe88d">Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bladene har efter beskrivning været foldet en gang på tværs. Bl. [2v] er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.449" prev="#physDesc.449">
+              <msIdentifier xml:id="id40f1738f-ce4f-4fd7-8c64-1e508cd98ae8">
+                <idno xml:id="id56781816-99fc-49ce-8d05-22719bf4c738">449</idno>
+              </msIdentifier>
+              <additional xml:id="id591c5fd8-93c9-4fa4-a22f-b1f7fe853b4e">
+                <adminInfo xml:id="id4d29fe76-35c2-4878-8726-7311a5a16ea5">
+                  <note xml:id="id2603d24f-8d43-4ec0-8f2b-dd0718564120">
+                    <p xml:id="idf90319d6-367e-4699-a04f-5534e6f5cccf">(<hi xml:id="id35a5ced0-d2e1-472c-984b-0ce527769c2a" rendition="#ita">L-fort.</hi> + <hi xml:id="id7d318c62-1132-4948-aafa-ab5b18e99f29" rendition="#ita">B-fort.</hi> 16; KA, A pk. 52[I]; <hi xml:id="ide9a00f5a-918b-454c-8cbe-3ed8dd3b3366" rendition="#ita">Pap.</hi> XI 2 A 283)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.450" next="#additional.450">
+              <msIdentifier xml:id="id416f9c05-27a0-4111-b8cb-1a9f50ad9b4e">
+                <idno xml:id="id94a8989a-d9e6-4f14-aded-9bd306f394f1">450</idno>
+              </msIdentifier>
+              <physDesc xml:id="id240317bd-cf4a-4677-99ce-1534e04bb3cf">
+                <p xml:id="ida282bdb3-e4ae-4a9a-b1a0-a91068fea587"><ref xml:id="id6dab3067-abe3-4650-bf9b-e04dd3ac5cc4" target="../P447/txt.xml#n450" type="journalsAndPapers" n="450">Papir 450</ref> (<hi xml:id="idb6f701b4-7aaf-4a8d-82d5-96c56ba792fd" rendition="#ita">SKS</hi> 27, 554).</p>
+                <p xml:id="id312a48e4-617f-42ba-a03f-4ebc8e2edf03">1 løst blad i 4<hi xml:id="id59e87df2-ab38-4ee5-b178-b01ecd35fa6a" rendition="#sup">o</hi> med afrevet kant i venstre side.</p>
+                <p xml:id="id2c0726dd-427c-4376-b1c4-2f6d420e0726">Ingen paginering.</p>
+                <p xml:id="id74e50393-e1c2-4ed0-b5b9-5411ad269dce">Papir: gulligt koncept, glat. Mål: 163 × 199 mm.</p>
+                <p xml:id="idbc9bb26d-5256-4834-96e9-84a2b590e5fc">Bladet har efter beskrivning været foldet en gang på tværs.</p>
+                <p xml:id="idaf8c9512-1672-40cc-8ab8-4342bb576dce">Bl. [1r] er tre fjerdedele beskrevet, versosiden ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.450" prev="#physDesc.450">
+              <msIdentifier xml:id="ide64b42f0-218a-4964-9dc2-dad524fd2543">
+                <idno xml:id="id43ad8221-462f-473f-9d7c-3a69f78b1c30">450</idno>
+              </msIdentifier>
+              <additional xml:id="ideb4dab3e-4c9a-4d2f-b6d9-05dcefe798ba">
+                <adminInfo xml:id="idef62a430-6737-4e77-9b8f-16378c07b0f3">
+                  <note xml:id="id63ba803c-59c0-4cb8-9743-99f673b3e2f7">
+                    <p xml:id="id56d1019e-3d7a-45df-a745-93076a6369ba">(<hi xml:id="idfe5d0007-7deb-48b2-bddf-1888fc60e4a1" rendition="#ita">L-fort.</hi> + <hi xml:id="id7a7c75a1-a984-4d9d-84bc-586aba4b1f07" rendition="#ita">B-fort.</hi> 15; KA, A pk. 52[I]; <hi xml:id="id0a254dc1-829f-4949-93b5-d6000ed994bb" rendition="#ita">Pap.</hi> XI 2 A 282)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.451" next="#additional.451">
+              <msIdentifier xml:id="id2fdf7cba-231e-49a1-bf68-6bf4833c9e5d">
+                <idno xml:id="ided794e75-5643-47ad-bb57-917ff298aa90">451</idno>
+              </msIdentifier>
+              <physDesc xml:id="idccaab953-27be-4141-9531-aa5f1a8c903f">
+                <p xml:id="id337f7aac-8a3a-422e-9436-b88de077a392"><ref xml:id="idc396bb83-6edc-40a4-a101-5324bcc60649" target="../P447/txt.xml#n451" type="journalsAndPapers" n="451">Papir 451</ref> (<hi xml:id="ida02be970-0414-4f19-9e45-ec28eb0fc5df" rendition="#ita">SKS</hi> 27, 555-557).</p>
+                <p xml:id="id8ffd0a98-9bfc-45af-b3f5-fe0fda2e3181">1 dobbeltblad + 1 løst blad, i alt 3 blade i 4<hi xml:id="id146d77e5-5955-4d6d-845b-a01dfa98851e" rendition="#sup">o</hi>. Det løse blad har afrevet kant i venstre side.</p>
+                <p xml:id="id5aec9751-df7e-4fc9-859a-c77f5f02aad7">Ingen paginering.</p>
+                <p xml:id="id3558d647-bd82-43cd-96a4-0e4d47c98e26">Papir: gulligt koncept, glat. Mål: 162 × 199 mm.</p>
+                <p xml:id="iddfdb53df-62e1-4b4f-93dc-a6402a834325">Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bladene har efter beskrivning været foldet en gang på tværs.</p>
+                <p xml:id="idae21d35f-d695-438e-b87c-d03f4a544806">Tekstens afslutning på bl. [3v] er skrevet på langs i yderspalten.</p>
+                <p xml:id="idbb912a85-cc83-4cc1-8089-feaaa2c844f9">I overskriften på bl. [1r] er »eller / 'det er Mængden der skal gjøre det'« slettet med blyant (<hi xml:id="idc7eec723-3710-491f-9bea-ec51bd3dc9df" rendition="#ita">SKS</hi> 27, 555,3-4).</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.451" prev="#physDesc.451">
+              <msIdentifier xml:id="id8a536672-f4b4-4190-9ede-d631822be3d5">
+                <idno xml:id="id67d560b5-389a-49ad-95a7-752899aa9a03">451</idno>
+              </msIdentifier>
+              <additional xml:id="id9b030827-4709-447b-8e0c-5ea09025c1ab">
+                <adminInfo xml:id="id814314eb-2d41-43f7-9742-aeeadf25fc21">
+                  <note xml:id="iddcb8fd9c-741e-49e3-9a50-ed9daea5d14d">
+                    <p xml:id="id62de035d-9eaa-453d-a2b7-7481afe10fa6">(<hi xml:id="id1e940522-8cdf-469e-9aaf-efe74e1ba90f" rendition="#ita">L-fort.</hi> + <hi xml:id="id6bf18615-b2e2-40a2-89aa-5a6ecc19f690" rendition="#ita">B-fort.</hi> 14; KA, A pk. 52[I]; <hi xml:id="id3b34c48c-9bcc-439f-a439-2323f8c3657a" rendition="#ita">Pap.</hi> XI 2 A 281)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.452" next="#additional.452">
+              <msIdentifier xml:id="idb0ff1824-7788-4d3b-a98d-e9ee3e7291ef">
+                <idno xml:id="idd9851066-b8ec-44f3-a99d-0fa5762eef2d">452</idno>
+              </msIdentifier>
+              <physDesc xml:id="id97706708-5615-49ba-8565-7e00daa36722">
+                <p xml:id="ide66b18fe-75f5-4270-b142-1530b2d64a5c"><ref xml:id="idfa7afbfb-f389-4798-a40e-5b592701253c" target="../P447/txt.xml#n452" type="journalsAndPapers" n="452">Papir 452</ref> (<hi xml:id="id2463eafa-6f19-46aa-abf3-5b05f66d4466" rendition="#ita">SKS</hi> 27, 557-558).</p>
+                <p xml:id="id197e6435-e172-49cf-8462-c0772cd59a30">1 løst blad i 4<hi xml:id="id496f89f1-54d0-4c63-8a66-118cf661c36f" rendition="#sup">o</hi> med afrevet kant i venstre side.</p>
+                <p xml:id="id1e719d6c-62ee-4203-b5bc-d0c291efc8f9">Ingen paginering.</p>
+                <p xml:id="ide21a3a70-8c42-48aa-8385-1be50bd0c069">Papir: gulligt koncept, glat. Mål: 149 × 199 mm.</p>
+                <p xml:id="id230e34a8-85ee-4c93-9967-748510d76e57">Bladet er foldet på langs; en bred inderspalte rummer teksten, yderspal<pb xml:id="ss999" n="999" edRef="#SKS"/>ten tilføjelser. Bladet har efter beskrivning været foldet en gang på tværs.</p>
+                <p xml:id="id7b16576a-1530-4bd7-9ac9-140db266272b">Tekstens afslutning på bl. [1v] er skrevet på langs i yderspalten.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.452" prev="#physDesc.452">
+              <msIdentifier xml:id="idada2e5da-fadf-4e15-9a12-bc87637818fa">
+                <idno xml:id="idce483aa5-d1c7-4152-b930-94744795b168">452</idno>
+              </msIdentifier>
+              <additional xml:id="ida6329717-4f9a-412a-b76f-e09a130d21ab">
+                <adminInfo xml:id="id8d2222eb-48e0-4a8a-a816-48c053a01d88">
+                  <note xml:id="iddb105d35-5aa7-4af1-9443-48cab2cce8bb">
+                    <p xml:id="id2999134a-76e1-47ab-b2f7-4d5db24df231">(<hi xml:id="id7953a597-3f04-48f0-962e-fa97ae242995" rendition="#ita">L-fort.</hi> + <hi xml:id="idfb55ea6a-e844-414b-a0fa-aafd2aea41b8" rendition="#ita">B-fort.</hi> 13; KA, A pk. 52[I]; <hi xml:id="id302b76b3-1768-4101-9d72-e0380b91a4a5" rendition="#ita">Pap.</hi> XI 2 A 280)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.453" next="#additional.453">
+              <msIdentifier xml:id="id63b010b7-8627-48c4-b444-3045b1e37e0d">
+                <idno xml:id="id266c1e9b-fe30-46f4-8260-83be4c14e800">453</idno>
+              </msIdentifier>
+              <physDesc xml:id="id72c90e4d-54a5-4615-9324-3b44c735865a">
+                <p xml:id="id9e45fe31-d38b-4851-9403-b60ef4b64651"><ref xml:id="id2a933945-6095-4df9-868a-079935e9fd78" target="../P447/txt.xml#n453" type="journalsAndPapers" n="453">Papir 453</ref> (<hi xml:id="iddcd7b94f-b931-401b-b00a-e17b41030f65" rendition="#ita">SKS</hi> 27, 558-560).</p>
+                <p xml:id="idac434be7-7a77-4ad7-9d88-9759db589b4b">1 dobbeltblad + 1 løst blad, i alt 3 blade i 4<hi xml:id="id28568c5a-7eee-4d55-a1df-bd28a7900b49" rendition="#sup">o</hi>. Det løse blad har uregelmæssigt afrevet kant i venstre side.</p>
+                <p xml:id="idfde09724-03c4-4db9-b8b0-ac6940721288">Ingen paginering.</p>
+                <p xml:id="id49574088-0913-4184-b5ac-69982ada39a8">Papir: gulligt koncept, glat. Mål: 162 × 199 mm.</p>
+                <p xml:id="idcc06ef38-8bac-4765-89d4-2ad45e6455fd">Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bladene er efter beskrivning foldet en gang på tværs. Bl. [3v] er halvt beskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.453" prev="#physDesc.453">
+              <msIdentifier xml:id="idd7b8072d-227e-4ffd-a1c2-24c28efc452b">
+                <idno xml:id="id94a6779a-d582-4ac8-ae86-cbf3e65081eb">453</idno>
+              </msIdentifier>
+              <additional xml:id="idc6ed490f-290c-453a-a7c7-527bcb599e6e">
+                <adminInfo xml:id="idd347cec8-8939-42ed-84c4-7e0e019c6f5f">
+                  <note xml:id="ida9f00712-0f08-4892-ac04-3a457d403b7b">
+                    <p xml:id="id763a2989-4a90-4131-856a-2ed9f4417e8c">(<hi xml:id="id38fac716-4ca3-4525-b42a-86e7d3c2fe17" rendition="#ita">L-fort.</hi> + <hi xml:id="id63466f72-f113-4245-8752-bce5740f992e" rendition="#ita">B-fort.</hi> 51; KA, B pk. 51 læg 2[I]; <hi xml:id="idb92b6842-877f-4546-bb82-63a117808c5c" rendition="#ita">Pap.</hi> XI 3 B 105)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.454" next="#additional.454">
+              <msIdentifier xml:id="id20b8901a-fa36-438f-9bba-830faabcefe3">
+                <idno xml:id="idbbce120d-957b-44a6-81bf-35ca2022a156">454</idno>
+              </msIdentifier>
+              <physDesc xml:id="id98b58473-25b3-4702-b77d-2eab97cf8ca1">
+                <p xml:id="id92816819-dfbc-4307-b542-aaf8f31cf83c"><ref xml:id="id12c63323-70a6-4369-a027-9296ac71c993" target="../P447/txt.xml#n454" type="journalsAndPapers" n="454">Papir 454</ref> (<hi xml:id="id09fd1916-4f1b-4cba-b119-47ac0cfd083d" rendition="#ita">SKS</hi> 27, 560-563).</p>
+                <p xml:id="id9a54a800-3e9a-438d-a968-94aa343f80c3">2 løse blade + 1 dobbeltblad, i alt 4 blade i 4<hi xml:id="id3b12325f-1589-42aa-b2ee-db97c93ccb31" rendition="#sup">o</hi>. De løse blade har udgjort et dobbeltblad.</p>
+                <p xml:id="id920d93e1-b64d-41a2-ac59-c56bc5875597">Ingen paginering.</p>
+                <p xml:id="id1280a31b-fb07-43b1-9b8a-99433c590740">Papir: gulligt koncept, glat. Mål: 163 × 199 mm.</p>
+                <p xml:id="ide4e3ff73-3be0-4916-ab1d-8a277cd1d8ec">Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bladene har efter beskrivning været foldet en gang på tværs. Bl. [4r] er halvt beskrevet, bl. [4v] ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.454" prev="#physDesc.454">
+              <msIdentifier xml:id="id427958be-af9f-4082-a322-e76789f257c3">
+                <idno xml:id="idb9d72fc4-0ab6-4ea0-9dd8-90bff4d4dc7e">454</idno>
+              </msIdentifier>
+              <additional xml:id="id18d6ba4d-a916-4e94-a985-971031d1b7fa">
+                <adminInfo xml:id="idd62dc17b-2ae1-464e-a8e0-4b9b9bef38bd">
+                  <note xml:id="id731dbb15-d54d-4fd8-8c17-96d5a77a3aea">
+                    <p xml:id="id9a2d5621-f4de-4857-91c7-526913d226cb">(<hi xml:id="idb58ed37c-75a3-408e-84d5-98d2369048c6" rendition="#ita">L-fort.</hi> + <hi xml:id="id11a7200d-1eb3-4a1c-a556-16360be99b00" rendition="#ita">B-fort.</hi> 50; KA, A pk. 52[I]; <hi xml:id="id45a85194-ca30-4160-b8e4-9c176e8d2f58" rendition="#ita">Pap.</hi> XI 2 A 306)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.455" next="#additional.455">
+              <msIdentifier xml:id="idb3b836d4-cbf6-46b7-be7a-f4ab8373d899">
+                <idno xml:id="ide6a9fe53-613d-46e5-8b8e-9ac1b3dfe729">455</idno>
+              </msIdentifier>
+              <physDesc xml:id="id55563bb0-e2eb-4ef6-8d77-52aabb180819">
+                <p xml:id="id06d26534-4818-4d75-92a7-abe309f4f023"><ref xml:id="id17cc9d00-ad64-456e-adad-08dda04dccf3" target="../P447/txt.xml#n455" type="journalsAndPapers" n="455">Papir 455</ref> (<hi xml:id="id8c8a1062-777a-46e4-abc3-35e9a1136d6a" rendition="#ita">SKS</hi> 27, 563-567).</p>
+                <p xml:id="id880b53cd-9c87-47a5-84f8-fcb95185636a">1 sammenhæftning af 2 dobbeltblade + 1 løst blad, i alt 5 blade i 4<hi xml:id="id4c219b8d-137c-4c37-a371-2eaf9d1911c2" rendition="#sup">o</hi>. Det løse blad har afrevet kant i venstre side.</p>
+                <p xml:id="id8f013f54-9d7d-474d-8938-93b7d25b2977">Ingen paginering.</p>
+                <p xml:id="iddf8c039b-53a9-40fd-9953-4d8bc07c2784">Papir: gulligt koncept, glat; bl. [2] og [3], der udgør et dobbeltblad, har vandmærke: <hi xml:id="ide84133bb-c0e9-40fb-9b63-6a27788baa2b" rendition="#capiTyp">Klippan</hi>. Mål: 169 × 206 mm. Hæftetråd af rød silke.</p>
+                <p xml:id="id98e3f7ea-5e77-4562-b0c7-9a29f6185610">Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser.</p>
+                <p xml:id="id6d430d44-cf3f-484e-8801-40b52975ad88">Tekstens afslutning nederst på bl. [5v] er skrevet på langs i yderspalten.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.455" prev="#physDesc.455">
+              <msIdentifier xml:id="id037707e0-2d12-4a65-adfb-246c490d2624">
+                <idno xml:id="idfbf49f50-63d2-4511-be72-1f876e097978">455</idno>
+              </msIdentifier>
+              <additional xml:id="id2b789240-ae27-41bc-a259-4312b4c541a6">
+                <adminInfo xml:id="id4d093bd7-19d7-45f8-a8a7-c8b436bd1827">
+                  <note xml:id="ida0bb956c-1a01-4d92-a656-fb97d60dafb9">
+                    <p xml:id="id27592f7d-f704-4f6e-84e5-fdd859cc729a">(<hi xml:id="idfaccac5c-283b-45ca-9eb7-0bcef2f4cf41" rendition="#ita">L-fort.</hi> + <hi xml:id="id35d7eb61-d3cd-4bc2-a75e-d53c5c18c15b" rendition="#ita">B-fort.</hi> 47; KA, A pk. 52[I]; <hi xml:id="idbbc157e2-b346-4799-b7b1-1c3bf79169e7" rendition="#ita">Pap.</hi> XI 2 A 305)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.456" next="#additional.456">
+              <msIdentifier xml:id="id2762b271-45be-4ade-b1d8-d71c3f232415">
+                <idno xml:id="id418b4c57-ed68-453a-92e0-d36d2cc5dfc9">456</idno>
+              </msIdentifier>
+              <physDesc xml:id="id70a84621-38da-488f-b8f3-62212aac566e">
+                <p xml:id="id285b4c0d-0be1-4265-a80b-074580e654b3"><ref xml:id="id1ec01270-1acb-49da-9eda-5e03b71831ea" target="../P447/txt.xml#n456" type="journalsAndPapers" n="456">Papir 456</ref> (<hi xml:id="id19070e40-39c5-4b40-b169-07d2c00ef1e5" rendition="#ita">SKS</hi> 27, 567-569).</p>
+                <p xml:id="id304fc368-81ef-4e03-a6f9-b7bb519d22f9">1 dobbeltblad i 4<hi xml:id="id27427d40-3c0e-45a1-a777-c7d9653ac8bd" rendition="#sup">o</hi>.</p>
+                <p xml:id="id7c79af9b-939f-4e00-9dd1-709536211847">Ingen paginering.</p>
+                <p xml:id="id9760824f-a296-4fc9-800c-171cbb770ce1">Papir: gulligt koncept, glat. Mål: 169 × 206 mm.</p>
+                <p xml:id="id46dd1ea5-8148-4f71-920d-4da446dc2d3f">Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser.</p>
+                <p xml:id="idf39d2b18-01e1-4df5-b353-822da6b62098">På bl. [1r] er en uindvist marginaltilføjelse skrevet på langs i yderspalten. Tekstens afslutning nederst på bl. [2v] er skrevet ad to omgange på <pb xml:id="ss1000" n="1000" edRef="#SKS"/>langs i yderspalten: Den er påbegyndt nederst i spalten og afsluttet ovenover.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.456" prev="#physDesc.456">
+              <msIdentifier xml:id="id1283ed51-e017-472b-a058-94353a36c925">
+                <idno xml:id="id6b16a685-a88e-4277-8725-7c8e16752e85">456</idno>
+              </msIdentifier>
+              <additional xml:id="id185e2929-66f8-4bcf-812c-4c79c02a58bb">
+                <adminInfo xml:id="id6ddfb745-b396-4937-92b7-7542091922ef">
+                  <note xml:id="id5d043c47-48f9-42f1-bbed-e938e50de381">
+                    <p xml:id="id279f60bb-2523-4e2a-b2a8-eeb3d8b52bd2">(<hi xml:id="ide1f9ef30-f2bf-496b-a5e3-2f67ac51a9d7" rendition="#ita">L-fort.</hi> + <hi xml:id="idb057163b-3638-4d0f-933a-d55f7cd91a9a" rendition="#ita">B-fort.</hi> 46; KA, A pk. 52[I]; <hi xml:id="ida5ba1400-40aa-40db-9763-36c00b1efb8c" rendition="#ita">Pap.</hi> XI 2 A 303-304)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.457" next="#additional.457">
+              <msIdentifier xml:id="id1324b831-5fcc-484a-9e28-be555fe47eff">
+                <idno xml:id="id0755666a-77c0-43f7-8e4f-969d135b98ec">457</idno>
+              </msIdentifier>
+              <physDesc xml:id="id30e613e4-1dd1-4b33-8f4a-a1257c6897a1">
+                <p xml:id="id1b033b9a-356c-4c78-85d8-e82b1239fecf"><ref xml:id="id3ee223c1-dd45-44a7-a30a-76ecb5f92af7" target="../P447/txt.xml#n457" type="journalsAndPapers" n="457">Papir 457</ref> (<hi xml:id="id8a3a9780-5a13-4b82-af17-db22c7b8af97" rendition="#ita">SKS</hi> 27, 569-570).</p>
+                <p xml:id="id53d22dd7-ac03-419f-bfeb-c9ffb736c126">1 dobbeltblad i 4<hi xml:id="id8075056b-98b1-4d91-b02d-a0e34d19147a" rendition="#sup">o</hi>.</p>
+                <p xml:id="id2acd3e9c-8cbd-432d-af16-b3c430b1bce5">Ingen paginering.</p>
+                <p xml:id="id9370292b-8ad7-48f0-a330-e6924de11798">Papir: gulligt koncept, glat. Mål: 169 × 206 mm.</p>
+                <p xml:id="idc1db6849-541d-4c2e-b9af-e13bd6fbae64">Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bl. [2v] er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.457" prev="#physDesc.457">
+              <msIdentifier xml:id="ideb157bb4-768d-4147-98ea-9f5cac35a480">
+                <idno xml:id="idd59e6919-8e68-4a7e-b2bd-df6096cde632">457</idno>
+              </msIdentifier>
+              <additional xml:id="id4e66742b-a99c-4b7d-8c7b-c91e82aed2ec">
+                <adminInfo xml:id="id0e63f5a6-7787-43a2-8164-58bcf3128eba">
+                  <note xml:id="id19882d9e-237b-4317-8821-cff362c22230">
+                    <p xml:id="idea542c79-c065-49e5-b586-c87651146a7a">(<hi xml:id="id164cce1a-6682-4acc-a696-72d0f81a2b73" rendition="#ita">L-fort.</hi> + <hi xml:id="id52f65d28-51e0-4bdb-bf6e-93b9fc3b0776" rendition="#ita">B-fort.</hi> 45; KA, A pk. 52[I]; <hi xml:id="id1a963ae7-7c29-45d0-bfdd-ee577c322afc" rendition="#ita">Pap.</hi> XI 2 A 302)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.458" next="#additional.458">
+              <msIdentifier xml:id="id1d8f3704-8b12-421d-b49b-d59cc0d5b273">
+                <idno xml:id="id8b498e2f-045b-4e1f-8e25-cc59b316ad67">458</idno>
+              </msIdentifier>
+              <physDesc xml:id="id4d556302-0977-4521-89f1-a95ec48f72ba">
+                <p xml:id="id97debc69-c223-4eb7-8c7f-2b6a10086522"><ref xml:id="id63a8e19c-bbe0-4127-a693-c0d20326869e" target="../P447/txt.xml#n458" type="journalsAndPapers" n="458">Papir 458</ref> (<hi xml:id="id827502a1-eed4-4d3f-82d6-b22f157e4080" rendition="#ita">SKS</hi> 27, 570-573).</p>
+                <p xml:id="id67e5e617-aed3-4518-94dd-5523358e1e99">1 løst blad + 1 dobbeltblad + 1 løst blad, i alt 4 blade i 4<hi xml:id="idd3f309b7-c144-4681-a855-cb5e5639793a" rendition="#sup">o</hi>. Bl. [1] og [4] har udgjort et dobbeltblad. Bladene har været sammenhæftet. Hæftetråd af rød silke.</p>
+                <p xml:id="iddb72cc96-79db-4b91-b57e-5dfe14f2ddf4">Ingen paginering.</p>
+                <p xml:id="id5ce90b2a-6afa-4d56-a4af-213b22dac040">Papir: gulligt koncept, glat; dobbeltbladet har rest af vandmærke: <hi xml:id="id80ab32a6-e2d4-458c-90fc-28971590b002" rendition="#capiTyp">Klippa[n]</hi>. Mål: 169 × 206 mm.</p>
+                <p xml:id="id11338fcc-e00e-4187-bcbe-c2ca44ba7aec">Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser.</p>
+                <p xml:id="id00d335a5-4bd9-4678-80e0-5e69a00147f7">På bl. [4r] er en marginaltilføjelse indvist med et dobbeltkors skrevet med blyant.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.458" prev="#physDesc.458">
+              <msIdentifier xml:id="id968f63c4-59e3-484a-903c-66c2f0f8e7cf">
+                <idno xml:id="id9c58c31d-c192-43ba-884e-7de7b2352916">458</idno>
+              </msIdentifier>
+              <additional xml:id="id73b5fb56-d43f-44db-8c77-3bd15f9263f6">
+                <adminInfo xml:id="id31af8b17-c1cb-4807-9982-feea56347b95">
+                  <note xml:id="id865e35bb-399b-4a72-be49-3077ff7ea114">
+                    <p xml:id="id8230428e-de16-4ee6-aaee-77d034af45a5">(<hi xml:id="id7fb31311-d9bb-4f54-aba5-78946a34a973" rendition="#ita">L-fort.</hi> + <hi xml:id="id1e5c07ab-d3d2-4a7e-9cfa-a63ef99b187f" rendition="#ita">B-fort.</hi> 44; KA, A pk. 52[I]; <hi xml:id="id86df0bcd-42f4-443c-adda-4ff94f431b33" rendition="#ita">Pap.</hi> XI 2 A 301)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.459" next="#additional.459">
+              <msIdentifier xml:id="id82e19771-6814-4719-94b1-601f823e4eae">
+                <idno xml:id="id03832c5b-2465-4eaa-b7ee-08184a34615d">459</idno>
+              </msIdentifier>
+              <physDesc xml:id="idafa4639b-796f-4c34-a0d4-07fffdcb9c15">
+                <p xml:id="idc2d58242-00e4-4d94-9d35-46feb441a904"><ref xml:id="id2186ba75-0029-4fd3-a4a2-6b82b9b3fee9" target="../P447/txt.xml#n459" type="journalsAndPapers" n="459">Papir 459</ref> (<hi xml:id="ida706643b-5563-4832-ac28-7fedb7bb180a" rendition="#ita">SKS</hi> 27, 574-580).</p>
+                <p xml:id="id4dc4e479-c9a2-489c-a486-939a7dabbaf0">4 løse blade + 2 dobbeltblade, i alt 8 blade i 4<hi xml:id="idf1e22e70-2655-4713-a17a-40dbfd0a06e5" rendition="#sup">o</hi>. De løse blade har afrivningskant i venstre side; bl. [3] og [4] har udgjort et dobbeltblad. Samtlige blade har spor efter sammenhæftning</p>
+                <p xml:id="idb462b7da-76da-4242-9e62-d6f99d0ed40d">Ingen paginering.</p>
+                <p xml:id="id6302788d-c582-44ec-b558-c8de65c1f396">Papir: gulligt koncept, glat; på nær bl. [1] og [3] har alle blade vandmærke eller rest af vandmærke: <hi xml:id="id3578af04-d061-4592-b8f6-f9226d632e4b" rendition="#capiTyp">Klippan</hi>. Mål: 169 × 206 mm.</p>
+                <p xml:id="idf1fc4df5-a312-4b65-89b2-ef73f7421db2">Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bl. [8v] er en fjerdedel beskrevet.</p>
+                <p xml:id="id03d8bac3-a492-426b-aa63-2373b39b6cb6">På bl. [4v] er to linjer slettet med blyant.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.459" prev="#physDesc.459">
+              <msIdentifier xml:id="idaf32309d-104c-4008-bd5b-0ebe034f8a91">
+                <idno xml:id="idc9743dda-ad94-4c72-abb2-d91fa6bc963e">459</idno>
+              </msIdentifier>
+              <additional xml:id="id38e8bc64-9fc9-4791-9c13-60c32584f903">
+                <adminInfo xml:id="id967315cb-405d-4aa3-9821-1e2a073556fe">
+                  <note xml:id="ida28f33f6-2522-4cf3-a78d-1f0957d646fc">
+                    <p xml:id="id243b2704-c6ec-4a09-8d02-722740a5c088">(<hi xml:id="id9fd8853b-45c4-4c9e-9bf8-54aabdba5c31" rendition="#ita">L-fort.</hi> + <hi xml:id="idfe25d70f-1845-4121-977e-ea4b27bd09a4" rendition="#ita">B-fort.</hi> 43; KA, A pk. 52[I]; <hi xml:id="id969ee40d-f01c-4347-9f44-3903562abfca" rendition="#ita">Pap.</hi> XI 2 A 300)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.460" next="#additional.460">
+              <msIdentifier xml:id="id7ae90d39-0ec1-493e-ac03-febae96e568e">
+                <idno xml:id="id439bf177-1775-4b80-b85b-f218c11b7141">460</idno>
+              </msIdentifier>
+              <physDesc xml:id="id6dc62f98-7001-4846-af88-e9d4503a1109">
+                <p xml:id="id72d4c881-2b66-45f9-bb04-76e4c584739d"><ref xml:id="idaa065cb7-dbd1-43e0-9714-6e5a6d8d9104" target="../P447/txt.xml#n460" type="journalsAndPapers" n="460">Papir 460</ref> (<hi xml:id="id66936e72-97ca-4fd5-82bc-2cd69677d0cd" rendition="#ita">SKS</hi> 27, 580-589).</p>
+                <p xml:id="id658433fd-f4dc-4d9c-b135-caffa9430b39">1 sammenhæftning af 4 dobbeltblade, i alt 8 blade i 4<hi xml:id="id5d4a6061-fabd-474c-99cc-c167d475a124" rendition="#sup">o</hi>. Hæftetråd af rød silke; det ene dobbeltblad, bl. [4r]-[5v], har desuden en hvid hæftetråd.</p>
+                <p xml:id="idd1391455-ac7c-43e9-9c60-ca1d992144d3">Ingen paginering.</p>
+                <p xml:id="id0563859b-2258-47a2-966a-3586bc7064d3">Papir: gulligt koncept, glat; alle dobbeltblade har vandmærke eller rest af vandmærke: <hi xml:id="id8ad9c79a-43ab-4dcf-9f3b-59380a46b1df" rendition="#capiTyp">Klippan</hi>. Mål: 169 × 206 mm.</p>
+                <p xml:id="id29ccf059-b12a-4a25-8d89-8755cc918d2e"><pb xml:id="ss1001" n="1001" edRef="#SKS"/>Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser.</p>
+                <p xml:id="id4ee16184-5f04-4720-8db2-4d17a92d7c7b">På bl. [2v] er en marginalnote indvist med kors i blyant. På bl. [5v] er en marginaltilføjelse slettet med blyant, og på bl. [6v]-[7r] er 7½ linje ligeledes slettet med blyant (se <ref xml:id="id86ac84a6-401f-423d-891e-b51feaea29e0" target="../P447/txt.xml#ill_30" type="figure" n="585">illustration 30</ref>, <hi xml:id="idae1eff4c-ecb8-499d-842a-9a8e76e54b61" rendition="#ita">SKS</hi> 27, 585). På bl. [6v]-[7r] findes desuden et spejlvendt aftryk af en avisside.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.460" prev="#physDesc.460">
+              <msIdentifier xml:id="id099e8fff-3b89-4e25-a90e-ac78f8bbf964">
+                <idno xml:id="id7354640e-1e20-4eb2-b994-5c557e9f11e9">460</idno>
+              </msIdentifier>
+              <additional xml:id="id5f172b59-8260-4959-8137-d1e2f2de7e6d">
+                <adminInfo xml:id="id283d42d4-98c3-4548-9fb7-fc2fac3803fb">
+                  <note xml:id="idf93507e0-ddc9-40b0-8b16-285ba2784a20">
+                    <p xml:id="id38388014-73d3-4534-a54f-3b854100b45c">(<hi xml:id="id1b47e6cd-e933-4dc3-989f-eba5eff9a0e9" rendition="#ita">L-fort.</hi> + <hi xml:id="id16b97c07-4195-48f7-b00d-827b059b1247" rendition="#ita">B-fort.</hi> 42; KA, A pk. 52[I]; <hi xml:id="idcbfc701e-b30b-4f76-ae36-ac74c75034f3" rendition="#ita">Pap.</hi> XI 2 A 299)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.461" next="#additional.461">
+              <msIdentifier xml:id="idd87f3e63-c4e8-46ea-ae23-cd3be2ba52b2">
+                <idno xml:id="id24f7f6ac-a451-4446-a10a-c3f1e29f4c7d">461</idno>
+              </msIdentifier>
+              <physDesc xml:id="idbe408133-2db5-4512-89ff-af1893bf2011">
+                <p xml:id="id68bc14ef-53f1-4391-a4f9-0f8c2afb9a1c"><ref xml:id="ide1f11341-67cc-4134-bec0-ebaf049a7cee" target="../P447/txt.xml#n461" type="journalsAndPapers" n="461">Papir 461</ref> (<hi xml:id="id82563c1c-4b03-459f-a221-4eb47d79bae9" rendition="#ita">SKS</hi> 27, 589-590).</p>
+                <p xml:id="id77da07fb-3189-4f3c-9e64-a8f254434b5e">1 dobbeltblad i 4<hi xml:id="ida40f174e-a6eb-4128-8daf-7eac46a4945e" rendition="#sup">o</hi>.</p>
+                <p xml:id="ida477b991-dec8-4626-91cf-7aa92ec5ee01">Ingen paginering.</p>
+                <p xml:id="id08b21661-c354-42e4-aeeb-b6ea461a3d90">Papir: gulligt koncept, glat; rest af vandmærke: <hi xml:id="idc183b9c2-d5f3-4df4-809e-ffc21f9da323" rendition="#capiTyp">Kl[ippan]</hi>. Mål: 169 × 206 mm.</p>
+                <p xml:id="idff1becbb-5bad-4720-a36e-1e06e33bd165">Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.461" prev="#physDesc.461">
+              <msIdentifier xml:id="ide6e5d099-5b2e-40b9-9173-5bf2071b4479">
+                <idno xml:id="id8b338441-7405-482a-923c-7881d7ceca1c">461</idno>
+              </msIdentifier>
+              <additional xml:id="idf4009a73-7231-40f1-9bba-f1647a652ffe">
+                <adminInfo xml:id="id600b9611-4a28-48b1-8772-3abcf9fcb872">
+                  <note xml:id="id826bdd6d-d532-4378-8384-739fde65204d">
+                    <p xml:id="id5b8c1f71-773d-4576-985c-f5abe14ebc41">(<hi xml:id="id782f859e-ba44-4cb2-b8fb-df0f7d1898d8" rendition="#ita">L-fort.</hi> + <hi xml:id="iddb047ff7-c685-4dbe-86c3-4bb28a22e238" rendition="#ita">B-fort.</hi> 41; KA, A pk. 52[I]; <hi xml:id="idf1c4c110-dd98-4070-94ff-e292d899a9bf" rendition="#ita">Pap.</hi> XI 2 A 298)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.462" next="#additional.462">
+              <msIdentifier xml:id="idfe5d0484-b91f-4216-8c13-004f75178ef0">
+                <idno xml:id="id77ac4c66-6898-42f2-863f-0d60392c4e50">462</idno>
+              </msIdentifier>
+              <physDesc xml:id="id7d5d0c47-d949-457b-854b-08ea8d7d2ccd">
+                <p xml:id="id26ca8e21-55c1-414c-8814-c024859ea8fa"><ref xml:id="idbf7e5b11-0fa1-4bcf-87a1-a1474ce5e894" target="../P447/txt.xml#n462" type="journalsAndPapers" n="462">Papir 462</ref> (<hi xml:id="id58113bd6-2e19-4ff7-ad5e-1c16e5c7a029" rendition="#ita">SKS</hi> 27, 591-592).</p>
+                <p xml:id="id9f301670-1229-4f47-aaad-4f942e6c21ab">1 dobbeltblad i 4<hi xml:id="id62a5ee6e-77d1-4da1-a3ea-f508c7218afb" rendition="#sup">o</hi>.</p>
+                <p xml:id="id1b18e9ef-bdcb-4a03-9e21-dcbe18679c0d">Ingen paginering.</p>
+                <p xml:id="id0b5b5493-c002-494c-a383-10991649e82a">Papir: gulligt koncept, glat; vandmærke: <hi xml:id="id732b08b4-b311-4913-8eb6-676170e1b8b5" rendition="#capiTyp">Klippan</hi>. Mål: 168 × 206 mm.</p>
+                <p xml:id="id194e6a3d-1c9a-4cd5-b629-122fadf0cb78">Bladene er foldet på langs; en bred inderspalte rummer teksten. De har efter beskrivning været foldet en gang på tværs. Bl. [2r] er tre fjerdedele beskrevet, bl. [2v] er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.462" prev="#physDesc.462">
+              <msIdentifier xml:id="id82a607bf-c385-41b6-bda0-045d1ad6deed">
+                <idno xml:id="id8228b414-9eae-4856-afd7-229d6009d1ed">462</idno>
+              </msIdentifier>
+              <additional xml:id="idb383aee6-701a-4774-b781-57757c6b773e">
+                <adminInfo xml:id="id1dad4f43-9a1f-47fb-beda-41e607719c0c">
+                  <note xml:id="id75faa361-1d21-4912-8395-0f50ea21c537">
+                    <p xml:id="id158bbef6-fb13-4693-92c9-90069790bf08">(<hi xml:id="id61ac6ebd-4d04-4ba1-927e-76c71ae321ed" rendition="#ita">L-fort.</hi> + <hi xml:id="idb34fb4c1-816d-45fb-b400-d15eb84c2f89" rendition="#ita">B-fort.</hi> 40; KA, A pk. 52[I]; <hi xml:id="id527e3c19-7d6f-4aff-9830-cc310fc38904" rendition="#ita">Pap.</hi> XI 2 A 297)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.463" next="#additional.463">
+              <msIdentifier xml:id="id87621ba1-01de-41cc-9d9d-255de42affda">
+                <idno xml:id="id0b97493a-8331-4b63-9ee2-b3a557700769">463</idno>
+              </msIdentifier>
+              <physDesc xml:id="id8a667f24-73b1-4979-810b-7bdb5843ffd9">
+                <p xml:id="ideb075f61-8be6-404b-9e7f-6d90ed01d350"><ref xml:id="id8d01d14b-f728-430d-9fa2-d2709247ce8c" target="../P447/txt.xml#n463" type="journalsAndPapers" n="463">Papir 463</ref> (<hi xml:id="idaeb46890-4d52-414a-a9cc-06476660503b" rendition="#ita">SKS</hi> 27, 592-593).</p>
+                <p xml:id="id1f09fb78-51e0-4781-9ab2-ce9a0f445301">1 dobbeltblad i 4<hi xml:id="id16703d79-8558-4113-8fec-047aae06608b" rendition="#sup">o</hi>.</p>
+                <p xml:id="idf284bc67-ab11-483d-9635-f78ba8c9629b">Ingen paginering.</p>
+                <p xml:id="id050b9feb-024c-4ea3-8305-ca748210dac7">Papir: gulligt koncept, glat; rest af vandmærke: <hi xml:id="id95db6c9d-8442-471c-9344-53072d1072e5" rendition="#capiTyp">Kl[ippan]</hi>. Mål: 169 × 206 mm.</p>
+                <p xml:id="idc01ea92e-169b-4a88-be69-009c824ecc57">Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bl. [2v] er halvt beskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.463" prev="#physDesc.463">
+              <msIdentifier xml:id="ida398661a-c089-4e12-8a55-0f0529d0f1c1">
+                <idno xml:id="id673c1e88-25cd-4060-b9e2-aaa0f51dfc37">463</idno>
+              </msIdentifier>
+              <additional xml:id="idf9934a7f-5c87-44ce-83dd-5608eea41457">
+                <adminInfo xml:id="id4bf5d95e-f8be-4cce-94d0-bb76b0244835">
+                  <note xml:id="id0a1bb565-4fc5-4ca6-aa8a-b3af173f59ba">
+                    <p xml:id="id2601314c-0a59-4e78-ae30-f61c13b6d3bf">(<hi xml:id="id84a91557-4389-4420-a12b-36f9fa6c5e85" rendition="#ita">L-fort.</hi> + <hi xml:id="idf0ed292d-bcbc-46b1-870c-3472f31f373f" rendition="#ita">B-fort.</hi> 39; KA, A pk. 52[I]; <hi xml:id="idaaedf77e-b2db-4c65-ba50-70160c1ac4c0" rendition="#ita">Pap.</hi> XI 2 A 296)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.464" next="#additional.464">
+              <msIdentifier xml:id="id67df97dc-8da8-49ac-bd49-a7155af0fdcf">
+                <idno xml:id="idd6c75c1e-b568-4109-8083-acfbdf2ad9d8">464</idno>
+              </msIdentifier>
+              <physDesc xml:id="id766563cd-9331-4f0c-8be9-7f9dbbfed1d2">
+                <p xml:id="idc257e3eb-bfb0-404d-a936-5a817b273277"><ref xml:id="id5323b1ae-e556-4f0a-a6fc-e492aa8b2191" target="../P447/txt.xml#n464" type="journalsAndPapers" n="464">Papir 464</ref> (<hi xml:id="id02ae5001-0f93-45df-bc4b-f8dac4252c71" rendition="#ita">SKS</hi> 27, 593-594).</p>
+                <p xml:id="id275ae539-910f-47eb-b840-8e7403f08d4c">1 dobbeltblad i 4<hi xml:id="id71275d90-2caf-470c-8095-d26595c81888" rendition="#sup">o</hi>.</p>
+                <p xml:id="id520dee44-627c-41ca-a7d7-420acbbfa0a5">Ingen paginering.</p>
+                <p xml:id="idbe033193-cb03-4a14-bca2-072346edcc51">Papir: gulligt koncept, glat; vandmærke: <hi xml:id="id52ff9eec-103a-44ec-80fd-a12c6e9e71e1" rendition="#capiTyp">Klippan</hi>. Mål: 168 × 206 mm.</p>
+                <p xml:id="ida555195b-cefe-460c-b340-f65664935fb9">Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bl. [2v] er halvt beskrevet.</p>
+                <p xml:id="id01ce20d5-8d68-4b4c-a834-f5b3bae1bd80">En marginalnote på bl. [1v] er ført ind i inderspalten og afgrænset fra brødteksten med en tynd blækstreg.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.464" prev="#physDesc.464">
+              <msIdentifier xml:id="ide6e7f799-3c97-487c-bc19-c8a8db0aa464">
+                <idno xml:id="idf3f2000a-8c95-4c5b-a128-309431480bb9">464</idno>
+              </msIdentifier>
+              <additional xml:id="id11a3a7bf-38bd-49bc-b19d-a55681aafe87">
+                <adminInfo xml:id="idb44213e6-5aa7-4f30-8f3e-b1e393e6ab93">
+                  <note xml:id="id8b54298c-7280-4ace-8b30-c94a2d98bc53">
+                    <p xml:id="id2eaaec8f-db06-4409-bd08-f7312601035d">(<hi xml:id="id05731886-a942-4464-acf0-0e48b18ac1b1" rendition="#ita">L-fort.</hi> + <hi xml:id="iddda5e107-4ff4-4ef4-9323-3aa87b7e6170" rendition="#ita">B-fort.</hi> 38; KA, A pk. 52[I]; <hi xml:id="id13dc7d96-e710-42f1-a5cb-d04358483d48" rendition="#ita">Pap.</hi> XI 2 A 295)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.465" next="#additional.465">
+              <msIdentifier xml:id="id87388bb1-b33d-41cf-98f2-4ac85494a8bc">
+                <idno xml:id="id07c23eb4-cd72-40ba-b840-fdd6b6abc91c">465</idno>
+              </msIdentifier>
+              <physDesc xml:id="id93e3ff6f-1529-431a-afca-3960c1e640bc">
+                <p xml:id="id872c37ac-cc6f-4abf-9587-e66b43d42280"><pb xml:id="ss1002" n="1002" edRef="#SKS"/><ref xml:id="iddc3fa501-537a-4372-bc9f-f4821b63ed26" target="../P447/txt.xml#n465" type="journalsAndPapers" n="465">Papir 465</ref> (<hi xml:id="id74b93f72-5239-43ef-a158-2a533d64f0a1" rendition="#ita">SKS</hi> 27, 595-596).</p>
+                <p xml:id="id5a1678b4-64c8-4d1f-ad00-5e01e333c674">1 dobbeltblad i 4<hi xml:id="id71c5d775-94af-40e9-a5cd-78ce82df2094" rendition="#sup">o</hi>.</p>
+                <p xml:id="id9843d375-775b-4a3a-8b8b-aef1c543196a">Ingen paginering.</p>
+                <p xml:id="id4fe28a59-d94a-4c81-9caf-41397de6df8a">Papir: glat koncept, gulligt. Mål: 169 × 206 mm.</p>
+                <p xml:id="id0b8b6f2d-929c-4568-9180-11a62bc23b9d">Bladet er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bladet har efter beskrivning været foldet en gang på tværs. Bl. [2v] er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.465" prev="#physDesc.465">
+              <msIdentifier xml:id="idcb8b6bf5-0da0-4348-b070-536cfa3ec4c6">
+                <idno xml:id="idc1a3b54e-4836-429d-a6ff-ada2481e9b34">465</idno>
+              </msIdentifier>
+              <additional xml:id="id33d8f267-a0f4-4293-92c3-34b33aba9519">
+                <adminInfo xml:id="id0fc927bd-bbcb-4c26-8811-ef52db751af4">
+                  <note xml:id="id0b32a84a-a534-46da-9e8c-c1f7744511dd">
+                    <p xml:id="id2c8be91d-977e-49bc-8d01-ec45828faccd">(<hi xml:id="ide8528198-471e-4dab-b4d1-6004ee48b7bd" rendition="#ita">L-fort.</hi> + <hi xml:id="idbf1f513a-2a53-47b0-9e74-ce6ff908820b" rendition="#ita">B-fort.</hi> 37; KA, A pk. 51; <hi xml:id="idd41ce429-c9bf-426d-8207-e6fd10ed70e6" rendition="#ita">Pap.</hi> X 5 A 167)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.466" next="#additional.466">
+              <msIdentifier xml:id="idc0f22f8e-6952-4554-9cec-eba8b6faee83">
+                <idno xml:id="id0f05b1cb-4d39-4421-8fdd-b28175325c97">466</idno>
+              </msIdentifier>
+              <physDesc xml:id="idd720c875-d2a3-4648-b681-95d0726235d5">
+                <p xml:id="id0e0e6d6c-ee6e-4f4e-ac14-64657d4daadd"><ref xml:id="id3d43ea60-8917-4039-aa70-18614ac10d2e" target="../P447/txt.xml#n466" type="journalsAndPapers" n="466">Papir 466</ref> (<hi xml:id="id9934ca98-a328-47a9-b207-39a27b2824ee" rendition="#ita">SKS</hi> 27, 596-597).</p>
+                <p xml:id="id7e678e10-4aa2-4ecb-a31b-00327a56dd6e">1 dobbeltblad i 4<hi xml:id="id8c5b6731-d425-49ea-b286-9591e09923aa" rendition="#sup">o</hi>.</p>
+                <p xml:id="ideb8cb4b8-c9a9-417b-accf-44ef2b02bc40">Ingen paginering.</p>
+                <p xml:id="idd11b7ae2-3e50-4877-ac13-552a36593426">Papir: gulligt koncept, glat. Mål: 166 × 204 mm.</p>
+                <p xml:id="ided807f49-fcef-4c22-bae2-f928d0c4d2e6">Bladene er foldet på langs; en bred inderspalte rummer teksten, yderspalten tilføjelser. Bl. [2r] er en fjerdedel beskrevet, bl. [2v] ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.466" prev="#physDesc.466">
+              <msIdentifier xml:id="id598afb99-bc03-4dff-a756-adb6a98cd37b">
+                <idno xml:id="idab0bf0c9-fe40-4863-8dc0-0258c1fda6ee">466</idno>
+              </msIdentifier>
+              <additional xml:id="id86304183-1b89-4128-89a3-ab67391868a6">
+                <adminInfo xml:id="id5865627a-ac24-4e4f-b459-e0142687b95b">
+                  <note xml:id="idd20753a4-a97a-42fb-a3ec-63c0dea3b143">
+                    <p xml:id="idf2eba0ed-6ae7-4c81-9355-3dc53f0db397">(<hi xml:id="idef7c0870-49ee-4825-9fdf-b4adf98b02f7" rendition="#ita">L-fort.</hi> + <hi xml:id="id1a172ac6-fd94-4f6d-825b-c6defba1b7c9" rendition="#ita">B-fort.</hi> 33; KA, A pk. 52[I]; <hi xml:id="ide26c25ed-04e3-45c3-9457-756b5f708563" rendition="#ita">Pap.</hi> XI 2 A 294)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.467" next="#additional.467">
+              <msIdentifier xml:id="id61c1fce1-3a92-49f4-8cb1-c9b50477c3fb">
+                <idno xml:id="id595aab35-9cf7-445e-afc1-df62076b0f63">467</idno>
+              </msIdentifier>
+              <physDesc xml:id="idce19aa1c-4643-4062-9817-cc0a4c7a5293">
+                <p xml:id="id7f11ad25-e2ba-419b-9c2e-c8fc3ade40cb"><ref xml:id="id3a7a01f0-6ca3-4488-b4d8-6cfebed8bb11" target="../P447/txt.xml#n467" type="journalsAndPapers" n="467">Papir 467</ref> (<hi xml:id="ida68b1f66-168c-42cb-a5b5-f317afe0ef37" rendition="#ita">SKS</hi> 27, 597-598).</p>
+                <p xml:id="idea3edb43-8ec9-470e-b068-a01687b3d10f">1 løst blad i 4<hi xml:id="id55de02eb-d522-489e-9ba8-81b9e13a2667" rendition="#sup">o</hi> med afrevet kant i venstre side.</p>
+                <p xml:id="id85e6c222-60b2-4573-8dc2-c8a25f0776cc">Ingen paginering.</p>
+                <p xml:id="idfa60967d-efa6-4a1b-b891-cdc4da42971d">Papir: gulligt koncept, glat. Mål: 166 × 204 mm.</p>
+                <p xml:id="idd7cba50e-a057-44a5-9a3d-da137d5c4789">Bladet er foldet på langs; en bred inderspalte rummer teksten. Versosiden er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.467" prev="#physDesc.467">
+              <msIdentifier xml:id="id70c798cd-521e-4c1f-92a5-94f9b42f4e7e">
+                <idno xml:id="idb4750633-9284-4cfa-90b5-431d5bffab41">467</idno>
+              </msIdentifier>
+              <additional xml:id="id014b6f78-0d70-44f2-a15e-5bc002288639">
+                <adminInfo xml:id="id8b556b93-2d06-4b70-982e-011b9f2b5882">
+                  <note xml:id="id1feb10d2-acf1-4bbc-a641-3f571563f960">
+                    <p xml:id="idc658a299-e526-40b4-b054-2b6be1ead278">(<hi xml:id="id789edd7f-602a-460c-ae5f-8e8633bce33d" rendition="#ita">L-fort.</hi> + <hi xml:id="ida426a01a-047c-4064-9269-e78b71614a0e" rendition="#ita">B-fort.</hi> 32; KA, A pk. 52[I]; <hi xml:id="id31802cc9-e599-4a77-a608-78125718c464" rendition="#ita">Pap.</hi> XI 2 A 292-293)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.468" next="#additional.468">
+              <msIdentifier xml:id="id793ee6f4-5b69-466b-9b22-471419a177a0">
+                <idno xml:id="id63b97089-d0b8-408b-9bb4-af12767acd0c">468</idno>
+              </msIdentifier>
+              <physDesc xml:id="id3ffcc83b-48c4-4f2c-bd69-814b89fc1581">
+                <p xml:id="id53b771e0-2e81-4983-ab4e-fee638b2f2da"><ref xml:id="idd81b4c67-8366-4435-8c89-6acc0f41c5df" target="../P447/txt.xml#n468" type="journalsAndPapers" n="468">Papir 468</ref> (<hi xml:id="idba201054-3e4c-464b-9525-a786c54fb4df" rendition="#ita">SKS</hi> 27, 598).</p>
+                <p xml:id="idbfa77e27-4ad9-47dc-8924-81b9b4c01be9">1 løst blad i 4<hi xml:id="id2f752e6a-67ae-4330-a6dc-13b833fd7596" rendition="#sup">o</hi> med afrevet kant i venstre side.</p>
+                <p xml:id="ida6749f51-09bd-4efd-afe3-5893d674eede">Ingen paginering.</p>
+                <p xml:id="idf401027e-ce0a-44d8-96fe-3b16d5502b14">Papir: gulligt koncept, glat. Mål: 167 × 204 mm.</p>
+                <p xml:id="id1df59220-75c5-4843-87e8-89ce9901e53e">Bladet er foldet på langs; en bred inderspalte rummer teksten. Versosiden er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.468" prev="#physDesc.468">
+              <msIdentifier xml:id="id63f4edd6-4bd3-4280-aebe-8c4b74f6791f">
+                <idno xml:id="id0079ad4e-7fbb-420b-aac2-ea1bcd3fdac4">468</idno>
+              </msIdentifier>
+              <additional xml:id="id3db7ef08-76f0-4c5b-a445-30a565ff2e1e">
+                <adminInfo xml:id="id974b3f8a-a318-4309-a772-1fe842e25a70">
+                  <note xml:id="id4eb97515-8559-415a-a6a7-39bc06f4341b">
+                    <p xml:id="idd9188fa0-5049-483a-83e7-ec02a924ef47">(<hi xml:id="id73925df8-48c6-4b4e-8402-3fcacf3724c8" rendition="#ita">L-fort.</hi> + <hi xml:id="id574dcfe4-80da-4fa2-9182-89703bed4a61" rendition="#ita">B-fort.</hi> 31; KA, A pk. 52[I]; <hi xml:id="id3bc61405-73a5-4116-982d-4fb09c20a833" rendition="#ita">Pap.</hi> XI 2 A 291)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+          <p xml:id="idbd03c29c-b478-49e2-8d7e-d56c245a9196">(<hi xml:id="id5223a0f4-3da2-49de-b0e9-a371edd33a75" rendition="#ita">L-fort.</hi> + <hi xml:id="idc6e25f99-48ec-40d9-ab8d-b01186c944ae" rendition="#ita">B-fort.</hi> 13-18, 31-33, 37-47, 50-51; KA, A pk. 51 og 52[I]; B pk. 51 læg 2[I]; <hi xml:id="id74342fed-d97b-4332-b67e-819a47b67c60" rendition="#ita">Pap.</hi> X 5 A 167; XI 2 A 280-287 og 291-306; XI 3 B 105)</p>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="id0c2b9da5-9b10-415a-81dc-0001d808d28b">2. Datering og kronologi</head>
+          <p xml:id="idb6b8c414-d471-4584-b476-c879722d04d4">Ingen af de 22 papirer er dateret.</p>
+          <p xml:id="id589c6006-acf1-4e6b-8484-02d79d6b5d46" rendition="#ind">Rækkefølgen og dermed kronologien af papirerne i det følgende er bestemt af, hvorledes <persName xml:id="id64008752-672a-46b6-ae20-cea22b40a149" key="Lund, Henrik">Henrik Lund</persName> må have fundet dem, og hvorledes han har grebet arbejdet med sin fortegnelse over papirerne an. Dette fremgår dels af hans fortegnelse (<hi xml:id="id1d1af765-555b-4cf3-8f47-b462ccf24680" rendition="#ita">L-fort.</hi>), dels af hans oversigt, »Ordenen af Papirerne«. Af disse <pb xml:id="ss1003" n="1003" edRef="#SKS"/>kan det sluttes, at det højeste nummer i <hi xml:id="id98a9f52c-cdb7-46d3-a5a7-5ddbd60c2fac" rendition="#ita">L-fort.</hi> må være det først skrevne inden for en given bunke af manuskripter. <persName xml:id="id743f2e1f-7759-4f73-8894-a707cc4d7205" key="Lund, Henrik">Lund</persName> har m.a.o. nummereret papirerne 'bagfra', så det, der har ligget øverst i bunkerne, er blevet registreret først.<note xml:id="id6229f930-9a17-4302-9d5a-d6fa9b8234ef"><p xml:id="id815ba667-92e2-4512-ab8e-6fb7d271461c">Jf. <ref xml:id="ida7dba79f-1494-439f-bf3c-54174f89dc1a" target="../P1/int_1.xml#ss6" type="introduction" n="6">»Introduktion til <hi xml:id="ide4a5604d-9f13-4363-8c36-3e934f97fefd" rendition="#ita">Løse papirer</hi>«</ref>, s. 6-9.</p></note></p>
+          <p xml:id="id588057d9-aea4-4511-8be8-0f4ce254beb0" rendition="#ind"><ref xml:id="id9e4448bf-b809-45c3-9110-0f047e047398" target="../P447/txt.xml#n447" type="journalsAndPapers" n="447">Papir 447</ref>-452 har ligget for sig selv i SKs skrivepult på et ikke nærmere angivet sted (se <ref xml:id="iddcd4886e-d1f8-4d9f-b75f-c2531a5e6b48" target="../P1/txr.xml#ill_k3" type="figure" n="15">illustration 3</ref>, s. 15, hvor en mulighed er vist). Materialet har ikke ligget sammen med udkast og kladder til artikler i forbindelse med kirkestriden, hvilket er tilfældet for mange af de løse papirer fra tidsrummet 1852-55. Dette antyder, at papirerne 447-452 er skrevet længe før det materiale, der i <hi xml:id="id5d012279-e1e8-44d1-afae-1cd563442118" rendition="#ita">L-fort.</hi> omgiver det, dvs. før 1854. Da SK den 19. okt. 1852 flyttede fra <placeName xml:id="idab73d1b4-2ecd-4cca-9c6e-731ea577e1a3">Østerbro</placeName> til Klædeboderne og i forbindelse hermed ordnede en del af sine papirer, kan de formodes at være skrevet umiddelbart efter denne flytning.</p>
+          <p xml:id="id6000a316-4797-4252-a657-4c37e1c75c0a" rendition="#ind"><ref xml:id="id570dad9b-0181-459c-87d8-4d19ccaa5726" target="../P447/txt.xml#n453" type="journalsAndPapers" n="453">Papir 453</ref>-468 har ligget i den nederste skuffe i SKs skrivepult sammen med bl.a. flere kladder dateret i 1853.<note xml:id="idfcd3b4ab-aa06-453e-9785-eeef644e2061"><p xml:id="id44926ab7-a2fa-495c-be08-2e0b1d5a4e98">Jf. <hi xml:id="id15617c8d-6c54-4287-b3fe-5a88f44d9791" rendition="#ita">Pap.</hi> X 6 B 100, 232-234 og 235.</p></note><ref xml:id="id7e39cbcc-50e0-4258-aa67-872295c8dcaf" target="../P447/txt.xml#n453" type="journalsAndPapers" n="453">Papir 453</ref> er formentlig fra tiden omkring eller kort efter årsskiftet 1852/53, da det har ligget umiddelbart efter et par udkast til artikler om <persName xml:id="idc24b50d5-13ea-49d8-8f93-0fd7a86f84c4" key="Nielsen, Rasmus">Rasmus Nielsen</persName> fra marts 1853.<note xml:id="id89e3da5c-c3b4-4375-a11b-a5e41adb9dba"><p xml:id="idb24b87ef-02e0-44bc-9f55-8b7c0d30742f">Jf. <hi xml:id="idf371587a-f253-457a-b0cb-7470624abb80" rendition="#ita">Pap.</hi> X 6 B 101 og 102.</p></note> De mange optegnelser om biskop <persName xml:id="id3c08b97c-a263-41f3-bb78-f9ebda23b649" key="Mynster, Jakob Peter">J.P. Mynster</persName> bærer desuden præg af at være skrevet inden dennes død i jan. 1854.</p>
+          <p xml:id="id06091e40-4742-43bb-b99e-63182a08a711" rendition="#ind">Det afsluttende <ref xml:id="idb0d6b466-4e79-4f68-83f4-51c8b1bd8034" target="../P447/txt.xml#n468" type="journalsAndPapers" n="468">Papir 468</ref> følges i <hi xml:id="id284473da-0138-434d-890e-532f4aa28616" rendition="#ita">L-fort.</hi> af et manuskript (<ref xml:id="id2ad6ec15-65d1-4456-bb13-b6d77bd2a1c9" target="../P469/txt.xml#n474" type="journalsAndPapers" n="474">Papir 474</ref>), der er skrevet efter <persName xml:id="id45461021-5ac5-4832-a97d-f2eac7f284f2" key="Martensen, Hans Lassen">H.L. Martensen</persName>s indsættelse som biskop i juni 1854. Dette markante spring i tid modsvares af et tidsspring mellem nogle optegnelser i SKs journal fra samme periode, hhv. <ref xml:id="idbdad1414-2c43-49a1-a70b-c1afcc745276" target="../NB28/txt.xml#n54" type="journalsAndPapers" n="54">NB28:54</ref> fra den 13. okt. 1853, <ref xml:id="id9a020b05-851a-4153-909f-bcbe3b29252a" target="../NB28/txt.xml#n55" type="journalsAndPapers" n="55">NB28:55</ref> fra den 2. nov. 1853 og endelig <ref xml:id="id2b8426eb-452d-4cac-993e-ef0722c80599" target="../NB28/txt.xml#n56" type="journalsAndPapers" n="56">NB28:56</ref> fra den 1. marts 1854. I sidstnævnte omtales for første gang biskop <persName xml:id="idddbe0444-8d27-4a2b-b26e-f3cffa58ed70" key="Mynster, Jakob Peter">J.P. Mynster</persName>s død den 30. jan. 1854.<note xml:id="idb07e7783-304e-4a67-baec-577119fecab6"><p xml:id="id3c1010a6-5348-4e2b-a15f-7aaa84ade1f5">Jf. <hi xml:id="id9419ff80-7e71-405e-a563-9bee42c501bf" rendition="#ita">SKS</hi> 25, 257-262.</p></note> SK er med andre ord holdt op med at føre sin journal i okt.-nov. 1853 og tager den først frem igen i marts 1854. Det er udgivernes vurdering, at dette interval går igen mellem <ref xml:id="idf6dfa4fa-d109-4ad9-8494-63d3c5cd235a" target="../P447/txt.xml#n468" type="journalsAndPapers" n="468">Papir 468</ref> og <ref xml:id="id9d09230a-7ad2-4038-ac0e-7e826de2df55" target="../P469/txt.xml#n469" type="journalsAndPapers" n="469">469</ref>, idet <ref xml:id="idd637c1fe-d585-4319-8ca0-0b27980fe713" target="../P469/txt.xml#n469" type="journalsAndPapers" n="469">Papir 469</ref> synes at være det første løse papir, der nævner <persName xml:id="id06f763bf-4c3c-4941-b716-b7dc736b89a7" key="Mynster, Jakob Peter">Mynster</persName>s død.<note xml:id="idd6c070cb-5def-4221-85a1-c1242a9e2b1c"><p xml:id="idca7c7d50-4525-4eab-a844-ec3752f6f51d">Jf. <hi xml:id="ida6b32896-8dd3-43f2-91f7-b7623994aaf5" rendition="#ita">SKS</hi> 27, 602,11-12: »den nu afdøde Biskop <persName xml:id="id053fa0da-b8a8-4fcf-a604-407857b5bf6b" key="Mynster, Jakob Peter">Mynster</persName>.«</p></note></p>
+          <p xml:id="id79549d0d-4a31-4286-9630-e7c46531547d" rendition="#ind">Sammenfattende sandsynliggør dette, at papirerne er skrevet i tidsrummet fra okt. 1852-okt. 1853.</p>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

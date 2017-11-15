@@ -1,153 +1,198 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>En Thesis – kun een eneste</title>
-     
-     <title type="short">ET</title>
-  <author>
-   <name>Lena Wienecke Andersen</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Niels Jørgen Cappelørn</name><name>Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2010</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K14</biblScope>
-     <biblScope unit="file">http://sks.dk/et/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition><!--spaced out, in SKS rendered italic--><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition xml:id="lth" scheme="css">text-decoration: line-through</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20120823">txr/XML, <bibl><idno type="version">1.7</idno>, <biblScope unit="file">http://sks.dk/et/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id52a549fa-43bc-4137-ab7e-05abbd20ee5a">
+    <fileDesc xml:id="ida4206e87-7c63-4a9d-9248-870a19071a85">
+      <titleStmt xml:id="idc036c3d7-5845-440c-86ad-25c0e3d18631">
+        <title xml:id="id42fe78bb-3132-4ac0-a77f-33e0cb62ebe7" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="idc9cb04f6-aa46-48c1-9f9d-1be485edc1e7">En Thesis – kun een eneste</title>
+        <title xml:id="id1663ce12-4a87-4a94-bbeb-4bb054c50eec" type="short">ET</title>
+        <author xml:id="id807caef1-f1d6-4c60-aacc-f2df69172820">
+          <name xml:id="id99d7d792-a287-4da7-93ed-ccf08c8de703">Lena Wienecke Andersen</name>
+        </author>
+        <editor xml:id="idbe18faba-1889-4025-b81c-c136eb761f70">
+          <name xml:id="idf40fa8c8-2b56-4fae-8460-47692a3108d6">Niels Jørgen Cappelørn</name>
+          <name xml:id="ida945cdc6-a73a-4497-aa46-5c33254d7fc8">Joakim Garff</name>
+          <name xml:id="id6ec2f778-84f2-4dfd-abae-6af013c8d830">Johnny Kondrup</name>
+          <name xml:id="id2ba4d0ac-d230-4464-a8f4-bca2ad24b4cd">Tonny Aagaard Olesen</name>
+          <name xml:id="id21300784-5c0c-459e-80be-1d4bd708ed10">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="id07a44792-6f81-4061-875d-c5c41cf74b05">
+          <resp xml:id="id2c91e901-92b1-4cc1-8e69-655467848f91">redigeret af</resp>
+          <name xml:id="idc5f84574-676d-4f16-8c4f-8d82947d478f">Niels Jørgen Cappelørn</name>
+          <name xml:id="id5d89e3d6-8aa5-4573-b555-7d4fcbf5b628">Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="id74aa915e-df16-49e7-8b6c-a549ec601fac">
+          <resp xml:id="idaa52782a-dbc7-4649-9bf4-5010f6ec74a5">elektronisk redigeret af</resp>
+          <name xml:id="id2d57134e-0aa1-44f1-82aa-06b63d3c3fd6">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="idac28c1f4-3e7c-4e6f-9c33-06b300c00d18">
+        <authority xml:id="idbe0509ab-1ab7-4583-a83e-4df715d8ea5f">Søren Kierkegaard Forskningscenteret 2010</authority>
+        <availability xml:id="id84ec06ba-476a-4ba5-ab59-0039750968c6" status="restricted">
+          <p xml:id="id8c4ddc86-9430-4ee3-9a69-b1b2d8b3c588">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id2ae83d2c-7335-49ad-b2a0-372a551e6c27">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="ide212638c-f36c-42e2-b7a5-4443da3415a1" unit="volume">K14</biblScope>
+        <biblScope xml:id="idb0264f5e-0b76-4f03-aa83-702ece2beefb" unit="file">http://sks.dk/et/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="idabcd9c6f-d972-4006-9823-1f7f547d9a7e">
+        <bibl xml:id="id87f0ec23-41e1-4f5c-b2da-fd849a5bd1e4" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id7835ae2e-63a8-4fb7-af8a-ba4f292b3658">
+      <tagsDecl xml:id="idcd7f18c7-8012-4a66-b47e-f469a0b6905f">
+        <rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition>
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition xml:id="lth" scheme="css">text-decoration: line-through</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="idb2449a6c-d906-4231-ace2-1843e4205f5e">
+      <change xml:id="id73f0683a-0235-4d4b-9d9a-4c5a260aa569">Transformed to TEI by style sheet <bibl xml:id="id04e4801b-0cb8-4a24-9941-25a4945e3103" type="file">txr2tei.xsl</bibl> version as of <date xml:id="idd3018c80-7e1b-45d9-afa4-2463e4da03f5">2017-02-15</date> importing <bibl xml:id="idb46d4d50-16c6-4b96-8aa0-2b8812fb5392" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="idcf3f803f-f428-4d8b-9c42-2ed8820cfd0d">Transformed to TEI by style sheet <bibl xml:id="id38cc801f-68b9-4a63-83f1-e6ea8b195415" type="file">kn12tei.xsl</bibl> version <idno xml:id="id401d4388-4052-4a30-9f6c-b1a571541b89" type="version">1.9</idno> as of <date xml:id="idea44e3fd-cb74-48b9-9e77-16c31b3f1c70">2017-02-21</date> by <name xml:id="idd0fe9b76-a1f3-4229-b329-9dab260001c2">Karsten Kynde</name>, <orgName xml:id="ida7eb737f-ec8d-42fe-a57f-6b89af58fdab">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="idc3e7e5cd-d841-4215-91e7-022b0d8b2db7">København</placeName></change>
+      <change xml:id="id05eba687-3626-4efe-8461-540d9e2544a9" when="20120823">txr/XML, <bibl xml:id="idd0349371-de5c-40b9-aff1-73b1198abe61"><idno xml:id="id41610431-ab05-4f61-bdbd-3787f3967e15" type="version">1.7</idno>, <biblScope xml:id="id4cded56d-f29c-4838-a5e0-66771a25ee8d" unit="file">http://sks.dk/et/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="TextCriticalAccount" subtype="publishedWritings"><body><div><head type="topText" n="Tekstredegørelse"/>
-  <head><pb xml:id="ss531" n="531" edRef="#SKS"/>Tekstredegørelse</head>
-  <list type="TOC"> 
-   <item>1. Bibliografisk beskrivelse
-    <ptr type="chapter" target="#k1" n="531"/>
+  <text xml:id="idf4038474-88db-4e68-896d-5ac7311ea849" type="TextCriticalAccount" subtype="publishedWritings">
+    <body xml:id="id63155c5d-940b-4997-9b8b-7b43cc7b68ec">
+      <div xml:id="idd32ecd79-4948-4069-8014-d5acf6720fe1">
+        <head xml:id="idb3c88728-31c6-4a6e-a657-29e73a9927d5" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="idcd6e6781-35d5-4efb-890c-1fd84fddb9c5"><pb xml:id="ss531" n="531" edRef="#SKS"/>Tekstredegørelse</head>
+        <list xml:id="ida55fc6fb-39a6-4165-b1a3-7ac3e42d3e6a" type="TOC">
+          <item xml:id="id606f47e9-a3c7-4726-a6ad-1bc7d42b9bdc">1. Bibliografisk beskrivelse
+    <ptr xml:id="idab83bad6-1838-4a94-9629-5fdf75bdbf8c" type="chapter" target="#k1" n="531"/>
    </item>
-   <item>2. Manuskriptbeskrivelse
-    <ptr type="chapter" target="#k2" n="534"/>
+          <item xml:id="idc5eeedd9-1b71-469c-92c5-7792a21804f7">2. Manuskriptbeskrivelse
+    <ptr xml:id="id78561cbc-45c8-4297-af3f-5ba119e209b6" type="chapter" target="#k2" n="534"/>
    </item>
-   <item>3. Tilblivelseshistorie
-    <ptr type="chapter" target="#k3" n="535"/>
+          <item xml:id="id2bfc83c9-d300-4f03-819b-1d9e8ad666bd">3. Tilblivelseshistorie
+    <ptr xml:id="id7624f3d2-664e-4777-8638-d1177e6cf6ce" type="chapter" target="#k3" n="535"/>
    </item>
-   <item>4. Udgivelsesmåde
-    <ptr type="chapter" target="#k4" n="536"/>
+          <item xml:id="id85308d28-0dc1-408c-86e1-82a4ba44ba12">4. Udgivelsesmåde
+    <ptr xml:id="id84f246fb-c62f-4c2c-baac-278ef0eb3659" type="chapter" target="#k4" n="536"/>
    </item>
-  </list>
-  <div type="level1" xml:id="k1">
-   <head>1. Bibliografisk beskrivelse</head>
-   <p>»En Thesis – kun een eneste« blev trykt i <hi rendition="#ita">Fædrelandet,</hi> 16. årgang, nr. 74, onsdag den 28. marts 1855. Artiklen er signeret »S. <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>«. <hi rendition="#ita">Fædrelandet</hi> blev udgivet af <persName key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName key="Ploug, Carl">C. Ploug</persName>; sidstnævnte fungerede også som ansvarlig redaktør. Avisen blev trykt hos <persName key="Klein, Louis">Louis Klein</persName> i <placeName>København</placeName> og lå færdig fra trykkeriet kl. 20.30. Prisen var 6 skilling i løssalg, 5 mark pr. måned, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName>København</placeName>.</p>
-   <p>Artiklen er blevet kollationeret i tre eksemplarer af <hi rendition="#ita">Fædrelandet,</hi> nr. 74, den 28. marts 1855:</p>
-   <list> 
-     
-     <label>A</label>
-     <item>SKs eget eksemplar, uindbundet og ubeskåret, KA, D pk. 17.</item>
-    
-     
-     <label>B</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>Eksemplar B er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p> </note></item>
-    
-     
-     <label>C</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>Eksemplar C er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p> </note></item>
-    
-   </list>
-   <p>Ved den interne kollation blev der ikke konstateret afvigelser.<note> <p>Da <hi rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes her.</p> </note> Eksemplar A danner grundlag for den følgende beskrivelse.</p>
-   <div type="level2">
-    <head><pb xml:id="ss532" n="532" edRef="#SKS"/>Format og paginering</head>
-    <p>Formatet er folio.<note> <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p> </note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet ark. Avisen er trespaltet. Pagineringen 305-308 er på forsiden angivet under spalterne, på avisens øvrige sider over. Spalterne er unummereret.<note> <p>I <ref target="../ET/txt.xml#ss169" type="publishedWritings" n="169"><hi rendition="#ita">SKS</hi> 14, 169</ref>, angives sidetallet i marginen.</p> </note></p>
-    <p rendition="#ind">SKs artikel fylder godt halvdelen af første spalte på forsiden (s. 305). Derudover indeholder avisen nyheder fra ind- og udland samt annoncer.</p>
-   </div>
-   <div type="level2">
-    <head>Beskrivelse af eksemplar A</head>
-    <p>Avisen måler ca. 348 × 517 mm.<note> <p>Størrelsen måles som bredde (øverste kant) × højde (venstre kant).</p> </note></p>
-    <div type="level3">
-     <head>Papir</head>
-     <p>Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
-    </div>
-    <div type="level3">
-     <head>Typografi</head>
-     <p>Det fremherskende skriftsnit i avisen er antikva. Fremhævet tekst er sat med fed eller spatieret skrift.</p>
-     <p rendition="#ind">På forsiden findes avisens hoved og datolinje. Hovedet består af et bredt centralfelt og to smalle felter hhv. til venstre og højre herfor. Datolinjen adskiller hovedet fra avisens øvrige tekst.</p>
-     <p rendition="#ind">Det centrale felt har ordlyden:</p>
-     <quote><p><hi rendition="#bol">Fædrelandet.</hi> | <hi rendition="#bol"><hi rendition="#spa">1855.</hi></hi> | Abonnementspris i <placeName key="København">Kjøbenhavn</placeName> 15 Mk. pr. Qvartal, 5 Mk. pr. Maaned; enkelte Nr. 6 Sk.; udenfor <placeName key="København">Kjøbenhavn</placeName> 3 Rdl. | pr. Qvartal frit i Huset. Hver Søgne-Aften udgaaer et Numer.<note> <p>Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p> </note></p></quote>
-     <p>Det smalle felt til venstre har følgende ordlyd:</p>
-     <quote><p>Bladets Comptoir, store Kjøb-|magergade Nr. 54, er aabent | hver Søgnedags Formiddag fra | Kl. 11–1.</p></quote>
-     <p><pb xml:id="ss533" n="533" edRef="#SKS"/>Det smalle felt til højre:</p>
-     <quote><p><hi rendition="#bol">Bekjendtgjørelser</hi> | indrykkes mod en Betaling af | 4 Sk. for Petitlinien. Ifølge en | Overenskomst med »<hi rendition="#bol">Afton-|bladet</hi>« i <placeName>Stockholm</placeName>, »<hi rendition="#bol">Chri-| stianiaposten</hi>« i <placeName key="Oslo">Christiania</placeName> | og »<hi rendition="#bol">Handels- och Sjö-|farts-Tidningen</hi>« i Gö-|theborg kunne de ogsaa blive | indførte i disse mod en lignende | Betaling for hvert Blad.</p></quote>
-     <p>Derunder er datolinjen placeret, indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Datolinjen har ordlyden:</p>
-     <quote><p><hi rendition="#bol">16</hi><hi rendition="#sup">de</hi> <hi rendition="#bol">Aarg.</hi> <hi rendition="#bol">Onsdagen den 28. Marts.</hi> <hi rendition="#bol">Nr. 74.</hi></p></quote>
-     <p>Oplysningen om årgang er venstrestillet, dateringen centreret, og avisnummeret højrestillet.<note> <p>En uddybende beskrivelse af avishovedet findes i <ref target="../PPM/txr.xml#ss416" type="textCriticalAccount" n="416">tekstredegørelsen til »En Opfordring til mig fra Pastor <persName key="Paludan-Müller, Jens">Paludan-Müller</persName>«, s. 416</ref>ff.</p> </note></p>
-     <p rendition="#ind">Nederst i sidste spalte på avisens bagside, adskilt fra den foregående notits af en skillestreg i hele spaltens bredde, er trykketidspunktet angivet:</p>
-     <quote><p>Færdigt fra Trykkeriet Kl. 8½</p></quote>
-     <p>Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående, fed-fin dobbeltskillestreg og har ordlyden:</p>
-     <quote><p>Udgivere: <hi rendition="#bol">J.F.Giødwad</hi> og <hi rendition="#bol">C.Ploug;</hi> ansvarlig: <hi rendition="#bol"><persName key="Ploug, Carl">C. Ploug</persName>.</hi> | [Skillestreg] | Trykt med Hurtigpresse hos <hi rendition="#spa"><persName key="Klein, Louis">Louis Klein</persName>.</hi></p></quote>
-     <p>Første del af artiklens overskrift, »En Thesis«, der er fed og centreret i spalten, er sat med en punktstørrelse ca. 1 grad større end brødteksten.<note> <p>Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 10; tekst, der er 1 grad større, er sat med punktstørrelse 12, og 2 grader større med punktstørrelse 14.</p> </note> Anden del, » – kun een eneste.«, er fed, centreret i spalten og sat med samme punktstørrelse som brødteksten. Under en kort skillestreg står <pb xml:id="ss534" n="534" edRef="#SKS"/>dateringen »D. 26de Januar 1855.« og den spatierede signatur »S. <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.« indrykket fra hhv. for- og bagkant på samme linje.</p>
-     <p rendition="#ind">Artiklen indledes med en uncial, der er fed og sat med en punktstørrelse ca. 2 grader større end brødteksten. Tre steder deles teksten med tre asterisker på linje. Efter artiklen er der trykt en længere skillestreg, som afgrænser SKs tekst fra den øvrige tekst i spalten.</p>
-     <p rendition="#ind">Spaltekolumnen måler ca. 88 mm i bredden, og artiklen strækker sig over 44 af spaltens 80 linjer. Mellem spalterne er sat en fed, lodret skillestreg. Brødteksten er sat med en skriftstørrelse svarende til ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum.</p>
-     <p>De ganske få trykfejl i artiklen skyldes læderede typer.<note> <p>Eksempel på et tegn, der er utydeligt i trykket pga. en læderet type: 't' i »Alt« (<ref target="../ET/txt.xml#ss169" type="publishedWritings" n="169"><hi rendition="#ita">SKS</hi> 14, 169</ref>,33).</p> </note></p>
-    </div>
-   </div>
-  </div>
-  <div type="level1" xml:id="k2">
-   <head>2. Manuskriptbeskrivelse</head>
-   <p>Til »En Thesis – kun een eneste« findes følgende manuskript i Kierkegaard Arkivet (KA) på <placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
-   <msDesc><msIdentifier><collection>ET</collection></msIdentifier> 
-    <msPart xml:id="physDesc.1" next="#additional.1"><msIdentifier><idno>1</idno></msIdentifier><physDesc><p>Kladde til »En Thesis – kun een eneste« (<ref target="../ET/txt.xml#ss169" type="publishedWritings" n="169"><hi rendition="#ita">SKS</hi> 14, 169</ref>).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.<note> <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p> </note></p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 164 × 204 mm.<note> <p>Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p> </note></p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladene er efter beskrivning blevet foldet en gang på tværs. Bl. [2v] er ubeskrevet.</p><p>På bl. [1r] findes overskriften »<hi rendition="#bol"><hi rendition="#spa">En</hi></hi> <del rendition="#lth">Min christelige</del> <hi rendition="#bol"><hi rendition="#spa">Thesis</hi></hi> / – kun een eneste.«, hvor »Min« er slettet med blæk, »christelige« med blyant, og »En« og »Thesis« er tredobbelt understreget. Derefter ses dateringen »d. 26 Januar 1855.« skrevet med blyant. I marginen står teksten: <pb xml:id="ss535" n="535" edRef="#SKS"/>»Titelbladet bliver / Min <del rendition="#lth">christelige</del> Thesis / – kun een eneste. / Og paa Bagsiden af Titelbladet / kommer til at staae paa Foden: Mod 'Christenhed' <del rendition="#lth">For Χstd. – mod 'Χsthed'</del>; / ved Idealerne – mod Sandsebedragene: / for Evigheden!«, skrevet på langs. De angivne sletninger er foretaget med tætte blyantløkker; sidenhen er hele påskriften overstreget med blyantstreger på skrå. To afsnit i teksten på bl. [1r] efterfølges hver især af to asterisker. Også på bl. [1v] og [2r] findes asterisker til markering af afsnit, skrevet dels med blyant, dels med blæk.</p><p>Mange korrektioner. Ud over de allerede omtalte sletninger på bl. [1r] ses enkelte ord slettet, og et bibelcitat placeret mellem overskrift og datering er slettet med blyantløkker. I øverste højre hjørne af bl. [1r] og nederst på siden, i hele sidens bredde, findes tilføjelser, der er indvist og udvider tekstens indledning. På bl. [1v] og [2r] findes sletninger af enkeltord, både med blæk og med blyant, hvorefter det meste af teksten, samt to marginaltilføjelser på bl. [2r], er slettet med blyantstreger, enten vandrette eller på skrå. Den slettede tekst erstattes af tekst i marginen på bl. [1v].</p></physDesc></msPart><msPart xml:id="additional.1" prev="#physDesc.1"><msIdentifier><idno>1</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 52, læg 1; <hi rendition="#ita">Pap.</hi> XI 3 B 226)<note> <p>I KA, B pk. 52, læg 1, findes et omslag, som ikke beskrives af <hi rendition="#ita">Pap.,</hi> men som <hi rendition="#ita">Pap.</hi> har mærket »[XI 3 B 226]«. Omslaget er et stykke groft, blåt konceptpapir, der er foldet til konvolut og bærer påskrifterne »<hi rendition="#ita">10</hi>« skrevet med rødkridt, formentlig af <persName key="Lund, Henrik">H. Lund</persName>, »26/1 <hi rendition="#spa">55.</hi> / Første Udkast til / <hi rendition="#spa">En Thesis / – kun een eneste</hi>« og »'Fædrel.' <hi rendition="#spa">28/3. 55</hi>«, formentlig skrevet af <persName key="Barfod, Hans Peter">H.P. Barfod</persName>.</p> </note></p></note></adminInfo></additional></msPart>
-   </msDesc>
-  </div>
-  <div type="level1" xml:id="k3">
-   <head>3. Tilblivelseshistorie</head>
-   <p>SK angreb den officielle kristendomsforkyndelse i <placeName>Danmark</placeName>, først med 21 artikler i <hi rendition="#ita">Fædrelandet</hi> (fra den 18. dec. 1854 til den 26. maj 1855), dernæst med sit tidsskrift <hi rendition="#ita">Øieblikket.</hi><note> <p>Se <hi rendition="#ita">SKS</hi> 13.</p> </note> Artiklen »En Thesis – kun een eneste« var SKs tiende indlæg i denne kirkestrid.</p>
-   <p rendition="#ind">Kladdematerialet afspejler, at artiklen i første omgang har været tænkt som en selvstændig udgivelse; i marginen på bl. [1r] angives, hvad der skal stå på et titelblad, herunder et motto.</p>
-   <p rendition="#ind">Dette motto, »ved Idealerne – mod Sandsebedragene: for Evigheden!«, <pb xml:id="ss536" n="536" edRef="#SKS"/>overvejede SK allerede i 1849 at benytte til en subskriptionsindbydelse til <hi rendition="#ita">Indøvelse i Christendom,</hi><note> <p>Jf. <ref target="../IC/txr.xml#ss52" type="textCriticalAccount" n="52">tekstredegørelsen til <hi rendition="#ita">Indøvelse i Christendom</hi> i <hi rendition="#ita">SKS</hi> K12, 52</ref>, og <ref type="preparatoryManuscript" n="pap:X5B34" rend="IC,ms.8.1"><hi rendition="#ita">Pap.</hi> X 5 B 34</ref>.</p> </note> og det ses igen i dec. 1854 i en ubenyttet kladde, af SK omtalt som »Anskriget«.<note> <p>Jf. <ref type="preparatoryManuscript" n="pap:XI3B59-81"><hi rendition="#ita">Pap.</hi> XI 3 B 59-81</ref>, s. 109-124.</p> </note> Det indledende bibelcitat: »'Men ('da Alle vare sovede ind') ved Midnat skete der Anskrig' <rs type="bible" key="Matt 25,6">Mtth: 25,6</rs>.« og slutningen i ms. 1 findes ligeledes i »Anskriget«.</p>
-   <p rendition="#ind">På et tidspunkt, muligvis omkring dateringen af kladden, »d. 26 Januar 1855«, har SK besluttet, at teksten i stedet skulle indgå i rækken af kirkestridsartikler; marginaltilføjelsen om titelbladet, bibelcitatet samt afslutningen af teksten blev slettet og en ny afslutning tilføjet i marginen på bl. [1v].<note> <p>Efter at have sløjfet mottoet til »En Thesis – kun een eneste« har SK overvejet at medtage det i <hi rendition="#ita">Dette skal siges; saa være det da sagt</hi> (jf. <ref target="../DSS/txr.xml#ss207" type="textCriticalAccount" n="207"><hi rendition="#ita">SKS</hi> K13, 207</ref>-220, og <ref type="preparatoryManuscript" n="pap:XI3B238" rend="DSS,ms.1.1"><hi rendition="#ita">Pap.</hi> XI 3 B 238</ref>), men bragte det først, let omformuleret og i løbende tekst, i <hi rendition="#ita">Øieblikket Nr. 1</hi> (jf. <ref target="../Oi1/txt.xml#ss141" type="publishedWritings" n="141"><hi rendition="#ita">SKS</hi> 13, 141</ref>, <ref target="../Oi1/txr.xml#ss235" type="textCriticalAccount" n="235"><hi rendition="#ita">SKS</hi> K13, 235</ref>, og <ref type="preparatoryManuscript" n="pap:XI3B246" rend="Oi1,ms.1.6"><hi rendition="#ita">Pap.</hi> XI 3 B 246</ref>). Bibelcitatet og den oprindelige slutning fandt i en anden form vej til <hi rendition="#ita">Dette skal siges; saa være det da sagt</hi> (jf. <ref target="../DSS/txt.xml#ss114" type="publishedWritings" n="114"><hi rendition="#ita">SKS</hi> 13, 114</ref>-115, <ref target="../DSS/txr.xml#ss207" type="textCriticalAccount" n="207"><hi rendition="#ita">SKS</hi> K13, 207</ref>-220, og <ref type="preparatoryManuscript" n="pap:XI3B238" rend="DSS,ms.1.1"><hi rendition="#ita">Pap.</hi> XI 3 B 238</ref>).</p> </note></p>
-   <p rendition="#ind">Der foreligger ingen renskrift (trykmanuskript) til artiklen.</p>
-  </div>
-  <div type="level1" xml:id="k4">
-   <head>4. Udgivelsesmåde</head>
-   <p>»En Thesis – kun een eneste« blev som nævnt trykt i <hi rendition="#ita">Fædrelandet.</hi><note> <p>En nærmere redegørelse for <hi rendition="#ita">Fædrelandets</hi> redaktionelle forhold, periodicitet og oplagstal findes i <ref target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til »Aabenbart Skriftemaal«, s. 112</ref>f.</p> </note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
-   <p rendition="#ind">Dele af artiklen blev allerede i SKs levetid frit oversat til svensk; bogen <hi rendition="#ita">Den officiella kristendomen är icke det nya testamentets kristendom. Framställning af dr. <persName key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>'s polemik mot statskyrkan i <placeName>Danmark</placeName>,</hi> hvori de fleste af SKs artikler fra kirkestriden er blevet oversat i uddrag, udkom i <placeName>København</placeName> i 1855.<note> <p>Et dedikationseksemplar fastslår, at det var den svenske journalist <persName key="Sturzen-Becker, O.P.">O.P. Sturzen-Becker</persName>, på det tidspunkt bosiddende i <placeName>København</placeName>, der anonymt udgav bogen. Dedikationseksemplaret findes på Kungl. biblioteket i <placeName>Stockholm</placeName> med signaturen Rar. 726. Eksemplaret var ikke blandt SKs efterladte bøger, og det formodes derfor, at SK har sendt det retur til forfatteren, jf. <persName key="Kabell, Aage">Aage Kabell</persName> <hi rendition="#ita">Kierkegaardstudiet i <placeName>Norden</placeName>,</hi> <placeName key="København">Kbh.</placeName> 1948, s. 73.</p> </note> De fragmentariske oversættelser strækker sig til og med artiklen »Et Resultat«, trykt i <hi rendition="#ita">Fædrelandet,</hi> nr. 107, den 10. maj 1855; <pb xml:id="ss537" n="537" edRef="#SKS"/>den anonyme redaktør har sandsynligvis antaget, at SK under denne overskrift afsluttede sit angreb på kirken, og har herefter ladet bogen trykke.</p>
-   <p rendition="#ind">Af stor betydning for receptionen i SKs umiddelbare eftertid var <persName key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi rendition="#ita"><persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 <hi rendition="#ita">(Bl.art.).</hi> Heri indgår størstedelen af SKs artikler, også »En Thesis – kun een eneste«.<note> <p>Artiklen er trykt i <hi rendition="#ita">Bl.art.,</hi> s. 93-94. SK havde selv planer om, men fik ikke realiseret, en samlet udgivelse af kirkestridsartiklerne, jf. <ref type="preparatoryManuscript" n="pap:XI3B128-135"><hi rendition="#ita">Pap.</hi> XI 3 B 128-135</ref>.</p> </note></p>
-  </div>
- </div></body></text>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="id891fdd26-dce3-4fa5-a18f-43cb125a46f3">1. Bibliografisk beskrivelse</head>
+          <p xml:id="id6eb560fb-5077-4535-bb07-d6106acf3eca">»En Thesis – kun een eneste« blev trykt i <hi xml:id="idca051be7-8169-49af-82a7-2e419324ba58" rendition="#ita">Fædrelandet,</hi> 16. årgang, nr. 74, onsdag den 28. marts 1855. Artiklen er signeret »S. <persName xml:id="idc4cd70cf-200f-44f2-a12d-0736be49271f" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>«. <hi xml:id="idc888fe07-7433-4380-ba04-bc4b5835c9d1" rendition="#ita">Fædrelandet</hi> blev udgivet af <persName xml:id="idb02f9661-e3a0-43ce-828d-155dd866750a" key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName xml:id="ided4de548-2911-4beb-b44d-f731d035169d" key="Ploug, Carl">C. Ploug</persName>; sidstnævnte fungerede også som ansvarlig redaktør. Avisen blev trykt hos <persName xml:id="id68ccb8fa-2209-41b5-bb85-716b8aab5288" key="Klein, Louis">Louis Klein</persName> i <placeName xml:id="id8e536d1b-cdf7-4c4c-b99b-e1817959bc33">København</placeName> og lå færdig fra trykkeriet kl. 20.30. Prisen var 6 skilling i løssalg, 5 mark pr. måned, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName xml:id="idaec880c3-6565-47e1-9880-b1255a789d4a">København</placeName>.</p>
+          <p xml:id="idb4a1b756-f7ed-4cf1-867c-635b7c098a4d">Artiklen er blevet kollationeret i tre eksemplarer af <hi xml:id="id5027964a-a4b8-4c7e-9859-db7f81094637" rendition="#ita">Fædrelandet,</hi> nr. 74, den 28. marts 1855:</p>
+          <list xml:id="ide449f3b1-9ece-43df-86cf-80454f8db041">
+            <label xml:id="id84569327-377d-4f9a-8548-094743fd30f7">A</label>
+            <item xml:id="idece52bec-2339-4743-8ae0-cd4dff3d4622">SKs eget eksemplar, uindbundet og ubeskåret, KA, D pk. 17.</item>
+            <label xml:id="idabc12496-0485-413e-a749-513cf8597cb1">B</label>
+            <item xml:id="id01029e74-e485-49af-b6f2-6777a22b4423"><placeName xml:id="idf9e485f3-354a-48ab-9e32-99bf6fbc2c79" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="id688a58aa-a0d7-4183-a5b1-6a2336158fb4"><p xml:id="id6e76e5af-0890-4c48-bc6f-ec813819b093">Eksemplar B er indbundet sammen med resten af <hi xml:id="id942749c0-bc42-4b9d-8564-8312dfbba1ae" rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p></note></item>
+            <label xml:id="id85482bea-2e0a-4889-bb04-348caed13fdd">C</label>
+            <item xml:id="id5ba0c2f8-4f3e-48e8-b2e0-9dd98fb25f55"><placeName xml:id="id64244629-59cf-48e0-8312-8c1ad1388d2c" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="ide3a93853-c8d8-40c8-be61-2bfd950f767a"><p xml:id="idfac9cc63-f243-46d5-8923-3c545e90d2e7">Eksemplar C er indbundet sammen med resten af <hi xml:id="id2639f216-957b-452d-841c-010d0c4a3cf5" rendition="#ita">Fædrelandet,</hi> 16. årgang, 1855.</p></note></item>
+          </list>
+          <p xml:id="ided644fcf-bc98-4be4-9941-7f4c362fcb0a">Ved den interne kollation blev der ikke konstateret afvigelser.<note xml:id="id43927274-c555-44b8-8b65-f04e3e1713bc"><p xml:id="id05d6e24e-270a-4976-a1f6-1decb68efaa1">Da <hi xml:id="id62aca367-2622-448b-9f34-f0d37d12c2b1" rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes her.</p></note> Eksemplar A danner grundlag for den følgende beskrivelse.</p>
+          <div xml:id="id27580ff6-03dc-4f17-9b32-955c9f13266b" type="level2">
+            <head xml:id="idb8e57564-96b1-4557-a69d-0760ca1e8c5e"><pb xml:id="ss532" n="532" edRef="#SKS"/>Format og paginering</head>
+            <p xml:id="id6dbfd903-17c6-4b43-a1a5-b3a35ab05f0c">Formatet er folio.<note xml:id="id3f7995b6-3312-4cd6-94ac-623fac1326b1"><p xml:id="iddb198736-4bfd-4caf-950e-e6bc640c6bfd">Udgangspunktet for formatbetegnelsen er plane helark (ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p></note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet ark. Avisen er trespaltet. Pagineringen 305-308 er på forsiden angivet under spalterne, på avisens øvrige sider over. Spalterne er unummereret.<note xml:id="idfda585bf-c214-404c-9140-f7f9ee1a2ed5"><p xml:id="id06988281-45a9-445f-aea9-14e3de4bdfe9">I <ref xml:id="id07e2bc85-8219-4924-877d-3cdbea7382d8" target="../ET/txt.xml#ss169" type="publishedWritings" n="169"><hi xml:id="id813547be-bb3e-40db-8c13-62000383dcfe" rendition="#ita">SKS</hi> 14, 169</ref>, angives sidetallet i marginen.</p></note></p>
+            <p xml:id="idde44a1ad-fe97-406e-b9c2-f989032cde62" rendition="#ind">SKs artikel fylder godt halvdelen af første spalte på forsiden (s. 305). Derudover indeholder avisen nyheder fra ind- og udland samt annoncer.</p>
+          </div>
+          <div xml:id="id4636d599-70cf-4a6c-b19b-cd202c40cff8" type="level2">
+            <head xml:id="idcf7186a4-35c0-41bd-999a-89d678cdeb62">Beskrivelse af eksemplar A</head>
+            <p xml:id="id8774f02e-1446-49e9-bb30-91aaaa677049">Avisen måler ca. 348 × 517 mm.<note xml:id="ida4b4ed46-9dac-4f83-b605-49dd4a135155"><p xml:id="idb04abfdb-cfc9-49c1-84bd-aac5e73f0b9f">Størrelsen måles som bredde (øverste kant) × højde (venstre kant).</p></note></p>
+            <div xml:id="id41bf405d-806c-4e2f-89e0-6336eeed7d22" type="level3">
+              <head xml:id="id50561658-2976-44e0-935e-51cc79611e95">Papir</head>
+              <p xml:id="id642fa0e2-5a77-44fa-be5c-59d75c3a5bde">Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
+            </div>
+            <div xml:id="id12802f25-c4d4-483e-a204-f24cd61ac0f5" type="level3">
+              <head xml:id="id0763c385-f2f1-4980-bde1-b57f421b9520">Typografi</head>
+              <p xml:id="id84c5f63c-2753-41d8-8261-aea90c032cb1">Det fremherskende skriftsnit i avisen er antikva. Fremhævet tekst er sat med fed eller spatieret skrift.</p>
+              <p xml:id="id0e58049e-4a3d-4311-aa4c-bc56ff43ae27" rendition="#ind">På forsiden findes avisens hoved og datolinje. Hovedet består af et bredt centralfelt og to smalle felter hhv. til venstre og højre herfor. Datolinjen adskiller hovedet fra avisens øvrige tekst.</p>
+              <p xml:id="id8159945e-0f64-4c26-81a4-98307892c977" rendition="#ind">Det centrale felt har ordlyden:</p>
+              <quote xml:id="idaba5f6de-7781-4689-a2e8-8b3cbbdd7d49">
+                <p xml:id="id64d18640-a8d5-418d-ac8a-c6ba594b5df6"><hi xml:id="id33666f43-7ac8-4295-9d68-7a7e47da2b8b" rendition="#bol">Fædrelandet.</hi> | <hi xml:id="id59344e5f-07d8-49df-ac3d-dd9d158df23a" rendition="#bol"><hi xml:id="idb55d01b0-9819-4903-9ee0-06e06da014cf" rendition="#spa">1855.</hi></hi> | Abonnementspris i <placeName xml:id="id306a37d0-9e1b-410b-a216-5ab8cbd03816" key="København">Kjøbenhavn</placeName> 15 Mk. pr. Qvartal, 5 Mk. pr. Maaned; enkelte Nr. 6 Sk.; udenfor <placeName xml:id="id362d51d7-7650-47df-8494-15f9812115d8" key="København">Kjøbenhavn</placeName> 3 Rdl. | pr. Qvartal frit i Huset. Hver Søgne-Aften udgaaer et Numer.<note xml:id="id76a3d06a-a112-4c5f-9de5-1ca40f6d6b3a"><p xml:id="id64c3e1d1-cdb6-4d1b-a11b-80fcce3d66b0">Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p></note></p>
+              </quote>
+              <p xml:id="id255c3b52-cfaa-43e9-946a-70f346194a21">Det smalle felt til venstre har følgende ordlyd:</p>
+              <quote xml:id="idb42f3320-02d3-43fa-8549-748201564ac2">
+                <p xml:id="ided6c78b8-cf4a-4548-8630-45483d447141">Bladets Comptoir, store Kjøb-|magergade Nr. 54, er aabent | hver Søgnedags Formiddag fra | Kl. 11–1.</p>
+              </quote>
+              <p xml:id="id15f8ce61-4557-48be-b093-263d6509ee1c"><pb xml:id="ss533" n="533" edRef="#SKS"/>Det smalle felt til højre:</p>
+              <quote xml:id="id132bbd7f-421d-44b9-b26a-49ba05f90e80">
+                <p xml:id="id44372d6e-64dd-4c35-a99b-ace4c560352b"><hi xml:id="id2d75697d-df61-450d-b6c9-10f60f32b875" rendition="#bol">Bekjendtgjørelser</hi> | indrykkes mod en Betaling af | 4 Sk. for Petitlinien. Ifølge en | Overenskomst med »<hi xml:id="id293f9fa6-96d5-4a2e-9604-61babec18318" rendition="#bol">Afton-|bladet</hi>« i <placeName xml:id="id0d63fa90-2ef9-47ef-a9c1-b1d066c7e3c5">Stockholm</placeName>, »<hi xml:id="idb6350404-519b-4ba5-b058-ca3af717dc4a" rendition="#bol">Chri-| stianiaposten</hi>« i <placeName xml:id="id6e64d88b-d862-42d6-bf34-08c880c2e98d" key="Oslo">Christiania</placeName> | og »<hi xml:id="id33fda859-bda2-4952-96c4-0369c9dded02" rendition="#bol">Handels- och Sjö-|farts-Tidningen</hi>« i Gö-|theborg kunne de ogsaa blive | indførte i disse mod en lignende | Betaling for hvert Blad.</p>
+              </quote>
+              <p xml:id="id05a94e09-6417-403c-99da-6ad4fadc477f">Derunder er datolinjen placeret, indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Datolinjen har ordlyden:</p>
+              <quote xml:id="id18d9980f-f5f2-4f11-a4cb-2095ac7fa92b">
+                <p xml:id="idfc926338-a090-43d5-bd60-d5ab6245bb73">
+                  <hi xml:id="id6677f121-628a-4919-922f-5a62274a0067" rendition="#bol">16</hi>
+                  <hi xml:id="id21c5a8e9-1597-4237-b444-c473f98bab40" rendition="#sup">de</hi>
+                  <hi xml:id="id037ecf2f-0bef-4b54-86b6-cb75187bad58" rendition="#bol">Aarg.</hi>
+                  <hi xml:id="idc048e4da-e84e-4116-a009-f595015ffa4f" rendition="#bol">Onsdagen den 28. Marts.</hi>
+                  <hi xml:id="id20c04f44-9ba9-42f3-a19c-3d2627aebc1e" rendition="#bol">Nr. 74.</hi>
+                </p>
+              </quote>
+              <p xml:id="id89624973-bfe3-4b0e-a107-9794c68827ae">Oplysningen om årgang er venstrestillet, dateringen centreret, og avisnummeret højrestillet.<note xml:id="id3602179d-52bb-419c-a1e2-bd735af7ad2e"><p xml:id="ida1433edd-ce52-4ff1-91d5-106f5bf37c65">En uddybende beskrivelse af avishovedet findes i <ref xml:id="id706ad3c8-f756-463c-ba02-bd43a264db58" target="../PPM/txr.xml#ss416" type="textCriticalAccount" n="416">tekstredegørelsen til »En Opfordring til mig fra Pastor <persName xml:id="idbcbc3fab-c496-44a4-b48e-ff970a81a90b" key="Paludan-Müller, Jens">Paludan-Müller</persName>«, s. 416</ref>ff.</p></note></p>
+              <p xml:id="idefb24701-0cec-4a6e-bae6-bbacfcd77e2c" rendition="#ind">Nederst i sidste spalte på avisens bagside, adskilt fra den foregående notits af en skillestreg i hele spaltens bredde, er trykketidspunktet angivet:</p>
+              <quote xml:id="idd03aee6b-7b6b-4f61-9b01-2876a0cc75ab">
+                <p xml:id="idac874334-3344-4270-ab55-d26e66e83776">Færdigt fra Trykkeriet Kl. 8½</p>
+              </quote>
+              <p xml:id="id8c6261c2-4e32-457a-8177-f15f3ffebf95">Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående, fed-fin dobbeltskillestreg og har ordlyden:</p>
+              <quote xml:id="id4d5406f7-f611-4fc4-a053-110bcf4de3b3">
+                <p xml:id="id0f2f9435-b68c-434d-afe0-9dd8bc6bb129">Udgivere: <hi xml:id="id031da088-851e-4ade-b391-16464ba174e1" rendition="#bol">J.F.Giødwad</hi> og <hi xml:id="id773bcfd4-9e9c-48cb-9ba7-2c537421397e" rendition="#bol">C.Ploug;</hi> ansvarlig: <hi xml:id="idb46d82c7-25b0-4a03-adcb-5473aba7c006" rendition="#bol"><persName xml:id="id49c0e2fc-7167-47cb-af82-ac02fa1bb17e" key="Ploug, Carl">C. Ploug</persName>.</hi> | [Skillestreg] | Trykt med Hurtigpresse hos <hi xml:id="id535d5e9d-e47b-4262-bb11-da7006f68690" rendition="#spa"><persName xml:id="id0572eb02-2031-40e5-a7dd-dc0b5020beee" key="Klein, Louis">Louis Klein</persName>.</hi></p>
+              </quote>
+              <p xml:id="id7c75ceed-d539-43a1-9987-2f6eff4de74e">Første del af artiklens overskrift, »En Thesis«, der er fed og centreret i spalten, er sat med en punktstørrelse ca. 1 grad større end brødteksten.<note xml:id="id50642857-ab7f-4375-8fb3-bb4c87b7d9b0"><p xml:id="id9a28da55-07ed-4296-bbc5-88024c0ea118">Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 10; tekst, der er 1 grad større, er sat med punktstørrelse 12, og 2 grader større med punktstørrelse 14.</p></note> Anden del, » – kun een eneste.«, er fed, centreret i spalten og sat med samme punktstørrelse som brødteksten. Under en kort skillestreg står <pb xml:id="ss534" n="534" edRef="#SKS"/>dateringen »D. 26de Januar 1855.« og den spatierede signatur »S. <persName xml:id="id008abf4e-bc52-4593-bf17-a784d6520e57" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.« indrykket fra hhv. for- og bagkant på samme linje.</p>
+              <p xml:id="id5f8d4a39-c418-4700-88bb-670ffa98452a" rendition="#ind">Artiklen indledes med en uncial, der er fed og sat med en punktstørrelse ca. 2 grader større end brødteksten. Tre steder deles teksten med tre asterisker på linje. Efter artiklen er der trykt en længere skillestreg, som afgrænser SKs tekst fra den øvrige tekst i spalten.</p>
+              <p xml:id="idaf7e4ec0-6923-463f-b744-e86c62337dce" rendition="#ind">Spaltekolumnen måler ca. 88 mm i bredden, og artiklen strækker sig over 44 af spaltens 80 linjer. Mellem spalterne er sat en fed, lodret skillestreg. Brødteksten er sat med en skriftstørrelse svarende til ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum.</p>
+              <p xml:id="idc8b5aaf5-2406-48c6-b32e-ae32b2233b8f">De ganske få trykfejl i artiklen skyldes læderede typer.<note xml:id="idb46f01e6-10a7-49ff-bcca-0fb76b51894e"><p xml:id="id3365bf79-eef1-4baa-b564-5e3f8c8b92b5">Eksempel på et tegn, der er utydeligt i trykket pga. en læderet type: 't' i »Alt« (<ref xml:id="id21a47018-9c82-4a91-952e-e341e3829ed2" target="../ET/txt.xml#ss169" type="publishedWritings" n="169"><hi xml:id="idf0c5fb61-8401-4558-8fe6-20423f0f901f" rendition="#ita">SKS</hi> 14, 169</ref>,33).</p></note></p>
+            </div>
+          </div>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="idcd2c3ad9-7f54-4e0b-8231-4721b2a82363">2. Manuskriptbeskrivelse</head>
+          <p xml:id="id8f6a7ff7-f919-4873-8917-2acb28e7339c">Til »En Thesis – kun een eneste« findes følgende manuskript i Kierkegaard Arkivet (KA) på <placeName xml:id="id75aaf2c9-e0ee-4025-b484-ca2d6bbe031a" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
+          <msDesc xml:id="idbfebd4c7-688f-442a-ac5d-4b3c5ed7c291">
+            <msIdentifier xml:id="id239804d7-34d2-48f0-9c69-1476ca90debc">
+              <collection xml:id="ideafa5010-7d48-493f-b1ff-9312f8752f96">ET</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.1" next="#additional.1">
+              <msIdentifier xml:id="id76e23e98-73d2-454c-b61f-ce17fcd5343c">
+                <idno xml:id="id00c774e7-9f27-4be9-81f8-879d3ec9aa6a">1</idno>
+              </msIdentifier>
+              <physDesc xml:id="idb4dabcdc-de35-4d31-9cc9-14dd0c1f060c">
+                <p xml:id="idbb7c83e8-0f0f-4b22-be8c-af3873d326f4">Kladde til »En Thesis – kun een eneste« (<ref xml:id="id0e79b9cc-ecf1-4182-b7fd-76b4461d0899" target="../ET/txt.xml#ss169" type="publishedWritings" n="169"><hi xml:id="id45de9c32-6286-4398-a8f6-8f187c66b9c3" rendition="#ita">SKS</hi> 14, 169</ref>).</p>
+                <p xml:id="id5860858b-5c5a-400f-8727-ea23906374ba">1 dobbeltblad i 4<hi xml:id="id17640205-7b1a-4c51-8f26-b3a76a7b1e95" rendition="#sup">o</hi>.<note xml:id="idadfa15d3-4610-4a60-bf7e-c5c38448d5cd"><p xml:id="id78e243e3-6213-4ddd-b47f-3493083429c0">Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p></note></p>
+                <p xml:id="idb587bcad-c00c-420c-81a3-0496aa12641d">Ingen paginering.</p>
+                <p xml:id="id159ce694-6e8e-4a95-9095-de5979efeb9f">Papir: gulligt koncept, glat. Mål: 164 × 204 mm.<note xml:id="id234a33f3-a654-4331-93be-a6d4651b4899"><p xml:id="id19c3796c-5886-4d6b-9eac-b10d08e1063e">Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p></note></p>
+                <p xml:id="id4ea4aa80-a722-4de4-8a0a-379f3cf98c92">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladene er efter beskrivning blevet foldet en gang på tværs. Bl. [2v] er ubeskrevet.</p>
+                <p xml:id="id02b0c280-08f3-4c26-a875-d3bd6f6ed628">På bl. [1r] findes overskriften »<hi xml:id="id4ee8f866-5a34-4298-b13e-a7e4a89199bb" rendition="#bol"><hi xml:id="idb4a2d9f0-c2a6-4d72-bf9e-0b605aa06721" rendition="#spa">En</hi></hi> <del xml:id="id7daa2a96-9a34-4127-8a58-3b72e2e54f6a" rendition="#lth">Min christelige</del> <hi xml:id="idcb7d50c9-2b5a-4121-8087-7f0e26570647" rendition="#bol"><hi xml:id="id2844bfc2-b2fe-42f4-a9fc-85c54757fe86" rendition="#spa">Thesis</hi></hi> / – kun een eneste.«, hvor »Min« er slettet med blæk, »christelige« med blyant, og »En« og »Thesis« er tredobbelt understreget. Derefter ses dateringen »d. 26 Januar 1855.« skrevet med blyant. I marginen står teksten: <pb xml:id="ss535" n="535" edRef="#SKS"/>»Titelbladet bliver / Min <del xml:id="id66dd5762-321b-4cb1-ad64-88152fcbe10b" rendition="#lth">christelige</del> Thesis / – kun een eneste. / Og paa Bagsiden af Titelbladet / kommer til at staae paa Foden: Mod 'Christenhed' <del xml:id="id4398f3eb-ee1b-4ad3-8d30-129c6e008d4c" rendition="#lth">For Χstd. – mod 'Χsthed'</del>; / ved Idealerne – mod Sandsebedragene: / for Evigheden!«, skrevet på langs. De angivne sletninger er foretaget med tætte blyantløkker; sidenhen er hele påskriften overstreget med blyantstreger på skrå. To afsnit i teksten på bl. [1r] efterfølges hver især af to asterisker. Også på bl. [1v] og [2r] findes asterisker til markering af afsnit, skrevet dels med blyant, dels med blæk.</p>
+                <p xml:id="id14a37990-79b7-431f-8ae3-4fe7b18a625f">Mange korrektioner. Ud over de allerede omtalte sletninger på bl. [1r] ses enkelte ord slettet, og et bibelcitat placeret mellem overskrift og datering er slettet med blyantløkker. I øverste højre hjørne af bl. [1r] og nederst på siden, i hele sidens bredde, findes tilføjelser, der er indvist og udvider tekstens indledning. På bl. [1v] og [2r] findes sletninger af enkeltord, både med blæk og med blyant, hvorefter det meste af teksten, samt to marginaltilføjelser på bl. [2r], er slettet med blyantstreger, enten vandrette eller på skrå. Den slettede tekst erstattes af tekst i marginen på bl. [1v].</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.1" prev="#physDesc.1">
+              <msIdentifier xml:id="idb9635356-2322-49ed-8fbf-59d98b0d02e2">
+                <idno xml:id="id6228a5f9-9b5d-486b-b118-9b6c4cb4d245">1</idno>
+              </msIdentifier>
+              <additional xml:id="id9c3e04cf-ef94-473a-9532-125956aa137d">
+                <adminInfo xml:id="id2e20363c-061a-4f57-9c56-638e1f46aff0">
+                  <note xml:id="ide85da91f-ef7d-4631-bd06-364caf7d9748">
+                    <p xml:id="idbe8eeaed-b92c-4172-9a3e-23bdf7c9e0a8">(KA, B pk. 52, læg 1; <hi xml:id="id46c0a434-947b-47cf-b5fd-f942423b51c1" rendition="#ita">Pap.</hi> XI 3 B 226)<note xml:id="idfc2ce72c-d6a3-4312-b212-44a891dbd8be"><p xml:id="id62931dc3-2bee-4419-9040-bab1cbee459f">I KA, B pk. 52, læg 1, findes et omslag, som ikke beskrives af <hi xml:id="id34f18b9e-4620-4fc3-a912-8598ae5ce0b8" rendition="#ita">Pap.,</hi> men som <hi xml:id="id4190b55c-7889-4cf8-898b-21eb97b786a1" rendition="#ita">Pap.</hi> har mærket »[XI 3 B 226]«. Omslaget er et stykke groft, blåt konceptpapir, der er foldet til konvolut og bærer påskrifterne »<hi xml:id="id7e3dc699-f577-48d6-9c71-1701bb419e50" rendition="#ita">10</hi>« skrevet med rødkridt, formentlig af <persName xml:id="idcc5ef47e-263e-422f-bf30-651b3721f4e6" key="Lund, Henrik">H. Lund</persName>, »26/1 <hi xml:id="idd561ed99-6e8e-48d7-8379-4e4015a8e6bd" rendition="#spa">55.</hi> / Første Udkast til / <hi xml:id="id6c598c60-7fe5-4f72-9c6a-1bdc51189b56" rendition="#spa">En Thesis / – kun een eneste</hi>« og »'Fædrel.' <hi xml:id="id15992e59-18c1-4535-89e4-f53b55d02fc0" rendition="#spa">28/3. 55</hi>«, formentlig skrevet af <persName xml:id="ide3371d13-d13a-4f7a-8566-c897aef2f893" key="Barfod, Hans Peter">H.P. Barfod</persName>.</p></note></p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+        </div>
+        <div type="level1" xml:id="k3">
+          <head xml:id="id97662582-8301-4ddb-8139-88cc48bb8f35">3. Tilblivelseshistorie</head>
+          <p xml:id="idfacb4426-2905-4fde-9398-a0ca6efcb2d9">SK angreb den officielle kristendomsforkyndelse i <placeName xml:id="id46940951-4dc9-4c59-95b1-22bc5d2cc109">Danmark</placeName>, først med 21 artikler i <hi xml:id="idc8e18a7b-9684-4217-8c4a-d98cb70bf39d" rendition="#ita">Fædrelandet</hi> (fra den 18. dec. 1854 til den 26. maj 1855), dernæst med sit tidsskrift <hi xml:id="id2f478e36-4268-4a1e-ace4-54c9eff227c7" rendition="#ita">Øieblikket.</hi><note xml:id="id8d2cf197-7864-4806-b0dc-c85777b9780e"><p xml:id="id65787243-34ef-4ac7-9240-57c79eb0e5ac">Se <hi xml:id="idb9c3c3c5-797e-471c-b335-0d9e31c28393" rendition="#ita">SKS</hi> 13.</p></note> Artiklen »En Thesis – kun een eneste« var SKs tiende indlæg i denne kirkestrid.</p>
+          <p xml:id="id5442d189-d809-4537-b553-5b6275b83b2a" rendition="#ind">Kladdematerialet afspejler, at artiklen i første omgang har været tænkt som en selvstændig udgivelse; i marginen på bl. [1r] angives, hvad der skal stå på et titelblad, herunder et motto.</p>
+          <p xml:id="idc0e8d4f1-0b4a-4aba-bb05-41669802e56d" rendition="#ind">Dette motto, »ved Idealerne – mod Sandsebedragene: for Evigheden!«, <pb xml:id="ss536" n="536" edRef="#SKS"/>overvejede SK allerede i 1849 at benytte til en subskriptionsindbydelse til <hi xml:id="id2bcfd44f-4542-4697-828c-f29062b01e7a" rendition="#ita">Indøvelse i Christendom,</hi><note xml:id="id3e5df414-69ed-4116-9c0b-2fd5a31f641a"><p xml:id="id2b906242-b1e6-48fb-bcdd-c826dc77e0e7">Jf. <ref xml:id="id42a0bb1b-79b4-4ca5-a3d1-82fb6a842703" target="../IC/txr.xml#ss52" type="textCriticalAccount" n="52">tekstredegørelsen til <hi xml:id="id1aeacca5-c687-4393-a5e3-874fa71def1f" rendition="#ita">Indøvelse i Christendom</hi> i <hi xml:id="id322501d0-7aac-4153-bae9-3ba16c4bedd7" rendition="#ita">SKS</hi> K12, 52</ref>, og <ref xml:id="id0cffab97-2913-40e0-b8d1-515690b4f809" type="preparatoryManuscript" n="pap:X5B34" rend="IC,ms.8.1"><hi xml:id="id7b0acc2f-5ac1-4760-8de4-995fae6e04f0" rendition="#ita">Pap.</hi> X 5 B 34</ref>.</p></note> og det ses igen i dec. 1854 i en ubenyttet kladde, af SK omtalt som »Anskriget«.<note xml:id="idd45488e8-ccb3-4a5d-bebb-3f4323ad293c"><p xml:id="idacc85b7c-ea8d-4c27-9de9-62632e25c691">Jf. <ref xml:id="id5db0bdc2-dff9-42b7-a67a-c5123b4ca52f" type="preparatoryManuscript" n="pap:XI3B59-81"><hi xml:id="idd79a33fb-0650-4ac2-b2cc-98f519b133b2" rendition="#ita">Pap.</hi> XI 3 B 59-81</ref>, s. 109-124.</p></note> Det indledende bibelcitat: »'Men ('da Alle vare sovede ind') ved Midnat skete der Anskrig' <rs xml:id="id83547efc-92ea-4498-b065-0620cb96b4c0" type="bible" key="Matt 25,6">Mtth: 25,6</rs>.« og slutningen i ms. 1 findes ligeledes i »Anskriget«.</p>
+          <p xml:id="id86188abb-17a9-4cd4-a73f-1f1af54499ac" rendition="#ind">På et tidspunkt, muligvis omkring dateringen af kladden, »d. 26 Januar 1855«, har SK besluttet, at teksten i stedet skulle indgå i rækken af kirkestridsartikler; marginaltilføjelsen om titelbladet, bibelcitatet samt afslutningen af teksten blev slettet og en ny afslutning tilføjet i marginen på bl. [1v].<note xml:id="idfe311285-eb44-4770-af91-1ec50afa71a3"><p xml:id="id9f6b2b6c-0dbc-45ef-8e60-3549936ea1e6">Efter at have sløjfet mottoet til »En Thesis – kun een eneste« har SK overvejet at medtage det i <hi xml:id="id183539c7-c5d8-4ec2-a52b-e409e3b8c6ea" rendition="#ita">Dette skal siges; saa være det da sagt</hi> (jf. <ref xml:id="idb7180db8-60a4-4734-bea3-2a5a9ecc5483" target="../DSS/txr.xml#ss207" type="textCriticalAccount" n="207"><hi xml:id="id0a88406a-2112-4c35-9863-c7d6dfdea308" rendition="#ita">SKS</hi> K13, 207</ref>-220, og <ref xml:id="id9209a4c3-2d18-475c-a1f3-18988c3f976c" type="preparatoryManuscript" n="pap:XI3B238" rend="DSS,ms.1.1"><hi xml:id="id063e8f45-e1cc-4fe4-aa31-3aab95616ad2" rendition="#ita">Pap.</hi> XI 3 B 238</ref>), men bragte det først, let omformuleret og i løbende tekst, i <hi xml:id="ide5acbc36-774b-40fb-97bc-353f765bbafe" rendition="#ita">Øieblikket Nr. 1</hi> (jf. <ref xml:id="idda0fdfbb-c99f-4c5c-b080-af29a28399e5" target="../Oi1/txt.xml#ss141" type="publishedWritings" n="141"><hi xml:id="id8c9c792c-b199-409b-bc02-2089dff0307d" rendition="#ita">SKS</hi> 13, 141</ref>, <ref xml:id="id922ff9f8-b336-438b-9422-e845c579c1c5" target="../Oi1/txr.xml#ss235" type="textCriticalAccount" n="235"><hi xml:id="id99843a35-7f6e-49ba-9dbc-ee1edfca84fe" rendition="#ita">SKS</hi> K13, 235</ref>, og <ref xml:id="id4088d27b-34cd-4abe-9cd8-ad16b6edcdc9" type="preparatoryManuscript" n="pap:XI3B246" rend="Oi1,ms.1.6"><hi xml:id="id6d0117c5-7940-4665-9fe6-3687dfb5a938" rendition="#ita">Pap.</hi> XI 3 B 246</ref>). Bibelcitatet og den oprindelige slutning fandt i en anden form vej til <hi xml:id="idbc839f10-6fcd-46e6-8fdc-6999a57108a5" rendition="#ita">Dette skal siges; saa være det da sagt</hi> (jf. <ref xml:id="id0f341fb7-a60b-4bcd-9932-c9f5a46adf6c" target="../DSS/txt.xml#ss114" type="publishedWritings" n="114"><hi xml:id="id146bf023-00f7-4774-a530-489bea030cd1" rendition="#ita">SKS</hi> 13, 114</ref>-115, <ref xml:id="idd1378486-d0ae-4bb1-b166-9eb6ba3212bd" target="../DSS/txr.xml#ss207" type="textCriticalAccount" n="207"><hi xml:id="id20a38fb3-724f-4927-9447-756ed6dbf2fd" rendition="#ita">SKS</hi> K13, 207</ref>-220, og <ref xml:id="id3fe65611-063e-4823-9225-07179743dbe2" type="preparatoryManuscript" n="pap:XI3B238" rend="DSS,ms.1.1"><hi xml:id="id1539a27a-5209-4495-8e7c-a3f1bb9e0342" rendition="#ita">Pap.</hi> XI 3 B 238</ref>).</p></note></p>
+          <p xml:id="id121c4389-39c2-4b74-ac97-3c4672fe7780" rendition="#ind">Der foreligger ingen renskrift (trykmanuskript) til artiklen.</p>
+        </div>
+        <div type="level1" xml:id="k4">
+          <head xml:id="idaf96c0d4-2348-4ca8-8188-aa77379a0a98">4. Udgivelsesmåde</head>
+          <p xml:id="id1c406619-7452-44d0-b126-b0f04a99be7d">»En Thesis – kun een eneste« blev som nævnt trykt i <hi xml:id="ided679976-1705-4ad5-9a3b-ae8b3c673761" rendition="#ita">Fædrelandet.</hi><note xml:id="id9d4ce890-6e6b-437d-90c7-d623a05547e0"><p xml:id="ide00bebdc-460e-41f7-a48c-ca2e595a9ec0">En nærmere redegørelse for <hi xml:id="id39ed4b09-f2b2-49f8-822e-ca73f7e97878" rendition="#ita">Fædrelandets</hi> redaktionelle forhold, periodicitet og oplagstal findes i <ref xml:id="id1a684725-c8b7-4348-9689-8b1fdf6112b6" target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til »Aabenbart Skriftemaal«, s. 112</ref>f.</p></note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
+          <p xml:id="id3a514931-cdd5-4b44-b82c-a9f7ba3d16d0" rendition="#ind">Dele af artiklen blev allerede i SKs levetid frit oversat til svensk; bogen <hi xml:id="idf9f68b12-e85a-435b-9227-48c6fc599aec" rendition="#ita">Den officiella kristendomen är icke det nya testamentets kristendom. Framställning af dr. <persName xml:id="ida9d3d095-d2d4-463d-aab2-c8231ebb362d" key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>'s polemik mot statskyrkan i <placeName xml:id="id7360734d-af2c-4d54-874b-46927edde8c2">Danmark</placeName>,</hi> hvori de fleste af SKs artikler fra kirkestriden er blevet oversat i uddrag, udkom i <placeName xml:id="idfe5bcbae-34e4-4f8c-b5a0-8c1bd23042fc">København</placeName> i 1855.<note xml:id="id62fbbc66-902d-4d37-b5ac-136d4c74f98d"><p xml:id="id6d49e611-279f-457d-b1c9-12fb7a2abb2a">Et dedikationseksemplar fastslår, at det var den svenske journalist <persName xml:id="iddaa82b69-3492-423b-ac19-eab3dbf40960" key="Sturzen-Becker, O.P.">O.P. Sturzen-Becker</persName>, på det tidspunkt bosiddende i <placeName xml:id="idb0ca985a-a23b-4d95-9e49-3b1ca26082eb">København</placeName>, der anonymt udgav bogen. Dedikationseksemplaret findes på Kungl. biblioteket i <placeName xml:id="id4b6715b3-3716-4d5e-b63b-b9ef08ed9bdd">Stockholm</placeName> med signaturen Rar. 726. Eksemplaret var ikke blandt SKs efterladte bøger, og det formodes derfor, at SK har sendt det retur til forfatteren, jf. <persName xml:id="idd7372c9d-8700-4c41-893a-bc904a76868b" key="Kabell, Aage">Aage Kabell</persName> <hi xml:id="idcc15a204-48ca-45e2-ace7-1707805a2ab0" rendition="#ita">Kierkegaardstudiet i <placeName xml:id="id2b0197bb-7316-46ac-bff5-847f56a564e1">Norden</placeName>,</hi> <placeName xml:id="idfafbcd9e-3cf6-49b2-8c3d-06008b70e450" key="København">Kbh.</placeName> 1948, s. 73.</p></note> De fragmentariske oversættelser strækker sig til og med artiklen »Et Resultat«, trykt i <hi xml:id="id55814e1d-09da-47f8-928c-393e22f10443" rendition="#ita">Fædrelandet,</hi> nr. 107, den 10. maj 1855; <pb xml:id="ss537" n="537" edRef="#SKS"/>den anonyme redaktør har sandsynligvis antaget, at SK under denne overskrift afsluttede sit angreb på kirken, og har herefter ladet bogen trykke.</p>
+          <p xml:id="id8f1ee343-333c-4fd1-8e3f-57b50bb5ea2b" rendition="#ind">Af stor betydning for receptionen i SKs umiddelbare eftertid var <persName xml:id="idb739e4a8-c282-4bf5-9532-4c4b0f50509b" key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi xml:id="idda5374f3-9885-407f-81a4-c1967f50530e" rendition="#ita"><persName xml:id="id6ca236a3-6209-4e66-9061-ca9ae9837691" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 <hi xml:id="id8384d4f8-82db-4d25-954d-b30420491063" rendition="#ita">(Bl.art.).</hi> Heri indgår størstedelen af SKs artikler, også »En Thesis – kun een eneste«.<note xml:id="id854a901a-db1b-4307-bf64-5a93390e6bb2"><p xml:id="idc7dfa100-0274-404d-ab3b-4d39a44fdcda">Artiklen er trykt i <hi xml:id="id50f791e4-6e50-4235-8d44-5295273bd09a" rendition="#ita">Bl.art.,</hi> s. 93-94. SK havde selv planer om, men fik ikke realiseret, en samlet udgivelse af kirkestridsartiklerne, jf. <ref xml:id="id58ba9036-c049-43d2-8ab5-2ccbcb17509d" type="preparatoryManuscript" n="pap:XI3B128-135"><hi xml:id="ide0af8b41-b981-4da9-ab65-fa2ce87c406d" rendition="#ita">Pap.</hi> XI 3 B 128-135</ref>.</p></note></p>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

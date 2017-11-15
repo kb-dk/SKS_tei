@@ -1,438 +1,593 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE kn1 SYSTEM "http://sks.dk/kn1/kn1.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>En opbyggelig Tale</title>
-     
-     <title type="short">EOT</title>
-     
-  <author>
-   <name>Niels Jørgen Cappelørn</name>
-  </author>
- 
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Anne Mette Hansen</name><name>Johnny Kondrup</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Klaus Nielsen</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name><name>Kim Ravn</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2008</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K12</biblScope>
-     <biblScope unit="file">http://sks.dk/eot/kom.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20120723">Kierkegaard Normalformat vers. 1, <bibl><idno type="version">1.7</idno>, <biblScope unit="file">http://sks.dk/eot/kom.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id85f32701-1c9c-4e03-87eb-1dafc96e6160">
+    <fileDesc xml:id="id531fbf8e-402a-4600-9c3b-32705834b33d">
+      <titleStmt xml:id="id342f4dd7-c438-484b-ab1a-d4e268d22e48">
+        <title xml:id="idf8ba0d0f-771c-4ee8-bd04-e5d0b2bcac98" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id11199790-b424-4f41-aa12-0f3e51d8e951">En opbyggelig Tale</title>
+        <title xml:id="id8aab84da-3f3f-4b03-b85d-67cc29a174f2" type="short">EOT</title>
+        <author xml:id="id24ef8e6c-bc07-41bb-8137-06ce90507505">
+          <name xml:id="id60e42d8f-a767-4c3d-9148-35fe732fafbd">Niels Jørgen Cappelørn</name>
+        </author>
+        <editor xml:id="idee5d3e3b-474f-434f-8d02-63d6d1f2dcf1">
+          <name xml:id="id8e15aba7-5c39-48fc-910d-497d8eab4c14">Niels Jørgen Cappelørn</name>
+          <name xml:id="id146f8a73-64d5-4d2b-b4d1-be9780427d65">Joakim Garff</name>
+          <name xml:id="id2046ad48-3d81-47e6-8e3a-0e0a93fee356">Anne Mette Hansen</name>
+          <name xml:id="idf03ba816-ffce-4c92-893e-1bb70fdada2b">Johnny Kondrup</name>
+        </editor>
+        <respStmt xml:id="ided95eb31-4962-4185-aa1f-92dd9fd52c68">
+          <resp xml:id="idbeb180cd-38ec-4473-84de-04577835899f">redigeret af</resp>
+          <name xml:id="id2011f512-8fab-408e-be2e-2a7c307ace2b">Klaus Nielsen</name>
+        </respStmt>
+        <respStmt xml:id="id1c8ae98f-640a-4534-a8b9-8cdc9673aafa">
+          <resp xml:id="idc7103039-e448-4fde-bbc5-36e700d92834">elektronisk redigeret af</resp>
+          <name xml:id="id15e820a9-768d-424d-843d-a12ad2a6e808">Karsten Kynde</name>
+          <name xml:id="id9f0e75d7-eb11-4acf-8cbd-aa9418edd30e">Kim Ravn</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id0f00dfa2-40ae-44a6-96bd-189340ce94f9">
+        <authority xml:id="idf6de0849-c798-4189-b47e-4ca6f5b7f7a8">Søren Kierkegaard Forskningscenteret 2008</authority>
+        <availability xml:id="id060a3c0a-527f-43ed-9e4f-415933e14664" status="restricted">
+          <p xml:id="id665ec38b-e1e3-48e7-95d9-0dc6a7a9b637">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id17046c6d-7f7a-4dbb-a799-a7635975c736">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="id1a35cc18-fd59-40b1-a897-ea1a61456d60" unit="volume">K12</biblScope>
+        <biblScope xml:id="id510aad0e-0f34-4b4b-9ef9-753fdf6112e1" unit="file">http://sks.dk/eot/kom.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id546b0bf2-1d73-4195-8638-3c16f26b546e">
+        <bibl xml:id="id44ed9bba-44a0-4eba-8469-6e6f5a56bf78" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id80933e5a-22fc-4e36-9f97-424bc26e8c31">
+      <tagsDecl xml:id="id3abbd5e3-70c9-4362-9449-628ffe919279">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id246f1c0a-f29a-4262-aa9e-0833b22dbe36">
+      <change xml:id="id8058f60d-4733-4456-902d-2a05086a47b1">Transformed to TEI by style sheet <bibl xml:id="ida12597c2-5714-4bec-8cc9-fc0587b9c136" type="file">kn12tei.xsl</bibl> version <idno xml:id="id720564a9-ab8a-4365-b6db-6888e6599368" type="version">1.9</idno> as of <date xml:id="idc32c03b6-539f-46c2-bd20-217ce7ad4dc7">2017-02-21</date> by <name xml:id="id08e187c3-729b-4b42-afff-bbb677da168c">Karsten Kynde</name>, <orgName xml:id="id54085c0e-c97f-4def-884f-e5ab0de7990c">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="id2e296cf9-00ac-42ad-97df-3effe95597f2">København</placeName></change>
+      <change xml:id="id4bc1bb99-ae91-4664-bdca-c4bff1b2a16c" when="20120723">Kierkegaard Normalformat vers. 1, <bibl xml:id="id25d59b12-4c35-48fa-bce4-f8282fef35b7"><idno xml:id="idb5d14c87-24e6-4b51-ad1d-871b930681ed" type="version">1.7</idno>, <biblScope xml:id="id33dde357-5e22-497e-bae9-67c59c2b1fd0" unit="file">http://sks.dk/eot/kom.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="commentary" subtype="ts"><body><div>
-    <note type="commentary" xml:id="eot-1" n="257,1">
-      <label><hi rendition="#bol">En opbyggelig Tale</hi></label>
-      <p>Om de forskellige ændringer af titlen fra <hi rendition="#ita">En Tale ved Altergangen om Fredagen</hi> til <hi rendition="#ita">En opbyggelig Tale,</hi> se kladden ms. 1.1 og trykmanuskriptet ms. 2.1, i <ref target="../eot/txr.xml#ss289" type="textCriticalAccount" n="289">tekstredegørelsen, s. 289</ref> og s. 294f.</p>
-    </note>
-    <note type="commentary" xml:id="eot-2" n="259,1">
-      <label><hi rendition="#bol">Mindet om afdøde Michael Pedersen Kierkegaard ... helliges dette lille Skrift</hi></label>
-      <p><persName key="Kierkegaard, Michael Pedersen">Michael Pedersen Kierkegaard</persName>, f. 1756 (<ptr type="commentary" target="#eot-4" n="261,5"/>); trak sig i en alder af 40 år tilbage fra sin forretning med en betragtelig formue, som han i tiden efter forøgede; giftede sig i 1797 med <persName key="Lund, Anne Sørensdatter">Ane Lund</persName>, med hvem han fik syv børn, hvoraf SK var den yngste; købte i 1808 huset <placeName>Nytorv</placeName> 2, i dag <placeName>Frederiksberggade</placeName>, hvor han boede til sin død, 81 år gammel, den 9. aug. 1838. –
-        <hi rendition="#bol">helliges:</hi> dediceres, tilegnes. Sml. den enslydende tilegnelse i <hi rendition="#ita">To opbyggelige Taler</hi> (1843), <hi rendition="#ita">Tre opbyggelige Taler</hi> (1843) og <hi rendition="#ita">Fire opbyggelige Taler</hi> (1843) samt <hi rendition="#ita">Tre opbyggelige Taler</hi> (1844) og <hi rendition="#ita">Fire opbyggelige Taler</hi> (1844): »Afdøde / Michael Pedersen Kierkegaard, / forhen Hosekræmmer her i Byen / min Fader / helliges disse Taler«, <ref target="../2T43/txt.xml#ss11" type="publishedWritings" n="11"><hi rendition="#ita">SKS</hi> 5, 11</ref>, 61, 111, 229 og 287 (se kommentarerne hertil). Sml. også tilegnelsen i <hi rendition="#ita">Tre Taler ved tænkte Leiligheder</hi> (1845): »Mindet / om / min afdøde Fader / Michael Pedersen Kierkegaard / helliget«, <ref target="../TTL/txt.xml#ss387" type="publishedWritings" n="387"><hi rendition="#ita">SKS</hi> 5, 387</ref>, som formentlig har dannet forlæg for den ordlyd, tilegnelsen har i trykmanuskriptet: »Mindet / om / min afdøde Fader / Michael Petersen Kierkegaard / helliges / dette lille Skrift«, trykmanuskriptet ms. 2.3, se <ref target="../EOT/txr.xml#ss296" type="textCriticalAccount" n="296">tekstredegørelsen, s. 296</ref> og s. 310.</p>
-    </note>
-    <note type="commentary" xml:id="eot-100" n="261,1">
-      <label><hi rendition="#bol">Forord</hi></label>
-      <p>Om et ubenyttet forord, se <ref target="../EOT/txr.xml#ss297" type="textCriticalAccount" n="297">tekstredegørelsen, s. 297</ref>f. og s. 304-308.</p>
-    </note>
-    <note type="commentary" xml:id="eot-3" n="261,3">
-      <label><hi rendition="#bol">Jvf. Forordet til to opbyggelige Taler 1843</hi></label>
-      <p>»Uagtet denne lille Bog (som derfor blev kalden 'Taler' ikke Prædikener, fordi dens Forfatter ikke har Myndighed til at <hi rendition="#bol">prædike;</hi> 'opbyggelige Taler' ikke Taler til Opbyggelse, fordi den Talende ingenlunde fordrer at være <hi rendition="#bol">Lærer</hi>) kun ønsker at være, hvad den er, en Overflødighed, og kun begjerer at forblive i det Skjulte, som den blev til i Dølgsmaal, har jeg dog ikke taget Afskeed med den uden et næsten eventyrligt Haab. Forsaavidt den, ved at udgives, i uegentlig Forstand paa en Maade tiltræder en Vandring, lod jeg en liden Stund mit Øie følge den. Jeg saae da, hvorledes den gik sin Gang ad eensomme Veie eller eensom ad de alfare. Efter en og anden lille Misforstaaelse, idet den blev bedraget af en flygtig Lighed, traf den endelig hiin Enkelte, hvem jeg med Glæde og Taknemmelighed kalder <hi rendition="#bol">min</hi> Læser, hiin Enkelte, hvem den søger, efter hvem den ligesom udstrækker sine Arme, hiin Enkelte, der er velvillig nok til at lade sig finde, velvillig nok til at modtage den, hvad enten den i Mødets Øieblik træffer ham glad og trøstig eller 'mødig og tankefuld.' – Forsaavidt den derimod, ved at udgives, i egentligere Forstand forbliver i Stilhed, uden at komme af Stedet, lod jeg en liden Stund mit Øie hvile paa den. Den stod da der som en ubetydelig lille Blomst, i Skjul af den store Skov, hverken søgt formedelst [pga.] sin Pragt eller sin Duft eller sin Næring. Men jeg saae da ogsaa, eller troede at see, hvorledes den Fugl, som jeg kalder <hi rendition="#bol">min</hi> Læser, pludselig fik Øie paa den, kastede sig ned paa sin Vinge, plukkede den af, tog den til sig. Og da jeg havde seet dette, saae jeg ikke Mere.«
-        <ref target="../2T43/txt.xml#ss13" type="publishedWritings" n="13"><hi rendition="#ita">SKS</hi> 5, 13</ref>, se kommentarerne dertil.</p>
-    </note>
-    <note type="commentary" xml:id="eot-4" n="261,5">
-      <label><hi rendition="#bol">Den 12te December 1850</hi></label>
-      <p>SKs far, <persName key="Kierkegaard, Michael Pedersen">Michael Pedersen Kierkegaard</persName> (<ptr type="commentary" target="#eot-2" n="259,1"/>), blev døbt Michel den 12. dec. 1756 i <placeName>Sædding Kirke</placeName>, jf. »Ministerial-Bog over særdeles Kirkelige-Forretninger i Sæding fra Aar 1703«, fol. 134 (<placeName>Landsarkivet</placeName> for <placeName>Nørrejylland</placeName>, www.arkivalieronline.dk). Om de forskellige ændringer af dateringen fra »i Novbr. 1850« til »Den 12te December 1850«, se trykmanuskriptet ms. 2.3 og førstekorrekturen ms. 4, s. 296 og s. 298.</p>
-    </note>
-    <note type="commentary" xml:id="eot-5" n="263,1">
-      <label><hi rendition="#bol">»Synderinden«</hi></label>
-      <p>sml. »III. Luc. VII, 47« i <hi rendition="#ita">»Ypperstepræsten«
+  <text xml:id="idc85afecd-87d8-43e5-bd7a-8aea13736568" type="commentary" subtype="ts">
+    <body xml:id="id0e2c6dd2-325e-468d-8d21-115a56fe3a19">
+      <div xml:id="id66c23f06-f6f8-4577-ba22-65e076de0401">
+        <note type="commentary" xml:id="eot-1" n="257,1">
+          <label xml:id="idaa8cf1e4-6bdd-409e-a095-8c0f0b493e8c">
+            <hi xml:id="id79d81219-d650-45d9-8049-1fb23356c009" rendition="#bol">En opbyggelig Tale</hi>
+          </label>
+          <p xml:id="id58e0669b-72ff-44ff-8930-55df44d4729d">Om de forskellige ændringer af titlen fra <hi xml:id="idab6f4b6a-ef50-4820-b852-26da6204c278" rendition="#ita">En Tale ved Altergangen om Fredagen</hi> til <hi xml:id="id8e8dab81-6e36-412c-b124-1d758970ce2b" rendition="#ita">En opbyggelig Tale,</hi> se kladden ms. 1.1 og trykmanuskriptet ms. 2.1, i <ref xml:id="id02199ef7-e86c-47b0-8843-96560a68a0f3" target="../eot/txr.xml#ss289" type="textCriticalAccount" n="289">tekstredegørelsen, s. 289</ref> og s. 294f.</p>
+        </note>
+        <note type="commentary" xml:id="eot-2" n="259,1">
+          <label xml:id="id0e4c01e9-09e2-46a6-a6fd-96fbb580ac30">
+            <hi xml:id="id76065454-03c9-43fe-ba19-80f0c87d294e" rendition="#bol">Mindet om afdøde Michael Pedersen Kierkegaard ... helliges dette lille Skrift</hi>
+          </label>
+          <p xml:id="id6b909d71-0498-4d1d-99e6-e42b7e16882a"><persName xml:id="idf69675b1-3b79-4603-a9ef-8e04add59b5f" key="Kierkegaard, Michael Pedersen">Michael Pedersen Kierkegaard</persName>, f. 1756 (<ptr xml:id="id9720d8c7-8309-44d7-b95e-f9342f31cdc6" type="commentary" target="#eot-4" n="261,5"/>); trak sig i en alder af 40 år tilbage fra sin forretning med en betragtelig formue, som han i tiden efter forøgede; giftede sig i 1797 med <persName xml:id="id2af06e78-847f-4b17-abc8-f12e5d28bd6a" key="Lund, Anne Sørensdatter">Ane Lund</persName>, med hvem han fik syv børn, hvoraf SK var den yngste; købte i 1808 huset <placeName xml:id="idc9733ed3-afca-4a08-9d52-924f8174b6b2">Nytorv</placeName> 2, i dag <placeName xml:id="idc7cde60c-39e6-4e67-b217-c1d20c2cea31">Frederiksberggade</placeName>, hvor han boede til sin død, 81 år gammel, den 9. aug. 1838. –
+        <hi xml:id="id0d58a9f3-ab8c-4402-b7f8-6ca76643dfcd" rendition="#bol">helliges:</hi> dediceres, tilegnes. Sml. den enslydende tilegnelse i <hi xml:id="idf37ee3a7-2f9a-48ec-ae0e-209441f797fc" rendition="#ita">To opbyggelige Taler</hi> (1843), <hi xml:id="idfb1214e0-879f-488c-bdcf-aebe335cb1b5" rendition="#ita">Tre opbyggelige Taler</hi> (1843) og <hi xml:id="ida4567186-fb85-41c0-b7a3-a6ed8aa77d38" rendition="#ita">Fire opbyggelige Taler</hi> (1843) samt <hi xml:id="id1a47cb99-7b16-492b-b844-1e7dd2a226d9" rendition="#ita">Tre opbyggelige Taler</hi> (1844) og <hi xml:id="idf0806b80-2435-4f0e-a5fa-7c765f757d2d" rendition="#ita">Fire opbyggelige Taler</hi> (1844): »Afdøde / Michael Pedersen Kierkegaard, / forhen Hosekræmmer her i Byen / min Fader / helliges disse Taler«, <ref xml:id="id9933e93e-fd74-4211-bdb8-c11a722fd937" target="../2T43/txt.xml#ss11" type="publishedWritings" n="11"><hi xml:id="id4b116815-b360-47cc-a730-f617264f6a56" rendition="#ita">SKS</hi> 5, 11</ref>, 61, 111, 229 og 287 (se kommentarerne hertil). Sml. også tilegnelsen i <hi xml:id="idf4be8f6a-e95d-4cdb-9959-f7636431c3bd" rendition="#ita">Tre Taler ved tænkte Leiligheder</hi> (1845): »Mindet / om / min afdøde Fader / Michael Pedersen Kierkegaard / helliget«, <ref xml:id="id105fb80b-a087-4ccc-945d-7cb0f980c032" target="../TTL/txt.xml#ss387" type="publishedWritings" n="387"><hi xml:id="id504203c7-c253-47fb-8460-0380398773df" rendition="#ita">SKS</hi> 5, 387</ref>, som formentlig har dannet forlæg for den ordlyd, tilegnelsen har i trykmanuskriptet: »Mindet / om / min afdøde Fader / Michael Petersen Kierkegaard / helliges / dette lille Skrift«, trykmanuskriptet ms. 2.3, se <ref xml:id="id20f3366e-87f7-4c99-8f47-c9b1576d65ae" target="../EOT/txr.xml#ss296" type="textCriticalAccount" n="296">tekstredegørelsen, s. 296</ref> og s. 310.</p>
+        </note>
+        <note type="commentary" xml:id="eot-100" n="261,1">
+          <label xml:id="idb6338a9f-3f27-472d-a41f-92a948b9cddb">
+            <hi xml:id="id0ded10fc-0bbe-4122-b351-80222a0ea67c" rendition="#bol">Forord</hi>
+          </label>
+          <p xml:id="idd3d5adb7-5dfc-4038-809d-bc6773d58003">Om et ubenyttet forord, se <ref xml:id="idb734aad9-aed6-4710-ae43-d66ec71439f0" target="../EOT/txr.xml#ss297" type="textCriticalAccount" n="297">tekstredegørelsen, s. 297</ref>f. og s. 304-308.</p>
+        </note>
+        <note type="commentary" xml:id="eot-3" n="261,3">
+          <label xml:id="id793dadb9-dbf1-4fa1-bf1c-eb4950e93456">
+            <hi xml:id="ide32691a1-030f-4f81-8d4a-5003767df1f5" rendition="#bol">Jvf. Forordet til to opbyggelige Taler 1843</hi>
+          </label>
+          <p xml:id="id031a8799-2f69-4f95-8d47-6076bcf51d7f">»Uagtet denne lille Bog (som derfor blev kalden 'Taler' ikke Prædikener, fordi dens Forfatter ikke har Myndighed til at <hi xml:id="id99e5ffcd-dd0c-4c81-846d-3eeddbedf907" rendition="#bol">prædike;</hi> 'opbyggelige Taler' ikke Taler til Opbyggelse, fordi den Talende ingenlunde fordrer at være <hi xml:id="idca04a919-43cf-4441-afce-6b67f841cb0c" rendition="#bol">Lærer</hi>) kun ønsker at være, hvad den er, en Overflødighed, og kun begjerer at forblive i det Skjulte, som den blev til i Dølgsmaal, har jeg dog ikke taget Afskeed med den uden et næsten eventyrligt Haab. Forsaavidt den, ved at udgives, i uegentlig Forstand paa en Maade tiltræder en Vandring, lod jeg en liden Stund mit Øie følge den. Jeg saae da, hvorledes den gik sin Gang ad eensomme Veie eller eensom ad de alfare. Efter en og anden lille Misforstaaelse, idet den blev bedraget af en flygtig Lighed, traf den endelig hiin Enkelte, hvem jeg med Glæde og Taknemmelighed kalder <hi xml:id="idca3aee7b-3b37-4336-83f6-834a9df37e51" rendition="#bol">min</hi> Læser, hiin Enkelte, hvem den søger, efter hvem den ligesom udstrækker sine Arme, hiin Enkelte, der er velvillig nok til at lade sig finde, velvillig nok til at modtage den, hvad enten den i Mødets Øieblik træffer ham glad og trøstig eller 'mødig og tankefuld.' – Forsaavidt den derimod, ved at udgives, i egentligere Forstand forbliver i Stilhed, uden at komme af Stedet, lod jeg en liden Stund mit Øie hvile paa den. Den stod da der som en ubetydelig lille Blomst, i Skjul af den store Skov, hverken søgt formedelst [pga.] sin Pragt eller sin Duft eller sin Næring. Men jeg saae da ogsaa, eller troede at see, hvorledes den Fugl, som jeg kalder <hi xml:id="ide4b20ee5-8517-4421-9497-bdf5f1baa5b2" rendition="#bol">min</hi> Læser, pludselig fik Øie paa den, kastede sig ned paa sin Vinge, plukkede den af, tog den til sig. Og da jeg havde seet dette, saae jeg ikke Mere.«
+        <ref xml:id="id06aa2555-3672-4749-a3a1-9cfcab51b30e" target="../2T43/txt.xml#ss13" type="publishedWritings" n="13"><hi xml:id="id268109df-6b03-486b-9484-08702664f7c8" rendition="#ita">SKS</hi> 5, 13</ref>, se kommentarerne dertil.</p>
+        </note>
+        <note type="commentary" xml:id="eot-4" n="261,5">
+          <label xml:id="id3809b8dd-cc4b-4714-931a-7c4edec5fce0">
+            <hi xml:id="ide0c382b5-36f9-40df-b232-20b367c0b225" rendition="#bol">Den 12te December 1850</hi>
+          </label>
+          <p xml:id="idb28d2be9-5460-4fa7-8f38-d9af4d6b0e88">SKs far, <persName xml:id="id33256920-80a7-4ce7-a1b4-1285c798ee54" key="Kierkegaard, Michael Pedersen">Michael Pedersen Kierkegaard</persName> (<ptr xml:id="idabb7aeb5-54de-423a-8ed2-824ad9fb9cd9" type="commentary" target="#eot-2" n="259,1"/>), blev døbt Michel den 12. dec. 1756 i <placeName xml:id="id2e65f40a-49bb-4ee7-98ef-ebb3c40c2e96">Sædding Kirke</placeName>, jf. »Ministerial-Bog over særdeles Kirkelige-Forretninger i Sæding fra Aar 1703«, fol. 134 (<placeName xml:id="id392187cb-ae6b-48c6-88dd-8f0b363bdc1a">Landsarkivet</placeName> for <placeName xml:id="id00024594-5930-4dd8-afdd-b390006f592e">Nørrejylland</placeName>, www.arkivalieronline.dk). Om de forskellige ændringer af dateringen fra »i Novbr. 1850« til »Den 12te December 1850«, se trykmanuskriptet ms. 2.3 og førstekorrekturen ms. 4, s. 296 og s. 298.</p>
+        </note>
+        <note type="commentary" xml:id="eot-5" n="263,1">
+          <label xml:id="id95514654-956c-402f-93f6-18890cbd376b">
+            <hi xml:id="id56d6741c-3d92-42d9-8f56-39adabd2cd30" rendition="#bol">»Synderinden«</hi>
+          </label>
+          <p xml:id="id867bad5a-5e0d-4a04-846e-788de8ba7f2a">sml. »III. Luc. VII, 47« i <hi xml:id="id5eec7405-5c60-4bc8-9bdd-2e887fe2f042" rendition="#ita">»Ypperstepræsten«
         – »Tolderen« –
-        »Synderinden« tre Taler ved Altergangen om Fredagen</hi> (1849), i <ref target="../YTS/txt.xml#ss271" type="publishedWritings" n="271"><hi rendition="#ita">SKS</hi> 11, 271</ref>-280.</p>
-    </note>
-    <note type="commentary" xml:id="eot-6" n="263,2">
-      <label><hi rendition="#bol">Luc. VII. 37 flgg.</hi></label>
-      <p><rs type="bible">Luk 7,37-50</rs>: »Og see, der var en Qvinde i Staden, som var en Synderinde; der [da] hun fornam, at han sad tilbords i Pharisæerens Huus, hentede hun en Alabaster-Krukke med Salve; 38. og hun stod bagved hos hans Fødder, græd, og begyndte at væde hans Fødder med Taarer, og aftørrede dem med sit Hovedhaar, og kyssede hans Fødder, og salvede dem med Salve. 39. Men der Pharisæeren, som havde budet ham, saae det, talede han ved sig selv og sagde: dersom Denne var en Prophet, vidste han jo, hvo [hvem] og hvordan en Qvinde Denne er, som rører ved ham; thi hun er en Synderinde. 40. Og <persName key="Jesus">Jesus</persName> svarede og sagde til ham: <persName key="Simon farisæer">Simon</persName>! jeg haver Noget at sige dig. Men han sagde: Mester, siig frem! 41. Jesus sagde: en Mand, som udlaante Penge, havde to Skyldnere; den Ene var fem hundrede Penninge skyldig; men den Anden halvtrediesindstive [halvtredsindstyve]. 42. Men der de havde ikke at betale med, gav han dem begge det efter. Siig: hvilken af dem skal derfor elske ham meest? 43. Men Simon svarede og sagde: jeg holder for [antager], den, som han eftergav meest. Men han [Jesus] sagde til ham: du dømte ret. 44. Og han vendte sig til Qvinden, og sagde til Simon: seer du denne Qvinde? Jeg kom ind i dit Huus, du haver ikke givet mig Vand til mine Fødder; men denne vædede mine Fødder med Graad, og tørrede dem af med sit Hovedhaar. 45. Du gav mig intet Kys; men denne aflod ikke [ophørte ikke med], fra hun kom ind, at kysse mine Fødder. 46. Du salvede ikke mit Hoved med Olie; men hun salvede mine Fødder med Salve. 47. Derfor, siger jeg dig, ere hendes mange Synder hende forladne [tilgivet]; thi hun elskede meget; men hvem Lidet forlades, elsker lidet. 48. Men han sagde til hende: dine Synder ere forladne. 49. Da begyndte de, som sadde tilbords med ham, at sige ved sig selv: hvo er Denne, som endog forlader Synder? 50. Men han sagde til Qvinden: din Tro haver frelst dig, gak bort med Fred« (NT-1819). –
-        <hi rendition="#bol">flgg.:</hi> følgende (flertal).</p>
-    </note>
-    <note type="commentary" xml:id="eot-7" n="263,5">
-      <label><hi rendition="#bol">Gudelighed</hi></label>
-      <p>det, der angår forholdet til Gud, religiøsitet, fromhed.</p>
-    </note>
-    <note type="commentary" xml:id="eot-9" n="263,6">
-      <label><hi rendition="#bol">»Qvinden tie i Menigheden«</hi></label>
-      <p>frit citat fra <rs type="bible">1 Kor 14,33-34</rs>, hvor <persName key="Paulus">Paulus</persName> skriver til korintherne: »Ligesom i alle de Helliges Menigheder tie Eders Qvinder i Forsamlingerne« (NT-1819).</p>
-    </note>
-    <note type="commentary" xml:id="eot-10" n="263,12">
-      <label><hi rendition="#bol">hvorledes er dette muligt?</hi></label>
-      <p>hentyder formentlig til beretningen i <rs type="bible">Luk 1,26-38</rs>, hvor det fortælles, at da englen <persName key="Gabriel">Gabriel</persName> havde bebudet <persName key="Maria">Maria</persName>, at hun skulle undfange og føde en søn og kalde ham <persName key="Jesus">Jesus</persName>, sagde hun til englen: »hvorledes skal dette gaae til, efterdi jeg veed af ingen Mand?« v. 34 (NT-1819). Gabriel svarede hende, at Helligånden skulle komme over hende, hvorpå han henviste til, at Elisabeth havde undfanget en søn i sin høje alderdom, og sagde: »Thi Intet kan være umueligt for Gud«, v. 37 (NT-1819).</p>
-    </note>
-    <note type="commentary" xml:id="eot-11" n="263,12">
-      <label><hi rendition="#bol">ydmygt troer som Maria, og siger »see, jeg er Herrens Tjenerinde«</hi></label>
-      <p>sigter til <rs type="bible">Luk 1,38</rs>: »Men <persName key="Maria">Maria</persName> sagde: see, jeg er Herrens Tienerinde, mig skee efter dit Ord!« (NT-1819).</p>
-    </note>
-    <note type="commentary" xml:id="eot-13" n="263,15">
-      <label><hi rendition="#bol">»ikke forstod de Ord, der bleve talede«</hi></label>
-      <p>frit citat fra v. 50 i <rs type="bible">Luk 2,41-52</rs>, hvor det fortælles, at da <persName key="Maria">Maria</persName> og <persName key="Josef, Marias mand">Josef</persName> havde ledt efter den tolvårige <persName key="Jesus">Jesus</persName> i <placeName>Jerusalem</placeName> og endelig fandt ham i templet, spurgte han dem, hvorfor de havde ledt efter ham, og sagde til dem: »vidste I ikke, at mig bør at være i min Faders Gierning?« Hvorefter det hedder: »Og de forstode ikke det Ord, som han talede til dem« (NT-1819).</p>
-    </note>
-    <note type="commentary" xml:id="eot-14" n="263,16">
-      <label><hi rendition="#bol">»bevarede dem i sit Hjerte«</hi></label>
-      <p>frit citat fra v. 19 i <rs type="bible">Luk 2,8-20</rs>, hvor det fortælles, at da en engel havde forkyndt for hyrderne ude på marken, at en frelser var født, og at de som tegn herpå skulle finde et barn, svøbt og liggende i en krybbe, ilede de til <placeName>Betlehem</placeName>, hvor de fandt <persName key="Maria">Maria</persName> og <persName key="Josef, Marias mand">Josef</persName> i stalden og Jesusbarnet i krybben. Og da de havde set det, fortalte de alt, hvad englen havde sagt til dem om barnet, og alle, der hørte det, undrede sig. »Men Maria bevarede alle disse Ord, og overveiede dem i sit Hierte« (NT-1819). Se også
-        <rs type="bible">Luk 2,51</rs>.</p>
-    </note>
-    <note type="commentary" xml:id="eot-15" n="263,18">
-      <label><hi rendition="#bol">naar Ordet ... »bevares i et fromt og smukt Hierte.«</hi></label>
-      <p>sigter til Jesu udlægning i <rs type="bible">Luk 8,9-15</rs> af sin lignelse om sædemanden, der gik ud for at så sædekorn; noget af sæden faldt ved vejen, noget andet på en klippe, noget igen blandt tidsler og endelig noget i god jord, <rs type="bible">Luk 8,4-8</rs>. Sæden er Guds ord, forklarede <persName key="Jesus">Jesus</persName> sine disciple, og om »det i den gode Jord« sagde han, det »ere de, hvilke, naar de høre Ordet, beholde det i et smukt og godt Hierte og bære Frugt i Taalmodighed«, v. 15 (NT-1819). –
-        <hi rendition="#bol">den gode Sæd:</hi> Udtrykket indgår i Jesu lignelse i <rs type="bible">Matt 13,24-30</rs> om klinten el. ukrudtet i hveden, hvor en mand har sået god sæd i sin mark, og i Jesu udlægning af denne lignelse i <rs type="bible">Matt 13,36-43</rs>.</p>
-    </note>
-    <note type="commentary" xml:id="eot-16" n="263,20">
-      <label><hi rendition="#bol">vistnok</hi></label>
-      <p>sandt nok.</p>
-    </note>
-    <note type="commentary" xml:id="eot-17" n="263,20">
-      <label><hi rendition="#bol">gik der, som forudsagt var, et Sværd gjennem hendes Hjerte</hi></label>
-      <p>henviser til <rs type="bible">Luk 2,35</rs>, hvor den gamle <persName key="Simeon">Simeon</persName> siger til Jesu mor, da <persName key="Jesus">Jesus</persName> blev frembåret for Herren i templet i <placeName>Jerusalem</placeName>: »ogsaa din egen Siel skal et Sværd giennemtrænge!« (NT-1819).</p>
-    </note>
-    <note type="commentary" xml:id="eot-18" n="263,22">
-      <label><hi rendition="#bol">da det skeete</hi></label>
-      <p>hentyder til, at Jesu mor, <persName key="Maria">Maria</persName>, stod sammen med apostlen <persName key="Johannes">Johannes</persName> på
-        <placeName>Golgata</placeName>, mens <persName key="Jesus">Jesus</persName> hang på korset, se <rs type="bible">Joh 19,25-27</rs>.</p>
-    </note>
-    <note type="commentary" xml:id="eot-19" n="263,22">
-      <label><hi rendition="#bol">Bekymring for det ene Fornødne, af Maria ... det ene Fornødne</hi></label>
-      <p>sigter til beretningen i <rs type="bible">Luk 10,38-42</rs> om Jesu besøg hos søstrene <persName key="Martha">Martha</persName> og <persName key="Maria, Marthas søster">Maria</persName>. Her fortælles det, at Maria »satte sig ved Herrens fødder og lyttede til hans ord«, v. 39, mens Martha havde travlt med at varte op. Og da Martha spurgte <persName key="Jesus">Jesus</persName>, om han var ligeglad med, at Maria lod hende være alene om opvartningen, og bad ham få hende til at hjælpe sig, svarede Jesus hende, at hun gjorde sig urolige bekymringer for mange ting, og føjede til: »Men ét er fornødent. Maria har valgt den gode del, og den skal ikke tages fra hende«, v. 42. At Maria var søster til <persName key="Lazarus">Lazarus</persName>, fremgår af beretningen i <rs type="bible">Joh 11,1-44</rs> om Lazarus' sygdom og død og Jesu opvækkelse af ham.</p>
-    </note>
-    <note type="commentary" xml:id="eot-21" n="264,1">
-      <label><hi rendition="#bol">selv evigt blev uforglemmelig</hi></label>
-      <p>hentyder til slutningen på parallelberetningen til <rs type="bible">Luk 7,36-50</rs> i <rs type="bible">Matt 26,6-13</rs>, hvor det fortælles, at <persName key="Jesus">Jesus</persName> tog kvinden i forsvar, da disciplene udtrykte vrede over, at hun havde ødslet med den kostbare salve ved at hælde den ud over hans hoved i stedet for at give pengene til de fattige, og sagde til dem: »Sandelig siger jeg jer: Hvor som helst i hele verden dette evangelium prædikes, skal også det, hun har gjort, fortælles til minde om hende«, v. 13.</p>
-    </note>
-    <note type="commentary" xml:id="eot-22" n="264,2">
-      <label><hi rendition="#bol">og</hi> være andet</label>
-      <p>også.</p>
-    </note>
-    <note type="commentary" xml:id="eot-23" n="264,6">
-      <label><hi rendition="#bol">er Manden stærkere end den Svage, Qvinden</hi></label>
-      <p>formentlig allusion til <rs type="bible">1 Pet 3,7</rs>, hvor det hedder: »I mænd skal ligeså være hensynsfulde i samlivet med kvinden som den svagere part«.</p>
-    </note>
-    <note type="commentary" xml:id="eot-24" n="264,17">
-      <label>paa <hi rendition="#bol">tvert</hi></label>
-      <p>tværs.</p>
-    </note>
-    <note type="commentary" xml:id="eot-25" n="264,18">
-      <label><hi rendition="#bol">skuffe</hi> sig selv</label>
-      <p>bedrage.</p>
-    </note>
-    <note type="commentary" xml:id="eot-26" n="264,20">
-      <label><hi rendition="#bol">gudelig</hi></label>
-      <p><ptr type="commentary" target="#eot-7" n="263,5"/>.</p>
-    </note>
-    <note type="commentary" xml:id="eot-27" n="264,22">
-      <label><hi rendition="#bol">Saa lader os da agte paa ... hvad vi af hende kunne lære</hi></label>
-      <p>En lignende formulering i forskellige variationer anvendes gang på gang af <persName key="Mynster, Jakob Peter">J.P. Mynster</persName> som introduktion af temaet for en prædiken, jf. især <hi rendition="#ita"><title>Prædikener paa alle Søn- og Hellig-Dage i Aaret</title>,</hi> 3. opl., bd. 1-2, <placeName key="København">Kbh</placeName>. 1837 [1823], ktl. 229-230 og 2191; fx bd. 1, s. 59: »vi ville [vil] denne Gang tale med hverandre / <hi rendition="#ita">om det store Gode, at være en Christen</hi>«; s. 132: »men denne Gang ville vi med hinanden ret betragte / <hi rendition="#ita">den christelige Taalmodighed</hi>«; s. 207: »i det jeg denne Gang taler / <hi rendition="#ita">om vor Daabs Pagt</hi>«; s. 361: »lader os stræbe at overbevise os om, / <hi rendition="#ita">at vi alle, eenfoldigen og oprigtigen, skulle </hi>[skal] <hi rendition="#ita">holde os til den samme christelige Tro</hi>«; bd. 2, s. 95: »vi maae paaminde om, / <hi rendition="#ita">at ogsaa Gienvordigheder kunne </hi>[kan] <hi rendition="#ita">vorde Fristelser</hi>«; s. 340: »Lader os derfor nu overveie, / <hi rendition="#ita">hvorledes vi skulle fortsætte de hellige Mænds Værk, som have bevirket vor Kirkes Forbedring</hi>«; s. 382: »naar vi tale om / <hi rendition="#ita">Døden som en Søvn.</hi>«
-        – vi <hi rendition="#ita">(...)</hi> <hi rendition="#bol">kunne:</hi> kan.</p>
-    </note>
-    <note type="commentary" xml:id="eot-28" n="264,24">
-      <label><hi rendition="#bol">ligegyldige for</hi></label>
-      <p>indifferente over for, uinteresserede i, ligeglade med.</p>
-    </note>
-    <note type="commentary" xml:id="eot-29" n="264,27">
-      <label><hi rendition="#bol">M. T.</hi></label>
-      <p>min tilhører.</p>
-    </note>
-    <note type="commentary" xml:id="eot-30" n="264,29">
-      <label><hi rendition="#bol">allehaande</hi></label>
-      <p>al slags, alskens.</p>
-    </note>
-    <note type="commentary" xml:id="eot-31" n="264,31">
-      <label><hi rendition="#bol">allerede</hi></label>
-      <p>blot.</p>
-    </note>
-    <note type="commentary" xml:id="eot-33" n="265,10">
-      <label><hi rendition="#bol">som Luften kan være saa let, at man ikke kan aande den</hi></label>
-      <p>som luften kan være så tynd, iltfattig, at man ikke kan få vejret ved at indånde den.</p>
-    </note>
-    <note type="commentary" xml:id="eot-34" n="265,18">
-      <label>hos <hi rendition="#bol">Hver</hi></label>
-      <p>enhver.</p>
-    </note>
-    <note type="commentary" xml:id="eot-37" n="265,33">
-      <label><hi rendition="#bol">hver Helligdag ... til Indgang, »at vi maatte lære at sørge over vore Synder.«</hi></label>
-      <p>jf. kap. 1 »Om GUds Tieneste i Kirken«, art. 1, i <hi rendition="#ita">Dannemarkes og Norges Kirke-Ritual,</hi>
-        <placeName key="København">Kbh</placeName>. 1762 [1685], s. 3-5: »GUds Tieneste begyndes paa alle Prædike-Tider i Kiøbstæderne, saa vel som paa Landet, med denne liden Bøn og paafølgende Fader vor, etc. Hvilket Degnen staaendes i Chorsdøren [koråbningen], eller mit paa Kirke-Gulvet, med høy og langsom Røst læser, saaledes: HErre! jeg er indkommen i dette dit hellige Huus at høre hvad du GUd Fader min <hi rendition="#ita">Skabere,</hi> du HErre <hi rendition="#ita">JEsu</hi> min <hi rendition="#ita">Frelsere,</hi> du værdige Hellig Aand i Liv og Død min Trøstermand vil tale til mig. HErre! oplad nu saaledes ved din Hellig Aand for <hi rendition="#ita">JEsu</hi> Christi skyld mit Hierte, at jeg kand af Prædiken lære at sørge for mine Synder, og at tro i Liv og Død paa <hi rendition="#ita">JEsum,</hi> og hver Dag i et helligt Liv og <hi rendition="#ita">Levnet</hi> mig forbædre: Det høre og bønhøre GUd ved JEsum Christum Amen!«</p>
-    </note>
-    <note type="commentary" xml:id="eot-38" n="266,3">
-      <label><hi rendition="#bol">være til Døden</hi></label>
-      <p>allusion til <rs type="bible">Joh 11,4</rs>, hvor <persName key="Jesus">Jesus</persName> får besked om, at <persName key="Lazarus">Lazarus</persName> (<ptr type="commentary" target="#eot-19" n="263,22"/>) er syg, og dertil siger: »Den sygdom er ikke til døden, men tjener til Guds herlighed, for at Guds søn skal herliggøres ved den.«</p>
-    </note>
-    <note type="commentary" xml:id="eot-39" n="266,12">
-      <label><hi rendition="#bol">uden</hi></label>
-      <p>undtagen.</p>
-    </note>
-    <note type="commentary" xml:id="eot-41" n="266,17">
-      <label><hi rendition="#bol">vistnok</hi></label>
-      <p>ganske vist, givetvis.</p>
-    </note>
-    <note type="commentary" xml:id="eot-111" n="266,32">
-      <label><hi rendition="#bol">Straffedom</hi></label>
-      <p>dom, hvorved en straf tilkendes den, der har begået en forbrydelse el. (i religiøs sprogbrug) synd.</p>
-    </note>
-    <note type="commentary" xml:id="eot-43" n="267,4">
-      <label><hi rendition="#bol">Beleilighed</hi></label>
-      <p>belejlig tid, velegnet lejlighed, passende anledning.</p>
-    </note>
-    <note type="commentary" xml:id="eot-44" n="267,10">
-      <label><hi rendition="#bol">Synderinden</hi></label>
-      <p>dvs. for synderinden.</p>
-    </note>
-    <note type="commentary" xml:id="eot-47" n="267,18">
-      <label><hi rendition="#bol">aabenbar</hi></label>
-      <p>lagt åben.</p>
-    </note>
-    <note type="commentary" xml:id="eot-48" n="267,25">
-      <label><hi rendition="#bol">Gjestebudets Indsigelse</hi></label>
-      <p>selskabets protest; if. <rs type="bible">Luk 7,36</rs>.39 var <persName key="Jesus">Jesus</persName> indbudt som middagsgæst i 'farisæerens hus' (<ptr type="commentary" target="#eot-52" n="268,16"/>).</p>
-    </note>
-    <note type="commentary" xml:id="eot-101" n="267,25">
-      <label><hi rendition="#bol">Pharisæer</hi>nes</label>
-      <p>medlem af en af de mest indflydelsesrige bevægelser i den antikke jødedom i hellenistisk-rom. tid, dvs. fra o. 100 f.Kr. til <placeName>Jerusalem</placeName>s ødelæggelse i 70 e.Kr. De lagde vægt på en nøje overholdelse af Moseloven, herunder også det kompleks af renhedsforskrifter, der angik præsteskabet, og fordømte enhver overtrædelse af loven; ud over Moseloven skabte de en omfattende mundtlig tradition for udlægning af dens bud, kaldet 'fædrenes' el. 'de gamles overlevering'. De troede desuden på de dødes opstandelse til dom og på mellemvæsner, engle. Deres antal på
-        <persName key="Jesus">Jesu</persName> tid skal have været o. 6.000.</p>
-    </note>
-    <note type="commentary" xml:id="eot-102" n="267,26">
-      <label><hi rendition="#bol">grusomme Spot</hi></label>
-      <p>sml. <rs type="bible">Luk 7,39</rs> (<ptr type="commentary" target="#eot-6" n="263,2"/>). Og om farisæernes dømmende holdning til overtrædelse af Moseloven, <ptr type="commentary" target="#eot-101" n="267,25"/>.</p>
-    </note>
-    <note type="commentary" xml:id="eot-50" n="267,32">
-      <label><hi rendition="#bol">det er ikke <hi rendition="#ita">(...)</hi> saa</hi></label>
-      <p>det forholder sig ikke således.</p>
-    </note>
-    <note type="commentary" xml:id="eot-52" n="268,16">
-      <label><hi rendition="#bol">hiin Pharisæers Huus</hi></label>
-      <p>hentyder til <rs type="bible">Luk 7,36</rs>, hvor det fortælles: »En af farisæerne indbød <persName key="Jesus">Jesus</persName> til at spise hos sig, og han gik ind i farisæerens hus og tog plads ved bordet.« If. <rs type="bible">Luk 7,40</rs> var denne farisæers navn <persName key="Simon farisæer">Simon</persName> (<ptr type="commentary" target="#eot-6" n="263,2"/>).</p>
-    </note>
-    <note type="commentary" xml:id="eot-103" n="268,16">
-      <label><hi rendition="#bol">hvor hun saa fandt Tilgivelsen</hi></label>
-      <p>hentyder til <rs type="bible">Luk 7,48</rs> (<ptr type="commentary" target="#eot-6" n="263,2"/>).</p>
-    </note>
-    <note type="commentary" xml:id="eot-53" n="268,18">
-      <label><hi rendition="#bol">slet Intet formaaer selv at gjøre</hi></label>
-      <p>sml. følgende passage i »III. Luc. VII, 47« i <hi rendition="#ita">»Ypperstepræsten«
+        »Synderinden« tre Taler ved Altergangen om Fredagen</hi> (1849), i <ref xml:id="id7397a090-2525-46a1-b12c-5cb0c794c9cb" target="../YTS/txt.xml#ss271" type="publishedWritings" n="271"><hi xml:id="id7a928699-6b0d-42c7-bb76-f49633b5b805" rendition="#ita">SKS</hi> 11, 271</ref>-280.</p>
+        </note>
+        <note type="commentary" xml:id="eot-6" n="263,2">
+          <label xml:id="id5e9d2e5d-7cda-47c2-8ab8-b9c907ca3140">
+            <hi xml:id="ide98aa797-0f5e-489e-9eb2-5ef99c1f07cb" rendition="#bol">Luc. VII. 37 flgg.</hi>
+          </label>
+          <p xml:id="idcf858e3f-df77-4181-9124-968882510561"><rs xml:id="id15d363db-3a3b-456f-b787-99ae23a7d0eb" type="bible">Luk 7,37-50</rs>: »Og see, der var en Qvinde i Staden, som var en Synderinde; der [da] hun fornam, at han sad tilbords i Pharisæerens Huus, hentede hun en Alabaster-Krukke med Salve; 38. og hun stod bagved hos hans Fødder, græd, og begyndte at væde hans Fødder med Taarer, og aftørrede dem med sit Hovedhaar, og kyssede hans Fødder, og salvede dem med Salve. 39. Men der Pharisæeren, som havde budet ham, saae det, talede han ved sig selv og sagde: dersom Denne var en Prophet, vidste han jo, hvo [hvem] og hvordan en Qvinde Denne er, som rører ved ham; thi hun er en Synderinde. 40. Og <persName xml:id="id664a5c99-dbd2-412b-b26f-5e39ca27e909" key="Jesus">Jesus</persName> svarede og sagde til ham: <persName xml:id="id868c2cf0-43b9-4f21-b0af-b9606967a4c2" key="Simon farisæer">Simon</persName>! jeg haver Noget at sige dig. Men han sagde: Mester, siig frem! 41. Jesus sagde: en Mand, som udlaante Penge, havde to Skyldnere; den Ene var fem hundrede Penninge skyldig; men den Anden halvtrediesindstive [halvtredsindstyve]. 42. Men der de havde ikke at betale med, gav han dem begge det efter. Siig: hvilken af dem skal derfor elske ham meest? 43. Men Simon svarede og sagde: jeg holder for [antager], den, som han eftergav meest. Men han [Jesus] sagde til ham: du dømte ret. 44. Og han vendte sig til Qvinden, og sagde til Simon: seer du denne Qvinde? Jeg kom ind i dit Huus, du haver ikke givet mig Vand til mine Fødder; men denne vædede mine Fødder med Graad, og tørrede dem af med sit Hovedhaar. 45. Du gav mig intet Kys; men denne aflod ikke [ophørte ikke med], fra hun kom ind, at kysse mine Fødder. 46. Du salvede ikke mit Hoved med Olie; men hun salvede mine Fødder med Salve. 47. Derfor, siger jeg dig, ere hendes mange Synder hende forladne [tilgivet]; thi hun elskede meget; men hvem Lidet forlades, elsker lidet. 48. Men han sagde til hende: dine Synder ere forladne. 49. Da begyndte de, som sadde tilbords med ham, at sige ved sig selv: hvo er Denne, som endog forlader Synder? 50. Men han sagde til Qvinden: din Tro haver frelst dig, gak bort med Fred« (NT-1819). –
+        <hi xml:id="idd3946eb8-4e2a-4f23-bbcb-e6b1bf82f939" rendition="#bol">flgg.:</hi> følgende (flertal).</p>
+        </note>
+        <note type="commentary" xml:id="eot-7" n="263,5">
+          <label xml:id="id56287df8-b83f-4c67-8621-fa74889fe683">
+            <hi xml:id="ida0eaa306-364c-4798-8c4a-00d5758bfe3a" rendition="#bol">Gudelighed</hi>
+          </label>
+          <p xml:id="ide2fc368d-a7eb-45ac-8e43-85d6d0f1bdf7">det, der angår forholdet til Gud, religiøsitet, fromhed.</p>
+        </note>
+        <note type="commentary" xml:id="eot-9" n="263,6">
+          <label xml:id="id79a72bc6-848f-47da-9a72-e96accdc42c9">
+            <hi xml:id="id364afd4e-dea8-4c78-bb1a-2d76bd519103" rendition="#bol">»Qvinden tie i Menigheden«</hi>
+          </label>
+          <p xml:id="id55a9c611-920c-4094-810e-5ef0227d991c">frit citat fra <rs xml:id="id59098541-d2e5-4aac-9221-14a149d24b4d" type="bible">1 Kor 14,33-34</rs>, hvor <persName xml:id="id9354dc8f-04ee-493d-a722-d82bc459afa2" key="Paulus">Paulus</persName> skriver til korintherne: »Ligesom i alle de Helliges Menigheder tie Eders Qvinder i Forsamlingerne« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="eot-10" n="263,12">
+          <label xml:id="idcb3d8088-c046-432d-94cd-9fce6256bfad">
+            <hi xml:id="id624fea6b-bfed-4fb8-b88d-d2c85fe0b177" rendition="#bol">hvorledes er dette muligt?</hi>
+          </label>
+          <p xml:id="id1260b0e7-1cdd-45d1-be0e-c6bd3ea08c8c">hentyder formentlig til beretningen i <rs xml:id="id8d3ab37e-c9eb-4cfb-bd37-e65693e2686e" type="bible">Luk 1,26-38</rs>, hvor det fortælles, at da englen <persName xml:id="id9b8ccb1a-2706-41a4-baa3-7fb1ac8aff49" key="Gabriel">Gabriel</persName> havde bebudet <persName xml:id="id59fc4c0a-0054-4635-aeb8-dec80e7fef5e" key="Maria">Maria</persName>, at hun skulle undfange og føde en søn og kalde ham <persName xml:id="id0f5f953a-63d3-4be2-9eb3-b47c0b1647da" key="Jesus">Jesus</persName>, sagde hun til englen: »hvorledes skal dette gaae til, efterdi jeg veed af ingen Mand?« v. 34 (NT-1819). Gabriel svarede hende, at Helligånden skulle komme over hende, hvorpå han henviste til, at Elisabeth havde undfanget en søn i sin høje alderdom, og sagde: »Thi Intet kan være umueligt for Gud«, v. 37 (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="eot-11" n="263,12">
+          <label xml:id="id6e8dd754-33d4-45ea-b757-e697460e92d1">
+            <hi xml:id="id6064fa3a-28e8-4ce1-bd44-ca93419c2432" rendition="#bol">ydmygt troer som Maria, og siger »see, jeg er Herrens Tjenerinde«</hi>
+          </label>
+          <p xml:id="ida082bb47-21bb-4a88-ae84-1622951453ac">sigter til <rs xml:id="id6d01d421-7e24-41ca-8a4d-1b0c4bd84415" type="bible">Luk 1,38</rs>: »Men <persName xml:id="idf818cec9-3885-4847-8331-ef5fd0398b3c" key="Maria">Maria</persName> sagde: see, jeg er Herrens Tienerinde, mig skee efter dit Ord!« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="eot-13" n="263,15">
+          <label xml:id="id739d0a70-d581-4c1a-9f02-6c73021c83e6">
+            <hi xml:id="id3c00ba8a-0d0e-48af-b803-edf48041e9f1" rendition="#bol">»ikke forstod de Ord, der bleve talede«</hi>
+          </label>
+          <p xml:id="id73bae8b1-c287-45db-a25d-f25d97c43a79">frit citat fra v. 50 i <rs xml:id="id33810ac9-a80e-46d3-8889-028c0f77dbcc" type="bible">Luk 2,41-52</rs>, hvor det fortælles, at da <persName xml:id="idb0215541-26d7-4d67-8de2-578958873905" key="Maria">Maria</persName> og <persName xml:id="idee733893-4ee2-4c45-b86c-2046725b8d14" key="Josef, Marias mand">Josef</persName> havde ledt efter den tolvårige <persName xml:id="id04b87c3d-fc97-484f-ba7a-5edfa2e4fa86" key="Jesus">Jesus</persName> i <placeName xml:id="idfa88524a-1f62-40c0-8008-d0c19f01a111">Jerusalem</placeName> og endelig fandt ham i templet, spurgte han dem, hvorfor de havde ledt efter ham, og sagde til dem: »vidste I ikke, at mig bør at være i min Faders Gierning?« Hvorefter det hedder: »Og de forstode ikke det Ord, som han talede til dem« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="eot-14" n="263,16">
+          <label xml:id="id249732d1-f121-41b0-9e5f-b63addd02c86">
+            <hi xml:id="id05e0e28b-1bf5-4682-a863-d61cc992bde2" rendition="#bol">»bevarede dem i sit Hjerte«</hi>
+          </label>
+          <p xml:id="idaf924102-a7c2-4ea2-ae58-fed4a7e14b10">frit citat fra v. 19 i <rs xml:id="idfa0ac67f-4e8b-45ff-970f-656c72769003" type="bible">Luk 2,8-20</rs>, hvor det fortælles, at da en engel havde forkyndt for hyrderne ude på marken, at en frelser var født, og at de som tegn herpå skulle finde et barn, svøbt og liggende i en krybbe, ilede de til <placeName xml:id="idb369d831-4d77-43b7-bbce-72c5ba8f36e4">Betlehem</placeName>, hvor de fandt <persName xml:id="ida5d5e83d-25bd-4871-8072-47b291ed1f4b" key="Maria">Maria</persName> og <persName xml:id="id15aee978-30cc-430c-9246-a6322631d9ba" key="Josef, Marias mand">Josef</persName> i stalden og Jesusbarnet i krybben. Og da de havde set det, fortalte de alt, hvad englen havde sagt til dem om barnet, og alle, der hørte det, undrede sig. »Men Maria bevarede alle disse Ord, og overveiede dem i sit Hierte« (NT-1819). Se også
+        <rs xml:id="id27250d99-8a87-42ad-ad34-2c20b0e0b7a9" type="bible">Luk 2,51</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="eot-15" n="263,18">
+          <label xml:id="id47aa9038-052d-47ba-bf39-f707b2cd8c47">
+            <hi xml:id="id3b202931-ac45-4bed-84cf-2870b64ab959" rendition="#bol">naar Ordet ... »bevares i et fromt og smukt Hierte.«</hi>
+          </label>
+          <p xml:id="ide2ca8fef-1faf-479e-85a3-87fe2521776c">sigter til Jesu udlægning i <rs xml:id="id1d2ce67d-c497-4ae9-9979-a65417839555" type="bible">Luk 8,9-15</rs> af sin lignelse om sædemanden, der gik ud for at så sædekorn; noget af sæden faldt ved vejen, noget andet på en klippe, noget igen blandt tidsler og endelig noget i god jord, <rs xml:id="idb051b7e6-f70f-4da8-aeed-4deb451f2b02" type="bible">Luk 8,4-8</rs>. Sæden er Guds ord, forklarede <persName xml:id="ide1b87f8f-57cd-4e38-8689-913f752ee271" key="Jesus">Jesus</persName> sine disciple, og om »det i den gode Jord« sagde han, det »ere de, hvilke, naar de høre Ordet, beholde det i et smukt og godt Hierte og bære Frugt i Taalmodighed«, v. 15 (NT-1819). –
+        <hi xml:id="id68f54b03-be06-44c7-b739-e4f9a7143d2e" rendition="#bol">den gode Sæd:</hi> Udtrykket indgår i Jesu lignelse i <rs xml:id="id09c766cb-76c8-416f-83bd-1cd7bfda32a6" type="bible">Matt 13,24-30</rs> om klinten el. ukrudtet i hveden, hvor en mand har sået god sæd i sin mark, og i Jesu udlægning af denne lignelse i <rs xml:id="id4c2d13e7-04f4-460b-95ea-d638b4b453e2" type="bible">Matt 13,36-43</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="eot-16" n="263,20">
+          <label xml:id="idbc5f3e0d-d18d-4295-a05f-ac931f3aed44">
+            <hi xml:id="idab1a550a-9248-447f-9747-11271d47c2ec" rendition="#bol">vistnok</hi>
+          </label>
+          <p xml:id="id206416ad-fedf-4d66-a3cd-349934ff21ca">sandt nok.</p>
+        </note>
+        <note type="commentary" xml:id="eot-17" n="263,20">
+          <label xml:id="id2adb2794-43ae-47a1-bc83-7dba82fd470a">
+            <hi xml:id="id6fd78a9e-5734-4cf3-9a54-f069ab336ee8" rendition="#bol">gik der, som forudsagt var, et Sværd gjennem hendes Hjerte</hi>
+          </label>
+          <p xml:id="id18c5aa1c-c973-4aef-9e50-3d7d52c33390">henviser til <rs xml:id="idb18ea42c-1d94-4fa0-944c-d2fbc487863f" type="bible">Luk 2,35</rs>, hvor den gamle <persName xml:id="id074ed00c-c518-45fc-bca9-0ca0717b40cd" key="Simeon">Simeon</persName> siger til Jesu mor, da <persName xml:id="id6b63d717-a793-4281-bcaf-dc041f66d5d1" key="Jesus">Jesus</persName> blev frembåret for Herren i templet i <placeName xml:id="id6ea85921-2fb9-4f0c-babe-dc5e58e2f246">Jerusalem</placeName>: »ogsaa din egen Siel skal et Sværd giennemtrænge!« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="eot-18" n="263,22">
+          <label xml:id="idd7a8e903-6cca-4ec7-a7e9-40f3bfd6434a">
+            <hi xml:id="id6c0258d5-3726-45d1-b3c0-2407f4ed43e9" rendition="#bol">da det skeete</hi>
+          </label>
+          <p xml:id="ida0bb40d8-4651-42a4-800f-76e573b8e9f9">hentyder til, at Jesu mor, <persName xml:id="id76a1b862-2e66-4acf-a218-447056aac276" key="Maria">Maria</persName>, stod sammen med apostlen <persName xml:id="id20bb73c8-5ac5-409e-90f7-c87f5ddc185c" key="Johannes">Johannes</persName> på
+        <placeName xml:id="idafd6b07d-b398-43c6-99bf-9fbd304126b5">Golgata</placeName>, mens <persName xml:id="id55c9bb72-5c08-45df-a5c0-a168ef07c466" key="Jesus">Jesus</persName> hang på korset, se <rs xml:id="id46cb72e5-fab8-43fc-a79c-a04ec1b2d359" type="bible">Joh 19,25-27</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="eot-19" n="263,22">
+          <label xml:id="id47fb2457-ed8b-4ced-ac37-29c3c7293680">
+            <hi xml:id="idfdcdc1f7-6256-41a2-ae76-9783de35f959" rendition="#bol">Bekymring for det ene Fornødne, af Maria ... det ene Fornødne</hi>
+          </label>
+          <p xml:id="id6a5e367c-d136-4b9c-8b88-e8fe135354eb">sigter til beretningen i <rs xml:id="id9d6f44d4-4c24-4f8f-9a53-f5b8a66a1b28" type="bible">Luk 10,38-42</rs> om Jesu besøg hos søstrene <persName xml:id="id278ddcbc-b061-4285-9172-b0b669516b54" key="Martha">Martha</persName> og <persName xml:id="id1e9207e3-727a-4fbd-9d39-89c195588bbc" key="Maria, Marthas søster">Maria</persName>. Her fortælles det, at Maria »satte sig ved Herrens fødder og lyttede til hans ord«, v. 39, mens Martha havde travlt med at varte op. Og da Martha spurgte <persName xml:id="id678b7fbe-c91d-4968-80c8-7acbfb5ef705" key="Jesus">Jesus</persName>, om han var ligeglad med, at Maria lod hende være alene om opvartningen, og bad ham få hende til at hjælpe sig, svarede Jesus hende, at hun gjorde sig urolige bekymringer for mange ting, og føjede til: »Men ét er fornødent. Maria har valgt den gode del, og den skal ikke tages fra hende«, v. 42. At Maria var søster til <persName xml:id="idfa2393fb-72aa-4e94-8b73-ade36275b957" key="Lazarus">Lazarus</persName>, fremgår af beretningen i <rs xml:id="idcd40f534-0fd7-4ad0-b656-8716b2e95d57" type="bible">Joh 11,1-44</rs> om Lazarus' sygdom og død og Jesu opvækkelse af ham.</p>
+        </note>
+        <note type="commentary" xml:id="eot-21" n="264,1">
+          <label xml:id="iddb92c29b-dd36-4b49-85e2-928b22721e25">
+            <hi xml:id="idfc84ffc5-e40f-4f85-b96a-daeded44e5be" rendition="#bol">selv evigt blev uforglemmelig</hi>
+          </label>
+          <p xml:id="id01a95514-1438-45ef-8a43-d1b033773b84">hentyder til slutningen på parallelberetningen til <rs xml:id="id1ae0d9eb-74e9-41f4-9f85-b78d89fec2d8" type="bible">Luk 7,36-50</rs> i <rs xml:id="id52e67061-9097-41fe-8005-20f30dc8430b" type="bible">Matt 26,6-13</rs>, hvor det fortælles, at <persName xml:id="id9292c785-f803-47da-96f3-b1b440add0d7" key="Jesus">Jesus</persName> tog kvinden i forsvar, da disciplene udtrykte vrede over, at hun havde ødslet med den kostbare salve ved at hælde den ud over hans hoved i stedet for at give pengene til de fattige, og sagde til dem: »Sandelig siger jeg jer: Hvor som helst i hele verden dette evangelium prædikes, skal også det, hun har gjort, fortælles til minde om hende«, v. 13.</p>
+        </note>
+        <note type="commentary" xml:id="eot-22" n="264,2">
+          <label xml:id="idcdf323d5-1ab7-4dda-b52b-9dee5dd7a191"><hi xml:id="idca7facb8-69a5-41d6-ad30-2f42a9312b8f" rendition="#bol">og</hi> være andet</label>
+          <p xml:id="idb25f63c4-de70-4780-8e6a-6fef7bffa645">også.</p>
+        </note>
+        <note type="commentary" xml:id="eot-23" n="264,6">
+          <label xml:id="idf22c7f89-409b-4fdc-bfcd-dca760b160b9">
+            <hi xml:id="idb98929d9-3071-4a22-9517-f5ece058718f" rendition="#bol">er Manden stærkere end den Svage, Qvinden</hi>
+          </label>
+          <p xml:id="idb5076ae0-86d8-4442-88ef-16ce2636edfc">formentlig allusion til <rs xml:id="id4b84b0f7-cfba-4ddd-aa3e-be1dd9fc249e" type="bible">1 Pet 3,7</rs>, hvor det hedder: »I mænd skal ligeså være hensynsfulde i samlivet med kvinden som den svagere part«.</p>
+        </note>
+        <note type="commentary" xml:id="eot-24" n="264,17">
+          <label xml:id="id0884a1e6-77a8-41e3-be1a-d73e13ea3e2b">paa <hi xml:id="id3d667e03-5d65-4dcc-ab59-8e586f88d5cf" rendition="#bol">tvert</hi></label>
+          <p xml:id="idad1a554b-5b27-445e-9754-817b20acb9ab">tværs.</p>
+        </note>
+        <note type="commentary" xml:id="eot-25" n="264,18">
+          <label xml:id="idd926a0d9-f978-4bcb-a3fe-a35b94b86032"><hi xml:id="id46cc92ea-3c51-45b5-a7ed-ca72118c1fa7" rendition="#bol">skuffe</hi> sig selv</label>
+          <p xml:id="id8e2ca682-2367-47da-b229-75186be7c52e">bedrage.</p>
+        </note>
+        <note type="commentary" xml:id="eot-26" n="264,20">
+          <label xml:id="id45254695-2fa1-4824-a902-9fb9a1a809b0">
+            <hi xml:id="id8d32614b-12a6-4dac-ba27-d6d6182724fa" rendition="#bol">gudelig</hi>
+          </label>
+          <p xml:id="id408f904a-de4f-4fe3-b4f5-89a27ac496b3"><ptr xml:id="id1cfeb765-7340-4467-894a-3057a57f2d6c" type="commentary" target="#eot-7" n="263,5"/>.</p>
+        </note>
+        <note type="commentary" xml:id="eot-27" n="264,22">
+          <label xml:id="id9bacc669-2c13-43f0-8eb2-afb8c8285612">
+            <hi xml:id="id1d3882dd-5449-487b-a62b-d9c03310bc21" rendition="#bol">Saa lader os da agte paa ... hvad vi af hende kunne lære</hi>
+          </label>
+          <p xml:id="idc02af3ca-3e9f-4b07-8229-9d33782f8698">En lignende formulering i forskellige variationer anvendes gang på gang af <persName xml:id="ida6e53ef4-3730-4e08-ae41-03ccb1827f14" key="Mynster, Jakob Peter">J.P. Mynster</persName> som introduktion af temaet for en prædiken, jf. især <hi xml:id="id9befb91a-7844-48d5-95bf-ba2b81a0776f" rendition="#ita"><title xml:id="id3ae9462a-3e21-4933-a821-d3fdce86b1ef">Prædikener paa alle Søn- og Hellig-Dage i Aaret</title>,</hi> 3. opl., bd. 1-2, <placeName xml:id="ided06d434-f486-4a94-bb39-99bda40a8ed8" key="København">Kbh</placeName>. 1837 [1823], ktl. 229-230 og 2191; fx bd. 1, s. 59: »vi ville [vil] denne Gang tale med hverandre / <hi xml:id="id6dda97c0-77f3-4acb-b9d7-156174077e94" rendition="#ita">om det store Gode, at være en Christen</hi>«; s. 132: »men denne Gang ville vi med hinanden ret betragte / <hi xml:id="id6d38704c-7665-4b75-a9ca-738914a30c4a" rendition="#ita">den christelige Taalmodighed</hi>«; s. 207: »i det jeg denne Gang taler / <hi xml:id="id82e2a640-b2a3-4e22-bbd1-357a5b719cda" rendition="#ita">om vor Daabs Pagt</hi>«; s. 361: »lader os stræbe at overbevise os om, / <hi xml:id="idb366eebc-3052-4942-8c97-6b853b0819b8" rendition="#ita">at vi alle, eenfoldigen og oprigtigen, skulle </hi>[skal] <hi xml:id="id50abd011-bf97-4b52-b4c1-92bbbe3a7e9f" rendition="#ita">holde os til den samme christelige Tro</hi>«; bd. 2, s. 95: »vi maae paaminde om, / <hi xml:id="idd0cd1f22-25c2-434d-8ff1-885e45f135ee" rendition="#ita">at ogsaa Gienvordigheder kunne </hi>[kan] <hi xml:id="id2c47b85e-a601-40f3-a03a-ed824c03afcb" rendition="#ita">vorde Fristelser</hi>«; s. 340: »Lader os derfor nu overveie, / <hi xml:id="id1cd3d2d0-8de9-4a4e-a06d-ad02f5fcd605" rendition="#ita">hvorledes vi skulle fortsætte de hellige Mænds Værk, som have bevirket vor Kirkes Forbedring</hi>«; s. 382: »naar vi tale om / <hi xml:id="idd70c3a0c-8c88-4e94-b64a-de4b2631757e" rendition="#ita">Døden som en Søvn.</hi>«
+        – vi <hi xml:id="idbc8f0819-ea25-49fc-9ea8-dc4bea055189" rendition="#ita">(...)</hi> <hi xml:id="id30783bdc-c3fb-42b4-ae4d-153faa39ccaa" rendition="#bol">kunne:</hi> kan.</p>
+        </note>
+        <note type="commentary" xml:id="eot-28" n="264,24">
+          <label xml:id="id98a14828-0741-4f15-b10d-7848f4353753">
+            <hi xml:id="id5c617f13-c6f3-43ce-868c-467b84462f5a" rendition="#bol">ligegyldige for</hi>
+          </label>
+          <p xml:id="id1cb992ac-5f96-4b2f-acc9-a5172ba8e43b">indifferente over for, uinteresserede i, ligeglade med.</p>
+        </note>
+        <note type="commentary" xml:id="eot-29" n="264,27">
+          <label xml:id="ided522eb4-fa86-4a0d-bffc-f6cd9717be20">
+            <hi xml:id="id695c99c1-b7f4-479b-8a36-f7eb560f2dec" rendition="#bol">M. T.</hi>
+          </label>
+          <p xml:id="idab869173-8626-4b0c-8cd0-03bbd2f451f9">min tilhører.</p>
+        </note>
+        <note type="commentary" xml:id="eot-30" n="264,29">
+          <label xml:id="id115bf00b-dff5-4e3c-8104-d64691474562">
+            <hi xml:id="id60e9aa77-e8fd-4ce3-a0ae-5ba7088ba16c" rendition="#bol">allehaande</hi>
+          </label>
+          <p xml:id="id21248e3e-3bea-4cae-9631-055b6ecfc046">al slags, alskens.</p>
+        </note>
+        <note type="commentary" xml:id="eot-31" n="264,31">
+          <label xml:id="id849f4beb-060c-432b-ab36-ea16c80eabbc">
+            <hi xml:id="idb599081d-ae1b-43d8-8a81-41ebf7b37d6e" rendition="#bol">allerede</hi>
+          </label>
+          <p xml:id="idf9d88591-4e08-4ae4-b274-1b36483fd9c2">blot.</p>
+        </note>
+        <note type="commentary" xml:id="eot-33" n="265,10">
+          <label xml:id="id2c69e55a-88e1-47b4-b61e-86f9fbf30d1d">
+            <hi xml:id="id72cd2581-88a9-4fa3-ae22-28517d43d93c" rendition="#bol">som Luften kan være saa let, at man ikke kan aande den</hi>
+          </label>
+          <p xml:id="idda9dc8d7-1440-401b-9501-306882f93f35">som luften kan være så tynd, iltfattig, at man ikke kan få vejret ved at indånde den.</p>
+        </note>
+        <note type="commentary" xml:id="eot-34" n="265,18">
+          <label xml:id="idf5048a36-b540-4b26-bda1-eacc6ee4c3a3">hos <hi xml:id="id97872a1b-f785-4afc-bbda-53ec133874ca" rendition="#bol">Hver</hi></label>
+          <p xml:id="idd32cabab-ca72-4e9c-aafa-bc3b3f1dd572">enhver.</p>
+        </note>
+        <note type="commentary" xml:id="eot-37" n="265,33">
+          <label xml:id="id694f5936-498d-4c93-983c-7692a83eb2f4">
+            <hi xml:id="idc7ebedfb-b5e3-45ce-a436-c67079104990" rendition="#bol">hver Helligdag ... til Indgang, »at vi maatte lære at sørge over vore Synder.«</hi>
+          </label>
+          <p xml:id="id3e78e2cf-7dab-48cf-a6c7-a5d9f193e4d3">jf. kap. 1 »Om GUds Tieneste i Kirken«, art. 1, i <hi xml:id="ide8f793de-6a2b-4cf1-a382-27c5fd533422" rendition="#ita">Dannemarkes og Norges Kirke-Ritual,</hi>
+        <placeName xml:id="id8a749fc6-af4d-4939-9ebf-4c8873e853b5" key="København">Kbh</placeName>. 1762 [1685], s. 3-5: »GUds Tieneste begyndes paa alle Prædike-Tider i Kiøbstæderne, saa vel som paa Landet, med denne liden Bøn og paafølgende Fader vor, etc. Hvilket Degnen staaendes i Chorsdøren [koråbningen], eller mit paa Kirke-Gulvet, med høy og langsom Røst læser, saaledes: HErre! jeg er indkommen i dette dit hellige Huus at høre hvad du GUd Fader min <hi xml:id="id4d5aae23-4572-498d-9716-cef5939190c4" rendition="#ita">Skabere,</hi> du HErre <hi xml:id="ida76feb34-b482-4b4f-bd48-7ac9088f7442" rendition="#ita">JEsu</hi> min <hi xml:id="id54b8040d-2ebc-445f-a0a6-f94f5e3c3391" rendition="#ita">Frelsere,</hi> du værdige Hellig Aand i Liv og Død min Trøstermand vil tale til mig. HErre! oplad nu saaledes ved din Hellig Aand for <hi xml:id="id5fb8e5a0-1691-48c4-8c21-fb56aa373318" rendition="#ita">JEsu</hi> Christi skyld mit Hierte, at jeg kand af Prædiken lære at sørge for mine Synder, og at tro i Liv og Død paa <hi xml:id="id091c16c0-66f5-4605-af61-6203493588ef" rendition="#ita">JEsum,</hi> og hver Dag i et helligt Liv og <hi xml:id="idf133e334-b47c-4003-bad6-c43c405ce51b" rendition="#ita">Levnet</hi> mig forbædre: Det høre og bønhøre GUd ved JEsum Christum Amen!«</p>
+        </note>
+        <note type="commentary" xml:id="eot-38" n="266,3">
+          <label xml:id="id93b5aeef-6e30-491f-9dd4-bed0c9e6ab0e">
+            <hi xml:id="idf90929f0-a6f4-4d1a-9a22-e976146e3499" rendition="#bol">være til Døden</hi>
+          </label>
+          <p xml:id="idee97848b-ff78-49d7-a963-11cc78583344">allusion til <rs xml:id="ida25a1d6f-c8c2-4e75-af61-96a5bc41ac3a" type="bible">Joh 11,4</rs>, hvor <persName xml:id="id4c633e04-c38a-4afd-9509-e327acb38057" key="Jesus">Jesus</persName> får besked om, at <persName xml:id="ide7f4373a-34b9-497c-99fb-0496964174d2" key="Lazarus">Lazarus</persName> (<ptr xml:id="id69471cee-2848-4368-b34d-61d28c38ac72" type="commentary" target="#eot-19" n="263,22"/>) er syg, og dertil siger: »Den sygdom er ikke til døden, men tjener til Guds herlighed, for at Guds søn skal herliggøres ved den.«</p>
+        </note>
+        <note type="commentary" xml:id="eot-39" n="266,12">
+          <label xml:id="id7442c557-f9a2-4a82-b8fb-cd7bb2801b4e">
+            <hi xml:id="iddaba4c8d-7f3a-4db2-9a7b-420b99a82b4b" rendition="#bol">uden</hi>
+          </label>
+          <p xml:id="idba75032d-1291-4fb0-90c8-338a4ce0335e">undtagen.</p>
+        </note>
+        <note type="commentary" xml:id="eot-41" n="266,17">
+          <label xml:id="id60cebde0-5739-40c3-80b7-dc6170911a07">
+            <hi xml:id="idb96061ea-14d1-44a5-9b90-856c2d9397b8" rendition="#bol">vistnok</hi>
+          </label>
+          <p xml:id="id5d0aa4f4-0191-4a2d-b004-1aa8348d1f53">ganske vist, givetvis.</p>
+        </note>
+        <note type="commentary" xml:id="eot-111" n="266,32">
+          <label xml:id="id633f5eda-30b2-417a-b0ed-91e00f886368">
+            <hi xml:id="idff208f8a-a02c-4d22-8cd5-ca61635bc0d2" rendition="#bol">Straffedom</hi>
+          </label>
+          <p xml:id="id60e71bc8-ae54-4db8-97c8-f76b329be30e">dom, hvorved en straf tilkendes den, der har begået en forbrydelse el. (i religiøs sprogbrug) synd.</p>
+        </note>
+        <note type="commentary" xml:id="eot-43" n="267,4">
+          <label xml:id="idd2581da6-c44b-47c5-8b9c-8468bf6f7df2">
+            <hi xml:id="id9e0c8228-8dc8-4102-841f-6845a8f8f0b2" rendition="#bol">Beleilighed</hi>
+          </label>
+          <p xml:id="idd54f2e0a-1686-41ee-bb67-7d5b9771b3e0">belejlig tid, velegnet lejlighed, passende anledning.</p>
+        </note>
+        <note type="commentary" xml:id="eot-44" n="267,10">
+          <label xml:id="idf0315f41-da5a-4362-98c2-ae646e2c0edb">
+            <hi xml:id="id92eba26c-6552-4252-b6bb-7aa0910bb899" rendition="#bol">Synderinden</hi>
+          </label>
+          <p xml:id="id5d2e3449-514f-46e2-a28b-12983c2a2b21">dvs. for synderinden.</p>
+        </note>
+        <note type="commentary" xml:id="eot-47" n="267,18">
+          <label xml:id="idc5982ff9-accc-40a1-a838-dec6f34f9cda">
+            <hi xml:id="id08e9d2a8-381b-46ca-82a0-bc2a9bcd83d5" rendition="#bol">aabenbar</hi>
+          </label>
+          <p xml:id="idf6a10172-5fbc-4ad4-b8d3-4e69695a99d6">lagt åben.</p>
+        </note>
+        <note type="commentary" xml:id="eot-48" n="267,25">
+          <label xml:id="id1e9b31c2-d0e3-46db-8061-54fa57604ea7">
+            <hi xml:id="ida180eedf-de4f-467c-a0d3-15841a700861" rendition="#bol">Gjestebudets Indsigelse</hi>
+          </label>
+          <p xml:id="id3db7deed-8c63-4326-8eb4-a90a4e3ce384">selskabets protest; if. <rs xml:id="idbe8b922d-15e7-4bf6-8bbb-66cd5abea873" type="bible">Luk 7,36</rs>.39 var <persName xml:id="id87fc7710-b753-4652-b375-1dedea8572b1" key="Jesus">Jesus</persName> indbudt som middagsgæst i 'farisæerens hus' (<ptr xml:id="id4ef3935d-0fa9-4690-963e-caa148b5d2d9" type="commentary" target="#eot-52" n="268,16"/>).</p>
+        </note>
+        <note type="commentary" xml:id="eot-101" n="267,25">
+          <label xml:id="id76c598a3-f828-449f-ba9c-8210a7066098"><hi xml:id="id085871b1-3d3a-46ae-a6bc-280d9668e895" rendition="#bol">Pharisæer</hi>nes</label>
+          <p xml:id="id892b7372-352c-4e50-a79a-8841974dfdfe">medlem af en af de mest indflydelsesrige bevægelser i den antikke jødedom i hellenistisk-rom. tid, dvs. fra o. 100 f.Kr. til <placeName xml:id="id5cb03b02-28c9-4d59-b896-7d91fa3276f4">Jerusalem</placeName>s ødelæggelse i 70 e.Kr. De lagde vægt på en nøje overholdelse af Moseloven, herunder også det kompleks af renhedsforskrifter, der angik præsteskabet, og fordømte enhver overtrædelse af loven; ud over Moseloven skabte de en omfattende mundtlig tradition for udlægning af dens bud, kaldet 'fædrenes' el. 'de gamles overlevering'. De troede desuden på de dødes opstandelse til dom og på mellemvæsner, engle. Deres antal på
+        <persName xml:id="id6ce4ff8c-c536-4a53-bdad-3f1beb1d118e" key="Jesus">Jesu</persName> tid skal have været o. 6.000.</p>
+        </note>
+        <note type="commentary" xml:id="eot-102" n="267,26">
+          <label xml:id="id6bc01724-9c22-4ad1-a056-7cc06a706f0e">
+            <hi xml:id="idbd8bc221-e589-4644-a936-51b2284e9828" rendition="#bol">grusomme Spot</hi>
+          </label>
+          <p xml:id="id460b64ea-9258-4e65-9f75-c0a9a4666999">sml. <rs xml:id="id6f46efb8-00ea-43bc-9ef0-fac716f98ab3" type="bible">Luk 7,39</rs> (<ptr xml:id="id05c6a670-934e-4934-8d36-04e1f9106616" type="commentary" target="#eot-6" n="263,2"/>). Og om farisæernes dømmende holdning til overtrædelse af Moseloven, <ptr xml:id="idd31c814d-3f2a-4ab5-9f45-697f518c4fe5" type="commentary" target="#eot-101" n="267,25"/>.</p>
+        </note>
+        <note type="commentary" xml:id="eot-50" n="267,32">
+          <label xml:id="id57038c50-be77-453d-bb3b-bcdcbdc172af">
+            <hi xml:id="id22780be0-d804-4ccd-8b7d-16d36fbf18d1" rendition="#bol">det er ikke <hi xml:id="id21350bed-fc0f-466c-8321-da4de94518c9" rendition="#ita">(...)</hi> saa</hi>
+          </label>
+          <p xml:id="id45a898ce-025a-4333-996a-a9cfd3abd2cc">det forholder sig ikke således.</p>
+        </note>
+        <note type="commentary" xml:id="eot-52" n="268,16">
+          <label xml:id="id3301d60a-f7c8-4542-b1be-69b5fdefd5f3">
+            <hi xml:id="ide75f47be-890b-4ae9-96f0-c58575383ecf" rendition="#bol">hiin Pharisæers Huus</hi>
+          </label>
+          <p xml:id="id60054e4c-7ce0-43db-805b-9a05df0743e4">hentyder til <rs xml:id="id212cfe0b-cb88-48f5-87c6-448c7d304332" type="bible">Luk 7,36</rs>, hvor det fortælles: »En af farisæerne indbød <persName xml:id="id16e53186-b249-4c1d-a1b7-936070710428" key="Jesus">Jesus</persName> til at spise hos sig, og han gik ind i farisæerens hus og tog plads ved bordet.« If. <rs xml:id="id677b894e-762d-47ef-9818-409594597bbb" type="bible">Luk 7,40</rs> var denne farisæers navn <persName xml:id="idfb65b5cc-443d-436a-ab7b-1a8b82cdeb7e" key="Simon farisæer">Simon</persName> (<ptr xml:id="idd0863163-c17e-4983-83ba-05f433864a6a" type="commentary" target="#eot-6" n="263,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="eot-103" n="268,16">
+          <label xml:id="idf940b2b4-2e48-4983-b0b0-b0f5defe82fc">
+            <hi xml:id="idbfea0604-4662-402c-89fb-9d782364c276" rendition="#bol">hvor hun saa fandt Tilgivelsen</hi>
+          </label>
+          <p xml:id="id01cd0190-7297-4770-a6a2-2c3f9c049d87">hentyder til <rs xml:id="ide8b9daeb-31b5-47ee-ba7a-a0a1a5240e69" type="bible">Luk 7,48</rs> (<ptr xml:id="id63f32b0d-de0e-4b73-b0e7-e9ee5a705a4a" type="commentary" target="#eot-6" n="263,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="eot-53" n="268,18">
+          <label xml:id="idaa56ed74-e6eb-459c-8524-e9dd89d3119d">
+            <hi xml:id="ida2e812a0-56ad-4b49-9a9d-3edabf4d2e5a" rendition="#bol">slet Intet formaaer selv at gjøre</hi>
+          </label>
+          <p xml:id="id6a6a05ba-d224-4d80-91a4-afc36af6e37e">sml. følgende passage i »III. Luc. VII, 47« i <hi xml:id="id0bee6463-d128-416d-995a-837b33e47594" rendition="#ita">»Ypperstepræsten«
         – »Tolderen« –
-        »Synderinden« tre Taler ved Altergangen om Fredagen</hi> (1849): »<hi rendition="#ita">Ja, hun elskede meget.</hi> 'Hun satte sig ved Christi Fødder, vædede dem med Graad, aftørrede dem med sit Hovedhaar' – hun udtrykker: jeg formaaer bogstaveligen slet Intet, Han formaaer ubetinget Alt«, <ref target="../YTS/txt.xml#ss276" type="publishedWritings" n="276"><hi rendition="#ita">SKS</hi> 11, 276</ref>,6-8; og videre i samme afsnit, s. 276,19-22: »O, evige Sandhed, at Han formaaer ubetinget Alt; o, ubeskrivelige Sandhed i denne Qvinde, o, ubeskrivelige Sandhedens Magt i denne Qvinde, der mægtigt udtrykker Afmagten, at hun formaaer bogstaveligen Intet: hun elskede meget.«</p>
-    </note>
-    <note type="commentary" xml:id="eot-54" n="268,30">
-      <label><hi rendition="#bol">kjøber en Alabaster-Krukke ... for at tage med sig</hi></label>
-      <p>hentyder til <rs type="bible">Luk 7,37</rs> (<ptr type="commentary" target="#eot-6" n="263,2"/>).</p>
-    </note>
-    <note type="commentary" xml:id="eot-55" n="268,31">
-      <label><hi rendition="#bol">Skriftens Ord: »naar Du faster ... Din Fader, som er i Løndom.«</hi></label>
-      <p>forkortet citat fra <rs type="bible">Matt 6,17-18</rs>, hvor <persName key="Jesus">Jesus</persName> siger: »Men naar du faster, da salv dit Hoved, og toe [vask] dit Ansigt, at ikke Menneskene skulle [skal] see dig faste, men din Fader, som er i Løndom, og din Fader, som seer i Løndom, skal betale dig aabenbare [på en tydelig måde]« (NT-1819).</p>
-    </note>
-    <note type="commentary" xml:id="eot-56" n="268,33">
-      <label><hi rendition="#bol">Festlig gaaer hun da til Gjestebudet</hi></label>
-      <p>hentyder til, at salvning var ensbetydende med forberedelse til fest (jf. <rs type="bible">Sl 45,8</rs>; <rs type="bible">Es 61,3</rs>), og at det at salve sig var udtryk for glæde og velvære, mens det at undlade at salve sig var tegn på sorg (jf. fx <rs type="bible">2 Sam 12,20</rs> og 14,2) el. på faste (jf. foregående kommentar).</p>
-    </note>
-    <note type="commentary" xml:id="eot-104" n="268,34">
-      <label><hi rendition="#bol">hvo</hi></label>
-      <p>hvem.</p>
-    </note>
-    <note type="commentary" xml:id="eot-57" n="269,1">
-      <label><hi rendition="#bol">betydede</hi> hende</label>
-      <p>betød for.</p>
-    </note>
-    <note type="commentary" xml:id="eot-59" n="269,4">
-      <label><hi rendition="#bol">ødsler hun – ja, det var Judas's Mening</hi></label>
-      <p>hentyder dels til <rs type="bible">Matt 26,6-13</rs> (<ptr type="commentary" target="#eot-21" n="264,1"/>), dels til beretningen i <rs type="bible">Joh 12,1-8</rs> om salvningen i <placeName>Betania</placeName>, hvor det fortælles, at <persName key="Lazarus">Lazarus</persName> og hans to søstre, <persName key="Martha">Martha</persName> og <persName key="Maria, Marthas søster">Maria</persName> (<ptr type="commentary" target="#eot-19" n="263,22"/>), seks dage før påske holdt et festmåltid for <persName key="Jesus">Jesus</persName>, og at Maria da salvede Jesu fødder med en kostbar nardusolie og tørrede dem med sit hovedhår. »<persName key="Judas">Judas Iskariot</persName>, en af Jesu disciple, han, som skulle forråde ham, sagde da: 'Hvorfor er denne olie ikke blevet solgt for tre hundrede denarer og givet til de fattige?' Det sagde han ikke, fordi han brød sig om de fattige, men fordi han var en tyv; han var nemlig den, der stod for pengekassen, og han stak noget til side af det, der blev lagt i den«, v. 4-6.</p>
-    </note>
-    <note type="commentary" xml:id="eot-105" n="269,7">
-      <label><hi rendition="#bol">festlig svarende til Gjestebudet</hi></label>
-      <p>hentyder formentlig til, at det hørte til den gæstfrie værts pligter at salve gæstens hoved, jf. <rs type="bible">Sl 23,5</rs> og <rs type="bible">Luk 7,46</rs> (<ptr type="commentary" target="#eot-6" n="263,2"/>).</p>
-    </note>
-    <note type="commentary" xml:id="eot-60" n="269,13">
-      <label><hi rendition="#bol">hun græder</hi></label>
-      <p>hentyder til <rs type="bible">Luk 7,38</rs> (<ptr type="commentary" target="#eot-6" n="263,2"/>).</p>
-    </note>
-    <note type="commentary" xml:id="eot-61" n="269,19">
-      <label><hi rendition="#bol">har sat sig ved Christi Fødder</hi></label>
-      <p>hentyder til <rs type="bible">Luk 7,38</rs> (<ptr type="commentary" target="#eot-6" n="263,2"/>).</p>
-    </note>
-    <note type="commentary" xml:id="eot-62" n="269,24">
-      <label><hi rendition="#bol">hun salver Christi Fødder med Salve ... græder</hi></label>
-      <p>hentyder til <rs type="bible">Luk 7,38</rs> (<ptr type="commentary" target="#eot-6" n="263,2"/>).</p>
-    </note>
-    <note type="commentary" xml:id="eot-63" n="269,32">
-      <label><hi rendition="#bol">han ubetinget formaaer Alt</hi></label>
-      <p><ptr type="commentary" target="#eot-53" n="268,18"/>; allusion til <rs type="bible">Matt 19,26</rs> og <rs type="bible">Luk 1,37</rs> (<ptr type="commentary" target="#eot-10" n="263,12"/>).</p>
-    </note>
-    <note type="commentary" xml:id="eot-64" n="269,34">
-      <label><hi rendition="#bol">hører hun ham tale med de ... Tilstedeværende</hi></label>
-      <p>hentyder til <rs type="bible">Luk 7,40-47</rs> (<ptr type="commentary" target="#eot-6" n="263,2"/>).</p>
-    </note>
-    <note type="commentary" xml:id="eot-65" n="269,35">
-      <label><hi rendition="#bol">da han taler om ... Forskjel paa Skyldnere ... elsker mere end den Sidste</hi></label>
-      <p>hentyder til <rs type="bible">Luk 7,41-43</rs> (<ptr type="commentary" target="#eot-6" n="263,2"/>). –
-        <hi rendition="#bol">Penninge:</hi> mønter af ringe værdi. I den gr. tekst er der tale om 'denarer'; en denar var en rom. mønt af ca. 4 g sølv. –
-        <hi rendition="#bol">billigt:</hi> rimeligt.</p>
-    </note>
-    <note type="commentary" xml:id="eot-67" n="270,8">
-      <label><hi rendition="#bol">at være som Fraværende ... skjøndt den Nærværende, om hvem Talen er</hi></label>
-      <p>sml. følgende passage i »III. Luc. VII, 47« i <hi rendition="#ita">»Ypperstepræsten«
+        »Synderinden« tre Taler ved Altergangen om Fredagen</hi> (1849): »<hi xml:id="id609ca1c6-92d2-4d15-931c-5997bd0220e1" rendition="#ita">Ja, hun elskede meget.</hi> 'Hun satte sig ved Christi Fødder, vædede dem med Graad, aftørrede dem med sit Hovedhaar' – hun udtrykker: jeg formaaer bogstaveligen slet Intet, Han formaaer ubetinget Alt«, <ref xml:id="idb49ba237-afde-4fe3-9ba4-a290cf51ff3e" target="../YTS/txt.xml#ss276" type="publishedWritings" n="276"><hi xml:id="idc7301925-f5ba-4822-af9b-53d780aab016" rendition="#ita">SKS</hi> 11, 276</ref>,6-8; og videre i samme afsnit, s. 276,19-22: »O, evige Sandhed, at Han formaaer ubetinget Alt; o, ubeskrivelige Sandhed i denne Qvinde, o, ubeskrivelige Sandhedens Magt i denne Qvinde, der mægtigt udtrykker Afmagten, at hun formaaer bogstaveligen Intet: hun elskede meget.«</p>
+        </note>
+        <note type="commentary" xml:id="eot-54" n="268,30">
+          <label xml:id="id47213548-ed8c-4fdb-b6da-ec50cd207db5">
+            <hi xml:id="id75841af4-3a3e-49c7-bd21-2edeb7733c29" rendition="#bol">kjøber en Alabaster-Krukke ... for at tage med sig</hi>
+          </label>
+          <p xml:id="id43184163-5683-465e-a4d9-b982f020fc2c">hentyder til <rs xml:id="id2d25ac80-1401-4021-a620-79ab0496fa6a" type="bible">Luk 7,37</rs> (<ptr xml:id="id21270b18-8eae-487d-8486-ef5caa691b54" type="commentary" target="#eot-6" n="263,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="eot-55" n="268,31">
+          <label xml:id="id59664ea1-d386-478a-877c-c2d4bba53cd0">
+            <hi xml:id="id653358c1-18d2-44ce-b181-ded0806cb58e" rendition="#bol">Skriftens Ord: »naar Du faster ... Din Fader, som er i Løndom.«</hi>
+          </label>
+          <p xml:id="idbe5edff1-429b-4e13-b693-b5d5b3537a8b">forkortet citat fra <rs xml:id="idd1978aa5-6fb8-42c3-8731-f132792bd6ba" type="bible">Matt 6,17-18</rs>, hvor <persName xml:id="id3c0f5f1e-b810-4660-9f48-a233059097be" key="Jesus">Jesus</persName> siger: »Men naar du faster, da salv dit Hoved, og toe [vask] dit Ansigt, at ikke Menneskene skulle [skal] see dig faste, men din Fader, som er i Løndom, og din Fader, som seer i Løndom, skal betale dig aabenbare [på en tydelig måde]« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="eot-56" n="268,33">
+          <label xml:id="id95310636-5f42-4525-bf6f-f4d86ea01403">
+            <hi xml:id="idf3d612b0-abb3-4248-9562-865fdb79558f" rendition="#bol">Festlig gaaer hun da til Gjestebudet</hi>
+          </label>
+          <p xml:id="idadce4ac3-12ce-44e3-9328-a14d7782616c">hentyder til, at salvning var ensbetydende med forberedelse til fest (jf. <rs xml:id="id5d4c90da-e8db-4028-8ab1-534f943bd662" type="bible">Sl 45,8</rs>; <rs xml:id="id70c71e43-c9e4-4e8d-a711-5171042cef0a" type="bible">Es 61,3</rs>), og at det at salve sig var udtryk for glæde og velvære, mens det at undlade at salve sig var tegn på sorg (jf. fx <rs xml:id="id6877b7a9-1f10-4ced-9d9a-b3da4c96d47e" type="bible">2 Sam 12,20</rs> og 14,2) el. på faste (jf. foregående kommentar).</p>
+        </note>
+        <note type="commentary" xml:id="eot-104" n="268,34">
+          <label xml:id="ideaa4dd0e-9c51-4fc6-9930-aa79c4170667">
+            <hi xml:id="id73c46915-decd-41a5-b949-b98e65fb5098" rendition="#bol">hvo</hi>
+          </label>
+          <p xml:id="id5dac7756-8028-4f0b-9753-539887479975">hvem.</p>
+        </note>
+        <note type="commentary" xml:id="eot-57" n="269,1">
+          <label xml:id="id5f9c6746-1919-4408-8674-803ccbd19233"><hi xml:id="id1ae97d55-6c6e-4c82-b9f5-913244ed7ad1" rendition="#bol">betydede</hi> hende</label>
+          <p xml:id="idc1c71dfc-f93b-4014-ad2b-61903ef14ce6">betød for.</p>
+        </note>
+        <note type="commentary" xml:id="eot-59" n="269,4">
+          <label xml:id="id40b6a6c2-743a-41f9-bfa8-1227a10444c1">
+            <hi xml:id="ide016d857-cddf-459d-8d82-ababb384ac61" rendition="#bol">ødsler hun – ja, det var Judas's Mening</hi>
+          </label>
+          <p xml:id="id6540df33-b0cd-4725-b419-3c534dcae087">hentyder dels til <rs xml:id="id4e106bc9-c202-4de8-bd82-9936cfc1a123" type="bible">Matt 26,6-13</rs> (<ptr xml:id="idcc87cba5-2b3d-4b95-9835-08bbb0f36b4d" type="commentary" target="#eot-21" n="264,1"/>), dels til beretningen i <rs xml:id="id9108a484-8a04-41ad-a363-5f334ccefbc6" type="bible">Joh 12,1-8</rs> om salvningen i <placeName xml:id="id9606fee1-020d-4cd8-a1e4-e497f0cbe209">Betania</placeName>, hvor det fortælles, at <persName xml:id="id7e1d0cf3-41f2-4039-901c-17f058e7dd5b" key="Lazarus">Lazarus</persName> og hans to søstre, <persName xml:id="id69c87362-4d41-4808-9dfb-9f3fe9b9d270" key="Martha">Martha</persName> og <persName xml:id="id9dbdaa9b-c417-4c87-bb73-4d29c3b38205" key="Maria, Marthas søster">Maria</persName> (<ptr xml:id="idb0d88e84-aab8-43c9-9b18-4d06faaebdab" type="commentary" target="#eot-19" n="263,22"/>), seks dage før påske holdt et festmåltid for <persName xml:id="id4aa105e6-24a0-475f-9225-dc4c67ae1ed7" key="Jesus">Jesus</persName>, og at Maria da salvede Jesu fødder med en kostbar nardusolie og tørrede dem med sit hovedhår. »<persName xml:id="id331183dc-ded0-4b99-afab-66442a5bd842" key="Judas">Judas Iskariot</persName>, en af Jesu disciple, han, som skulle forråde ham, sagde da: 'Hvorfor er denne olie ikke blevet solgt for tre hundrede denarer og givet til de fattige?' Det sagde han ikke, fordi han brød sig om de fattige, men fordi han var en tyv; han var nemlig den, der stod for pengekassen, og han stak noget til side af det, der blev lagt i den«, v. 4-6.</p>
+        </note>
+        <note type="commentary" xml:id="eot-105" n="269,7">
+          <label xml:id="idc465710f-57a5-4a5a-8d02-ce182199ff24">
+            <hi xml:id="id9e6e3323-e667-412f-8865-e84997fbe9ab" rendition="#bol">festlig svarende til Gjestebudet</hi>
+          </label>
+          <p xml:id="iddcb27a47-8f14-4519-8b29-85c5bbbcbdc5">hentyder formentlig til, at det hørte til den gæstfrie værts pligter at salve gæstens hoved, jf. <rs xml:id="ida2c50b8e-568e-4f83-905e-8b818b6c161b" type="bible">Sl 23,5</rs> og <rs xml:id="id76ecbf9b-d65a-4d13-9a0f-e3f6353e9677" type="bible">Luk 7,46</rs> (<ptr xml:id="idcc548f33-ded1-40f9-a419-6dcf1c660e3d" type="commentary" target="#eot-6" n="263,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="eot-60" n="269,13">
+          <label xml:id="idf4364d6e-6148-4ce5-886c-972420c5db31">
+            <hi xml:id="idaf7a541e-7513-430f-b7bd-de4cf47199b1" rendition="#bol">hun græder</hi>
+          </label>
+          <p xml:id="id95929506-1aa0-4485-99f1-be426c2b4811">hentyder til <rs xml:id="id9e1ff628-c9c5-4152-8f68-13ad338c8768" type="bible">Luk 7,38</rs> (<ptr xml:id="id9e03e7cf-e710-4bec-86f0-2684f0796e6c" type="commentary" target="#eot-6" n="263,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="eot-61" n="269,19">
+          <label xml:id="idf73e3a4f-81c7-4455-aa2e-708b5daafa57">
+            <hi xml:id="iddb1ff2bc-1257-41e9-99ac-348c98ceb76d" rendition="#bol">har sat sig ved Christi Fødder</hi>
+          </label>
+          <p xml:id="id7edfa03b-f618-4c5e-812c-68859de7341a">hentyder til <rs xml:id="idd2140c92-4d93-47f3-8336-0620b6b4ee31" type="bible">Luk 7,38</rs> (<ptr xml:id="id66e51daa-dec0-4af4-941e-1f63c471b809" type="commentary" target="#eot-6" n="263,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="eot-62" n="269,24">
+          <label xml:id="idbba9dbd5-217e-4811-b89e-6631b1036126">
+            <hi xml:id="id6d79e2c5-4376-4b3a-be95-2dd3dfe0c2a9" rendition="#bol">hun salver Christi Fødder med Salve ... græder</hi>
+          </label>
+          <p xml:id="idc1098cf2-f51c-479e-b019-82a70c3f0100">hentyder til <rs xml:id="idd96e43bf-d66a-4958-9192-042197e86e3a" type="bible">Luk 7,38</rs> (<ptr xml:id="idd469a246-0b55-4813-b479-930e96948362" type="commentary" target="#eot-6" n="263,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="eot-63" n="269,32">
+          <label xml:id="id1d0d479d-b1f1-41c4-bde3-d75bcca4e06d">
+            <hi xml:id="ide7ee0106-1f00-4a8f-8d51-c5841584d3fe" rendition="#bol">han ubetinget formaaer Alt</hi>
+          </label>
+          <p xml:id="id166c56ec-8de3-4cf3-a7a3-cb7a6aaacc00"><ptr xml:id="id94279a14-c27b-4c7d-8f00-e865dd24ca2b" type="commentary" target="#eot-53" n="268,18"/>; allusion til <rs xml:id="idd6e0e9e8-c89b-4dbf-978c-2c050ec56691" type="bible">Matt 19,26</rs> og <rs xml:id="idb2e75129-aff9-4752-8707-37563ff559f9" type="bible">Luk 1,37</rs> (<ptr xml:id="id8b509739-13ff-4369-b05f-f6e8b441d27b" type="commentary" target="#eot-10" n="263,12"/>).</p>
+        </note>
+        <note type="commentary" xml:id="eot-64" n="269,34">
+          <label xml:id="idee0a985b-4196-4812-b846-a583a4effd74">
+            <hi xml:id="id30beabe3-4f07-4458-a971-17f5b1dfeb81" rendition="#bol">hører hun ham tale med de ... Tilstedeværende</hi>
+          </label>
+          <p xml:id="idd228ce36-cb00-4ff8-a804-3e2e737cd1e0">hentyder til <rs xml:id="id837a69c7-d262-47f4-b8c0-291e70183782" type="bible">Luk 7,40-47</rs> (<ptr xml:id="id6e45a043-f15d-42c1-a60f-394da55ac13d" type="commentary" target="#eot-6" n="263,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="eot-65" n="269,35">
+          <label xml:id="id26608d5f-9e8f-4d60-a515-b05ff56e033c">
+            <hi xml:id="ida37dbdfc-2b09-43aa-a57c-2a2190e50a3b" rendition="#bol">da han taler om ... Forskjel paa Skyldnere ... elsker mere end den Sidste</hi>
+          </label>
+          <p xml:id="id3d9c3622-8c42-4c6d-8dd5-b254a936b261">hentyder til <rs xml:id="idcefd58c8-0e46-40c7-aac6-850a564e92f7" type="bible">Luk 7,41-43</rs> (<ptr xml:id="ida7498323-a136-4b80-8853-26834d7f291f" type="commentary" target="#eot-6" n="263,2"/>). –
+        <hi xml:id="id69c474ab-6e8b-4eb0-a994-3bfee2d0562b" rendition="#bol">Penninge:</hi> mønter af ringe værdi. I den gr. tekst er der tale om 'denarer'; en denar var en rom. mønt af ca. 4 g sølv. –
+        <hi xml:id="id75eab6a6-b6f9-4298-81a2-c2ee77298937" rendition="#bol">billigt:</hi> rimeligt.</p>
+        </note>
+        <note type="commentary" xml:id="eot-67" n="270,8">
+          <label xml:id="id9777dbd8-e6c7-4400-b7a9-4e49722cac3c">
+            <hi xml:id="ida6bbed68-7c33-47bd-b4ac-051ccd83cf2e" rendition="#bol">at være som Fraværende ... skjøndt den Nærværende, om hvem Talen er</hi>
+          </label>
+          <p xml:id="id5d2b2ee1-2773-4e69-98f8-672e4f12ac4c">sml. følgende passage i »III. Luc. VII, 47« i <hi xml:id="id4fc87d1e-f281-4db1-8af1-e36b2ce63a09" rendition="#ita">»Ypperstepræsten«
         – »Tolderen« –
-        »Synderinden« tre Taler ved Altergangen om Fredagen</hi> (1849): »Og det er næsten som betragtede Frelseren selv et Øieblik hende og Sagen saaledes, som var hun ikke et virkeligt Menneske, men et Billede. Vistnok [helt sikkert, givetvis] for at gjøre Anvendelsen paa de Tilstedeværende desto mere indtrængende taler Han ikke <hi rendition="#ita">til</hi> hende, Han siger ikke 'Dig tilgives dine mange Synder, fordi Du elskede meget', Han taler <hi rendition="#ita">om</hi> hende, Han siger: hende ere hendes mange Synder forladne, fordi hun elskede meget; skjøndt hun er nærværende, er det næsten som var hun en Fraværende, det er næsten som forvandlede Han hende til et Billede, en Parabel«, <ref target="../YTS/txt.xml#ss277" type="publishedWritings" n="277"><hi rendition="#ita">SKS</hi> 11, 277</ref>,26-34. Sml. også journaloptegnelsen <ref target="../NB21/txt.xml#n123" type="journalsAndPapers" n="123">NB21:123</ref>, fra sidst i okt. 1850: »Synderinden er næsten kun tilstede som in effigie, og dog er hun Den, om hvem der handles, den Nærværende«, <hi rendition="#ita">SKS</hi> 24, 74. Med det lat. udtryk 'in effigie' (egl. 'efter form' el. 'billede deraf') spilles der på vendingen: at brænde en in effigie, dvs. brænde ens billede pga. vedkommendes fysiske fravær.</p>
-    </note>
-    <note type="commentary" xml:id="eot-68" n="270,11">
-      <label><hi rendition="#bol">»hende ere hendes mange Synder forladne«</hi></label>
-      <p>frit citat fra <rs type="bible">Luk 7,47</rs> (<ptr type="commentary" target="#eot-6" n="263,2"/>).</p>
-    </note>
-    <note type="commentary" xml:id="eot-69" n="270,12">
-      <label><hi rendition="#bol">han tilføier: »fordi hun elskede meget.«</hi></label>
-      <p>frit citat fra <rs type="bible">Luk 7,47</rs> (<ptr type="commentary" target="#eot-6" n="263,2"/>).</p>
-    </note>
-    <note type="commentary" xml:id="eot-70" n="270,16">
-      <label><hi rendition="#bol">prisedes</hi></label>
-      <p>lovpristes.</p>
-    </note>
-    <note type="commentary" xml:id="eot-110" n="270,17">
-      <label><hi rendition="#bol">fordi han elskede meget</hi></label>
-      <p>Rent grammatisk set kan den pågældende sætning i den gr. tekst (ὅτι
+        »Synderinden« tre Taler ved Altergangen om Fredagen</hi> (1849): »Og det er næsten som betragtede Frelseren selv et Øieblik hende og Sagen saaledes, som var hun ikke et virkeligt Menneske, men et Billede. Vistnok [helt sikkert, givetvis] for at gjøre Anvendelsen paa de Tilstedeværende desto mere indtrængende taler Han ikke <hi xml:id="id0dccf1fa-2936-44c3-b86d-49be29eb2fce" rendition="#ita">til</hi> hende, Han siger ikke 'Dig tilgives dine mange Synder, fordi Du elskede meget', Han taler <hi xml:id="id7f512a88-56da-4d01-b28e-a01d65347d7d" rendition="#ita">om</hi> hende, Han siger: hende ere hendes mange Synder forladne, fordi hun elskede meget; skjøndt hun er nærværende, er det næsten som var hun en Fraværende, det er næsten som forvandlede Han hende til et Billede, en Parabel«, <ref xml:id="id6fd8e051-93b6-48c3-9c05-0ecd3a2df0c8" target="../YTS/txt.xml#ss277" type="publishedWritings" n="277"><hi xml:id="id2978145c-9de1-4e18-b8f2-426fc972de75" rendition="#ita">SKS</hi> 11, 277</ref>,26-34. Sml. også journaloptegnelsen <ref xml:id="id1535322e-504a-423e-aebd-71cd5b94ba14" target="../NB21/txt.xml#n123" type="journalsAndPapers" n="123">NB21:123</ref>, fra sidst i okt. 1850: »Synderinden er næsten kun tilstede som in effigie, og dog er hun Den, om hvem der handles, den Nærværende«, <hi xml:id="idf2c04ecc-d1cf-42b4-b237-9e264594d8a1" rendition="#ita">SKS</hi> 24, 74. Med det lat. udtryk 'in effigie' (egl. 'efter form' el. 'billede deraf') spilles der på vendingen: at brænde en in effigie, dvs. brænde ens billede pga. vedkommendes fysiske fravær.</p>
+        </note>
+        <note type="commentary" xml:id="eot-68" n="270,11">
+          <label xml:id="id5ab0bb4e-d607-4cc1-82d4-ce14a54e2c98">
+            <hi xml:id="idd905752e-f17e-4afb-9bf1-148a5d39052d" rendition="#bol">»hende ere hendes mange Synder forladne«</hi>
+          </label>
+          <p xml:id="ide01b86e5-df7c-4a43-8529-d44e9520d945">frit citat fra <rs xml:id="id55e4e19f-1f16-4860-9e45-44cdfadadd02" type="bible">Luk 7,47</rs> (<ptr xml:id="id2367d4a2-57cd-4f62-b84d-c3ee1ceb7832" type="commentary" target="#eot-6" n="263,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="eot-69" n="270,12">
+          <label xml:id="id8969aadc-da40-4efc-82fd-f5dd363aa2a8">
+            <hi xml:id="id5d92f03a-b4ea-4597-ad9d-7635b02ea2ec" rendition="#bol">han tilføier: »fordi hun elskede meget.«</hi>
+          </label>
+          <p xml:id="idfdf5742d-76bb-4d70-bd34-259f523cfe0f">frit citat fra <rs xml:id="id1d6915d5-09a5-4a1c-8a42-cf360204486a" type="bible">Luk 7,47</rs> (<ptr xml:id="id48ccabca-ac97-47b5-a272-99b55b4a5f7c" type="commentary" target="#eot-6" n="263,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="eot-70" n="270,16">
+          <label xml:id="id2657ee5c-b8bf-4bc1-9121-9ef7824585f8">
+            <hi xml:id="id28c56a7d-b664-44ec-8a7f-0311067a849d" rendition="#bol">prisedes</hi>
+          </label>
+          <p xml:id="id85d4d015-5bab-4269-a9db-fd269484b399">lovpristes.</p>
+        </note>
+        <note type="commentary" xml:id="eot-110" n="270,17">
+          <label xml:id="id7e516dbc-7b76-4b6d-9e4a-0b3de8966b4e">
+            <hi xml:id="ide8599f74-b190-4732-be75-65423e580ed9" rendition="#bol">fordi han elskede meget</hi>
+          </label>
+          <p xml:id="id9d9b9044-8665-4acd-94eb-56a7d0e29c96">Rent grammatisk set kan den pågældende sætning i den gr. tekst (ὅτι
         ἠγάπησεν
         πολύ (hóti ēgápēsen polý)) lige så vel gengives med 'fordi han elskede meget' som oversættes med 'fordi hun elskede meget'. Det er formentlig dette grammatiske forhold i den gr. tekst, SK omsætter til da. forhold, når han antager en mulig hørefejl hos kvinden, så hun har hørt 'han' for 'hun'.</p>
-    </note>
-    <note type="commentary" xml:id="eot-72" n="270,21">
-      <label>kunde hun selv <hi rendition="#bol">sagt</hi></label>
-      <p>have sagt.</p>
-    </note>
-    <note type="commentary" xml:id="eot-73" n="270,22">
-      <label><hi rendition="#bol">Hvo</hi></label>
-      <p>hvem.</p>
-    </note>
-    <note type="commentary" xml:id="eot-74" n="270,26">
-      <label>vi <hi rendition="#bol">skulle</hi></label>
-      <p>skal.</p>
-    </note>
-    <note type="commentary" xml:id="eot-75" n="270,30">
-      <label><hi rendition="#bol">er Den, der overvinder sig selv, større end Den, der indtager en Stad</hi></label>
-      <p>hentyder til <rs type="bible">Ordsp 16,32</rs>: »En Langmodig er bedre end en Helt; og den, som hersker over sit Sind, bedre end den, der indtager en Stad«, i <persName key="Møller, Jens">Jens Møller</persName>s oversættelse af »Salomos Ordsprog« i <hi rendition="#ita"><title>Det Gamle Testaments poetiske og prophetiske Skrifter, efter Grundtexten paa ny oversatte</title></hi> af J. Møller og <persName key="Møller, Rasmus">R. Møller</persName>, bd. 1-3, <placeName key="København">Kbh</placeName>. 1828-30, ktl. 86-88 og ktl. 89-91; bd. 1, s. 373.</p>
-    </note>
-    <note type="commentary" xml:id="eot-76" n="271,7">
-      <label><hi rendition="#bol">Formastelse</hi></label>
-      <p>dumdristighed, hovmod, bespottelse.</p>
-    </note>
-    <note type="commentary" xml:id="eot-77" n="271,8">
-      <label><hi rendition="#bol">falde paa</hi></label>
-      <p>finde på, komme på.</p>
-    </note>
-    <note type="commentary" xml:id="eot-78" n="271,9">
-      <label><hi rendition="#bol">for</hi> Gud</label>
-      <p>over for, i forhold til.</p>
-    </note>
-    <note type="commentary" xml:id="eot-79" n="271,12">
-      <label><hi rendition="#bol">uden</hi></label>
-      <p>undtagen.</p>
-    </note>
-    <note type="commentary" xml:id="eot-80" n="271,20">
-      <label><hi rendition="#bol">»at eet Ord af ham helbreder for Evigheder«</hi></label>
-      <p>sammentrukket, frit citat fra den da. forf. og salmedigter <persName key="Ingemann, Bernhard Severin">B.S. Ingemann</persName>s salme »O Herre! kommer Sorgens Stund hernede«, strofe 5: »O du, som vende kan al Verdens Smerte! / Du selv i Qval mig Himmelglæden lærte; / Eet Ord af dig mig frelser og helbreder / For Evigheder«, <hi rendition="#ita">Tillæg til den evangelisk-christelige Psalmebog,</hi>
-        <placeName key="København">Kbh</placeName>. 1845, nr. 596, s. 38f. (tillægget blev, separat pagineret, optaget bagest i <hi rendition="#ita"><title>Evangelisk-christelig Psalmebog</title>,</hi> Kbh. 1845 [1798], ktl. 197). Salmen udkom i B.S. Ingemanns <hi rendition="#ita">Høimesse-Psalmer til Kirkeaarets Helligdage,</hi> Kbh. 1825, som nr. XIII med angivelsen: »Tredie Søndag efter Helligtrekongersdag./(Evang. Matth. 8 C. 1 V. <persName key="Jesus">Jesus</persName> gik ned af Bjerget.)«</p>
-    </note>
-    <note type="commentary" xml:id="eot-81" n="271,23">
-      <label><hi rendition="#bol">vistnok</hi></label>
-      <p>sandt nok.</p>
-    </note>
-    <note type="commentary" xml:id="eot-106" n="271,25">
-      <label><hi rendition="#bol">Samtidigheden med Christus</hi></label>
-      <p>se fx »Standsningen«, afsnit IV »Christendommen som det Absolute; Samtidigheden med Christus«, i »'Kommer hid alle I som arbeide og ere besværede, jeg vil give Eder Hvile.' Til Opvækkelse og Inderliggjørelse«, nr. I i <hi rendition="#ita">Indøvelse i Christendom</hi> (1850), i <ref target="../IC/txt.xml#ss74" type="publishedWritings" n="74"><hi rendition="#ita">SKS</hi> 12, 74</ref>-78; og nr. VI i »Fra Høiheden vil han drage Alle til sig. Christelige Udviklinger«, nr. III i <hi rendition="#ita">Indøvelse i Christendom,</hi> i <ref target="../IC/txt.xml#ss227" type="publishedWritings" n="227"><hi rendition="#ita">SKS</hi> 12, 227</ref>-249.</p>
-    </note>
-    <note type="commentary" xml:id="eot-85" n="272,2">
-      <label><hi rendition="#bol">hans Død som Forsoningen</hi></label>
-      <p>jf. kap. 4 »Om Menneskets Opreisning ved Jesum Christum, Guds Søn, af sin Fordærvelse«, § 7.c, i <hi rendition="#ita"><title>Lærebog i den Evangelisk-christelige Religion, indrettet til Brug i de danske Skoler</title></hi> (af <persName key="Balle, Nicolaj Edinger">N.E. Balle</persName> og <persName key="Bastholm, Christian">C.B. Bastholm</persName>, gerne omtalt som <hi rendition="#ita"><title>Balles Lærebog</title></hi>), <placeName key="København">Kbh</placeName>. 1824 [1791], ktl. 183, s. 44: »<hi rendition="#ita">Jesus taalte sine Lidelser i alle Synderes Sted, og for os alle, paa det at</hi> [for at] <hi rendition="#ita">han kunde giøre Forsoning for vore mange Overtrædelser,</hi> ved at lide den Straf, hvilken vi alle havde fortient; og herved blev det da mueligt, at Gud kunde tilgive vore Synder, uden at handle imod sin egen Retfærdighed, eller fornærme sin Lov, og svække sit Herredømme.«</p>
-    </note>
-    <note type="commentary" xml:id="eot-87" n="272,5">
-      <label><hi rendition="#bol">i levende Live kan siges at bære Verdens Synder</hi></label>
-      <p>hentyder til <rs type="bible">Joh 1,29</rs>, hvor <persName key="Johannes Døber">Johannes Døber</persName> siger om <persName key="Jesus">Jesus</persName>: »Se, dér er Guds lam, som bærer verdens synd.«</p>
-    </note>
-    <note type="commentary" xml:id="eot-107" n="272,10">
-      <label><hi rendition="#bol">naar Christus forkynder ... som Forbilledet ... de falde fra, selv Apostlene</hi></label>
-      <p>sml. journaloptegnelsen NB14:78, fra nov. el. dec. 1849: »Al den Tale om at ønske, at have været samtidig med Χstus [Kristus], er ved nærmere Eftersyn endog formastelig [hovmodig, bespottelig]; thi det er jo at indbilde sig selv, at man duede til at være Apostel. Og selv Apostlene faldt jo fra, og de maatte udrustes med overordentlige gudd. [guddommelige] Kræfter for at være ɔ: for at kunne udholde at være samtidige med ham – det bedste Beviis, at Ingen kan ved sig selv udholde at være samtidig med ham. <hi rendition="#ita">(...)</hi>
+        </note>
+        <note type="commentary" xml:id="eot-72" n="270,21">
+          <label xml:id="idea58367e-f1b8-4da6-834a-dec99cb4b803">kunde hun selv <hi xml:id="id6abb29bf-e593-4234-ba0b-950c94266b50" rendition="#bol">sagt</hi></label>
+          <p xml:id="id002aca85-9834-48c8-9027-bbd190dd36d0">have sagt.</p>
+        </note>
+        <note type="commentary" xml:id="eot-73" n="270,22">
+          <label xml:id="idf1a1277a-154e-46cc-ad6d-e41d6ebe9683">
+            <hi xml:id="id14b07def-3e6b-4be7-80bc-56b532301ef6" rendition="#bol">Hvo</hi>
+          </label>
+          <p xml:id="id00f12f96-d61e-4a74-89bd-1c0b9aa703dc">hvem.</p>
+        </note>
+        <note type="commentary" xml:id="eot-74" n="270,26">
+          <label xml:id="id2e75af7e-a35e-4104-8aec-3dce8f658b25">vi <hi xml:id="ida9a61af1-1301-4f49-90e4-90f9b125ce05" rendition="#bol">skulle</hi></label>
+          <p xml:id="id9c483bd5-138b-420b-b90d-cf456c40c3ef">skal.</p>
+        </note>
+        <note type="commentary" xml:id="eot-75" n="270,30">
+          <label xml:id="idba40adc7-9c8b-404d-ba82-1a41ea853c88">
+            <hi xml:id="id595c9c47-36b6-4129-8261-ab9a8d0548bf" rendition="#bol">er Den, der overvinder sig selv, større end Den, der indtager en Stad</hi>
+          </label>
+          <p xml:id="id97e952b4-2ba1-4815-b5d4-98fc64372e1b">hentyder til <rs xml:id="idf1380df1-0a44-4388-8f2e-c375a322a58b" type="bible">Ordsp 16,32</rs>: »En Langmodig er bedre end en Helt; og den, som hersker over sit Sind, bedre end den, der indtager en Stad«, i <persName xml:id="id0300c2c7-1ade-446c-988e-b7bd86febf1d" key="Møller, Jens">Jens Møller</persName>s oversættelse af »Salomos Ordsprog« i <hi xml:id="id2a599ccd-2933-4e80-8e53-11c71b277dea" rendition="#ita"><title xml:id="id4853c461-85d6-4baf-8a79-7e508b7c9ed1">Det Gamle Testaments poetiske og prophetiske Skrifter, efter Grundtexten paa ny oversatte</title></hi> af J. Møller og <persName xml:id="idd9d9be8a-20d2-416e-b01f-0c1bf0ccb87a" key="Møller, Rasmus">R. Møller</persName>, bd. 1-3, <placeName xml:id="id36852aab-6ead-42c9-91a1-0f2bedc00c6b" key="København">Kbh</placeName>. 1828-30, ktl. 86-88 og ktl. 89-91; bd. 1, s. 373.</p>
+        </note>
+        <note type="commentary" xml:id="eot-76" n="271,7">
+          <label xml:id="id64fdba26-bcbc-452c-bea0-3dc44c34f7bc">
+            <hi xml:id="id2397b992-73c3-43e8-b387-e237d4b4816a" rendition="#bol">Formastelse</hi>
+          </label>
+          <p xml:id="ida346d929-c51c-481a-b4cd-9bef10c1cd21">dumdristighed, hovmod, bespottelse.</p>
+        </note>
+        <note type="commentary" xml:id="eot-77" n="271,8">
+          <label xml:id="id44e999d0-0391-4343-8837-dd426fb180a1">
+            <hi xml:id="id89080a79-55c3-4216-b8e1-254ef8cadd2c" rendition="#bol">falde paa</hi>
+          </label>
+          <p xml:id="id1ab0805e-db4d-4f24-aeb3-0a6b33764d27">finde på, komme på.</p>
+        </note>
+        <note type="commentary" xml:id="eot-78" n="271,9">
+          <label xml:id="id49dd712f-219e-41f1-a0d5-3464bd315ffb"><hi xml:id="id3ea1ce48-ccfa-48b9-ab23-d6e44b97469d" rendition="#bol">for</hi> Gud</label>
+          <p xml:id="id9ab85fc5-6c44-4b81-8ad1-451a986fd856">over for, i forhold til.</p>
+        </note>
+        <note type="commentary" xml:id="eot-79" n="271,12">
+          <label xml:id="id0f59c0ab-3c50-4a2d-8378-5cb54bcb29bd">
+            <hi xml:id="id08e4ff2e-bc13-48de-a171-c68a39b9173d" rendition="#bol">uden</hi>
+          </label>
+          <p xml:id="id83ff5f19-2bd1-45d8-bc1c-d8c45d0cc311">undtagen.</p>
+        </note>
+        <note type="commentary" xml:id="eot-80" n="271,20">
+          <label xml:id="id9cfe10ca-92f5-4ff6-adc3-b4df876ca581">
+            <hi xml:id="id9e71597b-554b-4767-b996-c455df17532a" rendition="#bol">»at eet Ord af ham helbreder for Evigheder«</hi>
+          </label>
+          <p xml:id="id735650d9-f2fe-4372-a369-41d5cf9332ec">sammentrukket, frit citat fra den da. forf. og salmedigter <persName xml:id="id35fb9d44-f5db-4592-a063-9e0fb7a41b0a" key="Ingemann, Bernhard Severin">B.S. Ingemann</persName>s salme »O Herre! kommer Sorgens Stund hernede«, strofe 5: »O du, som vende kan al Verdens Smerte! / Du selv i Qval mig Himmelglæden lærte; / Eet Ord af dig mig frelser og helbreder / For Evigheder«, <hi xml:id="idddde9c79-6fe3-49dc-8223-9fec3cde301d" rendition="#ita">Tillæg til den evangelisk-christelige Psalmebog,</hi>
+        <placeName xml:id="id63267167-b1f7-40c4-9979-c88d06b83f47" key="København">Kbh</placeName>. 1845, nr. 596, s. 38f. (tillægget blev, separat pagineret, optaget bagest i <hi xml:id="idfd1db16a-3edf-4d62-9bbd-87e8400a7092" rendition="#ita"><title xml:id="id826c49d4-3c44-494d-b280-81a454057227">Evangelisk-christelig Psalmebog</title>,</hi> Kbh. 1845 [1798], ktl. 197). Salmen udkom i B.S. Ingemanns <hi xml:id="iddcd8ae4d-e801-4ea3-9298-266410f7c7bb" rendition="#ita">Høimesse-Psalmer til Kirkeaarets Helligdage,</hi> Kbh. 1825, som nr. XIII med angivelsen: »Tredie Søndag efter Helligtrekongersdag./(Evang. Matth. 8 C. 1 V. <persName xml:id="idf1b47527-93ac-4aa9-84d5-a6696dac75eb" key="Jesus">Jesus</persName> gik ned af Bjerget.)«</p>
+        </note>
+        <note type="commentary" xml:id="eot-81" n="271,23">
+          <label xml:id="id0f3606ec-7476-4783-bf35-37179dbb1016">
+            <hi xml:id="idffa00b19-501e-4b01-8194-c4a13be0a4b8" rendition="#bol">vistnok</hi>
+          </label>
+          <p xml:id="iddd196fff-fd17-4029-ade3-bca939c99461">sandt nok.</p>
+        </note>
+        <note type="commentary" xml:id="eot-106" n="271,25">
+          <label xml:id="id887be853-9962-45f3-849f-6a9743bc4250">
+            <hi xml:id="idd566b12b-b6e1-4ea0-81a8-002964f6b3ed" rendition="#bol">Samtidigheden med Christus</hi>
+          </label>
+          <p xml:id="id644fa0fb-f1b6-4147-8b25-6865bd75e8db">se fx »Standsningen«, afsnit IV »Christendommen som det Absolute; Samtidigheden med Christus«, i »'Kommer hid alle I som arbeide og ere besværede, jeg vil give Eder Hvile.' Til Opvækkelse og Inderliggjørelse«, nr. I i <hi xml:id="id7fb87933-0150-4a9a-adb3-21ebb9459721" rendition="#ita">Indøvelse i Christendom</hi> (1850), i <ref xml:id="idc62e203d-aedc-411a-886a-345a0bcf9b0b" target="../IC/txt.xml#ss74" type="publishedWritings" n="74"><hi xml:id="idee447524-eb96-4ad4-a69c-c77029ccfa5c" rendition="#ita">SKS</hi> 12, 74</ref>-78; og nr. VI i »Fra Høiheden vil han drage Alle til sig. Christelige Udviklinger«, nr. III i <hi xml:id="id5e6001e6-92c6-4ae6-b7f9-a56fd59c1a7b" rendition="#ita">Indøvelse i Christendom,</hi> i <ref xml:id="idace6888b-f2b5-48dc-a290-b853de68f794" target="../IC/txt.xml#ss227" type="publishedWritings" n="227"><hi xml:id="ida06acca0-b0f9-4870-a1b3-4fb622fadd5b" rendition="#ita">SKS</hi> 12, 227</ref>-249.</p>
+        </note>
+        <note type="commentary" xml:id="eot-85" n="272,2">
+          <label xml:id="idf172fd86-5695-468e-81a2-be0e426cd6ee">
+            <hi xml:id="id54200d80-8c47-4305-959f-381e50a7cff3" rendition="#bol">hans Død som Forsoningen</hi>
+          </label>
+          <p xml:id="ida56b063b-51cd-42a5-98ce-757a877fa31f">jf. kap. 4 »Om Menneskets Opreisning ved Jesum Christum, Guds Søn, af sin Fordærvelse«, § 7.c, i <hi xml:id="id19a2d64a-cddc-428a-b4e5-9d0465d8bdfa" rendition="#ita"><title xml:id="idd622b1bf-770f-4bcc-9479-98aac4285dcd">Lærebog i den Evangelisk-christelige Religion, indrettet til Brug i de danske Skoler</title></hi> (af <persName xml:id="idd0ae3f24-a625-46c0-a726-628ab7d39a7c" key="Balle, Nicolaj Edinger">N.E. Balle</persName> og <persName xml:id="id5eceb497-f4c1-4e51-aa7f-dd5b28d84486" key="Bastholm, Christian">C.B. Bastholm</persName>, gerne omtalt som <hi xml:id="idcf6c9df9-2436-4cc3-b28d-34541b443e15" rendition="#ita"><title xml:id="ide482aa44-a375-4609-ae34-b432b118371e">Balles Lærebog</title></hi>), <placeName xml:id="ida1bf407e-f33d-4c00-a0b7-c42f3db8f2ea" key="København">Kbh</placeName>. 1824 [1791], ktl. 183, s. 44: »<hi xml:id="idb8178507-1b2f-4c48-9975-285e7b8fa2a3" rendition="#ita">Jesus taalte sine Lidelser i alle Synderes Sted, og for os alle, paa det at</hi> [for at] <hi xml:id="id2dc281ed-4d88-4ebd-ab26-0e16fee3753e" rendition="#ita">han kunde giøre Forsoning for vore mange Overtrædelser,</hi> ved at lide den Straf, hvilken vi alle havde fortient; og herved blev det da mueligt, at Gud kunde tilgive vore Synder, uden at handle imod sin egen Retfærdighed, eller fornærme sin Lov, og svække sit Herredømme.«</p>
+        </note>
+        <note type="commentary" xml:id="eot-87" n="272,5">
+          <label xml:id="id65f48168-419e-4f8a-8d7f-d4ff818b88db">
+            <hi xml:id="idd0d95f86-897e-4615-901d-a31e1f1bd2d0" rendition="#bol">i levende Live kan siges at bære Verdens Synder</hi>
+          </label>
+          <p xml:id="id6288f527-dab8-41d1-9876-5d499f3269b1">hentyder til <rs xml:id="id09edbce4-fdcf-4ee0-aaaa-46ec8278fea5" type="bible">Joh 1,29</rs>, hvor <persName xml:id="id6245d08d-c051-4f01-a778-1bf55bf380f4" key="Johannes Døber">Johannes Døber</persName> siger om <persName xml:id="id94aa658e-e58a-485a-81eb-e0e385301f6f" key="Jesus">Jesus</persName>: »Se, dér er Guds lam, som bærer verdens synd.«</p>
+        </note>
+        <note type="commentary" xml:id="eot-107" n="272,10">
+          <label xml:id="id4b34dc13-500d-4071-988f-d4b6d2da173d">
+            <hi xml:id="id09f0c4b8-843b-4a52-8436-f62c25132b3c" rendition="#bol">naar Christus forkynder ... som Forbilledet ... de falde fra, selv Apostlene</hi>
+          </label>
+          <p xml:id="id28106c67-2349-40b3-826e-38d42a5c7c56">sml. journaloptegnelsen NB14:78, fra nov. el. dec. 1849: »Al den Tale om at ønske, at have været samtidig med Χstus [Kristus], er ved nærmere Eftersyn endog formastelig [hovmodig, bespottelig]; thi det er jo at indbilde sig selv, at man duede til at være Apostel. Og selv Apostlene faldt jo fra, og de maatte udrustes med overordentlige gudd. [guddommelige] Kræfter for at være ɔ: for at kunne udholde at være samtidige med ham – det bedste Beviis, at Ingen kan ved sig selv udholde at være samtidig med ham. <hi xml:id="idc7a42f92-7625-41fa-be47-0800e4912664" rendition="#ita">(...)</hi>
         Χsti Liv har jo ogsaa en anden Betydning, det er Forsoningen. Var Χstus blot Forbilledet, saa var det som en Grusomhed af Ham at drive Sagen saa høit; men Han maae døe – for at frelse Verden.«
-        <hi rendition="#ita">SKS</hi> 22, 390. Sml. også journaloptegnelserne NB15:32, fra jan. 1850, i <hi rendition="#ita">SKS</hi> 23, 26f., og <ref target="../NB20/txt.xml#n23" type="journalsAndPapers" n="23">NB20:23</ref>, fra sommeren 1850, i <hi rendition="#ita">SKS</hi> 23, 404f. –
-        <hi rendition="#bol">de falde fra, selv Apostlene:</hi> hentyder formentlig til <rs type="bible">Matt 26,56</rs>, hvor det fortælles, at alle disciplene lod <persName key="Jesus">Jesus</persName> i stikken og flygtede, da han blev taget til fange. Der kan også være tænkt på, at <persName key="Judas">Judas</persName> forrådte Jesus til ypperstepræsterne, jf. <rs type="bible">Matt 26,14-16</rs>.48, og at <persName key="Peter">Peter</persName> fornægtede Jesus, mens Jesus blev forhørt af ypperstepræsten i Rådet, jf. <rs type="bible">Matt 26,69-75</rs>.</p>
-    </note>
-    <note type="commentary" xml:id="eot-108" n="272,12">
-      <label><hi rendition="#bol">hans Død forandrer uendelig Alt ... det uendelige Forskud</hi></label>
-      <p>sml. journaloptegnelsen NB10:54, fra feb. el. marts 1849: »Der maa ogsaa siges, at det dog i een Forstand er blevet lettere for Menneskene at blive og være Christne efter Christi Død end samtidigen. Hans Forsonings Død maa jo dog anslaaes som et Middel dertil. Desuden mens Han levede, havde Han selv den Opgave at udtrykke Forbilledet, og at tvinge Sandhedens Priis, indtil at de sloge Ham ihiel. Men efter sin Død kan han tillige hjælpe den Christne«, <hi rendition="#ita">SKS</hi> 21, 284,30-35.</p>
-    </note>
-    <note type="commentary" xml:id="eot-91" n="272,15">
-      <label><hi rendition="#bol">er gjort Fyldest <hi rendition="#ita">(...)</hi> at Christus er død for at frelse ham</hi></label>
-      <p>hentyder til den dogmatiske lære om Kristi vikarierende satisfaktion, dvs. stedfortrædende fyldestgørelse, at han som Guds egen Søn med sin frivillige lidelse og død har tilfredsstillet el. forsonet Guds dømmende vrede over menneskenes syndefald og således gjort fyldest for den straf til døden, de ellers var skyldige at lide for deres synd, så at de kan leve og frelses (<ptr type="commentary" target="#eot-85" n="272,2"/>). Sml. bortsendelsesordene efter nadver: »Den korsfæstede og atter opstandne Christus <persName key="Jesus">Jesus</persName>, som nu har bespiset og skienket Eder med sit hellige Legem og Blod, hvormed han har fyldestgiort for alle Eders Synder, han styrke og opholde Eder derved i en sand Tro til det evige Liv!«
-        <hi rendition="#ita"><title>Forordnet Alter-Bog for Danmark</title>,</hi> <placeName key="København">Kbh</placeName>. 1830 [1688], ktl. 381, s. 254.</p>
-    </note>
-    <note type="commentary" xml:id="eot-92" n="272,16">
-      <label><hi rendition="#bol">den Forsagende</hi></label>
-      <p>den opgivende (som udtryk for at opgive modet).</p>
-    </note>
-    <note type="commentary" xml:id="eot-93" n="272,17">
-      <label><hi rendition="#bol">tilforladeligere</hi></label>
-      <p>mere sikkert og pålideligt.</p>
-    </note>
-    <note type="commentary" xml:id="eot-94" n="272,18">
-      <label><hi rendition="#bol">Christi Død er Forsoningen, er Fyldestgjørelsen</hi></label>
-      <p>jf. kap. 4 »Om Menneskets Opreisning ved Jesum Christum, Guds Søn, af sin Fordærvelse«, § 7.c, anmærkning d, i <hi rendition="#ita">Balles Lærebog</hi> (<ptr type="commentary" target="#eot-85" n="272,2"/>), s. 45: »<hi rendition="#ita">Vi bør søge Naade hos Gud ved Jesum Christum allene,</hi> som har paa eengang giort Fyldest for alle Mennesker, og aabnet Adgang for os alle ved sin Lidelse og Død, til at erlange [få] Forladelse for vore Synder, naar vi af Hiertet omvende os, og troe paa ham.«</p>
-    </note>
-    <note type="commentary" xml:id="eot-109" n="272,29">
-      <label><hi rendition="#bol">forhverve</hi></label>
-      <p>erhverve, skaffe.</p>
-    </note>
-    <note type="commentary" xml:id="eot-96" n="272,30">
-      <label><hi rendition="#bol">den Medlevende</hi></label>
-      <p>den samtidige.</p>
-    </note>
-    <note type="commentary" xml:id="eot-97" n="272,31">
-      <label><hi rendition="#bol">hengive mig selv som et Offer for Verdens Synd</hi></label>
-      <p>jf. kap. 4 »Om Menneskets Opreisning ved Jesum Christum, Guds Søn, af sin Fordærvelse«, § 7.c, anmærkning b, i <hi rendition="#ita">Balles Lærebog</hi> (<ptr type="commentary" target="#eot-85" n="272,2"/>), s. 45: »<hi rendition="#ita">Da Jesus opofrede sig selv til en Forsoning for Verdens Synder,</hi> viiste han sig som den rette af Gud beskikkede ypperste Præst, og bragte et Offer til Forligelse, hvilket haver allene Gyldighed for alle i al Evighed.«</p>
-    </note>
-    <note type="commentary" xml:id="eot-98" n="272,34">
-      <label><hi rendition="#bol">Ingen Kjerlighed er større ... sætter sit Liv til for en Anden</hi></label>
-      <p>hentyder til <rs type="bible">Joh 15,13</rs>, hvor <persName key="Jesus">Jesus</persName> siger: »Større kærlighed har ingen end den at sætte sit liv til for sine venner.« Se også
-        <rs type="bible">1 Joh 3,16</rs>.</p>
-    </note>
-    <note type="commentary" xml:id="eot-99" n="272,35">
-      <label><hi rendition="#bol">naar</hi> er</label>
-      <p>hvornår.</p>
-    </note>
-  </div></body></text>
+        <hi xml:id="id60b5a0b6-1cfc-40ea-9c41-dcc28e5f25c6" rendition="#ita">SKS</hi> 22, 390. Sml. også journaloptegnelserne NB15:32, fra jan. 1850, i <hi xml:id="id2a7bb56a-1cf5-48e4-afb3-4fe9628fbc5f" rendition="#ita">SKS</hi> 23, 26f., og <ref xml:id="id3f5fef50-3b73-4743-9efa-8a3f7c8907e4" target="../NB20/txt.xml#n23" type="journalsAndPapers" n="23">NB20:23</ref>, fra sommeren 1850, i <hi xml:id="ida70ed7af-9661-4af7-8822-8abaedd5123f" rendition="#ita">SKS</hi> 23, 404f. –
+        <hi xml:id="id1853f2fb-485d-4fed-9047-430bcab6b3e6" rendition="#bol">de falde fra, selv Apostlene:</hi> hentyder formentlig til <rs xml:id="idc594d669-5a29-4b6d-a939-177a756c7a09" type="bible">Matt 26,56</rs>, hvor det fortælles, at alle disciplene lod <persName xml:id="id8ea81f44-c73e-4bc8-a6aa-3ed37b299de0" key="Jesus">Jesus</persName> i stikken og flygtede, da han blev taget til fange. Der kan også være tænkt på, at <persName xml:id="id4ef31e37-8f8d-49bc-9ef6-756fa99e03ea" key="Judas">Judas</persName> forrådte Jesus til ypperstepræsterne, jf. <rs xml:id="id76b0fa0e-5c84-4821-b17e-6e3fa1a0aed2" type="bible">Matt 26,14-16</rs>.48, og at <persName xml:id="idc85f3b5e-960d-437b-9a71-ec3d80498d45" key="Peter">Peter</persName> fornægtede Jesus, mens Jesus blev forhørt af ypperstepræsten i Rådet, jf. <rs xml:id="id7b439d19-479e-450a-a091-159746daba16" type="bible">Matt 26,69-75</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="eot-108" n="272,12">
+          <label xml:id="id749e77f5-405f-4d65-b656-f5fc54872b25">
+            <hi xml:id="id7b838039-87cd-4b32-b080-a9523c2fee0f" rendition="#bol">hans Død forandrer uendelig Alt ... det uendelige Forskud</hi>
+          </label>
+          <p xml:id="id077ce6bb-85a2-4568-94e9-f5511b435faf">sml. journaloptegnelsen NB10:54, fra feb. el. marts 1849: »Der maa ogsaa siges, at det dog i een Forstand er blevet lettere for Menneskene at blive og være Christne efter Christi Død end samtidigen. Hans Forsonings Død maa jo dog anslaaes som et Middel dertil. Desuden mens Han levede, havde Han selv den Opgave at udtrykke Forbilledet, og at tvinge Sandhedens Priis, indtil at de sloge Ham ihiel. Men efter sin Død kan han tillige hjælpe den Christne«, <hi xml:id="idffb4d722-127f-494a-a753-42dd091ef3a8" rendition="#ita">SKS</hi> 21, 284,30-35.</p>
+        </note>
+        <note type="commentary" xml:id="eot-91" n="272,15">
+          <label xml:id="id3b7c8c45-8c2e-4056-9741-eebb864facd0">
+            <hi xml:id="id84d9ad43-4f70-4b78-a705-49d6a437744d" rendition="#bol">er gjort Fyldest <hi xml:id="id884ea93c-2eae-4e48-9fb4-4045b7504a8b" rendition="#ita">(...)</hi> at Christus er død for at frelse ham</hi>
+          </label>
+          <p xml:id="id135cf5b1-92c3-44cc-8bcc-89003292fcb9">hentyder til den dogmatiske lære om Kristi vikarierende satisfaktion, dvs. stedfortrædende fyldestgørelse, at han som Guds egen Søn med sin frivillige lidelse og død har tilfredsstillet el. forsonet Guds dømmende vrede over menneskenes syndefald og således gjort fyldest for den straf til døden, de ellers var skyldige at lide for deres synd, så at de kan leve og frelses (<ptr xml:id="id499c29d5-3154-4a57-bb02-f876123b03c5" type="commentary" target="#eot-85" n="272,2"/>). Sml. bortsendelsesordene efter nadver: »Den korsfæstede og atter opstandne Christus <persName xml:id="id445011d4-fc86-4472-a19f-7abb1babad52" key="Jesus">Jesus</persName>, som nu har bespiset og skienket Eder med sit hellige Legem og Blod, hvormed han har fyldestgiort for alle Eders Synder, han styrke og opholde Eder derved i en sand Tro til det evige Liv!«
+        <hi xml:id="id6eab1a3a-a768-4ad5-b1c6-fa28bda6a179" rendition="#ita"><title xml:id="idbc926262-53f7-46fb-98d9-abc7e5539a78">Forordnet Alter-Bog for Danmark</title>,</hi> <placeName xml:id="idc405427c-43fa-49db-acd8-001abc80a722" key="København">Kbh</placeName>. 1830 [1688], ktl. 381, s. 254.</p>
+        </note>
+        <note type="commentary" xml:id="eot-92" n="272,16">
+          <label xml:id="idffbbf6fb-6207-43b5-a039-dfe3ba128426">
+            <hi xml:id="idd7ece5c2-9bb9-42df-9cf8-3c972db2b551" rendition="#bol">den Forsagende</hi>
+          </label>
+          <p xml:id="idabc92470-544d-477d-b9cc-bd17de55296f">den opgivende (som udtryk for at opgive modet).</p>
+        </note>
+        <note type="commentary" xml:id="eot-93" n="272,17">
+          <label xml:id="id8921c287-5418-4e04-b409-1c521e03ec4e">
+            <hi xml:id="id708e5020-4b46-4c3e-923b-33336ad1039a" rendition="#bol">tilforladeligere</hi>
+          </label>
+          <p xml:id="id54d6a956-24d1-4f90-928c-46968742a174">mere sikkert og pålideligt.</p>
+        </note>
+        <note type="commentary" xml:id="eot-94" n="272,18">
+          <label xml:id="id925822c4-a2b5-47fb-88cf-329cb085fb67">
+            <hi xml:id="id401593a9-1f91-4326-8b1d-03bc1bed00aa" rendition="#bol">Christi Død er Forsoningen, er Fyldestgjørelsen</hi>
+          </label>
+          <p xml:id="idad3b1036-bdde-48e3-80a1-af81d8245f50">jf. kap. 4 »Om Menneskets Opreisning ved Jesum Christum, Guds Søn, af sin Fordærvelse«, § 7.c, anmærkning d, i <hi xml:id="id4209a9da-69fa-471c-a6d9-fc03f6cd882e" rendition="#ita">Balles Lærebog</hi> (<ptr xml:id="ida28b59a9-1268-45f0-a991-8e50cf71d992" type="commentary" target="#eot-85" n="272,2"/>), s. 45: »<hi xml:id="id74280c7b-e552-4fc6-b90d-b7254417174b" rendition="#ita">Vi bør søge Naade hos Gud ved Jesum Christum allene,</hi> som har paa eengang giort Fyldest for alle Mennesker, og aabnet Adgang for os alle ved sin Lidelse og Død, til at erlange [få] Forladelse for vore Synder, naar vi af Hiertet omvende os, og troe paa ham.«</p>
+        </note>
+        <note type="commentary" xml:id="eot-109" n="272,29">
+          <label xml:id="id094c7d80-6f47-4005-89cc-a7e7eed1da39">
+            <hi xml:id="iddf2a08d1-93a9-480b-907f-f7036de45293" rendition="#bol">forhverve</hi>
+          </label>
+          <p xml:id="id355d70cd-09f5-47f0-a25b-e8805e0079f9">erhverve, skaffe.</p>
+        </note>
+        <note type="commentary" xml:id="eot-96" n="272,30">
+          <label xml:id="id73ffab4e-6366-4646-b09d-8ef32d0a5dbd">
+            <hi xml:id="ida7ab6575-1b58-410a-850a-6a54c38206e4" rendition="#bol">den Medlevende</hi>
+          </label>
+          <p xml:id="id390c0a55-68bf-4c2a-b25b-799105f92586">den samtidige.</p>
+        </note>
+        <note type="commentary" xml:id="eot-97" n="272,31">
+          <label xml:id="id1f13a525-0302-4ad0-916e-b82b1bb28920">
+            <hi xml:id="id17e26e4b-bb28-4a17-9f2c-b4ddcc9b2015" rendition="#bol">hengive mig selv som et Offer for Verdens Synd</hi>
+          </label>
+          <p xml:id="idb2451069-6a2e-4da7-a75c-bd956764d52c">jf. kap. 4 »Om Menneskets Opreisning ved Jesum Christum, Guds Søn, af sin Fordærvelse«, § 7.c, anmærkning b, i <hi xml:id="id558faeda-f8c2-4e3a-9403-9a096f4cf624" rendition="#ita">Balles Lærebog</hi> (<ptr xml:id="id81b3a9f8-9499-47c8-a0af-81ea8c2de66c" type="commentary" target="#eot-85" n="272,2"/>), s. 45: »<hi xml:id="id474b057d-f743-4dc2-a46d-a95f1e707ab2" rendition="#ita">Da Jesus opofrede sig selv til en Forsoning for Verdens Synder,</hi> viiste han sig som den rette af Gud beskikkede ypperste Præst, og bragte et Offer til Forligelse, hvilket haver allene Gyldighed for alle i al Evighed.«</p>
+        </note>
+        <note type="commentary" xml:id="eot-98" n="272,34">
+          <label xml:id="idadff9eee-f51a-42e8-8612-6be50655cb7b">
+            <hi xml:id="idbc1e7e25-c269-4524-bd1f-1765abaa3ab4" rendition="#bol">Ingen Kjerlighed er større ... sætter sit Liv til for en Anden</hi>
+          </label>
+          <p xml:id="id128ff92d-d1a2-4238-bf7a-6369e611c7eb">hentyder til <rs xml:id="id526881a7-609c-4a6c-924c-2cfc7ea2b065" type="bible">Joh 15,13</rs>, hvor <persName xml:id="idbdddcc70-d5a4-4358-a91a-994b72887930" key="Jesus">Jesus</persName> siger: »Større kærlighed har ingen end den at sætte sit liv til for sine venner.« Se også
+        <rs xml:id="id6e0c4ab0-89ea-4eca-84b2-044f83be7e8e" type="bible">1 Joh 3,16</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="eot-99" n="272,35">
+          <label xml:id="id6288d930-3a5f-4f3f-be12-451247ff012b"><hi xml:id="id61b0104f-974c-4f8b-8f71-e15ff7cb5f24" rendition="#bol">naar</hi> er</label>
+          <p xml:id="id91d34834-ffe3-4527-ac2a-4edb659b504b">hvornår.</p>
+        </note>
+      </div>
+    </body>
+  </text>
 </TEI>

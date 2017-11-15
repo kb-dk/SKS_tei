@@ -1,151 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Aabenbart Skriftemaal</title>
-     
-     <title type="short">AAS</title>
-  <author>
-   <name>Jon Tafdrup</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Johnny Kondrup</name><name>Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2010</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K14</biblScope>
-     <biblScope unit="file">http://sks.dk/aas/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition><!--spaced out, in SKS rendered italic--><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20120309">txr/XML, <bibl><idno type="version">1.6</idno>, <biblScope unit="file">http://sks.dk/aas/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="ida27ed386-9861-42b1-9602-bf13be78247f">
+    <fileDesc xml:id="idf3234103-532e-4508-82a4-76239a422a2f">
+      <titleStmt xml:id="idb7a6e552-e72a-437c-b55e-620658e6343a">
+        <title xml:id="id589854f9-a42e-4d87-8ca4-a57b22d83b46" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id96be7418-1197-4c75-acaa-db6a54ce28e1">Aabenbart Skriftemaal</title>
+        <title xml:id="id81ee8af1-09f0-4510-9384-09ce22d1d821" type="short">AAS</title>
+        <author xml:id="idadfd0689-fb27-4126-ba66-ccdba88fdeb9">
+          <name xml:id="id1743fb11-afa1-4c0e-b727-3ffc09c6ff40">Jon Tafdrup</name>
+        </author>
+        <editor xml:id="ideeac2189-9bad-434f-a6e0-310cc7aa7d33">
+          <name xml:id="idf2f05052-f8fe-469e-a43b-4da0d20a5d3e">Niels Jørgen Cappelørn</name>
+          <name xml:id="idc643372d-237d-4676-ae4e-7311df205224">Joakim Garff</name>
+          <name xml:id="id00605d0c-8181-4028-9864-48cc3316c5cb">Johnny Kondrup</name>
+          <name xml:id="id61363b15-cbe2-441b-80c4-fa2fdfd7fc1d">Tonny Aagaard Olesen</name>
+          <name xml:id="id18ae53de-0d99-42bb-9d22-03aac269e812">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="idc3d11b10-019c-43b6-b254-18929a712cfd">
+          <resp xml:id="id68c65d39-a186-4890-81bc-60d46291b0d2">redigeret af</resp>
+          <name xml:id="idab47edba-9741-458b-a0dc-84600ef128f7">Johnny Kondrup</name>
+          <name xml:id="id7df976b7-69d5-4302-ab67-0ba57a47175d">Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="iddef3a0d3-8403-4fa4-ae03-634772a8def1">
+          <resp xml:id="id71253284-01fc-4f30-8ed8-a82755f4bbae">elektronisk redigeret af</resp>
+          <name xml:id="id171f5cfc-dfa5-4de8-9fa1-b6121938934f">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="idbd69567f-7d95-46f8-9781-77ce791d744a">
+        <authority xml:id="id1679ae9c-f163-4827-ac2c-1faa33e905bd">Søren Kierkegaard Forskningscenteret 2010</authority>
+        <availability xml:id="id736c8ea4-3957-4b82-9f8e-fcfd60e59762" status="restricted">
+          <p xml:id="id35b68aea-b280-4a47-8d5e-f26f37e0accf">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id24d90ebd-93b0-48f6-b820-677ae27340d1">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="id17e56e07-2d03-4d73-8624-38432928d4e0" unit="volume">K14</biblScope>
+        <biblScope xml:id="id8360c7e1-e3eb-4f2f-844c-dd0a3b8835ea" unit="file">http://sks.dk/aas/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id3a8dd3a9-8306-430d-9591-be8e60d4a623">
+        <bibl xml:id="id19ed92c7-257c-4584-b455-5250c504a876" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id7ad5b69a-c3ab-4068-8220-af7bf059a8c8">
+      <tagsDecl xml:id="id5d17b921-6f4d-4c42-960d-fa49ed0df409">
+        <rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition>
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="idaa7a0eac-5466-4057-922a-8ce9a654dbc4">
+      <change xml:id="idd38cb142-3742-4e2c-9386-bf4c966a0caa">Transformed to TEI by style sheet <bibl xml:id="id0b7753e4-364e-4f81-9e2d-e9a6ae9eab75" type="file">txr2tei.xsl</bibl> version as of <date xml:id="idf3c46b55-79d9-4960-92f8-c1c4fc974126">2017-02-15</date> importing <bibl xml:id="idbe7d9957-0004-4aa6-a4d5-90c9b3faac30" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="id0de07ea3-3b09-4871-8df5-26dca13eed8a">Transformed to TEI by style sheet <bibl xml:id="id3f9d51d0-6af9-424b-b8ba-9acdedb73ee4" type="file">kn12tei.xsl</bibl> version <idno xml:id="id83ff66ba-1ffb-4297-a72c-01e7338a9f91" type="version">1.9</idno> as of <date xml:id="idb9b5d65c-1da8-46f3-8202-0cecddb90194">2017-02-21</date> by <name xml:id="ida4191dff-84d0-4cf5-84b9-f942d26df47e">Karsten Kynde</name>, <orgName xml:id="id457c65d3-fb30-4908-a0c2-e497bb9b3fc1">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="id2d476235-0308-400a-997d-ef3903f68b93">København</placeName></change>
+      <change xml:id="idf6d9f640-5cf0-42df-89d8-450becf763c1" when="20120309">txr/XML, <bibl xml:id="idb1553119-9caf-40e1-86e1-edd354adc46a"><idno xml:id="id7b57b920-6553-4812-a614-81b24caf8d9b" type="version">1.6</idno>, <biblScope xml:id="id2b9c09c0-52b9-4745-8452-86a2b1d1f11e" unit="file">http://sks.dk/aas/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="TextCriticalAccount" subtype="publishedWritings"><body><div><head type="topText" n="Tekstredegørelse"/>
-  <head><pb xml:id="ss105" n="105" edRef="#SKS"/>Tekstredegørelse</head>
-  <list type="TOC"> 
-   <item>1. Bibliografisk beskrivelse
-    <ptr type="chapter" target="#k1" n="105"/>
+  <text xml:id="id7b00264a-0890-44c7-9b7b-7a3bbd109aca" type="TextCriticalAccount" subtype="publishedWritings">
+    <body xml:id="idad20854f-1e16-4262-b290-3e7d00e9c921">
+      <div xml:id="ide932c4af-8a8b-4fe5-8adb-0567930bcf06">
+        <head xml:id="id397e614e-7ed3-44df-9a25-76c60fbf785a" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="id788520cf-b7bb-4392-aadf-d576e7d547b4"><pb xml:id="ss105" n="105" edRef="#SKS"/>Tekstredegørelse</head>
+        <list xml:id="id8371c0d6-5707-4dec-aa5b-75e62abc7277" type="TOC">
+          <item xml:id="id7f2d768a-e54e-4d56-bc9d-65286a463b67">1. Bibliografisk beskrivelse
+    <ptr xml:id="id881b170c-4f4a-43e9-8dc1-6a30d1a636d4" type="chapter" target="#k1" n="105"/>
    </item>
-   <item>2. Manuskriptbeskrivelse
-    <ptr type="chapter" target="#k2" n="108"/>
+          <item xml:id="id4de63a28-4f1a-4070-a1f1-bedc8b651ac8">2. Manuskriptbeskrivelse
+    <ptr xml:id="id93d2316b-7c7e-4845-b1f4-594f2ab6a7a4" type="chapter" target="#k2" n="108"/>
    </item>
-   <item>3. Tilblivelseshistorie
-    <ptr type="chapter" target="#k3" n="108"/>
+          <item xml:id="idfc0fb199-a869-401f-8ecf-6b932995566f">3. Tilblivelseshistorie
+    <ptr xml:id="idfafeaf79-e7fb-486a-b2a3-1a1c681ce581" type="chapter" target="#k3" n="108"/>
    </item>
-   <item>4. Udgivelsesmåde
-    <ptr type="chapter" target="#k4" n="111"/>
+          <item xml:id="id56d47fc7-3a7e-492a-8412-9ee0b9bb7e21">4. Udgivelsesmåde
+    <ptr xml:id="id89e63ee8-936e-4b69-b2d1-baf01cf718ff" type="chapter" target="#k4" n="111"/>
    </item>
-  </list>
-  <div type="level1" xml:id="k1">
-   <head>1. Bibliografisk beskrivelse</head>
-   <p>»Aabenbart Skriftemaal« blev trykt i <hi rendition="#ita">Fædrelandet,</hi> 3. årgang, nr. 904, søndag den 12. juni 1842. Artiklen er signeret »<persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>«. <hi rendition="#ita">Fædrelandet</hi> blev udgivet af <persName key="Giødwad, Jens Finsteen">J.F. Giødwad</persName>, ansvarlig redaktør var <persName key="Ploug, Carl">Carl Ploug</persName>. Avisen blev trykt i det Brünnichske bogtrykkeri i <placeName>København</placeName> og lå færdig fra trykkeriet kl. 19. Prisen var 6 skilling i løssalg, 5 mark pr. måned, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName>København</placeName>.</p>
-   <p>Artiklen er blevet kollationeret i tre eksemplarer af <hi rendition="#ita">Fædrelandet,</hi> nr. 904, den 12. juni 1842:</p>
-   <list> 
-     
-     <label>A</label>
-     <item>SKs eget eksemplar, uindbundet og ubeskåret, KA, D pk. 12.</item>
-    
-     
-     <label>B</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>Eksemplar B er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 3. årgang, 1842.</p> </note></item>
-    
-     
-     <label>C</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>Eksemplar C er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 3. årgang, 1842.</p> </note></item>
-    
-   </list>
-   <p>Ved den interne kollation af de tre eksemplarer blev der ikke konstateret afvigelser.<note> <p>Da <hi rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes i tekstredegørelsen.</p> </note> Eksemplar A danner grundlag for følgende beskrivelse.</p>
-   <p rend="decoration"><figure type="blank"/></p>
-   <div type="level2">
-    <head><pb xml:id="ss106" n="106" edRef="#SKS"/>Format og paginering</head>
-    <p>Formatet svarer til en stor kvart.<note> <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p> </note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet halvark. På hver side er der to spalter. Spalterne er nummereret 7245-7252; på forsiden er numrene angivet under spalterne, på de øvrige sider over.</p>
-    <p rendition="#ind">SKs artikel er avisens eneste og har et omfang på lidt over syv spalter. Den begynder øverst i sp. 7245 på forsiden og afsluttes øverst i sp. 7252. Den nederste del af sp. 7252 består af en liste med »Nye udkomne Skrifter«.</p>
-   </div>
-   <div type="level2">
-    <head>Beskrivelse af eksemplar A</head>
-    <p>Avisen måler ca. 257-267 × 346 mm.<note> <p>Der måles bredde (øverste kant) × højde (venstre kant); de to blades øverste kant flugter ikke, da avisen er ubeskåret og dertil foldet skævt. Således måler andet blad kun 257 mm (øverste kant).</p> </note></p>
-    <div type="level3">
-     <head>Papir</head>
-     <p>Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
-    </div>
-    <div type="level3">
-     <head>Typografi</head>
-     <p>Avisens fremherskende skriftsnit er fraktur; til latinsk tekst er benyttet antikva, og fremhævet tekst er sat med fed eller spatieret skrift.</p>
-     <p rendition="#ind">På forsiden er avisens navn sat med tekstur (gotisk) og hovedets øvrige oplysninger med fraktur. Avishovedet er adskilt fra den øvrige tekst af en datolinje og har følgende ordlyd:</p>
-     <quote><p><hi rendition="#bol">Fædrelandet.</hi> | [Skillestreg] | Abonnementspris i <placeName key="København">Kjøbenhavn</placeName> 15 ℳpr. Qvartal, 5 ℳpr. Maaned, enkelte Nr. 6 ß; udenfor <placeName key="København">Kjøbenhavn</placeName> 3 Rbd. pr. Qvartal frit i Huset. | Hver Aften udgaaer et Numer. Bladets Con<pb xml:id="ss107" n="107" edRef="#SKS"/>toir, Klædeboderne Nr. 101, er aabent hver Søgnedags Formiddag Kl. 11–1.<note> <p>ℳ= Mark, ß = Skilling. Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p> </note></p></quote>
-     <p>Datolinjen er indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Imellem står følgende:</p>
-     <quote><p>3<hi rendition="#sup">die</hi> Aarg. <hi rendition="#bol">Søndagen den 12. Juni 1842.</hi> Nr. 904.</p></quote>
-     <p>Årgangsnummeret er venstrestillet, datoen centreret, og avisnummeret højrestillet.</p>
-     <p rendition="#ind">I avishovedet er »Fædrelandet.« centreret og sat med fed i en punktstørrelse ca. 12 grader større end brødteksten.<note> <p>Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 10; tekst, der er 1 grad større, er sat med punktstørrelse 12, 2 grader større med punktstørrelse 14, 3 grader større med punktstørrelse 16, og 12 grader større med punktstørrelse 72, mens tekst, der er 1 grad mindre, er sat med punktstørrelse 8.</p> </note> Oplysningerne under avisnavnet om pris, udgivelsesfrekvens, kontorets beliggenhed og åbningstid er centreret og sat med samme punktstørrelse som brødteksten. I datolinjen er årgangen og nummeret sat ca. 3 grader større end brødteksten, mens datoen er sat med fed ca. 1 grad større end brødteksten. Se <ref target="../AAS/txr.xml#ill_k6" type="figure">illustration 6</ref>.</p>
-     <p rendition="#ind">Nederst i avisens sidste spalte, adskilt fra en foregående notits af en vandret skillestreg i hele kolumnens bredde, er trykketidspunktet angivet:</p>
-     <quote><p>Færdigt fra Trykkeriet Kl. 7.</p></quote>
-     <p>Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående, fed-fin dobbeltstreg. Se <ref target="../AAS/txr.xml#ill_k7" type="figure">illustration 7</ref>. Den har ordlyden:</p>
-     <quote><p>Udgiver: <hi rendition="#bol"><persName key="Giødwad, Jens Finsteen">J. F. Giødwad</persName>.</hi> – Ansvarlig Redacteur: <hi rendition="#bol"><persName key="Ploug, Carl">Carl Ploug</persName>.</hi> | [Skillestreg] | Trykt med Hurtigpresse i det <hi rendition="#spa">Brünnichske</hi> Bogtrykkeri.</p></quote>
-     <p>Artiklens overskrift »Aabenbart Skriftemaal.« er centreret i spalten og sat med fed ca. 1 grad større end brødteksten. Artiklen indledes med en fed uncial ca. 2 grader større end brødteksten. Fodnoten nederst i sp. 7247 er <pb xml:id="ss108" n="108" edRef="#SKS"/>placeret under en kort, venstrestillet streg og sat med en punktstørrelse ca. 1 grad mindre end brødteksten. Mellemrubrikken »Efterskrift.« er centreret og sat med fed i samme størrelse som brødteksten. Signaturen »<persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>.« er sat med samme punktstørrelse som brødteksten, indrykket fra højre margin og spatieret.</p>
-     <p rendition="#ind">Mellem overskrift og brødtekst er sat en kort, vandret skillestreg; tilsvarende skillestreg er indsat før mellemrubrikken. Efter artiklen er sat en fed, vandret skillestreg i hele kolumnens bredde. Spalterne adskilles overalt af en lodret, fin-fed-fin tripelstreg.</p>
-     <p rendition="#ind">Spaltekolumnen måler ca. 88 mm i bredden, og en spalte har op til 52 linjer. Artiklens brødtekst er sat med en skriftstørrelse svarende til ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum.</p>
-     <p>Der er enkelte sætter- og trykfejl i artiklen. En omvendt type findes, hvor »Dn« er sat i stedet for »Du« (<ref target="../AaS/txt.xml#ss41" type="publishedWritings" n="41"><hi rendition="#ita">SKS</hi> 14, 41</ref>,57). Et typeudfald forekommer i »udgivet«, der står som »udg vet« (45,79). Derudover skyldes trykfejl læderede typer.<note> <p>Eksempler på læderede typer er: 'r' i »Færd« (<ref target="../AaS/txt.xml#ss43" type="publishedWritings" n="43"><hi rendition="#ita">SKS</hi> 14, 43</ref>,53), 'e' i »visselig« (44,33), det sidste 'e' i »bestemt« (44,52), 'a' i »man« (45,28) og 'd' i »Husmand« (46,11).</p> </note>  <figure xml:id="ill_k6" rend="recto"><graphic url="../AAS/ill_k6.jpg"/> <head>6. SKs eksemplar af <hi rendition="#ita">Fædrelandet,</hi> nr. 904, den 12. juni 1842</head> </figure>  <figure xml:id="ill_k7" rend="verso"><graphic url="../AAS/ill_k7.jpg"/> <head>7. SKs eksemplar af <hi rendition="#ita">Fædrelandet,</hi> nr. 904, den 12. juni 1842, bagside</head> </figure> </p>
-    </div>
-   </div>
-  </div>
-  <div type="level1" xml:id="k2">
-   <head>2. Manuskriptbeskrivelse</head>
-   <p>Der findes ingen bevaret kladde eller renskrift til »Aabenbart Skriftemaal«.</p>
-  </div>
-  <div type="level1" xml:id="k3">
-   <head>3. Tilblivelseshistorie</head>
-   <p>Et affattelsestidspunkt for »Aabenbart Skriftemaal« kan tilnærmelsesvis bestemmes ud fra artiklens »Efterskrift«. Heri nævnes en »Anmeldelse i 'Fædrelandet'«, skrevet af »Dr. <persName key="Beck, Andreas Frederik">Beck</persName>« (<ref target="../AaS/txt.xml#ss45" type="publishedWritings" n="45"><hi rendition="#ita">SKS</hi> 14, 45</ref>,13-14). Det var SKs magisterafhandling, <hi rendition="#ita">Om Begrebet Ironi,</hi> der blev anmeldt i en artikel, trykt som en føljeton i to dele, hvoraf sidste del kunne læses i <hi rendition="#ita">Fædrelandet,</hi> nr. 897, den 5. juni 1842. SK må have læst denne artikel, før han skrev efterskriften, der således må være blevet til i løbet af ugen frem mod den 12. juni, hvor »Aabenbart Skriftemaal« blev trykt.</p>
-   <p rendition="#ind"><pb xml:id="ss111" n="111" edRef="#SKS"/>SK er flere gange vendt tilbage til »Aabenbart Skriftemaal«; fx i den utrykte artikel, »Opfordring«, dateret 22. feb. 1843.<note> <p>Jf. KA, B pk. 9 læg 2; trykt som <ref type="preparatoryManuscript" n="pap:IVB19"><hi rendition="#ita">Pap.</hi> IV B 19</ref>. I denne artikel opfordrer SK <persName key="Victor Eremita">Victor Eremita</persName> til at afsløre sin identitet, således at han, SK, kan blive fri for de ubehagelige rygter, der vil udpege ham som forfatter af <hi rendition="#ita">Enten – Eller.</hi> Denne var kommet i handelen to dage forinden. SK havde også forfattet svaret, »Sendebrev til Hr. Magister <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>«, som ligeledes forblev utrykt i SKs levetid, jf. KA, B pk. 9 læg 3; trykt som <ref type="preparatoryManuscript" n="pap:IVB20"><hi rendition="#ita">Pap.</hi> IV B 20</ref>.</p> </note> Her skriver han bl.a., »at jeg for omtrent 6 Maaneder siden, dreven til det Yderste af de angivende Stemmer, der denoncerede mig som Forfatter af forskjellige Artikler, ved en høitidelig Erklæring fralagde mig al Deeltagelse i disse <hi rendition="#ita">(...)</hi>«.<note> <p><ref type="preparatoryManuscript" n="pap:IVB19"><hi rendition="#ita">Pap.</hi> IV B 19</ref>, s. 185-186.</p> </note> Den »høitidelige Erklæring« er »Aabenbart Skriftemaal«.</p>
-   <p rendition="#ind">Også flere år senere omtales artiklen. I journaloptegnelsen <ref target="../NB6/txt.xml#n16" type="journalsAndPapers" n="16">NB6:16</ref>, der er skrevet kort efter den 16. juli 1848, altså mere end seks år efter at artiklen blev trykt, kaldes den for et »Signalskud«:</p>
-   <quote><p>Allerede i Artiklen »aabenbare Skriftemaal«, der var et Signalskud (jeg var den Gang færdig med Manuscriptet til Enten – Eller, og umidd. paa den fulgte Enten – Eller; Artiklen var tillige en Mystifikation: efterat have fralagt mig Forfatterskabet til de mange Avisartikler – som rigtignok Ingen havde tillagt mig – endte jeg med at bede Folk aldrig at ansee Noget for at være af mig, hvorpaa mit Navn ikke stod. Og da var det netop jeg agtede at begynde at være Pseudonym) var antydet at Prof. <persName key="Heiberg, Johan Ludvig">Heiberg</persName> var den Mand i Literaturen jeg ønskede at omfrede, han, <persName key="Mynster, Jakob Peter">Mynster</persName>, begge vare nævnte der og saa umiskjendeligt som muligt.<note> <p><ref target="../NB6/txt.xml#ss17" type="journalsAndPapers" n="17"><hi rendition="#ita">SKS</hi> 21, 17</ref>,23-32.</p> </note></p></quote>
-   <p>SK husker galt, når han i optegnelsen skriver, at han var færdig med manuskriptet til <hi rendition="#ita">Enten – Eller.</hi> Han arbejdede med manuskriptet til bogen frem til jan. 1843, idet de sidste fire måneder blev brugt på renskrivning og korrekturlæsning.<note> <p>Jf. <ref target="../EE1/txr.xml#ss38" type="textCriticalAccount" n="38">tekstredegørelsen til <hi rendition="#ita">Enten – Eller</hi> i <hi rendition="#ita">SKS</hi> K2-3, 38</ref>-58.</p> </note> Under alle omstændigheder anskuer han <hi rendition="#ita">Enten – Eller</hi> som indledningen til det pseudonyme forfatterskab. Når han i 1848 opfatter »Aabenbart Skriftemaal« som et signalskud, er sigtet netop den pseudonyme periode, der forestod.</p>
-  </div>
-  <div type="level1" xml:id="k4">
-   <head><pb xml:id="ss112" n="112" edRef="#SKS"/>4. Udgivelsesmåde</head>
-   <p><hi rendition="#ita">Fædrelandet</hi> eksisterede i perioden fra 14. sept. 1834 til 31. marts 1882 som liberalt og senere nationalliberalt organ. »Aabenbart Skriftemaal« er SKs første bidrag til avisen, men bestemt ikke det sidste; i alt 31 af hans artikler vides med sikkerhed at være trykt i <hi rendition="#ita">Fædrelandet.</hi></p>
-   <p rendition="#ind">I avisens levetid vekslede udgivelsesfrekvensen. <hi rendition="#ita">Fædrelandet</hi> udkom således i årene 1834-39 én gang ugentligt (om søndagen), fra 1. okt. 1839 to gange (tirsdag og fredag), fra 7. dec. 1839 op mod syv gange og fra 1. jan. 1840 fast syv gange ugentligt som aftenavis. Fra 1. jan. 1844 faldt udgivelsesfrekvensen til seks gange ugentligt, hvor avisen udkom alle hverdagsaftener.<note> <p>Jf. <persName key="Søllinge, Jette Drachmann">Jette D. Søllinge</persName> og <persName key="Thomsen, Niels">Niels Thomsen</persName> <hi rendition="#ita">De danske aviser 1634-1989. Bind 1: 1634-1847,</hi> <placeName>Odense</placeName> 1989, s. 156.</p> </note> I begyndelsen blev avisen trykt med håndpresse hos <persName key="Luno, Bianco">Bianco Luno</persName>, fra 1. jan. 1840 med hurtigpresse. Sidenhen blev trykningen varetaget af: Brünnich fra 30. maj 1842, E.C. Løser fra 1. jan. 1846 og endelig <persName key="Klein, Louis">Louis Klein</persName> fra 1. jan. 1847; alle trykkede de med hurtigpresse. I øvrigt havde avisen fra 1842 eget sætteri.</p>
-   <p rendition="#ind">Som nævnt ovenfor blev avisen solgt både i løssalg og i abonnement. I 1835 var antallet af abonnenter 800; gennem 1840'erne var oplaget ca. 1500, og i 3. kvartal 1848 er registreret 964 postabonnenter.<note> <p>Ibid.</p> </note> <hi rendition="#ita">Fædrelandet</hi> nød størst udbredelse i <placeName>København</placeName>.</p>
-   <p rendition="#ind">Flere udgivere og redaktører var i det første tiår involveret i arbejdet med avisen, der til tider havde alvorlige kontroverser med censurmyndighederne. Avisen måtte tillige føre flere retssager og idømtes fra tid til anden klækkelige bøder.<note> <p>Ibid.</p> </note> Fra 12. maj 1841 fungerede <persName key="Ploug, Carl">Carl Ploug</persName> og <persName key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> som redaktører.</p>
-   <p rendition="#ind">Især <persName key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> har interesse i forbindelse med SK. I journaloptegnelsen <ref target="../NB9/txt.xml#n28" type="journalsAndPapers" n="28">NB9:28</ref> fra 1849 omtaler SK <persName key="Giødwad, Jens Finsteen">Giødwad</persName> som sin »personlige Ven« (<hi rendition="#ita">SKS</hi> 21, 214,10); et venskab, der netop kan være indledt i 1842, hvor »Aabenbart Skriftemaal« blev trykt. Fra juletid dette år hjalp <persName key="Giødwad, Jens Finsteen">Giødwad</persName> med korrekturlæsningen af <hi rendition="#ita">Enten – Eller,</hi> et arbejde, der bl.a. blev udført i <hi rendition="#ita">Fædrelandets</hi> lokaler i Klædeboderne nr. 101. <persName key="Giødwad, Jens Finsteen">Giødwad</persName> repræsenterede <pb xml:id="ss113" n="113" edRef="#SKS"/>yderligere SK over for Bianco Lunos Bogtrykkeri og forlagsboghandler <persName key="Reitzel, Carl Andreas">C.A. Reitzel</persName> i forbindelse med udgivelsen af de pseudonyme skrifter, dvs. <hi rendition="#ita">Enten – Eller</hi> (1843), <hi rendition="#ita">Gjentagelsen</hi> (1843), <hi rendition="#ita">Frygt og Bæven</hi> (1843), <hi rendition="#ita">Begrebet Angest</hi> (1844) og <hi rendition="#ita">Forord</hi> (1844). Ifølge <persName key="Giødwad, Jens Finsteen">Giødwad</persName>s egen meddelelse til <persName key="Jørgensen, Adolf Ditlev">A.D. Jørgensen</persName> havde SK fået et godt indtryk af ham, da han, <persName key="Giødwad, Jens Finsteen">Giødwad</persName>, havde afvist en læser af <hi rendition="#ita">Fædrelandet,</hi> der ønskede at vide, hvem der stod bag en anonym artikel.<note> <p>Jf. »A.D. Jørgensens Dagbog 'Gammelt og Nyt' for Aarene 1884-96« (udg. af <persName key="Jørgensen, Troels Georg">Troels G. Jørgensen</persName>) i <hi rendition="#ita">Danske Magazin, indeholdende Bidrag til den danske Histories Oplysning,</hi> 7. række bd. 5, <placeName key="København">Kbh.</placeName> 1949-53, s. 26.</p> </note></p>
-   <p rendition="#ind">Det har ikke været muligt at efterspore, om SK modtog honorar for »Aabenbart Skriftemaal«.</p>
-   <p>Af stor betydning for receptionen af SKs artikler allerede i hans umiddelbare eftertid var <persName key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi rendition="#ita"><persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 <hi rendition="#ita">(Bl.art.).</hi> Heri indgår størstedelen af SKs artikler, også »Aabenbart Skriftemaal«.<note> <p>Artiklen er trykt i <hi rendition="#ita">Bl.art.,</hi> s. 32-41.</p> </note></p>
-  </div>
- </div></body></text>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="id9f097af6-6435-4bfc-addc-7ce1912d0596">1. Bibliografisk beskrivelse</head>
+          <p xml:id="idc0de7612-0382-4f8e-8702-cbbfce08aff2">»Aabenbart Skriftemaal« blev trykt i <hi xml:id="id0ebf3077-5192-4f0c-80cc-8cb1f8860c90" rendition="#ita">Fædrelandet,</hi> 3. årgang, nr. 904, søndag den 12. juni 1842. Artiklen er signeret »<persName xml:id="id7cd3e70f-53ad-495d-9e82-6e6c9640ba7c" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>«. <hi xml:id="id27c29094-6d8b-42d4-aa4c-04d0ed461f27" rendition="#ita">Fædrelandet</hi> blev udgivet af <persName xml:id="id199b87da-dfa9-4c29-bc08-811316e811e0" key="Giødwad, Jens Finsteen">J.F. Giødwad</persName>, ansvarlig redaktør var <persName xml:id="id9d0bd0d2-233a-4213-b2fb-621f1c9fe7b9" key="Ploug, Carl">Carl Ploug</persName>. Avisen blev trykt i det Brünnichske bogtrykkeri i <placeName xml:id="idd2d70744-fb1a-47f3-8f10-d9077aba7537">København</placeName> og lå færdig fra trykkeriet kl. 19. Prisen var 6 skilling i løssalg, 5 mark pr. måned, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName xml:id="id5959f78d-3d82-4c7d-8e67-a554b704422e">København</placeName>.</p>
+          <p xml:id="id36c1d373-e1c2-49b7-b923-92e7d4936e75">Artiklen er blevet kollationeret i tre eksemplarer af <hi xml:id="id6d025dd0-fbdf-4567-9e4f-1f321a751170" rendition="#ita">Fædrelandet,</hi> nr. 904, den 12. juni 1842:</p>
+          <list xml:id="idff6f0275-8174-4194-b362-ae1ce1291fbf">
+            <label xml:id="id7326a83b-fcd2-4ffb-b4e1-ccc9ff8edaca">A</label>
+            <item xml:id="idd0ac2943-c1aa-4dae-b928-e258518c3d60">SKs eget eksemplar, uindbundet og ubeskåret, KA, D pk. 12.</item>
+            <label xml:id="id7442ad65-ffb7-4961-a05c-905d0c1556f1">B</label>
+            <item xml:id="id7ff21b58-2c7a-4e55-92cc-f4f288e749d8"><placeName xml:id="idfcde7c9c-76bd-489e-a189-abd435782ef8" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="id4d296784-c875-421d-98c7-d9337d46f469"><p xml:id="id25fbe306-1735-4129-bc2f-9128302234e3">Eksemplar B er indbundet sammen med resten af <hi xml:id="idb587caa5-bc13-4e8a-a9c5-0e90da43c32d" rendition="#ita">Fædrelandet,</hi> 3. årgang, 1842.</p></note></item>
+            <label xml:id="id65463d5c-01b8-49f2-97a3-ae4351fc337c">C</label>
+            <item xml:id="id2bf0a108-57e0-4315-b8cd-bb32b4497bae"><placeName xml:id="id66f2a20f-6a5f-49c3-9d27-94e18146d778" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="idfa5479a7-2ad9-419b-af99-62ab0b891215"><p xml:id="idba7a1740-bf66-4db0-9bb1-1c1497411bbe">Eksemplar C er indbundet sammen med resten af <hi xml:id="id098acea3-6c3e-40a5-aa10-28cfa10d9084" rendition="#ita">Fædrelandet,</hi> 3. årgang, 1842.</p></note></item>
+          </list>
+          <p xml:id="idd49636ef-e473-45d7-8b17-ea4617b3830a">Ved den interne kollation af de tre eksemplarer blev der ikke konstateret afvigelser.<note xml:id="idac38fedb-9745-4baf-a21b-59cb5c394e38"><p xml:id="id5185d0ef-9a94-498d-9972-2de1c04f757e">Da <hi xml:id="id152a8c5f-a9d6-4073-9377-65bdcd956930" rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes i tekstredegørelsen.</p></note> Eksemplar A danner grundlag for følgende beskrivelse.</p>
+          <p xml:id="id1c731ae2-b5f0-4301-b8d6-d480bede32a1" rend="decoration">
+            <figure xml:id="id866a0198-27a5-48cd-85b1-1e9bcb99e464" type="blank"/>
+          </p>
+          <div xml:id="ided67ed64-34c4-4afe-a5fc-3f242e15d042" type="level2">
+            <head xml:id="id399472e5-0cf0-4b21-97e6-2b0166ba5302"><pb xml:id="ss106" n="106" edRef="#SKS"/>Format og paginering</head>
+            <p xml:id="id4d854a20-2c76-40c0-9091-f26bc0373c81">Formatet svarer til en stor kvart.<note xml:id="id6ff6e7dc-3a00-4ce9-82f5-72687ce5651a"><p xml:id="idb5d93347-4e16-41fb-bde3-035d82100d25">Udgangspunktet for formatbetegnelsen er plane helark (ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p></note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet halvark. På hver side er der to spalter. Spalterne er nummereret 7245-7252; på forsiden er numrene angivet under spalterne, på de øvrige sider over.</p>
+            <p xml:id="id859f3ab2-a11a-4888-bdd7-d689d3f04430" rendition="#ind">SKs artikel er avisens eneste og har et omfang på lidt over syv spalter. Den begynder øverst i sp. 7245 på forsiden og afsluttes øverst i sp. 7252. Den nederste del af sp. 7252 består af en liste med »Nye udkomne Skrifter«.</p>
+          </div>
+          <div xml:id="idb51ce456-80d7-4b54-b4df-19b48b2e11c6" type="level2">
+            <head xml:id="ide4380b06-93bc-4dd0-a219-bd683f01399b">Beskrivelse af eksemplar A</head>
+            <p xml:id="id65f18c76-ba7b-457a-bc83-cfb40d699c3d">Avisen måler ca. 257-267 × 346 mm.<note xml:id="idc08bca53-81c7-484d-b364-f70bf8723392"><p xml:id="id7010df4c-bff0-48f6-9e42-ce1d0f420c26">Der måles bredde (øverste kant) × højde (venstre kant); de to blades øverste kant flugter ikke, da avisen er ubeskåret og dertil foldet skævt. Således måler andet blad kun 257 mm (øverste kant).</p></note></p>
+            <div xml:id="idbf2427a5-400a-4f05-92d9-94ab5d3fa0fa" type="level3">
+              <head xml:id="id0a879c62-604f-4c72-bf57-a96018feb427">Papir</head>
+              <p xml:id="id625af309-9b72-485b-be67-522d1dd65bf6">Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
+            </div>
+            <div xml:id="idf528c7b0-731f-4298-8b0e-87610cb6334c" type="level3">
+              <head xml:id="id533b825d-178b-4a22-b4ab-57f7bc07c0fe">Typografi</head>
+              <p xml:id="id9b5883fc-0ed8-403a-ad8e-bf39a1e4f3ed">Avisens fremherskende skriftsnit er fraktur; til latinsk tekst er benyttet antikva, og fremhævet tekst er sat med fed eller spatieret skrift.</p>
+              <p xml:id="id1e738346-4f9e-47af-8c57-0eeddec87b06" rendition="#ind">På forsiden er avisens navn sat med tekstur (gotisk) og hovedets øvrige oplysninger med fraktur. Avishovedet er adskilt fra den øvrige tekst af en datolinje og har følgende ordlyd:</p>
+              <quote xml:id="id74eacead-377e-49fd-90af-a8f7f6348fe7">
+                <p xml:id="id77e3b715-7c71-4217-a939-9606362d7db5"><hi xml:id="id9e5120d9-c788-4eab-a9b3-2634d06dca33" rendition="#bol">Fædrelandet.</hi> | [Skillestreg] | Abonnementspris i <placeName xml:id="id06208d07-d570-4f67-8174-d480c7509e7a" key="København">Kjøbenhavn</placeName> 15 ℳpr. Qvartal, 5 ℳpr. Maaned, enkelte Nr. 6 ß; udenfor <placeName xml:id="id006857b1-5130-459e-8e6d-effe4be72888" key="København">Kjøbenhavn</placeName> 3 Rbd. pr. Qvartal frit i Huset. | Hver Aften udgaaer et Numer. Bladets Con<pb xml:id="ss107" n="107" edRef="#SKS"/>toir, Klædeboderne Nr. 101, er aabent hver Søgnedags Formiddag Kl. 11–1.<note xml:id="idb8028367-7642-4e29-97db-af67cebc4211"><p xml:id="id8592e30a-90e0-40ae-b7d2-429961b2bb28">ℳ= Mark, ß = Skilling. Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p></note></p>
+              </quote>
+              <p xml:id="iddd54561b-a694-4e84-bb62-382c19de8434">Datolinjen er indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Imellem står følgende:</p>
+              <quote xml:id="id5f007e01-e57d-4100-9c04-f7352ac17f45">
+                <p xml:id="id50d1138b-d1e8-46b6-864f-0ec62569274e">3<hi xml:id="ideec726f5-4769-476f-8ead-ba7eba34b42e" rendition="#sup">die</hi> Aarg. <hi xml:id="id13e8b750-0e1b-4f61-ab60-d8de3041f487" rendition="#bol">Søndagen den 12. Juni 1842.</hi> Nr. 904.</p>
+              </quote>
+              <p xml:id="idb3286de6-c9b9-4208-81ed-f9ff567ce54f">Årgangsnummeret er venstrestillet, datoen centreret, og avisnummeret højrestillet.</p>
+              <p xml:id="idae35feb7-7825-4f05-b438-fa4ffcf514df" rendition="#ind">I avishovedet er »Fædrelandet.« centreret og sat med fed i en punktstørrelse ca. 12 grader større end brødteksten.<note xml:id="idabbb22a3-1b0e-4f7e-86c3-b05669841af7"><p xml:id="id985cc11b-aed3-41f2-adc6-f457a0905f19">Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 10; tekst, der er 1 grad større, er sat med punktstørrelse 12, 2 grader større med punktstørrelse 14, 3 grader større med punktstørrelse 16, og 12 grader større med punktstørrelse 72, mens tekst, der er 1 grad mindre, er sat med punktstørrelse 8.</p></note> Oplysningerne under avisnavnet om pris, udgivelsesfrekvens, kontorets beliggenhed og åbningstid er centreret og sat med samme punktstørrelse som brødteksten. I datolinjen er årgangen og nummeret sat ca. 3 grader større end brødteksten, mens datoen er sat med fed ca. 1 grad større end brødteksten. Se <ref xml:id="id53e82c1e-79d8-4be4-9b2c-4ea90b0cd9ed" target="../AAS/txr.xml#ill_k6" type="figure">illustration 6</ref>.</p>
+              <p xml:id="id767c049d-058e-4ae7-83da-4c89a249026f" rendition="#ind">Nederst i avisens sidste spalte, adskilt fra en foregående notits af en vandret skillestreg i hele kolumnens bredde, er trykketidspunktet angivet:</p>
+              <quote xml:id="id14a08743-b52e-4093-b075-c8bfa31d2e8d">
+                <p xml:id="id06451ac9-0830-438d-a44e-2cbe461575fd">Færdigt fra Trykkeriet Kl. 7.</p>
+              </quote>
+              <p xml:id="id09936bb7-b0dc-42b5-8175-484a462e3d6e">Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående, fed-fin dobbeltstreg. Se <ref xml:id="id927dbd6d-0e34-4554-b765-8ee76ee4629f" target="../AAS/txr.xml#ill_k7" type="figure">illustration 7</ref>. Den har ordlyden:</p>
+              <quote xml:id="idb4ab62b0-7556-44f0-b590-abc6c391d6fe">
+                <p xml:id="idc64da10f-8c92-4baf-99f4-9c59506eb16d">Udgiver: <hi xml:id="id17706d7d-ab6a-4412-98fc-d068362b5112" rendition="#bol"><persName xml:id="idce9faf42-ee63-411a-9a83-0c5a0a790824" key="Giødwad, Jens Finsteen">J. F. Giødwad</persName>.</hi> – Ansvarlig Redacteur: <hi xml:id="id6449fe24-a16f-4a99-b091-faef6d4782cc" rendition="#bol"><persName xml:id="id46159f39-83d0-4118-86f3-3cbd01901a39" key="Ploug, Carl">Carl Ploug</persName>.</hi> | [Skillestreg] | Trykt med Hurtigpresse i det <hi xml:id="ided350e5b-3a4f-4973-b0e3-1016f1027bb3" rendition="#spa">Brünnichske</hi> Bogtrykkeri.</p>
+              </quote>
+              <p xml:id="ide95aa57b-0a17-4f4f-9657-a2c126684f2c">Artiklens overskrift »Aabenbart Skriftemaal.« er centreret i spalten og sat med fed ca. 1 grad større end brødteksten. Artiklen indledes med en fed uncial ca. 2 grader større end brødteksten. Fodnoten nederst i sp. 7247 er <pb xml:id="ss108" n="108" edRef="#SKS"/>placeret under en kort, venstrestillet streg og sat med en punktstørrelse ca. 1 grad mindre end brødteksten. Mellemrubrikken »Efterskrift.« er centreret og sat med fed i samme størrelse som brødteksten. Signaturen »<persName xml:id="idcb444a47-58ec-417d-9080-72dd5657d250" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>.« er sat med samme punktstørrelse som brødteksten, indrykket fra højre margin og spatieret.</p>
+              <p xml:id="id88523b9b-b347-4d2f-8eb1-d597e2fbf9a7" rendition="#ind">Mellem overskrift og brødtekst er sat en kort, vandret skillestreg; tilsvarende skillestreg er indsat før mellemrubrikken. Efter artiklen er sat en fed, vandret skillestreg i hele kolumnens bredde. Spalterne adskilles overalt af en lodret, fin-fed-fin tripelstreg.</p>
+              <p xml:id="id0c9a047d-f455-4041-83fe-544ad3e859c5" rendition="#ind">Spaltekolumnen måler ca. 88 mm i bredden, og en spalte har op til 52 linjer. Artiklens brødtekst er sat med en skriftstørrelse svarende til ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum.</p>
+              <p xml:id="ide882538f-c786-48bc-8050-9913fd9f3ed4">Der er enkelte sætter- og trykfejl i artiklen. En omvendt type findes, hvor »Dn« er sat i stedet for »Du« (<ref xml:id="idc36ca7af-c368-430f-8f26-7a6267e75298" target="../AaS/txt.xml#ss41" type="publishedWritings" n="41"><hi xml:id="id6e95f80c-a818-4cc1-b0e8-962e6503d33e" rendition="#ita">SKS</hi> 14, 41</ref>,57). Et typeudfald forekommer i »udgivet«, der står som »udg vet« (45,79). Derudover skyldes trykfejl læderede typer.<note xml:id="idb39b2f0c-f53d-423a-bc60-5d7360ea5431"><p xml:id="id534fe4f0-cfdb-4bcd-9461-824e02393cea">Eksempler på læderede typer er: 'r' i »Færd« (<ref xml:id="idf29ea7f9-b492-48ef-9679-3cfc4a25f812" target="../AaS/txt.xml#ss43" type="publishedWritings" n="43"><hi xml:id="id033f41a3-6336-4bab-a971-625c6ca8ffbb" rendition="#ita">SKS</hi> 14, 43</ref>,53), 'e' i »visselig« (44,33), det sidste 'e' i »bestemt« (44,52), 'a' i »man« (45,28) og 'd' i »Husmand« (46,11).</p></note>  <figure xml:id="ill_k6" rend="recto"><graphic xml:id="idb566375e-0164-430e-a150-59820a522996" url="../AAS/ill_k6.jpg"/><head xml:id="id6da79227-dcd2-4ea0-a42d-df67bf53d456">6. SKs eksemplar af <hi xml:id="idafa04e56-bbda-4047-a6bf-cee0f56f993d" rendition="#ita">Fædrelandet,</hi> nr. 904, den 12. juni 1842</head></figure>  <figure xml:id="ill_k7" rend="verso"><graphic xml:id="id42fc33c1-52c5-4a0d-a8ee-190ac7198a3a" url="../AAS/ill_k7.jpg"/><head xml:id="id32ba6b69-2671-4837-b902-68d1c9f9297d">7. SKs eksemplar af <hi xml:id="iddf0d5159-fbc0-4fc3-bcbd-ba4a33c1003e" rendition="#ita">Fædrelandet,</hi> nr. 904, den 12. juni 1842, bagside</head></figure> </p>
+            </div>
+          </div>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="id5af18604-b764-4e10-a0ac-b7408c75ad1c">2. Manuskriptbeskrivelse</head>
+          <p xml:id="id35d5feca-9406-4201-85fd-483d32427d78">Der findes ingen bevaret kladde eller renskrift til »Aabenbart Skriftemaal«.</p>
+        </div>
+        <div type="level1" xml:id="k3">
+          <head xml:id="id37b902b8-c023-4cfd-97db-3970152c4167">3. Tilblivelseshistorie</head>
+          <p xml:id="id63cfa8cf-a124-4c99-b905-d526292c77d8">Et affattelsestidspunkt for »Aabenbart Skriftemaal« kan tilnærmelsesvis bestemmes ud fra artiklens »Efterskrift«. Heri nævnes en »Anmeldelse i 'Fædrelandet'«, skrevet af »Dr. <persName xml:id="id9d540360-9b04-4f9b-b747-6b34e69402f2" key="Beck, Andreas Frederik">Beck</persName>« (<ref xml:id="idd3a2fc01-abfa-4c59-b2b6-53a993e82bf6" target="../AaS/txt.xml#ss45" type="publishedWritings" n="45"><hi xml:id="ida83a04a5-f961-4119-a9bf-398440913c98" rendition="#ita">SKS</hi> 14, 45</ref>,13-14). Det var SKs magisterafhandling, <hi xml:id="id328c1796-44e2-46c7-8555-c813f25539ce" rendition="#ita">Om Begrebet Ironi,</hi> der blev anmeldt i en artikel, trykt som en føljeton i to dele, hvoraf sidste del kunne læses i <hi xml:id="ide1c507f1-60db-48af-84a2-c4dedbe0a896" rendition="#ita">Fædrelandet,</hi> nr. 897, den 5. juni 1842. SK må have læst denne artikel, før han skrev efterskriften, der således må være blevet til i løbet af ugen frem mod den 12. juni, hvor »Aabenbart Skriftemaal« blev trykt.</p>
+          <p xml:id="id1e944bfc-1b61-4e6a-8ef3-4fcb6bf50cbe" rendition="#ind"><pb xml:id="ss111" n="111" edRef="#SKS"/>SK er flere gange vendt tilbage til »Aabenbart Skriftemaal«; fx i den utrykte artikel, »Opfordring«, dateret 22. feb. 1843.<note xml:id="idcf6c7ba8-d427-4143-9607-c046fe686c76"><p xml:id="id08ad79ea-e4e4-4c18-a1f7-056680a01706">Jf. KA, B pk. 9 læg 2; trykt som <ref xml:id="id6cbca1b5-6f6e-440b-a527-3e05fcdc36ae" type="preparatoryManuscript" n="pap:IVB19"><hi xml:id="idb14e55d5-39ec-4a27-81d9-cf5f481e071e" rendition="#ita">Pap.</hi> IV B 19</ref>. I denne artikel opfordrer SK <persName xml:id="id8eb6a2a3-8b18-4cdf-9e49-625ab6026c22" key="Victor Eremita">Victor Eremita</persName> til at afsløre sin identitet, således at han, SK, kan blive fri for de ubehagelige rygter, der vil udpege ham som forfatter af <hi xml:id="id64c7de16-8914-4451-beb7-c836204a1e28" rendition="#ita">Enten – Eller.</hi> Denne var kommet i handelen to dage forinden. SK havde også forfattet svaret, »Sendebrev til Hr. Magister <persName xml:id="idad67d874-4a0d-4926-b298-0e9e63ea4997" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>«, som ligeledes forblev utrykt i SKs levetid, jf. KA, B pk. 9 læg 3; trykt som <ref xml:id="id3d1fec41-593d-4961-99b4-ba813da6132e" type="preparatoryManuscript" n="pap:IVB20"><hi xml:id="id9224f8a0-88dc-422e-a334-143b89107e0c" rendition="#ita">Pap.</hi> IV B 20</ref>.</p></note> Her skriver han bl.a., »at jeg for omtrent 6 Maaneder siden, dreven til det Yderste af de angivende Stemmer, der denoncerede mig som Forfatter af forskjellige Artikler, ved en høitidelig Erklæring fralagde mig al Deeltagelse i disse <hi xml:id="id5dcf775e-04b7-4994-801c-17a5b6258e54" rendition="#ita">(...)</hi>«.<note xml:id="id3eba1f5b-ba5a-4545-b6fe-08664d5bd772"><p xml:id="idecd1916d-0d4b-48cc-9b4c-bf97329e17df"><ref xml:id="idfb558c21-be62-4946-a5a0-2103e857b377" type="preparatoryManuscript" n="pap:IVB19"><hi xml:id="id47c930b5-c9e4-424d-9c80-c32c928b71c5" rendition="#ita">Pap.</hi> IV B 19</ref>, s. 185-186.</p></note> Den »høitidelige Erklæring« er »Aabenbart Skriftemaal«.</p>
+          <p xml:id="idc838d575-7638-4c7f-9a2a-8590987ced39" rendition="#ind">Også flere år senere omtales artiklen. I journaloptegnelsen <ref xml:id="idf67b09c6-4457-4ab1-b194-7ee9ce832231" target="../NB6/txt.xml#n16" type="journalsAndPapers" n="16">NB6:16</ref>, der er skrevet kort efter den 16. juli 1848, altså mere end seks år efter at artiklen blev trykt, kaldes den for et »Signalskud«:</p>
+          <quote xml:id="idb47b695e-0eed-416b-a09c-35903b6cb390">
+            <p xml:id="idaeb6bb4a-c133-4c60-a6a2-9896edc2c8da">Allerede i Artiklen »aabenbare Skriftemaal«, der var et Signalskud (jeg var den Gang færdig med Manuscriptet til Enten – Eller, og umidd. paa den fulgte Enten – Eller; Artiklen var tillige en Mystifikation: efterat have fralagt mig Forfatterskabet til de mange Avisartikler – som rigtignok Ingen havde tillagt mig – endte jeg med at bede Folk aldrig at ansee Noget for at være af mig, hvorpaa mit Navn ikke stod. Og da var det netop jeg agtede at begynde at være Pseudonym) var antydet at Prof. <persName xml:id="idc097a3f3-0d79-4925-86f1-d47e9b94fa25" key="Heiberg, Johan Ludvig">Heiberg</persName> var den Mand i Literaturen jeg ønskede at omfrede, han, <persName xml:id="idbdfc43ff-6113-498e-8497-ea291c31a8a6" key="Mynster, Jakob Peter">Mynster</persName>, begge vare nævnte der og saa umiskjendeligt som muligt.<note xml:id="id6876b331-7e7d-4c15-a062-469d3f19af5e"><p xml:id="id0ec2a8fa-74df-4309-a314-56c206626ead"><ref xml:id="idc930922e-0f08-45f5-afaa-6686e9b9c63a" target="../NB6/txt.xml#ss17" type="journalsAndPapers" n="17"><hi xml:id="idee735399-68b7-45bb-b17a-b3dc5c8a2092" rendition="#ita">SKS</hi> 21, 17</ref>,23-32.</p></note></p>
+          </quote>
+          <p xml:id="ida9c8f63d-3c3f-4473-b9c8-5e242e9329a5">SK husker galt, når han i optegnelsen skriver, at han var færdig med manuskriptet til <hi xml:id="idd333e86d-1a00-4137-80a6-14392fe90b8d" rendition="#ita">Enten – Eller.</hi> Han arbejdede med manuskriptet til bogen frem til jan. 1843, idet de sidste fire måneder blev brugt på renskrivning og korrekturlæsning.<note xml:id="idd867ce7f-c091-4fb1-9b83-da8cf228fefe"><p xml:id="id371ea7a9-8964-4b0c-9d79-ebfc773a3327">Jf. <ref xml:id="idf9404945-5bb8-4aa3-8f2a-d35fba59e971" target="../EE1/txr.xml#ss38" type="textCriticalAccount" n="38">tekstredegørelsen til <hi xml:id="id4f19c91f-db40-4be8-af7f-eba94b5909d1" rendition="#ita">Enten – Eller</hi> i <hi xml:id="id9bbdd8f1-9caf-4a6e-b2a1-86ff017bb718" rendition="#ita">SKS</hi> K2-3, 38</ref>-58.</p></note> Under alle omstændigheder anskuer han <hi xml:id="idd66404cb-8489-40e1-8816-a4b73ae4f99f" rendition="#ita">Enten – Eller</hi> som indledningen til det pseudonyme forfatterskab. Når han i 1848 opfatter »Aabenbart Skriftemaal« som et signalskud, er sigtet netop den pseudonyme periode, der forestod.</p>
+        </div>
+        <div type="level1" xml:id="k4">
+          <head xml:id="idb67a60fe-79a2-4690-bf7d-ce6802006bb6"><pb xml:id="ss112" n="112" edRef="#SKS"/>4. Udgivelsesmåde</head>
+          <p xml:id="id571443b9-6b98-4f4b-9db3-17137438ecea"><hi xml:id="id1e982822-b222-4927-b494-42827e0208e0" rendition="#ita">Fædrelandet</hi> eksisterede i perioden fra 14. sept. 1834 til 31. marts 1882 som liberalt og senere nationalliberalt organ. »Aabenbart Skriftemaal« er SKs første bidrag til avisen, men bestemt ikke det sidste; i alt 31 af hans artikler vides med sikkerhed at være trykt i <hi xml:id="id5f08e3b1-49b8-49b0-98f7-01573ae6a1fc" rendition="#ita">Fædrelandet.</hi></p>
+          <p xml:id="idb16c0ebc-3975-4243-bcd2-a95a7acc8969" rendition="#ind">I avisens levetid vekslede udgivelsesfrekvensen. <hi xml:id="id50080b03-9851-445d-aa24-e1c452ad9838" rendition="#ita">Fædrelandet</hi> udkom således i årene 1834-39 én gang ugentligt (om søndagen), fra 1. okt. 1839 to gange (tirsdag og fredag), fra 7. dec. 1839 op mod syv gange og fra 1. jan. 1840 fast syv gange ugentligt som aftenavis. Fra 1. jan. 1844 faldt udgivelsesfrekvensen til seks gange ugentligt, hvor avisen udkom alle hverdagsaftener.<note xml:id="idf32ef32c-d243-42f9-b2d9-387418d31ab1"><p xml:id="id37a35fcb-cd79-4ec0-bea5-763e6ea74f35">Jf. <persName xml:id="idad792a39-5088-4345-be20-764f3edc6583" key="Søllinge, Jette Drachmann">Jette D. Søllinge</persName> og <persName xml:id="id1b539e25-a1a0-4e1d-8e98-da5c9b394333" key="Thomsen, Niels">Niels Thomsen</persName> <hi xml:id="idff5df6b3-77cf-4269-9f62-d0e5d5eb6e82" rendition="#ita">De danske aviser 1634-1989. Bind 1: 1634-1847,</hi> <placeName xml:id="id5713504b-4c04-45eb-b081-92bf98578731">Odense</placeName> 1989, s. 156.</p></note> I begyndelsen blev avisen trykt med håndpresse hos <persName xml:id="ida9cf1283-f0da-480a-95ae-2eef09278102" key="Luno, Bianco">Bianco Luno</persName>, fra 1. jan. 1840 med hurtigpresse. Sidenhen blev trykningen varetaget af: Brünnich fra 30. maj 1842, E.C. Løser fra 1. jan. 1846 og endelig <persName xml:id="id1c26e9c5-eaec-46c0-9ce7-86ebacf4887e" key="Klein, Louis">Louis Klein</persName> fra 1. jan. 1847; alle trykkede de med hurtigpresse. I øvrigt havde avisen fra 1842 eget sætteri.</p>
+          <p xml:id="id1248ee2a-4b3d-43ad-8a07-795fe385fec2" rendition="#ind">Som nævnt ovenfor blev avisen solgt både i løssalg og i abonnement. I 1835 var antallet af abonnenter 800; gennem 1840'erne var oplaget ca. 1500, og i 3. kvartal 1848 er registreret 964 postabonnenter.<note xml:id="idd4f8d8b5-e264-4136-b65c-99d71919063a"><p xml:id="idcbbf3c17-55c7-4b94-ab95-2abf1d0696ce">Ibid.</p></note> <hi xml:id="id972ea98e-7e69-4c31-b485-85cc580eb299" rendition="#ita">Fædrelandet</hi> nød størst udbredelse i <placeName xml:id="id3161627f-54b0-44b7-824b-eb30de07cb1f">København</placeName>.</p>
+          <p xml:id="idde55d401-9f0a-482d-921d-cd906bb8c273" rendition="#ind">Flere udgivere og redaktører var i det første tiår involveret i arbejdet med avisen, der til tider havde alvorlige kontroverser med censurmyndighederne. Avisen måtte tillige føre flere retssager og idømtes fra tid til anden klækkelige bøder.<note xml:id="idb9371d65-cc6e-4e19-8344-51766914a0cf"><p xml:id="ida4b69a5d-1e4c-4553-ab2e-defc9eb66635">Ibid.</p></note> Fra 12. maj 1841 fungerede <persName xml:id="idffb36ff3-4959-4134-9c49-e0f142dc6842" key="Ploug, Carl">Carl Ploug</persName> og <persName xml:id="id930542ad-6874-400b-b960-551666b9e1ef" key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> som redaktører.</p>
+          <p xml:id="id3d251872-7565-4d92-95bc-1a6ba3788b97" rendition="#ind">Især <persName xml:id="id6927aeef-1bc4-4246-b298-23507b040102" key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> har interesse i forbindelse med SK. I journaloptegnelsen <ref xml:id="id8c06c89a-33c4-468b-9500-363a16b71d9e" target="../NB9/txt.xml#n28" type="journalsAndPapers" n="28">NB9:28</ref> fra 1849 omtaler SK <persName xml:id="iddf4a8fcc-c147-4925-8c4c-e02bc302d147" key="Giødwad, Jens Finsteen">Giødwad</persName> som sin »personlige Ven« (<hi xml:id="id1199f620-50ff-404f-a0a3-a287258877e6" rendition="#ita">SKS</hi> 21, 214,10); et venskab, der netop kan være indledt i 1842, hvor »Aabenbart Skriftemaal« blev trykt. Fra juletid dette år hjalp <persName xml:id="id98ea002a-c294-463a-9896-1d5653a4ef2e" key="Giødwad, Jens Finsteen">Giødwad</persName> med korrekturlæsningen af <hi xml:id="id86b6c73a-2c66-47e0-b09c-543b6433968a" rendition="#ita">Enten – Eller,</hi> et arbejde, der bl.a. blev udført i <hi xml:id="id98fbe8ff-e0f5-467f-8506-5a92c278fa7e" rendition="#ita">Fædrelandets</hi> lokaler i Klædeboderne nr. 101. <persName xml:id="id769f8ed0-662e-4fcc-afcb-9e3d424f44a1" key="Giødwad, Jens Finsteen">Giødwad</persName> repræsenterede <pb xml:id="ss113" n="113" edRef="#SKS"/>yderligere SK over for Bianco Lunos Bogtrykkeri og forlagsboghandler <persName xml:id="idf4007eba-9209-4d5e-b6fe-dd2530119131" key="Reitzel, Carl Andreas">C.A. Reitzel</persName> i forbindelse med udgivelsen af de pseudonyme skrifter, dvs. <hi xml:id="id6bb9f8d9-fe54-4ed6-b418-14e20c6d6f67" rendition="#ita">Enten – Eller</hi> (1843), <hi xml:id="id26baca0c-15a0-417d-b748-170882b4767e" rendition="#ita">Gjentagelsen</hi> (1843), <hi xml:id="id65bc6b03-fa13-4d3d-830b-dbe95b6a8995" rendition="#ita">Frygt og Bæven</hi> (1843), <hi xml:id="id66707cb1-2e3c-4135-8887-3463570519a0" rendition="#ita">Begrebet Angest</hi> (1844) og <hi xml:id="id5bc758dc-adcc-4fae-88ed-15a2ab52c1eb" rendition="#ita">Forord</hi> (1844). Ifølge <persName xml:id="idccce4f5c-2095-421e-bbc4-5e5bc90a3a87" key="Giødwad, Jens Finsteen">Giødwad</persName>s egen meddelelse til <persName xml:id="iddee33e7d-8475-4b28-b081-727c5c2e98e4" key="Jørgensen, Adolf Ditlev">A.D. Jørgensen</persName> havde SK fået et godt indtryk af ham, da han, <persName xml:id="idae918b17-36b9-4ddb-8b8e-4b8a701fcb35" key="Giødwad, Jens Finsteen">Giødwad</persName>, havde afvist en læser af <hi xml:id="idf1ab381b-747f-47b1-abcd-b02539e25f2d" rendition="#ita">Fædrelandet,</hi> der ønskede at vide, hvem der stod bag en anonym artikel.<note xml:id="id83299ec5-08f5-4e83-8c97-d220c573d814"><p xml:id="id260b8cf7-5cc4-4a96-89e6-4a6555b94675">Jf. »A.D. Jørgensens Dagbog 'Gammelt og Nyt' for Aarene 1884-96« (udg. af <persName xml:id="id722116d5-b657-4a9e-9ae9-2c54c484455f" key="Jørgensen, Troels Georg">Troels G. Jørgensen</persName>) i <hi xml:id="id2e9e04c3-9847-4272-9a37-c8c143c91b5c" rendition="#ita">Danske Magazin, indeholdende Bidrag til den danske Histories Oplysning,</hi> 7. række bd. 5, <placeName xml:id="iddfe58740-63dc-43ae-a0dc-b06b1145b0ee" key="København">Kbh.</placeName> 1949-53, s. 26.</p></note></p>
+          <p xml:id="id53b9a2ab-5bcf-4a8d-b9d3-b17447393117" rendition="#ind">Det har ikke været muligt at efterspore, om SK modtog honorar for »Aabenbart Skriftemaal«.</p>
+          <p xml:id="iddc986630-ff37-4879-a7c4-70cbb514ecf4">Af stor betydning for receptionen af SKs artikler allerede i hans umiddelbare eftertid var <persName xml:id="ide045c958-804b-4134-ba73-f56895249677" key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi xml:id="idc791302f-a15f-4284-a25a-16583401ddd7" rendition="#ita"><persName xml:id="idfd753dd3-b739-48b1-831a-6fa70b72bcc8" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 <hi xml:id="id71cd5410-30fa-40ca-a0b4-787b6a5c83d8" rendition="#ita">(Bl.art.).</hi> Heri indgår størstedelen af SKs artikler, også »Aabenbart Skriftemaal«.<note xml:id="id8b29ea0f-1cc1-44d2-9888-8d9a6df38ddd"><p xml:id="id5468ff22-b7af-441b-b635-fe2315fa6878">Artiklen er trykt i <hi xml:id="ide341811e-1d2d-4582-a87c-52cb74051398" rendition="#ita">Bl.art.,</hi> s. 32-41.</p></note></p>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

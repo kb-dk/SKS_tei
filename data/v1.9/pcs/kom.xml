@@ -1,701 +1,1005 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model 
-   href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_allPlus.rng"
-   type="application/xml"
-   schematypens="http://relaxng.org/ns/structure/1.0"
-  ?><!--DOCTYPE kn1 SYSTEM "http://sks.dk/kn1/kn1.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Hr. Phister som Captain Scipio</title>
-     
-     <title type="short">PCS</title>
-     
-  <author>
-   <name>Tonny Aagaard Olesen</name>
-  </author>
- 
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2012</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K16</biblScope>
-     <biblScope unit="file">http://sks.dk/pcs/kom.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition xml:id="sub" scheme="css">vertical-align: sub; font-size: 80%;</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20121211">Kierkegaard Normalformat vers.1, <bibl><idno type="version">1.8</idno>, <biblScope unit="file">http://sks.dk/pcs/kom.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="idf43da308-2f12-4b27-8749-8c3e3f9111d6">
+    <fileDesc xml:id="id9f7973c5-4f8e-4d2c-99c1-31f9a64c02b3">
+      <titleStmt xml:id="id36e084fa-c450-4f54-9778-8025cc36bde5">
+        <title xml:id="id662e71a8-61f1-4627-97a3-b9e80b699ccd" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id5ef12a68-44e0-489c-ac48-8618b4eeb867">Hr. Phister som Captain Scipio</title>
+        <title xml:id="id4f3669ec-d743-40da-b1b9-f1e47ea3a813" type="short">PCS</title>
+        <author xml:id="id6850a6ae-58e0-477e-9500-de941a7270f1">
+          <name xml:id="id69a48296-b758-40be-8d60-91fdaea3450e">Tonny Aagaard Olesen</name>
+        </author>
+        <editor xml:id="id2e70eded-c39a-4fa8-8f81-e4abc27208c7">
+          <name xml:id="id4fb24ef0-9e19-4551-a34b-4dd5309ab2d0">Niels Jørgen Cappelørn</name>
+          <name xml:id="id343c7fa2-b069-4f5e-a0ff-17c9632e4a4f">Joakim Garff</name>
+          <name xml:id="id22c76448-89c6-4f2a-ad01-434dc59db5bf">Johnny Kondrup</name>
+          <name xml:id="id221f27ed-b50b-4502-a7e5-4d2ec5ad3c62">Tonny Aagaard Olesen</name>
+          <name xml:id="id11508265-c97c-4dbb-af92-674508db9d75">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="id07f0d763-bafe-48cd-8831-9adb942bcd27">
+          <resp xml:id="id2beb496d-b98d-4dca-b5bb-af18d092665c">elektronisk redigeret af</resp>
+          <name xml:id="id24f4b325-357c-4e57-b075-f6670f9aa0d8">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="idf7cdd61e-82ab-4a62-aa7c-87e9c9b4baf3">
+        <authority xml:id="id1add4f14-90d2-4ac1-8cc6-9651e1a9d3a8">Søren Kierkegaard Forskningscenteret 2012</authority>
+        <availability xml:id="id16a55805-8fbb-439c-98ec-89f77d841194" status="restricted">
+          <p xml:id="ideb3dd867-e0f8-4ea6-aa8d-d8675450a805">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="idb41faef8-cbbf-42e7-bd53-6088f9dc4782">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="idc8a24dac-b206-42eb-ad8a-87cf03dab884" unit="volume">K16</biblScope>
+        <biblScope xml:id="idd88fdad4-2578-4864-ae03-52d8f0964a0e" unit="file">http://sks.dk/pcs/kom.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="idd1982c59-960b-472a-b781-7f5406a89771">
+        <bibl xml:id="idafdcff69-2e96-44e9-9093-9c8328dbed1e" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="ide8b98aaf-fe3a-4904-a86f-2c0fcc8844f8">
+      <tagsDecl xml:id="id53815bfb-48e0-47f4-affe-66ce633a2ad6">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition xml:id="sub" scheme="css">vertical-align: sub; font-size: 80%;</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id864500ca-ae33-47ff-b7cf-6d90d96d11bf">
+      <change xml:id="id6d19cfe6-8b3a-46f9-8b44-46a6d154a5de">Transformed to TEI by style sheet <bibl xml:id="iddd98d29e-c292-443a-a3df-0d55ded96ffa" type="file">kn12tei.xsl</bibl> version <idno xml:id="id8f0bc05d-7361-442f-b6fa-a1c23e0c0bbc" type="version">1.9</idno> as of <date xml:id="idfbcf9260-ea48-403d-acf2-29a0a513aaf9">2017-02-21</date> by <name xml:id="id277fe82d-fc63-44e2-aa2a-3cfc8aa5652a">Karsten Kynde</name>, <orgName xml:id="ide20ce4fd-2ed7-4a6f-a158-e40b5d209021">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="iddb04d183-c693-4146-9cf0-dcd4b1739038">København</placeName></change>
+      <change xml:id="idf1bfd773-b35f-403f-9b06-6be09d854605" when="20121211">Kierkegaard Normalformat vers.1, <bibl xml:id="id86da9812-ba35-463a-930b-5ec3b59f0516"><idno xml:id="id8a4057e0-699b-4683-a493-833b44b6d968" type="version">1.8</idno>, <biblScope xml:id="id26626426-7004-477e-b16f-bda21a055ea5" unit="file">http://sks.dk/pcs/kom.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="commentary" subtype="uts"><body><div>
-  <note type="commentary" xml:id="pcs-4" n="127,1">
-   <label><hi rendition="#bol">Hr Phister</hi></label>
-   <p><persName key="Phister, Joachim Ludvig" n="*">Joachim Ludvig Phister</persName> (1807-96), da. skuespiller og sanger; siden 1817 knyttet til <placeName key="Kongelige Teater, Det">Det kgl. Teater</placeName> som balletelev, senere som skuespillerelev. Han fik sit gennembrud som skuespiller i 1825 og blev sidenhen en af datidens største skuespillere med en særlig tæft for de komiske roller. SK havde tidligere rost Phister for hans rolle som <persName key="Charles">Charles</persName> i <hi rendition="#ita">Den første Kjærlighed,</hi> jf. <ref target="../EE1/txt.xml#ss270" type="publishedWritings" n="270"><hi rendition="#ita">SKS</hi> 2, 270</ref> (1843). Fra okt. 1848 til april 1850 er SK skuespillerens overbo i <placeName>Rosenborggade</placeName> 156 A. I denne periode udkommer 2. udg. af <hi rendition="#ita">Enten – Eller</hi> (1849), som SK senere sender til Phister med et ledsagebrev, hvori han fremhæver, at Phisters »Styrke er Reflexionen«, jf. brev til Phister 31. dec. 1850, i <ref target="../b43/txt.xml#n64" type="lettersAndDedications" n="ba:274" rend="Brev 64"><hi rendition="#ita">B&amp;A,</hi> nr. 274, bd. 1, s. 296.</ref> SKs dedikation lyder: »Til / Reflexionens og Tænksomhedens store Komiker, <placeName>Danmark</placeName>s største, Hr. Phister / fra / Forfatteren«, <ref target="../b208/txt.xml#n210" type="lettersAndDedications" n="ba:I_s.344" rend="Brev 210"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 344</ref>. Fra formentlig dec. 1848 er opbevaret endnu et renskrevet brev fra SK til Phister, hvoraf fremgår, at det skulle ledsage nærværende afhandling. Hvorvidt SK faktisk viderebragte sin overbo brevet og afhandlingen er uvist. Sikkert er det, at afhandlingen ikke blev sendt til <hi rendition="#ita">Fædrelandet,</hi> jf. <ref target="../PCS/txr.xml#ss144" type="textCriticalAccount" n="144">tekstredegørelsen, s. 144</ref>f.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-5" n="127,2">
-   <label><hi rendition="#bol">Captain Scipio (i Syngestykket »Ludovic«)</hi></label>
-   <p>Den fr. opéra-comique <hi rendition="#ita">Ludovic,</hi> som havde premiere i <placeName>Paris</placeName> den 16. maj 1833, blev skrevet af <persName key="Saint-Georges, Jules-Henri Vernoy de" n="*">Jules-Henri Vernoy de Saint-Georges</persName> (1799-1875). Musikken blev komponeret af <persName key="Hérold, Louis Joseph Ferdinand" n="*">Louis Joseph Ferdinand Hérold</persName> (1791-1833) og efter dennes død færdiggjort af <persName key="Halévy, Jacques François Fromental Élie" n="*">Jacques François Fromental Élie Halévy</persName> (1799-1862). Stykket blev oversat til da. i 1834 af <persName key="Overskou, Thomas" n="*">Thomas Overskou</persName> (1798-1873), udgivet som nr. 61 i <hi rendition="#ita">Det kongelige Teaters Repertoire</hi> (bd. 3, 1834) og opført første gang på Det kongelige Teater den 24. maj 1834 (<ptr type="commentary" target="#pcs-7" n="127,4"/>). Stykket, der på da. bliver kaldt et »Syngestykke«, er i to akter. Den unge, velhavende gårdejerinde, <persName key="Francesca">Francesca</persName>, har holdt sit hjerte tilbage for at skænke det til den kedelige <persName key="Gregorio">Gregorio</persName>, mens hun omvendt afskyer sin iltre avlskarl, den stædige bejler <persName key="Ludovic">Ludovic</persName>. Handlingen foregår i landsbyen <placeName>Albano</placeName> ved <placeName>Rom</placeName>, hvor pavens udsendte politi møder op for at inddrive den skat, som Francesca skylder. Kaptajnen for det lille korps af soldater er den drikfældige <persName key="Scipio" sameAs="Captain Scipio">Scipio</persName> (et basparti sunget af <persName key="Phister, Joachim Ludvig">Phister</persName>), omkring hvem intrigen udspiller sig. SKs karakteristik af Phister i rollen som Scipio bygger i mange træk på selve opførelsen, dvs. SKs fremhævelser er ikke nævnt i teksten. Den da. oversætter, teaterhistorikeren Thomas Overskou, skriver: »Toactsstykket 'Ludovic' af Saint-Georges optoges med stor Enthusiasme. Det var ikke fordi Musiken, der er begyndt af Hérold og, efter hans Død, fuldendt af den senere berømte Halevy, blev funden udmærket ved andet end smuk Livfuldhed; men Texten var et med sikkert Blik for scenisk Effect særdeles heldigt anlagt Overraskelsesstykke, der satte Publikum i stigende Spænding lige til Slutningen, og alle de Spillende udførte deres Roller saa uovertræffeligt, at Ensemblet gav en af de allerskjønneste Syngespilforestillinger, Theatret havde at fremvise. <hi rendition="#ita">(...)</hi>. For Capitain Scipio, Stykkets comiske Person, havde Phister opfundet en særdeles original grotesk Figur, som hans Lune gav megen Naturlighed og hans Smag holdt i god Harmonie med Stykkets Tone«, <hi rendition="#ita">Den danske Skueplads,</hi> bd. 5, 1864, s. 199-201.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-7" n="127,4">
-   <label><hi rendition="#bol">En Erindring og for Erindringen</hi></label>
-   <p><hi rendition="#ita">Ludovic</hi> opførtes første gang på <placeName key="Kongelige Teater, Det">Det kgl. Teater</placeName> den 24. maj 1834 og blev spillet nogle gange hver sæson frem til og med 1837-38, i alt 13 gange. Efter en pause på mere end tre år genoptoges stykket og spilledes 7 gange ml. den 4. feb. 1841 og den 11. okt. 1841, altså i perioden, hvor SK var forlovet med <persName key="Olsen, Regine">Regine Olsen</persName>. Herefter opførtes stykket kun én gang til i SKs levetid, nemlig som sommerforestilling den 11. juni 1846. SK kunne altså have set <hi rendition="#ita">Ludovic</hi> 21 gange, men hvilke forestillinger, han har set, kan ikke fastslås.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-8" n="127,12">
-   <label><hi rendition="#bol">rareste</hi></label>
-   <p>mest udsøgte, interessante, fremragende.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-9" n="127,13">
-   <label><hi rendition="#bol">Potens</hi></label>
-   <p>væsentligste domæne, styrke.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-10" n="127,16">
-   <label><hi rendition="#bol">tage det Enkelte fat</hi></label>
-   <p>tage fat i det enkelte, gribe fat i det konkrete.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-11" n="127,16">
-   <label><hi rendition="#bol">gaae i det Enkelte</hi></label>
-   <p>gå i detaljen.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-12" n="127,21">
-   <label><hi rendition="#bol">vistnok</hi></label>
-   <p>sikkert, rigtignok.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-13" n="128,2">
-   <label><hi rendition="#bol">det er</hi></label>
-   <p>det vil sige.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-201" n="128,2">
-   <label><hi rendition="#bol">ene</hi></label>
-   <p>alene, kun.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-200" n="128,5">
-   <label><hi rendition="#bol">Hr Phisters Repertoire</hi></label>
-   <p>De hundredvis af roller, som Phister havde udført, findes optegnet af <persName key="Aumont, Arthur">Arthur Aumont</persName> i <persName key="Zinck, Otto">Otto Zinck</persName>
-    <hi rendition="#ita">Joachim Ludvig Phister. Et Teaterliv,</hi> <placeName key="København">Kbh.</placeName> 1896, s. 221-234.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-15" n="128,10">
-   <label><hi rendition="#bol">Derhos</hi></label>
-   <p>desuden, derudover.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-16" n="128,10">
-   <label><hi rendition="#bol">saa smaat</hi></label>
-   <p>efterhånden.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-17" n="128,10">
-   <label><hi rendition="#bol">al Forelskelse dog i Grunden er Selvkjerlighed</hi></label>
-   <p>SK havde i <hi rendition="#ita">Kjerlighedens Gjerninger</hi> (1847) redegjort for, hvordan forelskelse og venskab hviler på selvkærlighed. Se fx <hi rendition="#ita">Kjerlighedens Gjerninger,</hi> i <ref target="../KG/txt.xml#ss26" type="publishedWritings" n="26"><hi rendition="#ita">SKS</hi> 9, 26</ref>f. og <ref target="../KG/txt.xml#ss63" type="publishedWritings" n="63">63</ref>f.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-18" n="128,17">
-   <label><hi rendition="#bol">ved Scenen</hi></label>
-   <p>dvs. <placeName key="Kongelige Teater, Det">Det kongelige Teater</placeName> i <placeName>København</placeName>.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-19" n="128,27">
-   <label><hi rendition="#bol">ligesom Trop »stoderer«</hi></label>
-   <p>Der sigtes til evighedsstudenten <persName key="Trop">Trop</persName> i <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s vaudeville <hi rendition="#ita">Recensenten og Dyret</hi> (1826), jf. J.L. Heibergs <hi rendition="#ita">Samlede Skrifter. Skuespil</hi> bd. 1-7, <placeName key="København">Kbh.</placeName> 1833-41, ktl. 1553-1559; bd. 3, 1834, s. 185-288. Trop, der efter 30 år endnu ikke har afsluttet sit jurastudium, lever i sommerperioden på
-    <placeName>Dyrehavsbakken</placeName>, hvor han skriver kritiske anmeldelser af de optrædende gøglere. –
-    <hi rendition="#bol">stoderer:</hi> lavsocialt, parodisk for studerer. Trop bruger ikke udtrykket.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-20" n="129,4">
-   <label><hi rendition="#bol">ved vor Scene</hi></label>
-   <p><ptr type="commentary" target="#pcs-18" n="128,17"/>.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-250" n="129,15">
-   <label><hi rendition="#bol">en Fordring</hi></label>
-   <p>et gældsbrev, en regning.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-23" n="129,19">
-   <label><hi rendition="#bol">si placet</hi></label>
-   <p>lat., om det måtte behage, 'om man vil'.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-24" n="129,23">
-   <label><hi rendition="#bol">Obligation</hi></label>
-   <p>SK har i renskriften først skrevet »en Guld-Mynt, ell. en Obligation« (<ref type="preparatoryManuscript" n="pap:IXB70" rend="PCS,ms.1.2"><hi rendition="#ita">Pap.</hi> IX B 70</ref>,8).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-202" n="129,23">
-   <label><hi rendition="#bol">i Retning af</hi></label>
-   <p>i henseende til, med hensyn til.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-203" n="129,24">
-   <label><hi rendition="#bol">hersteds</hi></label>
-   <p>her på stedet, på nærværende sted.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-26" n="129,25">
-   <label><hi rendition="#bol">hiin Engelænder, der levede i ... næsten kom i Penge-Forlegenhed</hi></label>
-   <p>Kilden er ikke identificeret. Sml. journaloptegnelsen <ref target="../JJ/txt.xml#n245" type="journalsAndPapers" n="245">JJ:245</ref> (1844), hvor SK skriver: »Det gaaer mig med min Følelse i Livet ligesom en Engellænder, der kom i Pengeforlegenhed, uagtet han havde en Note paa 100 Pund men paa Stedet, hvor han var, var der ingen Mand for at bytte den«, <hi rendition="#ita">SKS</hi> 18, 219. –
-    <hi rendition="#bol">Banknote:</hi> pengeseddel.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-27" n="129,28">
-   <label><hi rendition="#bol">Ligeoverfor</hi></label>
-   <p>i forhold til.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-30" n="129,31">
-   <label><hi rendition="#bol">en Samtale som den mellem en Japaneser ... svarede: læg min M</hi></label>
-   <p>Der sigtes til den da. forf., filolog og filosof <persName key="Møller, Poul Martin" n="*">Poul Martin Møller</persName> (1794-1838) og hans »Optegnelser paa Reisen til China«, som i 1843 udkom i bd. 3 af <hi rendition="#ita">Efterladte Skrifter,</hi> udg. af <persName key="Winther, Christian">Chr. Winther</persName>, <persName key="Olsen, Frederik Christian">F.C. Olsen</persName> og <persName key="Thaarup, Christian">Chr. Thaarup</persName>, bd. 1-3, <placeName key="København">Kbh.</placeName> 1839-43, ktl. 1574-1576. Møller skriver: »Malajerne gik gjerne paa Bagkjøb i deres Handel. Jeg havde kjøbt nogle Stokke for en Kjole, men den Vilde kom igjen og vilde have, at Handelen skulde gaae ind. Ogsaa til en Matros kom en Malajer igjen med sin Betaling, sigende: <hi rendition="#ita">Trada mau</hi> (jeg vil ikke have det); hvorpå Matrosen svarede: L– min M–, og Malajeren maatte gaae bort igjen med uforrettet Sag«, s. 159. –
-    <hi rendition="#bol">Læg min M-:</hi> fast udtryk, læg el. lik min mås: slik min røv, dvs. rend mig i røven (af ty., leck mich am Arsch).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-32" n="130,1">
-   <label><hi rendition="#bol">saa</hi></label>
-   <p>sådan.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-204" n="130,16">
-   <label><hi rendition="#bol">det er quit</hi></label>
-   <p>det går lige op.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-34" n="130,16">
-   <label><hi rendition="#bol">Incommensurabelt</hi></label>
-   <p>usammenligneligt, uensartet, uforeneligt.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-35" n="130,16">
-   <label><hi rendition="#bol">Regningen</hi></label>
-   <p>ligningen.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-36" n="130,26">
-   <label><hi rendition="#bol">Pathologiske</hi></label>
-   <p>lidenskabelige.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-37" n="130,27">
-   <label><hi rendition="#bol">Blodcongestioner</hi></label>
-   <p>stærke tilstrømninger af blod til hovedet.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-38" n="130,30">
-   <label><hi rendition="#bol">gemütlig</hi></label>
-   <p>af ty. 'gemütlich', hyggelig, rar, venlig.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-39" n="130,30">
-   <label><hi rendition="#bol">Skjørnen</hi></label>
-   <p>som mælk, der 'skørner', dvs. løber sammen og bliver tyk.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-42" n="131,7">
-   <label><hi rendition="#bol">Ordentligviis</hi></label>
-   <p>almindeligvis, sædvanligvis.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-43" n="131,11">
-   <label><hi rendition="#bol">bravo, bravissimo, schwere Noth, Gottes Blitz</hi></label>
-   <p>'Bravo' og superlativen 'bravissimo', ital., egl. ypperlig og ypperligst, er udtryk for bifald. De ty. udbrud 'schwere Noth', 'for Pokker', og 'Gottes Blitz', 'Gud fri mig vel', er udtryk for forbavselse el. forundring.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-205" n="131,14">
-   <label><hi rendition="#bol">gjør Intet</hi></label>
-   <p>betyder intet, gør ingen forskel.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-206" n="131,16">
-   <label><hi rendition="#bol">Paa det Vilkaar</hi></label>
-   <p>under den betingelse.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-47" n="131,26">
-   <label><hi rendition="#bol">Jav</hi>'et</label>
-   <p>Stavemåden efterligner den dagligdags udtale af jag, dvs. travlhed, også: indholdsløs morskab.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-48" n="132,2">
-   <label><hi rendition="#bol">Captain i det pavelige Politie</hi></label>
-   <p><persName key="Scipio">Scipio</persName> tituleres i stykket: »Capitain i det pavelige Politiecorps«, jf. <hi rendition="#ita">Ludovic</hi> (<ptr type="commentary" target="#pcs-5" n="127,2"/>), s. 1.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-207" n="132,3">
-   <label><hi rendition="#bol">Saavidt vides, skal det pavelige Politie ... og Sølvstads</hi></label>
-   <p>En kilde er ikke identificeret.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-51" n="132,5">
-   <label><hi rendition="#bol">Efter hvad mig er fortalt ... det formeentes ham</hi></label>
-   <p>Hvem SKs kilde er, om det er <persName key="Phister, Joachim Ludvig">Phister</persName> selv, vides ikke. Skuespilleren og instruktøren på <placeName key="Kongelige Teater, Det">Det kgl. Teater</placeName>, <persName key="Ryge, Johan Christian">J.C. Ryge</persName> (1780-1842), der også stod for kostumegarderoben, synes meget sjældent at have nævnt kunstnerens særlige ønsker over for direktionen. Til gengæld findes Ryges kostumeliste dateret på premieredagen den 25. maj 1834 (<ptr type="commentary" target="#pcs-5" n="127,2"/>) med en beskrivelse af Phisters kostume: »Hr Phister: Rund spidspullet Hat med opslaaet Skygge paa den ene Side, en Krampe af Guldgalador fra Lanassa og en sort Fiær. Sort Halsbind. Mørkeblaa Munderings-Kiole med carmoisin Distinktioner og Guld paa Krave og Opslag. Carmoisin Skiødevest og gule Knæbeenklæder. Støvle-Mansketter Fugleskydningen. Stive Støvler med Sporer. Sort Lædergehæng med Sabel. til udstopning En Mave flere Brystpuder.« (Kostumeliste, 24. maj 1834. Det kgl. Biblioteks Arkiv &amp; Bibliotek.) –
-    <hi rendition="#bol">i sin Tid overtog Rollen:</hi> Phister spillede rollen fra stykkets premiere (<ptr type="commentary" target="#pcs-5" n="127,2"/>).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-53" n="132,7">
-   <label><hi rendition="#bol">Videre er mig fortalt ... insisterede herpaa</hi></label>
-   <p>Hvem SKs kilde er, om det er <persName key="Phister, Joachim Ludvig">Phister</persName> selv, vides ikke.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-208" n="132,9">
-   <label><hi rendition="#bol">Scipio er en Mand, som ikke er fuld</hi></label>
-   <p>I 1. akt., 5. scene oplyses i regi-bemærkningen om politisoldaterne: »som alle have en lille Ruus« (<hi rendition="#ita">Ludovic</hi> (<ptr type="commentary" target="#pcs-5" n="127,2"/>), s. 3, sp. 1). <persName key="Scipio">Scipio</persName> og soldaterne viser løbende i 1. akt, at de elsker at drikke, og enkelte steder kaldes de »Drukkenbolte« (1. akt, 8. scene, s. 4, sp. 2, og 10. scene, s. 5, sp. 1). I 1. akt, 8. scene findes følgende replikskifte ml. bondepigen <persName key="Nice">Nice</persName> og Scipio: »Nice (betragter hans Ansigt). Men siig mig engang, Herr Capitain! vil De aldrig holde op at blusse? / Scipio. Ingen Stikpiller, lille Pigebarn! – jeg er i min sædvanlige Tilstand. / Nice. Naa det er en smuk Tilstand! – For fjorten Dage siden, da De kom med Deres Rekrutter forbi min Gaard, var De ogsaa saadan lidt lystig – det lader til at De er bleven det igjen i Dag. / Scipio. Paa ingen Maade! – jeg har været det hele Tiden siden dengang!«, s. 4, sp. 2.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-54" n="132,10">
-   <label><hi rendition="#bol">Bedunstethed</hi></label>
-   <p>beruselse, omtågethed.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-55" n="132,10">
-   <label><hi rendition="#bol">som der staaer etsteds ... reise en Perial</hi></label>
-   <p>Kilden er ikke identificeret. – <hi rendition="#bol">Dag fra Dag:</hi> el. dag for dag. –
-    <hi rendition="#bol">soutenere:</hi> vedligeholde, opretholde. –
-    <hi rendition="#bol">reise en Perial:</hi> drikke sig fuld.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-57" n="132,14">
-   <label><hi rendition="#bol">det er</hi></label>
-   <p>det vil sige.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-209" n="132,21">
-   <label><hi rendition="#bol">Politie-Officiant</hi></label>
-   <p>underordnet politifunktionær, politibetjent. SK havde i renskriften givet følgende eksempel: »Saaledes f.E. en halvfuld Politie-Agent, der i Funktion kommer ind paa et offentlig Sted, hvor der er Sviir og Spil – for at jage dem ud; for ikke at tale om en halvfuld Politie-Officiant, der selv bliver anholdt af Vægteren og arresteret« (<ref type="preparatoryManuscript" n="pap:IXB70" rend="PCS,ms.1.2"><hi rendition="#ita">Pap.</hi> IX B 70</ref>, 10).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-58" n="132,22">
-   <label><hi rendition="#bol">end sige da</hi></label>
-   <p>for slet ikke at sige.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-59" n="132,22">
-   <label><hi rendition="#bol">Forretningen</hi></label>
-   <p>opgaven.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-212" n="133,1">
-   <label><hi rendition="#bol">nedslaaer</hi></label>
-   <p>tilintetgør, ødelægger.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-63" n="133,3">
-   <label><hi rendition="#bol">stikker Vrangen af</hi></label>
-   <p>træder vrangen frem.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-233" n="133,18">
-   <label><hi rendition="#bol">en Mand, for hvem der præsenteres ... Fra den anden Side er han dog ikke</hi></label>
-   <p>SK har i renskriften først skrevet: »en Mand, der bærer Port'epee [sabelkvast, som er forbeholdt officerer at bære], og altsaa af Militairet vises militair Honeur, – en Mand, der qua Militair føler sig forpligtet til at være elskværdig næsten farlig for Kjønnet, at vise dette militaire Galanterie, at tale om parol' d'honneur [fr. æresord] paa en militair Maade o:s:v:. Men er det da en egl. Militair? Nei det er han dog heller ikke. Han er Captain i Politiet. Fra en anden Side seet er han maaskee snarere« (<ref type="preparatoryManuscript" n="pap:IXB70" rend="PCS,ms.1.2"><hi rendition="#ita">Pap.</hi> IX B 70</ref>,12). –
-    <hi rendition="#bol">præsenteres:</hi> præsenteres gevær, dvs. gøres honnør. –
-    <hi rendition="#bol">qua:</hi> lat., i egenskab af. – <hi rendition="#bol">Kjønnet:</hi> kvinderne.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-67" n="133,25">
-   <label><hi rendition="#bol">Birkedommer</hi></label>
-   <p>embedsmand, der var dommer i og administrator af et birk, dvs. en lokal retskreds.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-68" n="133,25">
-   <label><hi rendition="#bol">Byfoged</hi></label>
-   <p>embedsmand, der i provinsbyerne fungerede som dommer, politimester og byskriver, ofte tillige som borgmester. Embedet blev afskaffet i 1919.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-69" n="133,25">
-   <label><hi rendition="#bol">Branddirecteur</hi></label>
-   <p>el. brandmajor, chefen for et brandkorps el. chefen for <placeName>København</placeName>s brandvæsen.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-70" n="133,25">
-   <label><hi rendition="#bol">Veiinspekteur</hi></label>
-   <p>vejinspektør, embedsmand, som har den tekniske ledelse af de offentlige veje.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-71" n="133,27">
-   <label><hi rendition="#bol">Intet mindre end</hi></label>
-   <p>alt andet end.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-72" n="133,28">
-   <label><hi rendition="#bol">Opsynet med Rendesteensbrætterne og Spilde-Vandets ubehindrede Afløb</hi></label>
-   <p>I SKs <placeName>København</placeName> fandtes ikke underjordiske kloakker, men et system af rendestene og grøfter, der skulle føre spildevand og affald ud i havnen. Der var regler for, hvor rendestenene skulle være overdækket med brædder, ligesom det ikke var tilladt at forhindre spildevandets frie løb.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-74" n="133,29">
-   <label><hi rendition="#bol">agte paa Sælgekjerlingerne</hi></label>
-   <p>holde øje med el. overvåge 'sælgekællingerne', dvs. de koner, som solgte deres varer på gader og torve.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-76" n="134,6">
-   <label><hi rendition="#bol">den Modsigelse</hi></label>
-   <p>SK har redegjort for sin opfattelse af den komiske modsigelse i <hi rendition="#ita">Afsluttende uvidenskabelig Efterskrift</hi> (1846), hvor det bl.a. hedder: »Loven for det Comiske er ganske simpel: det er overalt, hvor der er Modsigelse, og hvor Modsigelsen er smerteløs derved, at den sees hævet«, <ref target="../AE/txt.xml#ss475" type="publishedWritings" n="475"><hi rendition="#ita">SKS</hi> 7, 475</ref>. Den mere omfattende sammenhæng, hvori synspunktet indgår, kan resumeres således: Det tragiske og det komiske er det samme, for så vidt som begge ligger i modsigelsens kategori, men det tragiske er den lidende modsigelse, det komiske den smerteløse.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-251" n="134,8">
-   <label><hi rendition="#bol">et incommensurabelt Sving</hi></label>
-   <p>en uensartet (væsenforskellig) bevægelse.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-77" n="134,9">
-   <label><hi rendition="#bol">den Fart, som, efter en Droskekudsks Udsagn ... til Rendestenen</hi></label>
-   <p>sml. journaloptegnelsen <ref target="../JJ/txt.xml#n413" type="journalsAndPapers" n="413">JJ:413</ref> (1846): »Idag hørte jeg en Droskekudsk sige om en fuld Kudsk der kjørte forbi i et temmeligt stærkt Trav: 'han har faaet Noget af den Retning som ledsager Een til Rendestenen'«, <hi rendition="#ita">SKS</hi> 18, 277. –
-    <hi rendition="#bol">ledsager <hi rendition="#ita">(...)</hi> til Rendestenen:</hi> talemåde; leder (en beruset person) i moralsk fordærv el. fører til social nedtur.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-78" n="134,16">
-   <label><hi rendition="#bol">biløbigt af</hi></label>
-   <p>sideløbende med, samtidigt med.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-214" n="134,17">
-   <label><hi rendition="#bol">o: D:</hi></label>
-   <p>og deslige.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-80" n="135,3">
-   <label><hi rendition="#bol">Capt. S. er en tyk, corpulent Mand</hi></label>
-   <p>nævnes ikke i teksten, men sigter til <persName key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr type="commentary" target="#pcs-5" n="127,2"/>).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-215" n="135,3">
-   <label><hi rendition="#bol">Embonpoint</hi></label>
-   <p>fr., egl. i god stand; fyldighed, fedme.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-82" n="135,5">
-   <label><hi rendition="#bol">end sige da</hi></label>
-   <p>ikke mindst.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-84" n="135,10">
-   <label><hi rendition="#bol">Borgermajor</hi></label>
-   <p>officer i <placeName>København</placeName>s Borgervæbning, et værn, i hvilket våbenføre mænd af borgerstand, såsnart de var fyldt 18 år, skulle indrulleres. De kom dog kun til at gøre tjeneste, hvis de meldte sig frivilligt, eller hvis der ikke var frivillige nok til at stille det foreskrevne mandskab.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-216" n="135,12">
-   <label><hi rendition="#bol">gaaer ... over Skrevet</hi></label>
-   <p>dvs. 'går over skrævet', fast udtryk: går over stregen, går alt for vidt.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-86" n="135,13">
-   <label><hi rendition="#bol">Prinds Henrich siger til den jo rigtignok ... svarer: »ja, ja ... dunset mig op.«</hi></label>
-   <p>Der sigtes til <persName key="Shakespeare, William">William Shakespeare</persName>s historiske skuespil <hi rendition="#ita">Henrik den Fjerde. Første del</hi> (1597), hvor prins <persName key="Henrik IV">Henrik</persName> spørger sir <persName key="Falstaff, Sir John">John Falstaff</persName>: »Hvor længe er det siden Du saae Dine egne Knæe, Hansemand?« Falstaff svarer: »Mine egne Knæe? Da jeg var i Dine Aar Henrik, var jeg ikke saa tyk om Livet, som en Ørnekloe: jeg kunde have krøbet igiennem Ringen paa en Aldermands Tommelfinger: <persName key="Fanden">Fanden</persName> tage Suk og Sorg; det blæser et Menneske op som en Blære«. <hi rendition="#ita">William Shakspeare's Tragiske Værker,</hi> overs. af <persName key="Foersom, Peter">P. Foersom</persName> og <persName key="Wulff, Peter Frederik">P.F. Wulff</persName>, bd. 1-9 [bd. 8-9 har titlen <hi rendition="#ita">Dramatiske Værker</hi>], <placeName key="København">Kbh.</placeName> 1807-25, ktl. 1889-1896; bd. 3, 1815, s. 1-179; s. 78. –
-    <hi rendition="#bol">dunset mig op:</hi> gjort mig oppustet, tyk.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-88" n="135,22">
-   <label><hi rendition="#bol">staae paa Heel ... staaer <hi rendition="#ita">(...)</hi> paa Halv</hi></label>
-   <p>Udtrykkene bruges alm. om et gevær, hvor geværhanen i låsen enten 'står på hel' dvs. er helt spændt, klar til at skyde, el. 'står på halv', dvs. er i stillingen ml. åben og lukket (låst).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-217" n="135,22">
-   <label><hi rendition="#bol">Han bøier sig med Overkroppen ... fremtrædende Mave</hi></label>
-   <p>nævnes ikke i teksten, men sigter til <persName key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr type="commentary" target="#pcs-5" n="127,2"/>).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-234" n="135,24">
-   <label><hi rendition="#bol">Hans hele Skikkelse faaer derved Lighed med en Bue</hi></label>
-   <p>SK skrev først i renskriften: »Hans hele Skikkelse faaer derved Lighed med en Curve ell. Bogstavet C« (<ref type="preparatoryManuscript" n="pap:IXB70" rend="PCS,ms.1.2"><hi rendition="#ita">Pap.</hi> IX B 70</ref>,19).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-90" n="135,25">
-   <label><hi rendition="#bol">complaisant</hi></label>
-   <p>fr., venlig, høflig, tjenstvillig.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-91" n="135,27">
-   <label><hi rendition="#bol">rusticeret</hi></label>
-   <p>dvs. rustificeret, det at være gjort 'landlig', bondsk.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-92" n="135,27">
-   <label><hi rendition="#bol">Han tager sin Chaco af for at aftørre Sveden</hi></label>
-   <p>nævnes ikke i teksten, men sigter til <persName key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr type="commentary" target="#pcs-5" n="127,2"/>). –
-    <hi rendition="#bol">Chaco:</hi> el. chakot, militær hovedbeklædning; se beskrivelsen af Phisters kostume (<ptr type="commentary" target="#pcs-51" n="132,5"/>).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-93" n="135,30">
-   <label><hi rendition="#bol">en ottende Deel Fjerdingvei</hi></label>
-   <p>En 'fjerdingvej' er en fjerdedel af en dansk mil (= 7532,48 m), dvs. o. 1880 m; en ⅛ heraf vil da svare til o. 235 m.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-218" n="135,31">
-   <label><hi rendition="#bol">Elskværdigt følger saa paa Svedens Aftørrelse ... den halvskaldede Isse</hi></label>
-   <p>nævnes ikke i teksten, men sigter til <persName key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr type="commentary" target="#pcs-5" n="127,2"/>).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-219" n="136,4">
-   <label><hi rendition="#bol">Mærkerne af</hi></label>
-   <p>sporene efter el. tegnene på.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-253" n="136,5">
-   <label><hi rendition="#bol">diverse Forretninger</hi></label>
-   <p>forskellige gøremål.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-97" n="136,5">
-   <label><hi rendition="#bol">Halvsvimmel</hi></label>
-   <p>tilstand af halv svimmelhed, her formentlig: beruselse.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-220" n="136,9">
-   <label><hi rendition="#bol">I denne Stilling ... »elskværdige Gaardeierinde« ... til Indqvartering</hi></label>
-   <p>sigter til 1. akt af <hi rendition="#ita">Ludovic</hi> (<ptr type="commentary" target="#pcs-5" n="127,2"/>), hvor <persName key="Scipio">Scipio</persName> i scene 6 er troppet op hos <persName key="Francesca">Francesca</persName> for at indkræve den skat, hun skylder paven. Hun svarer, at hun nok skal betale i dag, og at han derfor godt kan drage af sted igen. Scipio vil dog lige afslutte sin oplæsning af bestemmelserne: »Paa Øieblikket, elskværdigste Gaardeierinde! (Bliver ved at læse). 'Tillige haver bemældte Francesca i otte Dage at forsyne bemældte Capitain Scipio og hans tappre Krigere med Qvarteer og Kost.' (Idet han lægger Seddelen sammen). Drikkevarene ere naturligviis indbefattede i Kosten«, s. 3, sp. 2. I scene 9 er Francescas tjenestekarl, som bærer en kurv med fyldte vinflasker, klar til at føre Scipio og hans soldater hen til deres værelser. Francesca beder atter Scipio om at gå, hvortil han svarer: »Jeg gaaer, elskværdigste Gaardeierinde! jeg gaaer! Med saadan en Karl i Spidsen kan Du friste os til at gaae lige ind i <placeName>Helvede</placeName>!«, s. 5, sp. 1.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-100" n="136,12">
-   <label><hi rendition="#bol">enes</hi></label>
-   <p>forenes, mødes.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-101" n="136,13">
-   <label><hi rendition="#bol">Amphibium</hi></label>
-   <p>lat., egl. dobbelt-levende; bruges om dyr, som lever både i vand og på land.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-102" n="136,15">
-   <label><hi rendition="#bol">det er</hi></label>
-   <p>det vil sige.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-103" n="136,15">
-   <label><hi rendition="#bol">ligeoverfor</hi></label>
-   <p>i forhold til.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-221" n="136,18">
-   <label><hi rendition="#bol">ligeoverfor</hi></label>
-   <p>over for; foran.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-104" n="136,18">
-   <label><hi rendition="#bol">Fruentimmer</hi></label>
-   <p>kvinde.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-105" n="136,20">
-   <label><hi rendition="#bol">præsterer <hi rendition="#ita">(...)</hi> præstanda</hi></label>
-   <p>gør el. opfylder sin skyldighed. Lat. 'præstanda' er et juridisk udtryk for de ting, der skal ydes el. gøres.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-222" n="136,21">
-   <label><hi rendition="#bol">En elskværdig Courtiseren ... i forliebte Hop o: s: v:</hi></label>
-   <p>Dette nævnes ikke i teksten, men det sigter til <persName key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr type="commentary" target="#pcs-5" n="127,2"/>). –
-    <hi rendition="#bol">forbindtlige:</hi> forekommende, venlige. –
-    <hi rendition="#bol">Dikke-Darer:</hi> overdrevne fagter. –
-    <hi rendition="#bol">Purren i Haaret:</hi> fast udtryk: det at føre hånden vilkårligt gennem håret som udtryk for forlegenhed o.l. –
-    <hi rendition="#bol">Omkredsen:</hi> cirkuleren omkring. – <hi rendition="#bol">forliebte:</hi> forelskede.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-113" n="137,3">
-   <label><hi rendition="#bol">Detaschement</hi></label>
-   <p>el. detachement, dvs. en mindre styrke tropper med en særlig opgave.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-114" n="137,6">
-   <label><hi rendition="#bol">Militairisk</hi></label>
-   <p>militært set.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-223" n="137,8">
-   <label><hi rendition="#bol">Først kommer Soldaterne ind og stille sig i Række – da kommer Capt. S.</hi></label>
-   <p>nævnes ikke i teksten, men sigter til <persName key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr type="commentary" target="#pcs-5" n="127,2"/>).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-115" n="137,12">
-   <label><hi rendition="#bol">Menneskets Gang er ... en fortsat Falden</hi></label>
-   <p>En kilde er ikke identificeret. Sml. journaloptegnelsen <ref target="../FF/txt.xml#n193" type="journalsAndPapers" n="193"><persName key="F. F.">FF</persName>:193</ref>, i <hi rendition="#ita">SKS</hi> 18, 112, og <hi rendition="#ita">Philosophiske Smuler</hi> (1844), i <ref target="../PS/txt.xml#ss243" type="publishedWritings" n="243"><hi rendition="#ita">SKS</hi> 4, 243</ref>, hvor sætningen tillægges »Naturforskerne«.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-116" n="137,16">
-   <label><hi rendition="#bol">han, som man siger, gaaer paa venstre Side af sin egen R</hi></label>
-   <p>Vendingen 'at gå på venstre side af sin egen røv' er ikke fundet optegnet andre steder.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-224" n="137,17">
-   <label><hi rendition="#bol">han trækker det ene Been ... hastende – bag efter</hi></label>
-   <p>nævnes ikke i teksten, men sigter til <persName key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr type="commentary" target="#pcs-5" n="127,2"/>).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-117" n="137,17">
-   <label><hi rendition="#bol">Tommer</hi></label>
-   <p>Den da. måleenhed 'tomme' svarer til 2,615 cm (1 tomme = <formula xmlns:m="http://www.w3.org/1998/Math/MathML" notation="mathml"><m:math><m:mfrac bevelled="true"><m:mi>1</m:mi><m:mi>12</m:mi></m:mfrac></m:math></formula> fod).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-118" n="137,20">
-   <label><hi rendition="#bol">Han passerer nu Linien</hi></label>
-   <p>dvs. han inspicerer soldaterne, som står på geled. Dette nævnes ikke i teksten, men sigter til <persName key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr type="commentary" target="#pcs-5" n="127,2"/>).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-119" n="137,22">
-   <label><hi rendition="#bol">Dog veed man ... Antydning af en Hale</hi></label>
-   <p>sigter til halebenet.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-120" n="137,26">
-   <label><hi rendition="#bol">engliseret</hi></label>
-   <p>Det (efter eng. forbillede) at en hest har fået en højere haleføring, ved at halens bøjemuskler er blevet overskåret.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-225" n="137,26">
-   <label><hi rendition="#bol">Paradeur</hi></label>
-   <p>fr., hest, der udmærker sig ved et smukt ydre og ved livlige, skolerigtige bevægelser.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-121" n="137,26">
-   <label><hi rendition="#bol">Leie-Hest</hi></label>
-   <p>hest, der udlejes til brug for hvemsomhelst.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-226" n="137,27">
-   <label><hi rendition="#bol">sætter sig en lille Lunte</hi></label>
-   <p>dvs. sætter sig i luntetrav.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-122" n="137,28">
-   <label><hi rendition="#bol">stumprumpede</hi></label>
-   <p>fast udtryk om en kort, kraftig hale.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-125" n="138,1">
-   <label><hi rendition="#bol">Retnings-Major</hi></label>
-   <p>den kommanderende officer.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-227" n="138,2">
-   <label><hi rendition="#bol">en lille Streg</hi>s</label>
-   <p>Et fast udtryk for at være lettere beruset var 'at have en lille streg på'.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-126" n="138,5">
-   <label><hi rendition="#bol">det Forsøg man i en ældre Tid gjorde ... lade ham ligge krum</hi></label>
-   <p>Der sigtes til den militære straf at 'ligge krum', som var udbredt i 1700-tallet, men som blev afskaffet i begyndelsen af 1800-tallet. Soldaten blev lagt på en træbænk med jernringe om håndled og ankler, således at han lå krummet sammen. Sådan skulle han ligge i et til to døgn. –
-    <hi rendition="#bol">staae lige:</hi> el. stå ret; bredere også om at parere ordre.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-127" n="138,9">
-   <label><hi rendition="#bol">fordunster</hi></label>
-   <p>fordamper, forsvinder.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-129" n="138,14">
-   <label><hi rendition="#bol">Æsthetiker</hi></label>
-   <p>her: person, som har forstand på kunst.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-130" n="138,16">
-   <label><hi rendition="#bol">Incommensurabelt</hi></label>
-   <p>usammenligneligt.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-132" n="138,20">
-   <label><hi rendition="#bol">lyst i Hævd</hi></label>
-   <p>bragt til anerkendelse, her: lovligt.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-252" n="138,23">
-   <label><hi rendition="#bol">i Charakteren</hi></label>
-   <p>dvs. i den rolle, han skal udføre.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-134" n="138,24">
-   <label><hi rendition="#bol">vordende</hi></label>
-   <p>kommende.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-136" n="138,29">
-   <label><hi rendition="#bol">heller slet ikke mere</hi></label>
-   <p>men heller ikke mere.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-228" n="138,29">
-   <label><hi rendition="#bol">en lille Pidsk</hi></label>
-   <p>fast udtryk for at være lettere beruset.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-139" n="139,9">
-   <label><hi rendition="#bol">complaisant</hi></label>
-   <p>høfligt, tjenstvilligt.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-140" n="139,11">
-   <label><hi rendition="#bol">Comportement</hi></label>
-   <p>(god) opførsel, optræden.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-143" n="139,22">
-   <label><hi rendition="#bol">veed at være</hi></label>
-   <p>er sig bevidst at være; er.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-145" n="139,23">
-   <label><hi rendition="#bol">telegraphisk</hi></label>
-   <p>om det at meddele noget uden ord, men ved hjælp af mimik.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-147" n="139,24">
-   <label><hi rendition="#bol">underhaanden</hi></label>
-   <p>hemmeligt, skjult.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-148" n="139,30">
-   <label><hi rendition="#bol">ret</hi></label>
-   <p>fuldt ud, rigtigt.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-149" n="139,31">
-   <label><hi rendition="#bol">end sige</hi></label>
-   <p>endsige, for slet ikke at tale om.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-150" n="139,31">
-   <label><hi rendition="#bol">geheimt</hi></label>
-   <p>af ty., hemmeligt.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-151" n="139,31">
-   <label><hi rendition="#bol">Bedunstet</hi></label>
-   <p>beruset, bedugget, halvfuld.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-229" n="139,34">
-   <label><hi rendition="#bol">Altsaa Capt. S. er ikke fuld ... Blodets Stigen til Hovedet</hi></label>
-   <p>Noget af denne karakter er angivet i teksten (<ptr type="commentary" target="#pcs-208" n="132,9"/>), mens det andet skyldes <persName key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr type="commentary" target="#pcs-5" n="127,2"/>). –
-    <hi rendition="#bol">Knysten:</hi> kort og tør hosten. –
-    <hi rendition="#bol">Echaufferethed:</hi> af fr. 'échaufferet', hed, ophidset; ophedethed, ophidsethed.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-154" n="140,5">
-   <label><hi rendition="#bol">Habituelt</hi></label>
-   <p>noget, som er blevet til en vane.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-230" n="140,8">
-   <label><hi rendition="#bol">Deraf den idelige Bevægelse ... en Viften med Haanden</hi></label>
-   <p>Dette nævnes ikke i teksten, men sigter til <persName key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr type="commentary" target="#pcs-5" n="127,2"/>). –
-    <hi rendition="#bol">idelige:</hi> konstant gentagne.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-156" n="140,10">
-   <label><hi rendition="#bol">Dunst</hi></label>
-   <p>lugt, her: spiritusånde.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-157" n="140,11">
-   <label><hi rendition="#bol">Chakoen</hi></label>
-   <p><ptr type="commentary" target="#pcs-92" n="135,27"/>.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-161" n="140,17">
-   <label><hi rendition="#bol">Petitmaitre</hi></label>
-   <p>laps, spradebasse.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-162" n="140,25">
-   <label><hi rendition="#bol">forbindtlig</hi></label>
-   <p>forekommende, venlig.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-164" n="140,27">
-   <label><hi rendition="#bol">complaisant</hi></label>
-   <p>elskværdigt, høfligt.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-165" n="140,29">
-   <label><hi rendition="#bol">fordølge</hi></label>
-   <p>skjule.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-168" n="141,5">
-   <label><hi rendition="#bol">geheimt</hi></label>
-   <p>af ty., hemmelig.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-169" n="141,6">
-   <label><hi rendition="#bol">Svingel</hi></label>
-   <p>egl. svimmelhed; rus.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-170" n="141,11">
-   <label><hi rendition="#bol">sætter det bedste Been frem</hi></label>
-   <p>går energisk; også: viser sig fra den bedste side.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-171" n="141,12">
-   <label><hi rendition="#bol">»sætte det andet forved det«</hi></label>
-   <p>indirekte tale, ikke citat fra stykket. – <hi rendition="#bol">forved:</hi> foran.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-231" n="141,24">
-   <label><hi rendition="#bol">Tournüre</hi></label>
-   <p>holdning, elegance.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-254" n="141,33">
-   <label><hi rendition="#bol">havde lagt af</hi></label>
-   <p>var holdt op med.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-175" n="142,2">
-   <label><hi rendition="#bol">Trods al Capt. Scipios Travlhed ... paagribe den Skyldige</hi></label>
-   <p>Der sigtes til 2. akt, 3. scene, i <hi rendition="#ita">Ludovic</hi> (<ptr type="commentary" target="#pcs-5" n="127,2"/>), hvor <persName key="Scipio">Scipio</persName>s fange, <persName key="Ludovic">Ludovic</persName>, er stukket af, og Scipio pludselig afslører sig som from: »jeg drikker ikke mere – andet end Vand!« siger han. Og det skyldes ikke, at han er blevet syg, men at han har afgivet et løfte: »Ja, og det et høist mærkeligt Løfte! Min Chef har tilstaaet mig otte Dage for igjen at faae fat paa den Forbryder, som jeg havde under min Varetægt; dersom jeg ikke til den Tid kan faae ham, saa faaer jeg min Afsked – og det gjorde mig saa forskrækket, at jeg ikke vidste hos hvilken Helgen jeg skulde søge Styrke; saa greb jeg til Vandet, i det Haab at Himlen, for min Poenitentses Skyld, vil skaffe mig fat paa Knægten«, s. 14, sp. 1. Scipio har da ikke drukket i otte dage.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-232" n="142,6">
-   <label><hi rendition="#bol">hans pathetiske Replik ... »hvilken Qval ... drikke Andet end Viin.«</hi></label>
-   <p>Der sigtes til 2. akt, 15. scene, i <hi rendition="#ita">Ludovic</hi> (<ptr type="commentary" target="#pcs-5" n="127,2"/>), hvor <persName key="Scipio">Scipio</persName> i Eremitens hus leder efter <persName key="Ludovic">Ludovic</persName> og pludselig siger for sig selv: »Nei, det maa jeg tilstaae, det er skrækkelig haardt for en Mand, som har gjort det Løfte kun at drikke Vand, naar han skal gjøre Huusundersøgelse hos en Eremit, som har gjort det Løfte kun at drikke Viin – og hvilken Viin!« s. 20, sp 1.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-177" n="142,27">
-   <label><hi rendition="#bol">tristitia</hi></label>
-   <p>lat., tristhed, sørgmodighed, bedrøvethed.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-178" n="142,28">
-   <label><hi rendition="#bol">slattede</hi></label>
-   <p>el. slatne, uden kraft.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-179" n="143,2">
-   <label><hi rendition="#bol">det er mange Aar siden dens Forf. saae Ludovic ... blev givet</hi></label>
-   <p>SK har formentlig set stykket i 1841 (<ptr type="commentary" target="#pcs-7" n="127,4"/>).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-181" n="143,7">
-   <label><hi rendition="#bol">Phister</hi></label>
-   <p><ptr type="commentary" target="#pcs-4" n="127,1"/>.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-182" n="143,7">
-   <label><hi rendition="#bol">Rosenkilde</hi></label>
-   <p><persName key="Rosenkilde, Christen Niemann" n="*">Christen Niemann Rosenkilde</persName> (1786-1861), da. skuespiller; fra 1815 ansat ved <placeName key="Kongelige Teater, Det">Det kgl. Teater</placeName>. Han havde en meget smuk tenorstemme og udførte bl.a. en række komiske roller i sin gode ven <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s vaudeviller, hvilket bidrog dels til vaudevillens succes som genre, dels til hans egen popularitet. Hans særlige komiske geni har SK beskrevet i udkastene til »Rosenkilde som '<persName key="Hummer">Hummer</persName>'. Et Erindrings-Forsøg af En Taknemlig« fra 1847 (<ref target="../P372/txt.xml#n373" type="journalsAndPapers" n="373">Papir 373</ref>, <hi rendition="#ita">SKS</hi> 27, 438f.). Rosenkildes datter, <persName key="Sødring, Julie Weber">Julie Weber Sødring</persName>, har bevidnet, at hendes far og SK kendte hinanden, jf. <hi rendition="#ita">Søren Kierkegaard truffet. Et liv set af hans samtidige,</hi> udg. af <persName key="Kirmmse, Bruce H.">Bruce H. Kirmmse</persName>, <placeName key="København">Kbh.</placeName> 1996, s. 134f. I en kladde til en dedikation til skuespilleren har SK skrevet: »Til / Lunets uvurdeerlige end sige ubetalelige Komiker, / <placeName>Danmark</placeName>s største, / Hr. Rosenkilde / fra / Forfatteren« (<ref target="../b208/txt.xml#n210" type="lettersAndDedications" n="ba:I_s.344" rend="Brev 210"><hi rendition="#ita">B&amp;A,</hi> bd. 1, s. 344</ref>).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-183" n="143,7">
-   <label><hi rendition="#bol">Nielsen</hi></label>
-   <p><persName key="Nielsen, Nicolai Peter" n="*">Nicolai Peter Nielsen</persName> (1795-1860), da. skuespiller og instruktør; fra 1820 ansat ved <placeName key="Kongelige Teater, Det">Det kgl. Teater</placeName>, hvor han blev en af datidens største skuespillere. Han var gift med en berømt skuespillerinde (<ptr type="commentary" target="#pcs-186" n="143,8"/>). SKs forbindelse med familien Nielsen fremgår af et opbevaret brev, jf. <ref target="../b241/txt.xml#n252" type="lettersAndDedications" n="ba:170" rend="Brev 252"><hi rendition="#ita">B&amp;A,</hi> nr. 170; bd. 1, s. 189f.</ref></p>
-  </note>
-  <note type="commentary" xml:id="pcs-184" n="143,8">
-   <label><hi rendition="#bol">Wiehe</hi></label>
-   <p><persName key="Wiehe, Michael Rosing" n="*">Michael [Rosing] Wiehe</persName> (1820-64), da. skuespiller. Han fik sit gennembrud på <placeName key="Kongelige Teater, Det">Det kgl. Teater</placeName> i begyndelsen af 1840'erne, blev mest fejret i sine roller som den unge elsker og fra 1844 tillige berømmet for sit virtuose samspil med <persName key="Heiberg, Johanne Luise">fru Heiberg</persName> (<ptr type="commentary" target="#pcs-185" n="143,8"/>).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-185" n="143,8">
-   <label><hi rendition="#bol">Frue Heiberg</hi></label>
-   <p><persName key="Heiberg, Johanne Luise" n="*">Johanne Luise Heiberg</persName>, født Pätges (1812-90), feteret skuespillerinde ved <placeName key="Kongelige Teater, Det">Det kgl. Teater</placeName>, hvor hun fra 1823 spillede en lang række heltinderoller, som ofte var skrevet særligt til hende, bl.a. af hendes mand siden 1831, <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>. Som hustru til Heiberg, der var professor og dermed en rangsperson, kunne hun titulere sig fru og ikke blot madam. SK havde udgivet føljetonartiklen »Krisen og en Krise i en Skuespillerindes Liv« (I-IV af <persName key="Inter et Inter">Inter et Inter</persName>), dateret »Sommeren 1847«, i <hi rendition="#ita">Fædrelandet,</hi> nr. 188, den 24. juli, sp. 1485-1490, nr. 189, den 25. juli, sp. 1493-1500, nr. 190, den 26. juli, sp. 1501-1506, og nr. 191, den 27. juli 1848, sp. 1509-1516 (<ref target="../KKS/txt.xml#ss91" type="publishedWritings" n="91"><hi rendition="#ita">SKS</hi> 14, 91</ref>-107).</p>
-  </note>
-  <note type="commentary" xml:id="pcs-186" n="143,8">
-   <label><hi rendition="#bol">Md. Nielsen</hi></label>
-   <p><persName key="Nielsen, Anna" n="*">Anna Nielsen</persName> (1803-56), fra 1821 skuespiller ved <placeName key="Kongelige Teater, Det">Det kgl. Teater</placeName>, hvor hun i sit vidtfavnende repertoire levendegjorde et utal af forskellige kvinderoller, især hustru- og moderroller. Hun var gift med skuespilleren <persName key="Nielsen, Nicolai Peter">N.P. Nielsen</persName> (<ptr type="commentary" target="#pcs-183" n="143,7"/>), der ikke var optaget i den borgerlige rangforordning, hvorfor hun efter tidens skik blev benævnt madam (forkortet mad.) og ikke fru. Trods sit talent stod hun i skyggen af <persName key="Heiberg, Johanne Luise">fru Heiberg</persName>, men i <hi rendition="#ita">Stadier paa Livets Vei</hi> (1845) lader SK pseudonymen <persName key="Wilhelm">Assessor Wilhelm</persName> hylde hende i en lang fodnote, hvor man får indtryk af, at fru Heibergs beundrere har knap så meget at have deres beundring i som madam Nielsens har, da »denne Skuespillerinde bliver betragtet som værende af anden Rang, hvilket hun ogsaa er, naar Fordringen er at løbe omkaps i Øieblikket, og at virke ikke ved det Bestandige, men ved det Forsvindende«, <ref target="../SLV/txt.xml#ss125" type="publishedWritings" n="125"><hi rendition="#ita">SKS</hi> 6, 125</ref>,22-24.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-187" n="143,8">
-   <label><hi rendition="#bol">o: fl.</hi></label>
-   <p>og flere.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-188" n="143,13">
-   <label><hi rendition="#bol">Skjønsomhedens</hi></label>
-   <p>påskønnelsens, taknemmelighedens.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-189" n="143,17">
-   <label><hi rendition="#bol">et saa lille Land som Danmark</hi></label>
-   <p>Ved folketællingen i 1850 var der 1.407.747 indbyggere i kongeriget <placeName>Danmark</placeName>; når befolkningerne i bilandene (<placeName>Færøerne</placeName>, <placeName>Grønland</placeName>, <placeName>Island</placeName> og <placeName>De dansk-vestindiske Øer</placeName>) medregnes, var der 1.524.911 indbyggere. Se <hi rendition="#ita">Statistisk Tabelværk, ny række,</hi> bd. 1, <placeName key="København">Kbh.</placeName> 1850, s. III.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-190" n="143,24">
-   <label><hi rendition="#bol">i Dec. 48</hi></label>
-   <p>se <ref target="../PCS/txr.xml#ss140" type="textCriticalAccount" n="140">tekstredegørelsen, s. 140</ref>.</p>
-  </note>
-  <note type="commentary" xml:id="pcs-191" n="143,24">
-   <label><hi rendition="#bol">Procul</hi></label>
-   <p>lat., fjernt, langt borte fra; på afstand.</p>
-  </note>
- </div></body></text>
+  <text xml:id="id061913fc-266f-47df-a9d2-316dfb1ffada" type="commentary" subtype="uts">
+    <body xml:id="id18b2779c-8991-46c7-8640-bbb7ba2e5df3">
+      <div xml:id="id52e67697-06a9-4909-824e-4dc099cc1ff3">
+        <note type="commentary" xml:id="pcs-4" n="127,1">
+          <label xml:id="id38f2356d-10c5-4612-819f-df43a7556e33">
+            <hi xml:id="idbabe23bf-47a8-4ee3-89da-c8b00fd7d8c5" rendition="#bol">Hr Phister</hi>
+          </label>
+          <p xml:id="ida8352696-ef8f-4679-a656-986d03c97781"><persName xml:id="id1671ffae-132e-4612-affc-06ca3a6ee21e" key="Phister, Joachim Ludvig" n="*">Joachim Ludvig Phister</persName> (1807-96), da. skuespiller og sanger; siden 1817 knyttet til <placeName xml:id="id92b7336b-644a-4854-98be-444cce159832" key="Kongelige Teater, Det">Det kgl. Teater</placeName> som balletelev, senere som skuespillerelev. Han fik sit gennembrud som skuespiller i 1825 og blev sidenhen en af datidens største skuespillere med en særlig tæft for de komiske roller. SK havde tidligere rost Phister for hans rolle som <persName xml:id="idbbe302bc-0129-4e45-aad2-6e4c59fc579d" key="Charles">Charles</persName> i <hi xml:id="id9d062ea0-81ad-442e-8490-49e75fff2774" rendition="#ita">Den første Kjærlighed,</hi> jf. <ref xml:id="iddf97f423-381e-40f6-adc3-c38db73e2f25" target="../EE1/txt.xml#ss270" type="publishedWritings" n="270"><hi xml:id="idd3f31afa-e818-4463-87cd-e419ed9e0b24" rendition="#ita">SKS</hi> 2, 270</ref> (1843). Fra okt. 1848 til april 1850 er SK skuespillerens overbo i <placeName xml:id="id9a06e3da-7eb8-4c82-9a8c-5102c3880f4c">Rosenborggade</placeName> 156 A. I denne periode udkommer 2. udg. af <hi xml:id="id76e7ac9e-978d-4d2a-8a7e-4720be32046e" rendition="#ita">Enten – Eller</hi> (1849), som SK senere sender til Phister med et ledsagebrev, hvori han fremhæver, at Phisters »Styrke er Reflexionen«, jf. brev til Phister 31. dec. 1850, i <ref xml:id="id005df2e0-c167-4ab9-ae00-ec0445bc645e" target="../b43/txt.xml#n64" type="lettersAndDedications" n="ba:274" rend="Brev 64"><hi xml:id="idf3f7d033-332b-4b0f-b26d-bc9f20acda9c" rendition="#ita">B&amp;A,</hi> nr. 274, bd. 1, s. 296.</ref> SKs dedikation lyder: »Til / Reflexionens og Tænksomhedens store Komiker, <placeName xml:id="idba334383-d44a-44ff-887c-206a0b7f836c">Danmark</placeName>s største, Hr. Phister / fra / Forfatteren«, <ref xml:id="id6536b7ef-2622-480f-8b4f-419984c1507c" target="../b208/txt.xml#n210" type="lettersAndDedications" n="ba:I_s.344" rend="Brev 210"><hi xml:id="iddc4386ad-89ad-4139-8b3c-bae87e843bdf" rendition="#ita">B&amp;A</hi> bd. 1, s. 344</ref>. Fra formentlig dec. 1848 er opbevaret endnu et renskrevet brev fra SK til Phister, hvoraf fremgår, at det skulle ledsage nærværende afhandling. Hvorvidt SK faktisk viderebragte sin overbo brevet og afhandlingen er uvist. Sikkert er det, at afhandlingen ikke blev sendt til <hi xml:id="id62a65382-dd8b-4657-8c1a-88fe6a6f8c76" rendition="#ita">Fædrelandet,</hi> jf. <ref xml:id="idd5289d91-42c6-4143-b68c-63e44d28d10c" target="../PCS/txr.xml#ss144" type="textCriticalAccount" n="144">tekstredegørelsen, s. 144</ref>f.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-5" n="127,2">
+          <label xml:id="id5399e459-74bb-4a8e-a677-2a89c3c25620">
+            <hi xml:id="id614f8020-1014-4ac2-aba8-9664af12a541" rendition="#bol">Captain Scipio (i Syngestykket »Ludovic«)</hi>
+          </label>
+          <p xml:id="iddf03b202-74d4-4716-8c08-4a6128cb17a5">Den fr. opéra-comique <hi xml:id="idc2eaa4bb-121d-498a-8487-a5ca920ef8de" rendition="#ita">Ludovic,</hi> som havde premiere i <placeName xml:id="id7bb0d4c7-f815-4971-a74b-35ede3f5cd36">Paris</placeName> den 16. maj 1833, blev skrevet af <persName xml:id="ided236c4b-2f2d-4b14-97bb-c02f23ccd046" key="Saint-Georges, Jules-Henri Vernoy de" n="*">Jules-Henri Vernoy de Saint-Georges</persName> (1799-1875). Musikken blev komponeret af <persName xml:id="id89dfb9b9-adc0-46b2-b1df-d80e0570a254" key="Hérold, Louis Joseph Ferdinand" n="*">Louis Joseph Ferdinand Hérold</persName> (1791-1833) og efter dennes død færdiggjort af <persName xml:id="id44489a43-491e-40e1-9518-4b94c5f565f5" key="Halévy, Jacques François Fromental Élie" n="*">Jacques François Fromental Élie Halévy</persName> (1799-1862). Stykket blev oversat til da. i 1834 af <persName xml:id="id9d1a707b-2cfd-47eb-a537-6de118684359" key="Overskou, Thomas" n="*">Thomas Overskou</persName> (1798-1873), udgivet som nr. 61 i <hi xml:id="id3c544931-8459-4dd1-a6af-aaea5ad49d64" rendition="#ita">Det kongelige Teaters Repertoire</hi> (bd. 3, 1834) og opført første gang på Det kongelige Teater den 24. maj 1834 (<ptr xml:id="id8f5b173f-2cf1-4ea9-ad3f-57e7ed81c691" type="commentary" target="#pcs-7" n="127,4"/>). Stykket, der på da. bliver kaldt et »Syngestykke«, er i to akter. Den unge, velhavende gårdejerinde, <persName xml:id="id48702d6a-b661-4757-a385-ba3127a816cc" key="Francesca">Francesca</persName>, har holdt sit hjerte tilbage for at skænke det til den kedelige <persName xml:id="idcb31e9fb-4637-4859-8f57-b582e5d48f9d" key="Gregorio">Gregorio</persName>, mens hun omvendt afskyer sin iltre avlskarl, den stædige bejler <persName xml:id="ida8ec5059-f86d-4b04-b5ab-915bc2d20b03" key="Ludovic">Ludovic</persName>. Handlingen foregår i landsbyen <placeName xml:id="iddb0e4e42-cf9a-4a42-9633-e7c58afc98f8">Albano</placeName> ved <placeName xml:id="id9b27ead7-2e92-4dba-b86a-87adc861729c">Rom</placeName>, hvor pavens udsendte politi møder op for at inddrive den skat, som Francesca skylder. Kaptajnen for det lille korps af soldater er den drikfældige <persName xml:id="idc7332962-a20b-4285-a626-69679e5a0736" key="Scipio" sameAs="Captain Scipio">Scipio</persName> (et basparti sunget af <persName xml:id="id0ce52d01-73e9-476f-b176-b82c7a897432" key="Phister, Joachim Ludvig">Phister</persName>), omkring hvem intrigen udspiller sig. SKs karakteristik af Phister i rollen som Scipio bygger i mange træk på selve opførelsen, dvs. SKs fremhævelser er ikke nævnt i teksten. Den da. oversætter, teaterhistorikeren Thomas Overskou, skriver: »Toactsstykket 'Ludovic' af Saint-Georges optoges med stor Enthusiasme. Det var ikke fordi Musiken, der er begyndt af Hérold og, efter hans Død, fuldendt af den senere berømte Halevy, blev funden udmærket ved andet end smuk Livfuldhed; men Texten var et med sikkert Blik for scenisk Effect særdeles heldigt anlagt Overraskelsesstykke, der satte Publikum i stigende Spænding lige til Slutningen, og alle de Spillende udførte deres Roller saa uovertræffeligt, at Ensemblet gav en af de allerskjønneste Syngespilforestillinger, Theatret havde at fremvise. <hi xml:id="id4d6e59fd-2899-4bd2-8a52-5576cadaaf0c" rendition="#ita">(...)</hi>. For Capitain Scipio, Stykkets comiske Person, havde Phister opfundet en særdeles original grotesk Figur, som hans Lune gav megen Naturlighed og hans Smag holdt i god Harmonie med Stykkets Tone«, <hi xml:id="idda386f40-29ce-44b2-bceb-33b7b8050a4c" rendition="#ita">Den danske Skueplads,</hi> bd. 5, 1864, s. 199-201.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-7" n="127,4">
+          <label xml:id="id2cd462ff-443e-44e9-aaef-dba1dc2c24f9">
+            <hi xml:id="id6d84e6bc-7ed1-43eb-9e7e-14c4e656f86a" rendition="#bol">En Erindring og for Erindringen</hi>
+          </label>
+          <p xml:id="id61ba27c8-145d-4b30-bbf8-dc232ba72a0d"><hi xml:id="id544c60f7-10b5-49ce-8bd4-287f74686e3d" rendition="#ita">Ludovic</hi> opførtes første gang på <placeName xml:id="id0af79f93-2225-4425-bc3e-411adb28150b" key="Kongelige Teater, Det">Det kgl. Teater</placeName> den 24. maj 1834 og blev spillet nogle gange hver sæson frem til og med 1837-38, i alt 13 gange. Efter en pause på mere end tre år genoptoges stykket og spilledes 7 gange ml. den 4. feb. 1841 og den 11. okt. 1841, altså i perioden, hvor SK var forlovet med <persName xml:id="id7b9f978b-2785-4836-b3c6-237be6cfee88" key="Olsen, Regine">Regine Olsen</persName>. Herefter opførtes stykket kun én gang til i SKs levetid, nemlig som sommerforestilling den 11. juni 1846. SK kunne altså have set <hi xml:id="id1d7a1f32-874e-4347-8de1-3d82d0a2cf0d" rendition="#ita">Ludovic</hi> 21 gange, men hvilke forestillinger, han har set, kan ikke fastslås.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-8" n="127,12">
+          <label xml:id="id190ae3e7-d059-454e-a98b-edcbcc1bbccd">
+            <hi xml:id="idb074327d-c14a-4291-870b-4a2fd8725588" rendition="#bol">rareste</hi>
+          </label>
+          <p xml:id="id570f87d4-229d-41c4-b07d-09da61183a26">mest udsøgte, interessante, fremragende.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-9" n="127,13">
+          <label xml:id="ide10e0873-e38a-4059-994f-35f28ff0cc8d">
+            <hi xml:id="id2b80c75c-2f55-4d58-b9b9-6fe0ace0691a" rendition="#bol">Potens</hi>
+          </label>
+          <p xml:id="id5049d2a2-c7e9-4592-8073-13fa9c3fc391">væsentligste domæne, styrke.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-10" n="127,16">
+          <label xml:id="id0444596b-f75f-47df-8513-2b106e2e839b">
+            <hi xml:id="ide7d6740c-82e0-43ee-9fba-16d6f10efe80" rendition="#bol">tage det Enkelte fat</hi>
+          </label>
+          <p xml:id="idf60fc518-3d9f-4fcb-9767-b0a5fbdcca94">tage fat i det enkelte, gribe fat i det konkrete.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-11" n="127,16">
+          <label xml:id="idccc174ff-51e8-4bee-a42f-58f409b830d1">
+            <hi xml:id="id9a7eb600-f27b-4c41-8a21-ab79015ed11d" rendition="#bol">gaae i det Enkelte</hi>
+          </label>
+          <p xml:id="idf575af88-8bba-401f-bd4f-4f4f9abb4e9d">gå i detaljen.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-12" n="127,21">
+          <label xml:id="idd7f1cdba-4fc9-4902-b9c6-f83adec4e5ca">
+            <hi xml:id="idaccc2a5e-c6c7-47d6-a8ae-c61a458b1adf" rendition="#bol">vistnok</hi>
+          </label>
+          <p xml:id="id4de8659b-dcf8-4c2b-9546-5c8de20f9fe0">sikkert, rigtignok.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-13" n="128,2">
+          <label xml:id="idbbf8a98e-5edf-4586-ba99-2860ace4ed23">
+            <hi xml:id="idefc98eb7-289e-4239-afee-abbb2e3e9ed9" rendition="#bol">det er</hi>
+          </label>
+          <p xml:id="idc62cf9a2-c05e-4ed7-89db-aa546474ff71">det vil sige.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-201" n="128,2">
+          <label xml:id="id7c8f8629-975f-4536-9138-72db928b9ae1">
+            <hi xml:id="id6a89b178-85ec-4161-86cd-0ac9a734c057" rendition="#bol">ene</hi>
+          </label>
+          <p xml:id="id57489df8-151a-4fa7-b444-5dcb94bfbee9">alene, kun.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-200" n="128,5">
+          <label xml:id="id5ecb92a8-0583-4652-87cc-dcdaa06503b2">
+            <hi xml:id="id4108f1e7-95f1-4333-8862-8f59d792336e" rendition="#bol">Hr Phisters Repertoire</hi>
+          </label>
+          <p xml:id="id76558fed-1f4f-40c4-bdb9-88b97720ec24">De hundredvis af roller, som Phister havde udført, findes optegnet af <persName xml:id="id7a99dfbd-f7a6-4ed9-aea7-1e169e2b3133" key="Aumont, Arthur">Arthur Aumont</persName> i <persName xml:id="id149beea0-bc2b-432c-b64f-dc175d7d2c42" key="Zinck, Otto">Otto Zinck</persName>
+    <hi xml:id="id1cc56099-9a8e-4b9d-9eea-3c21979cb107" rendition="#ita">Joachim Ludvig Phister. Et Teaterliv,</hi> <placeName xml:id="id06dc4ead-1a91-4cdf-91f8-8bc4f8478be5" key="København">Kbh.</placeName> 1896, s. 221-234.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-15" n="128,10">
+          <label xml:id="id954dc465-e61f-4668-9b11-408b9575681c">
+            <hi xml:id="id81b2aa3d-c534-420a-98d2-2b89be82fa90" rendition="#bol">Derhos</hi>
+          </label>
+          <p xml:id="id9c461056-dd17-4d50-b06a-bdadfb0ebf34">desuden, derudover.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-16" n="128,10">
+          <label xml:id="id1560c1e6-56a5-4fdf-9415-dad03a93449b">
+            <hi xml:id="id842f9e4c-0c51-49ce-8b3a-9a60ceb4218e" rendition="#bol">saa smaat</hi>
+          </label>
+          <p xml:id="id605ab568-dcce-4809-902d-0255feed080c">efterhånden.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-17" n="128,10">
+          <label xml:id="id1d1bc105-de66-4d5a-b9ad-0c0f34836294">
+            <hi xml:id="id6334c6d0-3ddd-4465-bc0b-8b3d8350c8a9" rendition="#bol">al Forelskelse dog i Grunden er Selvkjerlighed</hi>
+          </label>
+          <p xml:id="id22a2ef86-9fe4-4b5c-8300-f79f49f0e54d">SK havde i <hi xml:id="id03309104-cdb6-4d62-9758-13e8a261c406" rendition="#ita">Kjerlighedens Gjerninger</hi> (1847) redegjort for, hvordan forelskelse og venskab hviler på selvkærlighed. Se fx <hi xml:id="id7c8a8114-7f36-491f-a787-02da955e14f7" rendition="#ita">Kjerlighedens Gjerninger,</hi> i <ref xml:id="idd4abf36d-fd6c-4e37-b7b5-553fd4ae71d4" target="../KG/txt.xml#ss26" type="publishedWritings" n="26"><hi xml:id="id9a7e60f5-f207-4b69-a2e4-d18f39b0a2fc" rendition="#ita">SKS</hi> 9, 26</ref>f. og <ref xml:id="ide68c09fd-06c7-4901-8720-9478c001bcd8" target="../KG/txt.xml#ss63" type="publishedWritings" n="63">63</ref>f.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-18" n="128,17">
+          <label xml:id="id233a7cfe-a871-490d-93ad-577cb4ed6326">
+            <hi xml:id="idc9a04059-af56-4aed-9c67-0572652a9aa9" rendition="#bol">ved Scenen</hi>
+          </label>
+          <p xml:id="ideab58832-7c80-4150-81ed-0366e6ba37e6">dvs. <placeName xml:id="id0b89d90f-cca6-4982-9e32-24d792cc62c6" key="Kongelige Teater, Det">Det kongelige Teater</placeName> i <placeName xml:id="ida30a884c-f40b-42ee-ab4d-af4353298cb7">København</placeName>.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-19" n="128,27">
+          <label xml:id="idd7792456-50c7-4ac4-88bc-7fed4da803e9">
+            <hi xml:id="id089fb183-6560-417c-a686-68c7d75bc046" rendition="#bol">ligesom Trop »stoderer«</hi>
+          </label>
+          <p xml:id="id7ba0eb6f-5e85-43a7-a77a-e7d27347c0c1">Der sigtes til evighedsstudenten <persName xml:id="id24e03722-7c54-4083-b0ff-043eed602969" key="Trop">Trop</persName> i <persName xml:id="id368f39f9-75b6-4bb1-a3b8-0ed882497b05" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s vaudeville <hi xml:id="id709618eb-200d-4bc3-aa82-3392b30fcefa" rendition="#ita">Recensenten og Dyret</hi> (1826), jf. J.L. Heibergs <hi xml:id="id55923d47-5a10-4fcb-92c0-b528ddfb127e" rendition="#ita">Samlede Skrifter. Skuespil</hi> bd. 1-7, <placeName xml:id="idaaabda66-7d6d-4c3d-85bc-a7a14a31dbe1" key="København">Kbh.</placeName> 1833-41, ktl. 1553-1559; bd. 3, 1834, s. 185-288. Trop, der efter 30 år endnu ikke har afsluttet sit jurastudium, lever i sommerperioden på
+    <placeName xml:id="idbce4ff5d-8c56-4a5d-b485-e4dcce015eec">Dyrehavsbakken</placeName>, hvor han skriver kritiske anmeldelser af de optrædende gøglere. –
+    <hi xml:id="id2a039b5e-da33-4cab-9bc5-30f6372b5a73" rendition="#bol">stoderer:</hi> lavsocialt, parodisk for studerer. Trop bruger ikke udtrykket.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-20" n="129,4">
+          <label xml:id="id8de2b4ac-f834-4288-8631-f4b6c9bd331f">
+            <hi xml:id="idd69451d0-b3dd-4060-adb1-fe92d6ffc293" rendition="#bol">ved vor Scene</hi>
+          </label>
+          <p xml:id="idccef97e5-35c4-4ee1-9ae9-5567e713a74b"><ptr xml:id="id81cf3223-4bf7-4124-a71e-1bee7df6d911" type="commentary" target="#pcs-18" n="128,17"/>.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-250" n="129,15">
+          <label xml:id="id44e1261f-6e20-408e-86b0-4a4d5bc21f08">
+            <hi xml:id="id07dcb13d-dbf1-4e56-8e25-f3c40262cb4c" rendition="#bol">en Fordring</hi>
+          </label>
+          <p xml:id="id25a1c33d-ff64-4db7-a3ed-6bdf3ef07eea">et gældsbrev, en regning.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-23" n="129,19">
+          <label xml:id="id3e68915e-872d-4b07-8ae6-554a52174486">
+            <hi xml:id="id9705d238-887b-4d41-b3ce-eccbfb9a1879" rendition="#bol">si placet</hi>
+          </label>
+          <p xml:id="id0bde4992-168c-4f41-a46c-c635b8ae4292">lat., om det måtte behage, 'om man vil'.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-24" n="129,23">
+          <label xml:id="id4ccd8c5b-3fec-4f7e-b268-3f4754de39f5">
+            <hi xml:id="id453ca6d7-cc33-4b7c-9c46-e5bc0d3b9492" rendition="#bol">Obligation</hi>
+          </label>
+          <p xml:id="ide9877219-9ae2-406b-a696-47601c89413d">SK har i renskriften først skrevet »en Guld-Mynt, ell. en Obligation« (<ref xml:id="id23cbb448-390c-465e-97cf-75a7e46e4838" type="preparatoryManuscript" n="pap:IXB70" rend="PCS,ms.1.2"><hi xml:id="id5adb07fd-09d6-4891-8f67-c4f0d139fd37" rendition="#ita">Pap.</hi> IX B 70</ref>,8).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-202" n="129,23">
+          <label xml:id="idb75568f3-0a3f-4bed-a1fc-907b9d1186c2">
+            <hi xml:id="idd9440734-187b-4a0f-a8a2-7823e0c532af" rendition="#bol">i Retning af</hi>
+          </label>
+          <p xml:id="id2896b28a-9483-4998-82c4-0a787244195e">i henseende til, med hensyn til.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-203" n="129,24">
+          <label xml:id="idcca4fcff-443e-4ff3-990c-4cd3bdef894a">
+            <hi xml:id="id1b7acf21-3c36-4bcb-ace6-54f5c1eca6fa" rendition="#bol">hersteds</hi>
+          </label>
+          <p xml:id="id83ee0409-5c8d-47f7-92c1-9c2222284dda">her på stedet, på nærværende sted.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-26" n="129,25">
+          <label xml:id="id141e6622-98e6-45b8-a3af-15e3f3398c1a">
+            <hi xml:id="id86bdecf0-368f-4d22-b76f-cb2a3f15cbbe" rendition="#bol">hiin Engelænder, der levede i ... næsten kom i Penge-Forlegenhed</hi>
+          </label>
+          <p xml:id="idd503f15b-5117-4863-939a-f53c006c60b9">Kilden er ikke identificeret. Sml. journaloptegnelsen <ref xml:id="id03d1155a-5899-4b6c-920f-a98ed87d5053" target="../JJ/txt.xml#n245" type="journalsAndPapers" n="245">JJ:245</ref> (1844), hvor SK skriver: »Det gaaer mig med min Følelse i Livet ligesom en Engellænder, der kom i Pengeforlegenhed, uagtet han havde en Note paa 100 Pund men paa Stedet, hvor han var, var der ingen Mand for at bytte den«, <hi xml:id="ida914e6af-d732-41d1-9ae8-79504f5b7d36" rendition="#ita">SKS</hi> 18, 219. –
+    <hi xml:id="id6ebaa8a3-100e-4458-ac20-edab223ce93f" rendition="#bol">Banknote:</hi> pengeseddel.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-27" n="129,28">
+          <label xml:id="ida5a9726f-d5f0-4822-9fbb-0c7b1d50c90d">
+            <hi xml:id="id478fdc34-ccc3-496f-b01d-a141de3e3368" rendition="#bol">Ligeoverfor</hi>
+          </label>
+          <p xml:id="id35701dfd-b836-4df7-84fb-94f52119dfa0">i forhold til.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-30" n="129,31">
+          <label xml:id="id65d99eb1-2e96-44e5-87fb-1722d0920959">
+            <hi xml:id="id42adc135-b409-4d93-bec6-0393ed9bf671" rendition="#bol">en Samtale som den mellem en Japaneser ... svarede: læg min M</hi>
+          </label>
+          <p xml:id="iddef3241c-5fb7-459b-957f-10cd0f62d82d">Der sigtes til den da. forf., filolog og filosof <persName xml:id="idb5696b0f-6b28-4f9f-86ad-7aac63cdbdcb" key="Møller, Poul Martin" n="*">Poul Martin Møller</persName> (1794-1838) og hans »Optegnelser paa Reisen til China«, som i 1843 udkom i bd. 3 af <hi xml:id="id071bcc56-51c3-4702-88d4-31153c008ea6" rendition="#ita">Efterladte Skrifter,</hi> udg. af <persName xml:id="id9090baab-7229-45af-a3c8-1c7d0fd6b5f8" key="Winther, Christian">Chr. Winther</persName>, <persName xml:id="id598be39d-601f-44dc-b487-211e3dc645d7" key="Olsen, Frederik Christian">F.C. Olsen</persName> og <persName xml:id="id37c5f7d7-7b8b-4a92-8dbd-ee17df17676f" key="Thaarup, Christian">Chr. Thaarup</persName>, bd. 1-3, <placeName xml:id="id146d8917-f48a-4297-8764-5ab768b8f6e8" key="København">Kbh.</placeName> 1839-43, ktl. 1574-1576. Møller skriver: »Malajerne gik gjerne paa Bagkjøb i deres Handel. Jeg havde kjøbt nogle Stokke for en Kjole, men den Vilde kom igjen og vilde have, at Handelen skulde gaae ind. Ogsaa til en Matros kom en Malajer igjen med sin Betaling, sigende: <hi xml:id="id0d06d414-9627-4801-a8e1-30ea19fc6923" rendition="#ita">Trada mau</hi> (jeg vil ikke have det); hvorpå Matrosen svarede: L– min M–, og Malajeren maatte gaae bort igjen med uforrettet Sag«, s. 159. –
+    <hi xml:id="id9c9acda4-0731-4081-8421-eee357de692f" rendition="#bol">Læg min M-:</hi> fast udtryk, læg el. lik min mås: slik min røv, dvs. rend mig i røven (af ty., leck mich am Arsch).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-32" n="130,1">
+          <label xml:id="id5cf2e586-1dc6-4d62-88de-95c446fca7a6">
+            <hi xml:id="id9a4ca6fc-6d07-47ca-83c3-1accac8d0347" rendition="#bol">saa</hi>
+          </label>
+          <p xml:id="id28257db7-098f-471f-8aab-5d798b2e5761">sådan.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-204" n="130,16">
+          <label xml:id="idc6924baa-29ee-44d1-95f8-22868f2f7cf8">
+            <hi xml:id="idab912d8e-ae9d-4c44-8779-3fb60381ef20" rendition="#bol">det er quit</hi>
+          </label>
+          <p xml:id="id41fa4b6a-bf8a-46af-afb8-130d7ef865a8">det går lige op.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-34" n="130,16">
+          <label xml:id="id0fc553e9-1d51-41cf-b8f3-33dbd0d49540">
+            <hi xml:id="idddf06708-85b4-4fc2-a095-ea7de119e2ba" rendition="#bol">Incommensurabelt</hi>
+          </label>
+          <p xml:id="id85153722-1fd0-4aab-ba49-815e37892484">usammenligneligt, uensartet, uforeneligt.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-35" n="130,16">
+          <label xml:id="id71ad57a1-6ae8-43c4-8129-e549be4e3422">
+            <hi xml:id="id2f6bf37f-9b11-45e2-928f-94fe40ca0c18" rendition="#bol">Regningen</hi>
+          </label>
+          <p xml:id="id93d41d2f-3019-4670-b17a-a27d5558d54b">ligningen.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-36" n="130,26">
+          <label xml:id="id8728e3be-2f54-46be-abe1-9205a564c263">
+            <hi xml:id="idca59f29c-7d0b-4b08-8f89-3940aaf6ad04" rendition="#bol">Pathologiske</hi>
+          </label>
+          <p xml:id="idb7b0a643-985b-4ebb-bd91-74d74e0fafae">lidenskabelige.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-37" n="130,27">
+          <label xml:id="id6b690f62-1c84-4369-afa0-c4d60f1a5120">
+            <hi xml:id="id57b4d998-015c-41fd-a06b-aaa583dfaa4b" rendition="#bol">Blodcongestioner</hi>
+          </label>
+          <p xml:id="iddf5c4269-5aa0-4739-b31a-d873a3b392f8">stærke tilstrømninger af blod til hovedet.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-38" n="130,30">
+          <label xml:id="id573f423b-435a-4f37-88b3-f928f74c48fb">
+            <hi xml:id="id91838fed-b659-4ded-8b21-cdeed9127361" rendition="#bol">gemütlig</hi>
+          </label>
+          <p xml:id="idc37bc843-d03d-401b-afeb-b5952125e9c2">af ty. 'gemütlich', hyggelig, rar, venlig.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-39" n="130,30">
+          <label xml:id="idfc79886b-0d5c-40fe-bb03-0268c276512d">
+            <hi xml:id="id123da5f4-ffe1-49e7-8a2d-db4dc5f3b92b" rendition="#bol">Skjørnen</hi>
+          </label>
+          <p xml:id="id40862f07-5939-4ec6-82f1-5604093d523d">som mælk, der 'skørner', dvs. løber sammen og bliver tyk.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-42" n="131,7">
+          <label xml:id="id3d4b5b55-2d63-4bf8-84c0-afa73cc6d8be">
+            <hi xml:id="id741ecf96-49a8-4e32-9f69-b7a0f375d6ba" rendition="#bol">Ordentligviis</hi>
+          </label>
+          <p xml:id="ida1da7d2a-7c6b-48df-b0d9-6da179255614">almindeligvis, sædvanligvis.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-43" n="131,11">
+          <label xml:id="id9378410d-f33d-497c-acad-bf928698dab0">
+            <hi xml:id="id66277571-a9cf-4100-a665-97b01865a194" rendition="#bol">bravo, bravissimo, schwere Noth, Gottes Blitz</hi>
+          </label>
+          <p xml:id="ida1b52bbe-5e68-40a7-a8a0-00b04bd57a88">'Bravo' og superlativen 'bravissimo', ital., egl. ypperlig og ypperligst, er udtryk for bifald. De ty. udbrud 'schwere Noth', 'for Pokker', og 'Gottes Blitz', 'Gud fri mig vel', er udtryk for forbavselse el. forundring.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-205" n="131,14">
+          <label xml:id="id1b1009c0-7390-4075-a6a7-d81314afe80f">
+            <hi xml:id="idef578ebc-fe09-4532-a728-67ca5349da2c" rendition="#bol">gjør Intet</hi>
+          </label>
+          <p xml:id="idb30fae79-b5ea-4b42-ab5b-0c8249a8b8c5">betyder intet, gør ingen forskel.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-206" n="131,16">
+          <label xml:id="idaf39ec67-8463-490f-8043-9cb65134d30b">
+            <hi xml:id="id1b919718-d9ee-4816-b495-9f44b5bd4ba4" rendition="#bol">Paa det Vilkaar</hi>
+          </label>
+          <p xml:id="id2a358f52-f07c-4c20-b50a-8eedf6348ac0">under den betingelse.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-47" n="131,26">
+          <label xml:id="id1a4e623e-ac6b-45e2-8c6a-b6ddc8d00378"><hi xml:id="idb5858b3f-70a6-44a9-9cb1-3f8143629b89" rendition="#bol">Jav</hi>'et</label>
+          <p xml:id="ida20b2918-a47c-48d2-bbb6-7db524aba5d7">Stavemåden efterligner den dagligdags udtale af jag, dvs. travlhed, også: indholdsløs morskab.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-48" n="132,2">
+          <label xml:id="id991756a1-01df-4e0d-a5f8-cfc4a4eb5e6d">
+            <hi xml:id="id9e6d8ee9-8346-4fed-8f6e-974fb4e20fa3" rendition="#bol">Captain i det pavelige Politie</hi>
+          </label>
+          <p xml:id="idb1f86bb7-efdd-4d07-b67a-4c7e2e4b015c"><persName xml:id="id3e579b7e-e33d-4678-8f53-c62303ab03e5" key="Scipio">Scipio</persName> tituleres i stykket: »Capitain i det pavelige Politiecorps«, jf. <hi xml:id="id224d77bf-7fe5-404b-999a-bf2feede841d" rendition="#ita">Ludovic</hi> (<ptr xml:id="id3d9c2555-d4d4-4187-aa9c-2ee1455b2b2d" type="commentary" target="#pcs-5" n="127,2"/>), s. 1.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-207" n="132,3">
+          <label xml:id="id4bd1dfdf-18aa-41e5-9836-cb1195061af7">
+            <hi xml:id="id61eb999e-3a8e-472e-9e4e-a251b98a5db2" rendition="#bol">Saavidt vides, skal det pavelige Politie ... og Sølvstads</hi>
+          </label>
+          <p xml:id="id626dc769-8f72-49b3-b445-b610482572e5">En kilde er ikke identificeret.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-51" n="132,5">
+          <label xml:id="id75d72c8b-94c4-4799-9f0f-db56cfd1472d">
+            <hi xml:id="id054f7006-388e-42c6-88e8-39277b3e88ef" rendition="#bol">Efter hvad mig er fortalt ... det formeentes ham</hi>
+          </label>
+          <p xml:id="idc3f05a83-2289-424f-bd25-9f427e6cd2ed">Hvem SKs kilde er, om det er <persName xml:id="id13a0e581-c924-4c41-b99c-9d92c828302d" key="Phister, Joachim Ludvig">Phister</persName> selv, vides ikke. Skuespilleren og instruktøren på <placeName xml:id="iddb622c64-54c2-4a77-872d-780594ed9352" key="Kongelige Teater, Det">Det kgl. Teater</placeName>, <persName xml:id="ide58bd2ab-6de3-4063-a72e-1caa32d2a91d" key="Ryge, Johan Christian">J.C. Ryge</persName> (1780-1842), der også stod for kostumegarderoben, synes meget sjældent at have nævnt kunstnerens særlige ønsker over for direktionen. Til gengæld findes Ryges kostumeliste dateret på premieredagen den 25. maj 1834 (<ptr xml:id="id99f799c8-7378-4571-a3eb-620ba004d8c4" type="commentary" target="#pcs-5" n="127,2"/>) med en beskrivelse af Phisters kostume: »Hr Phister: Rund spidspullet Hat med opslaaet Skygge paa den ene Side, en Krampe af Guldgalador fra Lanassa og en sort Fiær. Sort Halsbind. Mørkeblaa Munderings-Kiole med carmoisin Distinktioner og Guld paa Krave og Opslag. Carmoisin Skiødevest og gule Knæbeenklæder. Støvle-Mansketter Fugleskydningen. Stive Støvler med Sporer. Sort Lædergehæng med Sabel. til udstopning En Mave flere Brystpuder.« (Kostumeliste, 24. maj 1834. Det kgl. Biblioteks Arkiv &amp; Bibliotek.) –
+    <hi xml:id="id54e07fd5-31c7-465c-a9d5-6a06f7f76782" rendition="#bol">i sin Tid overtog Rollen:</hi> Phister spillede rollen fra stykkets premiere (<ptr xml:id="id616aff81-5a9a-4a41-b88c-ca0cfba8fea6" type="commentary" target="#pcs-5" n="127,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-53" n="132,7">
+          <label xml:id="idb55a739d-34af-4b59-915a-7e50f35b18d0">
+            <hi xml:id="idd80915ff-579f-4576-a810-9783cbc2cde0" rendition="#bol">Videre er mig fortalt ... insisterede herpaa</hi>
+          </label>
+          <p xml:id="idc47b3e06-1ab3-49df-ae30-af5622cca56b">Hvem SKs kilde er, om det er <persName xml:id="id9e9517f6-001a-4732-aae0-71827ef0f54d" key="Phister, Joachim Ludvig">Phister</persName> selv, vides ikke.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-208" n="132,9">
+          <label xml:id="idefe138bc-1cac-43a8-838f-09cd8c88e185">
+            <hi xml:id="id3d0b0f7a-bd07-45f0-aa3f-fd4a824260b2" rendition="#bol">Scipio er en Mand, som ikke er fuld</hi>
+          </label>
+          <p xml:id="id647cc723-2358-4326-90d0-60439b15011a">I 1. akt., 5. scene oplyses i regi-bemærkningen om politisoldaterne: »som alle have en lille Ruus« (<hi xml:id="id1093556d-d777-4665-b18e-c52c359d2559" rendition="#ita">Ludovic</hi> (<ptr xml:id="id420173f2-9167-4b1b-a179-69dcefe05274" type="commentary" target="#pcs-5" n="127,2"/>), s. 3, sp. 1). <persName xml:id="id0263a0b0-4cb1-4b60-b8ba-c2792e95a6cb" key="Scipio">Scipio</persName> og soldaterne viser løbende i 1. akt, at de elsker at drikke, og enkelte steder kaldes de »Drukkenbolte« (1. akt, 8. scene, s. 4, sp. 2, og 10. scene, s. 5, sp. 1). I 1. akt, 8. scene findes følgende replikskifte ml. bondepigen <persName xml:id="id0978a42f-3355-44ca-90b0-2f1a7854efa3" key="Nice">Nice</persName> og Scipio: »Nice (betragter hans Ansigt). Men siig mig engang, Herr Capitain! vil De aldrig holde op at blusse? / Scipio. Ingen Stikpiller, lille Pigebarn! – jeg er i min sædvanlige Tilstand. / Nice. Naa det er en smuk Tilstand! – For fjorten Dage siden, da De kom med Deres Rekrutter forbi min Gaard, var De ogsaa saadan lidt lystig – det lader til at De er bleven det igjen i Dag. / Scipio. Paa ingen Maade! – jeg har været det hele Tiden siden dengang!«, s. 4, sp. 2.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-54" n="132,10">
+          <label xml:id="idc8fde929-d2ad-40bb-87d3-aafe2903984a">
+            <hi xml:id="ideee4a18a-e4d4-41d4-8843-88433dfc4e08" rendition="#bol">Bedunstethed</hi>
+          </label>
+          <p xml:id="id828137b4-740e-428a-ac0e-7171f63ce64b">beruselse, omtågethed.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-55" n="132,10">
+          <label xml:id="id02ee0438-d609-4855-9d83-cf9d88706685">
+            <hi xml:id="id93383dcb-f299-4307-adec-a6a5c3bbd58d" rendition="#bol">som der staaer etsteds ... reise en Perial</hi>
+          </label>
+          <p xml:id="ided06c9eb-7022-4e0b-9fc8-22125330cf76">Kilden er ikke identificeret. – <hi xml:id="iddb7a3715-0807-4f17-924f-f790f2a7f5f7" rendition="#bol">Dag fra Dag:</hi> el. dag for dag. –
+    <hi xml:id="id02cef99b-e34b-4244-b482-2f361d5075cb" rendition="#bol">soutenere:</hi> vedligeholde, opretholde. –
+    <hi xml:id="id8f298676-db72-44f5-b405-0164d3baef2a" rendition="#bol">reise en Perial:</hi> drikke sig fuld.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-57" n="132,14">
+          <label xml:id="id5fb82666-5b37-48cf-ac60-442ea704002c">
+            <hi xml:id="idff15ecb8-f5be-49fc-9137-3162a5f57463" rendition="#bol">det er</hi>
+          </label>
+          <p xml:id="id6c25fcc6-81a6-4c14-b4da-381d5616f768">det vil sige.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-209" n="132,21">
+          <label xml:id="id7040db79-801a-4e47-968a-b0c84adcd29d">
+            <hi xml:id="id5681f0b1-706b-4d7f-9af0-025513bf8f00" rendition="#bol">Politie-Officiant</hi>
+          </label>
+          <p xml:id="idb9c29a3e-204d-4bc6-b2c9-a9bfc5ea4aec">underordnet politifunktionær, politibetjent. SK havde i renskriften givet følgende eksempel: »Saaledes f.E. en halvfuld Politie-Agent, der i Funktion kommer ind paa et offentlig Sted, hvor der er Sviir og Spil – for at jage dem ud; for ikke at tale om en halvfuld Politie-Officiant, der selv bliver anholdt af Vægteren og arresteret« (<ref xml:id="idd3e4e7c1-4cbe-433c-b9c9-7b43c9aa66b5" type="preparatoryManuscript" n="pap:IXB70" rend="PCS,ms.1.2"><hi xml:id="id44fa4387-8f5f-461c-84b5-1c47a6553de7" rendition="#ita">Pap.</hi> IX B 70</ref>, 10).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-58" n="132,22">
+          <label xml:id="id5dc49dd2-c0e2-4a75-aa9f-5b7a9e3aeb03">
+            <hi xml:id="id12da1ce2-b9b0-418c-a03f-458ef8940389" rendition="#bol">end sige da</hi>
+          </label>
+          <p xml:id="id3a628e04-5268-4661-b723-4958ba48b985">for slet ikke at sige.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-59" n="132,22">
+          <label xml:id="ida02a2cd1-4948-413f-84b5-41c1d214f2b8">
+            <hi xml:id="id0e6b5147-26d5-4d5e-b4e4-aef151b2620c" rendition="#bol">Forretningen</hi>
+          </label>
+          <p xml:id="iddeadaad8-bdb9-4f27-b2ec-ca126d50769c">opgaven.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-212" n="133,1">
+          <label xml:id="id1b0318b7-c315-4f92-8a5e-86bda8939824">
+            <hi xml:id="idfdc3e539-caae-438f-a34f-1ea6c90ea19f" rendition="#bol">nedslaaer</hi>
+          </label>
+          <p xml:id="idded5d92d-4eaa-4bcc-be55-da50d87b9806">tilintetgør, ødelægger.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-63" n="133,3">
+          <label xml:id="idf7327195-bbf6-4681-9bce-9a1b463da19b">
+            <hi xml:id="id3253f283-65f4-4d70-957c-5e53df50ec46" rendition="#bol">stikker Vrangen af</hi>
+          </label>
+          <p xml:id="idf4a03519-9ee4-4b80-8558-c6f4d1db57e5">træder vrangen frem.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-233" n="133,18">
+          <label xml:id="iddf61c088-7a24-4e66-9c61-73c2592c2339">
+            <hi xml:id="id544d8d71-cd52-413c-b7ba-9337e97a3aef" rendition="#bol">en Mand, for hvem der præsenteres ... Fra den anden Side er han dog ikke</hi>
+          </label>
+          <p xml:id="id3a762d93-2997-4fa2-8886-82ea94e9105b">SK har i renskriften først skrevet: »en Mand, der bærer Port'epee [sabelkvast, som er forbeholdt officerer at bære], og altsaa af Militairet vises militair Honeur, – en Mand, der qua Militair føler sig forpligtet til at være elskværdig næsten farlig for Kjønnet, at vise dette militaire Galanterie, at tale om parol' d'honneur [fr. æresord] paa en militair Maade o:s:v:. Men er det da en egl. Militair? Nei det er han dog heller ikke. Han er Captain i Politiet. Fra en anden Side seet er han maaskee snarere« (<ref xml:id="id79c97a78-fc8f-4bd0-9902-ebf77f08fb93" type="preparatoryManuscript" n="pap:IXB70" rend="PCS,ms.1.2"><hi xml:id="idf0dd1093-05df-4c33-87ca-421468acdcc7" rendition="#ita">Pap.</hi> IX B 70</ref>,12). –
+    <hi xml:id="ide473853b-0337-4bea-80cd-77762934bcd2" rendition="#bol">præsenteres:</hi> præsenteres gevær, dvs. gøres honnør. –
+    <hi xml:id="id085a0d3d-c6fe-4bf4-85f8-943be8133e96" rendition="#bol">qua:</hi> lat., i egenskab af. – <hi xml:id="idef026309-c415-4b8f-9e9d-337fdc223556" rendition="#bol">Kjønnet:</hi> kvinderne.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-67" n="133,25">
+          <label xml:id="id47170848-7f8b-48c1-b451-e68e4ef0c188">
+            <hi xml:id="id343b65de-a6e0-4b67-9fb1-8d9de601698e" rendition="#bol">Birkedommer</hi>
+          </label>
+          <p xml:id="idf3d39623-786c-4f27-903e-60a2829d4f98">embedsmand, der var dommer i og administrator af et birk, dvs. en lokal retskreds.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-68" n="133,25">
+          <label xml:id="idf8e82f34-9abb-4498-bbc9-fc1be88caf27">
+            <hi xml:id="id66bdfc34-fbdc-4f74-b25f-58776ef78494" rendition="#bol">Byfoged</hi>
+          </label>
+          <p xml:id="id60826314-6e9f-4452-b937-1897fd8812da">embedsmand, der i provinsbyerne fungerede som dommer, politimester og byskriver, ofte tillige som borgmester. Embedet blev afskaffet i 1919.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-69" n="133,25">
+          <label xml:id="idf5422012-5ad9-403b-ad2b-84b71269532e">
+            <hi xml:id="id93f02536-d626-40fa-a0f0-653f8ffee880" rendition="#bol">Branddirecteur</hi>
+          </label>
+          <p xml:id="id1ac70eb1-7c29-4bc0-9455-3693beed8b99">el. brandmajor, chefen for et brandkorps el. chefen for <placeName xml:id="id9d2bb2a9-49f3-4c35-834d-3090b55bdefc">København</placeName>s brandvæsen.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-70" n="133,25">
+          <label xml:id="idcf181419-dccf-42b3-a560-bcba730032e6">
+            <hi xml:id="id24bbf0c3-5ee4-450b-88be-4f833a3a23ca" rendition="#bol">Veiinspekteur</hi>
+          </label>
+          <p xml:id="id49d1969f-63bb-4ccc-8e45-ed9c83aa087d">vejinspektør, embedsmand, som har den tekniske ledelse af de offentlige veje.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-71" n="133,27">
+          <label xml:id="idf7529f6a-09d4-470e-8321-5e28c6007a15">
+            <hi xml:id="id7e0dc1fc-cec8-4180-b863-b855c4da36c2" rendition="#bol">Intet mindre end</hi>
+          </label>
+          <p xml:id="idb2c5ec19-9f0b-4352-8e86-8e8e26f93784">alt andet end.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-72" n="133,28">
+          <label xml:id="id4a1422a1-3c79-4310-b1e1-6191b7f253c9">
+            <hi xml:id="id1cdd8c89-2f1b-4baf-8800-ba1d403ed11c" rendition="#bol">Opsynet med Rendesteensbrætterne og Spilde-Vandets ubehindrede Afløb</hi>
+          </label>
+          <p xml:id="id854b4ff5-488c-4475-90f1-209dbfb4556d">I SKs <placeName xml:id="ida30d87da-0212-44e8-8db0-7ba0ab647114">København</placeName> fandtes ikke underjordiske kloakker, men et system af rendestene og grøfter, der skulle føre spildevand og affald ud i havnen. Der var regler for, hvor rendestenene skulle være overdækket med brædder, ligesom det ikke var tilladt at forhindre spildevandets frie løb.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-74" n="133,29">
+          <label xml:id="id2f022bfc-e84f-44aa-9ea0-f7de8764e5b2">
+            <hi xml:id="ideba1e3be-5871-416f-9cf0-1b5dd8772e94" rendition="#bol">agte paa Sælgekjerlingerne</hi>
+          </label>
+          <p xml:id="idb6635ab1-3798-42f8-b809-1a6edbea2a78">holde øje med el. overvåge 'sælgekællingerne', dvs. de koner, som solgte deres varer på gader og torve.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-76" n="134,6">
+          <label xml:id="idf16ab557-81cb-4309-99ce-479a305f0dcb">
+            <hi xml:id="id0672b9fa-83da-4b66-b878-85bbb849168a" rendition="#bol">den Modsigelse</hi>
+          </label>
+          <p xml:id="id437cb5bc-18be-4c44-851b-6d7dae243d70">SK har redegjort for sin opfattelse af den komiske modsigelse i <hi xml:id="id0c7e5287-73ec-4228-becd-f655a47786e4" rendition="#ita">Afsluttende uvidenskabelig Efterskrift</hi> (1846), hvor det bl.a. hedder: »Loven for det Comiske er ganske simpel: det er overalt, hvor der er Modsigelse, og hvor Modsigelsen er smerteløs derved, at den sees hævet«, <ref xml:id="idf59d39f9-c0ed-4b95-96c2-fc9113ea3237" target="../AE/txt.xml#ss475" type="publishedWritings" n="475"><hi xml:id="idb77114b7-4aea-4d78-9e4c-77c25c51548f" rendition="#ita">SKS</hi> 7, 475</ref>. Den mere omfattende sammenhæng, hvori synspunktet indgår, kan resumeres således: Det tragiske og det komiske er det samme, for så vidt som begge ligger i modsigelsens kategori, men det tragiske er den lidende modsigelse, det komiske den smerteløse.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-251" n="134,8">
+          <label xml:id="id8d4691f1-2d35-4ce0-ad9d-c712e0a397c6">
+            <hi xml:id="id9cc9703a-99a0-4545-801c-0bc224e0d7b2" rendition="#bol">et incommensurabelt Sving</hi>
+          </label>
+          <p xml:id="id7999e296-7ae4-4d96-8079-5ddf481033f3">en uensartet (væsenforskellig) bevægelse.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-77" n="134,9">
+          <label xml:id="id48f2027f-16b1-41c6-9eef-39edad80aba9">
+            <hi xml:id="id3b30b97f-4d86-466e-9e22-d3fdc73ade4f" rendition="#bol">den Fart, som, efter en Droskekudsks Udsagn ... til Rendestenen</hi>
+          </label>
+          <p xml:id="idcde9bc85-eea4-437f-8fb1-fdbc82adb14e">sml. journaloptegnelsen <ref xml:id="id862b409f-cf5f-41c7-be87-3fa9138f25a2" target="../JJ/txt.xml#n413" type="journalsAndPapers" n="413">JJ:413</ref> (1846): »Idag hørte jeg en Droskekudsk sige om en fuld Kudsk der kjørte forbi i et temmeligt stærkt Trav: 'han har faaet Noget af den Retning som ledsager Een til Rendestenen'«, <hi xml:id="ide00d659c-cf88-4c2b-b712-eeb814d15bf1" rendition="#ita">SKS</hi> 18, 277. –
+    <hi xml:id="id62cb44cc-dd68-4651-afd8-34d31f92cef6" rendition="#bol">ledsager <hi xml:id="id71337acc-7b25-41dc-b060-432bf6db1ead" rendition="#ita">(...)</hi> til Rendestenen:</hi> talemåde; leder (en beruset person) i moralsk fordærv el. fører til social nedtur.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-78" n="134,16">
+          <label xml:id="iddeb69ce1-7d52-4d49-b6a3-d17e92e292bd">
+            <hi xml:id="id6d3377c6-f488-46a1-ad7d-96c4cfb6c133" rendition="#bol">biløbigt af</hi>
+          </label>
+          <p xml:id="idce903615-a2d8-45e6-b5b0-42ad173cb4cb">sideløbende med, samtidigt med.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-214" n="134,17">
+          <label xml:id="id4f1e0231-0ecb-4b96-b52e-61b348f7d094">
+            <hi xml:id="idff59b335-b433-4ee0-87b3-ea0e5fda702b" rendition="#bol">o: D:</hi>
+          </label>
+          <p xml:id="idd4fb7bf8-5fea-4750-bf96-9e61613a1886">og deslige.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-80" n="135,3">
+          <label xml:id="id1c605010-cdbd-4d64-a0c0-e213bb6a6aec">
+            <hi xml:id="id051c2cd7-0564-4a69-bb59-0f1527531922" rendition="#bol">Capt. S. er en tyk, corpulent Mand</hi>
+          </label>
+          <p xml:id="iddbeb16a9-7125-4b70-9e20-ad033f0f118d">nævnes ikke i teksten, men sigter til <persName xml:id="id8d39cba4-0b98-4f5b-b6dd-31e3a9595b22" key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr xml:id="idfb938960-a5c9-4ea1-80ea-298d21407dee" type="commentary" target="#pcs-5" n="127,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-215" n="135,3">
+          <label xml:id="id98c5162a-7cf7-4546-8ebc-6e6db1fda2d2">
+            <hi xml:id="idf58beca2-5112-4cce-8ba0-f0e2ba23c5d0" rendition="#bol">Embonpoint</hi>
+          </label>
+          <p xml:id="id505cf45a-b659-44de-91ff-0750a81707f1">fr., egl. i god stand; fyldighed, fedme.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-82" n="135,5">
+          <label xml:id="id60665769-de3b-4053-a109-a8a2ade655a0">
+            <hi xml:id="idddfc25b8-7fcd-48d6-a0d0-6856a28aa92f" rendition="#bol">end sige da</hi>
+          </label>
+          <p xml:id="id9875c8e6-f42f-4258-92ae-9473928e6ad1">ikke mindst.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-84" n="135,10">
+          <label xml:id="id9960a5e0-f16e-4354-a94d-85c5862196b4">
+            <hi xml:id="id370fc8af-d7aa-4956-a6e1-94c0f6ab896f" rendition="#bol">Borgermajor</hi>
+          </label>
+          <p xml:id="id50709e4e-aee5-4d56-be47-ba0508aeba30">officer i <placeName xml:id="id528b733d-8f95-4d97-ba6d-94d9dc97ed73">København</placeName>s Borgervæbning, et værn, i hvilket våbenføre mænd af borgerstand, såsnart de var fyldt 18 år, skulle indrulleres. De kom dog kun til at gøre tjeneste, hvis de meldte sig frivilligt, eller hvis der ikke var frivillige nok til at stille det foreskrevne mandskab.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-216" n="135,12">
+          <label xml:id="id2bbd0fbf-f3bf-4760-93a4-2fa8c7aa6930">
+            <hi xml:id="id4630fb16-36d1-496d-8594-6b53e2f28e78" rendition="#bol">gaaer ... over Skrevet</hi>
+          </label>
+          <p xml:id="id4bd577e2-bef3-4058-b2da-8186a278cae9">dvs. 'går over skrævet', fast udtryk: går over stregen, går alt for vidt.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-86" n="135,13">
+          <label xml:id="ideca1eb70-5748-4397-ac27-7afd506852e8">
+            <hi xml:id="id3972e5e6-76cf-466b-8d55-62e9675d9068" rendition="#bol">Prinds Henrich siger til den jo rigtignok ... svarer: »ja, ja ... dunset mig op.«</hi>
+          </label>
+          <p xml:id="id20c0805a-5942-4f19-a574-54edad1dc6a0">Der sigtes til <persName xml:id="id3df0cce7-3735-4e1e-b87e-6225dfe8ad97" key="Shakespeare, William">William Shakespeare</persName>s historiske skuespil <hi xml:id="idb8eb10ff-9d9a-414f-837e-f13a3643f554" rendition="#ita">Henrik den Fjerde. Første del</hi> (1597), hvor prins <persName xml:id="id8a01759a-041c-420a-b846-71a78c4c7f40" key="Henrik IV">Henrik</persName> spørger sir <persName xml:id="id484ac64d-0a90-4cce-8a06-7dc94961bdd6" key="Falstaff, Sir John">John Falstaff</persName>: »Hvor længe er det siden Du saae Dine egne Knæe, Hansemand?« Falstaff svarer: »Mine egne Knæe? Da jeg var i Dine Aar Henrik, var jeg ikke saa tyk om Livet, som en Ørnekloe: jeg kunde have krøbet igiennem Ringen paa en Aldermands Tommelfinger: <persName xml:id="id76d1f237-456b-4596-9472-752698fe9f49" key="Fanden">Fanden</persName> tage Suk og Sorg; det blæser et Menneske op som en Blære«. <hi xml:id="id1796faa1-c062-45c6-b616-0a053ed1bcaf" rendition="#ita">William Shakspeare's Tragiske Værker,</hi> overs. af <persName xml:id="id0f835703-47be-4a47-8d19-3d8533be27ae" key="Foersom, Peter">P. Foersom</persName> og <persName xml:id="idc115c266-c821-4e9c-b187-d3a7e726422c" key="Wulff, Peter Frederik">P.F. Wulff</persName>, bd. 1-9 [bd. 8-9 har titlen <hi xml:id="id49536109-cabf-4a0c-aaef-baa0b3dc6e10" rendition="#ita">Dramatiske Værker</hi>], <placeName xml:id="idcec7e5db-83c1-43bc-8307-2ffb21dc3d2c" key="København">Kbh.</placeName> 1807-25, ktl. 1889-1896; bd. 3, 1815, s. 1-179; s. 78. –
+    <hi xml:id="id3456c5ae-b133-4c7f-8431-cc7916510e01" rendition="#bol">dunset mig op:</hi> gjort mig oppustet, tyk.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-88" n="135,22">
+          <label xml:id="idbe28b8a1-4409-4cda-8f5b-a07334b962cf">
+            <hi xml:id="id46858506-557d-415a-b3b0-3f0960eb61e7" rendition="#bol">staae paa Heel ... staaer <hi xml:id="id64f35e67-48ce-4e4b-93f2-193bb334e867" rendition="#ita">(...)</hi> paa Halv</hi>
+          </label>
+          <p xml:id="id4c74e019-7abc-456f-9420-f8e1a3be0231">Udtrykkene bruges alm. om et gevær, hvor geværhanen i låsen enten 'står på hel' dvs. er helt spændt, klar til at skyde, el. 'står på halv', dvs. er i stillingen ml. åben og lukket (låst).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-217" n="135,22">
+          <label xml:id="id4f205ef6-b05a-4b8a-b6e5-01fde46e397d">
+            <hi xml:id="id818a9721-d23b-4386-a9ca-dd068dbba802" rendition="#bol">Han bøier sig med Overkroppen ... fremtrædende Mave</hi>
+          </label>
+          <p xml:id="idd0e33e40-b107-47ea-be98-2852c4cd6974">nævnes ikke i teksten, men sigter til <persName xml:id="idff523c59-810b-47eb-b9a5-c07f7cc82493" key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr xml:id="id5391aeff-0a00-4ddd-9bd3-d43dbf2703c5" type="commentary" target="#pcs-5" n="127,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-234" n="135,24">
+          <label xml:id="id50d16915-b9d5-47c1-9168-d2e69d9718c9">
+            <hi xml:id="id8c4e7e12-80d8-4e00-a871-0c86b16a883c" rendition="#bol">Hans hele Skikkelse faaer derved Lighed med en Bue</hi>
+          </label>
+          <p xml:id="id758d6560-b935-423c-b153-78da93e13e4b">SK skrev først i renskriften: »Hans hele Skikkelse faaer derved Lighed med en Curve ell. Bogstavet C« (<ref xml:id="idb3d51b94-ee5f-4594-956d-c7c32e8191be" type="preparatoryManuscript" n="pap:IXB70" rend="PCS,ms.1.2"><hi xml:id="id18ffc72b-2883-4c80-9915-de15bf8f5f09" rendition="#ita">Pap.</hi> IX B 70</ref>,19).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-90" n="135,25">
+          <label xml:id="idc2436c52-0351-4fdc-bc43-ba45dc7d6b97">
+            <hi xml:id="id2aa4cc5f-3d73-4cc0-a4a8-d82f0d282476" rendition="#bol">complaisant</hi>
+          </label>
+          <p xml:id="id4f677e8f-4a5b-430d-bc23-3f8cbc732175">fr., venlig, høflig, tjenstvillig.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-91" n="135,27">
+          <label xml:id="idf83b624b-2fa6-4f58-9fe5-2ade334ccd03">
+            <hi xml:id="id7bf5e876-4970-4547-9c6b-8fca233380ee" rendition="#bol">rusticeret</hi>
+          </label>
+          <p xml:id="id891961c0-3e35-4a3a-8432-e16e1006b800">dvs. rustificeret, det at være gjort 'landlig', bondsk.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-92" n="135,27">
+          <label xml:id="idbcce2b1b-9b18-4f14-8474-38071af5db84">
+            <hi xml:id="idedaccf8b-de26-41f6-a6ca-1094b9bdc871" rendition="#bol">Han tager sin Chaco af for at aftørre Sveden</hi>
+          </label>
+          <p xml:id="id8a7bd834-9068-49d6-b7bc-f14f253e9e40">nævnes ikke i teksten, men sigter til <persName xml:id="ide9e3711f-b242-4b7f-adfb-9fb211a5848e" key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr xml:id="id88a8ecf3-956d-4150-8b99-ace51980dc6c" type="commentary" target="#pcs-5" n="127,2"/>). –
+    <hi xml:id="id9f379446-e391-4f41-aca7-8806c18f4beb" rendition="#bol">Chaco:</hi> el. chakot, militær hovedbeklædning; se beskrivelsen af Phisters kostume (<ptr xml:id="id7ebcbc52-2a35-46a1-81d8-0b961d454295" type="commentary" target="#pcs-51" n="132,5"/>).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-93" n="135,30">
+          <label xml:id="id6bf29667-956c-4ad3-833d-0f6350f32bf4">
+            <hi xml:id="id21324421-3bb9-4298-9ec1-5319d8adf1f6" rendition="#bol">en ottende Deel Fjerdingvei</hi>
+          </label>
+          <p xml:id="id58d81b2c-5e05-47c7-908b-63405d7aa1f3">En 'fjerdingvej' er en fjerdedel af en dansk mil (= 7532,48 m), dvs. o. 1880 m; en ⅛ heraf vil da svare til o. 235 m.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-218" n="135,31">
+          <label xml:id="id332a79d8-cf54-4fd0-ae16-854142b9cec7">
+            <hi xml:id="idd4150cc5-913f-4f4e-80b2-71f4a498c5ce" rendition="#bol">Elskværdigt følger saa paa Svedens Aftørrelse ... den halvskaldede Isse</hi>
+          </label>
+          <p xml:id="idec941d40-d0de-4398-b508-a9d2eecf29f8">nævnes ikke i teksten, men sigter til <persName xml:id="id0215f312-9162-4b36-8b45-de39fa18ccc5" key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr xml:id="id52550bb1-16b1-47fc-82c6-60252c301165" type="commentary" target="#pcs-5" n="127,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-219" n="136,4">
+          <label xml:id="idd3674179-6854-443f-9164-a0d7878b4197">
+            <hi xml:id="id3834d0ad-1dca-4d31-a81f-9723410165ea" rendition="#bol">Mærkerne af</hi>
+          </label>
+          <p xml:id="id2301b1fe-24b4-48c5-973d-e04854960bcb">sporene efter el. tegnene på.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-253" n="136,5">
+          <label xml:id="id3277b43f-f8d2-4795-bf03-fdf224110639">
+            <hi xml:id="id83e93595-b7a7-47e1-a72c-4a6cac4656b5" rendition="#bol">diverse Forretninger</hi>
+          </label>
+          <p xml:id="idc75a3fcb-cbdf-4115-9075-063d2e8d1c57">forskellige gøremål.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-97" n="136,5">
+          <label xml:id="idd257b69d-0787-44a8-b3df-f9555ce81fc3">
+            <hi xml:id="idad3f4dbc-f0bb-4c5d-8018-7dc26610f890" rendition="#bol">Halvsvimmel</hi>
+          </label>
+          <p xml:id="idfbdabff2-3283-44cf-9a1a-12ee103b6313">tilstand af halv svimmelhed, her formentlig: beruselse.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-220" n="136,9">
+          <label xml:id="ide19efde3-45c6-474c-b0c0-3d3c0774cf56">
+            <hi xml:id="idc956ef4a-d7a7-472a-8dea-f470c5ae9d55" rendition="#bol">I denne Stilling ... »elskværdige Gaardeierinde« ... til Indqvartering</hi>
+          </label>
+          <p xml:id="idf6e28117-9deb-48ee-8156-5bc4832a4af3">sigter til 1. akt af <hi xml:id="idc0f323fd-0613-4bdd-b5d4-235e1e32830f" rendition="#ita">Ludovic</hi> (<ptr xml:id="id469d054c-2d5c-4713-ad20-d28336d2b5b5" type="commentary" target="#pcs-5" n="127,2"/>), hvor <persName xml:id="idb7e59bfb-d55c-46b9-add6-fbc291b8006a" key="Scipio">Scipio</persName> i scene 6 er troppet op hos <persName xml:id="id89a00f43-697b-406f-939b-57a7c41f0c24" key="Francesca">Francesca</persName> for at indkræve den skat, hun skylder paven. Hun svarer, at hun nok skal betale i dag, og at han derfor godt kan drage af sted igen. Scipio vil dog lige afslutte sin oplæsning af bestemmelserne: »Paa Øieblikket, elskværdigste Gaardeierinde! (Bliver ved at læse). 'Tillige haver bemældte Francesca i otte Dage at forsyne bemældte Capitain Scipio og hans tappre Krigere med Qvarteer og Kost.' (Idet han lægger Seddelen sammen). Drikkevarene ere naturligviis indbefattede i Kosten«, s. 3, sp. 2. I scene 9 er Francescas tjenestekarl, som bærer en kurv med fyldte vinflasker, klar til at føre Scipio og hans soldater hen til deres værelser. Francesca beder atter Scipio om at gå, hvortil han svarer: »Jeg gaaer, elskværdigste Gaardeierinde! jeg gaaer! Med saadan en Karl i Spidsen kan Du friste os til at gaae lige ind i <placeName xml:id="id13cd55cc-959d-4c4f-8223-ad3ae0f49db4">Helvede</placeName>!«, s. 5, sp. 1.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-100" n="136,12">
+          <label xml:id="id61f95018-4b4c-4627-b945-4be2a838e0f8">
+            <hi xml:id="id4a003c97-ce64-4d0b-aa93-afa163c506ab" rendition="#bol">enes</hi>
+          </label>
+          <p xml:id="idfb340684-9ea4-44b4-bb16-b17a91578683">forenes, mødes.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-101" n="136,13">
+          <label xml:id="ida92a03f5-56a2-42fa-a77f-946fb929416c">
+            <hi xml:id="idabbeec0b-bf34-4688-80c9-54fa4f2f77a9" rendition="#bol">Amphibium</hi>
+          </label>
+          <p xml:id="idb745401c-af0f-4879-868f-3af2766c19cd">lat., egl. dobbelt-levende; bruges om dyr, som lever både i vand og på land.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-102" n="136,15">
+          <label xml:id="ide43d827c-9e3c-4560-970e-222008016841">
+            <hi xml:id="id779c4ecf-94f9-42b6-99a0-042d5240eac1" rendition="#bol">det er</hi>
+          </label>
+          <p xml:id="id239daf68-4cf8-4397-9c65-ef8adeba3c03">det vil sige.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-103" n="136,15">
+          <label xml:id="id9c724af2-d858-4d60-ab8f-4e1e82bed446">
+            <hi xml:id="id0b3a929b-9c76-4455-91de-da15a135ebf6" rendition="#bol">ligeoverfor</hi>
+          </label>
+          <p xml:id="id3028bdd8-8b76-476e-9825-d39d17927247">i forhold til.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-221" n="136,18">
+          <label xml:id="idccbbb74d-7d19-4007-9909-f4c3d7ac5c7e">
+            <hi xml:id="id5fe36a14-6432-41af-a3a8-8e691f9978f4" rendition="#bol">ligeoverfor</hi>
+          </label>
+          <p xml:id="id367f4113-ff6c-4174-aae1-8a36fa90300f">over for; foran.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-104" n="136,18">
+          <label xml:id="idac5be15e-e382-4b0e-a28e-c8939254283d">
+            <hi xml:id="idd8e30b1b-fc3e-43bb-a0cb-af31e2972e44" rendition="#bol">Fruentimmer</hi>
+          </label>
+          <p xml:id="id87f707f1-1b83-4252-8f47-3fdae5e07efd">kvinde.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-105" n="136,20">
+          <label xml:id="id9e6e6e9d-144f-4b30-b183-7e72d71ff3fd">
+            <hi xml:id="idd951a334-4e73-4d42-9e18-068c7cfda607" rendition="#bol">præsterer <hi xml:id="id1fb86e90-9f0a-4cd8-8f13-0cc2dee4779a" rendition="#ita">(...)</hi> præstanda</hi>
+          </label>
+          <p xml:id="idd206dafc-c555-4c3a-8260-07f2dc88fe3b">gør el. opfylder sin skyldighed. Lat. 'præstanda' er et juridisk udtryk for de ting, der skal ydes el. gøres.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-222" n="136,21">
+          <label xml:id="id2531388b-b454-4578-bd19-3a9b787eb818">
+            <hi xml:id="ida0c956f4-42af-4fa8-bf44-7b17c5cba253" rendition="#bol">En elskværdig Courtiseren ... i forliebte Hop o: s: v:</hi>
+          </label>
+          <p xml:id="idd76b8f77-4f41-4e2e-b91d-ef36176dbaad">Dette nævnes ikke i teksten, men det sigter til <persName xml:id="id84b6e392-3932-46d5-b8f5-5def4315d0e5" key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr xml:id="idd455c5ae-2405-4b90-9e9f-74f97de1addc" type="commentary" target="#pcs-5" n="127,2"/>). –
+    <hi xml:id="id96cfb99b-b2fe-4dc8-a430-640a98a0639c" rendition="#bol">forbindtlige:</hi> forekommende, venlige. –
+    <hi xml:id="id0a143594-2566-4d33-856e-de27844852f6" rendition="#bol">Dikke-Darer:</hi> overdrevne fagter. –
+    <hi xml:id="id1260edb9-f642-464d-80fb-6f2a7f2c2f35" rendition="#bol">Purren i Haaret:</hi> fast udtryk: det at føre hånden vilkårligt gennem håret som udtryk for forlegenhed o.l. –
+    <hi xml:id="id3539f325-1cea-407b-8009-a6022438851d" rendition="#bol">Omkredsen:</hi> cirkuleren omkring. – <hi xml:id="ide814566e-aca9-43a0-be63-858de3000fd1" rendition="#bol">forliebte:</hi> forelskede.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-113" n="137,3">
+          <label xml:id="id5cfce4e7-aaa9-454c-9fdf-83508035c9ca">
+            <hi xml:id="id05eb4308-953c-4f70-ba2b-e025e0f40d63" rendition="#bol">Detaschement</hi>
+          </label>
+          <p xml:id="idf46906f1-28bf-497a-8d22-61a57c898716">el. detachement, dvs. en mindre styrke tropper med en særlig opgave.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-114" n="137,6">
+          <label xml:id="id8ca63f50-2baf-4e8f-bdad-4edb767d4655">
+            <hi xml:id="iddc0b96f4-2ad8-4eef-80ad-59398c6ae783" rendition="#bol">Militairisk</hi>
+          </label>
+          <p xml:id="id05c6c06a-0384-4c7b-84ef-338960141c78">militært set.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-223" n="137,8">
+          <label xml:id="id6d8862a8-f6ed-4b82-bb1b-9741dbf2976a">
+            <hi xml:id="id9388ba59-f273-4a88-86e7-e406a9b493cc" rendition="#bol">Først kommer Soldaterne ind og stille sig i Række – da kommer Capt. S.</hi>
+          </label>
+          <p xml:id="idea7accd1-5fdd-4cf3-af6a-fe8402c40a25">nævnes ikke i teksten, men sigter til <persName xml:id="id19f90190-206d-4030-995c-08a8eb1c3747" key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr xml:id="id91c35eaf-b225-4923-bdb5-13a3910b9e26" type="commentary" target="#pcs-5" n="127,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-115" n="137,12">
+          <label xml:id="idedabfd1f-1bed-4d2e-8bbe-0c424f6c6064">
+            <hi xml:id="idc57f2efe-7ae1-43bc-8a8a-e03e49efbad3" rendition="#bol">Menneskets Gang er ... en fortsat Falden</hi>
+          </label>
+          <p xml:id="idd2dc7ef5-284c-40d2-93ef-b329e7185db2">En kilde er ikke identificeret. Sml. journaloptegnelsen <ref xml:id="idca23735c-f4a8-4e60-bb16-f25ce2d195ab" target="../FF/txt.xml#n193" type="journalsAndPapers" n="193"><persName xml:id="id53d313bd-55d2-41af-8190-055e7f88ec0c" key="F. F.">FF</persName>:193</ref>, i <hi xml:id="id3956b7e1-c5e0-4626-8e91-95b685f9ab43" rendition="#ita">SKS</hi> 18, 112, og <hi xml:id="id28996ce8-773a-4042-b07a-37b46e9793d0" rendition="#ita">Philosophiske Smuler</hi> (1844), i <ref xml:id="id60833e78-1fff-4aac-812b-9e25c0861b7b" target="../PS/txt.xml#ss243" type="publishedWritings" n="243"><hi xml:id="idaa035a6e-25b4-4fb4-9027-ca48c3bf35b2" rendition="#ita">SKS</hi> 4, 243</ref>, hvor sætningen tillægges »Naturforskerne«.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-116" n="137,16">
+          <label xml:id="id6d19e92f-3845-4513-a85d-e89e75907035">
+            <hi xml:id="idd889d7a2-047f-4ccd-a84f-2531bee35b1f" rendition="#bol">han, som man siger, gaaer paa venstre Side af sin egen R</hi>
+          </label>
+          <p xml:id="idbef2eda9-c8e1-428b-b670-54bb2a32607c">Vendingen 'at gå på venstre side af sin egen røv' er ikke fundet optegnet andre steder.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-224" n="137,17">
+          <label xml:id="id1ae9d09b-f9da-47fd-9be5-148a685b47ba">
+            <hi xml:id="id987d0170-fb69-4297-89f6-82a881f047c6" rendition="#bol">han trækker det ene Been ... hastende – bag efter</hi>
+          </label>
+          <p xml:id="id73f92a3f-5527-4a03-8025-a9c62ecbab06">nævnes ikke i teksten, men sigter til <persName xml:id="id4f69af80-b820-4a4f-b281-47c5a0b6f0d7" key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr xml:id="ide6a9667f-3864-4156-95c6-8c4e45e40095" type="commentary" target="#pcs-5" n="127,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-117" n="137,17">
+          <label xml:id="id2c969312-6a01-4d62-b96a-1e6901a633e6">
+            <hi xml:id="id8b0d6dec-94b6-44f4-bf85-0f7b666a1e07" rendition="#bol">Tommer</hi>
+          </label>
+          <p xml:id="idfb105a2b-cc21-4863-bf18-76866a1c549d">Den da. måleenhed 'tomme' svarer til 2,615 cm (1 tomme = <formula xml:id="id51555f3d-412c-450b-9991-5177632b6abe" notation="mathml">112</formula> fod).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-118" n="137,20">
+          <label xml:id="id03aa6cdf-d990-42df-8eee-6847d9c9c4ae">
+            <hi xml:id="idc9aeda35-753f-4f29-99b9-a45fc835b29f" rendition="#bol">Han passerer nu Linien</hi>
+          </label>
+          <p xml:id="id50728d18-a96f-4d79-b3ea-dd1b06d5e178">dvs. han inspicerer soldaterne, som står på geled. Dette nævnes ikke i teksten, men sigter til <persName xml:id="id017f909d-6549-475e-809f-a147ed94b278" key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr xml:id="idd047a3ab-dac4-4788-9acd-af1d8cac8fe8" type="commentary" target="#pcs-5" n="127,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-119" n="137,22">
+          <label xml:id="idea7b5da6-012d-4a49-89dc-8ac50bdb6977">
+            <hi xml:id="id9bed3e90-85b4-416c-9e0e-2a89b6646d32" rendition="#bol">Dog veed man ... Antydning af en Hale</hi>
+          </label>
+          <p xml:id="id7d10cfee-8ef5-4b33-9e16-80d3c7974d84">sigter til halebenet.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-120" n="137,26">
+          <label xml:id="id1b2feb23-cae4-46b7-8d93-1def5df4b898">
+            <hi xml:id="ide521e36d-f368-438f-a2c5-13db992def92" rendition="#bol">engliseret</hi>
+          </label>
+          <p xml:id="id8b0d6187-a5e0-4088-98ce-ec6606c85aab">Det (efter eng. forbillede) at en hest har fået en højere haleføring, ved at halens bøjemuskler er blevet overskåret.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-225" n="137,26">
+          <label xml:id="ide971ae4b-639b-4efb-92c1-f370a15eb8a3">
+            <hi xml:id="id6031e9c8-31eb-4333-aa9e-7fa88dc8fc48" rendition="#bol">Paradeur</hi>
+          </label>
+          <p xml:id="idd856eab4-f363-49bf-b629-e63684fb1d73">fr., hest, der udmærker sig ved et smukt ydre og ved livlige, skolerigtige bevægelser.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-121" n="137,26">
+          <label xml:id="idde425b89-188e-4b90-afc9-20b2c0f6797b">
+            <hi xml:id="idde528d61-e06e-484f-9dbb-626df84cb742" rendition="#bol">Leie-Hest</hi>
+          </label>
+          <p xml:id="id9a412515-8e20-4a14-b5c5-3b4e659734dc">hest, der udlejes til brug for hvemsomhelst.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-226" n="137,27">
+          <label xml:id="id818a91d6-33f0-4f85-9e8b-3ebcd239ec9f">
+            <hi xml:id="id8939febe-cc7c-4175-81e6-f3ca54bab291" rendition="#bol">sætter sig en lille Lunte</hi>
+          </label>
+          <p xml:id="id975671c4-6deb-47be-8062-6c1deeb7bdbb">dvs. sætter sig i luntetrav.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-122" n="137,28">
+          <label xml:id="id797779ff-f165-46b7-8124-e8a84c8ddf40">
+            <hi xml:id="idaa2a2d2f-7407-4a2f-a22b-55db41086a98" rendition="#bol">stumprumpede</hi>
+          </label>
+          <p xml:id="id87c0881e-bc53-496a-8aa3-c047cd221f11">fast udtryk om en kort, kraftig hale.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-125" n="138,1">
+          <label xml:id="idb5f46f4a-1261-45ec-940a-bb8093af8cde">
+            <hi xml:id="id7c9b1668-4fe3-4e78-8a29-9f55ea2f276c" rendition="#bol">Retnings-Major</hi>
+          </label>
+          <p xml:id="id56d80e13-a89e-4c09-9123-e5f0ddbf4fdf">den kommanderende officer.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-227" n="138,2">
+          <label xml:id="idd30da120-a1fb-43e7-aae9-cbec7c513e02"><hi xml:id="ide89b8ec7-dd21-4e96-9416-03c4c879a3e0" rendition="#bol">en lille Streg</hi>s</label>
+          <p xml:id="id6322af26-d2c9-4b5b-9ae6-b462e57af47b">Et fast udtryk for at være lettere beruset var 'at have en lille streg på'.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-126" n="138,5">
+          <label xml:id="id04859843-fbd8-4f31-a921-3d54bc9d5cae">
+            <hi xml:id="iddfb4907c-9bd9-4b57-a8c8-3b431d24482a" rendition="#bol">det Forsøg man i en ældre Tid gjorde ... lade ham ligge krum</hi>
+          </label>
+          <p xml:id="id4f2fcdad-90aa-4b14-845b-dc45c662167e">Der sigtes til den militære straf at 'ligge krum', som var udbredt i 1700-tallet, men som blev afskaffet i begyndelsen af 1800-tallet. Soldaten blev lagt på en træbænk med jernringe om håndled og ankler, således at han lå krummet sammen. Sådan skulle han ligge i et til to døgn. –
+    <hi xml:id="idbd278213-8558-4a28-8afd-a363f06f7f83" rendition="#bol">staae lige:</hi> el. stå ret; bredere også om at parere ordre.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-127" n="138,9">
+          <label xml:id="idabce2574-c2c1-44c8-901a-1d6a018a9081">
+            <hi xml:id="id659f24df-b20d-4f83-9c0d-4aed96246fce" rendition="#bol">fordunster</hi>
+          </label>
+          <p xml:id="id1472f797-c0e1-4631-a6d6-fc37a5060891">fordamper, forsvinder.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-129" n="138,14">
+          <label xml:id="id1b1b1433-dd17-437a-8d86-12cd24d20ad6">
+            <hi xml:id="ide49bcdcd-aaca-4048-a19b-626697f8d192" rendition="#bol">Æsthetiker</hi>
+          </label>
+          <p xml:id="id5ae34bbb-0091-44d2-b608-bfd89d3da18c">her: person, som har forstand på kunst.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-130" n="138,16">
+          <label xml:id="id805b7a5d-7895-4e8c-abab-1b99289f9ca6">
+            <hi xml:id="id2fbc5461-2d42-4e30-acc4-8ed8391a7116" rendition="#bol">Incommensurabelt</hi>
+          </label>
+          <p xml:id="id6631c728-5a81-470e-b525-fce954a2b49a">usammenligneligt.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-132" n="138,20">
+          <label xml:id="id494f72f6-3f8a-485c-8ceb-050f094c3da1">
+            <hi xml:id="id3dccd11c-5550-4c0b-84bc-028f4890293b" rendition="#bol">lyst i Hævd</hi>
+          </label>
+          <p xml:id="idef6040f2-5cfe-412a-83e7-8d28feb92cf1">bragt til anerkendelse, her: lovligt.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-252" n="138,23">
+          <label xml:id="id4fc959fb-2789-41b7-98e3-feb4a317d9ac">
+            <hi xml:id="idd6b976c8-3d1c-42af-86f4-eafb2e13bb54" rendition="#bol">i Charakteren</hi>
+          </label>
+          <p xml:id="id9e2617ea-e0db-4a44-92d9-bdcb18d8021a">dvs. i den rolle, han skal udføre.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-134" n="138,24">
+          <label xml:id="idff98afea-2d61-432f-830e-8b021bbcdb94">
+            <hi xml:id="id41c267a9-16c7-4a42-8be7-79250b6510e4" rendition="#bol">vordende</hi>
+          </label>
+          <p xml:id="id5c70650a-260f-4fc7-97ce-4b74766deaa1">kommende.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-136" n="138,29">
+          <label xml:id="idbca2006e-db3e-4e63-a283-ee249c93470a">
+            <hi xml:id="idd2f3eba8-746d-49ef-aa81-c440b1ed40a3" rendition="#bol">heller slet ikke mere</hi>
+          </label>
+          <p xml:id="id84a200c5-d88f-4cb5-9dcf-ac62d0ef4337">men heller ikke mere.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-228" n="138,29">
+          <label xml:id="id7950e3c5-ee29-459b-a9bb-c61d66888c2e">
+            <hi xml:id="idcac78a47-7484-48b0-8664-d96db2da3b3e" rendition="#bol">en lille Pidsk</hi>
+          </label>
+          <p xml:id="id70e254f2-8ee8-4059-90d5-dfbbc719457b">fast udtryk for at være lettere beruset.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-139" n="139,9">
+          <label xml:id="id87c64571-cbac-4802-9186-690448c84f27">
+            <hi xml:id="id45e0f79a-dfc1-451a-8b36-b52c19e9990a" rendition="#bol">complaisant</hi>
+          </label>
+          <p xml:id="idec7c724d-7901-454a-a60a-e2c13edcbb37">høfligt, tjenstvilligt.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-140" n="139,11">
+          <label xml:id="id57cd821b-f9ab-43d1-9ea7-bfea2e7099c0">
+            <hi xml:id="idf92242a8-4f25-4510-be45-759662fb4e54" rendition="#bol">Comportement</hi>
+          </label>
+          <p xml:id="ide01e3215-0d97-4773-b5b1-dc365ed933f9">(god) opførsel, optræden.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-143" n="139,22">
+          <label xml:id="idea80a292-9396-47d4-a737-86564fe61ec5">
+            <hi xml:id="id846a9fdd-a29b-4e87-a94d-e0ab7dfedd41" rendition="#bol">veed at være</hi>
+          </label>
+          <p xml:id="idf2ca1c9f-d79e-40d4-be2f-e95f2edd3bb6">er sig bevidst at være; er.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-145" n="139,23">
+          <label xml:id="idb21447b3-f833-439d-8a98-0b73c684a858">
+            <hi xml:id="ida1681cf4-ade8-4cad-816a-448d10d8514a" rendition="#bol">telegraphisk</hi>
+          </label>
+          <p xml:id="id56041e9d-3ece-46b6-bc32-1524db4a6534">om det at meddele noget uden ord, men ved hjælp af mimik.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-147" n="139,24">
+          <label xml:id="idb4a60443-6f36-4d22-9248-3037214437a9">
+            <hi xml:id="id0e59192e-0ca9-4823-b26a-f1d08a189332" rendition="#bol">underhaanden</hi>
+          </label>
+          <p xml:id="id4c191cf8-8a5d-42d0-8c6b-77ac2cf93ee2">hemmeligt, skjult.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-148" n="139,30">
+          <label xml:id="id1ab19835-ef5b-4935-9f41-a25e20dbc89d">
+            <hi xml:id="id41605aa6-c53d-4b91-8e20-ab097dfbdadd" rendition="#bol">ret</hi>
+          </label>
+          <p xml:id="ide08927ae-6266-45f9-bef2-caffb9ed3d25">fuldt ud, rigtigt.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-149" n="139,31">
+          <label xml:id="idb3b33f90-a2b4-4df5-8e71-046a56b43a06">
+            <hi xml:id="ida4ce671c-d7e7-4d9c-95e0-f7c51a0752cf" rendition="#bol">end sige</hi>
+          </label>
+          <p xml:id="id8fb0f9a9-e168-4439-a862-4f952fed851b">endsige, for slet ikke at tale om.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-150" n="139,31">
+          <label xml:id="id71e11011-d183-4a56-a36e-dbd502d75fcb">
+            <hi xml:id="ideb8e9545-35cb-4584-96a5-b3a6d04587eb" rendition="#bol">geheimt</hi>
+          </label>
+          <p xml:id="id8bb7cec8-8ae2-4f56-8011-ed835dfe7282">af ty., hemmeligt.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-151" n="139,31">
+          <label xml:id="id27cc5c84-5abd-4f54-97fc-c5c377ccd40e">
+            <hi xml:id="id265fa7bd-1b0f-4d8e-8349-505f9d4f034f" rendition="#bol">Bedunstet</hi>
+          </label>
+          <p xml:id="id88433bcc-ae98-4aca-aec9-77f65785fb08">beruset, bedugget, halvfuld.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-229" n="139,34">
+          <label xml:id="ide8c0a067-04e8-4ba9-9104-0f609dce4747">
+            <hi xml:id="id4c5ef200-b7ae-47bc-bb00-076dad7560ac" rendition="#bol">Altsaa Capt. S. er ikke fuld ... Blodets Stigen til Hovedet</hi>
+          </label>
+          <p xml:id="id1b3fc3f9-605d-4fa3-98c9-02517707ed5b">Noget af denne karakter er angivet i teksten (<ptr xml:id="id58d4bdce-f718-49f8-a3b5-3fce61e35901" type="commentary" target="#pcs-208" n="132,9"/>), mens det andet skyldes <persName xml:id="id086ab104-3a5f-4020-8127-2e49375e34c3" key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr xml:id="idcecdc1f0-df79-4d34-a7bd-8139aafb6e67" type="commentary" target="#pcs-5" n="127,2"/>). –
+    <hi xml:id="id32bb8f88-38fb-435e-8b56-f34e5c5a9131" rendition="#bol">Knysten:</hi> kort og tør hosten. –
+    <hi xml:id="id5a13cae1-f5ec-4a0d-ae92-a7acf8529200" rendition="#bol">Echaufferethed:</hi> af fr. 'échaufferet', hed, ophidset; ophedethed, ophidsethed.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-154" n="140,5">
+          <label xml:id="id3965ce3d-21b9-4e94-89d1-ad850cbdc65d">
+            <hi xml:id="id72cd48f5-300d-4cdf-b3b9-7403bc71718a" rendition="#bol">Habituelt</hi>
+          </label>
+          <p xml:id="id3bd2b51f-b6d4-4a02-bd46-3a470c875842">noget, som er blevet til en vane.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-230" n="140,8">
+          <label xml:id="id9052659e-e2da-4637-a51e-2c1ad0238e90">
+            <hi xml:id="id576f630f-3d36-4223-8866-4aa1ff3f4751" rendition="#bol">Deraf den idelige Bevægelse ... en Viften med Haanden</hi>
+          </label>
+          <p xml:id="idf0d417d8-40cf-4489-bae8-703a5f5acb7b">Dette nævnes ikke i teksten, men sigter til <persName xml:id="id8fdd0fd3-8375-48bb-a2b7-ee3a67e48346" key="Phister, Joachim Ludvig">Phister</persName>s særlige fremstilling (<ptr xml:id="id560bd9b7-3bc5-4685-ab7f-f3799a80b695" type="commentary" target="#pcs-5" n="127,2"/>). –
+    <hi xml:id="idfce866b8-f536-4615-b921-a8a606a7f7e0" rendition="#bol">idelige:</hi> konstant gentagne.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-156" n="140,10">
+          <label xml:id="id0bf3df0b-fbd4-4b5f-8518-28e28263e207">
+            <hi xml:id="idc54e2c36-9e8a-447b-82b7-02e9fbb5fa11" rendition="#bol">Dunst</hi>
+          </label>
+          <p xml:id="ida9a3c772-e8d6-477b-a6dd-e3e89a44813d">lugt, her: spiritusånde.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-157" n="140,11">
+          <label xml:id="id9215b0ae-e777-4dc9-9c76-af1eed3a5d54">
+            <hi xml:id="idda77e2dd-29e3-4fec-be02-7d1c7432b93a" rendition="#bol">Chakoen</hi>
+          </label>
+          <p xml:id="id8ac9d13b-8791-46d7-bcd4-efa944f6567f"><ptr xml:id="ide594a55f-748d-42e2-a815-367c1e2370cc" type="commentary" target="#pcs-92" n="135,27"/>.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-161" n="140,17">
+          <label xml:id="idd273d14f-8d1d-4287-bf05-1460bf63bfd8">
+            <hi xml:id="id3636b74d-62a0-4071-a7fe-5548059cba3a" rendition="#bol">Petitmaitre</hi>
+          </label>
+          <p xml:id="idf807f616-afd7-4493-affe-4deea145c518">laps, spradebasse.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-162" n="140,25">
+          <label xml:id="idd2962123-91e1-43ed-9b47-3ee5db4b3b3f">
+            <hi xml:id="id990a604c-4a08-4b88-bb2b-d45457eb6a32" rendition="#bol">forbindtlig</hi>
+          </label>
+          <p xml:id="id37f880ba-7098-4dbc-b350-e392bf588a1f">forekommende, venlig.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-164" n="140,27">
+          <label xml:id="ida4d57e2d-607c-4bbd-9753-72e2cfda7e76">
+            <hi xml:id="idc6fdfda2-2bc8-4227-a74e-44c8707e91a6" rendition="#bol">complaisant</hi>
+          </label>
+          <p xml:id="id752c9dc1-0544-42ca-b13a-2e6d72ad1ce3">elskværdigt, høfligt.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-165" n="140,29">
+          <label xml:id="id43484daf-21bd-4256-ac18-698c5a882a2d">
+            <hi xml:id="id06123bb0-7c98-42d1-a5b8-7665936055fb" rendition="#bol">fordølge</hi>
+          </label>
+          <p xml:id="idfbf0261a-04d5-4696-9ea3-907dc38bdb9d">skjule.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-168" n="141,5">
+          <label xml:id="id7a6fbeb4-fdd2-4879-b714-98d9550fd5ed">
+            <hi xml:id="id3cb3d25f-af89-4998-8d85-a44aeb6a653e" rendition="#bol">geheimt</hi>
+          </label>
+          <p xml:id="id4f9bb926-e9f6-4c1c-978c-e9da4e2350d1">af ty., hemmelig.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-169" n="141,6">
+          <label xml:id="idf4bb1ca3-478c-4499-9a54-3f476bec4c22">
+            <hi xml:id="ide1ef3390-0af1-4020-9780-905ba863a021" rendition="#bol">Svingel</hi>
+          </label>
+          <p xml:id="id6cb26fc7-5a98-455e-8cbf-570437a34c00">egl. svimmelhed; rus.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-170" n="141,11">
+          <label xml:id="id393597c9-e960-4401-b214-12830fcd337b">
+            <hi xml:id="id77cacee0-da51-4209-ac13-f8094bc2e473" rendition="#bol">sætter det bedste Been frem</hi>
+          </label>
+          <p xml:id="id9598221f-be61-4934-a46e-be48156f27bf">går energisk; også: viser sig fra den bedste side.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-171" n="141,12">
+          <label xml:id="id49f19697-bf41-4ee3-9e55-f3f78d65f7ef">
+            <hi xml:id="id73236032-39fe-4a12-9184-cbde5caf85cd" rendition="#bol">»sætte det andet forved det«</hi>
+          </label>
+          <p xml:id="idbef3d3f8-8823-4acf-962b-ce6a27b5d4d2">indirekte tale, ikke citat fra stykket. – <hi xml:id="idee6e0ca4-f8ec-4ebe-a169-a56cfc9d4513" rendition="#bol">forved:</hi> foran.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-231" n="141,24">
+          <label xml:id="idfb11fc28-45b3-4a7f-a810-39f76459cab0">
+            <hi xml:id="id35194be2-88f6-43c8-985c-bcb0286a4034" rendition="#bol">Tournüre</hi>
+          </label>
+          <p xml:id="ide9e77e5c-739a-46c8-97b1-02fe31540110">holdning, elegance.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-254" n="141,33">
+          <label xml:id="id45154a1f-f67b-4d68-8e6d-d9f42f387daf">
+            <hi xml:id="id7d8a0bc3-c09e-4601-9a4a-fe5f359efd15" rendition="#bol">havde lagt af</hi>
+          </label>
+          <p xml:id="id228f97a1-d579-4257-b49d-146bfdbb5281">var holdt op med.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-175" n="142,2">
+          <label xml:id="idbfb07b39-7e2d-4cf3-a5f0-d3766a456214">
+            <hi xml:id="id7a84e202-1f72-4451-835a-c4d74d0a0f2c" rendition="#bol">Trods al Capt. Scipios Travlhed ... paagribe den Skyldige</hi>
+          </label>
+          <p xml:id="ida07d473f-b4e1-43dc-9b38-6fd11f7f97cf">Der sigtes til 2. akt, 3. scene, i <hi xml:id="id83856f9d-8b6d-495b-a642-495350c58502" rendition="#ita">Ludovic</hi> (<ptr xml:id="id73f39378-5dd8-404b-9d6d-4c2ba50ce895" type="commentary" target="#pcs-5" n="127,2"/>), hvor <persName xml:id="id9f25f402-ea8c-4e41-a694-cd1ab4fe2669" key="Scipio">Scipio</persName>s fange, <persName xml:id="id82f1ff96-18b0-4be2-8d71-39a744d0ee93" key="Ludovic">Ludovic</persName>, er stukket af, og Scipio pludselig afslører sig som from: »jeg drikker ikke mere – andet end Vand!« siger han. Og det skyldes ikke, at han er blevet syg, men at han har afgivet et løfte: »Ja, og det et høist mærkeligt Løfte! Min Chef har tilstaaet mig otte Dage for igjen at faae fat paa den Forbryder, som jeg havde under min Varetægt; dersom jeg ikke til den Tid kan faae ham, saa faaer jeg min Afsked – og det gjorde mig saa forskrækket, at jeg ikke vidste hos hvilken Helgen jeg skulde søge Styrke; saa greb jeg til Vandet, i det Haab at Himlen, for min Poenitentses Skyld, vil skaffe mig fat paa Knægten«, s. 14, sp. 1. Scipio har da ikke drukket i otte dage.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-232" n="142,6">
+          <label xml:id="id7049001a-0f57-4b96-b5ac-84abc6dacedd">
+            <hi xml:id="id13ec0ee9-65dc-4ef0-b8ed-a6be0308f2ad" rendition="#bol">hans pathetiske Replik ... »hvilken Qval ... drikke Andet end Viin.«</hi>
+          </label>
+          <p xml:id="id57dc6679-bb4b-4484-8f6d-bf3a121eb264">Der sigtes til 2. akt, 15. scene, i <hi xml:id="idb5c7c462-1ba7-4373-842b-351c8f3da4ea" rendition="#ita">Ludovic</hi> (<ptr xml:id="ide4295a73-d7e8-44c2-9984-a0611303db00" type="commentary" target="#pcs-5" n="127,2"/>), hvor <persName xml:id="id1530704a-b572-47a5-9c6b-a5fc66378edd" key="Scipio">Scipio</persName> i Eremitens hus leder efter <persName xml:id="idc1546229-c5c3-46d9-bcb8-530d8b932f97" key="Ludovic">Ludovic</persName> og pludselig siger for sig selv: »Nei, det maa jeg tilstaae, det er skrækkelig haardt for en Mand, som har gjort det Løfte kun at drikke Vand, naar han skal gjøre Huusundersøgelse hos en Eremit, som har gjort det Løfte kun at drikke Viin – og hvilken Viin!« s. 20, sp 1.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-177" n="142,27">
+          <label xml:id="id504ab414-8d2a-472f-ab62-13f4f0ef2af7">
+            <hi xml:id="id706f18a5-86a7-490f-9d71-7da58313fdc9" rendition="#bol">tristitia</hi>
+          </label>
+          <p xml:id="id3295b55e-135f-4480-bae0-f02448c47ba4">lat., tristhed, sørgmodighed, bedrøvethed.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-178" n="142,28">
+          <label xml:id="idde8444c4-582e-4d05-befb-9de98f27552d">
+            <hi xml:id="id4b91ce41-1da1-4e4b-82da-af337a3718c2" rendition="#bol">slattede</hi>
+          </label>
+          <p xml:id="id7e5b36b3-70b0-4264-a60d-5ceb6f7526e9">el. slatne, uden kraft.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-179" n="143,2">
+          <label xml:id="id98cd98bd-1951-4269-9c51-c947241bb82f">
+            <hi xml:id="idd0295741-46a0-46a2-b0b6-1ad7c723b6f0" rendition="#bol">det er mange Aar siden dens Forf. saae Ludovic ... blev givet</hi>
+          </label>
+          <p xml:id="idea1915c6-e224-4de5-a9ba-31629276d587">SK har formentlig set stykket i 1841 (<ptr xml:id="id499bd7a4-6e32-4c67-8259-c76745999e75" type="commentary" target="#pcs-7" n="127,4"/>).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-181" n="143,7">
+          <label xml:id="id94bfe5df-6b28-4814-ab1c-07c57e68faac">
+            <hi xml:id="id8229466d-ba5e-4b0a-b5fe-a9776d810936" rendition="#bol">Phister</hi>
+          </label>
+          <p xml:id="id0593b3f1-e536-4919-ad6d-7c0ec1064932"><ptr xml:id="id6aacc316-65e0-44ef-8d49-93e97a71b169" type="commentary" target="#pcs-4" n="127,1"/>.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-182" n="143,7">
+          <label xml:id="id8fa861a4-bc63-42fa-8c4d-59ebf49cef60">
+            <hi xml:id="id69e6dddd-6408-4883-b7a2-6b625f9bccf4" rendition="#bol">Rosenkilde</hi>
+          </label>
+          <p xml:id="idd60e6798-5048-4065-8fdd-cee308c912d2"><persName xml:id="id4d7e52f1-846e-4218-b15e-ab33c628d633" key="Rosenkilde, Christen Niemann" n="*">Christen Niemann Rosenkilde</persName> (1786-1861), da. skuespiller; fra 1815 ansat ved <placeName xml:id="idab7cb7d5-42b6-4676-98d2-42a7c2355475" key="Kongelige Teater, Det">Det kgl. Teater</placeName>. Han havde en meget smuk tenorstemme og udførte bl.a. en række komiske roller i sin gode ven <persName xml:id="id14da4928-f7b2-4897-9890-940496ef1449" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s vaudeviller, hvilket bidrog dels til vaudevillens succes som genre, dels til hans egen popularitet. Hans særlige komiske geni har SK beskrevet i udkastene til »Rosenkilde som '<persName xml:id="ide045e219-8045-4e95-bc94-0bc7580983c6" key="Hummer">Hummer</persName>'. Et Erindrings-Forsøg af En Taknemlig« fra 1847 (<ref xml:id="idc2c3c10b-540a-4c73-8b17-da51215d2e57" target="../P372/txt.xml#n373" type="journalsAndPapers" n="373">Papir 373</ref>, <hi xml:id="id6ab5daca-b453-4206-a6c8-9a354d048144" rendition="#ita">SKS</hi> 27, 438f.). Rosenkildes datter, <persName xml:id="id052146bf-ae4d-4e5a-9052-69aae77ad869" key="Sødring, Julie Weber">Julie Weber Sødring</persName>, har bevidnet, at hendes far og SK kendte hinanden, jf. <hi xml:id="idba049db3-476e-4d3e-9660-e38b5553882d" rendition="#ita">Søren Kierkegaard truffet. Et liv set af hans samtidige,</hi> udg. af <persName xml:id="idec087824-736e-4b53-8a8d-5f67ad3bacf0" key="Kirmmse, Bruce H.">Bruce H. Kirmmse</persName>, <placeName xml:id="id497be8dc-1267-42ac-8637-eb2adf994e8c" key="København">Kbh.</placeName> 1996, s. 134f. I en kladde til en dedikation til skuespilleren har SK skrevet: »Til / Lunets uvurdeerlige end sige ubetalelige Komiker, / <placeName xml:id="idbf2acb62-eac0-4c61-91cd-358e7b343299">Danmark</placeName>s største, / Hr. Rosenkilde / fra / Forfatteren« (<ref xml:id="id42605ebc-4dd8-43b0-bcca-234649a079bc" target="../b208/txt.xml#n210" type="lettersAndDedications" n="ba:I_s.344" rend="Brev 210"><hi xml:id="id42733505-e227-408a-9808-41d643376cc1" rendition="#ita">B&amp;A,</hi> bd. 1, s. 344</ref>).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-183" n="143,7">
+          <label xml:id="idc0e62db7-2a6f-4aa0-a455-842a3fef5f54">
+            <hi xml:id="idbc6db26a-c3b8-4534-8074-18df6ac29a68" rendition="#bol">Nielsen</hi>
+          </label>
+          <p xml:id="id7c56f45f-62a5-49f2-87ef-0aa8120773ea"><persName xml:id="id2b860677-5d78-4163-abb4-191c2496a2f2" key="Nielsen, Nicolai Peter" n="*">Nicolai Peter Nielsen</persName> (1795-1860), da. skuespiller og instruktør; fra 1820 ansat ved <placeName xml:id="id8f2950ce-ff76-403b-af2c-efbcb8c8ea0d" key="Kongelige Teater, Det">Det kgl. Teater</placeName>, hvor han blev en af datidens største skuespillere. Han var gift med en berømt skuespillerinde (<ptr xml:id="id5ac1ed13-43b9-4adc-967d-a7646de9f60d" type="commentary" target="#pcs-186" n="143,8"/>). SKs forbindelse med familien Nielsen fremgår af et opbevaret brev, jf. <ref xml:id="id6363a40a-5630-4479-82bb-f32b247f583f" target="../b241/txt.xml#n252" type="lettersAndDedications" n="ba:170" rend="Brev 252"><hi xml:id="id26a32cae-6664-473a-aeb2-8a943b9703ee" rendition="#ita">B&amp;A,</hi> nr. 170; bd. 1, s. 189f.</ref></p>
+        </note>
+        <note type="commentary" xml:id="pcs-184" n="143,8">
+          <label xml:id="id1a0704a1-3521-4d38-a507-c14ab2137b87">
+            <hi xml:id="id8d9d9dcd-ff66-4e79-9a58-96384cc50116" rendition="#bol">Wiehe</hi>
+          </label>
+          <p xml:id="id06f80d1d-8785-4830-a765-556fea35c9c5"><persName xml:id="iddcd008da-b799-47a8-b1cb-a845372781ed" key="Wiehe, Michael Rosing" n="*">Michael [Rosing] Wiehe</persName> (1820-64), da. skuespiller. Han fik sit gennembrud på <placeName xml:id="idd982ef5e-0c21-4f3a-9d2e-0a3656333916" key="Kongelige Teater, Det">Det kgl. Teater</placeName> i begyndelsen af 1840'erne, blev mest fejret i sine roller som den unge elsker og fra 1844 tillige berømmet for sit virtuose samspil med <persName xml:id="idbb0f8c59-e9fd-46a2-9b73-a933bd37d498" key="Heiberg, Johanne Luise">fru Heiberg</persName> (<ptr xml:id="id94fc99c7-6b00-4b98-bd74-58813caabe3e" type="commentary" target="#pcs-185" n="143,8"/>).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-185" n="143,8">
+          <label xml:id="idb0ad0d42-a3af-4dd3-a1d7-ed20f8a9f316">
+            <hi xml:id="idbc6e9eef-4955-4a87-8a2f-e3b3e78cbcde" rendition="#bol">Frue Heiberg</hi>
+          </label>
+          <p xml:id="id50320caf-247a-4646-ad7a-bfe6d6c570d7"><persName xml:id="ida9739856-cdfb-4689-ad5e-90f5edaa8b17" key="Heiberg, Johanne Luise" n="*">Johanne Luise Heiberg</persName>, født Pätges (1812-90), feteret skuespillerinde ved <placeName xml:id="ide0126e03-5c6d-4019-9fe7-30d65b8820fe" key="Kongelige Teater, Det">Det kgl. Teater</placeName>, hvor hun fra 1823 spillede en lang række heltinderoller, som ofte var skrevet særligt til hende, bl.a. af hendes mand siden 1831, <persName xml:id="id272c36c3-2d56-49ae-b187-b086769378e3" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>. Som hustru til Heiberg, der var professor og dermed en rangsperson, kunne hun titulere sig fru og ikke blot madam. SK havde udgivet føljetonartiklen »Krisen og en Krise i en Skuespillerindes Liv« (I-IV af <persName xml:id="id8fee762a-494d-4080-b9ee-b30f546c2b59" key="Inter et Inter">Inter et Inter</persName>), dateret »Sommeren 1847«, i <hi xml:id="ideac64c46-3536-4f8a-ac07-8e20acc887e0" rendition="#ita">Fædrelandet,</hi> nr. 188, den 24. juli, sp. 1485-1490, nr. 189, den 25. juli, sp. 1493-1500, nr. 190, den 26. juli, sp. 1501-1506, og nr. 191, den 27. juli 1848, sp. 1509-1516 (<ref xml:id="id457f1662-8778-4c6a-9d94-9669582e150f" target="../KKS/txt.xml#ss91" type="publishedWritings" n="91"><hi xml:id="id8b2b793c-7ac8-4594-b887-2c98fb737188" rendition="#ita">SKS</hi> 14, 91</ref>-107).</p>
+        </note>
+        <note type="commentary" xml:id="pcs-186" n="143,8">
+          <label xml:id="id190c9840-f355-4417-8f73-59907d07bfbd">
+            <hi xml:id="id8971ff3b-560a-461d-84e9-3571c6883ad0" rendition="#bol">Md. Nielsen</hi>
+          </label>
+          <p xml:id="ida8abf5c6-b4ba-4177-8d2e-808145bdce69"><persName xml:id="id26e21a51-a44e-43d6-85e3-a4c2fac6d886" key="Nielsen, Anna" n="*">Anna Nielsen</persName> (1803-56), fra 1821 skuespiller ved <placeName xml:id="idf1411f10-fe2c-451f-b77a-5b8e25b0d561" key="Kongelige Teater, Det">Det kgl. Teater</placeName>, hvor hun i sit vidtfavnende repertoire levendegjorde et utal af forskellige kvinderoller, især hustru- og moderroller. Hun var gift med skuespilleren <persName xml:id="id06cdb34e-ff8e-439e-a253-9e8680479ec5" key="Nielsen, Nicolai Peter">N.P. Nielsen</persName> (<ptr xml:id="id06436a90-5c5d-41ae-983b-3d9fac249a3b" type="commentary" target="#pcs-183" n="143,7"/>), der ikke var optaget i den borgerlige rangforordning, hvorfor hun efter tidens skik blev benævnt madam (forkortet mad.) og ikke fru. Trods sit talent stod hun i skyggen af <persName xml:id="id9eec42d0-33d8-4551-8bdf-c33ef9eea788" key="Heiberg, Johanne Luise">fru Heiberg</persName>, men i <hi xml:id="id9eb8979d-3247-44ff-a02b-e28a2b8f38cf" rendition="#ita">Stadier paa Livets Vei</hi> (1845) lader SK pseudonymen <persName xml:id="id052eb705-26bc-437b-86ed-6a0a24b9ed45" key="Wilhelm">Assessor Wilhelm</persName> hylde hende i en lang fodnote, hvor man får indtryk af, at fru Heibergs beundrere har knap så meget at have deres beundring i som madam Nielsens har, da »denne Skuespillerinde bliver betragtet som værende af anden Rang, hvilket hun ogsaa er, naar Fordringen er at løbe omkaps i Øieblikket, og at virke ikke ved det Bestandige, men ved det Forsvindende«, <ref xml:id="idfc73c426-577e-4f84-85a1-7bbfa47f5719" target="../SLV/txt.xml#ss125" type="publishedWritings" n="125"><hi xml:id="id88a2cf7d-adf4-4b48-82e1-9b94fcf2d69f" rendition="#ita">SKS</hi> 6, 125</ref>,22-24.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-187" n="143,8">
+          <label xml:id="idf7dd1980-4abc-4804-b63f-4bc6ec661d3a">
+            <hi xml:id="id490c7ea9-439b-492b-a934-51673fa7bf12" rendition="#bol">o: fl.</hi>
+          </label>
+          <p xml:id="ida09b706b-0a52-4b10-807e-104ded645ac6">og flere.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-188" n="143,13">
+          <label xml:id="id6e0deb1a-6ee9-4d83-b34f-8a719edaf55c">
+            <hi xml:id="id9924eecd-46cb-43ac-828b-a342fb51fdf6" rendition="#bol">Skjønsomhedens</hi>
+          </label>
+          <p xml:id="id52083d6e-e8ba-4232-8677-050320944315">påskønnelsens, taknemmelighedens.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-189" n="143,17">
+          <label xml:id="idc6f8a958-4bc1-4b46-8f25-279ba0f2933e">
+            <hi xml:id="idbb6c62ef-7359-4424-9633-818f5122030d" rendition="#bol">et saa lille Land som Danmark</hi>
+          </label>
+          <p xml:id="idf0168174-bd71-47f4-800e-3265ce86f18d">Ved folketællingen i 1850 var der 1.407.747 indbyggere i kongeriget <placeName xml:id="ida914c9e8-e351-4a6d-8d09-8b0f24c4a4c5">Danmark</placeName>; når befolkningerne i bilandene (<placeName xml:id="id0e535f74-eed1-4501-995a-75002a2a4c15">Færøerne</placeName>, <placeName xml:id="id6cc97769-8c3e-4570-8cc8-f904de23c34d">Grønland</placeName>, <placeName xml:id="id6019b454-a5d2-4078-9cd5-b26c6b85a540">Island</placeName> og <placeName xml:id="id245ce895-4f59-4aaf-a418-0c7c25d02616">De dansk-vestindiske Øer</placeName>) medregnes, var der 1.524.911 indbyggere. Se <hi xml:id="idc6585665-880a-442e-a23c-706ff88d9dd7" rendition="#ita">Statistisk Tabelværk, ny række,</hi> bd. 1, <placeName xml:id="idc752e629-b030-4301-90c0-b1ec3e724524" key="København">Kbh.</placeName> 1850, s. III.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-190" n="143,24">
+          <label xml:id="id68be4145-3349-4a60-b6a3-8cc4b89cedbe">
+            <hi xml:id="id4784866a-91f9-4632-a9ec-cef30f44735f" rendition="#bol">i Dec. 48</hi>
+          </label>
+          <p xml:id="ide8de1e3c-50b6-4e62-80bb-a56de06c4e65">se <ref xml:id="id56fa23f0-02b9-4bb6-a1d2-db86ed1b4a21" target="../PCS/txr.xml#ss140" type="textCriticalAccount" n="140">tekstredegørelsen, s. 140</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="pcs-191" n="143,24">
+          <label xml:id="iddbb8c035-97a3-474f-a9c3-6f498a8a7078">
+            <hi xml:id="ida8c5d53c-060f-4c8c-ba39-623add42608b" rendition="#bol">Procul</hi>
+          </label>
+          <p xml:id="id69defdf0-2236-46ef-9abd-1d8576831df7">lat., fjernt, langt borte fra; på afstand.</p>
+        </note>
+      </div>
+    </body>
+  </text>
 </TEI>

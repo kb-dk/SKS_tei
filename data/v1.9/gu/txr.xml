@@ -1,159 +1,420 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Guds Uforanderlighed</title>
-     
-     <title type="short">GU</title>
-  <author>
-   <name>Klaus Nielsen</name><name>Stine Holst Petersen</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Joakim Garff</name><name>Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2009</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K13</biblScope>
-     <biblScope unit="file">http://sks.dk/gu/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition xml:id="lth" scheme="css">text-decoration: line-through</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition><rendition selector="p,l,cell" scheme="css" xml:id="cen">text-align:center</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20120823">txr/XML, <bibl><idno type="version">1.7</idno>, <biblScope unit="file">http://sks.dk/gu/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id9327ffbb-bf05-4c7b-a0a6-5aec2efbe4b2">
+    <fileDesc xml:id="idd5a12cf9-c539-4b00-966b-479d236c393a">
+      <titleStmt xml:id="id9ab6f21a-b02a-42ee-b3e5-0438c8302931">
+        <title xml:id="id0fa369ec-4e24-4d58-b129-fe4e5ab287d2" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="idd8233e71-5da8-4a70-9cb9-cc5255c0fc1f">Guds Uforanderlighed</title>
+        <title xml:id="id8cced8d6-5627-494e-80d2-64d657886ccf" type="short">GU</title>
+        <author xml:id="ida2203645-1a39-4b30-b034-49c18011f32b">
+          <name xml:id="id956be9ac-06b6-4c00-8ce7-72e9357496f0">Klaus Nielsen</name>
+          <name xml:id="id6a396767-fc91-452d-befa-20277229f8fb">Stine Holst Petersen</name>
+        </author>
+        <editor xml:id="id6f66384f-5d77-4f21-9511-10c58668bf50">
+          <name xml:id="iddf05215c-78b6-456b-8c22-d3b9b92fb03c">Niels Jørgen Cappelørn</name>
+          <name xml:id="idd6e2b5af-6690-4e32-ac6a-3ca912a4c690">Joakim Garff</name>
+          <name xml:id="id6175b647-ec43-452a-a088-2fa957f55257">Johnny Kondrup</name>
+          <name xml:id="id97a0b89f-3153-412a-a681-2fa9525eefd8">Tonny Aagaard Olesen</name>
+          <name xml:id="id32f44dd3-ac20-4777-bbe7-5a298558fd92">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="ideaf19440-8fb9-4f7e-bbe5-566a702bffe2">
+          <resp xml:id="id325f9eba-b693-410a-aff3-ce1855f34da9">redigeret af</resp>
+          <name xml:id="id27843800-5d12-4379-bfe9-71d7af30f31d">Joakim Garff</name>
+          <name xml:id="iddb2407c3-4d59-4321-8c7d-6c673d787db6">Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="id759d1c3a-90ae-4903-8b6d-83ba3f39549f">
+          <resp xml:id="id3fd49a1e-9e6b-4ecf-b7d1-47a3b735025d">elektronisk redigeret af</resp>
+          <name xml:id="idbf045cb5-97ff-4599-a9a9-ed8d0149e607">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="ida73c43c6-89a1-466c-bdd0-f4205f4226da">
+        <authority xml:id="idf3699429-2234-4a40-bfd6-3851ecd1766f">Søren Kierkegaard Forskningscenteret 2009</authority>
+        <availability xml:id="idb2451ab6-0b8a-4fe8-8734-88c8d0a32918" status="restricted">
+          <p xml:id="id77b3befe-c482-4a02-8661-ac840b2fb718">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id62365c56-bf77-4ea0-b6df-6add527b2240">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="idf3bd550f-c3b4-4d88-b06e-f14d0afaf5cf" unit="volume">K13</biblScope>
+        <biblScope xml:id="id5024043a-b5a0-40de-8fbb-24a8332abd17" unit="file">http://sks.dk/gu/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id4cbd4d1c-977b-4022-8c93-6768b185bff0">
+        <bibl xml:id="id952a4a06-dcd4-4c98-968b-d34d02aee3e3" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="idf0be89db-c1f9-4a08-a34d-88f54295fefb">
+      <tagsDecl xml:id="id8d9cf42a-6cac-4006-a278-e82fe3c43dc6">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition xml:id="lth" scheme="css">text-decoration: line-through</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="cen">text-align:center</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id4399c8b5-b779-43d9-9b01-1343b5adcf34">
+      <change xml:id="id852e36b3-380e-4ee8-84ca-9065282c1693">Transformed to TEI by style sheet <bibl xml:id="id7acb8eb4-9cb4-4284-bfd1-a28f1e0e7451" type="file">txr2tei.xsl</bibl> version as of <date xml:id="id199aef2c-1850-4be3-9bd1-9b2678d2f2c5">2017-02-15</date> importing <bibl xml:id="idf9554395-e6c3-49a4-a835-2e7b55646682" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="id0496e66b-5315-4b82-8fe5-a19443fc033c">Transformed to TEI by style sheet <bibl xml:id="idfdb34602-feb1-49eb-ae6c-57c18f0df047" type="file">kn12tei.xsl</bibl> version <idno xml:id="id8d104daa-91bb-4941-8be5-80a84dc9e32e" type="version">1.9</idno> as of <date xml:id="id4e18f682-90c8-4f96-b550-8ae2003a6b25">2017-02-21</date> by <name xml:id="idb39bf8b0-dbae-41c3-abc3-c03538bc7fd2">Karsten Kynde</name>, <orgName xml:id="id4f4fa63e-3bcd-41e4-a403-6da21c652922">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="idd97a013b-632b-443c-98dd-2f52ae05ff7a">København</placeName></change>
+      <change xml:id="ida8e7c217-9a6c-45b3-97ca-987a48b43116" when="20120823">txr/XML, <bibl xml:id="id444b691a-95d7-4d75-89da-a99bf64eaf61"><idno xml:id="idc34371f2-6125-43e1-8604-ca951bd052a0" type="version">1.7</idno>, <biblScope xml:id="idb8f165fc-0942-4aba-8984-91a58ae1cd3f" unit="file">http://sks.dk/gu/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="TextCriticalAccount" subtype="publishedWritings"><body><div><head type="topText" n="Tekstredegørelse"/>
-  <head><pb xml:id="ss509" n="509" edRef="#SKS"/>Tekstredegørelse</head>
-  <list type="TOC"> 
-   <item>1. Bibliografisk beskrivelse 
-    <ptr type="chapter" target="#k1" n="509"/>
+  <text xml:id="id6f2900f0-7178-45ed-bd10-36f48d07bb5b" type="TextCriticalAccount" subtype="publishedWritings">
+    <body xml:id="idc462ebb2-cf3a-4738-8a5f-10036ba9111e">
+      <div xml:id="id0570a072-466f-411d-9adb-a603a077312d">
+        <head xml:id="ida331b83c-c1e1-4622-a242-847b2544b3e2" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="id14ee27c6-4e10-4afc-b89b-3b27891bd571"><pb xml:id="ss509" n="509" edRef="#SKS"/>Tekstredegørelse</head>
+        <list xml:id="id7e5474c7-14ce-4881-876b-18d1f00ac791" type="TOC">
+          <item xml:id="idf5cab34d-1766-4af1-a6b2-5e24757f88f6">1. Bibliografisk beskrivelse 
+    <ptr xml:id="id8c0419c2-58e5-47ea-a3b2-fc00f7169f9e" type="chapter" target="#k1" n="509"/>
    </item>
-   <item>2. Manuskriptbeskrivelse 
-    <ptr type="chapter" target="#k2" n="512"/>
+          <item xml:id="id6f0eaa0f-112d-47e9-9c41-167e57e7e796">2. Manuskriptbeskrivelse 
+    <ptr xml:id="idfadcbe21-0cf2-462b-81a6-6914f02c03f2" type="chapter" target="#k2" n="512"/>
    </item>
-   <item>3. Tilblivelseshistorie 
-    <ptr type="chapter" target="#k3" n="518"/>
+          <item xml:id="idf581de10-89f8-4441-8841-37abb4e1ae32">3. Tilblivelseshistorie 
+    <ptr xml:id="id8e812726-a7b8-43cc-991c-e7333d5d3fad" type="chapter" target="#k3" n="518"/>
    </item>
-   <item>4. Udgivelsesmåde 
-    <ptr type="chapter" target="#k4" n="521"/>
+          <item xml:id="id55225e28-03a3-47bf-8a94-82c1057043ba">4. Udgivelsesmåde 
+    <ptr xml:id="id20f08924-a544-47a5-a170-d404379e9263" type="chapter" target="#k4" n="521"/>
    </item>
-  </list>
-  <div type="level1" xml:id="k1">
-   <head>1. Bibliografisk beskrivelse</head>
-   <p><hi rendition="#ita">Guds Uforanderlighed</hi> forelå færdigtrykt fra Bianco Lunos Bogtrykkeri den 29. aug. 1855<note> <p><hi rendition="#ita">Bl.art.,</hi> s. 295.</p> </note> og blev annonceret som udkommet i <hi rendition="#ita">Berlingske Tidende,</hi><note> <p>Annonceringen blev gentaget i <hi rendition="#ita">Berlingske Tidende,</hi> nr. 204, den 3. sept. 1855.</p> </note> nr. 203, den 1. sept. 1855, i <hi rendition="#ita">Adresseavisen,</hi> nr. 204, den 3. sept. 1855 og i <hi rendition="#ita">Fædrelandet,</hi> nr. 205, den 4. sept. 1855. Bogen kostede 16 skilling og udkom hos <persName key="Reitzel, Carl Andreas">C.A. Reitzel</persName>s Bo og Arvinger.</p>
-   <p>Tre eksemplarer af <hi rendition="#ita">Guds Uforanderlighed</hi> (forkortet <hi rendition="#ita">GU</hi>) er blevet kollationeret; de benyttede eksemplarer er:</p>
-   <list> 
-     
-     <label>A</label>
-     <item>Søren Kierkegaard Forskningscenterets arbejdseksemplar, privat indbundet og ubeskåret.<note> <p>Eksemplaret er indbundet i blåt karton med det oprindelige, bogtrykte omslag. Omslaget gengiver titelbladet i en dobbeltramme. Eksemplaret tilhører G.E.C. Gads Forlag (tidligere hos dr.phil. h.c. <persName key="Bernström, Gustaf">Gustaf Bernström</persName>, <placeName>Göteborg</placeName>; tidligere hos greve <persName key="Ehrensvärd, Johan Jacob Albert">Albert Ehrensvärd</persName>, <placeName>Tosterup</placeName> i <placeName>Skåne</placeName>).</p> </note></item>
-    
-     
-     <label>B</label>
-     <item>Søren Kierkegaard Forskningscenterets arbejdseksemplar, privat indbundet og beskåret.<note> <p>Eksemplaret tilhører G.E.C. Gads Forlag (tidligere hos dr.phil. h.c. <persName key="Bernström, Gustaf">Gustaf Bernström</persName>, <placeName>Göteborg</placeName>; tidligere hos museumsdirektør <persName key="Madsen, Karl">Karl Madsen</persName>, <placeName>København</placeName>). På indersiden af forpermen findes <persName key="Madsen, Karl">Karl Madsen</persName>s ekslibris, tegnet af <persName key="Bindesbøll, Thorvald">Thorvald Bindesbøll</persName>. Eksemplaret indeholder <hi rendition="#ita">GU;</hi> medinbundet er <hi rendition="#ita">Øieblikket</hi> nr. 1-9, <hi rendition="#ita">Hvad Christus dømmer om officiel Christendom</hi> og <hi rendition="#ita">Dette skal siges; saa være det da sagt.</hi></p> </note></item>
-    
-     
-     <label><pb xml:id="ss510" n="510" edRef="#SKS"/>C</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret, katalogsignatur Q, 6063 - 8<hi rendition="#sup">o</hi>.</item>
-    
-   </list>
-   <p>Ved den interne kollation af de tre eksemplarer blev der ikke konstateret afvigelser. Eksemplar A danner grundlag for den følgende beskrivelse.</p>
-   <div type="level2">
-    <head>Kollationeringsformel</head>
-    <p>8<hi rendition="#sup">o</hi>. [1]<hi rendition="#sup">8</hi> 2<hi rendition="#sup">4</hi>. $1 signeret. 12 blade. Paginering [1-7], 8-22, [23-24].<note> <p>Formlen er uddraget af de tre eksemplarer A, B og C. Dog har kun eksemplar A de to afsluttende blanke sider [23-24]. Der bruges arabertal om arknumre, og arkenes bladantal angives med hævet skrift. Ordinærtal i [      ] betegner det usignerede første ark. $ står for 'alle signerede ark'. »$1 signeret« betyder: I alle signerede ark har det første blad signatur. Upaginerede sider noteres også i kantet parentes.</p> </note></p>
-    <p>Formatet er oktav. Bogen har et omfang på 24 sider, svarende til 12 blade fordelt på 1½ ark, og er pagineret 8-22, idet bl. 1r-4r og bl. 12 er uden paginering.</p>
-    <p rendition="#ind">S. [1] udgør titelblad, s. [3] indeholder dedikationen og s. [5] »Forord.«. S. [2], [4], [6] samt [23-24] er blanke.</p>
-    <p rendition="#ind">Ark 1 er uden signatur; ark 2 har primasignatur angivet med arabertal.</p>
-   </div>
-   <div type="level2">
-    <head>Beskrivelse af eksemplar A</head>
-    <p>Den ubeskårne bogbloks blade måler ca. 127-131 × 207-210 mm.<note> Størrelsen måles som bredde × højde. </note> Bogblokkens tykkelse er ca. 1 mm.</p>
-    <div type="level3">
-     <head>Papir</head>
-     <p>Der er benyttet almindeligt trykpapir af en ret kludeholdig kvalitet.</p>
-    </div>
-    <div type="level3">
-     <head>Typografi</head>
-     <p>Det fremherskende skriftsnit er fraktur; på titelbladet er hovedtitlen sat med skriften medolin. Desuden er der anvendt tekstur (gotisk) og et <pb xml:id="ss511" n="511" edRef="#SKS"/>enkelt sted skriften schockisk. Fremhævet tekst er i øvrigt sat med fed eller spatieret skrift.</p>
-     <p rendition="#ind">Titelbladet er med hhv. en enkelt og en dobbelt skillestreg delt i tre felter. I det øverste felt er anført værkets hovedtitel og undertitel, i det midterste forfatternavn, og i det nederste udgivelsessted, forlag, trykkeri og udgivelsesår. Titlen er sat med bogens største punktstørrelse, ca. 3 grader over brødteksten, undertitlen »En Tale« ca. 1 grad over brødteksten.<note> <p>Brødteksten er sat med punktstørrelse 10; tekst, der er 3 grader større, er sat med punktstørrelse 16, 2 grader større med punktstørrelse 14, 1 grad større med punktstørrelse 12, mens tekst, der er 1 grad mindre, er sat med punktstørrelse 8, og 2 grader mindre sat med punktstørrelse 6.</p> </note> Forfatternavnet, der er med fed tekstur, samt udgivelsessted og -år er sat med samme grad som brødteksten. Udgivelsesstedet er tillige sat med fed. Forlæggernavnet samt »Af« i tredje linje er sat ca. 1 grad mindre end brødteksten, mens trykkeriangivelsen er ca. 2 grader mindre. Titlen og forfatternavnet er spatieret. Titelbladet er gengivet som <ref target="../GU/txr.xml#ill_k23" type="figure">illustration 23</ref>.</p>
-     <p rendition="#ind">På s. [3] er »Mindet« og »<persName key="Kierkegaard, Michael Pedersen">Michael Pedersen Kierkegaard</persName>« i hhv. første og fjerde linje sat ca. 2 grader over brødteksten. Teksten i anden og femte linje samt dateringen er sat ca. 1 grad mindre. »Mindet« er sat med medolin, navnet på faderen og »<hi rendition="#ita">helliget</hi>« med tekstur. Tredje og femte linje er spatieret. Desuden er teksten i femte linje »forhen Hosekræmmer her i Byen« sat med schockisk.</p>
-     <p rendition="#ind">Overskriften »Forord« på s. [5], der er sat med spatieret tekstur i samme størrelse som brødteksten, er adskilt fra forordet med en skillestreg. Forordet er sat ca. 1 grad mindre og dateringen ca. 2 grader mindre end brødteksten.</p>
-     <p rendition="#ind">Epistelteksten på s. [7]-8 er sat ca. 1 grad over brødteksten med tilsvarende større skydning og er yderligere adskilt fra brødteksten ved en kort skillestreg både før og efter teksten. Overskriften på s. [7] er sat med fed og spatieret; brødteksten indledes med en uncial, som er ca. 2 grader større.</p>
-     <p rendition="#ind">En normalside har 34 linjer. Tekstkolumnen måler 88 × 151 mm. Brødteksten er sat i 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum. På s. 22 afsluttes teksten med en dobbelt finalestreg.</p>
-     <p>Der er konstateret enkelte tilfælde af sætter- og trykfejl i førstetrykket. På s. 16 ses aftryk fra en mellemrumstype foran passagen »ved Strenghed« (<ref target="../GU/txt.xml#ss334" type="publishedWritings" n="334"><hi rendition="#ita">SKS</hi> 13, 334</ref>,20). Ligeledes på s. 16 mangler et mellemrum i »mærkemed« (334,31). På s. 19 er to gange anvendt et punktum af en større grad end <pb xml:id="ss512" n="512" edRef="#SKS"/>brødteksten efter hhv. »at fortvivle« og »denne Guds Uforanderlighed« (336,30 og 337,12). I begge tilfælde står punktummet højt på linjen. Endelig er der på s. 22 anvendt forkerte parentestyper rundt om »som Kildens uforandrede Kølighed«; begyndelsesparentesen er ca. 1 grad mindre end brødteksten, og slutparentesen er af et andet skriftsnit (339,12). <figure xml:id="ill_k23" rend="recto"><graphic url="../GU/ill_k23.jpg"/> <head>23. Titelblad til <hi rendition="#ita">GU.</hi> Naturlig størrelse, ubeskåret</head> </figure> </p>
-    </div>
-   </div>
-  </div>
-  <div type="level1" xml:id="k2">
-   <head>2. Manuskriptbeskrivelse</head>
-   <p>Til <hi rendition="#ita">GU</hi> findes følgende manuskripter i Kierkegaard Arkivet (KA) på <placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>. Rækkefølgen afspejler kun tilnærmelsesvis tilblivelseskronologien, som vil blive udredt i afsnit 3.</p>
-   <msDesc><msIdentifier><collection>GU</collection></msIdentifier> 
-    <msPart xml:id="physDesc.1" next="#additional.1"><msIdentifier><idno>1</idno></msIdentifier><physDesc><p>Kladde til <hi rendition="#ita">GU,</hi> fordelt på 2 sammenhæftninger, 2 løse dobbeltblade samt et omslag, i alt 14 blade.</p></physDesc> 
-       <msPart xml:id="physDesc.1.1" next="#additional.1.1"><msIdentifier><idno>1.1</idno></msIdentifier><physDesc><p>Kladde til begyndelsen af hovedteksten (<ref target="../GU/txt.xml#ss327" type="publishedWritings" n="327"><hi rendition="#ita">SKS</hi> 13, 327</ref>-330,19 til »Gud er Uforanderlig.«).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.<note> <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Dobbeltblad betegner et stykke papir, der er ombøjet (foldet) til blade.</p> </note></p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 166 × 204 mm.<note> <p>Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p> </note></p><p>Bladene er beskrevet i en enkelt bred spalte med smalle marginer.</p><p>Øverst på bl. [1r] står overskriften »Bøn.«. I marginen på bl. [1v] forekommer redigeringsbemærkningen »Ny / Udgang« skrevet med blyant og indvist med et dobbeltkors. Teksten på bl. [2v] afsluttes på langs i marginen.</p><p>Mange korrektioner; en del sletninger både af enkeltord og af længere passager, ligeledes mange tilføjelser i den smalle margin. Tilføjelsen nederst på bl. [2r] fra linje 19 og hele bl. [2v] (svarende til <ref target="../GU/txt.xml#ss328" type="publishedWritings" n="328"><hi rendition="#ita">SKS</hi> 13, 328</ref>,20-329,36) er indvist med rødkridt på bl. [1v]. Nederst på bl. [1v] var samme passage påbegyndt <pb xml:id="ss514" n="514" edRef="#SKS"/>på sidens fod og indvist et andet sted i hovedteksten, men blev opgivet og efterfølgende slettet.</p></physDesc></msPart><msPart xml:id="additional.1.1" prev="#physDesc.1.1"><msIdentifier><idno>1.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> X 6 B 34)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.2" next="#additional.1.2"><msIdentifier><idno>1.2</idno></msIdentifier><physDesc><p>Kladde til resten af hovedteksten (<ref target="../GU/txt.xml#ss330" type="publishedWritings" n="330"><hi rendition="#ita">SKS</hi> 13, 330</ref>,19-339 fra »Almægtig skabte han denne synlige Verden«).</p><p>1 sammenhæftning på 3 dobbeltblade, 1 sammenhæftning på 2 dobbeltblade, hvoraf det sidste blad er skåret bort, samt 1 løst dobbeltblad, i alt 11 blade i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: ca. 168 × 204 mm. Bl. [1]-[6] og bl. [7]-[9] har sort hæftetråd.</p><p>Bladene er foldet på langs, således at yderspalten udgør ca. en tredjedel af siden. Dog er foldningen ikke ensartet, så yderspalten er betydeligt mindre på det løse dobbeltblad, som udgør bl. [10]-[11]. Inderspalten rummer hovedteksten, yderspalten tilføjelser.</p><p>Kladdens anden sammenhæftning, som udgør bl. [7]-[9], består af 2 dobbeltblade, hvoraf det sidste blad er skåret bort på nær en fals på ca. 17 mm. Af denne fals fremgår det, at bladet har været beskrevet på begge sider, og at teksten ikke var streget ud (se <ref target="../GU/txr.xml#ill_k24" type="figure">illustration 24</ref>).</p><p>Øverst på bl. [1r] findes overskriften »Guds Uforanderlighed.«. Herunder står »Text Jacobs Brev.«.</p><p>På bl. [3v] og [5v] er der til indvisningstegnene brugt rødkridt.</p><p>Mange korrektioner; en del sletninger af enkeltord, mange større sletninger dels med erstattende tilføjelser i marginen, dels uden. På bl. [9] er de to sidste linjer på rectosiden og hele versosiden slettet meget grundigt. Andre større sletninger findes på bl. [1v] (15 linjer), [3r] (6 linjer), [4v] (10 linjer) og i marginen på bl. [9r] (8 linjer). På bl. [1r] og [1v] er tekstens tre første afsnit samt marginaltilføjelserne overstreget med store blyantkryds. På bl. [2v], [8r], [10v] og [11v] optræder mindre blyantsletninger.</p><p>Gennemgående mange tilføjelser, især på bl. [3v]-[5v]. Større tilføjelser findes på bl. [1v], [2v] og [9r].</p></physDesc></msPart><msPart xml:id="additional.1.2" prev="#physDesc.1.2"><msIdentifier><idno>1.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> X 6 B 35)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.3" next="#additional.1.3"><msIdentifier><idno>1.3</idno></msIdentifier><physDesc><p>Omslag til kladden af <hi rendition="#ita">GU.</hi></p><p>1 løst blad i 4<hi rendition="#sup">o</hi>; nederste kant uregelmæssigt afrevet.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: ca. 169 × 205 mm.</p><p><pb xml:id="ss515" n="515" edRef="#SKS"/>Omslaget er foldet en gang på tværs, lettere skævt.</p><p>Til højre for foldningen bærer omslaget påskriften: »d. 18 Mai 1851. / Guds Uforanderlighed / Prædiken. / Concept.«.</p></physDesc></msPart><msPart xml:id="additional.1.3" prev="#physDesc.1.3"><msIdentifier><idno>1.3</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 273; <hi rendition="#ita">Pap.</hi> X 6 B 33) <figure xml:id="ill_k24" rend="recto"><graphic url="../GU/ill_k24.jpg"/> <head>24. Ms. 1.2, bl. [3v], den oprindelige slutning til <hi rendition="#ita">GU,</hi> slettet og bortklippet</head> </figure> </p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.1" prev="#physDesc.1"><msIdentifier><idno>1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 273; KA, B pk. 52, læg 8; <hi rendition="#ita">Pap.</hi> X 6 B 33-35)</p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.2" next="#additional.2"><msIdentifier><idno>2</idno></msIdentifier><physDesc><p>Kladde til forord (<ref target="../GU/txt.xml#ss325" type="publishedWritings" n="325"><hi rendition="#ita">SKS</hi> 13, 325</ref>).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi>; venstre kant uregelmæssigt afrevet.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: ca. 167 × 205 mm.</p><p>Bladet er beskrevet på rectosiden og har været foldet på tværs.</p><p>Øverst findes påskriften »Til den Tale om Guds Uforanderlighed.«. Herunder står overskriften »<hi rendition="#ita">Forord</hi>«. Datoangivelsen »d. 5<hi rendition="#sup">te</hi> Mai 1854« nederst på siden er understreget med rødkridt.</p><p>En del korrektioner; i første afsnit er et alinea ophævet med blyant og tre linjer slettet med blæk. På nederste halvdel er et afsnit slettet delvist med blæk og helt med blyant.</p></physDesc></msPart><msPart xml:id="additional.2" prev="#physDesc.2"><msIdentifier><idno>2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 233; <hi rendition="#ita">Pap.</hi> XI 3 B 289)</p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.3" next="#additional.3"><msIdentifier><idno>3</idno></msIdentifier><physDesc><p>Renskrift, der tillige har været benyttet som trykmanuskript, fordelt på 11 løse blade og 1 sammenhæftning af 2 dobbeltblade, i alt 15 blade.<note> <p>Der findes på s. 13 i ms. 3.3 en enkelt sættermarkering indført med blyant til angivelse af førstetrykkets sideskift mellem s. 16-17, dvs. mellem første og andet ark. Endvidere er manuskriptet præget af fingeraftryk og afsmitning fra sats.</p> </note></p></physDesc> 
-       <msPart xml:id="physDesc.3.1" next="#additional.3.1"><msIdentifier><idno>3.1</idno></msIdentifier><physDesc><p>Renskrift til dedikation (<ref target="../GU/txt.xml#ss323" type="publishedWritings" n="323"><hi rendition="#ita">SKS</hi> 13, 323</ref>).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi>; højre kant afrevet.</p><p>Ingen paginering.</p><p>Papir: gulligt velin, ribbet. Mål: ca. 169 × 206 mm.</p><p>Bladet er beskrevet på rectosiden og har været foldet på tværs.</p><p>På bladet er skrevet »Mindet / om / min afdøde Fader / <hi rendition="#ant"><persName key="Kierkegaard, Michael Pedersen">Michael Pedersen Kierkegaard</persName></hi> / forhen Hosekræmmer her i Byen. / helliget / i Aug 55.«.</p></physDesc></msPart><msPart xml:id="additional.3.1" prev="#physDesc.3.1"><msIdentifier><idno>3.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 290)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.3.2" next="#additional.3.2"><msIdentifier><idno>3.2</idno></msIdentifier><physDesc><p><pb xml:id="ss517" n="517" edRef="#SKS"/>Renskrift til forord (<ref target="../GU/txt.xml#ss325" type="publishedWritings" n="325"><hi rendition="#ita">SKS</hi> 13, 325</ref>).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi>; venstre kant uregelmæssigt afrevet.</p><p>Ingen paginering. Bladet er kun beskrevet på den ene side.</p><p>Papir: gulligt koncept, glat. Mål: ca. 169 × 206 mm.</p><p>Bladet har været foldet på tværs.</p><p>Øverst til venstre findes overskriften »<hi rendition="#ita">Forord.</hi>«</p><p>Få korrektioner; øverst til højre er med blyant slettet »Til den Tale om Guds Uforan-/derlighed.«. I første afsnit er et alinea ophævet. Forordet har oprindelig fortsat med endnu et afsnit på seks linjer inden dateringen »d. 5<hi rendition="#sup">te</hi> Mai 1854.« og SKs signatur.</p></physDesc></msPart><msPart xml:id="additional.3.2" prev="#physDesc.3.2"><msIdentifier><idno>3.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 290)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.3.3" next="#additional.3.3"><msIdentifier><idno>3.3</idno></msIdentifier><physDesc><p>Renskrift til hovedteksten (<ref target="../GU/txt.xml#ss327" type="publishedWritings" n="327"><hi rendition="#ita">SKS</hi> 13, 327</ref>-339).</p><p>8 løse blade og 1 sammenhæftning på 2 dobbeltblade, i alt 12 blade i 4<hi rendition="#sup">o</hi>. De løse blade er uregelmæssigt afrevet i venstre kant; bl. [1]-[4] og bl. [5]-[8] har udgjort 4 dobbeltblade og bærer spor efter sammenhæftning.</p><p>Bladene er pagineret 1-22 med blyant. S. 22 er ubeskrevet; bl. [12] er upagineret og bl. [12r] tillige ubeskrevet.</p><p>Papir: gulligt koncept, glat. Mål: ca. 168 × 205 mm. Bl. [9]-[12] har hæftetråd af rød silke.</p><p>Bladene er foldet på langs, således at yderspalten udgør ca. en tredjedel af siden. Inderspalten rummer hovedteksten, yderspalten tilføjelser.</p><p>På langs nederst i marginen af bl. [12v] findes påskriften »Guds Uforanderlighed / <del rendition="#lth">Prædiken</del> / Reenskrift.«. Herover findes dateringen »d. 18 Mai 1851.«.</p><p>På s. 1 er »Bøn« skrevet over overskriften.</p><p>Nederst på s. 1 optræder følgende anvisning til sætteren: »Epistelen paa 4<hi rendition="#sup">de</hi> Søndag efter Paaske / trykkes som i Alterbogen.«. På s. 5 i marginen er skrevet »Lidt større Mellem-/rum.« indvist mellem to afsnit i hovedspalten med dobbeltkors, og på s. 19 »En linies / Mellemrum.« ligeledes indvist med dobbeltkors og med samme funktion. Øverst på s. 1 er anvisningen »Trykkes som 'To Taler ved / Altergangen om Fredagen.'« slettet med blyant.</p><p>Få korrektioner; størstedelen i form af sletninger af enkeltord, desuden mindre tilføjelser i marginen. En enkelt større tilføjelse findes på s. 8.</p></physDesc></msPart><msPart xml:id="additional.3.3" prev="#physDesc.3.3"><msIdentifier><idno>3.3</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 290)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.3.4" next="#additional.3.4"><msIdentifier><idno>3.4</idno></msIdentifier><physDesc><p><pb xml:id="ss518" n="518" edRef="#SKS"/>Renskrift til titelblad (<ref target="../GU/txt.xml#ss321" type="publishedWritings" n="321"><hi rendition="#ita">SKS</hi> 13, 321</ref>).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi>; venstre kant afrevet.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 167 × 206 mm.</p><p>Bladet er beskrevet på rectosiden og har været foldet på langs.</p><p>Titelbladet lyder: »Guds Uforanderlighed. / En Tale. / Af / <hi rendition="#ant"><persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>.</hi>« Under »En Tale.« er »Tale holden i Citadellets Kirke.« slettet med både blyant og blæk. På langs i højre margin er tilføjelsen »Kunde dediceres til Fader.« slettet med blyant. Nederst står »Reitzel« anført med blyant.</p></physDesc></msPart><msPart xml:id="additional.3.4" prev="#physDesc.3.4"><msIdentifier><idno>3.4</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 291)</p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.3" prev="#physDesc.3"><msIdentifier><idno>3</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 52, læg 8; <hi rendition="#ita">Pap.</hi> XI 3 B 290-291).<note> <p>I KA, B pk. 52, læg 8 findes et omslag, som ikke beskrives af <hi rendition="#ita">Pap.,</hi> men som <hi rendition="#ita">Pap.</hi> har mærket »[XI 3 B 289-291]«. Omslaget er af groft blåt koncept, der er foldet til konvolut og bærer påskriften »<hi rendition="#ita">Guds Uforanderlighed</hi> / Tale <hi rendition="#ita">(18/5. 1851)</hi> / <hi rendition="#ita">1855. 29/8</hi> / <hi rendition="#ita">Renskrift</hi> (?)« skrevet med fremmed hånd, muligvis af <persName key="Barfod, Hans Peter">H.P. Barfod</persName>.</p> </note></p></note></adminInfo></additional></msPart>
-   </msDesc>
-  </div>
-  <div type="level1" xml:id="k3">
-   <head>3. Tilblivelseshistorie</head>
-   <p><hi rendition="#ita">GU</hi> blev holdt som prædiken af SK i Citadelskirken i <placeName>København</placeName> (i dag Kastelskirken) søndag den 18. maj 1851, men udkom som nævnt først på tryk den 1. sept. 1855.</p>
-   <p rendition="#ind">Prædikenen blev holdt over epistelteksten <rs type="bible">Jak 1,17-21</rs>, en tekst, SK allerede i 1843 havde benyttet til sine opbyggelige taler.<note> <p>Jf. anden tale i <hi rendition="#ita">To opbyggelige Taler</hi> (<hi rendition="#ita">SKS</hi> 5, 39-56) samt anden og tredje tale i <hi rendition="#ita">Fire opbyggelige Taler</hi> (<hi rendition="#ita">SKS</hi> 5, 129-158). Se også kommentaren til <ptr type="commentary" target="../gu/kom.xml#find_id_i_kom" n="323,1"/>.</p> </note> SK hentyder selv hertil i en journaloptegnelse fra maj 1851 (<ref target="../NB24/txt.xml#n74" type="journalsAndPapers" n="74">NB24:74</ref>), hvor han indledningsvis skriver: »Søndagen d. 18 Mai prædikede jeg i Citadellet. Det var min første, min kjere Text Jacob 1«.<note> <p><hi rendition="#ita">SKS</hi> 24, 365, 31-32.</p> </note> SK havde efter egen mening prædiket »taaleligt«, men talt så svagt, at han dårligt kunne høres.<note> <p>Jf. <hi rendition="#ita">SKS</hi> 24, 366.</p> </note></p>
-   <p rendition="#ind">Kladden til <hi rendition="#ita">GU</hi> bærer præg af et stort redigeringsarbejde. Således er den oprindelige indledning blevet slettet (ms. 1.2) og erstattet af en anden <pb xml:id="ss519" n="519" edRef="#SKS"/>på et nyt blad (ms. 1.1), mens den oprindelige slutning på talen er bortklippet og erstattet af et nyt dobbeltblad (se <ref target="../GU/txr.xml#ill_k24" type="figure">illustration 24</ref>). Den oprindelige slutning blev til trods for bortredigeringen ikke kasseret, men overført til <ref target="../NB24/txt.xml" type="journalsAndPapers">journalen NB24</ref>, hvor den findes under overskriften »<hi rendition="#ita">Guds Trofasthed</hi>«:</p>
-   <quote> <p rendition="#ind">Dette var egl. skrevet som Slutning til den Prædiken om Guds Uforanderlighed; men det passer dog bedre til det Thema om Guds Trofasthed.</p> <p rendition="#ind">.... Men har Du nu ogsaa selv erfaret Guds Uforanderlighed, eller er det Dig maaskee som havde Du snarere erfaret det Modsatte? Da Du var Barn, havde Du da ikke en anden Forestilling om Gud end nu som Ældre; er det ikke gaaet Dig med Gud, som det gaaer med et Msk, at Du ved nærmere Forhold finder ham anderledes, en<supplied>d</supplied> Du havde forestillet Dig, i Aarenes Løb finder ham forandret?</p> <p rendition="#ind">Lad os kun tale ret mskligt derom. Der tales stundom saa tilforladeligt om Guds Uforanderlighed, at just Tilforladeligheden er som en Sviig. Thi dette gjælder i alle Forhold: den Uerfarnes Tale har gjerne en mistænkelig Tilforladelighed og Vished, den Erfarnes Tale seer ved første Øiekast mindre tilforladelig ud, men holder dog bedre.</p> <p rendition="#ind">Saa tales der om Guds Uforanderlighed og Trofasthed. At ymte end eet Ord om, at han skulde kunne forandre sig, eller vel endog stundom næsten ville bedrage et Msk:, o, man vilde gyse ved at sige Sligt. Men tag saa <persName key="Luther, Martin">Luther</persName>, han var dog vel en erfaren Mand! Han siger: skal jeg være bedragen, vil jeg hellere være bedragen af Gud end af Msker. Der er en from Mand, og ikke blot en from Mand men et Blod-Vidne, han siger i en Prædiken: Du bedrog mig o, Gud o: s: v: (det er <persName key="Savonarola, Girolamo">Savonarola</persName>, Citatet findes p.18 i denne Journal).</p> <p rendition="#ind">Og saaledes med ethvert Msk, der i Sandhed indlader sig med Gud; der kommer Øieblikke, hvor han maa sige: Du bedrog mig, o Gud – og han kan ikke strax sige – men til mit eget Bedste, Du bedrog mig, o Gud – men ind i Sandheden.</p> <p rendition="#ind">At Gud maa bruge Bedraget, er ikke fordi han ikke er trofast eller har forandret sig, nei han er evig uforandret opdragende Kjerlighed. Men det ligger i os, at vi saa nødigen ville ud. Vi ville saa gjerne spise Gud af med den Forsikkring, at vi saa gjerne ville erkjende Sandheden, samt at naar vi blot forstode, hvad det Rette er, saa skulle vi nok gjøre det. Dette er Sviig. Derfor maa Gud som enhver Opdrager bruge List.</p> <p rendition="#ind">Og saaledes bedrog Du ogsaa mig o Gud! Du viste mig disse deilige Billeder; Du sagde ikke til mig: tag Du Dig blot iagt, vær Du klog, brug Din Forstand, som jeg da rigeligt har udstyret Dig med, indlad Dig <pb xml:id="ss520" n="520" edRef="#SKS"/>aldrig med Sligt. Nei, Du ligesom vinkede mig. Letsindigt kan jeg ikke sige at jeg fulgte, thi i mit Væsen var tidligt Frygt og Bæven. Saa fulgte jeg. Stundom var det, som skrækkede Du mig tilbage; da opgav jeg Alt. Men der vinkedes atter, og jeg fulgte. O, at være bedragen, det er forfærdeligt; at være bedragen af Gud – frygteligt! Som den Besvimende griber efter Noget at holde sig ved, og naar han ikke finder det, segner: saaledes med den Bedragne. Thi Det der i Mulighed saae saa indbydende ud, som Virkelighed er det saa uhyre afskrækkende. Og dog selv om man var bedragen, der var dog ikke Noget at fortryde; frem for det at være jordisk klog var det dog altid at foretrække at blive bedragen ved at have vovet sig ud for at søge det Evige. O, men Du bedrager kun ind i Sandheden. Ogsaa denne Smerte, at det er som var man bedragen, hører med, inden det Evige naaes. Ak, men snart vil det igjen være fornødent, at Du bedrager mig, thi ellers slumrer jeg ind i verdslig Tryghed.</p> <p rendition="#ind">Dog hvo priser Dig sandest, altsaa bedst: enten Den, som blot raaber paa Din Trofasthed – og maaskee slet Intet siger; eller Den, der siger: Du Trofaste, Du bedrog mig – ind i Sandheden; Du var for kjerlig og trofast til ikke at bedrage mig, saa jeg levede hen i en indbildt Forestilling om Din Trofasthed, men aldrig indlod mig med Dig.<note> <p><ref target="../NB24/txt.xml#ss349" type="journalsAndPapers" n="349"><hi rendition="#ita">SKS</hi> 24, 349</ref>-350.</p> </note></p></quote>
-   <p>Optegnelsen er indført, efter at prædikenen var holdt, så det kan ikke afgøres, hvor tæt på afholdelsen af sin prædiken SK besluttede sig for en ny slutning.</p>
-   <p>Renskriften til bønnen og prædikenen (ms. 3.3) er på bl. [12v] dateret »d. 18 Mai 1851«.<note> <p>Omslaget til kladden bærer ligeledes datoen »d. 18 Mai 1851«.</p> </note> Datoen henviser til den dag, hvor SK holdt prædikenen og ikke til manuskriptets tilblivelse. Denne del af manuskriptet er formodentlig udarbejdet som renskrift til brug for SK i Citadelskirken, mens resten af manuskriptet kom til senere.</p>
-   <p rendition="#ind">I foråret 1854 planlagde SK en udgivelse af <hi rendition="#ita">GU,</hi> og herefter skrev han forordet, dateret »d. 5<hi rendition="#sup">te</hi> Mai 1854«. SK har i kladden (ms. 2) udvidet forordet to gange, hvorefter han har udarbejdet trykmanuskriptet (ms. 3.2). Her lød det i sin første form:</p>
-   <quote> <p rendition="#ind"><pb xml:id="ss521" n="521" edRef="#SKS"/><hi rendition="#ita">Forord</hi></p> <p rend="decoration"><figure type="blank"/></p> <p>Denne Tale er holdet i Citadellets Kirke d. 18 Mai 1851. Texten er den første jeg har benyttet; senere er den oftere blevet fremdraget; nu vender jeg atter tilbage til den.</p> <p rendition="#ind">Hvis det var et Menneske tilladt at gjøre Forskjel paa Bibelord, kunde jeg kalde denne Text min første Kjerlighed, til hvilken man jo almindeligviis (»altid«) engang i Tiden vender tilbage; og jeg kunde kalde denne Text min eneste Kjerlighed, til hvilken man atter og atter og atter og »altid« vender tilbage.</p> <p rendition="#cen">d. 5<hi rendition="#sup">te</hi> Mai 1854.                                         <hi rendition="#ant"><persName key="Kierkegaard, Søren Aabye">S.K.</persName></hi><note> <p>Trykt som <ref type="preparatoryManuscript" n="pap:XI3B291" rend="GU,ms.3.4"><hi rendition="#ita">Pap.</hi> XI 3 B 291</ref>,4, s. 438.</p> </note></p></quote>
-   <p>Hvor sent i forløbet SK slettede det sidste afsnit, kan ikke afgøres, men sletningen er indført i kladden, det samme gælder ophævelsen af alinea efter »1851«.<note> <p>Indførelsen af rettelser fra trykmanuskriptet i kladden har formentlig skullet sikre, at rettelserne blev bevaret, selvom trykmanuskriptet blev beskadiget eller gik tabt.</p> </note></p>
-   <p rendition="#ind">Titelbladet (ms. 3.4) er formentlig blevet udformet samtidig med forordet i maj 1854. En lille bemærkning langs højre margin »Kunde dediceres til Fader« angiver, at titelbladet er kommet til før dedikationen (ms. 3.1), der er dateret »i Aug 55«.</p>
-   <p rendition="#ind">SK har altså gjort talen klar til trykning i maj 1854, hvor han formentlig også har indført anvisningerne til sætteren: »Trykkes som 'To Taler ved Altergangen om Fredagen.'« og »Epistelen paa 4<hi rendition="#sup">de</hi> Søndag efter Paaske trykkes som i Alterbogen« i renskriften fra 1851 (jf. ms. 3.3 ). Alligevel henlagde SK manuskriptet og tog det tilsyneladende først frem i august 1855, hvor dedikationen som nævnt blev skrevet og sendt til sætteren sammen med resten af manuskriptet.</p>
-  </div>
-  <div type="level1" xml:id="k4">
-   <head><pb xml:id="ss522" n="522" edRef="#SKS"/>4. Udgivelsesmåde</head>
-   <p><hi rendition="#ita">GU</hi> udkom hos forlagsboghandler <persName key="Reitzel, Carl Andreas">C.A. Reitzel</persName>s Bo og Arvinger. Bogen nævnes ikke i <persName key="Reitzel, Carl Andreas">Reitzel</persName>s protokol over <hi rendition="#ita">Forhandlinger med Forfattere, Redacteurer &amp;c: 1835-[1858],</hi><note> <p>I arkiv hos C.A. Reitzels Boghandel og Forlag, <placeName>København</placeName>.</p> </note> men ifølge <persName key="Brandt, Frithiof">Frithiof Brandt</persName> og <persName key="Thorkelin, Else">Else Thorkelin</persName>, der havde adgang til den nu tabte <hi rendition="#ita">Regnskabsprotokol for 1848-59,</hi> udgjorde SKs honorar 22 rigsdaler 2 mark 8 skilling.<note> <p><persName key="Brandt, Frithiof">Frithiof Brandt</persName> og <persName key="Thorkelin, Else">Else Thorkelin</persName> <hi rendition="#ita"><persName key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName> og pengene,</hi> 2. udg., <placeName key="København">Kbh.</placeName> 1993 [1935], s. 35. Da bogens omfang er 1½ trykark, svarer dette til ca. 14 rigsdaler 5 mark 11 skilling pr. ark. Denne honorering afviger noget fra de tidligere normale 10 rigsdaler pr. ark, som havde været aftalt for en række af SKs bogudgivelser, men svarer dog nogenlunde til det honorar, som SK modtog i forbindelse med <hi rendition="#ita">Hvad Christus dømmer om officiel Christendom</hi> fra samme år.</p> </note> Oplagets størrelse og trykkeomkostningerne hos <persName key="Luno, Bianco">Bianco Luno</persName> kendes ikke.</p>
-   <p rendition="#ind">Salget af førstetrykket gik langsomt, og først i 1882 kom en andenudgave ved <persName key="Kierkegaard, Peter Christian">P.C. Kierkegaard</persName>.</p>
-  </div>
- </div></body></text>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="id58529a62-7844-432d-a382-9e81261637a3">1. Bibliografisk beskrivelse</head>
+          <p xml:id="id833a048a-0824-43ed-add7-bdbddcf96886"><hi xml:id="idd89fedd7-9e15-4b17-a74a-5f80220f5bb9" rendition="#ita">Guds Uforanderlighed</hi> forelå færdigtrykt fra Bianco Lunos Bogtrykkeri den 29. aug. 1855<note xml:id="id2052ac5c-be5e-4260-bef4-a959c684a685"><p xml:id="id1954f203-9ce5-4061-ba0f-cc92f12c28ca"><hi xml:id="id8a7c0507-fd72-47a4-be94-9848e611a317" rendition="#ita">Bl.art.,</hi> s. 295.</p></note> og blev annonceret som udkommet i <hi xml:id="iddccc732b-b2ee-41a4-a28f-2dc44d33ed78" rendition="#ita">Berlingske Tidende,</hi><note xml:id="id3a336162-03ef-4273-8529-b475596e8367"><p xml:id="id55ecc63f-e945-4bc1-b283-ea4aa3554568">Annonceringen blev gentaget i <hi xml:id="iddcca2ddb-d186-4659-9749-3676c33e4388" rendition="#ita">Berlingske Tidende,</hi> nr. 204, den 3. sept. 1855.</p></note> nr. 203, den 1. sept. 1855, i <hi xml:id="id3711ca9c-337c-4ec2-af19-3e1aa8eaec19" rendition="#ita">Adresseavisen,</hi> nr. 204, den 3. sept. 1855 og i <hi xml:id="id9121d80b-ecad-4cc1-8991-d021ed304762" rendition="#ita">Fædrelandet,</hi> nr. 205, den 4. sept. 1855. Bogen kostede 16 skilling og udkom hos <persName xml:id="id738a1ce7-e3a7-41fe-a571-7950b3b241aa" key="Reitzel, Carl Andreas">C.A. Reitzel</persName>s Bo og Arvinger.</p>
+          <p xml:id="idf5cff03d-d48b-4237-9995-d9b17da6848a">Tre eksemplarer af <hi xml:id="id39471f2a-a07f-4d5c-979e-326ba097affb" rendition="#ita">Guds Uforanderlighed</hi> (forkortet <hi xml:id="idcf411ae7-99bd-4555-bb1d-9bdc47e655fb" rendition="#ita">GU</hi>) er blevet kollationeret; de benyttede eksemplarer er:</p>
+          <list xml:id="id19f4c28d-e7ac-4d76-94bb-3cf9a59b8530">
+            <label xml:id="idc9cc5531-82ac-41d5-a6df-a3b21aa699d2">A</label>
+            <item xml:id="idd9d0adfb-3093-4d41-b22a-1c39d0c14ef9">Søren Kierkegaard Forskningscenterets arbejdseksemplar, privat indbundet og ubeskåret.<note xml:id="ideecd38f7-f0b7-4ffd-a159-851e392b6a2d"><p xml:id="id2fd99b65-e819-4659-8e8d-6a6f890d6d20">Eksemplaret er indbundet i blåt karton med det oprindelige, bogtrykte omslag. Omslaget gengiver titelbladet i en dobbeltramme. Eksemplaret tilhører G.E.C. Gads Forlag (tidligere hos dr.phil. h.c. <persName xml:id="iddbfb5a22-d394-44a4-83c9-1e4a70e5ed94" key="Bernström, Gustaf">Gustaf Bernström</persName>, <placeName xml:id="id462cda1c-6470-4bb3-ad98-7ca9e057a8f2">Göteborg</placeName>; tidligere hos greve <persName xml:id="id650bf8ee-ee34-4166-85a0-af424078c45c" key="Ehrensvärd, Johan Jacob Albert">Albert Ehrensvärd</persName>, <placeName xml:id="id13d6f3ac-1b54-4546-86f2-8b455c0523e3">Tosterup</placeName> i <placeName xml:id="id3e7dd1c0-4434-4d66-b57a-31aa3189971b">Skåne</placeName>).</p></note></item>
+            <label xml:id="idef1451b8-6a4e-40b6-a5da-c8f9df7d1578">B</label>
+            <item xml:id="idbf482b87-78d3-46cf-9a66-44b68313f8ab">Søren Kierkegaard Forskningscenterets arbejdseksemplar, privat indbundet og beskåret.<note xml:id="idc2b777de-6067-4180-a84a-d4c474480c42"><p xml:id="idb71addf1-018b-4b42-b667-e1aece77ecc2">Eksemplaret tilhører G.E.C. Gads Forlag (tidligere hos dr.phil. h.c. <persName xml:id="id67806a27-fbc0-461b-8545-deccf62ea71c" key="Bernström, Gustaf">Gustaf Bernström</persName>, <placeName xml:id="idb8b0c144-727a-4ba7-a1f3-84a891aea4f7">Göteborg</placeName>; tidligere hos museumsdirektør <persName xml:id="idcbaafa15-ea2d-4add-8400-6d1cfa31cde8" key="Madsen, Karl">Karl Madsen</persName>, <placeName xml:id="id9211e353-d4a1-4cd4-bdd2-4baf51f20410">København</placeName>). På indersiden af forpermen findes <persName xml:id="id7a582ec5-7060-452d-bf25-0560cd5739fe" key="Madsen, Karl">Karl Madsen</persName>s ekslibris, tegnet af <persName xml:id="id684b05c0-c448-445a-9624-442aa22833af" key="Bindesbøll, Thorvald">Thorvald Bindesbøll</persName>. Eksemplaret indeholder <hi xml:id="id2be00c39-1153-409a-ac70-5796869ef191" rendition="#ita">GU;</hi> medinbundet er <hi xml:id="idf043bafd-8766-4973-b196-5055be6b984a" rendition="#ita">Øieblikket</hi> nr. 1-9, <hi xml:id="id987c6b13-03ee-4206-a061-c463b5e27e8c" rendition="#ita">Hvad Christus dømmer om officiel Christendom</hi> og <hi xml:id="idf556d6d2-cdf3-44b0-a557-920a8835f7e8" rendition="#ita">Dette skal siges; saa være det da sagt.</hi></p></note></item>
+            <label xml:id="id7f1c90f1-d5c7-4e33-9474-88eabb20a275"><pb xml:id="ss510" n="510" edRef="#SKS"/>C</label>
+            <item xml:id="id38071e39-eaab-4dc7-80a7-2a2abbd5aaeb"><placeName xml:id="id842e2781-ad1b-4751-839e-6bd148e21476" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret, katalogsignatur Q, 6063 - 8<hi xml:id="iddb5e62e2-375b-4d96-9920-8886c1000bef" rendition="#sup">o</hi>.</item>
+          </list>
+          <p xml:id="idff85d5b4-e9dd-437a-907a-9ff8d1b08e45">Ved den interne kollation af de tre eksemplarer blev der ikke konstateret afvigelser. Eksemplar A danner grundlag for den følgende beskrivelse.</p>
+          <div xml:id="id46d9d749-8c06-49c0-9687-d442c9cf60d6" type="level2">
+            <head xml:id="id1d6116b9-13d0-423d-8471-dd3b191f3078">Kollationeringsformel</head>
+            <p xml:id="idf34d6a44-4235-49ee-adb9-23882f788540">8<hi xml:id="id7c389cc4-e658-4deb-8f25-68fbe3073238" rendition="#sup">o</hi>. [1]<hi xml:id="idb3c2c3c5-1623-43d7-908e-91be18258d00" rendition="#sup">8</hi> 2<hi xml:id="ida444f7a1-7232-446c-b08f-bd79bfb72ff6" rendition="#sup">4</hi>. $1 signeret. 12 blade. Paginering [1-7], 8-22, [23-24].<note xml:id="idab95f157-4181-4760-81a3-e415dc0ffe36"><p xml:id="id0ce51eaf-7756-49ba-9e49-3d6ace879b56">Formlen er uddraget af de tre eksemplarer A, B og C. Dog har kun eksemplar A de to afsluttende blanke sider [23-24]. Der bruges arabertal om arknumre, og arkenes bladantal angives med hævet skrift. Ordinærtal i [      ] betegner det usignerede første ark. $ står for 'alle signerede ark'. »$1 signeret« betyder: I alle signerede ark har det første blad signatur. Upaginerede sider noteres også i kantet parentes.</p></note></p>
+            <p xml:id="id3c3d230c-5ac5-4871-96a7-7fce3c7228e5">Formatet er oktav. Bogen har et omfang på 24 sider, svarende til 12 blade fordelt på 1½ ark, og er pagineret 8-22, idet bl. 1r-4r og bl. 12 er uden paginering.</p>
+            <p xml:id="id9572ee12-61ec-4090-bff4-7fa9d3564b26" rendition="#ind">S. [1] udgør titelblad, s. [3] indeholder dedikationen og s. [5] »Forord.«. S. [2], [4], [6] samt [23-24] er blanke.</p>
+            <p xml:id="id24d9bcf2-ba49-4423-bcc4-0cbe9a1ebb31" rendition="#ind">Ark 1 er uden signatur; ark 2 har primasignatur angivet med arabertal.</p>
+          </div>
+          <div xml:id="id3ac19530-25ca-4cef-b7df-f8b3265f86bb" type="level2">
+            <head xml:id="idb0bfba54-26d4-475e-a41b-43eff16b543c">Beskrivelse af eksemplar A</head>
+            <p xml:id="id12656d33-77b8-4323-be67-2bbab4182060">Den ubeskårne bogbloks blade måler ca. 127-131 × 207-210 mm.<note xml:id="idaaf76d44-df4b-4a4b-96ae-fc1ec2b71376"> Størrelsen måles som bredde × højde. </note> Bogblokkens tykkelse er ca. 1 mm.</p>
+            <div xml:id="ide2dffbfa-fc71-455f-84f9-6728b82426c2" type="level3">
+              <head xml:id="ida8aa5e5e-f02c-4304-8dae-8d2577fa3c73">Papir</head>
+              <p xml:id="idc1a1e46d-758b-4412-98bd-9fcaed20f77d">Der er benyttet almindeligt trykpapir af en ret kludeholdig kvalitet.</p>
+            </div>
+            <div xml:id="id53293c45-3439-41bc-9aa5-4588820f93f7" type="level3">
+              <head xml:id="id1a5f5821-7d14-4bd7-b081-7192aadb3572">Typografi</head>
+              <p xml:id="idaa5358d2-7e37-45fd-be9e-5a5d79d86033">Det fremherskende skriftsnit er fraktur; på titelbladet er hovedtitlen sat med skriften medolin. Desuden er der anvendt tekstur (gotisk) og et <pb xml:id="ss511" n="511" edRef="#SKS"/>enkelt sted skriften schockisk. Fremhævet tekst er i øvrigt sat med fed eller spatieret skrift.</p>
+              <p xml:id="id243d2ad8-608a-4bdb-9b70-f7c5e8593e34" rendition="#ind">Titelbladet er med hhv. en enkelt og en dobbelt skillestreg delt i tre felter. I det øverste felt er anført værkets hovedtitel og undertitel, i det midterste forfatternavn, og i det nederste udgivelsessted, forlag, trykkeri og udgivelsesår. Titlen er sat med bogens største punktstørrelse, ca. 3 grader over brødteksten, undertitlen »En Tale« ca. 1 grad over brødteksten.<note xml:id="id70161602-6005-4105-87a7-099153a2c0cb"><p xml:id="id4e0c3115-6659-41f4-9760-7118211a206d">Brødteksten er sat med punktstørrelse 10; tekst, der er 3 grader større, er sat med punktstørrelse 16, 2 grader større med punktstørrelse 14, 1 grad større med punktstørrelse 12, mens tekst, der er 1 grad mindre, er sat med punktstørrelse 8, og 2 grader mindre sat med punktstørrelse 6.</p></note> Forfatternavnet, der er med fed tekstur, samt udgivelsessted og -år er sat med samme grad som brødteksten. Udgivelsesstedet er tillige sat med fed. Forlæggernavnet samt »Af« i tredje linje er sat ca. 1 grad mindre end brødteksten, mens trykkeriangivelsen er ca. 2 grader mindre. Titlen og forfatternavnet er spatieret. Titelbladet er gengivet som <ref xml:id="idefe0fe5e-aa05-419a-a64e-e9d1ac4a2042" target="../GU/txr.xml#ill_k23" type="figure">illustration 23</ref>.</p>
+              <p xml:id="id22ee02a6-1fa7-4530-8453-21e9133ce107" rendition="#ind">På s. [3] er »Mindet« og »<persName xml:id="idf295e43c-1fb7-4803-bce6-4bf5c1cb62b4" key="Kierkegaard, Michael Pedersen">Michael Pedersen Kierkegaard</persName>« i hhv. første og fjerde linje sat ca. 2 grader over brødteksten. Teksten i anden og femte linje samt dateringen er sat ca. 1 grad mindre. »Mindet« er sat med medolin, navnet på faderen og »<hi xml:id="id01b89bb7-5309-42d9-96f2-a3446e613928" rendition="#ita">helliget</hi>« med tekstur. Tredje og femte linje er spatieret. Desuden er teksten i femte linje »forhen Hosekræmmer her i Byen« sat med schockisk.</p>
+              <p xml:id="id863c20ec-07a2-4495-b15e-9d75a4a33d72" rendition="#ind">Overskriften »Forord« på s. [5], der er sat med spatieret tekstur i samme størrelse som brødteksten, er adskilt fra forordet med en skillestreg. Forordet er sat ca. 1 grad mindre og dateringen ca. 2 grader mindre end brødteksten.</p>
+              <p xml:id="idfe8afa55-436b-4aa7-8a02-f0e757cd8095" rendition="#ind">Epistelteksten på s. [7]-8 er sat ca. 1 grad over brødteksten med tilsvarende større skydning og er yderligere adskilt fra brødteksten ved en kort skillestreg både før og efter teksten. Overskriften på s. [7] er sat med fed og spatieret; brødteksten indledes med en uncial, som er ca. 2 grader større.</p>
+              <p xml:id="id13aa750f-7613-4c45-9d53-27671c521f44" rendition="#ind">En normalside har 34 linjer. Tekstkolumnen måler 88 × 151 mm. Brødteksten er sat i 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum. På s. 22 afsluttes teksten med en dobbelt finalestreg.</p>
+              <p xml:id="id78685f9a-e43b-4ad0-8d88-4a5f921c35e8">Der er konstateret enkelte tilfælde af sætter- og trykfejl i førstetrykket. På s. 16 ses aftryk fra en mellemrumstype foran passagen »ved Strenghed« (<ref xml:id="idec191fd6-161c-4d11-828b-31f692ef7565" target="../GU/txt.xml#ss334" type="publishedWritings" n="334"><hi xml:id="id8e603a3a-c718-4c70-be30-7092abb4acfa" rendition="#ita">SKS</hi> 13, 334</ref>,20). Ligeledes på s. 16 mangler et mellemrum i »mærkemed« (334,31). På s. 19 er to gange anvendt et punktum af en større grad end <pb xml:id="ss512" n="512" edRef="#SKS"/>brødteksten efter hhv. »at fortvivle« og »denne Guds Uforanderlighed« (336,30 og 337,12). I begge tilfælde står punktummet højt på linjen. Endelig er der på s. 22 anvendt forkerte parentestyper rundt om »som Kildens uforandrede Kølighed«; begyndelsesparentesen er ca. 1 grad mindre end brødteksten, og slutparentesen er af et andet skriftsnit (339,12). <figure xml:id="ill_k23" rend="recto"><graphic xml:id="id511fc71d-0229-4646-b9f1-1bc92fda62ea" url="../GU/ill_k23.jpg"/><head xml:id="ide4a762bc-af3b-4f32-a86d-f13ce10af189">23. Titelblad til <hi xml:id="id1f77b4fa-c06c-4a4d-ab63-7fb1d62d4dd5" rendition="#ita">GU.</hi> Naturlig størrelse, ubeskåret</head></figure> </p>
+            </div>
+          </div>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="id829a0b11-908b-4551-9128-c27f9dba8853">2. Manuskriptbeskrivelse</head>
+          <p xml:id="id4f132869-f1b4-435c-85ba-9bf9a60ee0a1">Til <hi xml:id="id16b7c569-6746-4b6d-a2ad-31e1115fbb92" rendition="#ita">GU</hi> findes følgende manuskripter i Kierkegaard Arkivet (KA) på <placeName xml:id="idb8b582e2-aaed-4447-a984-679b8e9659b5" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>. Rækkefølgen afspejler kun tilnærmelsesvis tilblivelseskronologien, som vil blive udredt i afsnit 3.</p>
+          <msDesc xml:id="id700a6ec5-56be-432c-a27a-93a0c034e8f1">
+            <msIdentifier xml:id="idee5729d7-1a5a-4a4d-bbd8-7985d7a78dbb">
+              <collection xml:id="idd047e01c-2084-458e-8690-9042a8194986">GU</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.1" next="#additional.1">
+              <msIdentifier xml:id="id1e9fb032-88df-4e07-933d-c98211eb839c">
+                <idno xml:id="id4c33497a-f775-45a3-ba45-63112476611e">1</idno>
+              </msIdentifier>
+              <physDesc xml:id="id1def4d0b-6a6f-4e35-847b-e21333b24013">
+                <p xml:id="ide8567ea8-5140-4e58-b74d-7ee37342aee4">Kladde til <hi xml:id="id28a48e81-b82b-4f8f-9831-e284972720b4" rendition="#ita">GU,</hi> fordelt på 2 sammenhæftninger, 2 løse dobbeltblade samt et omslag, i alt 14 blade.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.1.1" next="#additional.1.1">
+                <msIdentifier xml:id="id06509000-3692-4dba-8790-992654991224">
+                  <idno xml:id="id5f9b910f-6a28-467b-b3d5-87fc976b3ab9">1.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id785f5fa1-8697-412f-af3e-afa81a775644">
+                  <p xml:id="id7296ae93-e116-4421-9fbf-d6795cb90739">Kladde til begyndelsen af hovedteksten (<ref xml:id="idbcb2eae2-f52b-4763-98e4-df101c11f892" target="../GU/txt.xml#ss327" type="publishedWritings" n="327"><hi xml:id="id6759e5a6-460c-4f02-a8b3-3b420da8bac9" rendition="#ita">SKS</hi> 13, 327</ref>-330,19 til »Gud er Uforanderlig.«).</p>
+                  <p xml:id="id142ee1a9-395b-44ef-adbe-ec0141774b9c">1 dobbeltblad i 4<hi xml:id="id73bbad69-9f84-4b4f-b3fa-3b6de6b940f7" rendition="#sup">o</hi>.<note xml:id="idb6edf8df-6987-466b-85d5-3a6c320519e9"><p xml:id="idea63c37b-d853-4f5d-a0de-ee949297cea5">Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Dobbeltblad betegner et stykke papir, der er ombøjet (foldet) til blade.</p></note></p>
+                  <p xml:id="id29e3b2a4-5c5f-49a8-a300-125444930966">Ingen paginering.</p>
+                  <p xml:id="id0e914593-a5b0-438e-8ae3-977df4a98b78">Papir: gulligt koncept, glat. Mål: 166 × 204 mm.<note xml:id="idd5480df7-18eb-40fd-a7d4-26ad66062602"><p xml:id="id209be117-82ec-44cf-b8eb-44d0c92aa297">Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p></note></p>
+                  <p xml:id="id8a58321c-cd45-42bb-bbcd-b98db4b375bb">Bladene er beskrevet i en enkelt bred spalte med smalle marginer.</p>
+                  <p xml:id="idc761ff07-ca22-4bdf-b25e-40ad437262ac">Øverst på bl. [1r] står overskriften »Bøn.«. I marginen på bl. [1v] forekommer redigeringsbemærkningen »Ny / Udgang« skrevet med blyant og indvist med et dobbeltkors. Teksten på bl. [2v] afsluttes på langs i marginen.</p>
+                  <p xml:id="ida3bb7ccd-d4bf-4281-b2a0-25735ead0f0f">Mange korrektioner; en del sletninger både af enkeltord og af længere passager, ligeledes mange tilføjelser i den smalle margin. Tilføjelsen nederst på bl. [2r] fra linje 19 og hele bl. [2v] (svarende til <ref xml:id="id2a4f7b15-1f00-4aae-b250-a1088ce1fcab" target="../GU/txt.xml#ss328" type="publishedWritings" n="328"><hi xml:id="ide9763639-5b0e-46bb-9cf0-a664834dec75" rendition="#ita">SKS</hi> 13, 328</ref>,20-329,36) er indvist med rødkridt på bl. [1v]. Nederst på bl. [1v] var samme passage påbegyndt <pb xml:id="ss514" n="514" edRef="#SKS"/>på sidens fod og indvist et andet sted i hovedteksten, men blev opgivet og efterfølgende slettet.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.1" prev="#physDesc.1.1">
+                <msIdentifier xml:id="id9602e6b1-c228-40fd-9086-bde6267af4fd">
+                  <idno xml:id="id75031d77-f4e4-4005-a52a-1a5bff59163f">1.1</idno>
+                </msIdentifier>
+                <additional xml:id="id2f317760-a2f9-48e8-979e-f61e68b8b7b6">
+                  <adminInfo xml:id="idd33c6362-8e09-4056-8910-3b6f208a00c4">
+                    <note xml:id="id81a9ad51-2fd2-4169-b588-713e22f9c191">
+                      <p xml:id="id4785870f-1fcc-4c86-b935-25ef2c7e5371">(<hi xml:id="idabdf38c3-8a48-4724-b52f-43b3e99f78f6" rendition="#ita">Pap.</hi> X 6 B 34)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.2" next="#additional.1.2">
+                <msIdentifier xml:id="id06d9881b-7479-429d-9db7-a808b90afc06">
+                  <idno xml:id="idd176f9e2-13da-4271-b861-5dead6447e2a">1.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="id2721b6f0-6974-4b51-b576-eacb3646e8db">
+                  <p xml:id="id1783df38-d54d-4054-b604-d9a1f4829594">Kladde til resten af hovedteksten (<ref xml:id="id96dd9cf5-7af9-46f7-be92-6116d24d2406" target="../GU/txt.xml#ss330" type="publishedWritings" n="330"><hi xml:id="ide1aa68a7-c5ce-4732-a26d-fa697f6e9f09" rendition="#ita">SKS</hi> 13, 330</ref>,19-339 fra »Almægtig skabte han denne synlige Verden«).</p>
+                  <p xml:id="idb9cf7826-0896-4545-a7f0-a391fdc6a44e">1 sammenhæftning på 3 dobbeltblade, 1 sammenhæftning på 2 dobbeltblade, hvoraf det sidste blad er skåret bort, samt 1 løst dobbeltblad, i alt 11 blade i 4<hi xml:id="id5b74730e-2b25-4fa2-9e6b-9e964c52e26a" rendition="#sup">o</hi>.</p>
+                  <p xml:id="id9c466d65-ad4a-4fa9-80c5-7a7152aa14db">Ingen paginering.</p>
+                  <p xml:id="ida85e8ae6-9e4f-4a5c-8591-617631d2b1ff">Papir: gulligt koncept, glat. Mål: ca. 168 × 204 mm. Bl. [1]-[6] og bl. [7]-[9] har sort hæftetråd.</p>
+                  <p xml:id="ide361c64d-b871-497f-9b33-bb252c6e0349">Bladene er foldet på langs, således at yderspalten udgør ca. en tredjedel af siden. Dog er foldningen ikke ensartet, så yderspalten er betydeligt mindre på det løse dobbeltblad, som udgør bl. [10]-[11]. Inderspalten rummer hovedteksten, yderspalten tilføjelser.</p>
+                  <p xml:id="id5c27ca03-9e4c-4c02-b17b-0ce01f205732">Kladdens anden sammenhæftning, som udgør bl. [7]-[9], består af 2 dobbeltblade, hvoraf det sidste blad er skåret bort på nær en fals på ca. 17 mm. Af denne fals fremgår det, at bladet har været beskrevet på begge sider, og at teksten ikke var streget ud (se <ref xml:id="id233a4320-8bf0-48ce-8677-57a393cef481" target="../GU/txr.xml#ill_k24" type="figure">illustration 24</ref>).</p>
+                  <p xml:id="id06246d57-ac61-4691-9da4-f6bffba8f988">Øverst på bl. [1r] findes overskriften »Guds Uforanderlighed.«. Herunder står »Text Jacobs Brev.«.</p>
+                  <p xml:id="id354e3548-651b-418d-b454-f71ce2c8fb94">På bl. [3v] og [5v] er der til indvisningstegnene brugt rødkridt.</p>
+                  <p xml:id="id81533cbe-30cd-4ae5-96e6-f8cb094f90eb">Mange korrektioner; en del sletninger af enkeltord, mange større sletninger dels med erstattende tilføjelser i marginen, dels uden. På bl. [9] er de to sidste linjer på rectosiden og hele versosiden slettet meget grundigt. Andre større sletninger findes på bl. [1v] (15 linjer), [3r] (6 linjer), [4v] (10 linjer) og i marginen på bl. [9r] (8 linjer). På bl. [1r] og [1v] er tekstens tre første afsnit samt marginaltilføjelserne overstreget med store blyantkryds. På bl. [2v], [8r], [10v] og [11v] optræder mindre blyantsletninger.</p>
+                  <p xml:id="id270c01c1-a8f5-4336-a7b2-fb1da3a0fb05">Gennemgående mange tilføjelser, især på bl. [3v]-[5v]. Større tilføjelser findes på bl. [1v], [2v] og [9r].</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.2" prev="#physDesc.1.2">
+                <msIdentifier xml:id="idbc1acd41-eb48-4b17-84c4-75856aadbffb">
+                  <idno xml:id="ideae8219c-46b5-45af-a39d-612ebcfcc93d">1.2</idno>
+                </msIdentifier>
+                <additional xml:id="id41414e12-ec8e-401d-bdfb-e19aa133ac85">
+                  <adminInfo xml:id="id09e1a5e8-43f5-4738-ae72-95e2585ebd8d">
+                    <note xml:id="id87531aa1-7df5-4a14-b6b6-cefbc0977eca">
+                      <p xml:id="id956fb4b1-fd6e-4058-aa58-cc4d19dd40d7">(<hi xml:id="idbb90951b-f920-409d-b493-a8068a4a608b" rendition="#ita">Pap.</hi> X 6 B 35)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.3" next="#additional.1.3">
+                <msIdentifier xml:id="ida54c83eb-7364-403d-9363-ab7994d0916e">
+                  <idno xml:id="idbf5f571c-2ab4-46d9-8cc6-81e04b37545d">1.3</idno>
+                </msIdentifier>
+                <physDesc xml:id="id3c6a0000-498c-4699-88ec-7cdf96b26667">
+                  <p xml:id="idec0c3e44-c78b-4601-a426-a54e8e901e63">Omslag til kladden af <hi xml:id="idcce67fe0-20f0-4d8d-8e75-0dcb295ebf61" rendition="#ita">GU.</hi></p>
+                  <p xml:id="idbee83d55-e2f3-4d6f-a4e7-d06992529255">1 løst blad i 4<hi xml:id="id2f19c673-7443-4fc9-b9ae-7c7fb064a599" rendition="#sup">o</hi>; nederste kant uregelmæssigt afrevet.</p>
+                  <p xml:id="id28469615-563f-4659-8fec-9a67e51ac659">Ingen paginering.</p>
+                  <p xml:id="id3ed8fd7a-6941-4f90-96fb-a8e06d035a2d">Papir: gulligt koncept, glat. Mål: ca. 169 × 205 mm.</p>
+                  <p xml:id="ided116575-a6ff-4ccf-a72a-9cdac1e07187"><pb xml:id="ss515" n="515" edRef="#SKS"/>Omslaget er foldet en gang på tværs, lettere skævt.</p>
+                  <p xml:id="id616f3365-eb9e-4796-a21d-4ef67ee2fde7">Til højre for foldningen bærer omslaget påskriften: »d. 18 Mai 1851. / Guds Uforanderlighed / Prædiken. / Concept.«.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.3" prev="#physDesc.1.3">
+                <msIdentifier xml:id="ided2160a8-04f2-4bf1-8a29-47923b692720">
+                  <idno xml:id="id7c133f51-c916-4259-aef2-c9b8b39d077c">1.3</idno>
+                </msIdentifier>
+                <additional xml:id="idfecc4aed-be44-4e5b-9808-373c862b7a1c">
+                  <adminInfo xml:id="id8f8c98c5-85c4-46d7-9bb8-2f222bb3de90">
+                    <note xml:id="ide829bcc5-7b6f-4abf-8bf6-7c2fc57c4a6f">
+                      <p xml:id="id2a8bae8b-5dad-4b4c-a9e1-02677e411c01">(<hi xml:id="id2b3a5f36-7501-4ecb-9103-7087cbc558ce" rendition="#ita">L-fort.</hi> + <hi xml:id="id4bbb049e-a4e2-4848-9b31-77661e3b0126" rendition="#ita">B-fort.</hi> 273; <hi xml:id="ida2f6e95b-7550-498d-ac40-66f2d36d99bc" rendition="#ita">Pap.</hi> X 6 B 33) <figure xml:id="ill_k24" rend="recto"><graphic xml:id="idaaf0ddc5-a0ac-456c-9d92-2fd1fb2dff40" url="../GU/ill_k24.jpg"/><head xml:id="idb59fcd00-ce4a-40fd-83c4-755d5beea12a">24. Ms. 1.2, bl. [3v], den oprindelige slutning til <hi xml:id="id736eae3e-d5bc-4733-b4c0-e8b7f18ea5e6" rendition="#ita">GU,</hi> slettet og bortklippet</head></figure> </p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.1" prev="#physDesc.1">
+              <msIdentifier xml:id="id73e3792f-abe0-4a6d-9060-7bd0db91e5f2">
+                <idno xml:id="id55e7a02d-72e8-4cb2-b941-4ba78753f656">1</idno>
+              </msIdentifier>
+              <additional xml:id="id2c5403e2-46fe-4bc5-ad46-e371100c9766">
+                <adminInfo xml:id="id21e6d4e7-1718-45c8-8113-25838a4a204a">
+                  <note xml:id="id73c65a04-7686-4b63-a35f-1efd76cf2bea">
+                    <p xml:id="id282201ef-6b49-4774-ad98-8fb380842dca">(<hi xml:id="id771d2d22-23a7-4a45-b08a-8cb2ff09ea40" rendition="#ita">L-fort.</hi> + <hi xml:id="ida48c735b-3079-4f7c-840c-33fb29c51303" rendition="#ita">B-fort.</hi> 273; KA, B pk. 52, læg 8; <hi xml:id="id33579ed2-4fff-46f2-976e-5b4c4dc4b0d6" rendition="#ita">Pap.</hi> X 6 B 33-35)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.2" next="#additional.2">
+              <msIdentifier xml:id="ida8df83bc-62fd-4f65-9a4d-a27c527416a7">
+                <idno xml:id="idcf44ac81-b3ce-434b-8782-a44cf76687db">2</idno>
+              </msIdentifier>
+              <physDesc xml:id="idd3c0045a-4ab8-4aaa-978c-e8d7e4890830">
+                <p xml:id="idb06f4781-db1f-4a12-8ff8-c41bb1308175">Kladde til forord (<ref xml:id="id01c75701-c958-47a0-8a5b-f29ff0917a62" target="../GU/txt.xml#ss325" type="publishedWritings" n="325"><hi xml:id="id7ffb1304-a2e7-4236-8aa6-1189a785c79e" rendition="#ita">SKS</hi> 13, 325</ref>).</p>
+                <p xml:id="id1248677f-c678-4122-b249-1c0adca2568a">1 løst blad i 4<hi xml:id="id96ad133d-dd75-4fc7-bb29-1c15cf5eb4b5" rendition="#sup">o</hi>; venstre kant uregelmæssigt afrevet.</p>
+                <p xml:id="idb2ddd1b1-0a27-4451-a618-56df35365609">Ingen paginering.</p>
+                <p xml:id="ided802593-75be-4205-93c6-a4be1c368507">Papir: gulligt koncept, glat. Mål: ca. 167 × 205 mm.</p>
+                <p xml:id="id2db2d572-3506-4a9e-ae09-c3a9efc9eee7">Bladet er beskrevet på rectosiden og har været foldet på tværs.</p>
+                <p xml:id="id8a224e6c-cbac-4810-809d-4307c3bb79cb">Øverst findes påskriften »Til den Tale om Guds Uforanderlighed.«. Herunder står overskriften »<hi xml:id="idfef2a1a6-83b5-411f-9217-1db2e71792f7" rendition="#ita">Forord</hi>«. Datoangivelsen »d. 5<hi xml:id="idc3cdc422-0b54-4c9b-bc98-d38dc36ffaef" rendition="#sup">te</hi> Mai 1854« nederst på siden er understreget med rødkridt.</p>
+                <p xml:id="id5ac4c2fd-ccd2-42c2-9113-01ceb73e5826">En del korrektioner; i første afsnit er et alinea ophævet med blyant og tre linjer slettet med blæk. På nederste halvdel er et afsnit slettet delvist med blæk og helt med blyant.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.2" prev="#physDesc.2">
+              <msIdentifier xml:id="id418aaf1c-e1fb-4e6e-b833-8adfaccc0bd1">
+                <idno xml:id="id04410862-5593-467c-b43b-217dd3d03432">2</idno>
+              </msIdentifier>
+              <additional xml:id="id31d6d1d9-f946-49b0-a0c9-084575c6afb0">
+                <adminInfo xml:id="idfd16cb9d-4455-4c99-a1cd-029b724c8d5c">
+                  <note xml:id="idad47d7fd-97db-4a24-85d6-ff6267c0122b">
+                    <p xml:id="id17c54384-8f47-4a10-8353-839b8c2d64a3">(<hi xml:id="id343ec9ca-7727-47e6-8e12-d6ca6157cf60" rendition="#ita">L-fort.</hi> + <hi xml:id="id5099fbbd-5fbc-4cd4-8e03-61a26d6cd177" rendition="#ita">B-fort.</hi> 233; <hi xml:id="id277c57af-6699-45ee-af42-c9149c7aec2c" rendition="#ita">Pap.</hi> XI 3 B 289)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.3" next="#additional.3">
+              <msIdentifier xml:id="ide89ad2e3-ac16-4b5a-8e81-06b3eb6844b3">
+                <idno xml:id="id85d77428-f82c-4c47-898f-b75a58f30d9f">3</idno>
+              </msIdentifier>
+              <physDesc xml:id="idec9e2bb6-a55d-4cd5-afaf-4b119971eb44">
+                <p xml:id="idbcb33373-c099-43fc-9b60-989dd226c934">Renskrift, der tillige har været benyttet som trykmanuskript, fordelt på 11 løse blade og 1 sammenhæftning af 2 dobbeltblade, i alt 15 blade.<note xml:id="id4c55e032-21d2-47a0-90cc-cdfcb916e8ef"><p xml:id="idcf654405-2b0a-4303-b284-c1bf7d6607c8">Der findes på s. 13 i ms. 3.3 en enkelt sættermarkering indført med blyant til angivelse af førstetrykkets sideskift mellem s. 16-17, dvs. mellem første og andet ark. Endvidere er manuskriptet præget af fingeraftryk og afsmitning fra sats.</p></note></p>
+              </physDesc>
+              <msPart xml:id="physDesc.3.1" next="#additional.3.1">
+                <msIdentifier xml:id="id0dbe8b1f-cb99-4ccf-8008-db3eb149db2a">
+                  <idno xml:id="id367ce159-cc5a-44f2-91a4-ca51e310d497">3.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id6171d589-b78c-4dbc-bdbb-47720596f068">
+                  <p xml:id="idf6f866a9-7493-4833-88d5-cb2565c2f957">Renskrift til dedikation (<ref xml:id="ida946b4ef-4034-470d-8e63-3b549de6dec8" target="../GU/txt.xml#ss323" type="publishedWritings" n="323"><hi xml:id="id5708bdd4-f3fa-4603-9cee-4cd22a510679" rendition="#ita">SKS</hi> 13, 323</ref>).</p>
+                  <p xml:id="idef409317-447b-4d03-815d-392c12564aa0">1 løst blad i 4<hi xml:id="id6add21d6-480a-46c2-82f2-2b203ec538ba" rendition="#sup">o</hi>; højre kant afrevet.</p>
+                  <p xml:id="id1c4be194-0996-4d4f-9abf-46532b45ad82">Ingen paginering.</p>
+                  <p xml:id="id949a1140-96bf-4807-a4c0-f0ee09803862">Papir: gulligt velin, ribbet. Mål: ca. 169 × 206 mm.</p>
+                  <p xml:id="idef3926fb-0bb8-417c-9e90-7e007699352a">Bladet er beskrevet på rectosiden og har været foldet på tværs.</p>
+                  <p xml:id="id93c402cd-5849-49f2-81fc-1ee5f7b081df">På bladet er skrevet »Mindet / om / min afdøde Fader / <hi xml:id="id8aad9b3a-cb87-43f7-bdd4-e9a8e5c72a93" rendition="#ant"><persName xml:id="idebd4fdab-8ca5-44dd-8d0d-dd36b872d238" key="Kierkegaard, Michael Pedersen">Michael Pedersen Kierkegaard</persName></hi> / forhen Hosekræmmer her i Byen. / helliget / i Aug 55.«.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.1" prev="#physDesc.3.1">
+                <msIdentifier xml:id="id23e59bd0-2100-4846-9955-7b4c1b35c39b">
+                  <idno xml:id="id8350e602-c6d8-4598-bd95-d80bbc163f3f">3.1</idno>
+                </msIdentifier>
+                <additional xml:id="id6b78e03a-b44e-48c1-86c6-d902044a49fc">
+                  <adminInfo xml:id="id07d1c6a3-deac-4d9e-9386-78b603e5bb52">
+                    <note xml:id="id524e523e-1f79-4d20-83f3-892a4d05e7e5">
+                      <p xml:id="id501d95ab-c0f2-402e-adff-2edde94724b4">(<hi xml:id="ide4a0a861-a8bd-4efe-a5e8-c02069edd2c9" rendition="#ita">Pap.</hi> XI 3 B 290)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.3.2" next="#additional.3.2">
+                <msIdentifier xml:id="id7af7be74-ebaa-40d9-a035-46be62b9267d">
+                  <idno xml:id="id2e247634-dfc8-4aa9-b223-129f80627d78">3.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="id628b08db-0775-4557-9e8d-ca5ef4af79db">
+                  <p xml:id="id15fc36a0-4c56-46ca-bb93-64c8fb019d12"><pb xml:id="ss517" n="517" edRef="#SKS"/>Renskrift til forord (<ref xml:id="id824a6f6f-7341-4b1d-a817-c74eef6469e2" target="../GU/txt.xml#ss325" type="publishedWritings" n="325"><hi xml:id="idedee7503-ed61-4e60-837c-73eba7939a05" rendition="#ita">SKS</hi> 13, 325</ref>).</p>
+                  <p xml:id="idf5af4b11-4653-4f1e-bf59-330a2de0f33d">1 løst blad i 4<hi xml:id="id785fd807-4daf-4007-a63e-cb22735e0ade" rendition="#sup">o</hi>; venstre kant uregelmæssigt afrevet.</p>
+                  <p xml:id="idb81d22ef-8433-4aac-b739-181602e422f3">Ingen paginering. Bladet er kun beskrevet på den ene side.</p>
+                  <p xml:id="id3aea4ad2-6f62-49ca-a72c-ec2fba28022d">Papir: gulligt koncept, glat. Mål: ca. 169 × 206 mm.</p>
+                  <p xml:id="id1ddfc712-3a44-4b95-b43b-3a605294c18e">Bladet har været foldet på tværs.</p>
+                  <p xml:id="idf2aaae13-39de-485e-9bd6-0d9ad0d82ef7">Øverst til venstre findes overskriften »<hi xml:id="id956499ba-b280-49cc-b7cb-e2805bca5f47" rendition="#ita">Forord.</hi>«</p>
+                  <p xml:id="id733d7195-85d8-4ce9-98fb-fc2a6f47a9a1">Få korrektioner; øverst til højre er med blyant slettet »Til den Tale om Guds Uforan-/derlighed.«. I første afsnit er et alinea ophævet. Forordet har oprindelig fortsat med endnu et afsnit på seks linjer inden dateringen »d. 5<hi xml:id="idf296649d-8fd5-472b-abc0-8470acaacc4a" rendition="#sup">te</hi> Mai 1854.« og SKs signatur.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.2" prev="#physDesc.3.2">
+                <msIdentifier xml:id="id1d71d0ee-9d79-4244-889e-c27f5c3e6e31">
+                  <idno xml:id="idc55d7e3a-fe09-40b4-963e-542441138ba1">3.2</idno>
+                </msIdentifier>
+                <additional xml:id="id0cebf69a-5373-4118-8ff2-919bead68ce6">
+                  <adminInfo xml:id="id6dbe7f65-152b-4d73-90e3-65fc68969499">
+                    <note xml:id="id5b1365fd-7de7-4cff-91fc-a790d12708c0">
+                      <p xml:id="id3702cc51-8838-44d9-8f5d-d2cc98694c5f">(<hi xml:id="id0ae72672-b06c-4fed-929c-b3b8cf6ae802" rendition="#ita">Pap.</hi> XI 3 B 290)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.3.3" next="#additional.3.3">
+                <msIdentifier xml:id="id5969a680-dca1-48e6-b1d1-0797690add91">
+                  <idno xml:id="ide0b7c144-b067-42d4-8479-4a921675333f">3.3</idno>
+                </msIdentifier>
+                <physDesc xml:id="ida5efa19f-e19c-4540-abe7-ce914f600e23">
+                  <p xml:id="id2e5e8b15-21ac-4921-8655-0f5ee1cc6bf8">Renskrift til hovedteksten (<ref xml:id="id40d1c8f7-2552-4ea5-99b5-d8b43da11c68" target="../GU/txt.xml#ss327" type="publishedWritings" n="327"><hi xml:id="id8403ba5a-53d4-4335-8042-b045af09ed1c" rendition="#ita">SKS</hi> 13, 327</ref>-339).</p>
+                  <p xml:id="id128f726d-4b76-476d-a9bd-1a566d13c8b9">8 løse blade og 1 sammenhæftning på 2 dobbeltblade, i alt 12 blade i 4<hi xml:id="id38e7e0b2-abee-4f3d-99c8-7984243e4dff" rendition="#sup">o</hi>. De løse blade er uregelmæssigt afrevet i venstre kant; bl. [1]-[4] og bl. [5]-[8] har udgjort 4 dobbeltblade og bærer spor efter sammenhæftning.</p>
+                  <p xml:id="idad37464f-59f6-454c-b2d2-e392a5d421de">Bladene er pagineret 1-22 med blyant. S. 22 er ubeskrevet; bl. [12] er upagineret og bl. [12r] tillige ubeskrevet.</p>
+                  <p xml:id="idc4f554b0-f3e9-4cfd-88e2-4fa86f0c80c7">Papir: gulligt koncept, glat. Mål: ca. 168 × 205 mm. Bl. [9]-[12] har hæftetråd af rød silke.</p>
+                  <p xml:id="idc2fe5328-9e3b-4c4f-99b4-34e5bccfac47">Bladene er foldet på langs, således at yderspalten udgør ca. en tredjedel af siden. Inderspalten rummer hovedteksten, yderspalten tilføjelser.</p>
+                  <p xml:id="idad737b23-6266-4559-95e3-a7911a312451">På langs nederst i marginen af bl. [12v] findes påskriften »Guds Uforanderlighed / <del xml:id="id68959a27-de50-4d2d-8aed-3cd8012d20a4" rendition="#lth">Prædiken</del> / Reenskrift.«. Herover findes dateringen »d. 18 Mai 1851.«.</p>
+                  <p xml:id="id4725969e-4f4c-4996-878c-9ec6993fd266">På s. 1 er »Bøn« skrevet over overskriften.</p>
+                  <p xml:id="ida21785d5-a0c9-4e4e-b820-354b7f76267d">Nederst på s. 1 optræder følgende anvisning til sætteren: »Epistelen paa 4<hi xml:id="idf14b514f-fff1-492e-8ac5-176f44c9896c" rendition="#sup">de</hi> Søndag efter Paaske / trykkes som i Alterbogen.«. På s. 5 i marginen er skrevet »Lidt større Mellem-/rum.« indvist mellem to afsnit i hovedspalten med dobbeltkors, og på s. 19 »En linies / Mellemrum.« ligeledes indvist med dobbeltkors og med samme funktion. Øverst på s. 1 er anvisningen »Trykkes som 'To Taler ved / Altergangen om Fredagen.'« slettet med blyant.</p>
+                  <p xml:id="id7a38785e-7dfd-449b-8b35-344d640a52da">Få korrektioner; størstedelen i form af sletninger af enkeltord, desuden mindre tilføjelser i marginen. En enkelt større tilføjelse findes på s. 8.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.3" prev="#physDesc.3.3">
+                <msIdentifier xml:id="idabaf91b8-af30-49f8-a736-334fff484ea3">
+                  <idno xml:id="id9b7b90cb-7045-47c4-95d6-dcc754b6e27e">3.3</idno>
+                </msIdentifier>
+                <additional xml:id="idf5787a9f-dee9-44ca-b2e4-a0d9fb1aa864">
+                  <adminInfo xml:id="id4d4d7f1d-203e-4d3c-bc3a-a027de740ef6">
+                    <note xml:id="id5e4eb688-80a2-448c-b959-ba2b4f6770d7">
+                      <p xml:id="id5fdc2145-60ae-4198-a156-f7f1710fa053">(<hi xml:id="idc43938de-79a8-42f7-8a5f-c7f5bccde246" rendition="#ita">Pap.</hi> XI 3 B 290)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.3.4" next="#additional.3.4">
+                <msIdentifier xml:id="idcc242c9c-aca8-4515-afc7-0fd5eb6bfe3b">
+                  <idno xml:id="id7c4a165d-4087-4c3b-a671-f0188106f8b9">3.4</idno>
+                </msIdentifier>
+                <physDesc xml:id="idfdea8a8d-2648-4435-836b-b9cf2f8735cb">
+                  <p xml:id="ideba8fd1c-0b38-4843-8a02-3bf5ce0f0472"><pb xml:id="ss518" n="518" edRef="#SKS"/>Renskrift til titelblad (<ref xml:id="idbe50f21a-e1ac-4072-b955-770a07c39b7a" target="../GU/txt.xml#ss321" type="publishedWritings" n="321"><hi xml:id="id80e30f8a-c073-4ada-9906-9281ef5f5455" rendition="#ita">SKS</hi> 13, 321</ref>).</p>
+                  <p xml:id="id8e36e607-3675-4727-8ccd-b783c0437494">1 løst blad i 4<hi xml:id="id614f65b3-869f-446a-9444-96f484015659" rendition="#sup">o</hi>; venstre kant afrevet.</p>
+                  <p xml:id="id7abdfc30-c47d-468c-a6a0-cd15e4eb7ff0">Ingen paginering.</p>
+                  <p xml:id="ide8182573-7b5c-449e-b886-ecd4f502eee3">Papir: gulligt koncept, glat. Mål: 167 × 206 mm.</p>
+                  <p xml:id="idbaa119d8-121c-4504-b081-0d3d038d4328">Bladet er beskrevet på rectosiden og har været foldet på langs.</p>
+                  <p xml:id="id1befe650-010f-4030-ab78-63d02ea8e3d7">Titelbladet lyder: »Guds Uforanderlighed. / En Tale. / Af / <hi xml:id="id0f9bfcf3-5fa3-4fa3-bc19-e59c7e6f8457" rendition="#ant"><persName xml:id="id9fc60894-83c8-436f-bd00-014684a10aa6" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>.</hi>« Under »En Tale.« er »Tale holden i Citadellets Kirke.« slettet med både blyant og blæk. På langs i højre margin er tilføjelsen »Kunde dediceres til Fader.« slettet med blyant. Nederst står »Reitzel« anført med blyant.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.4" prev="#physDesc.3.4">
+                <msIdentifier xml:id="id8ad41b04-a7e2-4ff9-9026-ca1b0a095c14">
+                  <idno xml:id="id5fed5179-9283-47d9-a90f-ca803fe37544">3.4</idno>
+                </msIdentifier>
+                <additional xml:id="id03f16090-98ca-4e22-9d70-df1ebf08f89d">
+                  <adminInfo xml:id="id543bf03e-a23f-4ed8-8bf3-ca9e77b89634">
+                    <note xml:id="id93eca297-5d80-409c-92b3-41ca4ce6a0a0">
+                      <p xml:id="id17daa9dd-52fe-42c7-bb01-e400889338fe">(<hi xml:id="id12833e42-b004-46ea-8243-fe582501548e" rendition="#ita">Pap.</hi> XI 3 B 291)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.3" prev="#physDesc.3">
+              <msIdentifier xml:id="idcae5974f-dc8a-4d4d-bc1c-26a569029430">
+                <idno xml:id="id75be0c68-b776-470b-ae61-45c6a9388dca">3</idno>
+              </msIdentifier>
+              <additional xml:id="ide0e97288-9c83-487a-8114-c34209028d74">
+                <adminInfo xml:id="id9c63595a-c35f-4326-923e-cfbff9cdc047">
+                  <note xml:id="id64ea31a9-33c6-4314-8c2e-bb61f5951b55">
+                    <p xml:id="id78880103-4f30-497a-8439-1e3f38628ef8">(KA, B pk. 52, læg 8; <hi xml:id="id95909750-e060-4691-b5bb-ac33e6a56b9a" rendition="#ita">Pap.</hi> XI 3 B 290-291).<note xml:id="id89d0c3ca-04c0-4be0-bd56-9e06dad8bcb2"><p xml:id="id1de4c157-9165-4593-aadb-e58829bbd03f">I KA, B pk. 52, læg 8 findes et omslag, som ikke beskrives af <hi xml:id="id749d61cc-07e2-47e5-be23-23e3a88cf30d" rendition="#ita">Pap.,</hi> men som <hi xml:id="id33016bf4-95ac-439b-999e-a27ee133d458" rendition="#ita">Pap.</hi> har mærket »[XI 3 B 289-291]«. Omslaget er af groft blåt koncept, der er foldet til konvolut og bærer påskriften »<hi xml:id="idebe0995d-1da8-43bc-8b97-15a7d70004a7" rendition="#ita">Guds Uforanderlighed</hi> / Tale <hi xml:id="id2bca6911-e0b4-413f-aa5b-e8fce1519e00" rendition="#ita">(18/5. 1851)</hi> / <hi xml:id="id4b08c0c1-0a40-48ad-997a-4adc39de9017" rendition="#ita">1855. 29/8</hi> / <hi xml:id="id3d0b0a00-fb19-4cbe-a2d9-2961b62eb01c" rendition="#ita">Renskrift</hi> (?)« skrevet med fremmed hånd, muligvis af <persName xml:id="id3c841d17-714a-4f1e-a00e-3d56e7f3f5ce" key="Barfod, Hans Peter">H.P. Barfod</persName>.</p></note></p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+        </div>
+        <div type="level1" xml:id="k3">
+          <head xml:id="ide438c493-889e-471e-9a0f-926a5a4c1f9a">3. Tilblivelseshistorie</head>
+          <p xml:id="ide32ac97b-b624-4352-94e3-e9db725ef7e2"><hi xml:id="id98901c80-cf1f-448f-8973-f73194b6db20" rendition="#ita">GU</hi> blev holdt som prædiken af SK i Citadelskirken i <placeName xml:id="id108341e6-f809-46d8-af95-d517134b3a55">København</placeName> (i dag Kastelskirken) søndag den 18. maj 1851, men udkom som nævnt først på tryk den 1. sept. 1855.</p>
+          <p xml:id="id438b4a0b-9bc2-4ee3-80cc-5d82f6265577" rendition="#ind">Prædikenen blev holdt over epistelteksten <rs xml:id="id76802b1d-3e8c-4d30-9c76-58f16bbc4ed5" type="bible">Jak 1,17-21</rs>, en tekst, SK allerede i 1843 havde benyttet til sine opbyggelige taler.<note xml:id="id76430b1e-3057-4e6d-89d1-29629e3cf8e7"><p xml:id="id9f77cedb-ea14-4959-a971-4c976824ed85">Jf. anden tale i <hi xml:id="ide5c0fe1d-65da-4328-8092-a924560db5df" rendition="#ita">To opbyggelige Taler</hi> (<hi xml:id="ideb51d106-3021-4c5c-97be-75cab59af779" rendition="#ita">SKS</hi> 5, 39-56) samt anden og tredje tale i <hi xml:id="ide4c4b8fb-7fe7-40cc-9dbf-28c7aa9f75ba" rendition="#ita">Fire opbyggelige Taler</hi> (<hi xml:id="idcab56544-24e6-4f02-a46a-9c5bde92eb1f" rendition="#ita">SKS</hi> 5, 129-158). Se også kommentaren til <ptr xml:id="id0a220064-d247-4395-a92f-c536b922d9e5" type="commentary" target="../gu/kom.xml#find_id_i_kom" n="323,1"/>.</p></note> SK hentyder selv hertil i en journaloptegnelse fra maj 1851 (<ref xml:id="id0be5c1a6-a41c-403f-b8f3-c276f8755d04" target="../NB24/txt.xml#n74" type="journalsAndPapers" n="74">NB24:74</ref>), hvor han indledningsvis skriver: »Søndagen d. 18 Mai prædikede jeg i Citadellet. Det var min første, min kjere Text Jacob 1«.<note xml:id="id086ad2e8-2d22-4ed5-8950-17e0775443a5"><p xml:id="id06f9528e-101a-495a-b9a7-f047ab218425"><hi xml:id="idfb71d7bf-5d69-4936-8f7e-caedbc7451dd" rendition="#ita">SKS</hi> 24, 365, 31-32.</p></note> SK havde efter egen mening prædiket »taaleligt«, men talt så svagt, at han dårligt kunne høres.<note xml:id="idd4f947a7-fe43-4fba-90fb-5cf708faaa27"><p xml:id="id4c79557c-4953-4820-a697-a608e1a3488d">Jf. <hi xml:id="idfdab387c-661e-40eb-8c0c-cbc6b5788c32" rendition="#ita">SKS</hi> 24, 366.</p></note></p>
+          <p xml:id="idf282ac0b-8b7a-4cb4-804f-78a8d688f05f" rendition="#ind">Kladden til <hi xml:id="id3349f871-3248-481c-8d5d-bc134dfd8e81" rendition="#ita">GU</hi> bærer præg af et stort redigeringsarbejde. Således er den oprindelige indledning blevet slettet (ms. 1.2) og erstattet af en anden <pb xml:id="ss519" n="519" edRef="#SKS"/>på et nyt blad (ms. 1.1), mens den oprindelige slutning på talen er bortklippet og erstattet af et nyt dobbeltblad (se <ref xml:id="idcebf6d93-ea84-4674-b32b-16ee2c8d9ee1" target="../GU/txr.xml#ill_k24" type="figure">illustration 24</ref>). Den oprindelige slutning blev til trods for bortredigeringen ikke kasseret, men overført til <ref xml:id="ida2f1af22-27bc-4129-b015-dc5657396e7a" target="../NB24/txt.xml" type="journalsAndPapers">journalen NB24</ref>, hvor den findes under overskriften »<hi xml:id="id64cb739c-d727-4fdb-b86b-1b57ae0d7cb9" rendition="#ita">Guds Trofasthed</hi>«:</p>
+          <quote xml:id="idff0b97a1-e916-4695-993b-80dc0fcc4b63">
+            <p xml:id="idde381004-df83-4313-a0d1-3672ec09c861" rendition="#ind">Dette var egl. skrevet som Slutning til den Prædiken om Guds Uforanderlighed; men det passer dog bedre til det Thema om Guds Trofasthed.</p>
+            <p xml:id="id98b2fcca-7c55-4f70-9976-9456a61c8c28" rendition="#ind">.... Men har Du nu ogsaa selv erfaret Guds Uforanderlighed, eller er det Dig maaskee som havde Du snarere erfaret det Modsatte? Da Du var Barn, havde Du da ikke en anden Forestilling om Gud end nu som Ældre; er det ikke gaaet Dig med Gud, som det gaaer med et Msk, at Du ved nærmere Forhold finder ham anderledes, en<supplied xml:id="idb8200e92-394b-48ab-9f82-279f5d10168f">d</supplied> Du havde forestillet Dig, i Aarenes Løb finder ham forandret?</p>
+            <p xml:id="id28e24937-f463-4a8e-baab-197a0fab69ca" rendition="#ind">Lad os kun tale ret mskligt derom. Der tales stundom saa tilforladeligt om Guds Uforanderlighed, at just Tilforladeligheden er som en Sviig. Thi dette gjælder i alle Forhold: den Uerfarnes Tale har gjerne en mistænkelig Tilforladelighed og Vished, den Erfarnes Tale seer ved første Øiekast mindre tilforladelig ud, men holder dog bedre.</p>
+            <p xml:id="idea5afe72-6d47-4f0d-bac2-06920dfeff75" rendition="#ind">Saa tales der om Guds Uforanderlighed og Trofasthed. At ymte end eet Ord om, at han skulde kunne forandre sig, eller vel endog stundom næsten ville bedrage et Msk:, o, man vilde gyse ved at sige Sligt. Men tag saa <persName xml:id="idf3429842-9246-4d4c-90cb-8e1cdfa3d33d" key="Luther, Martin">Luther</persName>, han var dog vel en erfaren Mand! Han siger: skal jeg være bedragen, vil jeg hellere være bedragen af Gud end af Msker. Der er en from Mand, og ikke blot en from Mand men et Blod-Vidne, han siger i en Prædiken: Du bedrog mig o, Gud o: s: v: (det er <persName xml:id="id2c4cb8e3-cceb-40c0-a2bb-6fc512262cf8" key="Savonarola, Girolamo">Savonarola</persName>, Citatet findes p.18 i denne Journal).</p>
+            <p xml:id="id35349b3e-b969-4844-a60c-d1377d14cff6" rendition="#ind">Og saaledes med ethvert Msk, der i Sandhed indlader sig med Gud; der kommer Øieblikke, hvor han maa sige: Du bedrog mig, o Gud – og han kan ikke strax sige – men til mit eget Bedste, Du bedrog mig, o Gud – men ind i Sandheden.</p>
+            <p xml:id="id0523ed05-21d1-4ade-b1c3-5c1f7c51d16e" rendition="#ind">At Gud maa bruge Bedraget, er ikke fordi han ikke er trofast eller har forandret sig, nei han er evig uforandret opdragende Kjerlighed. Men det ligger i os, at vi saa nødigen ville ud. Vi ville saa gjerne spise Gud af med den Forsikkring, at vi saa gjerne ville erkjende Sandheden, samt at naar vi blot forstode, hvad det Rette er, saa skulle vi nok gjøre det. Dette er Sviig. Derfor maa Gud som enhver Opdrager bruge List.</p>
+            <p xml:id="id9d5680cb-4213-4dbe-9a2e-a51d2bbf755c" rendition="#ind">Og saaledes bedrog Du ogsaa mig o Gud! Du viste mig disse deilige Billeder; Du sagde ikke til mig: tag Du Dig blot iagt, vær Du klog, brug Din Forstand, som jeg da rigeligt har udstyret Dig med, indlad Dig <pb xml:id="ss520" n="520" edRef="#SKS"/>aldrig med Sligt. Nei, Du ligesom vinkede mig. Letsindigt kan jeg ikke sige at jeg fulgte, thi i mit Væsen var tidligt Frygt og Bæven. Saa fulgte jeg. Stundom var det, som skrækkede Du mig tilbage; da opgav jeg Alt. Men der vinkedes atter, og jeg fulgte. O, at være bedragen, det er forfærdeligt; at være bedragen af Gud – frygteligt! Som den Besvimende griber efter Noget at holde sig ved, og naar han ikke finder det, segner: saaledes med den Bedragne. Thi Det der i Mulighed saae saa indbydende ud, som Virkelighed er det saa uhyre afskrækkende. Og dog selv om man var bedragen, der var dog ikke Noget at fortryde; frem for det at være jordisk klog var det dog altid at foretrække at blive bedragen ved at have vovet sig ud for at søge det Evige. O, men Du bedrager kun ind i Sandheden. Ogsaa denne Smerte, at det er som var man bedragen, hører med, inden det Evige naaes. Ak, men snart vil det igjen være fornødent, at Du bedrager mig, thi ellers slumrer jeg ind i verdslig Tryghed.</p>
+            <p xml:id="id0f15a3dd-7f42-490a-8b66-788e78910239" rendition="#ind">Dog hvo priser Dig sandest, altsaa bedst: enten Den, som blot raaber paa Din Trofasthed – og maaskee slet Intet siger; eller Den, der siger: Du Trofaste, Du bedrog mig – ind i Sandheden; Du var for kjerlig og trofast til ikke at bedrage mig, saa jeg levede hen i en indbildt Forestilling om Din Trofasthed, men aldrig indlod mig med Dig.<note xml:id="id38327f35-c19e-4e08-b98b-b0b67943015f"><p xml:id="idcb763142-d2f4-44fa-b502-e34d27b2c1cd"><ref xml:id="idc8e40bbc-0ce2-497f-ac95-4dbb2cae2b70" target="../NB24/txt.xml#ss349" type="journalsAndPapers" n="349"><hi xml:id="ide51d8edd-fda5-4d8c-b015-fd46187c4a11" rendition="#ita">SKS</hi> 24, 349</ref>-350.</p></note></p>
+          </quote>
+          <p xml:id="id0ab3a591-8f8b-40f9-acc7-d059142d4508">Optegnelsen er indført, efter at prædikenen var holdt, så det kan ikke afgøres, hvor tæt på afholdelsen af sin prædiken SK besluttede sig for en ny slutning.</p>
+          <p xml:id="id677f8f80-55bc-4622-bc34-3df4a78181b8">Renskriften til bønnen og prædikenen (ms. 3.3) er på bl. [12v] dateret »d. 18 Mai 1851«.<note xml:id="id08a34429-213f-4673-b1da-5f6d97fba13d"><p xml:id="id647e8d67-819f-4d3a-8abd-e0332e8f8cba">Omslaget til kladden bærer ligeledes datoen »d. 18 Mai 1851«.</p></note> Datoen henviser til den dag, hvor SK holdt prædikenen og ikke til manuskriptets tilblivelse. Denne del af manuskriptet er formodentlig udarbejdet som renskrift til brug for SK i Citadelskirken, mens resten af manuskriptet kom til senere.</p>
+          <p xml:id="ide3e4ba22-fed9-4bfd-b4e5-e19d96f978ee" rendition="#ind">I foråret 1854 planlagde SK en udgivelse af <hi xml:id="id76cd6312-5542-47d3-82de-274f70aeddd2" rendition="#ita">GU,</hi> og herefter skrev han forordet, dateret »d. 5<hi xml:id="id9d6c92f0-7d0a-47d2-8470-ff9b2b1022c2" rendition="#sup">te</hi> Mai 1854«. SK har i kladden (ms. 2) udvidet forordet to gange, hvorefter han har udarbejdet trykmanuskriptet (ms. 3.2). Her lød det i sin første form:</p>
+          <quote xml:id="id0181c303-c6cc-470e-98b1-d1ff16846252">
+            <p xml:id="id97a80b52-7094-468e-b452-764e13ab933d" rendition="#ind">
+              <pb xml:id="ss521" n="521" edRef="#SKS"/>
+              <hi xml:id="id97bebf50-4513-495c-a1f8-d96599c5e9e2" rendition="#ita">Forord</hi>
+            </p>
+            <p xml:id="id96fc12c9-ff5e-42de-9230-290d754cb800" rend="decoration">
+              <figure xml:id="idcb7af08b-e690-4b28-9833-2870e0597b76" type="blank"/>
+            </p>
+            <p xml:id="id34ebe3b4-3616-45c6-a5ee-09837b879151">Denne Tale er holdet i Citadellets Kirke d. 18 Mai 1851. Texten er den første jeg har benyttet; senere er den oftere blevet fremdraget; nu vender jeg atter tilbage til den.</p>
+            <p xml:id="ide8820bd0-e95d-4e2b-a693-ba1d4a27544f" rendition="#ind">Hvis det var et Menneske tilladt at gjøre Forskjel paa Bibelord, kunde jeg kalde denne Text min første Kjerlighed, til hvilken man jo almindeligviis (»altid«) engang i Tiden vender tilbage; og jeg kunde kalde denne Text min eneste Kjerlighed, til hvilken man atter og atter og atter og »altid« vender tilbage.</p>
+            <p xml:id="id0f2d6959-dd08-495f-bb0c-36a799e42c6b" rendition="#cen">d. 5<hi xml:id="id9565c95a-ea3b-4d2e-9c01-fd28e34b3ad0" rendition="#sup">te</hi> Mai 1854.                                         <hi xml:id="idded6fa2f-410e-4bf0-9d3f-d82b84653a6d" rendition="#ant"><persName xml:id="idc9027e20-a576-4198-bfb0-32f767acfa89" key="Kierkegaard, Søren Aabye">S.K.</persName></hi><note xml:id="idd7dce870-4897-4d22-b014-722fadc76379"><p xml:id="ide4ae2f46-944f-4249-b9aa-b0f844053c54">Trykt som <ref xml:id="id605cda2b-5c7c-4184-886b-d3c0e1ca8b65" type="preparatoryManuscript" n="pap:XI3B291" rend="GU,ms.3.4"><hi xml:id="idc2d8a717-91fe-421a-86b5-e45c42b4a8f2" rendition="#ita">Pap.</hi> XI 3 B 291</ref>,4, s. 438.</p></note></p>
+          </quote>
+          <p xml:id="id27bb9ce2-4f1d-44ac-b5c9-c16f821c8781">Hvor sent i forløbet SK slettede det sidste afsnit, kan ikke afgøres, men sletningen er indført i kladden, det samme gælder ophævelsen af alinea efter »1851«.<note xml:id="id4a8e0c0a-b8a0-4a82-91d9-027fcbc8c515"><p xml:id="idab8a0261-2057-4344-8657-912299ee8b0e">Indførelsen af rettelser fra trykmanuskriptet i kladden har formentlig skullet sikre, at rettelserne blev bevaret, selvom trykmanuskriptet blev beskadiget eller gik tabt.</p></note></p>
+          <p xml:id="id5b3f3701-7460-46a5-b135-9cc00401c60b" rendition="#ind">Titelbladet (ms. 3.4) er formentlig blevet udformet samtidig med forordet i maj 1854. En lille bemærkning langs højre margin »Kunde dediceres til Fader« angiver, at titelbladet er kommet til før dedikationen (ms. 3.1), der er dateret »i Aug 55«.</p>
+          <p xml:id="id8f8254e7-5dab-40e4-b3d3-bbffdae63521" rendition="#ind">SK har altså gjort talen klar til trykning i maj 1854, hvor han formentlig også har indført anvisningerne til sætteren: »Trykkes som 'To Taler ved Altergangen om Fredagen.'« og »Epistelen paa 4<hi xml:id="idd8384bd3-5d89-4d92-926b-b30f80e12896" rendition="#sup">de</hi> Søndag efter Paaske trykkes som i Alterbogen« i renskriften fra 1851 (jf. ms. 3.3 ). Alligevel henlagde SK manuskriptet og tog det tilsyneladende først frem i august 1855, hvor dedikationen som nævnt blev skrevet og sendt til sætteren sammen med resten af manuskriptet.</p>
+        </div>
+        <div type="level1" xml:id="k4">
+          <head xml:id="id21f62f1c-1ea3-4b89-ba17-532618bf8bc6"><pb xml:id="ss522" n="522" edRef="#SKS"/>4. Udgivelsesmåde</head>
+          <p xml:id="idb582172b-9112-4af1-9846-d76068f36bf6"><hi xml:id="id14e2a7ea-9e85-4450-8459-e18d753f82a1" rendition="#ita">GU</hi> udkom hos forlagsboghandler <persName xml:id="idc22cbfb9-19c9-4b60-a7e1-ff174e1c993f" key="Reitzel, Carl Andreas">C.A. Reitzel</persName>s Bo og Arvinger. Bogen nævnes ikke i <persName xml:id="id4fb319cc-4531-47c2-b297-ad36e89e84e1" key="Reitzel, Carl Andreas">Reitzel</persName>s protokol over <hi xml:id="id81a04a7a-9141-4745-a76b-4c0595b9a0af" rendition="#ita">Forhandlinger med Forfattere, Redacteurer &amp;c: 1835-[1858],</hi><note xml:id="id47f55bb1-ce6e-4a2e-8419-90eb7be52b61"><p xml:id="id134658c2-2bdd-47ce-a712-5e9709c0c7f8">I arkiv hos C.A. Reitzels Boghandel og Forlag, <placeName xml:id="id116cc2fb-7683-44e5-9744-459d7a534a51">København</placeName>.</p></note> men ifølge <persName xml:id="id40d5d003-d282-4dcf-b691-e54b4cd731c5" key="Brandt, Frithiof">Frithiof Brandt</persName> og <persName xml:id="idb1a0c64e-764c-4d84-bce3-0ffb617e5ff0" key="Thorkelin, Else">Else Thorkelin</persName>, der havde adgang til den nu tabte <hi xml:id="idcc120594-7fd6-48b1-b7d2-eb56a5c4891c" rendition="#ita">Regnskabsprotokol for 1848-59,</hi> udgjorde SKs honorar 22 rigsdaler 2 mark 8 skilling.<note xml:id="id3a59ecdc-c7d3-4816-8a96-81f75972509d"><p xml:id="idb1e2b381-ee31-4d41-96d0-abafccd2153c"><persName xml:id="id8fa5269f-e9ea-407e-9fa5-a018bf05fe23" key="Brandt, Frithiof">Frithiof Brandt</persName> og <persName xml:id="id7a53a377-b29b-4f86-9eeb-1b4473ddba8e" key="Thorkelin, Else">Else Thorkelin</persName> <hi xml:id="idb3154b92-3337-482d-962b-009ca736bb98" rendition="#ita"><persName xml:id="id3aae2167-b2ba-43b8-80c6-648d3f5ee05c" key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName> og pengene,</hi> 2. udg., <placeName xml:id="idf2613fd5-23dd-4309-a408-9878a68ee4d3" key="København">Kbh.</placeName> 1993 [1935], s. 35. Da bogens omfang er 1½ trykark, svarer dette til ca. 14 rigsdaler 5 mark 11 skilling pr. ark. Denne honorering afviger noget fra de tidligere normale 10 rigsdaler pr. ark, som havde været aftalt for en række af SKs bogudgivelser, men svarer dog nogenlunde til det honorar, som SK modtog i forbindelse med <hi xml:id="id0952496c-8fed-4bad-9f70-9fa61b477668" rendition="#ita">Hvad Christus dømmer om officiel Christendom</hi> fra samme år.</p></note> Oplagets størrelse og trykkeomkostningerne hos <persName xml:id="idfc201933-845b-4054-bdb2-9dc3bb2f195c" key="Luno, Bianco">Bianco Luno</persName> kendes ikke.</p>
+          <p xml:id="id105413a9-b71c-4e75-bafb-be6cdd22e6eb" rendition="#ind">Salget af førstetrykket gik langsomt, og først i 1882 kom en andenudgave ved <persName xml:id="id9d07ac92-307b-4ed9-9cd9-8b1b80337a08" key="Kierkegaard, Peter Christian">P.C. Kierkegaard</persName>.</p>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

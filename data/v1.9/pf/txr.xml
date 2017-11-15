@@ -1,177 +1,611 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Det dialektiske Resultat af en literair Politi-Forretning</title>
-     
-     <title type="short">PF</title>
-  <author>
-   <name>Jon Tafdrup</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Johnny Kondrup</name><name>Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2010</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K14</biblScope>
-     <biblScope unit="file">http://sks.dk/pf/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition><!--spaced out, in SKS rendered italic--><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition xml:id="lth" scheme="css">text-decoration: line-through</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20120608">txr/XML, <bibl><idno type="version">1.7</idno>, <biblScope unit="file">http://sks.dk/pf/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id2a0a607e-23b2-4afa-8c89-edc97e46b520">
+    <fileDesc xml:id="id1f2108b1-e570-47c4-8a99-31ad385caa78">
+      <titleStmt xml:id="ida67a51d3-a9a4-4e3e-91b9-ffb2a9acab92">
+        <title xml:id="id463547ab-edf9-4f77-b3c6-62fc2333ed45" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id8cad2606-ffd0-4320-ac00-854b4abf97e3">Det dialektiske Resultat af en literair Politi-Forretning</title>
+        <title xml:id="id7ec8e916-237f-44c9-8ebb-88e9fcca7a50" type="short">PF</title>
+        <author xml:id="idc54209ee-efff-4064-a0e0-47f2826827b0">
+          <name xml:id="ida2ac84d9-adda-4c20-b1bb-a2e0bb570724">Jon Tafdrup</name>
+        </author>
+        <editor xml:id="idf9a087c0-f9c7-4414-814f-56de20da85ea">
+          <name xml:id="id0305d9d2-5e89-4ffd-8b01-e581cceb8600">Niels Jørgen Cappelørn</name>
+          <name xml:id="idfb0453d0-08c3-492e-8545-5f2de9fb37b0">Joakim Garff</name>
+          <name xml:id="id9b77b7ae-5790-4360-9a07-15ffec83e2f0">Johnny Kondrup</name>
+          <name xml:id="idff1d4229-1300-40a6-b985-8b0decbbad72">Tonny Aagaard Olesen</name>
+          <name xml:id="id6305f451-2dfe-411c-9be9-26f6209eb8d1">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="idf3fea138-82eb-4141-90d6-0ef4a600ed10">
+          <resp xml:id="id90045ea7-a258-4a43-a424-006aa5470395">redigeret af</resp>
+          <name xml:id="idc4328665-8aba-4237-9043-f0e897955f43">Johnny Kondrup</name>
+          <name xml:id="id4b6c263f-7f4b-4251-a96e-d156cd22a98d">Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="id4d0e5414-5f82-457c-a9b9-85ddcea3b8dc">
+          <resp xml:id="id9cc87932-c94c-4241-b505-3fb21c2aec4c">elektronisk redigeret af</resp>
+          <name xml:id="id18ca28bf-bbda-4114-a054-15386b9f6e7b">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="idf7b999a9-a86e-48ec-8bbb-c32ca860ad95">
+        <authority xml:id="ide60a1e90-f8f7-4ec9-9e33-9a0f4cdf77b6">Søren Kierkegaard Forskningscenteret 2010</authority>
+        <availability xml:id="idb27e2268-c582-42f2-933c-6c256c338021" status="restricted">
+          <p xml:id="id9886e4d4-416c-4456-b256-648ccea1cf8c">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id1492401c-e0ce-4f31-8dd2-df5b320d63cb">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="id642457eb-e769-471f-9cf8-669e7bb1cff9" unit="volume">K14</biblScope>
+        <biblScope xml:id="id94f58d98-0da8-4efb-8aa5-1614a9040885" unit="file">http://sks.dk/pf/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="iddd6b15b1-06f2-4cd7-b99e-6c6be5d4d39f">
+        <bibl xml:id="id8f5146ef-933b-48d5-8111-585bb5f7acf0" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="idc45a284a-ec67-472c-b783-66e1189a7248">
+      <tagsDecl xml:id="ida211fef4-717a-4ee4-8ea4-1cf107afa89a">
+        <rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition>
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition xml:id="lth" scheme="css">text-decoration: line-through</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id9ff2d98e-bb3e-4597-9395-ad37ab12d215">
+      <change xml:id="id6e616f0e-759e-405f-8e36-88dead2d1925">Transformed to TEI by style sheet <bibl xml:id="id52ded2a2-e711-40a9-b188-a278d31bb24a" type="file">txr2tei.xsl</bibl> version as of <date xml:id="id7515f82e-f1c5-47ad-90f6-2bab50526277">2017-02-15</date> importing <bibl xml:id="id82d3c7a5-00d8-4058-8904-2accda39ad01" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="id4693ba1f-83d2-439e-af05-d8c745aea3c0">Transformed to TEI by style sheet <bibl xml:id="idbfe64578-8185-4efe-9531-326e7aa7859f" type="file">kn12tei.xsl</bibl> version <idno xml:id="idb57783ac-f877-484a-8f42-6af437f6eb38" type="version">1.9</idno> as of <date xml:id="id2f319ff1-f416-4339-9c5f-72b84bca834b">2017-02-21</date> by <name xml:id="idf308f3cd-ebd8-4ecc-a24a-68b282ecc18d">Karsten Kynde</name>, <orgName xml:id="id7d669efa-fb77-454b-a5a2-8e1c8028b7bf">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="idb7e3e9fc-fb6e-4943-bdf1-396352f34b8a">København</placeName></change>
+      <change xml:id="idfaa023e6-08a3-4586-aad1-06e1a3bb5417" when="20120608">txr/XML, <bibl xml:id="id571a5722-e53b-41bc-9547-1f58177792c1"><idno xml:id="id7210a651-b508-46f6-9e59-68fc0a297b3c" type="version">1.7</idno>, <biblScope xml:id="id8f21cd0d-4db7-4645-bd49-581df805b849" unit="file">http://sks.dk/pf/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="TextCriticalAccount" subtype="publishedWritings"><body><div><head type="topText" n="Tekstredegørelse"/>
-  <head><pb xml:id="ss245" n="245" edRef="#SKS"/>Tekstredegørelse</head>
-  <list type="TOC"> 
-   <item>1. Bibliografisk beskrivelse
-    <ptr type="chapter" target="#k1" n="245"/>
+  <text xml:id="id2062bf93-5f6f-469c-b462-5ab21186c74c" type="TextCriticalAccount" subtype="publishedWritings">
+    <body xml:id="id7febc0fa-5ec5-4ddf-bccf-9bcd4b0426ac">
+      <div xml:id="id8299f7b4-8f4f-4b58-b9e6-1a2ad937166e">
+        <head xml:id="ide817d4d2-927a-4f0f-b6cf-cb01efb71d74" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="id68f96c21-32af-4f6a-b772-fbbbc8ed195f"><pb xml:id="ss245" n="245" edRef="#SKS"/>Tekstredegørelse</head>
+        <list xml:id="idf33479ea-8c5a-4039-9b1c-8865fdcdafc9" type="TOC">
+          <item xml:id="ide7fa6a02-289e-44de-8570-51280ad8e847">1. Bibliografisk beskrivelse
+    <ptr xml:id="idee2d0d96-37df-430c-b79a-37fc75a1589c" type="chapter" target="#k1" n="245"/>
    </item>
-   <item>2. Manuskriptbeskrivelse
-    <ptr type="chapter" target="#k2" n="248"/>
+          <item xml:id="idf8313372-23d3-4158-8a7c-0f2c7fe258d7">2. Manuskriptbeskrivelse
+    <ptr xml:id="iddce86c4c-f863-4201-9143-6b63364179b9" type="chapter" target="#k2" n="248"/>
    </item>
-   <item>3. Tilblivelseshistorie
-    <ptr type="chapter" target="#k3" n="255"/>
+          <item xml:id="id29763c55-3842-41d9-a6cb-f5c27649e726">3. Tilblivelseshistorie
+    <ptr xml:id="id63c6eb52-f5e3-4a8a-9fb6-85ade4e4f1de" type="chapter" target="#k3" n="255"/>
    </item>
-   <item>4. Udgivelsesmåde
-    <ptr type="chapter" target="#k4" n="257"/>
+          <item xml:id="id5bac4816-45c6-4c33-abbf-0285e6a855ab">4. Udgivelsesmåde
+    <ptr xml:id="idddce8a9e-21d6-403c-965f-738d51d36f9d" type="chapter" target="#k4" n="257"/>
    </item>
-  </list>
-  <div type="level1" xml:id="k1">
-   <head>1. Bibliografisk beskrivelse</head>
-   <p>»Det dialektiske Resultat af en literair Politi-Forretning« blev trykt i <hi rendition="#ita">Fædrelandet,</hi> 7. årgang, nr. 9, lørdag den 10. jan. 1846. Artiklen er signeret »<persName key="Frater Taciturnus">Frater Taciturnus</persName>«. <hi rendition="#ita">Fædrelandet</hi> blev udgivet af <persName key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName key="Ploug, Carl">C. Ploug</persName>, ansvarlig redaktør var Sv.G.M. Ströhm. Avisen blev trykt i det Brünnichske bogtrykkeri i <placeName>København</placeName> og lå færdig fra trykkeriet kl. 20.30. Prisen var 6 skilling i løssalg, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName>København</placeName>. I 1846 kunne tillægsbladet <hi rendition="#ita">Nordisk Literatur-Tidende</hi> erhverves i abonnement sammen med avisen, hvorved prisen steg til hhv. 16 mark 8 skilling og 20 mark 4 skilling uden for <placeName>København</placeName>.<note> <p><hi rendition="#ita">Nordisk Literatur-Tidende</hi> eksisterede kun i 1846 og udkom om søndagen, hvor <hi rendition="#ita">Fædrelandet</hi> ikke udkom.</p> </note></p>
-   <p>Artiklen er blevet kollationeret i tre eksemplarer af <hi rendition="#ita">Fædrelandet,</hi> nr. 9, den 10. jan. 1846:</p>
-   <list> 
-     
-     <label>A</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>Eksemplar A er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 7. årgang, 1846, 1. halvår.</p> </note></item>
-    
-     
-     <label>B</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>Eksemplar B er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 7. årgang, 1846.</p> </note></item>
-    
-     
-     <label>C</label>
-     <item>Statsbibliotekets eksemplar, indbundet og beskåret.<note> <p>Eksemplar C er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 7. årgang, 1846.</p> </note></item>
-    
-   </list>
-   <p><pb xml:id="ss246" n="246" edRef="#SKS"/>Ved den interne kollation af de tre eksemplarer blev der ikke konstateret afvigelser.<note> <p>Da <hi rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes i tekstredegørelsen.</p> </note> Eksemplar A danner grundlag for følgende beskrivelse.</p>
-   <div type="level2">
-    <head>Format og paginering</head>
-    <p>Formatet svarer til en stor kvart.<note> <p>Eksemplaret er som nævnt beskåret og indbundet, men udgangspunktet for formatbetegnelsen er plane helark (formentlig ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p> </note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet halvark. På hver side er der to spalter. Spalterne er nummereret 65-72; på forsiden er numrene angivet under spalterne, på de øvrige sider over.</p>
-    <p rendition="#ind">SKs artikel har et omfang på knap tre spalter. Den begynder på forsiden øverst i sp. 65 og afsluttes øverst i sp. 68. På nær forsiden er avisen delt af en tværgående, fed-fin dobbeltstreg lige under midten. Teksten i spaltepladsen under skillestregen er avisens føljeton.<note> <p>I ordet »føljeton«s oprindelige betydning, »bilag«, betegnede det artikler vedlagt en avis. Siden brugtes det om artikler placeret på den nederste del af en avisside, dvs. under tværstregen; disse kaldtes føljetoner eller føljetonartikler. Sidenhen udvidedes betydningen til en tekst, der er opdelt og udkommer over flere numre af en avis.</p> </note> I sp. 67-68 er SKs artikel placeret oven over føljetonen. Avisen i øvrigt er udfyldt af anden del af føljetonen, efterretninger og notitser.</p>
-   </div>
-   <div type="level2">
-    <head>Beskrivelse af eksemplar A</head>
-    <p>Avisen måler ca. 250 × 330 mm.<note> <p>Der måles bredde (øverste kant) × højde (venstre kant).</p> </note></p>
-    <div type="level3">
-     <head>Papir</head>
-     <p>Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
-    </div>
-    <div type="level3">
-     <head><pb xml:id="ss247" n="247" edRef="#SKS"/>Typografi</head>
-     <p>Avisens fremherskende skriftsnit er fraktur; til latinsk tekst er benyttet antikva, og fremhævet tekst er sat med fed eller spatieret skrift.</p>
-     <p rendition="#ind">På forsiden er avisens navn sat med tekstur (gotisk) og hovedets øvrige oplysninger med fraktur. Avishovedet er adskilt fra den øvrige tekst af en datolinje og har følgende ordlyd:</p>
-     <quote><p><hi rendition="#bol">Fædrelandet.</hi> | <hi rendition="#bol">1846.</hi> | Abonnementsprisen er i <placeName key="København">Kbhvn</placeName>. 15 Mk., udenfor <placeName key="København">Kbhvn</placeName>. 3 Rbd. pr. Qvartal frit i Huset; med nordisk Literaturtidende 16 Mk. 8 ß. og 20 Mk. 4 ß.; | enkelte Nr. 6 ß. Hver Søgne-Aften udgaaer et Nr. Bladets Contoir, st. <placeName key="Købmagergade">Kjøbmagergade</placeName> 54 anden Sal er aabent om Formiddagen Kl. 11–1.<note> <p>ß = Skilling. Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p> </note></p></quote>
-     <p>Datolinjen er indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Imellem står følgende:</p>
-     <quote><p>7<hi rendition="#sup">de</hi> Aarg. <hi rendition="#bol">Løverdagen den 10. Januar.</hi> Nr. 9.</p></quote>
-     <p>Årgangsnummeret er venstrestillet, datoen centreret, og avisnummeret højrestillet.</p>
-     <p rendition="#ind">I avishovedet er »Fædrelandet.« centreret og sat med fed i en punktstørrelse ca. 12 grader større end brødteksten.<note> <p>Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 10; tekst, der er 1 grad større, er sat med punktstørrelse 12, 2 grader større med punktstørrelse 14, 3 grader større med punktstørrelse 16, og 12 grader større med punktstørrelse 72, mens tekst, der er 1 grad mindre, er sat med punktstørrelse 8.</p> </note> Derunder er årstallet centreret og sat med fed ca. 3 grader større end brødteksten. Oplysningerne under årstallet om pris, udgivelsesfrekvens, kontorets beliggenhed og åbningstid er centreret og sat med en punktstørrelse ca. 1 grad mindre end brødteksten. I datolinjen er årgangen og nummeret sat ca. 3 grader større end brødteksten, mens datoen er sat med fed ca. 1 grad større end brødteksten. Se <ref target="../PF/txr.xml#ill_k10" type="figure">illustration 10</ref>. <figure xml:id="ill_k10" rend="recto"><graphic url="../PF/ill_k10.jpg"/> <head>10. <hi rendition="#ita">Fædrelandet,</hi> nr. 9, den 10. januar 1846</head> </figure> </p>
-     <p rendition="#ind">Nederst i avisens sidste spalte, oven over føljetonen og adskilt fra en foregående notits af en vandret skillestreg i hele kolumnens bredde, er trykketidspunktet angivet:</p>
-     <quote><p><pb xml:id="ss248" n="248" edRef="#SKS"/>Færdigt fra Trykkeriet Kl. 8½.</p></quote>
-     <p>Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående, fed-fin dobbeltstreg og har ordlyden:</p>
-     <quote><p>Udgivere: <hi rendition="#bol">J. F. <persName key="Giødwad, Jens Finsteen">Giødwad</persName></hi> og <hi rendition="#bol"><persName key="Ploug, Carl">C. Ploug</persName></hi> – Ansvarlig Redacteur: <hi rendition="#bol"><persName key="Ströhm, S.G.M.">Sv. G. M. Ströhm</persName>.</hi> | [Skillestreg] | Trykt med Hurtigpresse i det <hi rendition="#spa">Brünnichske</hi> Bogtrykkeri ved <hi rendition="#spa"><persName key="Lund, Johan Christian">J. C. Lund</persName>.</hi></p></quote>
-     <p>Artiklens overskrift »Det dialektiske Resultat af en literair Politi-|Forretning.« er centreret i spalten og sat med fed ca. 1 grad større end brødteksten. Artiklen indledes af en fed uncial ca. 2 grader større end brødteksten. Signaturen »<persName key="Frater Taciturnus">Frater Taciturnus</persName>.« er sat med antikva i samme størrelse som brødteksten, spatieret og indrykket fra højre.</p>
-     <p rendition="#ind">Mellem overskrift og brødtekst er sat en kort, vandret skillestreg, og mellem artiklen og den følgende notits er sat en vandret skillestreg i hele kolumnens bredde. Spalterne adskilles overalt af en lodret, fin-fed-fin tripelstreg.</p>
-     <p rendition="#ind">Spaltekolumnen måler ca. 96 mm i bredden, og en spalte på forsiden har 44 linjer i hver spalte, mens en spalte oven over føljetonen har op til 33 linjer. Artiklens brødtekst er sat med en skriftstørrelse svarende til ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum.</p>
-     <p>Der findes en del sætter- og trykfejl i artiklen. Der er to eksempler på fejlsatte typer: »en Historie« er sat »cn Historie« (<ref target="../PF/txt.xml#ss87" type="publishedWritings" n="87"><hi rendition="#ita">SKS</hi> 14, 87</ref>,65) og »tilfældigvis« er sat »tilfældigris« (88,81). Derudover har sætteren glemt ordet »en« i »en bedrøvelig Historie« (88,11). Trykfejl skyldes læderede typer.<note> <p>Eksempler på læderede typer er: det andet 'e' i »Mennesker« (<ref target="../PF/txt.xml#ss87" type="publishedWritings" n="87"><hi rendition="#ita">SKS</hi> 14, 87</ref>,5), det første 'd' i »udskjeldt« (87,38), 's' i »præstanda« (87,51), det første 'e' i »Professionen« (87,81) og det første 'd' i »Skrædderen« (88,7).</p> </note></p>
-    </div>
-   </div>
-  </div>
-  <div type="level1" xml:id="k2">
-   <head>2. Manuskriptbeskrivelse</head>
-   <p>Til »Det dialektiske Resultat af en literair Politi-Forretning« findes følgende manuskripter i Kierkegaard Arkivet (KA) på <placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>. Rækkefølgen afspejler kun tilnærmelsesvis tilblivelseskronologien, som vil blive udredt i afsnit 3.</p>
-   <msDesc><msIdentifier><collection>PF</collection></msIdentifier> 
-    <msPart xml:id="physDesc.1" next="#additional.1"><msIdentifier><idno>1</idno></msIdentifier><physDesc><p><pb xml:id="ss250" n="250" edRef="#SKS"/>Ubenyttede forlæg til »Det dialektiske Resultat af en literair Politi-Forretning«, fordelt på 5 dobbeltblade og 8 løse blade, i alt 18 blade.</p></physDesc> 
-       <msPart xml:id="physDesc.1.1" next="#additional.1.1"><msIdentifier><idno>1.1</idno></msIdentifier><physDesc><p>Ubenyttet forlæg til artiklen, med overskrift.</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.<note> <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Irregulære, fx afrevne, enheder betegnes som lapper. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p> </note></p><p>Bl. [1r] er nummereret 1. Nummereringen er fortløbende fra ms. 1.1 til ms. 1.2.</p><p>Papir: gulligt koncept, glat. Mål: 170 × 207 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Det nederste af bl. [2v] er beskrevet i hele sidens bredde.</p><p>Øverst på bl. [1r] står overskriften: <hi rendition="#bol">»Det alvorlige Resultat af en literair Politie-Forretning.«.</hi> Ordene »Det alvorlige« er en tilføjelse indvist i den centrerede overskrift fra sidens øverste venstre hjørne.</p><p>På bl. [1r] er ordet »upriveligeret« [sic] indvist i første linje med en streg, men senere slettet med blyant. Et indvisningstegn skrevet med brunkridt findes i marginen på bl. [2v].</p><p>Få korrektioner i form af udstregninger samt enkelte marginaltilføjelser og tilføjelser mellem linjerne.</p></physDesc></msPart><msPart xml:id="additional.1.1" prev="#physDesc.1.1"><msIdentifier><idno>1.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 304; <hi rendition="#ita">Pap.</hi> VII 1 B 16-17)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.2" next="#additional.1.2"><msIdentifier><idno>1.2</idno></msIdentifier><physDesc><p>Ubenyttet forlæg til artiklen.</p><p>2 løse dobbeltblade, i alt 4 blade i 4<hi rendition="#sup">o</hi>.</p><p>Dobbeltbladene er med blyant nummereret 2 og 3 på første rectoside. Nummereringen er fortløbende fra ms. 1.1 til ms. 1.2.</p><p>Papir: gulligt koncept, glat. Mål: 170 × 207 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Det nederst af bl. [3r] er beskrevet i hele sidens bredde. Bl. [4r] er beskrevet en tredjedel, bl. [4v] er ubeskrevet.</p><p>Teksten indledes på bl. [1r] af en skillestreg. Et indvisningstegn (dobbeltkors) skrevet med blyant findes i marginen på bl. [3r]. Dobbeltkorset indviser ms. 1.2.1.</p><p><pb xml:id="ss251" n="251" edRef="#SKS"/>Enkelte korrektioner i form af udstregninger og tilføjelser.</p><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 304; <hi rendition="#ita">Pap.</hi> VII 1 B 18)</p><p>Hertil hører følgende:</p></physDesc> 
-          <msPart xml:id="physDesc.1.2.1" next="#additional.1.2.1"><msIdentifier><idno>1.2.1</idno></msIdentifier><physDesc><p>Tilføjelse til ms. 1.2.</p><p>1 løst blad i 4<hi rendition="#sup">o</hi>. Venstrekanten er uregelmæssigt afrevet med spor af det modstående blad.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 171 × 207 mm.</p><p>Versosiden er ubeskrevet. Bladet har efter beskrivning været foldet en gang på langs og fire gange på tværs, formentlig for at kunne tjene som indstiksmærke i ms. 1.2.</p><p>Øverst på bl. [1r] findes et dobbeltkors skrevet med blyant, hvormed tilføjelsen er indvist i ms. 1.2.</p><p>Få korrektioner.<note> <p>Ms. 1.2.1 er beskrevet med blæk af <hi rendition="#ita">EP'</hi>s udgiver <persName key="Barfod, Hans Peter">H.P. Barfod</persName>.</p> </note></p></physDesc></msPart><msPart xml:id="additional.1.2.1" prev="#physDesc.1.2.1"><msIdentifier><idno>1.2.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 304; <hi rendition="#ita">Pap.</hi> VII 1 B 19)<note> <p>Til 1.2.1 findes tillige en afskrift i <persName key="Barfod, Hans Peter">H.P. Barfod</persName>s hånd af et nu tabt SK-manuskript. Heri kan læses en opfordring til <persName key="Goldschmidt, Meïr Aron">M.A. Goldschmidt</persName> om at nedlægge sit hverv som redaktør af <hi rendition="#ita">Corsaren.</hi> I Kierkegaard Arkivet (KA) på <placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName> ligger afskriften i forlængelse af ms. 1.2.1 (KA, B pk. 30) og er registreret som 'Ad VII 1 B 19', trykt i <hi rendition="#ita">EP III,</hi> s. 263-265. Ms. 1.2.1 bærer spor efter <persName key="Barfod, Hans Peter">Barfod</persName>s sammenhæftning af ms. med afskriften.</p> </note></p></note></adminInfo></additional></msPart>
-         </msPart><msPart xml:id="additional.1.2" prev="#physDesc.1.2"><msIdentifier><idno>1.2</idno></msIdentifier><additional><adminInfo><note/></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.3" next="#additional.1.3"><msIdentifier><idno>1.3</idno></msIdentifier><physDesc><p>Ubenyttet forlæg til artiklen, med overskrift.</p><p>4 løse blade i 4<hi rendition="#sup">o</hi>. Bladenes venstre kant er uregelmæssigt afrevet. Bl. [3] og [4] har oprindelig udgjort et dobbeltblad. Det gælder formentlig også bl. [1] og [2].</p><p>Bl. [1r]-[2v] er med blyant pagineret 1-4. Pagineringen er fortløbende fra ms. 1.3 til ms. 1.4.; de øvrige blade er upagineret.</p><p>Papir: gulligt koncept, glat. Mål: 170 × 207 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bl. [4r] er beskrevet ca. en fjerdedel, bl. [4v] er ubeskrevet.</p><p>Øverst på s. 1 står overskriften: »Det alvorlige Resultat af en litterair / Politie-Forretning.«; herunder findes en kort skillestreg før den løbende tekst.</p><p><pb xml:id="ss252" n="252" edRef="#SKS"/>Enkelte korrektioner i teksten på s. 1-3 og s. 4 øverst. Fra og med tredje linje på s. 4 er manuskriptets tekst slettet; på s. 4 med gentagne skrå blyantstreger, på de øvrige sider med en enkelt diagonal blyantstreg i inderspaltens længde.</p></physDesc></msPart><msPart xml:id="additional.1.3" prev="#physDesc.1.3"><msIdentifier><idno>1.3</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 303; <hi rendition="#ita">Pap.</hi> VII 1 B 12 og 20)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.4" next="#additional.1.4"><msIdentifier><idno>1.4</idno></msIdentifier><physDesc><p>Ubenyttet forlæg til artiklen.</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Bladene er med blyant pagineret 5-8. Pagineringen er fortløbende fra ms. 1.3 og til ms. 1.6.</p><p>Papir: gulligt koncept, glat. Mål: 170 × 207 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser.</p><p>På s. 6 er ordene <hi rendition="#ita">»Agtelse«</hi> og <hi rendition="#ita">»tiltvinge«</hi> fremhævet ved understregning.</p><p>Enkelte korrektioner i form af marginaltilføjelser og udstregninger.</p></physDesc></msPart><msPart xml:id="additional.1.4" prev="#physDesc.1.4"><msIdentifier><idno>1.4</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 303; <hi rendition="#ita">Pap.</hi> VII 1 B 21)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.5" next="#additional.1.5"><msIdentifier><idno>1.5</idno></msIdentifier><physDesc><p>Ubenyttet forlæg til artiklen.</p><p>1 dobbeltblad og 1 løst blad, i alt 3 blade i 4<hi rendition="#sup">o</hi>. Det løse blad har afrivningskant i venstre side.</p><p>Bladene er med blyant pagineret 5-10. Pagineringen er fortløbende fra ms. 1.3 og til ms. 1.6.</p><p>Papir: gulligt koncept, glat. Mål: 171 × 207 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Fra s. 9, ca. en tredjedel nede, anvendes næsten hele sidens bredde til løbende tekst. På s. 10 er kun skrevet 4 linjer. Bladene har været foldet på midten efter beskrivning.</p><p>På s. 6 er ordene »tiltvinge« og »Agtelse« fremhævet med dobbeltunderstregning i formuleringen: »at <hi rendition="#bol"><del rendition="#lth">'</del>tiltvinge<del rendition="#lth">'</del></hi> sig <hi rendition="#bol">Agtelse</hi> i <hi rendition="#ant"><placeName>Danmark</placeName></hi>«.</p><p>En del korrektioner i form af marginaltilføjelser og udstregninger; på s. 9 er lidt mere end en linje slettet med en bølget blyantstreg.</p></physDesc></msPart><msPart xml:id="additional.1.5" prev="#physDesc.1.5"><msIdentifier><idno>1.5</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 303; <hi rendition="#ita">Pap.</hi> VII 1 B 13)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.6" next="#additional.1.6"><msIdentifier><idno>1.6</idno></msIdentifier><physDesc><p>Ubenyttet forlæg til artiklen.</p><p>1 løst blad i 4<hi rendition="#sup">o</hi>. Afrivningskant i venstre side.</p><p>Bladet er med blyant pagineret 11-12. Der findes en overstreget blyantpaginering; på s. 11: »<del rendition="#lth">9</del>« og »<del rendition="#lth">10</del>«; på s. 12: »<del rendition="#lth">10</del>«. Pagineringen er fortløbende fra ms. 1.5 og til ms. 1.7.</p><p>Papir: gulligt koncept, glat. Mål: 170 × 207 mm.</p><p><pb xml:id="ss253" n="253" edRef="#SKS"/>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladet bærer præg af at have været foldet på tværs efter beskrivning.</p><p>Øverst på s. 11 er sat en kort skillestreg.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.1.6" prev="#physDesc.1.6"><msIdentifier><idno>1.6</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 303; <hi rendition="#ita">Pap.</hi> VII 1 B 14)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.7" next="#additional.1.7"><msIdentifier><idno>1.7</idno></msIdentifier><physDesc><p>Udkast til en ubenyttet efterskrift med afsluttende signatur.</p><p>1 løst blad i 4<hi rendition="#sup">o</hi>. Den højre kant er uregelmæssigt afrevet med spor af det modstående blad.</p><p>Bl. [1r] er med blyant pagineret 13. Pagineringen er fortløbende fra ms. 1.6.</p><p>Papir: gulligt koncept, glat. Mål: ca. 171 × 207 mm.</p><p>Ca. halvdelen af s. 13 er beskrevet; versosiden er ubeskrevet.</p><p>Som overskrift på s. 13 står: <hi rendition="#ita">»Efterskrift.«.</hi> Som afslutning på den løbende tekst står signaturen <hi rendition="#ant"><hi rendition="#ita">»<persName key="Frater Taciturnus">Frater Taciturnus</persName>.«.</hi></hi></p><p>Få korrektioner. I næstsidste linje er en tankestreg indført med blyant.</p></physDesc></msPart><msPart xml:id="additional.1.7" prev="#physDesc.1.7"><msIdentifier><idno>1.7</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 303; <hi rendition="#ita">Pap.</hi> VII 1 B 15)</p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.1" prev="#physDesc.1"><msIdentifier><idno>1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 303, 304; KA, B pk. 30; <hi rendition="#ita">Pap.</hi> VII 1 B 12-21)</p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.2" next="#additional.2"><msIdentifier><idno>2</idno></msIdentifier><physDesc><p>Løse udkast til »Det dialektiske Resultat af en literair Politi-Forretning«, fordelt på 1 løst blad og 1 løs lap.</p></physDesc> 
-       <msPart xml:id="physDesc.2.1" next="#additional.2.1"><msIdentifier><idno>2.1</idno></msIdentifier><physDesc><p>Udkast til artiklen.</p><p>1 løst blad i 4<hi rendition="#sup">o</hi>. Afrivningskant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 170 × 207 mm.</p><p>Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Begge sider er beskrevet; halvvejs på bl. [1v] har SK opgivet inddelingen i inder- og yderspalte og brugt hele sidebredden til løbende tekst. Bladet har yderligere været foldet en gang på tværs efter beskrivning.</p><p>Få korrektioner i SKs hånd.<note> <p>Begge sider af bladet er stærkt præget af <persName key="Barfod, Hans Peter">H.P. Barfod</persName>s beskrivninger.</p> </note></p></physDesc></msPart><msPart xml:id="additional.2.1" prev="#physDesc.2.1"><msIdentifier><idno>2.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VII 1 B 22)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.2.2" next="#additional.2.2"><msIdentifier><idno>2.2</idno></msIdentifier><physDesc><p>Udkast til artiklen.</p><p>1 løs lap. Nederste kant og venstre kant er uregelmæssigt afrevet. Ingen paginering.</p><p><pb xml:id="ss254" n="254" edRef="#SKS"/>Papir: gulligt koncept, glat. Mål: ca. 171 × 91-97 mm.</p><p>Versosiden er ubeskrevet. Lappen har været foldet en gang på langs og en gang på tværs efter beskrivning.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.2.2" prev="#physDesc.2.2"><msIdentifier><idno>2.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VII 1 B 23)</p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.2" prev="#physDesc.2"><msIdentifier><idno>2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 303; KA, B pk. 30; <hi rendition="#ita">Pap.</hi> VII 1 B 22-23)</p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.3" next="#additional.3"><msIdentifier><idno>3</idno></msIdentifier><physDesc><p>Kladder til »Det dialektiske Resultat af en literair Politi-Forretning«, fordelt på 3 dobbeltblade og 2 løse blade, i alt 8 blade.</p></physDesc> 
-       <msPart xml:id="physDesc.3.1" next="#additional.3.1"><msIdentifier><idno>3.1</idno></msIdentifier><physDesc><p>Kladde til artiklen, med overskrift og signatur (heri findes bl.a. <ref target="../PF/txt.xml#ss87" type="publishedWritings" n="87"><hi rendition="#ita">SKS</hi> 14, 87</ref>,1-21).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 171 × 207 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bl. [2v] er ubeskrevet.</p><p>Øverst på bl. [1r] står overskriften: »Det Dialektiske Resultat af en literair / Politi<del rendition="#lth">e</del>-Forretning.«. Mellem overskriften og den løbende tekst er sat en kort skillestreg. Nederst på bl. [2r] er som afslutning sat signaturen <hi rendition="#ant">»<persName key="Frater Taciturnus">Frater Taciturnus</persName>.«.</hi></p><p>På bl. [1r] er understreget <hi rendition="#ita">»væsentligen«;</hi> på bl. [1v] <hi rendition="#ita">»Honorar«,</hi> <hi rendition="#ita">»tiltvinge«</hi> og <hi rendition="#ita">»Agtelse«;</hi> på bl. [2r] igen <hi rendition="#ita">»tiltvinge«</hi> og <hi rendition="#ita">»Agtelse«.</hi></p><p>En del korrektioner i form af udstregninger, kortere marginaltilføjelser og tilføjelser mellem linjerne.</p></physDesc></msPart><msPart xml:id="additional.3.1" prev="#physDesc.3.1"><msIdentifier><idno>3.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VII 1 B 24)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.3.2" next="#additional.3.2"><msIdentifier><idno>3.2</idno></msIdentifier><physDesc><p>Kladde til artiklen, med overskrift (heri findes bl.a. <ref target="../PF/txt.xml#ss87" type="publishedWritings" n="87"><hi rendition="#ita">SKS</hi> 14, 87</ref>,1-21, 87,24-27 og 87,70-88,3).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Bl. [1r] er med blyant nummereret 1.</p><p>Papir: gulligt koncept, glat. Mål: 170 × 207 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bl. [2v] er ubeskrevet.</p><p>Øverst på bl. [1r] står overskriften: »Det dialektiske Resultat af en literair / Politie-Forretning.«. Mellem overskriften og den løbende tekst er sat en kort skillestreg.</p><p>På første side er ordet <hi rendition="#ita">»væsentligen«</hi> understreget.</p><p>En del korrektioner, især på bl. [1v]. Nederst på denne side er <pb xml:id="ss255" n="255" edRef="#SKS"/>slettet 6½ linje. Flere linjer i en marginaltilføjelse på samme side er ligeledes slettet.</p></physDesc></msPart><msPart xml:id="additional.3.2" prev="#physDesc.3.2"><msIdentifier><idno>3.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VII 1 B 25)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.3.3" next="#additional.3.3"><msIdentifier><idno>3.3</idno></msIdentifier><physDesc><p>Kladde til artiklen.</p><p>1 løst blad i 2<hi rendition="#sup">o</hi>. Venstrekanten er uregelmæssigt afrevet med rester af det modstående blad. Ingen paginering.</p><p>Papir: gulligt post-velin. Mål: ca. 212 × 335 mm.</p><p>Ca. halvdelen af bladets rectoside er beskrevet. Bladet har efter beskrivning været foldet fire gange på tværs og en gang på langs. Bl. [1v] er ubeskrevet.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.3.3" prev="#physDesc.3.3"><msIdentifier><idno>3.3</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VII 1 B 26)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.3.4" next="#additional.3.4"><msIdentifier><idno>3.4</idno></msIdentifier><physDesc><p>Kladde til en passage i artiklen.</p><p>1 løst blad i 4<hi rendition="#sup">o</hi>. Afrivningskant i højre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 170 × 207 mm.</p><p>Bl. [1r] er beskrevet ca. trekvart, bl. [1v] er ubeskrevet. Bladet har efter beskrivning været foldet en gang på tværs.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.3.4" prev="#physDesc.3.4"><msIdentifier><idno>3.4</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VII 1 B 27)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.3.5" next="#additional.3.5"><msIdentifier><idno>3.5</idno></msIdentifier><physDesc><p>Kladde benyttet midtvejs og til artiklens afslutning (heri findes bl.a. <ref target="../PF/txt.xml#ss87" type="publishedWritings" n="87"><hi rendition="#ita">SKS</hi> 14, 87</ref>,60-88,36).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>. Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 169 × 207 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Omtrent halvdelen af bl. [2r] er beskrevet, og bl. [2v] er ubeskrevet.</p><p>Enkelte korrektioner.</p></physDesc></msPart><msPart xml:id="additional.3.5" prev="#physDesc.3.5"><msIdentifier><idno>3.5</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VII 1 B 28)</p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.3" prev="#physDesc.3"><msIdentifier><idno>3</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 291; KA, B pk. 30; <hi rendition="#ita">Pap.</hi> VII 1 B 24-28)</p></note></adminInfo></additional></msPart>
-   </msDesc>
-   <p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 291, 303, 304; KA, B pk. 30; <hi rendition="#ita">Pap.</hi> VII 1 B 12-28)</p>
-  </div>
-  <div type="level1" xml:id="k3">
-   <head>3. Tilblivelseshistorie</head>
-   <p>»Det dialektiske Resultat af en literair Politi-Forretning« blev trykt i <hi rendition="#ita">Fædrelandet,</hi> nr. 9, den 10. jan. 1846. Det bevarede manuskriptmateriale til artiklen er udateret, men tilblivelsesprocessen har ikke været lang.</p>
-   <p rendition="#ind"><pb xml:id="ss256" n="256" edRef="#SKS"/>SKs første anslag mod <hi rendition="#ita">Corsaren</hi> (»En omreisende Æsthetikers Virksomhed, og hvorledes han dog kom til at betale Gjæstebudet.«, jf. <ref target="../AeV/txt.xml#ss79" type="publishedWritings" n="79"><hi rendition="#ita">SKS</hi> 14, 79</ref>-84) var rettet særligt mod <persName key="Møller, Peder Ludvig">P.L. Møller</persName>, der havde angrebet SK og <hi rendition="#ita">Stadier paa Livets Vei</hi> (1845) i sin æstetiske årbog <hi rendition="#ita">Gæa</hi> for 1846.<note> <p>Jf. essayet »Et Besøg i <placeName>Sorø</placeName>« i <hi rendition="#ita">Gæa, æsthetisk Aarbog,</hi> udgivet af <persName key="Møller, Peder Ludvig">P.L. Møller</persName>, <placeName key="København">Kbh.</placeName> 1846, s. 144-187.</p> </note> SKs anslag blev trykt i <hi rendition="#ita">Fædrelandet,</hi> nr. 2078, den 27. dec. 1845. <persName key="Møller, Peder Ludvig">Møller</persName> replicerede i samme avis allerede den 29. dec. med et indlæg adresseret »Til Hr. <persName key="Frater Taciturnus">Frater Taciturnus</persName>, Høvidsmand for 3die Afdeling af 'Stadier paa Livets Vei.'«.<note> <p>Jf. <hi rendition="#ita">Fædrelandet,</hi> 6. årgang, nr. 2079, den 29. dec. 1845, sp. 16665.</p> </note> Også redaktøren af <hi rendition="#ita">Corsaren,</hi> <persName key="Goldschmidt, Meïr Aron">M.A. Goldschmidt</persName>, bragte en artikel mod SK i sit blad den 2. jan. 1846: »Hvorledes den omvandrende Philosoph fandt den omvandrende virkelige Redacteur af 'Corsaren.'«.<note> <p>Jf. <hi rendition="#ita">Corsaren,</hi> nr. 276, den 2. jan. 1846, sp. 2-6.</p> </note> I samme blad var der den 9. jan. yderligere et parodierende indlæg under overskriften »Den nye Planet«.<note> <p>Jf. <hi rendition="#ita">Corsaren,</hi> nr. 277, den 9. jan. 1846, sp. 1-4.</p> </note></p>
-   <p rendition="#ind">SK havde således rigeligt med potentielt modspil under udfærdigelsen af sin artikel, og noget tyder på, at han arbejdede en del med teksten, før artiklen havde tilfredsstillende form og indhold.</p>
-   <p rendition="#ind">Det bevarede manuskriptmateriale kan inddeles i tre grupper, som det også fremgår af manuskriptbeskrivelsen ovenfor. Således er materialet i ms. 3 det direkte forlæg for den endelige artikel, mens mss. 1 og 2, som er omfangsrige, består af materiale, som ikke er direkte kladder til den endelige artikel, men dog kan karakteriseres som indledende arbejder eller ubenyttede forlæg og udkast. Hvornår i tilblivelsesprocessen, SK har opgivet disse og er begyndt forfra, vides ikke. Materialet i ms. 1 er tænkt som et sammenhængende hele, ligesom de to manuskripter i ms. 2 også har en indbyrdes relation.</p>
-   <p rendition="#ind">I de otte manuskripter, der udgør ms. 1, forekommer mss. 1.1-1.2.1 at være udkast til mss. 1.3, 1.4 og 1.6. Ms. 1.1 er forsynet med samme overskrift som ms. 1.3, »Det alvorlige Resultat af en litterair Politie-Forretning«, med den undtagelse, at ordene »Det alvorlige« i ms. 1.1 er en senere tilføjelse. På den baggrund kan ms. 1.1 betegnes som et tidligere stadium af ms. 1.3, der bærer overskriftens fulde ordlyd uden korrektioner. I ms. 1.1 findes yderligere passager, der er sammenlignelige med tilsvarende i både ms. 1.3 og ms. 1.5 (om ms. 1.5, se nedenfor).</p>
-   <p rendition="#ind"><pb xml:id="ss257" n="257" edRef="#SKS"/>I forlængelse af ms. 1.1, der på første side er nummereret 1, følger ms. 1.2, hvis to løse dobbeltblade er nummereret hhv. 2 og 3; dette manuskript har enkelte passager fælles med ms. 1.6. Til sidst i denne række af manuskripter er ms. 1.2.1 skrevet, som rummer en tilføjelse til ms. 1.2.</p>
-   <p rendition="#ind">Mss. 1.3, 1.4 og 1.6 fremstår samlet som en omskrivning, måske en påbegyndt renskrift, af mss. 1.1-1.2.1. De er (hvis der ses bort fra SKs senere korrektioner af pagineringen af ms. 1.6) pagineret fortløbende fra 1-12. På et tidspunkt forkaster SK imidlertid ms. 1.4, der er pagineret 5-8, og indføjer i stedet ms. 1.5, der er pagineret 5-10, hvorefter han tilretter pagineringen i ms. 1.6. På baggrund af korrektionerne i pagineringen er det således sandsynligt, at ms. 1.5 er skrevet efter ms. 1.6. Ms. 1.7, der er tænkt som en efterskrift, er som afslutning signeret <hi rendition="#ant">»<persName key="Frater Taciturnus">Frater Taciturnus</persName>«;</hi> det er sandsynligvis skrevet efter indføjelsen af ms. 1.5, idet ms. 1.7 er pagineret 13 uden korrektioner.</p>
-   <p rendition="#ind">Som nævnt ovenfor lader de ubenyttede mss. 2.1 og 2.2 sig ikke indføje i det øvrige ubenyttede materiale. Ingen nummerering eller anden angivelse giver oplysning om en tiltænkt placering. Mss. 2.1 og 2.2 kan dog relateres til hinanden. Afslutningen på ms. 2.1 er en henvendelse til <persName key="Goldschmidt, Meïr Aron">Goldschmidt</persName>; en henvendelse, der fortsættes i ms. 2.2.</p>
-   <p rendition="#ind">Så vidt de manuskripter SK ikke har gjort direkte brug af i artiklen. De resterende mss. 3.1-3.5 er derimod kladder til den trykte artikel. I ms. 3.1 findes overskriften i sin endelige form: »Det Dialektiske Resultat af en literair Politi-Forretning«; samme manuskript bærer som afslutning signaturen »<persName key="Frater Taciturnus">Frater Taciturnus</persName>«. Kortere og længere stykker herfra er brugt i artiklen, især i artiklens begyndelse, men også mindre afsnit omkring midtvejs.</p>
-   <p rendition="#ind">Ms. 3.2 har samme overskrift som ms. 3.1, men ingen signatur. Dele af ms. 3.2 er nogenlunde enslydende med ms. 3.1, især er der sammenfald mellem manuskripternes indledende afsnit, som SK også benytter til indledning i den trykte artikel (<ref target="../PF/txt.xml#ss87" type="publishedWritings" n="87"><hi rendition="#ita">SKS</hi> 14, 87</ref>,3-27). I forhold til ms. 3.1 har lidt flere passager fra ms. 3.2 fundet vej ind i den endelige artikel; ms. 3.1 kan på den baggrund betragtes som forlæg for ms. 3.2.</p>
-   <p rendition="#ind">I tilknytning til ms. 3.2 findes ms. 3.3. Dette manuskript forekommer at være enten et udkast eller en bearbejdelse af en længere passage omtrent midtvejs i ms. 3.2. Det samme er tilfældet med ms. 3.4 (historien om skrædderen), der genfindes i ms. 3.2 og i øvrigt også i selve artiklen. Ms. 3.5 indeholder materiale, der indgår midtvejs og i den endelige artikels afslutning (den længste passage, der er overført herfra, genfindes i <ref target="../PF/txt.xml#ss87" type="publishedWritings" n="87"><hi rendition="#ita">SKS</hi> 14, 87</ref>,60-88,36).</p>
-   <p rendition="#ind">Der foreligger ingen renskrift (trykmanuskript) til artiklen.</p>
-  </div>
-  <div type="level1" xml:id="k4">
-   <head><pb xml:id="ss258" n="258" edRef="#SKS"/>4. Udgivelsesmåde</head>
-   <p>»Det dialektiske Resultat af en literair Politi-Forretning« blev som nævnt trykt i <hi rendition="#ita">Fædrelandet.</hi><note> <p>En nærmere redegørelse for avisens redaktionelle forhold, periodicitet og oplagstal findes i <ref target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til artiklen »Aabenbart Skriftemaal«, s. 112</ref>f.</p> </note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
-   <p rendition="#ind">Af stor betydning for receptionen allerede i SKs umiddelbare eftertid var <persName key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi rendition="#ita"><persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 <hi rendition="#ita">(Bl.art.).</hi> Heri indgår størstedelen af SKs artikler, også »Det dialektiske Resultat af en literair Politi-Forretning«.<note> <p>Artiklen er trykt i <hi rendition="#ita">Bl.art.,</hi> s. 149-152.</p> </note></p>
-  </div>
- </div></body></text>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="id26223012-c3d8-426c-9c30-a3dd0ea20f44">1. Bibliografisk beskrivelse</head>
+          <p xml:id="id96d15925-7a44-41c1-bb77-461483a671ab">»Det dialektiske Resultat af en literair Politi-Forretning« blev trykt i <hi xml:id="ide0d2adcb-f6b3-495e-80fa-c7dd53270ae7" rendition="#ita">Fædrelandet,</hi> 7. årgang, nr. 9, lørdag den 10. jan. 1846. Artiklen er signeret »<persName xml:id="id63c70e6a-84f8-45a0-858b-47a19b23e340" key="Frater Taciturnus">Frater Taciturnus</persName>«. <hi xml:id="id5bee235a-9c07-4507-b84b-6fd7d733575f" rendition="#ita">Fædrelandet</hi> blev udgivet af <persName xml:id="id0d0083b5-905f-4184-bcfd-70a01d617fb6" key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName xml:id="idf96f1b04-26c8-4ba5-b73f-8fbc3ef3f7a5" key="Ploug, Carl">C. Ploug</persName>, ansvarlig redaktør var Sv.G.M. Ströhm. Avisen blev trykt i det Brünnichske bogtrykkeri i <placeName xml:id="id33288918-a786-4de1-a408-9219fa890b14">København</placeName> og lå færdig fra trykkeriet kl. 20.30. Prisen var 6 skilling i løssalg, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName xml:id="idb6058b8f-479e-44f8-8459-077042c320c9">København</placeName>. I 1846 kunne tillægsbladet <hi xml:id="idd1400598-5fe4-4511-8a78-5a1f069999b0" rendition="#ita">Nordisk Literatur-Tidende</hi> erhverves i abonnement sammen med avisen, hvorved prisen steg til hhv. 16 mark 8 skilling og 20 mark 4 skilling uden for <placeName xml:id="idc5c563d4-e474-4d1a-bbf5-e8aa82b97dd7">København</placeName>.<note xml:id="idd88c9509-5990-48fb-97dd-9eb43cb7ef86"><p xml:id="id763b4f8d-8312-4460-800e-b1957fcc77a2"><hi xml:id="id689fc3ae-dd02-492d-9865-212b26b4a04a" rendition="#ita">Nordisk Literatur-Tidende</hi> eksisterede kun i 1846 og udkom om søndagen, hvor <hi xml:id="idc3ba7188-1a8a-42fe-b695-dc59cecc80eb" rendition="#ita">Fædrelandet</hi> ikke udkom.</p></note></p>
+          <p xml:id="id7cc8a44e-04f4-47ad-bc95-21949d2e6b06">Artiklen er blevet kollationeret i tre eksemplarer af <hi xml:id="idd6fbfd76-f306-431a-8516-9fcdbb981821" rendition="#ita">Fædrelandet,</hi> nr. 9, den 10. jan. 1846:</p>
+          <list xml:id="id4880940e-341c-4f34-8c54-14301c787b68">
+            <label xml:id="idf766091a-977b-42ca-a580-90af56943dce">A</label>
+            <item xml:id="id1a359050-342e-48db-8648-5f4e88a8f4ec"><placeName xml:id="id5d179a26-c84c-4e05-9ba9-fc7cf3274eb9" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="id737d9c2f-a3e6-4609-8c0a-be33d71b843c"><p xml:id="idac5d1866-8632-4ef9-a6cc-532b1bc1c56b">Eksemplar A er indbundet sammen med resten af <hi xml:id="ideadb45e8-4d26-4bc2-aa4d-7b2100bf8fbb" rendition="#ita">Fædrelandet,</hi> 7. årgang, 1846, 1. halvår.</p></note></item>
+            <label xml:id="id98311242-5ea4-458f-adb7-938d199cfd1b">B</label>
+            <item xml:id="id64d37eff-2f70-460c-9606-7a5a27000039"><placeName xml:id="idb5295cb5-8d39-4849-8f5d-f1e749dadaed" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="idf960bf82-6dd6-4c10-822b-a1311c8b7b28"><p xml:id="id1a04e905-d616-42d4-8d2b-40ac3fbc23ea">Eksemplar B er indbundet sammen med resten af <hi xml:id="id4cc10882-9580-404b-9786-2b4055565530" rendition="#ita">Fædrelandet,</hi> 7. årgang, 1846.</p></note></item>
+            <label xml:id="ide2cf8285-5caf-49f5-a556-dc69daf24a4b">C</label>
+            <item xml:id="id1d22532f-c48a-4c7f-83cf-e641f97358a5">Statsbibliotekets eksemplar, indbundet og beskåret.<note xml:id="id10c08369-bad8-43f9-97c1-248726ae1a43"><p xml:id="id9ec83f60-b76e-4299-a710-1f12d55af935">Eksemplar C er indbundet sammen med resten af <hi xml:id="idabd3fcf5-4c95-475c-ae1c-ec1720cbef02" rendition="#ita">Fædrelandet,</hi> 7. årgang, 1846.</p></note></item>
+          </list>
+          <p xml:id="idb7ab93d0-7b7b-461d-8ab1-0be86c381cc6"><pb xml:id="ss246" n="246" edRef="#SKS"/>Ved den interne kollation af de tre eksemplarer blev der ikke konstateret afvigelser.<note xml:id="id2e20615d-8ce5-4152-a76a-d4e19d7459c5"><p xml:id="id48852ef8-a37d-4ef7-8e5b-a5d94b106f44">Da <hi xml:id="id56768653-5bdf-4ed0-bc16-0c50d960e959" rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes i tekstredegørelsen.</p></note> Eksemplar A danner grundlag for følgende beskrivelse.</p>
+          <div xml:id="id5f7d475e-0339-4868-8d29-fb325de05672" type="level2">
+            <head xml:id="id5e6c2e6b-6ae2-46fe-8601-8b39d078622c">Format og paginering</head>
+            <p xml:id="idf6101de9-10c0-4808-a047-16a49e93af80">Formatet svarer til en stor kvart.<note xml:id="ida7f4fc55-ae3f-4d0b-be1c-fdf6f5dc5078"><p xml:id="id27df9ea7-6e80-4212-acc5-0d434f5b859f">Eksemplaret er som nævnt beskåret og indbundet, men udgangspunktet for formatbetegnelsen er plane helark (formentlig ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p></note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet halvark. På hver side er der to spalter. Spalterne er nummereret 65-72; på forsiden er numrene angivet under spalterne, på de øvrige sider over.</p>
+            <p xml:id="id12001bae-e3b0-4d03-868f-f0d6cf32386f" rendition="#ind">SKs artikel har et omfang på knap tre spalter. Den begynder på forsiden øverst i sp. 65 og afsluttes øverst i sp. 68. På nær forsiden er avisen delt af en tværgående, fed-fin dobbeltstreg lige under midten. Teksten i spaltepladsen under skillestregen er avisens føljeton.<note xml:id="idafb322a8-67e6-470d-b619-13ce164e3b24"><p xml:id="ideefbd573-dd0e-4554-bfd8-c769e6615d91">I ordet »føljeton«s oprindelige betydning, »bilag«, betegnede det artikler vedlagt en avis. Siden brugtes det om artikler placeret på den nederste del af en avisside, dvs. under tværstregen; disse kaldtes føljetoner eller føljetonartikler. Sidenhen udvidedes betydningen til en tekst, der er opdelt og udkommer over flere numre af en avis.</p></note> I sp. 67-68 er SKs artikel placeret oven over føljetonen. Avisen i øvrigt er udfyldt af anden del af føljetonen, efterretninger og notitser.</p>
+          </div>
+          <div xml:id="id9d8bb9ad-ba5f-4e28-9c06-f22a46a05412" type="level2">
+            <head xml:id="ide56e223c-f68a-4d08-9e2f-4c8496824a12">Beskrivelse af eksemplar A</head>
+            <p xml:id="idb2a2cc7d-7fad-43a8-9169-37362708b2c1">Avisen måler ca. 250 × 330 mm.<note xml:id="idabfdefeb-53cf-4c12-a3bf-aa73e63832cd"><p xml:id="ida0903be6-8cea-4b05-9998-3f314e8da7f5">Der måles bredde (øverste kant) × højde (venstre kant).</p></note></p>
+            <div xml:id="id2df549a5-3e8a-4a6b-be89-122b85704fb8" type="level3">
+              <head xml:id="id52ba5bd8-eca7-49cd-b8e2-625ee03835e4">Papir</head>
+              <p xml:id="id58bf95eb-1933-4b27-9a99-048b06028822">Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
+            </div>
+            <div xml:id="id5b15451d-c695-4616-bc4f-56dcd8353571" type="level3">
+              <head xml:id="id20171fab-f4ab-4870-a2f2-979b2314a433"><pb xml:id="ss247" n="247" edRef="#SKS"/>Typografi</head>
+              <p xml:id="ide7be1092-22c3-45cf-9b3a-53ef20ae9bee">Avisens fremherskende skriftsnit er fraktur; til latinsk tekst er benyttet antikva, og fremhævet tekst er sat med fed eller spatieret skrift.</p>
+              <p xml:id="id49708818-3bea-4e4f-832c-51766f7ca328" rendition="#ind">På forsiden er avisens navn sat med tekstur (gotisk) og hovedets øvrige oplysninger med fraktur. Avishovedet er adskilt fra den øvrige tekst af en datolinje og har følgende ordlyd:</p>
+              <quote xml:id="id21c76750-265e-4887-995b-e09aa01f9886">
+                <p xml:id="id61de6d47-1bd0-42d1-ac9c-384b461411af"><hi xml:id="id7f577f1c-c915-4de8-aceb-50c50a080df3" rendition="#bol">Fædrelandet.</hi> | <hi xml:id="id3760ca5f-8ba7-4e3d-b688-4cfe19e94ea7" rendition="#bol">1846.</hi> | Abonnementsprisen er i <placeName xml:id="idfc354011-796a-4cca-828f-891353eb5d8a" key="København">Kbhvn</placeName>. 15 Mk., udenfor <placeName xml:id="id5c4acd4b-26f8-4c37-b0d1-307b99e1dd04" key="København">Kbhvn</placeName>. 3 Rbd. pr. Qvartal frit i Huset; med nordisk Literaturtidende 16 Mk. 8 ß. og 20 Mk. 4 ß.; | enkelte Nr. 6 ß. Hver Søgne-Aften udgaaer et Nr. Bladets Contoir, st. <placeName xml:id="ide036c757-8126-424a-b2d7-03ab26948435" key="Købmagergade">Kjøbmagergade</placeName> 54 anden Sal er aabent om Formiddagen Kl. 11–1.<note xml:id="id85012dc0-a87f-4e96-b23e-94c145697c80"><p xml:id="id8ab513cf-337e-4f6f-a3fd-89f497e4837c">ß = Skilling. Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p></note></p>
+              </quote>
+              <p xml:id="ide9d05a6f-d3d4-4eeb-be8b-77a415db93da">Datolinjen er indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Imellem står følgende:</p>
+              <quote xml:id="id9459a6b1-fd9a-43e7-a557-a1844119de35">
+                <p xml:id="ida446dc56-d0fe-4382-b345-3f14866ac301">7<hi xml:id="id887cbbe2-c3db-4990-9019-53a0a13b1d8d" rendition="#sup">de</hi> Aarg. <hi xml:id="id4c58a678-49b6-48a4-b95e-de495d71f35b" rendition="#bol">Løverdagen den 10. Januar.</hi> Nr. 9.</p>
+              </quote>
+              <p xml:id="idf9683c54-1a20-45d6-9eae-7b1b91c501b1">Årgangsnummeret er venstrestillet, datoen centreret, og avisnummeret højrestillet.</p>
+              <p xml:id="idef461677-0bcc-4a79-b7c7-b23080ea0514" rendition="#ind">I avishovedet er »Fædrelandet.« centreret og sat med fed i en punktstørrelse ca. 12 grader større end brødteksten.<note xml:id="iddd18b956-0d9e-45c8-b143-4b9a1a4e64dd"><p xml:id="idae5e1778-91fe-48c2-8887-1ae5906a90ae">Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 10; tekst, der er 1 grad større, er sat med punktstørrelse 12, 2 grader større med punktstørrelse 14, 3 grader større med punktstørrelse 16, og 12 grader større med punktstørrelse 72, mens tekst, der er 1 grad mindre, er sat med punktstørrelse 8.</p></note> Derunder er årstallet centreret og sat med fed ca. 3 grader større end brødteksten. Oplysningerne under årstallet om pris, udgivelsesfrekvens, kontorets beliggenhed og åbningstid er centreret og sat med en punktstørrelse ca. 1 grad mindre end brødteksten. I datolinjen er årgangen og nummeret sat ca. 3 grader større end brødteksten, mens datoen er sat med fed ca. 1 grad større end brødteksten. Se <ref xml:id="id10222fef-867a-4168-bcc7-b9f9f138912c" target="../PF/txr.xml#ill_k10" type="figure">illustration 10</ref>. <figure xml:id="ill_k10" rend="recto"><graphic xml:id="idb5364c38-6d72-4a74-8357-39ca76810585" url="../PF/ill_k10.jpg"/><head xml:id="idc7b614ea-20a4-40c4-9d5c-ab91e228debc">10. <hi xml:id="id489046df-bfd4-4861-bc51-b2a9e35fd583" rendition="#ita">Fædrelandet,</hi> nr. 9, den 10. januar 1846</head></figure> </p>
+              <p xml:id="idaaa3b191-428f-4fa3-ba12-f6ab008d9fc1" rendition="#ind">Nederst i avisens sidste spalte, oven over føljetonen og adskilt fra en foregående notits af en vandret skillestreg i hele kolumnens bredde, er trykketidspunktet angivet:</p>
+              <quote xml:id="idf257248e-9101-4684-85d4-7e50db5614e4">
+                <p xml:id="id40c1e291-bde7-47b2-910a-8bf046977c9e"><pb xml:id="ss248" n="248" edRef="#SKS"/>Færdigt fra Trykkeriet Kl. 8½.</p>
+              </quote>
+              <p xml:id="id9375fe23-4dfe-4b9f-bcff-e2e4b455dd11">Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående, fed-fin dobbeltstreg og har ordlyden:</p>
+              <quote xml:id="id5c3be9d4-0def-48cc-8a63-7f04ea5320c4">
+                <p xml:id="id829d2238-aa1f-4a77-9129-ccd805c91524">Udgivere: <hi xml:id="id8b461562-320e-4c82-8354-21cc73fe2020" rendition="#bol">J. F. <persName xml:id="id1da11054-f77b-46ca-be55-5016d6aa9350" key="Giødwad, Jens Finsteen">Giødwad</persName></hi> og <hi xml:id="id0babe4c7-b411-4316-9cf7-0237e59725e7" rendition="#bol"><persName xml:id="id5cc2be54-3bd4-42b4-ab93-3af21d90f7d6" key="Ploug, Carl">C. Ploug</persName></hi> – Ansvarlig Redacteur: <hi xml:id="id02bbfd7b-034a-47f3-9b88-2aafe3f90eac" rendition="#bol"><persName xml:id="id9fdc5843-c040-4492-9383-3aaae8d69a6d" key="Ströhm, S.G.M.">Sv. G. M. Ströhm</persName>.</hi> | [Skillestreg] | Trykt med Hurtigpresse i det <hi xml:id="id97229f0c-e3eb-493f-9ab1-aac9ef46ada9" rendition="#spa">Brünnichske</hi> Bogtrykkeri ved <hi xml:id="id9ded3299-91a2-4144-b950-33cc70736a89" rendition="#spa"><persName xml:id="id0140c7aa-976e-4063-905c-1028e454b8da" key="Lund, Johan Christian">J. C. Lund</persName>.</hi></p>
+              </quote>
+              <p xml:id="id097117b5-36b5-4d99-a630-7e146e98ff70">Artiklens overskrift »Det dialektiske Resultat af en literair Politi-|Forretning.« er centreret i spalten og sat med fed ca. 1 grad større end brødteksten. Artiklen indledes af en fed uncial ca. 2 grader større end brødteksten. Signaturen »<persName xml:id="id301ac163-f6a4-4417-a1e1-248b40a3152f" key="Frater Taciturnus">Frater Taciturnus</persName>.« er sat med antikva i samme størrelse som brødteksten, spatieret og indrykket fra højre.</p>
+              <p xml:id="idadb9b67c-58b4-4a6c-83cb-4440b5f59e3f" rendition="#ind">Mellem overskrift og brødtekst er sat en kort, vandret skillestreg, og mellem artiklen og den følgende notits er sat en vandret skillestreg i hele kolumnens bredde. Spalterne adskilles overalt af en lodret, fin-fed-fin tripelstreg.</p>
+              <p xml:id="idedf62991-2e34-457f-9ad9-cc6fe8a5d6d8" rendition="#ind">Spaltekolumnen måler ca. 96 mm i bredden, og en spalte på forsiden har 44 linjer i hver spalte, mens en spalte oven over føljetonen har op til 33 linjer. Artiklens brødtekst er sat med en skriftstørrelse svarende til ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum.</p>
+              <p xml:id="idf2ddbc3c-fb17-41ef-bead-467e7ec2ef53">Der findes en del sætter- og trykfejl i artiklen. Der er to eksempler på fejlsatte typer: »en Historie« er sat »cn Historie« (<ref xml:id="id312cee83-5a64-48c6-a350-8f644de58875" target="../PF/txt.xml#ss87" type="publishedWritings" n="87"><hi xml:id="id509bda27-ff9f-414b-b0bb-0b116a7f9538" rendition="#ita">SKS</hi> 14, 87</ref>,65) og »tilfældigvis« er sat »tilfældigris« (88,81). Derudover har sætteren glemt ordet »en« i »en bedrøvelig Historie« (88,11). Trykfejl skyldes læderede typer.<note xml:id="idbca7b05c-aa44-4e6b-9ece-6bcd387d1846"><p xml:id="id76084b43-6299-4ece-9d60-7a2a7b65d46e">Eksempler på læderede typer er: det andet 'e' i »Mennesker« (<ref xml:id="id53221a1d-2949-47dc-a1cb-eb31e388e49e" target="../PF/txt.xml#ss87" type="publishedWritings" n="87"><hi xml:id="idbe6830fa-d473-4fb6-be7f-6d13d5087cea" rendition="#ita">SKS</hi> 14, 87</ref>,5), det første 'd' i »udskjeldt« (87,38), 's' i »præstanda« (87,51), det første 'e' i »Professionen« (87,81) og det første 'd' i »Skrædderen« (88,7).</p></note></p>
+            </div>
+          </div>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="id21251c48-0ba5-4f28-b3b6-218d69dba4e3">2. Manuskriptbeskrivelse</head>
+          <p xml:id="id78b27121-6f1f-4a8a-b77a-2d2afecc1fc3">Til »Det dialektiske Resultat af en literair Politi-Forretning« findes følgende manuskripter i Kierkegaard Arkivet (KA) på <placeName xml:id="idc5824a34-56fe-46ca-9c92-2bd8d9ecdec5" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>. Rækkefølgen afspejler kun tilnærmelsesvis tilblivelseskronologien, som vil blive udredt i afsnit 3.</p>
+          <msDesc xml:id="id014ea455-59f5-4c4e-9008-c0a3b14c157a">
+            <msIdentifier xml:id="idceac863b-407a-4bde-a02b-9725ccba14f5">
+              <collection xml:id="id3c9c5377-91b5-434e-abf8-72cb0f7cc117">PF</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.1" next="#additional.1">
+              <msIdentifier xml:id="id12b24361-1dc3-4e2a-84b7-2639833bda60">
+                <idno xml:id="id110c9b40-5809-4e20-a5f6-efe6458bb220">1</idno>
+              </msIdentifier>
+              <physDesc xml:id="ida89e5bf8-b2ee-49d4-92dd-bd62bfc8f3e7">
+                <p xml:id="id95d3ce6e-7240-46d7-8dc1-93e766d16e37"><pb xml:id="ss250" n="250" edRef="#SKS"/>Ubenyttede forlæg til »Det dialektiske Resultat af en literair Politi-Forretning«, fordelt på 5 dobbeltblade og 8 løse blade, i alt 18 blade.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.1.1" next="#additional.1.1">
+                <msIdentifier xml:id="id34b6ea21-1c3a-44eb-87fd-915d63ec58c3">
+                  <idno xml:id="ida1850d93-37b3-4f14-a958-912a6790680a">1.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id78e1ab58-03f3-4050-bccd-4766550fe3b6">
+                  <p xml:id="id944c1845-ea01-4a72-9d81-5cb7b98a8b8a">Ubenyttet forlæg til artiklen, med overskrift.</p>
+                  <p xml:id="id3cb5e676-e938-4191-88a3-b0aeace03d5b">1 dobbeltblad i 4<hi xml:id="idc98c3458-44a9-450b-aaa5-a60eb365b5e7" rendition="#sup">o</hi>.<note xml:id="id50f9a976-6953-461f-98db-f1ed7ac45e61"><p xml:id="id641d10f8-1e1d-441f-b6e0-cfe5200bf3cb">Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Irregulære, fx afrevne, enheder betegnes som lapper. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p></note></p>
+                  <p xml:id="id3197b4a7-a1e8-4b76-aef6-bea486630529">Bl. [1r] er nummereret 1. Nummereringen er fortløbende fra ms. 1.1 til ms. 1.2.</p>
+                  <p xml:id="id627af65c-0662-4e1f-8a2a-d14adfb23e4a">Papir: gulligt koncept, glat. Mål: 170 × 207 mm.</p>
+                  <p xml:id="id94240e51-5404-4a5a-aacf-7305214aa3d9">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Det nederste af bl. [2v] er beskrevet i hele sidens bredde.</p>
+                  <p xml:id="ide645d496-4907-4941-ac56-c2d5538cab20">Øverst på bl. [1r] står overskriften: <hi xml:id="id55dcde6f-db6c-4e00-98e9-50411b1fc446" rendition="#bol">»Det alvorlige Resultat af en literair Politie-Forretning.«.</hi> Ordene »Det alvorlige« er en tilføjelse indvist i den centrerede overskrift fra sidens øverste venstre hjørne.</p>
+                  <p xml:id="id226ad40a-fc17-4cc8-ba6e-4d738c93858c">På bl. [1r] er ordet »upriveligeret« [sic] indvist i første linje med en streg, men senere slettet med blyant. Et indvisningstegn skrevet med brunkridt findes i marginen på bl. [2v].</p>
+                  <p xml:id="id77de8aac-cfde-4661-b673-9556d88a976c">Få korrektioner i form af udstregninger samt enkelte marginaltilføjelser og tilføjelser mellem linjerne.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.1" prev="#physDesc.1.1">
+                <msIdentifier xml:id="idb2cf4d67-cf05-4158-966f-faeed11bb4d4">
+                  <idno xml:id="id1ced2943-505c-4db2-b1e9-d58817e63898">1.1</idno>
+                </msIdentifier>
+                <additional xml:id="id43d4d471-8ccc-406f-87ed-96940658a435">
+                  <adminInfo xml:id="id8833dc62-49a5-4dbe-986b-847ab6c04560">
+                    <note xml:id="idd180bd3a-5ec6-492f-aafe-7c03d75bd26a">
+                      <p xml:id="id9ff3b962-ecae-4e3b-b09c-253df4f64d3e">(<hi xml:id="ida28a6fc5-530b-4b79-8c3e-bdb26ec630b7" rendition="#ita">L-fort.</hi> + <hi xml:id="idaccdad65-24cc-4754-93b8-642cfe936491" rendition="#ita">B-fort.</hi> 304; <hi xml:id="id07df77da-d33b-436e-adc4-f16d6cf150de" rendition="#ita">Pap.</hi> VII 1 B 16-17)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.2" next="#additional.1.2">
+                <msIdentifier xml:id="id92dac9ca-48d1-4d8b-923c-813f82f08f5a">
+                  <idno xml:id="id6aeb754c-d694-4503-8bf3-66eae862ee1d">1.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="id5c802bb8-9468-4cce-86f4-341da55e378b">
+                  <p xml:id="id6580e48a-1d9e-42df-b149-e8923191bf91">Ubenyttet forlæg til artiklen.</p>
+                  <p xml:id="id909d1b40-a874-4687-862d-2c054e101d3a">2 løse dobbeltblade, i alt 4 blade i 4<hi xml:id="id711c76a8-4027-4c97-b7a4-6db773e2e8a2" rendition="#sup">o</hi>.</p>
+                  <p xml:id="id68ce5244-d19a-4cab-be52-bb838b91acdc">Dobbeltbladene er med blyant nummereret 2 og 3 på første rectoside. Nummereringen er fortløbende fra ms. 1.1 til ms. 1.2.</p>
+                  <p xml:id="idc07aa124-0dbf-43a5-b43b-e51d8b923065">Papir: gulligt koncept, glat. Mål: 170 × 207 mm.</p>
+                  <p xml:id="id8d5ad7f6-4be3-40e6-b106-2c63a1c4b92e">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Det nederst af bl. [3r] er beskrevet i hele sidens bredde. Bl. [4r] er beskrevet en tredjedel, bl. [4v] er ubeskrevet.</p>
+                  <p xml:id="ida64468be-d1b8-4359-ab1c-896e336ccee5">Teksten indledes på bl. [1r] af en skillestreg. Et indvisningstegn (dobbeltkors) skrevet med blyant findes i marginen på bl. [3r]. Dobbeltkorset indviser ms. 1.2.1.</p>
+                  <p xml:id="id7fdd3655-ff78-4091-bdff-0f9522981250"><pb xml:id="ss251" n="251" edRef="#SKS"/>Enkelte korrektioner i form af udstregninger og tilføjelser.</p>
+                  <p xml:id="id47526bd9-f9ec-4c3d-9804-ffdcfff9c358">(<hi xml:id="id9c04e0a6-4c50-44d8-b89a-e69ea461215d" rendition="#ita">L-fort.</hi> + <hi xml:id="id0d07081e-a8ed-4777-b6e7-c564a8b50245" rendition="#ita">B-fort.</hi> 304; <hi xml:id="id08c015e0-ffbb-4b57-ba81-781086e49ab1" rendition="#ita">Pap.</hi> VII 1 B 18)</p>
+                  <p xml:id="idd941599e-46a3-4137-877c-de54af8dfaea">Hertil hører følgende:</p>
+                </physDesc>
+                <msPart xml:id="physDesc.1.2.1" next="#additional.1.2.1">
+                  <msIdentifier xml:id="ide503481f-76e7-48fa-b985-196288be5603">
+                    <idno xml:id="id1912f5fa-1e2d-48a2-8ea2-5c80521cc6e3">1.2.1</idno>
+                  </msIdentifier>
+                  <physDesc xml:id="idbb71e7f5-fe59-4a36-a03f-1da5c0427885">
+                    <p xml:id="id6df07405-b9f3-49ad-bda2-bddaa2f6257c">Tilføjelse til ms. 1.2.</p>
+                    <p xml:id="id15c8540f-0598-4794-88d2-51f600e9231e">1 løst blad i 4<hi xml:id="idba2db5d6-deaa-422d-acad-2ae9e3e73c95" rendition="#sup">o</hi>. Venstrekanten er uregelmæssigt afrevet med spor af det modstående blad.</p>
+                    <p xml:id="id52c09915-b2fa-4cab-ac6b-81e05c20f4b0">Ingen paginering.</p>
+                    <p xml:id="idfe71e73b-696b-4861-bb92-65250eb12553">Papir: gulligt koncept, glat. Mål: 171 × 207 mm.</p>
+                    <p xml:id="iddb152d34-bcfb-46d9-a986-12c3ec6268b7">Versosiden er ubeskrevet. Bladet har efter beskrivning været foldet en gang på langs og fire gange på tværs, formentlig for at kunne tjene som indstiksmærke i ms. 1.2.</p>
+                    <p xml:id="idff9753ec-3b25-4f25-ab86-b69f57c666ff">Øverst på bl. [1r] findes et dobbeltkors skrevet med blyant, hvormed tilføjelsen er indvist i ms. 1.2.</p>
+                    <p xml:id="idda2ac830-6068-4014-8d82-abb9fdd81629">Få korrektioner.<note xml:id="id07067eb0-6812-4ecc-87e8-b04174f503f7"><p xml:id="id54767010-6b83-462d-afd7-b8262e4f47cb">Ms. 1.2.1 er beskrevet med blæk af <hi xml:id="id4215c7de-1f04-4923-86d1-f2623a825f17" rendition="#ita">EP'</hi>s udgiver <persName xml:id="ide33534a1-5d89-4258-b71d-cac432ff49f7" key="Barfod, Hans Peter">H.P. Barfod</persName>.</p></note></p>
+                  </physDesc>
+                </msPart>
+                <msPart xml:id="additional.1.2.1" prev="#physDesc.1.2.1">
+                  <msIdentifier xml:id="id21af9659-aafe-400e-8429-c949281a38d5">
+                    <idno xml:id="idedfb554f-392d-40d2-8e7a-c47cc4754550">1.2.1</idno>
+                  </msIdentifier>
+                  <additional xml:id="id6a23123d-694e-4a5c-a67d-ad659b22ada1">
+                    <adminInfo xml:id="id2ff83a33-1a0a-4cab-954e-6856a25fd47a">
+                      <note xml:id="id6e1c9e12-950d-42cd-8d00-584b7f4a8e6d">
+                        <p xml:id="id6a2ab4ca-5867-41d9-a56e-c3ffd7a7ecc0">(<hi xml:id="id433c0185-fc8e-4089-8925-119d373aa3d6" rendition="#ita">L-fort.</hi> + <hi xml:id="id96896aee-bd10-43e2-ae75-b40515787ea4" rendition="#ita">B-fort.</hi> 304; <hi xml:id="id4c78d9ad-d47b-469f-9283-9512351073ae" rendition="#ita">Pap.</hi> VII 1 B 19)<note xml:id="ide3f1a496-a98c-47d3-8294-e37cf319cf21"><p xml:id="id340c913e-582f-4d91-85ef-9f17c41a4f1b">Til 1.2.1 findes tillige en afskrift i <persName xml:id="id1f35e17f-bf9d-48c5-bffa-d1eb89b95423" key="Barfod, Hans Peter">H.P. Barfod</persName>s hånd af et nu tabt SK-manuskript. Heri kan læses en opfordring til <persName xml:id="id0a55f352-9302-45cc-8da2-3595ba51b5a9" key="Goldschmidt, Meïr Aron">M.A. Goldschmidt</persName> om at nedlægge sit hverv som redaktør af <hi xml:id="idb09a5d2d-272d-4dba-80e0-ad51f73e6036" rendition="#ita">Corsaren.</hi> I Kierkegaard Arkivet (KA) på <placeName xml:id="id1dfebde9-129a-424d-bd77-af6f1c8afec0" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName> ligger afskriften i forlængelse af ms. 1.2.1 (KA, B pk. 30) og er registreret som 'Ad VII 1 B 19', trykt i <hi xml:id="ide1ffc157-cd33-480b-acc3-1ffd23eda17b" rendition="#ita">EP III,</hi> s. 263-265. Ms. 1.2.1 bærer spor efter <persName xml:id="idf890f31c-e0d6-4d0e-acc5-1ad445bd9424" key="Barfod, Hans Peter">Barfod</persName>s sammenhæftning af ms. med afskriften.</p></note></p>
+                      </note>
+                    </adminInfo>
+                  </additional>
+                </msPart>
+              </msPart>
+              <msPart xml:id="additional.1.2" prev="#physDesc.1.2">
+                <msIdentifier xml:id="id4eb67004-77e5-4b98-b0e5-8c7481f4d8ca">
+                  <idno xml:id="idfc848614-540e-4211-bff8-ac48ee328740">1.2</idno>
+                </msIdentifier>
+                <additional xml:id="id560667a3-e58f-4a93-9e69-774bf665ab77">
+                  <adminInfo xml:id="idb1390ad1-6c77-480a-8999-8eec4c1d1e24">
+                    <note xml:id="ide5a971f3-86a5-4140-a778-37245a5507d3"/>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.3" next="#additional.1.3">
+                <msIdentifier xml:id="idee96a3be-80be-48db-887f-670b3a592b3b">
+                  <idno xml:id="idfe338ef4-a88f-46d3-b93b-fd73c8859341">1.3</idno>
+                </msIdentifier>
+                <physDesc xml:id="id51b48469-75d2-400f-946d-a05a45240e5d">
+                  <p xml:id="id1bb7c5cd-1c87-42d8-bdfa-b99be7201ab7">Ubenyttet forlæg til artiklen, med overskrift.</p>
+                  <p xml:id="id90ff5782-81c7-4093-8a00-b407b65359fc">4 løse blade i 4<hi xml:id="id60d528db-eac6-47b8-9e29-89ca3a842e3d" rendition="#sup">o</hi>. Bladenes venstre kant er uregelmæssigt afrevet. Bl. [3] og [4] har oprindelig udgjort et dobbeltblad. Det gælder formentlig også bl. [1] og [2].</p>
+                  <p xml:id="id55532976-4e92-4ed5-b003-05909d5c416b">Bl. [1r]-[2v] er med blyant pagineret 1-4. Pagineringen er fortløbende fra ms. 1.3 til ms. 1.4.; de øvrige blade er upagineret.</p>
+                  <p xml:id="id0584b6b9-1d8e-44a9-a927-348f5e8a64b2">Papir: gulligt koncept, glat. Mål: 170 × 207 mm.</p>
+                  <p xml:id="id4654e60b-4640-416a-af38-ba4b46c6872d">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bl. [4r] er beskrevet ca. en fjerdedel, bl. [4v] er ubeskrevet.</p>
+                  <p xml:id="id6c5a21c5-45ef-48df-9ef0-a29d89522d86">Øverst på s. 1 står overskriften: »Det alvorlige Resultat af en litterair / Politie-Forretning.«; herunder findes en kort skillestreg før den løbende tekst.</p>
+                  <p xml:id="id36f7c167-2b21-47d8-bf5a-40d81710dbf3"><pb xml:id="ss252" n="252" edRef="#SKS"/>Enkelte korrektioner i teksten på s. 1-3 og s. 4 øverst. Fra og med tredje linje på s. 4 er manuskriptets tekst slettet; på s. 4 med gentagne skrå blyantstreger, på de øvrige sider med en enkelt diagonal blyantstreg i inderspaltens længde.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.3" prev="#physDesc.1.3">
+                <msIdentifier xml:id="idb17fa391-c162-42c6-8851-526a5783dbbd">
+                  <idno xml:id="id7357f86a-3aa6-4914-8ff2-a03588afca1d">1.3</idno>
+                </msIdentifier>
+                <additional xml:id="ide6496910-f90a-4893-8285-813b7dd52a9e">
+                  <adminInfo xml:id="id0be7d186-5933-4297-8cd2-9416d0f88b4e">
+                    <note xml:id="id07ab9a58-b480-4444-bf16-2b66676547d9">
+                      <p xml:id="idea633a2a-bde3-4656-a5cd-1c0201ad6dda">(<hi xml:id="idb8636c0b-72d4-426c-9dc4-cfbdb6ca9a07" rendition="#ita">L-fort.</hi> + <hi xml:id="idd74e0f27-b45b-458b-9bc2-7d7548f8c1ed" rendition="#ita">B-fort.</hi> 303; <hi xml:id="idba9dcec0-1aff-4291-bb2f-1577ac31e34c" rendition="#ita">Pap.</hi> VII 1 B 12 og 20)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.4" next="#additional.1.4">
+                <msIdentifier xml:id="id6dacd2e4-5cd1-466f-add8-bde852377b63">
+                  <idno xml:id="id62a301e0-4221-4ee4-a3e7-07002f30a1c6">1.4</idno>
+                </msIdentifier>
+                <physDesc xml:id="id9885258c-6725-44d5-a15b-5bf81518d906">
+                  <p xml:id="ide8e9a150-0c36-4715-8ecd-7c2cb3bf980a">Ubenyttet forlæg til artiklen.</p>
+                  <p xml:id="ide0c50b06-4ee2-461b-9094-6f3364ae1027">1 dobbeltblad i 4<hi xml:id="idbde398b3-1855-450c-a28c-61151a6fbad1" rendition="#sup">o</hi>.</p>
+                  <p xml:id="idff787750-efe8-49af-a4e6-9b3de0d8d04b">Bladene er med blyant pagineret 5-8. Pagineringen er fortløbende fra ms. 1.3 og til ms. 1.6.</p>
+                  <p xml:id="id53a53b08-515a-43bf-96c0-96cfe882dea6">Papir: gulligt koncept, glat. Mål: 170 × 207 mm.</p>
+                  <p xml:id="id24c4ffb9-8b60-42c2-b046-5387cfc5a6f0">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser.</p>
+                  <p xml:id="id6058df7a-cf4a-4a80-8398-eb232e547bf2">På s. 6 er ordene <hi xml:id="id5cd053a7-3262-47be-9a8f-4bd10b1b2114" rendition="#ita">»Agtelse«</hi> og <hi xml:id="idd5996940-107a-49d4-93fe-511065d97e4c" rendition="#ita">»tiltvinge«</hi> fremhævet ved understregning.</p>
+                  <p xml:id="id4b5c746b-7742-4527-811f-5c2529bd6adb">Enkelte korrektioner i form af marginaltilføjelser og udstregninger.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.4" prev="#physDesc.1.4">
+                <msIdentifier xml:id="id47565ffe-5b1b-46d6-aa5f-d35453507895">
+                  <idno xml:id="id82dbd1ec-39e4-49a1-8b6c-7391a5a3df1f">1.4</idno>
+                </msIdentifier>
+                <additional xml:id="iddcd46427-019c-490c-97b6-e6ee16331682">
+                  <adminInfo xml:id="id5da2a158-f9f1-4082-917c-4d1aaa57068d">
+                    <note xml:id="id0e4f8da5-5dbe-4bc0-a523-a0e85c1c3a68">
+                      <p xml:id="id882a9f1b-1402-4e82-84cc-304de4f7c1eb">(<hi xml:id="id32be4498-362f-4924-8faf-0af89b5461b7" rendition="#ita">L-fort.</hi> + <hi xml:id="ida4664bdc-0d8c-417d-8545-a639d7792e19" rendition="#ita">B-fort.</hi> 303; <hi xml:id="ide37dd13e-bfe1-48e8-8baa-4056bbc8bd1e" rendition="#ita">Pap.</hi> VII 1 B 21)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.5" next="#additional.1.5">
+                <msIdentifier xml:id="id72836c42-9444-4ab2-bab7-001572b91639">
+                  <idno xml:id="id526fe906-885b-4884-b9b9-179edc44e779">1.5</idno>
+                </msIdentifier>
+                <physDesc xml:id="iddada9443-16d2-4d8f-bab0-baceb00516f8">
+                  <p xml:id="idff4724c2-d563-404e-ad64-2981aa02b123">Ubenyttet forlæg til artiklen.</p>
+                  <p xml:id="ide9a1da01-4494-49e1-a562-dd79590245be">1 dobbeltblad og 1 løst blad, i alt 3 blade i 4<hi xml:id="id9f96c4f2-dd20-4727-9dcf-58bbcdfc6551" rendition="#sup">o</hi>. Det løse blad har afrivningskant i venstre side.</p>
+                  <p xml:id="id4d4234b1-bf4c-4096-a003-54721f9d23a4">Bladene er med blyant pagineret 5-10. Pagineringen er fortløbende fra ms. 1.3 og til ms. 1.6.</p>
+                  <p xml:id="idd3153e9f-0389-4a76-afc0-e943e9039316">Papir: gulligt koncept, glat. Mål: 171 × 207 mm.</p>
+                  <p xml:id="idba173853-fa56-4882-ab67-cf106b2d3bea">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Fra s. 9, ca. en tredjedel nede, anvendes næsten hele sidens bredde til løbende tekst. På s. 10 er kun skrevet 4 linjer. Bladene har været foldet på midten efter beskrivning.</p>
+                  <p xml:id="idaa7bd090-215c-44bb-a36d-c19958b8b73b">På s. 6 er ordene »tiltvinge« og »Agtelse« fremhævet med dobbeltunderstregning i formuleringen: »at <hi xml:id="id1a564fb1-ee06-47e0-a414-3e9464fd221f" rendition="#bol"><del xml:id="id71f65a22-f331-459e-bf77-a8aad99459b1" rendition="#lth">'</del>tiltvinge<del xml:id="id572a6b93-2848-4f99-b670-336005639eef" rendition="#lth">'</del></hi> sig <hi xml:id="id65e09058-ee74-4ada-b2e8-61fd66ad26b4" rendition="#bol">Agtelse</hi> i <hi xml:id="id61524906-6b6e-4663-8f11-9c867c634e04" rendition="#ant"><placeName xml:id="ida89c2cba-c7e0-447d-b07d-42db8977a2ef">Danmark</placeName></hi>«.</p>
+                  <p xml:id="id4ac07268-2c58-4466-ad3c-fd61ed9a7720">En del korrektioner i form af marginaltilføjelser og udstregninger; på s. 9 er lidt mere end en linje slettet med en bølget blyantstreg.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.5" prev="#physDesc.1.5">
+                <msIdentifier xml:id="idae80ace4-bee9-467c-957b-4f07e6381abb">
+                  <idno xml:id="id41ee53bf-9910-4bfa-89aa-4d2699aa2827">1.5</idno>
+                </msIdentifier>
+                <additional xml:id="id0754d085-3a3f-46de-bcf0-896bbd0db6ae">
+                  <adminInfo xml:id="iddb31a02c-e53a-474e-a726-c8c10485ac0c">
+                    <note xml:id="idb4bb6bb1-1ddb-423a-8c80-ef5ff8f59ad8">
+                      <p xml:id="id4ad5e488-46b6-4272-a86a-eeab563a5512">(<hi xml:id="id8238280a-1483-45b4-b5b2-13b9306e0270" rendition="#ita">L-fort.</hi> + <hi xml:id="idc406cbb3-cf2d-41b7-9147-6d5d04a3a573" rendition="#ita">B-fort.</hi> 303; <hi xml:id="id2a84d993-5d81-4c9f-b675-ab6e62a920cf" rendition="#ita">Pap.</hi> VII 1 B 13)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.6" next="#additional.1.6">
+                <msIdentifier xml:id="idd441fbfb-361f-4ed2-b806-fcab6611d3a1">
+                  <idno xml:id="idd6ec0a6b-8368-4906-99af-080e791f2f2b">1.6</idno>
+                </msIdentifier>
+                <physDesc xml:id="idf5522c20-d71f-4d8b-be2a-65709b079844">
+                  <p xml:id="id298fec37-292a-4b3c-a305-3fe7a95f3d1a">Ubenyttet forlæg til artiklen.</p>
+                  <p xml:id="id12450aae-2708-4aae-a38f-8294b50de59a">1 løst blad i 4<hi xml:id="idb27363d6-7d33-496b-9648-c452bd6dd62b" rendition="#sup">o</hi>. Afrivningskant i venstre side.</p>
+                  <p xml:id="ida0f76864-c160-44c9-9f5a-37821e15f09a">Bladet er med blyant pagineret 11-12. Der findes en overstreget blyantpaginering; på s. 11: »<del xml:id="id2fe1782a-23ad-4d9f-9dd5-cdcc88b6ee31" rendition="#lth">9</del>« og »<del xml:id="idfb2dfd96-032e-4d83-ab8d-dcfddfa5e22f" rendition="#lth">10</del>«; på s. 12: »<del xml:id="idefb82be5-fbd0-4bdd-8f55-e01d3d8a657b" rendition="#lth">10</del>«. Pagineringen er fortløbende fra ms. 1.5 og til ms. 1.7.</p>
+                  <p xml:id="id28aade24-eadf-4bf5-9f29-a0eee051fa98">Papir: gulligt koncept, glat. Mål: 170 × 207 mm.</p>
+                  <p xml:id="id418e6cfe-c07b-4875-9f9e-13dd2db316ed"><pb xml:id="ss253" n="253" edRef="#SKS"/>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladet bærer præg af at have været foldet på tværs efter beskrivning.</p>
+                  <p xml:id="id145c0248-cd44-408a-869a-e29dd3ccbbac">Øverst på s. 11 er sat en kort skillestreg.</p>
+                  <p xml:id="id43fb614f-28fd-4830-90f1-f2f606c0436d">Få korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.6" prev="#physDesc.1.6">
+                <msIdentifier xml:id="idc72db95f-cb7b-490b-b91c-d96ee768cd04">
+                  <idno xml:id="id001d4d57-2d93-47eb-afe1-53e983316940">1.6</idno>
+                </msIdentifier>
+                <additional xml:id="idc9b9ef25-fc9f-45a0-bc39-34554dd8042d">
+                  <adminInfo xml:id="ide324fb6a-b244-4d09-89dc-78dc9656b6d7">
+                    <note xml:id="id3f6f8464-04aa-442e-91e9-32a90699b842">
+                      <p xml:id="idca577ed7-ae71-4e60-9536-c371e1634de1">(<hi xml:id="id0a1a71bf-7eed-4d9b-8756-635b41c97d0b" rendition="#ita">L-fort.</hi> + <hi xml:id="id859901ce-4482-440e-aecf-25bb2408f383" rendition="#ita">B-fort.</hi> 303; <hi xml:id="id15e6b09e-c79b-4324-8971-08249f7caa86" rendition="#ita">Pap.</hi> VII 1 B 14)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.7" next="#additional.1.7">
+                <msIdentifier xml:id="id04aee279-fb6d-4fd1-a575-96cde4d717f8">
+                  <idno xml:id="id9a2044d7-e600-4a09-9c93-00273e157d7a">1.7</idno>
+                </msIdentifier>
+                <physDesc xml:id="id1ef23044-6272-4305-a8dd-784b842bb2b7">
+                  <p xml:id="id32e30e8e-0f51-4acd-a425-8367de0239c1">Udkast til en ubenyttet efterskrift med afsluttende signatur.</p>
+                  <p xml:id="id3dc5fcd2-d225-43fa-9a7d-2e4edf448546">1 løst blad i 4<hi xml:id="idb357fc1f-1e19-4369-b2c4-44b129c2a268" rendition="#sup">o</hi>. Den højre kant er uregelmæssigt afrevet med spor af det modstående blad.</p>
+                  <p xml:id="id77068934-e40b-4567-8047-007c2a156cbf">Bl. [1r] er med blyant pagineret 13. Pagineringen er fortløbende fra ms. 1.6.</p>
+                  <p xml:id="idb13cca35-bc2e-4bc4-852a-47ffa2358911">Papir: gulligt koncept, glat. Mål: ca. 171 × 207 mm.</p>
+                  <p xml:id="id88661f6c-c013-4e47-8ddc-9874e10bbac3">Ca. halvdelen af s. 13 er beskrevet; versosiden er ubeskrevet.</p>
+                  <p xml:id="idb6a23632-29d8-4c40-be3f-54c700abe0b5">Som overskrift på s. 13 står: <hi xml:id="id654e14c4-4394-4d12-aea8-d45034d4ccf7" rendition="#ita">»Efterskrift.«.</hi> Som afslutning på den løbende tekst står signaturen <hi xml:id="idfbbf6388-7f21-4f4d-8618-9dcdd9092849" rendition="#ant"><hi xml:id="id0b396248-d56d-4352-8a8d-75891539df07" rendition="#ita">»<persName xml:id="id51398605-cb9b-4abe-86c5-690f16c2f6ff" key="Frater Taciturnus">Frater Taciturnus</persName>.«.</hi></hi></p>
+                  <p xml:id="id0174da5b-f7b9-4307-92e0-db7c8369bf1c">Få korrektioner. I næstsidste linje er en tankestreg indført med blyant.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.7" prev="#physDesc.1.7">
+                <msIdentifier xml:id="id623837b1-d3f9-4d27-a513-a4875ab062f9">
+                  <idno xml:id="idc2de5d15-b8cf-47a1-99de-ac94679f9661">1.7</idno>
+                </msIdentifier>
+                <additional xml:id="idb6feb81a-2035-4375-8aa1-6fbb888eef55">
+                  <adminInfo xml:id="id5eaebebb-fbd3-41f9-91f0-39c682e40ea5">
+                    <note xml:id="id3754f1b7-c07f-46a5-9b63-a8d4f9ec6019">
+                      <p xml:id="id8bb64d68-732a-43e9-9723-0ceb1d8b70ef">(<hi xml:id="id1f93df2a-e8ba-4d80-bddd-234301de3e07" rendition="#ita">L-fort.</hi> + <hi xml:id="idd5d3ce80-16cf-4a9d-bf0e-866e71900b51" rendition="#ita">B-fort.</hi> 303; <hi xml:id="idc4b684d2-bc08-4215-854a-8330b5c74836" rendition="#ita">Pap.</hi> VII 1 B 15)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.1" prev="#physDesc.1">
+              <msIdentifier xml:id="idd4c21ed6-afff-4b89-816b-736155a5e85c">
+                <idno xml:id="id45ee19fb-7a8d-4f6f-a4be-982f31964b50">1</idno>
+              </msIdentifier>
+              <additional xml:id="id88d623fb-4790-4afa-b55d-eb088d6e2a62">
+                <adminInfo xml:id="idf8745d32-7a25-4977-9a21-8bdfbec0a16e">
+                  <note xml:id="idfd3e92ac-8999-4f53-87e6-3e8b5cdd2e30">
+                    <p xml:id="idf46ad22f-1ce3-4290-a728-187b62186ffe">(<hi xml:id="iddfa82834-05e3-4570-aca8-9e4b97da0f5d" rendition="#ita">L-fort.</hi> + <hi xml:id="id5931b06a-c551-43c6-9d20-daddf60202a0" rendition="#ita">B-fort.</hi> 303, 304; KA, B pk. 30; <hi xml:id="idbf6902c7-62ce-4c48-8b74-8c5e2475756c" rendition="#ita">Pap.</hi> VII 1 B 12-21)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.2" next="#additional.2">
+              <msIdentifier xml:id="id3fcd8361-57ef-426f-8c8e-8eb699222b26">
+                <idno xml:id="idfb3de368-7a75-49b7-a4e9-294bfbdfa9e3">2</idno>
+              </msIdentifier>
+              <physDesc xml:id="id3ccd3273-3cc6-4672-bab5-cce4caf240dd">
+                <p xml:id="idd7d64a3d-4a85-464a-8af9-8bd0560abc25">Løse udkast til »Det dialektiske Resultat af en literair Politi-Forretning«, fordelt på 1 løst blad og 1 løs lap.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.2.1" next="#additional.2.1">
+                <msIdentifier xml:id="idfcfe1ea6-53ec-47e9-83c2-91ed163b7c34">
+                  <idno xml:id="id6251ba18-d6cf-4172-a96c-cb9992e328e8">2.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="ideefb74aa-6b71-49a1-a977-6448cdcd7efb">
+                  <p xml:id="id7a6b1d21-7f61-4576-b296-18d7ed6ac6a6">Udkast til artiklen.</p>
+                  <p xml:id="ided9fcf7c-b4ed-41f1-bde6-94ed55be4496">1 løst blad i 4<hi xml:id="id6333b50f-fa86-4697-bb6f-63d200caee9e" rendition="#sup">o</hi>. Afrivningskant i venstre side.</p>
+                  <p xml:id="id90ed6b64-908f-4e6e-9b78-9413411990b0">Ingen paginering.</p>
+                  <p xml:id="ida936aeab-6c92-45aa-b4e4-e330c1b99784">Papir: gulligt koncept, glat. Mål: 170 × 207 mm.</p>
+                  <p xml:id="id64af74b6-b2be-4fc8-8d82-9904414ee3fc">Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Begge sider er beskrevet; halvvejs på bl. [1v] har SK opgivet inddelingen i inder- og yderspalte og brugt hele sidebredden til løbende tekst. Bladet har yderligere været foldet en gang på tværs efter beskrivning.</p>
+                  <p xml:id="idda41e323-f972-4898-8701-9d52b1ff2119">Få korrektioner i SKs hånd.<note xml:id="id81d19b5c-6dae-44c6-9984-ce011538a6a7"><p xml:id="id3d7bfbd2-9f95-4df4-9d8d-4b257bdfcc4b">Begge sider af bladet er stærkt præget af <persName xml:id="id9d1210a4-e04a-48c8-bc17-3c0f4f050525" key="Barfod, Hans Peter">H.P. Barfod</persName>s beskrivninger.</p></note></p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.2.1" prev="#physDesc.2.1">
+                <msIdentifier xml:id="id8af19167-1ae5-4467-82bf-0d7a93bd06d4">
+                  <idno xml:id="id58951fd6-fd91-4e94-84ad-a28b5ac29bdf">2.1</idno>
+                </msIdentifier>
+                <additional xml:id="id15d33768-6c45-4032-8151-5ef4e1346fa0">
+                  <adminInfo xml:id="id62bb93f0-80bc-4ddc-b2ea-45ea549104cf">
+                    <note xml:id="id6ecd9ff2-022b-4242-b4ae-c0e154ddf813">
+                      <p xml:id="id0f159b8e-c970-4ab1-b22e-2e9e092fa6ea">(<hi xml:id="id04f906a6-34cd-48de-abea-a57e7e504f4d" rendition="#ita">Pap.</hi> VII 1 B 22)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.2.2" next="#additional.2.2">
+                <msIdentifier xml:id="id4341e9a4-1a78-4699-bb1f-971d3b25732e">
+                  <idno xml:id="id6efd8d5d-ac56-4528-9946-80063ea80820">2.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="id395d2e87-aa7f-4095-b827-d19b501994c9">
+                  <p xml:id="id033421f9-e028-4117-8a5f-2842bf9183ac">Udkast til artiklen.</p>
+                  <p xml:id="idb33f43bd-2611-4ddf-9218-7935dc061a57">1 løs lap. Nederste kant og venstre kant er uregelmæssigt afrevet. Ingen paginering.</p>
+                  <p xml:id="id4c4b5c9c-8c0c-40dd-bc6a-668d2d26a85c"><pb xml:id="ss254" n="254" edRef="#SKS"/>Papir: gulligt koncept, glat. Mål: ca. 171 × 91-97 mm.</p>
+                  <p xml:id="idfc6f072b-fa6d-4a24-b86d-c303e843f9fd">Versosiden er ubeskrevet. Lappen har været foldet en gang på langs og en gang på tværs efter beskrivning.</p>
+                  <p xml:id="iddb338202-b007-47f8-92ed-480a4f6d57c6">Få korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.2.2" prev="#physDesc.2.2">
+                <msIdentifier xml:id="id880b7a9f-b59f-4536-ac67-36eba05f43a8">
+                  <idno xml:id="idcfac1c0a-0455-4a26-bc09-0e78c6b8832f">2.2</idno>
+                </msIdentifier>
+                <additional xml:id="idb57b5cfb-3f8d-4654-8145-8dd30a410b1a">
+                  <adminInfo xml:id="id80bc2631-16bc-471a-9486-b33163ff2cdb">
+                    <note xml:id="idd07abc14-9752-4e69-9ae4-8999bd500bc9">
+                      <p xml:id="id551d57c0-5805-44c6-93b2-00b04e9e8ffd">(<hi xml:id="id725d2210-6e58-4a2d-a5e7-5341c6f26f9b" rendition="#ita">Pap.</hi> VII 1 B 23)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.2" prev="#physDesc.2">
+              <msIdentifier xml:id="id8183929e-4691-4c5d-8474-f6b0def6cd0f">
+                <idno xml:id="id469935c9-1c72-44b8-bf98-2373f0277bf3">2</idno>
+              </msIdentifier>
+              <additional xml:id="id92f81fab-8094-474a-8801-4a78845b0b1a">
+                <adminInfo xml:id="idb3903a6e-ef23-4a93-97a4-522491bb4335">
+                  <note xml:id="ida4d3be55-945d-4704-abe0-2a7d32229e76">
+                    <p xml:id="id510219b5-51f6-41a8-9ec1-fec884b38144">(<hi xml:id="id5c7bf75f-0d0d-4521-ae37-10fbc3bba43d" rendition="#ita">L-fort.</hi> + <hi xml:id="id3f313225-d6b3-416e-8bcd-6841122b1ded" rendition="#ita">B-fort.</hi> 303; KA, B pk. 30; <hi xml:id="id19ef40e5-69d3-4af6-9209-7eac2dcab638" rendition="#ita">Pap.</hi> VII 1 B 22-23)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.3" next="#additional.3">
+              <msIdentifier xml:id="id30c138d7-f81a-4bee-8aed-5e47482335e5">
+                <idno xml:id="id7d283071-f07d-4e4a-b550-cee25eeb776a">3</idno>
+              </msIdentifier>
+              <physDesc xml:id="idf84f9d49-441e-4e02-9c9b-73a9b9797ce2">
+                <p xml:id="ida0151635-6080-4e50-a63f-ae80882f8f99">Kladder til »Det dialektiske Resultat af en literair Politi-Forretning«, fordelt på 3 dobbeltblade og 2 løse blade, i alt 8 blade.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.3.1" next="#additional.3.1">
+                <msIdentifier xml:id="id8a492630-b1e8-4eb7-8c96-4f815ea13868">
+                  <idno xml:id="id009baba0-92a9-43fd-b5ab-05350c93f634">3.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id758291a8-5724-4eb5-acf5-9e3c9442294d">
+                  <p xml:id="idd631a29a-39b2-4bcf-9c80-092e48b6158a">Kladde til artiklen, med overskrift og signatur (heri findes bl.a. <ref xml:id="ide6f166eb-b3dc-4b04-bc39-ecc8749a933a" target="../PF/txt.xml#ss87" type="publishedWritings" n="87"><hi xml:id="id5629fab5-a88a-4fb7-947a-1c15b5bf44a8" rendition="#ita">SKS</hi> 14, 87</ref>,1-21).</p>
+                  <p xml:id="id3df78cf2-39c6-49e1-b56e-2ce021b8d456">1 dobbeltblad i 4<hi xml:id="idffd36617-6f00-41f6-9996-435d99b70815" rendition="#sup">o</hi>.</p>
+                  <p xml:id="id5926c9f3-ff90-4c6c-a4a1-22e6e1b0e0e5">Ingen paginering.</p>
+                  <p xml:id="id1337c16d-a06e-4948-87e8-6e54d125a4d0">Papir: gulligt koncept, glat. Mål: 171 × 207 mm.</p>
+                  <p xml:id="id6672f676-b7ab-4a11-926d-d5c2716ac673">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bl. [2v] er ubeskrevet.</p>
+                  <p xml:id="id95f4e2ab-577e-4a03-9662-cea9fd0383a8">Øverst på bl. [1r] står overskriften: »Det Dialektiske Resultat af en literair / Politi<del xml:id="idf7523066-cf13-4e2e-9a5c-61b38513710c" rendition="#lth">e</del>-Forretning.«. Mellem overskriften og den løbende tekst er sat en kort skillestreg. Nederst på bl. [2r] er som afslutning sat signaturen <hi xml:id="idc1263762-e302-464d-baff-6f85ecd73373" rendition="#ant">»<persName xml:id="id30099f90-bd33-413b-abc3-abd6e417aba6" key="Frater Taciturnus">Frater Taciturnus</persName>.«.</hi></p>
+                  <p xml:id="id0316c691-0ba0-4d50-a1a4-fe55fe17f379">På bl. [1r] er understreget <hi xml:id="id03996363-d467-41f2-b464-9c71c1191dbe" rendition="#ita">»væsentligen«;</hi> på bl. [1v] <hi xml:id="id0e255f3e-35a5-489f-9790-54cd7057b8c1" rendition="#ita">»Honorar«,</hi> <hi xml:id="ide321eb69-0b33-4c69-8624-63488ff94378" rendition="#ita">»tiltvinge«</hi> og <hi xml:id="idd3ec88fb-deb4-4e82-9fcc-6c00b43ac3dd" rendition="#ita">»Agtelse«;</hi> på bl. [2r] igen <hi xml:id="id11dabd1c-0688-449e-9a75-deb4892c3277" rendition="#ita">»tiltvinge«</hi> og <hi xml:id="id79a9e424-2c86-4dca-9582-35a8dc115209" rendition="#ita">»Agtelse«.</hi></p>
+                  <p xml:id="idb1fb78cb-241c-4f1a-bcfb-ad6928136047">En del korrektioner i form af udstregninger, kortere marginaltilføjelser og tilføjelser mellem linjerne.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.1" prev="#physDesc.3.1">
+                <msIdentifier xml:id="id8cc00d3d-20b1-4bcd-be77-f34f2ab4045a">
+                  <idno xml:id="idf2fc930d-f38b-4fa6-b8b4-7f02214f6ff8">3.1</idno>
+                </msIdentifier>
+                <additional xml:id="idcc7507ce-17b7-4198-a3e3-6683cf10661e">
+                  <adminInfo xml:id="id4039b17c-27ac-4159-8742-abeeff05fc22">
+                    <note xml:id="id992839ae-c029-4229-a695-4e48e6a94c15">
+                      <p xml:id="id149e3c9c-9d08-4d84-a42f-edae6da38644">(<hi xml:id="id56e30fd8-db36-405c-91a3-8b98869500c9" rendition="#ita">Pap.</hi> VII 1 B 24)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.3.2" next="#additional.3.2">
+                <msIdentifier xml:id="id994112f9-6a6e-4a9a-85cd-417ef48734b1">
+                  <idno xml:id="id9e23e02e-6945-4122-bc77-6d4f924e1d3a">3.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="id7d39918b-ce63-4ff6-a44a-9900f90524f9">
+                  <p xml:id="id8986cd75-3e12-4110-a7e2-663d5fc22d77">Kladde til artiklen, med overskrift (heri findes bl.a. <ref xml:id="iddb7e685c-61b1-4a42-9b4b-6902fe949817" target="../PF/txt.xml#ss87" type="publishedWritings" n="87"><hi xml:id="id08b62d1a-54db-4f67-b476-8878264b1ae1" rendition="#ita">SKS</hi> 14, 87</ref>,1-21, 87,24-27 og 87,70-88,3).</p>
+                  <p xml:id="id955e5e50-8419-43bd-89f2-9ef6c0addbfe">1 dobbeltblad i 4<hi xml:id="ide00bed54-40f4-4911-a3a5-6e0665bd594f" rendition="#sup">o</hi>.</p>
+                  <p xml:id="id985e6f32-dc22-4933-8858-cf3af23e811a">Bl. [1r] er med blyant nummereret 1.</p>
+                  <p xml:id="id8b9d853a-1e58-4cf4-aab6-bb571cbf93e2">Papir: gulligt koncept, glat. Mål: 170 × 207 mm.</p>
+                  <p xml:id="id2a9c6829-b07b-4d34-8abf-7a282ce35240">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bl. [2v] er ubeskrevet.</p>
+                  <p xml:id="idf347552f-969c-49cc-9dc5-081679efebad">Øverst på bl. [1r] står overskriften: »Det dialektiske Resultat af en literair / Politie-Forretning.«. Mellem overskriften og den løbende tekst er sat en kort skillestreg.</p>
+                  <p xml:id="idd519e870-8fd2-4af0-847d-97ab0ab28035">På første side er ordet <hi xml:id="idde87fe2f-8a79-495a-86e0-bfdd82b2b1d1" rendition="#ita">»væsentligen«</hi> understreget.</p>
+                  <p xml:id="id01d03f14-e49d-4cf1-b555-86dd6eb77b30">En del korrektioner, især på bl. [1v]. Nederst på denne side er <pb xml:id="ss255" n="255" edRef="#SKS"/>slettet 6½ linje. Flere linjer i en marginaltilføjelse på samme side er ligeledes slettet.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.2" prev="#physDesc.3.2">
+                <msIdentifier xml:id="ida6249eef-f770-44de-9512-72638939bf3e">
+                  <idno xml:id="idc8512369-68cc-41fc-a2eb-8e98ccbb9726">3.2</idno>
+                </msIdentifier>
+                <additional xml:id="idb105337a-60ee-44ed-bfea-5b2e5c27f815">
+                  <adminInfo xml:id="ida444c947-a598-42e0-b017-1328481c1940">
+                    <note xml:id="id6adec6cc-e390-409c-8c96-d9178022fbdd">
+                      <p xml:id="ida97304b8-98dd-415e-88cc-26125ccfff30">(<hi xml:id="id611c9cea-161c-43be-923c-44706b6b98a6" rendition="#ita">Pap.</hi> VII 1 B 25)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.3.3" next="#additional.3.3">
+                <msIdentifier xml:id="id2b5bc7df-180b-496a-8765-9729f6e58e81">
+                  <idno xml:id="id29e5e550-fd27-4eb3-803a-3ef0db6c5bcd">3.3</idno>
+                </msIdentifier>
+                <physDesc xml:id="idfd25d4b6-d65d-45d9-8a06-1a56b89b0ba6">
+                  <p xml:id="ided379c29-372b-4bb3-9d3f-1c05f9d1302e">Kladde til artiklen.</p>
+                  <p xml:id="id6036e528-b255-470b-b7e6-14bb4cd6ebe5">1 løst blad i 2<hi xml:id="id29e9bcad-702b-413d-9495-bf82f6b20284" rendition="#sup">o</hi>. Venstrekanten er uregelmæssigt afrevet med rester af det modstående blad. Ingen paginering.</p>
+                  <p xml:id="idb7f430f1-356b-4804-ac81-75c7c0c68a2c">Papir: gulligt post-velin. Mål: ca. 212 × 335 mm.</p>
+                  <p xml:id="idd4312b34-1d33-4af3-b1d5-4fe78623df48">Ca. halvdelen af bladets rectoside er beskrevet. Bladet har efter beskrivning været foldet fire gange på tværs og en gang på langs. Bl. [1v] er ubeskrevet.</p>
+                  <p xml:id="ide5a42047-d15c-436e-9eeb-355cd24cda9c">Få korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.3" prev="#physDesc.3.3">
+                <msIdentifier xml:id="id35ccbc56-a9a0-4324-8fdb-24eb7ec65e99">
+                  <idno xml:id="id7e747397-bb48-4dbe-b46f-41080a922fb7">3.3</idno>
+                </msIdentifier>
+                <additional xml:id="idaea39ace-39f6-42aa-983b-70c375eb9f06">
+                  <adminInfo xml:id="ida1c0fb06-e0d1-4b35-a8b2-725158028e1f">
+                    <note xml:id="id3210e109-7505-4c29-ac6b-8d9359cc9624">
+                      <p xml:id="id79bae732-90f1-460e-acf3-470dc8e22190">(<hi xml:id="id00b67f79-7a03-42b8-8b7b-e7d798899a8e" rendition="#ita">Pap.</hi> VII 1 B 26)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.3.4" next="#additional.3.4">
+                <msIdentifier xml:id="id2b2c509b-0043-41af-aafc-c36896e9698d">
+                  <idno xml:id="idf475a668-cc01-4162-a990-486770481cad">3.4</idno>
+                </msIdentifier>
+                <physDesc xml:id="ideaf4b368-f03a-41f6-8c42-2c60ace7217d">
+                  <p xml:id="idb3c129ad-da93-4174-a673-cf3fc67ce0e2">Kladde til en passage i artiklen.</p>
+                  <p xml:id="id4c0125d8-3067-4b0e-b82f-feef8de73aab">1 løst blad i 4<hi xml:id="idea582eaf-8db6-4364-ab99-e25e0b32b598" rendition="#sup">o</hi>. Afrivningskant i højre side.</p>
+                  <p xml:id="idacffbf00-4330-4a4f-a8db-6f04e70961cc">Ingen paginering.</p>
+                  <p xml:id="id89663934-1e48-409d-afa1-5c9858457000">Papir: gulligt koncept, glat. Mål: 170 × 207 mm.</p>
+                  <p xml:id="id2704378b-7d64-4889-a8f2-eef6dfcbb39d">Bl. [1r] er beskrevet ca. trekvart, bl. [1v] er ubeskrevet. Bladet har efter beskrivning været foldet en gang på tværs.</p>
+                  <p xml:id="id5fe61fac-ec76-48a1-9ef3-a67232883ac9">Få korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.4" prev="#physDesc.3.4">
+                <msIdentifier xml:id="idafd38723-ee39-4523-9a7b-fa9be6424151">
+                  <idno xml:id="id18bcc0b5-cd15-480c-a004-6b317964dfc0">3.4</idno>
+                </msIdentifier>
+                <additional xml:id="id8519c59e-8416-4ea8-ba23-4aa025c159a2">
+                  <adminInfo xml:id="id8d402bc9-becb-4b8f-b576-7c7b2147cc0d">
+                    <note xml:id="idcf75cb74-7cea-40e5-bcd0-a41cd72b3e44">
+                      <p xml:id="id77f69377-cc42-452c-b176-c1ebacc9aa67">(<hi xml:id="id3dc48eb3-59be-4cb2-a418-6956ac4e7bb0" rendition="#ita">Pap.</hi> VII 1 B 27)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.3.5" next="#additional.3.5">
+                <msIdentifier xml:id="idb1d67ee5-38f8-4c5f-bd76-66ff9967fd04">
+                  <idno xml:id="idc13e8559-3fc0-4609-9b03-9e8a147f283a">3.5</idno>
+                </msIdentifier>
+                <physDesc xml:id="id0ace9fc5-3c7c-4fa0-b712-bd0fa59306b0">
+                  <p xml:id="id870375db-32a2-4d73-9355-48cda0888b52">Kladde benyttet midtvejs og til artiklens afslutning (heri findes bl.a. <ref xml:id="idf23c6887-5b72-4a01-9f45-139eec00acfd" target="../PF/txt.xml#ss87" type="publishedWritings" n="87"><hi xml:id="idb3ff2ac3-482a-4dcc-9357-a3b6194de3a4" rendition="#ita">SKS</hi> 14, 87</ref>,60-88,36).</p>
+                  <p xml:id="idb692237c-30be-40dc-8841-d9171084bd07">1 dobbeltblad i 4<hi xml:id="idc3ed5182-7188-4d78-b2c4-218057da22af" rendition="#sup">o</hi>. Ingen paginering.</p>
+                  <p xml:id="id11e91694-4ded-418a-a770-7e8c8e14d317">Papir: gulligt koncept, glat. Mål: 169 × 207 mm.</p>
+                  <p xml:id="idb9802c03-1808-45ef-becd-c134ce466d40">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Omtrent halvdelen af bl. [2r] er beskrevet, og bl. [2v] er ubeskrevet.</p>
+                  <p xml:id="id6ea7e20a-c84b-4cde-bbe4-a990189d1720">Enkelte korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.5" prev="#physDesc.3.5">
+                <msIdentifier xml:id="ide6df544d-2791-4c89-b9cd-c5f5495fcd3d">
+                  <idno xml:id="id5aea25c7-6385-42ff-9f5d-0255dfe33244">3.5</idno>
+                </msIdentifier>
+                <additional xml:id="id45da1452-b2e1-46c3-92d0-cd4523166a1d">
+                  <adminInfo xml:id="id18a74d74-b118-4f0c-aa41-0d4f8f160224">
+                    <note xml:id="id94a5516d-5906-4bc0-9c02-b361364b37ad">
+                      <p xml:id="id8405327c-aeb6-47b5-8542-73263bb561f8">(<hi xml:id="ida2b7695c-7575-4acf-b196-4b3b84ef61cf" rendition="#ita">Pap.</hi> VII 1 B 28)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.3" prev="#physDesc.3">
+              <msIdentifier xml:id="id9db71078-fa5d-4b09-9293-42bcb52d9a32">
+                <idno xml:id="id42c2717b-e1b3-40be-8c7b-52761bb43ea7">3</idno>
+              </msIdentifier>
+              <additional xml:id="idc8f281bd-8130-4491-80c4-5228533ae235">
+                <adminInfo xml:id="id43ac5c6a-c9cb-46d4-a537-0d9ac13fdeb7">
+                  <note xml:id="idf069f241-3a7a-4f41-adfb-bd4b67d4c776">
+                    <p xml:id="iddbbbfe31-a60b-4153-8af6-68d5a16c23ea">(<hi xml:id="id1dd729bd-54a4-4970-81f1-f629368d340a" rendition="#ita">L-fort.</hi> + <hi xml:id="idad1a889d-b101-4cb5-a860-a48402a4820d" rendition="#ita">B-fort.</hi> 291; KA, B pk. 30; <hi xml:id="idefae9f05-d028-4a29-bbad-2e89a82860a3" rendition="#ita">Pap.</hi> VII 1 B 24-28)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+          <p xml:id="id444e6533-afe1-4fc8-b197-0df0d2cd68bc">(<hi xml:id="idd5c6a1d3-5fec-43c3-b002-f1a855e717ad" rendition="#ita">L-fort.</hi> + <hi xml:id="idefe03267-55e6-4279-8678-0b6353b05bc9" rendition="#ita">B-fort.</hi> 291, 303, 304; KA, B pk. 30; <hi xml:id="idf5b96d1e-65ba-4418-bcfd-58cd3511a843" rendition="#ita">Pap.</hi> VII 1 B 12-28)</p>
+        </div>
+        <div type="level1" xml:id="k3">
+          <head xml:id="id7f956c77-7911-4891-be5b-d788ff4a3f5e">3. Tilblivelseshistorie</head>
+          <p xml:id="id3bf50737-93d1-4f22-b4d1-06cd0982be75">»Det dialektiske Resultat af en literair Politi-Forretning« blev trykt i <hi xml:id="id844f62cb-0106-44fb-b83f-4317bd575f43" rendition="#ita">Fædrelandet,</hi> nr. 9, den 10. jan. 1846. Det bevarede manuskriptmateriale til artiklen er udateret, men tilblivelsesprocessen har ikke været lang.</p>
+          <p xml:id="idb5668214-cafb-4c4c-89d6-92844b846d2c" rendition="#ind"><pb xml:id="ss256" n="256" edRef="#SKS"/>SKs første anslag mod <hi xml:id="idc2b7e6ed-545d-4da2-ba86-54e3d28ed901" rendition="#ita">Corsaren</hi> (»En omreisende Æsthetikers Virksomhed, og hvorledes han dog kom til at betale Gjæstebudet.«, jf. <ref xml:id="idfc0b31be-da93-4baa-840e-56ef306e5524" target="../AeV/txt.xml#ss79" type="publishedWritings" n="79"><hi xml:id="id8093319f-d839-400a-a6db-18ef691195ea" rendition="#ita">SKS</hi> 14, 79</ref>-84) var rettet særligt mod <persName xml:id="id0dadd33c-4713-462b-a39c-e2ef1a6d6c73" key="Møller, Peder Ludvig">P.L. Møller</persName>, der havde angrebet SK og <hi xml:id="id092829ad-8b9e-4770-8bc1-319e8803a46b" rendition="#ita">Stadier paa Livets Vei</hi> (1845) i sin æstetiske årbog <hi xml:id="id07e06d52-bb0b-42f9-8dd8-97f2081bb66e" rendition="#ita">Gæa</hi> for 1846.<note xml:id="id447dac6b-a7d6-4046-a9ac-6d3d3d65005c"><p xml:id="id9017f6ef-3df3-49fe-a710-e34500f3685b">Jf. essayet »Et Besøg i <placeName xml:id="id7c45889b-58dc-4750-8bab-4ddadb0566fd">Sorø</placeName>« i <hi xml:id="id76297eec-f64c-4bd8-a430-2eb71c9e33c8" rendition="#ita">Gæa, æsthetisk Aarbog,</hi> udgivet af <persName xml:id="id847c7936-c3b6-4fa3-a4fa-159fba19821b" key="Møller, Peder Ludvig">P.L. Møller</persName>, <placeName xml:id="id3b65a6fd-261d-48b0-a4e4-0d905e0ad386" key="København">Kbh.</placeName> 1846, s. 144-187.</p></note> SKs anslag blev trykt i <hi xml:id="id38711575-6019-48be-9daa-87a48d8829d1" rendition="#ita">Fædrelandet,</hi> nr. 2078, den 27. dec. 1845. <persName xml:id="ide55ec328-e337-492c-8d52-8aebabbf86f5" key="Møller, Peder Ludvig">Møller</persName> replicerede i samme avis allerede den 29. dec. med et indlæg adresseret »Til Hr. <persName xml:id="ida47850a9-7d88-4132-85a3-0d78fe7fae7c" key="Frater Taciturnus">Frater Taciturnus</persName>, Høvidsmand for 3die Afdeling af 'Stadier paa Livets Vei.'«.<note xml:id="idb39920fd-8865-4ff8-9c1f-192aee72bd56"><p xml:id="id1ff2942a-2cd8-47bc-a247-f6429e5c66ea">Jf. <hi xml:id="idae280641-f56c-4d85-b2f0-7371a9d6a87f" rendition="#ita">Fædrelandet,</hi> 6. årgang, nr. 2079, den 29. dec. 1845, sp. 16665.</p></note> Også redaktøren af <hi xml:id="ida692f780-a96d-4ba8-bef6-1d8220ccb74d" rendition="#ita">Corsaren,</hi> <persName xml:id="id062db79f-8a95-4f91-bb8f-f1fba04d51d7" key="Goldschmidt, Meïr Aron">M.A. Goldschmidt</persName>, bragte en artikel mod SK i sit blad den 2. jan. 1846: »Hvorledes den omvandrende Philosoph fandt den omvandrende virkelige Redacteur af 'Corsaren.'«.<note xml:id="id80e8fbe1-5894-41d6-9f13-aa5dbd105ceb"><p xml:id="idbd135d7f-aa81-46cc-a655-0f9528ad651e">Jf. <hi xml:id="id82098934-b2b6-401b-978f-70987a72b68d" rendition="#ita">Corsaren,</hi> nr. 276, den 2. jan. 1846, sp. 2-6.</p></note> I samme blad var der den 9. jan. yderligere et parodierende indlæg under overskriften »Den nye Planet«.<note xml:id="idbb2e1989-92e8-400c-968b-2b672693dd31"><p xml:id="id2eac53aa-2a97-4481-abf0-d69e47d77013">Jf. <hi xml:id="id8ef5d127-05f0-45a6-80fa-4cc1ea6dbcce" rendition="#ita">Corsaren,</hi> nr. 277, den 9. jan. 1846, sp. 1-4.</p></note></p>
+          <p xml:id="iddb720bbc-d744-4268-bd9e-cb632d7a1e4f" rendition="#ind">SK havde således rigeligt med potentielt modspil under udfærdigelsen af sin artikel, og noget tyder på, at han arbejdede en del med teksten, før artiklen havde tilfredsstillende form og indhold.</p>
+          <p xml:id="idc6401266-62d3-4e57-b2da-d3510a1002f7" rendition="#ind">Det bevarede manuskriptmateriale kan inddeles i tre grupper, som det også fremgår af manuskriptbeskrivelsen ovenfor. Således er materialet i ms. 3 det direkte forlæg for den endelige artikel, mens mss. 1 og 2, som er omfangsrige, består af materiale, som ikke er direkte kladder til den endelige artikel, men dog kan karakteriseres som indledende arbejder eller ubenyttede forlæg og udkast. Hvornår i tilblivelsesprocessen, SK har opgivet disse og er begyndt forfra, vides ikke. Materialet i ms. 1 er tænkt som et sammenhængende hele, ligesom de to manuskripter i ms. 2 også har en indbyrdes relation.</p>
+          <p xml:id="id78f88434-7301-438d-8551-50d337be00b8" rendition="#ind">I de otte manuskripter, der udgør ms. 1, forekommer mss. 1.1-1.2.1 at være udkast til mss. 1.3, 1.4 og 1.6. Ms. 1.1 er forsynet med samme overskrift som ms. 1.3, »Det alvorlige Resultat af en litterair Politie-Forretning«, med den undtagelse, at ordene »Det alvorlige« i ms. 1.1 er en senere tilføjelse. På den baggrund kan ms. 1.1 betegnes som et tidligere stadium af ms. 1.3, der bærer overskriftens fulde ordlyd uden korrektioner. I ms. 1.1 findes yderligere passager, der er sammenlignelige med tilsvarende i både ms. 1.3 og ms. 1.5 (om ms. 1.5, se nedenfor).</p>
+          <p xml:id="id421f2d64-d1ec-4e9b-a092-ecb33082ddd4" rendition="#ind"><pb xml:id="ss257" n="257" edRef="#SKS"/>I forlængelse af ms. 1.1, der på første side er nummereret 1, følger ms. 1.2, hvis to løse dobbeltblade er nummereret hhv. 2 og 3; dette manuskript har enkelte passager fælles med ms. 1.6. Til sidst i denne række af manuskripter er ms. 1.2.1 skrevet, som rummer en tilføjelse til ms. 1.2.</p>
+          <p xml:id="idf4b71cf2-e24a-467e-bf17-74b4715fd637" rendition="#ind">Mss. 1.3, 1.4 og 1.6 fremstår samlet som en omskrivning, måske en påbegyndt renskrift, af mss. 1.1-1.2.1. De er (hvis der ses bort fra SKs senere korrektioner af pagineringen af ms. 1.6) pagineret fortløbende fra 1-12. På et tidspunkt forkaster SK imidlertid ms. 1.4, der er pagineret 5-8, og indføjer i stedet ms. 1.5, der er pagineret 5-10, hvorefter han tilretter pagineringen i ms. 1.6. På baggrund af korrektionerne i pagineringen er det således sandsynligt, at ms. 1.5 er skrevet efter ms. 1.6. Ms. 1.7, der er tænkt som en efterskrift, er som afslutning signeret <hi xml:id="id71bc61ef-cb04-4eee-b2e1-4fc8759cee3b" rendition="#ant">»<persName xml:id="idc0c8a7b1-783b-4f25-9ce0-ebeb9450cd7a" key="Frater Taciturnus">Frater Taciturnus</persName>«;</hi> det er sandsynligvis skrevet efter indføjelsen af ms. 1.5, idet ms. 1.7 er pagineret 13 uden korrektioner.</p>
+          <p xml:id="id019e6802-7ba7-4f45-9ac9-824f1952ddde" rendition="#ind">Som nævnt ovenfor lader de ubenyttede mss. 2.1 og 2.2 sig ikke indføje i det øvrige ubenyttede materiale. Ingen nummerering eller anden angivelse giver oplysning om en tiltænkt placering. Mss. 2.1 og 2.2 kan dog relateres til hinanden. Afslutningen på ms. 2.1 er en henvendelse til <persName xml:id="id101ccf1a-356c-4d71-b17b-5a3bc52ece83" key="Goldschmidt, Meïr Aron">Goldschmidt</persName>; en henvendelse, der fortsættes i ms. 2.2.</p>
+          <p xml:id="id22868e19-9d09-438a-a15b-0f5f856dd9e2" rendition="#ind">Så vidt de manuskripter SK ikke har gjort direkte brug af i artiklen. De resterende mss. 3.1-3.5 er derimod kladder til den trykte artikel. I ms. 3.1 findes overskriften i sin endelige form: »Det Dialektiske Resultat af en literair Politi-Forretning«; samme manuskript bærer som afslutning signaturen »<persName xml:id="id10de87d4-1ddd-48bc-8f8a-1c31cda5fa4c" key="Frater Taciturnus">Frater Taciturnus</persName>«. Kortere og længere stykker herfra er brugt i artiklen, især i artiklens begyndelse, men også mindre afsnit omkring midtvejs.</p>
+          <p xml:id="idb1e02c79-cf1a-47f8-a4b4-e7286d5b72d3" rendition="#ind">Ms. 3.2 har samme overskrift som ms. 3.1, men ingen signatur. Dele af ms. 3.2 er nogenlunde enslydende med ms. 3.1, især er der sammenfald mellem manuskripternes indledende afsnit, som SK også benytter til indledning i den trykte artikel (<ref xml:id="idca10f291-9d46-4201-9aec-c6e264c7d82a" target="../PF/txt.xml#ss87" type="publishedWritings" n="87"><hi xml:id="id02fccb55-3183-4f15-9a2f-a55d40c65de2" rendition="#ita">SKS</hi> 14, 87</ref>,3-27). I forhold til ms. 3.1 har lidt flere passager fra ms. 3.2 fundet vej ind i den endelige artikel; ms. 3.1 kan på den baggrund betragtes som forlæg for ms. 3.2.</p>
+          <p xml:id="id7102a395-1546-40e8-9ddf-7caf74beb2d7" rendition="#ind">I tilknytning til ms. 3.2 findes ms. 3.3. Dette manuskript forekommer at være enten et udkast eller en bearbejdelse af en længere passage omtrent midtvejs i ms. 3.2. Det samme er tilfældet med ms. 3.4 (historien om skrædderen), der genfindes i ms. 3.2 og i øvrigt også i selve artiklen. Ms. 3.5 indeholder materiale, der indgår midtvejs og i den endelige artikels afslutning (den længste passage, der er overført herfra, genfindes i <ref xml:id="id1bc30bfb-7b5d-4f73-be4f-a97b9f5aff4a" target="../PF/txt.xml#ss87" type="publishedWritings" n="87"><hi xml:id="idee2de3e4-e73b-440d-9b71-5daf95a7c154" rendition="#ita">SKS</hi> 14, 87</ref>,60-88,36).</p>
+          <p xml:id="id650b2831-435f-42ae-81fc-9e138ed4a439" rendition="#ind">Der foreligger ingen renskrift (trykmanuskript) til artiklen.</p>
+        </div>
+        <div type="level1" xml:id="k4">
+          <head xml:id="id0a3ca467-6dc9-4189-a960-712ec0d3663c"><pb xml:id="ss258" n="258" edRef="#SKS"/>4. Udgivelsesmåde</head>
+          <p xml:id="idb7e946e8-2643-4040-9096-5616cc15bade">»Det dialektiske Resultat af en literair Politi-Forretning« blev som nævnt trykt i <hi xml:id="id11837e4a-3f25-4c3d-ba6f-8348a75491b5" rendition="#ita">Fædrelandet.</hi><note xml:id="id49f8bda8-4db4-4f29-a9fe-65f0a91b656b"><p xml:id="id508f77ba-1fa3-441a-a8b0-aa0e77eeb642">En nærmere redegørelse for avisens redaktionelle forhold, periodicitet og oplagstal findes i <ref xml:id="id87c95774-a0b2-4095-b861-911e87c8bc62" target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til artiklen »Aabenbart Skriftemaal«, s. 112</ref>f.</p></note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
+          <p xml:id="id44763699-b98b-4416-b9fd-7f8d11418109" rendition="#ind">Af stor betydning for receptionen allerede i SKs umiddelbare eftertid var <persName xml:id="id8aa423df-693b-4835-a783-99b4b51f6f90" key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi xml:id="id95858a69-7a0e-43bd-b4f8-30cffaaef8bf" rendition="#ita"><persName xml:id="idb693b61e-7e1b-45ec-98e1-e8d07195942c" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 <hi xml:id="idaa3fc7ba-a402-4b1b-a236-900f1e5b4c69" rendition="#ita">(Bl.art.).</hi> Heri indgår størstedelen af SKs artikler, også »Det dialektiske Resultat af en literair Politi-Forretning«.<note xml:id="id104235fc-a3c0-45fe-abf8-9fe029f4e10f"><p xml:id="id86ed322c-fc59-47c4-8187-dd8258da9020">Artiklen er trykt i <hi xml:id="ida2455abe-23b6-4e26-9ccc-761e887cd5f3" rendition="#ita">Bl.art.,</hi> s. 149-152.</p></note></p>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

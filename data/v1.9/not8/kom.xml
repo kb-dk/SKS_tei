@@ -1,394 +1,544 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE kn1 SYSTEM "http://sks.dk/kn1/kn1.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5">
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Notesbog 8</title>
-     
-     <title type="short">Not8</title>
-     
-  <author>
-   <name>Jon Stewart</name><name>Peter Tudvad</name>
-  </author>
- 
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Jette Knudsen</name><name>Alastair McKinnon</name>
-  </editor>
- 
-  <respStmt>
-   <resp>udgivet af</resp>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Jette Knudsen</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Joakim Garff</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name><name>Kim Ravn</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2001</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K19</biblScope>
-     <biblScope unit="file">http://sks.dk/not8/kom.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20121211">Kierkegaard Normalformat vers. 1, <bibl><idno type="version">1.8</idno>, <biblScope unit="file">http://sks.dk/not8/kom.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="idfc8e7d28-7208-42e2-bda2-11bf137f8e7b">
+    <fileDesc xml:id="idfc157e25-1f8a-4a09-b2f6-822a62b5460f">
+      <titleStmt xml:id="id81b3cdbd-6366-4575-b707-7aee1d55b831">
+        <title xml:id="idfca74c71-1aef-4339-a207-88d7a8a7af5c" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id25783aaf-a275-4a51-8972-96ed731aa476">Notesbog 8</title>
+        <title xml:id="id70d8f818-5f6f-40fc-84d4-d90362b10d09" type="short">Not8</title>
+        <author xml:id="id1880c46d-eebc-4373-8dd0-86a8e79fb85a">
+          <name xml:id="id39ad1291-a1ec-4d98-a169-dafb1266b78d">Jon Stewart</name>
+          <name xml:id="id513c0d63-0167-4222-a2ef-93173ad377fb">Peter Tudvad</name>
+        </author>
+        <editor xml:id="id39a19cee-c2f8-4270-a9ae-9bad80703825">
+          <name xml:id="id256683a6-7f14-4fa9-bda6-59d72b6b6baf">Niels Jørgen Cappelørn</name>
+          <name xml:id="id0da2adad-dfdd-41f1-a7f1-63dac10a8636">Joakim Garff</name>
+          <name xml:id="id79c7768d-9003-4f03-a49c-66d852fd95bd">Johnny Kondrup</name>
+          <name xml:id="id00891174-5d2a-45d9-9795-c4e6c33c177f">Jette Knudsen</name>
+          <name xml:id="idec7c4757-25ec-4b9e-b17e-5ac41895a25a">Alastair McKinnon</name>
+        </editor>
+        <respStmt xml:id="id3262acb2-f1a8-4db1-ba77-02142e35a9ef">
+          <resp xml:id="id9fde693f-3cb6-44da-a955-44eaa5b2c5d5">udgivet af</resp>
+          <name xml:id="id54dfd8ac-0f8b-4fbd-abdc-2d297122ea96">Niels Jørgen Cappelørn</name>
+          <name xml:id="idca1bf9a4-58b7-47fa-ab18-1bf9f7271978">Joakim Garff</name>
+          <name xml:id="id43f6a07e-c4c0-4a1d-bf06-51c55e86000c">Johnny Kondrup</name>
+          <name xml:id="id536b8ebc-f8e3-4109-906f-3fee9dbec3ce">Jette Knudsen</name>
+        </respStmt>
+        <respStmt xml:id="ide0eff0a5-3306-4e70-9f98-ca253cf8ef53">
+          <resp xml:id="id515507bf-b941-4022-a414-153995d32988">redigeret af</resp>
+          <name xml:id="ida41745c3-e7d2-4274-b901-29755cdeac29">Joakim Garff</name>
+        </respStmt>
+        <respStmt xml:id="id1df215ee-d492-46f4-9b66-46ec76575ed8">
+          <resp xml:id="id75a7a3cf-1297-4055-995b-89129269cf67">elektronisk redigeret af</resp>
+          <name xml:id="id78cbc681-a323-4571-9a6c-c08fbd066647">Karsten Kynde</name>
+          <name xml:id="idf459af31-06bc-4919-b5f0-0deb3559606e">Kim Ravn</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="idb998f2e0-cb6a-4816-a3dd-20f27252e93f">
+        <authority xml:id="id9e4128fd-7d9d-4cb1-a5a3-42da249683ec">Søren Kierkegaard Forskningscenteret 2001</authority>
+        <availability xml:id="id5722a41c-c0c0-4641-8a7d-aa3cb9fae261" status="restricted">
+          <p xml:id="idd62dbfb8-31a6-4570-800f-f1a7b7ddcff6">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="iddf737261-ea3d-4c44-99e9-9dd8380271ca">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="idd3b28148-6880-42f8-a18e-967f73aa3bc4" unit="volume">K19</biblScope>
+        <biblScope xml:id="id36f5c376-220e-411d-ae69-3706a8926028" unit="file">http://sks.dk/not8/kom.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id301c8d86-c2eb-41b3-9515-78969fd54198">
+        <bibl xml:id="id7bf952d9-3d3e-462b-bb01-baa39e83fbff" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="ide8ef123a-98ae-4b2b-b29d-62957f857e76">
+      <tagsDecl xml:id="id6d7a8ea0-8c9d-4c22-aca8-c3a64b0eca5d">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id1fddcee1-a79e-4017-867d-8c05050fbd4f">
+      <change xml:id="idfaa72418-b6fb-4302-9d93-959861d36f7e">Transformed to TEI by style sheet <bibl xml:id="id2031019e-0d67-4c9a-9578-99ae165cca5d" type="file">kn12tei.xsl</bibl> version <idno xml:id="id08cc7afd-8089-40ce-9eea-474dacb61f15" type="version">1.9</idno> as of <date xml:id="id82a1f3d8-a03a-4348-bc0a-6fc7f886d691">2017-02-21</date> by <name xml:id="idf4c763a3-e8f6-4123-b2b9-860d32b839d0">Karsten Kynde</name>, <orgName xml:id="id7dbe868a-e544-4970-97c0-845bb8e76cf0">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="id897447f7-c9de-4152-b9f3-494d1b815f0a">København</placeName></change>
+      <change xml:id="id78c4b860-d45d-4402-8e67-7f06ccbf1333" when="20121211">Kierkegaard Normalformat vers. 1, <bibl xml:id="id84a96fb3-37b2-4269-9c22-6f34b9e90a17"><idno xml:id="idd1cc00e9-8fef-4436-82b8-4401303b2348" type="version">1.8</idno>, <biblScope xml:id="iddb6e27e0-9258-4fc0-93fd-cf73673a9c50" unit="file">http://sks.dk/not8/kom.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
-
- <text type="commentary" subtype="jp"><body><div>
-    <note type="commentary" xml:id="not8-1" n="223,1">
-      <label><hi rendition="#bol">De vita. E vita</hi></label>
-      <p>lat. 'Om et liv. Af et liv'. – Efter 29. sept. 1841 at have forsvaret sin magisterafhandling brød SK 11. el. 18. okt. forlovelsen med <persName key="Olsen, Regine">Regine Olsen</persName> (<ptr type="commentary" target="#not8-6" n="225,28"/>) og rejste 25. okt. til <placeName>Berlin</placeName>.</p>
-    </note>
-    <note type="commentary" xml:id="not8-2" n="225,1">
-      <label><hi rendition="#bol">Du siger, »hvad ... mig selv«</hi></label>
-      <p>sigter formentlig til den brudte forlovelse og er måske en replik af SKs broder, <persName key="Kierkegaard, Peter Christian">P.C. Kierkegaard</persName>, el. ven, <persName key="Boesen, Emil Ferdinand">Emil Boesen</persName>, der sammen fulgte SK ombord på dampskibet (<ptr type="commentary" target="#not8-4" n="225,21"/>) ved <placeName>Toldboden</placeName> (<ref target="../kort/kbh_G3.htm" type="map" n="kbh"><hi rendition="#ita">se kort 2, G3</hi></ref>). Jf. P.C. Kierkegaards dagbog, NKS 2656, 4º, bd. 1, s. 118.</p>
-    </note>
-    <note type="commentary" xml:id="not8-3" n="225,16">
-      <label><hi rendition="#bol">jeg har tabt, i Mskers Øine mit ridderlige Ord</hi></label>
-      <p>nemlig ved at bryde en forlovelse.</p>
-    </note>
-    <note type="commentary" xml:id="not8-4" n="225,21">
-      <label><hi rendition="#bol">i en Kahyt rystet af et Damskibs Dobbeltbevægelser</hi></label>
-      <p>»Det kongl. preussiske nye Post-Dampskib <hi rendition="#ita">'Königin Elisabeth'</hi> afgaaer til Ystad og <placeName>Stralsund</placeName> paa Mandag-Formiddag Kl. 11«, <hi rendition="#ita">Kjøbenhavns kongelig alene privilegerede Adressecomptoirs Efterretninger</hi> (forkortet <hi rendition="#ita">Adresseavisen</hi>) fredag 22. okt. 1841, nr. 248. Jf. også
-        »Dagsliste, <hi rendition="#ita">(...)</hi> Mandagen, den 25de October« i <hi rendition="#ita">Dagen</hi> 23. okt. 1841, nr. 248: »
+  <text xml:id="id40c1473d-0aca-4ca0-8b4c-2b70771795e2" type="commentary" subtype="jp">
+    <body xml:id="idf09a20b6-7e42-4f5a-8c10-3a0506fbab11">
+      <div xml:id="idbd8d90b7-6473-4c1b-ba07-ae3c19871ecb">
+        <note type="commentary" xml:id="not8-1" n="223,1">
+          <label xml:id="id8ea89214-ca29-4a0e-8b42-95581f92abf5">
+            <hi xml:id="id93ed0196-c091-4e44-8774-eada6ac6a8c4" rendition="#bol">De vita. E vita</hi>
+          </label>
+          <p xml:id="id846e41fa-e4aa-4d9f-a32a-372c18be695f">lat. 'Om et liv. Af et liv'. – Efter 29. sept. 1841 at have forsvaret sin magisterafhandling brød SK 11. el. 18. okt. forlovelsen med <persName xml:id="idb43d7438-7333-40ec-a859-ca553d70e925" key="Olsen, Regine">Regine Olsen</persName> (<ptr xml:id="ideb01863e-6775-43d2-b341-83cd447c7b63" type="commentary" target="#not8-6" n="225,28"/>) og rejste 25. okt. til <placeName xml:id="id8b646b65-310f-4095-8e11-1ef6fadee307">Berlin</placeName>.</p>
+        </note>
+        <note type="commentary" xml:id="not8-2" n="225,1">
+          <label xml:id="id1112999b-836d-47b4-91e2-754acb0642e3">
+            <hi xml:id="id181bf2e2-2bb2-404d-bf74-d46f743b6a9e" rendition="#bol">Du siger, »hvad ... mig selv«</hi>
+          </label>
+          <p xml:id="id167bf3ad-d15e-4b84-92bc-f81b09db1cc4">sigter formentlig til den brudte forlovelse og er måske en replik af SKs broder, <persName xml:id="idd2c7e708-f746-43cd-ab2a-cef48f84b506" key="Kierkegaard, Peter Christian">P.C. Kierkegaard</persName>, el. ven, <persName xml:id="id1d715b6d-8e32-44ce-91ff-2188036dc385" key="Boesen, Emil Ferdinand">Emil Boesen</persName>, der sammen fulgte SK ombord på dampskibet (<ptr xml:id="id143e8d3b-2f0d-482f-a64f-458e8a85eb63" type="commentary" target="#not8-4" n="225,21"/>) ved <placeName xml:id="id9e2333fd-b880-49ed-b855-1d4b40234760">Toldboden</placeName> (<ref xml:id="id8d29f7d7-2475-4179-96cd-b3b00f9b1caa" target="../kort/kbh_G3.htm" type="map" n="kbh"><hi xml:id="id090bcfa4-1d0b-404a-8e91-52d58b2d6e19" rendition="#ita">se kort 2, G3</hi></ref>). Jf. P.C. Kierkegaards dagbog, NKS 2656, 4º, bd. 1, s. 118.</p>
+        </note>
+        <note type="commentary" xml:id="not8-3" n="225,16">
+          <label xml:id="id941c2246-604b-477d-8039-988750900f0e">
+            <hi xml:id="idec5973ca-6071-4082-b228-304a32ef4501" rendition="#bol">jeg har tabt, i Mskers Øine mit ridderlige Ord</hi>
+          </label>
+          <p xml:id="id19238775-6d37-42d0-a856-37af71fa0e24">nemlig ved at bryde en forlovelse.</p>
+        </note>
+        <note type="commentary" xml:id="not8-4" n="225,21">
+          <label xml:id="idf6893951-8bdb-4b68-9a96-5a0e7c7a1b82">
+            <hi xml:id="idb59af39d-a148-41cd-8a1f-a73f8f6a24e8" rendition="#bol">i en Kahyt rystet af et Damskibs Dobbeltbevægelser</hi>
+          </label>
+          <p xml:id="id47f51d29-4a1b-4106-b7bb-9dfaaf6b1e36">»Det kongl. preussiske nye Post-Dampskib <hi xml:id="id8d36ef5f-50d8-4153-85d8-d0d8a299fa4c" rendition="#ita">'Königin Elisabeth'</hi> afgaaer til Ystad og <placeName xml:id="idc2850459-2597-4d86-b699-aa3a27fa2563">Stralsund</placeName> paa Mandag-Formiddag Kl. 11«, <hi xml:id="id96ef8bb9-45e1-4f68-8aa2-4301150ba05e" rendition="#ita">Kjøbenhavns kongelig alene privilegerede Adressecomptoirs Efterretninger</hi> (forkortet <hi xml:id="idbfca86ed-c9cc-47c0-83c0-0a2c2ab496fe" rendition="#ita">Adresseavisen</hi>) fredag 22. okt. 1841, nr. 248. Jf. også
+        »Dagsliste, <hi xml:id="idd718f9fe-460c-4338-8c6c-1c6c5f80a508" rendition="#ita">(...)</hi> Mandagen, den 25de October« i <hi xml:id="id3e974c13-9f24-45c9-bcc2-c5b496de5c26" rendition="#ita">Dagen</hi> 23. okt. 1841, nr. 248: »
         – Kl. 11 Form. Afgaaer Dampskibet 'Königin Elisabeth' til Ystad og Stralsund.«
-        – Normalt varede overfarten o. et døgn, og således ville SK planmæssigt ankomme til Stralsund om formiddagen den 26. okt. 1841, jf. <hi rendition="#ita">Stralsundische Zeitung</hi> den 28. okt. 1841, nr. 129: »Stralsund, den 26. Octbr. 1841. / Mit dem Königl. Preuß. Dampfschiffe <hi rendition="#ita">Königin Elisabeth</hi>, Führer: Capt. <hi rendition="#ita">Klickow</hi>, sind heute angekommen: / I. Von Kopenhagen: Se. Exellenz der Königl. Großbrittannische Minister am Königl. Dänischen Hofe, Hr. <hi rendition="#ita">H.W.W. Wynn</hi> nebst Frau Gemahlin, Fräulein Nichte u. Dienstboten. Hr. Magister <hi rendition="#ita">Aaby-Kierkeyoord</hi>. Hr. Violoncellist <hi rendition="#ita">Giovanni di Dio</hi>. Zimmermann <hi rendition="#ita">Hansen</hi>, Zimmermann <hi rendition="#ita">Holm</hi>. Müllergeselle <hi rendition="#ita">Jansen</hi>. / II. Von Ystad: Der Königl. Preuß. Minister am Königl. Schwed. Hofe, Hr. Baron <hi rendition="#ita">v. Brokhausen</hi> nebst 2 Bedienten. Hr. Baron <hi rendition="#ita">v. d. Rek</hi> nebst 2 Bedienten. Hr. Studiosus <hi rendition="#ita">Meister</hi>. Hr. Studiosus <hi rendition="#ita">Niekisch</hi>. Hr. Schiffs-Capt. <hi rendition="#ita">Thiel</hi>. Hr. Graf <hi rendition="#ita">Wachtmeister</hi> nebst Bedienten. Hr. Kaufm. <hi rendition="#ita">Israel</hi>. Hr. <hi rendition="#ita">Eyting</hi>. Schäfer <hi rendition="#ita">Kitzing</hi> nebst Frau und 5 Kindern.«</p>
-    </note>
-    <note type="commentary" xml:id="not8-5" n="225,24">
-      <label><hi rendition="#bol">Nu hvi gnider Du ... Lynets Blink</hi></label>
-      <p>med enkelte afvigelser i interpunktion et ordret citat fra <persName key="Oehlenschläger, Adam">Adam Oehlenschläger</persName>s lystspil <hi rendition="#ita">Aladdin, eller den forunderlige Lampe</hi>, i <hi rendition="#ita">Poetiske Skrifter</hi> bd. 1-2, <placeName key="København">Kbh</placeName>. 1805, ktl. 1597-1598; bd. 2, s. 273f. Versene siges af »Lampens Aand« til den onde <persName key="Noureddin">Noureddin</persName>, der endelig er kommet i besiddelse af den eftertragtede lampe; tidligere i lystspillet har ånden reageret med næsten enslydende vers, da <persName key="Aladdin">Aladdin</persName>s moder, <persName key="Morgiane">Morgiane</persName>, gnider på lampen, s. 139.</p>
-    </note>
-    <note type="commentary" xml:id="not8-6" n="225,28">
-      <label><hi rendition="#bol">Ikke jeg alene ... knyttet i Dig</hi></label>
-      <p>I umiddelbar fortsættelse af sine ord til <persName key="Morgiane">Morgiane</persName> (se foregående kommentar) siger »Lampens Aand« til hende: »Ikke jeg allene, Frue! men hver anden Lampens Aand, / Bukker sine Knæe og lyder den, som Lampen har i Haand«, s. 139; stort set enslydende er åndens ord til <persName key="Noureddin">Noureddin</persName>, s. 274. Da Noureddin tidligere i lystspillet sender <persName key="Aladdin">Aladdin</persName> ned i en underjordisk hule for at hente den forunderlige lampe, giver han ham en ring på fingeren til beskyttelse; ved sin tilbagekomst vil Aladdin ikke give lampen til Noureddin, som derfor lader ham spærre inde i hulen, men i sin fortvivlelse kommer Aladdin til at støde ringen mod klippen; straks viser »Ringens Aand« sig og siger: »Herre! hvad vil du mig? / See! jeg maa lyde dig. / Ringen er i din Haand, / Du byder Ringens Aaand. / Ey er det mig, som maa / Ene tilrede staae. / Alle de Slaver, som / Hylde dens Helligdom, / Knæle til dyben Jord, / Lystre dit Magtens Ord«, s. 133. –
-        <hi rendition="#bol">min R.</hi>: »Min Regine!«, SKs indledningsformular i sine breve til <persName key="Olsen, Regine">Regine Olsen</persName> under deres forlovelse 10. sept. 1840 til 11. el. 18. okt. 1841 (jf. <ref target="../Not15/kom.xml#not15-25" type="commentary" n="4">kommentaren til notesbog 15:4, <hi rendition="#ita">SKS</hi> 19, 435,36</ref>, og <ref target="../b127/txt.xml#n127" type="lettersAndDedications" n="ba:15" rend="Brev 127"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 47</ref>-69, især <ref target="../b127/txt.xml#n132" type="lettersAndDedications" n="ba:20" rend="Brev 132">brev af 28. okt. 1840</ref>, som SK tænker sig bragt af »Ringens Aand«, s. 52.</p>
-    </note>
-    <note type="commentary" xml:id="not8-7" n="225,36">
-      <label><hi rendition="#bol">bragte jeg Dig ikke selv den Ring, jeg lystrer</hi></label>
-      <p>enten en allusion til den ring, som SK gav <persName key="Olsen, Regine">Regine Olsen</persName>, og som hun bar under deres forlovelse, el. til den ring, som han selv bar, men forgæves sendte hende retur 11. aug. 1841, hvorefter han selv to måneder senere bragte hende den, da han definitivt brød forlovelsen, jf. <ref target="../Not15/txt.xml#ss435" type="journalsAndPapers" n="435,16">notesbog 15:4</ref>, <hi rendition="#ita">SKS</hi> 19, 435,16-35, samt kommentarerne hertil.</p>
-    </note>
-    <note type="commentary" xml:id="not8-9" n="226,19">
-      <label><hi rendition="#bol">Naar Maanen saaledes reflekterer sig i Havet</hi></label>
-      <p>formentlig i <placeName>Østersøen</placeName> natten ml. 25. og 26. okt. 1841; der var fuldmåne 30. okt.</p>
-    </note>
-    <note type="commentary" xml:id="not8-10" n="226,22">
-      <label><hi rendition="#bol">man har kaldet Havet Alts Moder</hi></label>
-      <p>Hvis der sigtes til et fast udtryk, har dette ikke kunnet identificeres. Inden for naturfilosofien var det alm. – som fx <persName key="Steffens, Henrich">Henrich Steffens</persName>
-        – at mene, at det skabte liv oprindeligt var opstået i »Vand, – det Element, hvilket synes at indeholde Spiren til alle den producerende Naturs Udkast«, <hi rendition="#ita">Indledning til philosophiske Forelæsninger</hi>, <placeName key="København">Kbh</placeName>. 1803, s. 80.</p>
-    </note>
-    <note type="commentary" xml:id="not8-11" n="226,28">
-      <label><hi rendition="#bol">en velbekjendt Byes Kringelkroge</hi></label>
-      <p>sigter til <placeName>København</placeName>, der – begrænset af voldene – havde et areal på o. 4,5 km<hi rendition="#sup">2</hi>, og som ved folketællingen 1. feb. 1840 havde 120.819 beboere; til sammenligning strakte <placeName>Berlin</placeName> sig over o. 30 km<hi rendition="#sup">2</hi> og havde samme år 329.000 beboere.</p>
-    </note>
-    <note type="commentary" xml:id="not8-12" n="227,2">
-      <label><hi rendition="#bol">her i Berlin</hi></label>
-      <p>SK ankom formentlig til <placeName>Berlin</placeName> (hoved- og kongelig residensstad i den preussiske stat, beliggende i provinsen <placeName>Brandenburg</placeName>) den 27. okt. efter at have kørt med diligence fra <placeName>Stralsund</placeName>; han indlogerede sig på adressen »Mittelstraße N<hi rendition="#sup">o</hi> 61 / eine Treppe hoch« (<ref target="../b79/txt.xml#n80" type="lettersAndDedications" n="ba:49" rend="Brev 80"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 72</ref>f.), men efter problemer med værten flyttede han inden nytår til adressen »Jägerstraße N<hi rendition="#sup">o</hi> 57 eine Treppe hoch« (<ref target="../b79/txt.xml#n83" type="lettersAndDedications" n="ba:60" rend="Brev 83"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 91</ref>). Jf. også kommentarerne til journal JJ:109, <hi rendition="#ita">SKS</hi> 18, <ref target="../JJ/kom.xml#jj-252" type="commentary" n="109">175,27</ref> og <ref target="../JJ/kom.xml#jj-254" type="commentary" n="109">175,35</ref>.</p>
-    </note>
-    <note type="commentary" xml:id="not8-14" n="227,9">
-      <label><hi rendition="#bol">Man siger Kjærlighed gjør blind</hi></label>
-      <p>jf. ordsproget »Kiærlighed er blind«, nr. 1427 i <persName key="Grundtvig, Nikolai Frederik Severin">N.F.S. Grundtvig</persName>
-        <hi rendition="#ita">Danske Ordsprog og Mundheld</hi>, <placeName key="København">Kbh</placeName>. 1845, ktl. 1549, s. 54. Også optegnet som nr. 4659 i <persName key="Mau, Edvard">E. Mau</persName> <hi rendition="#ita">Dansk Ordsprogs-Skat</hi> bd. 1-2, <placeName key="København">Kbh</placeName>. 1879; bd. 1, s. 519.</p>
-    </note>
-    <note type="commentary" xml:id="not8-19" n="228,1">
-      <label><hi rendition="#bol">den Pige ... at kalde min</hi></label>
-      <p><ptr type="commentary" target="#not8-6" n="225,28"/>. Sml. et udateret brev til <persName key="Olsen, Regine">Regine</persName>, hvor SK – formentlig i nov. 1840 – skriver: »thi i Sandhed, har jeg noget Øieblik tvivlet om, at jeg turde kalde Dig 'min' (Du veed, hvor meget jeg forbinder med dette Udtryk, Du veed det, Du, som selv har skrevet, at Dit Liv var <hi rendition="#ita">afsluttet</hi> med mig, hvis jeg skulde skilles fra Dig, o saa lad det da være <hi rendition="#ita">indesluttet</hi> i mig saa længe vi ere forenede, thi først da ere vi egl. <hi rendition="#ita">forenede</hi>) da er der intet Øieblik, jeg har tvivlet om, nei jeg skriver det af min Sjæls inderste Overbeviisning, ja end ikke i den mørkeste Afkrog af Verden skal jeg tvivle om, at jeg er Din / Din for evig / S.K.«, <ref target="../b127/txt.xml#n135" type="lettersAndDedications" n="ba:23" rend="Brev 135"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 55</ref>.</p>
-    </note>
-    <note type="commentary" xml:id="not8-20" n="228,4">
-      <label><hi rendition="#bol">slige Dyder er glimrende Laster</hi></label>
-      <p>allusion til talemåde fra middelalderen: 'Virtutes paganorum splendida vitia', lat. 'hedningernes dyder er glimrende laster'. Jf. journaloptegnelsen <ref target="../AA/txt.xml#ss35" type="journalsAndPapers" n="35,6">AA:18</ref>, <hi rendition="#ita">SKS</hi> 17, 35,6, og se kommentaren dertil.</p>
-    </note>
-    <note type="commentary" xml:id="not8-21" n="228,13">
-      <label><hi rendition="#bol">fra det Øieblik ... altfor tidlig</hi></label>
-      <p>sml. <ref target="../Not15/txt.xml#ss434" type="journalsAndPapers" n="434,13">notesbog 15:4</ref>, hvor SK i 1849 – med reference til forlovelsen den 10. sept. 1840 – erindrer, at allerede »anden Dagen saae jeg, at jeg havde grebet feil«, <hi rendition="#ita">SKS</hi> 19, 434,13.</p>
-    </note>
-    <note type="commentary" xml:id="not8-22" n="228,31">
-      <label><hi rendition="#bol">jeg har gjort Uret ... jeg lider</hi></label>
-      <p>Hvis lidelsen var somatisk, burde SK også if. loven oplyse sin forlovede om sin sygdom, jf. <hi rendition="#ita">Kong Christian den Femtes Danske Lov af det Iuridiske Fakultet giennemset</hi>, udg. af <persName key="Bærens, Johan Hendrich">Bærens</persName>, <placeName key="København">Kbh</placeName>. 1797 [1683], 3. bog, kap. 16, § 14, stk. 7: »Om nogen for [før] Trolovelsen havde nogen hemmelig Sygdom, som Spedalskhed, faldende Sot [epilepsi], eller nogen anden slig besmittelig Syge, og ikke den aabenbarede, da maae han, eller hun, blive hveranden qvit, om de det begiere.«</p>
-    </note>
-    <note type="commentary" xml:id="not8-24" n="229,17">
-      <label><hi rendition="#bol">hendes eneste Ønske ... Familien bønfalder mig</hi></label>
-      <p>jf. <ref target="../Not15/txt.xml#ss436" type="journalsAndPapers" n="436,3">notesbog 15:4</ref> fra 1849, hvor SK skriver, at <persName key="Olsen, Regine">Regine</persName>s fader, samme dag som SK havde brudt forlovelsen, bad ham om blive hos Regine (<ptr type="commentary" target="#not8-6" n="225,28"/>), da han pga. hendes fortvivlelse frygtede for hendes helbred, <hi rendition="#ita">SKS</hi> 19, 436,3-7.</p>
-    </note>
-    <note type="commentary" xml:id="not8-25" n="229,20">
-      <label><hi rendition="#bol">bringe hende til at troe ... letsindigt Msk.</hi></label>
-      <p>I <ref target="../Not15/txt.xml#ss440" type="journalsAndPapers" n="440,15">notesbog 15:9</ref> fra 1849 skriver SK om bruddet med <persName key="Olsen, Regine">Regine Olsen</persName>, »at hun selv sagde, at hvis jeg kunde overbevise hende om, at jeg var en Skurk, vilde hun let finde sig i det Hele«, <hi rendition="#ita">SKS</hi> 19, 440,15. Han husker desuden i <ref target="../Not15/txt.xml#ss436" type="journalsAndPapers" n="436,23">notesbog 15:4</ref>, at han efter bruddet havde tilbragt nætterne grædende i sin seng, hvorfor hans broder, <persName key="Kierkegaard, Peter Christian">Peter Christian</persName>, havde sagt: »at han vilde gaae ned til Familien og vise Dem, at jeg ikke var en Skurk. Jeg sagde: gjør Du det, jager jeg Dig en Kugle gjennem Hovedet«, <hi rendition="#ita">SKS</hi> 19, 436,23. Jf. også SKs brev til <persName key="Boesen, Emil Ferdinand">Emil Boesen</persName> af 31. okt. 1841, hvor han fortæller, at professor <persName key="Sibbern, Frederik Christian">F.C. Sibbern</persName> dagen før hans afrejse til <placeName>Berlin</placeName> havde meddelt Peter Christian, at han anså SK for et egoistisk og forfængeligt menneske: »Formodl. har Sibb. talt med Familien. Jeg vilde blot ønske, at han ogsaa havde talt med hende, thi saa havde jeg jo opnaaet min Hensigt«, <ref target="../b79/txt.xml#n80" type="lettersAndDedications" n="ba:49" rend="Brev 80"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 71</ref>.</p>
-    </note>
-    <note type="commentary" xml:id="not8-26" n="229,27">
-      <label><hi rendition="#bol">taler man om, at jordisk Kjærlighed gjør Een veltalende</hi></label>
-      <p>Hvis der sigtes til en talemåde, har denne ikke kunnet identificeres.</p>
-    </note>
-    <note type="commentary" xml:id="not8-28" n="231,4">
-      <label><hi rendition="#bol">da at ende mit unge Liv</hi></label>
-      <p>jf. <ref target="../Not8/txt.xml#ss228" type="journalsAndPapers" n="228,4">Not8:13</ref> om at »vendte jeg tilbage til hende – for derpaa at ende mit Liv«, <hi rendition="#ita">SKS</hi> 19, 228,4. SK var da 28 år.</p>
-    </note>
-    <note type="commentary" xml:id="not8-29" n="231,10">
-      <label><hi rendition="#bol">jeg var en Bedrager</hi></label>
-      <p>jf. <ref target="../Not8/txt.xml#n15" type="journalsAndPapers" n="15">Not8:15</ref> og <ptr type="commentary" target="#not8-25" n="229,20"/>.</p>
-    </note>
-    <note type="commentary" xml:id="not8-30" n="231,13">
-      <label><hi rendition="#bol">for Gud er alt muligt</hi></label>
-      <p>jf. <rs type="bible">Matt 19,26</rs>, hvor Jesus siger: »for Mennesker er dette umuligt, men for Gud ere alle Ting mulige« (NT-1819).</p>
-    </note>
-    <note type="commentary" xml:id="not8-31" n="231,14">
-      <label><hi rendition="#bol">at friste Gud</hi></label>
-      <p>jf. fx artiklen »Versuchen«, § 3, i <hi rendition="#ita">M. Gottfried Büchner's biblische Real- und Verbal- Hand-Concordanz oder Exegetisch-homiletisches Lexicon</hi> bd. 1-2 (med fortsat paginering), 6. udg. ved <persName key="Heubner, Heinrich Leonhard">H.L. Heubner</persName>, <placeName>Halle</placeName> 1837-1840 [1740], ktl. 79; bd. 2, 1837, s. 1356f. Her hedder det, at menneskene frister Gud, »wenn diese aus Mißtrauen und Reizungen des Fleisches GOttes Wort, seine Verheißungen, Befehle, Drohungen, Güte, Allmacht und Alwissenheit in Zweifel ziehen, und freventlich Beweis davon verlangen; ja ihm deshalb mit Murren Zeit, Art und Weise vorzuschreiben sich unterstehen. Es geschieht 1) durch fresches Sündigen, wo man es darauf ankommen läßt, ob GOtt strafen werde. 2) Durch tollkühnes, erhgeiziges, sich in Gefahren wagen ohne Beruf, wo man auf GOttes Schutz hofft.«</p>
-    </note>
-    <note type="commentary" xml:id="not8-32" n="231,18">
-      <label><hi rendition="#bol">saa var den hele Sag en Smørrebrød</hi></label>
-      <p>dvs. en let sag; talemåde, bl.a. optegnet i <persName key="Molbech, Christian">C. Molbech</persName> <hi rendition="#ita">Dansk Ordbog</hi> bd. 1-2, <placeName key="København">Kbh</placeName>. 1833, ktl. 1032; bd. 2, s. 374, sp. 1.</p>
-    </note>
-    <note type="commentary" xml:id="not8-34" n="231,26">
-      <label><hi rendition="#bol">mine Breve vil jeg vaage over</hi></label>
-      <p>sigter formentlig til SKs fortrolige breve fra <placeName>Berlin</placeName> til vennen <persName key="Boesen, Emil Ferdinand">Emil Boesen</persName> af 31. okt. 1841 (<ref target="../b79/txt.xml#n80" type="lettersAndDedications" n="ba:49" rend="Brev 80"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 71</ref>-72) og 16. nov. 1841 (<ref target="../b79/txt.xml#n81" type="lettersAndDedications" n="ba:50" rend="Brev 81"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 73</ref>-75).</p>
-    </note>
-    <note type="commentary" xml:id="not8-35" n="231,31">
-      <label><hi rendition="#bol">nede paa Gaden</hi></label>
-      <p>formentlig i Mittelstraße (<ptr type="commentary" target="#not8-12" n="227,2"/>). Der kan dog også være tale om enten Jägerstraße el. Charlottenstraße, da SK efter at være flyttet fra sin første vært boede på hjørnet af disse gader, hvor han lejede hele lejligheden på 1. sal hos apoteker <persName key="Lange">Lange</persName>, der fra 1840 havde drevet »König-Salomo-Apotheke« i stueetagen på samme adresse, jf. <hi rendition="#ita">Adreß-Kalender für die königlich Haupt- und Residenz-Städte Berlin und Potsdam, desgleichen für Brandenburg, Charlottenburg, Frankfurt, Neu-Ruppin, Oranienburg, Prenzlow, Schwedt und Spandaw</hi>, <placeName>Berlin</placeName> 1842, s. 364.</p>
-    </note>
-    <note type="commentary" xml:id="not8-36" n="231,34">
-      <label><hi rendition="#bol">Jeg tænker ... i Maaneskin ombord paa Skibet</hi></label>
-      <p><ptr type="commentary" target="#not8-4" n="225,21"/> og <ptr type="commentary" target="#not8-9" n="226,19"/>. –
-        <hi rendition="#bol">Finlap</hi>perne: finne el. person fra <placeName>Finmarken</placeName> i <placeName>Norge</placeName>.</p>
-    </note>
-    <note type="commentary" xml:id="not8-37" n="232,1">
-      <label><hi rendition="#bol">i Nærheden af det Huus ... en Kirke</hi></label>
-      <p><persName key="Olsen, Regine">Regine Olsen</persName> boede hos sine forældre i <placeName key="Nybørs">Nye-Børs</placeName>, matrikel nr. 66 (jf. <ref target="../Not15/txt.xml#ss433" type="journalsAndPapers" n="433,20">notesbog 15:4</ref>, <hi rendition="#ita">SKS</hi> 19, 433,20, samt kommentaren hertil), i en nu nedrevet ejendom, som man kaldte »De sex Søstre«, ml. <placeName>Børsen</placeName> og <placeName>Knippelsbro</placeName> (<ref target="../kort/kbh_C2.htm" type="map" n="kbh"><hi rendition="#ita">se kort 2, C2-3</hi></ref>). På den modsatte side af kanalen mod NV lå
-        <placeName>Holmens Kirke</placeName> (<ref target="../kort/kbh_C3.htm" type="map" n="kbh"><hi rendition="#ita">se kort 2, C3</hi></ref>).</p>
-    </note>
-    <note type="commentary" xml:id="not8-39" n="232,10">
-      <label><hi rendition="#bol">dersom hun ønskede den, min hele Formue stod til hendes Tjeneste</hi></label>
-      <p>sml. brev til <persName key="Boesen, Emil Ferdinand">Emil Boesen</persName> af 16. nov. 1841, hvor SK skriver, »at jeg med Glæde skulde nedlægge min Formue heel og holden i hendes Hænder, hvis hun ønskede det«, <ref target="../b79/txt.xml#n81" type="lettersAndDedications" n="ba:50" rend="Brev 81"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 74</ref>. –
-        <hi rendition="#bol">min hele Formue</hi>: SKs fader døde i 1838 og efterlod sig en formue, der i 1839 blev opgjort til o. 125.000 rigsdaler, og som SK og hans broder arvede (jf. <persName key="Brandt, Frithiof">F. Brandt</persName> og <persName key="Thorkelin, Else">E. Thorkelin</persName>
-        <hi rendition="#ita">Søren Kierkegaard og pengene</hi>, 2. udg., <placeName key="København">Kbh</placeName>. 1993 [1935], s. 67); i 1841 har SKs personlige formue derfor næppe udgjort under 50.000 rigsdaler, en betragtelig sum, da fx en dommer i Hof- og Stadsretten i <placeName>København</placeName> havde 1.200-1.800 rigsdaler og en håndværkssvend o. 200 rigsdaler i årsløn, mens man regnede 400 rigsdaler for nok til at forsørge en familie.</p>
-    </note>
-    <note type="commentary" xml:id="not8-41" n="232,21">
-      <label><hi rendition="#bol">Efter Aftale sender jeg Dig herved den Blomst tilbage ... blev den opelsket</hi></label>
-      <p>sml. et udateret brev til <persName key="Olsen, Regine">Regine Olsen</persName> med reference til en gave, en brevtaske, som hun formentlig netop har givet ham til hans fødselsdag, 5. maj 1841: »Jeg sender Dig hermed en Rose, den har ikke som Din Gave under mine Hænder udfoldet sig i al sin Glands; men den er visnet under mine Hænder; jeg har ikke været som Du et glad Vidne til, hvorledes Alt udfoldede sig, jeg har været et veemodigt Vidne til, hvorledes den mere og mere svandt hen; jeg har seet den lide; den tabte Duften, dens Hoved blev mat, dens Blade bøiede sig i Dødens Strid, dens Rødme svandt hen, dens friske Stengel fortørredes; den glemte sin Herlighed, den troede sig glemt, og den vidste ikke, at Du bevarede Erindringen om den, den vidste ikke, at jeg bestandig kom den ihu, den vidste ikke, at vi begge forenede bevarede dens Minde – I Sandhed dersom den havde vidst det, da var den levet op igjen af Glæde, og naar dens Tid atter var kommen, da vilde den blot have haft et Ønske, og dette Ønske efterkommer jeg herved, den vilde ønske, at den maatte blive hos Dig; thi den vilde sige: Du saae mig daglig, og om jeg end takker Dig for, at Du ikke glemte mig, saa forundrer det mig dog ikke, men hun saae mig ikke og dog glemte hun mig ikke. Saa efterkommer jeg da herved dens sidste Villie, den vender tilbage til Dig, som den oprindelig tilhørte Dig«, <ref target="../b127/txt.xml#n152" type="lettersAndDedications" n="ba:40" rend="Brev 152"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 67</ref>.</p>
-    </note>
-    <note type="commentary" xml:id="not8-42" n="233,10">
-      <label><hi rendition="#bol">dog maa jeg ... en Bedrager</hi></label>
-      <p>jf. <ref target="../Not8/txt.xml#n15" type="journalsAndPapers" n="15">Not8:15</ref> og <ptr type="commentary" target="#not8-25" n="229,20"/>.</p>
-    </note>
-    <note type="commentary" xml:id="not8-43" n="233,14">
-      <label><hi rendition="#bol">de udvortes Anfægtelser af Msk. som vil trænge ind paa mig, agter jeg ikke stort</hi></label>
-      <p>sigter enten til dem, der – som <persName key="Olsen, Regine">Regine</persName>s far (<ptr type="commentary" target="#not8-24" n="229,17"/>) – ville bevæge SK til at vende tilbage til Regine, el. til dem, der – som <persName key="Sibbern, Frederik Christian">Sibbern</persName> (<ptr type="commentary" target="#not8-25" n="229,20"/>) – nedgjorde SK for ikke at gøre det, jf. SKs reaktion i brev til <persName key="Boesen, Emil Ferdinand">Emil Boesen</persName> af 16. nov. 1841 –
-        »Lad Byen snakke«, <ref target="../b79/txt.xml#n81" type="lettersAndDedications" n="ba:50" rend="Brev 81"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 74</ref> – og i brev til pastor <persName key="Spang, Peter Johannes">P.J. Spang</persName> af 18. nov. 1841, hvor han om årsagen til sin rejse skriver, at dersom »der ikke havde været andre Ting, der havde bestemt mig, saa var jeg ikke reist, jeg er ikke vant til at gaae afveien for et Opløb«, <ref target="../b43/txt.xml#n45" type="lettersAndDedications" n="ba:51" rend="Brev 45"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 76</ref>.</p>
-    </note>
-    <note type="commentary" xml:id="not8-44" n="233,32">
-      <label><hi rendition="#bol">idag</hi></label>
-      <p>senest 22. nov. 1841, jf. <ref target="../Not8/txt.xml#n33" type="journalsAndPapers" n="33">Not8:33</ref> og <ptr type="commentary" target="#not8-50" n="235,9"/>.</p>
-    </note>
-    <note type="commentary" xml:id="not8-45" n="234,1">
-      <label><hi rendition="#bol">et Brev til Hjemmet, der skulde trykkes</hi></label>
-      <p>dvs. et brev stilet til <persName key="Olsen, Regine">Regine</persName>s hjem i <placeName key="Nybørs">Nye-Børs</placeName>, matrikel nr. 66 (<ptr type="commentary" target="#not8-37" n="232,1"/>), dog ikke således adresseret, men trykt anonymt i en københavnsk avis. Især i <hi rendition="#ita">Adresseavisen</hi> (<ptr type="commentary" target="#not8-4" n="225,21"/>) lod private indrykke anonyme breve, hvilket bl.a. afspejles i samtidens noveller, hvor fx en frier, der er faldet i unåde hos den elskedes familie, må henvende sig således, jf. <persName key="Gyllembourg, Thomasine">Thomasine Gyllembourg</persName>
-        <hi rendition="#ita">Familien Polonius</hi>, <placeName key="København">Kbh</placeName>. 1827.</p>
-    </note>
-    <note type="commentary" xml:id="not8-46" n="234,3">
-      <label><hi rendition="#bol">Min R</hi></label>
-      <p><ptr type="commentary" target="#not8-6" n="225,28"/>.</p>
-    </note>
-    <note type="commentary" xml:id="not8-47" n="234,20">
-      <label><hi rendition="#bol">jeg turde digte ... overtale mig dertil</hi></label>
-      <p>sml. <ref target="../Not8/txt.xml#n18" type="journalsAndPapers" n="18">Not8:18</ref> og brev til <persName key="Boesen, Emil Ferdinand">Emil Boesen</persName> af 16. nov. 1841, hvor SK bl.a. skriver: »Jeg digter hende ikke jeg erindrer hende ikke, men jeg kalder mig til Regnskab. Her er min Grændse. Jeg kan digte Alt troer jeg, men hvor der er Tale om Pligt, Forpligtelse, Ansvar, Skyld etc. der kan og der vil jeg ikke digte. Havde hun hævet Forbindelsen med mig, ja da skulde min Sjæl snart have kjørt Glemselens Plov over hende, hun skulde have tjent mig som andre før hende har gjort det – men nu, nu tjener jeg hende«, <ref target="../b79/txt.xml#n81" type="lettersAndDedications" n="ba:50" rend="Brev 81"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 74</ref>.</p>
-    </note>
-    <note type="commentary" xml:id="not8-48" n="235,2">
-      <label><hi rendition="#bol">Prokurator</hi></label>
-      <p>sagfører; person, som fører sager for andre el. 'går i rette for andre', burde if. <persName key="Christian V">Chr. V</persName>'s Danske Lov være god, oprigtig og uberygtet (1. bog, kap. 9, § 8), men blev i almindelighed udskældt for at bøje loven af hensyn til klientens sag og sin egen indtjening.</p>
-    </note>
-    <note type="commentary" xml:id="not8-49" n="235,3">
-      <label><hi rendition="#bol">Til Afskeed ... at erindre hende</hi></label>
-      <p>jf. <ref target="../Not15/txt.xml#ss436" type="journalsAndPapers" n="436,17">notesbog 15:4</ref>, hvor SK i 1849 om bruddet med <persName key="Olsen, Regine">Regine</persName> den 11. el. 18. okt. 1841 skriver: »Hun sagde: lov at tænke paa mig. Det gjorde jeg«, <hi rendition="#ita">SKS</hi> 19, 436,17.</p>
-    </note>
-    <note type="commentary" xml:id="not8-50" n="235,9">
-      <label><hi rendition="#bol">hørt Schellings 2den Time</hi></label>
-      <p>den 22. nov. 1841. – <persName key="Schelling, Friedrich Wilhelm Joseph" n="*">Friedrich Wilhelm Joseph Schelling</persName> (1775-1854), ty. filosof, studerede i 1790-95 filosofi og teologi i <placeName>Tübingen</placeName> sammen med <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName> (<ptr type="commentary" target="#not8-65" n="237,21"/>), blev i 1798 ekstraordinær prof. i <placeName>Jena</placeName>, i 1803 ordinær prof. i <placeName>Würzburg</placeName>, underviste ved universitetet i <placeName>Erlangen</placeName> fra 1820 til 1827, da han blev prof. i <placeName>München</placeName>. Herfra blev han i 1841 – som modvægt til venstrehegelianismen – kaldet til universitetet i <placeName>Berlin</placeName>, hvor han fra 15. nov. til 18. marts 1842 holdt forelæsninger over åbenbaringens filosofi. SK fulgte forelæsningerne og tog referater fra dem frem til 3. feb. 1842, jf. <ref target="../Not11/txr.xml#ss415" type="textCriticalAccount" n="415">tekstredegørelsen til notesbog 11</ref>, <hi rendition="#ita">SKS</hi> K19, 415-418.</p>
-    </note>
-    <note type="commentary" xml:id="not8-51" n="235,12">
-      <label><hi rendition="#bol">»Virkelighed« om Philosophiens Forhold til Virkelighed</hi></label>
-      <p>jf. SKs referat fra 2. time i <ref target="../Not11/txt.xml#ss305" type="journalsAndPapers" n="305,16">notesbog 11:2</ref>, <hi rendition="#ita">SKS</hi> 19, 305,16.</p>
-    </note>
-    <note type="commentary" xml:id="not8-52" n="235,13">
-      <label><hi rendition="#bol">da sprang Tankens Foster ... i Elisabeth</hi></label>
-      <p>sigter til <rs type="bible">Luk 1,41</rs>, hvor <persName key="Elisabeth">Elisabeth</persName>, der venter sig <persName key="Johannes Døber">Johannes Døber</persName>, får besøg af <persName key="Maria">Maria</persName>, som forinden er blevet bebudet, at hun skal føde Guds søn: »Og det begav sig, der Elisabeth hørte Mariæ Hilsen, sprang Fosteret i hendes Liv; og Elisabeth blev fyldt med den Hellig Aand« (NT-1819), jf. v. 44: »Thi see, der din Hilsens Røst kom mig til Øren, sprang Fosteret i mit Liv med Fryd« (NT-1819).</p>
-    </note>
-    <note type="commentary" xml:id="not8-55" n="236,7">
-      <label><hi rendition="#bol">at være troe over Lidet <hi rendition="#ita">(...)</hi> det Pund, der betroedes mig</hi></label>
-      <p>spiller på Jesu lignelse om de betroede pund, <rs type="bible">Luk 19,11-27</rs>, hvor en herre giver sine tjenere hver et pund og byder dem at investere det, mens han er bortrejst; ved hjemkomsten lader han sine tjenere kalde, jf. v. 16-17: »Da traadte den første frem, og sagde: Herre, dit Pund haver forhvervet ti Pund. Og han sagde til ham: vel, du gode Tiener! efterdi du haver været tro i det Lidet, skal du have Magt over ti Stæder« (NT-1819).</p>
-    </note>
-    <note type="commentary" xml:id="not8-56" n="236,12">
-      <label><hi rendition="#bol">dersom Du tabte ... Din Sjæl</hi></label>
-      <p>spiller på
-        <rs type="bible">Matt 16,26</rs>: »Thi hvad gavner det Mennesket, om han vinder den ganske Verden, men tager Skade paa sin Siel?« (NT-1819).</p>
-    </note>
-    <note type="commentary" xml:id="not8-57" n="236,26">
-      <label><hi rendition="#bol">Min</hi></label>
-      <p><ptr type="commentary" target="#not8-6" n="225,28"/> og <ptr type="commentary" target="#not8-19" n="228,1"/></p>
-    </note>
-    <note type="commentary" xml:id="not8-58" n="236,27">
-      <label><hi rendition="#bol">Salomo siger ... et sødt Kys</hi></label>
-      <p>sigter til <rs type="bible">Ordsp 24,26</rs>: »Man skal kysse Læberne paa den, som svarer rette Ord« (NT-1819). Jf. <hi rendition="#ita">Die Bibel, oder die ganze Heilige Schrift des alten und neuen Testaments, nach der deutschen Uebersetzung D. Martin Luthers</hi>, <placeName>Karlsruhe</placeName> og <placeName>Leipzig</placeName> 1836, ktl. 3, der har: »Eine richtige Antwort ist wie ein lieblicher Kuß.«
-        – <rs type="bible" key="Ordsp">Ordsprogenes Bog</rs> er i den kirkelige tradition blevet tillagt kong <persName key="Salomo">Salomo</persName> og bar derfor også betegnelsen »Die Sprüche Salomons« i den nævnte ty. overs. og »Salomo Ordsprog« i <hi rendition="#ita">Biblia, det er: den ganske Hellige Skrifts Bøger</hi>, <placeName key="København">Kbh</placeName>. 1830, ktl. 7.</p>
-    </note>
-    <note type="commentary" xml:id="not8-59" n="236,33">
-      <label><hi rendition="#bol">Din</hi></label>
-      <p>I sine breve til <persName key="Olsen, Regine">Regine Olsen</persName> under deres forlovelse underskrev SK sig som regel »Din S.K.«, »Din for evig« el. »Din for evig / S.K.« (<ptr type="commentary" target="#not8-6" n="225,28"/> og <ptr type="commentary" target="#not8-19" n="228,1"/>).</p>
-    </note>
-    <note type="commentary" xml:id="not8-60" n="237,2">
-      <label><hi rendition="#bol">Evangeliet om den barmhjertige Samaritan</hi></label>
-      <p>sigter til Jesu lignelse om den barmhjertige samaritaner, der i modsætning til en præst og en levit hjælper en mand, der er blevet overfaldet af røvere, jf. <rs type="bible">Luk 10,25-37</rs>, evangeliet på 13. søndag efter trinitatis.</p>
-    </note>
-    <note type="commentary" xml:id="not8-61" n="237,8">
-      <label><hi rendition="#bol">han siger: hvo var hans Næste</hi></label>
-      <p>Jesus fortæller lignelsen til en lovkyndig, der nok ved, at han if. loven skal elske sin næste som sig selv, men spidsfindigt spørger ham, <rs type="bible">Luk 10,29</rs>: »hvo [hvem] er da min Næste?« (NT-1819).</p>
-    </note>
-    <note type="commentary" xml:id="not8-62" n="237,9">
-      <label><hi rendition="#bol">Svaret er: den, der gjorde vel mod ham</hi></label>
-      <p>Efter at have fortalt lignelsen spørger Jesus den lovkyndige om, hvem der var den overfaldnes næste, og han svarer, <rs type="bible">Luk 10,37</rs>: »den, som gjorde Barmhiertighed imod ham« (NT-1819).</p>
-    </note>
-    <note type="commentary" xml:id="not8-63" n="237,14">
-      <label><hi rendition="#bol">Kraftmaaler</hi></label>
-      <p>apparat til måling af en fysisk kraft, især som forlystelse til måling af muskelstyrke.</p>
-    </note>
-    <note type="commentary" xml:id="not8-64" n="237,16">
-      <label><hi rendition="#bol">Jonas Olsen ... har hadet</hi></label>
-      <p><persName key="Olsen, Regine">Regine</persName>s ældre broder, <persName key="Olsen, Jonas Christian" n="*">Jonas Christian Olsen</persName> (1816-1902), 1837 immatrikuleret ved <placeName>Københavns Universitet</placeName>, hvor han 1842 bestod teologisk embedseksamen; hans billet – lille brev, som typisk blev befordret af en tjener el. af fodposten – er ikke bevaret.</p>
-    </note>
-    <note type="commentary" xml:id="not8-65" n="237,21">
-      <label><hi rendition="#bol">Hegel <hi rendition="#ita">(...)</hi> i »Æsth.« ... besteht</hi></label>
-      <p>med enkelte ortografiske afvigelser ordret citat fra G.W.F. Hegel <hi rendition="#ita">Vorlesungen über die Aesthetik</hi>, udg. af <persName key="Hotho, Heinrich Gustav">H.G. Hotho</persName>, bd. 1-3, <placeName>Berlin</placeName> 1835-38, ktl. 1384-1386, i <hi rendition="#ita">Hegel's Werke</hi> (se nedenfor) bd. 10,1-3 (<hi rendition="#ita">Jub</hi>. bd. 12-14); bd. 10,3 (<hi rendition="#ita">Jub</hi>. bd. 14), s. 362. –
-        <hi rendition="#bol">Hegel</hi>: <persName key="Hegel, Georg Wilhelm Friedrich" n="*">Georg Wilhelm Friedrich Hegel</persName> (1770-1831), ty. filosof, 1801-06 privatdocent (ekstraordinær prof.) i <placeName>Jena</placeName>, 1816-18 prof. i <placeName>Heidelberg</placeName> og fra 1818 til sin død prof. i Berlin. SK havde i sit bibliotek en række separatudgaver af <hi rendition="#ita">Georg Wilhelm Friedrich Hegel's Werke. Vollständige Ausgabe</hi> bd. 1-18, Berlin 1832-45 (forkortet <hi rendition="#ita">Hegel's Werke</hi>).</p>
-    </note>
-    <note type="commentary" xml:id="not8-66" n="238,4">
-      <label><hi rendition="#bol">D. Juan</hi></label>
-      <p><persName key="Mozart, Wolfgang Amadeus">Mozart</persName>s berømte opera <hi rendition="#ita">Il dissoluto punito ossia Il Don Giovanni</hi> (i <placeName>Danmark</placeName> og <placeName>Tyskland</placeName> kaldt <hi rendition="#ita">Don Juan</hi>) blev komponeret 1787 til tekst af <persName key="Ponte, Lorenzo da">Lorenzo da Ponte</persName>.</p>
-    </note>
-    <note type="commentary" xml:id="not8-67" n="238,13">
-      <label><hi rendition="#bol">Demoiselle Hedevig Schulze ... Elviras Partie</hi></label>
-      <p><persName key="Schulze, Hedwig" n="*">Hedwig Schulze</persName> (1815-45), ty. sangerinde, debuterede 1839 på
-        <placeName>Berliner Hofoper</placeName> på
-        <placeName>Unter den Linden</placeName>, hvor hun frem til 1843 bl.a. sang partiet som den forførte <persName key="Donna Elvira">Donna Elvira</persName> i <persName key="Mozart, Wolfgang Amadeus">Mozart</persName>s opera <hi rendition="#ita">Don Juan</hi>. Mens SK var i <placeName>Berlin</placeName>, blev <hi rendition="#ita">Don Juan</hi> første gang opført 3. dec. og igen 12. dec. 1841, begge gange på Berliner Hofoper, jf. <hi rendition="#ita">Almanach für Freunde der Schauspielkunst auf das Jahr 1842</hi>, udg. af <persName key="Wolff, L.">L. Wolff</persName>, Berlin 1843, s. 22f. Besætningen på disse opførelser er ikke angivet, men under rubrikken »Sängerinnen« i »Verzeichnis sämmtlicher Mitglieder der königlichen Schauspiele zu Berlin« i samme almanak ses »Dlle. Hedwig Schulze«, s. 11. Jf. <ref target="../Not8/txr.xml#ss301" type="textCriticalAccount" n="301">tekstredegørelsen, s. 301</ref>f.</p>
-    </note>
-    <note type="commentary" xml:id="not8-68" n="238,29">
-      <label><hi rendition="#bol">Paulus skriver ... Glæder Eder <hi rendition="#ita">(...)</hi> og atter ... Glæder Eder</hi></label>
-      <p>jf. <rs type="bible">Fil 4,4</rs>: »Glæder Eder i Herren altid; atter siger jeg: glæder Eder!« (NT-1819).</p>
-    </note>
-    <note type="commentary" xml:id="not8-69" n="240,5">
-      <label><hi rendition="#bol">det jødiske Folk det udvalgte</hi></label>
-      <p>I GT er det israelitiske el. jødiske folk Guds udvalgte folk.</p>
-    </note>
-    <note type="commentary" xml:id="not8-70" n="240,31">
-      <label><hi rendition="#bol">Skriften siger ... klingende Bjelde</hi></label>
-      <p>jf. <rs type="bible">1 Kor 13</rs>, v. 1: »Om jeg så taler med menneskers og engles tunger, men ikke har kærlighed, er jeg et rungende malm og en klingende bjælde«, og v. 13: »Så bliver da tro, håb, kærlighed, disse tre. Men størst af dem er kærligheden.«</p>
-    </note>
-    <note type="commentary" xml:id="not8-71" n="240,37">
-      <label><hi rendition="#bol">denne Stemme ... gjemmes der</hi></label>
-      <p>formentlig allusion til englenes ord til hyrderne på marken om Kristi fødsel: »Frygt ikke! Se, jeg forkynder jer en stor glæde« (<rs type="bible">Luk 2,10</rs>), som hyrderne siden refererer for <persName key="Josef, Marias mand">Josef</persName> og <persName key="Maria">Maria</persName> i stalden: »men Maria gemte alle disse ord i sit hjerte og grundede over dem« (<rs type="bible">Luk 2,19</rs>).</p>
-    </note>
-    <note type="commentary" xml:id="not8-73" n="241,8">
-      <label><hi rendition="#bol">ikke lader sig uden Vidnedsbyrd</hi></label>
-      <p>jf. <rs type="bible">ApG 14,17</rs>, hvor <persName key="Paulus">Paulus</persName> siger, at Gud ikke har »ladet sig selv uden Vidnesbyrd, i det han giorde os godt, og gav os Regn og frugtbare Tider af Himmelen, i det han fyldte os med Føde, og vore Hierter med Glæde« (NT-1819).</p>
-    </note>
-    <note type="commentary" xml:id="not8-74" n="241,22">
-      <label><hi rendition="#bol">Troldmand Simon ... faldt ned</hi></label>
-      <p><persName key="Simon fra Samaria" n="*">Simon</persName> fra Gitton i <placeName>Samaria</placeName> (1. årh.), med tilnavnet Magus (lat. 'troldmand'), nævnes i <rs type="bible">ApG 8,9-24</rs>, hvor han søger at købe sig til Helligånden. Legenden fortæller, at Simon kom til <placeName>Rom</placeName>, hvor han søgte at vise kejser <persName key="Nero">Nero</persName> sin magt ved at flyve, men af apostlen <persName key="Peter">Peter</persName> blev bragt til fald. SKs kilde er formentlig <persName key="Arnold, Gottfried">G. Arnold</persName>, der i sin kætterhistorie fortæller, at Simon foregav, »er wolle nun in den Himmel fliegen / auch darauf wirklich in die lufft gehoben / aber durch der Apostel gebet herunter gestürzet worden«, <hi rendition="#ita">Gottfrid Arnolds Unparteyische Kirchen- und Ketzer-Historie / von Anfang des Neuen Testaments biß auff das Jahr CHristi 1688</hi> bd. 1-2 i fire dele, <placeName key="Frankfurt am Main">Frankfurt</placeName> am Main 1699-1700, ktl. 154-155; bd. 1, 1. del, s. 43, sp. 2.</p>
-    </note>
-    <note type="commentary" xml:id="not8-75" n="241,27">
-      <label><hi rendition="#bol">den, der har Øre til at høre</hi></label>
-      <p>allusion til en vending, som Jesus ofte afslutter sine lignelser med, fx <rs type="bible">Matt 11,15</rs>: »Den, som har øren, han høre!« Jf. også
-        <rs type="bible">Matt 13,9</rs>; <rs type="bible">Matt 13,43</rs>; <rs type="bible">Mark 4,9</rs>; <rs type="bible">Luk 8,8</rs>; og <rs type="bible">Luk 14,35</rs>.</p>
-    </note>
-    <note type="commentary" xml:id="not8-101" n="243,1">
-      <label><hi rendition="#bol">Notanda. ad philosophiam pertinentia</hi></label>
-      <p>lat. 'Vigtige bemærkninger vedr. filosofien'.</p>
-    </note>
-    <note type="commentary" xml:id="not8-76" n="245,1">
-      <label><hi rendition="#bol">d. 1 Dec. I det som Werder hidtil har gjennemgaaet</hi></label>
-      <p><persName key="Werder, Karl" n="*">Karl Werder</persName> (1806-93), ty. filosof og digter, studerede hos Hegel i <placeName>Berlin</placeName>, hvor han 1838 blev ekstraordinær prof., og hvor SK fulgte hans forelæsninger over sin <hi rendition="#ita">Logik. Als Commentar und Ergänzung zu Hegels Wissenschaft der Logik</hi>, 1. del, Berlin 1841, ktl. 867 (forkortet <hi rendition="#ita">Logik</hi>), jf. <persName key="Hegel, Georg Wilhelm Friedrich">G.W.F. Hegel</persName>
-        <hi rendition="#ita">Wissenschaft der Logik</hi>, udg. af <persName key="Henning, L. von">L. v. Henning</persName>, i <hi rendition="#ita">Hegel's Werke</hi> (<ptr type="commentary" target="#not8-65" n="237,21"/>) bd. 3-5, Berlin 1833-34 [1812-16], ktl. 552-554 (<hi rendition="#ita">Jub</hi>. bd. 4-5). Det har ikke ladet sig afgøre, hvor langt Werder var kommet i sine forelæsninger den 1. dec. 1841.</p>
-    </note>
-    <note type="commentary" xml:id="not8-77" n="245,4">
-      <label><hi rendition="#bol">Overgangen fra »Werden« til »Daseyn«</hi></label>
-      <p>jf. afsnittet »<hi rendition="#ita">Auflösung des Werdens</hi>« i <persName key="Werder, Karl">Werder</persName> <hi rendition="#ita">Logik</hi>, s. 108-111, som refererer til <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>
-        <hi rendition="#ita">Wissenschaft der Logik</hi>, 1. bog, 1. afsnit, kap. 1, C,3 (»<hi rendition="#ita">Aufheben des Werdens</hi>«), i <hi rendition="#ita">Hegel's Werke</hi> bd. 3, s. 109-111 (<hi rendition="#ita">Jub</hi>. bd. 4, s. 119-121).</p>
-    </note>
-    <note type="commentary" xml:id="not8-78" n="245,5">
-      <label><hi rendition="#bol">fra Foranderlighed ... til Uendelighed</hi></label>
-      <p>jf. afsnittet »<hi rendition="#ita">Auflösung der Veränderung</hi>« i <persName key="Werder, Karl">Werder</persName> <hi rendition="#ita">Logik</hi>, s. 146-164, som refererer til <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>
-        <hi rendition="#ita">Wissenschaft der Logik</hi>, 1. bog, 1. afsnit, kap. 2, i <hi rendition="#ita">Hegel's Werke</hi> bd. 3, s. 137-173 (<hi rendition="#ita">Jub</hi>. bd. 4, s. 147-183), dvs. B,c (»Die Endlichkeit«), C (»Die Unendlichkeit«) og »Der Uebergang«.</p>
-    </note>
-    <note type="commentary" xml:id="not8-79" n="245,7">
-      <label><hi rendition="#bol">Entstehen (Nichts i Seyn) ... ɔ: Daseyn</hi></label>
-      <p>jf. <persName key="Werder, Karl">Werder</persName>
-        <hi rendition="#ita">Logik</hi>, s. 109: »Im Werden ist die unbestimmte Ruhe, das Seyn, das <hi rendition="#ita">abstracte</hi> Entstehen, aufgehoben; darum ist es rastlose Bewegung: Vergehen – welches als rastlose Bewegung selbst vergeht, und als die Bewegung des sich-selbst-Produzirens Entstehen und somit bestimmte in sich bewegte Ruhe: Geworden, Daseyn ist.«
-        – <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName> beskriver det dialektiske forhold mellem »Entstehen« og »Vergehen« i <hi rendition="#ita">Wissenschaft der Logik</hi>, 1. bog, 1. afsnit, kap. 1, C,2 (»<hi rendition="#ita">Momente des Werdens</hi>«), i <hi rendition="#ita">Hegel's Werke</hi> bd. 3, s. 108f. (<hi rendition="#ita">Jub</hi>. bd. 4, s. 118f.): »Beide sind dasselbe, Werden, und auch als diese so unterschiedenen Richtungen durchdringen und paralysiren sie sich gegenseitig. Die eine ist <hi rendition="#ita">Vergehen</hi>; Seyn geht in Nichts über, aber Nichts ist ebenso sehr das Gegentheil seiner selbst, Uebergehen in Seyn, Entstehen. Dieß Entstehen ist die andere Richtung; Nichts geht in Seyn über, aber Seyn hebt ebenso sehr sich selbst auf und ist vielmehr das Uebergehen in Nichts, ist Vergehen«, s. 109 (<hi rendition="#ita">Jub</hi>. bd. 4, s. 119). Stedet citeres i Werder <hi rendition="#ita">Logik</hi>, s. 98.</p>
-    </note>
-    <note type="commentary" xml:id="not8-80" n="245,12">
-      <label><hi rendition="#bol">Etwas og Anderes ... forme hinanden</hi></label>
-      <p>If. <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>s spekulative logik forholder kategorierne »Etwas« og »Anderes« sig dialektisk til hinanden, idet de gensidigt implicerer hinanden som modsætninger, jf. <persName key="Werder, Karl">Werder</persName>
-        <hi rendition="#ita">Logik</hi>, s. 126-133, især s. 132f.: »Das Etwas ist für Anderes und das Andere ist für Etwas, was heißt das? Es heißt: das Etwas ist außerdem daß es Etwas und <hi rendition="#ita">nicht</hi> das Andere ist, <hi rendition="#ita">auch</hi> das Andre, und das Andre ist, außerdem daß es das Andre und <hi rendition="#ita">nicht</hi> das Etwas ist, <hi rendition="#ita">auch</hi> Etwas. Noch nicht <hi rendition="#ita">total</hi> ist jedes das andre, sondern wie gesagt: nur momentan, d. h. <hi rendition="#ita">auch</hi>. Sie sind in Einheit mit <hi rendition="#ita">einander</hi> oder sind Eines als <hi rendition="#ita">zwei</hi>.« Jf. Hegel <hi rendition="#ita">Wissenschaft der Logik</hi>, 1. bog, 1. afsnit, kap. 2, B,a (»<hi rendition="#ita">Etwas und ein Anderes</hi>«), i <hi rendition="#ita">Hegel's Werke</hi> bd. 3, s. 122-129 (<hi rendition="#ita">Jub</hi>. bd. 4, s. 132-129).</p>
-    </note>
-    <note type="commentary" xml:id="not8-100" n="245,21">
-      <label><hi rendition="#bol">men dette udtrykt som Eenhed er Forandring</hi></label>
-      <p>jf. <persName key="Werder, Karl">Werder</persName>
-        <hi rendition="#ita">Logik</hi>, s. 138: »Die Wahrheit des Etwas und des Anderen ist die Veränderung. Als Veränderung hat der Begriff des Daseyns sich realisirt. Das Daseyn seinem Begriffe nach ist die Gegenwart des Werdens. Dieses gegenwärtige daseyende Werden, <hi rendition="#ita">das Geworden als Werdendes</hi>, als Werden seiner selbst, nennen wir die <hi rendition="#ita">Veränderung</hi>.«</p>
-    </note>
-    <note type="commentary" xml:id="not8-81" n="245,24">
-      <label><hi rendition="#bol">Men Uendelighed ... altsaa er Uendelighed</hi></label>
-      <p>sigter til <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>s redegørelse for det dialektiske forhold ml. endelighed og uendelighed i <hi rendition="#ita">Wissenschaft der Logik</hi> (<ptr type="commentary" target="#not8-78" n="245,5"/>), som <persName key="Werder, Karl">Werder</persName> kommenterer i <hi rendition="#ita">Logik</hi>, s. 152: »Das Endliche mit sich zusammengehend <hi rendition="#ita">vergeht</hi>; das worin es, warum es, kraft dessen es vergeht, ist also es <hi rendition="#ita">selber als nicht es selber</hi>. Das aber sagt das Unendliche aus und sonst nichts. <hi rendition="#ita">(...)</hi> In dem <hi rendition="#ita">Worte</hi>: <hi rendition="#ita">Un - endlich</hi> liegt offenbart der <hi rendition="#ita">Gedanke</hi> des Unendlichen – der Gedanke, daß es das <hi rendition="#ita">Endliche</hi> selber als <hi rendition="#ita">nicht</hi> es selber ist«.</p>
-    </note>
-    <note type="commentary" xml:id="not8-83" n="245,30">
-      <label><hi rendition="#bol">En Bemærkning ... Æsthetik 3 D. p. 243</hi></label>
-      <p>jf. <persName key="Hegel, Georg Wilhelm Friedrich">G.W.F. Hegel</persName>
-        <hi rendition="#ita">Vorlesungen über die Aesthetik</hi> (<ptr type="commentary" target="#not8-65" n="237,21"/>) bd. 3 (<hi rendition="#ita">Hegel's Werke</hi> bd. 10,3; <hi rendition="#ita">Jub</hi>. bd. 14), s. 242f.: »Das Denken aber hat nur Gedanken zu seinem Resultat; es verflüchtigt die Form der Realität zur Form des reinen Begriffs, und wenn es auch die wirklichen Dinge in ihrer wesentlichen Besonderheit und ihrem wirklichen Daseyn faßt und erkennt, so erhebt es dennoch auch dieß Besondere in das allgemeine ideelle Element, in welchem allein das Denken bei sich selber ist. Dadurch entsteht der erscheinenden Welt gegenüber / [s. 243] / ein neues Reich, das wohl die Wahrheit des Wirklichen, aber eine Wahrheit ist, die nicht wieder im <hi rendition="#ita">Wirklichen</hi> selbst als gestaltende Macht und eigene Seele desselben offenbar wird. Das Denken ist nur eine Versöhnung des Wahren und der Realität im <hi rendition="#ita">Denken;</hi> das poetische Schaffen und Bilden aber eine Versöhnung in der wenn auch nur geistig vorgestellten Form <hi rendition="#ita">realer Erscheinung</hi> selber.«</p>
-    </note>
-    <note type="commentary" xml:id="not8-84" n="246,2">
-      <label><hi rendition="#bol">Læren om Aabenbaringen ... i hans Dogmatik</hi></label>
-      <p>jf. SKs referat af den ty. teolog og professor <persName key="Marheineke, Philipp Konrad">Philipp Konrad Marheineke</persName>s forelæsninger i <placeName>Berlin</placeName>
-        »Die Christliche Dogmengeschichte«, afsnittet om »Guds middelbare Aabenbarelse«, i <ref target="../Not9/txt.xml#ss250" type="journalsAndPapers" n="250">notesbog 9</ref>, se <hi rendition="#ita">SKS</hi> 19, 250-253.</p>
-    </note>
-    <note type="commentary" xml:id="not8-85" n="246,4">
-      <label><hi rendition="#bol">den logiske Sætning ... Werder ... sidste Ord</hi></label>
-      <p>jf. <persName key="Werder, Karl">Werder</persName>
-        <hi rendition="#ita">Logik</hi>, s. 153: »So kann man sagen: Das Endliche selbst ist das Unendliche – und man sagt so, wenn man <hi rendition="#ita">weiß</hi>, <hi rendition="#ita">was</hi> man sagt. Das Endliche <hi rendition="#ita">'selbst'</hi> bedeutet: Das Endliche <hi rendition="#ita">nicht</hi>
-        – sondern das Vollendete. Denn das Endliche ist nicht <hi rendition="#ita">selbst</hi>, da es als Endliches nicht <hi rendition="#ita">ist</hi>, da sein Seyn das Nichtseyn ist, und es von Ewigkeit, noch bevor es anzufangen vermag als nur Endliches, schon vergangen ist als solches. Das heißt: es <hi rendition="#ita">ist</hi> nur im Unvergänglichen. Das <hi rendition="#ita">Selbst</hi> des Endlichen ist das Unendliche. Daß das Nichtseyende sich manifestirt als <hi rendition="#ita">Nichtgewesenes</hi>, das ist die Manifestation des Seyns selber <hi rendition="#ita">als des seyenden</hi>. Und grade als diese Manifestation ist das ewige Seyn das Werden seiner selbst. Denn so ist es sein eigner Reflex und schaut sich an, <hi rendition="#ita">sein</hi> Anderes seyend in sich. Was heißt denn: <hi rendition="#ita">Nichtgewesenseyn</hi>? .. <hi rendition="#ita">Seyn</hi> heißt es, <hi rendition="#ita">ewiges absolutes Seyn;</hi> der andre Ausdruck dafür ist es, <hi rendition="#ita">sein</hi> andrer Ausdruck, sein eigner, sein Reflex, sein Wort, darin es sich schaut und vernimmt von Ewigkeit, es selber. Das heißt: das Endliche <hi rendition="#ita">selbst</hi> ist das Unendliche.«</p>
-    </note>
-    <note type="commentary" xml:id="not8-87" n="246,8">
-      <label><hi rendition="#bol">Læren om Guds-Billedet efter Marheinckes Foredrag</hi></label>
-      <p>jf. SKs referat af <persName key="Marheineke, Philipp Konrad">Ph. Marheineke</persName>s forelæsninger »Die Christliche Dogmengeschichte«, afsnittet om »Vom göttlichen Ebenbilde«, i <ref target="../Not9/txt.xml#ss253" type="journalsAndPapers" n="253">notesbog 9</ref>, se <hi rendition="#ita">SKS</hi> 19, 253-255.</p>
-    </note>
-    <note type="commentary" xml:id="not8-88" n="246,12">
-      <label><hi rendition="#bol">Et Sted ... Æsthetik 3d B p. 440 nederst</hi></label>
-      <p>jf. <persName key="Hegel, Georg Wilhelm Friedrich">G.W.F. Hegel</persName>
-        <hi rendition="#ita">Vorlesungen über die Aesthetik</hi> bd. 3 (<hi rendition="#ita">Hegel's Werke</hi> bd. 10,3; <hi rendition="#ita">Jub</hi>. bd. 14), s. 440f.: »Drittens aber giebt es auch eine Form des Geistes, die wiederum nach einer Seite hin höher steht als die Phantasie des Gemüths und der Anschauung, insofern sie ihren Inhalt in durchgreifenderer Allgemeinheit und nothwendigerem Zusammenhange zum freien Selbstbewußtseyn zu bringen vermag, als dieß der Kunst überhaupt möglich wird. Ich meine das <hi rendition="#ita">philosophische Denken</hi>. Umgekehrt jedoch ist diese Form anderer Seits mit der Abstraktion behaftet, sich nur in dem Elemente des Denkens als der bloß ideellen Allgemeinheit zu entwickeln, so daß der konkrete Mensch sich nun auch gedrungen finden kann, den Inhalt und die Resultate seines philosophischen Bewußtseyns in konkreter Weise, als durchdrungen von Gemüth und Anschauung, Phantasie und Empfindung auszusprechen, um / [s. 441] / darin einen totalen Ausdruck des ganzen Innern zu haben und zu geben.«</p>
-    </note>
-  </div></body></text>
-
+        – Normalt varede overfarten o. et døgn, og således ville SK planmæssigt ankomme til Stralsund om formiddagen den 26. okt. 1841, jf. <hi xml:id="id9070c297-a275-4b2b-9333-aded492b9f2b" rendition="#ita">Stralsundische Zeitung</hi> den 28. okt. 1841, nr. 129: »Stralsund, den 26. Octbr. 1841. / Mit dem Königl. Preuß. Dampfschiffe <hi xml:id="idc5506bc1-f18e-4ee2-b19d-ee18d99f43a7" rendition="#ita">Königin Elisabeth</hi>, Führer: Capt. <hi xml:id="ide401d155-3822-4977-9759-c1d62cda95e7" rendition="#ita">Klickow</hi>, sind heute angekommen: / I. Von Kopenhagen: Se. Exellenz der Königl. Großbrittannische Minister am Königl. Dänischen Hofe, Hr. <hi xml:id="ida6145a9e-cdc4-4f07-9f40-5340463cef61" rendition="#ita">H.W.W. Wynn</hi> nebst Frau Gemahlin, Fräulein Nichte u. Dienstboten. Hr. Magister <hi xml:id="id455dece3-2123-41f9-8537-781cb2f90265" rendition="#ita">Aaby-Kierkeyoord</hi>. Hr. Violoncellist <hi xml:id="ida7fb06b6-c9cf-4f16-a2a1-4adff81b567d" rendition="#ita">Giovanni di Dio</hi>. Zimmermann <hi xml:id="ida8141147-76e1-4a16-a063-63cc487c02cf" rendition="#ita">Hansen</hi>, Zimmermann <hi xml:id="idf653f07f-0f43-45fb-a00f-d8908e0d782f" rendition="#ita">Holm</hi>. Müllergeselle <hi xml:id="id4fe995df-8f7e-4f21-a0c3-615e8f456712" rendition="#ita">Jansen</hi>. / II. Von Ystad: Der Königl. Preuß. Minister am Königl. Schwed. Hofe, Hr. Baron <hi xml:id="id15638fc2-c1f3-4225-88d1-c5e4a4409279" rendition="#ita">v. Brokhausen</hi> nebst 2 Bedienten. Hr. Baron <hi xml:id="idfa74092a-50e5-46f9-8ce5-7c8f527070dd" rendition="#ita">v. d. Rek</hi> nebst 2 Bedienten. Hr. Studiosus <hi xml:id="id77c8717e-dc8f-469f-9a41-4c8b7110698e" rendition="#ita">Meister</hi>. Hr. Studiosus <hi xml:id="idc6f0ee5d-2dcd-45dc-bb8a-e894e5126431" rendition="#ita">Niekisch</hi>. Hr. Schiffs-Capt. <hi xml:id="id608da15e-8f60-4b4a-a407-96e18566b980" rendition="#ita">Thiel</hi>. Hr. Graf <hi xml:id="id6ae416b3-4667-4663-a1bf-84a584243e4e" rendition="#ita">Wachtmeister</hi> nebst Bedienten. Hr. Kaufm. <hi xml:id="idc988523f-f239-4a3f-be46-2fbdcce0005f" rendition="#ita">Israel</hi>. Hr. <hi xml:id="ide04e05cf-019f-4ecd-9e76-e2e021740c44" rendition="#ita">Eyting</hi>. Schäfer <hi xml:id="id299f53fd-764d-403d-bd8c-0a11cd80bee3" rendition="#ita">Kitzing</hi> nebst Frau und 5 Kindern.«</p>
+        </note>
+        <note type="commentary" xml:id="not8-5" n="225,24">
+          <label xml:id="idb9d49685-92cc-4500-a016-c7385ce3304c">
+            <hi xml:id="idbf3924dd-54c6-43f5-8a4b-5fc0d68c7f36" rendition="#bol">Nu hvi gnider Du ... Lynets Blink</hi>
+          </label>
+          <p xml:id="id24e22762-a2c8-4916-acd2-69d1d10b7b90">med enkelte afvigelser i interpunktion et ordret citat fra <persName xml:id="id458f733b-35b2-4fb7-962b-4fac2770c7c3" key="Oehlenschläger, Adam">Adam Oehlenschläger</persName>s lystspil <hi xml:id="ide8e3b0b1-bc77-4899-8d5e-9341c7dd7d44" rendition="#ita">Aladdin, eller den forunderlige Lampe</hi>, i <hi xml:id="ide79bcd40-5045-4e2c-9f95-9b57f1ffd048" rendition="#ita">Poetiske Skrifter</hi> bd. 1-2, <placeName xml:id="id48b13e43-1984-43bf-98a0-45f60c80fa11" key="København">Kbh</placeName>. 1805, ktl. 1597-1598; bd. 2, s. 273f. Versene siges af »Lampens Aand« til den onde <persName xml:id="ida187809f-7f90-49a0-b1a6-fb58034e5665" key="Noureddin">Noureddin</persName>, der endelig er kommet i besiddelse af den eftertragtede lampe; tidligere i lystspillet har ånden reageret med næsten enslydende vers, da <persName xml:id="idbdc20e3c-4714-493a-a914-0ecc814cd554" key="Aladdin">Aladdin</persName>s moder, <persName xml:id="id35fb4068-f033-41fc-9ae4-f77528b0c42d" key="Morgiane">Morgiane</persName>, gnider på lampen, s. 139.</p>
+        </note>
+        <note type="commentary" xml:id="not8-6" n="225,28">
+          <label xml:id="id0e4fa41a-a754-4143-b3af-34bc1f68a512">
+            <hi xml:id="id5a07ae68-8222-42a7-8ba4-5322e88ceb02" rendition="#bol">Ikke jeg alene ... knyttet i Dig</hi>
+          </label>
+          <p xml:id="id9dc552d8-ff3d-41ca-b551-6dc3127978ae">I umiddelbar fortsættelse af sine ord til <persName xml:id="id2a594bc2-4d59-4785-839b-857721d49c48" key="Morgiane">Morgiane</persName> (se foregående kommentar) siger »Lampens Aand« til hende: »Ikke jeg allene, Frue! men hver anden Lampens Aand, / Bukker sine Knæe og lyder den, som Lampen har i Haand«, s. 139; stort set enslydende er åndens ord til <persName xml:id="id2de43fd1-2f52-4f84-8003-b10246702674" key="Noureddin">Noureddin</persName>, s. 274. Da Noureddin tidligere i lystspillet sender <persName xml:id="idfa0ac08b-15d8-4fd4-83b0-dde943ed8d21" key="Aladdin">Aladdin</persName> ned i en underjordisk hule for at hente den forunderlige lampe, giver han ham en ring på fingeren til beskyttelse; ved sin tilbagekomst vil Aladdin ikke give lampen til Noureddin, som derfor lader ham spærre inde i hulen, men i sin fortvivlelse kommer Aladdin til at støde ringen mod klippen; straks viser »Ringens Aand« sig og siger: »Herre! hvad vil du mig? / See! jeg maa lyde dig. / Ringen er i din Haand, / Du byder Ringens Aaand. / Ey er det mig, som maa / Ene tilrede staae. / Alle de Slaver, som / Hylde dens Helligdom, / Knæle til dyben Jord, / Lystre dit Magtens Ord«, s. 133. –
+        <hi xml:id="idedb679f6-efa8-4035-9a9c-facd16b1a624" rendition="#bol">min R.</hi>: »Min Regine!«, SKs indledningsformular i sine breve til <persName xml:id="id52d815fd-9f41-443c-8f80-61c85f90127f" key="Olsen, Regine">Regine Olsen</persName> under deres forlovelse 10. sept. 1840 til 11. el. 18. okt. 1841 (jf. <ref xml:id="id30550499-df03-4f6d-ae45-8855c2271c5c" target="../Not15/kom.xml#not15-25" type="commentary" n="4">kommentaren til notesbog 15:4, <hi xml:id="ida7a451ca-2e40-4c1e-8bc6-4dfde77883b0" rendition="#ita">SKS</hi> 19, 435,36</ref>, og <ref xml:id="id4c3d0f94-d566-4bac-ad49-49c2e876fc6f" target="../b127/txt.xml#n127" type="lettersAndDedications" n="ba:15" rend="Brev 127"><hi xml:id="idc0fba1e8-9ef5-4936-ae62-bbed79a610d3" rendition="#ita">B&amp;A</hi> bd. 1, s. 47</ref>-69, især <ref xml:id="id132ba4f5-656e-4daa-a2c9-3d8932130b39" target="../b127/txt.xml#n132" type="lettersAndDedications" n="ba:20" rend="Brev 132">brev af 28. okt. 1840</ref>, som SK tænker sig bragt af »Ringens Aand«, s. 52.</p>
+        </note>
+        <note type="commentary" xml:id="not8-7" n="225,36">
+          <label xml:id="id26dedaa2-320b-4521-adc4-83af7440eef2">
+            <hi xml:id="id746aab3b-ce59-4b95-9df9-01b8134379f3" rendition="#bol">bragte jeg Dig ikke selv den Ring, jeg lystrer</hi>
+          </label>
+          <p xml:id="id45abfb7f-2908-4735-b5f7-5a86eed59bf7">enten en allusion til den ring, som SK gav <persName xml:id="id0856bc02-8d57-4697-9fac-12d239f8749d" key="Olsen, Regine">Regine Olsen</persName>, og som hun bar under deres forlovelse, el. til den ring, som han selv bar, men forgæves sendte hende retur 11. aug. 1841, hvorefter han selv to måneder senere bragte hende den, da han definitivt brød forlovelsen, jf. <ref xml:id="id226b2295-ce1d-47c9-aee5-fa4ef363d5a6" target="../Not15/txt.xml#ss435" type="journalsAndPapers" n="435,16">notesbog 15:4</ref>, <hi xml:id="id6e0c0c6f-b919-42a0-89e1-d3937b4cbf5d" rendition="#ita">SKS</hi> 19, 435,16-35, samt kommentarerne hertil.</p>
+        </note>
+        <note type="commentary" xml:id="not8-9" n="226,19">
+          <label xml:id="idacc3ed99-df28-4b89-9d48-7349743262b2">
+            <hi xml:id="id42ef1a64-ec33-44cb-99bd-35181bfd4691" rendition="#bol">Naar Maanen saaledes reflekterer sig i Havet</hi>
+          </label>
+          <p xml:id="id86f97f3e-8370-40c5-8df1-6f9956a23889">formentlig i <placeName xml:id="idefe09a21-23dc-4373-a568-aca0f96f2775">Østersøen</placeName> natten ml. 25. og 26. okt. 1841; der var fuldmåne 30. okt.</p>
+        </note>
+        <note type="commentary" xml:id="not8-10" n="226,22">
+          <label xml:id="id0160e9a6-ae42-4d88-afec-573b187b90bc">
+            <hi xml:id="idc1beca80-aa15-4801-a943-b7dea364048d" rendition="#bol">man har kaldet Havet Alts Moder</hi>
+          </label>
+          <p xml:id="id0e4abb37-86b8-4278-b8cb-471ded269ff0">Hvis der sigtes til et fast udtryk, har dette ikke kunnet identificeres. Inden for naturfilosofien var det alm. – som fx <persName xml:id="id5a4ab9ec-954a-4526-8a2c-34edcf102b49" key="Steffens, Henrich">Henrich Steffens</persName>
+        – at mene, at det skabte liv oprindeligt var opstået i »Vand, – det Element, hvilket synes at indeholde Spiren til alle den producerende Naturs Udkast«, <hi xml:id="ida4ee9ebc-3778-4908-a87f-a0090b505360" rendition="#ita">Indledning til philosophiske Forelæsninger</hi>, <placeName xml:id="id1bc633ed-fcda-4445-9c36-c2b0673f22b1" key="København">Kbh</placeName>. 1803, s. 80.</p>
+        </note>
+        <note type="commentary" xml:id="not8-11" n="226,28">
+          <label xml:id="id471295e7-88a6-4d06-9cb1-5a5442d1ae90">
+            <hi xml:id="id7fe3f684-8010-42ac-b8d3-be5f8bb32980" rendition="#bol">en velbekjendt Byes Kringelkroge</hi>
+          </label>
+          <p xml:id="id61638bde-3900-4b45-83a9-b4f7c684a680">sigter til <placeName xml:id="idb819d59a-9c65-456a-a86f-7a9d37134358">København</placeName>, der – begrænset af voldene – havde et areal på o. 4,5 km<hi xml:id="id8789cbd5-36c5-42fd-a97b-a6f523ba0928" rendition="#sup">2</hi>, og som ved folketællingen 1. feb. 1840 havde 120.819 beboere; til sammenligning strakte <placeName xml:id="idca871130-61fe-4502-b44b-0dc48cf581db">Berlin</placeName> sig over o. 30 km<hi xml:id="id84a8cbc6-1478-4933-9d9c-be5c89ab7fdf" rendition="#sup">2</hi> og havde samme år 329.000 beboere.</p>
+        </note>
+        <note type="commentary" xml:id="not8-12" n="227,2">
+          <label xml:id="idbc11fafb-7722-4dc9-b96b-901c37ee951f">
+            <hi xml:id="ide1d02c8c-88b3-42fe-a633-b43e24060310" rendition="#bol">her i Berlin</hi>
+          </label>
+          <p xml:id="idea39863b-7872-481a-8305-38bb1fc0760a">SK ankom formentlig til <placeName xml:id="idcc0b3b4d-eeff-4a8d-97f7-1288effe1dbc">Berlin</placeName> (hoved- og kongelig residensstad i den preussiske stat, beliggende i provinsen <placeName xml:id="id44595667-6e0a-4721-948c-95e21ca84bfa">Brandenburg</placeName>) den 27. okt. efter at have kørt med diligence fra <placeName xml:id="id6d3bacb8-9571-4e4d-9e1d-399ae02513d6">Stralsund</placeName>; han indlogerede sig på adressen »Mittelstraße N<hi xml:id="id0dfd94ae-de16-49c5-9eed-96aa25032865" rendition="#sup">o</hi> 61 / eine Treppe hoch« (<ref xml:id="id9f26be86-d288-4f2b-89f9-ff20890411d1" target="../b79/txt.xml#n80" type="lettersAndDedications" n="ba:49" rend="Brev 80"><hi xml:id="id8ff4b321-c450-494a-a091-774d78f623ee" rendition="#ita">B&amp;A</hi> bd. 1, s. 72</ref>f.), men efter problemer med værten flyttede han inden nytår til adressen »Jägerstraße N<hi xml:id="id2e65a260-0746-4f09-ad0d-b853e8a9ae12" rendition="#sup">o</hi> 57 eine Treppe hoch« (<ref xml:id="id4023e7bf-33ca-431e-ac27-6c98c471cc2e" target="../b79/txt.xml#n83" type="lettersAndDedications" n="ba:60" rend="Brev 83"><hi xml:id="idd3d1eb33-6a06-4aeb-87b5-ca37c9b3e078" rendition="#ita">B&amp;A</hi> bd. 1, s. 91</ref>). Jf. også kommentarerne til journal JJ:109, <hi xml:id="id482f6eea-59e0-4da6-8bc5-3444e5c785cb" rendition="#ita">SKS</hi> 18, <ref xml:id="id094616ef-af67-4fa8-986d-f0f36d50bf20" target="../JJ/kom.xml#jj-252" type="commentary" n="109">175,27</ref> og <ref xml:id="id62de1c01-6e05-4f36-99c2-4cfb9bc5b3a3" target="../JJ/kom.xml#jj-254" type="commentary" n="109">175,35</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="not8-14" n="227,9">
+          <label xml:id="ideaf87496-676c-476f-a3ce-d6a1533e0578">
+            <hi xml:id="id634321ba-eba2-4244-a9d0-c25e6fb86e19" rendition="#bol">Man siger Kjærlighed gjør blind</hi>
+          </label>
+          <p xml:id="id809b2726-28b7-4564-89e3-0085f1355f30">jf. ordsproget »Kiærlighed er blind«, nr. 1427 i <persName xml:id="id590e7661-7ba8-448b-893f-bedde433b675" key="Grundtvig, Nikolai Frederik Severin">N.F.S. Grundtvig</persName>
+        <hi xml:id="idba017474-e6f9-41b6-9c8c-3da4dadde039" rendition="#ita">Danske Ordsprog og Mundheld</hi>, <placeName xml:id="id34608de7-1d37-4c1c-ba74-6a239373bec2" key="København">Kbh</placeName>. 1845, ktl. 1549, s. 54. Også optegnet som nr. 4659 i <persName xml:id="id1ec60f65-8e88-4030-9cba-6ac47ad29ce6" key="Mau, Edvard">E. Mau</persName> <hi xml:id="id859c1dc6-aaa3-4b4e-b6c3-592d1a2dae42" rendition="#ita">Dansk Ordsprogs-Skat</hi> bd. 1-2, <placeName xml:id="id4f4a2f4d-296e-400f-9f59-adcffde92595" key="København">Kbh</placeName>. 1879; bd. 1, s. 519.</p>
+        </note>
+        <note type="commentary" xml:id="not8-19" n="228,1">
+          <label xml:id="id1e696bb1-53ee-4e01-898a-9b59d90993a6">
+            <hi xml:id="idef840cf6-998c-4821-9b62-1e5ca73670d6" rendition="#bol">den Pige ... at kalde min</hi>
+          </label>
+          <p xml:id="id1a87d4c0-c994-4e5b-a1f1-1ae730b39054"><ptr xml:id="idf04ee710-6d00-4652-8735-a47eca974530" type="commentary" target="#not8-6" n="225,28"/>. Sml. et udateret brev til <persName xml:id="id3b118ddc-e02f-43e0-baf1-9eb1dac032ad" key="Olsen, Regine">Regine</persName>, hvor SK – formentlig i nov. 1840 – skriver: »thi i Sandhed, har jeg noget Øieblik tvivlet om, at jeg turde kalde Dig 'min' (Du veed, hvor meget jeg forbinder med dette Udtryk, Du veed det, Du, som selv har skrevet, at Dit Liv var <hi xml:id="id21a597db-413c-493d-9b6c-10fa32555328" rendition="#ita">afsluttet</hi> med mig, hvis jeg skulde skilles fra Dig, o saa lad det da være <hi xml:id="id93b6ff7d-0e50-4ffc-973c-2102e344ff8c" rendition="#ita">indesluttet</hi> i mig saa længe vi ere forenede, thi først da ere vi egl. <hi xml:id="idc077cad8-d371-49b0-9a99-08360a340506" rendition="#ita">forenede</hi>) da er der intet Øieblik, jeg har tvivlet om, nei jeg skriver det af min Sjæls inderste Overbeviisning, ja end ikke i den mørkeste Afkrog af Verden skal jeg tvivle om, at jeg er Din / Din for evig / S.K.«, <ref xml:id="ida9698651-e87a-4514-b847-1ecd44d18e34" target="../b127/txt.xml#n135" type="lettersAndDedications" n="ba:23" rend="Brev 135"><hi xml:id="idffc8f2e2-e0ef-46f9-8222-65e94a658dc4" rendition="#ita">B&amp;A</hi> bd. 1, s. 55</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="not8-20" n="228,4">
+          <label xml:id="idfe37a89c-bda1-4d52-8ad7-581375921d96">
+            <hi xml:id="id2975d90b-4a05-4331-9c2f-f7a68699115c" rendition="#bol">slige Dyder er glimrende Laster</hi>
+          </label>
+          <p xml:id="id832a9d3f-09e9-4e31-b545-d9d097db82de">allusion til talemåde fra middelalderen: 'Virtutes paganorum splendida vitia', lat. 'hedningernes dyder er glimrende laster'. Jf. journaloptegnelsen <ref xml:id="id15a4c1b3-8fa1-4fa0-8129-6737cca8d0a3" target="../AA/txt.xml#ss35" type="journalsAndPapers" n="35,6">AA:18</ref>, <hi xml:id="id3a93cbd8-2f8b-4d15-b419-eb23445f0c99" rendition="#ita">SKS</hi> 17, 35,6, og se kommentaren dertil.</p>
+        </note>
+        <note type="commentary" xml:id="not8-21" n="228,13">
+          <label xml:id="id936aec74-41fd-402f-9006-d9422d3ed98f">
+            <hi xml:id="id30f104f5-4765-4f02-a43d-0c13a89be08d" rendition="#bol">fra det Øieblik ... altfor tidlig</hi>
+          </label>
+          <p xml:id="ide4eed979-7e4e-48f5-b923-c8ac11147a58">sml. <ref xml:id="id473da4c1-0779-47bf-b076-62350fa3fec8" target="../Not15/txt.xml#ss434" type="journalsAndPapers" n="434,13">notesbog 15:4</ref>, hvor SK i 1849 – med reference til forlovelsen den 10. sept. 1840 – erindrer, at allerede »anden Dagen saae jeg, at jeg havde grebet feil«, <hi xml:id="id132822f5-5479-4cc1-ae58-321ed99b031d" rendition="#ita">SKS</hi> 19, 434,13.</p>
+        </note>
+        <note type="commentary" xml:id="not8-22" n="228,31">
+          <label xml:id="id4a1ec73d-7592-4e89-a15d-4f49c6b20080">
+            <hi xml:id="id286a3f92-72e9-431e-95e6-2882f06b98c6" rendition="#bol">jeg har gjort Uret ... jeg lider</hi>
+          </label>
+          <p xml:id="idba30f97b-7b99-4be4-99e8-cb7d12756fbd">Hvis lidelsen var somatisk, burde SK også if. loven oplyse sin forlovede om sin sygdom, jf. <hi xml:id="id741fd400-e6bb-4e80-8a23-6d552a6fb6b4" rendition="#ita">Kong Christian den Femtes Danske Lov af det Iuridiske Fakultet giennemset</hi>, udg. af <persName xml:id="id594e8c3f-12fc-4932-b89f-204ef9ea82dd" key="Bærens, Johan Hendrich">Bærens</persName>, <placeName xml:id="idd854de4b-3dae-4f13-b4f4-b1a16d450143" key="København">Kbh</placeName>. 1797 [1683], 3. bog, kap. 16, § 14, stk. 7: »Om nogen for [før] Trolovelsen havde nogen hemmelig Sygdom, som Spedalskhed, faldende Sot [epilepsi], eller nogen anden slig besmittelig Syge, og ikke den aabenbarede, da maae han, eller hun, blive hveranden qvit, om de det begiere.«</p>
+        </note>
+        <note type="commentary" xml:id="not8-24" n="229,17">
+          <label xml:id="id7cea5619-d246-4314-a796-d20e469f6afd">
+            <hi xml:id="idd69a08aa-4723-487e-a3c8-ded76023e39f" rendition="#bol">hendes eneste Ønske ... Familien bønfalder mig</hi>
+          </label>
+          <p xml:id="id3e99ea52-8d7d-43dc-922f-328dd9c96cc1">jf. <ref xml:id="idef7ffc8e-9def-4570-818a-ade3852e879a" target="../Not15/txt.xml#ss436" type="journalsAndPapers" n="436,3">notesbog 15:4</ref> fra 1849, hvor SK skriver, at <persName xml:id="ide2cf7c1f-2a36-4b5d-ac88-07348b49c138" key="Olsen, Regine">Regine</persName>s fader, samme dag som SK havde brudt forlovelsen, bad ham om blive hos Regine (<ptr xml:id="id0ec869a3-488e-4b30-968e-467d0e29e411" type="commentary" target="#not8-6" n="225,28"/>), da han pga. hendes fortvivlelse frygtede for hendes helbred, <hi xml:id="id59c9b439-3cab-415d-85c5-4ff3d19a4693" rendition="#ita">SKS</hi> 19, 436,3-7.</p>
+        </note>
+        <note type="commentary" xml:id="not8-25" n="229,20">
+          <label xml:id="id33705e5f-e457-48ff-8014-2ac087db8794">
+            <hi xml:id="ida4abcfea-655e-489e-a6a1-17d4b9d7e334" rendition="#bol">bringe hende til at troe ... letsindigt Msk.</hi>
+          </label>
+          <p xml:id="id05db57ac-2c8f-49d2-8923-5d13384bf956">I <ref xml:id="idaff460a5-a019-4af5-89d3-f0a589c9529d" target="../Not15/txt.xml#ss440" type="journalsAndPapers" n="440,15">notesbog 15:9</ref> fra 1849 skriver SK om bruddet med <persName xml:id="id382ddf23-ae9d-492e-a85b-868d82a10ec9" key="Olsen, Regine">Regine Olsen</persName>, »at hun selv sagde, at hvis jeg kunde overbevise hende om, at jeg var en Skurk, vilde hun let finde sig i det Hele«, <hi xml:id="id1728ee33-516e-460b-abf3-182a456a7e39" rendition="#ita">SKS</hi> 19, 440,15. Han husker desuden i <ref xml:id="idd0a1cd62-33e6-4928-b07b-fb1fd54548f9" target="../Not15/txt.xml#ss436" type="journalsAndPapers" n="436,23">notesbog 15:4</ref>, at han efter bruddet havde tilbragt nætterne grædende i sin seng, hvorfor hans broder, <persName xml:id="ide0771093-849c-4815-8573-69ea5f06d65f" key="Kierkegaard, Peter Christian">Peter Christian</persName>, havde sagt: »at han vilde gaae ned til Familien og vise Dem, at jeg ikke var en Skurk. Jeg sagde: gjør Du det, jager jeg Dig en Kugle gjennem Hovedet«, <hi xml:id="ide0aced87-ec0d-44fd-be44-e97604757d83" rendition="#ita">SKS</hi> 19, 436,23. Jf. også SKs brev til <persName xml:id="id6cb0c6cf-3a99-46d8-b2b2-995b6c6934bf" key="Boesen, Emil Ferdinand">Emil Boesen</persName> af 31. okt. 1841, hvor han fortæller, at professor <persName xml:id="idde1ed56f-6312-4368-8435-4ac36f6812a7" key="Sibbern, Frederik Christian">F.C. Sibbern</persName> dagen før hans afrejse til <placeName xml:id="ide1b9aa99-d774-40f8-8de3-97bd104b76d0">Berlin</placeName> havde meddelt Peter Christian, at han anså SK for et egoistisk og forfængeligt menneske: »Formodl. har Sibb. talt med Familien. Jeg vilde blot ønske, at han ogsaa havde talt med hende, thi saa havde jeg jo opnaaet min Hensigt«, <ref xml:id="idac079d6f-bae1-4891-ab62-8751d6460862" target="../b79/txt.xml#n80" type="lettersAndDedications" n="ba:49" rend="Brev 80"><hi xml:id="id47e9e2a1-6773-4673-89b7-0c56e604f034" rendition="#ita">B&amp;A</hi> bd. 1, s. 71</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="not8-26" n="229,27">
+          <label xml:id="id6c8ce934-b69f-4b73-a02e-6620a809a8ee">
+            <hi xml:id="id730d896f-f9e5-4f65-bd7d-429a12b7593c" rendition="#bol">taler man om, at jordisk Kjærlighed gjør Een veltalende</hi>
+          </label>
+          <p xml:id="id293c3e49-e829-477f-8768-f97d38710fa9">Hvis der sigtes til en talemåde, har denne ikke kunnet identificeres.</p>
+        </note>
+        <note type="commentary" xml:id="not8-28" n="231,4">
+          <label xml:id="idd35c7189-7113-44e1-b436-d3ba5e38dba5">
+            <hi xml:id="ida76f2530-443e-42ff-8f01-2826e4050d1f" rendition="#bol">da at ende mit unge Liv</hi>
+          </label>
+          <p xml:id="idd9a196e1-c09a-436f-a6c7-deda9fb642d1">jf. <ref xml:id="id68a86fdb-2c49-4563-b18c-415d21dc1d8a" target="../Not8/txt.xml#ss228" type="journalsAndPapers" n="228,4">Not8:13</ref> om at »vendte jeg tilbage til hende – for derpaa at ende mit Liv«, <hi xml:id="id085f97c7-6da3-4b0c-a23b-e9e5512e115e" rendition="#ita">SKS</hi> 19, 228,4. SK var da 28 år.</p>
+        </note>
+        <note type="commentary" xml:id="not8-29" n="231,10">
+          <label xml:id="id67c348a7-93a4-4e48-b4c1-9069d6ab8867">
+            <hi xml:id="id8a8961a4-6de9-4e9f-8256-8050135720d9" rendition="#bol">jeg var en Bedrager</hi>
+          </label>
+          <p xml:id="iddea01ab3-fd39-400e-9307-7ed5e8e001b1">jf. <ref xml:id="id2664a109-01a8-4b02-8e34-3ab5ec9cdbe4" target="../Not8/txt.xml#n15" type="journalsAndPapers" n="15">Not8:15</ref> og <ptr xml:id="id8828da39-b370-403c-b5d5-15b28e100624" type="commentary" target="#not8-25" n="229,20"/>.</p>
+        </note>
+        <note type="commentary" xml:id="not8-30" n="231,13">
+          <label xml:id="id2f32b47d-08f4-40f5-8cd6-a51c849b91b5">
+            <hi xml:id="id7193ea07-85e9-4d02-a9ac-15d8fe4ed353" rendition="#bol">for Gud er alt muligt</hi>
+          </label>
+          <p xml:id="idb8d7f931-714d-4409-a168-146358775744">jf. <rs xml:id="ide62c8d1f-5de3-4042-b908-0b485e4703d6" type="bible">Matt 19,26</rs>, hvor Jesus siger: »for Mennesker er dette umuligt, men for Gud ere alle Ting mulige« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="not8-31" n="231,14">
+          <label xml:id="idf22ccc9d-6d6c-4d3e-a2cd-16a264b8b8b8">
+            <hi xml:id="id1b9ce2b8-7adf-43c4-a962-c1e3c5869321" rendition="#bol">at friste Gud</hi>
+          </label>
+          <p xml:id="ide7d36655-88ee-4f30-b626-09b81f57a72f">jf. fx artiklen »Versuchen«, § 3, i <hi xml:id="idef6417de-c0df-4f6b-aca7-93c253d8c0e5" rendition="#ita">M. Gottfried Büchner's biblische Real- und Verbal- Hand-Concordanz oder Exegetisch-homiletisches Lexicon</hi> bd. 1-2 (med fortsat paginering), 6. udg. ved <persName xml:id="id2ea9595e-7030-4bbb-aec5-40eaab37b082" key="Heubner, Heinrich Leonhard">H.L. Heubner</persName>, <placeName xml:id="id8bac45e8-9b6d-43da-aa4b-30f15a6c7ea0">Halle</placeName> 1837-1840 [1740], ktl. 79; bd. 2, 1837, s. 1356f. Her hedder det, at menneskene frister Gud, »wenn diese aus Mißtrauen und Reizungen des Fleisches GOttes Wort, seine Verheißungen, Befehle, Drohungen, Güte, Allmacht und Alwissenheit in Zweifel ziehen, und freventlich Beweis davon verlangen; ja ihm deshalb mit Murren Zeit, Art und Weise vorzuschreiben sich unterstehen. Es geschieht 1) durch fresches Sündigen, wo man es darauf ankommen läßt, ob GOtt strafen werde. 2) Durch tollkühnes, erhgeiziges, sich in Gefahren wagen ohne Beruf, wo man auf GOttes Schutz hofft.«</p>
+        </note>
+        <note type="commentary" xml:id="not8-32" n="231,18">
+          <label xml:id="idf56017ff-8fb0-4507-8712-58ca9d989b95">
+            <hi xml:id="id60cda6ee-0ec5-47b6-a3dc-b8a399b3ade3" rendition="#bol">saa var den hele Sag en Smørrebrød</hi>
+          </label>
+          <p xml:id="id61fcd79b-6560-4eb0-9668-1a73a7da7f92">dvs. en let sag; talemåde, bl.a. optegnet i <persName xml:id="id0f0862a8-8ce9-4a48-b3f7-c965a04ecff1" key="Molbech, Christian">C. Molbech</persName> <hi xml:id="id5173cb06-20db-4c56-8be6-03931704c242" rendition="#ita">Dansk Ordbog</hi> bd. 1-2, <placeName xml:id="id1b117221-f0f4-42ed-8e1d-85101a7606b5" key="København">Kbh</placeName>. 1833, ktl. 1032; bd. 2, s. 374, sp. 1.</p>
+        </note>
+        <note type="commentary" xml:id="not8-34" n="231,26">
+          <label xml:id="ide09be535-c3cb-44da-b51d-0fce558cd628">
+            <hi xml:id="idca7c368e-1f27-4b8d-95bb-3d44c74b8ad4" rendition="#bol">mine Breve vil jeg vaage over</hi>
+          </label>
+          <p xml:id="id3eaf994f-faf7-4018-90ff-663e8475c479">sigter formentlig til SKs fortrolige breve fra <placeName xml:id="id47d5ae04-be3b-4123-89c8-19edcd80164d">Berlin</placeName> til vennen <persName xml:id="id901199a6-7659-4954-9320-da9be8784306" key="Boesen, Emil Ferdinand">Emil Boesen</persName> af 31. okt. 1841 (<ref xml:id="idc43c4424-e283-43bd-9067-95b805f2e9ee" target="../b79/txt.xml#n80" type="lettersAndDedications" n="ba:49" rend="Brev 80"><hi xml:id="idd261166e-3b3f-4fa8-ab41-73b87661e286" rendition="#ita">B&amp;A</hi> bd. 1, s. 71</ref>-72) og 16. nov. 1841 (<ref xml:id="idd92e4416-9859-4570-adf3-290d71f17db9" target="../b79/txt.xml#n81" type="lettersAndDedications" n="ba:50" rend="Brev 81"><hi xml:id="idf5692658-85f5-49e6-bd70-e96e8ae491e2" rendition="#ita">B&amp;A</hi> bd. 1, s. 73</ref>-75).</p>
+        </note>
+        <note type="commentary" xml:id="not8-35" n="231,31">
+          <label xml:id="id3aa184c1-8f48-4b06-8ae2-c387684ba116">
+            <hi xml:id="id3ad4cbd8-37fe-4e23-b29d-9a7736d1a46c" rendition="#bol">nede paa Gaden</hi>
+          </label>
+          <p xml:id="id35dc1a39-6a55-4953-8a3c-da901a68b698">formentlig i Mittelstraße (<ptr xml:id="ida6a7c617-cd45-430f-a6c6-083d6669e936" type="commentary" target="#not8-12" n="227,2"/>). Der kan dog også være tale om enten Jägerstraße el. Charlottenstraße, da SK efter at være flyttet fra sin første vært boede på hjørnet af disse gader, hvor han lejede hele lejligheden på 1. sal hos apoteker <persName xml:id="id8ddc6c25-1819-42c4-a009-1cca211787b7" key="Lange">Lange</persName>, der fra 1840 havde drevet »König-Salomo-Apotheke« i stueetagen på samme adresse, jf. <hi xml:id="idee96488c-776c-4470-9002-937f7305bcc6" rendition="#ita">Adreß-Kalender für die königlich Haupt- und Residenz-Städte Berlin und Potsdam, desgleichen für Brandenburg, Charlottenburg, Frankfurt, Neu-Ruppin, Oranienburg, Prenzlow, Schwedt und Spandaw</hi>, <placeName xml:id="idb721dfd9-24b4-4447-8940-b31ce40616a6">Berlin</placeName> 1842, s. 364.</p>
+        </note>
+        <note type="commentary" xml:id="not8-36" n="231,34">
+          <label xml:id="id2793db13-48f0-4a48-8391-293f740d869b">
+            <hi xml:id="idc700ea93-fc29-47c7-b28f-503dcd32225d" rendition="#bol">Jeg tænker ... i Maaneskin ombord paa Skibet</hi>
+          </label>
+          <p xml:id="id23875c39-85ee-4c33-920e-7106fea83d5c"><ptr xml:id="id8fe2a7b3-8d91-4053-90d4-7424f1a1f1f1" type="commentary" target="#not8-4" n="225,21"/> og <ptr xml:id="idc3e13340-799a-4186-bbc8-1dfc7212a82e" type="commentary" target="#not8-9" n="226,19"/>. –
+        <hi xml:id="id3d601c75-6e17-4885-892e-1a01eb6097de" rendition="#bol">Finlap</hi>perne: finne el. person fra <placeName xml:id="ida792ffc1-2f47-489d-b631-620562dc664c">Finmarken</placeName> i <placeName xml:id="ideb2f2542-5aee-47a8-bff6-acf68b00f023">Norge</placeName>.</p>
+        </note>
+        <note type="commentary" xml:id="not8-37" n="232,1">
+          <label xml:id="ida19a1241-3029-47c0-887d-5ffc80c3d517">
+            <hi xml:id="ide891948b-4275-4e64-b62c-447c3a59628d" rendition="#bol">i Nærheden af det Huus ... en Kirke</hi>
+          </label>
+          <p xml:id="idd5353762-6612-4278-908d-01332e54b8de"><persName xml:id="id0ab8772d-093c-42d1-ace0-8cbf679a65f3" key="Olsen, Regine">Regine Olsen</persName> boede hos sine forældre i <placeName xml:id="idd31764d3-d115-485f-a1d3-eaeb30955c99" key="Nybørs">Nye-Børs</placeName>, matrikel nr. 66 (jf. <ref xml:id="idbdacda53-ac97-4bbb-a9aa-555ff0a5913e" target="../Not15/txt.xml#ss433" type="journalsAndPapers" n="433,20">notesbog 15:4</ref>, <hi xml:id="id4d976147-54b9-4257-80ad-73745f38eb35" rendition="#ita">SKS</hi> 19, 433,20, samt kommentaren hertil), i en nu nedrevet ejendom, som man kaldte »De sex Søstre«, ml. <placeName xml:id="id92846202-7b6f-4f86-b392-06464229e6f9">Børsen</placeName> og <placeName xml:id="id969139aa-1486-4883-b282-df6090e41a85">Knippelsbro</placeName> (<ref xml:id="idaccbd2b5-6202-464d-94cb-ca9996be233d" target="../kort/kbh_C2.htm" type="map" n="kbh"><hi xml:id="idd880a338-9d9e-47a3-baa7-d0e89dcf0fc1" rendition="#ita">se kort 2, C2-3</hi></ref>). På den modsatte side af kanalen mod NV lå
+        <placeName xml:id="id89981ecc-b41d-4820-8350-415b6273df80">Holmens Kirke</placeName> (<ref xml:id="id577deb41-eef0-4264-ac38-f66460b5bce3" target="../kort/kbh_C3.htm" type="map" n="kbh"><hi xml:id="idd2412155-0a53-40a0-9f06-4de64837ba44" rendition="#ita">se kort 2, C3</hi></ref>).</p>
+        </note>
+        <note type="commentary" xml:id="not8-39" n="232,10">
+          <label xml:id="id14372577-d663-46e7-a6d1-7011be14cab6">
+            <hi xml:id="ida3b91bf6-078d-4432-8f6a-d85fdae83de3" rendition="#bol">dersom hun ønskede den, min hele Formue stod til hendes Tjeneste</hi>
+          </label>
+          <p xml:id="idf274be76-d843-42a0-8622-eeff9343b4ec">sml. brev til <persName xml:id="idd20df337-42ac-4a64-a412-7cb0bf9e1d50" key="Boesen, Emil Ferdinand">Emil Boesen</persName> af 16. nov. 1841, hvor SK skriver, »at jeg med Glæde skulde nedlægge min Formue heel og holden i hendes Hænder, hvis hun ønskede det«, <ref xml:id="id645b511e-cfcd-423a-9636-dd214ba61cb5" target="../b79/txt.xml#n81" type="lettersAndDedications" n="ba:50" rend="Brev 81"><hi xml:id="id7ed36c5f-b385-4a43-aac2-c364aefe5092" rendition="#ita">B&amp;A</hi> bd. 1, s. 74</ref>. –
+        <hi xml:id="idbae1af0d-52d0-4b77-8165-51699bc0b45a" rendition="#bol">min hele Formue</hi>: SKs fader døde i 1838 og efterlod sig en formue, der i 1839 blev opgjort til o. 125.000 rigsdaler, og som SK og hans broder arvede (jf. <persName xml:id="id716ae5c0-88a5-4405-9392-8f4778ba5d04" key="Brandt, Frithiof">F. Brandt</persName> og <persName xml:id="idda305032-b719-4349-aeef-aed2a220865b" key="Thorkelin, Else">E. Thorkelin</persName>
+        <hi xml:id="id81648298-499d-4ec3-a340-6d30de24fcde" rendition="#ita">Søren Kierkegaard og pengene</hi>, 2. udg., <placeName xml:id="id6bd6d119-537f-417a-9e1d-6bccea83ced1" key="København">Kbh</placeName>. 1993 [1935], s. 67); i 1841 har SKs personlige formue derfor næppe udgjort under 50.000 rigsdaler, en betragtelig sum, da fx en dommer i Hof- og Stadsretten i <placeName xml:id="idbccd3acb-36da-4af8-b5b6-70e402a1d76f">København</placeName> havde 1.200-1.800 rigsdaler og en håndværkssvend o. 200 rigsdaler i årsløn, mens man regnede 400 rigsdaler for nok til at forsørge en familie.</p>
+        </note>
+        <note type="commentary" xml:id="not8-41" n="232,21">
+          <label xml:id="id52f71ef4-9eb9-4d15-a0e1-242785d2f92f">
+            <hi xml:id="id58733d88-8748-415b-b1ad-14a714e3b6ca" rendition="#bol">Efter Aftale sender jeg Dig herved den Blomst tilbage ... blev den opelsket</hi>
+          </label>
+          <p xml:id="id4bec47f8-0b16-47cb-a783-64193fee2d8d">sml. et udateret brev til <persName xml:id="ideab9040e-29b8-4f35-938a-b1d1a35e1ad3" key="Olsen, Regine">Regine Olsen</persName> med reference til en gave, en brevtaske, som hun formentlig netop har givet ham til hans fødselsdag, 5. maj 1841: »Jeg sender Dig hermed en Rose, den har ikke som Din Gave under mine Hænder udfoldet sig i al sin Glands; men den er visnet under mine Hænder; jeg har ikke været som Du et glad Vidne til, hvorledes Alt udfoldede sig, jeg har været et veemodigt Vidne til, hvorledes den mere og mere svandt hen; jeg har seet den lide; den tabte Duften, dens Hoved blev mat, dens Blade bøiede sig i Dødens Strid, dens Rødme svandt hen, dens friske Stengel fortørredes; den glemte sin Herlighed, den troede sig glemt, og den vidste ikke, at Du bevarede Erindringen om den, den vidste ikke, at jeg bestandig kom den ihu, den vidste ikke, at vi begge forenede bevarede dens Minde – I Sandhed dersom den havde vidst det, da var den levet op igjen af Glæde, og naar dens Tid atter var kommen, da vilde den blot have haft et Ønske, og dette Ønske efterkommer jeg herved, den vilde ønske, at den maatte blive hos Dig; thi den vilde sige: Du saae mig daglig, og om jeg end takker Dig for, at Du ikke glemte mig, saa forundrer det mig dog ikke, men hun saae mig ikke og dog glemte hun mig ikke. Saa efterkommer jeg da herved dens sidste Villie, den vender tilbage til Dig, som den oprindelig tilhørte Dig«, <ref xml:id="id485016c8-15be-4506-8fbb-efd82821f6fb" target="../b127/txt.xml#n152" type="lettersAndDedications" n="ba:40" rend="Brev 152"><hi xml:id="id4b433713-213f-4935-b6fe-60dfe2e57b48" rendition="#ita">B&amp;A</hi> bd. 1, s. 67</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="not8-42" n="233,10">
+          <label xml:id="id2c735b04-348d-419b-acd2-ff40deeb4e28">
+            <hi xml:id="id330ff8b9-bc3a-4f68-a99b-b16ffe88aa7d" rendition="#bol">dog maa jeg ... en Bedrager</hi>
+          </label>
+          <p xml:id="id23ff352e-0e25-46b0-aae7-3ab3fb15c367">jf. <ref xml:id="id31f19493-6405-4714-b06d-3f00f5bf6327" target="../Not8/txt.xml#n15" type="journalsAndPapers" n="15">Not8:15</ref> og <ptr xml:id="id77c52f90-2429-483f-a441-91b930a62e5b" type="commentary" target="#not8-25" n="229,20"/>.</p>
+        </note>
+        <note type="commentary" xml:id="not8-43" n="233,14">
+          <label xml:id="idead4311b-d6c5-4240-9d7a-fb3a3d943735">
+            <hi xml:id="id544856cc-328d-429b-9784-7ec9ec297e07" rendition="#bol">de udvortes Anfægtelser af Msk. som vil trænge ind paa mig, agter jeg ikke stort</hi>
+          </label>
+          <p xml:id="id96e58253-263c-46a3-be12-dc11e48dcf1f">sigter enten til dem, der – som <persName xml:id="id386ce4e7-f1a4-4912-b057-f30ce4ea8c2f" key="Olsen, Regine">Regine</persName>s far (<ptr xml:id="id49d57b88-9940-4607-bb19-f062ff542934" type="commentary" target="#not8-24" n="229,17"/>) – ville bevæge SK til at vende tilbage til Regine, el. til dem, der – som <persName xml:id="id274f40d2-cfff-45e2-b06a-b7da68846ae4" key="Sibbern, Frederik Christian">Sibbern</persName> (<ptr xml:id="idcd94cef6-0637-446c-bf20-b2811e2a8e98" type="commentary" target="#not8-25" n="229,20"/>) – nedgjorde SK for ikke at gøre det, jf. SKs reaktion i brev til <persName xml:id="idb3d87752-0e5e-4b03-8988-7a0739e7f313" key="Boesen, Emil Ferdinand">Emil Boesen</persName> af 16. nov. 1841 –
+        »Lad Byen snakke«, <ref xml:id="id37301521-39a4-4388-9653-9bd58c9170b1" target="../b79/txt.xml#n81" type="lettersAndDedications" n="ba:50" rend="Brev 81"><hi xml:id="id39bfc978-2dbf-481d-8c08-341b0679834b" rendition="#ita">B&amp;A</hi> bd. 1, s. 74</ref> – og i brev til pastor <persName xml:id="idf0f0cb30-a58f-490b-85a1-2a0319e99d8d" key="Spang, Peter Johannes">P.J. Spang</persName> af 18. nov. 1841, hvor han om årsagen til sin rejse skriver, at dersom »der ikke havde været andre Ting, der havde bestemt mig, saa var jeg ikke reist, jeg er ikke vant til at gaae afveien for et Opløb«, <ref xml:id="ide7a26d53-6fb2-4bea-aac1-33482d7129c9" target="../b43/txt.xml#n45" type="lettersAndDedications" n="ba:51" rend="Brev 45"><hi xml:id="id11a44a4d-10fe-43a8-8dbd-46a7470f91e5" rendition="#ita">B&amp;A</hi> bd. 1, s. 76</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="not8-44" n="233,32">
+          <label xml:id="id1b778c83-a12f-4082-8c17-2f4401316523">
+            <hi xml:id="id6fd2cd54-92d0-4424-acb9-bf04b1e30f56" rendition="#bol">idag</hi>
+          </label>
+          <p xml:id="idb46ec567-66aa-4333-b35f-606d810c25a7">senest 22. nov. 1841, jf. <ref xml:id="id99972f15-86a4-4ea3-8122-f61f46b50d09" target="../Not8/txt.xml#n33" type="journalsAndPapers" n="33">Not8:33</ref> og <ptr xml:id="idae4cd2b6-006e-40ec-ab3f-0eb07ec3e999" type="commentary" target="#not8-50" n="235,9"/>.</p>
+        </note>
+        <note type="commentary" xml:id="not8-45" n="234,1">
+          <label xml:id="id5aa5524d-a4ae-475a-9dca-f46032e65471">
+            <hi xml:id="idac4555ce-9936-4c0f-b737-5593d80594bf" rendition="#bol">et Brev til Hjemmet, der skulde trykkes</hi>
+          </label>
+          <p xml:id="idc15df559-6f08-4401-9b26-277baf842cd0">dvs. et brev stilet til <persName xml:id="id80e93afd-7139-4e66-8e5d-8ecc1496b3ad" key="Olsen, Regine">Regine</persName>s hjem i <placeName xml:id="id09c15049-974e-448e-b0b3-edad2ceba837" key="Nybørs">Nye-Børs</placeName>, matrikel nr. 66 (<ptr xml:id="id5cd04bcb-d179-4b4d-9fbc-492987f67600" type="commentary" target="#not8-37" n="232,1"/>), dog ikke således adresseret, men trykt anonymt i en københavnsk avis. Især i <hi xml:id="id35bccd98-8226-4413-bb23-9502f342e023" rendition="#ita">Adresseavisen</hi> (<ptr xml:id="id3b35ddd3-d6c8-45ad-9a22-b188a4facff2" type="commentary" target="#not8-4" n="225,21"/>) lod private indrykke anonyme breve, hvilket bl.a. afspejles i samtidens noveller, hvor fx en frier, der er faldet i unåde hos den elskedes familie, må henvende sig således, jf. <persName xml:id="id313a699d-7f44-487f-a056-f37cc7115d1d" key="Gyllembourg, Thomasine">Thomasine Gyllembourg</persName>
+        <hi xml:id="id5c5e42ea-5841-48d2-8815-57acd8902589" rendition="#ita">Familien Polonius</hi>, <placeName xml:id="id65bc2e7c-071c-486a-974b-01743f86fa8d" key="København">Kbh</placeName>. 1827.</p>
+        </note>
+        <note type="commentary" xml:id="not8-46" n="234,3">
+          <label xml:id="id2e6785af-4cc0-44ca-9016-a1781344dc8b">
+            <hi xml:id="id25545e8d-a5dc-4220-aced-0d946f4a7d3b" rendition="#bol">Min R</hi>
+          </label>
+          <p xml:id="ide4be31f3-3b30-414f-9896-3e384247c7ef"><ptr xml:id="iddfe508a2-d260-491f-b1ce-e336b1121dcb" type="commentary" target="#not8-6" n="225,28"/>.</p>
+        </note>
+        <note type="commentary" xml:id="not8-47" n="234,20">
+          <label xml:id="id8af101fb-18d8-491b-9d94-c21423eeb24d">
+            <hi xml:id="idaef9a815-3e39-4a73-9098-4ec99ab6d8d4" rendition="#bol">jeg turde digte ... overtale mig dertil</hi>
+          </label>
+          <p xml:id="idaa2db2fc-cf7f-409d-9473-b96265f1bf46">sml. <ref xml:id="id75cc8471-2af2-4710-b0e5-5bc21d206190" target="../Not8/txt.xml#n18" type="journalsAndPapers" n="18">Not8:18</ref> og brev til <persName xml:id="id35df0a49-89b3-4566-8a64-d7254dd20e90" key="Boesen, Emil Ferdinand">Emil Boesen</persName> af 16. nov. 1841, hvor SK bl.a. skriver: »Jeg digter hende ikke jeg erindrer hende ikke, men jeg kalder mig til Regnskab. Her er min Grændse. Jeg kan digte Alt troer jeg, men hvor der er Tale om Pligt, Forpligtelse, Ansvar, Skyld etc. der kan og der vil jeg ikke digte. Havde hun hævet Forbindelsen med mig, ja da skulde min Sjæl snart have kjørt Glemselens Plov over hende, hun skulde have tjent mig som andre før hende har gjort det – men nu, nu tjener jeg hende«, <ref xml:id="iddc4bebe1-7ee7-430f-9ec7-85161fa37828" target="../b79/txt.xml#n81" type="lettersAndDedications" n="ba:50" rend="Brev 81"><hi xml:id="id26a744bd-ef43-40a1-a6ce-0efc224c1a26" rendition="#ita">B&amp;A</hi> bd. 1, s. 74</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="not8-48" n="235,2">
+          <label xml:id="idb59845a6-86d7-4985-9d49-7049f57dfa01">
+            <hi xml:id="id370fde78-81fc-4552-9d80-65d8cbfd52d3" rendition="#bol">Prokurator</hi>
+          </label>
+          <p xml:id="idc8a548a5-f426-405c-8d8b-a3db05624843">sagfører; person, som fører sager for andre el. 'går i rette for andre', burde if. <persName xml:id="id359424c3-0ce9-4e82-b63d-4540396ea937" key="Christian V">Chr. V</persName>'s Danske Lov være god, oprigtig og uberygtet (1. bog, kap. 9, § 8), men blev i almindelighed udskældt for at bøje loven af hensyn til klientens sag og sin egen indtjening.</p>
+        </note>
+        <note type="commentary" xml:id="not8-49" n="235,3">
+          <label xml:id="id487cbcb8-3352-43a3-930b-de94046addee">
+            <hi xml:id="idbdfd4e51-f6d4-4ef4-8b3e-5b33dbcecfd0" rendition="#bol">Til Afskeed ... at erindre hende</hi>
+          </label>
+          <p xml:id="idc118378b-ffab-4889-a900-4d52b4b11cc0">jf. <ref xml:id="id1980eb7d-2c71-45ec-b007-e6a62098f9f3" target="../Not15/txt.xml#ss436" type="journalsAndPapers" n="436,17">notesbog 15:4</ref>, hvor SK i 1849 om bruddet med <persName xml:id="id8b57d31d-3819-4fed-b93f-056d0ec3b931" key="Olsen, Regine">Regine</persName> den 11. el. 18. okt. 1841 skriver: »Hun sagde: lov at tænke paa mig. Det gjorde jeg«, <hi xml:id="idba7dd981-6bcc-4140-b0a0-1af717aa0b07" rendition="#ita">SKS</hi> 19, 436,17.</p>
+        </note>
+        <note type="commentary" xml:id="not8-50" n="235,9">
+          <label xml:id="idbc1c2427-af34-4b72-b78f-bce191fd1714">
+            <hi xml:id="id93b87375-13fc-4b5a-a03a-f6be84117412" rendition="#bol">hørt Schellings 2den Time</hi>
+          </label>
+          <p xml:id="ida8e46dd3-8bc8-4365-8a0f-c07fb6c2becf">den 22. nov. 1841. – <persName xml:id="id0855516a-5dbd-40eb-a197-7cdcdd8247f9" key="Schelling, Friedrich Wilhelm Joseph" n="*">Friedrich Wilhelm Joseph Schelling</persName> (1775-1854), ty. filosof, studerede i 1790-95 filosofi og teologi i <placeName xml:id="id321a4753-73ce-482f-8fe5-9d5f825c6159">Tübingen</placeName> sammen med <persName xml:id="id96379915-271b-4448-a543-e3283ff00605" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName> (<ptr xml:id="idd62352cf-166d-4ba6-bf8d-2e5e35b95293" type="commentary" target="#not8-65" n="237,21"/>), blev i 1798 ekstraordinær prof. i <placeName xml:id="idb669c3ab-0123-4e4e-bc16-083519a390f7">Jena</placeName>, i 1803 ordinær prof. i <placeName xml:id="ide836e4b7-6eea-4fa0-b60e-70fbc242e15b">Würzburg</placeName>, underviste ved universitetet i <placeName xml:id="id17cd3bb8-488f-4dd9-adc2-2d61bffb6a0e">Erlangen</placeName> fra 1820 til 1827, da han blev prof. i <placeName xml:id="id57e63817-67c0-483e-8cca-ea572d143a33">München</placeName>. Herfra blev han i 1841 – som modvægt til venstrehegelianismen – kaldet til universitetet i <placeName xml:id="id426bed6d-13c0-4cde-9264-480a042e2606">Berlin</placeName>, hvor han fra 15. nov. til 18. marts 1842 holdt forelæsninger over åbenbaringens filosofi. SK fulgte forelæsningerne og tog referater fra dem frem til 3. feb. 1842, jf. <ref xml:id="id4826c294-27fa-4bb5-96c6-e751b9d5e7e4" target="../Not11/txr.xml#ss415" type="textCriticalAccount" n="415">tekstredegørelsen til notesbog 11</ref>, <hi xml:id="ide415dcd1-52dd-4713-8cea-fe44e3f6b78d" rendition="#ita">SKS</hi> K19, 415-418.</p>
+        </note>
+        <note type="commentary" xml:id="not8-51" n="235,12">
+          <label xml:id="idb635a0a5-28c0-4048-8388-20e009f63c4e">
+            <hi xml:id="id0f87da9a-111b-435c-a0a5-cd3786b9db9f" rendition="#bol">»Virkelighed« om Philosophiens Forhold til Virkelighed</hi>
+          </label>
+          <p xml:id="ide7211129-4b7c-45db-b632-1be19a3ea499">jf. SKs referat fra 2. time i <ref xml:id="id351cdb34-5877-49f5-ad1c-426306f325c1" target="../Not11/txt.xml#ss305" type="journalsAndPapers" n="305,16">notesbog 11:2</ref>, <hi xml:id="id17e3bc71-820d-44f6-85c6-363aa6990e7c" rendition="#ita">SKS</hi> 19, 305,16.</p>
+        </note>
+        <note type="commentary" xml:id="not8-52" n="235,13">
+          <label xml:id="idf73269ff-0a08-49fd-91bd-94fa3d3a189a">
+            <hi xml:id="idd8a2c938-e341-42a9-b765-6befe5978e76" rendition="#bol">da sprang Tankens Foster ... i Elisabeth</hi>
+          </label>
+          <p xml:id="idc57d01a8-e8f6-4e47-8918-b82fcde5436e">sigter til <rs xml:id="id815cee94-e5ad-4d7e-b3c3-15706246fc71" type="bible">Luk 1,41</rs>, hvor <persName xml:id="id40054c26-8a79-4aa3-aa93-977792c3291a" key="Elisabeth">Elisabeth</persName>, der venter sig <persName xml:id="id01fb7e22-2ee5-42b6-8c96-dc9fe1b2ba71" key="Johannes Døber">Johannes Døber</persName>, får besøg af <persName xml:id="idc368ebfe-2b75-4b81-9d18-4ed8dddc821c" key="Maria">Maria</persName>, som forinden er blevet bebudet, at hun skal føde Guds søn: »Og det begav sig, der Elisabeth hørte Mariæ Hilsen, sprang Fosteret i hendes Liv; og Elisabeth blev fyldt med den Hellig Aand« (NT-1819), jf. v. 44: »Thi see, der din Hilsens Røst kom mig til Øren, sprang Fosteret i mit Liv med Fryd« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="not8-55" n="236,7">
+          <label xml:id="id5ea487e2-32fd-4683-8787-a16894b0755c">
+            <hi xml:id="ide0d5fddd-0753-4eb1-8230-6381068689a4" rendition="#bol">at være troe over Lidet <hi xml:id="id4c39707a-e13d-47e9-8e2d-2133333aa7ac" rendition="#ita">(...)</hi> det Pund, der betroedes mig</hi>
+          </label>
+          <p xml:id="idf2c14b16-5536-42ef-bf42-2e1879a51d2a">spiller på Jesu lignelse om de betroede pund, <rs xml:id="id76b97083-aa64-4545-809d-8b6647d7140a" type="bible">Luk 19,11-27</rs>, hvor en herre giver sine tjenere hver et pund og byder dem at investere det, mens han er bortrejst; ved hjemkomsten lader han sine tjenere kalde, jf. v. 16-17: »Da traadte den første frem, og sagde: Herre, dit Pund haver forhvervet ti Pund. Og han sagde til ham: vel, du gode Tiener! efterdi du haver været tro i det Lidet, skal du have Magt over ti Stæder« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="not8-56" n="236,12">
+          <label xml:id="id9e3b463a-37c2-4d63-b75a-c18b96ca750a">
+            <hi xml:id="id3f97c1ed-008c-453a-b2d3-57181f939964" rendition="#bol">dersom Du tabte ... Din Sjæl</hi>
+          </label>
+          <p xml:id="id8ee163e4-6b29-4b38-be75-e9ad94141a1d">spiller på
+        <rs xml:id="id56b8bf79-a770-4f90-85bb-cea0ac2ae230" type="bible">Matt 16,26</rs>: »Thi hvad gavner det Mennesket, om han vinder den ganske Verden, men tager Skade paa sin Siel?« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="not8-57" n="236,26">
+          <label xml:id="id93735e84-3fe1-470d-8fad-aa0327bb3182">
+            <hi xml:id="idcee5f2e4-cd5c-4f4f-9d12-a92f292a33e1" rendition="#bol">Min</hi>
+          </label>
+          <p xml:id="ide0f5e4e9-6192-4b6f-9dc2-90fa0e001daa"><ptr xml:id="id78f960a7-515a-4c99-acd1-849995a50653" type="commentary" target="#not8-6" n="225,28"/> og <ptr xml:id="id887fa203-8cdb-4971-847c-3dc7a7c3d877" type="commentary" target="#not8-19" n="228,1"/></p>
+        </note>
+        <note type="commentary" xml:id="not8-58" n="236,27">
+          <label xml:id="idb886aece-26be-4b0e-b1d6-bb7e666ed017">
+            <hi xml:id="id6efa2f6e-bc8e-416a-99a1-9a30a097c69b" rendition="#bol">Salomo siger ... et sødt Kys</hi>
+          </label>
+          <p xml:id="id874c8948-9c3a-4dd3-b179-bc6af5f8b9ce">sigter til <rs xml:id="idfdfabb2e-3dc7-481e-817b-ff3b788bfb28" type="bible">Ordsp 24,26</rs>: »Man skal kysse Læberne paa den, som svarer rette Ord« (NT-1819). Jf. <hi xml:id="id2e983b56-61c9-42b8-8866-87a621521edf" rendition="#ita">Die Bibel, oder die ganze Heilige Schrift des alten und neuen Testaments, nach der deutschen Uebersetzung D. Martin Luthers</hi>, <placeName xml:id="idece1ebde-0bd4-4262-8d19-136de847f6a9">Karlsruhe</placeName> og <placeName xml:id="idd1687079-a51b-41fb-a951-3b64cd32f944">Leipzig</placeName> 1836, ktl. 3, der har: »Eine richtige Antwort ist wie ein lieblicher Kuß.«
+        – <rs xml:id="id39585337-8131-4aab-8181-23bef850b4a7" type="bible" key="Ordsp">Ordsprogenes Bog</rs> er i den kirkelige tradition blevet tillagt kong <persName xml:id="id718cd912-bf79-4a56-b29d-4f4e81b92d08" key="Salomo">Salomo</persName> og bar derfor også betegnelsen »Die Sprüche Salomons« i den nævnte ty. overs. og »Salomo Ordsprog« i <hi xml:id="id0fc6dc1a-38a1-42f3-b9b4-5f6145fb4395" rendition="#ita">Biblia, det er: den ganske Hellige Skrifts Bøger</hi>, <placeName xml:id="id7c3ebbbf-5268-4c59-801a-fc2f7dcab508" key="København">Kbh</placeName>. 1830, ktl. 7.</p>
+        </note>
+        <note type="commentary" xml:id="not8-59" n="236,33">
+          <label xml:id="id3d00cb78-31d5-420c-88c8-693a6b3fe523">
+            <hi xml:id="id4288137e-e479-47d6-8aa2-01a27a8602d6" rendition="#bol">Din</hi>
+          </label>
+          <p xml:id="id0771bbd8-f152-4788-8fb2-a809f1c3cfc2">I sine breve til <persName xml:id="idf0527233-5a87-4c68-8e3a-ab2168c759ea" key="Olsen, Regine">Regine Olsen</persName> under deres forlovelse underskrev SK sig som regel »Din S.K.«, »Din for evig« el. »Din for evig / S.K.« (<ptr xml:id="id3fdd6e08-1deb-44c6-94d7-1cd909739e01" type="commentary" target="#not8-6" n="225,28"/> og <ptr xml:id="id4805e01f-9b37-43a8-870c-ffdaa3be7795" type="commentary" target="#not8-19" n="228,1"/>).</p>
+        </note>
+        <note type="commentary" xml:id="not8-60" n="237,2">
+          <label xml:id="id1dc47873-54aa-47a5-b2a8-42d0e58cca66">
+            <hi xml:id="id175e817f-3d0e-41ba-b18f-855167041d92" rendition="#bol">Evangeliet om den barmhjertige Samaritan</hi>
+          </label>
+          <p xml:id="idcc5cc2a1-7ec1-4ac6-8e33-e873eda7457e">sigter til Jesu lignelse om den barmhjertige samaritaner, der i modsætning til en præst og en levit hjælper en mand, der er blevet overfaldet af røvere, jf. <rs xml:id="id4bb9e653-93bf-4a32-88d4-a6b626b5f278" type="bible">Luk 10,25-37</rs>, evangeliet på 13. søndag efter trinitatis.</p>
+        </note>
+        <note type="commentary" xml:id="not8-61" n="237,8">
+          <label xml:id="id863ead03-4e62-41b0-960f-949566365564">
+            <hi xml:id="idd338232d-8a98-4d74-b839-0b5fe7f10326" rendition="#bol">han siger: hvo var hans Næste</hi>
+          </label>
+          <p xml:id="id553a55dc-4033-46b9-9d88-6ee8071a9de7">Jesus fortæller lignelsen til en lovkyndig, der nok ved, at han if. loven skal elske sin næste som sig selv, men spidsfindigt spørger ham, <rs xml:id="id1d70a3b8-0d0e-4b59-8e19-bfe903d12a04" type="bible">Luk 10,29</rs>: »hvo [hvem] er da min Næste?« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="not8-62" n="237,9">
+          <label xml:id="ide1c632b4-9e45-4558-a8da-d96aaf1d1043">
+            <hi xml:id="idae96c039-ba5c-41cc-ae27-e1f82a513795" rendition="#bol">Svaret er: den, der gjorde vel mod ham</hi>
+          </label>
+          <p xml:id="id4eed83b1-a06b-4fd7-b693-f344a385029e">Efter at have fortalt lignelsen spørger Jesus den lovkyndige om, hvem der var den overfaldnes næste, og han svarer, <rs xml:id="id8d9f0e08-62a6-4bde-a000-7ce669c2e0cf" type="bible">Luk 10,37</rs>: »den, som gjorde Barmhiertighed imod ham« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="not8-63" n="237,14">
+          <label xml:id="id315701f3-6486-452e-965d-48b7cb2a52a9">
+            <hi xml:id="id05daba6f-1173-48f5-bd68-251423d134b2" rendition="#bol">Kraftmaaler</hi>
+          </label>
+          <p xml:id="idfe788b5e-44ee-4f02-8299-97a99c23c7aa">apparat til måling af en fysisk kraft, især som forlystelse til måling af muskelstyrke.</p>
+        </note>
+        <note type="commentary" xml:id="not8-64" n="237,16">
+          <label xml:id="ide8352118-68e2-45bc-8c58-f5399e155e23">
+            <hi xml:id="id2a9650bb-7664-48aa-9d11-72960da87e82" rendition="#bol">Jonas Olsen ... har hadet</hi>
+          </label>
+          <p xml:id="id29b30a1f-68b0-4fb7-88bd-77ae0eaa0e7e"><persName xml:id="id4fd1ff3e-a782-47f1-b9af-fb039a75698b" key="Olsen, Regine">Regine</persName>s ældre broder, <persName xml:id="id8a8f843e-5cd8-4a3a-a227-7c96c118e055" key="Olsen, Jonas Christian" n="*">Jonas Christian Olsen</persName> (1816-1902), 1837 immatrikuleret ved <placeName xml:id="id5bc08f62-6003-408e-a0a6-99d501560825">Københavns Universitet</placeName>, hvor han 1842 bestod teologisk embedseksamen; hans billet – lille brev, som typisk blev befordret af en tjener el. af fodposten – er ikke bevaret.</p>
+        </note>
+        <note type="commentary" xml:id="not8-65" n="237,21">
+          <label xml:id="id498d326a-49b3-4e40-b711-ad872b31f39f">
+            <hi xml:id="id50256453-79cb-4eff-a895-7a04e09890a6" rendition="#bol">Hegel <hi xml:id="id72112849-552d-4f7d-b2d5-d68a19e57d0a" rendition="#ita">(...)</hi> i »Æsth.« ... besteht</hi>
+          </label>
+          <p xml:id="id0198a959-d191-4962-9dd7-b99934d721fd">med enkelte ortografiske afvigelser ordret citat fra G.W.F. Hegel <hi xml:id="id89d81256-038d-453a-a050-a5da47c0ab05" rendition="#ita">Vorlesungen über die Aesthetik</hi>, udg. af <persName xml:id="id73f4e39d-fa1f-4b4a-8d21-53bbb9220e4f" key="Hotho, Heinrich Gustav">H.G. Hotho</persName>, bd. 1-3, <placeName xml:id="id3cb82a86-10a8-4d1a-9c9a-287b2d4b40e0">Berlin</placeName> 1835-38, ktl. 1384-1386, i <hi xml:id="id824bf97f-8897-4719-8a1f-91b29b084ce5" rendition="#ita">Hegel's Werke</hi> (se nedenfor) bd. 10,1-3 (<hi xml:id="id5dfa4753-4650-407d-9a32-a570b2ee65cf" rendition="#ita">Jub</hi>. bd. 12-14); bd. 10,3 (<hi xml:id="idf5731536-ff4c-445a-97d6-f4f47b46453b" rendition="#ita">Jub</hi>. bd. 14), s. 362. –
+        <hi xml:id="id844f46a4-e4e3-40a9-b2c6-8dcd9cd4d489" rendition="#bol">Hegel</hi>: <persName xml:id="idffc5e319-72d3-4e61-943c-b3586d0162b7" key="Hegel, Georg Wilhelm Friedrich" n="*">Georg Wilhelm Friedrich Hegel</persName> (1770-1831), ty. filosof, 1801-06 privatdocent (ekstraordinær prof.) i <placeName xml:id="id1a117a5b-07db-4a67-ae2e-056d970c49d5">Jena</placeName>, 1816-18 prof. i <placeName xml:id="id7e190985-15c6-4cf5-8f7c-350a6fb3e945">Heidelberg</placeName> og fra 1818 til sin død prof. i Berlin. SK havde i sit bibliotek en række separatudgaver af <hi xml:id="id855bedb4-edfb-4ac3-bc41-18c3d414fe63" rendition="#ita">Georg Wilhelm Friedrich Hegel's Werke. Vollständige Ausgabe</hi> bd. 1-18, Berlin 1832-45 (forkortet <hi xml:id="id4a944cbf-0b86-4488-9c11-0c336598d3b4" rendition="#ita">Hegel's Werke</hi>).</p>
+        </note>
+        <note type="commentary" xml:id="not8-66" n="238,4">
+          <label xml:id="id1390aba1-a07d-4e7b-b0d3-8d6b37c28401">
+            <hi xml:id="id9f77edbc-2e57-4bfe-8dbd-104f33fab002" rendition="#bol">D. Juan</hi>
+          </label>
+          <p xml:id="id3167d635-487a-45ba-89e9-840428b00d06"><persName xml:id="id70e0e27f-1395-4f6c-936d-1c3cc0a975b3" key="Mozart, Wolfgang Amadeus">Mozart</persName>s berømte opera <hi xml:id="idf0681012-36e8-4850-969f-3e834c3c3479" rendition="#ita">Il dissoluto punito ossia Il Don Giovanni</hi> (i <placeName xml:id="ide44b9c55-06ca-446d-93bb-825e4f92f933">Danmark</placeName> og <placeName xml:id="idad5ed9c5-6cb7-40b3-b3ed-422ca4d31c15">Tyskland</placeName> kaldt <hi xml:id="idef1cac4d-fdaf-4f81-a2a4-942118b1cda8" rendition="#ita">Don Juan</hi>) blev komponeret 1787 til tekst af <persName xml:id="id45265ff9-74b9-461c-a4f0-eac5ca572b7c" key="Ponte, Lorenzo da">Lorenzo da Ponte</persName>.</p>
+        </note>
+        <note type="commentary" xml:id="not8-67" n="238,13">
+          <label xml:id="id24098430-dbd7-4e9a-a4ec-6d4dc18bac40">
+            <hi xml:id="id786c853a-4f87-4709-9904-9cb4041fd6c0" rendition="#bol">Demoiselle Hedevig Schulze ... Elviras Partie</hi>
+          </label>
+          <p xml:id="id70f30ab1-9eab-433a-b03a-43c5de018643"><persName xml:id="id803834fc-e680-4abd-9a0f-9f3443923df1" key="Schulze, Hedwig" n="*">Hedwig Schulze</persName> (1815-45), ty. sangerinde, debuterede 1839 på
+        <placeName xml:id="id68962249-b63f-4111-8e71-44998f0b344e">Berliner Hofoper</placeName> på
+        <placeName xml:id="id3b1b0922-e529-41c7-816d-f4ccd3eab448">Unter den Linden</placeName>, hvor hun frem til 1843 bl.a. sang partiet som den forførte <persName xml:id="id99c33857-b07a-4fc1-8c46-7bdc8ea66d26" key="Donna Elvira">Donna Elvira</persName> i <persName xml:id="id0338527f-60a0-49d5-b72b-bc76574a154c" key="Mozart, Wolfgang Amadeus">Mozart</persName>s opera <hi xml:id="id0ccd77b6-7ed6-447e-b6bc-47a984d76bd9" rendition="#ita">Don Juan</hi>. Mens SK var i <placeName xml:id="id01fee020-52c1-4a27-aaa6-943ecd4a799a">Berlin</placeName>, blev <hi xml:id="id4006a626-3ee4-4399-ab04-0838bd33a762" rendition="#ita">Don Juan</hi> første gang opført 3. dec. og igen 12. dec. 1841, begge gange på Berliner Hofoper, jf. <hi xml:id="idadfa732f-13da-472e-9e0a-534eace9b890" rendition="#ita">Almanach für Freunde der Schauspielkunst auf das Jahr 1842</hi>, udg. af <persName xml:id="id056b6f0c-4a08-4039-bebd-37d3c29f997b" key="Wolff, L.">L. Wolff</persName>, Berlin 1843, s. 22f. Besætningen på disse opførelser er ikke angivet, men under rubrikken »Sängerinnen« i »Verzeichnis sämmtlicher Mitglieder der königlichen Schauspiele zu Berlin« i samme almanak ses »Dlle. Hedwig Schulze«, s. 11. Jf. <ref xml:id="idccf6169e-ecc6-4980-a345-cdafd87ae77c" target="../Not8/txr.xml#ss301" type="textCriticalAccount" n="301">tekstredegørelsen, s. 301</ref>f.</p>
+        </note>
+        <note type="commentary" xml:id="not8-68" n="238,29">
+          <label xml:id="idf0961145-e06c-4dea-a7e5-97ac06e97a07">
+            <hi xml:id="idb0001f80-5245-490a-9ab5-1f86a6e2d257" rendition="#bol">Paulus skriver ... Glæder Eder <hi xml:id="id4b0c2e33-02e0-4441-957c-cfa38acc13b7" rendition="#ita">(...)</hi> og atter ... Glæder Eder</hi>
+          </label>
+          <p xml:id="id0741e719-6b30-40da-bcc7-8e8739f0a1a9">jf. <rs xml:id="idb4989b5a-ca1c-413d-b942-fab966fb33b0" type="bible">Fil 4,4</rs>: »Glæder Eder i Herren altid; atter siger jeg: glæder Eder!« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="not8-69" n="240,5">
+          <label xml:id="id08ba200e-9cd5-428b-8545-4fb87d5b2073">
+            <hi xml:id="idb7b676ef-1951-418a-b09b-ccdebec43fdd" rendition="#bol">det jødiske Folk det udvalgte</hi>
+          </label>
+          <p xml:id="idc4677953-c31e-4d24-b696-27e8d7bb95d1">I GT er det israelitiske el. jødiske folk Guds udvalgte folk.</p>
+        </note>
+        <note type="commentary" xml:id="not8-70" n="240,31">
+          <label xml:id="idbe942ed6-1d15-49af-8be7-23e4742cf8de">
+            <hi xml:id="ide6b674b5-e86d-42c1-ba28-1eb37428808c" rendition="#bol">Skriften siger ... klingende Bjelde</hi>
+          </label>
+          <p xml:id="id69877220-c127-4d7b-954a-77e7c550d9e1">jf. <rs xml:id="idda5c9542-fa09-444f-a1b6-1729c30890f5" type="bible">1 Kor 13</rs>, v. 1: »Om jeg så taler med menneskers og engles tunger, men ikke har kærlighed, er jeg et rungende malm og en klingende bjælde«, og v. 13: »Så bliver da tro, håb, kærlighed, disse tre. Men størst af dem er kærligheden.«</p>
+        </note>
+        <note type="commentary" xml:id="not8-71" n="240,37">
+          <label xml:id="id66a2d7dc-38ed-47f5-b034-4e2d7ebf1c75">
+            <hi xml:id="idb6884c83-5790-4524-a784-0a26b8280ae3" rendition="#bol">denne Stemme ... gjemmes der</hi>
+          </label>
+          <p xml:id="idf9b98d32-ce44-4ad2-8b61-fdc672906c52">formentlig allusion til englenes ord til hyrderne på marken om Kristi fødsel: »Frygt ikke! Se, jeg forkynder jer en stor glæde« (<rs xml:id="idb67f72e8-3886-4662-8bd0-eb2899a11e98" type="bible">Luk 2,10</rs>), som hyrderne siden refererer for <persName xml:id="id002af6df-24fa-4aae-bc34-583b16ab52df" key="Josef, Marias mand">Josef</persName> og <persName xml:id="idc948668c-c6a1-4d03-80c1-4e421270dc4a" key="Maria">Maria</persName> i stalden: »men Maria gemte alle disse ord i sit hjerte og grundede over dem« (<rs xml:id="idb413a4d9-3812-4278-b312-363ba0d07330" type="bible">Luk 2,19</rs>).</p>
+        </note>
+        <note type="commentary" xml:id="not8-73" n="241,8">
+          <label xml:id="id61f013b6-5ecb-47c3-b56e-ba77357a4c94">
+            <hi xml:id="id18ec35ac-14d2-4b37-a459-9289906b904a" rendition="#bol">ikke lader sig uden Vidnedsbyrd</hi>
+          </label>
+          <p xml:id="idacd119fd-2fc0-43b5-8b01-416d4900ff0f">jf. <rs xml:id="id6fcd62db-a39a-42e4-9d16-de4786984cd5" type="bible">ApG 14,17</rs>, hvor <persName xml:id="id7bc0d9ca-8fac-4ebf-8135-f0944fdcafe4" key="Paulus">Paulus</persName> siger, at Gud ikke har »ladet sig selv uden Vidnesbyrd, i det han giorde os godt, og gav os Regn og frugtbare Tider af Himmelen, i det han fyldte os med Føde, og vore Hierter med Glæde« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="not8-74" n="241,22">
+          <label xml:id="id082950e2-3fb4-4604-ba4c-bfc1034136b1">
+            <hi xml:id="id1157998f-2f31-4bf9-8ec8-400890c2e281" rendition="#bol">Troldmand Simon ... faldt ned</hi>
+          </label>
+          <p xml:id="idb0600f3a-b8c9-48f3-b8dc-2ad1b32e2736"><persName xml:id="id59f1676f-0619-41c3-a84a-36c0ced14814" key="Simon fra Samaria" n="*">Simon</persName> fra Gitton i <placeName xml:id="id880b4aef-b3e9-469a-adbe-3450bc08c615">Samaria</placeName> (1. årh.), med tilnavnet Magus (lat. 'troldmand'), nævnes i <rs xml:id="id43734755-3f6a-4ef3-a8c8-2820f41ffaf2" type="bible">ApG 8,9-24</rs>, hvor han søger at købe sig til Helligånden. Legenden fortæller, at Simon kom til <placeName xml:id="iddc2440c1-46a9-460f-a801-c8122f9c5da8">Rom</placeName>, hvor han søgte at vise kejser <persName xml:id="id25c9e03b-2036-4481-8071-9bad9934444c" key="Nero">Nero</persName> sin magt ved at flyve, men af apostlen <persName xml:id="id78efc096-cd03-4574-841c-ad7fc2d84e27" key="Peter">Peter</persName> blev bragt til fald. SKs kilde er formentlig <persName xml:id="id6811384a-371b-41db-ae8f-0db09b58e0c7" key="Arnold, Gottfried">G. Arnold</persName>, der i sin kætterhistorie fortæller, at Simon foregav, »er wolle nun in den Himmel fliegen / auch darauf wirklich in die lufft gehoben / aber durch der Apostel gebet herunter gestürzet worden«, <hi xml:id="id22a21102-844a-4168-bc65-8d3e250eb5ab" rendition="#ita">Gottfrid Arnolds Unparteyische Kirchen- und Ketzer-Historie / von Anfang des Neuen Testaments biß auff das Jahr CHristi 1688</hi> bd. 1-2 i fire dele, <placeName xml:id="id7fd7b906-9af6-4e0e-a6f3-f3da08d111cb" key="Frankfurt am Main">Frankfurt</placeName> am Main 1699-1700, ktl. 154-155; bd. 1, 1. del, s. 43, sp. 2.</p>
+        </note>
+        <note type="commentary" xml:id="not8-75" n="241,27">
+          <label xml:id="id15d57d8f-c4e2-476e-bf48-1c492919f608">
+            <hi xml:id="ided1a8307-573c-41fa-afc1-0a221ba3713a" rendition="#bol">den, der har Øre til at høre</hi>
+          </label>
+          <p xml:id="idd480b37c-4883-4fbb-a7b3-6cfc269fc36f">allusion til en vending, som Jesus ofte afslutter sine lignelser med, fx <rs xml:id="id4e273755-9c10-4c6e-9c48-30454efde282" type="bible">Matt 11,15</rs>: »Den, som har øren, han høre!« Jf. også
+        <rs xml:id="id665ec2ac-8442-4275-80f7-6f75e0c9f90f" type="bible">Matt 13,9</rs>; <rs xml:id="idbb05dad8-2593-4021-8f39-894584f8c492" type="bible">Matt 13,43</rs>; <rs xml:id="idd635cabb-b726-4ceb-8183-db5485de93c1" type="bible">Mark 4,9</rs>; <rs xml:id="id6987f693-846e-4fdc-8dfa-81609ae91e77" type="bible">Luk 8,8</rs>; og <rs xml:id="id94879c6f-7e6d-4798-b26e-1fd3a6271013" type="bible">Luk 14,35</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="not8-101" n="243,1">
+          <label xml:id="id5f628955-3648-4648-9712-87c306b49d01">
+            <hi xml:id="idafaf42e2-b464-4419-b546-939387f53e94" rendition="#bol">Notanda. ad philosophiam pertinentia</hi>
+          </label>
+          <p xml:id="idf22eef60-9249-4bd2-b907-03c2d6d903e9">lat. 'Vigtige bemærkninger vedr. filosofien'.</p>
+        </note>
+        <note type="commentary" xml:id="not8-76" n="245,1">
+          <label xml:id="ida49c4f22-8d80-4b7c-ba7c-f929bfb517a9">
+            <hi xml:id="id301838dc-856b-42e2-b072-ac71151a9494" rendition="#bol">d. 1 Dec. I det som Werder hidtil har gjennemgaaet</hi>
+          </label>
+          <p xml:id="idda674049-ba46-49e3-9e31-c97bd4932f06"><persName xml:id="id69fd686f-a9e7-4283-a7f2-883156f3bab8" key="Werder, Karl" n="*">Karl Werder</persName> (1806-93), ty. filosof og digter, studerede hos Hegel i <placeName xml:id="idcebab1c0-fbba-4d12-a363-1a4e10b7e7b3">Berlin</placeName>, hvor han 1838 blev ekstraordinær prof., og hvor SK fulgte hans forelæsninger over sin <hi xml:id="idb6e0fec7-b769-4c1b-809a-c7ed7ee84a10" rendition="#ita">Logik. Als Commentar und Ergänzung zu Hegels Wissenschaft der Logik</hi>, 1. del, Berlin 1841, ktl. 867 (forkortet <hi xml:id="id5b12d111-ee10-4263-9441-8afddd556eb3" rendition="#ita">Logik</hi>), jf. <persName xml:id="idef807e6a-9a2a-4dc2-8657-427fbfecee6c" key="Hegel, Georg Wilhelm Friedrich">G.W.F. Hegel</persName>
+        <hi xml:id="id09174804-c349-43ef-ac35-5d3bb127c489" rendition="#ita">Wissenschaft der Logik</hi>, udg. af <persName xml:id="id2c31a9e6-3085-47ef-af1a-031cfd68a8eb" key="Henning, L. von">L. v. Henning</persName>, i <hi xml:id="id615ff815-166f-4f0d-a862-2ee2058af2e0" rendition="#ita">Hegel's Werke</hi> (<ptr xml:id="idda93015e-910b-46e5-b992-c9e73257e0c9" type="commentary" target="#not8-65" n="237,21"/>) bd. 3-5, Berlin 1833-34 [1812-16], ktl. 552-554 (<hi xml:id="id50a5ac8f-c5b1-4dd6-8e46-c2dc60bcfe33" rendition="#ita">Jub</hi>. bd. 4-5). Det har ikke ladet sig afgøre, hvor langt Werder var kommet i sine forelæsninger den 1. dec. 1841.</p>
+        </note>
+        <note type="commentary" xml:id="not8-77" n="245,4">
+          <label xml:id="id6869cbd5-785b-4705-9022-6ad12fd8d11f">
+            <hi xml:id="id16fe3fad-5c97-4e89-a1ed-4609950ebcd7" rendition="#bol">Overgangen fra »Werden« til »Daseyn«</hi>
+          </label>
+          <p xml:id="id2cdfc2ab-21b9-45de-8e94-c1b0b8033591">jf. afsnittet »<hi xml:id="id47264c0d-a211-4bc4-81cf-326d003b0a54" rendition="#ita">Auflösung des Werdens</hi>« i <persName xml:id="id527e7f85-b1de-4540-a321-e535e7915f17" key="Werder, Karl">Werder</persName> <hi xml:id="idb152af7e-b595-47a2-af54-6ad388d7d3a7" rendition="#ita">Logik</hi>, s. 108-111, som refererer til <persName xml:id="id5285b0fd-ae15-41be-90ad-9ecad5b23d36" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>
+        <hi xml:id="ide8ec8b99-aa7a-4f61-a529-b5f94c4e5940" rendition="#ita">Wissenschaft der Logik</hi>, 1. bog, 1. afsnit, kap. 1, C,3 (»<hi xml:id="id1fadd99f-2835-46a8-991c-d9fafa737b35" rendition="#ita">Aufheben des Werdens</hi>«), i <hi xml:id="id14c7fee5-46f0-4bd2-aa76-664d9faa5773" rendition="#ita">Hegel's Werke</hi> bd. 3, s. 109-111 (<hi xml:id="id7dc7ee2f-3733-4120-aca9-60f2e29294c2" rendition="#ita">Jub</hi>. bd. 4, s. 119-121).</p>
+        </note>
+        <note type="commentary" xml:id="not8-78" n="245,5">
+          <label xml:id="id7a51aff9-fce3-4a34-8619-0687b9152270">
+            <hi xml:id="idf77df4a1-ae4a-496d-8798-39a131b06709" rendition="#bol">fra Foranderlighed ... til Uendelighed</hi>
+          </label>
+          <p xml:id="id715af88d-0c5b-484c-8b5e-ca5c55ed03a1">jf. afsnittet »<hi xml:id="id23c9706e-49ae-40ac-a6cf-9dacb382b8ea" rendition="#ita">Auflösung der Veränderung</hi>« i <persName xml:id="idabce3486-de8a-4e0b-874f-f070435a9473" key="Werder, Karl">Werder</persName> <hi xml:id="id60c9fc3e-2c94-4622-85e6-3bb6b6ab3c26" rendition="#ita">Logik</hi>, s. 146-164, som refererer til <persName xml:id="idc48e5c78-ed60-4c44-b617-a1ae2b08be52" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>
+        <hi xml:id="id81f57dd9-f97f-4d8a-9268-23ca598e63b1" rendition="#ita">Wissenschaft der Logik</hi>, 1. bog, 1. afsnit, kap. 2, i <hi xml:id="id89cd9ca1-1202-4cd7-a1a6-d783d2d8702e" rendition="#ita">Hegel's Werke</hi> bd. 3, s. 137-173 (<hi xml:id="idf3b365a4-93bb-4bf2-9f29-86612f562295" rendition="#ita">Jub</hi>. bd. 4, s. 147-183), dvs. B,c (»Die Endlichkeit«), C (»Die Unendlichkeit«) og »Der Uebergang«.</p>
+        </note>
+        <note type="commentary" xml:id="not8-79" n="245,7">
+          <label xml:id="idd2dcf691-4e6f-4153-90ad-977a3a9c4aa0">
+            <hi xml:id="idfc731a66-cde2-4e24-8e8d-357951ffc0c3" rendition="#bol">Entstehen (Nichts i Seyn) ... ɔ: Daseyn</hi>
+          </label>
+          <p xml:id="ide4b378cc-2bfe-4790-841c-7e020b7d232a">jf. <persName xml:id="idd6f3e9e1-518d-4727-ab91-c87becd48f7b" key="Werder, Karl">Werder</persName>
+        <hi xml:id="id1a048282-3e01-4a2c-9112-d8b196c903ad" rendition="#ita">Logik</hi>, s. 109: »Im Werden ist die unbestimmte Ruhe, das Seyn, das <hi xml:id="id84fc47ef-5afe-4f16-8d49-410468c19d9d" rendition="#ita">abstracte</hi> Entstehen, aufgehoben; darum ist es rastlose Bewegung: Vergehen – welches als rastlose Bewegung selbst vergeht, und als die Bewegung des sich-selbst-Produzirens Entstehen und somit bestimmte in sich bewegte Ruhe: Geworden, Daseyn ist.«
+        – <persName xml:id="id51017162-3403-43af-aa4e-1d5bcf8a9c14" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName> beskriver det dialektiske forhold mellem »Entstehen« og »Vergehen« i <hi xml:id="id3583ee33-b9e3-4245-adaa-ce51e413f2f9" rendition="#ita">Wissenschaft der Logik</hi>, 1. bog, 1. afsnit, kap. 1, C,2 (»<hi xml:id="id6a435748-9103-4dbb-8d1f-afe6def63981" rendition="#ita">Momente des Werdens</hi>«), i <hi xml:id="id2f531370-98b7-4565-acb3-85d5d1ec4962" rendition="#ita">Hegel's Werke</hi> bd. 3, s. 108f. (<hi xml:id="id8aa06aee-8a93-46fe-9651-4bf46790bc6e" rendition="#ita">Jub</hi>. bd. 4, s. 118f.): »Beide sind dasselbe, Werden, und auch als diese so unterschiedenen Richtungen durchdringen und paralysiren sie sich gegenseitig. Die eine ist <hi xml:id="id90a34eca-90e3-41e2-9212-2a934c7f521a" rendition="#ita">Vergehen</hi>; Seyn geht in Nichts über, aber Nichts ist ebenso sehr das Gegentheil seiner selbst, Uebergehen in Seyn, Entstehen. Dieß Entstehen ist die andere Richtung; Nichts geht in Seyn über, aber Seyn hebt ebenso sehr sich selbst auf und ist vielmehr das Uebergehen in Nichts, ist Vergehen«, s. 109 (<hi xml:id="id0501e7fd-4fe8-4407-b870-745520adad1f" rendition="#ita">Jub</hi>. bd. 4, s. 119). Stedet citeres i Werder <hi xml:id="idb6b34486-e310-4bd0-9110-b172ee331e17" rendition="#ita">Logik</hi>, s. 98.</p>
+        </note>
+        <note type="commentary" xml:id="not8-80" n="245,12">
+          <label xml:id="idd63b53eb-65e0-4817-88b8-94929a9d8203">
+            <hi xml:id="id30af0d46-a8cd-442f-b09d-8fc5cb4c62c3" rendition="#bol">Etwas og Anderes ... forme hinanden</hi>
+          </label>
+          <p xml:id="id0fa0f6c7-37dd-4fd6-aa52-03586db275c4">If. <persName xml:id="id90e17547-72ee-492c-aa80-d3ee868086d3" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>s spekulative logik forholder kategorierne »Etwas« og »Anderes« sig dialektisk til hinanden, idet de gensidigt implicerer hinanden som modsætninger, jf. <persName xml:id="iddce4232f-421c-4997-8d99-7e4a3a2f6ee9" key="Werder, Karl">Werder</persName>
+        <hi xml:id="id906d1187-2ff5-4fcc-b718-ec9f172f593d" rendition="#ita">Logik</hi>, s. 126-133, især s. 132f.: »Das Etwas ist für Anderes und das Andere ist für Etwas, was heißt das? Es heißt: das Etwas ist außerdem daß es Etwas und <hi xml:id="id2e4d9f37-0762-4222-9b52-021d0fa2e66a" rendition="#ita">nicht</hi> das Andere ist, <hi xml:id="id73c01b70-3745-4136-8d77-dc7e444aa40a" rendition="#ita">auch</hi> das Andre, und das Andre ist, außerdem daß es das Andre und <hi xml:id="id49ff190b-0a0e-40af-b663-90a069f1953a" rendition="#ita">nicht</hi> das Etwas ist, <hi xml:id="idd483a764-cd4c-45f7-a608-0faaf28b15c9" rendition="#ita">auch</hi> Etwas. Noch nicht <hi xml:id="id29474382-6c6d-4582-88b9-0fdc834c6cce" rendition="#ita">total</hi> ist jedes das andre, sondern wie gesagt: nur momentan, d. h. <hi xml:id="id99021df1-67cb-4c70-9c40-fe837b0a7d91" rendition="#ita">auch</hi>. Sie sind in Einheit mit <hi xml:id="id5630cf57-f694-4ae4-a21e-91d385b25dc6" rendition="#ita">einander</hi> oder sind Eines als <hi xml:id="ide23d8c5b-a3ef-40d8-bf60-40152d6650ef" rendition="#ita">zwei</hi>.« Jf. Hegel <hi xml:id="id68527c2f-ca6a-48d6-ab1c-2127e8153a28" rendition="#ita">Wissenschaft der Logik</hi>, 1. bog, 1. afsnit, kap. 2, B,a (»<hi xml:id="id9d526f33-2493-470a-ad6d-8974eaaf7883" rendition="#ita">Etwas und ein Anderes</hi>«), i <hi xml:id="ida2ca4d6c-dbcc-4ca8-8fc8-2a793c7ba884" rendition="#ita">Hegel's Werke</hi> bd. 3, s. 122-129 (<hi xml:id="ide778fbfb-f102-45f0-9385-e22996436961" rendition="#ita">Jub</hi>. bd. 4, s. 132-129).</p>
+        </note>
+        <note type="commentary" xml:id="not8-100" n="245,21">
+          <label xml:id="ida54620ad-70bc-4280-bab0-89e6b8e98227">
+            <hi xml:id="id26895f21-2d83-4fff-9baf-aeadd7dcd4ea" rendition="#bol">men dette udtrykt som Eenhed er Forandring</hi>
+          </label>
+          <p xml:id="id9f0b2dee-01c0-4b07-ba3f-a899b92224c2">jf. <persName xml:id="idb3418aa9-4407-4f96-ab0a-324f7edb7f1d" key="Werder, Karl">Werder</persName>
+        <hi xml:id="ide805fb32-6bc0-4f15-b193-16d3b398b8c3" rendition="#ita">Logik</hi>, s. 138: »Die Wahrheit des Etwas und des Anderen ist die Veränderung. Als Veränderung hat der Begriff des Daseyns sich realisirt. Das Daseyn seinem Begriffe nach ist die Gegenwart des Werdens. Dieses gegenwärtige daseyende Werden, <hi xml:id="id7fe720f2-2fff-4620-a84e-d428375ab339" rendition="#ita">das Geworden als Werdendes</hi>, als Werden seiner selbst, nennen wir die <hi xml:id="idb9d522fa-5482-4a6d-b7e1-4fd562a5ad58" rendition="#ita">Veränderung</hi>.«</p>
+        </note>
+        <note type="commentary" xml:id="not8-81" n="245,24">
+          <label xml:id="id73bef45a-255f-4412-b0e0-e8553fdbc0a6">
+            <hi xml:id="iddb9904d8-ba38-4468-b2c1-56cf29cec17b" rendition="#bol">Men Uendelighed ... altsaa er Uendelighed</hi>
+          </label>
+          <p xml:id="id017f86e8-b4ac-4df1-b856-e5b78ac484f9">sigter til <persName xml:id="id20d5796d-65c3-4ae5-bdfc-775af94f1065" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>s redegørelse for det dialektiske forhold ml. endelighed og uendelighed i <hi xml:id="id15ab8a6b-f787-4135-b399-2343ce9f8278" rendition="#ita">Wissenschaft der Logik</hi> (<ptr xml:id="id8155551c-204e-485f-b97e-a5df6a8bd9bf" type="commentary" target="#not8-78" n="245,5"/>), som <persName xml:id="idabfe18b1-0ffb-4e6b-9404-d380a5b26b53" key="Werder, Karl">Werder</persName> kommenterer i <hi xml:id="ida61c1ab7-4db0-4b1f-8b47-dccd9e133f8a" rendition="#ita">Logik</hi>, s. 152: »Das Endliche mit sich zusammengehend <hi xml:id="idc028e1dd-cf13-4bcd-80c6-743ee4148844" rendition="#ita">vergeht</hi>; das worin es, warum es, kraft dessen es vergeht, ist also es <hi xml:id="id8ad07ad1-1c53-4dfc-9533-28411a10e163" rendition="#ita">selber als nicht es selber</hi>. Das aber sagt das Unendliche aus und sonst nichts. <hi xml:id="idd4650f89-0616-4b97-a75d-2564e7045530" rendition="#ita">(...)</hi> In dem <hi xml:id="id57a532cd-0c76-428c-b3bd-5682760ecee8" rendition="#ita">Worte</hi>: <hi xml:id="id5b327ce6-de34-46aa-9b74-da77e64b7145" rendition="#ita">Un - endlich</hi> liegt offenbart der <hi xml:id="id77a391d8-03f8-4d1c-b140-aeb77ddac49f" rendition="#ita">Gedanke</hi> des Unendlichen – der Gedanke, daß es das <hi xml:id="id7778aeea-c3ba-446e-9f4f-2efdd8baf993" rendition="#ita">Endliche</hi> selber als <hi xml:id="ide2db05a1-ba81-4012-933a-a6635806b364" rendition="#ita">nicht</hi> es selber ist«.</p>
+        </note>
+        <note type="commentary" xml:id="not8-83" n="245,30">
+          <label xml:id="id6d6c4257-964c-4081-a7e9-b57a5823c9d6">
+            <hi xml:id="idd8272e49-df1b-42d9-857d-7ab3a66a81d5" rendition="#bol">En Bemærkning ... Æsthetik 3 D. p. 243</hi>
+          </label>
+          <p xml:id="ida191ad1c-b7b1-42bf-acd8-0f6559a7a786">jf. <persName xml:id="idf2b363c3-60f2-4444-9a22-5fb603f16056" key="Hegel, Georg Wilhelm Friedrich">G.W.F. Hegel</persName>
+        <hi xml:id="idf08104c0-0d91-40e9-9c57-6f83747749b3" rendition="#ita">Vorlesungen über die Aesthetik</hi> (<ptr xml:id="id9e50a4e2-ec9c-48ad-8a6e-d22a160ae3ac" type="commentary" target="#not8-65" n="237,21"/>) bd. 3 (<hi xml:id="idd5f022bd-8c7e-4d92-982d-9c4b6e5975ab" rendition="#ita">Hegel's Werke</hi> bd. 10,3; <hi xml:id="iddf954471-81d2-4272-839f-836a8c80b8d6" rendition="#ita">Jub</hi>. bd. 14), s. 242f.: »Das Denken aber hat nur Gedanken zu seinem Resultat; es verflüchtigt die Form der Realität zur Form des reinen Begriffs, und wenn es auch die wirklichen Dinge in ihrer wesentlichen Besonderheit und ihrem wirklichen Daseyn faßt und erkennt, so erhebt es dennoch auch dieß Besondere in das allgemeine ideelle Element, in welchem allein das Denken bei sich selber ist. Dadurch entsteht der erscheinenden Welt gegenüber / [s. 243] / ein neues Reich, das wohl die Wahrheit des Wirklichen, aber eine Wahrheit ist, die nicht wieder im <hi xml:id="ida0d1dbf3-9936-4dbe-827e-e4dffe7528bb" rendition="#ita">Wirklichen</hi> selbst als gestaltende Macht und eigene Seele desselben offenbar wird. Das Denken ist nur eine Versöhnung des Wahren und der Realität im <hi xml:id="id18ae54d9-fc4c-4eb2-9bda-2531236a73e6" rendition="#ita">Denken;</hi> das poetische Schaffen und Bilden aber eine Versöhnung in der wenn auch nur geistig vorgestellten Form <hi xml:id="id8e090197-a3e2-4193-8b92-b90002277378" rendition="#ita">realer Erscheinung</hi> selber.«</p>
+        </note>
+        <note type="commentary" xml:id="not8-84" n="246,2">
+          <label xml:id="id84f66690-9b72-4d85-a2ae-fd5a7311b5b2">
+            <hi xml:id="id8de646b5-da86-4e44-a9d5-66115d778f4d" rendition="#bol">Læren om Aabenbaringen ... i hans Dogmatik</hi>
+          </label>
+          <p xml:id="id7faaa9dc-ef0f-47d6-abb8-26942475a526">jf. SKs referat af den ty. teolog og professor <persName xml:id="id05f5479d-e039-4683-869b-07fa9ce3c288" key="Marheineke, Philipp Konrad">Philipp Konrad Marheineke</persName>s forelæsninger i <placeName xml:id="id4bf2b7c1-ddcc-465f-a823-c74b9dc78466">Berlin</placeName>
+        »Die Christliche Dogmengeschichte«, afsnittet om »Guds middelbare Aabenbarelse«, i <ref xml:id="id659c5c24-90f5-452a-bbe5-90afc3813efa" target="../Not9/txt.xml#ss250" type="journalsAndPapers" n="250">notesbog 9</ref>, se <hi xml:id="idf28202ce-52c3-4481-a62f-475bc5357c46" rendition="#ita">SKS</hi> 19, 250-253.</p>
+        </note>
+        <note type="commentary" xml:id="not8-85" n="246,4">
+          <label xml:id="idc95589e2-141d-420a-8c30-44dd72f5db1b">
+            <hi xml:id="id0810ff6e-c3dc-4d14-a98b-569a4e1eba95" rendition="#bol">den logiske Sætning ... Werder ... sidste Ord</hi>
+          </label>
+          <p xml:id="ida1b37137-807d-4606-8af9-8384413ff933">jf. <persName xml:id="id23e573ef-3362-44e8-8096-0fffe70eb5be" key="Werder, Karl">Werder</persName>
+        <hi xml:id="id70a0441d-c749-4bbb-a5e4-a871e136e66c" rendition="#ita">Logik</hi>, s. 153: »So kann man sagen: Das Endliche selbst ist das Unendliche – und man sagt so, wenn man <hi xml:id="ideeb7f553-f219-427e-a7bc-1dd77da2a98a" rendition="#ita">weiß</hi>, <hi xml:id="idfe7a91b5-d47b-48af-b43c-da66cd6e0a25" rendition="#ita">was</hi> man sagt. Das Endliche <hi xml:id="idab6d2ffd-d484-4ced-979c-672d783af4bc" rendition="#ita">'selbst'</hi> bedeutet: Das Endliche <hi xml:id="idf7dfe5a1-b9a5-42e6-b946-5b0c1d418d77" rendition="#ita">nicht</hi>
+        – sondern das Vollendete. Denn das Endliche ist nicht <hi xml:id="id56f9896f-38d8-4deb-82a8-07a02d5c8a9a" rendition="#ita">selbst</hi>, da es als Endliches nicht <hi xml:id="idd8a12e85-ce8f-4fd8-9a16-892eaa67352f" rendition="#ita">ist</hi>, da sein Seyn das Nichtseyn ist, und es von Ewigkeit, noch bevor es anzufangen vermag als nur Endliches, schon vergangen ist als solches. Das heißt: es <hi xml:id="id9c15ffa5-9bc1-4a6b-a114-acc03ee90691" rendition="#ita">ist</hi> nur im Unvergänglichen. Das <hi xml:id="id708b412f-0d8c-4823-a738-a62a23c54295" rendition="#ita">Selbst</hi> des Endlichen ist das Unendliche. Daß das Nichtseyende sich manifestirt als <hi xml:id="id5476387a-6f7c-4e9b-b306-42a2f1857a5a" rendition="#ita">Nichtgewesenes</hi>, das ist die Manifestation des Seyns selber <hi xml:id="id39794c34-a9f5-43e3-86b3-0380fc76b91f" rendition="#ita">als des seyenden</hi>. Und grade als diese Manifestation ist das ewige Seyn das Werden seiner selbst. Denn so ist es sein eigner Reflex und schaut sich an, <hi xml:id="idc800c04f-939d-47f0-8f13-4de74f1709da" rendition="#ita">sein</hi> Anderes seyend in sich. Was heißt denn: <hi xml:id="idb0e9d5a5-b3b2-4a58-ad1e-701f20f109c4" rendition="#ita">Nichtgewesenseyn</hi>? .. <hi xml:id="idfb013c3f-d969-450e-b46b-4f51df55a7ff" rendition="#ita">Seyn</hi> heißt es, <hi xml:id="id3b1e61ec-7286-4339-a0f9-505f88754810" rendition="#ita">ewiges absolutes Seyn;</hi> der andre Ausdruck dafür ist es, <hi xml:id="id9f567416-3561-4ae0-a8aa-58d5e1797e45" rendition="#ita">sein</hi> andrer Ausdruck, sein eigner, sein Reflex, sein Wort, darin es sich schaut und vernimmt von Ewigkeit, es selber. Das heißt: das Endliche <hi xml:id="id47672f4f-b687-4fd5-a6c6-17510a7f74ce" rendition="#ita">selbst</hi> ist das Unendliche.«</p>
+        </note>
+        <note type="commentary" xml:id="not8-87" n="246,8">
+          <label xml:id="id075a8a20-86d1-46b0-84dc-712613b111fe">
+            <hi xml:id="id7fe76a75-28b4-488b-824f-ebffc40265fb" rendition="#bol">Læren om Guds-Billedet efter Marheinckes Foredrag</hi>
+          </label>
+          <p xml:id="id7e3b4b6a-df03-4d93-a502-2f136e1465c6">jf. SKs referat af <persName xml:id="id61dfccc1-c85b-4f2f-b1ec-d86e7e00a6b4" key="Marheineke, Philipp Konrad">Ph. Marheineke</persName>s forelæsninger »Die Christliche Dogmengeschichte«, afsnittet om »Vom göttlichen Ebenbilde«, i <ref xml:id="id34ba02cd-edd6-4d26-ad28-4093d6495e78" target="../Not9/txt.xml#ss253" type="journalsAndPapers" n="253">notesbog 9</ref>, se <hi xml:id="id8335e6f3-d645-4632-9bbc-59c7eada9a6b" rendition="#ita">SKS</hi> 19, 253-255.</p>
+        </note>
+        <note type="commentary" xml:id="not8-88" n="246,12">
+          <label xml:id="id02f6e9e7-3d97-4687-9256-077f5cdb3c08">
+            <hi xml:id="idf52647eb-6794-414d-a4c2-9a503bf26a4b" rendition="#bol">Et Sted ... Æsthetik 3d B p. 440 nederst</hi>
+          </label>
+          <p xml:id="idfe6c1d25-3e6f-45a5-8987-b1977289b31b">jf. <persName xml:id="id1324d73b-3263-4c1d-9d4d-26b3c4c98e17" key="Hegel, Georg Wilhelm Friedrich">G.W.F. Hegel</persName>
+        <hi xml:id="idd1edae2a-a37d-40a1-83f3-7d6c6a430709" rendition="#ita">Vorlesungen über die Aesthetik</hi> bd. 3 (<hi xml:id="id60090ac4-29c6-4002-8331-abde93e97bb8" rendition="#ita">Hegel's Werke</hi> bd. 10,3; <hi xml:id="id9eafe4df-1251-4289-8b94-a0a6adf41c2d" rendition="#ita">Jub</hi>. bd. 14), s. 440f.: »Drittens aber giebt es auch eine Form des Geistes, die wiederum nach einer Seite hin höher steht als die Phantasie des Gemüths und der Anschauung, insofern sie ihren Inhalt in durchgreifenderer Allgemeinheit und nothwendigerem Zusammenhange zum freien Selbstbewußtseyn zu bringen vermag, als dieß der Kunst überhaupt möglich wird. Ich meine das <hi xml:id="idead8c663-fbd1-4c99-8134-56a0a46d9474" rendition="#ita">philosophische Denken</hi>. Umgekehrt jedoch ist diese Form anderer Seits mit der Abstraktion behaftet, sich nur in dem Elemente des Denkens als der bloß ideellen Allgemeinheit zu entwickeln, so daß der konkrete Mensch sich nun auch gedrungen finden kann, den Inhalt und die Resultate seines philosophischen Bewußtseyns in konkreter Weise, als durchdrungen von Gemüth und Anschauung, Phantasie und Empfindung auszusprechen, um / [s. 441] / darin einen totalen Ausdruck des ganzen Innern zu haben und zu geben.«</p>
+        </note>
+      </div>
+    </body>
+  </text>
 </TEI>

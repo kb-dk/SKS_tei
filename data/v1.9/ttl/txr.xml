@@ -1,167 +1,687 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Tre Taler ved tænkte Leiligheder</title>
-     
-     <title type="short">TTL</title>
-  <author>
-   <name>Niels Jørgen Cappelørn</name><name>Jette Knudsen</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Jette Knudsen</name><name>Alastair McKinnon</name>
-  </editor>
- 
-  <respStmt>
-   <resp>udgivet af</resp>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Jette Knudsen</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>udgiverne</name><name>Christian Tolstrup</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name><name>Kim Ravn</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 1997-2003</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K5</biblScope>
-     <biblScope unit="file">http://sks.dk/ttl/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition xml:id="sub" scheme="css">vertical-align: sub; font-size: 80%;</rendition><rendition xml:id="lth" scheme="css">text-decoration: line-through</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20121212">XML/txr, <bibl><idno type="version">1.8</idno>, <biblScope unit="file">http://sks.dk/ttl/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id97f06012-016a-4e6e-a2b7-4749dbc78fd6">
+    <fileDesc xml:id="id4ae43279-4e6d-4e8f-950f-09a49ec5c55a">
+      <titleStmt xml:id="idc73385a0-c1d3-4b3b-ba74-c19d9ee7745e">
+        <title xml:id="id66a38851-23d9-44a0-bb63-294681a7fa6d" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id38a5e23a-2be5-40f3-828b-b605b38b10ec">Tre Taler ved tænkte Leiligheder</title>
+        <title xml:id="idcc215a16-80ae-4e60-8946-0884a3f13d7e" type="short">TTL</title>
+        <author xml:id="id9b3b32df-e2b4-4103-84d6-faa61015be65">
+          <name xml:id="idf159872b-19cf-4667-af8a-d389d1812f76">Niels Jørgen Cappelørn</name>
+          <name xml:id="id076ad550-2329-41a5-851d-78f001d476b6">Jette Knudsen</name>
+        </author>
+        <editor xml:id="idb7a4c4b7-b596-4c60-aabc-7628402da945">
+          <name xml:id="id0cca2c75-3ece-4f04-8b0d-71be7f86eb58">Niels Jørgen Cappelørn</name>
+          <name xml:id="id2fe22a26-8a63-475b-b8f9-c0165d16bb05">Joakim Garff</name>
+          <name xml:id="id000f6133-12a6-46ea-b710-3dd7f32ee005">Johnny Kondrup</name>
+          <name xml:id="idb14e5b04-1fe6-4436-8940-fa5a4db69364">Jette Knudsen</name>
+          <name xml:id="idd4b584a1-5ca5-43fd-b0dd-4ed3cad6ffcd">Alastair McKinnon</name>
+        </editor>
+        <respStmt xml:id="id5c7a9b85-2eba-42eb-a83d-54d3016c32fc">
+          <resp xml:id="id6144ca2b-1a31-4d23-90e8-67435442b407">udgivet af</resp>
+          <name xml:id="id87a813bd-923c-48df-9621-ad99c11dcb07">Niels Jørgen Cappelørn</name>
+          <name xml:id="id26b661a4-146c-4d59-99aa-6964f4c123ca">Joakim Garff</name>
+          <name xml:id="id2767f00e-833e-48aa-b620-607ec417908c">Johnny Kondrup</name>
+          <name xml:id="idb1b2a8f8-9ad4-4c87-a5ad-bed40a566f81">Jette Knudsen</name>
+        </respStmt>
+        <respStmt xml:id="id30147989-6c65-4c89-8986-8a59526a7bd0">
+          <resp xml:id="id9004420b-b249-4a23-9713-b11939cdb660">redigeret af</resp>
+          <name xml:id="id9648df10-e1be-44e4-9b14-4b3161639c4e">udgiverne</name>
+          <name xml:id="id2991b7e1-bc37-427b-92f6-400f62adaf85">Christian Tolstrup</name>
+        </respStmt>
+        <respStmt xml:id="id0d8e8e0f-a3e0-4aa8-95cf-209a46f7efae">
+          <resp xml:id="id94296fa9-248f-4950-9a35-a435590dacab">elektronisk redigeret af</resp>
+          <name xml:id="id6a724693-8425-4f1e-9148-0b32e2b32eac">Karsten Kynde</name>
+          <name xml:id="id849f58b5-5ac6-4087-a2ea-a339a50e67da">Kim Ravn</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id8fe7bf2b-206f-43cf-836f-9fd5fd248753">
+        <authority xml:id="idc1c2f64a-118d-424c-b6c5-0a6d09eb704a">Søren Kierkegaard Forskningscenteret 1997-2003</authority>
+        <availability xml:id="idb3168f85-eb56-45dd-8d25-8dc75685cdc2" status="restricted">
+          <p xml:id="idaea94939-921a-4918-8afe-40b45f744319">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id5b034db8-c896-48b2-9e00-97ad2cf70a28">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="id8fb5b8c6-14f3-4974-9bc9-5d11ddc20cb8" unit="volume">K5</biblScope>
+        <biblScope xml:id="idb2501644-f3dc-4aa0-b951-cc0c4c1f8cfd" unit="file">http://sks.dk/ttl/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="idb3d5b9bd-ef94-444e-ad50-da1f2f9809f0">
+        <bibl xml:id="id8a29fe5a-006d-4b1e-80f9-bb0084258df3" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id6c9f281a-cf05-4c92-9487-dc509a799f89">
+      <tagsDecl xml:id="ida08fe6f5-8c41-4a86-8d67-088e2c1c46e1">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition xml:id="sub" scheme="css">vertical-align: sub; font-size: 80%;</rendition>
+        <rendition xml:id="lth" scheme="css">text-decoration: line-through</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id8efd04b5-f285-4c56-96fb-b002258b8a0a">
+      <change xml:id="ide3b17a92-357d-4a7d-9378-bed7a4e54de4">Transformed to TEI by style sheet <bibl xml:id="id756b784b-e72b-4428-9a94-aad1ab81c1db" type="file">txr2tei.xsl</bibl> version as of <date xml:id="id1dbefab5-365b-4e4d-99dd-093135569353">2017-02-15</date> importing <bibl xml:id="id8e7c8352-5817-4127-bbb0-65be5cc19d2c" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="id58509e80-3db4-4b86-b211-cadb7591b282">Transformed to TEI by style sheet <bibl xml:id="id6390818b-820a-400b-a8bc-64d36d194633" type="file">kn12tei.xsl</bibl> version <idno xml:id="id3580d081-e8fe-4a9f-8121-d36e6f900cbf" type="version">1.9</idno> as of <date xml:id="id977f8188-792e-4fdc-b5db-68aa7c78dca7">2017-02-21</date> by <name xml:id="id2ae6870e-5c5c-46e3-96ff-4b0144447183">Karsten Kynde</name>, <orgName xml:id="id4b30385a-e068-4432-b5e1-9a9ddfab8e91">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="ida4fb6ed3-5dbd-4426-986f-87efa5c78430">København</placeName></change>
+      <change xml:id="id9a548551-2541-4843-be94-4cd4de02bbfb" when="20121212">XML/txr, <bibl xml:id="id6aad8e90-6ac5-49c8-8951-09bd95d59a3d"><idno xml:id="idb8a101c0-2d6c-492a-9adc-7d764b7e6c4f" type="version">1.8</idno>, <biblScope xml:id="id8a1cd79a-2a60-46e4-ae7c-5985fcf0e855" unit="file">http://sks.dk/ttl/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="TextCriticalAccount" subtype="publishedWritings"><body><div><head type="topText" n="Tekstredegørelse"/> 
-  <head><pb xml:id="ss381" n="381" edRef="#SKS"/>Tekstredegørelse </head>
-  <list type="TOC"> 
-   <item>1. Bibliografiske data 
-    <ptr type="chapter" target="#k1" n="381"/>
+  <text xml:id="idb75d57e1-ff07-4221-8b08-426fe430db63" type="TextCriticalAccount" subtype="publishedWritings">
+    <body xml:id="id41b4e3fe-8c6c-4fbc-801f-1b4a6fa0b417">
+      <div xml:id="id5a7720a7-c857-479f-8fb4-557104f3f5dc">
+        <head xml:id="id4e7715a4-8f05-4de5-9e73-5deea9b1890a" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="id9d38cd60-d2ad-4ed0-943b-e3c9bc72c282"><pb xml:id="ss381" n="381" edRef="#SKS"/>Tekstredegørelse </head>
+        <list xml:id="id047b38a4-bad7-4281-9adf-98d5b941c3d8" type="TOC">
+          <item xml:id="id579bb6d8-8d15-4443-86cc-cc3d47de4291">1. Bibliografiske data 
+    <ptr xml:id="id7a84cf16-dced-420f-9ee0-19dc38b6c582" type="chapter" target="#k1" n="381"/>
    </item>
-   <item>2. Manuskripter 
-    <ptr type="chapter" target="#k2" n="382"/>
+          <item xml:id="id0436b5dd-e452-42e9-bda6-acf3c3a88746">2. Manuskripter 
+    <ptr xml:id="id671f0018-13ad-4a26-b4e6-1b5fd4237fb5" type="chapter" target="#k2" n="382"/>
    </item>
-   <item>3. Tilblivelseshistorie 
-    <ptr type="chapter" target="#k3" n="392"/>
+          <item xml:id="id0d17c35b-7c9d-462d-a2a1-1d77b9371725">3. Tilblivelseshistorie 
+    <ptr xml:id="id205347d9-c8fe-4677-bfe3-50f951127c57" type="chapter" target="#k3" n="392"/>
    </item>
-   <item>4. Udgivelsesmåde 
-    <ptr type="chapter" target="#k4" n="402"/>
+          <item xml:id="id234c4a05-0e41-4ff5-9754-a09db2abe3ab">4. Udgivelsesmåde 
+    <ptr xml:id="id40c5cf45-d0fe-40f7-8b14-f30b73ce66c0" type="chapter" target="#k4" n="402"/>
    </item>
-  </list>
-  <div type="level1" xml:id="k1"> 
-   <head>1. Bibliografiske data </head>
-   <p><hi rendition="#ita">Tre Taler ved tænkte Leiligheder. Af S. Kierkegaard</hi> var færdig fra <persName key="Luno, Bianco">Bianco Luno</persName>s Bogtrykkeri 25. april 1845.<note> <p>Jf. <hi rendition="#ita">Bl.art.,</hi> s. 279. </p> </note> Bogen udkom 29. april, den kostede 4 mark eller 64 skilling og kunne fås hos <persName key="Reitzel, Carl Andreas">C.A. Reitzel</persName>.<note> <p>Bogen blev averteret til salg i <hi rendition="#ita">Kjøbenhavns kongelig alene privilegerede Adressecomptoires Efterretninger</hi> nr. 113, 29. april 1845, og <hi rendition="#ita">Den privilegerede Berlingske politiske- og Avertissements-Tidende</hi> nr. 102, 29. april 1845 (tillægget). </p> </note> Formatet er oktav, ca. 135 x 208 mm,<note> <p>Målene stammer fra Søren Kierkegaard Forskningscenterets arbejdseksemplar og gælder den ubeskårne bogs blade (bredde x højde). </p> </note> og bogen har et bogtrykt omslag på beige papir. Omfanget er 100 sider, svarende til 61/4 ark. Siderne tælles med arabertal; de første syv er upagineret. Titelbladet gengives på <ref target="../TTL/txr.xml#ill_k20" type="figure">illustration 20</ref> <figure xml:id="ill_k20" rend="recto" n="1"><graphic url="../TTL/ill_k20.jpg"/><head>20. Titelblad til <hi rendition="#ita">TTL.</hi> Naturlig størrelse</head></figure>  . </p>
-   <p>Ved en intern kollation af tre eksemplarer af <hi rendition="#ita">Tre Taler ved tænkte Leiligheder</hi> (forkortet <hi rendition="#ita">TTL</hi>) er der ikke konstateret afvigelser. De benyttede eksemplarer er: </p>
-   <list> 
-     
-     <label>A</label>
-     <item>Søren Kierkegaard Forskningscenterets arbejdseksemplar, tilhørende G.E.C. Gads Forlag (tidligere hos dr.phil. h.c. <persName key="Bernström, Gustaf">Gustaf Bernström</persName>, <placeName>Göteborg</placeName>). </item>
-    
-     
-     <label><pb xml:id="ss382" n="382" edRef="#SKS"/>B</label>
-     <item>Det kongelige Biblioteks eksemplar, katalogsignatur 6,1, – 244 – 8<hi rendition="#sup">o</hi>, DA BOX, revisionsnr. 02268. </item>
-    
-     
-     <label>C</label>
-     <item>Det kongelige Biblioteks eksemplar, katalogsignatur 6,1, – 244 – 8<hi rendition="#sup">o</hi>, DA BOX, revisionsnr. 02269. </item>
-    
-   </list>
-  </div>
-  <div type="level1" xml:id="k2"> 
-   <head>2. Manuskripter </head>
-   <p>Til <hi rendition="#ita">TTL</hi> findes flg. manuskripter bevaret, alle i Kierkegaard Arkivet (KA) på Det kongelige Bibliotek. Rækkefølgen afspejler tilnærmelsesvis tilblivelseskronologien; en nøjere udredning gives nedenfor i afsnit 3. </p>
-  <!--1--> 
-   <msDesc><msIdentifier><collection>TTL</collection></msIdentifier> 
-    <msPart xml:id="physDesc.1" next="#additional.1"><msIdentifier><idno>1</idno></msIdentifier><physDesc><p>Spredte udkast til forordet, første og tredje tale samt flere ubrugte udkast (der senere bruges i »En Leiligheds-Tale« i <hi rendition="#ita">Opbyggelige Taler i forskjellig Aand</hi>, 1847, og i<hi rendition="#ita"> Indøvelse i Christendom</hi>, 1850). </p><p>1 sammenhæftning a 4 folioark, hvoraf bladene i første og tredje ark er løse, + 1 blad, i alt 9 blade i 4<hi rendition="#sup">o</hi>. </p><p>Ingen paginering. </p><p>Papir: gulligt koncept. Mål: 171 x 206 mm. Rød hæftesnor. De løse blade har spor efter sammenfoldning. Det fremgår af mærker fra oblater forneden på bl. [8v], at bladet har været opklæbet. </p><p>Teksten er skrevet hen over hele siden. En tilføjelse på langs af siden på bl. [2r]. Bl. [2v] og [8v] er ubeskrevet. </p><p>På bl. [1r] findes udkast til et titelblad: »6 Taler / ved tænkte Leiligheder / <del rendition="#lth">3 Leilighedstaler ved tænkte Leiligheder</del> / af <hi rendition="#ant">/ S. Kierkegaard.</hi>« I det slettede titeludkast har SK korrigeret antallet af taler fra »3« til »6«. På bl. [1v] findes udkast til talernes titler: »Tale ved Skriftemaal. / ved Vielse / ved Graven.« De udkast, som benyttes i <hi rendition="#ita">TTL,</hi> findes på bl. [1]-[2r], [3v]-[4r], [6r] og [9v]. Optegnelsen på bl. [9v] begynder: »<hi rendition="#ant">Mynster</hi> prædikede igaar d. 9 <hi rendition="#ant">Febr.</hi> 45 over disse Ord: <hi rendition="#ita">(...)</hi>«. Dateringen er tilføjet over linien. </p><p>Mange korrektioner, heraf en enkelt med blyant. </p></physDesc></msPart><msPart xml:id="additional.1" prev="#physDesc.1"><msIdentifier><idno>1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">B-fort.</hi> 405 a; KA, B pk. 27; <hi rendition="#ita">Pap.</hi> VI B 138-157) </p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.2" next="#additional.2"><msIdentifier><idno>2</idno></msIdentifier><physDesc><p>Udkast til titelblad samt kladde til forord og første tale. Mss. 2.2, 2.3 og 2.4 stammer fra renskriften. Under skrivningen kasserede SK disse manuskriptdele og henlagde dem som kladde.<pb xml:id="ss383" n="383" edRef="#SKS"/> </p></physDesc> 
-       <msPart xml:id="physDesc.2.1" next="#additional.2.1"><msIdentifier><idno>2.1</idno></msIdentifier><physDesc><p><pb xml:id="ss384" n="384" edRef="#SKS"/>Kladdehæfte i 4<hi rendition="#sup">o</hi> med omslag af sort glanspapir, i alt 16 blade. </p><p>Ingen paginering. </p><p>Papir: groft koncept. Mål: 164 x 199 mm. På omslagets forreste inderside findes en trykt etiket med »Tilkjøbs hos / Bogbinder <hi rendition="#bol">N.C. Møller</hi> / Graabrødre-Torv Nr. 97«. Uden på omslaget findes en etiket uden påskrift.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser, flere på langs af siden. Bl. [2v] og [12]-[16] er ubeskrevet. </p><p>På bl. [1r] findes udkast til et titelblad: »Sex Taler ved tænkte Leiligheder.« Bl. [2r] optages af kladde til forordet; tilføjelser hertil findes på bl. [1v]. På bl. [3r] følger kladde til begyndelsen af første tale. Overskrift: »Ved Anledning af et Skriftemaal.« Kladden munder ud i udkast på bl. [11v]. Teksten inkl. marginaltilføjelse fra nederst på bl. [4v] til øverst på bl. [5r] udgør en variant til kladden i ms. 2.2 (»Tale <hi rendition="#ita">(...)</hi> beskæmmer ham selv«, jf. <ref target="../TTL/txt.xml#ss393" type="publishedWritings" n="393"><hi rendition="#ita">SKS</hi> 5, 393</ref>,6-396,26). </p><p>Mange korrektioner, enkelte med blyant. </p><p>På bl. [5r] og [7v] findes flere bemærkninger vedr. kompositionen, skrevet med blyant. Ud for bemærkningen »bruges til det om Skjebnen« på bl. [7v] er et afsnit indstreget med blyant. Neden for det indstregede stykke er et afsnit først indrammet, siden slettet med blyant. </p></physDesc></msPart><msPart xml:id="additional.2.1" prev="#physDesc.2.1"><msIdentifier><idno>2.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VI B 100-105) </p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.2.2" next="#additional.2.2"><msIdentifier><idno>2.2</idno></msIdentifier><physDesc><p>4 blade i 4<hi rendition="#sup">o</hi>. </p><p>Ingen paginering. </p><p>Papir: gulligt koncept. Mål: 169 x 206 mm. </p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bl. [4v] er ubeskrevet. </p><p>Bladene består af kasseret tekst fra s. 7 i den oprindelige renskrift; teksten begynder midt i en sætning med samme ordlyd, som indleder s. 7 i den nu foreliggende renskrift. Teksten udgør en udvidet version af kladden på bl. [4v]-[5r] i ms. 2.1 (»Tale <hi rendition="#ita">(...)</hi> beskæmmer ham selv«, jf. <ref target="../TTL/txt.xml#ss393" type="publishedWritings" n="393"><hi rendition="#ita">SKS</hi> 5, 393</ref>,6-396,26). </p><p>En del korrektioner, enkelte med blyant. </p><p><pb xml:id="ss385" n="385" edRef="#SKS"/>En kompositionsbemærkning (»<hi rendition="#ant">NB</hi>«) skrevet med blyant øverst på bl. [1v] markerer, at teksten skal indføjes ved et tilsvarende »<hi rendition="#ant">NB</hi>« på bl. [5r] i ms. 2.1. </p></physDesc></msPart><msPart xml:id="additional.2.2" prev="#physDesc.2.2"><msIdentifier><idno>2.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VI B 106) </p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.2.3" next="#additional.2.3"><msIdentifier><idno>2.3</idno></msIdentifier><physDesc><p>2 sammenhæftninger a 2 og 4 folioark, i alt 12 blade i 4<hi rendition="#sup">o</hi>. </p><p>Ingen paginering, men teksten er fortløbende fra første til anden sammenhæftning. </p><p>Papir: gulligt koncept. Mål: 170 x 206 mm. Rød hæftesnor i begge sammenhæftninger. </p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser, flere med blyant. Bladene består af kasseret tekst fra s. 23 i den oprindelige renskrift. SK kasserede teksten og henlagde den som kladde; et afsnit af tekstens begyndelse findes stadig i renskriften, indstreget med blyant (jf. ms. 5). Teksten udgør en fortsættelse af ms. 2.2. </p><p>Mange korrektioner, flere med blyant. </p><p>På bl. [3v] og bl. [12v] er en marginaltilføjelse indstreget med blyant. Flere bemærkninger med blyant; nederst på bl. [12v], hvor teksten slutter, har SK bemærket: »<hi rendition="#ant">cfr</hi> et Quartblad / Udkast, som udføres stærkt for at incitere«. </p></physDesc></msPart><msPart xml:id="additional.2.3" prev="#physDesc.2.3"><msIdentifier><idno>2.3</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VI B 108) </p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.2.4" next="#additional.2.4"><msIdentifier><idno>2.4</idno></msIdentifier><physDesc><p>2 blade i 4<hi rendition="#sup">o</hi>. </p><p>Bladene er med blyant pagineret hhv. 43 og 45; pagineringen stammer fra renskriften. </p><p>Papir: gulligt koncept. Mål: 171 x 206 mm. </p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser, en på langs af siden på bl. [2v]. </p><p>Bladene består af kasseret tekst fra s. 43 i den oprindelige renskrift; teksten begynder med samme ordlyd, som indleder s. 43 i den nu foreliggende renskrift. Teksten udgør en fortsættelse af ms. 2.3. </p><p>Få korrektioner. </p></physDesc></msPart><msPart xml:id="additional.2.4" prev="#physDesc.2.4"><msIdentifier><idno>2.4</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VI B 109-110) </p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.2" prev="#physDesc.2"><msIdentifier><idno>2</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 25; <hi rendition="#ita">Pap.</hi> VI B 100-106 + 108-110) </p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.3" next="#additional.3"><msIdentifier><idno>3</idno></msIdentifier><physDesc><p><pb xml:id="ss386" n="386" edRef="#SKS"/>Kladde til anden tale. </p></physDesc> 
-       <msPart xml:id="physDesc.3.1" next="#additional.3.1"><msIdentifier><idno>3.1</idno></msIdentifier><physDesc><p>1 sammenhæftning a 5 folioark, i alt 10 blade i 4<hi rendition="#sup">o</hi>. </p><p>Ingen paginering. </p><p>Papir: gulligt koncept. Mål: 170 x 206 mm. Rød hæftesnor. </p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser, en med blyant på bl. [3r] og en hen over hele siden på bl. [6v]. Bl. [7v]-[10] er ubeskrevet. Teksten udgør kladde til ca. halvdelen af anden tale; et stykke på bl. [4r]-[6v] er en variant til kladden på bl. [1r]-[7r] i ms. 3.2 (»Et gammelt Ord <hi rendition="#ita">(...)</hi> Beslutningens strænge Opdragelse«, jf. <ref target="../TTL/txt.xml#ss423" type="publishedWritings" n="423"><hi rendition="#ita">SKS</hi> 5, 423</ref>,1-430,13). </p><p>En del korrektioner. </p><p>Et afsnit er indstreget med blyant nederst på bl. [4v]. </p></physDesc></msPart><msPart xml:id="additional.3.1" prev="#physDesc.3.1"><msIdentifier><idno>3.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VI B 111) </p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.3.2" next="#additional.3.2"><msIdentifier><idno>3.2</idno></msIdentifier><physDesc><p>4 folioark, i alt 8 blade i 4<hi rendition="#sup">o</hi>. </p><p>Arkene er på første side med blyant mærket 1-4. </p><p>Papir: gulligt koncept. Mål: 170 x 206 mm. </p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser, flere med blyant. Bl. [8] er ubeskrevet. Teksten på bl. [1r]-[7r] udgør en variant til kladden på bl. [4r]-[6v] i ms. 3.1 (»Et gammelt Ord <hi rendition="#ita">(...)</hi> Beslutningens strænge Opdragelse«, jf. <ref target="../TTL/txt.xml#ss423" type="publishedWritings" n="423"><hi rendition="#ita">SKS</hi> 5, 423</ref>,1-430,13). På bl. [7v] munder kladden ud i spredte udkast til fortsættelsen af talen. </p><p>Mange korrektioner. </p><p>På bl. [7r] har SK på langs i marginen med blyant bemærket: »<hi rendition="#ant"><hi rendition="#ita">NB</hi></hi> udføres endnu mere i mildere Skikkelser.« </p></physDesc></msPart><msPart xml:id="additional.3.2" prev="#physDesc.3.2"><msIdentifier><idno>3.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VI B 112-113) </p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.3.3" next="#additional.3.3"><msIdentifier><idno>3.3</idno></msIdentifier><physDesc><p>3 folioark, i alt 6 blade i 4<hi rendition="#sup">o</hi>. </p><p>Arkene er på første side med blyant mærket 5-7. </p><p>Papir: gulligt koncept. Mål: 170 x 206 mm. </p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bl. [5v]-[6] er ubeskrevet. </p><p>Teksten, som har forlæg i udkastene på bl. [7v] i ms. 3.2, udgør kladde til fortsættelsen af talen. </p><p>Få korrektioner. </p><p><pb xml:id="ss387" n="387" edRef="#SKS"/>Hvor teksten slutter nederst på bl. [5r], har SK med blyant tilføjet: »2) En virkelig Forestilling om Gud«. </p></physDesc></msPart><msPart xml:id="additional.3.3" prev="#physDesc.3.3"><msIdentifier><idno>3.3</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VI B 114-115) </p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.3.4" next="#additional.3.4"><msIdentifier><idno>3.4</idno></msIdentifier><physDesc><p>2 folioark, i alt 4 blade i 4<hi rendition="#sup">o</hi>. </p><p>Arkene er på første side med blyant mærket 8-9. </p><p>Papir: gulligt koncept. Mål: 169 x 205 mm. </p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Teksten udgør kladde til sidste del af talen. </p><p>Få korrektioner. </p></physDesc></msPart><msPart xml:id="additional.3.4" prev="#physDesc.3.4"><msIdentifier><idno>3.4</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap. </hi>VI B 116-117) </p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.3.5" next="#additional.3.5"><msIdentifier><idno>3.5</idno></msIdentifier><physDesc><p>2 blade i 4<hi rendition="#sup">o</hi>. </p><p>Bladene er pagineret 1-4 med blyant; på første side er den oprindelige mærkning 10 slettet med blyant. </p><p>Papir: gulligt koncept. Mål: 170 x 205 mm. </p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Teksten udgør et kasseret kladdeforlæg til talens sidste del. </p><p>Få korrektioner. </p><p>Langs hele teksten er der i marginen sat en lodret blyantstreg. </p><p>Det sidste afsnit af teksten på bl. [2v] er slettet med tætte blyantstreger. </p></physDesc></msPart><msPart xml:id="additional.3.5" prev="#physDesc.3.5"><msIdentifier><idno>3.5</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">B-fort.</hi> 405 f; <hi rendition="#ita">Pap.</hi> VI B 118) </p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.3" prev="#physDesc.3"><msIdentifier><idno>3</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">B-fort.</hi> 405 f; KA, B pk. 25;<hi rendition="#ita"> Pap.</hi> VI B 111-118) </p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.4" next="#additional.4"><msIdentifier><idno>4</idno></msIdentifier><physDesc><p>Kladde og udkast til tredje tale. Mss. 4.3, 4.5 og 4.6 stammer fra renskriften; under skrivningen kasserede SK disse manuskriptdele og henlagde dem som kladde. </p></physDesc> 
-       <msPart xml:id="physDesc.4.1" next="#additional.4.1"><msIdentifier><idno>4.1</idno></msIdentifier><physDesc><p>1 blad + 1 folioark, i alt 3 blade i 4<hi rendition="#sup">o</hi>. </p><p>Det løse blad er med blyant mærket 1; arket er med blyant på første side mærket 2. </p><p>Papir: gulligt koncept. Mål: 169 x 205 mm. </p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser, flere med blyant. To tilføjelser i selve teksten med blyant. Teksten udgør kladde og udkast<pb xml:id="ss388" n="388" edRef="#SKS"/> til talens begyndelse (til talens første afsnit findes intet forlæg). </p><p>En del korrektioner. </p></physDesc></msPart><msPart xml:id="additional.4.1" prev="#physDesc.4.1"><msIdentifier><idno>4.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VI B 119) </p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.4.2" next="#additional.4.2"><msIdentifier><idno>4.2</idno></msIdentifier><physDesc><p>1 folioark a 2 blade i 4<hi rendition="#sup">o</hi> + 1 blad i 8<hi rendition="#sup">o</hi>, i alt 3 blade. </p><p>Ingen paginering. </p><p>Papir, folioarket: gulligt koncept; det løse blad: blåligt post-velin. Mål, folioarket: 169 x 206 mm; det løse blad: 136 x 213 mm. </p><p>Teksten er skrevet hen over hele siden. Bl. [3v] er ubeskrevet. </p><p>Teksten udgøres af spredte udkast, dels til en udvidelse af sidste del af ms. 4.1, dels til resten af talen. </p><p>Mange korrektioner, flere med blyant. </p><p>Det meste af teksten er slettet med tætte blyantløkker og -streger. </p><p>På bl. [1r] står »<hi rendition="#ant"><hi rendition="#bol">verte</hi></hi>«<note> <p>Det latinske verte betyder: vend (bladet)! </p> </note> med blyant i nederste højre hjørne. </p></physDesc></msPart><msPart xml:id="additional.4.2" prev="#physDesc.4.2"><msIdentifier><idno>4.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VI B 120) </p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.4.3" next="#additional.4.3"><msIdentifier><idno>4.3</idno></msIdentifier><physDesc><p>Kladdehæfte i 4<hi rendition="#sup">o</hi> med omslag af sort glanspapir, i alt 11 blade, hvoraf de sidste 5 er løse. </p><p>Ingen paginering. </p><p>Papir: svært, gulligt koncept. Mål: 164 x 199 mm. På omslagets forreste inderside findes en trykt etiket med »Tilkjøbs hos / Bogbinder <hi rendition="#bol">N.C. Møller</hi> / Graabrødre-Torv Nr. 97«. På omslagets forside findes en etiket med påskriften: »<hi rendition="#ant"><hi rendition="#bol">Taler.</hi> / Leilighed.</hi>« Det sidste ord skrevet med blyant. </p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten få tilføjelser, flere med blyant. Bladene består af kasseret tekst fra s. 93 i den oprindelige renskrift. SK kasserede teksten og henlagde den som kladde; et længere afsnit af tekstens begyndelse findes stadig i renskriften, her indstreget med blyant (jf. ms. 5). </p><p>Mange korrektioner. </p></physDesc></msPart><msPart xml:id="additional.4.3" prev="#physDesc.4.3"><msIdentifier><idno>4.3</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VI B 122,1-4) </p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.4.4" next="#additional.4.4"><msIdentifier><idno>4.4</idno></msIdentifier><physDesc><p><pb xml:id="ss389" n="389" edRef="#SKS"/>Kladdehæfte i 4<hi rendition="#sup">o</hi> med omslag af mørklilla glanspapir, i alt 16 blade. </p><p>Ingen paginering. </p><p>Papir: svært, gulligt koncept. Mål: 164 x 199 mm. På omslagets forreste inderside findes en trykt etiket med »Tilkjøbs hos / Bogbinder <hi rendition="#bol">N.C. Møller</hi> / Graabrødre-Torv Nr. 97«. Uden på omslaget findes en etiket uden påskrift. </p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bl. [5v]-[16] er ubeskrevet. Teksten udgør en fortsættelse af ms. 4.3; teksten på bl. [1v]-[3v] øverst er en variant til kladden i ms. 4.5 (»Dødens Lighed <hi rendition="#ita">(...)</hi> afspændt Sløvhed«, jf. <ref target="../TTL/txt.xml#ss459" type="publishedWritings" n="459"><hi rendition="#ita">SKS</hi> 5, 459</ref>,33-461,32). </p><p>En del korrektioner. </p></physDesc></msPart><msPart xml:id="additional.4.4" prev="#physDesc.4.4"><msIdentifier><idno>4.4</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VI B 122,5-7) </p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.4.5" next="#additional.4.5"><msIdentifier><idno>4.5</idno></msIdentifier><physDesc><p>1 sammenhæftning a 2 foldede 4<hi rendition="#sup">o</hi>-blade, i alt 4 blade i 8<hi rendition="#sup">o</hi>. </p><p>Bl. [1r] er med blyant pagineret 113; pagineringen stammer fra renskiften. </p><p>Papir: post-velin; vandmærke: J Whatman 1838. Mål, de foldede blade: 128 x 205 mm. Rød hæftesnor. </p><p>Teksten er skrevet hen over hele siden. På bl. [1v] findes to tilføjelser, en i bladranden og en skrevet med blyant under teksten. Bl. [2v]-[4] er ubeskrevet. Bladene består af kasseret tekst fra s. 113 i den oprindelige renskrift; teksten begynder med samme ordlyd, som indleder s. 113 i den nu foreliggende renskrift. Teksten udgør en variant til kladden i ms. 4.4, bl. [1v]-[3v] øverst (»Dødens Lighed <hi rendition="#ita">(...)</hi> afspændt Sløvhed«, jf. <ref target="../TTL/txt.xml#ss459" type="publishedWritings" n="459"><hi rendition="#ita">SKS</hi> 5, 459</ref>,33-461,32). </p><p>Få korrektioner. </p></physDesc></msPart><msPart xml:id="additional.4.5" prev="#physDesc.4.5"><msIdentifier><idno>4.5</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VI B 123) </p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.4.6" next="#additional.4.6"><msIdentifier><idno>4.6</idno></msIdentifier><physDesc><p>1 sammenhæftning a 3 folioark + 2 blade + 1 folioark, i alt 10 blade i 4<hi rendition="#sup">o</hi>. </p><p>Ingen paginering. </p><p>Papir: gulligt koncept. Mål: 170 x 206 mm. Rød hæftesnor. </p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten få tilføjelser, en enkelt med blyant. Bladene består af kasseret tekst fra s. 117 i den oprindelige renskrift; teksten begynder midt i en sætning med samme<pb xml:id="ss390" n="390" edRef="#SKS"/> ordlyd, som indleder s. 117 i den nu foreliggende renskrift. Teksten udgør kladde til talens slutning. </p><p>Få korrektioner. </p><p>På bl. [3v] er et afsnit indrammet med blyant. </p></physDesc></msPart><msPart xml:id="additional.4.6" prev="#physDesc.4.6"><msIdentifier><idno>4.6</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> VI B 124) </p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.4" prev="#physDesc.4"><msIdentifier><idno>4</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 25; <hi rendition="#ita">Pap.</hi> VI B 119-120 + 122-124) </p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.5" next="#additional.5"><msIdentifier><idno>5</idno></msIdentifier><physDesc><p>Renskrift af <hi rendition="#ita">TTL. </hi>Det fremgår af sættermarkeringer, at renskriften tillige har fungeret som trykms. </p><p>2 blade + 1 sammenhæftning a 2 ark + 6 blade + 6 folioark + 17 blade + 1 folioark + 19 blade + 2 folioark + 1 blad, i alt 67 blade i 4<hi rendition="#sup">o</hi>. </p><p>Bladene er pagineret 1-129 med blyant. S. 1-42 og 116-117 er pagineret på hver side, s. 43-115 på hver anden side (rectosiderne). Det første blad og en side mellem s. 83 og 84 er upagineret. Mellem s. 92 og 93, der er pagineret med blæk, er en side uden paginering (benævnt [92a]). Siderne mellem 117 og 120 er upagineret. Det næstsidste folioark er pagineret 121 på arkets første side; det sidste folioark er pagineret 125 og 128 på hhv. arkets første og sidste side; arkenes øvrige sider er upagineret. Sidste side er upagineret. </p><p>Papir: gulligt koncept. S. 84-[92a]: svært, gulligt koncept. Mål: 170 x 206 mm. S. 84-[92a]: 164 x 199 mm. På s. 49 er en rektangulær lap udklippet af marginen. Rød hæftesnor i sammenhæftningen. </p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. En tilføjelse på langs af siden på s. [46]. S. 2, siden mellem s. 83 og 84 samt sidste side ubeskrevet. </p><p>På bl. [1r] lyder titlen: »Sex Taler ved tænkte Leiligheder.« Tallet er siden hen slettet med blyant og erstattet af »3«. Nederst på siden har SK noteret til sætteren: »<hi rendition="#ant"><hi rendition="#ita">NB</hi></hi> / Skal trykkes i samme Format og med samme Typer som <hi rendition="#ant">Chr: Winthers</hi> 'Sagn og Sang.'« Senere slettet med blyant. Forordet findes på s. 1, første tale begynder på s. 3, anden tale på s. 47 og tredje tale på s. 84. </p><p>På s. 22 og s. 92-[92a] er teksten indstreget med blyant. De indstregede tekster er kasseret renskrift, som SK af praktiske årsager – den øvrige tekst skulle anvendes – ikke kunne fjerne fra ms. (jf. mss. 2.3 og 4.3). </p><p>Dedikationen på bl. [1v] samt en bemærkning til sætteren vedr. forordet »<hi rendition="#ant"><hi rendition="#ita">NB</hi> / Med den mindst mulige Petit</hi>« er skrevet med blyant. </p><p><pb xml:id="ss391" n="391" edRef="#SKS"/>Mange korrektioner, adskillige med blyant. </p><p>Flere korte passager er slettet med tætte blækløkker. To marginaltilføjelser på s. 6 og s. [96] er slettet med blyant. </p></physDesc></msPart><msPart xml:id="additional.5" prev="#physDesc.5"><msIdentifier><idno>5</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 26; <hi rendition="#ita">Pap.</hi> VI B 107 + 121 + 125) </p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.6" next="#additional.6"><msIdentifier><idno>6</idno></msIdentifier><physDesc><p>Førstekorrektur til <hi rendition="#ita">TTL</hi>. </p><p>6 korrekturark a 8 blade samt 1/4 korrekturark (2 blade), i alt 50 blade i 8<hi rendition="#sup">o</hi> med førstetrykkets paginering, [1]-100. </p><p>Papir: korrekturpapir, uregelmæssigt afskåret. </p><p>Mange korrektioner i <persName key="Levin, Israel">Israel Levin</persName>s hånd. Korrektionerne, der varierer i antal fra ganske få op til 20 på en side, gælder især interpunktion og ortografi, men også udfaldne ord og sætninger. På titelbladet er tallet »3« ændret til »Tre«. Nederst på siden er »hos Reitzel« tilføjet med blyant i SKs hånd. <persName key="Levin, Israel">Levin</persName> har korrigeret tilføjelsen til »Faaes hos C. A. Reitzel«. I dedikationen har <persName key="Levin, Israel">Levin</persName> indsat et komma efter »min afdøde Fader«. På s. 13 har <persName key="Levin, Israel">Levin</persName> indstreget »<hi rendition="#ita">Hvad det er at søge Gud</hi>« (<ref target="../TTL/txt.xml#ss396" type="publishedWritings" n="396"><hi rendition="#ita">SKS </hi>5, 396</ref>,31) og bemærket til sætteren: »<hi rendition="#ant">NB</hi> Det Indcirklede sættes med <hi rendition="#ita">større</hi> Skrift – i en <hi rendition="#ita">fri</hi> Linie – med to Liniers Plads over og under.« På s. 64 har <persName key="Levin, Israel">Levin</persName> skrevet følgende besked til sætteren: »Herpaa udbedes en Revision / L.« (se <ref target="../TTL/txr.xml#ill_k21" type="figure">illustration 21</ref> <figure xml:id="ill_k21" rend="recto"><graphic url="../TTL/ill_k21.jpg"/><head>21. <hi rendition="#ita">TTL,</hi> førstekorrekturen med Israel Levins rettelser. Nederst står: »Herpaa udbedes en Revision / L.« Ms. 6, s. 64</head></figure>  ) og på s. 96: »Herpaa udbedes endnu en Revision / L«. </p></physDesc></msPart><msPart xml:id="additional.6" prev="#physDesc.6"><msIdentifier><idno>6</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 26; <hi rendition="#ita">Pap.</hi> VI B 126) </p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.7" next="#additional.7"><msIdentifier><idno>7</idno></msIdentifier><physDesc><p>Andenkorrektur til <hi rendition="#ita">TTL</hi>. </p><p>1 korrekturark a 8 blade i 8<hi rendition="#sup">o</hi> med førstetrykkets paginering, [1]-16. </p><p>Papir: korrekturpapir, uregelmæssigt afskåret. </p><p>Mange korrektioner i <persName key="Levin, Israel">Levin</persName>s hånd, mellem en og fem pr. side; kun én af de 16 sider, som er bevaret af andenkorrekturen, er uden korrektioner. På titelbladet er oplysningen om, hvor bogen kan købes, atter korrigeret. »Universitetsboghandler« er indsat uden forlæg i <persName key="Levin, Israel">Levin</persName>s korrektioner i førstekorrekturen. »Faaes hos« er ændret til »Hos« ved en blyantskorrektion, muligvis i SKs hånd. I dedikationen har <persName key="Levin, Israel">Levin</persName> slettet det komma efter »min afdøde Fader«, som han indsatte i førstekorrekturen. På s. 13 bemærker <persName key="Levin, Israel">Levin</persName> om »<hi rendition="#ita">Hvad det er at søge Gud</hi>«: »<hi rendition="#ant">NB.</hi> Mere Plads under <del rendition="#lth">Teksten</del> denne Overskrift.« På s. 16 bemærker <persName key="Levin, Israel">Levin</persName> til sætteren: »Herpaa udbedes en Revision / L.« </p></physDesc></msPart><msPart xml:id="additional.7" prev="#physDesc.7"><msIdentifier><idno>7</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 26; <hi rendition="#ita">Pap.</hi> VI B 127)<pb xml:id="ss392" n="392" edRef="#SKS"/> </p></note></adminInfo></additional></msPart>
-   </msDesc>
-  </div>
-  <div type="level1" xml:id="k3"> 
-   <head><pb xml:id="ss393" n="393" edRef="#SKS"/>3. Tilblivelseshistorie</head>
-   <p>Som nævnt var <hi rendition="#ita">TTL</hi> færdigproduceret 25. april 1845. Hvornår manuskriptet blev indleveret til trykning, vides ikke, da <persName key="Luno, Bianco">Bianco Luno</persName>s »Erindringsbog«, dvs. trykkeriets interne ordre- og regnskabsbog,<note> <p>I arkiv hos Bianco Lunos Bogtrykkeri, København, findes bevaret <hi rendition="#ita">Erindringsbog for Bianco Luno</hi> for årene 1844, 1846, 1847, 1848 og 1850. Erindringsbogen anfører dag for dag de ordrer, som indkom til trykkeriet og navn på ordregiverne. Hver ordre er forsynet med et løbenummer og en henvisning til det ugenummer, hvori ordren blev ekspederet. En senere sektion opregner de ekspederede ordrer uge for uge, og til sidst findes et uddrag af kassebogen. </p> </note> for 1845 ikke er bevaret; men sammenholdes produktionstiden for bøger af tilsvarende omfang fra 1844, hvor erindringsbogen er bevaret, må manuskriptet være indleveret senest i begyndelsen af april. </p>
-   <p>I SKs journaler og notesbøger findes ingen oplysninger, der kan tjene som holdepunkter for en bestemmelse af tilblivelsesperioden; men i et udkast på et løst blad omtaler SK en prædiken af <persName key="Mynster, Jakob Peter">J.P. Mynster</persName>, holdt i <placeName key="Christiansborg Slotskirke">Slotskirken</placeName> 1. søndag i fasten over epistelteksten <rs type="bible" key="2 Kor 6,1-10">2 Kor 6,1-10</rs>: </p>
-   <p><hi rendition="#ant">Mynster</hi> prædikede igaar d. 9 <hi rendition="#ant">Febr.</hi> 45 over disse Ord: vi eie Intet men besidde Alt. Ypperligt, dog gjorde han ikke den Bevægelse, som især som en Indledning kunde være bleven brugbar: der var maaskee Den som besad Alt og som dog eiede Intet.<note> <p>Ms. 1, bl. [9v]; trykt som <ref type="preparatoryManuscript" n="pap:VIB157" rend="TTL,ms.1"><hi rendition="#ita">Pap.</hi> VI B 157</ref>. </p> </note> </p>
-   <p>Temaet 'at besidde alt og dog intet eje' indgår i den første tale, »Ved Anledningen af et Skriftemaal« (<ref target="../TTL/txt.xml#ss393" type="publishedWritings" n="393"><hi rendition="#ita">SKS</hi> 5, 393</ref>,16). Og det løse blad, hvorpå temaet er anslået, er indlagt i en sammenhæftning af 8 blade (ms. 1), der if. <persName key="Barfod, Hans Peter">H.P. Barfod</persName> stammer fra »et 10. Febr. 1845 mærket Hefte«.<note> <p><hi rendition="#ita">EP III,</hi> s. 133. </p> </note> Dette indicerer, at SK påbegyndte det egentlige arbejde med at skrive <hi rendition="#ita">TTL</hi> i midten af feb. 1845. </p>
-   <p><pb xml:id="ss394" n="394" edRef="#SKS"/>Ideen til at skrive lejlighedstaler havde SK dog fået godt et halvt år tidligere. I begyndelsen af juni 1844 skriver han i journalen JJ: »Jeg kunde have Lyst at skrive nogle 'Brudetaler' i samme Stiil som mine opbyggelige, saaledes at de Paagjældende Forhold var reent digterisk anlagt.«<note> <p>Journalen JJ, s. 118. KA, A pk. 4; trykt som <ref target="../JJ/txt.xml#n220" type="journalsAndPapers" n="pap:VA27" rend="JJ:220"><hi rendition="#ita">Pap.</hi> V A 27</ref>. </p> </note> Den spøgefulde tone går igen i en optegnelse otte sider længere fremme: »Mine opbyggelige Taler kunde jeg maaskee gjøre endnu mere særlige: opbyggelige Taler for Konger og Dronninger, – for Tiggere, – o.s.v. -«.<note> <p>Journalen JJ, s. 126. KA, A pk. 4; trykt som <ref target="../JJ/txt.xml#n232" type="journalsAndPapers" n="pap:VA39" rend="JJ:232"><hi rendition="#ita">Pap.</hi> V A 39</ref>. </p> </note> Endnu i første halvdel af august omtaler SK lejlighedstalerne som noget, der stadig er i sin vorden, men ideen synes nu at antage en mere konkret og mindre spøgefuld form end tidligere: »Jeg vil nu skrive Leilighedstaler, istedenfor opbyggelige Taler. Brudetaler og Skriftetaler, ell. Gravtaler«.<note> <p>Journalen JJ, s. 138. KA, A pk. 4; trykt som <ref target="../JJ/txt.xml#n255" type="journalsAndPapers" n="pap:VA62" rend="JJ:255"><hi rendition="#ita">Pap.</hi> V A 62</ref>. Optegnelsen er skrevet efter 16. aug. 1844, da SK i den foregående optegnelse kommenterer et udtryk anvendt i bladet <hi rendition="#ita">Politivennen</hi> nr. 1494, 16. aug. 1844. </p> </note> Når SK ikke straks gik i gang med at skrive lejlighedstaler, skyldes det sandsynligvis, at han var fuldt optaget af arbejdet med <hi rendition="#ita">Stadier paa Livets Vei.</hi> På et løst blad dateret 27. aug. 1844 beskriver han under overskriften »Rapport« sine vanskeligheder med udarbejdelsen: »'In vino veritas' vil det ikke gaae med. Jeg skriver det Enkelte bestandig om og om, men det tilfredsstiller mig ikke. <hi rendition="#ita">(...)</hi>.«<note> <p>KA, A pk. 45; trykt som <ref target="../p307/txt.xml#n307" type="journalsAndPapers" n="pap:VA109" rend="Papir 307"><hi rendition="#ita">Pap.</hi> V A 109</ref>. </p> </note> </p>
-   <p>Da den nævnte sammenhæftning fra februar 1845 indeholder udkast til titelblad, disposition og forord samt en bøn, der i omarbejdet form bliver til indledningen af den første tale, »Ved Anledningen af et Skriftemaal«, og ansatser til indledningen af den tredje tale, »Ved en Grav«, bestyrker det antagelsen, at SK først for alvor er begyndt at skrive sine første lejlighedstaler efter dette tidspunkt. </p>
-   <p>Oprindeligt havde SK planer om en bog med titlen »3 Leilighedstaler ved tænkte Leiligheder«, hvis indhold skulle være: »Tale ved Skriftemaal. / ved Vielse / ved Graven« (ms. 1). Temaet for skriftemålstalen skulle være: »Hvad det er at søge Gud, idet vi betænke, at intet Msk. kan see Gud uden Reenhed, og intet Msk. faae Øie paa ham uden at<pb xml:id="ss395" n="395" edRef="#SKS"/><pb xml:id="ss396" n="396" edRef="#SKS"/> være en Synder«, som blev temaet for »Ved Anledningen af et Skriftemaal« (<ref target="../TTL/txt.xml#ss391" type="publishedWritings" n="391"><hi rendition="#ita">SKS</hi> 5, 391</ref>). Temaet for vielsestalen: »At kaste al vor Sorg paa Gud og betænke at vi derved vinde Sorgen efter Gud«, blev ikke videre udarbejdet, og der angives intet tema for gravtalen. Antallet af taler blev imidlertid ændret til seks, derpå også titlen til »6 Taler ved tænkte Leiligheder« (se <ref target="../TTL/txr.xml#ill_k22" type="figure">illustration 22</ref> <figure xml:id="ill_k22" rend="recto"><graphic url="../TTL/ill_k22.jpg"/><head>22. Første udkast til titelblad til <hi rendition="#ita">TTL,</hi> ms. 1, bl. [1r]</head></figure>  ), som i renskriften (ms. 5) blev til »Sex Taler ved tænkte Leiligheder«. Først på et sent tidspunkt i bogens tilblivelse bliver titlen med blyant ændret til »3 Taler ved tænkte Leiligheder« (se <ref target="../TTL/txr.xml#ill_k23" type="figure">illustration 23</ref> <figure xml:id="ill_k23" rend="recto"><graphic url="../TTL/ill_k23.jpg"/><head>23. Renskriftens titelblad til <hi rendition="#ita">TTL,</hi> ms. 5, bl. [1r]</head></figure>  ), som i førstekorrekturen (ms. 6) blev rettet til bogens endelige titel <hi rendition="#ita">Tre Taler ved tænkte Leiligheder</hi> (se <ref target="../TTL/txr.xml#ill_k24" type="figure">illustration 24</ref> <figure xml:id="ill_k24" rend="recto"><graphic url="../TTL/ill_k24.jpg"/><head>24. Titelblad til <hi rendition="#ita">TTL</hi> i førstekorrekturen, ms. 6</head></figure>  ). </p>
-   <p>På baggrund af den skitserede disposition og udkastene til forord såvel som til begyndelsen af den første og den tredje tale, gav SK sig i kast med udarbejdelsen af forordet og de enkelte taler. I det følgende vil manuskripternes indbyrdes rækkefølge blive bestemt. Til alle tre taler findes overleveret en række manuskripter, som gør det muligt at følge tilblivelsen af hver enkelt tale. </p>
-   <p>Titelforslag, forord og kladde til den første tale »Ved Anledningen af et Skriftemaal« findes i det samme kladdehæfte (ms. 2.1). Som så ofte før forsøger SK at udarbejde talen på fri hånd. Med forlæg i ms. 2.1 påbegynder han en renskrift, ms. 5, s. 1-6, men under renskrivningen føler han behov for en udvidelse, forlader forlægget og fortsætter på fri hånd. Efter at have skrevet et stykke går han i stå, kasserer det skrevne (ms. 2.2), som derpå danner grundlag for den nu foreliggende renskrift, ms. 5, s. 7-12. Dette ses af, at den nye renskrift øverst på s. 7 begynder midt i en sætning som en umiddelbar fortsættelse af renskriftens tekst nederst s. 6, hvor der i de sidste linier står: »Thi Intet Intet i den ganske Verden, ikke om et Jordskjælv rystede Kirkens Piller, og ikke det daarligste Menneskes meest forkeerte«. Fortsættelsen på bl. [1r] i ms. 2.2, svarende til s. 7, lyder: »Tale og ikke den nedrigste Hyklers Væmmelighed kan tage den fra Dig <hi rendition="#ita">(...)</hi>«. I den nye renskrift på s. 7 begynder teksten med helt den samme ordlyd som i ms. 2.2. En blyantsredigering »<hi rendition="#ant">NB</hi>« i kladden (ms. 2.1) ud for det tekststykke, hvor SK forlod kladden for at fortsætte på fri hånd, og et tilsvarende »<hi rendition="#ant">NB</hi>« i den forkastede tekst (ms. 2.2) viser, at da han har kasseret ms. 2.2, vender han tilbage til ms. 2.1 og markerer, hvor det forkastede skal indsættes i den endelige version. </p>
-   <p>Da den nu foreliggende renskrift, ms. 5, er færdigskrevet frem til s. 22<pb xml:id="ss397" n="397" edRef="#SKS"/><pb xml:id="ss398" n="398" edRef="#SKS"/> – s. 7-12 midtpå med forlæg i det forkastede ms. 2.2, og s. 12 nederst – 22 med forlæg i ms. 2.1 – fortsætter SK på fri hånd (ms. 2.3). Men ved en fornyet gennemgang er han ikke tilfreds med det skrevne; fra s. 23 kasseres teksten og henlægges som kladde. En halv side, som ikke kunne fjernes, da den stod på versosiden af et blad med brugelig renskrift, er blevet slettet ved en blyantsindramning og findes stadig i ms. 5. </p>
-   <p>Med forlæg i det forkastede (ms. 2.3) har SK påbegyndt en ny renskrivning, ms. 5, s. 23-42, hvorefter han er fortsat på fri hånd (ms. 2.4) i håb om at kunne afslutte talen. Men det mislykkedes, og SK måtte kassere det skrevne fra s. 43ff. Det fremgår tydeligt, at ms. 2.4 er kasseret renskrift. Dels bærer ms. stadig renskriftens oprindelige paginering 43-45, dels begynder teksten midt i en sætning med samme ordlyd, som indleder s. 43 i den nu foreliggende renskrift. På baggrund af det kasserede ms. 2.4 færdigskrives talen, ms. 5, s. 43-[46]. </p>
-   <p>Den første tale er altså blevet til i én fortløbende proces, dvs. SK har udarbejdet tekst til et stykke af talen, renskrevet det og er fortsat på fri hånd (mss. 2.2, 2.3 og 2.4), hvorpå han har kasseret det senest skrevne og udfærdiget en ny, endelig version, før han er gået videre med fortsættelsen af talen. </p>
-   <p>Til den anden tale »Ved Anledningen af en Brudevielse« findes der kladdeforlæg til størstedelen af talen, dog ikke en sammenhængende, fortløbende kladde. Det er mest sandsynligt, at SK har udarbejdet forlæg til hele talen, før han har påbegyndt renskriften. I hvert fald kan man ikke på baggrund af manuskriptmaterialet afgøre, om han løbende har kasseret sider og omskrevet dem, som det var tilfældet ved den første tale. </p>
-   <p>Det første kladdeforlæg, ms. 3.1, omfatter kladde til omkring halvdelen af talen. En del af denne kladde findes i en noget længere version i ms. 3.2. SK har følt behov for endnu en gennemskrivning og herunder foretaget en udvidelse af teksten (<ref target="../TTL/txt.xml#ss427" type="publishedWritings" n="427"><hi rendition="#ita">SKS</hi> 5, 427</ref>,32-429,25). I den endelige version har SK tilføjet endnu et afsnit (<ref target="../TTL/txt.xml#ss429" type="publishedWritings" n="429"><hi rendition="#ita">SKS</hi> 5, 429</ref>,25-36). </p>
-   <p>I ms. 3.2 er arkene mærket 1-4; på den sidste beskrevne side løber kladden ud i udkast til fortsættelsen af talen. De følgende mss., 3.3 og 3.4, rummer begge kladde og er skrevet i forlængelse af hinanden, dog uden direkte overgang og med ubeskrevne blade imellem; ms. 3.3 er mærket 5-7, ms. 3.4 8-9. Ms. 3.5, der oprindeligt var mærket 10, er en<pb xml:id="ss399" n="399" edRef="#SKS"/><pb xml:id="ss400" n="400" edRef="#SKS"/> direkte fortsættelse midt i en sætning af kladden i ms. 3.4. I forbindelse med renskrivningen forkastede SK hele ms. 3.5 og skrev en ny version på fri hånd. </p>
-   <p>Den tredje tale »Ved en Grav« følger samme tilblivelsesmønster som den første tale. Med udgangspunkt i udkastene i ms. 1 påbegynder SK udarbejdelsen. Mss. 4.3, 4.5 og 4.6 består af tekst, som SK oprindelig renskrev, men siden kasserede og henlagde som kladde. </p>
-   <p>Ms. 4.1 rummer kladde til begyndelsen af talen, svarende til <ref target="../TTL/txt.xml#ss442" type="publishedWritings" n="442"><hi rendition="#ita">SKS</hi> 5, 442</ref>,15-448,17. Ms. 4.2 rummer spredte udkast til hele talen, men er formentlig først udarbejdet, da ms. 4.1 var skrevet, idet enkelte af udkastene synes at gælde en udvidelse af teksten i sidste del af ms. 4.1. </p>
-   <p>Med forlæg i ms. 4.1 er SK gået i gang med renskrivningen af talen, ms. 5, s. 84ff. De fem første renskrevne blade af tredje tale, pagineret 84-92, stammer oprindelig fra det kladdehæfte, som nu kun rummer ms. 4.3. SK påbegyndte renskrivningen i dette hæfte, som da bestod af 16 blade; og hvor kladdeforlægget fra ms. 4.1 slap op øverst på det femte blad (ms. 5, s. 92), fortsatte han udarbejdelsen på fri hånd (ms. 4.3). Ved en revision fandt han kun teksten på de fem første blade anvendelig; resten blev kasseret og henlagt som kladde. SK rev de fem anvendelige blade ud af kladdehæftet og indlagde dem i renskriften. Det kan man se ved at sammenligne afrivningskanterne på hhv. de fem udrevne blade og de fem løse blade bagest i hæftet (ms. 4.3). </p>
-   <p>Det meste af teksten på det femte blad, ms. 5, s. 92-[92a], blev kasseret samtidig med ms. 4.3, men da teksten øverst på den ene side var anvendelig som renskrift, har SK flyttet bladet med over i renskriften og dér indrammet teksten som besked til sætteren om, at den ikke skulle trykkes; derpå har han skrevet en ny version på de følgende sider, ms. 5, s. 93-[94]. </p>
-   <p>Med forlæg i det kasserede, ms. 4.3 og ms. 4.4, har SK påbegyndt en ny renskrivning, men kun en del af det skrevne, ms. 5, s. [94] nederst til s. 112, kan anvendes. Fra s. 113 kasseres teksten og henlægges som kladde (ms. 4.5). Derpå fortsættes renskrivningen med forlæg i det kasserede ms. 4.5, men atter er kun en del af det skrevne anvendeligt; fra s. 117 kasseres teksten og henlægges som kladde (ms. 4.6). Det fremgår tydeligt, at ms. 4.6 er kasseret renskrift, idet teksten begynder midt i en sætning med samme ordlyd, som indleder s. 117 i den nu foreliggende renskrift. Endelig kan SK på baggrund af det kasserede ms. 4.6 udfærdige slutningen af talen. </p>
-   <p><pb xml:id="ss401" n="401" edRef="#SKS"/>Ovenstående gennemgang viser, at SK har benyttet samme fremgangsmåde som ved udarbejdelsen af <hi rendition="#ita">Fire opbyggelige Taler,</hi> 1844.<note> <p>Jf. <ref target="../4T44/txr.xml" type="textCriticalAccount">tekstredegørelsen til </ref><hi rendition="#ita">Fire opbyggelige Taler, </hi>1844, s. 303-308. </p> </note> Gang på gang forsøger han at udarbejde teksten på fri hånd, men må løbende kassere det skrevne og udforme en ny version.<hi rendition="#ita"> </hi>Rester af den oprindelige paginering i de kasserede renskrifter (s. 43-45 i første tale og s. 113 i tredje tale) vidner om, at talerne er blevet til i forlængelse af hinanden. Kladdeforlægget for den anden tale kan dog være udarbejdet uafhængigt af de øvrige to. </p>
-   <p>Under udarbejdelsen af skriftemålstalen inddrog SK to optegnelser fra <ref target="../JJ/txt.xml" type="journalsAndPapers">journalen JJ</ref>, der her anføres i den rækkefølge, hvori de forekommer i talen. Den første er formentlig skrevet i dec. 1844; den bygger på en replik i <persName key="Lessing, Gotthold Ephraim">G.E. Lessing</persName>s lystspil <hi rendition="#ita">Minna von Barnhelm, oder das Soldatenglück</hi> og indgår i forkortet og omarbejdet form i begyndelsen af talen (<ref target="../TTL/txt.xml#ss397" type="publishedWritings" n="397"><hi rendition="#ita">SKS</hi> 5, 397</ref>,20-22).<note> <p>Journalen JJ, s. 158. KA, A pk. 4; trykt som <ref target="../JJ/txt.xml#n291" type="journalsAndPapers" n="pap:VIA2" rend="JJ:291"><hi rendition="#ita">Pap.</hi> VI A 2</ref>, jf. <ref target="../TTL/kom.xml#ttl-42" type="commentary" n="4">kommentaren til <hi rendition="#ita">TTL</hi> 397,<hi rendition="#sub">21</hi></ref>, hvor optegnelsen er citeret. </p> </note> Den anden er fra maj 1844; den handler om forundring som det naturlige udgangspunkt for gudsfrygt og indeholder en henvisning til <persName key="Goethe, Johann Wolfgang von">J.W. v. Goethe</persName> <hi rendition="#ita">Aus meinem Leben. Dichtung und Wahrheit.</hi><note> <p>Journalen JJ, s. 116. KA, A pk. 4; trykt som <ref target="../JJ/txt.xml#n218" type="journalsAndPapers" n="pap:VA25" rend="JJ:218"><hi rendition="#ita">Pap.</hi> V A 25</ref>, jf. <ref target="../TTL/kom.xml#ttl-50" type="commentary" n="4">kommentaren til <hi rendition="#ita">TTL</hi> 399,<hi rendition="#sub">14</hi></ref>, hvor optegnelsen er citeret. </p> </note> Den danner baggrund for en længere passage i midten af talen (<ref target="../TTL/txt.xml#ss399" type="publishedWritings" n="399"><hi rendition="#ita">SKS</hi> 5, 399</ref>,14-400,17). I omtalen af forundring gribes der i øvrigt tilbage til en optegnelse fra jan. – feb. 1841 om forundring som filosofiens begyndelse hos <persName key="Aristoteles">Aristoteles</persName> og <persName key="Platon">Platon</persName>.<note> <p>En indbunden notesbog, s. 9. KA, A pk. 3 læg 4; trykt som <ref target="../Not7/txt.xml#n21" type="journalsAndPapers" n="pap:IIIA107" rend="Not7:21"><hi rendition="#ita">Pap.</hi> III A 107</ref>, jf. <ref target="../TTL/kom.xml#ttl-417" type="commentary" n="4">kommentaren til <hi rendition="#ita">TTL</hi> 399,<hi rendition="#sub">15</hi></ref>, hvor optegnelsen er citeret. </p> </note> </p>
-   <p>Under eller muligvis efter udarbejdelsen af <hi rendition="#ita">TTL</hi> skrev SK et længere forord i flere versioner af <persName key="Johannes de silentio">Johannes de silentio</persName>, den pseudonyme forfatter af <hi rendition="#ita">Frygt og Bæven.</hi> Forordet, der ikke skulle indbindes sammen med, men indlægges i <hi rendition="#ita">TTL,</hi> bærer titlen »Noget om geistlige Leilighedstaler«.<note> <p>KA, B pk. 27; trykt som <ref type="preparatoryManuscript" n="pap:VIB128-137"><hi rendition="#ita">Pap.</hi> VI B 128-137</ref>. </p> </note> SK gik imidlertid bort fra ideen og skrev i en lille »Rapport«: </p>
-   <quote><pb xml:id="ss402" n="402" edRef="#SKS"/><p>Dette blev henlagt indtil videre. Vilde blive for vidtløftigt for at tjene som en Slags Indl. til mine smule Taler. Maa udføres særskilt og væsentligen handle om det Religieuse-Foredrag.<note> <p>KA, B pk. 27; trykt som <ref type="preparatoryManuscript" n="pap:VIB132"><hi rendition="#ita">Pap.</hi> VI B 132</ref>. </p> </note> </p></quote>
-  </div>
-  <div type="level1" xml:id="k4"> 
-   <head>4. Udgivelsesmåde</head>
-   <p>Som ved de seks hæfter med opbyggelige taler fra 1843 og 1844 udgav SK <hi rendition="#ita">TTL</hi> på eget forlag. Ligesom <hi rendition="#ita">To opbyggelige Taler,</hi> 1843, lod SK <hi rendition="#ita">TTL</hi> sælge i kommission hos <persName key="Reitzel, Carl Andreas">C.A. Reitzel</persName>. Atter stod SK altså selv for produktionen, dvs. det var ham, der traf aftale med <persName key="Luno, Bianco">Bianco Luno</persName>s Bogtrykkeri om layout, sætning, trykning, indbinding, papir og oplagsstørrelse, og det var ham, der betalte alle produktionsomkostningerne. Det var endvidere ham, der indgik kommissionsaftale med <persName key="Reitzel, Carl Andreas">Reitzel</persName>, hvilket indebar, at <persName key="Reitzel, Carl Andreas">Reitzel</persName> forestod salget gennem sin boglade mod en afgift, og at han afregnede salgsindtægterne fratrukket kommissionsafgiften direkte med SK. </p>
-   <p>Under henvisning til en række »bevarede regnskaber hos <persName key="Luno, Bianco">Bianco Luno</persName> og <persName key="Reitzel, Carl Andreas">Reitzel</persName>« oplyser <persName key="Brandt, Frithiof">Frithiof Brandt</persName> og <persName key="Thorkelin, Else">Else Thorkelin</persName>, at udgifterne til papir og trykning beløb sig til 76 rd. 43 sk., og at oplaget var på 500 eksemplarer.<note> <p>Jf. <persName key="Brandt, Frithiof">Frithiof Brandt</persName> og <persName key="Thorkelin, Else">Else Thorkelin</persName> <hi rendition="#ita">Søren Kierkegaard og pengene,</hi> 2. udg., Kbh. 1993 [1935], s. 28ff.; de nævnte oplysninger har ikke kunnet verificeres. En sammenligning med <hi rendition="#ita">Fire opbyggelige Taler,</hi> 1844, der er ¾ ark større end <hi rendition="#ita">TTL,</hi> godtgør, at udgifterne til papir og trykning er rigtigt angivet, jf. skema 1 i <ref target="../2T43/txr.xml" type="textCriticalAccount">tekstredegørelsen til </ref><hi rendition="#ita">To opbyggelige Taler,</hi> 1843, s. 31. </p> </note> En opgørelse udarbejdet af SK i juli 1847 viser, at der på det tidspunkt var solgt 181 eksemplarer af <hi rendition="#ita">TTL,</hi> og at der i <persName key="Reitzel, Carl Andreas">Reitzel</persName>s boglade var 93 og på Bianco Lunos lager 226 eksemplarer.<note> <p>Opgørelsen findes i <persName key="Reitzel, Carl Andreas">C.A. Reitzel</persName>s brevsamling, NKS 2937, 4<hi rendition="#sup">o</hi>; trykt i <ref target="../b208/txt.xml#n224" type="lettersAndDedications" n="ba:152" rend="Brev 224"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 174</ref>. </p> </note> Ud fra disse oplysninger er det muligt at beregne bogens økonomi. Hvert eksemplar kostede 4 mk. eller 64 sk. Salget gennem <persName key="Reitzel, Carl Andreas">C.A. Reitzel</persName>s boglade indbragte således 120 rd. 64 sk., og fratrukket en kommissionsafgift på<pb xml:id="ss403" n="403" edRef="#SKS"/> 25%,<note> <p>Af en opgørelse fra 4. maj 1847 fremgår det, at kommissionsafgiften udgjorde 25% af udsalgsprisen. Jf. KA, D pk. 7 læg 6. </p> </note> svarende til 30 rd. 16 sk., gav det SK en indtægt på 90 rd. 48 sk. Efter betaling af produktionsomkostningerne på 76 rd. 43 sk. havde SK altså et overskud på små 15 rd. </p>
-   <p>I august 1847 overtog <persName key="Reitzel, Carl Andreas">C.A. Reitzel</persName> restoplaget på 319 eksemplarer. Overtagelsen indgik i et samlet køb af restoplagene af de skrifter fra 1843-46, som <persName key="Reitzel, Carl Andreas">Reitzel</persName> havde i kommission.<note> <p>Da <hi rendition="#ita">Enten – Eller</hi> allerede var udsolgt, drejer det sig ud over <hi rendition="#ita">TTL</hi> om <hi rendition="#ita">Gjentagelsen, Frygt og Bæven, Philosophiske Smuler, Begrebet Angest, Forord, Stadier paa Livets Vei, Afsluttende uvidenskabelig Efterskrift</hi> og <hi rendition="#ita">En literair Anmeldelse,</hi> som <persName key="Reitzel, Carl Andreas">Reitzel</persName> købte for 1200 rd. Jf. <persName key="Reitzel, Carl Andreas">C.A. Reitzel</persName>s protokol over <hi rendition="#ita">Forhandlinger med Forfattere, Redacteurer &amp;c 1835-1858,</hi> s. 27. I arkiv hos <persName key="Reitzel, Carl Andreas">C.A. Reitzel</persName>s Boghandel og Forlag, København. Trykt i <ref target="../b208/txt.xml#n224" type="lettersAndDedications" n="ba:152" rend="Brev 224"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 173</ref>f. Jf. i øvrigt <persName key="Brandt, Frithiof">Brandt</persName> og <persName key="Thorkelin, Else">Thorkelin</persName> op.cit., s. 31. Restoplaget af <hi rendition="#ita">To opbyggelige Taler,</hi> 1843, blev i maj 1845 opkøbt af <persName key="Philipsen, Philip Gerson">P.G. Philipsen</persName>, jf. afsnittet om tilblivelsen af <hi rendition="#ita">Atten opbyggelige Taler</hi> i <ref target="../2T43/txr.xml" type="textCriticalAccount">tekstredegørelsen til </ref><hi rendition="#ita">To opbyggelige Taler,</hi> 1843, s. 22-28. </p> </note> Den ovennævnte opgørelse viser, at SK tilbød <persName key="Reitzel, Carl Andreas">Reitzel</persName> at købe restoplaget for 90 rd. – ved almindeligt salg kunne de 319 eksemplarer før kommission have indbragt 212 rd. 64 sk. SK gav altså et nedslag i den samlede pris på godt 58%, mens <persName key="Reitzel, Carl Andreas">Reitzel</persName>s modbud lød på kun 33% af salgsværdien. SK måtte strække våben i disse forhandlinger og acceptere en indtægt på 70 rd. mod de forlangte 90 - til gengæld var der tale om ren fortjeneste. Det samlede salg af <hi rendition="#ita">TTL</hi> indbragte altså SK et nettooverskud på knap 85 rd. </p>
-   <p>Der blev ikke i SKs levetid foranstaltet oversættelser af <hi rendition="#ita">TTL.</hi> </p>
-  </div>
- </div></body></text>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="idb286ca50-500c-4b01-850e-1b617cd33a57">1. Bibliografiske data </head>
+          <p xml:id="id98b3ea59-3f35-4f0a-a3ba-ebcef2e3ef5f"><hi xml:id="id06fe5ad9-f6ad-4cb8-8906-630cf8ff0713" rendition="#ita">Tre Taler ved tænkte Leiligheder. Af S. Kierkegaard</hi> var færdig fra <persName xml:id="id72b5e34c-e196-439d-b876-529851954b36" key="Luno, Bianco">Bianco Luno</persName>s Bogtrykkeri 25. april 1845.<note xml:id="idab9b160e-0fbe-42c5-8488-5d08982a8cfb"><p xml:id="id0fcf5a7b-7584-43f5-a23b-63181fbaa7d2">Jf. <hi xml:id="id6b99fc9d-2421-48e1-a199-1ff840c4053e" rendition="#ita">Bl.art.,</hi> s. 279. </p></note> Bogen udkom 29. april, den kostede 4 mark eller 64 skilling og kunne fås hos <persName xml:id="idfa9276f4-8251-414c-9dde-094f7e7ae692" key="Reitzel, Carl Andreas">C.A. Reitzel</persName>.<note xml:id="ida60e7c0f-15e4-4fdf-ad90-38ec83dd5445"><p xml:id="id10842fe9-c614-487c-a525-a40f7bcf63bd">Bogen blev averteret til salg i <hi xml:id="idd8f73478-cb31-4a80-9715-b1c180e800be" rendition="#ita">Kjøbenhavns kongelig alene privilegerede Adressecomptoires Efterretninger</hi> nr. 113, 29. april 1845, og <hi xml:id="idd64f8c61-daea-4a35-954b-1aa89c3f4139" rendition="#ita">Den privilegerede Berlingske politiske- og Avertissements-Tidende</hi> nr. 102, 29. april 1845 (tillægget). </p></note> Formatet er oktav, ca. 135 x 208 mm,<note xml:id="id73eeea43-db57-4035-8f25-7068766b1e76"><p xml:id="id90a60c49-fa6a-400c-a291-ea6867035713">Målene stammer fra Søren Kierkegaard Forskningscenterets arbejdseksemplar og gælder den ubeskårne bogs blade (bredde x højde). </p></note> og bogen har et bogtrykt omslag på beige papir. Omfanget er 100 sider, svarende til 61/4 ark. Siderne tælles med arabertal; de første syv er upagineret. Titelbladet gengives på <ref xml:id="ida23e6f05-de16-48df-9217-56b300755fa2" target="../TTL/txr.xml#ill_k20" type="figure">illustration 20</ref> <figure xml:id="ill_k20" rend="recto" n="1"><graphic xml:id="id88329048-4ece-4964-bd24-388a143ff1bb" url="../TTL/ill_k20.jpg"/><head xml:id="id6f880d26-bbed-4954-821b-ed9fbdbb6484">20. Titelblad til <hi xml:id="id010f0816-4f8b-4295-b013-0ec2c02b3d0d" rendition="#ita">TTL.</hi> Naturlig størrelse</head></figure>  . </p>
+          <p xml:id="idecafaf1d-5a99-439b-a81b-e6181503f7de">Ved en intern kollation af tre eksemplarer af <hi xml:id="id80a38e90-d482-4b9d-b3d8-1dadd6c2acf0" rendition="#ita">Tre Taler ved tænkte Leiligheder</hi> (forkortet <hi xml:id="id053c32e3-841b-42a2-a722-732bb21abac6" rendition="#ita">TTL</hi>) er der ikke konstateret afvigelser. De benyttede eksemplarer er: </p>
+          <list xml:id="idf6e539dc-1bc6-4b50-978d-69a9bdcf091f">
+            <label xml:id="id375618f4-d2bb-4dab-8608-d6dd99b5c60c">A</label>
+            <item xml:id="ida5d3b27c-880e-4c95-9afd-2ef59b54ef8a">Søren Kierkegaard Forskningscenterets arbejdseksemplar, tilhørende G.E.C. Gads Forlag (tidligere hos dr.phil. h.c. <persName xml:id="idca1c3601-102e-4a6d-9144-8de3890ebbcd" key="Bernström, Gustaf">Gustaf Bernström</persName>, <placeName xml:id="id8f7e3d12-1f6b-4d75-b635-82b79e1323aa">Göteborg</placeName>). </item>
+            <label xml:id="id23fc80ff-3269-4e3e-b976-dc37e8ad4561"><pb xml:id="ss382" n="382" edRef="#SKS"/>B</label>
+            <item xml:id="id6cc3ea30-bead-48c7-838a-311032a7f0d8">Det kongelige Biblioteks eksemplar, katalogsignatur 6,1, – 244 – 8<hi xml:id="idde938326-958a-4f7a-8a98-0096c67dede8" rendition="#sup">o</hi>, DA BOX, revisionsnr. 02268. </item>
+            <label xml:id="idb9a8a4f7-153c-4acb-ae7d-11322e8dcc20">C</label>
+            <item xml:id="id2875dc94-08b3-4257-bca9-7454d85b2d3a">Det kongelige Biblioteks eksemplar, katalogsignatur 6,1, – 244 – 8<hi xml:id="ida1f69217-4c6d-4fd2-8e41-a55ac434be80" rendition="#sup">o</hi>, DA BOX, revisionsnr. 02269. </item>
+          </list>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="id4f2bd185-33ca-48ef-be50-f5b57c400fa2">2. Manuskripter </head>
+          <p xml:id="idca0d0019-cf56-4660-b178-1b736da94b07">Til <hi xml:id="id9f3a721b-698e-498d-bd18-d9611fa0f50a" rendition="#ita">TTL</hi> findes flg. manuskripter bevaret, alle i Kierkegaard Arkivet (KA) på Det kongelige Bibliotek. Rækkefølgen afspejler tilnærmelsesvis tilblivelseskronologien; en nøjere udredning gives nedenfor i afsnit 3. </p>
+          <msDesc xml:id="id180107de-c45c-4dfc-9ae2-f4be232a68a8">
+            <msIdentifier xml:id="idc3ec43b1-4b8c-45ba-b94f-d3abac5faf72">
+              <collection xml:id="id0e21c2b2-3034-4b32-bacc-46ce43c72479">TTL</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.1" next="#additional.1">
+              <msIdentifier xml:id="idd0754807-2984-4d64-a294-7c75a9bba60b">
+                <idno xml:id="idd485b94d-3bab-4625-b921-c03cdf36b55e">1</idno>
+              </msIdentifier>
+              <physDesc xml:id="id561d5cc6-bc0c-42a0-82e9-009bbe6d263f">
+                <p xml:id="id25239823-3c52-4c96-be98-9ba66d2f6e35">Spredte udkast til forordet, første og tredje tale samt flere ubrugte udkast (der senere bruges i »En Leiligheds-Tale« i <hi xml:id="idb507b53d-15de-4a52-910a-71d7b0308c6f" rendition="#ita">Opbyggelige Taler i forskjellig Aand</hi>, 1847, og i<hi xml:id="idce75bb42-cbbf-4afb-99bd-7b8dd1ed2393" rendition="#ita"> Indøvelse i Christendom</hi>, 1850). </p>
+                <p xml:id="idcdd521e9-2402-4ddd-91ef-951b68d1c809">1 sammenhæftning a 4 folioark, hvoraf bladene i første og tredje ark er løse, + 1 blad, i alt 9 blade i 4<hi xml:id="id864f9101-923c-489e-951e-a6a25f33d387" rendition="#sup">o</hi>. </p>
+                <p xml:id="id11ca5f98-48b8-4d08-8988-28860c23d2a9">Ingen paginering. </p>
+                <p xml:id="id60f3a0c8-0580-4e97-950d-159e1807add6">Papir: gulligt koncept. Mål: 171 x 206 mm. Rød hæftesnor. De løse blade har spor efter sammenfoldning. Det fremgår af mærker fra oblater forneden på bl. [8v], at bladet har været opklæbet. </p>
+                <p xml:id="id073ab560-bbce-433c-9a6d-25474e0dbe23">Teksten er skrevet hen over hele siden. En tilføjelse på langs af siden på bl. [2r]. Bl. [2v] og [8v] er ubeskrevet. </p>
+                <p xml:id="ide4a3c1aa-bef5-44c6-9191-d1188441c949">På bl. [1r] findes udkast til et titelblad: »6 Taler / ved tænkte Leiligheder / <del xml:id="id6d36219c-8cc9-414c-9c15-6c34d8cc0189" rendition="#lth">3 Leilighedstaler ved tænkte Leiligheder</del> / af <hi xml:id="ida815cbb5-f2ff-4dac-b43f-353756383adc" rendition="#ant">/ S. Kierkegaard.</hi>« I det slettede titeludkast har SK korrigeret antallet af taler fra »3« til »6«. På bl. [1v] findes udkast til talernes titler: »Tale ved Skriftemaal. / ved Vielse / ved Graven.« De udkast, som benyttes i <hi xml:id="id50db9f5b-d590-4f47-8556-cc25be8ece28" rendition="#ita">TTL,</hi> findes på bl. [1]-[2r], [3v]-[4r], [6r] og [9v]. Optegnelsen på bl. [9v] begynder: »<hi xml:id="id99351c75-bb67-4e89-b2fb-ba5b1ad9ea21" rendition="#ant">Mynster</hi> prædikede igaar d. 9 <hi xml:id="idaea273b6-874c-4ed2-9d2d-c1f8ce24538c" rendition="#ant">Febr.</hi> 45 over disse Ord: <hi xml:id="ide3549c35-56cd-48e5-9604-ecca9728007c" rendition="#ita">(...)</hi>«. Dateringen er tilføjet over linien. </p>
+                <p xml:id="id8c826048-17ec-4d63-9f6f-3f90b0a3a4b1">Mange korrektioner, heraf en enkelt med blyant. </p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.1" prev="#physDesc.1">
+              <msIdentifier xml:id="idd81f6934-7449-462a-b637-403cb95b07b1">
+                <idno xml:id="id6c1d729d-b735-4177-b5d6-fc875937a509">1</idno>
+              </msIdentifier>
+              <additional xml:id="id2a2f00b7-9742-444f-af29-59b2a1a5f787">
+                <adminInfo xml:id="id66f9fe12-dbcd-435f-9c08-07badc7f4ccf">
+                  <note xml:id="id9b24911c-320b-4070-bb8b-ae7c6fb07ada">
+                    <p xml:id="idd5dcb56e-4fe5-4918-a8d6-a532a08de2f0">(<hi xml:id="id13870008-1390-483b-bc52-d782a524af40" rendition="#ita">B-fort.</hi> 405 a; KA, B pk. 27; <hi xml:id="id45eff9c6-704c-4241-9642-a0ce6ed33094" rendition="#ita">Pap.</hi> VI B 138-157) </p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.2" next="#additional.2">
+              <msIdentifier xml:id="id8406aaf6-98e7-4813-a8d3-e743066e58b1">
+                <idno xml:id="id0e5e61f6-bcee-41f9-88a0-c7f990c1a5cd">2</idno>
+              </msIdentifier>
+              <physDesc xml:id="idb7e2f13a-a833-4aa7-a1a5-5506433af97b">
+                <p xml:id="id8b55ee2a-33fd-4337-898a-c34c934af213">Udkast til titelblad samt kladde til forord og første tale. Mss. 2.2, 2.3 og 2.4 stammer fra renskriften. Under skrivningen kasserede SK disse manuskriptdele og henlagde dem som kladde.<pb xml:id="ss383" n="383" edRef="#SKS"/> </p>
+              </physDesc>
+              <msPart xml:id="physDesc.2.1" next="#additional.2.1">
+                <msIdentifier xml:id="ida81eb5fb-d409-4928-af7e-9dc1715ffb59">
+                  <idno xml:id="idb571a1e6-6b42-400f-af16-771dfbec2182">2.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="iddec47ca5-5cc0-45fb-bef6-655c883a820b">
+                  <p xml:id="idb4788a8e-2935-46ca-89d9-d90edaace701"><pb xml:id="ss384" n="384" edRef="#SKS"/>Kladdehæfte i 4<hi xml:id="id2f8f2184-be6c-48ea-9b9d-73a723930615" rendition="#sup">o</hi> med omslag af sort glanspapir, i alt 16 blade. </p>
+                  <p xml:id="idf49db248-0ffc-47d3-9fdf-690043dd4394">Ingen paginering. </p>
+                  <p xml:id="ida69b0fb0-13c7-4cce-94a9-3962d4af5b73">Papir: groft koncept. Mål: 164 x 199 mm. På omslagets forreste inderside findes en trykt etiket med »Tilkjøbs hos / Bogbinder <hi xml:id="ida980a8e0-eb12-402b-950d-7d15348d5f64" rendition="#bol">N.C. Møller</hi> / Graabrødre-Torv Nr. 97«. Uden på omslaget findes en etiket uden påskrift.</p>
+                  <p xml:id="id61b96fa0-7c7f-4ad5-9a9c-0acc0cbd4605">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser, flere på langs af siden. Bl. [2v] og [12]-[16] er ubeskrevet. </p>
+                  <p xml:id="id2f0eab76-d152-410b-bccf-481325d794d9">På bl. [1r] findes udkast til et titelblad: »Sex Taler ved tænkte Leiligheder.« Bl. [2r] optages af kladde til forordet; tilføjelser hertil findes på bl. [1v]. På bl. [3r] følger kladde til begyndelsen af første tale. Overskrift: »Ved Anledning af et Skriftemaal.« Kladden munder ud i udkast på bl. [11v]. Teksten inkl. marginaltilføjelse fra nederst på bl. [4v] til øverst på bl. [5r] udgør en variant til kladden i ms. 2.2 (»Tale <hi xml:id="idf739b82e-0224-417a-a37c-3f802dab848a" rendition="#ita">(...)</hi> beskæmmer ham selv«, jf. <ref xml:id="idd80ac3b8-910c-4825-abcc-ae7f1f26dc28" target="../TTL/txt.xml#ss393" type="publishedWritings" n="393"><hi xml:id="id6c9d559e-90ca-4473-bfc9-4d865f364ccf" rendition="#ita">SKS</hi> 5, 393</ref>,6-396,26). </p>
+                  <p xml:id="id36dca654-632e-41e7-8656-556870a2f5d8">Mange korrektioner, enkelte med blyant. </p>
+                  <p xml:id="idc7c57006-8695-4033-9aaf-d32ce4840f38">På bl. [5r] og [7v] findes flere bemærkninger vedr. kompositionen, skrevet med blyant. Ud for bemærkningen »bruges til det om Skjebnen« på bl. [7v] er et afsnit indstreget med blyant. Neden for det indstregede stykke er et afsnit først indrammet, siden slettet med blyant. </p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.2.1" prev="#physDesc.2.1">
+                <msIdentifier xml:id="id9dc768cd-5cf0-4b30-af1b-2716a4b67622">
+                  <idno xml:id="id2d343871-724f-4c1d-946e-e959ecce46b1">2.1</idno>
+                </msIdentifier>
+                <additional xml:id="idb083eedb-4342-41ae-8bb8-c9bfdcf86389">
+                  <adminInfo xml:id="id5c11a61f-4107-4ae4-bc26-e95d6813f502">
+                    <note xml:id="id5a41e107-5057-459b-affe-cd149494edd3">
+                      <p xml:id="id3eeecaae-3671-412d-8544-cd3e3b93af13">(<hi xml:id="id818852ed-0f8b-4ad2-bb58-bc430a1361d8" rendition="#ita">Pap.</hi> VI B 100-105) </p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.2.2" next="#additional.2.2">
+                <msIdentifier xml:id="id8ac57c09-1f7e-4f54-b84e-c3137a85bebe">
+                  <idno xml:id="ida5a7347a-82a5-4b62-aeef-84c9673c3517">2.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="idf40c4985-bd9d-45c1-ae22-0bd75988c12d">
+                  <p xml:id="idaba58f7a-b003-4729-a501-d72cc4802829">4 blade i 4<hi xml:id="id1d091384-0d72-4042-ae41-2c141503f42d" rendition="#sup">o</hi>. </p>
+                  <p xml:id="idc8004660-00b8-4b3d-9691-add252790885">Ingen paginering. </p>
+                  <p xml:id="id61c604d6-6ff7-485d-a7d6-fb9996d73ae3">Papir: gulligt koncept. Mål: 169 x 206 mm. </p>
+                  <p xml:id="id51e6d331-07d7-4a94-a5ac-b48473c4bba8">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bl. [4v] er ubeskrevet. </p>
+                  <p xml:id="id24439381-1bfb-42a5-8ef4-e3d122a8a814">Bladene består af kasseret tekst fra s. 7 i den oprindelige renskrift; teksten begynder midt i en sætning med samme ordlyd, som indleder s. 7 i den nu foreliggende renskrift. Teksten udgør en udvidet version af kladden på bl. [4v]-[5r] i ms. 2.1 (»Tale <hi xml:id="id5fc96021-bf78-4e33-b23b-ada3754556e9" rendition="#ita">(...)</hi> beskæmmer ham selv«, jf. <ref xml:id="idfe4de2c3-64f3-45d4-a065-6f17d37b8797" target="../TTL/txt.xml#ss393" type="publishedWritings" n="393"><hi xml:id="id7899955d-a51a-41cd-a359-0a06946c6aed" rendition="#ita">SKS</hi> 5, 393</ref>,6-396,26). </p>
+                  <p xml:id="id66548317-6595-4a89-aa3a-0a94272c105f">En del korrektioner, enkelte med blyant. </p>
+                  <p xml:id="id7171cd0f-2ad8-45eb-8622-fca2ff43052c"><pb xml:id="ss385" n="385" edRef="#SKS"/>En kompositionsbemærkning (»<hi xml:id="ide0576a5b-7c24-4098-8f7d-e7c49c3e367e" rendition="#ant">NB</hi>«) skrevet med blyant øverst på bl. [1v] markerer, at teksten skal indføjes ved et tilsvarende »<hi xml:id="idac2d0f56-92f7-4dbc-8e98-8ff3fee2782e" rendition="#ant">NB</hi>« på bl. [5r] i ms. 2.1. </p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.2.2" prev="#physDesc.2.2">
+                <msIdentifier xml:id="id1c5a868c-73ba-4964-a087-42637fb67a4e">
+                  <idno xml:id="ideb9592ff-864a-4b64-aa3b-f9a331e13c4f">2.2</idno>
+                </msIdentifier>
+                <additional xml:id="id58c59459-fc3e-4010-8aae-1c1273e13579">
+                  <adminInfo xml:id="id05f08ae6-a722-470f-b160-baf4ef3e6e61">
+                    <note xml:id="id1d496eb3-7bd4-42da-b17d-eca7c9001a64">
+                      <p xml:id="id3c5f8b88-2f7c-4e3e-9604-3f992c94c1b9">(<hi xml:id="id27817dd7-b3da-4726-bbd9-e4923a68e3f5" rendition="#ita">Pap.</hi> VI B 106) </p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.2.3" next="#additional.2.3">
+                <msIdentifier xml:id="id3a9d250e-8024-4d8f-99fa-079485db2b22">
+                  <idno xml:id="id8144e6eb-8021-466b-bb17-7d3a3db332b3">2.3</idno>
+                </msIdentifier>
+                <physDesc xml:id="id044062b2-e2d5-4cbb-8e0c-83205eab0f0c">
+                  <p xml:id="ide435efda-dc2b-4094-9fdc-d969e5d6798b">2 sammenhæftninger a 2 og 4 folioark, i alt 12 blade i 4<hi xml:id="ida428c7c5-b98f-442a-af2e-f1c6201fb5d1" rendition="#sup">o</hi>. </p>
+                  <p xml:id="idf6199225-1bfb-4658-a755-83c08b2d9063">Ingen paginering, men teksten er fortløbende fra første til anden sammenhæftning. </p>
+                  <p xml:id="id055e8d3d-de3f-4fab-a598-7fe307a4ae74">Papir: gulligt koncept. Mål: 170 x 206 mm. Rød hæftesnor i begge sammenhæftninger. </p>
+                  <p xml:id="id2d5ce75c-b913-4d1c-969d-71ccff9f79f0">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser, flere med blyant. Bladene består af kasseret tekst fra s. 23 i den oprindelige renskrift. SK kasserede teksten og henlagde den som kladde; et afsnit af tekstens begyndelse findes stadig i renskriften, indstreget med blyant (jf. ms. 5). Teksten udgør en fortsættelse af ms. 2.2. </p>
+                  <p xml:id="id8658ba0e-d3ef-4b1c-aa12-eb49d53121d7">Mange korrektioner, flere med blyant. </p>
+                  <p xml:id="id1758fa3c-eeb9-4c64-8a49-7a77a2c8d214">På bl. [3v] og bl. [12v] er en marginaltilføjelse indstreget med blyant. Flere bemærkninger med blyant; nederst på bl. [12v], hvor teksten slutter, har SK bemærket: »<hi xml:id="id8b910318-27bd-4e84-a95d-242b29540d25" rendition="#ant">cfr</hi> et Quartblad / Udkast, som udføres stærkt for at incitere«. </p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.2.3" prev="#physDesc.2.3">
+                <msIdentifier xml:id="id3af78616-14dd-4e5c-a28d-73d2fc7c9e9b">
+                  <idno xml:id="id010f1f44-ae9a-4cb3-86c7-ad71c51cefa8">2.3</idno>
+                </msIdentifier>
+                <additional xml:id="id350c2c2e-df1e-442b-a65f-81d51c0b602c">
+                  <adminInfo xml:id="id157d436e-fc2e-4020-acfa-c6b4be8141f9">
+                    <note xml:id="id95f1933f-5483-498e-9323-4dff9d6b1d89">
+                      <p xml:id="idc5eb34ae-560a-4142-954e-3fd462bf5c03">(<hi xml:id="id00a47f1a-2e0d-4878-9742-0e45a61569f7" rendition="#ita">Pap.</hi> VI B 108) </p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.2.4" next="#additional.2.4">
+                <msIdentifier xml:id="id3d2653d5-a3bb-4e79-8a1e-247e5d0d1def">
+                  <idno xml:id="ide0b55ae9-945c-4871-97b2-1aa34a41f641">2.4</idno>
+                </msIdentifier>
+                <physDesc xml:id="idd371cd19-ded6-4224-bc58-85cd52b74dd7">
+                  <p xml:id="id7b06a312-a0a5-4ce9-9b2b-1fc38124ba93">2 blade i 4<hi xml:id="id36b098a6-0525-4d2e-b441-a7fe6f1f0dac" rendition="#sup">o</hi>. </p>
+                  <p xml:id="id2d4c9cd0-67cd-4193-abe1-9be7833e0eee">Bladene er med blyant pagineret hhv. 43 og 45; pagineringen stammer fra renskriften. </p>
+                  <p xml:id="id247a5c43-b6ab-414c-ae3a-7a7a861dc8c6">Papir: gulligt koncept. Mål: 171 x 206 mm. </p>
+                  <p xml:id="idd70adfea-dc1a-46b1-96ad-3db6de95c875">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser, en på langs af siden på bl. [2v]. </p>
+                  <p xml:id="id65cf29ef-f153-4d1f-ad85-a02e9b99703d">Bladene består af kasseret tekst fra s. 43 i den oprindelige renskrift; teksten begynder med samme ordlyd, som indleder s. 43 i den nu foreliggende renskrift. Teksten udgør en fortsættelse af ms. 2.3. </p>
+                  <p xml:id="id87f4666e-7586-43ba-a7b1-b56a8b7c1129">Få korrektioner. </p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.2.4" prev="#physDesc.2.4">
+                <msIdentifier xml:id="id1fb8ee6b-971c-4d31-9675-0346fb841336">
+                  <idno xml:id="id07922544-0c0e-410f-9752-b28b9e695685">2.4</idno>
+                </msIdentifier>
+                <additional xml:id="idf6521094-c0f9-40be-9ff7-dbffdddc7433">
+                  <adminInfo xml:id="idf49b81c0-7459-47ea-9ec4-fc690a451311">
+                    <note xml:id="id4007fcc5-219a-465f-8637-b9f40454f099">
+                      <p xml:id="id065a2a8b-ab23-4b5b-b964-646c89292ae1">(<hi xml:id="idab7a41dd-86be-45c4-8563-9418919547e0" rendition="#ita">Pap.</hi> VI B 109-110) </p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.2" prev="#physDesc.2">
+              <msIdentifier xml:id="id516fd51c-3b04-472d-a1e0-d45ece4624cf">
+                <idno xml:id="idde106d01-1679-4f96-b590-e1cb9cca8ae0">2</idno>
+              </msIdentifier>
+              <additional xml:id="id44a00104-b5e9-4824-be13-a95940375150">
+                <adminInfo xml:id="idf6389da1-1ed9-48b7-a88a-4a7377e1bee7">
+                  <note xml:id="id63d2f8fb-5ce6-4535-b6b8-c3075a16895f">
+                    <p xml:id="id8a5a1de8-8c0d-4a83-a3e4-3ac3f319131f">(KA, B pk. 25; <hi xml:id="id389d7a11-59ec-42b2-aa03-b75bfa1ff89c" rendition="#ita">Pap.</hi> VI B 100-106 + 108-110) </p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.3" next="#additional.3">
+              <msIdentifier xml:id="id5f480f52-9e6e-4706-a5bf-d47883b00fe0">
+                <idno xml:id="ide36ba91f-74ae-4480-b686-15723dc73de9">3</idno>
+              </msIdentifier>
+              <physDesc xml:id="id168615d7-388e-4248-b8c4-e611ee20427d">
+                <p xml:id="idb8b76093-5989-4656-ade8-2c0d715d152b"><pb xml:id="ss386" n="386" edRef="#SKS"/>Kladde til anden tale. </p>
+              </physDesc>
+              <msPart xml:id="physDesc.3.1" next="#additional.3.1">
+                <msIdentifier xml:id="id271717d6-0f47-4e3b-87be-aecd44a0d44e">
+                  <idno xml:id="idb57f9eda-7427-4d1f-a4a5-a783d09595bc">3.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id37a6cee8-c5aa-4c50-a412-65bffe607b71">
+                  <p xml:id="idb8837b3d-3705-452b-a287-ef0c1ea97cda">1 sammenhæftning a 5 folioark, i alt 10 blade i 4<hi xml:id="idfa9e93b3-8aee-4d79-bb6a-856b7cc9e900" rendition="#sup">o</hi>. </p>
+                  <p xml:id="id1588df4c-9e0a-4781-bd5f-1f84af84127a">Ingen paginering. </p>
+                  <p xml:id="idc2532432-81c0-499f-bbe5-39c87f6c009f">Papir: gulligt koncept. Mål: 170 x 206 mm. Rød hæftesnor. </p>
+                  <p xml:id="id88520a9b-3d56-4e15-b09f-46fdab654fa3">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser, en med blyant på bl. [3r] og en hen over hele siden på bl. [6v]. Bl. [7v]-[10] er ubeskrevet. Teksten udgør kladde til ca. halvdelen af anden tale; et stykke på bl. [4r]-[6v] er en variant til kladden på bl. [1r]-[7r] i ms. 3.2 (»Et gammelt Ord <hi xml:id="idd302fa91-722c-43f4-9cdb-41febb2634c2" rendition="#ita">(...)</hi> Beslutningens strænge Opdragelse«, jf. <ref xml:id="idc09803a5-feb5-4024-96d4-730d71729e56" target="../TTL/txt.xml#ss423" type="publishedWritings" n="423"><hi xml:id="id4896be06-cb55-42b7-8c5f-5ce1f8143a0f" rendition="#ita">SKS</hi> 5, 423</ref>,1-430,13). </p>
+                  <p xml:id="id548a44f7-93be-41cd-afc9-52bc9b59b837">En del korrektioner. </p>
+                  <p xml:id="id6bb447eb-19ac-4b43-862f-271676a48c99">Et afsnit er indstreget med blyant nederst på bl. [4v]. </p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.1" prev="#physDesc.3.1">
+                <msIdentifier xml:id="id50cbecd6-45cb-4765-a4c8-dc5725d57a24">
+                  <idno xml:id="idb64dd3f8-f745-4b58-8940-bbc3ecca0269">3.1</idno>
+                </msIdentifier>
+                <additional xml:id="id9f8b5053-27eb-452b-a744-3d266680945f">
+                  <adminInfo xml:id="idfe693028-0e0f-4234-9a01-7cb2bbde75ac">
+                    <note xml:id="id8ed7b870-ed8b-4351-85b9-62f1195fe4c4">
+                      <p xml:id="id2b42faef-408c-4040-bc4e-06c10fe5abcd">(<hi xml:id="id88f05207-1459-4781-8fb3-e4e0d47ca6a6" rendition="#ita">Pap.</hi> VI B 111) </p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.3.2" next="#additional.3.2">
+                <msIdentifier xml:id="idec5b6ede-f07e-44fc-90e7-b0ab17083933">
+                  <idno xml:id="id2d7bc37f-3ef1-4510-bc98-64e2e43a8bf3">3.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="idf39bb90d-4dab-4cbf-993d-095076e27976">
+                  <p xml:id="ida54ec348-01c0-4035-9704-aaa1f3317b21">4 folioark, i alt 8 blade i 4<hi xml:id="idc19a5f31-a5ee-42f5-b531-4500f7debce9" rendition="#sup">o</hi>. </p>
+                  <p xml:id="id3585e3c7-1714-4bf0-b251-9c0c3f35b96d">Arkene er på første side med blyant mærket 1-4. </p>
+                  <p xml:id="idad5d0072-eb9a-4d8f-9574-f5b293112e8e">Papir: gulligt koncept. Mål: 170 x 206 mm. </p>
+                  <p xml:id="id327e9d7d-f2da-4c4f-a04c-39b55751c29d">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser, flere med blyant. Bl. [8] er ubeskrevet. Teksten på bl. [1r]-[7r] udgør en variant til kladden på bl. [4r]-[6v] i ms. 3.1 (»Et gammelt Ord <hi xml:id="id3b729965-95ae-4526-a8bb-f47819ad521a" rendition="#ita">(...)</hi> Beslutningens strænge Opdragelse«, jf. <ref xml:id="id999c9dfc-f233-44cd-b6c8-2eddf4945c46" target="../TTL/txt.xml#ss423" type="publishedWritings" n="423"><hi xml:id="id01e27fef-913e-46c1-968c-f0a4d52a71ac" rendition="#ita">SKS</hi> 5, 423</ref>,1-430,13). På bl. [7v] munder kladden ud i spredte udkast til fortsættelsen af talen. </p>
+                  <p xml:id="idb5ab4c2d-96e3-4e67-80b2-c7945a6ddebf">Mange korrektioner. </p>
+                  <p xml:id="id708ce5d4-606b-4035-88aa-7f4ae3ecfdbd">På bl. [7r] har SK på langs i marginen med blyant bemærket: »<hi xml:id="idc7231aea-294e-479c-959c-1a41376b4a6e" rendition="#ant"><hi xml:id="id8ce94137-ed21-455a-b032-6b06057daf92" rendition="#ita">NB</hi></hi> udføres endnu mere i mildere Skikkelser.« </p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.2" prev="#physDesc.3.2">
+                <msIdentifier xml:id="id143bee16-1e93-4b80-bfe0-8b9f15495a69">
+                  <idno xml:id="ide1e98ca3-a3f1-47bc-83ff-2993f07802d0">3.2</idno>
+                </msIdentifier>
+                <additional xml:id="id0501a2e3-7722-4836-8a93-fff4669efefe">
+                  <adminInfo xml:id="idf20f8b0d-f0b7-4620-8194-c0aadc32a549">
+                    <note xml:id="id34afa894-a2ff-4050-95fa-bbe7af01c70a">
+                      <p xml:id="id2cd32934-093f-462c-9b44-6e675eb26b16">(<hi xml:id="id2c6d229c-63d9-43fe-80d9-579c661515e5" rendition="#ita">Pap.</hi> VI B 112-113) </p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.3.3" next="#additional.3.3">
+                <msIdentifier xml:id="id5cc912a5-08e4-420d-a132-b4793608ee30">
+                  <idno xml:id="id1c96252c-54ba-42f2-b562-f9024162fac5">3.3</idno>
+                </msIdentifier>
+                <physDesc xml:id="idb46920ed-519e-4047-b4b0-758ba052acdd">
+                  <p xml:id="id54ae211a-a3b6-461c-a81c-4f56cb66340e">3 folioark, i alt 6 blade i 4<hi xml:id="idace6975c-2132-4bd1-b3ed-1329ff6f3fe1" rendition="#sup">o</hi>. </p>
+                  <p xml:id="id2ac5f958-251a-4efb-a025-90b935da9c2e">Arkene er på første side med blyant mærket 5-7. </p>
+                  <p xml:id="id22790aea-16af-45f9-82ea-2fa398014259">Papir: gulligt koncept. Mål: 170 x 206 mm. </p>
+                  <p xml:id="id9cbb52e5-3dfd-457e-8ccd-131d2b2a5ed3">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bl. [5v]-[6] er ubeskrevet. </p>
+                  <p xml:id="idcddc0edd-344a-4a0f-a322-2f2c2aab1019">Teksten, som har forlæg i udkastene på bl. [7v] i ms. 3.2, udgør kladde til fortsættelsen af talen. </p>
+                  <p xml:id="idd0a14ed9-a308-4318-84da-64c0a6274964">Få korrektioner. </p>
+                  <p xml:id="idc27e3b71-6ee3-4a69-b57b-4e517f4a8bdd"><pb xml:id="ss387" n="387" edRef="#SKS"/>Hvor teksten slutter nederst på bl. [5r], har SK med blyant tilføjet: »2) En virkelig Forestilling om Gud«. </p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.3" prev="#physDesc.3.3">
+                <msIdentifier xml:id="id55666db0-a121-4ecb-be5d-0b7148fb4248">
+                  <idno xml:id="idd13a87a5-4179-4d01-8118-7416476eff5b">3.3</idno>
+                </msIdentifier>
+                <additional xml:id="id65a6b962-3785-498f-8297-2f7dd6abb794">
+                  <adminInfo xml:id="id4aa6cdef-f93a-456e-95c3-8dcfd8f3f935">
+                    <note xml:id="ide03007a7-d8bf-4d44-af9c-db0ff12e743f">
+                      <p xml:id="id4c98b2ac-5b8a-4e52-8236-9702b76de301">(<hi xml:id="id18fcf437-c167-4210-a277-57d3dc18451b" rendition="#ita">Pap.</hi> VI B 114-115) </p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.3.4" next="#additional.3.4">
+                <msIdentifier xml:id="id92145da4-50a2-4d4f-b3ab-2ee360672bf1">
+                  <idno xml:id="id981fcecf-278e-4148-ab71-bd8a3aa8ba25">3.4</idno>
+                </msIdentifier>
+                <physDesc xml:id="idb24fdda1-b6bf-4776-ac5f-1ead70254131">
+                  <p xml:id="id8f52d1db-b798-4c7c-a44f-8993d4178286">2 folioark, i alt 4 blade i 4<hi xml:id="idbdf365d3-271f-4967-84f1-03bd28252ab0" rendition="#sup">o</hi>. </p>
+                  <p xml:id="ida7086008-bd1a-4cec-99db-a725f0c98f39">Arkene er på første side med blyant mærket 8-9. </p>
+                  <p xml:id="idcb117c83-6075-4151-bf60-a78116ff4d11">Papir: gulligt koncept. Mål: 169 x 205 mm. </p>
+                  <p xml:id="id309dfa6d-da4d-4324-ac36-8b456bef63f1">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Teksten udgør kladde til sidste del af talen. </p>
+                  <p xml:id="id0b6edffe-5dab-4a9e-9b2b-30e20e6755c2">Få korrektioner. </p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.4" prev="#physDesc.3.4">
+                <msIdentifier xml:id="ida74c7f16-a9dc-417f-9487-cbef0ffdc110">
+                  <idno xml:id="id91646526-d692-4ac2-8375-a940782074b5">3.4</idno>
+                </msIdentifier>
+                <additional xml:id="id75fb299d-9384-4a9c-9201-f66c71008270">
+                  <adminInfo xml:id="id4037d982-8251-4c96-a560-3d7b09757207">
+                    <note xml:id="idccdb5673-c5a8-471a-8d74-38546848b8b3">
+                      <p xml:id="id211f2573-f92d-408e-8838-da5d3e94fe6a">(<hi xml:id="id3693fd52-9140-47b6-a9e6-c154f2fb09bd" rendition="#ita">Pap. </hi>VI B 116-117) </p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.3.5" next="#additional.3.5">
+                <msIdentifier xml:id="idf66ed02b-86f3-420e-81d6-dad0ccd12005">
+                  <idno xml:id="ide0442dd0-fae8-494b-acff-889741b62416">3.5</idno>
+                </msIdentifier>
+                <physDesc xml:id="idb8bcd51c-880e-4f11-9a15-95c27c35688d">
+                  <p xml:id="id471a4eeb-0127-470a-8196-639e7c38c5f5">2 blade i 4<hi xml:id="id26e14241-d8c4-4397-9322-1687dae3655a" rendition="#sup">o</hi>. </p>
+                  <p xml:id="id73f4ac36-d420-4783-8f49-ee91d6cc7b04">Bladene er pagineret 1-4 med blyant; på første side er den oprindelige mærkning 10 slettet med blyant. </p>
+                  <p xml:id="id92710c30-b549-4e2d-aab3-788661443742">Papir: gulligt koncept. Mål: 170 x 205 mm. </p>
+                  <p xml:id="id47b4aa70-b790-4243-86bb-fd3fccb402ae">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Teksten udgør et kasseret kladdeforlæg til talens sidste del. </p>
+                  <p xml:id="id06be3b2b-c5f8-4ce6-bb67-2052a2189b62">Få korrektioner. </p>
+                  <p xml:id="id5550dd4f-5882-4b9a-863e-cd14fc096c6d">Langs hele teksten er der i marginen sat en lodret blyantstreg. </p>
+                  <p xml:id="id618c9f8c-3153-4dc5-a56f-8f679f38812e">Det sidste afsnit af teksten på bl. [2v] er slettet med tætte blyantstreger. </p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.5" prev="#physDesc.3.5">
+                <msIdentifier xml:id="id0d9f525e-bc08-405b-8692-d9511a305adb">
+                  <idno xml:id="id30e7b14b-a3d7-41d5-bebe-107edd1919ca">3.5</idno>
+                </msIdentifier>
+                <additional xml:id="id4f1f8f9f-caac-4617-96df-a6e7f30ab202">
+                  <adminInfo xml:id="id443bc66d-9f48-4c48-aa50-b892c25c8779">
+                    <note xml:id="id6f80bd6b-a7a8-4fc0-925a-6c576954da89">
+                      <p xml:id="id33009d38-1e68-40ff-becd-0e39b9d9de6e">(<hi xml:id="ide92d4767-5a33-4886-bb7f-58df0d1b6e5b" rendition="#ita">B-fort.</hi> 405 f; <hi xml:id="idb6c5ab2f-02f5-426c-a41f-15bb015b94ed" rendition="#ita">Pap.</hi> VI B 118) </p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.3" prev="#physDesc.3">
+              <msIdentifier xml:id="id20afb65b-3f74-406a-a4f6-0f3d6e9df17d">
+                <idno xml:id="id77171865-917f-402b-b157-78d3a5956f9f">3</idno>
+              </msIdentifier>
+              <additional xml:id="idd842075d-366c-4e30-869a-4cb0a779d1a8">
+                <adminInfo xml:id="ida15130b6-ddea-416b-9c96-b847c3c4d0eb">
+                  <note xml:id="id80ffe629-5920-47e5-bdf3-dea26d0bac09">
+                    <p xml:id="idda6ef610-b26a-4025-97ab-0f7c7151bc5f">(<hi xml:id="idba8e695b-2619-41b8-b4b3-2e8cff007f0b" rendition="#ita">B-fort.</hi> 405 f; KA, B pk. 25;<hi xml:id="idf277903f-835e-415c-97c4-f2c7b59fb80d" rendition="#ita"> Pap.</hi> VI B 111-118) </p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.4" next="#additional.4">
+              <msIdentifier xml:id="id0b2c874c-094d-49c4-a979-5711923fb631">
+                <idno xml:id="idf28315c8-7105-4049-aeb2-a9e691493e10">4</idno>
+              </msIdentifier>
+              <physDesc xml:id="id651ef2a2-2760-4535-ae35-70da41e85d1b">
+                <p xml:id="id09bbd7bb-4977-4ee0-a35a-4af31c631e13">Kladde og udkast til tredje tale. Mss. 4.3, 4.5 og 4.6 stammer fra renskriften; under skrivningen kasserede SK disse manuskriptdele og henlagde dem som kladde. </p>
+              </physDesc>
+              <msPart xml:id="physDesc.4.1" next="#additional.4.1">
+                <msIdentifier xml:id="id7ea7201b-1098-4a9b-b310-6dc505900403">
+                  <idno xml:id="idba614a6d-23af-4299-9ff8-b5055bc8c95f">4.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="idd7d43a18-38a8-44e3-9a2b-a757e43ba530">
+                  <p xml:id="idedc07a7b-5efa-4d7b-8db5-55bcef654675">1 blad + 1 folioark, i alt 3 blade i 4<hi xml:id="iddcb26608-0792-4bb0-9888-7db6a2cd4965" rendition="#sup">o</hi>. </p>
+                  <p xml:id="id9293213f-e4dd-45ae-bd91-1c89795f4167">Det løse blad er med blyant mærket 1; arket er med blyant på første side mærket 2. </p>
+                  <p xml:id="id170029d8-2ccc-4ddc-9619-9acfdf802dd0">Papir: gulligt koncept. Mål: 169 x 205 mm. </p>
+                  <p xml:id="id583193a3-61e2-418b-af94-b9c025d3b456">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser, flere med blyant. To tilføjelser i selve teksten med blyant. Teksten udgør kladde og udkast<pb xml:id="ss388" n="388" edRef="#SKS"/> til talens begyndelse (til talens første afsnit findes intet forlæg). </p>
+                  <p xml:id="idf8e00bc0-64b3-44f2-b3d9-43dd57a8ea4c">En del korrektioner. </p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.4.1" prev="#physDesc.4.1">
+                <msIdentifier xml:id="idaa8906ca-d119-4250-b5d1-ec1fc5f8fc63">
+                  <idno xml:id="idb6d487cb-219c-4308-8849-94efe91c76aa">4.1</idno>
+                </msIdentifier>
+                <additional xml:id="id7d1ba3f9-6182-489d-81ed-ad0f35156a58">
+                  <adminInfo xml:id="id4bba0733-8e97-4048-b4b0-33f6975f5374">
+                    <note xml:id="id219fa682-13e8-4f61-8485-21b909b53b48">
+                      <p xml:id="idcbe0deab-d5ba-4017-b1f3-b8542d505445">(<hi xml:id="ida0cb3357-43bd-40d5-9b3a-04f7caeb993c" rendition="#ita">Pap.</hi> VI B 119) </p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.4.2" next="#additional.4.2">
+                <msIdentifier xml:id="id45ccd0c0-065b-4fa5-843d-197e87f79d19">
+                  <idno xml:id="idbf11c47b-d33b-4ff6-817e-57330d58254f">4.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="idef2a2b62-7c6f-4f46-b2e4-d11ea7d50bcd">
+                  <p xml:id="id8fbd20e5-c0d4-4c53-b820-bd10fab35feb">1 folioark a 2 blade i 4<hi xml:id="id73ef2562-6a91-433f-a09a-f4fc306633db" rendition="#sup">o</hi> + 1 blad i 8<hi xml:id="id4411aa92-11a8-4ea3-aa3b-c1fe5c401818" rendition="#sup">o</hi>, i alt 3 blade. </p>
+                  <p xml:id="id93e93c51-e822-42ad-95e6-11f4a1cde231">Ingen paginering. </p>
+                  <p xml:id="idf12f1c07-1898-4ba9-981b-56a30e99c76f">Papir, folioarket: gulligt koncept; det løse blad: blåligt post-velin. Mål, folioarket: 169 x 206 mm; det løse blad: 136 x 213 mm. </p>
+                  <p xml:id="id1d8a4cf0-9fab-4979-b541-466e06803a71">Teksten er skrevet hen over hele siden. Bl. [3v] er ubeskrevet. </p>
+                  <p xml:id="idfd6c511b-570e-41e3-98b4-0d8927b736f9">Teksten udgøres af spredte udkast, dels til en udvidelse af sidste del af ms. 4.1, dels til resten af talen. </p>
+                  <p xml:id="id93009756-6920-45a5-8a9a-0bac1d0d27bc">Mange korrektioner, flere med blyant. </p>
+                  <p xml:id="id8a02e8d9-009d-439d-ac28-328707eed031">Det meste af teksten er slettet med tætte blyantløkker og -streger. </p>
+                  <p xml:id="id4c5b5aad-dcb5-4fcf-bea5-b60467aab6ce">På bl. [1r] står »<hi xml:id="id931a5485-0c0e-439a-a6d8-574154a83638" rendition="#ant"><hi xml:id="idfc21b03e-ed71-497a-8eaa-6ce65284f962" rendition="#bol">verte</hi></hi>«<note xml:id="id13bec598-9f6e-4a78-8b0a-43a64407149b"><p xml:id="id779fa250-904c-4399-b9f7-8e3d3ec7fff3">Det latinske verte betyder: vend (bladet)! </p></note> med blyant i nederste højre hjørne. </p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.4.2" prev="#physDesc.4.2">
+                <msIdentifier xml:id="id36e3316d-41f6-4df2-a0a7-d93a206f6827">
+                  <idno xml:id="id61d55047-a75c-47a4-8677-fc5af1f869d6">4.2</idno>
+                </msIdentifier>
+                <additional xml:id="id885f46eb-1b73-41a0-bac2-2236c414f748">
+                  <adminInfo xml:id="idcdd08d40-5f00-4863-8c07-0336cd1f4ed0">
+                    <note xml:id="id8ac56f23-ebcd-491d-998e-e9e0d049fcd1">
+                      <p xml:id="idfa77af9d-8aa7-4dda-830e-761972a07c04">(<hi xml:id="iddbaf6dc5-d5cc-46f9-9aa2-7ce6ee87b437" rendition="#ita">Pap.</hi> VI B 120) </p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.4.3" next="#additional.4.3">
+                <msIdentifier xml:id="idf853c31c-9e21-4691-ac75-5661f89568d4">
+                  <idno xml:id="id1f907282-9a74-4a9b-9953-8417d22d3702">4.3</idno>
+                </msIdentifier>
+                <physDesc xml:id="id5b5e4e31-fe8e-45f0-bee7-9452cc2d8c6e">
+                  <p xml:id="id9f1d449b-ea45-4bb8-a70d-0e2e9c5ab9e1">Kladdehæfte i 4<hi xml:id="idf8b372c1-4e88-475a-a3a4-624ce98c17cf" rendition="#sup">o</hi> med omslag af sort glanspapir, i alt 11 blade, hvoraf de sidste 5 er løse. </p>
+                  <p xml:id="idf8f77599-8ddb-4517-9870-0f85da54f83b">Ingen paginering. </p>
+                  <p xml:id="idb974f03b-83a3-4990-b015-fe3ec0710bc1">Papir: svært, gulligt koncept. Mål: 164 x 199 mm. På omslagets forreste inderside findes en trykt etiket med »Tilkjøbs hos / Bogbinder <hi xml:id="id8187b7cd-31a4-43aa-9749-f7f716506c89" rendition="#bol">N.C. Møller</hi> / Graabrødre-Torv Nr. 97«. På omslagets forside findes en etiket med påskriften: »<hi xml:id="id93f59a0c-27f6-4f25-8712-a61f1a064807" rendition="#ant"><hi xml:id="ida5b363ae-a074-4889-b8d8-2d0d64352c54" rendition="#bol">Taler.</hi> / Leilighed.</hi>« Det sidste ord skrevet med blyant. </p>
+                  <p xml:id="ida3950813-9d71-4530-94f1-e68622d0fae8">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten få tilføjelser, flere med blyant. Bladene består af kasseret tekst fra s. 93 i den oprindelige renskrift. SK kasserede teksten og henlagde den som kladde; et længere afsnit af tekstens begyndelse findes stadig i renskriften, her indstreget med blyant (jf. ms. 5). </p>
+                  <p xml:id="id3af1207f-6a79-4798-84a4-22f7ba0aae4f">Mange korrektioner. </p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.4.3" prev="#physDesc.4.3">
+                <msIdentifier xml:id="id2829eb3a-2779-49bd-9ff8-8253d4fa3683">
+                  <idno xml:id="id9a6f57fd-112b-4650-b9e9-750ac6d97272">4.3</idno>
+                </msIdentifier>
+                <additional xml:id="idb7327411-15c4-4960-aa67-2dd06217378a">
+                  <adminInfo xml:id="id21a12cfb-0bba-405f-82b9-1196d9803ffb">
+                    <note xml:id="id952be128-6c10-4d84-a720-88f919a4fde1">
+                      <p xml:id="idb9bbe0a3-93c1-4f78-a0a4-6d088d13c3b3">(<hi xml:id="id34049489-7149-4add-9635-5e40c056cb2d" rendition="#ita">Pap.</hi> VI B 122,1-4) </p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.4.4" next="#additional.4.4">
+                <msIdentifier xml:id="id0f524fb9-f596-42d6-8944-d2ae22c90cf0">
+                  <idno xml:id="id7a6cd6c3-a734-4c49-8dd5-ea674911c053">4.4</idno>
+                </msIdentifier>
+                <physDesc xml:id="id786b39e0-b2a9-46e7-a9f4-ed748848ccab">
+                  <p xml:id="idfd35b2b9-056f-4be9-a9bd-07a3c58f1d27"><pb xml:id="ss389" n="389" edRef="#SKS"/>Kladdehæfte i 4<hi xml:id="id55a6f3f4-e614-443f-9233-21e73e8ce6b9" rendition="#sup">o</hi> med omslag af mørklilla glanspapir, i alt 16 blade. </p>
+                  <p xml:id="idefd056e4-861c-426d-84ab-b3d6a7cf7df6">Ingen paginering. </p>
+                  <p xml:id="id87ee62b0-5054-49f5-b855-1527921c3e86">Papir: svært, gulligt koncept. Mål: 164 x 199 mm. På omslagets forreste inderside findes en trykt etiket med »Tilkjøbs hos / Bogbinder <hi xml:id="idcf80e893-a288-40d7-ac3a-d4843fbbcdf2" rendition="#bol">N.C. Møller</hi> / Graabrødre-Torv Nr. 97«. Uden på omslaget findes en etiket uden påskrift. </p>
+                  <p xml:id="ida239402b-9c89-4d5d-af02-b34809e158db">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bl. [5v]-[16] er ubeskrevet. Teksten udgør en fortsættelse af ms. 4.3; teksten på bl. [1v]-[3v] øverst er en variant til kladden i ms. 4.5 (»Dødens Lighed <hi xml:id="id7d3011c6-6810-4354-90b3-60e759634951" rendition="#ita">(...)</hi> afspændt Sløvhed«, jf. <ref xml:id="id496e2158-8c7f-49a2-83b1-65f2c6575dd9" target="../TTL/txt.xml#ss459" type="publishedWritings" n="459"><hi xml:id="idb831b46e-b65c-435a-be87-abbb6eb15672" rendition="#ita">SKS</hi> 5, 459</ref>,33-461,32). </p>
+                  <p xml:id="id91446e8f-6879-4067-9c7a-6a060527d57b">En del korrektioner. </p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.4.4" prev="#physDesc.4.4">
+                <msIdentifier xml:id="idac3fac24-9392-4f1f-b517-d22ab82b7fe4">
+                  <idno xml:id="idbb304f30-c406-4813-82f1-6276aec25f2b">4.4</idno>
+                </msIdentifier>
+                <additional xml:id="id15dee1fb-a045-4780-8ff9-768696195f5c">
+                  <adminInfo xml:id="id39905d16-636f-4912-8340-cad207499385">
+                    <note xml:id="idc49647dd-a79f-4497-a25e-dfbe3798d538">
+                      <p xml:id="id46da19bf-93a8-4631-a87b-431b20809b9d">(<hi xml:id="id0c4b0a29-5b7a-45ed-a3ea-4c719a3eb82a" rendition="#ita">Pap.</hi> VI B 122,5-7) </p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.4.5" next="#additional.4.5">
+                <msIdentifier xml:id="id5da29e6a-ba81-4b1f-86da-ef86d3168a3d">
+                  <idno xml:id="ida0231baf-c07d-4111-95fa-3ff007f01853">4.5</idno>
+                </msIdentifier>
+                <physDesc xml:id="idc2fd542d-9047-4222-96f0-4326faf5b998">
+                  <p xml:id="id3845ea33-b4cd-4c79-bab3-1a6203c14221">1 sammenhæftning a 2 foldede 4<hi xml:id="idbb078f50-cc90-42d1-9866-eb553b677b8c" rendition="#sup">o</hi>-blade, i alt 4 blade i 8<hi xml:id="idbcf41417-fb61-4db8-9bdf-838af579b2f7" rendition="#sup">o</hi>. </p>
+                  <p xml:id="id302335de-7978-42ae-9878-d610a37c202e">Bl. [1r] er med blyant pagineret 113; pagineringen stammer fra renskiften. </p>
+                  <p xml:id="id7836d8bc-5b72-4eba-b60e-4aeda396675b">Papir: post-velin; vandmærke: J Whatman 1838. Mål, de foldede blade: 128 x 205 mm. Rød hæftesnor. </p>
+                  <p xml:id="id82a01e33-8dbc-48ec-a367-4f75b03a1aea">Teksten er skrevet hen over hele siden. På bl. [1v] findes to tilføjelser, en i bladranden og en skrevet med blyant under teksten. Bl. [2v]-[4] er ubeskrevet. Bladene består af kasseret tekst fra s. 113 i den oprindelige renskrift; teksten begynder med samme ordlyd, som indleder s. 113 i den nu foreliggende renskrift. Teksten udgør en variant til kladden i ms. 4.4, bl. [1v]-[3v] øverst (»Dødens Lighed <hi xml:id="id6553d40c-22a1-4e5a-9cf7-3fe0b492b3de" rendition="#ita">(...)</hi> afspændt Sløvhed«, jf. <ref xml:id="id38108438-d3e5-4365-ae77-3b2e0314387f" target="../TTL/txt.xml#ss459" type="publishedWritings" n="459"><hi xml:id="ida56dd59f-730f-4007-984f-02448a7332d2" rendition="#ita">SKS</hi> 5, 459</ref>,33-461,32). </p>
+                  <p xml:id="id911a0047-fefe-42e1-b012-28f736639df2">Få korrektioner. </p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.4.5" prev="#physDesc.4.5">
+                <msIdentifier xml:id="id397d0aa9-05d0-4b2d-993a-9c7fc5153555">
+                  <idno xml:id="id1548c016-bfd6-440b-8558-671abd53c5ab">4.5</idno>
+                </msIdentifier>
+                <additional xml:id="id9884631c-d0fa-46a4-b3df-18ebbfe6b22b">
+                  <adminInfo xml:id="id47be624b-f8a4-4d8c-a5e3-ce75328c1c56">
+                    <note xml:id="id9d55ec15-c287-4961-89e8-d92a7efbd6d1">
+                      <p xml:id="id30e0d501-2121-4ca6-aa06-3a30d4fb33cc">(<hi xml:id="id107df4a7-8f24-4247-bfd4-7cee2ab2be69" rendition="#ita">Pap.</hi> VI B 123) </p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.4.6" next="#additional.4.6">
+                <msIdentifier xml:id="id3a085f38-f031-4b08-a5db-54c3d8b02e6d">
+                  <idno xml:id="id74312f85-e7a3-4a83-a007-cb5cc0e89ec8">4.6</idno>
+                </msIdentifier>
+                <physDesc xml:id="ideb4003fe-c94a-49e0-9651-4f09a02e6e83">
+                  <p xml:id="id90854a1f-2820-4c12-a4e7-e2320cde0b6a">1 sammenhæftning a 3 folioark + 2 blade + 1 folioark, i alt 10 blade i 4<hi xml:id="idc033de30-bbb4-4e16-a131-7fce93d776b3" rendition="#sup">o</hi>. </p>
+                  <p xml:id="id2d5f3594-2a24-4382-bc45-d65f4764e5bc">Ingen paginering. </p>
+                  <p xml:id="id7ac1157c-8cbd-4dc8-b1ea-bb4c14b06101">Papir: gulligt koncept. Mål: 170 x 206 mm. Rød hæftesnor. </p>
+                  <p xml:id="id83a7d3ab-3460-4958-8572-5172a69ab7c2">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten få tilføjelser, en enkelt med blyant. Bladene består af kasseret tekst fra s. 117 i den oprindelige renskrift; teksten begynder midt i en sætning med samme<pb xml:id="ss390" n="390" edRef="#SKS"/> ordlyd, som indleder s. 117 i den nu foreliggende renskrift. Teksten udgør kladde til talens slutning. </p>
+                  <p xml:id="id61c42b1d-ec05-4749-a029-4f2a34fe60ef">Få korrektioner. </p>
+                  <p xml:id="id5ed66f75-a8fa-470e-9c9e-2771dc641644">På bl. [3v] er et afsnit indrammet med blyant. </p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.4.6" prev="#physDesc.4.6">
+                <msIdentifier xml:id="id3eef6bdd-4350-4f82-bf70-a6a2f886a565">
+                  <idno xml:id="id0fed6870-f24c-4d80-8c85-3003d0b67930">4.6</idno>
+                </msIdentifier>
+                <additional xml:id="idaf173473-29aa-4a71-b558-5091c481a081">
+                  <adminInfo xml:id="id733e9580-8511-4f0a-b5dc-ab667d2be828">
+                    <note xml:id="id5b6404de-8b19-46a8-a965-13e83c1e94ac">
+                      <p xml:id="id7d5a9d03-2b46-4640-bc0d-ff84778e9dfb">(<hi xml:id="id0e49e660-14a5-4ab5-bc8d-af0038f739f8" rendition="#ita">Pap.</hi> VI B 124) </p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.4" prev="#physDesc.4">
+              <msIdentifier xml:id="id84b8dd40-59e8-49ea-8a88-d47e127eb325">
+                <idno xml:id="id38a87b4b-4ce2-40fc-8f08-306e416f18c3">4</idno>
+              </msIdentifier>
+              <additional xml:id="id2edff728-cda2-4d49-9ac5-6f91514b5065">
+                <adminInfo xml:id="id083bf418-8893-4efe-9421-0ddb55ce5b58">
+                  <note xml:id="id949d0ea8-f716-40d9-94e8-e7c892f1c4b8">
+                    <p xml:id="id8cb1492e-fd9c-4870-953d-dc480afb19ba">(KA, B pk. 25; <hi xml:id="id4ab46b71-cca6-42eb-a61d-a312d4f0ba5f" rendition="#ita">Pap.</hi> VI B 119-120 + 122-124) </p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.5" next="#additional.5">
+              <msIdentifier xml:id="id6804839a-6bd6-4970-909e-6bb58e1f41f2">
+                <idno xml:id="idf1b04521-2886-49e9-9bdd-def1b3b1fdb1">5</idno>
+              </msIdentifier>
+              <physDesc xml:id="idd3d68b30-5c3f-4cf7-b483-ffea406ee76f">
+                <p xml:id="id646b7dc6-2613-4254-855e-fa6138a30d69">Renskrift af <hi xml:id="id363266f0-b974-4ab6-b8f6-2e97cd61956f" rendition="#ita">TTL. </hi>Det fremgår af sættermarkeringer, at renskriften tillige har fungeret som trykms. </p>
+                <p xml:id="id2f3df0e1-59a1-44ed-b3d6-8d4967195825">2 blade + 1 sammenhæftning a 2 ark + 6 blade + 6 folioark + 17 blade + 1 folioark + 19 blade + 2 folioark + 1 blad, i alt 67 blade i 4<hi xml:id="idffa011b3-718f-446a-af04-fbd1132a0eb5" rendition="#sup">o</hi>. </p>
+                <p xml:id="id798f9a2e-9c26-4f75-b431-2d472a46e823">Bladene er pagineret 1-129 med blyant. S. 1-42 og 116-117 er pagineret på hver side, s. 43-115 på hver anden side (rectosiderne). Det første blad og en side mellem s. 83 og 84 er upagineret. Mellem s. 92 og 93, der er pagineret med blæk, er en side uden paginering (benævnt [92a]). Siderne mellem 117 og 120 er upagineret. Det næstsidste folioark er pagineret 121 på arkets første side; det sidste folioark er pagineret 125 og 128 på hhv. arkets første og sidste side; arkenes øvrige sider er upagineret. Sidste side er upagineret. </p>
+                <p xml:id="id0d14b856-dc11-4855-ba48-bc70c7c3b779">Papir: gulligt koncept. S. 84-[92a]: svært, gulligt koncept. Mål: 170 x 206 mm. S. 84-[92a]: 164 x 199 mm. På s. 49 er en rektangulær lap udklippet af marginen. Rød hæftesnor i sammenhæftningen. </p>
+                <p xml:id="idd275b964-bb95-427a-ace4-8fa54c22de5e">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. En tilføjelse på langs af siden på s. [46]. S. 2, siden mellem s. 83 og 84 samt sidste side ubeskrevet. </p>
+                <p xml:id="idfa74b1a9-5f6d-4cae-92cd-3e3dec9c99b5">På bl. [1r] lyder titlen: »Sex Taler ved tænkte Leiligheder.« Tallet er siden hen slettet med blyant og erstattet af »3«. Nederst på siden har SK noteret til sætteren: »<hi xml:id="idc49ed317-05b6-4a25-a39d-a18b3a9fd3c6" rendition="#ant"><hi xml:id="ide4b6b0ba-5074-4159-b687-a2aecba13c5f" rendition="#ita">NB</hi></hi> / Skal trykkes i samme Format og med samme Typer som <hi xml:id="id3a3a8e87-b1b2-40be-9552-f1c4c601ec30" rendition="#ant">Chr: Winthers</hi> 'Sagn og Sang.'« Senere slettet med blyant. Forordet findes på s. 1, første tale begynder på s. 3, anden tale på s. 47 og tredje tale på s. 84. </p>
+                <p xml:id="id5ea8c612-4d98-4e0e-8212-e46060715ed3">På s. 22 og s. 92-[92a] er teksten indstreget med blyant. De indstregede tekster er kasseret renskrift, som SK af praktiske årsager – den øvrige tekst skulle anvendes – ikke kunne fjerne fra ms. (jf. mss. 2.3 og 4.3). </p>
+                <p xml:id="idbea8d312-d7d1-4654-8420-9b4334485cb1">Dedikationen på bl. [1v] samt en bemærkning til sætteren vedr. forordet »<hi xml:id="id449609eb-2da6-4e15-837c-53a55c79817b" rendition="#ant"><hi xml:id="idf226c1cc-32ed-40e6-9c5a-d98200f3d03f" rendition="#ita">NB</hi> / Med den mindst mulige Petit</hi>« er skrevet med blyant. </p>
+                <p xml:id="id4899cf06-cf7e-43de-8b0d-26d87964194a"><pb xml:id="ss391" n="391" edRef="#SKS"/>Mange korrektioner, adskillige med blyant. </p>
+                <p xml:id="idb6770149-cf87-4c71-97a6-238a1537cb4e">Flere korte passager er slettet med tætte blækløkker. To marginaltilføjelser på s. 6 og s. [96] er slettet med blyant. </p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.5" prev="#physDesc.5">
+              <msIdentifier xml:id="id944d2343-fb54-4f86-9fe1-5f66bf8fb64d">
+                <idno xml:id="id44ab46a2-1bb6-47a5-9156-9c7f41b30629">5</idno>
+              </msIdentifier>
+              <additional xml:id="id6c6a06a3-09ce-4cb0-90e5-205cda9ac352">
+                <adminInfo xml:id="id3ca0fb63-9ef3-4574-8fce-f9cf8afb7890">
+                  <note xml:id="id6df63193-165f-4f02-bf4e-12ee0a9d7b7b">
+                    <p xml:id="id5f061815-4d01-40b4-9342-f05007c04a12">(KA, B pk. 26; <hi xml:id="id2e5dad5e-cb7f-447a-95c6-f0c2b648427a" rendition="#ita">Pap.</hi> VI B 107 + 121 + 125) </p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.6" next="#additional.6">
+              <msIdentifier xml:id="id8eff5eaa-e8dd-4019-ac18-e691fdc7c2c2">
+                <idno xml:id="idb57e80c3-221c-48da-b43b-11486b9fed82">6</idno>
+              </msIdentifier>
+              <physDesc xml:id="id313b5003-d6da-489e-b854-d80b3f244af1">
+                <p xml:id="ided3ce66e-069d-4439-ba98-7878e266c6f5">Førstekorrektur til <hi xml:id="id271648f4-2fa7-4b0a-b9cc-633923d30823" rendition="#ita">TTL</hi>. </p>
+                <p xml:id="id5a3bbb04-a95a-4963-83ce-10765f82a303">6 korrekturark a 8 blade samt 1/4 korrekturark (2 blade), i alt 50 blade i 8<hi xml:id="ida493ca79-cdbc-4ad3-987e-93903e27549a" rendition="#sup">o</hi> med førstetrykkets paginering, [1]-100. </p>
+                <p xml:id="id3a647a4f-81fd-452e-be3f-47cd04f42720">Papir: korrekturpapir, uregelmæssigt afskåret. </p>
+                <p xml:id="idccdac19f-0507-48c0-8296-6c20fe6dd411">Mange korrektioner i <persName xml:id="idd70d135b-d5fd-42ed-9626-5b44957845dc" key="Levin, Israel">Israel Levin</persName>s hånd. Korrektionerne, der varierer i antal fra ganske få op til 20 på en side, gælder især interpunktion og ortografi, men også udfaldne ord og sætninger. På titelbladet er tallet »3« ændret til »Tre«. Nederst på siden er »hos Reitzel« tilføjet med blyant i SKs hånd. <persName xml:id="iddb70a25d-30bf-46d0-a0ac-f11e5aa33612" key="Levin, Israel">Levin</persName> har korrigeret tilføjelsen til »Faaes hos C. A. Reitzel«. I dedikationen har <persName xml:id="id146bd061-56e1-438c-a0c7-385ecf5220ee" key="Levin, Israel">Levin</persName> indsat et komma efter »min afdøde Fader«. På s. 13 har <persName xml:id="id7d38385f-90b8-4940-87db-efed9752240f" key="Levin, Israel">Levin</persName> indstreget »<hi xml:id="id6737a8f6-1e58-4725-8f0d-3bd0d95a9f91" rendition="#ita">Hvad det er at søge Gud</hi>« (<ref xml:id="id76fdea0f-713d-48b3-afff-3c2af472efff" target="../TTL/txt.xml#ss396" type="publishedWritings" n="396"><hi xml:id="id20cfec92-f6a6-4e26-8247-b7fc84e75518" rendition="#ita">SKS </hi>5, 396</ref>,31) og bemærket til sætteren: »<hi xml:id="id8cdad9a7-ea95-45f9-beaa-692c6bcb0067" rendition="#ant">NB</hi> Det Indcirklede sættes med <hi xml:id="id7977d939-7c8e-4930-8dc5-2a489a43d6fb" rendition="#ita">større</hi> Skrift – i en <hi xml:id="id1ba9be79-6be1-49b9-b500-15bdb43b98fe" rendition="#ita">fri</hi> Linie – med to Liniers Plads over og under.« På s. 64 har <persName xml:id="idfc39bec7-5911-49d4-82fe-a2b46003e240" key="Levin, Israel">Levin</persName> skrevet følgende besked til sætteren: »Herpaa udbedes en Revision / L.« (se <ref xml:id="id4287c6f5-36e5-415b-8215-6ab78a691c17" target="../TTL/txr.xml#ill_k21" type="figure">illustration 21</ref> <figure xml:id="ill_k21" rend="recto"><graphic xml:id="id0032ded5-e738-484a-b9b0-37bbd0248099" url="../TTL/ill_k21.jpg"/><head xml:id="idf335a761-8ea9-4a93-8fc2-9b2a82b2bdcc">21. <hi xml:id="id3e8be1a1-6ae7-4d14-bcd2-45d71e71c46f" rendition="#ita">TTL,</hi> førstekorrekturen med Israel Levins rettelser. Nederst står: »Herpaa udbedes en Revision / L.« Ms. 6, s. 64</head></figure>  ) og på s. 96: »Herpaa udbedes endnu en Revision / L«. </p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.6" prev="#physDesc.6">
+              <msIdentifier xml:id="idcc3965e4-7cf8-473d-a536-87b6841d03db">
+                <idno xml:id="id32f5cdc4-ac7a-401e-ba64-1ac8aa702db8">6</idno>
+              </msIdentifier>
+              <additional xml:id="id0c074681-1774-4448-96c2-c74ae64527be">
+                <adminInfo xml:id="id900f4062-b03b-4df1-b924-2321bc63854f">
+                  <note xml:id="id0f129fcd-8ad8-4180-a8e2-16a84e92c912">
+                    <p xml:id="idf708e417-dbc3-4ddd-94b1-97a41879020f">(KA, B pk. 26; <hi xml:id="id61af1fd8-45ea-45c7-98bf-b1d26fa12904" rendition="#ita">Pap.</hi> VI B 126) </p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.7" next="#additional.7">
+              <msIdentifier xml:id="idfa163b87-8467-458d-a145-867503880d2a">
+                <idno xml:id="id07184c98-fe37-4135-b038-1f43c51e4e2a">7</idno>
+              </msIdentifier>
+              <physDesc xml:id="id4e6c4222-c7c8-41b3-9c12-4db3c3836836">
+                <p xml:id="id1eeadf19-f20f-4acf-96ed-5b9fd1d2106a">Andenkorrektur til <hi xml:id="id3dde36d8-c882-4e03-971b-fda039387657" rendition="#ita">TTL</hi>. </p>
+                <p xml:id="id8beb3bee-97c9-4d55-909d-0ddb0d463b90">1 korrekturark a 8 blade i 8<hi xml:id="id46ede8fe-d80e-4c68-a755-6aae35457a4b" rendition="#sup">o</hi> med førstetrykkets paginering, [1]-16. </p>
+                <p xml:id="idc09042cc-110f-457f-98b2-38ecbf1da4d4">Papir: korrekturpapir, uregelmæssigt afskåret. </p>
+                <p xml:id="id35dca689-fbaa-466c-adeb-ecf5d24d1c6c">Mange korrektioner i <persName xml:id="ide6830139-56a8-4b19-9111-49dc502105a8" key="Levin, Israel">Levin</persName>s hånd, mellem en og fem pr. side; kun én af de 16 sider, som er bevaret af andenkorrekturen, er uden korrektioner. På titelbladet er oplysningen om, hvor bogen kan købes, atter korrigeret. »Universitetsboghandler« er indsat uden forlæg i <persName xml:id="id5d43f2a8-caa0-45d3-be51-39e907218ac3" key="Levin, Israel">Levin</persName>s korrektioner i førstekorrekturen. »Faaes hos« er ændret til »Hos« ved en blyantskorrektion, muligvis i SKs hånd. I dedikationen har <persName xml:id="id4b85348a-b177-4e1f-88ea-c5758fe10269" key="Levin, Israel">Levin</persName> slettet det komma efter »min afdøde Fader«, som han indsatte i førstekorrekturen. På s. 13 bemærker <persName xml:id="id551e14e5-f15d-4c0c-8e64-5b04e492f626" key="Levin, Israel">Levin</persName> om »<hi xml:id="idbf01ab37-1042-4cf6-b37a-8539e44a3a25" rendition="#ita">Hvad det er at søge Gud</hi>«: »<hi xml:id="id6d618d21-12cf-4b55-bbb9-aed930ee66a5" rendition="#ant">NB.</hi> Mere Plads under <del xml:id="idfd04f858-7f5e-4557-974a-5d8563249900" rendition="#lth">Teksten</del> denne Overskrift.« På s. 16 bemærker <persName xml:id="ide1b823d4-5eca-4488-8dc7-92cfda763e25" key="Levin, Israel">Levin</persName> til sætteren: »Herpaa udbedes en Revision / L.« </p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.7" prev="#physDesc.7">
+              <msIdentifier xml:id="idd6717129-7928-4b31-859a-ff0855c21faf">
+                <idno xml:id="idf4c2970b-4fb0-44d5-bcf4-ae6391569734">7</idno>
+              </msIdentifier>
+              <additional xml:id="id2a6d6115-5aec-4af2-9f1c-6155cf6f67ed">
+                <adminInfo xml:id="id3513a7f0-1b8f-469e-9333-0deb9a5e875b">
+                  <note xml:id="id3274445d-6f42-407f-989d-3b8462fc8319">
+                    <p xml:id="idd1305db6-6a4f-4e3c-b53d-16a28e8b6e92">(KA, B pk. 26; <hi xml:id="idc28f6d2e-199b-46c1-bd5f-2d157c4b8de4" rendition="#ita">Pap.</hi> VI B 127)<pb xml:id="ss392" n="392" edRef="#SKS"/> </p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+        </div>
+        <div type="level1" xml:id="k3">
+          <head xml:id="idace8eb7f-7661-4b7f-8ae8-beaaea23f70b"><pb xml:id="ss393" n="393" edRef="#SKS"/>3. Tilblivelseshistorie</head>
+          <p xml:id="idf7f6820e-6fcb-48ee-995d-37dd11717291">Som nævnt var <hi xml:id="id33baea5c-69db-4861-921d-208277e35d45" rendition="#ita">TTL</hi> færdigproduceret 25. april 1845. Hvornår manuskriptet blev indleveret til trykning, vides ikke, da <persName xml:id="id5f06bbee-f695-444e-a2e8-19de3afecbc1" key="Luno, Bianco">Bianco Luno</persName>s »Erindringsbog«, dvs. trykkeriets interne ordre- og regnskabsbog,<note xml:id="id5ebd35e8-e6f6-4c31-821c-e19def7c4dfa"><p xml:id="idbca9cddc-b40c-4f19-a754-88d80aff1630">I arkiv hos Bianco Lunos Bogtrykkeri, København, findes bevaret <hi xml:id="id6c1cdc4c-db14-4056-b8e2-5e2d1e3b7d8c" rendition="#ita">Erindringsbog for Bianco Luno</hi> for årene 1844, 1846, 1847, 1848 og 1850. Erindringsbogen anfører dag for dag de ordrer, som indkom til trykkeriet og navn på ordregiverne. Hver ordre er forsynet med et løbenummer og en henvisning til det ugenummer, hvori ordren blev ekspederet. En senere sektion opregner de ekspederede ordrer uge for uge, og til sidst findes et uddrag af kassebogen. </p></note> for 1845 ikke er bevaret; men sammenholdes produktionstiden for bøger af tilsvarende omfang fra 1844, hvor erindringsbogen er bevaret, må manuskriptet være indleveret senest i begyndelsen af april. </p>
+          <p xml:id="ida70b11de-f28d-4432-a601-1d920ab0fc47">I SKs journaler og notesbøger findes ingen oplysninger, der kan tjene som holdepunkter for en bestemmelse af tilblivelsesperioden; men i et udkast på et løst blad omtaler SK en prædiken af <persName xml:id="idcfbb0618-0f5b-4d27-b25f-47252e664d56" key="Mynster, Jakob Peter">J.P. Mynster</persName>, holdt i <placeName xml:id="idc36fa4ce-0831-4679-a644-7b8f22b10908" key="Christiansborg Slotskirke">Slotskirken</placeName> 1. søndag i fasten over epistelteksten <rs xml:id="idd1da0729-63b5-49c2-bb45-e6b19d3a02da" type="bible" key="2 Kor 6,1-10">2 Kor 6,1-10</rs>: </p>
+          <p xml:id="id71e3c8fd-4034-46e2-9eac-5553b91a1259"><hi xml:id="id74738624-d4d6-4b95-b17f-c25da18cf3ec" rendition="#ant">Mynster</hi> prædikede igaar d. 9 <hi xml:id="id585d0ecb-5684-46cb-a127-65449d8c63d9" rendition="#ant">Febr.</hi> 45 over disse Ord: vi eie Intet men besidde Alt. Ypperligt, dog gjorde han ikke den Bevægelse, som især som en Indledning kunde være bleven brugbar: der var maaskee Den som besad Alt og som dog eiede Intet.<note xml:id="id154f7771-feb1-47f8-898e-4becf2c9a765"><p xml:id="ide806f2ef-86f8-4da7-a01c-f6160d3c5ef6">Ms. 1, bl. [9v]; trykt som <ref xml:id="id0fac79d3-1dbc-4dea-a354-9ce3768bb3ce" type="preparatoryManuscript" n="pap:VIB157" rend="TTL,ms.1"><hi xml:id="id2098a445-b3c1-4226-a581-cda958762eab" rendition="#ita">Pap.</hi> VI B 157</ref>. </p></note> </p>
+          <p xml:id="id036803f3-baf8-4942-b846-581db7adacda">Temaet 'at besidde alt og dog intet eje' indgår i den første tale, »Ved Anledningen af et Skriftemaal« (<ref xml:id="id0bdc1c5e-fda3-438c-909a-572d3b502ef3" target="../TTL/txt.xml#ss393" type="publishedWritings" n="393"><hi xml:id="idccc51c03-3ae3-437c-85f9-f39d68925256" rendition="#ita">SKS</hi> 5, 393</ref>,16). Og det løse blad, hvorpå temaet er anslået, er indlagt i en sammenhæftning af 8 blade (ms. 1), der if. <persName xml:id="id0542304e-926f-462e-958c-da8e33025b8d" key="Barfod, Hans Peter">H.P. Barfod</persName> stammer fra »et 10. Febr. 1845 mærket Hefte«.<note xml:id="id7cd66017-00e1-4c36-8b2c-400c734610ae"><p xml:id="idc67f28be-a468-4ad5-aa19-1dd72eac5cf7"><hi xml:id="id6c7faef1-25c6-4bd5-a2c2-8bd0035d9b89" rendition="#ita">EP III,</hi> s. 133. </p></note> Dette indicerer, at SK påbegyndte det egentlige arbejde med at skrive <hi xml:id="ided6d079c-fa90-4a4c-b664-3ffbc688add4" rendition="#ita">TTL</hi> i midten af feb. 1845. </p>
+          <p xml:id="idb09cf8e6-e572-461c-8281-da5d2d7c69cc"><pb xml:id="ss394" n="394" edRef="#SKS"/>Ideen til at skrive lejlighedstaler havde SK dog fået godt et halvt år tidligere. I begyndelsen af juni 1844 skriver han i journalen JJ: »Jeg kunde have Lyst at skrive nogle 'Brudetaler' i samme Stiil som mine opbyggelige, saaledes at de Paagjældende Forhold var reent digterisk anlagt.«<note xml:id="id91e67692-ebad-4d02-aea5-0653567d0ff0"><p xml:id="id341abce6-0252-4d1a-9b68-cc04f59b132c">Journalen JJ, s. 118. KA, A pk. 4; trykt som <ref xml:id="idea6f41f4-6552-4cf4-a5cf-597f6f853a03" target="../JJ/txt.xml#n220" type="journalsAndPapers" n="pap:VA27" rend="JJ:220"><hi xml:id="id9b8f14e4-ab33-4165-ba16-78552223399e" rendition="#ita">Pap.</hi> V A 27</ref>. </p></note> Den spøgefulde tone går igen i en optegnelse otte sider længere fremme: »Mine opbyggelige Taler kunde jeg maaskee gjøre endnu mere særlige: opbyggelige Taler for Konger og Dronninger, – for Tiggere, – o.s.v. -«.<note xml:id="iddfdd3133-bb85-4db9-8a01-3b05ba378c6d"><p xml:id="idf01dad44-7495-40a6-b402-6ed5e6df6d7b">Journalen JJ, s. 126. KA, A pk. 4; trykt som <ref xml:id="id4c619227-c37c-4453-9ed3-ee571bf4b731" target="../JJ/txt.xml#n232" type="journalsAndPapers" n="pap:VA39" rend="JJ:232"><hi xml:id="id7c9073d4-076b-467c-8cc8-c2b88aa9c9ff" rendition="#ita">Pap.</hi> V A 39</ref>. </p></note> Endnu i første halvdel af august omtaler SK lejlighedstalerne som noget, der stadig er i sin vorden, men ideen synes nu at antage en mere konkret og mindre spøgefuld form end tidligere: »Jeg vil nu skrive Leilighedstaler, istedenfor opbyggelige Taler. Brudetaler og Skriftetaler, ell. Gravtaler«.<note xml:id="ida9e7fac8-7f9e-46f8-92c4-7cc51bbac1fc"><p xml:id="id14dd7939-3fd9-4aa1-9efd-4266782b8e29">Journalen JJ, s. 138. KA, A pk. 4; trykt som <ref xml:id="id97631d0b-a015-47b2-af99-e7679d563fef" target="../JJ/txt.xml#n255" type="journalsAndPapers" n="pap:VA62" rend="JJ:255"><hi xml:id="id996ca436-e6e8-49b4-8010-fec754dd7cad" rendition="#ita">Pap.</hi> V A 62</ref>. Optegnelsen er skrevet efter 16. aug. 1844, da SK i den foregående optegnelse kommenterer et udtryk anvendt i bladet <hi xml:id="id80a7a152-211f-48c3-85bb-5f3c240ec95f" rendition="#ita">Politivennen</hi> nr. 1494, 16. aug. 1844. </p></note> Når SK ikke straks gik i gang med at skrive lejlighedstaler, skyldes det sandsynligvis, at han var fuldt optaget af arbejdet med <hi xml:id="idf5ae9cbc-49be-43e4-9b65-952eeda3b37f" rendition="#ita">Stadier paa Livets Vei.</hi> På et løst blad dateret 27. aug. 1844 beskriver han under overskriften »Rapport« sine vanskeligheder med udarbejdelsen: »'In vino veritas' vil det ikke gaae med. Jeg skriver det Enkelte bestandig om og om, men det tilfredsstiller mig ikke. <hi xml:id="ide9ec12a7-fcc4-47f9-9c7f-42a0a5b42566" rendition="#ita">(...)</hi>.«<note xml:id="id5da83acc-ff0a-44fb-be81-8cb0a298bb90"><p xml:id="id63aa0f4c-914a-47ba-8291-d00cde1aecc2">KA, A pk. 45; trykt som <ref xml:id="id692accd3-96b2-4417-89e6-81695dd93423" target="../p307/txt.xml#n307" type="journalsAndPapers" n="pap:VA109" rend="Papir 307"><hi xml:id="idbc517bcd-e326-483f-9abb-99b6f02f2ec3" rendition="#ita">Pap.</hi> V A 109</ref>. </p></note> </p>
+          <p xml:id="id0c0bfb1e-27d3-4df4-9dca-8ec8b0155d58">Da den nævnte sammenhæftning fra februar 1845 indeholder udkast til titelblad, disposition og forord samt en bøn, der i omarbejdet form bliver til indledningen af den første tale, »Ved Anledningen af et Skriftemaal«, og ansatser til indledningen af den tredje tale, »Ved en Grav«, bestyrker det antagelsen, at SK først for alvor er begyndt at skrive sine første lejlighedstaler efter dette tidspunkt. </p>
+          <p xml:id="id66d938c6-1b5e-41c1-8776-37b76cc1c350">Oprindeligt havde SK planer om en bog med titlen »3 Leilighedstaler ved tænkte Leiligheder«, hvis indhold skulle være: »Tale ved Skriftemaal. / ved Vielse / ved Graven« (ms. 1). Temaet for skriftemålstalen skulle være: »Hvad det er at søge Gud, idet vi betænke, at intet Msk. kan see Gud uden Reenhed, og intet Msk. faae Øie paa ham uden at<pb xml:id="ss395" n="395" edRef="#SKS"/><pb xml:id="ss396" n="396" edRef="#SKS"/> være en Synder«, som blev temaet for »Ved Anledningen af et Skriftemaal« (<ref xml:id="idd6df1d11-9329-49a5-8415-ee999f927c0d" target="../TTL/txt.xml#ss391" type="publishedWritings" n="391"><hi xml:id="idff7667e3-e318-465b-b46d-13c93df068ec" rendition="#ita">SKS</hi> 5, 391</ref>). Temaet for vielsestalen: »At kaste al vor Sorg paa Gud og betænke at vi derved vinde Sorgen efter Gud«, blev ikke videre udarbejdet, og der angives intet tema for gravtalen. Antallet af taler blev imidlertid ændret til seks, derpå også titlen til »6 Taler ved tænkte Leiligheder« (se <ref xml:id="id55455d2f-7726-42fa-aa51-91c7a057c12b" target="../TTL/txr.xml#ill_k22" type="figure">illustration 22</ref> <figure xml:id="ill_k22" rend="recto"><graphic xml:id="id4b2d5ea7-8e8a-4c8b-ba4f-e477949f520d" url="../TTL/ill_k22.jpg"/><head xml:id="id1c652c87-de9c-457b-9899-d0e7380ccb58">22. Første udkast til titelblad til <hi xml:id="ida821371f-19a4-43f7-8d89-637512c68ac5" rendition="#ita">TTL,</hi> ms. 1, bl. [1r]</head></figure>  ), som i renskriften (ms. 5) blev til »Sex Taler ved tænkte Leiligheder«. Først på et sent tidspunkt i bogens tilblivelse bliver titlen med blyant ændret til »3 Taler ved tænkte Leiligheder« (se <ref xml:id="idaabc26fd-b58f-4229-9785-c6c1e2c93282" target="../TTL/txr.xml#ill_k23" type="figure">illustration 23</ref> <figure xml:id="ill_k23" rend="recto"><graphic xml:id="idccef9121-331b-4079-b3a6-18d78c5b4ebe" url="../TTL/ill_k23.jpg"/><head xml:id="id09714de8-92aa-4776-84af-b25002cfd2fc">23. Renskriftens titelblad til <hi xml:id="id9eadcb84-0fe2-4b26-a04f-694613a1d0d3" rendition="#ita">TTL,</hi> ms. 5, bl. [1r]</head></figure>  ), som i førstekorrekturen (ms. 6) blev rettet til bogens endelige titel <hi xml:id="idd3f293a0-ef18-4c52-a9ba-5850d46a2069" rendition="#ita">Tre Taler ved tænkte Leiligheder</hi> (se <ref xml:id="idc25e30e4-b783-4d33-9cb8-66ac1fe9ab57" target="../TTL/txr.xml#ill_k24" type="figure">illustration 24</ref> <figure xml:id="ill_k24" rend="recto"><graphic xml:id="id78edc715-7d07-4fdc-b8b2-16200b299ff6" url="../TTL/ill_k24.jpg"/><head xml:id="id47c91aa6-8568-4ee7-aebb-f59748e8380f">24. Titelblad til <hi xml:id="id6fb1cd05-5cbe-41b5-94e7-59f783bd93e1" rendition="#ita">TTL</hi> i førstekorrekturen, ms. 6</head></figure>  ). </p>
+          <p xml:id="idf11cf0a6-e7e2-4ddf-87ea-0aec5fd302bf">På baggrund af den skitserede disposition og udkastene til forord såvel som til begyndelsen af den første og den tredje tale, gav SK sig i kast med udarbejdelsen af forordet og de enkelte taler. I det følgende vil manuskripternes indbyrdes rækkefølge blive bestemt. Til alle tre taler findes overleveret en række manuskripter, som gør det muligt at følge tilblivelsen af hver enkelt tale. </p>
+          <p xml:id="ide6acfee9-3c2f-4ae0-bd7e-4f532a37aae1">Titelforslag, forord og kladde til den første tale »Ved Anledningen af et Skriftemaal« findes i det samme kladdehæfte (ms. 2.1). Som så ofte før forsøger SK at udarbejde talen på fri hånd. Med forlæg i ms. 2.1 påbegynder han en renskrift, ms. 5, s. 1-6, men under renskrivningen føler han behov for en udvidelse, forlader forlægget og fortsætter på fri hånd. Efter at have skrevet et stykke går han i stå, kasserer det skrevne (ms. 2.2), som derpå danner grundlag for den nu foreliggende renskrift, ms. 5, s. 7-12. Dette ses af, at den nye renskrift øverst på s. 7 begynder midt i en sætning som en umiddelbar fortsættelse af renskriftens tekst nederst s. 6, hvor der i de sidste linier står: »Thi Intet Intet i den ganske Verden, ikke om et Jordskjælv rystede Kirkens Piller, og ikke det daarligste Menneskes meest forkeerte«. Fortsættelsen på bl. [1r] i ms. 2.2, svarende til s. 7, lyder: »Tale og ikke den nedrigste Hyklers Væmmelighed kan tage den fra Dig <hi xml:id="idaa85a514-a6dc-47cb-895a-85b52add2d8b" rendition="#ita">(...)</hi>«. I den nye renskrift på s. 7 begynder teksten med helt den samme ordlyd som i ms. 2.2. En blyantsredigering »<hi xml:id="id4d46e7be-5b2d-4df7-aa77-b3d99b70fbac" rendition="#ant">NB</hi>« i kladden (ms. 2.1) ud for det tekststykke, hvor SK forlod kladden for at fortsætte på fri hånd, og et tilsvarende »<hi xml:id="id2cf82f0e-e6c6-4a6c-bdef-23daf3c59222" rendition="#ant">NB</hi>« i den forkastede tekst (ms. 2.2) viser, at da han har kasseret ms. 2.2, vender han tilbage til ms. 2.1 og markerer, hvor det forkastede skal indsættes i den endelige version. </p>
+          <p xml:id="ida3aea9f1-a8c7-45ad-8277-b0c8f6b61184">Da den nu foreliggende renskrift, ms. 5, er færdigskrevet frem til s. 22<pb xml:id="ss397" n="397" edRef="#SKS"/><pb xml:id="ss398" n="398" edRef="#SKS"/> – s. 7-12 midtpå med forlæg i det forkastede ms. 2.2, og s. 12 nederst – 22 med forlæg i ms. 2.1 – fortsætter SK på fri hånd (ms. 2.3). Men ved en fornyet gennemgang er han ikke tilfreds med det skrevne; fra s. 23 kasseres teksten og henlægges som kladde. En halv side, som ikke kunne fjernes, da den stod på versosiden af et blad med brugelig renskrift, er blevet slettet ved en blyantsindramning og findes stadig i ms. 5. </p>
+          <p xml:id="id8eda2601-0b21-4856-b8b5-ecd9df7a8f9e">Med forlæg i det forkastede (ms. 2.3) har SK påbegyndt en ny renskrivning, ms. 5, s. 23-42, hvorefter han er fortsat på fri hånd (ms. 2.4) i håb om at kunne afslutte talen. Men det mislykkedes, og SK måtte kassere det skrevne fra s. 43ff. Det fremgår tydeligt, at ms. 2.4 er kasseret renskrift. Dels bærer ms. stadig renskriftens oprindelige paginering 43-45, dels begynder teksten midt i en sætning med samme ordlyd, som indleder s. 43 i den nu foreliggende renskrift. På baggrund af det kasserede ms. 2.4 færdigskrives talen, ms. 5, s. 43-[46]. </p>
+          <p xml:id="idc534eb17-4871-4ae7-9008-d59d272ee0b7">Den første tale er altså blevet til i én fortløbende proces, dvs. SK har udarbejdet tekst til et stykke af talen, renskrevet det og er fortsat på fri hånd (mss. 2.2, 2.3 og 2.4), hvorpå han har kasseret det senest skrevne og udfærdiget en ny, endelig version, før han er gået videre med fortsættelsen af talen. </p>
+          <p xml:id="iddc3ae561-64c2-4852-87c6-3757c39c40d3">Til den anden tale »Ved Anledningen af en Brudevielse« findes der kladdeforlæg til størstedelen af talen, dog ikke en sammenhængende, fortløbende kladde. Det er mest sandsynligt, at SK har udarbejdet forlæg til hele talen, før han har påbegyndt renskriften. I hvert fald kan man ikke på baggrund af manuskriptmaterialet afgøre, om han løbende har kasseret sider og omskrevet dem, som det var tilfældet ved den første tale. </p>
+          <p xml:id="ide25e7151-f92e-4c45-b16e-fa595fc753dd">Det første kladdeforlæg, ms. 3.1, omfatter kladde til omkring halvdelen af talen. En del af denne kladde findes i en noget længere version i ms. 3.2. SK har følt behov for endnu en gennemskrivning og herunder foretaget en udvidelse af teksten (<ref xml:id="ide078110f-8ab6-48ae-9ce6-d2f149f91d9c" target="../TTL/txt.xml#ss427" type="publishedWritings" n="427"><hi xml:id="idf1c82e13-263b-4fbd-a7fc-d04ec64c10ae" rendition="#ita">SKS</hi> 5, 427</ref>,32-429,25). I den endelige version har SK tilføjet endnu et afsnit (<ref xml:id="id050d69f7-221d-4fc0-a395-0686cb3ca72a" target="../TTL/txt.xml#ss429" type="publishedWritings" n="429"><hi xml:id="ida854990e-b86f-4235-9151-9f9c9499f859" rendition="#ita">SKS</hi> 5, 429</ref>,25-36). </p>
+          <p xml:id="id83f4e86f-1ddb-4add-8ac6-91aa4a2b60a9">I ms. 3.2 er arkene mærket 1-4; på den sidste beskrevne side løber kladden ud i udkast til fortsættelsen af talen. De følgende mss., 3.3 og 3.4, rummer begge kladde og er skrevet i forlængelse af hinanden, dog uden direkte overgang og med ubeskrevne blade imellem; ms. 3.3 er mærket 5-7, ms. 3.4 8-9. Ms. 3.5, der oprindeligt var mærket 10, er en<pb xml:id="ss399" n="399" edRef="#SKS"/><pb xml:id="ss400" n="400" edRef="#SKS"/> direkte fortsættelse midt i en sætning af kladden i ms. 3.4. I forbindelse med renskrivningen forkastede SK hele ms. 3.5 og skrev en ny version på fri hånd. </p>
+          <p xml:id="idcde6c36a-bc66-4716-9eca-5f1c68df94d9">Den tredje tale »Ved en Grav« følger samme tilblivelsesmønster som den første tale. Med udgangspunkt i udkastene i ms. 1 påbegynder SK udarbejdelsen. Mss. 4.3, 4.5 og 4.6 består af tekst, som SK oprindelig renskrev, men siden kasserede og henlagde som kladde. </p>
+          <p xml:id="id00b1f1d2-2fe0-4fd7-9e8d-6570c8b57fe5">Ms. 4.1 rummer kladde til begyndelsen af talen, svarende til <ref xml:id="ide321d0ab-5ade-4be2-b5c7-9ae605ce1ef2" target="../TTL/txt.xml#ss442" type="publishedWritings" n="442"><hi xml:id="ida9f5a7fe-f896-4dc4-81a3-c72c8b4deea2" rendition="#ita">SKS</hi> 5, 442</ref>,15-448,17. Ms. 4.2 rummer spredte udkast til hele talen, men er formentlig først udarbejdet, da ms. 4.1 var skrevet, idet enkelte af udkastene synes at gælde en udvidelse af teksten i sidste del af ms. 4.1. </p>
+          <p xml:id="id6169b26e-9682-4a28-b96a-f9816df0c97a">Med forlæg i ms. 4.1 er SK gået i gang med renskrivningen af talen, ms. 5, s. 84ff. De fem første renskrevne blade af tredje tale, pagineret 84-92, stammer oprindelig fra det kladdehæfte, som nu kun rummer ms. 4.3. SK påbegyndte renskrivningen i dette hæfte, som da bestod af 16 blade; og hvor kladdeforlægget fra ms. 4.1 slap op øverst på det femte blad (ms. 5, s. 92), fortsatte han udarbejdelsen på fri hånd (ms. 4.3). Ved en revision fandt han kun teksten på de fem første blade anvendelig; resten blev kasseret og henlagt som kladde. SK rev de fem anvendelige blade ud af kladdehæftet og indlagde dem i renskriften. Det kan man se ved at sammenligne afrivningskanterne på hhv. de fem udrevne blade og de fem løse blade bagest i hæftet (ms. 4.3). </p>
+          <p xml:id="id9b590bd3-b36d-4562-872b-6d37df1eb8bb">Det meste af teksten på det femte blad, ms. 5, s. 92-[92a], blev kasseret samtidig med ms. 4.3, men da teksten øverst på den ene side var anvendelig som renskrift, har SK flyttet bladet med over i renskriften og dér indrammet teksten som besked til sætteren om, at den ikke skulle trykkes; derpå har han skrevet en ny version på de følgende sider, ms. 5, s. 93-[94]. </p>
+          <p xml:id="id4b335ba5-b1f8-40f6-9176-651b00b37264">Med forlæg i det kasserede, ms. 4.3 og ms. 4.4, har SK påbegyndt en ny renskrivning, men kun en del af det skrevne, ms. 5, s. [94] nederst til s. 112, kan anvendes. Fra s. 113 kasseres teksten og henlægges som kladde (ms. 4.5). Derpå fortsættes renskrivningen med forlæg i det kasserede ms. 4.5, men atter er kun en del af det skrevne anvendeligt; fra s. 117 kasseres teksten og henlægges som kladde (ms. 4.6). Det fremgår tydeligt, at ms. 4.6 er kasseret renskrift, idet teksten begynder midt i en sætning med samme ordlyd, som indleder s. 117 i den nu foreliggende renskrift. Endelig kan SK på baggrund af det kasserede ms. 4.6 udfærdige slutningen af talen. </p>
+          <p xml:id="ida3c8bfff-2adc-433a-a1cb-8e1f1b034226"><pb xml:id="ss401" n="401" edRef="#SKS"/>Ovenstående gennemgang viser, at SK har benyttet samme fremgangsmåde som ved udarbejdelsen af <hi xml:id="idbd744f46-3a58-4a0b-8594-5d7e6482bd09" rendition="#ita">Fire opbyggelige Taler,</hi> 1844.<note xml:id="idca3c19eb-9777-497f-972a-f240f81ae363"><p xml:id="id8b1dc736-11a0-4098-8e5c-6fa68c7daf8e">Jf. <ref xml:id="ideb495cdc-2a4b-44b5-a906-3681da17675e" target="../4T44/txr.xml" type="textCriticalAccount">tekstredegørelsen til </ref><hi xml:id="id5a755fe6-10e3-4796-9c64-25e4f12a7889" rendition="#ita">Fire opbyggelige Taler, </hi>1844, s. 303-308. </p></note> Gang på gang forsøger han at udarbejde teksten på fri hånd, men må løbende kassere det skrevne og udforme en ny version.<hi xml:id="id273a3904-cb66-4303-a733-09328eb9e45c" rendition="#ita"> </hi>Rester af den oprindelige paginering i de kasserede renskrifter (s. 43-45 i første tale og s. 113 i tredje tale) vidner om, at talerne er blevet til i forlængelse af hinanden. Kladdeforlægget for den anden tale kan dog være udarbejdet uafhængigt af de øvrige to. </p>
+          <p xml:id="id4d62a5e2-4455-44cf-aa75-d7185a9596cf">Under udarbejdelsen af skriftemålstalen inddrog SK to optegnelser fra <ref xml:id="id85a01357-cb84-4aef-a425-1dd280ada955" target="../JJ/txt.xml" type="journalsAndPapers">journalen JJ</ref>, der her anføres i den rækkefølge, hvori de forekommer i talen. Den første er formentlig skrevet i dec. 1844; den bygger på en replik i <persName xml:id="ida2c9b0df-a020-4292-8f1f-f413f647c237" key="Lessing, Gotthold Ephraim">G.E. Lessing</persName>s lystspil <hi xml:id="id8022b639-a7fc-44d6-8b5c-173bb491ef66" rendition="#ita">Minna von Barnhelm, oder das Soldatenglück</hi> og indgår i forkortet og omarbejdet form i begyndelsen af talen (<ref xml:id="idff7911b9-929b-4911-9333-b4ce37fdabde" target="../TTL/txt.xml#ss397" type="publishedWritings" n="397"><hi xml:id="id7e59e383-1941-492f-94ee-ff5599179336" rendition="#ita">SKS</hi> 5, 397</ref>,20-22).<note xml:id="idc80d2542-daba-47c1-8029-a9e3ff412c20"><p xml:id="id5385e855-4a1c-4ae1-9a05-ee41bd5084f1">Journalen JJ, s. 158. KA, A pk. 4; trykt som <ref xml:id="ida1645a5e-de66-48d3-986f-bfc828c72b7a" target="../JJ/txt.xml#n291" type="journalsAndPapers" n="pap:VIA2" rend="JJ:291"><hi xml:id="id63c98f63-b4f0-47ed-a9ac-3bdd8145e40d" rendition="#ita">Pap.</hi> VI A 2</ref>, jf. <ref xml:id="idd9239a63-b929-4958-995d-ec365d782e73" target="../TTL/kom.xml#ttl-42" type="commentary" n="4">kommentaren til <hi xml:id="id44247525-2ac0-48f3-8842-4cd15af53825" rendition="#ita">TTL</hi> 397,<hi xml:id="ida9650386-012a-432d-8383-3464b5d1fdfc" rendition="#sub">21</hi></ref>, hvor optegnelsen er citeret. </p></note> Den anden er fra maj 1844; den handler om forundring som det naturlige udgangspunkt for gudsfrygt og indeholder en henvisning til <persName xml:id="id9af22f84-a513-45bc-b99d-30fe0e78feed" key="Goethe, Johann Wolfgang von">J.W. v. Goethe</persName> <hi xml:id="id60036470-5b62-4e20-b33f-53f8357ce9d7" rendition="#ita">Aus meinem Leben. Dichtung und Wahrheit.</hi><note xml:id="id60b50e4b-2711-4e2b-afd6-efb0c82c08eb"><p xml:id="iddb24b570-7ced-4434-9d4f-12ec89642a34">Journalen JJ, s. 116. KA, A pk. 4; trykt som <ref xml:id="idfe55275a-4cac-4ac1-9cb5-266ddad4dae9" target="../JJ/txt.xml#n218" type="journalsAndPapers" n="pap:VA25" rend="JJ:218"><hi xml:id="id10bffa45-e312-4f1d-94fc-1d42116aae8d" rendition="#ita">Pap.</hi> V A 25</ref>, jf. <ref xml:id="id2e4ea831-868d-485e-b1f4-36391d1e714a" target="../TTL/kom.xml#ttl-50" type="commentary" n="4">kommentaren til <hi xml:id="id95fb3e68-37a0-4e10-9e0e-82fb848eaa66" rendition="#ita">TTL</hi> 399,<hi xml:id="id246bffd2-9b97-4f40-b586-11d26a51b1bd" rendition="#sub">14</hi></ref>, hvor optegnelsen er citeret. </p></note> Den danner baggrund for en længere passage i midten af talen (<ref xml:id="ide669453c-c271-47eb-ba85-0e8ece4e27c8" target="../TTL/txt.xml#ss399" type="publishedWritings" n="399"><hi xml:id="idfa777beb-7dea-4bf7-967f-7bb0768097ec" rendition="#ita">SKS</hi> 5, 399</ref>,14-400,17). I omtalen af forundring gribes der i øvrigt tilbage til en optegnelse fra jan. – feb. 1841 om forundring som filosofiens begyndelse hos <persName xml:id="id7acdb62e-97a8-42d4-ae51-b49ce24a43f1" key="Aristoteles">Aristoteles</persName> og <persName xml:id="idc4ac2702-d67f-443b-97a6-cd294ab769e5" key="Platon">Platon</persName>.<note xml:id="id1ac4a397-2110-4fb0-a526-e2f9ca68148e"><p xml:id="ide5024799-b216-4c0b-bd37-395299b1f225">En indbunden notesbog, s. 9. KA, A pk. 3 læg 4; trykt som <ref xml:id="id9da658cb-7ff7-49da-a5a9-4b4e0d778d51" target="../Not7/txt.xml#n21" type="journalsAndPapers" n="pap:IIIA107" rend="Not7:21"><hi xml:id="id5bfb3ba4-928c-469f-a2fb-7bf0c3c6a8fc" rendition="#ita">Pap.</hi> III A 107</ref>, jf. <ref xml:id="id8c56c2c7-d8b9-4812-ad15-bb2ee3f88084" target="../TTL/kom.xml#ttl-417" type="commentary" n="4">kommentaren til <hi xml:id="idca123e8f-0d93-4b20-9a25-0a911d45ec5f" rendition="#ita">TTL</hi> 399,<hi xml:id="idc3a983e1-5f5f-4558-8c4c-62afdcfae4e4" rendition="#sub">15</hi></ref>, hvor optegnelsen er citeret. </p></note> </p>
+          <p xml:id="id4bd42d38-75ee-4c4e-bee6-a0509bab2375">Under eller muligvis efter udarbejdelsen af <hi xml:id="id04ca9fcf-5fd8-44b8-add6-9305f6f9a4a3" rendition="#ita">TTL</hi> skrev SK et længere forord i flere versioner af <persName xml:id="id222c3e87-24ac-4ba7-9dbc-a8617be01bac" key="Johannes de silentio">Johannes de silentio</persName>, den pseudonyme forfatter af <hi xml:id="id0de27447-d322-43ae-93d2-38a925344e5d" rendition="#ita">Frygt og Bæven.</hi> Forordet, der ikke skulle indbindes sammen med, men indlægges i <hi xml:id="id15b8eaff-fc0c-4cda-b343-c1ade9c9a6e6" rendition="#ita">TTL,</hi> bærer titlen »Noget om geistlige Leilighedstaler«.<note xml:id="idfdec1b8e-bba2-42b1-bebb-a17f1a72787f"><p xml:id="id318a86c7-b604-4807-9039-fd6b1c891b03">KA, B pk. 27; trykt som <ref xml:id="id9ca9b8ec-6761-4f78-8b2c-04f64695faa3" type="preparatoryManuscript" n="pap:VIB128-137"><hi xml:id="id1ba9256c-968b-4cee-b4d9-9c61dc65ab85" rendition="#ita">Pap.</hi> VI B 128-137</ref>. </p></note> SK gik imidlertid bort fra ideen og skrev i en lille »Rapport«: </p>
+          <quote xml:id="id9abedb83-bd80-4cfb-8b79-61854b4ff6db">
+            <pb xml:id="ss402" n="402" edRef="#SKS"/>
+            <p xml:id="id3ec3dc74-990b-41c7-b14a-9a6dbf36bf6c">Dette blev henlagt indtil videre. Vilde blive for vidtløftigt for at tjene som en Slags Indl. til mine smule Taler. Maa udføres særskilt og væsentligen handle om det Religieuse-Foredrag.<note xml:id="ida7bea1c6-a812-4eb9-914f-cfbe465bfbff"><p xml:id="id9bec9cc1-c6eb-4628-add6-190dfdca8e14">KA, B pk. 27; trykt som <ref xml:id="idf384d018-fb92-4829-a4b2-559eedfc4734" type="preparatoryManuscript" n="pap:VIB132"><hi xml:id="id20431475-d95b-4028-847d-ec14e6b17421" rendition="#ita">Pap.</hi> VI B 132</ref>. </p></note> </p>
+          </quote>
+        </div>
+        <div type="level1" xml:id="k4">
+          <head xml:id="iddebf91e5-bd85-4ea5-a19d-b630c5bd94dd">4. Udgivelsesmåde</head>
+          <p xml:id="id6f5df9e6-d0ac-4ad9-bcf6-68e80a43f587">Som ved de seks hæfter med opbyggelige taler fra 1843 og 1844 udgav SK <hi xml:id="id012f444f-d635-457b-8179-f2c171c49886" rendition="#ita">TTL</hi> på eget forlag. Ligesom <hi xml:id="id1e4bd66e-3bbc-4579-b338-c04b3224d664" rendition="#ita">To opbyggelige Taler,</hi> 1843, lod SK <hi xml:id="id0d6e7ccf-126a-45de-9d5c-7b342fbcc04e" rendition="#ita">TTL</hi> sælge i kommission hos <persName xml:id="idf1e9891d-2639-4af0-806c-cef956602ab7" key="Reitzel, Carl Andreas">C.A. Reitzel</persName>. Atter stod SK altså selv for produktionen, dvs. det var ham, der traf aftale med <persName xml:id="id661f5c82-6d83-4ac0-b3cf-3f28d74b044c" key="Luno, Bianco">Bianco Luno</persName>s Bogtrykkeri om layout, sætning, trykning, indbinding, papir og oplagsstørrelse, og det var ham, der betalte alle produktionsomkostningerne. Det var endvidere ham, der indgik kommissionsaftale med <persName xml:id="id84d3fa63-22b4-4815-8eb8-ae0fb7c6b061" key="Reitzel, Carl Andreas">Reitzel</persName>, hvilket indebar, at <persName xml:id="idaa7b78ee-09f0-40e4-82aa-aac2f58c0b6a" key="Reitzel, Carl Andreas">Reitzel</persName> forestod salget gennem sin boglade mod en afgift, og at han afregnede salgsindtægterne fratrukket kommissionsafgiften direkte med SK. </p>
+          <p xml:id="id3e334712-697c-409f-b626-8f104da58c5d">Under henvisning til en række »bevarede regnskaber hos <persName xml:id="idf2aea78f-2caf-48b0-9eb6-c6a153cbd1be" key="Luno, Bianco">Bianco Luno</persName> og <persName xml:id="id6c9fb121-95ae-4c49-ad6d-bd54e956187a" key="Reitzel, Carl Andreas">Reitzel</persName>« oplyser <persName xml:id="id9e8c2526-9a66-4637-baaf-fdeb37fac365" key="Brandt, Frithiof">Frithiof Brandt</persName> og <persName xml:id="id81cc664b-7889-46f2-98b2-c15f1505dec7" key="Thorkelin, Else">Else Thorkelin</persName>, at udgifterne til papir og trykning beløb sig til 76 rd. 43 sk., og at oplaget var på 500 eksemplarer.<note xml:id="idd08c5426-9097-4946-9456-e2bef6ab078e"><p xml:id="id7879ca30-d591-41ee-9048-a17b4754b028">Jf. <persName xml:id="id926a8947-e38e-440c-a825-902139beac69" key="Brandt, Frithiof">Frithiof Brandt</persName> og <persName xml:id="id1f8cd98f-547b-49e4-a086-1fa2be367525" key="Thorkelin, Else">Else Thorkelin</persName> <hi xml:id="id30cd0ca9-4bc4-4c60-bf91-334fabf3e088" rendition="#ita">Søren Kierkegaard og pengene,</hi> 2. udg., Kbh. 1993 [1935], s. 28ff.; de nævnte oplysninger har ikke kunnet verificeres. En sammenligning med <hi xml:id="idae81fe77-04c2-45be-afb8-5f4d3d9dff54" rendition="#ita">Fire opbyggelige Taler,</hi> 1844, der er ¾ ark større end <hi xml:id="id8baf4fe3-608f-41a1-9f2f-7b0ec9c35820" rendition="#ita">TTL,</hi> godtgør, at udgifterne til papir og trykning er rigtigt angivet, jf. skema 1 i <ref xml:id="idd832d68c-c27d-45a6-9f58-5ea09c1d3857" target="../2T43/txr.xml" type="textCriticalAccount">tekstredegørelsen til </ref><hi xml:id="idc09ec9f9-92b6-4c2f-aa07-c019d8927004" rendition="#ita">To opbyggelige Taler,</hi> 1843, s. 31. </p></note> En opgørelse udarbejdet af SK i juli 1847 viser, at der på det tidspunkt var solgt 181 eksemplarer af <hi xml:id="id1ffa7261-c09f-44ca-9b56-580898a2debe" rendition="#ita">TTL,</hi> og at der i <persName xml:id="id2816f25a-5a6d-4f69-b581-d111bf728d77" key="Reitzel, Carl Andreas">Reitzel</persName>s boglade var 93 og på Bianco Lunos lager 226 eksemplarer.<note xml:id="id78c72e97-b4bb-4f86-8bad-25b8466dbaf2"><p xml:id="idae6d27b2-aebf-44a2-8889-c066d524fa4d">Opgørelsen findes i <persName xml:id="id1716fdc0-f182-4682-8486-68bc2ed4fd34" key="Reitzel, Carl Andreas">C.A. Reitzel</persName>s brevsamling, NKS 2937, 4<hi xml:id="ide27c4be5-7f30-437d-92d8-eaaf57db01cd" rendition="#sup">o</hi>; trykt i <ref xml:id="id38395616-f219-4312-967d-26063f188b6c" target="../b208/txt.xml#n224" type="lettersAndDedications" n="ba:152" rend="Brev 224"><hi xml:id="id274a9b08-e09b-4484-8558-331bc7c5126e" rendition="#ita">B&amp;A</hi> bd. 1, s. 174</ref>. </p></note> Ud fra disse oplysninger er det muligt at beregne bogens økonomi. Hvert eksemplar kostede 4 mk. eller 64 sk. Salget gennem <persName xml:id="ideda41d43-b3d4-46f5-bede-10c05e899f95" key="Reitzel, Carl Andreas">C.A. Reitzel</persName>s boglade indbragte således 120 rd. 64 sk., og fratrukket en kommissionsafgift på<pb xml:id="ss403" n="403" edRef="#SKS"/> 25%,<note xml:id="id03db1dc4-7bea-4c8a-b544-df2470fb7fdd"><p xml:id="ide18b9d18-ac6e-4a7e-a56a-44f8e89235a8">Af en opgørelse fra 4. maj 1847 fremgår det, at kommissionsafgiften udgjorde 25% af udsalgsprisen. Jf. KA, D pk. 7 læg 6. </p></note> svarende til 30 rd. 16 sk., gav det SK en indtægt på 90 rd. 48 sk. Efter betaling af produktionsomkostningerne på 76 rd. 43 sk. havde SK altså et overskud på små 15 rd. </p>
+          <p xml:id="ide240cf64-8685-46c5-8745-66c83f31155e">I august 1847 overtog <persName xml:id="id001c2170-68a7-4082-85a5-8b50d847cfe4" key="Reitzel, Carl Andreas">C.A. Reitzel</persName> restoplaget på 319 eksemplarer. Overtagelsen indgik i et samlet køb af restoplagene af de skrifter fra 1843-46, som <persName xml:id="id8fd7e501-f70e-482b-ba1d-9b94b107d23b" key="Reitzel, Carl Andreas">Reitzel</persName> havde i kommission.<note xml:id="id77143de2-e4fa-4b2f-93c1-c218c2915be9"><p xml:id="idb53dc5bd-2f56-4218-a011-b56537c1ff51">Da <hi xml:id="id2670b7ca-c72d-48aa-8c23-21dbdfb86300" rendition="#ita">Enten – Eller</hi> allerede var udsolgt, drejer det sig ud over <hi xml:id="idf938d409-08d1-4bb1-abc0-d9955c5ab6d4" rendition="#ita">TTL</hi> om <hi xml:id="id8c713941-2ff9-4cd1-ac0d-e94d10c4173e" rendition="#ita">Gjentagelsen, Frygt og Bæven, Philosophiske Smuler, Begrebet Angest, Forord, Stadier paa Livets Vei, Afsluttende uvidenskabelig Efterskrift</hi> og <hi xml:id="idf2bddfe0-bbc3-4bc9-863c-40ce3b2ab0fe" rendition="#ita">En literair Anmeldelse,</hi> som <persName xml:id="idfbe841aa-87a1-4d85-8918-7762cd11c46c" key="Reitzel, Carl Andreas">Reitzel</persName> købte for 1200 rd. Jf. <persName xml:id="id3001118f-fe60-4339-9db3-68e9420a352f" key="Reitzel, Carl Andreas">C.A. Reitzel</persName>s protokol over <hi xml:id="ida1bc36a7-7778-4fcb-a2e2-df569872cf1c" rendition="#ita">Forhandlinger med Forfattere, Redacteurer &amp;c 1835-1858,</hi> s. 27. I arkiv hos <persName xml:id="iddc668eb5-e437-4f2f-9c3f-9635b5bb4ee6" key="Reitzel, Carl Andreas">C.A. Reitzel</persName>s Boghandel og Forlag, København. Trykt i <ref xml:id="id072c5a09-4887-4cd7-ba09-759237e97772" target="../b208/txt.xml#n224" type="lettersAndDedications" n="ba:152" rend="Brev 224"><hi xml:id="id9ce68245-ba7e-4075-a8fb-63f76363698e" rendition="#ita">B&amp;A</hi> bd. 1, s. 173</ref>f. Jf. i øvrigt <persName xml:id="id77f35253-6065-4486-946e-65b1d4e14fcd" key="Brandt, Frithiof">Brandt</persName> og <persName xml:id="id2c054204-d2c1-4fa5-8abd-cbbf9843d20e" key="Thorkelin, Else">Thorkelin</persName> op.cit., s. 31. Restoplaget af <hi xml:id="id56e27f62-94c4-458e-adff-587b764c9c56" rendition="#ita">To opbyggelige Taler,</hi> 1843, blev i maj 1845 opkøbt af <persName xml:id="ida1be582f-db1c-429b-a876-2cfc29099a5b" key="Philipsen, Philip Gerson">P.G. Philipsen</persName>, jf. afsnittet om tilblivelsen af <hi xml:id="id2b1dbd6f-bc72-41e6-ab95-103071930cf6" rendition="#ita">Atten opbyggelige Taler</hi> i <ref xml:id="id38593459-c226-4bb7-a185-d1e800e25198" target="../2T43/txr.xml" type="textCriticalAccount">tekstredegørelsen til </ref><hi xml:id="idcd987663-df69-4254-bac0-9ee0f6024931" rendition="#ita">To opbyggelige Taler,</hi> 1843, s. 22-28. </p></note> Den ovennævnte opgørelse viser, at SK tilbød <persName xml:id="ide18114d0-9d44-4f69-97e5-d292fbbe550c" key="Reitzel, Carl Andreas">Reitzel</persName> at købe restoplaget for 90 rd. – ved almindeligt salg kunne de 319 eksemplarer før kommission have indbragt 212 rd. 64 sk. SK gav altså et nedslag i den samlede pris på godt 58%, mens <persName xml:id="ida64e172d-0cd3-4687-9503-cc92ceb7c04d" key="Reitzel, Carl Andreas">Reitzel</persName>s modbud lød på kun 33% af salgsværdien. SK måtte strække våben i disse forhandlinger og acceptere en indtægt på 70 rd. mod de forlangte 90 - til gengæld var der tale om ren fortjeneste. Det samlede salg af <hi xml:id="id0953bfd4-f1bf-4caf-99a9-d0266237348a" rendition="#ita">TTL</hi> indbragte altså SK et nettooverskud på knap 85 rd. </p>
+          <p xml:id="idefc60947-3a34-4d25-a92a-9746427803a9">Der blev ikke i SKs levetid foranstaltet oversættelser af <hi xml:id="idf9560293-369e-4ebb-8150-f5b3db9ddfd0" rendition="#ita">TTL.</hi> </p>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

@@ -1,165 +1,439 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Foranlediget ved en Yttring af Dr. Rudelbach mig betræffende</title>
-     
-     <title type="short">YDR</title>
-  <author>
-   <name>Jon Tafdrup</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Johnny Kondrup</name><name>Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2010</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K14</biblScope>
-     <biblScope unit="file">http://sks.dk/ydr/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition><!--spaced out, in SKS rendered italic--><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20120611">txr/XML, <bibl><idno type="version">1.7</idno>, <biblScope unit="file">http://sks.dk/ydr/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id8bf06567-29f0-4845-a32f-c5b755df2cd4">
+    <fileDesc xml:id="id50c7a892-2f2c-44f9-a7e7-9b6b1736c386">
+      <titleStmt xml:id="id9a2b62a8-6d97-4218-a357-8651f1aed888">
+        <title xml:id="id1defb3fb-29c9-41a3-8c69-87abbcb90a53" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id70571547-1f1b-4222-a15c-9604a903a423">Foranlediget ved en Yttring af Dr. Rudelbach mig betræffende</title>
+        <title xml:id="id2af32ecf-95eb-40a7-9cc8-129ee2fa6a27" type="short">YDR</title>
+        <author xml:id="idb9d3d35c-3510-453c-ad4d-5da50b51cdb3">
+          <name xml:id="id16fd62c0-47b9-4617-a901-580fd84ce77b">Jon Tafdrup</name>
+        </author>
+        <editor xml:id="idabed3a06-cc6e-4115-aed9-9cc7a133619a">
+          <name xml:id="id8d05d89e-13f4-40e4-a352-dc78f03745b9">Niels Jørgen Cappelørn</name>
+          <name xml:id="id930dcbe8-7e83-43e2-88cc-662f89dd0fde">Joakim Garff</name>
+          <name xml:id="idbf991e59-2999-4549-9028-41de283773f7">Johnny Kondrup</name>
+          <name xml:id="id324e3178-1f51-4c47-86ba-f772343f1eb3">Tonny Aagaard Olesen</name>
+          <name xml:id="id44c8a892-0242-4ed7-bf80-0371e81ce133">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="id332e1e0a-30b5-4203-b7b6-7aa5148d9be1">
+          <resp xml:id="id46f1b39d-09b6-47ad-846f-1642b092cbd7">redigeret af</resp>
+          <name xml:id="idd14d0624-bad5-420c-aac9-ca5dedb96336">Johnny Kondrup</name>
+          <name xml:id="id4f5d2513-f538-4932-8429-100bd433bd39">Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="idef891d1b-cdbd-40d0-8f6a-df0549f57db5">
+          <resp xml:id="id8ff2991d-c496-4886-a9e3-1de42c8bce68">elektronisk redigeret af</resp>
+          <name xml:id="id1eb58378-6ebd-4733-a03b-a00c4fd2ec79">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="ideca16b86-c2d4-4d85-ac1a-fecff0f8e94a">
+        <authority xml:id="id5ee82e78-83c4-4e46-99ac-082e37a1e20e">Søren Kierkegaard Forskningscenteret 2010</authority>
+        <availability xml:id="iddf61dc50-c0d6-4438-8129-debbbbc618e6" status="restricted">
+          <p xml:id="idc9e336c6-a8ec-42a3-b217-d02146996ac4">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id5681f063-d3d4-4188-a254-daa2eb3fda14">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="idde21db38-d1b3-4a68-830e-d56049facc98" unit="volume">K14</biblScope>
+        <biblScope xml:id="id9526f523-7780-4ede-aed3-5d9954f3261a" unit="file">http://sks.dk/ydr/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id09d8fa58-78c0-4ee8-af7e-f453579d8fbb">
+        <bibl xml:id="idf9923608-f689-46b8-bf9a-92e5c16b73e3" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id72a1b7d8-fd1a-489d-bb89-2c6435cd13d7">
+      <tagsDecl xml:id="id090751d0-0a05-48a1-9954-c57b813afb1e">
+        <rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition>
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id5f1ef026-5d8b-4416-9513-f9d92e166d2f">
+      <change xml:id="idc42f1eff-9d3c-4b6a-be4f-338d4d7db436">Transformed to TEI by style sheet <bibl xml:id="id9a2b1db1-2b63-449e-8555-1c77188dc778" type="file">txr2tei.xsl</bibl> version as of <date xml:id="id6c8ded60-f62d-4549-9bb1-bbf36835fb75">2017-02-15</date> importing <bibl xml:id="id506c65ec-20f8-4a46-831a-a898740cc440" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="id1c47d5d1-feb4-46ad-b92f-f30b3f4a4518">Transformed to TEI by style sheet <bibl xml:id="id95a8bf41-e5de-4c4c-906f-baf3e62e5c06" type="file">kn12tei.xsl</bibl> version <idno xml:id="idc97772c7-7ecd-4119-aa05-3356acc6f20a" type="version">1.9</idno> as of <date xml:id="id7f47c99e-b698-42f9-b221-278cd68f0b5f">2017-02-21</date> by <name xml:id="id53498468-b16b-49cc-b4cf-4db8bf192d74">Karsten Kynde</name>, <orgName xml:id="id856d5328-678a-416e-8dc8-3abe20f780bf">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="idd538e8c7-3677-44eb-ab27-75e982510405">København</placeName></change>
+      <change xml:id="idd96c87e9-8732-468c-93a6-8c2522107cde" when="20120611">txr/XML, <bibl xml:id="id0ed02be5-1c08-4bce-a60f-cc99db327eec"><idno xml:id="id76ee1507-9931-4c5f-9e7b-4d4a7210f60f" type="version">1.7</idno>, <biblScope xml:id="id37f7a509-ab11-402c-9b97-4b0d20d4c676" unit="file">http://sks.dk/ydr/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="TextCriticalAccount" subtype="publishedWritings"><body><div><head type="topText" n="Tekstredegørelse"/>
-  <head><pb xml:id="ss307" n="307" edRef="#SKS"/>Tekstredegørelse</head>
-  <list type="TOC"> 
-   <item>1. Bibliografisk beskrivelse
-    <ptr type="chapter" target="#k1" n="307"/>
+  <text xml:id="id052044d7-cf46-41d7-90dc-ade7f61e2130" type="TextCriticalAccount" subtype="publishedWritings">
+    <body xml:id="id7f11c9f4-8929-4e91-8d81-765abc315d52">
+      <div xml:id="ide893708a-53a6-4405-8026-a4f6ce60476a">
+        <head xml:id="id97039425-8bcc-4bab-93da-a54a48661fa0" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="id03220c8d-aa59-4541-88da-005e549eee68"><pb xml:id="ss307" n="307" edRef="#SKS"/>Tekstredegørelse</head>
+        <list xml:id="id1ebf0c5c-32f4-428d-8677-9b6bd494723b" type="TOC">
+          <item xml:id="iddb3f66a8-c360-4845-96b6-c18294f1a439">1. Bibliografisk beskrivelse
+    <ptr xml:id="idc6f00d43-3955-480b-94fd-d71112480bf0" type="chapter" target="#k1" n="307"/>
    </item>
-   <item>2. Manuskriptbeskrivelse
-    <ptr type="chapter" target="#k2" n="310"/>
+          <item xml:id="idc509f6f3-d569-4457-b858-d4d78313b8d7">2. Manuskriptbeskrivelse
+    <ptr xml:id="idfc9e8499-3b3c-4b68-af38-ae4aab57da20" type="chapter" target="#k2" n="310"/>
    </item>
-   <item>3. Tilblivelseshistorie
-    <ptr type="chapter" target="#k3" n="317"/>
+          <item xml:id="idd59c0446-d6b6-458c-a4f2-7d909f934a25">3. Tilblivelseshistorie
+    <ptr xml:id="idaba74a17-5399-446e-a4f5-5367756a1256" type="chapter" target="#k3" n="317"/>
    </item>
-   <item>4. Udgivelsesmåde
-    <ptr type="chapter" target="#k4" n="318"/>
+          <item xml:id="id33305e27-f377-41ac-bd78-a9bb6637fc65">4. Udgivelsesmåde
+    <ptr xml:id="idaf669300-8d4d-45d0-bd6b-df2b41409cd8" type="chapter" target="#k4" n="318"/>
    </item>
-  </list>
-  <div type="level1" xml:id="k1">
-   <head>1. Bibliografisk beskrivelse</head>
-   <p>»Foranlediget ved en Yttring af Dr. <hi rendition="#spa"><persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName></hi> mig betræffende« blev trykt i <hi rendition="#ita">Fædrelandet,</hi> 12. årgang, nr. 26, fredag den 31. jan. 1851. Artiklen er signeret »S. <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>«. <hi rendition="#ita">Fædrelandet</hi> blev udgivet af <persName key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName key="Ploug, Carl">C. Ploug</persName>; sidstnævnte fungerede også som ansvarlig redaktør. Avisen blev trykt hos <persName key="Klein, Louis">Louis Klein</persName> i <placeName>København</placeName> og lå færdig fra trykkeriet kl. 19.30. Prisen var 6 skilling i løssalg, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName>København</placeName>.</p>
-   <p>Artiklen er blevet kollationeret i tre eksemplarer af <hi rendition="#ita">Fædrelandet,</hi> nr. 26, den 31. jan. 1851:</p>
-   <list> 
-     
-     <label>A</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>Eksemplar A er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 12. årgang, 1851, 1. halvår.</p> </note></item>
-    
-     
-     <label>B</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>Eksemplar B er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 12. årgang, 1851, 1. halvår.</p> </note></item>
-    
-     
-     <label>C</label>
-     <item>Statsbibliotekets eksemplar, indbundet og beskåret.<note> <p>Eksemplar C er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 12. årgang, 1851.</p> </note></item>
-    
-   </list>
-   <p><pb xml:id="ss308" n="308" edRef="#SKS"/>Ved den interne kollation af de tre eksemplarer blev der ikke konstateret afvigelser.<note> <p>Da <hi rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes i tekstredegørelsen.</p> </note> Eksemplar A danner grundlag for følgende beskrivelse.</p>
-   <div type="level2">
-    <head>Format og paginering</head>
-    <p>Formatet svarer til en folio.<note> <p>Eksemplaret er som nævnt beskåret og indbundet, men udgangspunktet for formatbetegnelsen er plane helark (formentlig ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p> </note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet ark. På hver side er der tre spalter. Siderne er pagineret 101-104; på forsiden er numrene angivet under spalterne, på de øvrige sider over. Spalterne er unummereret.<note> <p>I <ref target="../YDR/txt.xml#ss111" type="publishedWritings" n="111"><hi rendition="#ita">SKS</hi> 14, 111</ref>-116, angives sidetallet i marginen; de følgende spalteskift angives med en lodret streg i teksten og et suppleret spaltetal i kantet parentes i marginen; ved sideskift angives kun sidetal.</p> </note></p>
-    <p rendition="#ind">SKs artikel har et omfang på fire spalter. Den udfylder avisens forside og første spalte af tre på anden side. Avisen i øvrigt rummer efterretninger, notitser og annoncer.</p>
-   </div>
-   <div type="level2">
-    <head>Beskrivelse af eksemplar A</head>
-    <p>Avisen måler ca. 335 × 494 mm.<note> <p>Der måles bredde (øverste kant) × højde (venstre kant).</p> </note></p>
-    <div type="level3">
-     <head>Papir</head>
-     <p>Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
-    </div>
-    <div type="level3">
-     <head>Typografi</head>
-     <p>Avisens fremherskende skriftsnit er antikva; fremhævet tekst er sat med fed eller spatieret skrift.</p>
-     <p rendition="#ind">På forsiden er avisens hoved adskilt fra den øvrige tekst af en datolinje. Hovedet har følgende ordlyd:</p>
-     <quote><p><pb xml:id="ss309" n="309" edRef="#SKS"/><hi rendition="#bol">Fædrelandet.</hi> | <hi rendition="#bol">1851.</hi> | Abonnementspris i <placeName key="København">Kjøbenhavn</placeName> 15 Mk. pr. Qvartal, 5 Mk. pr. Maaned, enkelte Nr. 6 Sk.; udenfor <placeName key="København">Kjøbenhavn</placeName> 3 Rbd. pr. Qvartal frit i Huset. Hver Søgne-Aften udgaaer et Numer. | Bladets Contoir, store <placeName key="Købmagergade">Kjøbmagergade</placeName> Nr. 54, er aabent om Formiddagen Kl. 11–1.<note> <p>Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p> </note></p></quote>
-     <p>Datolinjen er indrammet af to tværgående dobbeltstreger: Den øverste er fed-fin, den nederste fin-fed. Imellem står følgende:</p>
-     <quote><p><hi rendition="#bol">12<hi rendition="#sup">te</hi> Aarg. Fredagen den 31. Januar. Nr. 26.</hi></p></quote>
-     <p>Årgangsnummeret er venstrestillet, datoen centreret, og avisnummeret højrestillet.</p>
-     <p rendition="#ind">I avishovedet er »Fædrelandet.« centreret og sat med fed egyptienne i en punktstørrelse ca. 12 grader større end brødteksten.<note> <p>Artiklens brødtekst er sat med punktstørrelse svarende til ca. 10; tekst, der er 1 grad større, er sat med punktstørrelse 12, 2 grader større med punktstørrelse 14, 3 grader større med punktstørrelse 16, og 12 grader større med punktstørrelse 72, mens tekst, der er 1 grad mindre, er sat med punktstørrelse 8, og 2 grader mindre med punktstørrelse 6.</p> </note> Under avisnavnet står årstallet centreret med fed i en punktstørrelse ca. 3 grader større end brødteksten. Oplysningerne under årstallet om pris, udgivelsesfrekvens, kontorets beliggenhed og åbningstid er centreret og sat med samme punktstørrelse som brødteksten. I datolinjen er årgangen og avisnummeret sat med fed i en punktstørrelse ca. 2 grader større end brødteksten, mens datoen er sat med fed ca. 1 grad større end brødteksten. Se <ref target="../YDR/txr.xml#ill_k14" type="figure">illustration 14</ref>. <figure xml:id="ill_k14" rend="recto"><graphic url="../YDR/ill_k14.jpg"/> <head>14. <hi rendition="#ita">Fædrelandet,</hi> nr. 26, den 31. januar 1851, forside, udsnit</head> </figure> </p>
-     <p rendition="#ind">Nederst i avisens sidste spalte, adskilt fra en foregående notits af en tværgående skillestreg i kolumnens bredde, står trykketidspunktet:</p>
-     <quote><p>Færdigt fra Trykkeriet Kl. 7½.</p></quote>
-     <p>Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående fed-fin dobbeltstreg og har ordlyden:</p>
-     <quote><p>Udgivere: <hi rendition="#bol">J. F. <persName key="Giødwad, Jens Finsteen">Giødwad</persName></hi> og <hi rendition="#bol"><persName key="Ploug, Carl">C. Ploug</persName>;</hi> ansvarlig: <hi rendition="#bol"><persName key="Ploug, Carl">C. Ploug</persName></hi> | [Skillestreg] | Trykt med Hurtigpresse hos <hi rendition="#spa"><persName key="Klein, Louis">Louis Klein</persName>.</hi></p></quote>
-     <p><pb xml:id="ss310" n="310" edRef="#SKS"/>Artiklens overskrift »Foranlediget ved en Yttring af Dr. | <hi rendition="#spa"><persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName></hi> mig betræffende.« er centreret i spalten og sat med fed ca. 1 grad større end brødteksten; »Rudelbach« er tillige spatieret. Artiklen indledes af en fed uncial ca. 2 grader større end brødteksten. Fodnoter, der er placeret nederst i spalterne under en kort, venstrestillet streg, er sat ca. 2 grader mindre end brødteksten. Signaturen »S. <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.« er sat med samme punktstørrelse som brødteksten, spatieret og indrykket fra højre.</p>
-     <p rendition="#ind">Mellem overskrift og brødtekst er sat en kort, vandret skillestreg. En tilsvarende skillestreg deler teksten mellem artiklens indledende citater og den efterfølgende brødtekst. Efter signaturen er sat en lidt længere vandret skillestreg, hvorefter artiklen fortsætter med en tilføjelse. Som afslutning på artiklen er sat en lang, vandret skillestreg. Mellem spalterne er overalt sat en fed, lodret skillestreg.</p>
-     <p rendition="#ind">Spaltekolumnen måler ca. 87 mm i bredden, og en spalte har op til 107 linjer inklusive artiklens sidste fodnote i den afsluttende spalte. Artiklens brødtekst er sat med en skriftstørrelse svarende til ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum.</p>
-     <p>Der er flere eksempler på sætter- og trykfejl. En omvendt type findes i »udvortes«, der er sat »ndvortes« (<ref target="../YDR/txt.xml#ss113" type="publishedWritings" n="113"><hi rendition="#ita">SKS</hi> 14, 113</ref>,46). En forkert type findes i »Christne«, der er sat »Cbristne« (115,19). Der er mange trykfejl i form af læderede typer.<note> <p>Eksempler på læderede typer er: det andet 'i' i »Organisationen« (<ref target="../YDR/txt.xml#ss111" type="publishedWritings" n="111"><hi rendition="#ita">SKS</hi> 14, 111</ref>,17), bindestregen i »Vane-Christendom« (111,46), det første 'i' i »Emancipation« (112,24), 'r' i »Reformation« (112,65), det sidste 'e' i »Inderlighed« (112,74), 'r' i »Christendommen« (113,3) og 'r' i »betræffende« (114,25).</p> </note> Desuden ses en udfalden type i »har«, der står som »h r« (111,53);</p>
-    </div>
-   </div>
-  </div>
-  <div type="level1" xml:id="k2">
-   <head><pb xml:id="ss312" n="312" edRef="#SKS"/>2. Manuskriptbeskrivelse</head>
-   <p>Til »Foranlediget ved en Yttring af Dr. <persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName> mig betræffende« findes følgende manuskripter i Kierkegaard Arkivet (KA) på <placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
-   <msDesc><msIdentifier><collection>YDR</collection></msIdentifier> 
-    <msPart xml:id="physDesc.1" next="#additional.1"><msIdentifier><idno>1</idno></msIdentifier><physDesc><p>Udkast til »Foranlediget ved en Yttring af Dr. <persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName> mig betræffende«, fordelt på 1 dobbeltblad, 2 løse blade og 1 løs lap, i alt 4 blade og 1 løs lap.</p></physDesc> 
-       <msPart xml:id="physDesc.1.1" next="#additional.1.1"><msIdentifier><idno>1.1</idno></msIdentifier><physDesc><p>Udkast til artiklen.</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.<note> <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Irregulære, fx afrevne, enheder betegnes lapper. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p> </note></p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 169 × 202 mm.<note> <p>Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p> </note></p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. Bl. [2v] er ubeskrevet.</p><p>Bl. [1r] indledes med en kort vandret streg.</p><p>Enkelte korrektioner i form af udstregninger og tilføjelser. En udstregning med blyant findes på bl. [2r].</p></physDesc></msPart><msPart xml:id="additional.1.1" prev="#physDesc.1.1"><msIdentifier><idno>1.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> X 5 B 124)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.2" next="#additional.1.2"><msIdentifier><idno>1.2</idno></msIdentifier><physDesc><p>Udkast til en ubenyttet slutning.</p><p>1 løst blad i 4<hi rendition="#sup">o</hi>. Uregelmæssigt afrevet, med rester fra dobbeltbladets andet blad.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: ca. 170 × 202 mm.</p><p>Bladet har været foldet midtpå efter beskrivning, en gang på langs og en gang på tværs. Versosiden er beskrevet ca. en tredjedel; siderne har smal venstre- og højremargin.</p><p>Øverst på rectosiden findes overskriften <hi rendition="#ita">»Slutning«</hi> indrykket og understreget med blyant.</p><p>Enkelte korrektioner i form af tilføjelser og udstregninger af enkeltord.</p></physDesc></msPart><msPart xml:id="additional.1.2" prev="#physDesc.1.2"><msIdentifier><idno>1.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> X 5 B 125)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.3" next="#additional.1.3"><msIdentifier><idno>1.3</idno></msIdentifier><physDesc><p><pb xml:id="ss313" n="313" edRef="#SKS"/>Ubenyttet udkast til et stykke af artiklen.</p><p>1 løs lap. Lappen har to uregelmæssigt afrevne kanter.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: ca. 170 × 144 mm.</p><p>Lappen har været foldet en gang på tværs efter beskrivning. Den ene side af lappen er beskrevet i næsten hele dens bredde. Den anden side er ubeskrevet.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.1.3" prev="#physDesc.1.3"><msIdentifier><idno>1.3</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> X 5 B 126)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.4" next="#additional.1.4"><msIdentifier><idno>1.4</idno></msIdentifier><physDesc><p>Udkast til artiklen.</p><p>1 løst blad i 4<hi rendition="#sup">o</hi>. Bladets højre kant er uregelmæssigt afrevet.</p><p>Ingen paginering.</p><p>Papir: blåligt koncept, groft. Mål: ca. 169 × 209 mm.</p><p>Den løbende tekst begynder på bl. [1r] og slutter efter 6 linjer på bl. [1v]; nederst på bl. [1v] findes en længere tilføjelse. Siderne har smal venstre- og højremargin. Bladet har været foldet en gang på langs og en gang på tværs efter beskrivning.</p><p>Øverst på bl. [1r] er et dobbeltkors skrevet med blyant. Derover findes en tilføjelse skrevet med blæk med et indvisningstegn i blyant. Samme indvisningstegn med blyant findes i hovedteksten. Umiddelbart derefter i hovedteksten er sat en blyantparentes omkring 4 linjer; tekststedet er tillige markeret i højre margin med en blyantstreg. Efter blyantparentesen findes et blyantkryds, der indviser en tilføjelse skrevet på langs i højre margin. En tilføjelse indvist med blækkors er skrevet på langs og fylder omtrent to tredjedele af venstre margin; tilføjelsen er fortsat ovenfor i den øverste tredjedel af venstre margin og indvist i det foregående med et tegn i rødkridt; tilføjelsen er yderligere fortsat oven over hovedteksten og indvist i det foregående med et tegn i rødkridt. Nederst på siden findes et indvisningstegn i rødkridt, der indviser en tilføjelse fra bl. [1v] med samme tegn i rødkridt. Se <ref target="../YDR/txr.xml#ill_k15" type="figure">illustration 15</ref>. <figure xml:id="ill_k15" rend="recto"><graphic url="../YDR/ill_k15.jpg"/> <head>15. Ms. 1.4, bl. [1r], udkast med tilføjelser</head> </figure> </p><p>En del korrektioner. På bl. [1r] er de 8 første linjer slettet med et stort blyantkryds. Nederst på siden er halvanden linje slettet med blyantstreger. På bl. [1v] er hovedtekstens 6 linjer slettet med et stort blyantkryds; tilføjelsen nederst på siden er slettet tilsvarende.</p></physDesc></msPart><msPart xml:id="additional.1.4" prev="#physDesc.1.4"><msIdentifier><idno>1.4</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> X 5 B 127)</p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.1" prev="#physDesc.1"><msIdentifier><idno>1</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 45; <hi rendition="#ita">Pap.</hi> X 5 B 124-127)</p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.2" next="#additional.2"><msIdentifier><idno>2</idno></msIdentifier><physDesc><p><pb xml:id="ss314" n="314" edRef="#SKS"/>Renskrift af »Foranlediget ved en Yttring af Dr. <persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName> mig betræffende« og tilføjelser til renskriften, fordelt på 8 løse blade og 1 lap. Renskriften har været benyttet som trykmanuskript.<note> <p>På s. 1 findes en sætterbemærkning skrevet med blyant: »gl B / Anmærkningerne med Petit«. Enkelte steder i ms. findes lette spor efter sætterfingre.</p> </note></p></physDesc> 
-       <msPart xml:id="physDesc.2.1" next="#additional.2.1"><msIdentifier><idno>2.1</idno></msIdentifier><physDesc><p>Renskrift af artiklen.</p><p>6 løse blade i 4<hi rendition="#sup">o</hi>.</p><p>Bladene er med blyant pagineret 1-11, idet bl. [2v] er uden paginering og i øvrigt ubeskrevet.</p><p>Papir: gulligt koncept, glat. Mål: 169 × 202 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. Har yderligere været foldet en gang på langs efter beskrivning.</p><p>S. 1 har overskriften »Foranlediget ved en Yttring af <hi rendition="#ant">Dr. <persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName></hi> / mig betræffende.«. Efter »Yttring« er sat et indvisningstegn; nederst på siden findes det tilsvarende indvisningstegn ud for en anmærkning. Nederst i marginen på s. 7 findes signaturen <hi rendition="#ant">»S. <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.«.</hi></p><p>På s. 1 er en skillestreg indsat i den løbende tekst, og s. 8 indledes tilsvarende med en skillestreg. En anmærkning i hovedspalten på s. 1 og en på s. 2 er adskilt fra hovedteksten med en tynd skillestreg.</p><p>To indvisningstegn med blyant og fire med rødkridt findes på s. 6, to med rødkridt findes på s. 11. Ud for det ene på s. 11 står henvisningen <hi rendition="#ant">»cfr Hoslagte«</hi> refererende til ms. 2.1.1.</p><p>Mange korrektioner i form af udstregninger og tilføjelser. På s. 1 og 2 er en lang marginaltilføjelse blevet slettet med to blyantkryds, desuden er den sidste halvanden linje på s. 1 og de første to linjer på s. 2 slettet med skrå blyantstreger. På s. 5 er to tilføjelser, hhv. i marginen og nederst på siden, og på s. 6 en del af en marginaltilføjelse slettet med indrammede blyantkryds. På s. 6 er fem linjer slettet med blyant, og på s. 10 er i alt seks linjer slettet med blyant.</p><p>(<hi rendition="#ita">Pap.</hi> X 5 B 121)</p><p>Hertil hører følgende:</p></physDesc> 
-          <msPart xml:id="physDesc.2.1.1" next="#additional.2.1.1"><msIdentifier><idno>2.1.1</idno></msIdentifier><physDesc><p><pb xml:id="ss316" n="316" edRef="#SKS"/>Tilføjelse til renskriften (<ref target="../YDR/txt.xml#ss115" type="publishedWritings" n="115"><hi rendition="#ita">SKS</hi> 14, 115</ref>,36-116,37, dvs. noten).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi>. Bladets højre kant er uregelmæssigt afrevet.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 167 × 202 mm.</p><p>Bladet er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. Har yderligere været foldet en gang på langs efter beskrivning.</p><p>Øverst på rectosiden ses et dobbeltkors i rødkridt og påskriften <hi rendition="#ant">»ad pag 11«,</hi> der er skrevet med blyant og refererer til s. 11 i ms. 2.1.</p><p>Enkelte korrektioner i form af udstregninger og tilføjelser.</p></physDesc></msPart><msPart xml:id="additional.2.1.1" prev="#physDesc.2.1.1"><msIdentifier><idno>2.1.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> X 5 B 121,13)</p></note></adminInfo></additional></msPart>
-         </msPart><msPart xml:id="additional.2.1" prev="#physDesc.2.1"><msIdentifier><idno>2.1</idno></msIdentifier><additional><adminInfo><note/></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.2.2" next="#additional.2.2"><msIdentifier><idno>2.2</idno></msIdentifier><physDesc><p>Renskrift af en ubenyttet tilføjelse.</p><p>1 løst blad i 4<hi rendition="#sup">o</hi>. Uregelmæssigt afrevet venstrekant.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 170 × 202 mm.</p><p>Bladet har været foldet en gang på langs og en gang på tværs efter beskrivning. Bl. [1r] er beskrevet i næsten hele sidens bredde. Bl. [1v] er ubeskrevet.</p><p>Enkelte korrektioner.</p></physDesc></msPart><msPart xml:id="additional.2.2" prev="#physDesc.2.2"><msIdentifier><idno>2.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> X 5 B 122)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.2.3" next="#additional.2.3"><msIdentifier><idno>2.3</idno></msIdentifier><physDesc><p>Renskrift af en ubenyttet tilføjelse.</p><p>1 løs lap. To uregelmæssigt afrevne kanter.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: ca. 170 × 89-103 mm.</p><p>Lappen har været foldet en gang på tværs. Halvdelen af lappens ene side er beskrevet. Den anden siden er ubeskrevet.</p><p>En enkelt korrektion.</p></physDesc></msPart><msPart xml:id="additional.2.3" prev="#physDesc.2.3"><msIdentifier><idno>2.3</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> X 5 B 123)</p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.2" prev="#physDesc.2"><msIdentifier><idno>2</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 45; <hi rendition="#ita">Pap.</hi> X 5 B 121-123)</p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.3" next="#additional.3"><msIdentifier><idno>3</idno></msIdentifier><physDesc><p>Omslag til artiklen.</p><p>1 løst blad i 2<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: blåligt koncept, groft. Mål foldet: ca. 220 × 209 mm.</p><p><pb xml:id="ss317" n="317" edRef="#SKS"/>Omslaget har været foldet to gange på tværs og en gang på langs.</p><p>Omslaget bærer påskriften: »Artiklen om <persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName> / Deri en en [sic] Deel, som ikke blev brugt, / men som kan have sin Betydning.«.</p><p>Ingen korrektioner.</p></physDesc></msPart><msPart xml:id="additional.3" prev="#physDesc.3"><msIdentifier><idno>3</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 45; <hi rendition="#ita">Pap.</hi> X 5 B 120)</p></note></adminInfo></additional></msPart>
-   </msDesc>
-   <p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 319; KA, B pk. 45; <hi rendition="#ita">Pap.</hi> X 5 B 120-127)</p>
-  </div>
-  <div type="level1" xml:id="k3">
-   <head>3. Tilblivelseshistorie</head>
-   <p>Årsagen til at SK skriver »Foranlediget ved en Yttring af Dr. <persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName> mig betræffende« skal findes i note 121 i <persName key="Rudelbach, Andreas Gottlob">A.G. Rudelbach</persName>s bog <hi rendition="#ita">Om det borgerlige Ægteskab,</hi> hvor han belægger sine ord ved at henvise til SK.<note> <p>Jf. <persName key="Rudelbach, Andreas Gottlob">A.G. Rudelbach</persName> <hi rendition="#ita">Om det borgerlige Ægteskab. Bidrag til en alsidig, upartisk Bedømmelse af denne Institution, nærmest fra Kirkens Standpunkt,</hi> <placeName key="København">Kbh.</placeName> 1851, ktl. 752, s. 70.</p> </note></p>
-   <p rendition="#ind">Manuskriptmaterialet til artiklen er udateret, men <persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName>s bog blev averteret som udkommet i <hi rendition="#ita">Adresseavisen,</hi> nr. 19, den 23. jan. 1851. SK har altså skrevet sin artikel på et tidspunkt mellem den 23. og den 31. jan. 1851, hvor den blev trykt i <hi rendition="#ita">Fædrelandet.</hi></p>
-   <p rendition="#ind"><persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName> var ikke SK ubekendt, som det også nævnes i artiklen. SK ejede en del af hans bøger, og <persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName> er ofte nævnt i SKs optegnelser<note> <p>I <ref target="../NB23/txt.xml" type="journalsAndPapers">journalen NB23</ref> (<hi rendition="#ita">SKS</hi> 24, 203-316), der er påbegyndt den 22. jan. 1851, altså nogenlunde samtidig med, at SK skrev på »Foranlediget ved en Yttring af Dr. <persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName> mig betræffende«, nævnes <persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName> flere steder, jf. <ref target="../NB23/txt.xml#n36" type="journalsAndPapers" n="36.a">NB23:36.a</ref>, <ref target="../NB23/txt.xml#n77" type="journalsAndPapers" n="77">NB23:77</ref>, <ref target="../NB23/txt.xml#n98" type="journalsAndPapers" n="98">NB23:98</ref>, <ref target="../NB/txt.xml#n23" type="journalsAndPapers" n="23">NB:23</ref>:115 og <ref target="../NB23/txt.xml#n180" type="journalsAndPapers" n="180.b">NB23:180.b</ref>.</p> </note> – således i <ref target="../NB12/txt.xml#n117" type="journalsAndPapers" n="117">NB12:117</ref> fra omkring den 31. aug. 1849:</p>
-   <quote><p rendition="#ind">Nu skal man da formodentlig til at reformere Kirken; der skal saa holdes Synoder, balloteres o: s: v:</p> <p rendition="#ind">Selv de strengeste Orthodoxe selv <persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName> synes at ville indtage den Stilling, at forholde sig ligefrem til alt Dette, og gjøre hvad han kan for at det da saa maa blive saa orthodoxt som muligt.<note> <p><ref target="../NB12/txt.xml#ss210" type="journalsAndPapers" n="210"><hi rendition="#ita">SKS</hi> 22, 210</ref>,10-14. SK sigter i sin omtale af <persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName> til dennes bog <hi rendition="#ita">Den evangeliske Kirkeforfatnings Oprindelse og Princip, dens Udartning og dens mulige Gjenreisning fornemmelig i <placeName>Danmark</placeName>. Et udførligt kirkeretligt og kirkehistorisk Votum for virkelig Religionsfrihed,</hi> <placeName key="København">Kbh.</placeName> 1849, ktl.171.</p> </note></p></quote>
-   <p rendition="#ind"><pb xml:id="ss318" n="318" edRef="#SKS"/>Af det foreliggende manuskriptmateriale har ms. 1.1 ikke fundet direkte anvendelse i den senere artikel, men emnemæssigt er der en vis lighed mellem dette ms. og det afsnit midtvejs i den trykte artikel, som begynder: »At en Politiker troer paa« (<ref target="../YDR/txt.xml#ss113" type="publishedWritings" n="113"><hi rendition="#ita">SKS</hi> 14, 113</ref>,34). Et udkast til en slutning på artiklen findes i ms. 1.2, men det er heller ikke blevet anvendt i den endelige artikel. Det samme gør sig gældende med den lap, der udgør ms. 1.3, hvis tekst drejer sig om menneskets forhold til idealerne. Ms. 1.4 er derimod meget lig de første afsnit efter det indledende citat i den trykte artikel inklusive artiklens anden note (<ref target="../YDR/txt.xml#ss111" type="publishedWritings" n="111"><hi rendition="#ita">SKS</hi> 14, 111</ref>,38-112,82, dvs. afsnittet fra »Jeg er en Hader« til og med »Udvortes« samt noten, der begynder i <ref target="../YDR/txt.xml#ss111" type="publishedWritings" n="111"><hi rendition="#ita">SKS</hi> 14, 111</ref>,34). Kortere passager fra dette manuskript er, i visse tilfælde ordret, andre gange omskrevet, at finde i den trykte artikel, men ikke nødvendigvis i den rækkefølge, hvori de er indordnet i manuskriptet. Som det fremgår af manuskriptbeskrivelsen, er ms. 1.4 en noget uoverskuelig affære med mange tilføjelser på tværs af den vanlige skriveretning. Af det bevarede kladdemateriale er ms. 1.4 det, som ligner renskriften mest, dog uden at kunne betragtes som et direkte forlæg; snarere er det et idéudkast.</p>
-   <p rendition="#ind">I ms. 2.1, renskriften, findes en hel del korrektioner og tilføjelser og desuden en selvstændig anmærkning, ms. 2.1.1, der genfindes som den endelige artikels sidste note (<ref target="../YDR/txt.xml#ss115" type="publishedWritings" n="115"><hi rendition="#ita">SKS</hi> 14, 115</ref>,36). SK har altså først fået artiklens form og indhold på plads i den foreliggende renskrift. Det tyder på, at han har arbejdet med teksten indtil tæt på trykketidspunktet. Ms. 2.2 er en renskrift til den tilføjelse, der begynder på s. 1 og fortsætter om på s. 2 i ms. 2.1. I ms. 2.1 er tilføjelsen dog senere slettet med blyant. Den løse lap, der udgør ms. 2.3, er en renskrift til en tilføjelse på s. 5 i ms. 2.1; denne tilføjelse er dog også slettet med blyant.</p>
-   <p rendition="#ind">De mange forkastede tekststykker har imidlertid ikke skullet henligge i glemsel, hvorfor SK på omslaget til manuskripterne, ms. 3, har anført, at deri er »en Deel, som ikke blev brugt, men som kan have sin Betydning.«.</p>
-   <p rendition="#ind"><persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName> var ikke sen til give svar på SKs artikel. I <hi rendition="#ita">Fædrelandet,</hi> nr. 37 og 38, hhv. den 13. og 14. feb. 1851, blev hans dobbeltartikel »Afnødt Erklæring om et personligt Punkt og tillige om Betydningen af 'Kirkens frie Institutioner'« bragt. Denne artikel resulterede i endnu et skrift fra SKs hånd, en artikel med overskriften »Enden paa Sagen«, som dog forblev utrykt.<note> <p>Optrykt i <ref type="preparatoryManuscript" n="pap:X5B128-129"><hi rendition="#ita">Pap.</hi> X 5 B 128-129</ref>, s. 324-330; kladden og den dertilhørende renskrift findes i KA, B pk. 45.</p> </note></p>
-  </div>
-  <div type="level1" xml:id="k4">
-   <head><pb xml:id="ss319" n="319" edRef="#SKS"/>4. Udgivelsesmåde</head>
-   <p>»Foranlediget ved en Yttring af Dr. <persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName> mig betræffende« blev som nævnt trykt i <hi rendition="#ita">Fædrelandet.</hi><note> <p>En nærmere redegørelse for avisens redaktionelle forhold, periodicitet og oplagstal findes i <ref target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til artiklen »Aabenbart Skriftemaal«, s. 112</ref>f.</p> </note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
-   <p rendition="#ind">Af stor betydning for receptionen allerede i SKs umiddelbare eftertid var <persName key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi rendition="#ita"><persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 <hi rendition="#ita">(Bl.art.).</hi> Heri indgår størstedelen af SKs artikler, også »Foranlediget ved en Yttring af Dr. <persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName> mig betræffende«.<note> <p>Artiklen er trykt i <hi rendition="#ita">Bl.art.,</hi> s. 48-56.</p> </note></p>
-  </div>
- </div></body></text>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="idcb2d33b8-cf50-4597-ae2d-ec61b4019d9a">1. Bibliografisk beskrivelse</head>
+          <p xml:id="id8540e89a-a08c-46e3-8deb-4be9313b16e7">»Foranlediget ved en Yttring af Dr. <hi xml:id="id39a072f2-c009-4a1f-a68f-695720d3ddec" rendition="#spa"><persName xml:id="iddd6dbab4-e5c1-441a-8054-de83ccbf23d7" key="Rudelbach, Andreas Gottlob">Rudelbach</persName></hi> mig betræffende« blev trykt i <hi xml:id="idfa633519-e7cd-4a94-8f79-cafb141c524c" rendition="#ita">Fædrelandet,</hi> 12. årgang, nr. 26, fredag den 31. jan. 1851. Artiklen er signeret »S. <persName xml:id="id8a638662-4583-4c1e-bfa8-50129936cc2a" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>«. <hi xml:id="id2e4bc392-9337-460c-aa09-cc54dea38771" rendition="#ita">Fædrelandet</hi> blev udgivet af <persName xml:id="id5f7bd9f3-335e-48af-b21a-8078ab38b45e" key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName xml:id="idb32d6ed0-ec98-4060-acd5-1e98015451cd" key="Ploug, Carl">C. Ploug</persName>; sidstnævnte fungerede også som ansvarlig redaktør. Avisen blev trykt hos <persName xml:id="id0cb2e794-20c9-4482-aa4f-88142c0b64af" key="Klein, Louis">Louis Klein</persName> i <placeName xml:id="id410fe8c9-99ea-4f20-8e51-c6b9cc4c7475">København</placeName> og lå færdig fra trykkeriet kl. 19.30. Prisen var 6 skilling i løssalg, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName xml:id="id6458529d-cb6c-417b-9f8d-f17abfba7fd0">København</placeName>.</p>
+          <p xml:id="idf523df2b-bcb3-4105-b091-54674feff098">Artiklen er blevet kollationeret i tre eksemplarer af <hi xml:id="idac42026d-5fc6-42a9-a0a5-1b9f57153088" rendition="#ita">Fædrelandet,</hi> nr. 26, den 31. jan. 1851:</p>
+          <list xml:id="ida4dbcd34-22ab-4f93-a989-07fa26ccdff7">
+            <label xml:id="id5386b843-4d68-4351-97a9-c9a0c09cb74d">A</label>
+            <item xml:id="id7469ac4d-da9d-4453-adb9-33c47603f84d"><placeName xml:id="idb59a8a7a-58a5-42dc-adf0-7059d72cab50" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="id59bdc0c0-2ab4-4453-b4cf-25d887fb4ffd"><p xml:id="ide95e7a5e-a6a0-4ecc-8ee6-2b6b15fdedd3">Eksemplar A er indbundet sammen med resten af <hi xml:id="idbb08e699-5de2-498b-8aef-697b8507ca3b" rendition="#ita">Fædrelandet,</hi> 12. årgang, 1851, 1. halvår.</p></note></item>
+            <label xml:id="id4137adc0-51d6-47e5-9646-bc8447018b18">B</label>
+            <item xml:id="idaff01236-875e-4dfc-96dd-b97f80850a45"><placeName xml:id="idca69a07a-593f-4d5f-9c9f-a32692c44e08" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="idb668ff16-4f56-4853-baf9-103f6893d97e"><p xml:id="id7170d963-994c-4f19-8649-7e53bc62c655">Eksemplar B er indbundet sammen med resten af <hi xml:id="id863334a1-14b2-47ef-8b4f-b0c369528cb3" rendition="#ita">Fædrelandet,</hi> 12. årgang, 1851, 1. halvår.</p></note></item>
+            <label xml:id="id53566309-a647-4ca6-981c-e251cc08260a">C</label>
+            <item xml:id="id9d5bdf0b-1f87-426d-a1ee-9288c846fb6d">Statsbibliotekets eksemplar, indbundet og beskåret.<note xml:id="ida25c7f4f-14cf-4c5b-9cae-2eb3c056ec0b"><p xml:id="idc9b62795-f767-40a4-ad1f-2f2b10cea452">Eksemplar C er indbundet sammen med resten af <hi xml:id="id571342f3-0d6e-4779-a5e4-416459e6ab16" rendition="#ita">Fædrelandet,</hi> 12. årgang, 1851.</p></note></item>
+          </list>
+          <p xml:id="idefeba880-25a5-4bac-a4c6-bbd720adea35"><pb xml:id="ss308" n="308" edRef="#SKS"/>Ved den interne kollation af de tre eksemplarer blev der ikke konstateret afvigelser.<note xml:id="id72d7ba59-a35c-487b-8c59-e9ef6aed0eb6"><p xml:id="id81b93924-05c6-465b-ad5f-0e786a49939f">Da <hi xml:id="id26dc395a-a247-4892-8779-d1a4b39ec7cf" rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes i tekstredegørelsen.</p></note> Eksemplar A danner grundlag for følgende beskrivelse.</p>
+          <div xml:id="ide07fe549-d7e5-4e83-8da7-59790efa57bf" type="level2">
+            <head xml:id="id15d33fff-6f54-40f6-b6b5-7bae1ba9cdeb">Format og paginering</head>
+            <p xml:id="id0b71c85c-1dd5-478c-a450-d9ff95267b80">Formatet svarer til en folio.<note xml:id="idf21b4eae-88d0-4b20-843e-f6101a4fafc0"><p xml:id="id5dc19b5e-f798-4b80-b11e-159036fd1015">Eksemplaret er som nævnt beskåret og indbundet, men udgangspunktet for formatbetegnelsen er plane helark (formentlig ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p></note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet ark. På hver side er der tre spalter. Siderne er pagineret 101-104; på forsiden er numrene angivet under spalterne, på de øvrige sider over. Spalterne er unummereret.<note xml:id="id9699d149-4b0f-4eae-a587-bba4664527b9"><p xml:id="idcda86384-06a7-4ab9-a1c9-00a64d3165a5">I <ref xml:id="id7b0e13e2-01e8-4e84-bff3-1df9070dfccc" target="../YDR/txt.xml#ss111" type="publishedWritings" n="111"><hi xml:id="id33a2a094-9181-4042-83f5-717e1b0cae97" rendition="#ita">SKS</hi> 14, 111</ref>-116, angives sidetallet i marginen; de følgende spalteskift angives med en lodret streg i teksten og et suppleret spaltetal i kantet parentes i marginen; ved sideskift angives kun sidetal.</p></note></p>
+            <p xml:id="id45a22ce1-983e-407a-9825-9efcb64ab1e0" rendition="#ind">SKs artikel har et omfang på fire spalter. Den udfylder avisens forside og første spalte af tre på anden side. Avisen i øvrigt rummer efterretninger, notitser og annoncer.</p>
+          </div>
+          <div xml:id="idb866c340-6090-49f1-9cc7-030f108cbf30" type="level2">
+            <head xml:id="id2987c8a3-08ac-42b4-b1ba-167946509751">Beskrivelse af eksemplar A</head>
+            <p xml:id="idb6adba71-635a-4f97-b0ac-fab84321ffb4">Avisen måler ca. 335 × 494 mm.<note xml:id="id3b7280e6-a8d2-4f6c-a99a-0bb2968bab69"><p xml:id="id22b9f13c-86eb-4101-a7d6-d5633fdfefef">Der måles bredde (øverste kant) × højde (venstre kant).</p></note></p>
+            <div xml:id="id9d1a0ba6-3842-4a74-8c7d-37244422e330" type="level3">
+              <head xml:id="idb97d745c-2c5c-4214-8d7f-eb7f9994d318">Papir</head>
+              <p xml:id="id43cce438-cf12-47a7-a978-49ad2b95822b">Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
+            </div>
+            <div xml:id="id232a7258-47cf-41b5-927e-a10d08fa5bd6" type="level3">
+              <head xml:id="id0696d216-aa50-4021-9e90-f425c8b2d7aa">Typografi</head>
+              <p xml:id="idb20d5cd2-4319-4717-9981-3b6ab9098283">Avisens fremherskende skriftsnit er antikva; fremhævet tekst er sat med fed eller spatieret skrift.</p>
+              <p xml:id="idf674a920-3c19-4bf6-bb6c-ecff41ccbeb5" rendition="#ind">På forsiden er avisens hoved adskilt fra den øvrige tekst af en datolinje. Hovedet har følgende ordlyd:</p>
+              <quote xml:id="id15ab0e6c-cbec-43ea-9e20-2e5b30e47a0c">
+                <p xml:id="id5c8973cb-cb31-4161-adea-eaf3819e1fa9"><pb xml:id="ss309" n="309" edRef="#SKS"/><hi xml:id="id35dd7063-1b07-4feb-a59e-692c74acaee0" rendition="#bol">Fædrelandet.</hi> | <hi xml:id="id07de42a4-fdcb-4ae5-b4ec-2cb259f2dfaa" rendition="#bol">1851.</hi> | Abonnementspris i <placeName xml:id="ida0acc0f1-e653-4734-bc43-a0cac8557425" key="København">Kjøbenhavn</placeName> 15 Mk. pr. Qvartal, 5 Mk. pr. Maaned, enkelte Nr. 6 Sk.; udenfor <placeName xml:id="id036f85a2-8b24-4765-bce4-729bddce3ae5" key="København">Kjøbenhavn</placeName> 3 Rbd. pr. Qvartal frit i Huset. Hver Søgne-Aften udgaaer et Numer. | Bladets Contoir, store <placeName xml:id="idbc761c67-cc30-41b6-a1a7-1ca792dccea2" key="Købmagergade">Kjøbmagergade</placeName> Nr. 54, er aabent om Formiddagen Kl. 11–1.<note xml:id="id3851bc06-d8f2-4cec-98bc-a53a52851c94"><p xml:id="id578f7e6f-177f-42ec-a72d-3937f4c2b094">Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p></note></p>
+              </quote>
+              <p xml:id="id62565dd6-eb59-4a75-8bad-489efc62c93b">Datolinjen er indrammet af to tværgående dobbeltstreger: Den øverste er fed-fin, den nederste fin-fed. Imellem står følgende:</p>
+              <quote xml:id="idbbc03b23-baef-44df-8d08-4ca613ec871b">
+                <p xml:id="idd79faa44-ac31-4bcd-8567-6ddcedc51a8a">
+                  <hi xml:id="id2ca9b8ba-4c4d-43d4-89fa-6f0b38d1da72" rendition="#bol">12<hi xml:id="iddafc3864-2de9-4f29-8852-705870ee2d8b" rendition="#sup">te</hi> Aarg. Fredagen den 31. Januar. Nr. 26.</hi>
+                </p>
+              </quote>
+              <p xml:id="idf7d698fb-6886-469b-ac53-4b6651d371a3">Årgangsnummeret er venstrestillet, datoen centreret, og avisnummeret højrestillet.</p>
+              <p xml:id="id6107cb94-52f9-4ecb-a20f-37ab079f74e6" rendition="#ind">I avishovedet er »Fædrelandet.« centreret og sat med fed egyptienne i en punktstørrelse ca. 12 grader større end brødteksten.<note xml:id="id0e067601-94b2-4815-b970-17c85211ea42"><p xml:id="idebf3a7b6-1380-4802-a8e3-9f1903c6a932">Artiklens brødtekst er sat med punktstørrelse svarende til ca. 10; tekst, der er 1 grad større, er sat med punktstørrelse 12, 2 grader større med punktstørrelse 14, 3 grader større med punktstørrelse 16, og 12 grader større med punktstørrelse 72, mens tekst, der er 1 grad mindre, er sat med punktstørrelse 8, og 2 grader mindre med punktstørrelse 6.</p></note> Under avisnavnet står årstallet centreret med fed i en punktstørrelse ca. 3 grader større end brødteksten. Oplysningerne under årstallet om pris, udgivelsesfrekvens, kontorets beliggenhed og åbningstid er centreret og sat med samme punktstørrelse som brødteksten. I datolinjen er årgangen og avisnummeret sat med fed i en punktstørrelse ca. 2 grader større end brødteksten, mens datoen er sat med fed ca. 1 grad større end brødteksten. Se <ref xml:id="idc862f096-31f9-430d-8513-f24f41847938" target="../YDR/txr.xml#ill_k14" type="figure">illustration 14</ref>. <figure xml:id="ill_k14" rend="recto"><graphic xml:id="id412b6570-b91d-43ff-8e26-25f98ff3df8c" url="../YDR/ill_k14.jpg"/><head xml:id="id1d43e521-d26c-44bf-99ea-491f1a6c25ff">14. <hi xml:id="id2929a09a-adff-43a2-a4e3-5123212be93b" rendition="#ita">Fædrelandet,</hi> nr. 26, den 31. januar 1851, forside, udsnit</head></figure> </p>
+              <p xml:id="id0db5fc8b-8696-47dc-a8d4-1f5fc8291f96" rendition="#ind">Nederst i avisens sidste spalte, adskilt fra en foregående notits af en tværgående skillestreg i kolumnens bredde, står trykketidspunktet:</p>
+              <quote xml:id="id3cddc770-a786-42e3-bece-063154e3a8eb">
+                <p xml:id="id15d21fe5-8c1d-4a46-a94b-fe13d6b1fc58">Færdigt fra Trykkeriet Kl. 7½.</p>
+              </quote>
+              <p xml:id="id66423fa2-ddb2-41d5-b4ea-b847c80b5555">Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående fed-fin dobbeltstreg og har ordlyden:</p>
+              <quote xml:id="id3ece1fce-3333-4e48-9fba-8dcbe529204a">
+                <p xml:id="iddf2556b6-d1d0-466f-b416-8ea92d424a9b">Udgivere: <hi xml:id="id9a75d3a2-b6ca-48b3-a63b-47bed28b3092" rendition="#bol">J. F. <persName xml:id="idbe932750-77a1-42e0-b277-0fced0052de1" key="Giødwad, Jens Finsteen">Giødwad</persName></hi> og <hi xml:id="id41115198-2680-4913-bea8-1404a0e41d97" rendition="#bol"><persName xml:id="id65a88a13-ae18-4656-ac4a-a5d91017bc45" key="Ploug, Carl">C. Ploug</persName>;</hi> ansvarlig: <hi xml:id="id6bcaff30-bb89-4a90-8b2c-dd9c92b73da4" rendition="#bol"><persName xml:id="ide52c60d9-5fe9-4f8f-9b2f-2421a9effde0" key="Ploug, Carl">C. Ploug</persName></hi> | [Skillestreg] | Trykt med Hurtigpresse hos <hi xml:id="idc72d1178-a1e9-43b5-9419-6c13c33a05e4" rendition="#spa"><persName xml:id="id238256a8-2a8e-454e-a44c-ac43fff07b14" key="Klein, Louis">Louis Klein</persName>.</hi></p>
+              </quote>
+              <p xml:id="id3f73db5f-ecd1-475d-8797-d8d20dc8b6d3"><pb xml:id="ss310" n="310" edRef="#SKS"/>Artiklens overskrift »Foranlediget ved en Yttring af Dr. | <hi xml:id="id1b96f179-b550-42a9-a4ae-e00fe802824f" rendition="#spa"><persName xml:id="id3d5068b4-c05b-4010-a10e-827f7593d655" key="Rudelbach, Andreas Gottlob">Rudelbach</persName></hi> mig betræffende.« er centreret i spalten og sat med fed ca. 1 grad større end brødteksten; »Rudelbach« er tillige spatieret. Artiklen indledes af en fed uncial ca. 2 grader større end brødteksten. Fodnoter, der er placeret nederst i spalterne under en kort, venstrestillet streg, er sat ca. 2 grader mindre end brødteksten. Signaturen »S. <persName xml:id="idee37b4db-46fa-4fdc-9ee0-a1b1bbc61c17" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.« er sat med samme punktstørrelse som brødteksten, spatieret og indrykket fra højre.</p>
+              <p xml:id="id43a1e137-cfa3-4815-bdf3-78ef03e7de06" rendition="#ind">Mellem overskrift og brødtekst er sat en kort, vandret skillestreg. En tilsvarende skillestreg deler teksten mellem artiklens indledende citater og den efterfølgende brødtekst. Efter signaturen er sat en lidt længere vandret skillestreg, hvorefter artiklen fortsætter med en tilføjelse. Som afslutning på artiklen er sat en lang, vandret skillestreg. Mellem spalterne er overalt sat en fed, lodret skillestreg.</p>
+              <p xml:id="ide58e5329-78a9-4b4f-93b1-257f29bf33c1" rendition="#ind">Spaltekolumnen måler ca. 87 mm i bredden, og en spalte har op til 107 linjer inklusive artiklens sidste fodnote i den afsluttende spalte. Artiklens brødtekst er sat med en skriftstørrelse svarende til ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum.</p>
+              <p xml:id="idd90c801b-3ad1-4054-aa02-f28f20680f58">Der er flere eksempler på sætter- og trykfejl. En omvendt type findes i »udvortes«, der er sat »ndvortes« (<ref xml:id="id193b7653-3cc8-4c01-89b9-c6ed3b7899db" target="../YDR/txt.xml#ss113" type="publishedWritings" n="113"><hi xml:id="idbeb46458-06ec-4d26-be56-dbec808fc1bd" rendition="#ita">SKS</hi> 14, 113</ref>,46). En forkert type findes i »Christne«, der er sat »Cbristne« (115,19). Der er mange trykfejl i form af læderede typer.<note xml:id="id7ace36b4-3db6-4c08-ada5-83bbbdc26b8f"><p xml:id="idfd24ea38-168b-4d7b-a7fa-a51bfde2474b">Eksempler på læderede typer er: det andet 'i' i »Organisationen« (<ref xml:id="idbfb78543-b3b4-4a75-8492-7a332545c3f0" target="../YDR/txt.xml#ss111" type="publishedWritings" n="111"><hi xml:id="id602a9b2d-8080-463f-870f-bd8015b3fe65" rendition="#ita">SKS</hi> 14, 111</ref>,17), bindestregen i »Vane-Christendom« (111,46), det første 'i' i »Emancipation« (112,24), 'r' i »Reformation« (112,65), det sidste 'e' i »Inderlighed« (112,74), 'r' i »Christendommen« (113,3) og 'r' i »betræffende« (114,25).</p></note> Desuden ses en udfalden type i »har«, der står som »h r« (111,53);</p>
+            </div>
+          </div>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="idfc0353ab-0255-4db5-ad43-7bcc331285d9"><pb xml:id="ss312" n="312" edRef="#SKS"/>2. Manuskriptbeskrivelse</head>
+          <p xml:id="id4be04940-6013-4752-b191-f11d75d2614e">Til »Foranlediget ved en Yttring af Dr. <persName xml:id="id0b09dc23-1d01-4d68-b396-b94e5572caa0" key="Rudelbach, Andreas Gottlob">Rudelbach</persName> mig betræffende« findes følgende manuskripter i Kierkegaard Arkivet (KA) på <placeName xml:id="id03b2e1ed-bb01-4bb8-ae6f-bf908f3aaf0e" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
+          <msDesc xml:id="id44c13157-ae3f-464b-9f53-29961fca31c4">
+            <msIdentifier xml:id="idfd2f3f8c-86f9-45ab-ab20-322422037073">
+              <collection xml:id="idd39d6ab1-41ef-4746-8dce-4433515f80cb">YDR</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.1" next="#additional.1">
+              <msIdentifier xml:id="id6b38ae5d-405f-4ae2-bf6b-7206dbce96a2">
+                <idno xml:id="id1c25a389-b4e9-4459-a03f-9a8de2157b98">1</idno>
+              </msIdentifier>
+              <physDesc xml:id="id94dcb726-9a1b-48ed-8567-024ce970e051">
+                <p xml:id="idfdb5b16a-02d0-414d-a4c1-eedf954bb411">Udkast til »Foranlediget ved en Yttring af Dr. <persName xml:id="idaa2d9960-a18a-4e1c-875e-2011ace6d85f" key="Rudelbach, Andreas Gottlob">Rudelbach</persName> mig betræffende«, fordelt på 1 dobbeltblad, 2 løse blade og 1 løs lap, i alt 4 blade og 1 løs lap.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.1.1" next="#additional.1.1">
+                <msIdentifier xml:id="ide0be0574-04b7-4270-872e-3701d27db56d">
+                  <idno xml:id="idd2952df5-3956-40f8-9ac7-e354b344bc60">1.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id5c7e4b29-cef7-48c5-9ea8-3955443b65f8">
+                  <p xml:id="idf74525ad-ad9f-4965-bd21-a392a4021e17">Udkast til artiklen.</p>
+                  <p xml:id="idbefbf29f-e461-4dad-9e8e-f517a0a87dea">1 dobbeltblad i 4<hi xml:id="id183030da-ac0f-4e24-8fc6-60ea308a460c" rendition="#sup">o</hi>.<note xml:id="id0d504707-a33d-41c0-af69-7b5fa20a8e6f"><p xml:id="id5f4cac9f-9439-4a75-a4f1-e9d8555f3343">Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Irregulære, fx afrevne, enheder betegnes lapper. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p></note></p>
+                  <p xml:id="id4257e6ef-c582-4983-b04c-26cac81e599b">Ingen paginering.</p>
+                  <p xml:id="id5ee1e434-a005-46c9-93f4-cb4a2265e874">Papir: gulligt koncept, glat. Mål: 169 × 202 mm.<note xml:id="id5d0f72f3-bfbc-4841-ab72-54d904e493bf"><p xml:id="idd1f576cc-850a-4ef7-bf64-2dd4b35afb11">Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p></note></p>
+                  <p xml:id="id60277b55-477c-4d11-bb09-d518b9463f66">Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. Bl. [2v] er ubeskrevet.</p>
+                  <p xml:id="id8afa1d5f-8b6f-4be2-8772-8b541b265227">Bl. [1r] indledes med en kort vandret streg.</p>
+                  <p xml:id="id003e2c88-fe8b-43e3-94ea-5258216cbff1">Enkelte korrektioner i form af udstregninger og tilføjelser. En udstregning med blyant findes på bl. [2r].</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.1" prev="#physDesc.1.1">
+                <msIdentifier xml:id="id2be5f304-5226-4d83-8da6-42faf7227aaa">
+                  <idno xml:id="id6ef70f74-6e97-43ad-8dbf-b05e0f8a8526">1.1</idno>
+                </msIdentifier>
+                <additional xml:id="id743851d7-fec0-4e0b-9d1b-826ee148a917">
+                  <adminInfo xml:id="idc3344dd7-e5ca-4463-8cc8-8d6e744877d3">
+                    <note xml:id="idc9941e4b-a834-40f2-9a65-0372446aa4a8">
+                      <p xml:id="id785f48cb-2958-46de-9d62-42602f540a56">(<hi xml:id="id420ab1dd-3227-4ecf-ad46-d6f8504c682d" rendition="#ita">Pap.</hi> X 5 B 124)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.2" next="#additional.1.2">
+                <msIdentifier xml:id="id44e33e2c-d025-4738-9071-e296d9f2ed2f">
+                  <idno xml:id="id5f19052d-a4cf-4591-a3dc-397fc2df159e">1.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="id55880920-193a-49c1-957d-0c1e0e0dc462">
+                  <p xml:id="id6847f299-4cfa-495d-8e97-db0a15e67ba5">Udkast til en ubenyttet slutning.</p>
+                  <p xml:id="id4b077098-5721-4b98-9383-30e1f5e9ebb9">1 løst blad i 4<hi xml:id="id9565cc51-c686-4011-972d-d131ceec444a" rendition="#sup">o</hi>. Uregelmæssigt afrevet, med rester fra dobbeltbladets andet blad.</p>
+                  <p xml:id="idae156573-2c3f-4e4c-95f2-ff835c1352b4">Ingen paginering.</p>
+                  <p xml:id="id1935b270-9326-4b0d-b1b3-7623b78ea7cd">Papir: gulligt koncept, glat. Mål: ca. 170 × 202 mm.</p>
+                  <p xml:id="ide9f0e116-aa4a-46fb-bfbc-852b9942fb6a">Bladet har været foldet midtpå efter beskrivning, en gang på langs og en gang på tværs. Versosiden er beskrevet ca. en tredjedel; siderne har smal venstre- og højremargin.</p>
+                  <p xml:id="id0cdbe35f-e473-4508-aab2-41f1c8fc1aa7">Øverst på rectosiden findes overskriften <hi xml:id="idbd0f4f8c-907f-4f5b-a811-00f29ea39e6a" rendition="#ita">»Slutning«</hi> indrykket og understreget med blyant.</p>
+                  <p xml:id="id67d0f0c3-daae-4949-849e-85cc904666bd">Enkelte korrektioner i form af tilføjelser og udstregninger af enkeltord.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.2" prev="#physDesc.1.2">
+                <msIdentifier xml:id="id2dc41e27-7127-40f9-9f30-efcde9d3b265">
+                  <idno xml:id="idcf3aacae-7c72-4019-8460-b866498243d5">1.2</idno>
+                </msIdentifier>
+                <additional xml:id="id33e0b816-e39c-45fb-9a45-a3571063bfac">
+                  <adminInfo xml:id="idc8889ab7-1138-47dd-a7f2-90076a9e9e4d">
+                    <note xml:id="id9312167b-c0e6-405a-9056-47123823342f">
+                      <p xml:id="id4ba30c44-d8ed-4a21-bed9-755e87e0ea1f">(<hi xml:id="ide16d9f58-5bbd-44d2-8b7b-c1bc9ffbb4ea" rendition="#ita">Pap.</hi> X 5 B 125)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.3" next="#additional.1.3">
+                <msIdentifier xml:id="idbf23f567-a0c5-4564-afe0-cd8328ac4bd8">
+                  <idno xml:id="idddbe84d5-148a-468f-9944-b630c9964e6e">1.3</idno>
+                </msIdentifier>
+                <physDesc xml:id="id89bd31a9-f782-417d-ba39-2f51a2782b99">
+                  <p xml:id="idf7cf2655-68b5-41e7-b856-b1b899fb698d"><pb xml:id="ss313" n="313" edRef="#SKS"/>Ubenyttet udkast til et stykke af artiklen.</p>
+                  <p xml:id="iddcabf85c-46df-44e6-859c-619bdb8d3e43">1 løs lap. Lappen har to uregelmæssigt afrevne kanter.</p>
+                  <p xml:id="idcaaa5b0b-c172-49e6-9cd5-12716e2e1d8c">Ingen paginering.</p>
+                  <p xml:id="ida9140556-a627-4f90-8ac6-85caff97ef4f">Papir: gulligt koncept, glat. Mål: ca. 170 × 144 mm.</p>
+                  <p xml:id="id1f4baa94-24ca-426a-bbff-e9f919a2408c">Lappen har været foldet en gang på tværs efter beskrivning. Den ene side af lappen er beskrevet i næsten hele dens bredde. Den anden side er ubeskrevet.</p>
+                  <p xml:id="idfa6b9082-59aa-4db1-a0e8-6cb0737ca56f">Få korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.3" prev="#physDesc.1.3">
+                <msIdentifier xml:id="id32a1e5f1-37af-4bc6-b284-e331adcc7ad0">
+                  <idno xml:id="id0afa22cd-f34a-4b20-88ed-41a8f71d3d9a">1.3</idno>
+                </msIdentifier>
+                <additional xml:id="id67b2568d-c693-418a-8444-d436bbbf67b5">
+                  <adminInfo xml:id="id474c8fb6-17df-4031-92e1-e8ddb0beadfe">
+                    <note xml:id="id92e4d789-802c-44dc-a0f7-1a13d31830de">
+                      <p xml:id="idf9e59f5c-7993-42e0-aaf7-7006ab22d175">(<hi xml:id="id12090732-f1b7-4274-9170-ed133185ee3d" rendition="#ita">Pap.</hi> X 5 B 126)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.4" next="#additional.1.4">
+                <msIdentifier xml:id="id221e41d7-483b-466a-a220-e0a918828a27">
+                  <idno xml:id="idd0f679dc-81eb-4aea-83d6-0ca7634d29e8">1.4</idno>
+                </msIdentifier>
+                <physDesc xml:id="id1bd4aef2-79f6-4569-abc6-45221cca73dc">
+                  <p xml:id="id30f0f7ed-986a-47a3-ba13-8e0869536375">Udkast til artiklen.</p>
+                  <p xml:id="idaaf524e7-79f7-4508-a364-63286b240f15">1 løst blad i 4<hi xml:id="id4611c965-03b2-4473-ae82-a62bbf3c7350" rendition="#sup">o</hi>. Bladets højre kant er uregelmæssigt afrevet.</p>
+                  <p xml:id="id03a6aff3-753a-4a76-bd91-867509eaa92f">Ingen paginering.</p>
+                  <p xml:id="idca0a7b81-88f6-45f3-b61c-d1940d35b771">Papir: blåligt koncept, groft. Mål: ca. 169 × 209 mm.</p>
+                  <p xml:id="idc7506fa4-5c24-41f1-a03b-16b17db47720">Den løbende tekst begynder på bl. [1r] og slutter efter 6 linjer på bl. [1v]; nederst på bl. [1v] findes en længere tilføjelse. Siderne har smal venstre- og højremargin. Bladet har været foldet en gang på langs og en gang på tværs efter beskrivning.</p>
+                  <p xml:id="id5bd50ff4-1b7b-40ee-b512-76053542273a">Øverst på bl. [1r] er et dobbeltkors skrevet med blyant. Derover findes en tilføjelse skrevet med blæk med et indvisningstegn i blyant. Samme indvisningstegn med blyant findes i hovedteksten. Umiddelbart derefter i hovedteksten er sat en blyantparentes omkring 4 linjer; tekststedet er tillige markeret i højre margin med en blyantstreg. Efter blyantparentesen findes et blyantkryds, der indviser en tilføjelse skrevet på langs i højre margin. En tilføjelse indvist med blækkors er skrevet på langs og fylder omtrent to tredjedele af venstre margin; tilføjelsen er fortsat ovenfor i den øverste tredjedel af venstre margin og indvist i det foregående med et tegn i rødkridt; tilføjelsen er yderligere fortsat oven over hovedteksten og indvist i det foregående med et tegn i rødkridt. Nederst på siden findes et indvisningstegn i rødkridt, der indviser en tilføjelse fra bl. [1v] med samme tegn i rødkridt. Se <ref xml:id="id065e8936-ea23-4e39-b2a7-5e09ffb44fa8" target="../YDR/txr.xml#ill_k15" type="figure">illustration 15</ref>. <figure xml:id="ill_k15" rend="recto"><graphic xml:id="id2cf37d6e-dd67-4773-a1cd-710c2c498a6e" url="../YDR/ill_k15.jpg"/><head xml:id="idca0a307d-7d51-463a-a469-8dcffbfe0708">15. Ms. 1.4, bl. [1r], udkast med tilføjelser</head></figure> </p>
+                  <p xml:id="id5a203c5c-9bb2-4954-8f03-a4dd9e67fbc4">En del korrektioner. På bl. [1r] er de 8 første linjer slettet med et stort blyantkryds. Nederst på siden er halvanden linje slettet med blyantstreger. På bl. [1v] er hovedtekstens 6 linjer slettet med et stort blyantkryds; tilføjelsen nederst på siden er slettet tilsvarende.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.4" prev="#physDesc.1.4">
+                <msIdentifier xml:id="id47600443-b10b-4e65-8059-f2807d7bc9a3">
+                  <idno xml:id="id1b0f2122-a48c-43a5-adc1-28410a083d45">1.4</idno>
+                </msIdentifier>
+                <additional xml:id="id8f757c9f-5afd-4e5a-aece-3ac3cce41e57">
+                  <adminInfo xml:id="id4481ac46-3e32-4cf8-9430-2d47826aefea">
+                    <note xml:id="id6e58d1b6-b8b3-4754-8ae5-ec5c87e251dd">
+                      <p xml:id="id8e5f6de6-6fb8-4c59-bb26-fa02cd5892b8">(<hi xml:id="iddc36be08-a612-4a69-af99-90eb2931997b" rendition="#ita">Pap.</hi> X 5 B 127)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.1" prev="#physDesc.1">
+              <msIdentifier xml:id="id8205622b-dc31-4da1-8fc1-7b79f64f6537">
+                <idno xml:id="idd909f747-4f45-4407-ba76-a0d199aea14d">1</idno>
+              </msIdentifier>
+              <additional xml:id="ida8d11e8a-0beb-4486-a2d8-1da3f8919188">
+                <adminInfo xml:id="id4e8ed37f-7a27-44be-8034-b2611eed2b77">
+                  <note xml:id="id4f93ab63-19df-4df3-a417-ff5509018102">
+                    <p xml:id="id91b06900-e84e-48e4-80a5-6c1311b0f51c">(KA, B pk. 45; <hi xml:id="id317b834e-297e-4ef8-a8aa-2afc58a1f21b" rendition="#ita">Pap.</hi> X 5 B 124-127)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.2" next="#additional.2">
+              <msIdentifier xml:id="iddcfe20bc-bd4d-4224-a8b2-f3af4576f6e4">
+                <idno xml:id="idbf0bf924-133e-4f83-ba16-8dee29a69ae1">2</idno>
+              </msIdentifier>
+              <physDesc xml:id="ide5813e77-a1d6-4492-8e42-bdd0b0dad08e">
+                <p xml:id="id596e733f-ad0b-40e9-b3e3-1e319c9538c4"><pb xml:id="ss314" n="314" edRef="#SKS"/>Renskrift af »Foranlediget ved en Yttring af Dr. <persName xml:id="id0c5968df-c458-413a-bc33-628a2312add0" key="Rudelbach, Andreas Gottlob">Rudelbach</persName> mig betræffende« og tilføjelser til renskriften, fordelt på 8 løse blade og 1 lap. Renskriften har været benyttet som trykmanuskript.<note xml:id="id2792597e-2da4-4348-9a56-ab4267f7365b"><p xml:id="id911a96e9-e422-4c7d-bffa-27d6b6300885">På s. 1 findes en sætterbemærkning skrevet med blyant: »gl B / Anmærkningerne med Petit«. Enkelte steder i ms. findes lette spor efter sætterfingre.</p></note></p>
+              </physDesc>
+              <msPart xml:id="physDesc.2.1" next="#additional.2.1">
+                <msIdentifier xml:id="id57e32a51-eb01-484b-8efb-94aa07fcea90">
+                  <idno xml:id="id990fa9bb-9b6d-44f7-a4f2-10068baaa2e4">2.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id923c4bad-867a-4a7b-89a8-190cae69e463">
+                  <p xml:id="id1310249f-05b3-44d5-a7a3-7d65f4e71a93">Renskrift af artiklen.</p>
+                  <p xml:id="id1311a3d1-5c15-4559-8bb5-f827f3dca06c">6 løse blade i 4<hi xml:id="id28d35f16-3ce5-4d54-a32f-527f64c6041d" rendition="#sup">o</hi>.</p>
+                  <p xml:id="id0a08e2aa-82b1-4d10-a4ea-0f5c821752a1">Bladene er med blyant pagineret 1-11, idet bl. [2v] er uden paginering og i øvrigt ubeskrevet.</p>
+                  <p xml:id="id5dd274e8-51fd-42ed-aa84-684ef9fbc99e">Papir: gulligt koncept, glat. Mål: 169 × 202 mm.</p>
+                  <p xml:id="idca31053e-4fbf-4e5b-93f8-4bdb27f227d4">Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. Har yderligere været foldet en gang på langs efter beskrivning.</p>
+                  <p xml:id="id24c50429-680a-42ea-80fa-5e9631f5b90b">S. 1 har overskriften »Foranlediget ved en Yttring af <hi xml:id="idd8478dbe-5ef2-4f17-be69-bfa4a4626e0f" rendition="#ant">Dr. <persName xml:id="id05624a42-9b17-46c1-9591-0618b894102e" key="Rudelbach, Andreas Gottlob">Rudelbach</persName></hi> / mig betræffende.«. Efter »Yttring« er sat et indvisningstegn; nederst på siden findes det tilsvarende indvisningstegn ud for en anmærkning. Nederst i marginen på s. 7 findes signaturen <hi xml:id="id5cd5827e-6c95-4789-b955-4430a1550116" rendition="#ant">»S. <persName xml:id="id7b83b729-eea1-45ee-b79b-fbd39315e169" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.«.</hi></p>
+                  <p xml:id="id8d55c5f7-196b-4a02-94a8-dce72eafbb49">På s. 1 er en skillestreg indsat i den løbende tekst, og s. 8 indledes tilsvarende med en skillestreg. En anmærkning i hovedspalten på s. 1 og en på s. 2 er adskilt fra hovedteksten med en tynd skillestreg.</p>
+                  <p xml:id="idfb06e599-dc17-4b9f-ad87-1fa58e81c21d">To indvisningstegn med blyant og fire med rødkridt findes på s. 6, to med rødkridt findes på s. 11. Ud for det ene på s. 11 står henvisningen <hi xml:id="ideb7bb46d-2507-4b51-8bad-fc0a3b4b0a11" rendition="#ant">»cfr Hoslagte«</hi> refererende til ms. 2.1.1.</p>
+                  <p xml:id="id3f5b446b-9525-4b0c-bb34-a8773b5893f3">Mange korrektioner i form af udstregninger og tilføjelser. På s. 1 og 2 er en lang marginaltilføjelse blevet slettet med to blyantkryds, desuden er den sidste halvanden linje på s. 1 og de første to linjer på s. 2 slettet med skrå blyantstreger. På s. 5 er to tilføjelser, hhv. i marginen og nederst på siden, og på s. 6 en del af en marginaltilføjelse slettet med indrammede blyantkryds. På s. 6 er fem linjer slettet med blyant, og på s. 10 er i alt seks linjer slettet med blyant.</p>
+                  <p xml:id="iddd91c8bb-b4a8-40f9-baea-63386ec47d25">(<hi xml:id="id1cf94152-09ea-419d-b0b3-1f8ac08942ed" rendition="#ita">Pap.</hi> X 5 B 121)</p>
+                  <p xml:id="id710fa4be-f671-4bfb-be52-b7b3155435a2">Hertil hører følgende:</p>
+                </physDesc>
+                <msPart xml:id="physDesc.2.1.1" next="#additional.2.1.1">
+                  <msIdentifier xml:id="id1236af4e-100f-47c1-adae-2c3134e7ac88">
+                    <idno xml:id="id660fa91e-5720-438a-a3e3-0285e6efaa01">2.1.1</idno>
+                  </msIdentifier>
+                  <physDesc xml:id="idfaee699e-5a4e-402e-970c-15d451a78548">
+                    <p xml:id="idb36a9af7-1538-45c9-a595-c87f115601c7"><pb xml:id="ss316" n="316" edRef="#SKS"/>Tilføjelse til renskriften (<ref xml:id="idbac4014f-a9e8-4f49-9e86-a7325c4f5f6d" target="../YDR/txt.xml#ss115" type="publishedWritings" n="115"><hi xml:id="idb30811c0-ce35-4740-ab16-95a9bb3f6187" rendition="#ita">SKS</hi> 14, 115</ref>,36-116,37, dvs. noten).</p>
+                    <p xml:id="idc0d17ae6-4781-4108-86eb-2244a4da1f57">1 løst blad i 4<hi xml:id="id888b20ef-0f9f-4cce-910e-2700ccc1c2e4" rendition="#sup">o</hi>. Bladets højre kant er uregelmæssigt afrevet.</p>
+                    <p xml:id="id8bb27c76-bc04-4563-bd39-3b05cce39b01">Ingen paginering.</p>
+                    <p xml:id="idb1b7f3a7-b8ce-407a-bbd0-f7a5a85d11fd">Papir: gulligt koncept, glat. Mål: 167 × 202 mm.</p>
+                    <p xml:id="id77b650ff-5625-479d-a3d8-cc2473e63374">Bladet er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. Har yderligere været foldet en gang på langs efter beskrivning.</p>
+                    <p xml:id="iddd3d324d-8f0c-4ab4-8c8b-175ad97f36d0">Øverst på rectosiden ses et dobbeltkors i rødkridt og påskriften <hi xml:id="id0bd01c3a-cb04-46c0-9a51-e6d7c993f931" rendition="#ant">»ad pag 11«,</hi> der er skrevet med blyant og refererer til s. 11 i ms. 2.1.</p>
+                    <p xml:id="id9b32bfb5-372a-460c-8186-f0801a85ac1b">Enkelte korrektioner i form af udstregninger og tilføjelser.</p>
+                  </physDesc>
+                </msPart>
+                <msPart xml:id="additional.2.1.1" prev="#physDesc.2.1.1">
+                  <msIdentifier xml:id="id78e59051-6543-4af4-b733-b8e0d91b1842">
+                    <idno xml:id="idf56d9b37-cc9a-4af6-95a0-8d6ce000a56c">2.1.1</idno>
+                  </msIdentifier>
+                  <additional xml:id="idb948d6bf-4e4e-4618-8f61-b7379ce611cf">
+                    <adminInfo xml:id="id60fa184e-e162-4462-950b-ab1d9a73f84b">
+                      <note xml:id="id093725f9-6040-48d9-8720-184ae99794ac">
+                        <p xml:id="ida0872007-b0c3-4213-9d4b-26a77d38a4db">(<hi xml:id="iddb60c1ed-1d1c-4b61-a6d6-9efd7fa10ad0" rendition="#ita">Pap.</hi> X 5 B 121,13)</p>
+                      </note>
+                    </adminInfo>
+                  </additional>
+                </msPart>
+              </msPart>
+              <msPart xml:id="additional.2.1" prev="#physDesc.2.1">
+                <msIdentifier xml:id="id66205462-7697-4971-8809-cf1ec7c727db">
+                  <idno xml:id="id4f4ae517-40f4-4e24-bf53-006985af3961">2.1</idno>
+                </msIdentifier>
+                <additional xml:id="idbe0af484-d8b6-4632-be86-4331bdd1c09e">
+                  <adminInfo xml:id="id0ce2e49b-7f14-4006-96ef-60911d425376">
+                    <note xml:id="id3d3d26de-820c-4bbe-9c74-70a15e3d1913"/>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.2.2" next="#additional.2.2">
+                <msIdentifier xml:id="id2ce64ad5-5244-4acb-b966-46c383d3c038">
+                  <idno xml:id="id46137354-a28f-4f69-bd09-865934a025c9">2.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="id48d8246d-1149-4ffc-996a-cdd3ea7f239a">
+                  <p xml:id="idda11b3a5-ce5b-4a60-b7de-59a275bd1796">Renskrift af en ubenyttet tilføjelse.</p>
+                  <p xml:id="idd51cc9a6-4f67-423b-a5be-6906148c8618">1 løst blad i 4<hi xml:id="idef82869d-4eb2-4f94-b60f-2c72c9cdf303" rendition="#sup">o</hi>. Uregelmæssigt afrevet venstrekant.</p>
+                  <p xml:id="id029f053c-3e2c-4478-aa56-8e2ea9474e43">Ingen paginering.</p>
+                  <p xml:id="id90642217-981f-40dd-890b-741b101aa29b">Papir: gulligt koncept, glat. Mål: 170 × 202 mm.</p>
+                  <p xml:id="idf110b9e8-2247-46c8-ac69-6c56e7e80425">Bladet har været foldet en gang på langs og en gang på tværs efter beskrivning. Bl. [1r] er beskrevet i næsten hele sidens bredde. Bl. [1v] er ubeskrevet.</p>
+                  <p xml:id="id318e2810-7d02-42ac-a494-3c6e4871ce5b">Enkelte korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.2.2" prev="#physDesc.2.2">
+                <msIdentifier xml:id="ida389327c-a639-4400-a1fb-e80d674f1bab">
+                  <idno xml:id="idd37bb3d3-0093-475a-b3f4-7d7c973120f5">2.2</idno>
+                </msIdentifier>
+                <additional xml:id="id28799a6b-d2a4-4683-ac3d-1d87f2885a56">
+                  <adminInfo xml:id="id98b8a400-1ed9-4e7e-81d4-e9bab40f4e08">
+                    <note xml:id="id8ae387ec-cffc-4132-b01a-c0f78830fcda">
+                      <p xml:id="id03735426-a346-427d-b29d-460a4876a424">(<hi xml:id="ida5a562ab-e4e0-43f2-8ef5-d321050fdca2" rendition="#ita">Pap.</hi> X 5 B 122)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.2.3" next="#additional.2.3">
+                <msIdentifier xml:id="idbc662f30-84fb-4145-9197-dca126358499">
+                  <idno xml:id="id4c34015c-e449-4217-b950-0e2cc2793c7c">2.3</idno>
+                </msIdentifier>
+                <physDesc xml:id="id1325b5be-a264-4e02-85fe-c563fa42ef43">
+                  <p xml:id="id8d384e00-be07-4d4c-9355-13a907d82147">Renskrift af en ubenyttet tilføjelse.</p>
+                  <p xml:id="idafe6c602-d046-4fc3-8193-5dc634f36e6c">1 løs lap. To uregelmæssigt afrevne kanter.</p>
+                  <p xml:id="id0ed59f20-12c3-499a-958f-031bc09b10b1">Ingen paginering.</p>
+                  <p xml:id="idc3c47ed4-f95a-4d91-8e9a-fb9406d07a0a">Papir: gulligt koncept, glat. Mål: ca. 170 × 89-103 mm.</p>
+                  <p xml:id="id11f673db-29cf-47f3-b4d7-43dd745e829e">Lappen har været foldet en gang på tværs. Halvdelen af lappens ene side er beskrevet. Den anden siden er ubeskrevet.</p>
+                  <p xml:id="id3e6ca0ab-395f-41fb-8167-6f8abeb76c7b">En enkelt korrektion.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.2.3" prev="#physDesc.2.3">
+                <msIdentifier xml:id="id6a80cb12-5e15-4985-a994-8af3f9356bb4">
+                  <idno xml:id="idba841835-8195-4fda-a7d8-216548ca2af7">2.3</idno>
+                </msIdentifier>
+                <additional xml:id="id168cc6a2-a7e6-4225-a248-1615cb080e1a">
+                  <adminInfo xml:id="idf94b389f-d099-4cc4-8a14-d328515043cc">
+                    <note xml:id="id773461c5-7d0f-4dae-b258-d0f5dcd93555">
+                      <p xml:id="id17d750bd-dcbf-48e1-8185-dd1b6a625151">(<hi xml:id="idd163fc71-387e-44bd-8351-954b01256a84" rendition="#ita">Pap.</hi> X 5 B 123)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.2" prev="#physDesc.2">
+              <msIdentifier xml:id="id77da13be-0dcf-4140-bda4-14a2210080b2">
+                <idno xml:id="id8101f1b8-d3b6-40a0-95ad-b3fd59540ac2">2</idno>
+              </msIdentifier>
+              <additional xml:id="ide313f626-acde-4522-b489-4ddd0c22c4ab">
+                <adminInfo xml:id="iddee06fc0-3195-4e6d-8c2c-c84dcff2c6b5">
+                  <note xml:id="id520f0cd8-fcda-4798-ae6d-eb996e5ed3d4">
+                    <p xml:id="id8e3e05b3-f452-4c19-b4b6-22cf42733227">(KA, B pk. 45; <hi xml:id="idd5c7e70b-71c4-4c06-8943-504485f30cd3" rendition="#ita">Pap.</hi> X 5 B 121-123)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.3" next="#additional.3">
+              <msIdentifier xml:id="id10a72506-634c-4843-9d7f-0d7001c1ed81">
+                <idno xml:id="id83b65c88-45cb-4e10-8ea7-82b8ab667881">3</idno>
+              </msIdentifier>
+              <physDesc xml:id="ide8f53ec6-eeb1-46fb-bccb-9a36380bd1ac">
+                <p xml:id="ida050530a-7bfe-44d7-ba96-4a2bcc28208c">Omslag til artiklen.</p>
+                <p xml:id="id29762c9e-2e1c-4c70-97b6-2b7abdd1fcd3">1 løst blad i 2<hi xml:id="idf883a0fd-03e3-4c5c-8ec1-2bcce6d4ebfc" rendition="#sup">o</hi>.</p>
+                <p xml:id="id857f7b21-14b5-4298-bbdd-0983eb7a7027">Ingen paginering.</p>
+                <p xml:id="idac232b37-663e-4e9a-b55b-9260cdaf4114">Papir: blåligt koncept, groft. Mål foldet: ca. 220 × 209 mm.</p>
+                <p xml:id="id7588931f-3cf1-40d6-870a-39afac859f5f"><pb xml:id="ss317" n="317" edRef="#SKS"/>Omslaget har været foldet to gange på tværs og en gang på langs.</p>
+                <p xml:id="id92b536e7-bf18-4da0-8887-494950e342e6">Omslaget bærer påskriften: »Artiklen om <persName xml:id="id05220c58-f2e2-41fc-9bdc-1482dde7a2d0" key="Rudelbach, Andreas Gottlob">Rudelbach</persName> / Deri en en [sic] Deel, som ikke blev brugt, / men som kan have sin Betydning.«.</p>
+                <p xml:id="ideeb621ce-5fd6-457b-ae52-22275d60fdca">Ingen korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.3" prev="#physDesc.3">
+              <msIdentifier xml:id="id1df1dec2-6b93-4fc5-a317-3eb782d810a1">
+                <idno xml:id="idd590960d-1476-4aae-a157-9d212b54308f">3</idno>
+              </msIdentifier>
+              <additional xml:id="id53336b4c-055a-40a5-bb24-7e7b72b6407a">
+                <adminInfo xml:id="id9b8437ed-93b9-4258-85c8-508f935f3103">
+                  <note xml:id="id7ce8084c-3630-4786-b3be-58db8f985092">
+                    <p xml:id="id11cd5553-5481-42cf-afd3-ed96df1b1613">(KA, B pk. 45; <hi xml:id="ida05c50cc-7098-4d19-bd25-8c6172abc042" rendition="#ita">Pap.</hi> X 5 B 120)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+          <p xml:id="id1b6f77ca-fe78-4897-bffa-b9aabd6b2b3b">(<hi xml:id="id5a4f6a15-7e4e-422e-83c6-6b12cb0db771" rendition="#ita">L-fort.</hi> + <hi xml:id="ida82fe893-9a2b-4a61-a57b-82975fba8cb9" rendition="#ita">B-fort.</hi> 319; KA, B pk. 45; <hi xml:id="ideebaebf3-9b75-4b9f-9360-1c87739b10f1" rendition="#ita">Pap.</hi> X 5 B 120-127)</p>
+        </div>
+        <div type="level1" xml:id="k3">
+          <head xml:id="id5464896e-8c5c-4208-8f7b-292d069ce2c5">3. Tilblivelseshistorie</head>
+          <p xml:id="id5e2b58c9-d3ff-41d4-bb8c-e0be9c85f274">Årsagen til at SK skriver »Foranlediget ved en Yttring af Dr. <persName xml:id="id15d28669-f1e4-4396-82a4-205a409de3a1" key="Rudelbach, Andreas Gottlob">Rudelbach</persName> mig betræffende« skal findes i note 121 i <persName xml:id="id42ae86bb-0f6d-4362-8f7a-572d00162137" key="Rudelbach, Andreas Gottlob">A.G. Rudelbach</persName>s bog <hi xml:id="id0a997274-52b3-4f9c-9c7c-9dcb40817228" rendition="#ita">Om det borgerlige Ægteskab,</hi> hvor han belægger sine ord ved at henvise til SK.<note xml:id="idea3524d4-15bf-4dcc-96d8-59a01e28bc2e"><p xml:id="id48f4fae7-3b6f-4ccc-bd7e-345207cbdebf">Jf. <persName xml:id="id8348f7ce-96cd-46f7-8b64-4d2dabf39ab8" key="Rudelbach, Andreas Gottlob">A.G. Rudelbach</persName> <hi xml:id="id3f8f72fe-2190-4f47-8afa-7b00d4543ff1" rendition="#ita">Om det borgerlige Ægteskab. Bidrag til en alsidig, upartisk Bedømmelse af denne Institution, nærmest fra Kirkens Standpunkt,</hi> <placeName xml:id="id24ebe0bc-0382-4933-88db-6c425465eac7" key="København">Kbh.</placeName> 1851, ktl. 752, s. 70.</p></note></p>
+          <p xml:id="id830ad00e-438d-436b-91b6-5ca67bab05aa" rendition="#ind">Manuskriptmaterialet til artiklen er udateret, men <persName xml:id="iddde8699c-a9ca-4e82-a9ec-d286726ce242" key="Rudelbach, Andreas Gottlob">Rudelbach</persName>s bog blev averteret som udkommet i <hi xml:id="idf8c24b41-9bc3-4ae9-a61f-09f16af4ae56" rendition="#ita">Adresseavisen,</hi> nr. 19, den 23. jan. 1851. SK har altså skrevet sin artikel på et tidspunkt mellem den 23. og den 31. jan. 1851, hvor den blev trykt i <hi xml:id="idb3ba0ccc-9877-4640-bed7-092552fd3910" rendition="#ita">Fædrelandet.</hi></p>
+          <p xml:id="id8e810ee4-a36d-4972-a627-aca5456fd111" rendition="#ind"><persName xml:id="id7ba3e2e6-ce51-481d-886b-d77963d73d57" key="Rudelbach, Andreas Gottlob">Rudelbach</persName> var ikke SK ubekendt, som det også nævnes i artiklen. SK ejede en del af hans bøger, og <persName xml:id="idb42d0e90-a069-4a52-9727-3da94a17eb52" key="Rudelbach, Andreas Gottlob">Rudelbach</persName> er ofte nævnt i SKs optegnelser<note xml:id="idc2358629-15c7-45a8-8159-15788b010ac6"><p xml:id="idbba23395-4d13-48da-89be-09718dcdd869">I <ref xml:id="ida45bba6d-bca4-4182-be18-9c5a68c7d730" target="../NB23/txt.xml" type="journalsAndPapers">journalen NB23</ref> (<hi xml:id="idd3e679fc-6be1-4a05-9d8d-874e303f7f8e" rendition="#ita">SKS</hi> 24, 203-316), der er påbegyndt den 22. jan. 1851, altså nogenlunde samtidig med, at SK skrev på »Foranlediget ved en Yttring af Dr. <persName xml:id="idca7f01f0-6e60-465b-b771-386b79d104c2" key="Rudelbach, Andreas Gottlob">Rudelbach</persName> mig betræffende«, nævnes <persName xml:id="id1d4cfd0c-0b03-401f-be90-7eb56af0a277" key="Rudelbach, Andreas Gottlob">Rudelbach</persName> flere steder, jf. <ref xml:id="ide6d1d3d9-1205-413b-acbf-e81aa6c9ab5d" target="../NB23/txt.xml#n36" type="journalsAndPapers" n="36.a">NB23:36.a</ref>, <ref xml:id="idbd2d6ecb-59df-4d9c-a2cf-faf862434ffd" target="../NB23/txt.xml#n77" type="journalsAndPapers" n="77">NB23:77</ref>, <ref xml:id="id9912e0aa-e378-465d-8595-ae4e5a84e74a" target="../NB23/txt.xml#n98" type="journalsAndPapers" n="98">NB23:98</ref>, <ref xml:id="id2e489234-2c7d-44c7-9332-24266961402c" target="../NB/txt.xml#n23" type="journalsAndPapers" n="23">NB:23</ref>:115 og <ref xml:id="id78fb7efb-4753-4874-99ee-1fe973481c99" target="../NB23/txt.xml#n180" type="journalsAndPapers" n="180.b">NB23:180.b</ref>.</p></note> – således i <ref xml:id="idcb7ea036-766b-43e0-92e1-ba5e9f3a2680" target="../NB12/txt.xml#n117" type="journalsAndPapers" n="117">NB12:117</ref> fra omkring den 31. aug. 1849:</p>
+          <quote xml:id="id06c7bfd5-f739-4a31-89f0-7ed8c3ffbd21">
+            <p xml:id="iddf0f4a4e-5599-4462-998a-ef2cc1621dd6" rendition="#ind">Nu skal man da formodentlig til at reformere Kirken; der skal saa holdes Synoder, balloteres o: s: v:</p>
+            <p xml:id="idd1146435-2aec-446d-9157-6a4426fe881c" rendition="#ind">Selv de strengeste Orthodoxe selv <persName xml:id="id89234f62-a78e-42b7-99d3-388086cecd1e" key="Rudelbach, Andreas Gottlob">Rudelbach</persName> synes at ville indtage den Stilling, at forholde sig ligefrem til alt Dette, og gjøre hvad han kan for at det da saa maa blive saa orthodoxt som muligt.<note xml:id="id9fee6b78-d151-4f01-a710-9a98f77f3512"><p xml:id="idcb40d4fe-da5f-4745-b4a8-e4df7cdafda4"><ref xml:id="idaaa5d293-51b1-4582-9ee1-ea00f736ed45" target="../NB12/txt.xml#ss210" type="journalsAndPapers" n="210"><hi xml:id="idfe2b0d2e-b388-4b9d-bf3f-ae572de06711" rendition="#ita">SKS</hi> 22, 210</ref>,10-14. SK sigter i sin omtale af <persName xml:id="id92e10370-9a26-464c-936a-4055037a638c" key="Rudelbach, Andreas Gottlob">Rudelbach</persName> til dennes bog <hi xml:id="id6e8be669-5cda-404f-9093-5e9e1a580336" rendition="#ita">Den evangeliske Kirkeforfatnings Oprindelse og Princip, dens Udartning og dens mulige Gjenreisning fornemmelig i <placeName xml:id="idbcb87cd6-8b2e-4ebd-9838-faa2fa0e22cd">Danmark</placeName>. Et udførligt kirkeretligt og kirkehistorisk Votum for virkelig Religionsfrihed,</hi> <placeName xml:id="idc0f62f6f-ce6e-41ed-87e2-afa71c6847c3" key="København">Kbh.</placeName> 1849, ktl.171.</p></note></p>
+          </quote>
+          <p xml:id="id0880864b-99c3-4619-b566-cd3fce2fb1a9" rendition="#ind"><pb xml:id="ss318" n="318" edRef="#SKS"/>Af det foreliggende manuskriptmateriale har ms. 1.1 ikke fundet direkte anvendelse i den senere artikel, men emnemæssigt er der en vis lighed mellem dette ms. og det afsnit midtvejs i den trykte artikel, som begynder: »At en Politiker troer paa« (<ref xml:id="idc028d5df-f43e-4353-8ce0-405dafca05cd" target="../YDR/txt.xml#ss113" type="publishedWritings" n="113"><hi xml:id="id122eb2c6-4451-4e27-b255-a0e572d2f2fb" rendition="#ita">SKS</hi> 14, 113</ref>,34). Et udkast til en slutning på artiklen findes i ms. 1.2, men det er heller ikke blevet anvendt i den endelige artikel. Det samme gør sig gældende med den lap, der udgør ms. 1.3, hvis tekst drejer sig om menneskets forhold til idealerne. Ms. 1.4 er derimod meget lig de første afsnit efter det indledende citat i den trykte artikel inklusive artiklens anden note (<ref xml:id="id82b7516f-d951-4d8c-9f11-7542180db1b9" target="../YDR/txt.xml#ss111" type="publishedWritings" n="111"><hi xml:id="idb006085e-61bc-4f78-bb41-48feac8789b2" rendition="#ita">SKS</hi> 14, 111</ref>,38-112,82, dvs. afsnittet fra »Jeg er en Hader« til og med »Udvortes« samt noten, der begynder i <ref xml:id="id3039f3d8-e354-493d-aec9-8a9516a1d9cf" target="../YDR/txt.xml#ss111" type="publishedWritings" n="111"><hi xml:id="id6234d5dc-12a6-4d53-b684-28eceb8385e9" rendition="#ita">SKS</hi> 14, 111</ref>,34). Kortere passager fra dette manuskript er, i visse tilfælde ordret, andre gange omskrevet, at finde i den trykte artikel, men ikke nødvendigvis i den rækkefølge, hvori de er indordnet i manuskriptet. Som det fremgår af manuskriptbeskrivelsen, er ms. 1.4 en noget uoverskuelig affære med mange tilføjelser på tværs af den vanlige skriveretning. Af det bevarede kladdemateriale er ms. 1.4 det, som ligner renskriften mest, dog uden at kunne betragtes som et direkte forlæg; snarere er det et idéudkast.</p>
+          <p xml:id="id764b4d5d-fb43-4ba2-8cc6-0d967d1ed085" rendition="#ind">I ms. 2.1, renskriften, findes en hel del korrektioner og tilføjelser og desuden en selvstændig anmærkning, ms. 2.1.1, der genfindes som den endelige artikels sidste note (<ref xml:id="id881fbdf8-7496-4ec0-8eed-8ac8123e2ee0" target="../YDR/txt.xml#ss115" type="publishedWritings" n="115"><hi xml:id="id639fdf7a-0b71-4cd4-9304-0e6a9606d28f" rendition="#ita">SKS</hi> 14, 115</ref>,36). SK har altså først fået artiklens form og indhold på plads i den foreliggende renskrift. Det tyder på, at han har arbejdet med teksten indtil tæt på trykketidspunktet. Ms. 2.2 er en renskrift til den tilføjelse, der begynder på s. 1 og fortsætter om på s. 2 i ms. 2.1. I ms. 2.1 er tilføjelsen dog senere slettet med blyant. Den løse lap, der udgør ms. 2.3, er en renskrift til en tilføjelse på s. 5 i ms. 2.1; denne tilføjelse er dog også slettet med blyant.</p>
+          <p xml:id="iddba59da6-529c-4775-8fd0-37769d1c8fba" rendition="#ind">De mange forkastede tekststykker har imidlertid ikke skullet henligge i glemsel, hvorfor SK på omslaget til manuskripterne, ms. 3, har anført, at deri er »en Deel, som ikke blev brugt, men som kan have sin Betydning.«.</p>
+          <p xml:id="id5f6ad23d-a6f2-43fd-aa20-b747e8798cee" rendition="#ind"><persName xml:id="id051ca545-733e-4d3e-9f1a-61728fdb1851" key="Rudelbach, Andreas Gottlob">Rudelbach</persName> var ikke sen til give svar på SKs artikel. I <hi xml:id="idcf69215f-db89-4527-995c-de78ec7c4284" rendition="#ita">Fædrelandet,</hi> nr. 37 og 38, hhv. den 13. og 14. feb. 1851, blev hans dobbeltartikel »Afnødt Erklæring om et personligt Punkt og tillige om Betydningen af 'Kirkens frie Institutioner'« bragt. Denne artikel resulterede i endnu et skrift fra SKs hånd, en artikel med overskriften »Enden paa Sagen«, som dog forblev utrykt.<note xml:id="id56f9e657-6539-4add-98bc-3e0c7407000a"><p xml:id="id3145ec66-027b-4cf8-a02e-ba95b2715895">Optrykt i <ref xml:id="ide87880b4-76a7-4050-bcbd-0becc6c9bfc1" type="preparatoryManuscript" n="pap:X5B128-129"><hi xml:id="idcd5f7063-bd2c-43b9-a6ec-503c222dd8d6" rendition="#ita">Pap.</hi> X 5 B 128-129</ref>, s. 324-330; kladden og den dertilhørende renskrift findes i KA, B pk. 45.</p></note></p>
+        </div>
+        <div type="level1" xml:id="k4">
+          <head xml:id="id9968a9b6-3923-48c0-bde1-abe11539993a"><pb xml:id="ss319" n="319" edRef="#SKS"/>4. Udgivelsesmåde</head>
+          <p xml:id="iddc7ab941-7b39-4423-9723-5bacdb15fa78">»Foranlediget ved en Yttring af Dr. <persName xml:id="id7a9a1e53-b2a7-4a2c-9db8-44834c31c9d6" key="Rudelbach, Andreas Gottlob">Rudelbach</persName> mig betræffende« blev som nævnt trykt i <hi xml:id="id583e5287-4288-4a4d-bafa-880ce1aecf79" rendition="#ita">Fædrelandet.</hi><note xml:id="idf66c6c97-8d08-4d59-9066-29b358ebdfeb"><p xml:id="id6cadf7cd-2363-4662-b22c-c4956985fb9c">En nærmere redegørelse for avisens redaktionelle forhold, periodicitet og oplagstal findes i <ref xml:id="idafb5d9d0-becf-467c-b804-b4f2e15deaf9" target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til artiklen »Aabenbart Skriftemaal«, s. 112</ref>f.</p></note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
+          <p xml:id="id2cd42a53-f3ff-4f98-8ca9-b6fa1287a005" rendition="#ind">Af stor betydning for receptionen allerede i SKs umiddelbare eftertid var <persName xml:id="id1721aba9-20ec-481d-88d5-1a6e875aeb48" key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi xml:id="id9b4995c5-9f38-4d43-bc62-1df4538cfaef" rendition="#ita"><persName xml:id="ide85465eb-1151-4041-b544-053f2fed818f" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 <hi xml:id="id78dc2aaa-941a-4d78-b26f-b4727c160a2e" rendition="#ita">(Bl.art.).</hi> Heri indgår størstedelen af SKs artikler, også »Foranlediget ved en Yttring af Dr. <persName xml:id="id3ac23199-849e-46a1-a3e1-7142c29e3b76" key="Rudelbach, Andreas Gottlob">Rudelbach</persName> mig betræffende«.<note xml:id="ida04e59ca-2651-4680-9842-bccbff2a1448"><p xml:id="id7afe1e09-65ce-4f24-bff3-46c7686d6464">Artiklen er trykt i <hi xml:id="idde61a746-9518-4a36-8a8a-6d64fdeaf981" rendition="#ita">Bl.art.,</hi> s. 48-56.</p></note></p>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

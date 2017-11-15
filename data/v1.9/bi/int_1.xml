@@ -1,406 +1,523 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Om Begrebet Ironi</title>
-     
-     <title type="short">BI</title>
-  <author>
-   <name>Tonny Aagaard Olesen</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Alastair McKinnon</name><name>Finn Hauberg Mortensen</name>
-  </editor>
- 
-  <respStmt>
-   <resp>udgivet af</resp>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Finn Hauberg Mortensen</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Joakim Garff</name><name>Tonny Aagaard Olesen</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name><name>Kim Ravn</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 1997</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K1</biblScope>
-     <biblScope unit="file">http://sks.dk/bi/int_1.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20121112">XML/txr, <bibl><idno type="version">1.8</idno>, <biblScope unit="file">http://sks.dk/bi/int_1.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id81cb6f96-8123-4097-8aea-d7b2db7bf0dc">
+    <fileDesc xml:id="id6fb8ac92-60cc-4af0-8b1e-3e767c45cecf">
+      <titleStmt xml:id="id552202d4-c5ab-487d-9323-6f97a80241a4">
+        <title xml:id="ida7efa88b-6978-4806-932b-81378cbaba3a" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id2f4aa2d2-1208-4dec-bb16-2b2b9f14713b">Om Begrebet Ironi</title>
+        <title xml:id="id089f5a87-8417-44e2-ab51-2e114718fe8b" type="short">BI</title>
+        <author xml:id="id69ff635a-d532-4012-acf1-c4fe2b093527">
+          <name xml:id="id71d8c553-d48b-481e-b7ca-fc52a084f76e">Tonny Aagaard Olesen</name>
+        </author>
+        <editor xml:id="id4a1e3f66-7d80-4107-bbeb-57548826b769">
+          <name xml:id="ida69279b1-fe8e-4fc6-8cce-89497b4d09fd">Niels Jørgen Cappelørn</name>
+          <name xml:id="id7fd34059-3fd5-428a-9140-bbabcb3f8fc6">Joakim Garff</name>
+          <name xml:id="idf13fe9ff-1be8-4aa4-b78e-a399384fc7d0">Johnny Kondrup</name>
+          <name xml:id="id576c2fbf-c50e-44e8-8551-ee974214e887">Alastair McKinnon</name>
+          <name xml:id="id934d1bbc-1b79-4b8f-8a49-ed7225d3e1dc">Finn Hauberg Mortensen</name>
+        </editor>
+        <respStmt xml:id="id6d97998a-bc61-44bc-9788-b80d84a930ba">
+          <resp xml:id="idbf254ada-392e-4901-b0c0-83efbdd31862">udgivet af</resp>
+          <name xml:id="idfc50bcaa-e3c5-4229-9fc5-c9ca3e708eb6">Niels Jørgen Cappelørn</name>
+          <name xml:id="id495f2048-9848-44e7-aa0e-ad4b80e55c33">Joakim Garff</name>
+          <name xml:id="ideefad1e9-9542-4937-9ca7-6dd0056b1744">Johnny Kondrup</name>
+          <name xml:id="id62dd467f-2557-4d28-ad94-ced20e3f22cd">Finn Hauberg Mortensen</name>
+        </respStmt>
+        <respStmt xml:id="id1334e3c3-0be6-4d01-8c83-79f761cc3680">
+          <resp xml:id="idc4f4e4ac-a393-4acf-aa80-f7b07b951aa3">redigeret af</resp>
+          <name xml:id="id42ed72c9-8947-4853-a2d2-f0a7b9307b17">Joakim Garff</name>
+          <name xml:id="ida0f59216-92b5-43ac-9ce8-d2eaa1233ba9">Tonny Aagaard Olesen</name>
+        </respStmt>
+        <respStmt xml:id="idef2061ac-6533-4b72-a209-5c061ed240fa">
+          <resp xml:id="idec9754f6-bbf4-4829-ba7e-b19f756709cb">elektronisk redigeret af</resp>
+          <name xml:id="id20db1334-17fa-43d0-9d67-e122bf5e1a87">Karsten Kynde</name>
+          <name xml:id="idf9722e8e-bb66-4f45-a46f-eee50b4eeebf">Kim Ravn</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id1d4266e3-6c79-4a9b-a7e5-ce81fb4b6f6e">
+        <authority xml:id="idcdc527c4-e4c6-4853-aef3-814df7fa1be5">Søren Kierkegaard Forskningscenteret 1997</authority>
+        <availability xml:id="id46cfaaa0-26ba-42b0-84fc-906954b8de76" status="restricted">
+          <p xml:id="id48c3b99e-71f1-46a4-aa24-ebb8cfdb73bf">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id6b80e582-8296-45ca-87fe-2a0b53e8248d">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="id1e2f038e-662b-45c7-a34d-daaa9a1434e4" unit="volume">K1</biblScope>
+        <biblScope xml:id="id185c2016-4605-42cc-b2da-dea88ed73cfd" unit="file">http://sks.dk/bi/int_1.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id236396c7-4d86-4474-b0c0-5e99cdeaf9b4">
+        <bibl xml:id="id2dd786e7-ff62-4d9d-933b-4e9559c28919" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id66e9d076-b4e6-4a67-98ed-b2fd18d03d9f">
+      <tagsDecl xml:id="ida782219a-7806-4598-b38d-b731dbd75578">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="iddd6c3094-fc46-45ef-b98e-8d47ea36a8b3">
+      <change xml:id="idd43983d0-4270-43ea-9c89-b797c41adccf">Transformed to TEI by style sheet <bibl xml:id="id085f077c-1aae-4912-8538-aa7bfb46dc8d" type="file">txr2tei.xsl</bibl> version as of <date xml:id="idb83a03ba-425c-4cd6-a301-684159552fe1">2017-02-15</date> importing <bibl xml:id="idab071a85-c13b-4efa-b957-5d0571204086" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="idedec2405-e010-420c-9cc3-2222ed4d57af">Transformed to TEI by style sheet <bibl xml:id="id5b2ff38b-6aef-4b1f-a570-838340a8ef74" type="file">kn12tei.xsl</bibl> version <idno xml:id="id3f718b8e-2478-4677-ab75-cbf5310e9a82" type="version">1.9</idno> as of <date xml:id="iddd217a8f-caf8-4782-9091-0126e6d21716">2017-02-21</date> by <name xml:id="idd378b59c-86cf-417f-98cb-6f3a0a1186e0">Karsten Kynde</name>, <orgName xml:id="idd3a87b8b-a4ab-4ef0-8e2f-7976a299154e">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="idd03062b1-65e2-4bab-881e-2bff40aa25f9">København</placeName></change>
+      <change xml:id="id06f41543-66b2-4990-ab9f-a2e9c301565e" when="20121112">XML/txr, <bibl xml:id="idf1da8e26-b404-4d1b-85ac-ff2047ddbe61"><idno xml:id="id58da9414-6759-48a9-9e84-defff57dcf71" type="version">1.8</idno>, <biblScope xml:id="id1db74b84-10bc-4acd-9d43-2e5a5f7afda5" unit="file">http://sks.dk/bi/int_1.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
-
-<text type="TextCriticalAccount" subtype="publishedWritings"><body><div><head type="topText" n="Bibliografi"/>
-  <head>Bibliografi og forkortelser</head>
-  <div type="level1">
-  <head/>
-  <p>I bibliografien er anføet den litteratur, SK har benyttet i <hi rendition="#ita">BI.</hi> Bibliografien er ordnet alfabetisk efter forfatternavne. Efter bibliografien findes en fortegnelse over de titelforkortelser, der er anvendt i kommentarerne.</p>
-  </div>
-  <div type="level1">
-  <head>Bibliografi</head>
-  <table>
-    <row>
-    <cell><persName key="Ackermann, D.C.">Ackermann, D.C.</persName></cell>
-    <cell><hi rendition="#ita">Das Christliche im Plato und in der platonischen Philosophie,</hi>
-      <placeName>Hamborg</placeName> 1835.</cell>
-    </row>
-    <row>
-    <cell rows="3"><persName key="Aristofanes">Aristophanes</persName></cell>
-    <cell><hi rendition="#ita">Aristophanis Nubes,</hi> udg. af <persName key="Reisig, C.">C. Reisig</persName>, <placeName>Leipzig</placeName> 1820.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Aristophanis Nubes cum scholiis,</hi> udg. af <persName key="Hermann, G.">G. Hermann</persName>, Leipzig 1799.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Aristophanes's Komedier,</hi> overs. af <persName key="Krag, J.">J. Krag</persName>, bd. 1, <placeName>Odense</placeName>1825, ktl. 1055.</cell>
-    </row>
-    <row>
-    <cell><persName key="Ast, Friedrich">Ast, Friedrich</persName></cell>
-    <cell><hi rendition="#ita">Platon's Leben und Schriften. Ein Versuch, im Leben wie in den Schriften des Platon das Wahre und Aechte vom Erdichteten und Untergeschobenen zu scheiden, und die Zeitfolge der ächten Gespräche zu bestimmen. Als Einleitung in das Studium des Platon,</hi> Leipzig 1816.</cell>
-    </row>
-    <row>
-    <cell><persName key="Baur, Ferdinand Christian">Baur, Ferdinand Christian</persName></cell>
-    <cell><hi rendition="#ita">Das Christliche des Platonismus oder Sokrates und Christus. Eine religionsphilosophische Untersuchung,</hi>
-      <placeName>Tübingen</placeName> 1837, ktl. 422. Genoptryk fra <hi rendition="#ita">Tübinger Zeitschrift für Theologie,</hi> Tübingen 1837, 3. hæfte (samme paginering).</cell>
-    </row>
-    <row>
-    <cell rows="2">Bibelen</cell>
-    <cell><hi rendition="#ita">Det Gamle Testamente,</hi> <placeName key="København">Kbh.</placeName> 1740.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Det Nye Testamente,</hi> Kbh. 1819.</cell>
-    </row>
-    <row>
-    <cell><persName key="Brandis, Christian August">Brandis, Christian August</persName></cell>
-    <cell>»Grundlinien der Lehre des Socrates« i <hi rendition="#ita">Rheinisches Musäum für Jurisprudenz, Philologie, Geschichte und Griechische Philosophie, Ersten Jahrganges erstes und zweites Heft, Abtheilung für Philologie, Geschichte und Philosophie,</hi>
-      <placeName>Bonn</placeName> 1827.</cell>
-    </row>
-    <row>
-    <cell><persName key="Diogenes Laertios">Diogenes Laërtios</persName></cell>
-    <cell><hi rendition="#ita">Diogen Laërtses filosofiske Historie, eller: navnkundige Filosofers Levnet, Meninger og sindrige Udsagn, i ti Bøger,</hi> overs. af <persName key="Riisbrigh, Børge">B. Riisbrigh</persName>, udg. af <persName key="Thorlacius, Børge">B. Thorlacius</persName>, bd. 1-2, Kbh. 1812.</cell>
-    </row>
-    <row>
-    <cell rows="2"><persName key="Erdmann, Johann Eduard">Erdmann, Johann Eduard</persName></cell>
-    <cell>»Ueber Widersprüche unter den christlichen Glaubenslehren«, i <hi rendition="#ita">Zeitschrift für spekulative Theologie,</hi> udg. <persName key="Bauer, Bruno">Bruno Bauer</persName>, bd.3, 1. hæfte, <placeName>Berlin</placeName> 1837, ktl. 356, s. 1-48.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Vorlesungen über Glauben und Wissen als Einleitung in die Dogmatik und Religionsphilosophie,</hi>
-      <placeName>Berlin</placeName> 1837, ktl. 479.</cell>
-    </row>
-    <row>
-    <cell><persName key="Forchhammer, Peter Wilhelm">Forchhammer, Peter Wilhelm</persName></cell>
-    <cell><hi rendition="#ita">Die Athener und Sokrates, die Gesetzlichen und der Revolutionär,</hi> Berlin 1837.</cell>
-    </row>
-    <row>
-    <cell><persName key="Funke, Karl Philip">Funke, Karl Philip</persName></cell>
-    <cell><hi rendition="#ita">Neues Real-Schullexikon von Funke,</hi> bd. 1-5, <placeName>Braunschweig</placeName>, 1800-05, ktl. 934-938.</cell>
-    </row>
-    <row>
-    <cell><persName key="Gesner, Joahnn Matthias">Gesner, Joahnn Matthias</persName></cell>
-    <cell>»Socrates sanctus Pæderasta« i <hi rendition="#ita">Commentari societatis regiæ scientiarum Gottingensis,</hi> bd. 2, <placeName>Göttingen</placeName> 1753.</cell>
-    </row>
-    <row>
-    <cell><persName key="Grimm, Brødrene">Grimm, Jakob Ludwig og Wilhelm Karl</persName></cell>
-    <cell><hi rendition="#ita">Irische Elfenmärchen, </hi> overs. af brødrene Grimm, Leipzig 1826, ktl. 1423.</cell>
-    </row>
-    <row>
-    <cell rows="9"><persName key="Hegel, Georg Wilhelm Friedrich">Hegel, Georg Wilhelm Friedrich</persName></cell>
-    <cell><hi rendition="#ita">Werke. Vollständige Ausgabe,</hi> bd. 1-18, Berlin 1832-45. Heri:</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Phänomenologie des Geistes,</hi> udg. af <persName key="Schulze, Johann">J. Schulze</persName>, i <hi rendition="#ita">Werke</hi> bd. 2, Berlin 1832 [1807], ktl. 550.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Encyclopädie der philosophischen Wissenschaften im Grundrisse,</hi> udg. af <persName key="Henning, L. von">L. v. Henning</persName>, 3 bd., i <hi rendition="#ita">Werke</hi> bd. 7,1-7,3, Berlin 1840-45 [1817], ktl. 561-563.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Grundlinien der Philosophie des Rechts,</hi> udg. af <persName key="Gans, Eduard">E. Gans</persName>, i <hi rendition="#ita">Werke</hi> bd. 8, Berlin 1833 [1821], ktl. 551.</cell>
-    </row>
-    <row>
-    <cell>»Ueber: Solger's nachgelassene Schriften und Briefwechsel« i <hi rendition="#ita">Vermischte Schriften,</hi> udg. af <persName key="Förster, F.">F. Förster</persName> og <persName key="Baumann, L.">L. Baumann</persName>, 2. bd., i <hi rendition="#ita">Werke</hi> bd. 16-17, Berlin 1834-35 [1828], ktl. 555-556; bd. 16.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Vorlesungen über die Aesthetik,</hi> udg. af <persName key="Hotho, Heinrich Gustav">H.G. Hotho</persName>, 3 bd., i <hi rendition="#ita">Werke</hi> bd. 10,1-10,3, Berlin 1835, ktl. 1384-1386.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Vorlesungen über die Geschichte der Philosophie,</hi> udg. af <persName key="Michelet, Carl Ludwig">K.L. Michelet</persName>, bd. 1-3, i <hi rendition="#ita">Werke</hi> bd. 13-15, Berlin 1836, ktl. 557-559.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Vorlesungen über die Philosophie der Religion,</hi> udg. af <persName key="Marheineke, Philipp Konrad">P. Marheineke</persName>, 2 bd., i <hi rendition="#ita">Werke</hi> bd. 11-12, Berlin 1840, ktl. 564-565.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Vorlesungen über die Philosophie der Geschichte,</hi> 2. udg, udg. af <persName key="Hegel, Karl">Karl Hegel</persName>, i <hi rendition="#ita">Werke</hi> bd. 9, Berlin 1840.</cell>
-    </row>
-    <row>
-    <cell><persName key="Heinsius, Otto Friedrich Theodor">Heinsius, Theodor</persName></cell>
-    <cell><hi rendition="#ita">Sokrates nach dem Grade seiner Schuld, zum Schutz gegen neuere Verunglimpfung,</hi> Leipzig 1839.</cell>
-    </row>
-    <row>
-    <cell><persName key="Hermann, Karl Friedrich">Hermann, Karl Friedrich</persName></cell>
-    <cell><hi rendition="#ita">Geschichte und System der platonischen Philosophie,</hi> bd. 1, <placeName>Heidelberg</placeName> 1839, ktl. 576</cell>
-    </row>
-    <row>
-    <cell>Hotho, Heinrich Gustav</cell>
-    <cell><hi rendition="#ita">Vorstudien für Leben und Kunst,</hi>
-      <placeName>Stuttgart</placeName> og Tübingen 1835, ktl. 580.</cell>
-    </row>
-    <row>
-    <cell><persName key="Lelut, Louis-François">Lelut, Louis-François</persName></cell>
-    <cell><hi rendition="#ita">Du démon de Socrate,</hi> <placeName>Paris</placeName> 1836.</cell>
-    </row>
-    <row>
-    <cell><persName key="Lyngby, Hans Christian">Lyngby, Hans Christian</persName></cell>
-    <cell><hi rendition="#ita">Færøiske Qvæder om Sigurd Fofnersbane og hans Æt,</hi> overs. af H.C. Lyngby, <placeName>Randers</placeName> 1822, ktl. 1484.</cell>
-    </row>
-    <row>
-    <cell><persName key="Martensen, Hans Lassen">Martensen, Hans Lassen</persName></cell>
-    <cell>[anm. af <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>] <hi rendition="#ita">Nye Digte</hi> i <hi rendition="#ita">Fædrelandet,</hi> nr. 398-400 (10.-12. jan.), Kbh. 1841.</cell>
-    </row>
-    <row>
-    <cell><persName key="Mehring, G.">Mehring, G.</persName></cell>
-    <cell>»Ideen zu einer wissenschaftlichen Begründung der Physiognomik« i <hi rendition="#ita">Zeitschrift für Philosophie und spekulative Theologie,</hi> udg. <persName key="Fichte, Immanuel Hermann">I.H. Fichte</persName>, Bonn 1840, 1. del, s. 210-266.</cell>
-    </row>
-    <row>
-    <cell><persName key="Jean Paul" sameAs="Paul, Jean">Paul, Jean</persName></cell>
-    <cell><hi rendition="#ita">Vorschule der Aesthetik, nebst einigen Vorlesungen in Leibzig über die Parteien der Zeit,</hi> bd. 1-3, 2. udg., Stuttgart og Tübingen 1813 [1804], ktl. 1381-1383.</cell>
-    </row>
-    <row>
-    <cell rows="16"><persName key="Platon">Platon</persName></cell>
-    <cell><hi rendition="#ita">Platonis quae exstant opera. Accedunt Platonis quae feruntur scripta,</hi> udg. af <persName key="Ast, Friedrich">Fr. Ast</persName>, bd. 1-11, Leipzig 1819-32, ktl. 1144-1154. Heri:</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Phaedrus,</hi> bd. 1, 1819, s. 124-253.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Theaetetus,</hi> bd. 2, 1820, s. 4-201.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Politiae I,</hi> bd. 4, 1822, s. 4-65.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Politiae II-X,</hi> bd. 4-5, 1822.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Apologia Sokratis,</hi> bd. 8, 1825, s. 98-158.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Platonis dialogos selectos,</hi> udg. og kommenteret af <persName key="Stallbaum, G.">G. Stallbaum</persName>, <placeName>Gotha</placeName> og <placeName>Erfurt</placeName> 1827. Heri:</cell>
-    </row>
-    <row>
-    <cell>»Præfatio ad apologiam Socratis«, bd. 1, del 1, s. 1-6.</cell>
-    </row>
-    <row>
-    <cell>»Præfatio ad Phaedonem«, bd. 2, del 1, s. 1-19.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Platons Werke,</hi> af <persName key="Schleiermacher, Friedrich">Fr. Schleiermacher</persName>, bd. 1-6, del 1-3, Berlin 1804-28, ktl. 1158-1163.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Udvalgte Dialoger af Platon,</hi> overs. af <persName key="Heise, Carl Johan">C.J. Heise</persName>, bd. 1-3, Kbh. 1830-38, ktl. 1164-66. Heri:</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Phædon,</hi> bd. 1, 1830.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Alkibiades,</hi> bd. 1, 1830.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Symposion,</hi> bd. 2, 1831.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Protagores,</hi> bd. 2, 1831.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Gorgias,</hi> bd. 3, 1838.</cell>
-    </row>
-    <row>
-    <cell><persName key="Plutarch">Plutarch</persName></cell>
-    <cell>»De genio Socratis« i <hi rendition="#ita">Plutarchi Chaeronensis opuscula,</hi> udg. af <persName key="Stephanus, H.">H. Stephanus</persName>, 1572, bd. 2.</cell>
-    </row>
-    <row>
-    <cell><persName key="Rötscher, Heinrich Theodor">Rötscher, Heinrich Theodor</persName></cell>
-    <cell><hi rendition="#ita">Aristophanes und sein Zeitalter. Eine philologisch-philosophische Abhandlung zur Alterthumsforschung,</hi> Berlin 1827.</cell>
-    </row>
-    <row>
-    <cell><persName key="Schlegel, August Wilhelm von">Schlegel, August Wilhelm</persName></cell>
-    <cell><hi rendition="#ita">Vorlesungen über dramatische Kunst und Literatur,</hi> bd. 1-3, Heidelberg 1809-11, ktl. 1392-1394.</cell>
-    </row>
-    <row>
-    <cell><persName key="Schlegel, Friedrich">Schlegel, Friedrich von</persName></cell>
-    <cell><hi rendition="#ita">Lucinde,</hi> 2. udg., Stuttgart 1835 [1799].</cell>
-    </row>
-    <row>
-    <cell><persName key="Schleiermacher, Friedrich">Schleiermacher, Friedrich</persName></cell>
-    <cell>»Ueber den Werth des Sokrates als Philosophen« i <hi rendition="#ita">Abhandlungen der philosophischen Klasse der Königlich-Preußischenb Akademie der Wissenschaften, aus den Jahren 1814-1815,</hi> Berlin 1818, s. 50-68.</cell>
-    </row>
-    <row>
-    <cell/>
-    <cell><hi rendition="#ita">Der christeliche Glaube nach den Grundsätzen der evangelischen Kirche,</hi> bd. 1-2, 3. udg., Berlin 1835-36, ktl. 258.</cell>
-    </row>
-    <row>
-    <cell><persName key="Schubert, Gotthilf Heinrich von">Schubert, Gotthilf Heinrich v.</persName></cell>
-    <cell><hi rendition="#ita">Die Symbolik des Traumes,</hi> 2. udg., <placeName>Bamberg</placeName> 1821 [1814], ktl. 776.</cell>
-    </row>
-    <row>
-    <cell rows="2"><persName key="Solger, Karl Wilhelm Ferdinand">Solger, Karl Wilhelm Ferdinand</persName></cell>
-    <cell><hi rendition="#ita">Solger's nachgelassene Schriften und Briefwechsel,</hi> udg. af <persName key="Tieck, Johann Ludwig">L. Tieck</persName> og <persName key="Raumer, Friedrich von">Fr. v. Raumer</persName>, bd. 1-2, Leipzig 1826.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Vorlesungen über Asthetik,</hi> udg. af <persName key="Heyse, K.W.L.">K.W.L. Heyse</persName>, Leipzig 1829, ktl. 1387. Fotografisk optryk <placeName>Darmstadt</placeName> 1973.</cell>
-    </row>
-    <row>
-    <cell><persName key="Steffens, Henrich">Steffens, Henrich</persName></cell>
-    <cell><hi rendition="#ita">Caricaturen des Heiligsten,</hi> bd. 1-2, Leipzig 1819-21, ktl. 793-794.</cell>
-    </row>
-    <row>
-    <cell><persName key="Sulzer, Johann Georg">Sulzer, Johann Georg</persName></cell>
-    <cell><hi rendition="#ita">Nachträge zu Sulzers allgemeine Theorie der schönen Künste,</hi> udg. af <persName key="Schütz, Christian Gottfried">C.G. Schütz</persName>, bd. 1-8, Leipzig 1792-1808.</cell>
-    </row>
-    <row>
-    <cell><persName key="Süvern, Johann Wilhelm">Süvern, Johann Wilh.</persName></cell>
-    <cell><hi rendition="#ita">Ueber Aristophanes Wolken,</hi> Berlin 1826.</cell>
-    </row>
-    <row>
-    <cell><persName key="Teofrast">Teofrast</persName></cell>
-    <cell><hi rendition="#ita">Teophrasti Characteres,</hi> udg. af Fr. Ast, Leipzig 1815, ktl. 1204.</cell>
-    </row>
-    <row>
-    <cell rows="4"><persName key="Xenophon">Xenophon</persName></cell>
-    <cell><hi rendition="#ita">Sokrates' Apologi.</hi></cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Memorabila.</hi></cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Symposion.</hi></cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Xenophons Sokratiske Merkværdigheder,</hi> overs. af <persName key="Bloch, Jens">J. Bloch</persName>, Kbh. 1792.</cell>
-    </row>
-  </table>
-  </div>
-  <div type="level1">
-  <head>Forkortelser</head>
-  <table>
-    <row>
-    <cell><hi rendition="#ita">Ast</hi></cell>
-    <cell><hi rendition="#ita">Platonis quae exstant opera. Accedunt Platonis quae feruntur scripta.</hi></cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Bloch</hi></cell>
-    <cell><hi rendition="#ita">Xenophons Sokratiske Merkværdigheder.</hi></cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Das Christliche des Platonismus</hi></cell>
-    <cell>F.C. Baur <hi rendition="#ita">Das Christliche des Platonismus oder Sokrates und Christus.</hi></cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Forchammer</hi></cell>
-    <cell><hi rendition="#ita">Die Athener und Sokrates, Die Gesetzlichen und der Revolutionär,</hi> Berlin 1837.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">GT-1740</hi></cell>
-    <cell><hi rendition="#ita">Det Gamle Testamente,</hi> 1740.</cell>
-    </row>
-    <row>
-    <cell>Heinsius</cell>
-    <cell><hi rendition="#ita">Sokrates nach dem Grade seiner Schuld zum Schutz gegen neuere Verunglimpfung,</hi> Leipzig 1839.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Heise</hi></cell>
-    <cell><hi rendition="#ita">Udvalgte Dialoger af Platon,</hi> overs. af C.J. Heise.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Jub.</hi></cell>
-    <cell>Hegel <hi rendition="#ita">Sämtliche Werke, Jubiläumsausgabe,</hi> bd. 1-26, Stuttgart 1927-40.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Krag</hi></cell>
-    <cell><hi rendition="#ita">Aristophanes's Komedier.</hi></cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">KFSA</hi></cell>
-    <cell><hi rendition="#ita">Kritische Friedrich-Schlegel-Ausgabe,</hi> udg. af <persName key="Behler, Ernst">Ernst Behler</persName>, under medvirken af <persName key="Anstett, Jean-Jacques">Jean-Jacques Anstett</persName> og <persName key="Eichner, Hans">Hans Eichner</persName>, afdeling 1 <hi rendition="#ita">(Kritische Neuausgabe),</hi> bd. 1-10, München 1959-79; bd. 5 (ved Hans Eichner), <placeName>München</placeName> 1962.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Nach. Schr.</hi></cell>
-    <cell><hi rendition="#ita">Solger's nachgelassene Schriften und Briefwechsel.</hi></cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">NT-1819</hi></cell>
-    <cell><hi rendition="#ita">Det Nye Testamente,</hi> 1819.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Platon's Leben und Schriften</hi></cell>
-    <cell><hi rendition="#ita">Platon's Leben und Schriften,</hi> udg. af Fr. Ast.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Platons Skrifter</hi></cell>
-    <cell><hi rendition="#ita">Platons Skrifter,</hi> overs. af <persName key="Høeg, Carsten">Carsten Høeg</persName> og <persName key="Ræder, Hans">Hans Ræder</persName>, bd. 1-10, Kbh. 1992 [1932-41].</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Riisbrigh</hi></cell>
-    <cell><hi rendition="#ita">Diogen Laërtses filosofiske Historie.</hi></cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Rötscher</hi></cell>
-    <cell>H.T. Rötscher <hi rendition="#ita">Aristophanes und sein Zeitalter.</hi></cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Sämt. Schr.</hi></cell>
-    <cell>H. Heine <hi rendition="#ita">Sämtlische Schriften,</hi> bd. 1-6, udg. af <persName key="Briegleb, Klaus">Klaus Briegleb</persName>, München 1968-76</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Suhr.</hi></cell>
-    <cell>Hegel <hi rendition="#ita">Theorie-Werkausgabe. Werke,</hi> Suhrkamp Verlag, bd. 1-20, Frankfurt a. M. 1969-71.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Thomsen</hi></cell>
-    <cell><hi rendition="#ita">Aristofanes' komedie Skyerne,</hi> overs. af <persName key="Thomsen, Ole">Ole Thomsen</persName>n, 2. rev. udg. [1982] (under udgivelse).</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">Werke</hi></cell>
-    <cell>Hegel <hi rendition="#ita">Werke. Vollständige Ausgabe,</hi> bd. 1-18, Berlin 1832-45.</cell>
-    </row>
-    <row>
-    <cell><hi rendition="#ita">1970</hi></cell>
-    <cell><hi rendition="#ita">Erwin. Vier Gespräche über das Schöne und die Kunst. Nachdruck der Ausgabe Berlin 1907 zusammen mit Solgers Rezension von A.W. Schlegels »Vorlesungen über dramatische Kunst und Literatur«,</hi> udg. af <persName key="Henckmann, W.">W. Henckmann</persName>, München 1970, s. 395-471.</cell>
-    </row>
-  </table>
-  </div>
-</div></body></text>
-
+  <text xml:id="id95b55bbd-1974-47f3-9617-b43bcb173a00" type="TextCriticalAccount" subtype="publishedWritings">
+    <body xml:id="id80df6401-b9bc-4eb9-a7d3-2264522a5113">
+      <div xml:id="id13ff583b-5ece-445b-b244-c1aef8db0942">
+        <head xml:id="id6c5aec24-e5d6-47af-9d84-fb0225e0bfd7" type="topText" n="Bibliografi"/>
+        <head xml:id="idc40f2418-377e-47c4-90d0-1a9a25b02aa3">Bibliografi og forkortelser</head>
+        <div xml:id="idcf793abc-16eb-488e-bd6d-0e532d9809d1" type="level1">
+          <head xml:id="id92b3b993-0d56-4928-ad0e-5cb57b7c1e9d"/>
+          <p xml:id="id54edf1c1-002f-4f25-afa3-0b02198a039e">I bibliografien er anføet den litteratur, SK har benyttet i <hi xml:id="id2e3acf52-f777-440b-bbab-f0bdb29b3d5f" rendition="#ita">BI.</hi> Bibliografien er ordnet alfabetisk efter forfatternavne. Efter bibliografien findes en fortegnelse over de titelforkortelser, der er anvendt i kommentarerne.</p>
+        </div>
+        <div xml:id="id2e5be7ea-ed63-4a0d-861e-38aecbf1a7d6" type="level1">
+          <head xml:id="id5a9e6408-9565-4904-970a-43907eedf9f3">Bibliografi</head>
+          <table xml:id="idbdd8cd9e-dc70-4466-ba59-c184adb63678">
+            <row xml:id="idbc53c0db-084a-445b-8325-f405d8179ffe">
+              <cell xml:id="id14cfcea4-347a-40ec-9420-bed2dbcbe6d0">
+                <persName xml:id="id55ff8fd0-e8ee-4bd6-9f1a-1db2a6b8c599" key="Ackermann, D.C.">Ackermann, D.C.</persName>
+              </cell>
+              <cell xml:id="id6815feb5-bbef-4983-87cd-f7a826670ce0"><hi xml:id="id9e23ed43-d395-40a5-b185-3db49079ea5a" rendition="#ita">Das Christliche im Plato und in der platonischen Philosophie,</hi><placeName xml:id="id546d983f-c197-498e-a989-0cc6bb95509a">Hamborg</placeName> 1835.</cell>
+            </row>
+            <row xml:id="id438c9b69-904d-4307-b899-a9bde9d4f783">
+              <cell xml:id="id421ef580-0fd2-4b63-a554-edd9927b585c" rows="3">
+                <persName xml:id="id7b70ab19-b283-42ff-af3e-2788793e39e7" key="Aristofanes">Aristophanes</persName>
+              </cell>
+              <cell xml:id="id8b499f09-834e-40bf-9316-2726bbcb95fc"><hi xml:id="idc15a51a6-979d-4aca-a07c-13d9a753ee09" rendition="#ita">Aristophanis Nubes,</hi> udg. af <persName xml:id="id4332a1ca-6fc0-45e1-bfd4-3fc954cc3170" key="Reisig, C.">C. Reisig</persName>, <placeName xml:id="id7889f58e-c7d8-497b-a6cf-a7f87c21f307">Leipzig</placeName> 1820.</cell>
+            </row>
+            <row xml:id="id8601cd02-7e55-4cec-b3c6-706a87a58811">
+              <cell xml:id="ida065bcc0-8049-4b79-ab79-d58a3dd3936f"><hi xml:id="iddac95c08-a64a-4bff-b566-eeb3121d84c8" rendition="#ita">Aristophanis Nubes cum scholiis,</hi> udg. af <persName xml:id="idb5929e0f-3de6-460f-b660-c0d1888bf3f9" key="Hermann, G.">G. Hermann</persName>, Leipzig 1799.</cell>
+            </row>
+            <row xml:id="id9a4ff1cb-ba24-4536-8c90-fd09b6e652e3">
+              <cell xml:id="id424b0e9b-494a-4993-8cf3-7d99e20a2cc8"><hi xml:id="idd4f8bc6c-d3db-4776-af16-f3e435ed4363" rendition="#ita">Aristophanes's Komedier,</hi> overs. af <persName xml:id="id105d29d1-1a85-417a-ab25-2659c80c0287" key="Krag, J.">J. Krag</persName>, bd. 1, <placeName xml:id="ida729c8f8-cf89-4c51-97b7-97c2116d0eb6">Odense</placeName>1825, ktl. 1055.</cell>
+            </row>
+            <row xml:id="id3c44cf18-717c-46be-91c7-39afac5c9008">
+              <cell xml:id="id6bba4fe5-32a6-455a-9170-351420dbe5e3">
+                <persName xml:id="id5a85e647-5144-4db5-a734-6b49177ed65b" key="Ast, Friedrich">Ast, Friedrich</persName>
+              </cell>
+              <cell xml:id="id72896976-8c36-4530-b9d0-f212e88efb28"><hi xml:id="ide0effbfb-cef4-4e1a-b489-619bcdae9a85" rendition="#ita">Platon's Leben und Schriften. Ein Versuch, im Leben wie in den Schriften des Platon das Wahre und Aechte vom Erdichteten und Untergeschobenen zu scheiden, und die Zeitfolge der ächten Gespräche zu bestimmen. Als Einleitung in das Studium des Platon,</hi> Leipzig 1816.</cell>
+            </row>
+            <row xml:id="idef3f985d-88e7-46bb-bd79-ef56b6e5d1dd">
+              <cell xml:id="id35364658-1194-48de-99f4-339cca8129a4">
+                <persName xml:id="id86c832c8-0618-4eca-9f04-44d83b317f0b" key="Baur, Ferdinand Christian">Baur, Ferdinand Christian</persName>
+              </cell>
+              <cell xml:id="id0e06123e-498f-48af-a3ca-d52ea56b134e"><hi xml:id="ida0e8b762-da85-4af9-b0ad-be4bf7deea68" rendition="#ita">Das Christliche des Platonismus oder Sokrates und Christus. Eine religionsphilosophische Untersuchung,</hi><placeName xml:id="id422f4438-d0be-4773-8989-add5504467ab">Tübingen</placeName> 1837, ktl. 422. Genoptryk fra <hi xml:id="id972973a0-19ca-445e-8e43-13fbcffa6fa4" rendition="#ita">Tübinger Zeitschrift für Theologie,</hi> Tübingen 1837, 3. hæfte (samme paginering).</cell>
+            </row>
+            <row xml:id="idbdd59b2d-dec9-407f-8eaf-e127cee21a38">
+              <cell xml:id="id82c408f1-d15e-4899-a0f2-7575cbb9cbb2" rows="2">Bibelen</cell>
+              <cell xml:id="id1916fbda-f7bd-4f57-9749-8fd5bafe4cc7"><hi xml:id="id8bf8c28f-67cb-459e-b481-084304e4f8ec" rendition="#ita">Det Gamle Testamente,</hi><placeName xml:id="idc1751180-8a36-49e3-a8fc-535fec68f67a" key="København">Kbh.</placeName> 1740.</cell>
+            </row>
+            <row xml:id="id2f4a2c61-3760-418c-b38c-3ce8d34dfe1f">
+              <cell xml:id="id525d27e7-fe65-4079-8e39-70235ca2a7c8"><hi xml:id="id7954a64e-20e7-459f-9499-c958db63e12a" rendition="#ita">Det Nye Testamente,</hi> Kbh. 1819.</cell>
+            </row>
+            <row xml:id="idd6c23962-0a80-45cc-870f-6bd0803490e7">
+              <cell xml:id="idd08786dc-13f1-420c-968b-a4f8de23a92b">
+                <persName xml:id="idf85f9bee-3d8c-46aa-8cf5-7c85117f919f" key="Brandis, Christian August">Brandis, Christian August</persName>
+              </cell>
+              <cell xml:id="id981930db-9c9f-46b6-bc70-42fa0f815b9d">»Grundlinien der Lehre des Socrates« i <hi xml:id="id13c940f8-3884-4c59-bea2-8c11b9d1887e" rendition="#ita">Rheinisches Musäum für Jurisprudenz, Philologie, Geschichte und Griechische Philosophie, Ersten Jahrganges erstes und zweites Heft, Abtheilung für Philologie, Geschichte und Philosophie,</hi>
+      <placeName xml:id="id3752fa5b-0851-46de-bc35-20c8b1a41703">Bonn</placeName> 1827.</cell>
+            </row>
+            <row xml:id="ide958616f-6fd4-4d25-9903-e253512a16b2">
+              <cell xml:id="idc376e878-5107-4c9c-8d87-477f49eca49d">
+                <persName xml:id="id6a7e821d-3387-4ae7-836c-9a19ff8349d7" key="Diogenes Laertios">Diogenes Laërtios</persName>
+              </cell>
+              <cell xml:id="idacaa762a-3291-4ed9-89de-5446a6582c58"><hi xml:id="iddeda1af8-61f7-454b-b1e8-43e98edfbdc6" rendition="#ita">Diogen Laërtses filosofiske Historie, eller: navnkundige Filosofers Levnet, Meninger og sindrige Udsagn, i ti Bøger,</hi> overs. af <persName xml:id="idf42f6a89-3d51-405f-b5c5-811936dc2f29" key="Riisbrigh, Børge">B. Riisbrigh</persName>, udg. af <persName xml:id="id517d3e58-31b5-437e-bcbd-c7272b09d2c8" key="Thorlacius, Børge">B. Thorlacius</persName>, bd. 1-2, Kbh. 1812.</cell>
+            </row>
+            <row xml:id="id2402964b-c195-464d-9f4d-5e6839138f9f">
+              <cell xml:id="id257ec4a1-874d-4c4e-ac48-af4fa417cbc3" rows="2">
+                <persName xml:id="idcaaafc47-1307-4ce5-9073-3828f998d235" key="Erdmann, Johann Eduard">Erdmann, Johann Eduard</persName>
+              </cell>
+              <cell xml:id="id98cd4a41-4795-4973-9053-e9ee23df4462">»Ueber Widersprüche unter den christlichen Glaubenslehren«, i <hi xml:id="id9ab73237-6902-49b0-b667-f7debe36eadf" rendition="#ita">Zeitschrift für spekulative Theologie,</hi> udg. <persName xml:id="idf76c2554-ad8b-4b8a-9d7f-06a801d91549" key="Bauer, Bruno">Bruno Bauer</persName>, bd.3, 1. hæfte, <placeName xml:id="id9fc1b584-6dac-4065-94fa-0a4f4c29806f">Berlin</placeName> 1837, ktl. 356, s. 1-48.</cell>
+            </row>
+            <row xml:id="id4abb4511-b984-433e-9fa1-7d363ebaa48b">
+              <cell xml:id="id35aa65e9-3bad-44d4-bd18-491f1c5edaac"><hi xml:id="ide78e3e78-f91c-4bd7-9678-ebcd8f84c63d" rendition="#ita">Vorlesungen über Glauben und Wissen als Einleitung in die Dogmatik und Religionsphilosophie,</hi><placeName xml:id="id2daadd3d-b6b3-4837-ac7c-c330d890c2f2">Berlin</placeName> 1837, ktl. 479.</cell>
+            </row>
+            <row xml:id="ida7724948-9bea-4d42-9021-d91c089b2ec4">
+              <cell xml:id="idc6dd1c4f-438f-4aa2-8ca5-ecde7e869925">
+                <persName xml:id="id52144c72-3dcd-4770-970a-6b7e07822a2e" key="Forchhammer, Peter Wilhelm">Forchhammer, Peter Wilhelm</persName>
+              </cell>
+              <cell xml:id="id711684b4-0a1d-466a-9f99-51097f49a069"><hi xml:id="id6489633f-6597-408a-bff9-8570d254cd4a" rendition="#ita">Die Athener und Sokrates, die Gesetzlichen und der Revolutionär,</hi> Berlin 1837.</cell>
+            </row>
+            <row xml:id="id18852d89-2dcc-4c42-95e2-1a6d3e90b747">
+              <cell xml:id="ida14d4a70-5212-47a3-ab31-47e91b088416">
+                <persName xml:id="idad47d5d9-720f-4773-b90d-4f90d75eeac9" key="Funke, Karl Philip">Funke, Karl Philip</persName>
+              </cell>
+              <cell xml:id="id4ef86358-3a2c-4e87-b349-f71d77dba49e"><hi xml:id="id896eda16-b798-47e0-88df-2f6a945c6113" rendition="#ita">Neues Real-Schullexikon von Funke,</hi> bd. 1-5, <placeName xml:id="idf6ff6bb5-85aa-496a-9273-668d173bd1b8">Braunschweig</placeName>, 1800-05, ktl. 934-938.</cell>
+            </row>
+            <row xml:id="idd7d74417-ccad-4d2e-a0f2-b6937c5e37d4">
+              <cell xml:id="idbdf8dd7f-d409-4e23-8038-fc70a6f247e9">
+                <persName xml:id="ide2ac3985-5c23-44f9-9d53-cb93811e0901" key="Gesner, Joahnn Matthias">Gesner, Joahnn Matthias</persName>
+              </cell>
+              <cell xml:id="id4a9a2d11-b318-4d61-a101-324c3c9bbec5">»Socrates sanctus Pæderasta« i <hi xml:id="idd8d0e015-f67b-4cfd-a85b-b4527e3293b5" rendition="#ita">Commentari societatis regiæ scientiarum Gottingensis,</hi> bd. 2, <placeName xml:id="id54f52449-3068-4072-8585-b115a82abd99">Göttingen</placeName> 1753.</cell>
+            </row>
+            <row xml:id="id819f770b-8ddd-456d-ae42-48e9864fee3a">
+              <cell xml:id="idb407a405-8a4b-4048-864c-8cfcea287a25">
+                <persName xml:id="id81e7f47d-2ee9-49d6-a557-cc1ddd3a8cb9" key="Grimm, Brødrene">Grimm, Jakob Ludwig og Wilhelm Karl</persName>
+              </cell>
+              <cell xml:id="id52e77e45-8d29-4d4a-8f05-eb25a8ca4746"><hi xml:id="ide2038f83-17ce-443e-9c47-ad20d792ce4a" rendition="#ita">Irische Elfenmärchen, </hi> overs. af brødrene Grimm, Leipzig 1826, ktl. 1423.</cell>
+            </row>
+            <row xml:id="ide370ae3c-95a8-4cf5-ab76-25fc248cf208">
+              <cell xml:id="ideeea91e7-79be-47d9-be21-3ef88ebbf03f" rows="9">
+                <persName xml:id="ida1511e88-e09f-4587-b688-09d4e5c05879" key="Hegel, Georg Wilhelm Friedrich">Hegel, Georg Wilhelm Friedrich</persName>
+              </cell>
+              <cell xml:id="ideef6a09a-67ec-44a2-a6a5-df339e1064e2"><hi xml:id="idb84890d3-7f9e-41ef-83ff-f911c371ee39" rendition="#ita">Werke. Vollständige Ausgabe,</hi> bd. 1-18, Berlin 1832-45. Heri:</cell>
+            </row>
+            <row xml:id="id0fb44bd7-368d-425c-9ca5-64cef14773e5">
+              <cell xml:id="id40d467d2-80c3-4635-a3e0-46d010509adb"><hi xml:id="id3c2b6e3f-7952-4f9d-976f-65b0fb913657" rendition="#ita">Phänomenologie des Geistes,</hi> udg. af <persName xml:id="idd81685a2-aaa0-4b1a-b9f5-2343386bc3b1" key="Schulze, Johann">J. Schulze</persName>, i <hi xml:id="id8bf6969b-0cb1-4ff0-85d6-2eb423832b21" rendition="#ita">Werke</hi> bd. 2, Berlin 1832 [1807], ktl. 550.</cell>
+            </row>
+            <row xml:id="id0cafe64e-8446-485c-9c33-72a8679a9886">
+              <cell xml:id="id579d1183-ae8a-4ee0-bbaa-53dfb6707498"><hi xml:id="id9da68289-44ef-4b51-af3c-5c385d292dff" rendition="#ita">Encyclopädie der philosophischen Wissenschaften im Grundrisse,</hi> udg. af <persName xml:id="iddb4dc1ba-e508-4963-8cc8-b1d53cb4ec3a" key="Henning, L. von">L. v. Henning</persName>, 3 bd., i <hi xml:id="id7d802e62-a3a2-428d-be43-d40f2bf6f538" rendition="#ita">Werke</hi> bd. 7,1-7,3, Berlin 1840-45 [1817], ktl. 561-563.</cell>
+            </row>
+            <row xml:id="idaa9087ee-1fad-4ac6-a970-84706ea13f83">
+              <cell xml:id="id9cbd9404-6cb7-4cb6-9433-25cedfd26761"><hi xml:id="id47e59306-5bce-46ff-969c-899db566c49d" rendition="#ita">Grundlinien der Philosophie des Rechts,</hi> udg. af <persName xml:id="id0a1a0be9-11c1-4212-ba1e-66be999ede48" key="Gans, Eduard">E. Gans</persName>, i <hi xml:id="idd7da97b2-396b-43cb-956e-628850f4047a" rendition="#ita">Werke</hi> bd. 8, Berlin 1833 [1821], ktl. 551.</cell>
+            </row>
+            <row xml:id="ide1274687-7756-425f-97e9-0aff333129a7">
+              <cell xml:id="idda9617c4-9eb4-421f-b223-b3838bee60b8">»Ueber: Solger's nachgelassene Schriften und Briefwechsel« i <hi xml:id="id72fa759b-9312-408e-9cf9-e14216672768" rendition="#ita">Vermischte Schriften,</hi> udg. af <persName xml:id="id65b97bf2-2844-4291-87d9-94ad932c1c56" key="Förster, F.">F. Förster</persName> og <persName xml:id="id7c0407e8-7dd2-4cc6-9acc-461f6d74382f" key="Baumann, L.">L. Baumann</persName>, 2. bd., i <hi xml:id="idb6a43169-bbc8-482f-8138-c27bf2d7c973" rendition="#ita">Werke</hi> bd. 16-17, Berlin 1834-35 [1828], ktl. 555-556; bd. 16.</cell>
+            </row>
+            <row xml:id="idd398b32b-d6bc-49b2-bc6e-86b4ab6644a7">
+              <cell xml:id="id6a045ca2-bed4-43d7-a08e-a8238e079fe9"><hi xml:id="id810bae22-d334-472d-9f30-853f082be92e" rendition="#ita">Vorlesungen über die Aesthetik,</hi> udg. af <persName xml:id="idb24f1760-2cb1-43fb-82a0-645b3e17d131" key="Hotho, Heinrich Gustav">H.G. Hotho</persName>, 3 bd., i <hi xml:id="id43ce6356-79d1-4415-98e1-12a4e8c97f2b" rendition="#ita">Werke</hi> bd. 10,1-10,3, Berlin 1835, ktl. 1384-1386.</cell>
+            </row>
+            <row xml:id="idb533e033-e5b3-4805-978b-15c8e1a3673d">
+              <cell xml:id="ideb3e75f2-285c-4018-afc4-56b76155bcf5"><hi xml:id="id90684eb1-32f3-48e5-bea1-3de3e6b6bc64" rendition="#ita">Vorlesungen über die Geschichte der Philosophie,</hi> udg. af <persName xml:id="idd6bc6911-afa1-40bb-903e-07f355788905" key="Michelet, Carl Ludwig">K.L. Michelet</persName>, bd. 1-3, i <hi xml:id="id89e848cd-5356-494f-ab69-7678d86b279c" rendition="#ita">Werke</hi> bd. 13-15, Berlin 1836, ktl. 557-559.</cell>
+            </row>
+            <row xml:id="id4543ed19-a596-41b2-a9f4-31d6579c319e">
+              <cell xml:id="ida0ace0bf-0a81-4c67-ac08-a798dd11e2ba"><hi xml:id="idbeb5c1e7-c315-4c15-9c08-5a0418ee4664" rendition="#ita">Vorlesungen über die Philosophie der Religion,</hi> udg. af <persName xml:id="id24f52071-fefc-45db-8630-06e840f17821" key="Marheineke, Philipp Konrad">P. Marheineke</persName>, 2 bd., i <hi xml:id="id8ec90abd-0656-4b96-a6a7-0a32235c3d04" rendition="#ita">Werke</hi> bd. 11-12, Berlin 1840, ktl. 564-565.</cell>
+            </row>
+            <row xml:id="ided58147c-259a-44a7-96cb-1fe333c67b72">
+              <cell xml:id="id06d7e7f1-b08b-440b-aa4a-81962caecc30"><hi xml:id="id5d7244cd-0782-4dd7-8b77-223bd7980c50" rendition="#ita">Vorlesungen über die Philosophie der Geschichte,</hi> 2. udg, udg. af <persName xml:id="ida85b2cb6-0ccb-4779-9dd9-114f3ac303ad" key="Hegel, Karl">Karl Hegel</persName>, i <hi xml:id="iddcb2f685-707c-4729-831d-41c3ea1d266c" rendition="#ita">Werke</hi> bd. 9, Berlin 1840.</cell>
+            </row>
+            <row xml:id="ide0c58154-802e-490d-88b5-deb3a398a465">
+              <cell xml:id="idebf81ecb-0d1f-4371-ad9c-85b6c9d909bd">
+                <persName xml:id="id544c2fca-a227-49ac-ad98-c51ee60a020f" key="Heinsius, Otto Friedrich Theodor">Heinsius, Theodor</persName>
+              </cell>
+              <cell xml:id="ida71ff870-d914-4dbd-b620-dfe4b0aa176c"><hi xml:id="idec95e7a5-441e-452c-93de-02617f102039" rendition="#ita">Sokrates nach dem Grade seiner Schuld, zum Schutz gegen neuere Verunglimpfung,</hi> Leipzig 1839.</cell>
+            </row>
+            <row xml:id="ide9796a40-2132-419a-8e8f-37c38dfd0f4c">
+              <cell xml:id="id18dccac2-5783-4c80-8e9d-0b5f2714736c">
+                <persName xml:id="idb5d6419f-9ece-428d-9c7f-080dd21c32fb" key="Hermann, Karl Friedrich">Hermann, Karl Friedrich</persName>
+              </cell>
+              <cell xml:id="id1cd6f7b4-12da-483a-8a2f-c7044ce186eb"><hi xml:id="id10a399ac-d636-4acd-9d19-0df66c727aaf" rendition="#ita">Geschichte und System der platonischen Philosophie,</hi> bd. 1, <placeName xml:id="id686b75a7-55ab-448e-a87f-20092231b121">Heidelberg</placeName> 1839, ktl. 576</cell>
+            </row>
+            <row xml:id="id3aca7126-c69a-42de-9edc-c61109f2f42a">
+              <cell xml:id="id85bbd208-292e-4530-aa0b-3c38fbbf9476">Hotho, Heinrich Gustav</cell>
+              <cell xml:id="idaa13fd98-4ca5-4439-aca0-41256b693132"><hi xml:id="id104578e1-1912-47aa-823b-08d0de27f524" rendition="#ita">Vorstudien für Leben und Kunst,</hi><placeName xml:id="idf6638564-5dab-40f1-841b-06165f751a15">Stuttgart</placeName> og Tübingen 1835, ktl. 580.</cell>
+            </row>
+            <row xml:id="idad0164fe-0911-4295-9396-10ab428a384c">
+              <cell xml:id="idb2bc5313-1358-43cd-9ba1-41e5519ad340">
+                <persName xml:id="idb70502cb-832d-46c0-b657-168bbaa70925" key="Lelut, Louis-François">Lelut, Louis-François</persName>
+              </cell>
+              <cell xml:id="id2674edb3-7b67-4720-8144-4d10708cc556"><hi xml:id="id762bd006-eef1-4abd-9c31-6736c2f8b592" rendition="#ita">Du démon de Socrate,</hi><placeName xml:id="id127fae05-6c30-497c-a208-1a648cd09711">Paris</placeName> 1836.</cell>
+            </row>
+            <row xml:id="id989ef37d-69ef-4159-b974-8e29fc43a23e">
+              <cell xml:id="id4e41cb13-5f05-472e-bdd9-d2ad37a6ffa0">
+                <persName xml:id="id43e12bff-4df0-4ca6-9326-b08451bd0c45" key="Lyngby, Hans Christian">Lyngby, Hans Christian</persName>
+              </cell>
+              <cell xml:id="idfbd10242-07a6-431a-87f8-ee2cfe23e99d"><hi xml:id="idc5cf0e83-fff1-4e04-8ae9-ebac8cee3aa7" rendition="#ita">Færøiske Qvæder om Sigurd Fofnersbane og hans Æt,</hi> overs. af H.C. Lyngby, <placeName xml:id="id4afe8916-4f1a-488e-a3dd-3d17243c8087">Randers</placeName> 1822, ktl. 1484.</cell>
+            </row>
+            <row xml:id="id7db13b4c-c98d-43ae-a19f-49c607730e6f">
+              <cell xml:id="id3b06b252-bb86-4fe8-938d-eab6ce15d1b1">
+                <persName xml:id="idaa3eb0f2-fed4-416c-82ef-bf8bbccace40" key="Martensen, Hans Lassen">Martensen, Hans Lassen</persName>
+              </cell>
+              <cell xml:id="idb000f604-1ab3-48ec-8ec1-77e2fa41a8a5">[anm. af <persName xml:id="id3fad9042-d838-4a31-ae99-f31b306f860b" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>] <hi xml:id="id17c71641-f7ee-440e-b75b-ca269311dbb5" rendition="#ita">Nye Digte</hi> i <hi xml:id="id693aa018-610f-46a4-a97f-7864ecccab38" rendition="#ita">Fædrelandet,</hi> nr. 398-400 (10.-12. jan.), Kbh. 1841.</cell>
+            </row>
+            <row xml:id="idbf6bf047-e1de-4cb2-88a0-84450b615a44">
+              <cell xml:id="ide27ce44f-f505-4aaf-9be1-f7e75010724d">
+                <persName xml:id="idc9998ca2-5ad7-4227-9cc1-885b77fd846a" key="Mehring, G.">Mehring, G.</persName>
+              </cell>
+              <cell xml:id="id9002d5c8-83ce-4e6f-a7ce-4ba005d28f54">»Ideen zu einer wissenschaftlichen Begründung der Physiognomik« i <hi xml:id="idf558a0a4-0dea-424e-a884-f763d7b4440f" rendition="#ita">Zeitschrift für Philosophie und spekulative Theologie,</hi> udg. <persName xml:id="id0a30efb5-a93f-4c6b-9ec5-fa781a67648f" key="Fichte, Immanuel Hermann">I.H. Fichte</persName>, Bonn 1840, 1. del, s. 210-266.</cell>
+            </row>
+            <row xml:id="id5c7a7cd8-8ad6-44c6-b736-991e4ef2fa89">
+              <cell xml:id="id084af89c-c4fd-442a-b669-3b98c089a2ef">
+                <persName xml:id="idc8f7478e-a6aa-417a-8539-21a723db7a92" key="Jean Paul" sameAs="Paul, Jean">Paul, Jean</persName>
+              </cell>
+              <cell xml:id="ide3400626-9078-46a6-abe3-5fb48aa8dc57"><hi xml:id="id6e59fa7c-36b5-465d-a41e-0eb99b6885ac" rendition="#ita">Vorschule der Aesthetik, nebst einigen Vorlesungen in Leibzig über die Parteien der Zeit,</hi> bd. 1-3, 2. udg., Stuttgart og Tübingen 1813 [1804], ktl. 1381-1383.</cell>
+            </row>
+            <row xml:id="id70e15fa9-78a2-4948-b4de-81b8a61be277">
+              <cell xml:id="idef3f758a-4dc1-4c1c-80be-fe810a8a80d9" rows="16">
+                <persName xml:id="idc5c03fc2-5b7c-4342-a3ae-13208404330c" key="Platon">Platon</persName>
+              </cell>
+              <cell xml:id="id233b6877-ddef-4bd9-b009-9f769cc5ef81"><hi xml:id="id8bd0ac32-987c-4b7b-bbe2-3649c384c7ee" rendition="#ita">Platonis quae exstant opera. Accedunt Platonis quae feruntur scripta,</hi> udg. af <persName xml:id="id133877ba-ce33-454c-b604-76c6ba3b34c7" key="Ast, Friedrich">Fr. Ast</persName>, bd. 1-11, Leipzig 1819-32, ktl. 1144-1154. Heri:</cell>
+            </row>
+            <row xml:id="id6b34e8ad-564e-46f9-98ac-a1d484c0daad">
+              <cell xml:id="idce67c102-69db-49e0-8c21-bedfb0713002"><hi xml:id="id23a65cf9-c515-4490-a337-de7bbc9c079a" rendition="#ita">Phaedrus,</hi> bd. 1, 1819, s. 124-253.</cell>
+            </row>
+            <row xml:id="id7c21992e-7df0-4ef9-89d9-77f9bda73c4d">
+              <cell xml:id="idf50388be-798f-4da4-b815-a79f36bad720"><hi xml:id="idc14a270e-4638-4229-aec1-6f6aa78a2c47" rendition="#ita">Theaetetus,</hi> bd. 2, 1820, s. 4-201.</cell>
+            </row>
+            <row xml:id="id6a447fad-df60-4170-aeca-9b9377a2e639">
+              <cell xml:id="id0bd0a714-ed05-4e04-b15e-771252960bc0"><hi xml:id="id416fe8a0-3c9b-4e7a-b68b-adadc7030224" rendition="#ita">Politiae I,</hi> bd. 4, 1822, s. 4-65.</cell>
+            </row>
+            <row xml:id="idfdde12bc-7800-4ab6-a027-66488e59c675">
+              <cell xml:id="id2b996932-efe6-43be-933d-b96ecdb3961e"><hi xml:id="ida542e78a-64e9-4914-8449-cc461dba054b" rendition="#ita">Politiae II-X,</hi> bd. 4-5, 1822.</cell>
+            </row>
+            <row xml:id="idfae0a0cb-3bfd-4494-9280-130aa2830580">
+              <cell xml:id="idcd424751-aa39-4b6c-ad33-b50b9bf0b025"><hi xml:id="idc248a4ac-d876-4b26-bc2f-8fd935d305cd" rendition="#ita">Apologia Sokratis,</hi> bd. 8, 1825, s. 98-158.</cell>
+            </row>
+            <row xml:id="idfc4498ba-8bf9-41bd-9a55-c75fcf3d588f">
+              <cell xml:id="id2be29232-2aad-4ca3-883f-e099bbee3494"><hi xml:id="id678b4e57-8531-445d-908e-81ea2805822f" rendition="#ita">Platonis dialogos selectos,</hi> udg. og kommenteret af <persName xml:id="idd4d4eae7-ef5f-4008-9371-78fdd43ef6a4" key="Stallbaum, G.">G. Stallbaum</persName>, <placeName xml:id="idf88e5acd-8908-49af-9222-00c7067d290b">Gotha</placeName> og <placeName xml:id="idb2042858-22dc-4599-8bc9-dc0ad04b4b70">Erfurt</placeName> 1827. Heri:</cell>
+            </row>
+            <row xml:id="id4f1c273f-dc1b-4d8f-a045-ddfb5a8471e6">
+              <cell xml:id="id1720f407-e599-46fd-8e3a-d0597b656c8e">»Præfatio ad apologiam Socratis«, bd. 1, del 1, s. 1-6.</cell>
+            </row>
+            <row xml:id="id858751ad-4e74-4b5c-b8a0-b72975b9b32f">
+              <cell xml:id="id5bc79172-b40e-4a56-b403-73e3af363d0b">»Præfatio ad Phaedonem«, bd. 2, del 1, s. 1-19.</cell>
+            </row>
+            <row xml:id="id72b0df62-d9fa-43fe-8583-1b98d25112e5">
+              <cell xml:id="id61aa5729-d1d4-4138-a94d-10fb2173de92"><hi xml:id="idff0399d4-f774-49d7-bfcf-da9505dfccec" rendition="#ita">Platons Werke,</hi> af <persName xml:id="id93a61ad6-07fc-4dac-9ed2-7bd1b663aff5" key="Schleiermacher, Friedrich">Fr. Schleiermacher</persName>, bd. 1-6, del 1-3, Berlin 1804-28, ktl. 1158-1163.</cell>
+            </row>
+            <row xml:id="id2be0d215-875f-45d9-a649-d8a285700925">
+              <cell xml:id="id039cbc9c-eba8-4d43-b8d6-dfd41e6c4d9d"><hi xml:id="id3f413094-4f0d-4946-9555-09ad8aa4c57c" rendition="#ita">Udvalgte Dialoger af Platon,</hi> overs. af <persName xml:id="id27a9e329-8563-443a-a9e6-3b1a22403e87" key="Heise, Carl Johan">C.J. Heise</persName>, bd. 1-3, Kbh. 1830-38, ktl. 1164-66. Heri:</cell>
+            </row>
+            <row xml:id="idc08e941e-9e0b-4e46-995f-3ccbc80eb323">
+              <cell xml:id="idc9cb4585-b4e5-427a-ac4e-75106e1f7c6b"><hi xml:id="idbb75638d-a28b-4164-ade8-1eac9f28cda8" rendition="#ita">Phædon,</hi> bd. 1, 1830.</cell>
+            </row>
+            <row xml:id="idbd0cef16-23a6-4104-bc04-d5545298a7b2">
+              <cell xml:id="idaf118766-3c0f-4dbc-a18d-2702f60c1de9"><hi xml:id="id05c08911-99fc-4e18-8fc2-366529d2e93c" rendition="#ita">Alkibiades,</hi> bd. 1, 1830.</cell>
+            </row>
+            <row xml:id="id093b5c64-07a6-4f16-9886-ef49e575e6e1">
+              <cell xml:id="idbc0381d4-126d-4af7-8a74-d13631ea3cac"><hi xml:id="id89f8e70b-aa24-40fb-a531-0d17c8ec0edc" rendition="#ita">Symposion,</hi> bd. 2, 1831.</cell>
+            </row>
+            <row xml:id="ida40f97a9-9bc8-4a5d-bbb7-071425233e37">
+              <cell xml:id="id4f6c502e-4909-4a94-aa6b-bbcf9a507d13"><hi xml:id="id22df7e3e-dcfb-4707-a660-b9402f194506" rendition="#ita">Protagores,</hi> bd. 2, 1831.</cell>
+            </row>
+            <row xml:id="idd1fd2288-c1cb-4288-b3da-5593d915d549">
+              <cell xml:id="id5c4c1a3b-96ff-488f-a46c-d500315a1364"><hi xml:id="id034b6350-1a78-4426-b1c9-e905fc63a1c4" rendition="#ita">Gorgias,</hi> bd. 3, 1838.</cell>
+            </row>
+            <row xml:id="iddf6fced1-f7ac-4aa0-8b7a-2a6999bcd2b7">
+              <cell xml:id="idcce7f147-159c-4bf7-bb53-3cc4ff8819b8">
+                <persName xml:id="id1d8cae9e-9483-4a67-b93a-718790b05404" key="Plutarch">Plutarch</persName>
+              </cell>
+              <cell xml:id="idd116520d-500d-44b3-bf6c-945cbeaa7b2b">»De genio Socratis« i <hi xml:id="id3f8a4f2e-09b3-43a5-ab8b-02e3e7c23571" rendition="#ita">Plutarchi Chaeronensis opuscula,</hi> udg. af <persName xml:id="id61bd8cdf-942d-4e6c-ac7f-b6c228efa66f" key="Stephanus, H.">H. Stephanus</persName>, 1572, bd. 2.</cell>
+            </row>
+            <row xml:id="id962378ec-b7a2-41dc-892b-d6d5f7d50ed6">
+              <cell xml:id="id14a9b5ce-b929-44ad-bcd3-2647d158e574">
+                <persName xml:id="id5a120544-b520-452a-a787-c3494dd27c35" key="Rötscher, Heinrich Theodor">Rötscher, Heinrich Theodor</persName>
+              </cell>
+              <cell xml:id="idece8291d-1b50-44ae-beb1-8f1235523433"><hi xml:id="id4ccd42c9-7207-4dac-96cc-c2053df1e5e4" rendition="#ita">Aristophanes und sein Zeitalter. Eine philologisch-philosophische Abhandlung zur Alterthumsforschung,</hi> Berlin 1827.</cell>
+            </row>
+            <row xml:id="id187da45c-379c-4d7e-aa58-4619418b94f7">
+              <cell xml:id="idf4586701-c66c-4ed7-b712-01bd33c49050">
+                <persName xml:id="id00edff76-6e76-47ad-8721-fccbe29627b4" key="Schlegel, August Wilhelm von">Schlegel, August Wilhelm</persName>
+              </cell>
+              <cell xml:id="ida45b70cb-ac19-4532-9bde-b962906eca05"><hi xml:id="idad320620-0206-4ab6-99e9-5c5c19c1c80e" rendition="#ita">Vorlesungen über dramatische Kunst und Literatur,</hi> bd. 1-3, Heidelberg 1809-11, ktl. 1392-1394.</cell>
+            </row>
+            <row xml:id="id35215271-c8fe-4342-a40e-02fb7862f239">
+              <cell xml:id="idc14a53cd-2837-4a80-aac2-9bff9576936e">
+                <persName xml:id="idb8389543-b460-4f6a-a9dd-338f6f89a9dd" key="Schlegel, Friedrich">Schlegel, Friedrich von</persName>
+              </cell>
+              <cell xml:id="id0afb9d3d-a666-4805-b5c6-f06f9006a930"><hi xml:id="id1601a0d5-6e7a-407f-94ed-37e27de997c3" rendition="#ita">Lucinde,</hi> 2. udg., Stuttgart 1835 [1799].</cell>
+            </row>
+            <row xml:id="idc0759ad1-f5d9-418b-8cbd-72737ba88766">
+              <cell xml:id="id50343f9f-648b-491e-9b12-b6b47a64e84a">
+                <persName xml:id="id6aecdf14-1bb1-4ef6-aa4c-cdffeffa8400" key="Schleiermacher, Friedrich">Schleiermacher, Friedrich</persName>
+              </cell>
+              <cell xml:id="idc78a3c59-2d5a-4463-b4b9-85c08aea4c7d">»Ueber den Werth des Sokrates als Philosophen« i <hi xml:id="idb78a97b5-77da-41f4-a590-30ab06e33198" rendition="#ita">Abhandlungen der philosophischen Klasse der Königlich-Preußischenb Akademie der Wissenschaften, aus den Jahren 1814-1815,</hi> Berlin 1818, s. 50-68.</cell>
+            </row>
+            <row xml:id="idf38ef006-0e60-4399-ae2f-895f2a9a4de4">
+              <cell xml:id="id2f6b695f-df28-4839-b73b-13365221153c"/>
+              <cell xml:id="id456be55d-2aa8-4c2f-9db2-ba9e62022e72"><hi xml:id="idd5963740-0754-452b-a4fe-505cafaeeb4e" rendition="#ita">Der christeliche Glaube nach den Grundsätzen der evangelischen Kirche,</hi> bd. 1-2, 3. udg., Berlin 1835-36, ktl. 258.</cell>
+            </row>
+            <row xml:id="ida3cc64cb-5342-428d-a770-5e1044896ae7">
+              <cell xml:id="id6e66bffb-5009-4592-8ad4-d7a910b316a7">
+                <persName xml:id="ida16561e7-0c85-42b6-b050-911ccfa53c34" key="Schubert, Gotthilf Heinrich von">Schubert, Gotthilf Heinrich v.</persName>
+              </cell>
+              <cell xml:id="id6f1727d8-1a85-4e88-a065-4eba0a5c9f75"><hi xml:id="id48f44665-d9bf-4b08-9631-534caaa00cec" rendition="#ita">Die Symbolik des Traumes,</hi> 2. udg., <placeName xml:id="id8794d982-92f7-4aa3-85a6-94995a0bcefe">Bamberg</placeName> 1821 [1814], ktl. 776.</cell>
+            </row>
+            <row xml:id="id8c10a16b-aa06-43ba-9a2c-6e43bd67cbda">
+              <cell xml:id="idc023afd1-f6ab-478f-a579-9f780489e314" rows="2">
+                <persName xml:id="id9e7ec6e0-a53e-4698-b4ea-44e4c4291adc" key="Solger, Karl Wilhelm Ferdinand">Solger, Karl Wilhelm Ferdinand</persName>
+              </cell>
+              <cell xml:id="idc40affc2-2e1b-41da-9ef6-c2b025d8c75e"><hi xml:id="id33761d7d-9ace-458e-88b6-9f16d1c12c50" rendition="#ita">Solger's nachgelassene Schriften und Briefwechsel,</hi> udg. af <persName xml:id="idda0dfc96-74a6-4916-ae06-019c52e0dafc" key="Tieck, Johann Ludwig">L. Tieck</persName> og <persName xml:id="id17893c5d-6959-48a8-ad1b-19b2d143c19e" key="Raumer, Friedrich von">Fr. v. Raumer</persName>, bd. 1-2, Leipzig 1826.</cell>
+            </row>
+            <row xml:id="id56f880ba-3df0-4611-b365-ec59d24e01a7">
+              <cell xml:id="id041a30ed-51d0-430b-aca1-f4e7019bdb49"><hi xml:id="id2a194dd0-9c30-4d1a-b513-ce3e0b363cf5" rendition="#ita">Vorlesungen über Asthetik,</hi> udg. af <persName xml:id="id28d73f0b-db2b-412a-8665-8c2f0a6d60bc" key="Heyse, K.W.L.">K.W.L. Heyse</persName>, Leipzig 1829, ktl. 1387. Fotografisk optryk <placeName xml:id="id58a38f21-4648-4781-9d51-8e9f73c843f4">Darmstadt</placeName> 1973.</cell>
+            </row>
+            <row xml:id="id40a0404a-ee24-4fbb-bec6-54855273a3aa">
+              <cell xml:id="idccd66543-a6df-490f-a7e7-c8314b718619">
+                <persName xml:id="id4ef993cc-543e-4aeb-af6b-2af946d24b51" key="Steffens, Henrich">Steffens, Henrich</persName>
+              </cell>
+              <cell xml:id="id190a24dc-56e6-4f9c-af85-36d31692a4a8"><hi xml:id="ide1084702-5133-4fb6-b853-eec66defd6ed" rendition="#ita">Caricaturen des Heiligsten,</hi> bd. 1-2, Leipzig 1819-21, ktl. 793-794.</cell>
+            </row>
+            <row xml:id="id3a1069c7-781e-45ff-83e9-130c9951d814">
+              <cell xml:id="id97b07108-b174-48f3-9e7d-69e48cb4e25f">
+                <persName xml:id="idd46bea0d-e9e6-4c81-8646-6d633792e29a" key="Sulzer, Johann Georg">Sulzer, Johann Georg</persName>
+              </cell>
+              <cell xml:id="id0c8f1d74-22d5-47c8-90c5-a460adeadb7f"><hi xml:id="id645d7c31-cc5f-4cc0-a80e-3184d88271ab" rendition="#ita">Nachträge zu Sulzers allgemeine Theorie der schönen Künste,</hi> udg. af <persName xml:id="idf0510937-2b34-4bd3-9f15-fdbb053fd564" key="Schütz, Christian Gottfried">C.G. Schütz</persName>, bd. 1-8, Leipzig 1792-1808.</cell>
+            </row>
+            <row xml:id="id9ed774ce-e5cb-40fa-9ee5-7784300a0c6d">
+              <cell xml:id="id23e81241-2875-4cec-8350-483fc068a893">
+                <persName xml:id="ideb59ecd0-68ca-4d5b-8581-4b2766fc98fb" key="Süvern, Johann Wilhelm">Süvern, Johann Wilh.</persName>
+              </cell>
+              <cell xml:id="ide8e77035-28a5-46a2-9c6d-5b5823dae1ba"><hi xml:id="id587d023e-71b9-4e00-899b-23f0cd18265d" rendition="#ita">Ueber Aristophanes Wolken,</hi> Berlin 1826.</cell>
+            </row>
+            <row xml:id="id02324e02-5848-486a-a0a9-4f349d326fab">
+              <cell xml:id="id81b11597-43c5-4f79-ac5c-ad0a8fd9487d">
+                <persName xml:id="id5a69c9e4-9a2e-4278-98b1-defdeb49e3b7" key="Teofrast">Teofrast</persName>
+              </cell>
+              <cell xml:id="id65e0981c-5772-43a4-9eb7-5536eb7e5e47"><hi xml:id="ide76a3fcd-ab96-4a07-a4ae-b9571eeac2e5" rendition="#ita">Teophrasti Characteres,</hi> udg. af Fr. Ast, Leipzig 1815, ktl. 1204.</cell>
+            </row>
+            <row xml:id="id6168384a-9cdc-4303-be7c-2e109093b696">
+              <cell xml:id="id7c6cfe31-a006-40c1-ab25-72f6688ee590" rows="4">
+                <persName xml:id="idb3d851e7-484e-4b30-8e7d-0184e4052d36" key="Xenophon">Xenophon</persName>
+              </cell>
+              <cell xml:id="id1ee84f27-bc98-4c1b-86bd-9df243e4b01f">
+                <hi xml:id="idb0ffbdbd-4961-4435-a875-70dbb5078595" rendition="#ita">Sokrates' Apologi.</hi>
+              </cell>
+            </row>
+            <row xml:id="id3e486709-1dbb-457d-afbe-9e671442a3dd">
+              <cell xml:id="id71a528fb-3262-4013-a848-3bd8eed7b649">
+                <hi xml:id="idd0370b73-25d8-4b95-8239-ca2c4510246a" rendition="#ita">Memorabila.</hi>
+              </cell>
+            </row>
+            <row xml:id="id236511e9-8582-4bde-a238-1efffc4257d8">
+              <cell xml:id="id236ee60f-b9a2-489d-a905-8e2d21da1ae3">
+                <hi xml:id="id55535d40-46d5-43ed-ab33-1ff1b77e57b9" rendition="#ita">Symposion.</hi>
+              </cell>
+            </row>
+            <row xml:id="id98802dfb-fb73-4fa7-985e-ce9a2f3d8103">
+              <cell xml:id="id6dd4c124-accc-488f-b297-07207573deb4"><hi xml:id="id30cc6de3-b941-4835-b915-4655a097389a" rendition="#ita">Xenophons Sokratiske Merkværdigheder,</hi> overs. af <persName xml:id="idefd91308-45d1-48cf-97cb-eef447ed9bae" key="Bloch, Jens">J. Bloch</persName>, Kbh. 1792.</cell>
+            </row>
+          </table>
+        </div>
+        <div xml:id="id1b566f6b-adbe-4e72-be05-39f93873065c" type="level1">
+          <head xml:id="id92f3b95b-1af6-4dd0-839a-c8df373f18fb">Forkortelser</head>
+          <table xml:id="id9e1ebbd8-cfd6-47ba-921e-96d3bebec13c">
+            <row xml:id="id9c098173-38a6-410c-90e7-0cdb8b01d421">
+              <cell xml:id="id6ebf7895-c721-4376-b470-b8eab2e06f2a">
+                <hi xml:id="ida9fa0fc1-0df9-4e6a-a328-ef0570ad212e" rendition="#ita">Ast</hi>
+              </cell>
+              <cell xml:id="idfef2f5c2-9c3f-4cdc-a870-8994839999c3">
+                <hi xml:id="id75b368bf-ef08-43f8-9d90-d261f72909db" rendition="#ita">Platonis quae exstant opera. Accedunt Platonis quae feruntur scripta.</hi>
+              </cell>
+            </row>
+            <row xml:id="id7a4a1437-ca38-4e8d-9b81-79bd5c8bade0">
+              <cell xml:id="ide17394ec-aad2-4884-a43f-285c84e22f82">
+                <hi xml:id="id854ad5d1-f120-4021-8a0e-5d97d9f6c458" rendition="#ita">Bloch</hi>
+              </cell>
+              <cell xml:id="id1f430f7c-8087-4bf4-b858-bfd843501825">
+                <hi xml:id="id5a4b6d4e-2a53-4168-afdc-1145e63eeed6" rendition="#ita">Xenophons Sokratiske Merkværdigheder.</hi>
+              </cell>
+            </row>
+            <row xml:id="id377b48bf-0e85-40cb-b633-8055b9e94a2e">
+              <cell xml:id="id573b2fe5-c795-4d20-a98f-33cbe8c2ee86">
+                <hi xml:id="id8a088cb6-dfb9-41fb-91c4-2d9214c5da9a" rendition="#ita">Das Christliche des Platonismus</hi>
+              </cell>
+              <cell xml:id="id9fd8a0bf-7660-46e7-82d9-b2f0a55249fc">F.C. Baur <hi xml:id="id596195f9-f35e-42cd-962a-d8fa1df4c7d2" rendition="#ita">Das Christliche des Platonismus oder Sokrates und Christus.</hi></cell>
+            </row>
+            <row xml:id="id835add03-27f1-4964-a2dd-2dc89f52be45">
+              <cell xml:id="id88a63f2e-709c-4325-9bf5-39c84d916a2b">
+                <hi xml:id="iddd41441a-4359-48cb-82bc-b10acf26af70" rendition="#ita">Forchammer</hi>
+              </cell>
+              <cell xml:id="ide7c8c7e6-a504-49d5-8c53-431c1521d812"><hi xml:id="idaded8192-84b8-4f5b-8ad9-b4f531c6a0c6" rendition="#ita">Die Athener und Sokrates, Die Gesetzlichen und der Revolutionär,</hi> Berlin 1837.</cell>
+            </row>
+            <row xml:id="id6e6f2a2a-a656-4f36-a7ab-370042723ec9">
+              <cell xml:id="id0a63cdd7-42af-48f7-8104-840c8d7452bd">
+                <hi xml:id="id36eb59aa-05c7-4b64-8ced-fc5cd3851f4f" rendition="#ita">GT-1740</hi>
+              </cell>
+              <cell xml:id="idaaee09a7-a950-4c4f-8b25-4dddd6ba48f0"><hi xml:id="id0df613d6-940e-4073-aee5-7834fe390562" rendition="#ita">Det Gamle Testamente,</hi> 1740.</cell>
+            </row>
+            <row xml:id="idbdf8f2d3-2dc4-4104-a93e-b2681aa35574">
+              <cell xml:id="idfa48022f-9ef9-4a83-a8d7-7476d6cbf391">Heinsius</cell>
+              <cell xml:id="id17c9f60f-be52-4871-bf88-f8a09c52fa73"><hi xml:id="ide48fcb90-eb8c-4a2d-bf8c-2224a5b2af6c" rendition="#ita">Sokrates nach dem Grade seiner Schuld zum Schutz gegen neuere Verunglimpfung,</hi> Leipzig 1839.</cell>
+            </row>
+            <row xml:id="id3b88af46-85c7-4d57-9c92-0a054a50a058">
+              <cell xml:id="id672d2fd0-e1ae-47fc-99a5-167b0005402d">
+                <hi xml:id="idd0656631-7a06-4e68-bd06-219b3ed69926" rendition="#ita">Heise</hi>
+              </cell>
+              <cell xml:id="id0519f0e8-1dd0-4212-9348-7cccc797ff7f"><hi xml:id="id33669873-80f1-438a-bb8a-dd6726e574a7" rendition="#ita">Udvalgte Dialoger af Platon,</hi> overs. af C.J. Heise.</cell>
+            </row>
+            <row xml:id="idb98ed0cc-c6c6-4cba-a5b4-32911be39bb8">
+              <cell xml:id="idc290e968-162e-4612-9895-7c6d11e61801">
+                <hi xml:id="id0783ad48-25ac-41f6-9f06-5e04fcb13deb" rendition="#ita">Jub.</hi>
+              </cell>
+              <cell xml:id="idfddc0a7d-d993-48c9-8698-362796cb0fef">Hegel <hi xml:id="idb2826872-1dc7-4fd9-8573-29600ca56da1" rendition="#ita">Sämtliche Werke, Jubiläumsausgabe,</hi> bd. 1-26, Stuttgart 1927-40.</cell>
+            </row>
+            <row xml:id="id2903d3b8-aa38-44cf-bf64-7172f55a5f38">
+              <cell xml:id="id2b81c74b-403f-43a9-af90-a5cdb70e4e7c">
+                <hi xml:id="id97e2b4b5-999d-452b-aa3d-64bdf0bd6bb6" rendition="#ita">Krag</hi>
+              </cell>
+              <cell xml:id="idfb200591-225f-4125-9e52-ad25543fa239">
+                <hi xml:id="idd256697c-08e5-4add-bf83-505c1abbc6cb" rendition="#ita">Aristophanes's Komedier.</hi>
+              </cell>
+            </row>
+            <row xml:id="id7095619e-48a9-42e9-ab76-f38fd4cbd0c5">
+              <cell xml:id="idf6ebfa77-4f3d-4bc8-a594-307dc10ff28e">
+                <hi xml:id="id8f8250ce-729e-4590-8df1-7d36fa4b3d8f" rendition="#ita">KFSA</hi>
+              </cell>
+              <cell xml:id="id6a5f7e7e-aa67-47f4-a886-14001a051c79"><hi xml:id="id858e1588-b750-4a46-8413-7b4129d5f99f" rendition="#ita">Kritische Friedrich-Schlegel-Ausgabe,</hi> udg. af <persName xml:id="id25f75db3-c0d8-4727-a68c-84dd48d362d5" key="Behler, Ernst">Ernst Behler</persName>, under medvirken af <persName xml:id="idae67ea18-7160-47b1-8067-85a23b98348f" key="Anstett, Jean-Jacques">Jean-Jacques Anstett</persName> og <persName xml:id="idb31b4335-5989-4e10-9c92-88d3916d5b9b" key="Eichner, Hans">Hans Eichner</persName>, afdeling 1 <hi xml:id="idbb321e24-1cfd-4f03-b565-d768490782ea" rendition="#ita">(Kritische Neuausgabe),</hi> bd. 1-10, München 1959-79; bd. 5 (ved Hans Eichner), <placeName xml:id="idda548acb-de75-41d7-9b52-b0db29fd3ae5">München</placeName> 1962.</cell>
+            </row>
+            <row xml:id="id7148fc04-7d34-4791-b337-4c0c65becc28">
+              <cell xml:id="id77142b91-434d-472e-86d8-b370dd992398">
+                <hi xml:id="id57211f06-5547-4069-bd67-63d6e40eeb7b" rendition="#ita">Nach. Schr.</hi>
+              </cell>
+              <cell xml:id="idd1140443-7835-4a48-8cc7-1bbe1570fa75">
+                <hi xml:id="id709aebb1-6078-4431-8a02-72846c994ef8" rendition="#ita">Solger's nachgelassene Schriften und Briefwechsel.</hi>
+              </cell>
+            </row>
+            <row xml:id="idb2d5edbe-6c46-466c-abec-eef252134d99">
+              <cell xml:id="id7ba23fa2-0a0b-4f41-81e5-bc730c5eaf26">
+                <hi xml:id="id15a12958-c34b-46fe-9917-28cc8bbe8634" rendition="#ita">NT-1819</hi>
+              </cell>
+              <cell xml:id="id12ca981f-9032-4275-8555-acb2fde08932"><hi xml:id="id866c776d-8609-4755-9fad-358af0c1ab56" rendition="#ita">Det Nye Testamente,</hi> 1819.</cell>
+            </row>
+            <row xml:id="id95d669ae-95fb-4ac2-9e6e-e4119ce1d88e">
+              <cell xml:id="idb6dcac53-1d10-4be5-9d6e-751f521deb2c">
+                <hi xml:id="id98c61604-7419-4e12-a6a6-599faddf8778" rendition="#ita">Platon's Leben und Schriften</hi>
+              </cell>
+              <cell xml:id="id0b18a520-3306-400f-9642-6ae8ab68f98f"><hi xml:id="idb7da9f33-bea3-4403-ae15-960fc2069b2c" rendition="#ita">Platon's Leben und Schriften,</hi> udg. af Fr. Ast.</cell>
+            </row>
+            <row xml:id="id607dc6fb-355c-497e-b757-e2681f93c17b">
+              <cell xml:id="ide4579586-3df1-43d4-a68a-8cef634acf3b">
+                <hi xml:id="id3a19dbb0-83b0-4980-8b8a-b6eb273947a1" rendition="#ita">Platons Skrifter</hi>
+              </cell>
+              <cell xml:id="id269d25b2-c72b-4eb1-8500-27591f339d58"><hi xml:id="id4642bdd8-9142-4989-bc60-f83ee9c353ac" rendition="#ita">Platons Skrifter,</hi> overs. af <persName xml:id="id75dadc0e-d2f5-4b31-907e-886783ffc97d" key="Høeg, Carsten">Carsten Høeg</persName> og <persName xml:id="id457bcded-2861-4b64-b26c-9c58c5c04ef4" key="Ræder, Hans">Hans Ræder</persName>, bd. 1-10, Kbh. 1992 [1932-41].</cell>
+            </row>
+            <row xml:id="idc85a07ca-c8fa-42af-9946-f689256f6c0d">
+              <cell xml:id="ide064cb2d-811c-4a7f-b5bd-630a38750177">
+                <hi xml:id="id76f444e2-bdd1-4546-8592-f63f2d6b37e2" rendition="#ita">Riisbrigh</hi>
+              </cell>
+              <cell xml:id="id23b46b15-0b8a-403c-a6e2-08384af5b619">
+                <hi xml:id="ida3a5db95-f17c-45d5-8249-ae2811be6791" rendition="#ita">Diogen Laërtses filosofiske Historie.</hi>
+              </cell>
+            </row>
+            <row xml:id="id031f77e0-e876-4e70-9d9a-8c3566894110">
+              <cell xml:id="id3f30f5f1-fb8b-43a3-9370-af20cb250d21">
+                <hi xml:id="id20ba1fc0-589e-409e-9c4f-3ac5a97992e7" rendition="#ita">Rötscher</hi>
+              </cell>
+              <cell xml:id="id8b544767-23f0-4de7-8284-66b0641aa578">H.T. Rötscher <hi xml:id="idbe49dfe2-2555-454d-87c7-e8ed0f5347c1" rendition="#ita">Aristophanes und sein Zeitalter.</hi></cell>
+            </row>
+            <row xml:id="id1e2739d9-a71d-4462-b81d-d621e6971a93">
+              <cell xml:id="id16eef641-18d4-49a8-bd9c-4380e15b61df">
+                <hi xml:id="id81b96463-1543-4a3d-89b0-279cf4493f59" rendition="#ita">Sämt. Schr.</hi>
+              </cell>
+              <cell xml:id="id7534d015-364c-4c8a-80e3-a1494ac43148">H. Heine <hi xml:id="idb1426db6-f85e-45dc-81d6-f9d030392a1f" rendition="#ita">Sämtlische Schriften,</hi> bd. 1-6, udg. af <persName xml:id="idb71da961-8e09-4787-91b7-f83cf7710b39" key="Briegleb, Klaus">Klaus Briegleb</persName>, München 1968-76</cell>
+            </row>
+            <row xml:id="id9167bffa-0091-46cc-85c3-6e0c7be71384">
+              <cell xml:id="id1f712387-933c-4794-9029-629c74c76479">
+                <hi xml:id="id99ad8f53-4c16-4ae4-9133-172e509e8c0a" rendition="#ita">Suhr.</hi>
+              </cell>
+              <cell xml:id="id3b25ee04-c87d-491c-a0d9-b077a6dd2e9b">Hegel <hi xml:id="idad2a0617-2d84-40a7-986b-aef85e31af38" rendition="#ita">Theorie-Werkausgabe. Werke,</hi> Suhrkamp Verlag, bd. 1-20, Frankfurt a. M. 1969-71.</cell>
+            </row>
+            <row xml:id="id630562de-2dc9-41f1-85d5-eb3494e2643d">
+              <cell xml:id="id6685e021-0554-4415-a3e1-0c7bc3781794">
+                <hi xml:id="id3e6a15ac-8533-4854-aa12-823f066e3bf8" rendition="#ita">Thomsen</hi>
+              </cell>
+              <cell xml:id="idbe6198a9-90a7-4663-8b87-ef83498cbe31"><hi xml:id="id74aae9d5-5d62-4ddb-b34f-f9e8a8a99391" rendition="#ita">Aristofanes' komedie Skyerne,</hi> overs. af <persName xml:id="id50f1312c-0fc4-4991-81f7-fc52fdceed5e" key="Thomsen, Ole">Ole Thomsen</persName>n, 2. rev. udg. [1982] (under udgivelse).</cell>
+            </row>
+            <row xml:id="id71287086-22d3-4e6c-b7c4-475bc0930c79">
+              <cell xml:id="id4df5c068-d762-47c6-9a10-7314fe90368b">
+                <hi xml:id="idfe9ed2af-c821-49ae-b924-b870a762e86c" rendition="#ita">Werke</hi>
+              </cell>
+              <cell xml:id="id5b4f2182-0792-4859-b0d9-3183ae1f9740">Hegel <hi xml:id="iddc6df921-f7be-42e2-a636-60232d25a322" rendition="#ita">Werke. Vollständige Ausgabe,</hi> bd. 1-18, Berlin 1832-45.</cell>
+            </row>
+            <row xml:id="idba19280c-cdf8-454e-90db-f2fc18b6f63c">
+              <cell xml:id="id56deeba0-ffb9-48cc-b710-c77ac22c7fa0">
+                <hi xml:id="idabefccf5-cdca-4d35-9b1b-49e8273a160c" rendition="#ita">1970</hi>
+              </cell>
+              <cell xml:id="id0140cc67-7a73-4059-aaac-87e4803c5662"><hi xml:id="id20123108-03e7-4243-b0f2-898d11de36e7" rendition="#ita">Erwin. Vier Gespräche über das Schöne und die Kunst. Nachdruck der Ausgabe Berlin 1907 zusammen mit Solgers Rezension von A.W. Schlegels »Vorlesungen über dramatische Kunst und Literatur«,</hi> udg. af <persName xml:id="idb6b0e58e-725c-4782-aec3-c550d6684ed8" key="Henckmann, W.">W. Henckmann</persName>, München 1970, s. 395-471.</cell>
+            </row>
+          </table>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>
