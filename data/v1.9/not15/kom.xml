@@ -1,136 +1,475 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE kn1 SYSTEM "http://sks.dk/kn1/kn1.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5">
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Notesbog 15</title>
-     
-     <title type="short">Not15</title>
-     
-  <author>
-   <name>Joakim Garff</name>
-  </author>
- 
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Jette Knudsen</name><name>Alastair McKinnon</name>
-  </editor>
- 
-  <respStmt>
-   <resp>udgivet af</resp>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Jette Knudsen</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Peter Tudvad</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name><name>Kim Ravn</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2001</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K19</biblScope>
-     <biblScope unit="file">http://sks.dk/not15/kom.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20121211">Kierkegaard Normalformat vers. 1, <bibl><idno type="version">1.8</idno>, <biblScope unit="file">http://sks.dk/not15/kom.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id9be7eb3f-58c0-4011-8dd3-79bb8376c5b9">
+    <fileDesc xml:id="idc4e93845-03bd-4cb8-abd5-07f29c893c58">
+      <titleStmt xml:id="id6f1bbce3-4fc5-4089-ad1c-6ba9dc3fb55a">
+        <title xml:id="id4c760c27-a120-4c96-b42b-a58da7f7a66a" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="idd65d3a14-3e57-4182-abd8-e95eba215a1e">Notesbog 15</title>
+        <title xml:id="idfac3aeeb-b0c3-42c8-9682-aa8dffa7f23c" type="short">Not15</title>
+        <author xml:id="id9a447c60-0d6e-475f-b593-acaec4a003b2">
+          <name xml:id="id1f34a973-0187-439a-85ec-40ba9d093f30">Joakim Garff</name>
+        </author>
+        <editor xml:id="idcc195792-e6e2-4876-82fd-288ea8631ea7">
+          <name xml:id="ida03748a5-8abc-42e6-81c5-b4791f925569">Niels Jørgen Cappelørn</name>
+          <name xml:id="id589d574c-1141-407e-942e-562ea10ed313">Joakim Garff</name>
+          <name xml:id="id016a606d-ea51-4785-8c81-324d336a3174">Johnny Kondrup</name>
+          <name xml:id="id921f43f8-24f2-4d11-be34-036ad3c50f25">Jette Knudsen</name>
+          <name xml:id="id4d84b6fd-7b22-4bd3-a0e9-7cb05a7dc804">Alastair McKinnon</name>
+        </editor>
+        <respStmt xml:id="id86878a14-725b-4a90-9c4c-44de672d7495">
+          <resp xml:id="id42defe11-3b0c-4d4d-9c00-6e4dfb41a17c">udgivet af</resp>
+          <name xml:id="id788127ec-16c1-4655-92e3-0e8f74ffe2dd">Niels Jørgen Cappelørn</name>
+          <name xml:id="id4773da11-fd2a-42d6-ae0e-103642635605">Joakim Garff</name>
+          <name xml:id="idf3626a1d-7abe-4765-b9a6-7efad81b19e7">Johnny Kondrup</name>
+          <name xml:id="idc2df63e4-2b11-4106-ac00-baf09f119cf1">Jette Knudsen</name>
+        </respStmt>
+        <respStmt xml:id="id5b1a3160-5ddb-4d5c-8aaa-c564f42a8d1c">
+          <resp xml:id="idadb43292-99fd-488f-8a46-e441ac132de3">redigeret af</resp>
+          <name xml:id="idd0e07ce8-0f3d-4a50-81be-12cc4796a523">Peter Tudvad</name>
+        </respStmt>
+        <respStmt xml:id="id10c65b8e-ba80-4241-a1b2-2d756c3e2702">
+          <resp xml:id="id3db943f4-3bcf-49e8-b580-9011164b586a">elektronisk redigeret af</resp>
+          <name xml:id="id13c11696-f5e4-4976-8154-86cfc44cb696">Karsten Kynde</name>
+          <name xml:id="ide2cea71a-6d80-4469-982a-d347e832352a">Kim Ravn</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="idd5a8e917-63e2-4663-ac40-5ceac7e3a55f">
+        <authority xml:id="ida4969810-d8f8-4eb2-9453-0bc3df163dee">Søren Kierkegaard Forskningscenteret 2001</authority>
+        <availability xml:id="id40547abb-b352-4f03-b2d9-c6f39be3cf76" status="restricted">
+          <p xml:id="id49f205f3-c354-4ce8-9bf2-8aea978e6bf9">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="ide9bf2ff0-1962-4358-a5ed-2bc3bf52057b">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="idbc757b46-347f-458a-b4fd-9dda71d73a44" unit="volume">K19</biblScope>
+        <biblScope xml:id="id39ebfabb-997d-447d-9e7e-49ffc771de71" unit="file">http://sks.dk/not15/kom.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id02afecc6-3c7f-4f1a-b386-9639312f5cfd">
+        <bibl xml:id="id6a742b12-1ba9-4b75-af25-d01e49a17b83" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id05624c1a-3f9b-4d91-b668-29da8b048e30">
+      <tagsDecl xml:id="id2b541986-bb00-4f10-9901-d830d75b6a6b">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="idb02d5869-84f8-443f-a7be-207a566b9c7b">
+      <change xml:id="id0b2094b6-3117-4eef-b776-7485a158c6c5">Transformed to TEI by style sheet <bibl xml:id="id6efa723b-6b17-4d2c-b727-f782a64de457" type="file">kn12tei.xsl</bibl> version <idno xml:id="idb09f11ad-e371-4ea7-9035-66fb8d847357" type="version">1.9</idno> as of <date xml:id="idf9944964-d2f9-4627-a799-48553f18d48f">2017-02-21</date> by <name xml:id="id82954932-acd2-46b8-b3c9-95ac29e62d26">Karsten Kynde</name>, <orgName xml:id="id55928a8e-7955-4d56-a648-20140b208b89">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="id926434a3-a320-47ed-b3fc-3a99b9f21ab8">København</placeName></change>
+      <change xml:id="idcd621b5e-6631-4d3a-9c59-602fdfd8e47a" when="20121211">Kierkegaard Normalformat vers. 1, <bibl xml:id="idce7745c3-e893-416f-8b32-fe955ce91c4e"><idno xml:id="id18342975-2e0a-4d2e-bb5d-718b6188bd69" type="version">1.8</idno>, <biblScope xml:id="id67d0711b-91ce-4935-9fb8-f3ca06e31c69" unit="file">http://sks.dk/not15/kom.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
-
- <text type="commentary" subtype="jp"><body><div>
-  <note type="commentary" xml:id="not15-1" n="431,1"><label><hi rendition="#bol">»hende«</hi></label> <p><persName key="Olsen, Regine">Regine Olsen</persName> (<ptr type="commentary" target="#not15-4" n="433,2"/> og <ptr type="commentary" target="#not15-14" n="433,20"/>).</p></note>
-  <note type="commentary" xml:id="not15-2" n="432,1"><label><hi rendition="#bol">Infandum me jubes, Regina, renovare dolorem</hi></label> <p>lat. 'Du befaler mig, <persName key="Olsen, Regine">Regine</persName>, at forny den usigelige smerte'. Let bearbejdet citat af <persName key="Vergil">Vergil</persName> (70-19 f.Kr.), <hi rendition="#ita">Æneiden</hi> 2,3, som oprindeligt lyder: »Infandum, Regina, iubes renouare dolorem«, <hi rendition="#ita">P. Virgilii Maronis opera,</hi> udg. af <persName key="Baden, Jacob">J. Baden</persName>, bd. 1-2, <placeName key="København">Kbh</placeName>. 1778-80; bd. 1, s. 366. Jf. også <hi rendition="#ita">Virgils Æneide,</hi> overs. af <persName key="Schønheyder, Johan Henrich">J.H. Schønheyder</persName>, bd. 1-2, <placeName key="København">Kbh</placeName>. 1812; bd. 1, s. 51, hvor citatet gengives med: »Unævnlig Smerte byder du, o Dronning! / mig at fornye«. SK har tidligere anvendt citatet i journalen NB<hi rendition="#sup">3</hi>, jf. <ref target="../NB3/txt.xml#n43" type="journalsAndPapers" n="pap:VIII1A446" rend="NB3:43"><hi rendition="#ita">Pap.</hi> VIII 1 A 446</ref>.</p></note>
-  <note type="commentary" xml:id="not15-3" n="432,2"><label><hi rendition="#bol">den Replik om mig: det ender vistnok med, at Du bliver Jesuit</hi></label> <p><persName key="Olsen, Regine">Regine</persName>s replik er lagt i munden på <persName key="Wilhelm">Assessor Wilhelm</persName>, der i anden del af <hi rendition="#ita">Enten</hi> – <hi rendition="#ita">Eller</hi> meddeler sin æstetiske ven: »Klog er Du, det kan man ikke negte Dig, og sandt er det, hvad en ung Pige sagde om Dig, at Du formodentlig endte med at blive Jesuit«, <ref target="../EE2/txt.xml#ss223" type="publishedWritings" n="223"><hi rendition="#ita">SKS</hi> 3, 223</ref>,1; jf. en optegnelse fra forsommeren 1848 i journalen NB<hi rendition="#sup">5</hi> (<ref target="../NB5/txt.xml#n127" type="journalsAndPapers" n="pap:IXA131" rend="NB5:127"><hi rendition="#ita">Pap. </hi>IX A 131</ref>), hvor SK giver Regines replik en lidt anden drejning. Spanieren <persName key="Ignatius af Loyola">Ignatius af Loyola</persName> stiftede i 1534 sin jesuiterorden, der blev kendt for en skånselsløs forfølgelse af egne mål.</p></note>
-  <note type="commentary" xml:id="not15-4" n="433,2"><label><hi rendition="#bol">Regine</hi></label> <p><persName key="Olsen, Regine" n="*">Regine Olsen</persName> (1822-1904) var forlovet med SK fra 10. sept. 1840 til 11. el. 18. okt. 1841 (<ptr type="commentary" target="#not15-24" n="435,33"/>).</p></note>
-  <note type="commentary" xml:id="not15-5" n="433,2"><label><hi rendition="#bol">Jeg saae hende først hos Rørdams</hi></label> <p><persName key="Rørdam, Cathrine Georgia" n="*">Cathrine Georgia Rørdam</persName> (1777-1842), enke efter provst <persName key="Rørdam, Thomas Schatt" n="*">Thomas Schatt Rørdam</persName> (d. 1831), boede på <placeName>Frederiksberg</placeName> sammen med sønnen cand.theol. <persName key="Rørdam, Peter">Peter Rørdam</persName> og sine tre døtre, hvoraf den yngste var <persName key="Rørdam, Bolette Christine">Bolette</persName> (se følgende kommentar). SK mødte formentlig <persName key="Olsen, Regine">Regine</persName> første gang ved et besøg hos familien i foråret 1837.</p></note>
-  <note type="commentary" xml:id="not15-7" n="433,4"><label><hi rendition="#bol">Bollette Rørdam</hi></label> <p><persName key="Rørdam, Bolette Christine" n="*">Bolette Christine Rørdam</persName> (1815-87), forlovet med cand.theol. <persName key="Købke, Peter" n="*">Peter Købke</persName> (d. 1839), virkede fra 1841-50 som husbestyrerinde hos sin bror <persName key="Rørdam, Peter">Peter Rørdam</persName>, gift 1857 med sognepræst <persName key="Feilberg, Nikolaj Laurentius">N.L. Feilberg</persName>.</p></note>
-  <note type="commentary" xml:id="not15-8" n="433,9"><label><hi rendition="#bol">min Fader døde</hi></label> <p><persName key="Kierkegaard, Michael Pedersen">Michael Pedersen Kierkegaard</persName> døde den 9. august 1838 i en alder af 81. Hans sidste timer er beskrevet af sønnen <persName key="Kierkegaard, Peter Christian">Peter Christian Kierkegaard</persName> i dennes dagbog, NKS 2656, 4º, bd. 1, s. 100f.</p></note>
-  <note type="commentary" xml:id="not15-9" n="433,10"><label><hi rendition="#bol">Jeg læste til Examen</hi></label> <p>SK intensiverede sine teologiske studier efter faderens død, jf. journaloptegnelsen <ref target="../JJ/txt.xml#n297" type="journalsAndPapers" n="297">JJ:297</ref>, hvor SK om sin eksamen skriver, at »havde Fader vedblevet at leve, havde jeg aldrig faaet den«, <hi rendition="#ita">SKS</hi>, 18, 234,2.</p></note>
-  <note type="commentary" xml:id="not15-10" n="433,12"><label><hi rendition="#bol">I Sommeren 40 tog jeg theol. Embedsexamen</hi></label> <p>SK blev teologisk kandidat den 3. juli 1840.</p></note>
-  <note type="commentary" xml:id="not15-11" n="433,13"><label><hi rendition="#bol">Jeg reiste til Jylland</hi></label> <p>SK indledte sin Jyllandsrejse lørdag den 18. juli 1840, jf. <ref target="../Not6/txt.xml#ss191" type="journalsAndPapers" n="191,3">notesbog 6</ref>, <hi rendition="#ita">SKS</hi> 19, 191,3, samt kommentaren hertil.</p></note>
-  <note type="commentary" xml:id="not15-12" n="433,16"><label><hi rendition="#bol">I Aug kom jeg tilbage</hi></label> <p>SK var atter i <placeName>København</placeName> den 7. eller 8. aug. 1840, jf. <ref target="../Not6/txt.xml#ss202" type="journalsAndPapers" n="202,27">notesbog 6:35</ref>, <hi rendition="#ita">SKS</hi> 19, 202,27, samt kommentaren hertil.</p></note>
-  <note type="commentary" xml:id="not15-13" n="433,19"><label><hi rendition="#bol">Fortsæt</hi></label> <p>fejl for Forsæt.</p></note>
-  <note type="commentary" xml:id="not15-14" n="433,20"><label><hi rendition="#bol">lige udenfor deres Huus</hi></label> <p>Regine boede hos sine forældre i <placeName key="Nybørs">Nye-Børs</placeName> (matrikel nr. 66) i en nu nedrevet ejendom, som man kaldte »De sex Søstre«, ml. <placeName>Børsen</placeName> og <placeName>Knippelsbro</placeName> (<ref target="../kort/kbh_C3.htm" type="map" n="kbh"><hi rendition="#ita">se kort 2, C3</hi></ref>). If. folketællingen af 1. feb. 1840 beboede familien Olsen husets første sal, og husholdningen er registreret som følger: »<persName key="Olsen, Terkild">Terkild Olsen</persName>, 57. gift, Justitsraad og Kgl. Bogholder / <persName key="Malling, Regina">Regina Malling</persName>, 62. do. Hans Kone / <persName key="Olsen, Maria Dorothea Frederike">Maria Dorothea Frederike Olsen</persName>, 31. ugift, Deres Datter / <persName key="Olsen, Olivia Christiane">Olivia Christiane Olsen</persName>, 29. ugift, Deres Datter / <persName key="Olsen, Oluf Christian">Oluf Christian Olsen</persName>, 26. ugift, Deres Søn, Student / <persName key="Olsen, Jonas Christian">Jonas Christian Olsen</persName>, 24. ugift, Deres Søn, Student / <persName key="Olsen, Cornelia">Cornelia Olsen</persName>, 23. ugift, Deres Datter / <persName key="Olsen, Regine">Regina Olsen</persName>, 19. ugift, Deres Datter / <persName key="Michelsen, Kirstine">Kirstine Michelsen</persName>, 35. ugift, Tjenestepige«.</p></note>
-  <note type="commentary" xml:id="not15-15" n="433,33"><label><hi rendition="#bol">et Forhold til Schlegel</hi></label> <p><persName key="Schlegel, Johan Frederik" n="*">Johan Frederik Schlegel</persName> (1817-96), student 1833, juridisk kandidat 1838, virkede en tid som huslærer i det olsenske hjem og udviklede her varme følelser for <persName key="Olsen, Regine">Regine</persName>. Schlegel indtrådte 1842 som volontør i Generaltoldkammer- og Kommercekollegiets Handels- og Konsulatskontor, hvor han i 1847 blev fuldmægtig, året efter blev han »Chef for Kolonialkontoret«, mens han i 1854 blev udpeget som guvernør over de dansk-vestindiske øer, hvor han bl.a. forestod den administrative gennemførelse af de opgaver, som slavernes frigørelse i 1848 havde givet anledning til.</p></note>
-  <note type="commentary" xml:id="not15-6" n="433m,2"><label><hi rendition="#bol">I de senere Journaler ... findes hist og her en enkelt Bemærkning om hende</hi></label> <p>jf. journalen NB<hi rendition="#sup">7</hi> dateret 21. aug. 1848 (<hi rendition="#ita">Pap</hi>. IX A 262 og IX A 276), journalen NB<hi rendition="#sup">9</hi>, dateret 2. jan. 1849 (<hi rendition="#ita">Pap</hi>. X I A 24) og journalen NB<hi rendition="#sup">10</hi>, dateret 9. feb. 1849 (<hi rendition="#ita">Pap</hi>. X I A 200).</p></note>
-  <note type="commentary" xml:id="not15-16" n="434,1"><label><hi rendition="#bol">op til Etatsraaden</hi></label> <p>dvs. op til <persName key="Olsen, Regine">Regine</persName>s far, <persName key="Olsen, Terkild" n="*">Terkild Olsen</persName> (1784-1849), der var chef for Hoved- og Kontrabogholderkontoret under Finansdepartementet, beliggende på 1. sal i kancellibygningen på hjørnet ml. <placeName>Børsen</placeName> og <placeName key="Christiansborg">Christiansborg Slot</placeName> (<ref target="../kort/kbh_B3.htm" type="map" n="kbh"><hi rendition="#ita">se kort 2, B3</hi></ref>). – <hi rendition="#bol">Etatsraad</hi>en: egl. 'virkelig etatsråd', en titel, som if. forordning om rangen af 14. okt. 1746 var placeret i 3. klasse (af i alt ni) som nr. 3; i 1840 havde Terkild Olsen dog endnu kun rang af 'virkelig justitsråd', placeret i 4. klasse som nr. 3. Jf. fx »Titulaturer til Rangspersoner i alfabetisk Orden« i <persName key="Bartholin, Christian">C. Bartholin</persName> <hi rendition="#ita">Almindelig Brev- og Formularbog</hi> bd. 1-2, <placeName key="København">Kbh</placeName>. 1844, ktl. 933; bd. 1, s. 49-56.</p></note>
-  <note type="commentary" xml:id="not15-17" n="434,14"><label><hi rendition="#bol">En Poeniterende</hi></label> <p>en, der angrer el. gør bod.</p></note>
-  <note type="commentary" xml:id="not15-18" n="434,14"><label><hi rendition="#bol">vita ante acta</hi></label> <p>lat. 'liv før begivenhederne', 'forudgående levned'.</p></note>
-  <note type="commentary" xml:id="not15-19" n="434,18"><label><hi rendition="#bol">erklærede, at hun havde taget mig af Medlidenhed</hi></label> <p>En tilsvarende erklæring fremsætter den unge kvinde i »'Skyldig?' – 'Ikke-Skyldig?'«, <ref target="../SLV/txt.xml#ss249" type="publishedWritings" n="249"><hi rendition="#ita">SKS</hi> 6, 249</ref>,7-9.</p></note>
-  <note type="commentary" xml:id="not15-20" n="435,16"><label><hi rendition="#bol">Billeten findes ordret i »det psychologiske Experiment«</hi></label> <p>jf. »'Skyldig?' – 'Ikke-Skyldig?'« i <hi rendition="#ita">Stadier paa Livets Vei</hi>, <ref target="../SLV/txt.xml#ss173" type="publishedWritings" n="173"><hi rendition="#ita">SKS</hi> 6, 173</ref>-454, hvor indholdet i billetten (dvs. et lille brev, almindeligvis overbragt af en tjener) gengives således: »For ikke oftere at gjøre Prøve paa, hvad der dog maa skee, hvad der, naar det er skeet, vel vil give Kræfter, som disse behøves: saa lad det være skeet. Glem fremfor Alt Den, der skriver dette; tilgiv et Menneske, der, om han end formaaede Noget, dog ikke formaaede at gjøre en Pige lykkelig«, <ref target="../SLV/txt.xml#ss307" type="publishedWritings" n="307"><hi rendition="#ita">SKS</hi> 6, 307</ref>,3-7. SKs oprindelige billet til <persName key="Olsen, Regine">Regine</persName> er ikke bevaret.</p></note>
-  <note type="commentary" xml:id="not15-23" n="435,22"><label><hi rendition="#bol">Hun overskrider i qvindelig Fortvivlelse Grændsen</hi></label> <p>SK sigter formentlig til, at <persName key="Olsen, Regine">Regine</persName>, efter at hun den 11. aug. 1841 havde modtaget billetten og ringen, forsøgte at få SK i tale i hans lejlighed i <placeName>Nørregade</placeName> (<ptr type="commentary" target="#not15-52" n="439,1"/>), jf. optegnelsen »Mit Forhold til hende« fra o. 1. sept. 1849 i journalen NB<hi rendition="#sup">12</hi>: »Istedetfor at lade Sagen nu være afgjort, gaaer hun op paa mit Værelse i min Fraværelse og skriver mig en aldeles fortvivlet Billet, hvor hun besværger mig for Jesu Christi Skyld og ved Mindet om min afdøde Fader ikke at forlade hende« (<hi rendition="#ita">Pap</hi>. X 1 A 667, s. 422).</p></note>
-  <note type="commentary" xml:id="not15-24" n="435,33"><label><hi rendition="#bol">Saa brast det, omtrent to Maaneder efter</hi></label> <p>SK brød endegyldigt forlovelsen med <persName key="Olsen, Regine">Regine</persName> den 11. el. 18. okt. 1841 (se den følgende kommentar), jf. <hi rendition="#ita">Pap</hi>. X 1 A 667, s. 422.</p></note>
-  <note type="commentary" xml:id="not15-25" n="435,36"><label><hi rendition="#bol">Theateret ... træffe Emil</hi></label> <p><persName key="Boesen, Emil Ferdinand" n="*">Emil Ferdinand Boesen</persName> (1812-81), student 1829, cand.theol. 1834, lærer ved v. <placeName key="von Westens Skole">Westens Skole</placeName> indtil 1849, derpå residerende kapellan i <placeName>Horsens</placeName> og fra 1863 stiftsprovst i <placeName key="Aarhus">Århus</placeName>. Boesen var SKs bedste ven siden de tidligste ungdomsår. »Hvilken Dato det var jeg hævede Forlovelsen«, skriver SK i nov. 1849, »veed jeg ikke«, men efter en rekonstruktion af »de nærmest omkring liggende Fakta« mener han, at bruddet må have fundet sted »11te eller 18de October«. Som et af disse »Fakta« anfører han, at den dag, bruddet var en realitet, »gaves om Aftenen i Theateret: den hvide Dame, og der var jeg for at søge En, jeg skulde tale med« (<ref target="../b127/txt.xml#n160" type="lettersAndDedications" n="ba:239" rend="Brev 160"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 264</ref>). Skuespillet <hi rendition="#ita">Den hvide Dame</hi> blev opført på <placeName key="Kongelige Teater, Det">Det kgl. Teater</placeName> den 12. og 18. okt. 1841. Husker SK rigtigt, når han hævder, at det var dette stykke, der blev spillet den dag, forlovelsen ophørte, kan datoen kun være den 18. okt.</p></note>
-  <note type="commentary" xml:id="not15-21" n="435m,12"><label><hi rendition="#bol">at man bliver feed ved at gifte sig</hi></label> <p>Den pågældende replik er lagt i munden på en unavngiven herre i »'Skyldig?' – 'Ikke-Skyldig?'«, <ref target="../SLV/txt.xml#ss344" type="publishedWritings" n="344"><hi rendition="#ita">SKS</hi> 6, 344</ref>,33.</p></note>
-  <note type="commentary" xml:id="not15-22" n="435m,17"><label><hi rendition="#bol">Den Replik: at man kan hæve en Forlovelse paa to Maader saa vel ved Hjælp af Agtelse som ved Hjælp af Kjerlighed. Hendes Replik: jeg troer egl. at Du er gal</hi></label> <p>Begge replikker findes i »'Skyldig?' – 'Ikke-Skyldig?'«, <ref target="../SLV/txt.xml#ss357" type="publishedWritings" n="357"><hi rendition="#ita">SKS</hi> 6, 357</ref>f.</p></note>
-  <note type="commentary" xml:id="not15-27" n="435m,35"><label><hi rendition="#bol">ikke usocratisk</hi></label> <p>altså sokratisk, her nærmest i betydningen: drillende, fiffigt.</p></note>
-  <note type="commentary" xml:id="not15-26" n="436,1"><label><hi rendition="#bol">Etatsraaden</hi></label> <p>dvs. <persName key="Olsen, Regine">Regine</persName>s far, <ptr type="commentary" target="#not15-16" n="434,1"/>.</p></note>
-  <note type="commentary" xml:id="not15-29" n="436,23"><label><hi rendition="#bol">Min Broder</hi></label> <p><persName key="Kierkegaard, Peter Christian" n="*">Peter Christian Kierkegaard</persName> (1805-88), disputerede 1836 for den teologiske licentiatgrad, fra 1842 sognepræst for <placeName>Pedersborg</placeName> og <placeName>Kindertofte</placeName> ved <placeName>Sorø</placeName>.</p></note>
-  <note type="commentary" xml:id="not15-31" n="436,28"><label><hi rendition="#bol">Jeg reiste til Berlin</hi></label> <p>SK påbegyndte sin rejse til <placeName>Berlin</placeName> den 25. okt. 1841 og vendte tilbage til <placeName>København</placeName> den 6. marts 1842, jf. <ref target="../Not8/txt.xml#ss225" type="journalsAndPapers" n="225,21">notesbog 8:2</ref>, <hi rendition="#ita">SKS</hi> 19, 225,21, samt kommentaren hertil.</p></note>
-  <note type="commentary" xml:id="not15-34" n="436,35"><label>Præstens <hi rendition="#bol">Melange</hi></label> <p>blanding, især af tobak, her nærmest i betydningen: snak eller rodsammen.</p></note>
-  <note type="commentary" xml:id="not15-28" n="436m,1"><label><hi rendition="#bol">Hun fremtog en lille Seddel, hvorpaa stod et Ord af mig</hi></label> <p>Sedlens ordlyd er ikke overleveret.</p></note>
-  <note type="commentary" xml:id="not15-30" n="436m,16"><label><hi rendition="#bol">jeg skulde komme ligesom Wilhelm i Lenore</hi></label> <p>SK sigter til balladen <hi rendition="#ita">Lenore</hi> (1774) af den ty. digter <persName key="Bürger, Gottfried August" n="*">Gottfried August Bürger</persName> (1747-94), jf. fx <hi rendition="#ita">Bürgers Gedichte,</hi> <placeName>Gotha</placeName> 1828, s. 48-57. I den pågældende passus berettes om den døde kriger <persName key="Wilhelm">Vilhelm</persName>, der en sen nattetime henter sin elskede <persName key="Lenore">Lenore</persName> og rider af sted med hende til sin grav på kirkegården.</p></note>
-  <note type="commentary" xml:id="not15-32" n="436m,21"><label><hi rendition="#bol">arbeide hende flot</hi></label> <p>at gøre noget (fx et skib) flot er at bringe det til at flyde, bringe det fri af grunden.</p></note>
-  <note type="commentary" xml:id="not15-33" n="436m,26"><label><hi rendition="#bol">billigere Vilkaar</hi></label> <p>rimeligere vilkår.</p></note>
-  <note type="commentary" xml:id="not15-35" n="436m,27"><label><hi rendition="#bol">At denne Adfærd ... har det unge Msk. hos Constantin Constantius udviklet</hi></label> <p>SK sigter her til <hi rendition="#ita">Gjentagelsen. Et Forsøg i den experimenterende Psychologi af Constantin Constantius</hi>, der udkom 16. okt. 1843. I denne bog træffer <persName key="Constantin Constantius">Constantin Constantius</persName> sammen med et ungt menneske, der hovedkulds har forelsket sig i en pige; forelskelsen udløser så voldsomme, kunstneriske kræfter i ham, at den konkrete pige nærmest bliver til ulejlighed. Da <persName key="Det unge Menneske">det unge menneske</persName> imidlertid ikke kan få sig selv til at forklare pigen »Forvexlingen, at hun blot var den synlige Skikkelse, medens hans Tanke, hans Sjæl søgte noget Andet, som han overførte paa hende« (<ref target="../G/txt.xml#ss18" type="publishedWritings" n="18"><hi rendition="#ita">SKS</hi> 4, 18</ref>,33-35), foreslår Constantin Constantius ham at anvende følgende metode: »Tilintetgjør Alt, forvandl Dem selv til et foragteligt Menneske, der kun har sin Glæde af at gjække og bedrage. <hi rendition="#ita">(...)</hi> See først om muligt at blive hende lidt ubehagelig. Dril hende ikke, det hidser. Nei! vær ustadig, vrøvlevorren, gjør en Dag Eet, en anden et Andet, dog uden Lidenskab, i en fuldkommen Slendrian <hi rendition="#ita">(...)</hi>. Frembring bestandig istedenfor al Elskovens Lyst en vis vammel <hi rendition="#ita">quasi</hi>-Elskov, der hverken er Ligegyldighed eller Attraa; lad hele Deres Optræden være ligesaa ubehagelig, som det er at see en Mand savle«, <ref target="../G/txt.xml#ss19" type="publishedWritings" n="19"><hi rendition="#ita">SKS</hi> 4, 19</ref>,16-33.</p></note>
-  <note type="commentary" xml:id="not15-39" n="436m,31"><label><hi rendition="#bol">Den Dag jeg ... sendtes uaabnet tilbage</hi></label> <p>Brevet er ikke bevaret og dets indhold ikke på anden vis overleveret.</p></note>
-  <note type="commentary" xml:id="not15-36" n="437,1"><label><hi rendition="#bol">»Forførerens Dagbog« er skrevet for hendes Skyld</hi></label> <p>I en udateret optegnelse i journalen NB<hi rendition="#sup">10</hi> fra 1849 skriver SK: »'Forførerens Dagbog' har jeg skrevet for hendes Skyld, for at klare hende ud af Forholdet« (<ref target="../NB10/txt.xml#n185" type="journalsAndPapers" n="pap:X1A266" rend="NB10:185"><hi rendition="#ita">Pap.</hi> X 1 A 266</ref>, s. 177). Denne tanke om dagbogen som et fromt bedrag af <persName key="Olsen, Regine">Regine</persName> gentages på en løs lap dateret 13. okt. 1853 med formuleringen: »'Forførerens Dagbog' var jo for at støde fra, eller som det hedder i 'Frygt og Bæven' 'naar Barnet skal vænnes fra, da sværter Moderen sit Bryst'« (<ref target="../NB28/txt.xml#n54" type="journalsAndPapers" n="pap:X5A146" rend="NB28:54"><hi rendition="#ita">Pap.</hi> X 5 A 146</ref>, s. 151).</p></note>
-  <note type="commentary" xml:id="not15-37" n="437,2"><label><hi rendition="#bol">Forordet til de to opbyggelige Taler er beregnet paa hende</hi></label> <p>jf. <ref target="../2T43/txt.xml#ss13" type="publishedWritings" n="13">forordet til <hi rendition="#ita">To opbyggelige Taler</hi></ref> (<placeName key="København">Kbh</placeName>. 1843), <ref target="../2T43/txt.xml#ss13" type="publishedWritings" n="13"><hi rendition="#ita">SKS</hi> 5, 13</ref>; se endvidere kommentaren hertil i <ref target="../2T43/kom.xml#2t43-4" type="commentary"><hi rendition="#ita">SKS</hi> K5, 35</ref>.</p></note>
-  <note type="commentary" xml:id="not15-38" n="437,3"><label><hi rendition="#bol">Bogens Datum, Dedicationen til Fader</hi></label> <p>Forordet er dateret den 5. maj 1843, SKs 30-års fødselsdag, jf. <ref target="../2T43/txt.xml#ss13" type="publishedWritings" n="13"><hi rendition="#ita">SKS</hi> 5, 13</ref>, mens talerne er helliget SKs far, <persName key="Kierkegaard, Michael Pedersen">Michael Pedersen Kierkegaard</persName>, jf. <ref target="../2T43/txt.xml#ss11" type="publishedWritings" n="11"><hi rendition="#ita">SKS</hi> 5, 11</ref>.</p></note>
-  <note type="commentary" xml:id="not15-42" n="437,6"><label><hi rendition="#bol">Jeg var i Berlin kun et halvt Aar</hi></label> <p>SK var i <placeName>Berlin</placeName> o. 4½ md., <ptr type="commentary" target="#not15-31" n="436,28"/>.</p></note>
-  <note type="commentary" xml:id="not15-43" n="437,9"><label><hi rendition="#bol">efter Mynsters Prædiken 1ste Paaskedag</hi></label> <p><persName key="Mynster, Jakob Peter" n="*">Jakob Peter Mynster</persName> (1775-1854), fra 1834 biskop over <placeName>Sjælland</placeName>s stift, prædikede 1. påskedag den 27. marts 1842 til aftensang i <placeName>Vor Frue Kirke</placeName>, jf. <hi rendition="#ita">Kjøbenhavns kongelig alene privilegerede Adressecomptoirs Efterretninger</hi> (i daglig tale kaldet <hi rendition="#ita">Adresseavisen</hi>) den 26. marts 1842, nr. 71.</p></note>
-  <note type="commentary" xml:id="not15-44" n="437,17"><label><hi rendition="#bol">under mine Auspicier</hi></label> <p>dvs. under mit opsyn og med min støtte.</p></note>
-  <note type="commentary" xml:id="not15-45" n="437,17"><label><hi rendition="#bol">Kort før Forlovelsen med Schlegel fik hun Øie paa mig i en Kirke</hi></label> <p>Den 16. april 1843, 1. påskedag, prædikede biskop <persName key="Mynster, Jakob Peter">Mynster</persName> til aftensang i <placeName>Vor Frue Kirke</placeName> (<ref target="../kort/kbh_B1.htm" type="map" n="kbh"><hi rendition="#ita">se kort 2, B1</hi></ref>). SK har givet en fyldig beskrivelse af episoden i <ref target="../JJ/txt.xml#ss174" type="journalsAndPapers" n="174">JJ:107</ref>, <hi rendition="#ita">SKS</hi> 18, s. 174f., hvor man dog ikke får det indtryk, at SK skulle være bekendt med forlovelsen.</p></note>
-  <note type="commentary" xml:id="not15-46" n="437,30"><label><hi rendition="#bol">Den Dag der blev lyst for hende, sad jeg i Frelsers Kirke</hi></label> <p>Det vides ikke, hvornår der blev lyst for <persName key="Olsen, Regine">Regine Olsen</persName> og <persName key="Schlegel, Johan Frederik">Johan Frederik Schlegel</persName>, men de blev gift den 3. nov. 1847 i <placeName>Vor Frelsers Kirke</placeName> på <placeName>Christianshavn</placeName> (<ref target="../kort/kbh_C4.htm" type="map" n="kbh"><hi rendition="#ita">se kort 2, C4</hi></ref>).</p></note>
-  <note type="commentary" xml:id="not15-41" n="437m,7"><label><hi rendition="#bol">noget der rigtignok aldeles mislykkedes</hi></label> <p>SK sigter formentlig her til den omstændighed, at <hi rendition="#ita">Enten</hi> – <hi rendition="#ita">Eller</hi> blev en publikumsucces, hvilket ikke mindst skyldtes »Forførerens Dagbog«, jf. <ref target="../EE1/txr.xml#ss61" type="textCriticalAccount" n="61">tekstredegørelsen, <hi rendition="#ita">SKS</hi> K2-3, 61</ref>.</p></note>
-  <note type="commentary" xml:id="not15-47" n="438,1"><label><hi rendition="#bol">Nu er Etatsraaden død</hi></label> <p>Den 29. juni 1849 bragtes i <hi rendition="#ita">Adresseavisen</hi> nr. 150 følgende dødsannonce: »Natten mellem den 25<hi rendition="#sup">de</hi> og 26<hi rendition="#sup">de</hi> Dennes bortkaldte Herren efter 40 Aars Ægteskab min elskede Mand, mine 6 Børns Fader, <persName key="Olsen, Terkild">Terkild Olsen</persName>, Etatsraad og Ridder af Dannebrog. / <persName key="Malling, Regina Frederikke">Regina Olsen</persName>, født Malling.« Jf. journalen NB<hi rendition="#sup">12</hi>, <ref target="../NB12/txt.xml#n28" type="journalsAndPapers" n="pap:X1A569" rend="NB12:28.a"><hi rendition="#ita">Pap.</hi> X 1 A 569</ref>.</p></note>
-  <note type="commentary" xml:id="not15-50" n="438,12"><label><hi rendition="#bol">hun vilde døe af Kjerlighed</hi></label> <p>Da SK brød forlovelsen (<ptr type="commentary" target="#not15-24" n="435,33"/>), skulle <persName key="Olsen, Regine">Regine</persName> angiveligt have skreget, at det blev hendes død, hvilket SK tolkede som et udtryk for, at han nu havde fået et mord på sin samvittighed, jf. en optegnelse fra maj 1847 i journalen NB, <hi rendition="#ita">Pap</hi>. VIII 1 A 100.</p></note>
-  <note type="commentary" xml:id="not15-51" n="438,16"><label><hi rendition="#bol">Hun har een Gang viist mig, hvor langt hun kan gaae ud over Grændsen</hi></label> <p><ptr type="commentary" target="#not15-23" n="435,22"/>.</p></note>
-  <note type="commentary" xml:id="not15-48" n="438m,1"><label><hi rendition="#bol">cfr etsteds i Journalen NB12 henimod midtveis</hi></label> <p>jf. journalen NB<hi rendition="#sup">12</hi>, dateret 19. juli 1849, <ref target="../NB12/txt.xml#n105" type="journalsAndPapers" n="pap:X1A648" rend="NB12:105"><hi rendition="#ita">Pap.</hi> X 1 A 648</ref>.</p></note>
-  <note type="commentary" xml:id="not15-49" n="438m,5"><label><hi rendition="#bol">ønskede at være Skuespillerinde</hi></label> <p>sml. journaloptegnelsen <ref target="../JJ/txt.xml#ss178" type="journalsAndPapers" n="178,7">JJ:115</ref>, hvor SK omtaler <persName key="Olsen, Regine">Regine</persName>s ønske om at blive »Theaterprincesse«, <hi rendition="#ita">SKS</hi> 18, 178,7.</p></note>
-  <note type="commentary" xml:id="not15-52" n="439,1"><label><hi rendition="#bol">medens jeg boede paa Nørregade paa 1ste Sal</hi></label> <p>SK boede i <placeName>Nørregade</placeName>, matrikelnr. 230 A, det nuværende nr. 38, fra april eller okt. 1840 til okt. 1844.</p></note>
-  <note type="commentary" xml:id="not15-53" n="439,12"><label><hi rendition="#bol">Velin-Exemplarer</hi></label> <p>bøger trykt på et glat, pergamentagtigt papir, der anvendtes som fornemt brevpapir og til eksklusive bogtryk.</p></note>
-  <note type="commentary" xml:id="not15-54" n="439,14"><label><hi rendition="#bol">et Brev, bestemt til at aabnes efter min Død, som angaaer hende</hi></label> <p>jf. <ref target="../b1/txt.xml#n20" type="lettersAndDedications" n="ba:XXI" rend="Brev 20"><hi rendition="#ita">B&amp;A</hi> bd. 1, nr. </ref>XXI, s. 25.</p></note>
-  <note type="commentary" xml:id="not15-55" n="439,29"><label><hi rendition="#bol">Schlegel <hi rendition="#ita">(...)</hi> har gjort Lykke</hi></label> <p><persName key="Schlegel, Johan Frederik">J.F. Schlegel</persName> (<ptr type="commentary" target="#not15-15" n="433,33"/>) blev den 29. dec. 1848 ansat i Finansministeriet som »Chef for Kolonialkontoret«, jf. journalen NB<hi rendition="#sup">9</hi>, dateret 2. januar 1849, <ref target="../NB9/txt.xml#n24" type="journalsAndPapers" n="pap:X1A24" rend="NB9:24"><hi rendition="#ita">Pap.</hi> X 1 A 24</ref>.</p></note>
-  <note type="commentary" xml:id="not15-56" n="440,1"><label><hi rendition="#bol">hvad Jfr. Dencker har fortalt mig</hi></label> <p><persName key="Dencker, Elise">Elise Dencker</persName> var husbestyrerinde hos <persName key="Lund, Johan Christian">Johan Christian Lund</persName>, der boede på hjørnet af <placeName>Købmagergade</placeName> og <placeName>Klareboderne</placeName> (<ref target="../kort/kbh_C2.htm" type="map" n="kbh"><hi rendition="#ita">se kort 2, C2</hi></ref>), og som havde været gift med SKs søster <persName key="Kierkegaard, Nicoline Christine">Nicoline Christine</persName> fra 1824 til hendes død i 1832. I folketællingen af 1. feb. 1845 er Elise Dencker registreret som en 44-årig ugift »Huusjomfrue«, født i <placeName>Eckernförde</placeName>. Hun gik for at være striks og vanskelig, men hvilken relation, hun havde til <persName key="Olsen, Regine">Regine</persName>, vides ikke.</p></note>
-  <note type="commentary" xml:id="not15-57" n="440,9"><label><hi rendition="#bol">at hun 2 Maaneder før det Afgjørende fik et Skilsmisse-Brev</hi></label> <p>(<ptr type="commentary" target="#not15-20" n="435,16"/>).</p></note>
-  <note type="commentary" xml:id="not15-58" n="440,14"><label><hi rendition="#bol">trække et heelt Alphabet mere ud</hi></label> <p>alluderer formentlig til sætterens brug af forskellige skrifttyper.</p></note>
-  <note type="commentary" xml:id="not15-59" n="441,2"><label><hi rendition="#bol">Hvad Cornelia angaaer, da har hendes Forlovelse i en vis Forstand bedrøvet mig</hi></label> <p><persName key="Olsen, Cornelia" n="*">Cornelia Olsen</persName> (1818-1901), <persName key="Olsen, Regine">Regine</persName>s storesøster, giftede sig den 6. nov. 1849 med <persName key="Winning, F.E.">F.E. Winning</persName>, men hvornår hun forlovede sig, har ikke kunnet oplyses. Jf. i øvrigt journaloptegnelsen <ref target="../JJ/txt.xml#n300" type="journalsAndPapers" n="300">JJ:300</ref>: »Under Titlen Privatissimer og holdt saa zarte som muligt kunde jeg have Lyst at tegne en qvindelig Figur, der netop var stor ved sin elskelige beskedne bly Resignation (fE en noget idealiseret Cornelia Olsen, den fortræffeligste qvindelige Figur, jeg har kjendt, og den eneste, der har afnødt mig Beundring). Hun skulde opleve at Søsteren var gift med den hun selv elskede. Det er Collisionen for Resignation«, <hi rendition="#ita">SKS</hi> 18, 234f.</p></note>
-  <note type="commentary" xml:id="not15-60" n="441,27"><label><hi rendition="#bol">Interpretation</hi></label> <p>fortolkning.</p></note>
-  <note type="commentary" xml:id="not15-61" n="442,9"><label><hi rendition="#bol">hende, som slet ikke var religieust udviklet</hi></label> <p>I en bestræbelse på at udvikle <persName key="Olsen, Regine">Regine</persName> religiøst læste SK ifølge eget udsagn i journalen <ref target="../JJ/txt.xml#n145" type="journalsAndPapers" n="145">JJ:145</ref> »eengang om Ugen <hi rendition="#ita">(...)</hi> <persName key="Mynster, Jakob Peter">Mynster</persName>s Prædikener op for hende«, <hi rendition="#ita">SKS</hi> 18, 187,31.</p></note>
-  <note type="commentary" xml:id="not15-62" n="442,21"><label><hi rendition="#bol">hiin General, der selv commanderede da han blev skudt</hi></label> <p>Hvilken general, SK sigter til, har ikke med bestemthed kunnet afgøres.</p></note>
-  <note type="commentary" xml:id="not15-63" n="442,33"><label><hi rendition="#bol">Goethes Frederikke, der afslaaer ethvert Ægteskab, fordi det maa være en Pige nok at have elsket Goethe</hi></label> <p><persName key="Brion, Friederike" n="*">Friederike Brion</persName> (1752-1813), præstedatter fra <placeName>Sesenheim</placeName> ved <placeName>Strasbourg</placeName>, var kæreste med <persName key="Goethe, Johann Wolfgang von" n="*">Johann Wolfgang Goethe</persName> (1749-1832) fra okt. 1770 til aug. 1771. Goethe fortæller om forholdet i 10., 11. og 12. bog af <hi rendition="#ita">Aus meinem Leben. Dichtung und Wahrheit</hi>, jf. <hi rendition="#ita">Goethe's Werke. Vollständige Ausgabe letzter Hand</hi> bd. 1-60, <placeName>Stuttgart</placeName> og <placeName>Tübingen</placeName> 1828-42, ktl. 1641-1668 (bd. 1-55); bd. 25-26, 1829, især bd. 26, s. 80-84 og s. 118-121. Forholdet ophørte på Goethes foranledning, da han efter endt eksamen forlod Strasbourg. Friederike levede resten af sine dage i enlig stand.</p></note>
-  <note type="commentary" xml:id="not15-64" n="443,13"><label><hi rendition="#bol">da jeg første Gang saae hende</hi></label> <p>(<ptr type="commentary" target="#not15-5" n="433,2"/>).</p></note>
-  <note type="commentary" xml:id="not15-67" n="444,2"><label><hi rendition="#bol">»vor egen kjære, lille Regine.«</hi></label> <p>SK citerer her sig selv, idet han i et udateret brev til <persName key="Olsen, Regine">Regine</persName> fra forlovelsens første tid omtaler hende som »Vor egen lille Regine«, <ref target="../b127/txt.xml#n127" type="lettersAndDedications" n="ba:15" rend="Brev 127"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 47</ref>. Da SK i efteråret 1849 går med planer om i brevform at ville indvie Regine i nogle af grundene til forlovelsens forlis, genanvender han udtrykket »'vor egen kjære lille Regine'«, <ref target="../b127/txt.xml#n159" type="lettersAndDedications" n="ba:235" rend="Brev 159.1"><hi rendition="#ita">B&amp;A</hi> bd. 1, s. 254</ref>.</p></note>
-  <note type="commentary" xml:id="not15-65" n="443m,5"><label><hi rendition="#bol">Hende skyldes den Fortælling om en Pige og en Karl</hi></label> <p>Den pågældende historie har ikke kunnet identificeres.</p></note>
-  <note type="commentary" xml:id="not15-66" n="443m,11"><label><hi rendition="#bol">Frue Munter, der løb bort med Pollon</hi></label> <p>Historiens aktører har ikke kunnet identificeres.</p></note>
-  <note type="commentary" xml:id="not15-68" n="444,32"><label><hi rendition="#bol">see det er »Frygt og Bæven.«</hi></label> <p>jf. <rs type="bible">Fil 2,12</rs>, hvor <persName key="Paulus">Paulus</persName> skriver til filipperne: »Derfor, mine kære, I, som altid har været lydige: Arbejd med frygt og bæven på jeres frelse, ikke blot som da jeg var til stede, men endnu mere nu i mit fravær.« SK synes her i særlig grad at forbinde sin egen erotiske krise med temaer i sit værk <hi rendition="#ita">Frygt og Bæven</hi> fra 1843.</p></note>
-  <note type="commentary" xml:id="not15-69" n="445,1"><label><hi rendition="#bol">lig hine Dæmoner i Eventyret</hi></label> <p>SK sigter formentlig her til sine dæmoniske variationer over fortællingen om <persName key="Agnete">Agnete</persName> og Havmanden i <hi rendition="#ita">Frygt og Bæven</hi>, jf. <ref target="../FB/txt.xml#ss183" type="publishedWritings" n="183"><hi rendition="#ita">SKS</hi> 4, 183</ref>-191. Motivet vinder personlig dybde i journaloptegnelsen <ref target="../JJ/txt.xml#n120" type="journalsAndPapers" n="120">JJ:120</ref>, hvor SK udkaster de første skitser til værket, jf. <hi rendition="#ita">SKS</hi> 18, 180.</p></note>
- </div></body></text>
-
+  <text xml:id="id4283cb32-e362-4a69-9317-820d59987c92" type="commentary" subtype="jp">
+    <body xml:id="id4f800889-3f2c-45c6-91fc-1370e3ad6cb3">
+      <div xml:id="id1bc9ba23-f9ad-40cd-b4a7-a14f153d579d">
+        <note type="commentary" xml:id="not15-1" n="431,1">
+          <label xml:id="idaeab53b4-0a1f-434c-a754-8e53790f3b91">
+            <hi xml:id="id9b3718f2-85ac-4c89-998d-e89a21010765" rendition="#bol">»hende«</hi>
+          </label>
+          <p xml:id="id9a80163d-4e7c-4371-8d5d-32ac6f7b1f32"><persName xml:id="id5bc48156-ae47-4a6d-ad1c-ee2a95f558e0" key="Olsen, Regine">Regine Olsen</persName> (<ptr xml:id="id290aaebc-b017-4018-9d95-34a9e7ea80a7" type="commentary" target="#not15-4" n="433,2"/> og <ptr xml:id="id2fe4547f-8db0-4a44-98d6-bd10b3914b55" type="commentary" target="#not15-14" n="433,20"/>).</p>
+        </note>
+        <note type="commentary" xml:id="not15-2" n="432,1">
+          <label xml:id="ida78c0a5d-0b7d-45e8-bb11-cde3522043e2">
+            <hi xml:id="id50531f22-b816-4bc8-92c4-1237ab7cf36e" rendition="#bol">Infandum me jubes, Regina, renovare dolorem</hi>
+          </label>
+          <p xml:id="id9afc3ba7-5422-4e81-b5f8-730c2f112121">lat. 'Du befaler mig, <persName xml:id="id44e38559-5d58-4cb9-abf8-386478601af1" key="Olsen, Regine">Regine</persName>, at forny den usigelige smerte'. Let bearbejdet citat af <persName xml:id="id458cdf58-e1f4-4009-9b7a-d4fbd18fb6d4" key="Vergil">Vergil</persName> (70-19 f.Kr.), <hi xml:id="id4cd3404d-f0db-408e-890d-46eb24750d12" rendition="#ita">Æneiden</hi> 2,3, som oprindeligt lyder: »Infandum, Regina, iubes renouare dolorem«, <hi xml:id="id16c05ec9-625c-4443-b436-0be25226f4c1" rendition="#ita">P. Virgilii Maronis opera,</hi> udg. af <persName xml:id="idee178166-1233-4775-8183-4a54b134ded4" key="Baden, Jacob">J. Baden</persName>, bd. 1-2, <placeName xml:id="id3061ea98-5b76-40d3-b47b-f247e2db6836" key="København">Kbh</placeName>. 1778-80; bd. 1, s. 366. Jf. også <hi xml:id="id7c9105ed-d674-4d9e-8aa7-8a1a39f9ae75" rendition="#ita">Virgils Æneide,</hi> overs. af <persName xml:id="ide67f4347-8ce3-49a4-9797-13c3522df1bd" key="Schønheyder, Johan Henrich">J.H. Schønheyder</persName>, bd. 1-2, <placeName xml:id="ida8d104c4-d984-438f-8dec-7462d5620f9c" key="København">Kbh</placeName>. 1812; bd. 1, s. 51, hvor citatet gengives med: »Unævnlig Smerte byder du, o Dronning! / mig at fornye«. SK har tidligere anvendt citatet i journalen NB<hi xml:id="iddcf1226f-fa53-41a0-80cc-b2bf7fd1a25a" rendition="#sup">3</hi>, jf. <ref xml:id="id7423a070-bb17-4b6a-8a52-8cf8de2bded4" target="../NB3/txt.xml#n43" type="journalsAndPapers" n="pap:VIII1A446" rend="NB3:43"><hi xml:id="id9336049e-4428-402b-983d-d37b0d4d5a59" rendition="#ita">Pap.</hi> VIII 1 A 446</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="not15-3" n="432,2">
+          <label xml:id="idaa61ffae-3554-4581-9d8e-b56d6a45f075">
+            <hi xml:id="idcbc350bf-0d2f-4df0-8227-4a76af83385b" rendition="#bol">den Replik om mig: det ender vistnok med, at Du bliver Jesuit</hi>
+          </label>
+          <p xml:id="id972f1e4d-c634-409a-b299-ea6083f066e4"><persName xml:id="id9262722f-09c5-40bd-a308-51457a840ff1" key="Olsen, Regine">Regine</persName>s replik er lagt i munden på <persName xml:id="id5ade0a5b-0530-44e4-b641-cd478821bfa7" key="Wilhelm">Assessor Wilhelm</persName>, der i anden del af <hi xml:id="idbdbfe80e-36e9-4b6b-8806-784102963eac" rendition="#ita">Enten</hi> – <hi xml:id="id6f0fde29-4bce-4d3b-8134-3a3656c0148b" rendition="#ita">Eller</hi> meddeler sin æstetiske ven: »Klog er Du, det kan man ikke negte Dig, og sandt er det, hvad en ung Pige sagde om Dig, at Du formodentlig endte med at blive Jesuit«, <ref xml:id="id28a0c3da-87ee-4ba0-8b5d-5c32df850050" target="../EE2/txt.xml#ss223" type="publishedWritings" n="223"><hi xml:id="idd1da475f-1b67-4f80-b7e1-106ce040e620" rendition="#ita">SKS</hi> 3, 223</ref>,1; jf. en optegnelse fra forsommeren 1848 i journalen NB<hi xml:id="idf7f151b6-8edd-4c5c-9174-ac2c9fc56d3d" rendition="#sup">5</hi> (<ref xml:id="idedde15d6-0254-4520-975d-c6ecebc718ae" target="../NB5/txt.xml#n127" type="journalsAndPapers" n="pap:IXA131" rend="NB5:127"><hi xml:id="id8531f9c6-261f-473e-aa04-d1f31776c869" rendition="#ita">Pap. </hi>IX A 131</ref>), hvor SK giver Regines replik en lidt anden drejning. Spanieren <persName xml:id="idf85fadd9-f96b-45fd-bc42-e4d39eea1807" key="Ignatius af Loyola">Ignatius af Loyola</persName> stiftede i 1534 sin jesuiterorden, der blev kendt for en skånselsløs forfølgelse af egne mål.</p>
+        </note>
+        <note type="commentary" xml:id="not15-4" n="433,2">
+          <label xml:id="id1660aa9a-311f-4be5-9229-75000193acc8">
+            <hi xml:id="id771d39e6-5ca9-46c1-a185-c69fa4a05416" rendition="#bol">Regine</hi>
+          </label>
+          <p xml:id="id4c8dcbf5-18a7-4bd2-aa6e-4c1fbaf6f070"><persName xml:id="id0aa3eed2-1313-4c62-9da9-d55dbedb9423" key="Olsen, Regine" n="*">Regine Olsen</persName> (1822-1904) var forlovet med SK fra 10. sept. 1840 til 11. el. 18. okt. 1841 (<ptr xml:id="id7816577e-d811-47b0-a66f-f9a96f33d9be" type="commentary" target="#not15-24" n="435,33"/>).</p>
+        </note>
+        <note type="commentary" xml:id="not15-5" n="433,2">
+          <label xml:id="id171ff3cf-04f4-4e8d-91b1-377d2b53fb44">
+            <hi xml:id="iddc4a7603-d705-46ac-bc0a-3f1dcc3e2fd3" rendition="#bol">Jeg saae hende først hos Rørdams</hi>
+          </label>
+          <p xml:id="id8615d916-ccb5-4e25-9ba5-0678c6b6de63"><persName xml:id="id5413b484-d1a9-4f57-ba8a-c2755d603893" key="Rørdam, Cathrine Georgia" n="*">Cathrine Georgia Rørdam</persName> (1777-1842), enke efter provst <persName xml:id="id54f1eb20-8635-4939-aebd-2c7c9a349feb" key="Rørdam, Thomas Schatt" n="*">Thomas Schatt Rørdam</persName> (d. 1831), boede på <placeName xml:id="id0d1299d8-ca0e-4f84-9f46-cbd468170789">Frederiksberg</placeName> sammen med sønnen cand.theol. <persName xml:id="id3db6e260-eb09-409e-8bbf-df08a81cc543" key="Rørdam, Peter">Peter Rørdam</persName> og sine tre døtre, hvoraf den yngste var <persName xml:id="id6dcc0338-bf78-4780-b279-fbd15d4febf6" key="Rørdam, Bolette Christine">Bolette</persName> (se følgende kommentar). SK mødte formentlig <persName xml:id="idb398529a-301c-4d84-9ac1-2cc188795ff8" key="Olsen, Regine">Regine</persName> første gang ved et besøg hos familien i foråret 1837.</p>
+        </note>
+        <note type="commentary" xml:id="not15-7" n="433,4">
+          <label xml:id="id42b95ca0-9de0-4ced-b337-bb21a76e8f56">
+            <hi xml:id="id155d133d-9bec-46c8-a7d5-4923088569c8" rendition="#bol">Bollette Rørdam</hi>
+          </label>
+          <p xml:id="ided611c78-2fda-4dca-8589-4dcd3d4eb12a"><persName xml:id="id038a1a3f-0eb4-4b85-bcb9-52286d7f3756" key="Rørdam, Bolette Christine" n="*">Bolette Christine Rørdam</persName> (1815-87), forlovet med cand.theol. <persName xml:id="idc5ded650-4b9c-449a-9bc1-4019bf6d03e1" key="Købke, Peter" n="*">Peter Købke</persName> (d. 1839), virkede fra 1841-50 som husbestyrerinde hos sin bror <persName xml:id="id50a52c74-e830-47b6-8a21-27cd1a06cd94" key="Rørdam, Peter">Peter Rørdam</persName>, gift 1857 med sognepræst <persName xml:id="idd8dda504-a9b3-4411-8870-a57d40e08462" key="Feilberg, Nikolaj Laurentius">N.L. Feilberg</persName>.</p>
+        </note>
+        <note type="commentary" xml:id="not15-8" n="433,9">
+          <label xml:id="ideead464b-4cbf-4467-92d2-7c4525af0cb5">
+            <hi xml:id="id7beeeb58-08d9-49f7-a87a-14418697ce5d" rendition="#bol">min Fader døde</hi>
+          </label>
+          <p xml:id="idf76e78a4-4bb7-4c07-882e-2baf4cf65459"><persName xml:id="id49230c97-f568-4427-aad0-0deba45a65ba" key="Kierkegaard, Michael Pedersen">Michael Pedersen Kierkegaard</persName> døde den 9. august 1838 i en alder af 81. Hans sidste timer er beskrevet af sønnen <persName xml:id="id3890baf7-70ff-492b-a7de-2382718e6bf6" key="Kierkegaard, Peter Christian">Peter Christian Kierkegaard</persName> i dennes dagbog, NKS 2656, 4º, bd. 1, s. 100f.</p>
+        </note>
+        <note type="commentary" xml:id="not15-9" n="433,10">
+          <label xml:id="id954c7fdd-fbb6-43f2-a0ab-da9424ba4687">
+            <hi xml:id="idcb06eefa-43a6-47dc-8122-38e4deceff5a" rendition="#bol">Jeg læste til Examen</hi>
+          </label>
+          <p xml:id="id52904f7a-d0fe-4890-ae80-75a3e908a2e5">SK intensiverede sine teologiske studier efter faderens død, jf. journaloptegnelsen <ref xml:id="id49ace2e1-34bc-42ea-a20b-b00afd4fb811" target="../JJ/txt.xml#n297" type="journalsAndPapers" n="297">JJ:297</ref>, hvor SK om sin eksamen skriver, at »havde Fader vedblevet at leve, havde jeg aldrig faaet den«, <hi xml:id="idaa6555b0-e24f-4f64-b3d3-e3215a9651ed" rendition="#ita">SKS</hi>, 18, 234,2.</p>
+        </note>
+        <note type="commentary" xml:id="not15-10" n="433,12">
+          <label xml:id="id45fb5897-674e-41e0-8aba-0231b3eaa98b">
+            <hi xml:id="idd1a3a9a5-900f-4686-a7e0-d196d81bb75e" rendition="#bol">I Sommeren 40 tog jeg theol. Embedsexamen</hi>
+          </label>
+          <p xml:id="id0d92e777-92fa-484a-a1aa-813364624d01">SK blev teologisk kandidat den 3. juli 1840.</p>
+        </note>
+        <note type="commentary" xml:id="not15-11" n="433,13">
+          <label xml:id="id9904d595-9e66-48d7-ac8b-fcfbae183d92">
+            <hi xml:id="id421380a3-13a8-4845-a08b-12a40a648bcf" rendition="#bol">Jeg reiste til Jylland</hi>
+          </label>
+          <p xml:id="idfbc6e302-f6ae-4d8d-a92e-7429ca29a9de">SK indledte sin Jyllandsrejse lørdag den 18. juli 1840, jf. <ref xml:id="id15acf772-39f6-4686-8cfc-f60a509b80dd" target="../Not6/txt.xml#ss191" type="journalsAndPapers" n="191,3">notesbog 6</ref>, <hi xml:id="id93d209fa-ab4f-4f46-94bc-d3f1b7d5a04b" rendition="#ita">SKS</hi> 19, 191,3, samt kommentaren hertil.</p>
+        </note>
+        <note type="commentary" xml:id="not15-12" n="433,16">
+          <label xml:id="idcb0072a3-af3b-48c3-8c5d-79a4f5531ee8">
+            <hi xml:id="idc32c437e-5f85-47b7-a44d-418dc9363688" rendition="#bol">I Aug kom jeg tilbage</hi>
+          </label>
+          <p xml:id="ida3d9f076-c9b6-4e1c-b92c-f4f480c08155">SK var atter i <placeName xml:id="idc6778258-6935-45b5-9965-61362cd8fc21">København</placeName> den 7. eller 8. aug. 1840, jf. <ref xml:id="id36070808-fd9d-419b-8813-de5af9fa1b89" target="../Not6/txt.xml#ss202" type="journalsAndPapers" n="202,27">notesbog 6:35</ref>, <hi xml:id="id497514b4-6887-4acc-a3ec-b0fb9e2c0126" rendition="#ita">SKS</hi> 19, 202,27, samt kommentaren hertil.</p>
+        </note>
+        <note type="commentary" xml:id="not15-13" n="433,19">
+          <label xml:id="id86d6c181-13fd-4fc1-a7b9-6a1217c5a5e2">
+            <hi xml:id="id24295dbc-f825-425d-8096-fc5a5fe9c581" rendition="#bol">Fortsæt</hi>
+          </label>
+          <p xml:id="id7f9e99bf-4ff4-42c2-80ab-c16c911fa799">fejl for Forsæt.</p>
+        </note>
+        <note type="commentary" xml:id="not15-14" n="433,20">
+          <label xml:id="idb6527bd9-ea76-4f57-b8ff-34522a30a37f">
+            <hi xml:id="id8f13266c-8737-40ae-b48a-5434e93f5dd6" rendition="#bol">lige udenfor deres Huus</hi>
+          </label>
+          <p xml:id="id6e626421-488a-49d5-bbdf-bd80b02d10b6">Regine boede hos sine forældre i <placeName xml:id="id439cd3ad-885a-43a7-a90c-1cffd7d92ee8" key="Nybørs">Nye-Børs</placeName> (matrikel nr. 66) i en nu nedrevet ejendom, som man kaldte »De sex Søstre«, ml. <placeName xml:id="iddeacf125-6bf4-42d2-b737-8d7108d109ef">Børsen</placeName> og <placeName xml:id="id9e1ee5ca-3e14-470a-8f47-1dc77aff0477">Knippelsbro</placeName> (<ref xml:id="idf097c2aa-4860-4c60-80dd-0181cdf2ac5a" target="../kort/kbh_C3.htm" type="map" n="kbh"><hi xml:id="id4a07e1d4-6912-48bb-aef0-661b96373f59" rendition="#ita">se kort 2, C3</hi></ref>). If. folketællingen af 1. feb. 1840 beboede familien Olsen husets første sal, og husholdningen er registreret som følger: »<persName xml:id="id344c7233-0e07-45a8-95d9-5dfb75ddf2f3" key="Olsen, Terkild">Terkild Olsen</persName>, 57. gift, Justitsraad og Kgl. Bogholder / <persName xml:id="id15d02665-df2a-4440-82f0-995797eb7adc" key="Malling, Regina">Regina Malling</persName>, 62. do. Hans Kone / <persName xml:id="idfafa9c5b-3c9b-4e95-be72-77f06ab1af2b" key="Olsen, Maria Dorothea Frederike">Maria Dorothea Frederike Olsen</persName>, 31. ugift, Deres Datter / <persName xml:id="id8287d6ea-f1c7-4757-adb7-e8a9d6496f3c" key="Olsen, Olivia Christiane">Olivia Christiane Olsen</persName>, 29. ugift, Deres Datter / <persName xml:id="idec87a4e5-03f2-4616-a3cb-2ed5dcd5e9ec" key="Olsen, Oluf Christian">Oluf Christian Olsen</persName>, 26. ugift, Deres Søn, Student / <persName xml:id="id460cfffc-0f1e-48b5-8a66-234a544e124d" key="Olsen, Jonas Christian">Jonas Christian Olsen</persName>, 24. ugift, Deres Søn, Student / <persName xml:id="id4c75f65a-ee0e-4e2c-bd3c-c52ec46ca733" key="Olsen, Cornelia">Cornelia Olsen</persName>, 23. ugift, Deres Datter / <persName xml:id="id09c5abe1-f832-40d8-9e54-58bb4ba06536" key="Olsen, Regine">Regina Olsen</persName>, 19. ugift, Deres Datter / <persName xml:id="id6bfabccb-9cf1-46e5-b5a7-6abdda722f9c" key="Michelsen, Kirstine">Kirstine Michelsen</persName>, 35. ugift, Tjenestepige«.</p>
+        </note>
+        <note type="commentary" xml:id="not15-15" n="433,33">
+          <label xml:id="idafebfb28-e2df-4f96-ac42-8d87dc65b8df">
+            <hi xml:id="iddc26d591-d932-4219-b491-def5b8fe06cf" rendition="#bol">et Forhold til Schlegel</hi>
+          </label>
+          <p xml:id="iddf835404-6845-444f-bb08-9f8a058ef635"><persName xml:id="id455e3675-1f51-4b37-b5bf-18a14f991f09" key="Schlegel, Johan Frederik" n="*">Johan Frederik Schlegel</persName> (1817-96), student 1833, juridisk kandidat 1838, virkede en tid som huslærer i det olsenske hjem og udviklede her varme følelser for <persName xml:id="id6ec43dac-053a-4ba2-9efe-558f4c6f150d" key="Olsen, Regine">Regine</persName>. Schlegel indtrådte 1842 som volontør i Generaltoldkammer- og Kommercekollegiets Handels- og Konsulatskontor, hvor han i 1847 blev fuldmægtig, året efter blev han »Chef for Kolonialkontoret«, mens han i 1854 blev udpeget som guvernør over de dansk-vestindiske øer, hvor han bl.a. forestod den administrative gennemførelse af de opgaver, som slavernes frigørelse i 1848 havde givet anledning til.</p>
+        </note>
+        <note type="commentary" xml:id="not15-6" n="433m,2">
+          <label xml:id="idbc463952-f93b-44d6-a0ea-c59ac77b8485">
+            <hi xml:id="id5cb76a7a-9620-4400-975a-208e317d7f47" rendition="#bol">I de senere Journaler ... findes hist og her en enkelt Bemærkning om hende</hi>
+          </label>
+          <p xml:id="id99d3cfd3-89f0-4140-b12f-8e06e0b5cada">jf. journalen NB<hi xml:id="id16454f9e-19c8-4ffe-ac5b-74ee7b21ad3e" rendition="#sup">7</hi> dateret 21. aug. 1848 (<hi xml:id="id84b579c3-0257-4798-ac8a-3adbe0285ee2" rendition="#ita">Pap</hi>. IX A 262 og IX A 276), journalen NB<hi xml:id="idf031207e-7a56-4978-aae1-0f395629b662" rendition="#sup">9</hi>, dateret 2. jan. 1849 (<hi xml:id="id10f9467b-f5a4-4780-9c26-a5ca0c206eff" rendition="#ita">Pap</hi>. X I A 24) og journalen NB<hi xml:id="id665fca55-efe4-4030-9801-a0bfe3be6497" rendition="#sup">10</hi>, dateret 9. feb. 1849 (<hi xml:id="id48ff462c-402f-4769-9837-2627f2e504c0" rendition="#ita">Pap</hi>. X I A 200).</p>
+        </note>
+        <note type="commentary" xml:id="not15-16" n="434,1">
+          <label xml:id="idd4f707f9-5de4-4332-b4d9-8112dc12fc92">
+            <hi xml:id="id4fdf1d63-05d3-46d7-b8ef-19dd50eb2294" rendition="#bol">op til Etatsraaden</hi>
+          </label>
+          <p xml:id="idb474a42a-f564-44b9-ba70-465cab9c1dcd">dvs. op til <persName xml:id="ideab10a8d-ba89-4e76-9eec-ba575012032e" key="Olsen, Regine">Regine</persName>s far, <persName xml:id="id6866c223-70a7-4cad-bcea-8c0dd3a5cac5" key="Olsen, Terkild" n="*">Terkild Olsen</persName> (1784-1849), der var chef for Hoved- og Kontrabogholderkontoret under Finansdepartementet, beliggende på 1. sal i kancellibygningen på hjørnet ml. <placeName xml:id="idfe6dd310-2160-4632-a67b-4a1c514e12f7">Børsen</placeName> og <placeName xml:id="idec569990-504c-437d-91d6-516b06546c00" key="Christiansborg">Christiansborg Slot</placeName> (<ref xml:id="idba7ba4af-4bce-4544-9d01-0edaa3e4da91" target="../kort/kbh_B3.htm" type="map" n="kbh"><hi xml:id="ide31aaf06-2ee5-441b-856d-5339fb35da72" rendition="#ita">se kort 2, B3</hi></ref>). – <hi xml:id="id5172c0cd-ac1e-4810-8bda-1cb7c08fb604" rendition="#bol">Etatsraad</hi>en: egl. 'virkelig etatsråd', en titel, som if. forordning om rangen af 14. okt. 1746 var placeret i 3. klasse (af i alt ni) som nr. 3; i 1840 havde Terkild Olsen dog endnu kun rang af 'virkelig justitsråd', placeret i 4. klasse som nr. 3. Jf. fx »Titulaturer til Rangspersoner i alfabetisk Orden« i <persName xml:id="idebafafd2-9fed-40f0-bd74-3806e69b175d" key="Bartholin, Christian">C. Bartholin</persName> <hi xml:id="id15b4cc63-9140-46b1-a1a7-4f343829095c" rendition="#ita">Almindelig Brev- og Formularbog</hi> bd. 1-2, <placeName xml:id="ideda22e3a-fdf2-4881-8449-95dda1e3d01b" key="København">Kbh</placeName>. 1844, ktl. 933; bd. 1, s. 49-56.</p>
+        </note>
+        <note type="commentary" xml:id="not15-17" n="434,14">
+          <label xml:id="id979ba7fa-3552-4fc6-ba56-9c46f4fb7380">
+            <hi xml:id="idf93c83fc-a473-4d33-9b0f-5bf32eb4eb4c" rendition="#bol">En Poeniterende</hi>
+          </label>
+          <p xml:id="id6fca6bc9-29b7-4aeb-ac09-e9a7956e7e3b">en, der angrer el. gør bod.</p>
+        </note>
+        <note type="commentary" xml:id="not15-18" n="434,14">
+          <label xml:id="id5ca85600-a9bf-48be-8b40-2b9ef06701e8">
+            <hi xml:id="id13f0337e-4a96-4afe-ab42-486e76213230" rendition="#bol">vita ante acta</hi>
+          </label>
+          <p xml:id="id357665f6-ffbc-4cf4-8108-8c18f34a384e">lat. 'liv før begivenhederne', 'forudgående levned'.</p>
+        </note>
+        <note type="commentary" xml:id="not15-19" n="434,18">
+          <label xml:id="idc1dfa24f-d2a1-4fbd-8f5a-fad69e2a3b32">
+            <hi xml:id="id2bfb26c9-6ce7-4e06-87e1-acbd0efdbc39" rendition="#bol">erklærede, at hun havde taget mig af Medlidenhed</hi>
+          </label>
+          <p xml:id="id05c86351-157e-4ad3-a757-8b8652a3e5ca">En tilsvarende erklæring fremsætter den unge kvinde i »'Skyldig?' – 'Ikke-Skyldig?'«, <ref xml:id="id2e4f7622-9df3-45c7-aa9b-098ca9f129fa" target="../SLV/txt.xml#ss249" type="publishedWritings" n="249"><hi xml:id="idb3bda56e-b6e5-4722-b6ef-ed8fd6e1784d" rendition="#ita">SKS</hi> 6, 249</ref>,7-9.</p>
+        </note>
+        <note type="commentary" xml:id="not15-20" n="435,16">
+          <label xml:id="id8c7e82d1-cf8a-4d37-bf95-977ee88ed7de">
+            <hi xml:id="id02882600-9408-4d7d-9d7a-dc5327aa37dd" rendition="#bol">Billeten findes ordret i »det psychologiske Experiment«</hi>
+          </label>
+          <p xml:id="id9ec41866-6456-43a7-9cd6-2adc66a85f52">jf. »'Skyldig?' – 'Ikke-Skyldig?'« i <hi xml:id="idc551ed04-000d-4f81-930f-5bb355c54a41" rendition="#ita">Stadier paa Livets Vei</hi>, <ref xml:id="id8aeff1bd-7445-4a24-b120-99a3357a1b4f" target="../SLV/txt.xml#ss173" type="publishedWritings" n="173"><hi xml:id="id93b2b803-c163-4eea-b95a-e73baf65a455" rendition="#ita">SKS</hi> 6, 173</ref>-454, hvor indholdet i billetten (dvs. et lille brev, almindeligvis overbragt af en tjener) gengives således: »For ikke oftere at gjøre Prøve paa, hvad der dog maa skee, hvad der, naar det er skeet, vel vil give Kræfter, som disse behøves: saa lad det være skeet. Glem fremfor Alt Den, der skriver dette; tilgiv et Menneske, der, om han end formaaede Noget, dog ikke formaaede at gjøre en Pige lykkelig«, <ref xml:id="id074e8ee3-94c2-4011-ab5e-2fd195cce094" target="../SLV/txt.xml#ss307" type="publishedWritings" n="307"><hi xml:id="ide9539f4f-99fc-48a6-bf25-6ebb0f0375df" rendition="#ita">SKS</hi> 6, 307</ref>,3-7. SKs oprindelige billet til <persName xml:id="idbf05998a-6328-440c-bfe1-70b8072f5974" key="Olsen, Regine">Regine</persName> er ikke bevaret.</p>
+        </note>
+        <note type="commentary" xml:id="not15-23" n="435,22">
+          <label xml:id="id957ea9a7-a594-4490-b7dc-c7527554dec3">
+            <hi xml:id="id879804f0-5488-44cc-be87-ed27eb0a6a4c" rendition="#bol">Hun overskrider i qvindelig Fortvivlelse Grændsen</hi>
+          </label>
+          <p xml:id="id0521b41b-4279-4ef1-82fa-14d3fd96143e">SK sigter formentlig til, at <persName xml:id="id0bcee769-d1ae-448a-bf82-c2d0d8418bd7" key="Olsen, Regine">Regine</persName>, efter at hun den 11. aug. 1841 havde modtaget billetten og ringen, forsøgte at få SK i tale i hans lejlighed i <placeName xml:id="idf9c40e8a-8516-4ca2-a6e3-8d7ae1413cff">Nørregade</placeName> (<ptr xml:id="id31c4238d-1de4-4272-8bd2-1ffd606366c0" type="commentary" target="#not15-52" n="439,1"/>), jf. optegnelsen »Mit Forhold til hende« fra o. 1. sept. 1849 i journalen NB<hi xml:id="id82e502db-4b5f-48ac-b765-979e8b68512f" rendition="#sup">12</hi>: »Istedetfor at lade Sagen nu være afgjort, gaaer hun op paa mit Værelse i min Fraværelse og skriver mig en aldeles fortvivlet Billet, hvor hun besværger mig for Jesu Christi Skyld og ved Mindet om min afdøde Fader ikke at forlade hende« (<hi xml:id="idc7526e79-6127-42b2-b1ee-0f5424845c80" rendition="#ita">Pap</hi>. X 1 A 667, s. 422).</p>
+        </note>
+        <note type="commentary" xml:id="not15-24" n="435,33">
+          <label xml:id="id08ea9fd3-0919-4166-a45a-300421494327">
+            <hi xml:id="idf66e52ee-6991-49cd-8928-7750d116e483" rendition="#bol">Saa brast det, omtrent to Maaneder efter</hi>
+          </label>
+          <p xml:id="id70b57460-ca6d-44bc-8b04-5c7d95db5c4b">SK brød endegyldigt forlovelsen med <persName xml:id="id79a79406-8c9a-4e67-91f0-8098acab443d" key="Olsen, Regine">Regine</persName> den 11. el. 18. okt. 1841 (se den følgende kommentar), jf. <hi xml:id="id99911f2e-2769-466b-bced-5348df6ab330" rendition="#ita">Pap</hi>. X 1 A 667, s. 422.</p>
+        </note>
+        <note type="commentary" xml:id="not15-25" n="435,36">
+          <label xml:id="idb4449d53-c0eb-4b6d-8f6b-4d3f45e10562">
+            <hi xml:id="id4bc7082d-584a-4cbf-89b1-51aeebccce1e" rendition="#bol">Theateret ... træffe Emil</hi>
+          </label>
+          <p xml:id="idc01f1a4c-722f-451e-a995-503f3124610c"><persName xml:id="ideee514ad-6022-4be4-b4c4-46f11412369e" key="Boesen, Emil Ferdinand" n="*">Emil Ferdinand Boesen</persName> (1812-81), student 1829, cand.theol. 1834, lærer ved v. <placeName xml:id="id81ad14e6-c9c2-42c4-a586-8b155211bb5b" key="von Westens Skole">Westens Skole</placeName> indtil 1849, derpå residerende kapellan i <placeName xml:id="id077208dd-c04f-41c0-ab55-a7f2821f9506">Horsens</placeName> og fra 1863 stiftsprovst i <placeName xml:id="id3cc6ea27-33e4-42de-afbf-a80a834cf483" key="Aarhus">Århus</placeName>. Boesen var SKs bedste ven siden de tidligste ungdomsår. »Hvilken Dato det var jeg hævede Forlovelsen«, skriver SK i nov. 1849, »veed jeg ikke«, men efter en rekonstruktion af »de nærmest omkring liggende Fakta« mener han, at bruddet må have fundet sted »11te eller 18de October«. Som et af disse »Fakta« anfører han, at den dag, bruddet var en realitet, »gaves om Aftenen i Theateret: den hvide Dame, og der var jeg for at søge En, jeg skulde tale med« (<ref xml:id="ida7f62918-64cd-4db7-9788-c80237e04eed" target="../b127/txt.xml#n160" type="lettersAndDedications" n="ba:239" rend="Brev 160"><hi xml:id="id4a151fb1-7cfd-47f4-b104-b9fa8c9eb194" rendition="#ita">B&amp;A</hi> bd. 1, s. 264</ref>). Skuespillet <hi xml:id="idc5f20686-07ea-48b8-b31a-ad8954ad1d50" rendition="#ita">Den hvide Dame</hi> blev opført på <placeName xml:id="id34b3acf7-05dd-453c-a764-8df6642a5f67" key="Kongelige Teater, Det">Det kgl. Teater</placeName> den 12. og 18. okt. 1841. Husker SK rigtigt, når han hævder, at det var dette stykke, der blev spillet den dag, forlovelsen ophørte, kan datoen kun være den 18. okt.</p>
+        </note>
+        <note type="commentary" xml:id="not15-21" n="435m,12">
+          <label xml:id="id3df2a610-a869-4f0f-9dfd-78f793980d1b">
+            <hi xml:id="id44a4af25-2dfc-4c20-af04-bdf2e238ecfa" rendition="#bol">at man bliver feed ved at gifte sig</hi>
+          </label>
+          <p xml:id="id18eefb68-cf90-4a10-9207-5c4b0c349777">Den pågældende replik er lagt i munden på en unavngiven herre i »'Skyldig?' – 'Ikke-Skyldig?'«, <ref xml:id="idbc608174-e3e7-4bb2-925d-b7336a0c9d26" target="../SLV/txt.xml#ss344" type="publishedWritings" n="344"><hi xml:id="id002e5bea-f773-4d3b-bb28-0099bc843597" rendition="#ita">SKS</hi> 6, 344</ref>,33.</p>
+        </note>
+        <note type="commentary" xml:id="not15-22" n="435m,17">
+          <label xml:id="id9409a3a1-a607-4495-ab75-6aa2d6fc9c83">
+            <hi xml:id="id1075903e-b6d3-4a18-8bab-f20275e1d813" rendition="#bol">Den Replik: at man kan hæve en Forlovelse paa to Maader saa vel ved Hjælp af Agtelse som ved Hjælp af Kjerlighed. Hendes Replik: jeg troer egl. at Du er gal</hi>
+          </label>
+          <p xml:id="id53858cbf-d53e-4275-8f6d-60185acd27e8">Begge replikker findes i »'Skyldig?' – 'Ikke-Skyldig?'«, <ref xml:id="id4d2a52cc-a3f2-48be-8faf-ae3ca98f03fe" target="../SLV/txt.xml#ss357" type="publishedWritings" n="357"><hi xml:id="id9873bf7c-16ed-46de-84c9-b40a98905ffb" rendition="#ita">SKS</hi> 6, 357</ref>f.</p>
+        </note>
+        <note type="commentary" xml:id="not15-27" n="435m,35">
+          <label xml:id="idb0548ee8-168e-48b2-8849-3cb9d9a73eff">
+            <hi xml:id="id5ae65e01-9e6b-4815-9504-731dd267fe53" rendition="#bol">ikke usocratisk</hi>
+          </label>
+          <p xml:id="id08c2c18b-956d-497c-a611-2e286102b66d">altså sokratisk, her nærmest i betydningen: drillende, fiffigt.</p>
+        </note>
+        <note type="commentary" xml:id="not15-26" n="436,1">
+          <label xml:id="id72c9159e-9f59-4d17-9d32-5b26a60510ee">
+            <hi xml:id="id618ad9db-1ce6-4f63-9dab-1e0a555624dd" rendition="#bol">Etatsraaden</hi>
+          </label>
+          <p xml:id="id51c7b1d3-d85f-4fe2-8280-8a43d9183306">dvs. <persName xml:id="idaafaf8ee-a4ff-4acf-9017-2fec36902d65" key="Olsen, Regine">Regine</persName>s far, <ptr xml:id="id7f79de61-5dc6-4cd1-9818-00eab30861a9" type="commentary" target="#not15-16" n="434,1"/>.</p>
+        </note>
+        <note type="commentary" xml:id="not15-29" n="436,23">
+          <label xml:id="id5e385cfd-2597-4c46-ad0b-d69be9be6615">
+            <hi xml:id="id1665c437-f597-4533-b8a7-0a20da0c59f3" rendition="#bol">Min Broder</hi>
+          </label>
+          <p xml:id="id928a90b1-cd1b-4431-a9f9-3d14fa61a15e"><persName xml:id="id777976e5-b1c7-40e8-a59b-5df6f436b5ba" key="Kierkegaard, Peter Christian" n="*">Peter Christian Kierkegaard</persName> (1805-88), disputerede 1836 for den teologiske licentiatgrad, fra 1842 sognepræst for <placeName xml:id="id7c6b3181-8e63-4d71-b8d1-a370478af6d2">Pedersborg</placeName> og <placeName xml:id="idb9ca0ce8-6acb-4ecd-adec-7a56f2945550">Kindertofte</placeName> ved <placeName xml:id="id8eb980c8-d4f8-4468-aa39-195722493079">Sorø</placeName>.</p>
+        </note>
+        <note type="commentary" xml:id="not15-31" n="436,28">
+          <label xml:id="id7cf59928-1d43-4b45-9777-5e3aad97f3dd">
+            <hi xml:id="id7e9c4a4b-d130-4660-8110-43c3b976c990" rendition="#bol">Jeg reiste til Berlin</hi>
+          </label>
+          <p xml:id="id50ec900c-b029-4409-b7a5-fb24c7f68032">SK påbegyndte sin rejse til <placeName xml:id="ida7a449f1-bb31-40cb-aba3-ce92bcf2e4c5">Berlin</placeName> den 25. okt. 1841 og vendte tilbage til <placeName xml:id="id79ef0495-a681-4db8-9fa8-376016529d5f">København</placeName> den 6. marts 1842, jf. <ref xml:id="ida62d7e9f-0784-4e91-a7d7-c7ea4984747a" target="../Not8/txt.xml#ss225" type="journalsAndPapers" n="225,21">notesbog 8:2</ref>, <hi xml:id="idda9ac6a1-49d9-4269-8150-41b936faa354" rendition="#ita">SKS</hi> 19, 225,21, samt kommentaren hertil.</p>
+        </note>
+        <note type="commentary" xml:id="not15-34" n="436,35">
+          <label xml:id="id353fa311-b94f-4718-ae2b-ca4aedca6af2">Præstens <hi xml:id="idc13d7bbe-c710-42b7-b281-d185d3b7cbd6" rendition="#bol">Melange</hi></label>
+          <p xml:id="id27577ad0-02c1-4d7e-9823-a4f691fcb7c3">blanding, især af tobak, her nærmest i betydningen: snak eller rodsammen.</p>
+        </note>
+        <note type="commentary" xml:id="not15-28" n="436m,1">
+          <label xml:id="id864de4db-ab7a-48da-8b38-3c72b8489426">
+            <hi xml:id="idf36385ac-a017-48ba-b047-2faa8d43e62f" rendition="#bol">Hun fremtog en lille Seddel, hvorpaa stod et Ord af mig</hi>
+          </label>
+          <p xml:id="id930e5d94-5a6b-4a60-a870-e08f8b245a93">Sedlens ordlyd er ikke overleveret.</p>
+        </note>
+        <note type="commentary" xml:id="not15-30" n="436m,16">
+          <label xml:id="id9d3f3e7d-6283-4f31-bd8d-63a2f7c57a0a">
+            <hi xml:id="id8821e0fe-cb5d-4cb4-83b2-707a69ac7bdd" rendition="#bol">jeg skulde komme ligesom Wilhelm i Lenore</hi>
+          </label>
+          <p xml:id="ida0ea2046-5fc2-47d8-a1e7-4a0cf84e45d6">SK sigter til balladen <hi xml:id="id91adc7a7-ae49-4eae-a1f7-12a9002d8159" rendition="#ita">Lenore</hi> (1774) af den ty. digter <persName xml:id="id118d0ab7-eb7e-4cae-bea3-8142560fec0a" key="Bürger, Gottfried August" n="*">Gottfried August Bürger</persName> (1747-94), jf. fx <hi xml:id="id36d06f05-a021-4d9d-ab05-a52c930d46f8" rendition="#ita">Bürgers Gedichte,</hi> <placeName xml:id="id266f4eaf-ca7b-4f5d-8c79-298686af14ca">Gotha</placeName> 1828, s. 48-57. I den pågældende passus berettes om den døde kriger <persName xml:id="id81d4bae2-272d-42c0-ab05-ddfb78348814" key="Wilhelm">Vilhelm</persName>, der en sen nattetime henter sin elskede <persName xml:id="id181d9564-9252-42ad-8dff-0a204553cc83" key="Lenore">Lenore</persName> og rider af sted med hende til sin grav på kirkegården.</p>
+        </note>
+        <note type="commentary" xml:id="not15-32" n="436m,21">
+          <label xml:id="idbc1443f4-6df7-46cf-a1fd-4bdf0cfd0c2b">
+            <hi xml:id="id98a844f5-1e68-4b1d-943e-e3fa43711d29" rendition="#bol">arbeide hende flot</hi>
+          </label>
+          <p xml:id="id24357f47-d975-4c9d-8b75-a0b0f605088e">at gøre noget (fx et skib) flot er at bringe det til at flyde, bringe det fri af grunden.</p>
+        </note>
+        <note type="commentary" xml:id="not15-33" n="436m,26">
+          <label xml:id="id9670d496-421e-4b3f-b004-13586e0be44a">
+            <hi xml:id="ida43c5754-eceb-4ccb-b0a6-883cf4e0a025" rendition="#bol">billigere Vilkaar</hi>
+          </label>
+          <p xml:id="idee290664-d9ba-4264-bc31-52d3e37d6666">rimeligere vilkår.</p>
+        </note>
+        <note type="commentary" xml:id="not15-35" n="436m,27">
+          <label xml:id="id80ad3007-da15-4708-b544-73de6ab4a449">
+            <hi xml:id="idc8221b86-7eb8-465f-9e6f-a8eb3185341a" rendition="#bol">At denne Adfærd ... har det unge Msk. hos Constantin Constantius udviklet</hi>
+          </label>
+          <p xml:id="idaa34c442-5c1c-40dd-9230-56ae146f2d8e">SK sigter her til <hi xml:id="id2387bf83-42f5-4b3e-9a80-62593b7c1677" rendition="#ita">Gjentagelsen. Et Forsøg i den experimenterende Psychologi af Constantin Constantius</hi>, der udkom 16. okt. 1843. I denne bog træffer <persName xml:id="id0d4b3390-f574-44d1-b346-083ed57fcaff" key="Constantin Constantius">Constantin Constantius</persName> sammen med et ungt menneske, der hovedkulds har forelsket sig i en pige; forelskelsen udløser så voldsomme, kunstneriske kræfter i ham, at den konkrete pige nærmest bliver til ulejlighed. Da <persName xml:id="id64fddb38-f5c1-4dc4-a478-6c5b19cb29c5" key="Det unge Menneske">det unge menneske</persName> imidlertid ikke kan få sig selv til at forklare pigen »Forvexlingen, at hun blot var den synlige Skikkelse, medens hans Tanke, hans Sjæl søgte noget Andet, som han overførte paa hende« (<ref xml:id="id410f4862-723f-4727-b94f-6c49e2dc16df" target="../G/txt.xml#ss18" type="publishedWritings" n="18"><hi xml:id="idca14e3f2-09c6-4dfa-8bda-6d3ae9b669aa" rendition="#ita">SKS</hi> 4, 18</ref>,33-35), foreslår Constantin Constantius ham at anvende følgende metode: »Tilintetgjør Alt, forvandl Dem selv til et foragteligt Menneske, der kun har sin Glæde af at gjække og bedrage. <hi xml:id="idf4e32ee4-9cf9-4f7d-85d3-5fbdaa711131" rendition="#ita">(...)</hi> See først om muligt at blive hende lidt ubehagelig. Dril hende ikke, det hidser. Nei! vær ustadig, vrøvlevorren, gjør en Dag Eet, en anden et Andet, dog uden Lidenskab, i en fuldkommen Slendrian <hi xml:id="id0c2061d7-6a1a-4b3d-868f-14c6863d27ab" rendition="#ita">(...)</hi>. Frembring bestandig istedenfor al Elskovens Lyst en vis vammel <hi xml:id="idba4cd147-7455-4971-9e74-e9a31cb4007c" rendition="#ita">quasi</hi>-Elskov, der hverken er Ligegyldighed eller Attraa; lad hele Deres Optræden være ligesaa ubehagelig, som det er at see en Mand savle«, <ref xml:id="id64be09d1-8e2b-4d9d-a8fb-14bdaafda888" target="../G/txt.xml#ss19" type="publishedWritings" n="19"><hi xml:id="idd7ceac50-b5ce-4105-9d0f-cb2c0ca7332d" rendition="#ita">SKS</hi> 4, 19</ref>,16-33.</p>
+        </note>
+        <note type="commentary" xml:id="not15-39" n="436m,31">
+          <label xml:id="idea18180c-48f3-4a7c-83cb-4a4ab9d85695">
+            <hi xml:id="idfd4a7f19-94c3-44d6-932f-e9ba2a65392d" rendition="#bol">Den Dag jeg ... sendtes uaabnet tilbage</hi>
+          </label>
+          <p xml:id="id9a797c7c-3e3c-4f28-b4da-6b3df48dfbcf">Brevet er ikke bevaret og dets indhold ikke på anden vis overleveret.</p>
+        </note>
+        <note type="commentary" xml:id="not15-36" n="437,1">
+          <label xml:id="idc8c382c3-e1bf-4a9d-a69a-7f4f39e5d0e0">
+            <hi xml:id="id60f52aff-6a20-4132-bb5b-2678930f219a" rendition="#bol">»Forførerens Dagbog« er skrevet for hendes Skyld</hi>
+          </label>
+          <p xml:id="idee56e74e-7b61-4456-b99b-f0fe2a75bec1">I en udateret optegnelse i journalen NB<hi xml:id="idee644041-0d0b-416c-bb4c-bd4bc27c00b6" rendition="#sup">10</hi> fra 1849 skriver SK: »'Forførerens Dagbog' har jeg skrevet for hendes Skyld, for at klare hende ud af Forholdet« (<ref xml:id="id1f20cc4d-4bfd-4228-b34c-95145fd5c447" target="../NB10/txt.xml#n185" type="journalsAndPapers" n="pap:X1A266" rend="NB10:185"><hi xml:id="ide69e8a77-d9ed-4196-8522-1a20fcd2c693" rendition="#ita">Pap.</hi> X 1 A 266</ref>, s. 177). Denne tanke om dagbogen som et fromt bedrag af <persName xml:id="id1804e995-8445-408b-9a6b-b48f88f09f26" key="Olsen, Regine">Regine</persName> gentages på en løs lap dateret 13. okt. 1853 med formuleringen: »'Forførerens Dagbog' var jo for at støde fra, eller som det hedder i 'Frygt og Bæven' 'naar Barnet skal vænnes fra, da sværter Moderen sit Bryst'« (<ref xml:id="id3bcb914d-00b1-4cea-b70d-5253be48e3ad" target="../NB28/txt.xml#n54" type="journalsAndPapers" n="pap:X5A146" rend="NB28:54"><hi xml:id="id03eb2115-5e85-49ad-977e-77dad8d5f4e9" rendition="#ita">Pap.</hi> X 5 A 146</ref>, s. 151).</p>
+        </note>
+        <note type="commentary" xml:id="not15-37" n="437,2">
+          <label xml:id="id6e8f13e2-9883-42b3-be15-5bd6b3f59c0e">
+            <hi xml:id="idd790d3da-8205-49c6-8b1d-b424310bb719" rendition="#bol">Forordet til de to opbyggelige Taler er beregnet paa hende</hi>
+          </label>
+          <p xml:id="id620b1299-f3b0-4186-8fad-5319af0f8fa4">jf. <ref xml:id="ida162b23a-222f-4825-bda0-1187a942e025" target="../2T43/txt.xml#ss13" type="publishedWritings" n="13">forordet til <hi xml:id="id0401a0f7-161e-4ade-a6d3-462ff8d1082a" rendition="#ita">To opbyggelige Taler</hi></ref> (<placeName xml:id="idc38dacaa-66c5-4df3-8d5a-f84ec3f737bf" key="København">Kbh</placeName>. 1843), <ref xml:id="id52e25ab7-7542-4ff1-b6fe-74608d007fde" target="../2T43/txt.xml#ss13" type="publishedWritings" n="13"><hi xml:id="ide79b6e28-1c0f-4681-b846-e94464f25e11" rendition="#ita">SKS</hi> 5, 13</ref>; se endvidere kommentaren hertil i <ref xml:id="id740910d6-f8df-41af-98ca-f5d3ff902243" target="../2T43/kom.xml#2t43-4" type="commentary"><hi xml:id="idcbc4e832-06e0-4941-8a24-383bff43b6b0" rendition="#ita">SKS</hi> K5, 35</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="not15-38" n="437,3">
+          <label xml:id="id740067a7-a236-48ff-aac9-b0f6877166b8">
+            <hi xml:id="id0be4b0d7-5cd3-46c8-83aa-b8c53be9ec9b" rendition="#bol">Bogens Datum, Dedicationen til Fader</hi>
+          </label>
+          <p xml:id="idc87160c7-8487-4bb2-944c-bb1a090e320d">Forordet er dateret den 5. maj 1843, SKs 30-års fødselsdag, jf. <ref xml:id="id9f4652ce-f905-4f0d-8d71-9fe5f64df237" target="../2T43/txt.xml#ss13" type="publishedWritings" n="13"><hi xml:id="idd345b94e-73cc-4cc0-b680-63b8a175de7d" rendition="#ita">SKS</hi> 5, 13</ref>, mens talerne er helliget SKs far, <persName xml:id="idaf9352f3-222c-451d-b714-7984725f609c" key="Kierkegaard, Michael Pedersen">Michael Pedersen Kierkegaard</persName>, jf. <ref xml:id="id8da9ff9d-6025-42ec-ab4e-1b0d83c5d85d" target="../2T43/txt.xml#ss11" type="publishedWritings" n="11"><hi xml:id="id04986069-0d82-4b2d-8fe9-6ca35b1c90cc" rendition="#ita">SKS</hi> 5, 11</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="not15-42" n="437,6">
+          <label xml:id="id6fc51e12-b836-4609-a062-ece46af89f03">
+            <hi xml:id="id7ffdb2bd-8611-45c2-bb83-b3352a3ae381" rendition="#bol">Jeg var i Berlin kun et halvt Aar</hi>
+          </label>
+          <p xml:id="id88dd4c40-24b8-46eb-9082-b41633309db0">SK var i <placeName xml:id="idad91bfa0-9a27-49d6-8147-28fd5dd5b326">Berlin</placeName> o. 4½ md., <ptr xml:id="id1151bff1-99d6-41fd-aacf-163fb0b05c3b" type="commentary" target="#not15-31" n="436,28"/>.</p>
+        </note>
+        <note type="commentary" xml:id="not15-43" n="437,9">
+          <label xml:id="id7be36997-4c7f-4133-8f41-36b51abab72c">
+            <hi xml:id="idfdbb2719-f66e-48a6-92f4-f3aaf177e6e0" rendition="#bol">efter Mynsters Prædiken 1ste Paaskedag</hi>
+          </label>
+          <p xml:id="id7f8610bd-39c1-4ff9-a0e3-1f93f56b4075"><persName xml:id="id9cec735d-3ee8-4a86-8130-1bc8deaaccd6" key="Mynster, Jakob Peter" n="*">Jakob Peter Mynster</persName> (1775-1854), fra 1834 biskop over <placeName xml:id="idb2f225e9-6cee-4b30-aab9-c908d1ec412a">Sjælland</placeName>s stift, prædikede 1. påskedag den 27. marts 1842 til aftensang i <placeName xml:id="ida653bfbf-da10-4551-ad8b-f2d01cda8f52">Vor Frue Kirke</placeName>, jf. <hi xml:id="idcaeb7122-20ef-4f20-9d97-1c97a4417b0d" rendition="#ita">Kjøbenhavns kongelig alene privilegerede Adressecomptoirs Efterretninger</hi> (i daglig tale kaldet <hi xml:id="id440fa069-fec7-4f26-a035-78e3c6bd38c3" rendition="#ita">Adresseavisen</hi>) den 26. marts 1842, nr. 71.</p>
+        </note>
+        <note type="commentary" xml:id="not15-44" n="437,17">
+          <label xml:id="idaa6d0519-61e8-48a3-9e05-0e008959d829">
+            <hi xml:id="id0e22d96f-0a03-4cd5-8600-3968950a48d5" rendition="#bol">under mine Auspicier</hi>
+          </label>
+          <p xml:id="id2287692c-246e-427d-ae99-e8b3c4c26a47">dvs. under mit opsyn og med min støtte.</p>
+        </note>
+        <note type="commentary" xml:id="not15-45" n="437,17">
+          <label xml:id="id2fb216ca-0d36-44a6-9f68-d8df81979bb1">
+            <hi xml:id="id9eafa720-d6e3-4483-8436-cfb8e2fad961" rendition="#bol">Kort før Forlovelsen med Schlegel fik hun Øie paa mig i en Kirke</hi>
+          </label>
+          <p xml:id="idc936fd1b-4476-4627-8124-2d4e8e40bc63">Den 16. april 1843, 1. påskedag, prædikede biskop <persName xml:id="id1f2f12dc-6de5-4bfe-b67e-646b6c5ecac7" key="Mynster, Jakob Peter">Mynster</persName> til aftensang i <placeName xml:id="idd1b6146a-e9df-4b0b-ad11-917fb24c9184">Vor Frue Kirke</placeName> (<ref xml:id="ida6a9207b-3a9e-49ce-bf19-74ae5b5b83fb" target="../kort/kbh_B1.htm" type="map" n="kbh"><hi xml:id="id811da1fc-af18-44b7-8f83-4af781079d21" rendition="#ita">se kort 2, B1</hi></ref>). SK har givet en fyldig beskrivelse af episoden i <ref xml:id="ida2ac1898-e7dc-42b8-b87f-560509fac7a3" target="../JJ/txt.xml#ss174" type="journalsAndPapers" n="174">JJ:107</ref>, <hi xml:id="id5539525a-5481-46f6-9340-499d3cf27533" rendition="#ita">SKS</hi> 18, s. 174f., hvor man dog ikke får det indtryk, at SK skulle være bekendt med forlovelsen.</p>
+        </note>
+        <note type="commentary" xml:id="not15-46" n="437,30">
+          <label xml:id="ida5449f71-7a29-477c-9331-0329a72c627a">
+            <hi xml:id="id120f927e-3c6f-4225-bf76-5592053fee4e" rendition="#bol">Den Dag der blev lyst for hende, sad jeg i Frelsers Kirke</hi>
+          </label>
+          <p xml:id="id546a3cd1-545f-42ed-a60a-58dca35c6e67">Det vides ikke, hvornår der blev lyst for <persName xml:id="id9fdb6885-a4ff-401a-b982-80df1e2b3bb1" key="Olsen, Regine">Regine Olsen</persName> og <persName xml:id="id8cbfbd55-1959-45bc-99ae-7e8b9014c748" key="Schlegel, Johan Frederik">Johan Frederik Schlegel</persName>, men de blev gift den 3. nov. 1847 i <placeName xml:id="id973bec71-2b89-4cad-a9b1-f0f9270a0464">Vor Frelsers Kirke</placeName> på <placeName xml:id="id9e0ae58d-4d38-46f0-b409-3245e1c323ac">Christianshavn</placeName> (<ref xml:id="iddcd299fd-1564-43df-a474-9fc082c8e063" target="../kort/kbh_C4.htm" type="map" n="kbh"><hi xml:id="id0e4a1161-7d7f-421a-88e2-90a295e5c9de" rendition="#ita">se kort 2, C4</hi></ref>).</p>
+        </note>
+        <note type="commentary" xml:id="not15-41" n="437m,7">
+          <label xml:id="idb1ad1e0d-f573-4c7a-b671-30f1841d8432">
+            <hi xml:id="id00ce106d-c736-4d5c-8b71-5a7fe0810206" rendition="#bol">noget der rigtignok aldeles mislykkedes</hi>
+          </label>
+          <p xml:id="id4063cb28-e35b-4c4a-8c13-17619727d5e2">SK sigter formentlig her til den omstændighed, at <hi xml:id="id543ed68d-bf8a-4a6b-8119-201402b01959" rendition="#ita">Enten</hi> – <hi xml:id="id06dd05ff-17d0-4a1b-a5a2-13998e96fb27" rendition="#ita">Eller</hi> blev en publikumsucces, hvilket ikke mindst skyldtes »Forførerens Dagbog«, jf. <ref xml:id="id3a7cd89f-95c1-45b5-a611-6e53db21433b" target="../EE1/txr.xml#ss61" type="textCriticalAccount" n="61">tekstredegørelsen, <hi xml:id="id549f190b-03d4-4624-84f8-97495bfcbe5f" rendition="#ita">SKS</hi> K2-3, 61</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="not15-47" n="438,1">
+          <label xml:id="id65ea1c93-3b6d-44b6-89f6-0aaaca026c25">
+            <hi xml:id="id6028ad3d-e006-46ab-8ea9-071fd5bb6310" rendition="#bol">Nu er Etatsraaden død</hi>
+          </label>
+          <p xml:id="id7c8fbd1d-4d86-4b81-b44d-f3eef6e28254">Den 29. juni 1849 bragtes i <hi xml:id="id9d0d3690-58c0-45e5-a605-d41dae24cd60" rendition="#ita">Adresseavisen</hi> nr. 150 følgende dødsannonce: »Natten mellem den 25<hi xml:id="idf4011393-9b4d-476a-926b-c552d257646c" rendition="#sup">de</hi> og 26<hi xml:id="id9ef8689f-d298-489a-8c4f-0ae0ed199050" rendition="#sup">de</hi> Dennes bortkaldte Herren efter 40 Aars Ægteskab min elskede Mand, mine 6 Børns Fader, <persName xml:id="id60e0c161-7aba-41c7-8058-7f9065c29f7c" key="Olsen, Terkild">Terkild Olsen</persName>, Etatsraad og Ridder af Dannebrog. / <persName xml:id="id5805704a-69e6-41e7-95fe-f43bd9f8fffd" key="Malling, Regina Frederikke">Regina Olsen</persName>, født Malling.« Jf. journalen NB<hi xml:id="id4b18a492-4378-489f-971e-8507efc401a5" rendition="#sup">12</hi>, <ref xml:id="id2a8ed008-5a59-4574-9f9e-20c1b1b814a7" target="../NB12/txt.xml#n28" type="journalsAndPapers" n="pap:X1A569" rend="NB12:28.a"><hi xml:id="ida27643b3-9696-470d-b6c6-23d3dbf41a7d" rendition="#ita">Pap.</hi> X 1 A 569</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="not15-50" n="438,12">
+          <label xml:id="ida0a6167a-6249-4d4a-b569-ee604cc83363">
+            <hi xml:id="id5fe4c1b2-5b59-4ebf-9ca9-353a1acdcdab" rendition="#bol">hun vilde døe af Kjerlighed</hi>
+          </label>
+          <p xml:id="id598d588a-5f9f-421d-ad98-e41728d4a329">Da SK brød forlovelsen (<ptr xml:id="id239bce7f-ceb1-45e3-a975-409916585218" type="commentary" target="#not15-24" n="435,33"/>), skulle <persName xml:id="idfe9af448-7834-498c-8d6a-809079768953" key="Olsen, Regine">Regine</persName> angiveligt have skreget, at det blev hendes død, hvilket SK tolkede som et udtryk for, at han nu havde fået et mord på sin samvittighed, jf. en optegnelse fra maj 1847 i journalen NB, <hi xml:id="id552cf9a6-708e-4b36-9163-26a7a92cf860" rendition="#ita">Pap</hi>. VIII 1 A 100.</p>
+        </note>
+        <note type="commentary" xml:id="not15-51" n="438,16">
+          <label xml:id="idff3f5171-351f-4bbe-8009-e1379bbfd06a">
+            <hi xml:id="id0a939c69-3773-45ff-966f-f282b560f54a" rendition="#bol">Hun har een Gang viist mig, hvor langt hun kan gaae ud over Grændsen</hi>
+          </label>
+          <p xml:id="ideeaaf884-c1c8-498e-abeb-4395439ae6f4"><ptr xml:id="id37ee3108-46d8-4a51-82f9-9c147c2da1ae" type="commentary" target="#not15-23" n="435,22"/>.</p>
+        </note>
+        <note type="commentary" xml:id="not15-48" n="438m,1">
+          <label xml:id="id4f6af194-a4e0-4ddd-b439-94489ba2d674">
+            <hi xml:id="id382189f6-c202-4178-966e-a4842b2f8bb0" rendition="#bol">cfr etsteds i Journalen NB12 henimod midtveis</hi>
+          </label>
+          <p xml:id="id927f7c59-6e00-47e2-85b0-a4ee38522126">jf. journalen NB<hi xml:id="id1652de27-bde1-4e9f-a096-6be3994a8a9f" rendition="#sup">12</hi>, dateret 19. juli 1849, <ref xml:id="id41711c5d-c0d2-4be0-a9d4-cb62aa5fa536" target="../NB12/txt.xml#n105" type="journalsAndPapers" n="pap:X1A648" rend="NB12:105"><hi xml:id="ide16c4747-1002-46be-838d-430d025772c9" rendition="#ita">Pap.</hi> X 1 A 648</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="not15-49" n="438m,5">
+          <label xml:id="id7c06095e-c5ef-45cd-ab1d-250361f1cbc2">
+            <hi xml:id="id9b163d12-647c-4e7c-a998-4ba73dd5b3e8" rendition="#bol">ønskede at være Skuespillerinde</hi>
+          </label>
+          <p xml:id="id29a3862d-eced-43f7-be46-477538fe6e5a">sml. journaloptegnelsen <ref xml:id="id1edabad7-33d7-4820-a428-934179ca448c" target="../JJ/txt.xml#ss178" type="journalsAndPapers" n="178,7">JJ:115</ref>, hvor SK omtaler <persName xml:id="id44547662-f0a7-4636-862b-cca3a50bbe74" key="Olsen, Regine">Regine</persName>s ønske om at blive »Theaterprincesse«, <hi xml:id="id789a033c-52cb-4a1e-a5c5-b20fc43bbaf6" rendition="#ita">SKS</hi> 18, 178,7.</p>
+        </note>
+        <note type="commentary" xml:id="not15-52" n="439,1">
+          <label xml:id="id5c440e79-2119-4ea4-b8b6-faa618010815">
+            <hi xml:id="id24dbcbf5-824a-4dd0-a39f-265d99f914f3" rendition="#bol">medens jeg boede paa Nørregade paa 1ste Sal</hi>
+          </label>
+          <p xml:id="iddce962cf-86c0-44db-a2cc-05fd7eded65a">SK boede i <placeName xml:id="id27736a7b-1629-4e43-a202-a5cd7e0ae1f3">Nørregade</placeName>, matrikelnr. 230 A, det nuværende nr. 38, fra april eller okt. 1840 til okt. 1844.</p>
+        </note>
+        <note type="commentary" xml:id="not15-53" n="439,12">
+          <label xml:id="id3032b809-9d18-4f89-971e-374fb44b118e">
+            <hi xml:id="id19a94433-218a-48c2-9a0d-243fc73bf1bb" rendition="#bol">Velin-Exemplarer</hi>
+          </label>
+          <p xml:id="id7a0f7d3b-90b9-4f63-86ee-c718ca1b79ce">bøger trykt på et glat, pergamentagtigt papir, der anvendtes som fornemt brevpapir og til eksklusive bogtryk.</p>
+        </note>
+        <note type="commentary" xml:id="not15-54" n="439,14">
+          <label xml:id="id5f126bc3-1d03-4714-afe1-039901acb7be">
+            <hi xml:id="id3c79e228-afab-4a5f-abed-20bbccb89fe3" rendition="#bol">et Brev, bestemt til at aabnes efter min Død, som angaaer hende</hi>
+          </label>
+          <p xml:id="id78489d0e-15e7-4d6f-90b0-f7f6836c7b4a">jf. <ref xml:id="iddfebdc15-b76b-46d2-ad28-bbe0df92236a" target="../b1/txt.xml#n20" type="lettersAndDedications" n="ba:XXI" rend="Brev 20"><hi xml:id="idad45b1d2-ce51-48f8-a841-fc6c4b693261" rendition="#ita">B&amp;A</hi> bd. 1, nr. </ref>XXI, s. 25.</p>
+        </note>
+        <note type="commentary" xml:id="not15-55" n="439,29">
+          <label xml:id="id067963c4-de10-4bef-b48d-596ffa7de7e5">
+            <hi xml:id="id2e022943-2c38-4186-aaaf-fb0570a4afe9" rendition="#bol">Schlegel <hi xml:id="id554d2059-49a3-48f4-bf6a-6fa998cc965d" rendition="#ita">(...)</hi> har gjort Lykke</hi>
+          </label>
+          <p xml:id="id59acc9cb-542e-4d5f-bcec-68ab80600f31"><persName xml:id="idcf4b67d2-38aa-45b1-9a43-07f7912d7d88" key="Schlegel, Johan Frederik">J.F. Schlegel</persName> (<ptr xml:id="id16bdd354-2944-485f-af68-cff904b2a473" type="commentary" target="#not15-15" n="433,33"/>) blev den 29. dec. 1848 ansat i Finansministeriet som »Chef for Kolonialkontoret«, jf. journalen NB<hi xml:id="id65a2ef43-303e-4917-978c-08a51b3795a0" rendition="#sup">9</hi>, dateret 2. januar 1849, <ref xml:id="id914a7e69-885b-46a2-a826-aa318eb656bc" target="../NB9/txt.xml#n24" type="journalsAndPapers" n="pap:X1A24" rend="NB9:24"><hi xml:id="idd314a601-d9f7-4ef5-9452-386030db7c71" rendition="#ita">Pap.</hi> X 1 A 24</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="not15-56" n="440,1">
+          <label xml:id="ida7860992-a3dc-425d-a8d8-f9d9fd52d0e5">
+            <hi xml:id="id10200d6d-f376-45ff-8a46-03fd18264757" rendition="#bol">hvad Jfr. Dencker har fortalt mig</hi>
+          </label>
+          <p xml:id="idfc4a68f0-b33f-4baa-bca1-dc3696e2b794"><persName xml:id="id495905ab-1e02-4fdd-96e3-a4a43f4248f8" key="Dencker, Elise">Elise Dencker</persName> var husbestyrerinde hos <persName xml:id="id74deffbc-46a1-4009-a9e4-9992cf1dfd8c" key="Lund, Johan Christian">Johan Christian Lund</persName>, der boede på hjørnet af <placeName xml:id="idb1df8c16-883e-490e-9b54-69e4152c501c">Købmagergade</placeName> og <placeName xml:id="idb958320e-8955-4b4e-83b0-e91bbd268072">Klareboderne</placeName> (<ref xml:id="id8560cf25-83ee-4954-b425-0f7405fe6b00" target="../kort/kbh_C2.htm" type="map" n="kbh"><hi xml:id="idfe32190d-675a-41cf-8d36-ad6f5d4d2e35" rendition="#ita">se kort 2, C2</hi></ref>), og som havde været gift med SKs søster <persName xml:id="id611b2411-d2e9-46bf-a5ca-9ffc92f601c5" key="Kierkegaard, Nicoline Christine">Nicoline Christine</persName> fra 1824 til hendes død i 1832. I folketællingen af 1. feb. 1845 er Elise Dencker registreret som en 44-årig ugift »Huusjomfrue«, født i <placeName xml:id="ida6f03a6e-77d0-44bb-a347-19ce05bcc8c4">Eckernförde</placeName>. Hun gik for at være striks og vanskelig, men hvilken relation, hun havde til <persName xml:id="id46782207-6b1d-4622-99d6-455eb03e5282" key="Olsen, Regine">Regine</persName>, vides ikke.</p>
+        </note>
+        <note type="commentary" xml:id="not15-57" n="440,9">
+          <label xml:id="ida95063a0-fc83-45f2-8e75-a80ff94edb5f">
+            <hi xml:id="idbdc7922e-bcf1-4382-a68b-d70cfe2eff89" rendition="#bol">at hun 2 Maaneder før det Afgjørende fik et Skilsmisse-Brev</hi>
+          </label>
+          <p xml:id="idd04b8d7f-9f45-4bb5-9c4a-02f30c468a5b">(<ptr xml:id="idd2ff1509-cf85-4c58-96b0-0b14386d0ae5" type="commentary" target="#not15-20" n="435,16"/>).</p>
+        </note>
+        <note type="commentary" xml:id="not15-58" n="440,14">
+          <label xml:id="id00277276-fbe9-4870-aafb-5d3cac0220c3">
+            <hi xml:id="id5a50542d-7043-4296-b28f-8e9930fac1b4" rendition="#bol">trække et heelt Alphabet mere ud</hi>
+          </label>
+          <p xml:id="id319fd550-b500-47f3-8d6a-44cd01b059dc">alluderer formentlig til sætterens brug af forskellige skrifttyper.</p>
+        </note>
+        <note type="commentary" xml:id="not15-59" n="441,2">
+          <label xml:id="id40e19cf0-9854-4b4e-9b5c-b436012a83eb">
+            <hi xml:id="id314f8e78-caa1-4fe9-9fad-b7490e64be8e" rendition="#bol">Hvad Cornelia angaaer, da har hendes Forlovelse i en vis Forstand bedrøvet mig</hi>
+          </label>
+          <p xml:id="id63a35512-60fd-49e4-9ed8-2aa917bc636c"><persName xml:id="idb37ed92c-b50c-4d07-8442-1a92dec15f2e" key="Olsen, Cornelia" n="*">Cornelia Olsen</persName> (1818-1901), <persName xml:id="id05f37057-f2a0-4e10-b435-298f4da08655" key="Olsen, Regine">Regine</persName>s storesøster, giftede sig den 6. nov. 1849 med <persName xml:id="id097209b1-a31d-454f-aa74-b7d4e185435e" key="Winning, F.E.">F.E. Winning</persName>, men hvornår hun forlovede sig, har ikke kunnet oplyses. Jf. i øvrigt journaloptegnelsen <ref xml:id="iddd0cfe42-88d0-4f91-b6bd-bf31b8447a3a" target="../JJ/txt.xml#n300" type="journalsAndPapers" n="300">JJ:300</ref>: »Under Titlen Privatissimer og holdt saa zarte som muligt kunde jeg have Lyst at tegne en qvindelig Figur, der netop var stor ved sin elskelige beskedne bly Resignation (fE en noget idealiseret Cornelia Olsen, den fortræffeligste qvindelige Figur, jeg har kjendt, og den eneste, der har afnødt mig Beundring). Hun skulde opleve at Søsteren var gift med den hun selv elskede. Det er Collisionen for Resignation«, <hi xml:id="idf5f40f77-fc57-4139-a415-49513d5b984f" rendition="#ita">SKS</hi> 18, 234f.</p>
+        </note>
+        <note type="commentary" xml:id="not15-60" n="441,27">
+          <label xml:id="id51797e3d-00af-4589-9cb1-73031f4ed42a">
+            <hi xml:id="ide2c56acf-50ea-47fb-aa31-d18e05297cea" rendition="#bol">Interpretation</hi>
+          </label>
+          <p xml:id="idd2295f36-3e83-4f3c-ae46-d0de79c1b38a">fortolkning.</p>
+        </note>
+        <note type="commentary" xml:id="not15-61" n="442,9">
+          <label xml:id="idc308baef-ae07-4711-be3b-b1207161d6c5">
+            <hi xml:id="id9196dbaa-d1e8-4111-9585-e3ec1d2f505b" rendition="#bol">hende, som slet ikke var religieust udviklet</hi>
+          </label>
+          <p xml:id="id623975ed-4448-4c3d-b9bd-383b2e1b644f">I en bestræbelse på at udvikle <persName xml:id="idf535f7e2-d6f1-43bb-b87c-3c16052d00d2" key="Olsen, Regine">Regine</persName> religiøst læste SK ifølge eget udsagn i journalen <ref xml:id="idc0809c18-fc3c-4e3d-9a6a-60b589714a43" target="../JJ/txt.xml#n145" type="journalsAndPapers" n="145">JJ:145</ref> »eengang om Ugen <hi xml:id="id23bf328c-f3c5-4e75-9ee5-c96b0ee66230" rendition="#ita">(...)</hi> <persName xml:id="idd4778956-05e2-4143-925b-7905f8c4397a" key="Mynster, Jakob Peter">Mynster</persName>s Prædikener op for hende«, <hi xml:id="id24458dfe-98eb-4e0f-b06e-0f9efa0de002" rendition="#ita">SKS</hi> 18, 187,31.</p>
+        </note>
+        <note type="commentary" xml:id="not15-62" n="442,21">
+          <label xml:id="ide0bfcae8-fe43-438a-bf83-73203871858d">
+            <hi xml:id="id2bbd3dd4-c0cd-47b5-bcc0-a1c9abf0a2af" rendition="#bol">hiin General, der selv commanderede da han blev skudt</hi>
+          </label>
+          <p xml:id="id22d2d6aa-8d76-4be9-ac9a-3f2a25120901">Hvilken general, SK sigter til, har ikke med bestemthed kunnet afgøres.</p>
+        </note>
+        <note type="commentary" xml:id="not15-63" n="442,33">
+          <label xml:id="id5bb92698-cc6c-461b-afe4-ff8e1fa0ff16">
+            <hi xml:id="id3f9dd8a8-413e-4d92-ac6c-7d06456126bc" rendition="#bol">Goethes Frederikke, der afslaaer ethvert Ægteskab, fordi det maa være en Pige nok at have elsket Goethe</hi>
+          </label>
+          <p xml:id="idfdfcb87f-4eb2-4991-8c28-aae41f2d6e2b"><persName xml:id="id09e64451-5248-42af-a700-ca637e1d8742" key="Brion, Friederike" n="*">Friederike Brion</persName> (1752-1813), præstedatter fra <placeName xml:id="id8b22f3dd-bd6c-46b8-befa-37fd964235f8">Sesenheim</placeName> ved <placeName xml:id="id7b092f4d-5f64-4f22-93ec-d2e31ac2b859">Strasbourg</placeName>, var kæreste med <persName xml:id="id5d73e431-7c3c-4895-b697-765c83d2d39f" key="Goethe, Johann Wolfgang von" n="*">Johann Wolfgang Goethe</persName> (1749-1832) fra okt. 1770 til aug. 1771. Goethe fortæller om forholdet i 10., 11. og 12. bog af <hi xml:id="idb6cef46f-1d22-4899-a994-0a4f7e6b2301" rendition="#ita">Aus meinem Leben. Dichtung und Wahrheit</hi>, jf. <hi xml:id="id7192d6c5-976c-4996-a4e8-e6893ad85ec6" rendition="#ita">Goethe's Werke. Vollständige Ausgabe letzter Hand</hi> bd. 1-60, <placeName xml:id="id48475343-b2af-452f-85ce-65bf09f79d56">Stuttgart</placeName> og <placeName xml:id="idd6051496-8cff-4ab8-a44c-40b97d85a583">Tübingen</placeName> 1828-42, ktl. 1641-1668 (bd. 1-55); bd. 25-26, 1829, især bd. 26, s. 80-84 og s. 118-121. Forholdet ophørte på Goethes foranledning, da han efter endt eksamen forlod Strasbourg. Friederike levede resten af sine dage i enlig stand.</p>
+        </note>
+        <note type="commentary" xml:id="not15-64" n="443,13">
+          <label xml:id="id95b51f75-6584-4d33-bb3e-0c1cbe8a1b95">
+            <hi xml:id="id5be0fe95-c82e-41ab-97be-0124836d9786" rendition="#bol">da jeg første Gang saae hende</hi>
+          </label>
+          <p xml:id="id00e12529-1f08-46ac-a6f5-8dc66ee84c75">(<ptr xml:id="idd6afba37-8767-4c8e-9421-5349d3ea04d1" type="commentary" target="#not15-5" n="433,2"/>).</p>
+        </note>
+        <note type="commentary" xml:id="not15-67" n="444,2">
+          <label xml:id="id92955b4b-8a02-49e0-a761-d1ef202b8866">
+            <hi xml:id="idccaae8b0-1571-4908-8bb6-eb24309e7ca1" rendition="#bol">»vor egen kjære, lille Regine.«</hi>
+          </label>
+          <p xml:id="idbf7e34ca-54bd-40e0-a9fb-4020b785e099">SK citerer her sig selv, idet han i et udateret brev til <persName xml:id="idc91dc3cf-47c7-4c30-aa80-1e89e42c5feb" key="Olsen, Regine">Regine</persName> fra forlovelsens første tid omtaler hende som »Vor egen lille Regine«, <ref xml:id="id5397db96-3142-42f1-b343-e086279b7373" target="../b127/txt.xml#n127" type="lettersAndDedications" n="ba:15" rend="Brev 127"><hi xml:id="idfa045840-680f-46bd-979c-d8055e01141b" rendition="#ita">B&amp;A</hi> bd. 1, s. 47</ref>. Da SK i efteråret 1849 går med planer om i brevform at ville indvie Regine i nogle af grundene til forlovelsens forlis, genanvender han udtrykket »'vor egen kjære lille Regine'«, <ref xml:id="id5f0f9367-83fe-47c1-80c6-9c7e4d9994ee" target="../b127/txt.xml#n159" type="lettersAndDedications" n="ba:235" rend="Brev 159.1"><hi xml:id="idf98060c5-c828-4357-91b3-5267955f1fe6" rendition="#ita">B&amp;A</hi> bd. 1, s. 254</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="not15-65" n="443m,5">
+          <label xml:id="idf904be86-77a2-4f0c-9e6f-841fe033214d">
+            <hi xml:id="id56cd2668-06e6-4e7a-8e29-1ee72fde7b82" rendition="#bol">Hende skyldes den Fortælling om en Pige og en Karl</hi>
+          </label>
+          <p xml:id="ide4b9d785-bae4-4b8c-9288-6d230be43f0e">Den pågældende historie har ikke kunnet identificeres.</p>
+        </note>
+        <note type="commentary" xml:id="not15-66" n="443m,11">
+          <label xml:id="id3a9b84cf-5cd4-4ae8-89d5-1e88114c884d">
+            <hi xml:id="id55725acc-d58b-4975-bf1a-182b77d107d8" rendition="#bol">Frue Munter, der løb bort med Pollon</hi>
+          </label>
+          <p xml:id="idae60b656-9e58-4a92-8ca1-64193aa5b8d5">Historiens aktører har ikke kunnet identificeres.</p>
+        </note>
+        <note type="commentary" xml:id="not15-68" n="444,32">
+          <label xml:id="id525ceb52-6f34-46d3-bc5f-5379eba6ba87">
+            <hi xml:id="id6191b8a4-7dc7-4a68-9f8a-59b730615ebb" rendition="#bol">see det er »Frygt og Bæven.«</hi>
+          </label>
+          <p xml:id="id35e56916-f74b-41ee-8151-9b1ff7f84b22">jf. <rs xml:id="id354bc3e8-f118-469b-a2d8-081634e8c431" type="bible">Fil 2,12</rs>, hvor <persName xml:id="id43046a91-661b-4e22-a80d-927929b394f7" key="Paulus">Paulus</persName> skriver til filipperne: »Derfor, mine kære, I, som altid har været lydige: Arbejd med frygt og bæven på jeres frelse, ikke blot som da jeg var til stede, men endnu mere nu i mit fravær.« SK synes her i særlig grad at forbinde sin egen erotiske krise med temaer i sit værk <hi xml:id="id9607906a-8527-45d2-9a1d-f24ad8c2fc3a" rendition="#ita">Frygt og Bæven</hi> fra 1843.</p>
+        </note>
+        <note type="commentary" xml:id="not15-69" n="445,1">
+          <label xml:id="ide96981ef-c35b-47e2-b156-855bbb3a0760">
+            <hi xml:id="id2ee567e0-d3d3-48c3-bf6e-1f74ee8f106b" rendition="#bol">lig hine Dæmoner i Eventyret</hi>
+          </label>
+          <p xml:id="idca765d3d-66b3-4df4-bc6d-642a6e6e5bfa">SK sigter formentlig her til sine dæmoniske variationer over fortællingen om <persName xml:id="id4e769b3d-27f7-4e34-a1e2-5856c25f1d21" key="Agnete">Agnete</persName> og Havmanden i <hi xml:id="id84d7b3b1-faf9-4b84-ab90-73d312822480" rendition="#ita">Frygt og Bæven</hi>, jf. <ref xml:id="id0bb9a166-2682-4d25-98a4-3ee700f0e520" target="../FB/txt.xml#ss183" type="publishedWritings" n="183"><hi xml:id="id696c8392-56a8-483d-ac14-37d4fb9ccc1e" rendition="#ita">SKS</hi> 4, 183</ref>-191. Motivet vinder personlig dybde i journaloptegnelsen <ref xml:id="id73e151ca-8137-4c47-93ec-93a79c74f219" target="../JJ/txt.xml#n120" type="journalsAndPapers" n="120">JJ:120</ref>, hvor SK udkaster de første skitser til værket, jf. <hi xml:id="id6c353382-2df6-4127-8df0-19d4cd36cfb0" rendition="#ita">SKS</hi> 18, 180.</p>
+        </note>
+      </div>
+    </body>
+  </text>
 </TEI>

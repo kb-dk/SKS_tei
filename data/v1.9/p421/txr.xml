@@ -1,99 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>»'Lad Hjertet i Sorgen ei synde.' 7 Taler«</title>
-     
-     <title type="short">P421</title>
-  <author>
-   <name>Niels Jørgen Cappelørn</name><name>Thomas Eske Rasmussen</name><name>Jon Tafdrup</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Hermann Deuser; Citater</name><name>henvisninger kontrolleret af Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2011</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K27</biblScope>
-     <biblScope unit="file">http://sks.dk/p421/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition><rendition selector="p,l,cell" scheme="css" xml:id="cen">text-align:center</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20120309">txr/XML, <bibl><idno type="version">1.6</idno>, <biblScope unit="file">http://sks.dk/p421/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id411f6d2d-6cb8-4b95-9cc6-2e427042b08c">
+    <fileDesc xml:id="id1f190551-205d-4fd2-88f9-930cbe15dd5e">
+      <titleStmt xml:id="id0da243a8-10c4-46c2-b845-3a1345763f11">
+        <title xml:id="id59129f0d-c5a1-4114-9222-94ccf65ea3e1" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id537e4fc7-8ec2-455a-98b3-5d98b581b889">»'Lad Hjertet i Sorgen ei synde.' 7 Taler«</title>
+        <title xml:id="id9abc1335-e865-44cd-acf7-e73a4b1499f5" type="short">P421</title>
+        <author xml:id="id72c002c9-3347-42e4-8bc0-ae6b7c916355">
+          <name xml:id="id083fac17-b9be-45ec-ab4c-bf8e4b1c8147">Niels Jørgen Cappelørn</name>
+          <name xml:id="id4ca9503a-1dac-4687-92aa-b05177119cc1">Thomas Eske Rasmussen</name>
+          <name xml:id="id2d65924a-7476-4fec-8695-a3e017e9c4c4">Jon Tafdrup</name>
+        </author>
+        <editor xml:id="idc06f6ce4-dfdb-4ee0-948e-d47933a6c380">
+          <name xml:id="idf773394f-5d9a-400d-868c-9eb46692ebe5">Niels Jørgen Cappelørn</name>
+          <name xml:id="id591d2689-69a5-48b3-a8d1-5f47c5824de5">Joakim Garff</name>
+          <name xml:id="id06b7f0de-f277-43df-a4d6-fddc30660ecd">Johnny Kondrup</name>
+          <name xml:id="id54efe39a-3852-404f-bfa5-8ab54e570ab5">Tonny Aagaard Olesen</name>
+          <name xml:id="idc472a544-63e9-4722-b4e7-fa56b61d0b08">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="id2178024b-6a5e-4fc3-ac44-20bf30d84d2f">
+          <resp xml:id="id616a56f4-f12d-4234-b2e8-467c0915efa7">redigeret af</resp>
+          <name xml:id="id06b2ca37-9a52-4432-8725-74e7a703cfe5">Hermann Deuser; Citater</name>
+          <name xml:id="id1d44c6ea-599c-4978-a5ba-a4ed94166d36">henvisninger kontrolleret af Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="id271fec92-babf-47d5-b298-2ae464ebd767">
+          <resp xml:id="idbe62ede8-7fe4-44f6-a80b-9914aa5829d6">elektronisk redigeret af</resp>
+          <name xml:id="id6934cdb1-f034-487b-920f-efb343da7983">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id2845db38-c036-41fe-8d9a-f23b914e9989">
+        <authority xml:id="id7f3fbc3c-a058-44dc-875c-dbe15f983fe1">Søren Kierkegaard Forskningscenteret 2011</authority>
+        <availability xml:id="id5ec0a75e-d478-409e-a474-5fb601c6e7d0" status="restricted">
+          <p xml:id="id7db0b524-eba4-402c-8be2-4b2ff5bf2cbb">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id844b7125-2dc6-4354-a5f3-5ade2c3dd74a">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="ida4080b19-6748-4eb0-8398-316de7106c1b" unit="volume">K27</biblScope>
+        <biblScope xml:id="id62d0507b-ff39-4a64-bf44-55081a7d2d4b" unit="file">http://sks.dk/p421/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id03d62b34-1f09-47f3-ab07-352c8928f341">
+        <bibl xml:id="id82a3ac47-0f3e-4a29-b0cc-dd92542bddcb" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id45c86b9e-df1c-4c5f-8f3f-bf3cbd112dae">
+      <tagsDecl xml:id="id9b767d03-e9c7-447c-ba3d-8bb50c65cbc8">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="cen">text-align:center</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="iddfbd7e1c-da88-4f85-afde-e9254ec1554f">
+      <change xml:id="id8abb829f-5045-4266-b8e7-8676291e7926">Transformed to TEI by style sheet <bibl xml:id="id254f437c-30a6-483f-836e-d2f6a30eae93" type="file">txr2tei.xsl</bibl> version as of <date xml:id="id192bbdae-37f5-4fc8-9b75-7e6eb7d999f5">2017-02-15</date> importing <bibl xml:id="idd112cd19-1ead-4418-994c-b0861bb0269e" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="id77007f2d-e700-4408-abc5-1ea22b064de4">Transformed to TEI by style sheet <bibl xml:id="id38c5ea47-cbd1-4d1f-a3a1-515550cb9948" type="file">kn12tei.xsl</bibl> version <idno xml:id="id1819bfc3-9d82-412e-9209-657d21a359cc" type="version">1.9</idno> as of <date xml:id="id573ea8ee-9d1c-4102-8bfb-56b4b594540d">2017-02-21</date> by <name xml:id="id06853385-4e58-4989-bcef-150b97ba0e76">Karsten Kynde</name>, <orgName xml:id="id7e781db2-e204-4df0-a2e6-4fdd563e178a">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="id7e363d63-7898-481a-ad8d-87e83eec4066">København</placeName></change>
+      <change xml:id="idc68f5d0a-68dd-47a2-a384-3ad183e1e4b2" when="20120309">txr/XML, <bibl xml:id="id8c43724d-5bb9-4a97-8cb7-797e102faec3"><idno xml:id="idbb735d01-9cc4-4c41-b9cd-9278e5473e65" type="version">1.6</idno>, <biblScope xml:id="id8a0939a5-4a50-4474-9451-63e325dd083c" unit="file">http://sks.dk/p421/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="TextCriticalAccount" subtype="journalsAndPapers"><body><div><head type="topText" n="Tekstredegørelse"/>
-    <head><pb xml:id="ss925" n="925" edRef="#SKS"/>Tekstredegørelse</head>
-    <list type="TOC">
-      <item>1. Manuskriptbeskrivelse <ptr type="chapter" target="#k1" n="925"/> </item>
-      <item>2. Datering og kronologi <ptr type="chapter" target="#k2" n="926"/> </item>
-    </list>
-    <div type="level1" xml:id="k1">
-      <head>1. Manuskriptbeskrivelse</head>
-      <p>»'Lad Hjertet i Sorgen ei synde.' 7 Taler« har nr. 264 i <hi rendition="#ita">B-fort.</hi> Gruppen hører til den del af SKs papirer, der ved hans død lå i »den anden Pjedestal. B« i »Øverste Rum«, »Til Venstre«.<note> <p>Jf. <persName key="Lund, Henrik">Henrik Lund</persName>s »Ordenen af Papirerne« vedlagt <hi rendition="#ita">L-fort.</hi> (jf. <ref target="../P1/int_1.xml#ss6" type="introduction" n="6">»Introduktion til <hi rendition="#ita">Løse papirer</hi>«</ref>, s. 6-9). <placeName>Lund</placeName> anfører endvidere, at materialet var anbragt »i Mappe«.</p>
-        </note> Manuskripterne befinder sig i Kierkegaard Arkivet (KA) på
-        <placeName key="Kongelige Bibliotek, Det">Det Kongelige Bibliotek</placeName>.</p>
-      <msDesc><msIdentifier><collection>P421</collection></msIdentifier>
-        <msPart xml:id="physDesc.421" next="#additional.421"><msIdentifier><idno>421</idno></msIdentifier><physDesc><p><ref target="../P421/txt.xml#n421" type="journalsAndPapers" n="421">Papir 421</ref> (<hi rendition="#ita">SKS</hi> 27, 501).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrevet kant i venstre side og rest af arkets andet blad; den øverste kant er beklippet.<note>
-                <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p>
-              </note></p><p>Ingen paginering.</p><p>Papir: gulligt alm. koncept. Mål: 171 × 193 mm.<note>
-                <p>Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant). Målene vedrører de faktisk overleverede enheder, ikke de oprindelige blade.</p>
-              </note></p><p>Bladet har efter beskrivning været foldet to steder på tværs, muligvis bukket omkring andet materiale. Versosiden er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.421" prev="#physDesc.421"><msIdentifier><idno>421</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 264; KA, A pk. 49; <hi rendition="#ita">Pap.</hi> IX A 498)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.422" next="#additional.422"><msIdentifier><idno>422</idno></msIdentifier><physDesc><p><ref target="../P421/txt.xml#n422" type="journalsAndPapers" n="422">Papir 422</ref> (<hi rendition="#ita">SKS</hi> 27, 501-502).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt alm. koncept. Mål: 170 × 206 mm.</p><p><pb xml:id="ss926" n="926" edRef="#SKS"/>Bladet har efter beskrivning været foldet en gang på tværs. Versosiden er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.422" prev="#physDesc.422"><msIdentifier><idno>422</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 264; KA, A pk. 49; <hi rendition="#ita">Pap.</hi> IX A 499)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.423" next="#additional.423"><msIdentifier><idno>423</idno></msIdentifier><physDesc><p><ref target="../P421/txt.xml#n423" type="journalsAndPapers" n="423">Papir 423</ref> (<hi rendition="#ita">SKS</hi> 27, 502).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med uregelmæssigt afrevet kant i højre side.</p><p>Ingen paginering.</p><p>Papir: gulligt alm. koncept. Mål: ca. 170 × 208 mm.</p><p>Bladet har efter beskrivning været foldet en gang på tværs. Versosiden er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.423" prev="#physDesc.423"><msIdentifier><idno>423</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 264; KA, A pk. 49; <hi rendition="#ita">Pap.</hi> IX A 500)</p></note></adminInfo></additional></msPart>
-      </msDesc>
-      <p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 264; KA, A pk. 49; <hi rendition="#ita">Pap.</hi> IX A 498-500)</p>
-    </div>
-    <div type="level1" xml:id="k2">
-      <head>2. Datering og kronologi</head>
-      <p>Papirerne rummer ingen dateringer. Materialet er udkast til en række taler, som SK får ideen til i dec. 1848. På dette tidspunkt skriver SK indledningsvis i journaloptegnelse <ref target="../NB8/txt.xml#n46" type="journalsAndPapers" n="46">NB8:46</ref>:</p>
-      <quote>
-        <p rendition="#cen">'Lad Hjertet i Sorgen ei synde'</p>
-        <p rend="decoration"><figure type="blank"/></p>
-        <p>Under denne Titel kunde jeg have Lyst til at skrive et Par Taler, der behandle de msklig talt skjønneste og ædleste Former af Fortvivlelse <hi rendition="#ita">(...)</hi><note> <p>Jf. SKS 21, 166,1-4.</p> </note></p>
-      </quote>
-      <p rendition="#ind"> <ref target="../P421/txt.xml#n421" type="journalsAndPapers" n="421">Papir 421</ref> er tydeligvis en redigeret sammenskrivning af <ref target="../NB8/txt.xml#n46" type="journalsAndPapers" n="46">NB8:46</ref>, og da papirerne i »'Lad Hjertet i Sorgen ei Synde.' 7 Taler« synes at være en udvikling af de omtalte, oprindeligt to taler, er papirerne skrevet tidligst i dec. 1848. I <ref target="../P421/txt.xml#n421" type="journalsAndPapers" n="421">Papir 421</ref> skriver SK (<hi rendition="#ita">SKS</hi> 27, 501,11-16):</p>
-      <quote>
-        <p>lad Hjertet ikke synde i Sorgen – betænk: og nu Themaet. fE. over en Afdød – Beskrivelse – lad Hjertet i Sorgen ei synde, betænk: det Glædelige i at omsider og om en liden Stund er Eet og det Samme (dog dette er benyttet lyrisk i et andet Skrift, det fra Høiheden vil Han drage Alle til sig); ell. det betænk: det Glædelige i, at det er for Glæde man ikke troer det Høieste. o: s: v:</p>
-      </quote>
-      <p><hi rendition="#ita">Fra Høiheden vil han drage Alle til sig</hi> er titlen på det skrift, som endte med at blive »Nr. III« i <hi rendition="#ita">Indøvelse i Christendom</hi> (1850). SK omtaler det selv som et <pb xml:id="ss927" n="927" edRef="#SKS"/>»Skrift«, og som sådan foreligger det ifølge hans egne oplysninger på manuskriptet i »Begyndelsen af 49«.<note> <p>Jf. <ref target="../IC/txr.xml#ss70" type="textCriticalAccount" n="70">tekstredegørelsen til <hi rendition="#ita">Indøvelse i Christendom</hi></ref> i <hi rendition="#ita">SKS</hi> K12, 70ff.</p>
-        </note></p>
-      <p rendition="#ind">Papirerne er skrevet i første halvdel af 1849, formentlig allerede i jan.-feb. 1849.</p>
-    </div>
-  </div></body></text>
+  <text xml:id="id106e1d20-3e55-452c-bec6-d07dd9983665" type="TextCriticalAccount" subtype="journalsAndPapers">
+    <body xml:id="id97d7a5f2-84ee-40d0-bee0-38fc118f9568">
+      <div xml:id="id905c196d-29ff-4041-8c97-19d770871b54">
+        <head xml:id="id984bb84c-e4d3-43ab-818b-aa0559c80d9d" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="idba7d0c1a-fa4c-45c4-af0d-2cc829701d5c"><pb xml:id="ss925" n="925" edRef="#SKS"/>Tekstredegørelse</head>
+        <list xml:id="idf9d90884-bd3f-49e8-a5b6-8b3042297ad4" type="TOC">
+          <item xml:id="id2e7f68db-e455-4b21-9f45-c41ead4738b3">1. Manuskriptbeskrivelse <ptr xml:id="id61a5c04d-93c7-41c4-a830-b4db9aac60fb" type="chapter" target="#k1" n="925"/> </item>
+          <item xml:id="idf4dbe909-da15-4491-b701-04c5be179b80">2. Datering og kronologi <ptr xml:id="id73a21a11-98fd-40c9-82ce-c47b03910633" type="chapter" target="#k2" n="926"/> </item>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="id0b599297-cd71-44c0-acd0-725e6cf049c0">1. Manuskriptbeskrivelse</head>
+          <p xml:id="id1c11413a-2e78-4c5e-a8f9-5cd0627ba008">»'Lad Hjertet i Sorgen ei synde.' 7 Taler« har nr. 264 i <hi xml:id="id652d4b69-8fde-4453-a152-77bbb8570d76" rendition="#ita">B-fort.</hi> Gruppen hører til den del af SKs papirer, der ved hans død lå i »den anden Pjedestal. B« i »Øverste Rum«, »Til Venstre«.<note xml:id="id1b432606-dd9c-4957-89b0-e6e226ba486b"><p xml:id="ide2aa1bf9-3c36-4bc6-9bb6-e8abdcfee131">Jf. <persName xml:id="idbd21d4cf-1751-4e1f-aa54-90d7afed043b" key="Lund, Henrik">Henrik Lund</persName>s »Ordenen af Papirerne« vedlagt <hi xml:id="id7fcf1bf0-f54a-4c26-a6b2-1575f8d6f7fb" rendition="#ita">L-fort.</hi> (jf. <ref xml:id="idadc83316-7d73-4774-8563-4ba8a5792a1c" target="../P1/int_1.xml#ss6" type="introduction" n="6">»Introduktion til <hi xml:id="id5d216f77-8a3f-4aea-befa-8dd24da0587a" rendition="#ita">Løse papirer</hi>«</ref>, s. 6-9). <placeName xml:id="id05246b28-9a44-43a0-86c2-7fd7201c7ed5">Lund</placeName> anfører endvidere, at materialet var anbragt »i Mappe«.</p></note> Manuskripterne befinder sig i Kierkegaard Arkivet (KA) på
+        <placeName xml:id="iddf1682a0-502b-412b-856f-fad29331bac6" key="Kongelige Bibliotek, Det">Det Kongelige Bibliotek</placeName>.</p>
+          <msDesc xml:id="id200c3692-e52d-4640-80bd-d3fbf406e1c4">
+            <msIdentifier xml:id="id2e1ced25-7e59-4e83-8caa-8071bfc6e02d">
+              <collection xml:id="idd64b7130-5af7-4453-83ce-63ce53c09dd0">P421</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.421" next="#additional.421">
+              <msIdentifier xml:id="id08d7ad73-7901-454e-9d41-7111f876b40c">
+                <idno xml:id="id23e86860-aa6e-4f16-bfd6-e6bf57fd093a">421</idno>
+              </msIdentifier>
+              <physDesc xml:id="id97bdfda3-e945-4cdb-b73b-d8fa544005dc">
+                <p xml:id="id9e86cf94-44f0-4e01-9729-d9c2987a9782"><ref xml:id="id069be4be-fae4-4385-ab5f-829503380a6f" target="../P421/txt.xml#n421" type="journalsAndPapers" n="421">Papir 421</ref> (<hi xml:id="id8709ef07-7753-47c8-99e9-f8b72a5f0e45" rendition="#ita">SKS</hi> 27, 501).</p>
+                <p xml:id="id0e2bf4f4-4f46-468d-a2fa-e1bdadaaf874">1 løst blad i 4<hi xml:id="id3a2373d5-273b-4f01-bdb1-2ec5f3d030f9" rendition="#sup">o</hi> med afrevet kant i venstre side og rest af arkets andet blad; den øverste kant er beklippet.<note xml:id="id4c8ea20b-4383-48b9-9c8b-074390f518f4"><p xml:id="id6c1b9a4f-52d8-4a56-aafb-ddaed37939b4">Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p></note></p>
+                <p xml:id="id22269d6a-0573-4bc8-9a16-5f069b12ad56">Ingen paginering.</p>
+                <p xml:id="id6ce88cf9-4b18-462e-9d55-a414a128b884">Papir: gulligt alm. koncept. Mål: 171 × 193 mm.<note xml:id="id96339303-9eac-4235-a624-9e3c8ae26325"><p xml:id="id78a38fa3-efce-4a2d-ba52-08fa39a3e69f">Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant). Målene vedrører de faktisk overleverede enheder, ikke de oprindelige blade.</p></note></p>
+                <p xml:id="idb09cee12-111a-4171-9b51-8d1428a3c119">Bladet har efter beskrivning været foldet to steder på tværs, muligvis bukket omkring andet materiale. Versosiden er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.421" prev="#physDesc.421">
+              <msIdentifier xml:id="id41fd4350-009a-4008-80f5-2a6ebcd00a97">
+                <idno xml:id="id259cd1c3-37cc-46bd-bded-ae519f073ff4">421</idno>
+              </msIdentifier>
+              <additional xml:id="id31206bfb-339d-46fb-93ed-010e329f4f4f">
+                <adminInfo xml:id="idfe7199d7-4d75-43aa-8f06-5665bf615b26">
+                  <note xml:id="id5d9e769e-de8e-4369-bbc0-dedcccd54bf8">
+                    <p xml:id="id39e16233-bf63-462c-a33f-b6521e1189ba">(<hi xml:id="id675bed7e-e938-4242-afeb-80ef043b65ef" rendition="#ita">L-fort.</hi> + <hi xml:id="id0655e640-5212-4c41-b8fe-28c36c825423" rendition="#ita">B-fort.</hi> 264; KA, A pk. 49; <hi xml:id="idffb4be3d-fec2-4b0f-80d3-dd5727c4b126" rendition="#ita">Pap.</hi> IX A 498)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.422" next="#additional.422">
+              <msIdentifier xml:id="idcc72b3cd-8f48-43cc-b29d-0561c0a13d11">
+                <idno xml:id="id049e076d-a8cb-406c-8eb4-d5741afccceb">422</idno>
+              </msIdentifier>
+              <physDesc xml:id="id167d31fd-98be-4f74-ac3c-584e12ba00e0">
+                <p xml:id="id24f29a32-f3c6-47cf-813f-55c59dd782be"><ref xml:id="id81ec89c2-0b1e-4c8e-939f-55037b20ba33" target="../P421/txt.xml#n422" type="journalsAndPapers" n="422">Papir 422</ref> (<hi xml:id="id8c63f000-19f9-45d3-abff-14f20ab0a97a" rendition="#ita">SKS</hi> 27, 501-502).</p>
+                <p xml:id="idc30b29de-bfe1-4b11-bb84-53e341b2d1b3">1 løst blad i 4<hi xml:id="id80514df8-da14-4d68-85ef-2469339f64e8" rendition="#sup">o</hi> med afrevet kant i venstre side.</p>
+                <p xml:id="id26b6e4c4-ac21-4d82-9986-d886ebc2d1e2">Ingen paginering.</p>
+                <p xml:id="id173209c1-31bc-47a3-a21b-6b849727f5c6">Papir: gulligt alm. koncept. Mål: 170 × 206 mm.</p>
+                <p xml:id="id89eda06b-1cfa-48c5-b46a-55b400adb4a3"><pb xml:id="ss926" n="926" edRef="#SKS"/>Bladet har efter beskrivning været foldet en gang på tværs. Versosiden er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.422" prev="#physDesc.422">
+              <msIdentifier xml:id="id446b2b4d-44fc-4f71-abca-b4459f5e97fb">
+                <idno xml:id="id66ea4dbd-92cc-4d6e-a658-e444162e0f74">422</idno>
+              </msIdentifier>
+              <additional xml:id="id073b40cc-a314-453a-b21e-67b3a66e43da">
+                <adminInfo xml:id="id18d0b94e-fd69-4bd7-8b69-135dd3ab2c8b">
+                  <note xml:id="ide593d7e7-ba6f-4e80-8dd0-6dccf206042f">
+                    <p xml:id="id03715455-0586-4138-bcb5-2d39f1e30c09">(<hi xml:id="id9ac119ad-6026-4712-be65-15ff449fceaa" rendition="#ita">L-fort.</hi> + <hi xml:id="id1f7c4959-991b-4203-a5b5-c66352fb8a1c" rendition="#ita">B-fort.</hi> 264; KA, A pk. 49; <hi xml:id="id723304c0-abdb-4901-91b2-cf2d69a29118" rendition="#ita">Pap.</hi> IX A 499)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.423" next="#additional.423">
+              <msIdentifier xml:id="id792cccc8-327f-488d-b693-499546fe52da">
+                <idno xml:id="id69cf9310-5d50-428b-b92c-565af35df023">423</idno>
+              </msIdentifier>
+              <physDesc xml:id="id0701b183-0b00-4237-aa85-336a4b993002">
+                <p xml:id="id9c74a2d0-35e5-4315-9f09-7789b799e713"><ref xml:id="ida0f75a02-dc05-4cd4-898a-a3c9a46ea206" target="../P421/txt.xml#n423" type="journalsAndPapers" n="423">Papir 423</ref> (<hi xml:id="id4946add9-f82a-42ff-b9cc-19086754b880" rendition="#ita">SKS</hi> 27, 502).</p>
+                <p xml:id="idbe2db852-970f-4c61-a09c-e4a2311e6dc5">1 løst blad i 4<hi xml:id="ida608ac5c-0db3-490b-9986-c5b88497f4f3" rendition="#sup">o</hi> med uregelmæssigt afrevet kant i højre side.</p>
+                <p xml:id="idddcc3c06-b6fe-46ce-a039-e234e8f7f2c1">Ingen paginering.</p>
+                <p xml:id="id9ad0f5a9-83bb-4b4f-86ee-132203eec5be">Papir: gulligt alm. koncept. Mål: ca. 170 × 208 mm.</p>
+                <p xml:id="id311ae347-cc56-4cd3-9455-b3666e007cce">Bladet har efter beskrivning været foldet en gang på tværs. Versosiden er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.423" prev="#physDesc.423">
+              <msIdentifier xml:id="id389ad378-2e42-4a46-bcd8-d67ce6683a9c">
+                <idno xml:id="id092dae75-1fc3-45cb-bb12-3ce0245c8141">423</idno>
+              </msIdentifier>
+              <additional xml:id="id647c9324-519c-42c6-8bb5-4f67da537a7f">
+                <adminInfo xml:id="id407f8968-7eab-4229-a946-374a2d4dac9d">
+                  <note xml:id="id663411f5-a8a4-4a90-aabb-6e6cfe76c13a">
+                    <p xml:id="id8bfa6193-0464-46ca-a0bb-1f453cc7c102">(<hi xml:id="idfc09eeab-541c-4e7f-831f-0a2f24c3852d" rendition="#ita">L-fort.</hi> + <hi xml:id="idc06511b1-fab9-4ee2-8518-bb9aeb7fddb7" rendition="#ita">B-fort.</hi> 264; KA, A pk. 49; <hi xml:id="id96e1f3ca-8ebb-48c2-a95d-cde7100ae542" rendition="#ita">Pap.</hi> IX A 500)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+          <p xml:id="id7e3eb7de-e966-4d0a-8f87-8f3816c7c24d">(<hi xml:id="id7b684875-b6e6-4848-bd8c-af315ca6b7f9" rendition="#ita">L-fort.</hi> + <hi xml:id="id7e9b45a2-d011-4408-839d-62ba5e5aca28" rendition="#ita">B-fort.</hi> 264; KA, A pk. 49; <hi xml:id="idc243e5c4-f37f-49c6-a624-bc6213351c2c" rendition="#ita">Pap.</hi> IX A 498-500)</p>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="id39ebc200-da30-4a3a-8b64-2584ed9d9132">2. Datering og kronologi</head>
+          <p xml:id="id7fcd4b53-2e9d-41c5-9597-deab3302986c">Papirerne rummer ingen dateringer. Materialet er udkast til en række taler, som SK får ideen til i dec. 1848. På dette tidspunkt skriver SK indledningsvis i journaloptegnelse <ref xml:id="id1d594ac1-fca5-4a54-ad32-7e6bf77d209c" target="../NB8/txt.xml#n46" type="journalsAndPapers" n="46">NB8:46</ref>:</p>
+          <quote xml:id="id04998881-2c5d-498c-9491-a3d5cd16004b">
+            <p xml:id="id92ac55c9-c8bf-443a-b464-4b17b35af5b2" rendition="#cen">'Lad Hjertet i Sorgen ei synde'</p>
+            <p xml:id="id0fbee942-d83b-48c7-98db-0cb43eb9c7bd" rend="decoration">
+              <figure xml:id="id3d0417d9-2ba9-46d2-b452-619a274e90cd" type="blank"/>
+            </p>
+            <p xml:id="id8f909759-5d26-4866-8c3c-46ad18facabe">Under denne Titel kunde jeg have Lyst til at skrive et Par Taler, der behandle de msklig talt skjønneste og ædleste Former af Fortvivlelse <hi xml:id="id40e4e801-1f3b-46e0-9175-4bcb22ddb7f0" rendition="#ita">(...)</hi><note xml:id="id66261dfd-e328-4001-8f48-bcdcb61c1d47"><p xml:id="id0801b48b-9657-40ca-a0af-8ae4f18a2b34">Jf. SKS 21, 166,1-4.</p></note></p>
+          </quote>
+          <p xml:id="idba811a62-4208-47de-8af9-8bbbbdf2a68a" rendition="#ind"><ref xml:id="id4682062c-1e9b-40ac-99b1-84fdc0b63f3f" target="../P421/txt.xml#n421" type="journalsAndPapers" n="421">Papir 421</ref> er tydeligvis en redigeret sammenskrivning af <ref xml:id="idfd5e9229-5435-48bc-aaad-33d2be67af51" target="../NB8/txt.xml#n46" type="journalsAndPapers" n="46">NB8:46</ref>, og da papirerne i »'Lad Hjertet i Sorgen ei Synde.' 7 Taler« synes at være en udvikling af de omtalte, oprindeligt to taler, er papirerne skrevet tidligst i dec. 1848. I <ref xml:id="id6909bc9d-7ba4-4c0e-99b8-4e2eb91ae794" target="../P421/txt.xml#n421" type="journalsAndPapers" n="421">Papir 421</ref> skriver SK (<hi xml:id="id7e2d68bc-1dd3-48dc-a863-c2e0306e38b8" rendition="#ita">SKS</hi> 27, 501,11-16):</p>
+          <quote xml:id="ide61b36a8-c3fb-44b6-bd93-71097c9fb301">
+            <p xml:id="ide2b1e4bd-e029-4229-b482-e3528bb89175">lad Hjertet ikke synde i Sorgen – betænk: og nu Themaet. fE. over en Afdød – Beskrivelse – lad Hjertet i Sorgen ei synde, betænk: det Glædelige i at omsider og om en liden Stund er Eet og det Samme (dog dette er benyttet lyrisk i et andet Skrift, det fra Høiheden vil Han drage Alle til sig); ell. det betænk: det Glædelige i, at det er for Glæde man ikke troer det Høieste. o: s: v:</p>
+          </quote>
+          <p xml:id="ide7e4bd8d-911a-42ea-ab58-6d1c9e4380b8"><hi xml:id="id4648ce55-8375-415d-807e-345f133a80ca" rendition="#ita">Fra Høiheden vil han drage Alle til sig</hi> er titlen på det skrift, som endte med at blive »Nr. III« i <hi xml:id="id7c3bcc5a-533c-4daa-95aa-5fb925172289" rendition="#ita">Indøvelse i Christendom</hi> (1850). SK omtaler det selv som et <pb xml:id="ss927" n="927" edRef="#SKS"/>»Skrift«, og som sådan foreligger det ifølge hans egne oplysninger på manuskriptet i »Begyndelsen af 49«.<note xml:id="id2b40975d-766d-4fe6-85a7-372b3fb262c9"><p xml:id="idaf130dcb-6979-485d-a38f-9be0d095efed">Jf. <ref xml:id="id64847471-a7e9-42b3-b817-f763b6596fe0" target="../IC/txr.xml#ss70" type="textCriticalAccount" n="70">tekstredegørelsen til <hi xml:id="id75cdf3be-0b95-41ca-a959-e677817f1df9" rendition="#ita">Indøvelse i Christendom</hi></ref> i <hi xml:id="id2cc55031-b41d-4017-af76-fc30b709c2e5" rendition="#ita">SKS</hi> K12, 70ff.</p></note></p>
+          <p xml:id="id2963729a-e51a-4708-bc58-41c305717299" rendition="#ind">Papirerne er skrevet i første halvdel af 1849, formentlig allerede i jan.-feb. 1849.</p>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

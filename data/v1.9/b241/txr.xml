@@ -1,127 +1,575 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model 
-   href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_allPlus.rng"
-   type="application/xml"
-   schematypens="http://relaxng.org/ns/structure/1.0"
-  ?><!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Følgebreve, takkebreve, anmodninger m.m.</title>
-     
-     <title type="short">B241</title>
-  <author>
-   <name>Thomas Eske Rasmussen</name><name>Steen Tullberg</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Steen Tullberg. Citater</name><name>henvisninger kontrolleret af Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2012</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K28</biblScope>
-     <biblScope unit="file">http://sks.dk/b241/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition xml:id="sub" scheme="css">vertical-align: sub; font-size: 80%;</rendition><rendition xml:id="lineHight1" scheme="css">line-height:150%</rendition><rendition xml:id="lineHight2" scheme="css">line-height:200%</rendition><rendition xml:id="capiTyp" scheme="free">Some spectacular type setting, in SKS rendered in small caps</rendition><rendition xml:id="size-1" scheme="css">font-size: 83%</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20130220">txr/XML, <bibl><idno type="version">1.8</idno>, <biblScope unit="file">http://sks.dk/b241/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id1fb00c25-11b9-4742-8af6-d6d74dd1f1f2">
+    <fileDesc xml:id="id24681146-be5e-4fb2-b05f-c324eebd6909">
+      <titleStmt xml:id="id65f8c9d6-946d-43e8-a4e6-22074b6de1cb">
+        <title xml:id="ide399a3d3-4ead-46db-ba61-bcf5c6e15a27" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="idef7bb426-f152-43de-8377-1240cbee3e01">Følgebreve, takkebreve, anmodninger m.m.</title>
+        <title xml:id="id07d9619e-ddae-4aaf-90fb-a906416e1966" type="short">B241</title>
+        <author xml:id="idbf9b13ca-35d9-4fcb-8ca5-fb73fb923b05">
+          <name xml:id="id2a93b9f0-6e91-45f2-bb71-5db9f290c2e5">Thomas Eske Rasmussen</name>
+          <name xml:id="ida177f9be-a3c7-4533-b11b-a7fa47421cd6">Steen Tullberg</name>
+        </author>
+        <editor xml:id="id71c00ecc-6e64-45b1-8dad-142ba123b5f9">
+          <name xml:id="idd895a85a-abe1-4037-a3b1-d89732062e60">Niels Jørgen Cappelørn</name>
+          <name xml:id="id51b22571-6ae1-43ba-89e7-fac6c54350a2">Joakim Garff</name>
+          <name xml:id="idd777ab01-8186-4b7d-b239-befe19cedcaa">Johnny Kondrup</name>
+          <name xml:id="idebf14d0f-8344-495b-bd17-9ca8044907e3">Tonny Aagaard Olesen</name>
+          <name xml:id="id018ee27b-ffa5-4a00-bee1-82b7f682f9ec">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="idee06b5d0-d1b4-4718-9f7f-d5e2d5ed98fe">
+          <resp xml:id="id1251ec96-5a39-40a9-a956-24eeb53c1e3c">redigeret af</resp>
+          <name xml:id="id8f257f19-a21d-4694-aac3-bdef0374a630">Steen Tullberg. Citater</name>
+          <name xml:id="iddb05e91f-faa9-42b9-bd2a-cd48f2ae5dcb">henvisninger kontrolleret af Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="idad121b9d-53ce-4879-876b-031af8996854">
+          <resp xml:id="id36ffe9d0-c986-4b84-9a2e-a085931f23e9">elektronisk redigeret af</resp>
+          <name xml:id="id83c3b477-8b1c-49bd-8d80-bfd174d1a78a">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id972e1e84-02f7-4ab1-b7b4-7e799e785cce">
+        <authority xml:id="idbd2e3e81-87d4-4028-94a8-15a5cdbd69c6">Søren Kierkegaard Forskningscenteret 2012</authority>
+        <availability xml:id="id3b4d9a8a-56cb-4939-8840-1d02610a9861" status="restricted">
+          <p xml:id="id891dac4b-4318-48db-b31c-25fd3f8f2d2c">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id260703ac-a316-4f52-850a-2beb30d0a8ba">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="iddecdaae0-abaf-4ffa-8f25-f528b30a8d12" unit="volume">K28</biblScope>
+        <biblScope xml:id="idabe59336-66fb-4e2c-812e-584e5a3b37a9" unit="file">http://sks.dk/b241/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id07f06bb8-425e-429a-b436-3a68c44d28ea">
+        <bibl xml:id="idbfc4b447-0207-4304-ae61-acf4a738da5c" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id65e6c97f-bd20-4a45-9aa1-74ba83800277">
+      <tagsDecl xml:id="idfda72b6f-3fae-462a-825a-febce3e21eec">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition xml:id="sub" scheme="css">vertical-align: sub; font-size: 80%;</rendition>
+        <rendition xml:id="lineHight1" scheme="css">line-height:150%</rendition>
+        <rendition xml:id="lineHight2" scheme="css">line-height:200%</rendition>
+        <rendition xml:id="capiTyp" scheme="free">Some spectacular type setting, in SKS rendered in small caps</rendition>
+        <rendition xml:id="size-1" scheme="css">font-size: 83%</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="idf1845d0b-304e-4133-b7cd-02f4666e833f">
+      <change xml:id="id04c1e8dc-f240-4fc9-9fbe-c000abb0d688">Transformed to TEI by style sheet <bibl xml:id="iddb7f684d-b6a4-458c-8b02-412d8cfead17" type="file">txr2tei.xsl</bibl> version as of <date xml:id="id9d9edbfe-f99b-47fe-9f3d-097fdd3a0b98">2017-02-15</date> importing <bibl xml:id="idceed37c6-f647-45b7-a3ff-cdd8776086d8" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="id2dbdf23b-c1a1-4ec3-8638-3e5529796859">Transformed to TEI by style sheet <bibl xml:id="ide19ac324-c5e8-4193-b687-abe537b7bd30" type="file">kn12tei.xsl</bibl> version <idno xml:id="idcba81d06-809f-49e6-bd6d-130071f74ce0" type="version">1.9</idno> as of <date xml:id="id03510c0c-3fbd-4e7a-8b4d-05f1c5e16c74">2017-02-21</date> by <name xml:id="id949c9b9f-a3b7-41dc-a6a9-f39d24d6d97e">Karsten Kynde</name>, <orgName xml:id="id7433d239-d7e5-447b-b371-c2197b82a692">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="idb649656a-baf8-4eba-b8b3-e68500e18969">København</placeName></change>
+      <change xml:id="id16acdbf3-3856-4740-a2e2-830b8f153b0c" when="20130220">txr/XML, <bibl xml:id="id50f554ae-692f-40d2-ac9b-f44a93264351"><idno xml:id="ide5dca9d3-192c-46af-83eb-f2fd8697cf24" type="version">1.8</idno>, <biblScope xml:id="id07de193f-b54f-4096-ab5f-ca722563c1bf" unit="file">http://sks.dk/b241/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
-
-<text type="TextCriticalAccount" subtype="lettersAndDedications"><body><div><head type="topText" n="Tekstredegørelse"/>
-    <head>Tekstredegørelse</head>
-    <list type="TOC">
-      <item>1. Manuskriptbeskrivelse<ptr type="chapter" target="#k1" n=""/></item>
-      <item>2. Datering og kronologi<ptr type="chapter" target="#k2" n="499"/></item>
-    </list>
-    <div type="level1" xml:id="k1">
-      <head>1. Manuskriptbeskrivelse</head>
-      <p>Til brevene i gruppen »Følgebreve, takkebreve, anmodninger m.m.« findes følgende manuskripter, hvoraf <ref target="../B241/txt.xml#n243" type="lettersAndDedications" n="243">Brev 243</ref>, 245-246 og 248-254 befinder sig i Kierkegaard Arkivet (KA), <ref target="../B241/txt.xml#n247" type="lettersAndDedications" n="247">Brev 247</ref> i <persName key="Palsbo, Arthur">Arthur Palsbo</persName>s Håndskriftsamling (Palsbo Aa), <ref target="../B241/txt.xml#n255" type="lettersAndDedications" n="255">Brev 255</ref> i Nyere Brevsamling Dansk (NBD) og <ref target="../B241/txt.xml#n257" type="lettersAndDedications" n="257">Brev 257</ref> i Ny Kongelig Samling (NKS) på <placeName key="Kongelige Bibliotek, Det">Det Kongelige Bibliotek</placeName>. <ref target="../B241/txt.xml#n241" type="lettersAndDedications" n="241">Brev 241</ref> er gået tabt, men findes i en afskrift af L. Wilhelmsen. <ref target="../B241/txt.xml#n242" type="lettersAndDedications" n="242">Brev 242</ref> er i privateje, men findes indirekte overleveret i <hi rendition="#ita">Kierkegaardiana IX,</hi> s. 267. <ref target="../B241/txt.xml#n256" type="lettersAndDedications" n="256">Brev 256</ref> er ligeledes i privateje, men findes afbildet i auktionshuset Bruun Rasmussens publikation <hi rendition="#ita">Auktionsliv</hi> nr. 10, efterår 2006. <ref target="../B241/txt.xml#n258" type="lettersAndDedications" n="258">Brev 258</ref> er også i privateje, men findes indirekte overleveret i auktionshuset Chr. Hee's Efterf.'s publikation <hi rendition="#ita">Katalog over afdøde Forfatter og Redaktør <persName key="Nygaard, Georg">Georg Nygaard</persName>'s Bogsamling,</hi> 3. afd., kat. nr. 10179, <placeName key="København">Kbh.</placeName> 1943. <ref target="../B241/txt.xml#n244" type="lettersAndDedications" n="244">Brev 244</ref> er gået tabt, men findes indirekte overleveret i <persName key="Barfod, Hans Peter">H.P. Barfod</persName>s udgave <hi rendition="#ita">Af <persName key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>s Efterladte Papirer (EP).</hi><note> <p><ref target="../B241/txt.xml#n257" type="lettersAndDedications" n="257">Brev 257</ref> er første gang trykt i <hi rendition="#ita">Museum. Tidsskrift for Historie og Geografi,</hi>
-          <placeName key="København">Kbh.</placeName> 1895, s. 378. <ref target="../B241/txt.xml#n255" type="lettersAndDedications" n="255">Brev 255</ref> har ikke været trykt før. Hvor intet andet er nævnt, er brevet første gang trykt i <hi rendition="#ita">EP</hi> eller <hi rendition="#ita">B&amp;A.</hi></p>
-        </note></p>
-      <msDesc><msIdentifier><collection>B241</collection></msIdentifier>
-        <msPart xml:id="physDesc.241" next="#additional.241"><msIdentifier><idno>241</idno></msIdentifier><physDesc><p><ref target="../B241/txt.xml#n241" type="lettersAndDedications" n="241">Brev 241</ref>. Fra SK til hr. <persName key="Hastrup">Hastrup</persName> (<hi rendition="#ita">SKS</hi> 28, 367).</p><p>Ms. er gået tabt, men findes i en afskrift af læge L. Wilhelmsen.</p></physDesc></msPart><msPart xml:id="additional.241" prev="#physDesc.241"><msIdentifier><idno>241</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 5; <hi rendition="#ita">B&amp;A</hi> 78<note>
-                <p><hi rendition="#ita">B&amp;A</hi> bringer ikke teksten fra Wilhelmsens afskrift, men fra <hi rendition="#ita">EP III,</hi> s. 787.</p>
-              </note>)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.242" next="#additional.242"><msIdentifier><idno>242</idno></msIdentifier><physDesc><p><ref target="../B241/txt.xml#n242" type="lettersAndDedications" n="242">Brev 242</ref>. Fra SK til <persName key="Cold, Ole Johansen">Ole Cold</persName> (<hi rendition="#ita">SKS</hi> 28, 367).</p><p>Brevet er i privateje, men findes indirekte overleveret i <hi rendition="#ita">Kierkegaardiana IX,</hi> s. 267. Her oplyses om ms., at det »består af ét ark (18 × 19 cm), er i kvart og i øverste venstre hjørne prydet med et stik af <placeName>Frederiksborg Slot</placeName>«, og at det desuden »har været foldet én gang«.</p></physDesc></msPart><msPart xml:id="additional.242" prev="#physDesc.242"><msIdentifier><idno>242</idno></msIdentifier><additional><adminInfo><note><p>(privateje)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.243" next="#additional.243"><msIdentifier><idno>243</idno></msIdentifier><physDesc><p><pb xml:id="ss494" n="494" edRef="#SKS"/><ref target="../B241/txt.xml#n243" type="lettersAndDedications" n="243">Brev 243</ref>. Fra <persName key="C.R.">C.R.</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 368).</p><p>En løs lap med afrevet kant i højre side og afklippet kant i venstre side.<note>
-                <p>Udgangspunktet for formatbetegnelsen er plane helark, som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Irregulære, fx afrevne, enheder betegnes som lapper. Dobbeltblad betegner et stykke papir, der er ombøjet (foldet) til blade.</p>
-              </note> Ms. er let beskadiget.</p><p>Ingen paginering.</p><p>Papir: blåligt postvelin, glat. Mål: 212 × 137 mm.<note>
-                <p>Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p>
-              </note></p><p>Bladet har efter beskrivning været foldet en gang på langs og en gang på tværs.</p><p>Versosiden er ubeskrevet.</p><p>En enkelt korrektion.</p></physDesc></msPart><msPart xml:id="additional.243" prev="#physDesc.243"><msIdentifier><idno>243</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L.-fort.</hi> + <hi rendition="#ita">B.-fort.</hi> 239; KA, D pk. 2 læg 5; <hi rendition="#ita">B&amp;A</hi> 290)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.244" next="#additional.244"><msIdentifier><idno>244</idno></msIdentifier><physDesc><p><ref target="../B241/txt.xml#n244" type="lettersAndDedications" n="244">Brev 244</ref>. Fra SK til ukendt (<hi rendition="#ita">SKS</hi> 28, 369).</p><p>Ms. er gået tabt.</p><p>Teksten er trykt i <hi rendition="#ita">EP I-II,</hi> s. LV.</p></physDesc></msPart><msPart xml:id="additional.244" prev="#physDesc.244"><msIdentifier><idno>244</idno></msIdentifier><additional><adminInfo><note/></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.245" next="#additional.245"><msIdentifier><idno>245</idno></msIdentifier><physDesc><p><ref target="../B241/txt.xml#n245" type="lettersAndDedications" n="245">Brev 245</ref>. Fra <persName key="Eiríksson, Magnús">Magnús Eiríksson</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 370-372).</p><p>1 dobbeltblad i stor 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt velin, glat. Mål: 210 × 269 mm.</p><p>Bladene har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 136 × 85 mm<note>
-                <p>Oplysningen om konvoluttens mål gælder det foldede brev, alternativt den separate konvolut. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant); øverste kant bestemmes af udskriftens skriveretning.</p>
-              </note>); rød oblat.<note>
-                <p>Det gælder for alle breve, der har været foldet til konvolut og forseglet, at brevmodtagerens brud på forseglingen har forårsaget en mindre beskadigelse af ms.</p>
-              </note> Konvolutten har desuden været foldet en gang på langs.</p><p>En del korrektioner.</p></physDesc></msPart><msPart xml:id="additional.245" prev="#physDesc.245"><msIdentifier><idno>245</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 2 læg 8; <hi rendition="#ita">B&amp;A</hi> 163)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.246" next="#additional.246"><msIdentifier><idno>246</idno></msIdentifier><physDesc><p><ref target="../B241/txt.xml#n246" type="lettersAndDedications" n="246">Brev 246</ref>. Fra SK til <persName key="Eiríksson, Magnús">Magnús Eiríksson</persName>, kopi (<hi rendition="#ita">SKS</hi> 28, 372).</p><p>1 løs lap med afrevet kant i venstre side og uregelmæssigt afrevet kant øverst.</p><p><pb xml:id="ss495" n="495" edRef="#SKS"/>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 170 × 112-122 mm.</p><p>Lappen bærer præg af at have været foldet til indstik.</p><p>Versosiden er ubeskrevet.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.246" prev="#physDesc.246"><msIdentifier><idno>246</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 2 læg 8; <hi rendition="#ita">B&amp;A</hi> 164)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.247" next="#additional.247"><msIdentifier><idno>247</idno></msIdentifier><physDesc><p><ref target="../B241/txt.xml#n247" type="lettersAndDedications" n="247">Brev 247</ref>. Fra SK til <persName key="Werliin, Julia Constantia">Julia C. Werliin</persName> (<hi rendition="#ita">SKS</hi> 28, 373).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 170 × 204 mm.</p><p>Bladet har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 99 × 63 mm); rest af rødt laksegl.</p></physDesc></msPart><msPart xml:id="additional.247" prev="#physDesc.247"><msIdentifier><idno>247</idno></msIdentifier><additional><adminInfo><note><p>(Palsbo Aa, Sp. 50; <hi rendition="#ita">B&amp;A</hi> 171)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.248" next="#additional.248"><msIdentifier><idno>248</idno></msIdentifier><physDesc><p><ref target="../B241/txt.xml#n248" type="lettersAndDedications" n="248">Brev 248</ref>. Fra <persName key="Schmidt, Alexander Theodor">A.T. Schmidt</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 373-374).</p><p>1 dobbeltblad i stor 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: blåligt velin, glat. Mål: 212 × 271 mm.</p><p>Bladene har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 160 × 90 mm); forsegling med rød oblat. Konvolutten har desuden været foldet en gang på langs og en gang på tværs.</p><p>Bl. [1v]-[2r] er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.248" prev="#physDesc.248"><msIdentifier><idno>248</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 315; KA, D pk. 2 læg 28; <hi rendition="#ita">B&amp;A</hi> 200)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.249" next="#additional.249"><msIdentifier><idno>249</idno></msIdentifier><physDesc><p><ref target="../B241/txt.xml#n249" type="lettersAndDedications" n="249">Brev 249</ref>. Fra <persName key="Andersen, Hans Christian">H.C. Andersen</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 375). Se <ref target="../Ded/txr.xml#ill_k15" type="figure" n="679">illustration 15</ref>, s. 679.</p><p>1 løst blad i 8<hi rendition="#sup">o</hi> med afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: blåligt velin, glat. Mål: 140 × 229 mm.</p><p>Bladet har efter beskrivning været foldet to gange på langs og en gang på tværs.</p><p>Versosiden er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.249" prev="#physDesc.249"><msIdentifier><idno>249</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 316; KA, D pk. 2 læg 1; <hi rendition="#ita">B&amp;A</hi> 206)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.250" next="#additional.250"><msIdentifier><idno>250</idno></msIdentifier><physDesc><p><ref target="../B241/txt.xml#n250" type="lettersAndDedications" n="250">Brev 250</ref>. Fra <persName key="Paludan-Müller, Frederik">Fr. Paludan-Müller</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 375-376).</p><p>1 løst blad i stor 4<hi rendition="#sup">o</hi> med afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: blåligt velin, glat. I øverste venstre hjørne findes et blindtryk: navnet <hi rendition="#capiTyp">BATH</hi> i en ramme omkranset af ornamentering. Mål: 215 × 271 mm.</p><p>Bladet har efter beskrivning været foldet tre gange på langs og tre gange på tværs.</p><p><pb xml:id="ss496" n="496" edRef="#SKS"/>Versosiden er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.250" prev="#physDesc.250"><msIdentifier><idno>250</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 316; KA, D pk. 2 læg 22; <hi rendition="#ita">B&amp;A</hi> 205)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.251" next="#additional.251"><msIdentifier><idno>251</idno></msIdentifier><physDesc><p><ref target="../B241/txt.xml#n251" type="lettersAndDedications" n="251">Brev 251</ref>. Fra <persName key="Hauch, Carsten">Carsten Hauch</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 376-377).</p><p>1 løst blad i 8<hi rendition="#sup">o</hi> med afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt postvelin, glat. Mål: 135 × 215 mm.</p><p>Bladet har efter beskrivning været foldet to gange på tværs.</p><p>Versosiden er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.251" prev="#physDesc.251"><msIdentifier><idno>251</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 2 læg 11; <hi rendition="#ita">B&amp;A</hi> 207)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.252" next="#additional.252"><msIdentifier><idno>252</idno></msIdentifier><physDesc><p><ref target="../B241/txt.xml#n252" type="lettersAndDedications" n="252">Brev 252</ref>. Fra SK til <persName key="Nielsen, Nicolai Peter">N.P. Nielsen</persName> (<hi rendition="#ita">SKS</hi> 28, 377-379).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 169 × 209 mm.</p><p>Bladet har efter beskrivning været foldet to gange på langs og en gang på tværs.</p><p>Versosiden er ca. en tredjedel beskrevet.</p><p>En del korrektioner.</p></physDesc></msPart><msPart xml:id="additional.252" prev="#physDesc.252"><msIdentifier><idno>252</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> 353, <hi rendition="#ita">B-fort.</hi> 353q; KA, D pk. 2 læg 20; <hi rendition="#ita">B&amp;A</hi> 170)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.253" next="#additional.253"><msIdentifier><idno>253</idno></msIdentifier><physDesc><p><ref target="../B241/txt.xml#n253" type="lettersAndDedications" n="253">Brev 253</ref>. Fra ukendt til SK (<hi rendition="#ita">SKS</hi> 28, 379-380).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 170 × 215 mm.</p><p>Bladene har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 109 × 72 mm). Konvolutten har desuden været foldet en gang på langs og et antal gange på tværs.</p><p>Bl. [1v]-[2r] er ubeskrevet.</p><p>På udskriften, bl. [2v], er nederst i fremmed hånd og med blyant skrevet: »Rosenborggad 156 – a«. Ligeledes på udskriften findes i øverste højre hjørne et poststempel:»F: 10 <formula xmlns:m="http://www.w3.org/1998/Math/MathML" notation="mathml"><m:math><m:mfrac bevelled="true"><m:mi>16</m:mi><m:mi>10</m:mi></m:mfrac></m:math></formula> 50 P:«.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.253" prev="#physDesc.253"><msIdentifier><idno>253</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">B-fort.</hi> 421; KA, D pk. 2 læg 39; <hi rendition="#ita">B&amp;A</hi> 268)
-              <figure xml:id="ill_k9" rend="recto"><graphic url="../B241/ill_k9.jpg"/>
-                <head>9. <ref target="../B241/txt.xml#n256" type="lettersAndDedications" n="256">Brev 256</ref>, bl. [1r]</head>
-                <head><hi rendition="#size-1">(foto: © Bruun Rasmussen Kunstauktioner)</hi></head>
-              </figure>
-              </p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.254" next="#additional.254"><msIdentifier><idno>254</idno></msIdentifier><physDesc><p><ref target="../B241/txt.xml#n254" type="lettersAndDedications" n="254">Brev 254</ref>. Fra SK til <persName key="Collin, Jonas">Jonas Collin</persName> d.æ. (<hi rendition="#ita">SKS</hi> 28, 380-382). Tekstgrundlaget i <hi rendition="#ita">SKS</hi> 28 er ms. 254.2.</p></physDesc>
-              <msPart xml:id="physDesc.254.1" next="#additional.254.1"><msIdentifier><idno>254.1</idno></msIdentifier><physDesc><p>Kladde.</p><p>1 dobbeltblad + 1 løst blad i 4<hi rendition="#sup">o</hi>; det løse blad har afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 168 × 206 mm.</p><p><pb xml:id="ss497" n="497" edRef="#SKS"/><pb xml:id="ss498" n="498" edRef="#SKS"/>Bladene har efter beskrivning været foldet to gange på langs og en gang på tværs.</p><p>Bl. [3v] er ubeskrevet.</p><p>Mange korrektioner.</p></physDesc></msPart><msPart xml:id="additional.254.1" prev="#physDesc.254.1"><msIdentifier><idno>254.1</idno></msIdentifier><additional><adminInfo><note/></adminInfo></additional></msPart>
-              <msPart xml:id="physDesc.254.2" next="#additional.254.2"><msIdentifier><idno>254.2</idno></msIdentifier><physDesc><p>Renskrift.</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 165 × 206 mm.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.254.2" prev="#physDesc.254.2"><msIdentifier><idno>254.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L.-fort.</hi> + <hi rendition="#ita">B.-fort.</hi> 237.9; KA, D pk. 2 læg 7; <hi rendition="#ita">B&amp;A</hi> 294)</p></note></adminInfo></additional></msPart>
-            </msPart><msPart xml:id="additional.254" prev="#physDesc.254"><msIdentifier><idno>254</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L.-fort.</hi> + <hi rendition="#ita">B.-fort.</hi> 237.9; KA, D pk. 2 læg 7; <hi rendition="#ita">B&amp;A</hi> 294)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.255" next="#additional.255"><msIdentifier><idno>255</idno></msIdentifier><physDesc><p><ref target="../B241/txt.xml#n255" type="lettersAndDedications" n="255">Brev 255</ref>. Fra SK til <persName key="Ørsted, Anders Sandøe">A.S. Ørsted</persName>, kladde (<hi rendition="#ita">SKS</hi> 28, 382-383).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afklippet kant øverst og i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 165 × 200 mm.</p><p>Bladet har før beskrivning været foldet på langs; en bred inderspalte rummer teksten. Efter beskrivning har bladet været foldet en gang på tværs.</p><p>En del korrektioner.</p></physDesc></msPart><msPart xml:id="additional.255" prev="#physDesc.255"><msIdentifier><idno>255</idno></msIdentifier><additional><adminInfo><note><p>(NBD 2. rk.)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.256" next="#additional.256"><msIdentifier><idno>256</idno></msIdentifier><physDesc><p><ref target="../B241/txt.xml#n256" type="lettersAndDedications" n="256">Brev 256</ref>. Fra SK til ukendt (<hi rendition="#ita">SKS</hi> 28, 383).</p><p>Ms. er i privateje, men et foto findes i auktionshuset Bruun Rasmussens publikation <hi rendition="#ita">Auktionsliv</hi> nr. 10, efterår 2006 (se <ref target="../B241/txr.xml#ill_k9" type="figure">illustration 9</ref>). I artiklen »Jagten på den forsvundne bog – en historie for samlere«, s. 47, er ms. afbildet, og i billedteksten beskrives det som en hidtil ukendt anbefalelsesskrivelse »indsat i et eksemplar af førsteudgaven af 'Enten–Eller' (1843)«. I Bruun Rasmussens auktionskatalog <hi rendition="#ita">the saxhof collection. And other properties</hi> fra 12. dec. 2006, s. 166, er anbefalingen transskriberet og det pågældende eksemplar af <hi rendition="#ita">Enten – Eller</hi> beskrevet på følgende vis: »<persName key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>: Enten-Eller. 2 vols. <placeName key="København">Copenhagen</placeName>: Reitzel 1843. 1st ed. Bound in contemporary half morocco, one spine prof. restaured. With cont. inscription: 'Til <persName key="Hielm, Sofie">Sofie Hielm</persName> fra <persName key="Kyhn">Kyhn</persName> (?) <placeName key="København">Kjøbenhavn</placeName> den 8. August 1843'«.</p></physDesc></msPart><msPart xml:id="additional.256" prev="#physDesc.256"><msIdentifier><idno>256</idno></msIdentifier><additional><adminInfo><note><p>(privateje; tidligere hos <persName key="Dahlstrøm, Bent W.">Bent W. Dahlstrøm</persName>)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.257" next="#additional.257"><msIdentifier><idno>257</idno></msIdentifier><physDesc><p><ref target="../B241/txt.xml#n257" type="lettersAndDedications" n="257">Brev 257</ref>. Fra SK til ukendt (<hi rendition="#ita">SKS</hi> 28, 384).</p><p>1 løs lap med afklippede kanter.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 124 × 148 mm.</p><p>Lappen har efter beskrivning været foldet to gange på langs og en gang på tværs.</p><p>En del korrektioner.</p></physDesc></msPart><msPart xml:id="additional.257" prev="#physDesc.257"><msIdentifier><idno>257</idno></msIdentifier><additional><adminInfo><note><p>(NKS 1994 2<hi rendition="#sup">o</hi>; <hi rendition="#ita">B&amp;A</hi> 312)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.258" next="#additional.258"><msIdentifier><idno>258</idno></msIdentifier><physDesc><p><pb xml:id="ss499" n="499" edRef="#SKS"/><ref target="../B241/txt.xml#n258" type="lettersAndDedications" n="258">Brev 258</ref>. Fra SK til ukendt (<hi rendition="#ita">SKS</hi> 28, 384).</p><p>Ms. er i privateje.</p><p>Teksten findes i auktionshuset Chr. Hee's Efterf.'s publikation <hi rendition="#ita">Katalog over afdøde Forfatter og Redaktør <persName key="Nygaard, Georg">Georg Nygaard</persName>'s Bogsamling,</hi> 3. afd., kat. nr. 10179, <placeName key="København">Kbh.</placeName> 1943, s. 65.</p></physDesc></msPart><msPart xml:id="additional.258" prev="#physDesc.258"><msIdentifier><idno>258</idno></msIdentifier><additional><adminInfo><note><p>(privateje)</p></note></adminInfo></additional></msPart>
-      </msDesc>
-      <p>(<hi rendition="#ita">L-fort.</hi> 237.9, 239, 315, 316, 353, <hi rendition="#ita">B-fort.</hi> 237.9, 239, 315, 316, 353q, 421; KA, D pk. 2 læg 1, 5, 7-8, 11, 20, 22, 28 og 39, D pk. 5; NKS 1994 2<hi rendition="#sup">o</hi>; NBD 2. rk.; Palsbo Aa, Sp. 50; <hi rendition="#ita">B&amp;A</hi> 78, 163-164, 170-171, 200, 205-207, 268, 290, 294 og 312)</p>
-    </div>
-    <div type="level1" xml:id="k2">
-      <head>2. Datering og kronologi</head>
-      <p>Gruppen består af breve til og fra SK, der alle er skrevet i et specifikt ærinde af enten personlig eller mere formel art. Af de 18 breve er 8 dateret: <ref target="../B241/txt.xml#n242" type="lettersAndDedications" n="242">Brev 242</ref> (til <persName key="Cold, Ole Johansen">Ole Cold</persName>) er dateret den 30. sept. 1845; <ref target="../B241/txt.xml#n244" type="lettersAndDedications" n="244">Brev 244</ref> (til en ukendt) er dateret sept. 1847; <ref target="../B241/txt.xml#n245" type="lettersAndDedications" n="245">Brev 245</ref> (fra <persName key="Eiríksson, Magnús">Magnús Eiríksson</persName>) er dateret den 14. okt. 1847; <ref target="../B241/txt.xml#n248" type="lettersAndDedications" n="248">Brev 248</ref> (fra <persName key="Schmidt, Alexander Theodor">A.T. Schmidt</persName>) er dateret den 7. maj 1849; <ref target="../B241/txt.xml#n249" type="lettersAndDedications" n="249">Brev 249</ref> (fra <persName key="Andersen, Hans Christian">H.C. Andersen</persName>) er dateret den 15. maj 1849; <ref target="../B241/txt.xml#n250" type="lettersAndDedications" n="250">Brev 250</ref> (fra <persName key="Paludan-Müller, Frederik">Fr. Paludan-Müller</persName>) er ligeledes dateret den 15. maj 1849; <ref target="../B241/txt.xml#n251" type="lettersAndDedications" n="251">Brev 251</ref> (fra <persName key="Hauch, Carsten">Carsten Hauch</persName>) er dateret den 17. maj 1849, og <ref target="../B241/txt.xml#n253" type="lettersAndDedications" n="253">Brev 253</ref> (fra en ukendt) er dateret den 15. okt. 1850.</p>
-      <p rendition="#ind">Af de udaterede breve lader flere sig indirekte datere. <ref target="../B241/txt.xml#n243" type="lettersAndDedications" n="243">Brev 243</ref> til SK fra en vis »<persName key="C.R.">C. R.</persName>« er vanskeligt at tidsfæste, men kan tænkes at stamme fra perioden 1845-50, hvor SK for alvor er i vælten som forfatter. Brevskriveren appellerer i hvert fald til SK i egenskab af litterær notabilitet.<note> <p>Se kommentaren til Brev 243, <ref target="../B241/kom.xml#b-2937" type="commentary">368,<hi rendition="#ita">23</hi></ref>.</p> </note> <ref target="../B241/txt.xml#n246" type="lettersAndDedications" n="246">Brev 246</ref>, som er en kopi af et brev til <persName key="Eiríksson, Magnús">Magnús Eiríksson</persName>, er et svar på <ref target="../B241/txt.xml#n245" type="lettersAndDedications" n="245">Brev 245</ref>, der er dateret den 14. okt. 1847.</p>
-      <p rendition="#ind"><ref target="../B241/txt.xml#n247" type="lettersAndDedications" n="247">Brev 247</ref> til <persName key="Werliin, Julia Constantia">Julia C. Werliin</persName> er dateret den 17. jan. og er sandsynligvis fra 1848, eftersom Julia Werliin netop da stod i færd med at blive gift med <persName key="Winther, Christian">Christian Winther</persName>. På grund af Julia Werliins forudgående skilsmisse havde parret svært ved at skaffe en præst til at foretage vielsen,<note> <p>Se kommentaren til Brev 247, <ref target="../B241/kom.xml#b-5160" type="commentary">373,<hi rendition="#ita">11</hi></ref>.</p> </note> og hun har formentlig villet spørge SK til råds i den anledning. <ref target="../B241/txt.xml#n252" type="lettersAndDedications" n="252">Brev 252</ref> fra SK til skuespilleren <persName key="Nielsen, Nicolai Peter">N.P. Nielsen</persName> er formentlig fra nov. 1849, da der i brevet omtales et medfølgende »Exemplar af en lille Bog« (<hi rendition="#ita">SKS</hi> 28, 378,8) og samtidig antydes et tema fra anden afdeling af <hi rendition="#ita">»Ypperstepræsten«
+  <text xml:id="id28728024-9b51-41d8-9e7d-cc35af8f8ad1" type="TextCriticalAccount" subtype="lettersAndDedications">
+    <body xml:id="id28f8b02f-a6ee-4143-9ac9-495cb5aeb576">
+      <div xml:id="id65ae64d0-d6d8-4319-847e-a37b094f3894">
+        <head xml:id="id7512aa43-62ac-45b2-ba98-a1b3d272bc12" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="id95bb6906-6c6d-44c2-a7f0-86a5ec967df4">Tekstredegørelse</head>
+        <list xml:id="id62ae1cc3-bc6d-46b1-b18a-17ae07a83821" type="TOC">
+          <item xml:id="idc9ea62a1-1b0e-474c-aefc-52129b6b0cc7">1. Manuskriptbeskrivelse<ptr xml:id="id22f57bc8-6c07-45ef-9ee7-13162810b8a1" type="chapter" target="#k1" n=""/></item>
+          <item xml:id="id8afaba14-2135-4976-8b81-2f0ebacc9974">2. Datering og kronologi<ptr xml:id="id9d241736-d5cc-4e9a-82d0-326f6cc3b7aa" type="chapter" target="#k2" n="499"/></item>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="ida5168aa6-50df-476d-83ca-8426b5dd2ea0">1. Manuskriptbeskrivelse</head>
+          <p xml:id="ida1dd7067-5c0f-4f7f-a379-8e51e956c960">Til brevene i gruppen »Følgebreve, takkebreve, anmodninger m.m.« findes følgende manuskripter, hvoraf <ref xml:id="ideef864f4-6106-4652-ab35-6a811c19719f" target="../B241/txt.xml#n243" type="lettersAndDedications" n="243">Brev 243</ref>, 245-246 og 248-254 befinder sig i Kierkegaard Arkivet (KA), <ref xml:id="id8a2281d7-d38b-415b-8878-398c3afb0c9c" target="../B241/txt.xml#n247" type="lettersAndDedications" n="247">Brev 247</ref> i <persName xml:id="id1254d4cf-d1d1-4725-b9be-af4fffdb10eb" key="Palsbo, Arthur">Arthur Palsbo</persName>s Håndskriftsamling (Palsbo Aa), <ref xml:id="idd2329b6c-4c31-4a09-bfb7-273eec489a27" target="../B241/txt.xml#n255" type="lettersAndDedications" n="255">Brev 255</ref> i Nyere Brevsamling Dansk (NBD) og <ref xml:id="id55418328-5bcd-40f2-aaca-078b0858396d" target="../B241/txt.xml#n257" type="lettersAndDedications" n="257">Brev 257</ref> i Ny Kongelig Samling (NKS) på <placeName xml:id="id98bf8be7-8fa1-4389-95e6-ef3c984ab365" key="Kongelige Bibliotek, Det">Det Kongelige Bibliotek</placeName>. <ref xml:id="id97dc4b30-90ec-4799-b2a9-d66fac391a27" target="../B241/txt.xml#n241" type="lettersAndDedications" n="241">Brev 241</ref> er gået tabt, men findes i en afskrift af L. Wilhelmsen. <ref xml:id="ida7a78ca1-fca3-4b36-9f5c-788f69de9f50" target="../B241/txt.xml#n242" type="lettersAndDedications" n="242">Brev 242</ref> er i privateje, men findes indirekte overleveret i <hi xml:id="id3b28893a-acfe-47b6-90e8-73ef2e3f809d" rendition="#ita">Kierkegaardiana IX,</hi> s. 267. <ref xml:id="id70385f36-010a-4995-8904-2bf88f43afda" target="../B241/txt.xml#n256" type="lettersAndDedications" n="256">Brev 256</ref> er ligeledes i privateje, men findes afbildet i auktionshuset Bruun Rasmussens publikation <hi xml:id="id1f094389-a231-4642-958e-4a03ef564dbb" rendition="#ita">Auktionsliv</hi> nr. 10, efterår 2006. <ref xml:id="idfce9d442-1772-4c38-b4d6-dd11a1b58485" target="../B241/txt.xml#n258" type="lettersAndDedications" n="258">Brev 258</ref> er også i privateje, men findes indirekte overleveret i auktionshuset Chr. Hee's Efterf.'s publikation <hi xml:id="idfb32c58e-093a-46b4-92a8-94dae1827f74" rendition="#ita">Katalog over afdøde Forfatter og Redaktør <persName xml:id="id0b610ccc-f257-4a8c-9907-f23422ab4c7f" key="Nygaard, Georg">Georg Nygaard</persName>'s Bogsamling,</hi> 3. afd., kat. nr. 10179, <placeName xml:id="id97f322a1-4640-4a4c-8fc4-659df9c5f647" key="København">Kbh.</placeName> 1943. <ref xml:id="idf3a38233-00b3-4bab-a097-14d624836ea4" target="../B241/txt.xml#n244" type="lettersAndDedications" n="244">Brev 244</ref> er gået tabt, men findes indirekte overleveret i <persName xml:id="id283e4d50-3352-4e1b-9c42-f541c88cdcf6" key="Barfod, Hans Peter">H.P. Barfod</persName>s udgave <hi xml:id="id6b558594-16ec-42ce-ae06-97997dd482a7" rendition="#ita">Af <persName xml:id="id47bce080-dd9e-4ad7-878a-6c3e2981ccd0" key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>s Efterladte Papirer (EP).</hi><note xml:id="id19e149b6-331e-48ca-bc05-640b6c274e58"><p xml:id="idfba299df-271a-411a-832d-344c14bfd983"><ref xml:id="id12c05eac-99e4-4fc9-8286-edd1e1403ab5" target="../B241/txt.xml#n257" type="lettersAndDedications" n="257">Brev 257</ref> er første gang trykt i <hi xml:id="id67065513-4fd1-404c-89e3-fcd0688b9b69" rendition="#ita">Museum. Tidsskrift for Historie og Geografi,</hi>
+          <placeName xml:id="id963db3a5-3d3b-4f53-a376-1fa008038a72" key="København">Kbh.</placeName> 1895, s. 378. <ref xml:id="id47650347-7423-4e94-8633-a8bc6bcfc4ab" target="../B241/txt.xml#n255" type="lettersAndDedications" n="255">Brev 255</ref> har ikke været trykt før. Hvor intet andet er nævnt, er brevet første gang trykt i <hi xml:id="id570b9861-89ec-4bc2-86ac-e45f4d1bd8ae" rendition="#ita">EP</hi> eller <hi xml:id="id1371e423-ae3d-4139-a42c-0500625622da" rendition="#ita">B&amp;A.</hi></p></note></p>
+          <msDesc xml:id="id90319403-65e1-4663-bcb8-ec68389a86a1">
+            <msIdentifier xml:id="ide967555d-3aa1-45b7-99a4-08c60d6ebabb">
+              <collection xml:id="idb584fde5-d61f-49dd-9093-e968e2010716">B241</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.241" next="#additional.241">
+              <msIdentifier xml:id="iddba05c9f-658d-4ba0-b105-71b9c6ebe6b1">
+                <idno xml:id="id3048a8a1-9d29-4782-affd-d84d8cee3481">241</idno>
+              </msIdentifier>
+              <physDesc xml:id="id0708dbc2-d894-402e-b0b3-1aa5284d0bb9">
+                <p xml:id="id12100e36-8505-49d8-ace6-c557216d4b52"><ref xml:id="iddb732d49-c357-4e5a-aee5-09952cc783cf" target="../B241/txt.xml#n241" type="lettersAndDedications" n="241">Brev 241</ref>. Fra SK til hr. <persName xml:id="idc752badd-c48d-459d-8f57-b08d4e8436df" key="Hastrup">Hastrup</persName> (<hi xml:id="ida1d285a8-fc69-4fdf-b524-b1674d7ca75f" rendition="#ita">SKS</hi> 28, 367).</p>
+                <p xml:id="id58812199-0685-469c-9c6a-8c4a18edc8df">Ms. er gået tabt, men findes i en afskrift af læge L. Wilhelmsen.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.241" prev="#physDesc.241">
+              <msIdentifier xml:id="idd27e13fb-b4ef-4105-b8e7-3bb849f9b259">
+                <idno xml:id="id0d28df07-0e39-4571-b6ac-fbcd618fec3a">241</idno>
+              </msIdentifier>
+              <additional xml:id="id135600c4-c40c-4176-be8b-06bd326e75ca">
+                <adminInfo xml:id="idae8c7cc3-48e6-4a61-83c3-0a1c54168fd3">
+                  <note xml:id="id1db5df2b-8a00-4d83-9d8e-04990ecd5f98">
+                    <p xml:id="idfd5a22bf-ceff-4515-a2e8-605cb1b80255">(KA, D pk. 5; <hi xml:id="id25867127-2a57-4efa-89dd-a9692806926f" rendition="#ita">B&amp;A</hi> 78<note xml:id="id04177af7-ccea-41c9-9ccd-ba7f8100b734"><p xml:id="ide7705d76-9151-439d-9a6f-7a7a52679e47"><hi xml:id="id3f5b0e23-8d3f-41ad-a6cd-33d13d254ad9" rendition="#ita">B&amp;A</hi> bringer ikke teksten fra Wilhelmsens afskrift, men fra <hi xml:id="id818f0c54-6926-41c0-9f3b-0d4a1eed3a21" rendition="#ita">EP III,</hi> s. 787.</p></note>)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.242" next="#additional.242">
+              <msIdentifier xml:id="idf18fd46b-5585-4acc-a54b-f6bd5bc31bb3">
+                <idno xml:id="idab6f3b56-fe2e-467b-8086-13c94dc83dd2">242</idno>
+              </msIdentifier>
+              <physDesc xml:id="id891d0689-cbed-49dd-8ae6-0c9ce6b9a085">
+                <p xml:id="id313a35cb-0509-4fd2-9d72-aee3f45ca257"><ref xml:id="id100aa8ca-0ae5-4a63-9e89-dd6b646d5c1c" target="../B241/txt.xml#n242" type="lettersAndDedications" n="242">Brev 242</ref>. Fra SK til <persName xml:id="id9cb6339d-0079-451f-9228-2b4b2eb19973" key="Cold, Ole Johansen">Ole Cold</persName> (<hi xml:id="id96c04e10-af8b-4876-a3d9-bb6a12a4dc3d" rendition="#ita">SKS</hi> 28, 367).</p>
+                <p xml:id="id96b84d4e-2c62-4815-82e4-784a253e3728">Brevet er i privateje, men findes indirekte overleveret i <hi xml:id="id286ee8e2-9c60-4574-b0cf-e71257f6015d" rendition="#ita">Kierkegaardiana IX,</hi> s. 267. Her oplyses om ms., at det »består af ét ark (18 × 19 cm), er i kvart og i øverste venstre hjørne prydet med et stik af <placeName xml:id="idf9a2b63d-8c4f-4c01-9b3e-b347aa4c382a">Frederiksborg Slot</placeName>«, og at det desuden »har været foldet én gang«.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.242" prev="#physDesc.242">
+              <msIdentifier xml:id="id07bfe198-0643-46a6-af62-ad69704abf3f">
+                <idno xml:id="idca40b333-8bb7-480b-b721-c0eb50bdcc64">242</idno>
+              </msIdentifier>
+              <additional xml:id="id16b09685-6332-4fa8-b473-a480a03dd4c5">
+                <adminInfo xml:id="idbfd3e2ca-5a90-4ac3-9dae-ebe6e1fa87c6">
+                  <note xml:id="id2616c8c0-3b49-4f73-af89-7b13ed766f7d">
+                    <p xml:id="ida3a68712-9c3b-4d68-a063-baa0a102cffe">(privateje)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.243" next="#additional.243">
+              <msIdentifier xml:id="idde4745b5-fbf5-46cb-be43-d931b6de2ec2">
+                <idno xml:id="id3cbc1501-12c9-4527-a3dc-ff950bd77e23">243</idno>
+              </msIdentifier>
+              <physDesc xml:id="id97edecbf-b1f6-440c-b147-77f7ca5f93df">
+                <p xml:id="id750bc0cf-8f08-4984-8454-b251a6f7a1dd"><pb xml:id="ss494" n="494" edRef="#SKS"/><ref xml:id="idb85f636c-ce7d-44e9-9a83-e6390d6fc284" target="../B241/txt.xml#n243" type="lettersAndDedications" n="243">Brev 243</ref>. Fra <persName xml:id="id22f13302-93b0-49f1-80e9-92adfc84f1d3" key="C.R.">C.R.</persName> til SK (<hi xml:id="id111dca42-bc89-486b-ab5b-e8c176d93ac2" rendition="#ita">SKS</hi> 28, 368).</p>
+                <p xml:id="idf94fb815-3030-4e1f-bc90-9ee92c39c2ae">En løs lap med afrevet kant i højre side og afklippet kant i venstre side.<note xml:id="ide0025198-d561-44a6-b365-31a602117bc4"><p xml:id="idd93d2cd4-564b-45a5-b7ca-c78b37f2a8c8">Udgangspunktet for formatbetegnelsen er plane helark, som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Irregulære, fx afrevne, enheder betegnes som lapper. Dobbeltblad betegner et stykke papir, der er ombøjet (foldet) til blade.</p></note> Ms. er let beskadiget.</p>
+                <p xml:id="idb7ab8080-4b57-4a3c-9095-bea446b79584">Ingen paginering.</p>
+                <p xml:id="ida074ae65-6170-4b29-94c2-8ceba928bc6c">Papir: blåligt postvelin, glat. Mål: 212 × 137 mm.<note xml:id="id1a06c8e9-97ec-470c-a48e-7ac02ec3664a"><p xml:id="id52812baa-a33a-430c-bba5-20d28b1f7b95">Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p></note></p>
+                <p xml:id="id7260eaa5-ec67-4f36-9df3-886fdac59c29">Bladet har efter beskrivning været foldet en gang på langs og en gang på tværs.</p>
+                <p xml:id="idaf207581-cf0b-44c2-a30d-a0088f8a092a">Versosiden er ubeskrevet.</p>
+                <p xml:id="id6417520f-0a93-489b-929d-f35988586c63">En enkelt korrektion.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.243" prev="#physDesc.243">
+              <msIdentifier xml:id="id616f4a55-fa02-41f0-aa66-081e1427f453">
+                <idno xml:id="id5fdd03e0-0e30-4aa5-802d-6f5a261f5c34">243</idno>
+              </msIdentifier>
+              <additional xml:id="id84857e55-34a4-4c2b-819b-25d0e7176fc0">
+                <adminInfo xml:id="id7fb2b784-3099-4c01-b3ce-654591a77734">
+                  <note xml:id="idb83d2b1f-4844-40ba-858a-f0ca1cc8eb43">
+                    <p xml:id="id18b62fde-4c6e-4db4-a3cb-38ff16b6b097">(<hi xml:id="id07da0688-7e85-46ff-bfa5-944f87dfac77" rendition="#ita">L.-fort.</hi> + <hi xml:id="id1f8685b1-4e7b-4e06-b10a-52cc9e5745d1" rendition="#ita">B.-fort.</hi> 239; KA, D pk. 2 læg 5; <hi xml:id="id0276e1e9-2a6c-4375-873d-6867c57225a9" rendition="#ita">B&amp;A</hi> 290)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.244" next="#additional.244">
+              <msIdentifier xml:id="idf6c48534-6ab0-4e61-bfb1-c64c303da351">
+                <idno xml:id="idb683be06-7008-4fc7-89bd-f61d53a7656a">244</idno>
+              </msIdentifier>
+              <physDesc xml:id="idf1c02227-5057-4006-80b3-9cc2b035bf1a">
+                <p xml:id="idf6883151-69e1-44c8-8d0b-92fb5bdd8b1c"><ref xml:id="id038d6edd-7b0b-433d-96e2-8087490482ba" target="../B241/txt.xml#n244" type="lettersAndDedications" n="244">Brev 244</ref>. Fra SK til ukendt (<hi xml:id="id481c5f18-6d7e-48d0-b087-13e50e631cf1" rendition="#ita">SKS</hi> 28, 369).</p>
+                <p xml:id="id575b6c76-2346-4f77-9279-931848e9c5e8">Ms. er gået tabt.</p>
+                <p xml:id="id920ef6fc-0124-47e2-b7a6-b68f1886b5af">Teksten er trykt i <hi xml:id="id0c802a3e-e617-46f4-aeaa-e13bd036f2cc" rendition="#ita">EP I-II,</hi> s. LV.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.244" prev="#physDesc.244">
+              <msIdentifier xml:id="idec1d7490-85b2-4e6a-a7b4-c49dbea4d4df">
+                <idno xml:id="id28c81fdc-79e3-46f2-8582-2564e97698bf">244</idno>
+              </msIdentifier>
+              <additional xml:id="idce380eec-167c-41a0-816e-d9a47748e3bd">
+                <adminInfo xml:id="id591bd735-1609-4ade-93b7-72d1623bf69e">
+                  <note xml:id="id6929f8cf-f0b3-408c-920e-bfc230529164"/>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.245" next="#additional.245">
+              <msIdentifier xml:id="id7567d1cd-e5f4-4872-b04c-6bc961809ea4">
+                <idno xml:id="id2f918afc-d7ca-4f26-9b1a-76c8b51ae0c7">245</idno>
+              </msIdentifier>
+              <physDesc xml:id="id11dee37b-c5de-4708-9219-372206b6fbea">
+                <p xml:id="ide75d0b62-8a35-4e08-97a0-d4cf7a37f499"><ref xml:id="id978f85b6-5a6a-4e02-b126-a2c1dd3f96f2" target="../B241/txt.xml#n245" type="lettersAndDedications" n="245">Brev 245</ref>. Fra <persName xml:id="idf0aaa71f-691d-4306-8437-0deafcd3f964" key="Eiríksson, Magnús">Magnús Eiríksson</persName> til SK (<hi xml:id="id05aa1293-b49c-4c58-99d1-07c1128bd3c9" rendition="#ita">SKS</hi> 28, 370-372).</p>
+                <p xml:id="idff1caa5c-59e3-4d84-977e-ab86c00e6f27">1 dobbeltblad i stor 4<hi xml:id="id517b42dc-2e20-4920-b63b-c4ca450a304f" rendition="#sup">o</hi>.</p>
+                <p xml:id="id53f03c8f-ae5a-494f-a166-b6335a79075f">Ingen paginering.</p>
+                <p xml:id="id5b871d62-62c9-4577-a1f6-f8049acab3d0">Papir: gulligt velin, glat. Mål: 210 × 269 mm.</p>
+                <p xml:id="id08a96d7d-dc5b-4213-bc44-dd231343fd19">Bladene har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 136 × 85 mm<note xml:id="idc774444f-add2-474d-8f83-b64d6fbbb937"><p xml:id="id55ad1b5d-84b1-4545-b293-37b49fab62ae">Oplysningen om konvoluttens mål gælder det foldede brev, alternativt den separate konvolut. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant); øverste kant bestemmes af udskriftens skriveretning.</p></note>); rød oblat.<note xml:id="ida2d8ab93-62e8-4ad6-ab76-c714332f02e7"><p xml:id="idfbb05a28-f835-4ce6-9868-2b5ec9503d27">Det gælder for alle breve, der har været foldet til konvolut og forseglet, at brevmodtagerens brud på forseglingen har forårsaget en mindre beskadigelse af ms.</p></note> Konvolutten har desuden været foldet en gang på langs.</p>
+                <p xml:id="ida3311261-5b31-45ab-925a-087244961254">En del korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.245" prev="#physDesc.245">
+              <msIdentifier xml:id="id9b65f3c8-bd71-4682-a9e3-7724db123e4c">
+                <idno xml:id="idecac511c-322b-4cbb-ae73-1d3fe26c3a1f">245</idno>
+              </msIdentifier>
+              <additional xml:id="idfbca3454-611b-4419-af70-2b4b9f73bd56">
+                <adminInfo xml:id="iddf3db128-9463-43b2-82ef-32375d789839">
+                  <note xml:id="id6f4aa900-981a-4ce6-9d82-f75b1032760c">
+                    <p xml:id="iddac6a3b8-2d62-4309-8a61-2d5fc4e7416f">(KA, D pk. 2 læg 8; <hi xml:id="id08fad9e4-1c0b-4d19-94c8-6e435ff0b4f4" rendition="#ita">B&amp;A</hi> 163)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.246" next="#additional.246">
+              <msIdentifier xml:id="id476536e3-546a-4541-b5dd-a28a52766269">
+                <idno xml:id="id4e1fd8ca-c4cc-48e1-bbc7-7b10199291c8">246</idno>
+              </msIdentifier>
+              <physDesc xml:id="id4f25cb43-9afc-4a09-80a5-ce8f2d35614f">
+                <p xml:id="id4f973e9e-fc25-4f4e-9b87-6fceedb71d9e"><ref xml:id="id753b3d77-d750-4207-94fc-14accaaf06d2" target="../B241/txt.xml#n246" type="lettersAndDedications" n="246">Brev 246</ref>. Fra SK til <persName xml:id="id345e4173-e1b0-46ce-b7c3-a4f939b19591" key="Eiríksson, Magnús">Magnús Eiríksson</persName>, kopi (<hi xml:id="id6673635b-7086-4abb-b778-d7217ed53704" rendition="#ita">SKS</hi> 28, 372).</p>
+                <p xml:id="id00a69dce-c308-4659-b503-516174afa75f">1 løs lap med afrevet kant i venstre side og uregelmæssigt afrevet kant øverst.</p>
+                <p xml:id="id7cc13625-5eb3-4a7b-8626-6c6a0f4e650a"><pb xml:id="ss495" n="495" edRef="#SKS"/>Ingen paginering.</p>
+                <p xml:id="id61c62908-4008-427d-ac69-7e7078be0e30">Papir: gulligt koncept, glat. Mål: 170 × 112-122 mm.</p>
+                <p xml:id="ide38a92b1-9df3-4027-9335-c9f595b9e2ed">Lappen bærer præg af at have været foldet til indstik.</p>
+                <p xml:id="id07d1a82e-e5fb-4be2-84a6-c1ff8d8baa79">Versosiden er ubeskrevet.</p>
+                <p xml:id="idea0c5c0b-b702-4ff9-acf5-507049ed9994">Få korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.246" prev="#physDesc.246">
+              <msIdentifier xml:id="idc549bfac-4168-41d7-b84b-3e87f546c7f5">
+                <idno xml:id="idef3bf032-d55b-409b-9d9d-0fe2d963ad98">246</idno>
+              </msIdentifier>
+              <additional xml:id="id8fe0831c-f75e-4a34-8378-d669b1db14ac">
+                <adminInfo xml:id="id771f702e-3cc0-4ec7-8085-7109a0087efa">
+                  <note xml:id="id5d59eb3c-dbf9-4e30-966c-834117e7e6f1">
+                    <p xml:id="iddee735a9-1b9b-4fb3-a7f0-61561c4ffdf0">(KA, D pk. 2 læg 8; <hi xml:id="id126ccf3f-ef58-407c-8b82-f82fcd255979" rendition="#ita">B&amp;A</hi> 164)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.247" next="#additional.247">
+              <msIdentifier xml:id="id24ea00e5-b993-407b-a27e-5996be6a9e7b">
+                <idno xml:id="id2efe2666-95de-4481-a9e5-8cc52203825c">247</idno>
+              </msIdentifier>
+              <physDesc xml:id="id983056e1-9a9c-419b-98dd-1ba12498a0c1">
+                <p xml:id="id9c051bde-be37-4275-80dd-7cf03bf0fb4d"><ref xml:id="id03fcb141-c358-476f-89f3-27a642ff92dc" target="../B241/txt.xml#n247" type="lettersAndDedications" n="247">Brev 247</ref>. Fra SK til <persName xml:id="idc4499e58-f870-4168-97e8-21b80ae45559" key="Werliin, Julia Constantia">Julia C. Werliin</persName> (<hi xml:id="idb995ad6b-407a-429f-9779-720938a30379" rendition="#ita">SKS</hi> 28, 373).</p>
+                <p xml:id="id98d42d21-2f20-4b44-9282-f1f52f8aab42">1 løst blad i 4<hi xml:id="id04d0a884-e986-4755-9bc4-ca5a628b6b86" rendition="#sup">o</hi>.</p>
+                <p xml:id="id0a0a1555-1daf-4b4d-b73c-1a6caf67fb1e">Ingen paginering.</p>
+                <p xml:id="idc9732e2b-2b2e-4f94-902c-6c8040f03b44">Papir: gulligt koncept, glat. Mål: 170 × 204 mm.</p>
+                <p xml:id="idaf89435a-88a2-4b63-9d18-3f3d870c1f1c">Bladet har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 99 × 63 mm); rest af rødt laksegl.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.247" prev="#physDesc.247">
+              <msIdentifier xml:id="idd710f4a5-5a80-47fe-a15d-eba68fad3aa8">
+                <idno xml:id="id009bd3e3-b975-4654-9fc6-adf3d4eb3728">247</idno>
+              </msIdentifier>
+              <additional xml:id="iddc34b0fc-d5fc-4abe-ad30-a38e767941df">
+                <adminInfo xml:id="idb4d9e560-a967-49c3-a8c8-0c083b1543b4">
+                  <note xml:id="idc1cf9093-d2a6-4c58-a827-c94aec321e64">
+                    <p xml:id="id3e32dccc-8197-4345-8cc2-11d2fe6c8aff">(Palsbo Aa, Sp. 50; <hi xml:id="id38640e3a-47c6-4499-a830-14bcc887ad6c" rendition="#ita">B&amp;A</hi> 171)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.248" next="#additional.248">
+              <msIdentifier xml:id="id22ae60c6-9e52-480b-b7a1-d9e6ccc0d1ef">
+                <idno xml:id="iddabde897-42da-4720-969b-d657e8308044">248</idno>
+              </msIdentifier>
+              <physDesc xml:id="id060e9855-03ed-402f-a50e-4e1519cacd59">
+                <p xml:id="id1d13f649-b0cc-4ba4-b64c-91ae99458d05"><ref xml:id="idfcc80a8c-7b65-4afe-b4e8-25858b43d9d6" target="../B241/txt.xml#n248" type="lettersAndDedications" n="248">Brev 248</ref>. Fra <persName xml:id="idb6b13cb5-e357-4ed9-8d06-e07cd597c321" key="Schmidt, Alexander Theodor">A.T. Schmidt</persName> til SK (<hi xml:id="ida77a7e61-fb25-44c8-aac4-52f39871bcaa" rendition="#ita">SKS</hi> 28, 373-374).</p>
+                <p xml:id="idd8a1889c-26ac-4d41-81de-9e3f09c3837b">1 dobbeltblad i stor 4<hi xml:id="idf654aec0-a13a-497b-9aca-f8532be014d1" rendition="#sup">o</hi>.</p>
+                <p xml:id="id09e28a55-b926-4196-bee6-6bc245b3b2a2">Ingen paginering.</p>
+                <p xml:id="id336edab6-0988-444e-87e1-fa5e14597898">Papir: blåligt velin, glat. Mål: 212 × 271 mm.</p>
+                <p xml:id="id18bb2a50-26ba-4d23-85c9-871b3940b05b">Bladene har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 160 × 90 mm); forsegling med rød oblat. Konvolutten har desuden været foldet en gang på langs og en gang på tværs.</p>
+                <p xml:id="id9557812d-6f8b-45c9-8682-b4902899bb35">Bl. [1v]-[2r] er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.248" prev="#physDesc.248">
+              <msIdentifier xml:id="id0c2c6c25-7c0d-4130-a156-9c22a5779bb1">
+                <idno xml:id="id9cc8c509-a10a-4727-814b-ca62199bc5fd">248</idno>
+              </msIdentifier>
+              <additional xml:id="id73f1be7b-d890-4329-bc65-d8b1509758d5">
+                <adminInfo xml:id="idbe2aff7f-564a-4871-ac83-e6e9abc91529">
+                  <note xml:id="ide703e392-c5a2-4fc5-85d4-fc4071942191">
+                    <p xml:id="id392e135c-33a2-4ace-a7e6-317a53708f65">(<hi xml:id="idde5e042a-36bf-4d28-93c5-d9a0f523e1c3" rendition="#ita">L-fort.</hi> + <hi xml:id="id08f5b715-0fbe-4383-a472-454a88973b72" rendition="#ita">B-fort.</hi> 315; KA, D pk. 2 læg 28; <hi xml:id="ida2dff285-7c91-43d1-bb05-398d79c58ee5" rendition="#ita">B&amp;A</hi> 200)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.249" next="#additional.249">
+              <msIdentifier xml:id="id01738619-bbba-4df6-bf38-d15559a668d0">
+                <idno xml:id="id3e209497-7482-4e80-a3f7-a6864a481c63">249</idno>
+              </msIdentifier>
+              <physDesc xml:id="id50a7b18d-2d96-4b8e-ac9b-da8b8d07abc7">
+                <p xml:id="id1d71560b-ecdf-4bc8-b528-b84c105371d6"><ref xml:id="id0732b563-0ae0-4e12-9c4d-44dacbeb5e31" target="../B241/txt.xml#n249" type="lettersAndDedications" n="249">Brev 249</ref>. Fra <persName xml:id="id6f51c6eb-3c61-4a3b-81bc-07f5e3ea2114" key="Andersen, Hans Christian">H.C. Andersen</persName> til SK (<hi xml:id="id80c55a73-20c5-4212-a53d-ce35a1d440e8" rendition="#ita">SKS</hi> 28, 375). Se <ref xml:id="id6301920e-7116-4bfd-bd1d-4611c5ba69be" target="../Ded/txr.xml#ill_k15" type="figure" n="679">illustration 15</ref>, s. 679.</p>
+                <p xml:id="idb070b6a9-9a1e-4c06-bcd2-82730caf9e24">1 løst blad i 8<hi xml:id="id22605b9a-664c-4549-bcf3-cbb59971c0d5" rendition="#sup">o</hi> med afrevet kant i venstre side.</p>
+                <p xml:id="idac283646-4727-4021-8a36-a0ae79c443d6">Ingen paginering.</p>
+                <p xml:id="id2526fa85-c96d-4deb-a1cf-00df47fd921a">Papir: blåligt velin, glat. Mål: 140 × 229 mm.</p>
+                <p xml:id="id8fde18c7-82d1-492b-bd83-b49692fbafcc">Bladet har efter beskrivning været foldet to gange på langs og en gang på tværs.</p>
+                <p xml:id="id4db7eebc-049a-40e0-af27-54ff1e78661b">Versosiden er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.249" prev="#physDesc.249">
+              <msIdentifier xml:id="id7c4d1d28-86d3-44d2-8dc3-8fd7979605df">
+                <idno xml:id="id8e964555-a8f5-41b2-b9eb-39e4c9266aca">249</idno>
+              </msIdentifier>
+              <additional xml:id="idc99280f5-47b1-4b4c-a65e-53d7163b7944">
+                <adminInfo xml:id="id39e72aed-38b7-43e1-a91c-2ea9c61d7d2a">
+                  <note xml:id="id63e84e9e-7baa-4697-98cd-49d3c9aa4cd9">
+                    <p xml:id="id7d2d2469-eb18-4cf1-84f0-713a8ec8b38f">(<hi xml:id="id446a191d-0037-40d2-abfb-4bb8d3983d8b" rendition="#ita">L-fort.</hi> + <hi xml:id="ide5d7ab70-2da5-47ad-ab74-d5bf095d9fb3" rendition="#ita">B-fort.</hi> 316; KA, D pk. 2 læg 1; <hi xml:id="iddefc690d-9017-45a1-944d-2eb10fef93dc" rendition="#ita">B&amp;A</hi> 206)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.250" next="#additional.250">
+              <msIdentifier xml:id="id432e0e85-20bc-49f8-b332-228ad9b876f5">
+                <idno xml:id="id31eea6f6-d5f4-4858-a850-b56279408ed5">250</idno>
+              </msIdentifier>
+              <physDesc xml:id="idbe1c7605-36ff-4b26-9d1d-4d6c862587c9">
+                <p xml:id="id54ad641f-1fc1-47d8-bf56-6a5ca7c9f545"><ref xml:id="idaa0202c1-138f-4e19-9fac-23af9a7ac100" target="../B241/txt.xml#n250" type="lettersAndDedications" n="250">Brev 250</ref>. Fra <persName xml:id="id20789cf4-5724-4294-b925-9fad7a1316a0" key="Paludan-Müller, Frederik">Fr. Paludan-Müller</persName> til SK (<hi xml:id="id18edc99b-8dda-4f3b-a1cb-a2dac38479f2" rendition="#ita">SKS</hi> 28, 375-376).</p>
+                <p xml:id="id2e54bc6f-2dc2-4a01-a3bf-0e77713ea03b">1 løst blad i stor 4<hi xml:id="id8d11e095-843b-442a-92df-677dfa14826f" rendition="#sup">o</hi> med afrevet kant i venstre side.</p>
+                <p xml:id="id4408e298-5fea-4387-8011-515d55e5cf6a">Ingen paginering.</p>
+                <p xml:id="ide87751f1-b600-40d8-8197-8ad425437b4d">Papir: blåligt velin, glat. I øverste venstre hjørne findes et blindtryk: navnet <hi xml:id="id279a8cb2-170b-4b59-a42f-7a3adcd12700" rendition="#capiTyp">BATH</hi> i en ramme omkranset af ornamentering. Mål: 215 × 271 mm.</p>
+                <p xml:id="id157eda42-7e29-4482-91de-2a62f066c3ef">Bladet har efter beskrivning været foldet tre gange på langs og tre gange på tværs.</p>
+                <p xml:id="id0426514b-da6a-4901-9d63-684eeff74d25"><pb xml:id="ss496" n="496" edRef="#SKS"/>Versosiden er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.250" prev="#physDesc.250">
+              <msIdentifier xml:id="id3c4d755e-7779-48db-8aa6-56585df822cf">
+                <idno xml:id="id89ecb055-9f32-48e4-9627-54412bf5cfd3">250</idno>
+              </msIdentifier>
+              <additional xml:id="id5e007387-e4d1-4818-9b01-c191d7d66255">
+                <adminInfo xml:id="id2d53e717-0929-40b3-b77d-c54afd5c9500">
+                  <note xml:id="id6ae20574-3590-4740-9402-bba907d31f1e">
+                    <p xml:id="id4c26218d-5911-4ac6-b021-08e7bc547455">(<hi xml:id="ideea8636f-0d87-4071-b871-783adbd834a1" rendition="#ita">L-fort.</hi> + <hi xml:id="ide2ac812e-9c32-47eb-99a0-f042eb64bf7f" rendition="#ita">B-fort.</hi> 316; KA, D pk. 2 læg 22; <hi xml:id="id5cae04c1-9229-4e2a-abed-e6420a6ec0d0" rendition="#ita">B&amp;A</hi> 205)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.251" next="#additional.251">
+              <msIdentifier xml:id="idd4f6d930-56cd-45ef-a97d-0444942f18e5">
+                <idno xml:id="ideddd0f1a-b7ae-453d-848b-e45661e14d75">251</idno>
+              </msIdentifier>
+              <physDesc xml:id="id948417ea-b322-4660-8081-5328043036e7">
+                <p xml:id="idf4181f3a-465d-4698-af38-3f7556f52e4c"><ref xml:id="ide34288de-6225-4e55-a54f-0584e2125997" target="../B241/txt.xml#n251" type="lettersAndDedications" n="251">Brev 251</ref>. Fra <persName xml:id="ida3e0710c-6f5d-43b8-bd98-67e64df27d44" key="Hauch, Carsten">Carsten Hauch</persName> til SK (<hi xml:id="id2b566466-bbcd-48d3-b784-8fb5a76ba866" rendition="#ita">SKS</hi> 28, 376-377).</p>
+                <p xml:id="id18ecd02f-2681-4fc2-bf0d-db3584ae5b0d">1 løst blad i 8<hi xml:id="id9ae79a27-8f2c-465c-9882-880f6d7eb0b6" rendition="#sup">o</hi> med afrevet kant i venstre side.</p>
+                <p xml:id="id885c3c06-0dbb-410b-8e9d-ba53187d273e">Ingen paginering.</p>
+                <p xml:id="idb0afcb3b-a7fc-4182-8a8d-5b76eb9350b2">Papir: gulligt postvelin, glat. Mål: 135 × 215 mm.</p>
+                <p xml:id="ideb60d2fc-aa5d-4e2b-9f0c-b495a0afd76d">Bladet har efter beskrivning været foldet to gange på tværs.</p>
+                <p xml:id="id4b99862d-36e9-440c-ad8a-ec3392e75eb5">Versosiden er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.251" prev="#physDesc.251">
+              <msIdentifier xml:id="ide21b4c69-cf61-40ec-8763-f8cbbfec7b5f">
+                <idno xml:id="id109a0489-e92e-4ab8-9788-ca6c5057d4c8">251</idno>
+              </msIdentifier>
+              <additional xml:id="id65572964-e0b2-413a-a684-de911338442b">
+                <adminInfo xml:id="id5636c110-6e73-4c0f-b412-d476b609546c">
+                  <note xml:id="id99e24977-31a9-441c-b6ea-17f680328f1c">
+                    <p xml:id="id0a007b6c-1952-4b1a-b461-e7da11bd7d75">(KA, D pk. 2 læg 11; <hi xml:id="idc07e873a-201e-4953-984e-ffee53bc0361" rendition="#ita">B&amp;A</hi> 207)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.252" next="#additional.252">
+              <msIdentifier xml:id="id19461fac-37b6-46d9-8ca2-e3acd2c85112">
+                <idno xml:id="id7336b82f-f45c-4e8f-8aaf-448513bd414e">252</idno>
+              </msIdentifier>
+              <physDesc xml:id="idc3e60ded-fa38-4ee4-8f20-23787fb05178">
+                <p xml:id="id77c17588-bb3d-480c-831c-0ca80f611d02"><ref xml:id="id5a251c5b-f87e-4c0b-94e0-3b88da7d8c65" target="../B241/txt.xml#n252" type="lettersAndDedications" n="252">Brev 252</ref>. Fra SK til <persName xml:id="id9d0c0e9b-1b07-46f8-99fc-43bde7911c1a" key="Nielsen, Nicolai Peter">N.P. Nielsen</persName> (<hi xml:id="ide156fcde-34e4-4560-a295-d90b9fd6e92f" rendition="#ita">SKS</hi> 28, 377-379).</p>
+                <p xml:id="id00bad4b4-f03c-4e46-8cc3-ab8c2f4f316e">1 løst blad i 4<hi xml:id="id4b22202c-3c8f-4f0e-9a32-1874a1f3573f" rendition="#sup">o</hi> med afrevet kant i venstre side.</p>
+                <p xml:id="id8d854450-5860-4813-b1fd-06deaf9903da">Ingen paginering.</p>
+                <p xml:id="idd875933c-350a-4285-8fe5-5ff308ebf604">Papir: gulligt koncept, glat. Mål: 169 × 209 mm.</p>
+                <p xml:id="id7f598372-1761-4063-ad34-f14ad7f0a4f6">Bladet har efter beskrivning været foldet to gange på langs og en gang på tværs.</p>
+                <p xml:id="idc017c576-38e0-4bad-9657-e6414b672e49">Versosiden er ca. en tredjedel beskrevet.</p>
+                <p xml:id="id192e8fcb-9716-47c8-8d97-fa314ec4119d">En del korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.252" prev="#physDesc.252">
+              <msIdentifier xml:id="idcec99e1e-2e0e-467a-a2e1-496e097cd901">
+                <idno xml:id="id4f738018-0045-4541-bdc6-595ec73f142b">252</idno>
+              </msIdentifier>
+              <additional xml:id="idcc329985-0a6a-4bf8-9d59-c9c76e2e746c">
+                <adminInfo xml:id="id8df1f7d2-314f-4255-985f-8e76aa00b00c">
+                  <note xml:id="ide6c1a7ee-d7fe-4215-9a10-1392b0cc5abe">
+                    <p xml:id="id1cf968c5-f2e6-4e5a-860a-43af120eba0b">(<hi xml:id="id8b820c15-c1d5-4fe1-8684-294c1c0cc40d" rendition="#ita">L-fort.</hi> 353, <hi xml:id="ida9ddbb87-b24a-402d-b0a2-73c0492a4143" rendition="#ita">B-fort.</hi> 353q; KA, D pk. 2 læg 20; <hi xml:id="id058542f3-00a0-492a-aac4-4cf2dc579553" rendition="#ita">B&amp;A</hi> 170)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.253" next="#additional.253">
+              <msIdentifier xml:id="ided1d400a-eee4-432f-a2a8-a8ef32adcf25">
+                <idno xml:id="idb1c5703f-7a07-4396-be95-5211460ecb10">253</idno>
+              </msIdentifier>
+              <physDesc xml:id="id79db15fa-19f7-4d04-9838-bc0fa17c14ee">
+                <p xml:id="id7f8b272c-39df-416c-a283-797d57611c49"><ref xml:id="id3838a9d4-37bb-44cb-86c6-fcb671b03f23" target="../B241/txt.xml#n253" type="lettersAndDedications" n="253">Brev 253</ref>. Fra ukendt til SK (<hi xml:id="id07ca0253-7aaf-4190-9956-9d36f6908941" rendition="#ita">SKS</hi> 28, 379-380).</p>
+                <p xml:id="ide2250b71-25ba-4896-a511-588031a07cb7">1 dobbeltblad i 4<hi xml:id="id42ccb90a-4046-437b-927e-72f16ba50b8b" rendition="#sup">o</hi>.</p>
+                <p xml:id="id9c1b3243-6a94-4db0-9705-bd7f7e348db4">Ingen paginering.</p>
+                <p xml:id="idd3db12c8-7f19-485e-a0b4-ee0fcec6d7d3">Papir: gulligt koncept, glat. Mål: 170 × 215 mm.</p>
+                <p xml:id="id4acc61a3-c634-4427-96f0-e97da53d2edb">Bladene har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 109 × 72 mm). Konvolutten har desuden været foldet en gang på langs og et antal gange på tværs.</p>
+                <p xml:id="id0d5c4233-2efc-4eac-972a-3cdfa5babed7">Bl. [1v]-[2r] er ubeskrevet.</p>
+                <p xml:id="id9cd17be5-9408-48f5-92a4-08a385e20bf7">På udskriften, bl. [2v], er nederst i fremmed hånd og med blyant skrevet: »Rosenborggad 156 – a«. Ligeledes på udskriften findes i øverste højre hjørne et poststempel:»F: 10 <formula xml:id="id206efdc1-e2c0-414a-b763-be260f8751e1" notation="mathml">1610</formula> 50 P:«.</p>
+                <p xml:id="id74389ebc-cdcd-40df-a34b-63125d0f64db">Få korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.253" prev="#physDesc.253">
+              <msIdentifier xml:id="idbe5f3c6c-6b96-4b3a-b3b5-809b25a5141b">
+                <idno xml:id="id1d1700b0-477c-47bf-989a-4bbbe60c726c">253</idno>
+              </msIdentifier>
+              <additional xml:id="id8cbf5603-9fdf-4538-84d1-be7764dc8099">
+                <adminInfo xml:id="ida4adb25f-05c3-4f02-94bb-6ebb7812eb9e">
+                  <note xml:id="id85214ed7-deb8-4787-9044-32fe8bd1b2e3">
+                    <p xml:id="idd6ade00a-4736-4ea7-96a7-7c3368978686">(<hi xml:id="id5791f83e-6b86-490b-a001-a7787c4127af" rendition="#ita">B-fort.</hi> 421; KA, D pk. 2 læg 39; <hi xml:id="id1c52d36a-d5af-4d62-bf1a-5964970f84c3" rendition="#ita">B&amp;A</hi> 268)
+              <figure xml:id="ill_k9" rend="recto"><graphic xml:id="ida0f448b0-54f0-4810-9572-b642ff0fad92" url="../B241/ill_k9.jpg"/><head xml:id="iddacec261-d63e-42a8-9857-e8eaae4f4d69">9. <ref xml:id="idcea8c621-18f0-4b1c-9049-d58dc07ea178" target="../B241/txt.xml#n256" type="lettersAndDedications" n="256">Brev 256</ref>, bl. [1r]</head><head xml:id="id875829e3-a709-44fa-a8b9-e2c7a2098dff"><hi xml:id="id51d8dbc7-e416-4b59-bdbc-7695886b6825" rendition="#size-1">(foto: © Bruun Rasmussen Kunstauktioner)</hi></head></figure>
+              </p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.254" next="#additional.254">
+              <msIdentifier xml:id="id2f2dc53b-9c22-49be-8e71-751285fd6c60">
+                <idno xml:id="id31c0531d-53e8-4180-97f1-93c28190e876">254</idno>
+              </msIdentifier>
+              <physDesc xml:id="ide9685044-19cb-4a92-829e-54b1dd50244d">
+                <p xml:id="ide51dce83-a62f-4bdb-a9e7-ad57616fb734"><ref xml:id="idc9674c36-d707-4730-a4ba-cfd7d6c9d1b1" target="../B241/txt.xml#n254" type="lettersAndDedications" n="254">Brev 254</ref>. Fra SK til <persName xml:id="id753bef32-deb9-48c5-9450-b5096db65eda" key="Collin, Jonas">Jonas Collin</persName> d.æ. (<hi xml:id="idf80c6358-72c5-4b0b-96da-1f6c84c53469" rendition="#ita">SKS</hi> 28, 380-382). Tekstgrundlaget i <hi xml:id="idd52f97b3-b087-4896-af78-cdc08a2fc966" rendition="#ita">SKS</hi> 28 er ms. 254.2.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.254.1" next="#additional.254.1">
+                <msIdentifier xml:id="idf52be8f9-b07d-4f80-b857-fd48987bcfd5">
+                  <idno xml:id="id681a055c-c6a8-4858-89cf-5bb1f846af71">254.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id71534098-5ddb-4ec4-b5fa-6bc2c60e9f6d">
+                  <p xml:id="id3045b836-4c2a-46ed-a2ef-116308969285">Kladde.</p>
+                  <p xml:id="id1e98a50b-f622-4c02-8be4-e364e9810bc3">1 dobbeltblad + 1 løst blad i 4<hi xml:id="id3e04c06c-1abb-4347-9ef7-0ee97abc6b91" rendition="#sup">o</hi>; det løse blad har afrevet kant i venstre side.</p>
+                  <p xml:id="id7008347f-f01e-49ca-b74c-8abf378a650c">Ingen paginering.</p>
+                  <p xml:id="id93a89799-7f12-4f83-ad6b-c6323a77b743">Papir: gulligt koncept, glat. Mål: 168 × 206 mm.</p>
+                  <p xml:id="id0cb6c3f8-b4ea-4a8e-af05-b77f5f0ac079"><pb xml:id="ss497" n="497" edRef="#SKS"/><pb xml:id="ss498" n="498" edRef="#SKS"/>Bladene har efter beskrivning været foldet to gange på langs og en gang på tværs.</p>
+                  <p xml:id="ide91d573e-c5f3-44b7-9f64-da410b944193">Bl. [3v] er ubeskrevet.</p>
+                  <p xml:id="id22d055e0-643d-4e7f-bc34-2c3762fc195d">Mange korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.254.1" prev="#physDesc.254.1">
+                <msIdentifier xml:id="id036ff775-e308-488c-b266-29e50d6efa2b">
+                  <idno xml:id="id7499c6d7-4a69-4253-be59-f214e14a3750">254.1</idno>
+                </msIdentifier>
+                <additional xml:id="idf53fe418-bd3a-44a7-a7a3-685993524ee9">
+                  <adminInfo xml:id="idc1bd6ad6-3237-4230-bc45-ad1078f3fb30">
+                    <note xml:id="id37608ab1-1306-4bca-a833-b3f21ed72f79"/>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.254.2" next="#additional.254.2">
+                <msIdentifier xml:id="idf079860a-270d-43bf-b1b3-9f57d034750f">
+                  <idno xml:id="id1bc7c118-2114-4b47-9d60-a0588a349942">254.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="idc645abe8-5a36-44cd-9faf-f5ab31c5ec8c">
+                  <p xml:id="id2c3c9543-4a8a-4a19-a6e7-5431fd19339c">Renskrift.</p>
+                  <p xml:id="ide8739cba-8c4e-4bd9-8e43-5b67fdb2ab96">1 dobbeltblad i 4<hi xml:id="idacd0569e-3e2c-4796-8fde-ea6468c5d79a" rendition="#sup">o</hi>.</p>
+                  <p xml:id="id7d49d1a2-70fc-4670-9d96-428f0b1e5441">Ingen paginering.</p>
+                  <p xml:id="idcb55f1b8-96f6-40b8-a0af-a76a8a530a8a">Papir: gulligt koncept, glat. Mål: 165 × 206 mm.</p>
+                  <p xml:id="idc441d02a-8d63-4cd6-a811-bb201db957dd">Få korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.254.2" prev="#physDesc.254.2">
+                <msIdentifier xml:id="idac16b15a-4675-438b-8f0a-aaf01b11d450">
+                  <idno xml:id="id5a87cf2a-719d-419c-90f3-0d18ba35b980">254.2</idno>
+                </msIdentifier>
+                <additional xml:id="id136b8a5e-f505-4241-8e3e-d9409a13005b">
+                  <adminInfo xml:id="idc5177160-8da3-445a-b4ac-99ddee97db6e">
+                    <note xml:id="id584dd5da-7c5e-4deb-9104-10cfd712089d">
+                      <p xml:id="id10a79401-efe8-4cd6-b33e-6d53625dcb0f">(<hi xml:id="id35fde994-ae19-4d01-99e0-8591844b3aa5" rendition="#ita">L.-fort.</hi> + <hi xml:id="id43d0fea0-ba9f-4982-b11a-214497f6e3ab" rendition="#ita">B.-fort.</hi> 237.9; KA, D pk. 2 læg 7; <hi xml:id="id999d3c31-61ec-4f0b-98b1-daa64dbc0d10" rendition="#ita">B&amp;A</hi> 294)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.254" prev="#physDesc.254">
+              <msIdentifier xml:id="idfc705298-cf0f-4aa6-946f-12f89375ffbf">
+                <idno xml:id="id3aeafbb8-2af5-4d6b-bf53-057e24e218c5">254</idno>
+              </msIdentifier>
+              <additional xml:id="id38622a42-d307-4a2d-a304-fa64f21f0a4f">
+                <adminInfo xml:id="id2b3e457d-9531-4fdf-b070-31f2582fc95c">
+                  <note xml:id="id6d39f4c0-8a81-4381-bd41-babcab0e671a">
+                    <p xml:id="id1b3be156-e4e7-4e9b-8cb2-6803d7007070">(<hi xml:id="id37c15722-3aac-4155-9f54-34a3743d2904" rendition="#ita">L.-fort.</hi> + <hi xml:id="ide0f35c38-fda8-40bb-a0af-02b85a051e05" rendition="#ita">B.-fort.</hi> 237.9; KA, D pk. 2 læg 7; <hi xml:id="id873605a5-94ff-47e6-9166-59355a0d3d01" rendition="#ita">B&amp;A</hi> 294)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.255" next="#additional.255">
+              <msIdentifier xml:id="ida5ea23dc-256f-475a-a19d-d2f6593b02c7">
+                <idno xml:id="id478dde23-0aff-4358-bbae-0064c8b3ac86">255</idno>
+              </msIdentifier>
+              <physDesc xml:id="id415895bc-efd8-42a5-a998-0a1208ccfd53">
+                <p xml:id="id390e91e7-8c96-484d-b5f2-59d44228e8f8"><ref xml:id="idf68d2dab-0478-479a-aff3-0d559cd36915" target="../B241/txt.xml#n255" type="lettersAndDedications" n="255">Brev 255</ref>. Fra SK til <persName xml:id="id3fa778bf-9d73-46c6-adde-e79411abe8ad" key="Ørsted, Anders Sandøe">A.S. Ørsted</persName>, kladde (<hi xml:id="idcc882171-671e-4007-9009-880dd9f6e262" rendition="#ita">SKS</hi> 28, 382-383).</p>
+                <p xml:id="id7c578d8a-052e-464f-a1ca-176cc580db2e">1 løst blad i 4<hi xml:id="id83cf716f-bd23-47d6-8eba-f228e032e053" rendition="#sup">o</hi> med afklippet kant øverst og i venstre side.</p>
+                <p xml:id="idb8ba62b6-5097-409d-88e6-5c6be419dddf">Ingen paginering.</p>
+                <p xml:id="id141e3947-8dbd-4156-9d75-5db748127c61">Papir: gulligt koncept, glat. Mål: 165 × 200 mm.</p>
+                <p xml:id="id729b62d0-84ae-4e24-93d2-093ec629f9be">Bladet har før beskrivning været foldet på langs; en bred inderspalte rummer teksten. Efter beskrivning har bladet været foldet en gang på tværs.</p>
+                <p xml:id="iddbebeea3-b421-4f7e-aef4-93b3e3280541">En del korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.255" prev="#physDesc.255">
+              <msIdentifier xml:id="idd7d593b0-b2bf-4159-8514-9be39372046b">
+                <idno xml:id="id9251eb83-5b76-4a03-aafa-cf5a8426b2fb">255</idno>
+              </msIdentifier>
+              <additional xml:id="id0f7c1d94-0b3b-48c4-a07b-387dfe6dd4f8">
+                <adminInfo xml:id="ide136f99b-58dd-4f17-ae8e-ab66777fd575">
+                  <note xml:id="id3c03a77f-e82c-48e3-9d57-5545988874dc">
+                    <p xml:id="id59be58fa-ae9f-4dac-b666-0bbcedcfecfb">(NBD 2. rk.)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.256" next="#additional.256">
+              <msIdentifier xml:id="id9f308032-ea31-4e72-9670-bde1d7972ab6">
+                <idno xml:id="id05e326ab-df8a-48e7-9ce0-a3a48588e280">256</idno>
+              </msIdentifier>
+              <physDesc xml:id="idb2c59e2d-a21f-4831-af9e-38df2f36f9c7">
+                <p xml:id="id44d3bd7d-b595-47dd-9387-242c3e447166"><ref xml:id="id705d75f9-216c-468c-8bf7-0bb4c3183a82" target="../B241/txt.xml#n256" type="lettersAndDedications" n="256">Brev 256</ref>. Fra SK til ukendt (<hi xml:id="id006a06e3-8ffc-4b98-9df0-3b97b8897ce8" rendition="#ita">SKS</hi> 28, 383).</p>
+                <p xml:id="id2220dd2a-c3d1-4c2e-af2d-15242a2132d4">Ms. er i privateje, men et foto findes i auktionshuset Bruun Rasmussens publikation <hi xml:id="idb3494777-acb0-4e24-b132-159010b311f7" rendition="#ita">Auktionsliv</hi> nr. 10, efterår 2006 (se <ref xml:id="id4a7b86b1-f22e-416d-b0b8-c57c0ba3466a" target="../B241/txr.xml#ill_k9" type="figure">illustration 9</ref>). I artiklen »Jagten på den forsvundne bog – en historie for samlere«, s. 47, er ms. afbildet, og i billedteksten beskrives det som en hidtil ukendt anbefalelsesskrivelse »indsat i et eksemplar af førsteudgaven af 'Enten–Eller' (1843)«. I Bruun Rasmussens auktionskatalog <hi xml:id="id9b6877c6-1942-44a2-a871-bb1b87fb3c38" rendition="#ita">the saxhof collection. And other properties</hi> fra 12. dec. 2006, s. 166, er anbefalingen transskriberet og det pågældende eksemplar af <hi xml:id="id6a3feac4-6c5b-4bb0-ae59-1a9cbf42b2d4" rendition="#ita">Enten – Eller</hi> beskrevet på følgende vis: »<persName xml:id="id71de8d7d-898e-4b8b-9149-05154ebca3f5" key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>: Enten-Eller. 2 vols. <placeName xml:id="id7b1993fc-a180-4cd8-a56a-eeb26d65f63d" key="København">Copenhagen</placeName>: Reitzel 1843. 1st ed. Bound in contemporary half morocco, one spine prof. restaured. With cont. inscription: 'Til <persName xml:id="id9b2c95be-9ecb-4286-8f13-0bde18a6af73" key="Hielm, Sofie">Sofie Hielm</persName> fra <persName xml:id="idfddaa1e4-ba6b-4f72-9a95-c2f1bde36065" key="Kyhn">Kyhn</persName> (?) <placeName xml:id="idde6db154-f500-4406-a7b1-821b498767dd" key="København">Kjøbenhavn</placeName> den 8. August 1843'«.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.256" prev="#physDesc.256">
+              <msIdentifier xml:id="id57cce422-55eb-4b19-8db4-53218a526bf4">
+                <idno xml:id="id2435f5aa-8267-4480-9071-d8a746ce5e92">256</idno>
+              </msIdentifier>
+              <additional xml:id="id39deebcf-6f68-4142-b59e-be042f3e1b70">
+                <adminInfo xml:id="id1cb191c3-4866-48ff-ad23-4d72acd6224e">
+                  <note xml:id="id45cafb40-8684-4298-8b5e-8958339d0e10">
+                    <p xml:id="id1b20632f-57d8-462e-adea-60c1c9b26c73">(privateje; tidligere hos <persName xml:id="id14915731-9f2e-4c6a-b562-49b93a08946e" key="Dahlstrøm, Bent W.">Bent W. Dahlstrøm</persName>)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.257" next="#additional.257">
+              <msIdentifier xml:id="idaefca427-f240-4255-9ba2-0c4a411c1d93">
+                <idno xml:id="idd212b2b6-412c-48ea-9267-4d09923cc453">257</idno>
+              </msIdentifier>
+              <physDesc xml:id="iddf81414b-1bf3-4126-b429-726495deb48e">
+                <p xml:id="id25a9d1c5-74cf-48ff-8b70-14a7d79c40cc"><ref xml:id="id4b5027c2-5619-4ae2-9dbf-0f001ea10ec4" target="../B241/txt.xml#n257" type="lettersAndDedications" n="257">Brev 257</ref>. Fra SK til ukendt (<hi xml:id="id2898bcd8-6902-45b9-85c3-516e507a8414" rendition="#ita">SKS</hi> 28, 384).</p>
+                <p xml:id="id1222b426-a4ae-4a07-ab82-aa2e21f43d20">1 løs lap med afklippede kanter.</p>
+                <p xml:id="idd40c64e7-d644-4890-9653-61b42a41c91b">Ingen paginering.</p>
+                <p xml:id="ida1b3b4f8-815d-4c29-bf2f-5025faec1cb8">Papir: gulligt koncept, glat. Mål: 124 × 148 mm.</p>
+                <p xml:id="idb461b86a-dee3-4593-b053-5e391e6b70ce">Lappen har efter beskrivning været foldet to gange på langs og en gang på tværs.</p>
+                <p xml:id="id114b49d6-a773-405c-ad68-56083e6e9ad5">En del korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.257" prev="#physDesc.257">
+              <msIdentifier xml:id="id0f6afb5e-e673-414d-b2be-9b713da6ca5e">
+                <idno xml:id="id94cd5172-e8fe-46d4-a9de-8eb380ba8b0d">257</idno>
+              </msIdentifier>
+              <additional xml:id="id1e5ce612-cdd3-4a72-912a-54a0a53ff07c">
+                <adminInfo xml:id="id1a0e2413-a725-4f40-9d96-664f759f26cd">
+                  <note xml:id="id75f7e6af-f5c7-4e47-a8e5-7afa88e72d74">
+                    <p xml:id="id45926d96-31ae-434c-a6c4-73ba0558b7ce">(NKS 1994 2<hi xml:id="idc1dc8b43-d76f-4439-b2f8-391442f5a70a" rendition="#sup">o</hi>; <hi xml:id="id7c9b055e-8a59-49be-bb28-9bc364013df6" rendition="#ita">B&amp;A</hi> 312)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.258" next="#additional.258">
+              <msIdentifier xml:id="idcd74e2d2-e086-4d52-b446-3ef182e7bba0">
+                <idno xml:id="id35d40b60-f9f0-42e9-89a1-bdd8c886f6d0">258</idno>
+              </msIdentifier>
+              <physDesc xml:id="id8e449b95-96d7-4b87-b44d-7176d9f71803">
+                <p xml:id="id7a7825d7-6cb8-4612-9afb-fd0ca4e0d855"><pb xml:id="ss499" n="499" edRef="#SKS"/><ref xml:id="idb62c00e2-ff8b-4b8e-ac00-59bd0cfa52ae" target="../B241/txt.xml#n258" type="lettersAndDedications" n="258">Brev 258</ref>. Fra SK til ukendt (<hi xml:id="idb5408757-5945-4505-b95a-f3e49c5c7e34" rendition="#ita">SKS</hi> 28, 384).</p>
+                <p xml:id="id43107191-6419-4466-adbe-ca1b1e44560b">Ms. er i privateje.</p>
+                <p xml:id="iddcbdff74-1b4d-4d94-abd2-a1a383c7590d">Teksten findes i auktionshuset Chr. Hee's Efterf.'s publikation <hi xml:id="id95e53200-f23b-4f44-9cca-1b4aa17d75ed" rendition="#ita">Katalog over afdøde Forfatter og Redaktør <persName xml:id="id62511187-fa61-4698-91d6-60d5421ffd52" key="Nygaard, Georg">Georg Nygaard</persName>'s Bogsamling,</hi> 3. afd., kat. nr. 10179, <placeName xml:id="id364ddda0-c0dc-4975-a421-baaac43660d0" key="København">Kbh.</placeName> 1943, s. 65.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.258" prev="#physDesc.258">
+              <msIdentifier xml:id="id69aa86cc-8356-483a-9a3f-a5078c7522b0">
+                <idno xml:id="id2c10bb79-e71d-4372-b730-2a504fe4c624">258</idno>
+              </msIdentifier>
+              <additional xml:id="id0b4ed3e8-623b-4f9f-a083-bd8116d6901c">
+                <adminInfo xml:id="id8d0fd7b9-895a-449c-99d4-29ceef70a236">
+                  <note xml:id="idc2496965-fdb1-4960-a72a-d6477a384698">
+                    <p xml:id="id4f13ba2b-757a-4d26-832e-4d8d27e1ed4f">(privateje)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+          <p xml:id="id6bdf2d2b-c0b6-4254-90d9-1292b8aa354f">(<hi xml:id="id9f611cb0-833f-43cb-9592-aa64f2213911" rendition="#ita">L-fort.</hi> 237.9, 239, 315, 316, 353, <hi xml:id="iddd9c694c-1748-4758-ba14-9765869682e5" rendition="#ita">B-fort.</hi> 237.9, 239, 315, 316, 353q, 421; KA, D pk. 2 læg 1, 5, 7-8, 11, 20, 22, 28 og 39, D pk. 5; NKS 1994 2<hi xml:id="id9b098499-8051-4c79-8b0b-8538b9e8b218" rendition="#sup">o</hi>; NBD 2. rk.; Palsbo Aa, Sp. 50; <hi xml:id="idf179680a-0cdf-4ca0-9695-d98db9934e40" rendition="#ita">B&amp;A</hi> 78, 163-164, 170-171, 200, 205-207, 268, 290, 294 og 312)</p>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="id8cfbe380-55d1-4bab-9f33-3f72c4a8cf18">2. Datering og kronologi</head>
+          <p xml:id="id0dea76a0-a30f-4bd2-9c5d-0e9742326bf2">Gruppen består af breve til og fra SK, der alle er skrevet i et specifikt ærinde af enten personlig eller mere formel art. Af de 18 breve er 8 dateret: <ref xml:id="id7aa457ff-2236-492b-bca3-d52f525047e9" target="../B241/txt.xml#n242" type="lettersAndDedications" n="242">Brev 242</ref> (til <persName xml:id="ida33df06a-c6ec-4574-b864-61de9912d522" key="Cold, Ole Johansen">Ole Cold</persName>) er dateret den 30. sept. 1845; <ref xml:id="idbdfaff4f-92ca-449c-b1a6-a8a76f64bea0" target="../B241/txt.xml#n244" type="lettersAndDedications" n="244">Brev 244</ref> (til en ukendt) er dateret sept. 1847; <ref xml:id="id21507ab0-3350-4b5f-9828-e28a67f4dece" target="../B241/txt.xml#n245" type="lettersAndDedications" n="245">Brev 245</ref> (fra <persName xml:id="idf330b5a9-6dd0-4367-8821-3d338faf0423" key="Eiríksson, Magnús">Magnús Eiríksson</persName>) er dateret den 14. okt. 1847; <ref xml:id="id38590e96-28bc-4632-a291-db192f0f6275" target="../B241/txt.xml#n248" type="lettersAndDedications" n="248">Brev 248</ref> (fra <persName xml:id="idf62a2cb9-14b8-4d76-b171-1043034565bd" key="Schmidt, Alexander Theodor">A.T. Schmidt</persName>) er dateret den 7. maj 1849; <ref xml:id="id131bd2a7-8433-42b5-aaf1-d1343c241960" target="../B241/txt.xml#n249" type="lettersAndDedications" n="249">Brev 249</ref> (fra <persName xml:id="id8ffcceb4-bdf1-48fe-9411-da0e4f55c933" key="Andersen, Hans Christian">H.C. Andersen</persName>) er dateret den 15. maj 1849; <ref xml:id="id9a91e5c5-37d3-4a93-89ed-05d7e427e128" target="../B241/txt.xml#n250" type="lettersAndDedications" n="250">Brev 250</ref> (fra <persName xml:id="id7812dc6e-aa50-457a-a992-54207927c820" key="Paludan-Müller, Frederik">Fr. Paludan-Müller</persName>) er ligeledes dateret den 15. maj 1849; <ref xml:id="idb2ef8035-68fe-4c13-bfa6-7f67f5dbf9c8" target="../B241/txt.xml#n251" type="lettersAndDedications" n="251">Brev 251</ref> (fra <persName xml:id="id4495d078-3902-478a-abba-ef93efa4ae31" key="Hauch, Carsten">Carsten Hauch</persName>) er dateret den 17. maj 1849, og <ref xml:id="id7fb6b0d4-3275-409f-a650-5b5c9d5247db" target="../B241/txt.xml#n253" type="lettersAndDedications" n="253">Brev 253</ref> (fra en ukendt) er dateret den 15. okt. 1850.</p>
+          <p xml:id="id27165757-f0ca-432c-a132-4576e1551613" rendition="#ind">Af de udaterede breve lader flere sig indirekte datere. <ref xml:id="id3891f467-d64b-4568-8cf2-29237e64745d" target="../B241/txt.xml#n243" type="lettersAndDedications" n="243">Brev 243</ref> til SK fra en vis »<persName xml:id="idabcc80be-254b-4627-bc73-8816b2390aa4" key="C.R.">C. R.</persName>« er vanskeligt at tidsfæste, men kan tænkes at stamme fra perioden 1845-50, hvor SK for alvor er i vælten som forfatter. Brevskriveren appellerer i hvert fald til SK i egenskab af litterær notabilitet.<note xml:id="id51903552-0314-4300-b003-ce5abf477ed5"><p xml:id="id630cbc7c-328d-43d7-86f6-0f48e87b1b63">Se kommentaren til Brev 243, <ref xml:id="id4e8069df-9491-4faf-ac01-a9a878845ef2" target="../B241/kom.xml#b-2937" type="commentary">368,<hi xml:id="iddec576ca-e204-4572-b6a6-28bebeb8bfa8" rendition="#ita">23</hi></ref>.</p></note> <ref xml:id="id2221c211-4d24-4d54-a717-f728690f1bcc" target="../B241/txt.xml#n246" type="lettersAndDedications" n="246">Brev 246</ref>, som er en kopi af et brev til <persName xml:id="idc960a284-bb7f-4c9b-89ac-c6d904dbb86c" key="Eiríksson, Magnús">Magnús Eiríksson</persName>, er et svar på <ref xml:id="id70aba973-7392-4703-a05f-299c18ddc15e" target="../B241/txt.xml#n245" type="lettersAndDedications" n="245">Brev 245</ref>, der er dateret den 14. okt. 1847.</p>
+          <p xml:id="id7aa92d73-6c50-4a31-9a4b-3ef2fa43aee6" rendition="#ind"><ref xml:id="id8f9c9cbc-32e7-4650-af7f-7c4386902f5c" target="../B241/txt.xml#n247" type="lettersAndDedications" n="247">Brev 247</ref> til <persName xml:id="id20327e61-74a5-41a6-972d-942cf5888a68" key="Werliin, Julia Constantia">Julia C. Werliin</persName> er dateret den 17. jan. og er sandsynligvis fra 1848, eftersom Julia Werliin netop da stod i færd med at blive gift med <persName xml:id="id75ee36b2-a851-4c86-b4d9-2e522ab16ef2" key="Winther, Christian">Christian Winther</persName>. På grund af Julia Werliins forudgående skilsmisse havde parret svært ved at skaffe en præst til at foretage vielsen,<note xml:id="id6e73e5fa-629a-4902-bfc9-18db26d2bbe6"><p xml:id="idb5e7eb42-cd43-4376-89b7-6e224441f14a">Se kommentaren til Brev 247, <ref xml:id="id92d8662e-37c9-4543-8262-10020641f144" target="../B241/kom.xml#b-5160" type="commentary">373,<hi xml:id="idffaf99d3-5ba1-4518-a4fd-8c9d509619e8" rendition="#ita">11</hi></ref>.</p></note> og hun har formentlig villet spørge SK til råds i den anledning. <ref xml:id="id20c29c68-4fa6-452f-a699-3d2371128ab6" target="../B241/txt.xml#n252" type="lettersAndDedications" n="252">Brev 252</ref> fra SK til skuespilleren <persName xml:id="idf77318e6-155e-4dd9-b894-c151492ad5cd" key="Nielsen, Nicolai Peter">N.P. Nielsen</persName> er formentlig fra nov. 1849, da der i brevet omtales et medfølgende »Exemplar af en lille Bog« (<hi xml:id="idd6bb53e4-5b66-4831-a3f7-931c118ec892" rendition="#ita">SKS</hi> 28, 378,8) og samtidig antydes et tema fra anden afdeling af <hi xml:id="iddb167437-b70f-4578-8403-7f1b440129c1" rendition="#ita">»Ypperstepræsten«
         – »Tolderen« –
-        »Synderinden«, tre Taler ved Altergangen om Fredagen,</hi> som udkom den 14. nov. 1849.<note> <p>Se kommentaren til Brev 252, <ref target="../B241/kom.xml#b-5153" type="commentary">378,<hi rendition="#ita">7</hi></ref>.</p> </note></p>
-      <p rendition="#ind"><pb xml:id="ss500" n="500" edRef="#SKS"/>Af <ref target="../B241/txt.xml#n254" type="lettersAndDedications" n="254">Brev 254</ref> fra SK til <persName key="Collin, Jonas">Jonas Collin</persName> d.æ. fremgår, at det har været ledsaget af et eksemplar af anden udgave af <hi rendition="#ita">Kjerlighedens Gjerninger,</hi> som udkom den 17. april 1852.<note> <p>Se kommentaren til Brev 254, <ref target="../B241/kom.xml#b-5221" type="commentary">380,<hi rendition="#ita">13</hi></ref>.</p> </note> Det samme gør sig gældende for <ref target="../B241/txt.xml#n255" type="lettersAndDedications" n="255">Brev 255</ref> til <persName key="Ørsted, Anders Sandøe">A.S. Ørsted</persName> (det overleverede ms. er en kladde). Også her drejer det sig om et brev med medfølgende gaveeksemplar af en bog, hvis titel ganske vist ikke nævnes, men som er udkommet i anden udgave, og hvis første udgave i sin tid ligeledes blev tilsendt modtageren. Det må m.a.o. dreje sig om anden udgave af <hi rendition="#ita">Kjerlighedens Gjerninger</hi> fra april 1852.</p>
-      <p rendition="#ind">De tre sidste breve fra SK, <ref target="../B241/txt.xml#n256" type="lettersAndDedications" n="256">Brev 256</ref>-258, har ukendte modtagere og lader sig ikke nærmere datere. Af disse er <ref target="../B241/txt.xml#n257" type="lettersAndDedications" n="257">Brev 257</ref> muligvis en kladde.<note> <p>På versosiden af <ref target="../B241/txt.xml#n257" type="lettersAndDedications" n="257">Brev 257</ref> læser man initialerne »M. H.«, men læsningen er usikker, og det er også yderst usikkert, om det er SK, der har skrevet dem.</p>
-        </note></p>
-    </div>
-  </div></body></text></TEI>
+        »Synderinden«, tre Taler ved Altergangen om Fredagen,</hi> som udkom den 14. nov. 1849.<note xml:id="idbed5ea13-2e55-40cc-8f8f-f96fca1bea58"><p xml:id="idc727bb45-0b51-4e38-b872-ca7ed1f06f1f">Se kommentaren til Brev 252, <ref xml:id="id5ae902e4-fbba-4026-a656-3b46fa5153ef" target="../B241/kom.xml#b-5153" type="commentary">378,<hi xml:id="idaa7b629e-ac05-45fd-9a69-2cb8a4452a00" rendition="#ita">7</hi></ref>.</p></note></p>
+          <p xml:id="idaf93501c-b459-4501-836e-21c4b68606f8" rendition="#ind"><pb xml:id="ss500" n="500" edRef="#SKS"/>Af <ref xml:id="id6e29e1cd-3907-4f85-878f-16a3484f526f" target="../B241/txt.xml#n254" type="lettersAndDedications" n="254">Brev 254</ref> fra SK til <persName xml:id="id57dfb264-02d3-454d-9b9e-86a0d58601af" key="Collin, Jonas">Jonas Collin</persName> d.æ. fremgår, at det har været ledsaget af et eksemplar af anden udgave af <hi xml:id="idb0a0b01d-25b6-4df9-b072-19f0772c600d" rendition="#ita">Kjerlighedens Gjerninger,</hi> som udkom den 17. april 1852.<note xml:id="idcda5d3c8-c2c6-472a-b525-c8618c4ac4de"><p xml:id="id9d80c1eb-a676-47c2-8984-f1fa34dc6288">Se kommentaren til Brev 254, <ref xml:id="ida123ede7-8160-4ef1-81b7-2040b713af03" target="../B241/kom.xml#b-5221" type="commentary">380,<hi xml:id="id2b2cfd86-4a86-4f4a-a291-0e2421a97072" rendition="#ita">13</hi></ref>.</p></note> Det samme gør sig gældende for <ref xml:id="idda6bea64-3dad-47c8-aa64-d0bd98d27a9d" target="../B241/txt.xml#n255" type="lettersAndDedications" n="255">Brev 255</ref> til <persName xml:id="id8ae977e5-65d5-462c-96fb-f10b6b23e7f9" key="Ørsted, Anders Sandøe">A.S. Ørsted</persName> (det overleverede ms. er en kladde). Også her drejer det sig om et brev med medfølgende gaveeksemplar af en bog, hvis titel ganske vist ikke nævnes, men som er udkommet i anden udgave, og hvis første udgave i sin tid ligeledes blev tilsendt modtageren. Det må m.a.o. dreje sig om anden udgave af <hi xml:id="idfba3f346-428d-4638-92c2-5fc69b7f65ac" rendition="#ita">Kjerlighedens Gjerninger</hi> fra april 1852.</p>
+          <p xml:id="id183f8354-2ab3-4ee9-8024-b77cde8539ab" rendition="#ind">De tre sidste breve fra SK, <ref xml:id="id96cd0224-d001-4b8a-a31e-7079a8174348" target="../B241/txt.xml#n256" type="lettersAndDedications" n="256">Brev 256</ref>-258, har ukendte modtagere og lader sig ikke nærmere datere. Af disse er <ref xml:id="id8cb258fc-d53c-45c2-aa34-d6ad9788e1c1" target="../B241/txt.xml#n257" type="lettersAndDedications" n="257">Brev 257</ref> muligvis en kladde.<note xml:id="id81a0c3f5-b75f-4df5-8a2e-a3eac8b889c1"><p xml:id="id78bf2853-b32d-45cc-b9d3-201df4a5e213">På versosiden af <ref xml:id="id7daf00e2-1a86-4d90-bd7b-6d6b27b87f3a" target="../B241/txt.xml#n257" type="lettersAndDedications" n="257">Brev 257</ref> læser man initialerne »M. H.«, men læsningen er usikker, og det er også yderst usikkert, om det er SK, der har skrevet dem.</p></note></p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

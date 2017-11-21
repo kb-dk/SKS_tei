@@ -1,408 +1,536 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE kn1 SYSTEM "http://sks.dk/kn1/kn1.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5">
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Journalen KK</title>
-     
-     <title type="short">KK</title>
-     
-  <author>
-   <name>Niels Jørgen Cappelørn</name><name>Carl Henrik Koch</name>
-  </author>
- 
-  <respStmt>
-   <resp>udgivet af</resp>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Jette Knudsen</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name><name>Kim Ravn</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2001</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K18</biblScope>
-     <biblScope unit="file">http://sks.dk/kk/ekom.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition><!--spaced out, in SKS rendered italic--><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition><rendition xml:id="lineHight1" scheme="css">line-height:150%</rendition><rendition xml:id="lineHight2" scheme="css">line-height:200%</rendition><rendition xml:id="size1" scheme="css">font-size: 120%</rendition><rendition xml:id="size-1" scheme="css">font-size: 83%</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20060529">Kierkegaard Normalformat vers.1, <bibl><idno type="version">1.1</idno>, <biblScope unit="file">http://sks.dk/kk/ekom.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="idb1151350-51c7-4e9a-9704-de903a4e75bb">
+    <fileDesc xml:id="id096f6a47-e869-40e0-b3b0-b4e2c84f9566">
+      <titleStmt xml:id="idad058a28-fa57-4f43-ba13-3ab6f449051c">
+        <title xml:id="id26c4ec86-40ff-4e48-bdfb-cc49626eee9d" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="idd63f8e35-b06c-4fb4-bb38-3610ff6e717e">Journalen KK</title>
+        <title xml:id="idfbeec202-e63e-45dd-a136-2dfd319f5f2c" type="short">KK</title>
+        <author xml:id="id7c83bdaa-563d-4fb5-8cac-494981a60f53">
+          <name xml:id="id7f053b9c-b120-48c4-aa39-a9492bfff6ab">Niels Jørgen Cappelørn</name>
+          <name xml:id="idd2a66b19-e88f-491b-82ba-c1f9a4e1a49e">Carl Henrik Koch</name>
+        </author>
+        <respStmt xml:id="ida8a9e586-d8cc-4e7c-9b21-f58e380a6adf">
+          <resp xml:id="ida555272a-b514-4d3f-9e0d-9f90ca70916c">udgivet af</resp>
+          <name xml:id="idde475774-21d8-4ce4-a193-99a33b0eb3ef">Niels Jørgen Cappelørn</name>
+          <name xml:id="id14cbb3b0-df9f-46b0-ae5a-b4c9668cbfe0">Joakim Garff</name>
+          <name xml:id="idc18d59c9-aac0-49e1-a9ad-a692c735d611">Johnny Kondrup</name>
+          <name xml:id="id1bc67c67-5292-454d-b76b-35de54608912">Jette Knudsen</name>
+        </respStmt>
+        <respStmt xml:id="id60223ea9-0a1d-4849-b742-b308ec6ff0b7">
+          <resp xml:id="id57441ddc-f480-4cab-a451-98d527499e5d">elektronisk redigeret af</resp>
+          <name xml:id="id0238e1af-4124-4efb-8714-1e0b1b28d8fe">Karsten Kynde</name>
+          <name xml:id="id0e94c972-333e-4a17-9b7b-68cb6777e866">Kim Ravn</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="idf3fcd8be-b526-4f10-88a6-fa18773a6d75">
+        <authority xml:id="id9dd109f8-d2af-4349-82bf-b0234b12f5e3">Søren Kierkegaard Forskningscenteret 2001</authority>
+        <availability xml:id="idc07c9377-a13e-4c60-a525-56eded5fe545" status="restricted">
+          <p xml:id="idbf1a9c2f-c996-4592-b464-b1512a7210e6">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="idff6d6f5f-b1b7-45cb-b771-307052176867">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="idcd6e2f8a-b469-40e6-bfb7-df14cc1bc123" unit="volume">K18</biblScope>
+        <biblScope xml:id="id151fb8d1-1de5-4ab9-8617-2bc70e2b39ef" unit="file">http://sks.dk/kk/ekom.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id445833df-ca12-410b-9596-ae25c3cde983">
+        <bibl xml:id="idd03d4c03-ad05-4c43-b015-91fd86ad13b4" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="idccebf3bc-dcdd-42f9-9495-296933389f54">
+      <tagsDecl xml:id="id144863ed-9146-4753-a278-bc22a1d18c7f">
+        <rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition>
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition>
+        <rendition xml:id="lineHight1" scheme="css">line-height:150%</rendition>
+        <rendition xml:id="lineHight2" scheme="css">line-height:200%</rendition>
+        <rendition xml:id="size1" scheme="css">font-size: 120%</rendition>
+        <rendition xml:id="size-1" scheme="css">font-size: 83%</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id5a95b9c9-eaf7-40d0-b61e-155c421de72e">
+      <change xml:id="id79fd5005-d40a-498d-81b5-0612c1994f37">Transformed to TEI by style sheet <bibl xml:id="idf0e86ca2-3a4c-4274-baf3-b69ff593e912" type="file">kn12tei.xsl</bibl> version <idno xml:id="idfa4e2ab5-3123-4246-988f-96c1333e26eb" type="version">1.9</idno> as of <date xml:id="id2c364a08-c5c1-41f2-9521-64db87d5df16">2017-02-21</date> by <name xml:id="id21305982-4a11-4582-85f9-aa3aa9341394">Karsten Kynde</name>, <orgName xml:id="id685fecf0-92a8-48e2-af17-05a96236ed3d">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="ide776488c-a613-402e-9956-b239f865039f">København</placeName></change>
+      <change xml:id="idf600bea9-750b-4149-b161-b0b289a447eb" when="20060529">Kierkegaard Normalformat vers.1, <bibl xml:id="ided9a3f50-21ee-4186-b87d-21cd8b0b72cc"><idno xml:id="ideb4d40da-cf29-489e-ba96-817185cb32fa" type="version">1.1</idno>, <biblScope xml:id="id8dfee01c-ceda-4f47-aca4-fb7cc73b9d46" unit="file">http://sks.dk/kk/ekom.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <!-- Et par spoergsmaal: 1. Skal indryk ikke markeres? 2. Skal skillelinjer ikke markeres? 3. Hvordan skal vi skrive trykfejlen ved Rosenkranz paragr. 134 (der staar "103" i st. f. "301")? 4. Hvordan rettes trykfejlen "Eubianern" i st. f. "Eusebianern" i Moehlers kap. 4? 5. Skal "die katholische Bischoefe" i Moehlers kap. 6 rettes til "die katholischen Bischoefe"? -->
- <text type="commentary" subtype="jp"><body><div>
-  <note type="commentary" xml:id="kk-93-e" subtype="e" n="338,1"><label><hi rendition="#bol"><hi rendition="#ita">Christliche Polemik,</hi> indholdsfortegnelse, side XIII-XVI</hi></label>
-   <p/>
-   <p>               <hi rendition="#size1">Inhaltsanzeige.</hi></p>
-   <p><hi rendition="#spa">Einleitung.</hi><seg type="leaders"/>Seite 1-34</p>
-   <p>               <hi rendition="#size-1">1. Begriff der Polemik.</hi></p>
-   <p>               <hi rendition="#size-1">2. Quellen der Polemik.</hi></p>
-   <p>               <hi rendition="#size-1">3. Verhältniß zu den übrigen theologischen Disziplinen.</hi></p>
-   <p>               <hi rendition="#size-1">4. Form der Polemik.</hi></p>
-   <p>               <hi rendition="#size-1">5. Literatur der Polemik.</hi></p>
-   <p>Allgemeine Polemik.<seg type="leaders"/><hi rendition="#size1">35-64</hi></p>
-   <p>          <hi rendition="#spa">Erstes Kapitel.</hi> Vom kirchlichen Irrthum überhaupt<seg type="leaders"/>35-53</p>
-   <p>               <hi rendition="#size-1">1. Vom Wesen des kirchlichen Irrthums.</hi></p>
-   <p>               <hi rendition="#size-1">2. Von der Entstehung des kirchlichen Irrthums.</hi></p>
-   <p>               <hi rendition="#size-1">3. Von der Wirkung des kirchlichen Irrthums.</hi></p>
-   <p>          <hi rendition="#spa">Zweites Kapitel.</hi> Von der Bestreitung des kirchlichen Irrthums<seg type="leaders"/>53-64</p>
-   <p>               <hi rendition="#size-1">1. Von der Nothwendigkeit dieser Bestreitung.</hi></p>
-   <p>               <hi rendition="#size-1">2. Von denen, die zu dieser Bestreitung berufen sind.</hi></p>
-   <p>               <hi rendition="#size-1">3. Von den Hauptformen der Bestreitung.</hi></p>
-   <p>Besondere Polemik<seg type="leaders"/><hi rendition="#size1">65-364</hi></p>
-   <p>     <hi rendition="#spa">Erster Abschnitt.</hi> Vom Indifferentismus<seg type="leaders"/>65-110</p>
-   <p>               <hi rendition="#size-1">1. Wesen des Indifferentismus.</hi></p>
-   <p>               <hi rendition="#size-1">2. Geschichtliches Hervortreten des Indifferentismus.</hi></p>
-   <p>               <hi rendition="#size-1">3. Hauptformen desselben.</hi></p>
-   <p>          <hi rendition="#spa">Erstes Kapitel.</hi> Vom Naturalismus<seg type="leaders"/>74-100</p>
-   <p>               <hi rendition="#size-1">1. Unterschied des Naturalismus in der Kirche vom antichristlichen.</hi></p>
-   <p>               <hi rendition="#size-1">2. Wesen des Naturalismus.</hi></p>
-   <p>               <hi rendition="#size-1">3. Indifferentismus des Naturalismus gegen Wunder, Geheimnisse und heilige Schriften.</hi></p>
-   <p>               <hi rendition="#size-1">4. Naturalistische Lehre von Christus.</hi></p>
-   <p>          <hi rendition="#spa">Zweites Kapitel.</hi> Vom Mythologismus<seg type="leaders"/>100-110</p>
-   <p>               <hi rendition="#size-1">1. Wesen des Mythologismus.</hi></p>
-   <p>               <hi rendition="#size-1">2. Ansicht des Mythologismus von der Offenbarung und Erlösung.</hi></p>
-   <p>     <hi rendition="#spa">Zweiter Abschnitt.</hi> Vom Literalismus<seg type="leaders"/>111-161</p>
-   <p>               <hi rendition="#size-1">[1.] Wesen des Literalismus.</hi></p>
-   <p>               <hi rendition="#size-1">2. Geschichtliche Entwickelung des Literalismus.</hi></p>
-   <p>               <hi rendition="#size-1">3. Hauptformen desselben.</hi></p>
-   <p>          <hi rendition="#spa">Erstes Kapitel.</hi> Vom Ergismus<seg type="leaders"/>117-133</p>
-   <p>               <hi rendition="#size-1">1. Wesen des Ergismus.</hi></p>
-   <p>               <hi rendition="#size-1">2. Lehre des Ergismus vom Glauben.</hi></p>
-   <p>               <hi rendition="#size-1">3. Begünstigung gewisser Werke im Ergismus.</hi></p>
-   <p>          <hi rendition="#spa">Zweites Kapitel.</hi> Vom Orthodoxismus<seg type="leaders"/>134-161</p>
-   <p>               <hi rendition="#size-1">1. Wesen des Orthodoxismus.</hi></p>
-   <p>               <hi rendition="#size-1">2. Falsche Vorstellung des Orthodoxismus vom Verhältnisse der Schrift zu den kirchlichen Bekenntnißschriften.</hi></p>
-   <p>               <hi rendition="#size-1">3. Einzelne Auffassungsweisen des Orthodoxismus.</hi></p>
-   <p>     <hi rendition="#spa">Dritter Abschnitt.</hi> Vom Spiritualismus.<seg type="leaders"/>162-281</p>
-   <p>               <hi rendition="#size-1">1. Wesen des Spiritualismus.</hi></p>
-   <p>               <hi rendition="#size-1">2. Geschichtliches Hervortreten des Spiritualismus.</hi></p>
-   <p>               <hi rendition="#size-1">3. Hauptformen desselben.</hi></p>
-   <p>          <hi rendition="#spa">Erstes Kapitel.</hi> Vom Razionalismus<seg type="leaders"/>168-249</p>
-   <p>               <hi rendition="#size-1">1. Wesen des Razionalismus.</hi></p>
-   <p>               <hi rendition="#size-1">2. Verhalten des Razionalismus gegen das Wort Christi.</hi></p>
-   <p>               <hi rendition="#size-1">3. Leugnung der Erbsünde.</hi></p>
-   <p>               <hi rendition="#size-1">4. Leugnung der Gottheit Christi und der objektiven Versöhnung.</hi></p>
-   <p>               <hi rendition="#size-1">5. Der Razionalismus untergräbt die kirchliche Gemeinschaft.</hi></p>
-   <p>          <hi rendition="#spa">Zweites Kapitel.</hi> Vom Gnostizismus.<seg type="leaders"/>249-281</p>
-   <p>               <hi rendition="#size-1">1. Wesen des Gnostizismus.</hi></p>
-   <p>               <hi rendition="#size-1">2. Falscher Begriff des christlichen Geisteslebens im Gnostizismus.</hi></p>
-   <p>               <hi rendition="#size-1">3. Die Erlösung im Gnostizismus nur Selbstentwickelung der Welt.</hi></p>
-   <p>     <hi rendition="#spa">Vierter Abschnitt.</hi> Vom Separatismus<seg type="leaders"/>282-316</p>
-   <p>               <hi rendition="#size-1">1. Wesen und geschichtliche Erscheinung des Separatismus.</hi></p>
-   <p>               <hi rendition="#size-1">2. Hauptformen desselben.</hi></p>
-   <p>          <hi rendition="#spa">Erstes Kapitel.</hi> Vom Mystizismus<seg type="leaders"/>283-303</p>
-   <p>               <hi rendition="#size-1">1. Wesen des Mystizismus.</hi></p>
-   <p>               <hi rendition="#size-1">2. Verhältniß des Mystizismus zum Ansehn der h. Schrift.</hi></p>
-   <p>               <hi rendition="#size-1">3. Sittliche Verirrungen des Mystizismus.</hi></p>
-   <p>          <hi rendition="#spa">Zweites Kapitel.</hi> Vom Pietismus<seg type="leaders"/>304-316</p>
-   <p>               <hi rendition="#size-1">1. Wesen des Pietismus.</hi></p>
-   <p>               <hi rendition="#size-1">2. Falsche Auffassung des Verhältnisses der Frömmigkeit zum Glauben.</hi></p>
-   <p>               <hi rendition="#size-1">3. Beengender Karakter der Gemeinschaft im Pietismus.</hi></p>
-   <p>     <hi rendition="#spa">Fünfter Abschnitt.</hi> Vom Theokratismus<seg type="leaders"/>317-364</p>
-   <p>               <hi rendition="#size-1">1. Wesen und geschichtliche Erscheinung des Theokratismus.</hi></p>
-   <p>               <hi rendition="#size-1">2. Hauptformen desselben.</hi></p>
-   <p>          <hi rendition="#spa">Erstes Kapitel.</hi> Vom Hierarchismus<seg type="leaders"/>320-345</p>
-   <p>               <hi rendition="#size-1">1. Wesen des Hierarchismus.</hi></p>
-   <p>               <hi rendition="#size-1">2. Lehre von einem zu wiederholenden Opfer.</hi></p>
-   <p>               <hi rendition="#size-1">3. Vermischung kirchlicher und göttlicher Strafen.</hi></p>
-   <p>          <hi rendition="#spa">Zweites Kapitel.</hi> Vom Cäsareopapismus<seg type="leaders"/>345-364</p>
-   <p>               <hi rendition="#size-1">1. Wesen des Cäsareopapismus.</hi></p>
-   <p>               <hi rendition="#size-1">2. Er hemmt die Entwickelung der kirchlichen Verfassung.</hi></p>
-   <p>               <hi rendition="#size-1">3. Er lähmt die Hauptthätigkeiten der Kirche.</hi></p>
-   <p>Register<seg type="leaders"/>365</p>
-  </note>
-  <note type="commentary" xml:id="kk-160-e" subtype="e" n="343,1"><label><hi rendition="#bol"><hi rendition="#ita">Encyklopädie,</hi> indholdsfortegnelse, side XXXV-XLIV</hi></label>
-   <p/>
-   <p><hi rendition="#size1"><hi rendition="#spa">Inhaltsanzeige.</hi></hi></p>
-   <p>Vorerinnerung<seg type="leaders"/><hi rendition="#size-1">Seite <hi rendition="#ant">VII</hi></hi></p>
-   <p>     Erster Theil.</p>
-   <p>     <hi rendition="#spa">Die speculative Theologie.</hi></p>
-   <p><hi rendition="#size-1">Eintheilung. §. 1<seg type="leaders"/>– 3</hi></p>
-   <p>          Erste Abtheilung der speculativen Theologie.</p>
-   <p>          <hi rendition="#spa">Die Dogmatik.</hi></p>
-   <p><hi rendition="#size-1">Eintheilung. 2<seg type="leaders"/>– 4</hi></p>
-   <p>               Erster Abschnitt der Dogmatik.</p>
-   <p>               <hi rendition="#spa">Die Lehre von Gott.</hi></p>
-   <p><hi rendition="#size-1">Eintheilung. 3<seg type="leaders"/>– 4</hi></p>
-   <p>                    <hi rendition="#size-1"><hi rendition="#spa">Erstes Capitel.</hi></hi></p>
-   <p>                    <hi rendition="#spa">Die absolute Substantialität.</hi></p>
-   <p><hi rendition="#size-1">Anfang. 4<seg type="leaders"/>– 5</hi></p>
-   <p><hi rendition="#size-1">Die Beweise für das Dasein Gottes. 5<seg type="leaders"/>– 6</hi></p>
-   <p><hi rendition="#size-1">Der Name Gottes. 6<seg type="leaders"/>– 10</hi></p>
-   <p><hi rendition="#size-1">Substanz. 7<seg type="leaders"/>– 12</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Existenz der Substanz. 8<seg type="leaders"/>– 13</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Ewigkeit der Substanz. 9<seg type="leaders"/>– 14</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Macht der Substanz. 10<seg type="leaders"/>– 16</hi></p>
-   <p>                    <hi rendition="#size-1"><hi rendition="#spa">Zweites Capitel.</hi></hi></p>
-   <p>                    <hi rendition="#spa">Die absolute Causalität.</hi></p>
-   <p><hi rendition="#size-1">Begriff derselben. 11<seg type="leaders"/>– 18</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Absolute Möglichkeit. 12<seg type="leaders"/>– 19</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Absolute Wirklichkeit. 13<seg type="leaders"/>– 20</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Absolute Nothwendigkeit. 14<seg type="leaders"/>– 21</hi></p>
-   <p>                    <hi rendition="#size-1"><hi rendition="#spa">Drittes Capitel.</hi></hi></p>
-   <p>                    <hi rendition="#spa">Die absolute Persönlichkeit.</hi></p>
-   <p><hi rendition="#size-1">Die absolute Subjectivität. 15<seg type="leaders"/>– 23</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Absolutes Wissen. 16<seg type="leaders"/>– 25</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Absolutes Wollen. 17<seg type="leaders"/>– 25</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Absolute Seligkeit. 18<seg type="leaders"/>– 26</hi></p>
-   <p>               Zweiter Abschnitt der Dogmatik.</p>
-   <p>               <hi rendition="#spa">Die Lehre von der Welt.</hi></p>
-   <p><hi rendition="#size-1">Offenbarung. 19<seg type="leaders"/>– 27</hi></p>
-   <p><hi rendition="#size-1">Die Welt als solche. 20<seg type="leaders"/>– 29</hi></p>
-   <p><hi rendition="#size-1">Die Welt im Unterschiede von sich. 21<seg type="leaders"/>– 30</hi></p>
-   <p>               Dritter Abschnitt der Dogmatik.</p>
-   <p>               <hi rendition="#spa">Die Lehre von der Religion.</hi></p>
-   <p><hi rendition="#size-1">Eintheilung. 22<seg type="leaders"/>– 32</hi></p>
-   <p>                    <hi rendition="#size-1"><hi rendition="#spa">Erstes Capitel.</hi></hi></p>
-   <p>                    <hi rendition="#spa">Die Anthropologie.</hi></p>
-   <p><hi rendition="#size-1">Die unmittelbare Einheit Gottes mit dem Menschen. 23<seg type="leaders"/>– 33</hi></p>
-   <p><hi rendition="#size-1">Der Unterschied Gottes von dem Menschen. 24<seg type="leaders"/>– 34</hi></p>
-   <p><hi rendition="#size-1">Die Entzweiung des Menschen mit Gott. 25<seg type="leaders"/>– 35</hi></p>
-   <p>                    <hi rendition="#size-1"><hi rendition="#spa">Zweites Capitel.</hi></hi></p>
-   <p>                    <hi rendition="#spa">Die Christologie.</hi></p>
-   <p><hi rendition="#size-1">Die Menschwerdung Gottes. 26<seg type="leaders"/>– 36</hi></p>
-   <p><hi rendition="#size-1">Der Gottmensch. 27<seg type="leaders"/>– 38</hi></p>
-   <p><hi rendition="#size-1">Die Thätigkeit des Gottmenschen. 28<seg type="leaders"/>– 40</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Prophet<seg type="leaders"/>– 40</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Priester<seg type="leaders"/>– 41</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">c.</hi> König<seg type="leaders"/>– 42</hi></p>
-   <p>                    <hi rendition="#size-1"><hi rendition="#spa">Drittes Capitel.</hi></hi></p>
-   <p>                    <hi rendition="#spa">Die Lehre von der Kirche.</hi></p>
-   <p><hi rendition="#size-1">Uebersicht. 29.<seg type="leaders"/>– 43</hi></p>
-   <p>    <hi rendition="#size-1">1) Die Gemeine. 30<seg type="leaders"/>– 44</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Berufung<seg type="leaders"/>– 45</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Bekehrung<seg type="leaders"/>– 45</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Heiligung<seg type="leaders"/>– 46</hi></p>
-   <p>    <hi rendition="#size-1">2) Die Form der Wirksamkeit des Geistes der Gemeine. 31<seg type="leaders"/>– 47</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Das Wort Gottes<seg type="leaders"/>– 48</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Taufe<seg type="leaders"/>– 48</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Abendmahl<seg type="leaders"/>– 50</hi></p>
-   <p>    <hi rendition="#size-1">3) Die Entwicklung der Kirche. 32<seg type="leaders"/>– 52</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Die Eine<seg type="leaders"/>– 53</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Die heilige<seg type="leaders"/>– 54</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Die siegende<seg type="leaders"/>– 55</hi></p>
-   <p>          Zweite Abtheilung der speculativen Theologie.</p>
-   <p>          <hi rendition="#spa">Die Ethik.</hi></p>
-   <p><hi rendition="#size-1">Eintheilung. 33<seg type="leaders"/>– 57</hi></p>
-   <p>               Erster Abschnitt der Ethik.</p>
-   <p>               <hi rendition="#spa">Das Gute.</hi></p>
-   <p><hi rendition="#size-1">Uebersicht. 34<seg type="leaders"/>– 57</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">I.</hi> Die Idee des Guten. 35<seg type="leaders"/>– 58</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">II.</hi> Das Gute als Gesetz für den Willen. 36<seg type="leaders"/>– 58</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">III.</hi> Der menschliche Wille. 37<seg type="leaders"/>– 59</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Der Wille an sich. 38<seg type="leaders"/>– 60</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Die Individualität. 39<seg type="leaders"/>– 63</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Die Persönlichkeit. 40<seg type="leaders"/>– 64</hi></p>
-   <p>               Zweiter Abschnitt der Ethik.</p>
-   <p>               <hi rendition="#spa">Das Böse.</hi></p>
-   <p><hi rendition="#size-1">Uebersicht. 41<seg type="leaders"/>– 66</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">I.</hi> Die Glückseligkeit. 42<seg type="leaders"/>– 69</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">II.</hi> Die Willkür. 43<seg type="leaders"/>72</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">III.</hi> Der böse Wille. 44<seg type="leaders"/>– 74</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Begriff des Bösen überhaupt. 45<seg type="leaders"/>– 75</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Der Widerspruch im Bösen. 46<seg type="leaders"/>– 76</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Die Vernichtung des Bösen. 47<seg type="leaders"/>– 81</hi></p>
-   <p>            <hi rendition="#size-1">α. Die Erkenntniß des Bösen<seg type="leaders"/>– 82</hi></p>
-   <p>            <hi rendition="#size-1">β. Strafe und Schuld des Bösen<seg type="leaders"/>– 83</hi></p>
-   <p>            <hi rendition="#size-1">γ. Die Vergebung der Schuld des Bösen<seg type="leaders"/>– 85</hi></p>
-   <p>               Dritter Abschnitt der Ethik.</p>
-   <p>               <hi rendition="#spa">Die Freiheit.</hi></p>
-   <p><hi rendition="#size-1">Uebersicht. 48<seg type="leaders"/>– 88</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">I.</hi> Die Pflicht. 49<seg type="leaders"/>– 89</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">II.</hi> Das Gewissen.</hi></p>
-   <p>        <hi rendition="#size-1">Uebergang. 50<seg type="leaders"/>– 92</hi></p>
-   <p>            <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Der Vorsatz. 51<seg type="leaders"/>– 92</hi></p>
-   <p>            <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Die Absicht. 52<seg type="leaders"/>– 93</hi></p>
-   <p>            <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Die verschiedenen Gestalten des Gewissens. 53<seg type="leaders"/>– 93</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">III.</hi> Das System der Tugenden. 54<seg type="leaders"/>– 97</hi></p>
-   <p>     Zweiter Theil.</p>
-   <p>     <hi rendition="#spa">Die historische Theologie.</hi></p>
-   <p><hi rendition="#size-1">Eintheilung. 55<seg type="leaders"/>– 103</hi></p>
-   <p>          Erste Abtheilung der historischen Theologie.</p>
-   <p>          <hi rendition="#spa">Die biblische Theologie.</hi></p>
-   <p><hi rendition="#size-1">Eintheilung. 56<seg type="leaders"/>– 104</hi></p>
-   <p>               Erster Abschnitt.</p>
-   <p>               <hi rendition="#spa">Die Kanonik.</hi></p>
-   <p><hi rendition="#size-1">Eintheilung. 57<seg type="leaders"/>– 104</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">I.</hi> Die Theopneustie der Schrift. 58<seg type="leaders"/>– 105</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">II.</hi> Die Bildung des Kanons. 59<seg type="leaders"/>108</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">III.</hi> Die Glaubwürdigkeit der biblischen Bücher. 60<seg type="leaders"/>– 113</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Authenticität<seg type="leaders"/>– 113</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Integrität<seg type="leaders"/>– 116</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Axiopistie<seg type="leaders"/>– 117</hi></p>
-   <p>               Zweiter Abschnitt.</p>
-   <p>               <hi rendition="#spa">Die Kritik.</hi> 61<seg type="leaders"/><hi rendition="#size-1">– 119</hi></p>
-   <p>               Dritter Abschnitt.</p>
-   <p>               <hi rendition="#spa">Die Exegetik.</hi></p>
-   <p><hi rendition="#size-1">Eintheilung. 62<seg type="leaders"/>– 122</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">I.</hi> Die Hermeneutik. 63<seg type="leaders"/>– 124</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">II.</hi> Die Exegese. 64<seg type="leaders"/>131</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">III.</hi> Die biblische Dogmatik.</hi></p>
-   <p>        <hi rendition="#size-1">Uebersicht. 65<seg type="leaders"/>– 132</hi></p>
-   <p>                    <hi rendition="#size-1"><hi rendition="#spa">Erstes Capitel.</hi></hi></p>
-   <p>                    <hi rendition="#spa">Die Dogmatik des Alten Testamentes. </hi><hi rendition="#size-1">66.<seg type="leaders"/>– 136</hi></p>
-   <p>                    <hi rendition="#size-1"><hi rendition="#spa">Zweites Capitel.</hi></hi></p>
-   <p>                    <hi rendition="#spa">Die Dogmatik der Apokryphen. </hi><hi rendition="#size-1">67.<seg type="leaders"/>– 142</hi></p>
-   <p>                    <hi rendition="#size-1"><hi rendition="#spa">Drittes Capitel.</hi></hi></p>
-   <p>                    <hi rendition="#spa">Die Dogmatik des Neuen Testamentes.</hi></p>
-   <p><hi rendition="#size-1">Einleitung. 68<seg type="leaders"/>– 143</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">A.</hi> Die historischen Schriften des Neuen Testamentes.</hi></p>
-   <p>        <hi rendition="#size-1">Uebersicht. 69<seg type="leaders"/>– 146</hi></p>
-   <p>            <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Die Geschichte Christi. 70.<seg type="leaders"/>– 149</hi></p>
-   <p>                <hi rendition="#size-1">α. Christi Jugend. 71<seg type="leaders"/>– 151</hi></p>
-   <p>                <hi rendition="#size-1">β. Christi Lehre und Wunder. 72<seg type="leaders"/>– 152</hi></p>
-   <p>                <hi rendition="#size-1">γ. Christi Tod. 73<seg type="leaders"/>– 162</hi></p>
-   <p>            <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Die Geschichte der Apostel. 74<seg type="leaders"/>– 167</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">B.</hi> Die didaktischen Schriften des Neuen Testamentes. 75<seg type="leaders"/>– 169</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">C.</hi> Die Weissagung des Neuen Testamentes. 76<seg type="leaders"/>– 174</hi></p>
-   <p>          Zweite Abtheilung der historischen Theologie.</p>
-   <p>          <hi rendition="#spa">Die kirchenhistorische Theologie.</hi></p>
-   <p><hi rendition="#size-1">Eintheilung. 77<seg type="leaders"/>– 176</hi></p>
-   <p>               Erster Abschnitt.</p>
-   <p>               <hi rendition="#spa">Die politische Geschichte der Kirche.</hi></p>
-   <p><hi rendition="#size-1">Eintheilung. 78<seg type="leaders"/>– 177</hi></p>
-   <p>                    <hi rendition="#size-1"><hi rendition="#spa">Erste Epoche.</hi></hi></p>
-   <p>                    <hi rendition="#spa">Die Geschichte der Griechisch-Morgenländischen Kirche.</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Kampf der Christlichen Kirche um ihre Anerkennung vom Römischen Staat. 79<seg type="leaders"/>– 179</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Entzweiung der Kirche in sich selbst durch den Gegensatz der Orthodoxie und Heterodoxie. 80<seg type="leaders"/>– 181</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Identität des Politischen und Kirchlichen. 81<seg type="leaders"/>– 183</hi></p>
-   <p>                    <hi rendition="#size-1"><hi rendition="#spa">Zweite Epoche.</hi></hi></p>
-   <p>                    <hi rendition="#spa">Die Geschichte der Römisch-Abendländischen Kirche.</hi></p>
-   <p><hi rendition="#size-1">Uebersicht. 82<seg type="leaders"/>– 186</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Kampf der Römischen Kirche um die Hegemonie in der Kirche. 83<seg type="leaders"/>– 187</hi></p>
-   <p>        <hi rendition="#size-1">α. Roms unmittelbares Verhältniß zur Welt<seg type="leaders"/>– 187</hi></p>
-   <p>        <hi rendition="#size-1">β. Erwerbung des Kirchenstaates zum Grundbesitz<seg type="leaders"/>– 191</hi></p>
-   <p>        <hi rendition="#size-1">γ. Tradition<seg type="leaders"/>– 192</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Die Entzweiung der Römischen Kirche mit den germanischen Staaten. 84<seg type="leaders"/>– 194</hi></p>
-   <p>        <hi rendition="#size-1">α. Das Kanonische Recht. 85<seg type="leaders"/>– 194</hi></p>
-   <p>        <hi rendition="#size-1">β. Der Kampf um die Investitur. 86<seg type="leaders"/>– 197</hi></p>
-   <p>        <hi rendition="#size-1">γ. Das Uebergewicht der Hierarchie über den Staat. 87<seg type="leaders"/>– 200</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">C.</hi> Die Entzweiung der Hierarchie mit sich selbst. 88<seg type="leaders"/>– 202</hi></p>
-   <p>        <hi rendition="#size-1">α. Die Bettelmönche. 89<seg type="leaders"/>– 203</hi></p>
-   <p>        <hi rendition="#size-1">β. Das Schisma. 90<seg type="leaders"/>– 206</hi></p>
-   <p>        <hi rendition="#size-1">γ. Auflösung der unbedingten päpstlichen Autorität durch die allgemeinen Kirchenversammlungen. 91<seg type="leaders"/>– 207</hi></p>
-   <p>                    <hi rendition="#size-1"><hi rendition="#spa">Dritte Epoche.</hi></hi></p>
-   <p>                    <hi rendition="#spa">Die Geschichte der Protestantischen Kirche.</hi></p>
-   <p><hi rendition="#size-1">Uebersicht. 92<seg type="leaders"/>– 209</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Begriff der Protestantischen Kirche. 93<seg type="leaders"/>– 212</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Kampf des Protestantismus mit dem Katholicismus um seine politische Anerkennung. 94<seg type="leaders"/>– 214</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Neutralisirung des Gegensatzes in der Protestantischen Kirche als der Reformirten und Lutherschen zur Evangelischen. 95<seg type="leaders"/>– 219</hi></p>
-   <p>               Zweiter Abschnitt.</p>
-   <p>               <hi rendition="#spa">Die kirchliche Archäologie.</hi></p>
-   <p><hi rendition="#size-1">Eintheilung. 96<seg type="leaders"/>– 221</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">I.</hi> Die Epoche des substantiellen Gefühls. Begriff derselben. 97<seg type="leaders"/>– 223</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Die heiligen Handlungen. 98<seg type="leaders"/>– 224</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Die heiligen Zeiten. 99<seg type="leaders"/>– 225</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Die heilige Kunst. 100<seg type="leaders"/>– 226</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">II.</hi> Die Epoche der reinen Objectivität. Begriff derselben. 101<seg type="leaders"/>– 230</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Die heiligen Handlungen. 102<seg type="leaders"/>– 231</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Die heiligen Zeiten. 103<seg type="leaders"/>– 235</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Die heilige Kunst. 104<seg type="leaders"/>– 236</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">III.</hi> Die Epoche der ideellen Objectivität. Begriff derselben. 105<seg type="leaders"/>– 240</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Die heiligen Handlungen. 106<seg type="leaders"/>– 241</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Die heiligen Zeiten. 107<seg type="leaders"/>– 242</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Die heilige Kunst. 108<seg type="leaders"/>– 243</hi></p>
-   <p>               Dritter Abschnitt.</p>
-   <p>               <hi rendition="#spa">Die dogmatische Geschichte der Kirche.</hi></p>
-   <p><hi rendition="#size-1">Einleitung. 109<seg type="leaders"/>– 246</hi></p>
-   <p>                    <hi rendition="#size-1"><hi rendition="#spa">Erstes Capitel.</hi></hi></p>
-   <p>                    <hi rendition="#spa">Die Periode der analytischen Erkenntniß.</hi></p>
-   <p><hi rendition="#size-1">Uebersicht. 110<seg type="leaders"/>– 250</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">I.</hi> Die Trinität.</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Die Ueberwindung der Orientalischen Weltanschauung. 111<seg type="leaders"/>– 251</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Die Ueberwindung der Hellenischen Weltanschauung. 112<seg type="leaders"/>– 258</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Das Nicänische Symbolum. 113<seg type="leaders"/>– 263</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">II.</hi> Das Verhältniß der göttlichen und menschlichen Natur. Zusammenhang mit dem Vorigen. 114<seg type="leaders"/>– 266</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Der Nestorianismus. 115<seg type="leaders"/>– 268</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Der Monophysitismus. 116<seg type="leaders"/>– 269</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Die Synode von Chalcedon. 117<seg type="leaders"/>– 269</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">III.</hi> Die Freiheit Gottes und die des Menschen. Uebergang. 118<seg type="leaders"/>– 270</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Augustinus. 119<seg type="leaders"/>– 273</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Pelagius. 120<seg type="leaders"/>– 275</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Der Semipelagianismus. 121<seg type="leaders"/>– 275</hi></p>
-   <p>                    <hi rendition="#size-1"><hi rendition="#spa">Zweites Capitel.</hi></hi></p>
-   <p>                    <hi rendition="#spa">Die Periode der synthetischen Erkenntniß.</hi></p>
-   <p><hi rendition="#size-1">Uebersicht. 122<seg type="leaders"/>– 277</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">I.</hi> Der Begriff der theologischen Wissenschaft. Trennung der Lateinischen Theologie von der Griechischen. 123.<seg type="leaders"/>– 278</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Die Opfertheorie des Abendmahls. 124<seg type="leaders"/>– 280</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Glauben und Wissen. 125<seg type="leaders"/>– 282</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Der Begriff. 126<seg type="leaders"/>– 286</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">II.</hi> Die kirchliche Dogmatik. Uebergang. 127<seg type="leaders"/>– 288</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Der <hi rendition="#ant">Magister Sententiarum.</hi> 128<seg type="leaders"/>– 288</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Der Islam und die Aristotelische Philosophie. 129<seg type="leaders"/>– 289</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Die Schulen der Thomisten und Scotisten. 130<seg type="leaders"/>– 290</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">III.</hi> Die Entzweiung der kirchlichen Dogmatik mit sich selbst. 131<seg type="leaders"/>– 292</hi></p>
-   <p>                    <hi rendition="#size-1"><hi rendition="#spa">Drittes Capitel.</hi></hi></p>
-   <p>                    <hi rendition="#spa">Die Periode der systematischen Erkenntniß.</hi></p>
-   <p><hi rendition="#size-1">Einleitung. 132<seg type="leaders"/>– 296</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">I.</hi> Das Princip der symbolischen Orthodoxie.</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">a.</hi> Der Katholicismus. 133<seg type="leaders"/>– 297</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">b.</hi> Die symbolischen Bücher des Protestantismus. 134<seg type="leaders"/>– 103 [fejl for 301]</hi></p>
-   <p>        <hi rendition="#size-1"><hi rendition="#ant">c.</hi> Der Supernaturalismus. 135<seg type="leaders"/>– 302</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">II.</hi> Das Princip des subjectiven Glaubens und Unglaubens. 136<seg type="leaders"/>– 304</hi></p>
-   <p>    <hi rendition="#size-1"><hi rendition="#ant">III.</hi> Die Idee der speculativen Theologie. 137<seg type="leaders"/>– 322</hi></p>
-   <p>     Dritter Theil.</p>
-   <p>     <hi rendition="#spa">Die praktische Theologie.</hi></p>
-   <p><hi rendition="#size-1">Eintheilung. 138<seg type="leaders"/>– 329</hi></p>
-   <p>          Erste Abtheilung der praktischen Theologie.</p>
-   <p>          <hi rendition="#spa">Der Kirchendienst.</hi></p>
-   <p><hi rendition="#size-1">Eintheilung. 139<seg type="leaders"/>– 330</hi></p>
-   <p>               Erster Abschnitt.</p>
-   <p>               <hi rendition="#spa">Die Katechetik.</hi> 140<seg type="leaders"/><hi rendition="#size-1">– 331</hi></p>
-   <p>               Zweiter Abschnitt.</p>
-   <p>               <hi rendition="#spa">Die Liturgik.</hi> 141<seg type="leaders"/><hi rendition="#size-1">– 336</hi></p>
-   <p>               Dritter Abschnitt.</p>
-   <p>               <hi rendition="#spa">Die Homiletik.</hi> 142<seg type="leaders"/><hi rendition="#size-1">– 343</hi></p>
-   <p>          Zweite Abtheilung der praktischen Theologie.</p>
-   <p>          <hi rendition="#spa">Das Kirchenregiment.</hi></p>
-   <p><hi rendition="#size-1">Eintheilung. 143<seg type="leaders"/>– 355</hi></p>
-   <p>               Erster Abschnitt.</p>
-   <p>               <hi rendition="#spa">Die symbolische Theologie.</hi> 144<seg type="leaders"/><hi rendition="#size-1">– 357</hi></p>
-   <p>          Zweiter Abschnitt.</p>
-   <p>          <hi rendition="#spa">Das Kirchenrecht.</hi> 145<seg type="leaders"/><hi rendition="#size-1">– 359</hi></p>
-   <p>          Dritter Abschnitt.</p>
-   <p>          <hi rendition="#spa">Die Theologie. 146</hi><seg type="leaders"/><hi rendition="#size-1">– 364</hi></p>
-  </note>
-  <note type="commentary" xml:id="kk-270-e" subtype="e" n="353,1"><label><hi rendition="#bol"><hi rendition="#ita">Athanasius der Grosse,</hi> indholdsoversigt, s. XI-XIV</hi></label>
-   <p/>
-   <p><hi rendition="#size1"><hi rendition="#spa">Inhalt.</hi></hi></p>
-   <p><hi rendition="#spa">Erstes Buch.</hi></p>
-   <p><hi rendition="#size-1">Was die ältesten Kirchenväter, die ohne Polemik nach aussen geschrieben haben, oder was Clemens von Rom, Barnabas und Hermas vom Sohne Gottes und dem heil. Geiste lehrten. Lehre der ältesten Apologeten gegen Häretiker, oder des Ignatius und Irenäus, dann der ersten Apologeten gegen Heiden und Juden, oder des Verfassers des Briefes an Diognet, des Justin, Tatian, Athanagoras und Theophilus von Antiochien über die genannten Glaubenspuncte. Betrachtungen über die Distinction des λογος ἐνδιαϑετος und πϱοφοϱιϰος. Untersuchung und Widerlegung der Behauptung Münschers u. A., daß die bisher genannten Kirchenlehrer nur eine Fleischwerdung, nicht eine Menschwerdung des Sohnes Gottes angenommen haben. Betrachtung über die häretischen Systeme dieser Zeit: sie bestätigen die katholische Lehre vom Sohne Gottes. Der Glaube des Tertullian, des Clemens von Alexandrien, des Origenes und des Dionysius von Alexandrien an die Trinität. Ueberblick der öffentlichen und Privat-Symbole.</hi></p>
-   <p><hi rendition="#spa">Zweites Buch.</hi></p>
-   <p><hi rendition="#size-1">Anfänge des heil. Athanasius. Allgemeine Schilderung seines Charakters. Sein kirchlicher Charakter. Lehre von Kirche, Schrift und Tradition. Grundsätze, die daraus für seine schriftstellerische Thätigkeit folgten. Seine Schriften vor dem Ausbruche der arianischen Irrlehre: Widerlegung des Heidenthums und Vertheidigung des Christenthums. Ursprünglicher Zustand des Menschen. Sündenfall. Was das Böse sei. Möglichkeit des Bösen. Folgen der Sünde. Erbsünde. Deduction der Naturvergötterung aus der Sünde. Wie durch die Sünde das Bewußtsein eines über die Natur erhabenen Gottes sich verlor, so auch das Bewußtsein der Verschiedenheit der menschlichen Seele vom Leib. Beweis, daß Gott von der Welt verschieden sei (Einheit Gottes) und die Seele vom Leib (Unsterblichkeit des menschlichen Geistes). Beweis der Nothwendigkeit der Menschwerdung des Logos aus der Vernunft. Wie die Erlösung Aller in Christo bewirkt wurde. Möglichkeit einer unmittelbaren Offenbarung Gottes. Der Zweck der Wunder Christi ist Darstellung der Wahrheit, daß Gott über die Natur erhaben sei. Christus ist sittliches Vorbild. Zusammenhang des Todes Christi mit dem Zwecke der Menschwerdung. Abzweckung der Auferstehung Christi. Beweis, daß Christus auferstanden und lebt, weil er geheimnißvoll fortwährend in den Seinigen wirkt: die Gottheit Christi leuchtet aus seinen göttlichen Wirkungen in der Geschichte hervor: Umgestaltung der Welt durch ihn. Nothwendigkeit der eigenen innern Erfahrung, um an ihn zu glauben. – Auftritt des Arius. Sein Charakter. Aeußere Veranlassung des durch ihn erzeugten Streites. Innerer Grund der so schnellen Verbreitung seiner Lehre. Zusammenhang aller seiner Behauptungen: er vernichtet das Wesen des Christenthums. Entwickelung seiner dialektischen und biblischen Gründe für seine Irrlehre. Diese ist dem Glauben vom Sohne Gottes, wie er sich in den ältesten Kirchenvätern findet, innerlich und wesentlich entgegengesetzt.</hi></p>
-   <p><hi rendition="#spa">Drittes Buch.</hi></p>
-   <p><hi rendition="#size-1">Constantin will den innern Streit zwischen der katholischen und arianischen Lehre auf eine äußerliche Weise beilegen. Synode von Nicäa. Geschichte derselben. Des Arius Lehre wird verworfen, und er von Constantin verbannt. Athanasius zeichnet sich vor Allen als scharfsinniger Gegner des Arius zu Nicäa aus. Vertheidigt den katholischen Glauben in mehreren Schriften. Widerlegung des Arianismus aus den Grundanschauungen des Christenthums. Seine bewunderungswürdigen philosophisch-biblisch-dialektischen Argumente gegen denselben. Auflösung der arianischen Schriftbeweise gegen die Lehre von der Gottheit Christi. Vertheidigung der Gottheit des heil. Geistes. Athanasius bestreitet den Sabellianismus. Betrachtungen über das Verhältniß der katholischen, zur arianischen und sabellianischen Trinitätslehre: die arianische trennt Gott von der Welt, die sabellianische vermischt Gott und Welt, die katholische unterscheidet Gott und Welt wie den Schöpfer von dem Geschöpfe ohne sie mechanisch zu trennen. Prüfung der Schleiermacher'schen Abhandlung »über den Gegensatz der athanasianischen und sabellianischen Trinitätslehre.«</hi></p>
-   <p><hi rendition="#spa">Viertes Buch.</hi></p>
-   <p><hi rendition="#size-1">Athanasius wird Bischof von Alexandrien. Constantin nimmt den Arius wieder gnädig auf; auch Eusebius von Nikomedien und andere Anhänger des Arius werden vom Exil zurückberufen, und setzen bald mehrere katholische Bischöfe ab, die nicht widerstehen konnten. Nur Athanasius wagt Gegenbewegungen. Constantin befiehlt ihm wiederholt unter scharfen Drohungen dem Arius die Kirchengemeinschaft wiederzugeben. Er giebt sie ihm nicht. Die Meletianer und Eusebianer vereinigen sich gegen Athanasius. Dieser widerlegt ihre wiederholten Klagen bei Constantin, und versöhnt diesen mit sich. Abermalige Klagen gegen ihn. Die schmähliche Synode von Tyrus. Athanasius wird nach Trier verbannt. Marcellus von Ancyra will die Synodalbeschlüsse gegen Athanasius nicht unterschreiben und wird von den Eu[se]bianern der Ketzerei angeklagt und abgesetzt. Eusebius von Cäsarea schreibt fünf Bücher gegen Marcellus, den er nicht verstehet. Was Marcellus gelehrt hat. Sich selbst überall widersprechende Theorie des genannten Eusebius. Der Grund davon liegt in seiner äußerlichen Auffassung des Erlösungwerkes. Verhältniß des Athanasius zu, und Urtheil über Eusebius und Marcellus. Die Gemeinde des Athanasius nimmt auch in der Abwesenheit ihres Bischofs den Arius nicht auf. Tod des Arius. Constantin stirbt, und seine Söhne rufen den Athanasius zurück. Neue Klagen vor dem arianisch gesinnten Constantius gegen Athanasius, der von einer eusebianischen Synode zu Antiochien wieder abgesetzt, und mit Heeresmacht aus Alexandrien vertrieben wird. Verfolgung der alexandrinischen Kirche. Papst Julius nimmt den Athanasius, der nach Rom reiset, in Schutz. Herrlicher Brief des Julius für Athanasius. Die Synode von Sardika setzt den Athanasius wieder ein: ihre Geschichte, und Schreiben an Julius. Wie sich in den arianischen Streitigkeiten die Nothwendigkeit eines sichtbaren Oberhauptes der Kirche zeigte. Der bisherige Feind des Athanasius, der Kaiser Constantius, beruft den Athanasius zu sich und bewundert ihn. Erläßt mehrere Schreiben für ihn. Festlicher Empfang des Athanasius in Alexandrien. Wie Athanasius in seiner Gemeinde jetzt wirkte. Wirkungen seines Aufenthaltes im Occident. Bringt die Mönche dahin, und stellt dem Occident den Antonius als Ideal eines Mönchs auf. Großer Werth seiner Schrift über den heil. Antonius.</hi></p>
-   <p><hi rendition="#spa">Fünftes Buch.</hi></p>
-   <p><hi rendition="#size-1">Magnentius empört sich und sucht die Gunst des Athanasius. Constantius versichert den Athanasius auch seiner Gewogenheit, um die des Athanasius sich zu erhalten. Schämt sich nachher seines Schrittes. Die Arianer benützen diese Stimmung des Kaisers und klagen den Athanasius wieder an. Die Synoden von Arles und Mailand gegen Athanasius. Fall des Dionysius von Capua. Eusebius von Vercelli, Dionysius von Mailand, Lucifer von Cagliari, der Papst Liberius, Hosius von Corduba und Hilarius von Poitiers nebst Andern werden als Vertheidiger des Athanasius, des kathol. Glaubens und der Selbstständigkeit der Kirche verbannt. Große Wahrheiten, die dem Kaiser über die Unabhängigkeit der Kirche vom Staate gesagt werden. Athanasius wird wieder vertrieben. Große Verfolgungen, die die Kirche erleidet. Constantius will den Arianismus allgemein machen. Allenthalben werden arianische Bischöfe eingesetzt. Die kathol. Kirche stehet am Rande des Verderbens. Hoffnungen der Kirche. Thätigkeit der vertriebenen Bischöfe; sie sind so ungebrochenen und freudigen Muthes, daß sie gerade jetzt die kathol. Wahrheit am scharfsinnigsten vertheidigen. Hilarius von Poitiers vertheidigt den Glauben als solchen gegen übermüthige Menschenweisheit, die katholische Kirche als solche gegen die Häretiker und die Trinitätslehre insbesondere. Die Arianer haben jetzt auch den Muth, zu sagen, was sie immer dachten, und trennen und vernichten sich dadurch selbst. Die arianischen Symbole. Furchtbarer Zwang des Kaisers gegen die katholische[n] Bischöfe. Heftige Schriften katholischer Bischöfe an und gegen Constantius und seine Tyrannei.</hi></p>
-   <p><hi rendition="#spa">Sechstes Buch.</hi></p>
-   <p><hi rendition="#size-1">Constantius stirbt. Der Kaiser Julian ruft die kathol. Bischöfe zurück. Vereinigungsversuche. Grundsätze für die Vereinigung, die Athanasius und Hilarius aufstellen; die unirende Synode von Alexandrien. Julian verbannt den Athanasius, weil die Heiden der Kraft seiner Rede nicht widerstehen können. Briefe Julians gegen Athanasius. Jovian ruft den Athanasius, den er vor Allen ehrt, zurück, und der Kaiser Valens verbannt ihn wieder, fürchtet ihn aber und widerruft bald seinen gegebenen Befehl. Athanasius kann nach dem fünften Exil ruhig in Alex. bleiben. Sein jetziger großer Wirkungskreis, Einfluß und allgemeine Verehrung. Unter ihm noch wachsen die künftigen Stützen der kathol. Kirche heran; nimmt den heil. Basilius, in Betreff seiner Lehre vom heil. Geist, in Schutz, und genießt noch die Freude, in ihm einen großen Bekenner des kathol. Glauben zu erkennen. Athanasius hat in seinem höchsten Alter noch die frische jugendliche Kraft. Seine zwei Bücher gegen den Apollinarismus. Die Apollinaristen lehren eine blos imputative Gerechtigkeit, um ihren Hauptirrthum zu unterstützen. Athanasius widerlegt Beides. Sein Tod. Nachtrag: Er trägt die katholische Lehre von der Gnade vor, und lehrt die reelle Gegenwart Christi im heil. Abendmahl.</hi></p>
-  </note>
- </div></body></text>
-
+  <text xml:id="id8684611d-eb22-4f48-852e-0694eb31a547" type="commentary" subtype="jp">
+    <body xml:id="id89c142bb-85d4-4e4a-85ee-e360aa4f8814">
+      <div xml:id="idc5561c7c-3329-468a-8253-bafb31ee68d7">
+        <note type="commentary" xml:id="kk-93-e" subtype="e" n="338,1">
+          <label xml:id="id0bc38d0b-4755-4770-99af-f1c1642e46c0">
+            <hi xml:id="id00d65701-25c5-464c-81f2-ce31d1992f04" rendition="#bol"><hi xml:id="id3a23394e-fe80-4a1c-ad50-db0f3339ab3e" rendition="#ita">Christliche Polemik,</hi> indholdsfortegnelse, side XIII-XVI</hi>
+          </label>
+          <p xml:id="ide9a45dc7-4c17-49ba-ae7f-08e54cd60635"/>
+          <p xml:id="idf70a9216-3d8a-4b1a-a1c4-91d9079b515d">               <hi xml:id="id87243a41-d0f8-4de8-a99b-5d6c6ce537c3" rendition="#size1">Inhaltsanzeige.</hi></p>
+          <p xml:id="id3abb1ad0-55e4-4941-b21f-b87c16810666"><hi xml:id="idb3ce89fb-b849-4dae-8df2-fe4bb2ba66fc" rendition="#spa">Einleitung.</hi><seg xml:id="ida6d25489-65e5-4f7c-8ed6-1e2417b214cc" type="leaders"/>Seite 1-34</p>
+          <p xml:id="id0826e746-6ea7-462a-903a-4f4c97c8638d">               <hi xml:id="id95323b44-f618-4f2f-a503-a8fd03481da2" rendition="#size-1">1. Begriff der Polemik.</hi></p>
+          <p xml:id="id8c1ed565-0d1c-4173-9cb3-de84effb4257">               <hi xml:id="id73e40127-5fda-4176-9841-22e034370a08" rendition="#size-1">2. Quellen der Polemik.</hi></p>
+          <p xml:id="id83e70278-2e08-4ca7-a7aa-172dbebcb756">               <hi xml:id="id2d2020a3-af5a-403c-8ed2-480f2ee95b12" rendition="#size-1">3. Verhältniß zu den übrigen theologischen Disziplinen.</hi></p>
+          <p xml:id="id9441ec55-9b66-4472-a3c7-872be6e55466">               <hi xml:id="idf98934af-d946-4c75-a4c1-944e4a752dcf" rendition="#size-1">4. Form der Polemik.</hi></p>
+          <p xml:id="id69e07c75-da9f-4b81-aab8-7b6117c86232">               <hi xml:id="ide7a4be7a-af30-4379-ab3a-9b2ebc30634d" rendition="#size-1">5. Literatur der Polemik.</hi></p>
+          <p xml:id="id5e90e23e-b1ae-4247-8eb0-ca5c0dae7b75">Allgemeine Polemik.<seg xml:id="id0003fc3c-90cb-41b0-8001-28a171c08e8a" type="leaders"/><hi xml:id="id935a6b54-4927-4004-bbf7-69e978eec78a" rendition="#size1">35-64</hi></p>
+          <p xml:id="id706b5139-fe93-48fd-ab1e-2ee4539751e9">          <hi xml:id="idfee6ceeb-c0a6-44c3-a872-e4736e4bbf48" rendition="#spa">Erstes Kapitel.</hi> Vom kirchlichen Irrthum überhaupt<seg xml:id="id6b54400b-30a6-41eb-bf6b-e638c46e188c" type="leaders"/>35-53</p>
+          <p xml:id="id3ee08434-926a-43b9-84a1-fc9287a321c5">               <hi xml:id="idbf5f2817-7d3c-4138-8460-28669bac27f1" rendition="#size-1">1. Vom Wesen des kirchlichen Irrthums.</hi></p>
+          <p xml:id="id5d3c2e93-e235-4a73-86d8-8e65f36b991a">               <hi xml:id="id03602c82-a19e-4fdd-9e28-0f767ab8a5ff" rendition="#size-1">2. Von der Entstehung des kirchlichen Irrthums.</hi></p>
+          <p xml:id="id6dd38f9a-fd1a-471a-9ce9-e80ca137249f">               <hi xml:id="id7a81bcf8-3d4d-4314-a2cb-b46f82d4074b" rendition="#size-1">3. Von der Wirkung des kirchlichen Irrthums.</hi></p>
+          <p xml:id="id2c106f45-c02b-4311-b361-4ae544acef0f">          <hi xml:id="id1d63739d-0d6c-4e7c-a660-efc8630161a4" rendition="#spa">Zweites Kapitel.</hi> Von der Bestreitung des kirchlichen Irrthums<seg xml:id="id838d0fbc-7df1-4053-a69c-0b89536c7812" type="leaders"/>53-64</p>
+          <p xml:id="idec8eb9fd-6597-4743-8f15-87bdf35bfa22">               <hi xml:id="id71ddb35c-0da3-4523-9d98-165cdf448ba4" rendition="#size-1">1. Von der Nothwendigkeit dieser Bestreitung.</hi></p>
+          <p xml:id="id70e3a283-a244-4d9a-b918-a4ddcff46e4e">               <hi xml:id="idd89d9a3b-c91b-4361-a937-5c354815a290" rendition="#size-1">2. Von denen, die zu dieser Bestreitung berufen sind.</hi></p>
+          <p xml:id="idf529aabb-c017-48e0-b30e-2644c101d486">               <hi xml:id="ida6a7f7c6-4a83-46f9-8098-4d4657e10745" rendition="#size-1">3. Von den Hauptformen der Bestreitung.</hi></p>
+          <p xml:id="ide3cbf98e-1789-4f97-a4ce-8f541afda269">Besondere Polemik<seg xml:id="id4c99de13-26fc-4f39-87ac-2b087283233a" type="leaders"/><hi xml:id="id665214ae-b099-4ad5-bc5c-98bc1f6033b8" rendition="#size1">65-364</hi></p>
+          <p xml:id="id5213f70d-2573-443f-bb1f-a777b63ab08f">     <hi xml:id="id9781ea2c-e0c7-475c-ba14-3884753f6790" rendition="#spa">Erster Abschnitt.</hi> Vom Indifferentismus<seg xml:id="id3c8d602d-65f8-4045-ab93-eae76b3f9db2" type="leaders"/>65-110</p>
+          <p xml:id="idb7a3c75f-329c-4bd2-a5f8-f914482a8072">               <hi xml:id="id0f1d383e-7092-46c3-8fca-a3c586593a74" rendition="#size-1">1. Wesen des Indifferentismus.</hi></p>
+          <p xml:id="idfc4b7de6-2b73-4f14-ba70-3035ce95c86c">               <hi xml:id="idf6d95773-55ed-45ec-8bc3-8088ea0375ec" rendition="#size-1">2. Geschichtliches Hervortreten des Indifferentismus.</hi></p>
+          <p xml:id="id5ed7219c-49ca-49c5-bfc7-4743efc0fba6">               <hi xml:id="idb4be6e48-57ee-4053-8be2-abf3703e3c01" rendition="#size-1">3. Hauptformen desselben.</hi></p>
+          <p xml:id="id8898ef32-831e-47a9-a243-28c3aa70b5b5">          <hi xml:id="id3db4448b-efd8-4f09-a7be-13726efed891" rendition="#spa">Erstes Kapitel.</hi> Vom Naturalismus<seg xml:id="idad2c4ed6-9b4d-4698-9878-8070bfed2f97" type="leaders"/>74-100</p>
+          <p xml:id="idf9d9bb13-997e-4663-a6d5-1d574e75d03a">               <hi xml:id="id23318fa6-00e9-4546-b91b-548d7e0fcc3e" rendition="#size-1">1. Unterschied des Naturalismus in der Kirche vom antichristlichen.</hi></p>
+          <p xml:id="idfcd3f28b-6ff2-45bc-be3b-a764336ba1a0">               <hi xml:id="id83d027ac-8045-4744-86e5-a0d53c22f4ac" rendition="#size-1">2. Wesen des Naturalismus.</hi></p>
+          <p xml:id="idf478f065-1971-454e-8176-2f9980139a3a">               <hi xml:id="id8b13802f-5200-4c89-a78e-105917714f22" rendition="#size-1">3. Indifferentismus des Naturalismus gegen Wunder, Geheimnisse und heilige Schriften.</hi></p>
+          <p xml:id="ida1cf34ff-2059-4ef7-83b5-f827c4ce6962">               <hi xml:id="id444eb2f0-6a6f-44cf-931c-6c3cd6a2f512" rendition="#size-1">4. Naturalistische Lehre von Christus.</hi></p>
+          <p xml:id="ida386f010-68f6-438e-b1e1-e5395fddf325">          <hi xml:id="id41d1b63d-aa75-4989-9059-0b9bdfb43fe9" rendition="#spa">Zweites Kapitel.</hi> Vom Mythologismus<seg xml:id="id9f9b7328-6093-4820-ab1b-8151a5f3d364" type="leaders"/>100-110</p>
+          <p xml:id="idc1b5c9c3-b648-4ce1-a5c0-18539da0941f">               <hi xml:id="ide2470c4c-3820-457b-adf1-5885c2b4b5ab" rendition="#size-1">1. Wesen des Mythologismus.</hi></p>
+          <p xml:id="idc354ec4c-6939-46bb-8972-4f57168bb701">               <hi xml:id="id8e875b0a-c9fa-44b7-8f0c-fb2c9eabe8b4" rendition="#size-1">2. Ansicht des Mythologismus von der Offenbarung und Erlösung.</hi></p>
+          <p xml:id="id610faabd-e372-4105-9b3c-55082b647456">     <hi xml:id="id5ca273d2-9ea6-43b0-bd92-a7703c59308e" rendition="#spa">Zweiter Abschnitt.</hi> Vom Literalismus<seg xml:id="id58919427-8600-413c-a950-62ef941e3d59" type="leaders"/>111-161</p>
+          <p xml:id="idacb62dd6-e336-4712-a84c-9f5b7d29fff3">               <hi xml:id="ida74496ff-b752-47d3-afa9-96132589e7a9" rendition="#size-1">[1.] Wesen des Literalismus.</hi></p>
+          <p xml:id="id4c88c7f5-ab69-4463-b4e1-e48a833aa6cb">               <hi xml:id="id680eab43-bc57-405d-990e-ed688444600f" rendition="#size-1">2. Geschichtliche Entwickelung des Literalismus.</hi></p>
+          <p xml:id="id9d33d34c-5d53-4683-a982-0da3114feae7">               <hi xml:id="ideda7307a-759c-4c7b-99c7-089d5b885194" rendition="#size-1">3. Hauptformen desselben.</hi></p>
+          <p xml:id="id48d3722b-3d34-4da0-88d1-76f7fa852865">          <hi xml:id="ida5ddfff1-8b1c-4708-92b2-d775a3be74e0" rendition="#spa">Erstes Kapitel.</hi> Vom Ergismus<seg xml:id="id61ce861b-3856-49a1-ab1d-f8c9c3535e98" type="leaders"/>117-133</p>
+          <p xml:id="idee058ea4-ffa8-4ec7-b924-232a399e0500">               <hi xml:id="id1105c3aa-4d34-4e07-acc8-0e87ad1d1801" rendition="#size-1">1. Wesen des Ergismus.</hi></p>
+          <p xml:id="id4eb30b8b-6653-45e5-b52f-f9f8826dcf45">               <hi xml:id="id2ed48bb6-0642-46dc-963f-0e789b53e568" rendition="#size-1">2. Lehre des Ergismus vom Glauben.</hi></p>
+          <p xml:id="idca73dec8-ac32-41ab-ae48-e2e6a5cf47ac">               <hi xml:id="idb1a24f62-f0bb-45fe-aa3e-3851bcf5532e" rendition="#size-1">3. Begünstigung gewisser Werke im Ergismus.</hi></p>
+          <p xml:id="idff92b9f2-c3b1-4562-b4b7-fcbe6695c8eb">          <hi xml:id="idca04e458-2a80-46f3-bca0-4061eb32e9a1" rendition="#spa">Zweites Kapitel.</hi> Vom Orthodoxismus<seg xml:id="idae4b428a-fd97-4257-a1e1-8ed0034894a3" type="leaders"/>134-161</p>
+          <p xml:id="id5d3d0057-5421-4efa-b7a4-0f1440bbb50d">               <hi xml:id="ideb84c412-e283-465e-821a-487188728136" rendition="#size-1">1. Wesen des Orthodoxismus.</hi></p>
+          <p xml:id="id7cf56cfd-c095-4ac4-b54b-618685ad2034">               <hi xml:id="id72c743b6-8d86-4473-ba1d-96caef71763d" rendition="#size-1">2. Falsche Vorstellung des Orthodoxismus vom Verhältnisse der Schrift zu den kirchlichen Bekenntnißschriften.</hi></p>
+          <p xml:id="id87a93a35-edce-4f4e-a26e-26d50b6f7b3d">               <hi xml:id="id97922c92-7a09-42d9-a402-4c6130cc9fbb" rendition="#size-1">3. Einzelne Auffassungsweisen des Orthodoxismus.</hi></p>
+          <p xml:id="id29d39d88-0c36-4fef-9d91-a69e8ce4e127">     <hi xml:id="id554ad87b-7f81-45e6-86a1-61f8faa919c7" rendition="#spa">Dritter Abschnitt.</hi> Vom Spiritualismus.<seg xml:id="idddfc790c-bf35-4bbb-ae11-1334417022e0" type="leaders"/>162-281</p>
+          <p xml:id="id9c22a6f0-5326-4468-ba99-ed76e578492a">               <hi xml:id="id59985adc-367e-411f-9708-badccd5048df" rendition="#size-1">1. Wesen des Spiritualismus.</hi></p>
+          <p xml:id="idc66afc01-899f-4196-ae7f-e339effa4425">               <hi xml:id="id9a945430-faa1-4dd8-a6a2-d87e3c407c76" rendition="#size-1">2. Geschichtliches Hervortreten des Spiritualismus.</hi></p>
+          <p xml:id="id4f993d34-5cc7-43e4-9bf1-780aae09ee1f">               <hi xml:id="id7d0ff523-c852-48a4-851d-be946c9feeec" rendition="#size-1">3. Hauptformen desselben.</hi></p>
+          <p xml:id="id643b37b4-c7c2-42af-a104-75267fa06208">          <hi xml:id="id931abde5-7add-44ac-9e55-3393e9de57e8" rendition="#spa">Erstes Kapitel.</hi> Vom Razionalismus<seg xml:id="idb61d32bd-27a7-421d-845c-4c56bd9e5b6c" type="leaders"/>168-249</p>
+          <p xml:id="iddf73d420-3b29-421a-80de-de8e15558969">               <hi xml:id="idd998eb2e-ba27-4c38-82c2-3dab92524e56" rendition="#size-1">1. Wesen des Razionalismus.</hi></p>
+          <p xml:id="idbc852365-022e-42ed-a772-d1b68ac94ca4">               <hi xml:id="idf0edba3d-78c9-4d18-9923-f9d4219e063d" rendition="#size-1">2. Verhalten des Razionalismus gegen das Wort Christi.</hi></p>
+          <p xml:id="idb9aeb37e-79af-411f-8ed7-464242f2762b">               <hi xml:id="id9187725d-c68f-44b4-ab44-110fa2edae95" rendition="#size-1">3. Leugnung der Erbsünde.</hi></p>
+          <p xml:id="idb6800626-95e7-49c4-8eb8-14318a38ff64">               <hi xml:id="id1aa61ff3-6495-4c7e-b3ad-8f7dee508239" rendition="#size-1">4. Leugnung der Gottheit Christi und der objektiven Versöhnung.</hi></p>
+          <p xml:id="idaa0f51e9-3f6b-46e2-812c-14112020a818">               <hi xml:id="id3dbca93b-43bf-4064-90d9-63d3a5816e9c" rendition="#size-1">5. Der Razionalismus untergräbt die kirchliche Gemeinschaft.</hi></p>
+          <p xml:id="id10377c4c-598c-43b1-b503-862791feac56">          <hi xml:id="id9f6a01b2-5c1f-48e5-bf4a-a26f1aab1084" rendition="#spa">Zweites Kapitel.</hi> Vom Gnostizismus.<seg xml:id="idd4fcd624-c53c-40ff-a93d-f72f5b29e2d6" type="leaders"/>249-281</p>
+          <p xml:id="id51bd9e9f-ed59-4698-8695-aa133fc77f6e">               <hi xml:id="idf6e92c2d-64e2-46eb-9f66-eceddae1e506" rendition="#size-1">1. Wesen des Gnostizismus.</hi></p>
+          <p xml:id="id719b9f24-d6a7-4aba-b0de-3cc74b7b1f96">               <hi xml:id="ide703b367-0414-4d0b-9b98-48d4d034d7f4" rendition="#size-1">2. Falscher Begriff des christlichen Geisteslebens im Gnostizismus.</hi></p>
+          <p xml:id="id788ca469-cbf3-46a4-822c-e7e21fd07473">               <hi xml:id="id22626b28-a2aa-43c5-b1c4-15e72fde2e91" rendition="#size-1">3. Die Erlösung im Gnostizismus nur Selbstentwickelung der Welt.</hi></p>
+          <p xml:id="id2bb85ff6-7dd5-4264-80a9-03a5ff00b2ad">     <hi xml:id="id0bfeccb7-ff59-42b7-9a55-f9c3617c8a45" rendition="#spa">Vierter Abschnitt.</hi> Vom Separatismus<seg xml:id="id59709397-bde2-479d-8eb4-8210e1a5f198" type="leaders"/>282-316</p>
+          <p xml:id="id238426c3-6d16-4d29-a19a-e455f3e7d1a7">               <hi xml:id="idc6105150-d089-48b8-a4fb-489d3628f6db" rendition="#size-1">1. Wesen und geschichtliche Erscheinung des Separatismus.</hi></p>
+          <p xml:id="ida9fbaf83-23b4-40a7-bc68-039b116bdf22">               <hi xml:id="idb1f87a94-c0a1-4fb4-8a8e-61c25b90bbe3" rendition="#size-1">2. Hauptformen desselben.</hi></p>
+          <p xml:id="id7d6ce61e-3f58-4e5e-b413-6c2eaf868db5">          <hi xml:id="id1acde813-a737-4190-979b-cc7d8516390f" rendition="#spa">Erstes Kapitel.</hi> Vom Mystizismus<seg xml:id="id19fc1fbe-43b5-4be7-802b-9f6b36f4fc73" type="leaders"/>283-303</p>
+          <p xml:id="id60f447ee-92f1-4c50-abcd-d6fd9ac81b88">               <hi xml:id="id019d2dc9-8977-4a5f-b359-d3ff3f3b3ecf" rendition="#size-1">1. Wesen des Mystizismus.</hi></p>
+          <p xml:id="id99312cee-8962-43a6-bf6f-2e36b1b93880">               <hi xml:id="id02af2345-7f5d-4cc5-9ef0-31d4ec7df848" rendition="#size-1">2. Verhältniß des Mystizismus zum Ansehn der h. Schrift.</hi></p>
+          <p xml:id="idc441b773-26a7-42a1-84c2-0558e0cfde60">               <hi xml:id="id18c2934d-e2a0-4e1f-aa4b-9c9099ccfb2a" rendition="#size-1">3. Sittliche Verirrungen des Mystizismus.</hi></p>
+          <p xml:id="id369a9496-3128-4c1c-b78d-f27a9d27b479">          <hi xml:id="id3df96cdc-0130-40fc-a03d-680bcab0d573" rendition="#spa">Zweites Kapitel.</hi> Vom Pietismus<seg xml:id="idbff40139-6271-4722-af97-9b3276840c66" type="leaders"/>304-316</p>
+          <p xml:id="id22a93770-dc24-4ba1-a7b6-78668d528031">               <hi xml:id="idacadebae-f393-444c-8e27-f9a69fc77bd5" rendition="#size-1">1. Wesen des Pietismus.</hi></p>
+          <p xml:id="idf6acd5a4-f437-427f-9453-c71596a75c52">               <hi xml:id="iddb84147c-5422-445d-9435-27d2c6079124" rendition="#size-1">2. Falsche Auffassung des Verhältnisses der Frömmigkeit zum Glauben.</hi></p>
+          <p xml:id="idc4dd1fab-fa23-48a2-b812-05493ad7b46f">               <hi xml:id="id04219346-739e-4a79-899e-5556635da86f" rendition="#size-1">3. Beengender Karakter der Gemeinschaft im Pietismus.</hi></p>
+          <p xml:id="id7e623ece-cff9-46e7-a44d-12339dca3e76">     <hi xml:id="id14c4365e-66ca-4e2b-8706-ecfd5c4837d4" rendition="#spa">Fünfter Abschnitt.</hi> Vom Theokratismus<seg xml:id="id3430d1f1-1efd-4c63-a8d6-2e88f6f5450c" type="leaders"/>317-364</p>
+          <p xml:id="idfb495d49-5f19-4c7a-a632-6358b334c4f7">               <hi xml:id="id8a3e8b4b-da09-4741-b1c0-dfdd583fb781" rendition="#size-1">1. Wesen und geschichtliche Erscheinung des Theokratismus.</hi></p>
+          <p xml:id="ida6d8de6a-6a3b-41b7-9282-f508b1287f64">               <hi xml:id="ida360a453-b07b-4670-85cf-2d6856c1054a" rendition="#size-1">2. Hauptformen desselben.</hi></p>
+          <p xml:id="id4813b42c-adc7-4ea7-bf35-0d1e8de73fd1">          <hi xml:id="ideaa659ad-d445-4ec2-95f4-dbcc5ae769a0" rendition="#spa">Erstes Kapitel.</hi> Vom Hierarchismus<seg xml:id="id2046393c-7d15-4a4e-a56e-a8460d37f551" type="leaders"/>320-345</p>
+          <p xml:id="id7ea83ec7-2869-4242-ba41-555610b38012">               <hi xml:id="id8996384f-1825-434b-abfb-804dbba97e62" rendition="#size-1">1. Wesen des Hierarchismus.</hi></p>
+          <p xml:id="id33ce3963-1c3c-4621-a692-e06ba7ad4b3c">               <hi xml:id="id4e1d169b-6e2f-4814-b96d-bfbf46af7ec6" rendition="#size-1">2. Lehre von einem zu wiederholenden Opfer.</hi></p>
+          <p xml:id="id3d09bf00-f54f-47b8-8dfa-e04caf258176">               <hi xml:id="id40df1b43-b7e5-48a2-b386-1f2b80c16018" rendition="#size-1">3. Vermischung kirchlicher und göttlicher Strafen.</hi></p>
+          <p xml:id="idb3f5ff46-c8df-4f15-b0c4-949ef9fd0dc4">          <hi xml:id="id2b1dad85-d498-4e43-9b6c-d61bb72f0a4a" rendition="#spa">Zweites Kapitel.</hi> Vom Cäsareopapismus<seg xml:id="id97ba6ec4-f924-424e-b05e-dac64bafe49d" type="leaders"/>345-364</p>
+          <p xml:id="id2689f185-0b29-4894-ab8d-38973e9ef83a">               <hi xml:id="id630207f8-4aa9-4426-a4cd-9d2124da9089" rendition="#size-1">1. Wesen des Cäsareopapismus.</hi></p>
+          <p xml:id="id243a06ec-bb27-457f-8586-32cb64a6f44a">               <hi xml:id="id35aa0da1-ea14-4993-9ef0-b5fcb676e557" rendition="#size-1">2. Er hemmt die Entwickelung der kirchlichen Verfassung.</hi></p>
+          <p xml:id="idbb1fe623-587b-40d9-8619-edc0850d93eb">               <hi xml:id="id6624ef02-dafe-4950-b558-8a3e59b0e3e5" rendition="#size-1">3. Er lähmt die Hauptthätigkeiten der Kirche.</hi></p>
+          <p xml:id="id92883a54-f0ba-48bb-8812-85ac8fd6ee93">Register<seg xml:id="id510aa278-cea3-4445-854a-6527c9a56c62" type="leaders"/>365</p>
+        </note>
+        <note type="commentary" xml:id="kk-160-e" subtype="e" n="343,1">
+          <label xml:id="idf649c4b4-7fca-4300-bd87-babcbbe8aeb7">
+            <hi xml:id="idadc8c82e-feff-4748-b22d-042f93262b26" rendition="#bol"><hi xml:id="id495d52c3-ef4f-4ce6-88b5-dd2678064c2a" rendition="#ita">Encyklopädie,</hi> indholdsfortegnelse, side XXXV-XLIV</hi>
+          </label>
+          <p xml:id="idade2482a-2756-40f7-beaa-5e47791b6eb2"/>
+          <p xml:id="id751de8cf-3df8-47d0-a72b-528c59a3c6f3">
+            <hi xml:id="idf7cd31ff-7bdc-4de0-b6e6-111c5d7cd9e6" rendition="#size1">
+              <hi xml:id="idacb9f23f-83af-48bf-b516-4c2223a2b8e9" rendition="#spa">Inhaltsanzeige.</hi>
+            </hi>
+          </p>
+          <p xml:id="id8659041e-69bf-42f1-a8a0-c3dbb8c3b833">Vorerinnerung<seg xml:id="idc95502c9-88df-400d-a069-4878c5ac4949" type="leaders"/><hi xml:id="id6b01f4af-6e0b-4e31-9b27-201133233f23" rendition="#size-1">Seite <hi xml:id="id350a273a-1620-4d25-9401-2b6dbf7d9068" rendition="#ant">VII</hi></hi></p>
+          <p xml:id="iddc3aa946-1e17-467b-88bc-3f516b3a7072">     Erster Theil.</p>
+          <p xml:id="idcc37daa1-afd8-44bc-9ba8-cf3d565b00d6">     <hi xml:id="idabd94304-ccab-4281-be9a-3c807e541d0f" rendition="#spa">Die speculative Theologie.</hi></p>
+          <p xml:id="id465abb1f-5905-4512-b463-cd79e4128371">
+            <hi xml:id="idfb491400-1eb0-4d09-9d69-626b7c024858" rendition="#size-1">Eintheilung. §. 1<seg xml:id="id4871989e-7850-43c0-bd6f-92336efba7c0" type="leaders"/>– 3</hi>
+          </p>
+          <p xml:id="id50d6d0ea-148f-485e-904e-7b1ad52a8afc">          Erste Abtheilung der speculativen Theologie.</p>
+          <p xml:id="idc2a7ed4d-7ffa-4f31-b324-f9efa11937ef">          <hi xml:id="id70c5cfb7-9f56-4642-9e04-e78431516dc5" rendition="#spa">Die Dogmatik.</hi></p>
+          <p xml:id="idf340c510-8b61-4d1d-b182-0cb01dd685c6">
+            <hi xml:id="idc5b9097c-a283-4f81-8bfa-647bfb5cbde3" rendition="#size-1">Eintheilung. 2<seg xml:id="id44913080-baae-428a-8e37-2216dd47779d" type="leaders"/>– 4</hi>
+          </p>
+          <p xml:id="idae33ffe6-5bde-4478-8934-22d199748513">               Erster Abschnitt der Dogmatik.</p>
+          <p xml:id="id98398201-3161-4e40-a2ef-ef9e3232e052">               <hi xml:id="idf7781f36-3ff8-40e8-b8f8-d0e395f80dca" rendition="#spa">Die Lehre von Gott.</hi></p>
+          <p xml:id="idf3bc6832-acdd-4753-bb4c-9f25c24d8ea9">
+            <hi xml:id="idc8f0a8e6-ae87-4bd8-a23b-0b7fe3fb267f" rendition="#size-1">Eintheilung. 3<seg xml:id="id947e8ad6-8f6a-42a1-961f-191163887bc8" type="leaders"/>– 4</hi>
+          </p>
+          <p xml:id="idda154a99-6df4-4831-9ce5-1eb97c53452e">                    <hi xml:id="id36bd602f-57e9-42c3-9cec-29d46b597254" rendition="#size-1"><hi xml:id="id3f41ac7c-a81f-491f-bb2c-3269132c4d8d" rendition="#spa">Erstes Capitel.</hi></hi></p>
+          <p xml:id="id9022e723-4d1d-4978-90e1-ac9df2b78b4e">                    <hi xml:id="id762d4d39-a952-4aa7-96a9-a8146d2c3233" rendition="#spa">Die absolute Substantialität.</hi></p>
+          <p xml:id="id064755c5-be5f-4601-a9ac-6913998695a3">
+            <hi xml:id="id8e5b354f-6320-47da-b57f-780b446b9acb" rendition="#size-1">Anfang. 4<seg xml:id="id4be86790-3848-4e35-80c3-dabbc0635307" type="leaders"/>– 5</hi>
+          </p>
+          <p xml:id="id8d70f4d7-8056-48e4-b906-1eece115ee40">
+            <hi xml:id="ida6950f14-0def-4e18-ad90-adf68dcf9ae5" rendition="#size-1">Die Beweise für das Dasein Gottes. 5<seg xml:id="idec94051f-b5d0-4545-84e2-48d10023820f" type="leaders"/>– 6</hi>
+          </p>
+          <p xml:id="id3c43636d-8198-41c4-9b98-e7e960c10ae5">
+            <hi xml:id="ide6c5ca0e-5a64-4a68-8f31-afaff0c641b5" rendition="#size-1">Der Name Gottes. 6<seg xml:id="id5f315dbd-55df-4118-a1c1-9c8ba9ecb429" type="leaders"/>– 10</hi>
+          </p>
+          <p xml:id="id0bdf7d06-21e0-4285-be21-89cd6cc3da67">
+            <hi xml:id="id2a70c642-e8e7-430a-82d3-7f5800015425" rendition="#size-1">Substanz. 7<seg xml:id="id214bb544-9144-479f-b286-04542562a44e" type="leaders"/>– 12</hi>
+          </p>
+          <p xml:id="id49008eba-4d2b-4982-965a-8bd991ea60ed">    <hi xml:id="ide4afce7e-d246-4e66-99b8-8764ef2bdb36" rendition="#size-1"><hi xml:id="id10b974fe-0d63-48c1-8c97-c872edf2a5f2" rendition="#ant">a.</hi> Existenz der Substanz. 8<seg xml:id="id27eb6e96-9ef1-4f43-af3b-7b72de84d532" type="leaders"/>– 13</hi></p>
+          <p xml:id="idd2f1f89b-47ee-4def-b6e2-ef364cace782">    <hi xml:id="idf3f4bf86-9c73-4920-b349-c78f2ca75276" rendition="#size-1"><hi xml:id="iddd0504cd-bf50-4f0c-af84-c32122115540" rendition="#ant">b.</hi> Ewigkeit der Substanz. 9<seg xml:id="id6a4b7784-8c37-4818-be60-379387b7d15c" type="leaders"/>– 14</hi></p>
+          <p xml:id="idea9916c2-44dc-41b5-b37d-0c1e0ad04fd3">    <hi xml:id="id009a29e8-6d3f-42fd-afab-df13ee676a41" rendition="#size-1"><hi xml:id="idd64dd559-a809-4492-ab9c-2349248b92f2" rendition="#ant">c.</hi> Macht der Substanz. 10<seg xml:id="idaf5f5127-40eb-4f99-b3db-8d59f3c8e4cf" type="leaders"/>– 16</hi></p>
+          <p xml:id="id2b2af1e9-eaae-42da-a9dd-d61d36ba919b">                    <hi xml:id="idfc3710cb-1af5-421b-b8f9-822003c94bb9" rendition="#size-1"><hi xml:id="id06e2b978-5d01-406b-8a75-bda5fa058d3b" rendition="#spa">Zweites Capitel.</hi></hi></p>
+          <p xml:id="id42ab526a-1984-47a3-8ebe-d10b866fc786">                    <hi xml:id="id622c26ad-b97a-46f8-bd4d-3def0468c051" rendition="#spa">Die absolute Causalität.</hi></p>
+          <p xml:id="idc1979b8c-eb68-4904-9828-d290ebe74f52">
+            <hi xml:id="id3c507e5e-b82d-4daf-ab24-19b1936f47b3" rendition="#size-1">Begriff derselben. 11<seg xml:id="idd6ec147f-9980-4689-b053-8150bd9ef2aa" type="leaders"/>– 18</hi>
+          </p>
+          <p xml:id="idb707acdc-e312-4575-bd72-bca8d12bb1ce">    <hi xml:id="id0e63c4b8-cfc4-4074-8eeb-0b43c25814bb" rendition="#size-1"><hi xml:id="id7a245a20-8d6b-41c6-ae38-2ace2adf6f52" rendition="#ant">a.</hi> Absolute Möglichkeit. 12<seg xml:id="idb6bea551-0743-4eeb-ae10-4024204cfd57" type="leaders"/>– 19</hi></p>
+          <p xml:id="ida31d19d8-2e5e-4142-a226-f1ff7bb94cea">    <hi xml:id="idc1d4da8e-acce-4cb6-96dc-e7e0ec103ea6" rendition="#size-1"><hi xml:id="id5aab2329-d6ee-4b80-b7ab-25db926c3353" rendition="#ant">b.</hi> Absolute Wirklichkeit. 13<seg xml:id="idf92406c2-a53f-4673-a02f-35d25279f8eb" type="leaders"/>– 20</hi></p>
+          <p xml:id="idf947be24-80c2-4c2f-81c8-9496ccb4f072">    <hi xml:id="id691b6bab-f7cb-489a-95d2-855dd8d63823" rendition="#size-1"><hi xml:id="ide1a4ffab-9b99-453b-8f58-ce30245d24fa" rendition="#ant">c.</hi> Absolute Nothwendigkeit. 14<seg xml:id="id9ac2c322-864a-4173-b54b-f12dc065ec35" type="leaders"/>– 21</hi></p>
+          <p xml:id="id08ff4b11-0fce-4d5f-89c9-2df1f67af023">                    <hi xml:id="id45e2bcd7-3aa7-4b39-ad79-27a43e2f3868" rendition="#size-1"><hi xml:id="id59a7e68c-dfb3-4cf9-8f00-cfe59d86c2e1" rendition="#spa">Drittes Capitel.</hi></hi></p>
+          <p xml:id="id20bf2362-4ac5-487c-a658-e7c96b91a85a">                    <hi xml:id="id3eb1866d-f340-4dfc-9d4c-6c99b3a18ab5" rendition="#spa">Die absolute Persönlichkeit.</hi></p>
+          <p xml:id="id1026e8c1-3b28-467b-91c4-eea4881d1091">
+            <hi xml:id="idb16b2ded-2bbd-405a-84d8-fe3dd49bbff6" rendition="#size-1">Die absolute Subjectivität. 15<seg xml:id="id758d4731-4d65-4028-8248-e8d96b6195b9" type="leaders"/>– 23</hi>
+          </p>
+          <p xml:id="id2d2c0e36-dcb5-49b3-aa7d-57d008eff287">    <hi xml:id="idef05219f-c8c6-4dbc-b743-b065cff014f2" rendition="#size-1"><hi xml:id="ida7ffd6e5-9411-489c-9178-15937886bc29" rendition="#ant">a.</hi> Absolutes Wissen. 16<seg xml:id="id07c73d21-257f-4cbd-ae48-193b076610f0" type="leaders"/>– 25</hi></p>
+          <p xml:id="id8df20ab0-86e8-4b64-bd7e-1e8852da32e6">    <hi xml:id="id6bd5b5b9-9956-41ef-aa0f-f1d8589e4cb7" rendition="#size-1"><hi xml:id="id34dfbb45-31ca-412b-b37e-8fe637b0ffd8" rendition="#ant">b.</hi> Absolutes Wollen. 17<seg xml:id="idc8a6aec7-0be9-44af-9c7b-75347a2faef3" type="leaders"/>– 25</hi></p>
+          <p xml:id="idd199c115-bdc5-416e-8d86-8c507f4e8c6f">    <hi xml:id="idf1e211be-2278-4698-ac23-d63727780d55" rendition="#size-1"><hi xml:id="id430134e5-bed9-435e-9d13-e6d593f09132" rendition="#ant">c.</hi> Absolute Seligkeit. 18<seg xml:id="ideb81c124-34fc-4815-b82c-f2fc79d21dcc" type="leaders"/>– 26</hi></p>
+          <p xml:id="id70bc6b4d-81f6-4785-8f15-e972263371d7">               Zweiter Abschnitt der Dogmatik.</p>
+          <p xml:id="id64325f39-50a3-43c5-b4f8-bab6a7d7d5b9">               <hi xml:id="id8c23b23b-55c4-429e-947c-1f8eb7aa9aba" rendition="#spa">Die Lehre von der Welt.</hi></p>
+          <p xml:id="idf1798c32-9ad0-4416-bcb4-09d6e2e47e46">
+            <hi xml:id="idf91b8ff0-c5c0-4e7f-b4d7-f1b9b0660aca" rendition="#size-1">Offenbarung. 19<seg xml:id="id8179bc37-8726-4352-aac8-de830e345ae2" type="leaders"/>– 27</hi>
+          </p>
+          <p xml:id="idfd15f3cf-d8c8-413e-b183-8040859f2d3f">
+            <hi xml:id="id1e6f5a53-2474-484d-b558-4c4c4c783ca7" rendition="#size-1">Die Welt als solche. 20<seg xml:id="id5d2ba241-f076-4d0e-a1d3-a9bc782d7f99" type="leaders"/>– 29</hi>
+          </p>
+          <p xml:id="id6dc7a91c-f8db-4424-8be2-ab5de69543cc">
+            <hi xml:id="id459577c7-9aa1-4d4a-b388-981bbdaf2a1f" rendition="#size-1">Die Welt im Unterschiede von sich. 21<seg xml:id="id13092d04-3a65-461d-834a-fe102e2373a5" type="leaders"/>– 30</hi>
+          </p>
+          <p xml:id="id5befc80a-19d5-46a7-97c3-4b9ec2b0b9f5">               Dritter Abschnitt der Dogmatik.</p>
+          <p xml:id="id8599e5fe-3769-4241-9c86-5e58bd5138f2">               <hi xml:id="id4073301c-a095-486b-a0d9-e3944fdd5513" rendition="#spa">Die Lehre von der Religion.</hi></p>
+          <p xml:id="id4abd5335-a95d-4864-a091-ae69452f0856">
+            <hi xml:id="iddcdd5d1a-a300-4ab2-81d1-0d5564d43f8e" rendition="#size-1">Eintheilung. 22<seg xml:id="id83b849af-0ec4-4bbf-917f-da748051997f" type="leaders"/>– 32</hi>
+          </p>
+          <p xml:id="idd07748d4-cd93-43d9-938a-4cb5326a1817">                    <hi xml:id="ide76c60f2-9234-4cb6-880c-824f9dd1f459" rendition="#size-1"><hi xml:id="id5efee859-a815-4575-a921-cab5f55e3855" rendition="#spa">Erstes Capitel.</hi></hi></p>
+          <p xml:id="id9fa8088c-7ecf-4a98-b038-1395d47eba40">                    <hi xml:id="id14a38f11-aaf3-47ce-bac9-74415bb5dda0" rendition="#spa">Die Anthropologie.</hi></p>
+          <p xml:id="id46f83f41-2f21-4656-8073-2a07677dcba3">
+            <hi xml:id="id7dceac1d-11f4-4b5f-aa02-1cbb8726f010" rendition="#size-1">Die unmittelbare Einheit Gottes mit dem Menschen. 23<seg xml:id="id2fae7f21-dc5a-4ed7-8ff2-de0815f84702" type="leaders"/>– 33</hi>
+          </p>
+          <p xml:id="id81b46836-217a-4e1c-a25c-2224b149ea7b">
+            <hi xml:id="idf65bef73-4688-4106-b3e6-17125aaf6ae8" rendition="#size-1">Der Unterschied Gottes von dem Menschen. 24<seg xml:id="id9a02225f-7c07-4e09-bc09-6cac7771ac36" type="leaders"/>– 34</hi>
+          </p>
+          <p xml:id="ida438f44c-2809-4895-ab62-ab3186de4665">
+            <hi xml:id="idac7206ac-df7b-4ee9-8870-f8cfdab762ec" rendition="#size-1">Die Entzweiung des Menschen mit Gott. 25<seg xml:id="id67286cfc-6a8e-448b-a162-df4dec72f103" type="leaders"/>– 35</hi>
+          </p>
+          <p xml:id="idd18b1cfa-45e1-4e15-badf-f53753e24680">                    <hi xml:id="id88d6b0fb-efba-4b93-9c3c-af7eeb28662a" rendition="#size-1"><hi xml:id="id71c52bea-f251-4dea-8bef-ebef1951070b" rendition="#spa">Zweites Capitel.</hi></hi></p>
+          <p xml:id="iddff92c02-015e-463c-8460-068f1c3d47b8">                    <hi xml:id="idc852332a-90af-41da-aa14-675c35bd484e" rendition="#spa">Die Christologie.</hi></p>
+          <p xml:id="id7a9fbbbd-1307-43c1-8243-97e694ff3d98">
+            <hi xml:id="id269d15b8-b269-49c8-82e5-4df79fdb0e15" rendition="#size-1">Die Menschwerdung Gottes. 26<seg xml:id="id2eea5716-1967-43b7-b29a-31239e49d5ce" type="leaders"/>– 36</hi>
+          </p>
+          <p xml:id="id4976f8f6-15b9-41fe-ba78-5c98c0740dc3">
+            <hi xml:id="idefc2c7e6-29f4-4075-8201-90a310864264" rendition="#size-1">Der Gottmensch. 27<seg xml:id="id7deeb55d-b20c-48de-8ce5-853b7f5ddf7a" type="leaders"/>– 38</hi>
+          </p>
+          <p xml:id="id1f8fe742-0cca-4e3f-8bae-57d0fabc4287">
+            <hi xml:id="id7153b5f4-8455-4e39-8bc6-8d07ecd7eb9f" rendition="#size-1">Die Thätigkeit des Gottmenschen. 28<seg xml:id="idb98406b7-e898-489f-a183-c978e8b739aa" type="leaders"/>– 40</hi>
+          </p>
+          <p xml:id="id800724e3-de90-492a-80e6-c40de095264b">    <hi xml:id="id448e616c-7533-4ff8-9c1e-3bf2e5ddcac1" rendition="#size-1"><hi xml:id="id49ff46ac-8b81-4edf-8c08-631d702c72c8" rendition="#ant">a.</hi> Prophet<seg xml:id="id064e9411-d3f6-4b17-a68a-2a5601bfd3f1" type="leaders"/>– 40</hi></p>
+          <p xml:id="id0780c137-4529-4961-a0e7-28905dedfe78">    <hi xml:id="id7f28a655-5873-426e-8632-8b8990641cd6" rendition="#size-1"><hi xml:id="id96b8d14c-fe3f-4c58-9148-aa0e9d23be44" rendition="#ant">b.</hi> Priester<seg xml:id="idd32e7b0a-39ca-455e-850d-607297f525ea" type="leaders"/>– 41</hi></p>
+          <p xml:id="id1fd30914-4c9e-46b0-b601-854837593c26">    <hi xml:id="id3a525f1b-5fa0-4456-bb66-93adb6b6a7e1" rendition="#size-1"><hi xml:id="id82efb5c3-89db-4736-b912-16d79c0e4f07" rendition="#ant">c.</hi> König<seg xml:id="id768b1fa3-8636-4fe1-8ba9-b7e9ea48e3bd" type="leaders"/>– 42</hi></p>
+          <p xml:id="id46909d01-cbfd-4c4c-baec-9a75b37c0bb7">                    <hi xml:id="idde7f3b11-324b-4e15-aeae-0e7653a385a6" rendition="#size-1"><hi xml:id="ida2a07b4e-b1c7-4870-bbd5-73e79fc5ee93" rendition="#spa">Drittes Capitel.</hi></hi></p>
+          <p xml:id="id73419d5d-3faf-4a34-a435-6e3d2db2e2e4">                    <hi xml:id="id52c93660-aa2d-4315-9b10-88fa3a6cc915" rendition="#spa">Die Lehre von der Kirche.</hi></p>
+          <p xml:id="id06e3a8a3-8330-4df8-b9fe-072d6cc2eb4d">
+            <hi xml:id="idb4489e3c-99b9-4220-a9ae-e1f4bf04cab1" rendition="#size-1">Uebersicht. 29.<seg xml:id="idf7336cee-df58-4e86-89f6-46a2a57d3a93" type="leaders"/>– 43</hi>
+          </p>
+          <p xml:id="idf04606e4-2817-4d75-beb7-ecf1b6de8e4a">    <hi xml:id="id9e9f2218-0f62-4bd6-9788-7dad50efcacd" rendition="#size-1">1) Die Gemeine. 30<seg xml:id="idebe397e3-a01c-42e4-90a3-2ba9ca232b8f" type="leaders"/>– 44</hi></p>
+          <p xml:id="idd2a742c3-4bac-4857-92f7-f9d48e6d5571">        <hi xml:id="id2032bbb5-1960-43b0-8764-ebb514c910bc" rendition="#size-1"><hi xml:id="id17c89b38-769b-4bfe-b4fb-eb96f8b558e1" rendition="#ant">a.</hi> Berufung<seg xml:id="ida7ac276f-a428-47e7-b91a-e18a76c082bc" type="leaders"/>– 45</hi></p>
+          <p xml:id="id06683e28-5a83-4f61-b2da-015a55b49791">        <hi xml:id="idad7866c1-ec6c-4f6d-8a88-940af2170d00" rendition="#size-1"><hi xml:id="id23e89166-ef17-40e3-a5d0-57ad1fa648cd" rendition="#ant">b.</hi> Bekehrung<seg xml:id="idd186549a-b55b-4533-9550-6eb3a1489127" type="leaders"/>– 45</hi></p>
+          <p xml:id="idfbe055f8-507d-4337-9e71-64d197dbf750">        <hi xml:id="ida6008362-4fb9-4290-8ceb-ea3efe3502a8" rendition="#size-1"><hi xml:id="id4882dba2-6d87-410f-8b73-2cb575a87262" rendition="#ant">c.</hi> Heiligung<seg xml:id="idfeba2884-fe93-4148-a699-bffb8a5ac28e" type="leaders"/>– 46</hi></p>
+          <p xml:id="idb345547b-3194-404d-933e-6137ea45cea0">    <hi xml:id="idbfb3aebc-2240-40f5-8eee-ac33ccf0d9b2" rendition="#size-1">2) Die Form der Wirksamkeit des Geistes der Gemeine. 31<seg xml:id="id769e53ff-908e-45f2-af37-51a2f1741c3d" type="leaders"/>– 47</hi></p>
+          <p xml:id="id76e5436c-7b97-4f5b-a5e3-32fb77b5a24c">        <hi xml:id="id10204282-0467-42ef-adea-b03f4dec40a6" rendition="#size-1"><hi xml:id="id7454e2a3-e793-49eb-b5c1-dda3734464f2" rendition="#ant">a.</hi> Das Wort Gottes<seg xml:id="idc5f897f2-030d-4091-8843-aa5b2a8eaab0" type="leaders"/>– 48</hi></p>
+          <p xml:id="id6d6e418e-b88e-42d9-93ad-ad3016f5b7d6">        <hi xml:id="id3a291951-75a1-4644-a5de-1657631f8be0" rendition="#size-1"><hi xml:id="id8605ae2e-ad19-4b54-9751-4d00d07fd245" rendition="#ant">b.</hi> Taufe<seg xml:id="ida5f343ab-a8be-4ddd-ab7f-7afad9d80762" type="leaders"/>– 48</hi></p>
+          <p xml:id="id268a2f40-8498-438a-91e6-3b537605080d">        <hi xml:id="id40cb925c-6800-448f-b515-e854e0251a3e" rendition="#size-1"><hi xml:id="id4ac78242-d078-41c0-9194-184ec3f9fc49" rendition="#ant">c.</hi> Abendmahl<seg xml:id="id301f5765-2480-4664-a94b-d2d895fd7eed" type="leaders"/>– 50</hi></p>
+          <p xml:id="idd44247d9-eb65-4197-b37c-710464dc1d0f">    <hi xml:id="idae8f59b1-4781-49be-9632-c4c6eaf042cb" rendition="#size-1">3) Die Entwicklung der Kirche. 32<seg xml:id="id354280a7-2811-4621-916d-7638b4a03929" type="leaders"/>– 52</hi></p>
+          <p xml:id="id9f2dd983-7dab-434e-8e49-b0ba338797f0">        <hi xml:id="id1b14d24d-02b6-45a3-a6d0-6b21122b1904" rendition="#size-1"><hi xml:id="id92cbb40a-8c79-4a78-83f1-d94ce0d03e41" rendition="#ant">a.</hi> Die Eine<seg xml:id="iddd14df00-e420-45dd-aaa2-1ee1ca8578f4" type="leaders"/>– 53</hi></p>
+          <p xml:id="id01499d7f-261c-4656-b004-42be7f797fb3">        <hi xml:id="ide3d1b57d-1d7f-417d-9dd1-c5aaa07fd225" rendition="#size-1"><hi xml:id="ided607c35-a1bd-47dc-bafb-2f5d7dd5343d" rendition="#ant">b.</hi> Die heilige<seg xml:id="id92276156-71d0-427d-b56a-a5f484b93675" type="leaders"/>– 54</hi></p>
+          <p xml:id="idd9453a37-f6a7-47a3-9897-1ec1576f51f5">        <hi xml:id="id2cfe15a9-db62-4e85-a0d3-f993eca7b448" rendition="#size-1"><hi xml:id="idcd4de60e-25ef-419a-beaf-27a080a06129" rendition="#ant">c.</hi> Die siegende<seg xml:id="id0ddf43cb-71eb-42b1-ae25-22246dbb2720" type="leaders"/>– 55</hi></p>
+          <p xml:id="idfc2b33c7-7636-41e1-853a-28d977bf8573">          Zweite Abtheilung der speculativen Theologie.</p>
+          <p xml:id="ide3df220e-c934-496d-ad94-4422283ef47e">          <hi xml:id="id5435813b-22ff-4147-bd29-91da14f7e2f9" rendition="#spa">Die Ethik.</hi></p>
+          <p xml:id="id7abd3986-4a9e-4c36-9f02-1d5f8d552bf6">
+            <hi xml:id="idd94a06c7-7aa7-4e91-876f-ffe0bfb73574" rendition="#size-1">Eintheilung. 33<seg xml:id="idf5b331c6-eb14-4012-8491-3e2de9929a22" type="leaders"/>– 57</hi>
+          </p>
+          <p xml:id="id0643a635-e0e6-43bd-b391-6a6effe4c3cd">               Erster Abschnitt der Ethik.</p>
+          <p xml:id="iddc96a16c-4e5d-4578-94db-5477bca6c392">               <hi xml:id="id9ab33865-31c5-47b3-b1c0-afa05292e59b" rendition="#spa">Das Gute.</hi></p>
+          <p xml:id="id3fc24431-210b-458d-bb60-103f56aa7475">
+            <hi xml:id="id4cbc306b-d4c2-4688-8b04-acf6aa224e55" rendition="#size-1">Uebersicht. 34<seg xml:id="id411cc8aa-818c-433e-ac70-fb641c9ee0ba" type="leaders"/>– 57</hi>
+          </p>
+          <p xml:id="idc890a66f-2b47-486e-adbc-bcc8b2a099f3">    <hi xml:id="idd566baa9-3dd4-4eed-8fba-db91104ceb04" rendition="#size-1"><hi xml:id="id572100b8-c71f-40e0-8721-8ef5eed1406e" rendition="#ant">I.</hi> Die Idee des Guten. 35<seg xml:id="idec64ba94-de52-4893-8f6f-5fd4c21ffbb0" type="leaders"/>– 58</hi></p>
+          <p xml:id="id35729ab6-7516-4455-add1-b939f2123833">    <hi xml:id="idab147117-2958-4b49-9254-89949766d7b6" rendition="#size-1"><hi xml:id="id83882cd6-b744-4b50-8eed-0535a1b4c0cc" rendition="#ant">II.</hi> Das Gute als Gesetz für den Willen. 36<seg xml:id="idf0917205-3bf2-4a36-9a06-7cb2e6399bad" type="leaders"/>– 58</hi></p>
+          <p xml:id="id9c1072db-4d6f-4c30-8470-7ca61d23c497">    <hi xml:id="id7ddfdaf2-60b3-48e0-858f-f2ba2a2c2020" rendition="#size-1"><hi xml:id="ide3d97ea2-4247-4c25-9130-dac626396bae" rendition="#ant">III.</hi> Der menschliche Wille. 37<seg xml:id="id8ac99edf-a494-4f1c-b1e5-bc91ca62164e" type="leaders"/>– 59</hi></p>
+          <p xml:id="id8f2a3a76-395b-4c3e-842b-77a35b1a3f50">        <hi xml:id="id3144fddb-569d-4ad9-aaee-4b960722369e" rendition="#size-1"><hi xml:id="idd87cea72-d066-4735-8dde-6dd8737bf55d" rendition="#ant">a.</hi> Der Wille an sich. 38<seg xml:id="id801ed54d-2498-4b28-b982-05cfbcb1c4ea" type="leaders"/>– 60</hi></p>
+          <p xml:id="id1d5e139f-43e9-44b9-8bf9-60f2e5fe7568">        <hi xml:id="idb9bfd98e-2e02-42f3-819a-af9db27641ca" rendition="#size-1"><hi xml:id="id8045990f-c316-48aa-93ce-82b5e693f14c" rendition="#ant">b.</hi> Die Individualität. 39<seg xml:id="id0d037a9f-f281-49f2-97b1-fd18ee6e0f3c" type="leaders"/>– 63</hi></p>
+          <p xml:id="idaff429ac-c492-477a-ae14-1bde3e30fd02">        <hi xml:id="id3ea54bc3-5d46-4c7f-ae58-84abd36f3076" rendition="#size-1"><hi xml:id="idb27fa3b5-7fa9-4e9e-a929-4964516947a5" rendition="#ant">c.</hi> Die Persönlichkeit. 40<seg xml:id="idd3b7e7a8-7e1f-4906-80d9-e6a0f9e1e28a" type="leaders"/>– 64</hi></p>
+          <p xml:id="id9a29e09c-412f-49bd-86c6-28c000ecf1e0">               Zweiter Abschnitt der Ethik.</p>
+          <p xml:id="id6c65f43f-3052-480a-89b5-097283d60690">               <hi xml:id="ida75e7696-10b6-4d9e-84dd-81c73cb36f72" rendition="#spa">Das Böse.</hi></p>
+          <p xml:id="id5466faee-6083-48dd-a17c-3c570c907709">
+            <hi xml:id="id12892f7d-7579-43c2-977d-55440c4c0b56" rendition="#size-1">Uebersicht. 41<seg xml:id="id9973eeca-df00-4b5e-a796-74e878a15642" type="leaders"/>– 66</hi>
+          </p>
+          <p xml:id="id7956573e-4f7a-4a7b-a351-950ae5203335">    <hi xml:id="id7aab2be3-d81b-4012-9b4e-325485607db1" rendition="#size-1"><hi xml:id="id2189c337-487c-43b3-a488-808a0ac14ebc" rendition="#ant">I.</hi> Die Glückseligkeit. 42<seg xml:id="id3f9268d4-fbec-4b22-b763-73f720fc5bf5" type="leaders"/>– 69</hi></p>
+          <p xml:id="idea8ac709-9025-49e1-bdba-4cac0f526847">    <hi xml:id="idf51aaefe-fa35-445b-856f-c8c05f850848" rendition="#size-1"><hi xml:id="ida0ec42d2-1e25-41ee-a19d-9fa3beeb3c95" rendition="#ant">II.</hi> Die Willkür. 43<seg xml:id="id1feadd29-2760-449b-85ef-dfeef5132d4d" type="leaders"/>72</hi></p>
+          <p xml:id="id94895371-be28-4d9c-bf6c-02d0476c29e9">    <hi xml:id="id6f231ea8-0acd-4dd2-9bbf-9c7dbbe5a3f6" rendition="#size-1"><hi xml:id="id48828ce2-c0c4-43c1-8484-61099b2b227f" rendition="#ant">III.</hi> Der böse Wille. 44<seg xml:id="id7d5a5c6b-5420-4908-96d4-b4defc9df8f0" type="leaders"/>– 74</hi></p>
+          <p xml:id="id01a3ef80-996b-460b-88a8-ca1bb88ed93d">        <hi xml:id="idf2d4387b-f7fe-493f-89b4-9a08c5ca1721" rendition="#size-1"><hi xml:id="idbac9ea6a-bd33-40ed-847a-68efc8693df3" rendition="#ant">a.</hi> Begriff des Bösen überhaupt. 45<seg xml:id="id148fd799-c2c7-4ba9-957e-f2d4a3360b60" type="leaders"/>– 75</hi></p>
+          <p xml:id="id8f74cad7-758e-4db9-8ac4-e621655d7dbe">        <hi xml:id="id2d14617f-dac4-4ba9-9549-6fd70a75feef" rendition="#size-1"><hi xml:id="id36d5be54-4266-40be-898c-cb7c78ed00e6" rendition="#ant">b.</hi> Der Widerspruch im Bösen. 46<seg xml:id="idcd85225c-7f64-49f6-ba25-c7645dd3ffb4" type="leaders"/>– 76</hi></p>
+          <p xml:id="id62823eb5-9dc7-48a8-b870-4acf45bb7af5">        <hi xml:id="id28365d9e-816a-450b-86a1-289cab94b6cc" rendition="#size-1"><hi xml:id="id7edebac6-80dd-4e76-bef6-fc1e9fa33758" rendition="#ant">c.</hi> Die Vernichtung des Bösen. 47<seg xml:id="iddd01d5c6-e116-4365-b497-fbc0a8b06227" type="leaders"/>– 81</hi></p>
+          <p xml:id="id47fdde0b-cca5-462b-84ea-e642b06f10de">            <hi xml:id="idbdd6488d-c8f7-47ca-a21b-d45264da1ab9" rendition="#size-1">α. Die Erkenntniß des Bösen<seg xml:id="id984bdcbc-6bce-42d7-8030-050ff750f22d" type="leaders"/>– 82</hi></p>
+          <p xml:id="id1f362b42-bfd8-49c0-b18d-be03e957868f">            <hi xml:id="id10510ab7-60b2-4edb-8c8f-5a72256dab74" rendition="#size-1">β. Strafe und Schuld des Bösen<seg xml:id="id38bb8bd6-a939-4b8e-b441-55480b3a0fa5" type="leaders"/>– 83</hi></p>
+          <p xml:id="ide1949832-46a7-41d2-8d09-57c035f789f1">            <hi xml:id="id1e4419fe-d888-4e22-8ff8-30cbe787624d" rendition="#size-1">γ. Die Vergebung der Schuld des Bösen<seg xml:id="id90625253-75a7-45ea-ac04-faaf187b7a07" type="leaders"/>– 85</hi></p>
+          <p xml:id="id7d3643e5-8b2c-4d3f-8a4d-55cf17ded813">               Dritter Abschnitt der Ethik.</p>
+          <p xml:id="idc20de75b-074b-4d81-b15f-8284fc1cc15b">               <hi xml:id="id312e49f0-c6ee-4a8e-b50f-12ecd37627a5" rendition="#spa">Die Freiheit.</hi></p>
+          <p xml:id="id1555a8fd-e8e7-435a-b3a0-6e0c5e0eabd2">
+            <hi xml:id="idedcbcca4-048c-48a2-8df0-a77a94e69478" rendition="#size-1">Uebersicht. 48<seg xml:id="id22c9bb91-b9d1-42c0-bc9a-2b4d7d84fa75" type="leaders"/>– 88</hi>
+          </p>
+          <p xml:id="id410a04e1-4505-47e6-8ecc-62a6535dc22d">    <hi xml:id="ided0a4237-7991-4c70-a153-93f90c33bb05" rendition="#size-1"><hi xml:id="id7c7b90d9-7965-443c-925f-1181e97198f5" rendition="#ant">I.</hi> Die Pflicht. 49<seg xml:id="ida9631679-fb69-4b8f-8d1d-af03a16246c2" type="leaders"/>– 89</hi></p>
+          <p xml:id="id40cbccfc-09f3-4bc5-a0b3-06b73f5b8dda">    <hi xml:id="id2e4b09b4-851e-4a6e-9cad-ad0665015da4" rendition="#size-1"><hi xml:id="id0cc0e7f5-95b1-416e-ac71-1e4b43a044e1" rendition="#ant">II.</hi> Das Gewissen.</hi></p>
+          <p xml:id="id7ff3524e-baaf-405c-8299-7c53cce05f6a">        <hi xml:id="id832d36ce-55c5-4a52-b57c-cb290cc05bbe" rendition="#size-1">Uebergang. 50<seg xml:id="idc6b8e2c5-4cec-43b8-a977-a5fcb7d9aff1" type="leaders"/>– 92</hi></p>
+          <p xml:id="id4d624aa0-efde-43ce-bb6a-a8d7f63ab33d">            <hi xml:id="id52c2617a-a4b9-4dac-8eea-b14fe04b8901" rendition="#size-1"><hi xml:id="id65aef997-4268-4c00-ba02-735ca09d6445" rendition="#ant">a.</hi> Der Vorsatz. 51<seg xml:id="idb0ca4eb5-01da-40ec-a956-81f2679387d3" type="leaders"/>– 92</hi></p>
+          <p xml:id="idb2922f35-9278-4085-8f3b-3d50ae100194">            <hi xml:id="id517e573d-a785-4044-a0b4-18f8f85ebf32" rendition="#size-1"><hi xml:id="id78de8460-9899-46da-ba30-bb5b04b540f7" rendition="#ant">b.</hi> Die Absicht. 52<seg xml:id="idc7b56494-527b-4d28-aaa1-7d4b79360528" type="leaders"/>– 93</hi></p>
+          <p xml:id="idd28fa2d8-523d-4d96-b748-29028094c8df">            <hi xml:id="id2bea9e74-9e77-46a5-a961-d3c79915deba" rendition="#size-1"><hi xml:id="id4b1de8c3-580b-4d2e-bec8-22f35810a020" rendition="#ant">c.</hi> Die verschiedenen Gestalten des Gewissens. 53<seg xml:id="id001bcceb-b95c-4b77-8c86-0e8603033938" type="leaders"/>– 93</hi></p>
+          <p xml:id="id2222ebc9-1594-4405-b0f8-f7bc916bce91">    <hi xml:id="id50b21a72-4ba4-416d-9305-2dfeb8e9648e" rendition="#size-1"><hi xml:id="idbab778e3-a835-4732-b170-49bd3c6a7073" rendition="#ant">III.</hi> Das System der Tugenden. 54<seg xml:id="id78c27a3f-048f-43d4-9fe5-6682811ccc09" type="leaders"/>– 97</hi></p>
+          <p xml:id="id74b0e923-2df4-4a80-a5c2-350c6ec9b092">     Zweiter Theil.</p>
+          <p xml:id="id56bf1b52-cb8c-4f2a-8bb7-ff978a89f3e3">     <hi xml:id="idaf3ff7b5-75b3-401e-960d-e455340b4d95" rendition="#spa">Die historische Theologie.</hi></p>
+          <p xml:id="ida4e62864-a92f-40d9-ba14-642b03744926">
+            <hi xml:id="id5b75e12b-2475-4e67-984e-49a8517ee299" rendition="#size-1">Eintheilung. 55<seg xml:id="idb3d49d35-7043-404f-aca9-e9dad8efc951" type="leaders"/>– 103</hi>
+          </p>
+          <p xml:id="id8f9751dd-155a-474e-b21e-6fcab568050f">          Erste Abtheilung der historischen Theologie.</p>
+          <p xml:id="idc4c6ea0d-345a-4c17-a26d-5a86950ffc36">          <hi xml:id="id02d0b1e3-02c7-4684-9d8b-a881af205c22" rendition="#spa">Die biblische Theologie.</hi></p>
+          <p xml:id="id4d1100fe-06cb-4ef3-b222-f7ba45d0ce37">
+            <hi xml:id="idd478761b-e5a3-4f95-b223-016c4101b05f" rendition="#size-1">Eintheilung. 56<seg xml:id="idfeb3e1ff-2e28-4545-89ec-ab14f5f58b2f" type="leaders"/>– 104</hi>
+          </p>
+          <p xml:id="id5ea7c57a-f164-4b98-b3b6-ba025e748784">               Erster Abschnitt.</p>
+          <p xml:id="id110953f4-eeeb-43ba-a063-278df217b285">               <hi xml:id="id471f21a5-1693-4232-aeab-bbd015ac90ed" rendition="#spa">Die Kanonik.</hi></p>
+          <p xml:id="id7f1807cb-a795-4de7-ac75-4177d5691f39">
+            <hi xml:id="id5c39944d-4234-4267-8a9d-38bf0d75582b" rendition="#size-1">Eintheilung. 57<seg xml:id="id075280d2-0f85-4726-9238-7f6128b06edb" type="leaders"/>– 104</hi>
+          </p>
+          <p xml:id="id7eed86e4-d1cc-431b-bbb1-2661a6f4711f">    <hi xml:id="id4e0470d6-5b61-49ea-aa1a-bcbcdcaff070" rendition="#size-1"><hi xml:id="idc12e15a5-5be0-42c3-9a31-ddb61adf097e" rendition="#ant">I.</hi> Die Theopneustie der Schrift. 58<seg xml:id="ida0719391-27af-4bfd-a3e1-df83995f788d" type="leaders"/>– 105</hi></p>
+          <p xml:id="id27d16292-b401-45cc-9daa-e7b4e35650ed">    <hi xml:id="idc0d0e0d8-c95d-40c0-883c-a3ae8cc37108" rendition="#size-1"><hi xml:id="idb1851d27-8610-4de6-8d96-cdee9a9f5c84" rendition="#ant">II.</hi> Die Bildung des Kanons. 59<seg xml:id="idc867aed5-ffd1-4ae9-aa1f-aaee8728ec19" type="leaders"/>108</hi></p>
+          <p xml:id="id54b2d752-a5fa-4bdd-b6e1-029441a904b6">    <hi xml:id="idccbd5401-68ba-47b7-a0f9-56f79cd58c8d" rendition="#size-1"><hi xml:id="id20437dca-9965-4bbc-a246-df51680d34cf" rendition="#ant">III.</hi> Die Glaubwürdigkeit der biblischen Bücher. 60<seg xml:id="id7fd3f990-7e82-418a-a200-d9901fe2e853" type="leaders"/>– 113</hi></p>
+          <p xml:id="idd11ac821-01cb-41e1-9610-33d8f624f050">        <hi xml:id="ida2aa14d3-4de2-4b15-8b83-e1cbd183bc1f" rendition="#size-1"><hi xml:id="id0dff906f-f491-4d3b-8641-dbba7523eb17" rendition="#ant">a.</hi> Authenticität<seg xml:id="id26ea6231-a5ed-4526-abe2-04cde0cd1e94" type="leaders"/>– 113</hi></p>
+          <p xml:id="id44b428f3-d209-41be-b011-9ae1d1e64877">        <hi xml:id="id45e5d843-9067-4f91-af1d-5019496be681" rendition="#size-1"><hi xml:id="idf4726ad2-7938-4da2-9b8d-16ac4db5e28c" rendition="#ant">b.</hi> Integrität<seg xml:id="ide34a7ff6-f4f3-485b-88a8-e3146046b64f" type="leaders"/>– 116</hi></p>
+          <p xml:id="id91f80583-d6a4-4375-be35-cc0df2c882a7">        <hi xml:id="id1e863939-fd74-4d55-a514-2b101b44aedd" rendition="#size-1"><hi xml:id="id9246ccfb-a32b-4a04-8c2f-9c9bf1d62ac6" rendition="#ant">c.</hi> Axiopistie<seg xml:id="id35e240a7-0d17-4aae-976e-98d385e72aa0" type="leaders"/>– 117</hi></p>
+          <p xml:id="idd83de335-f39e-4a2b-b35b-0227539526f5">               Zweiter Abschnitt.</p>
+          <p xml:id="id45f6fb5a-1b37-469c-ab37-26da4227dac5">               <hi xml:id="id41723d2e-0fe6-42e1-b140-c662eb8317ca" rendition="#spa">Die Kritik.</hi> 61<seg xml:id="id288f0fc8-fd01-497f-b8da-17989febe97c" type="leaders"/><hi xml:id="id7c904051-66b1-4162-a439-cbb57b0b3dc4" rendition="#size-1">– 119</hi></p>
+          <p xml:id="ideb8bfa31-18d4-45f9-b716-e509f1467077">               Dritter Abschnitt.</p>
+          <p xml:id="id4493ae03-01b4-4f9d-82a7-076c11618fc0">               <hi xml:id="id2dde8c69-f7a2-4c3d-a6e2-c469573f03f2" rendition="#spa">Die Exegetik.</hi></p>
+          <p xml:id="id7f7d4af3-7b2f-4279-9039-9018d2c50bdb">
+            <hi xml:id="ide678b4b6-3309-4b43-a070-de95be65090c" rendition="#size-1">Eintheilung. 62<seg xml:id="id9119090e-e6b8-41b5-949c-1884b0bf6bad" type="leaders"/>– 122</hi>
+          </p>
+          <p xml:id="idfb2c9c08-c548-492b-a50f-4e291757c1d4">    <hi xml:id="id9767af70-5c0d-4a00-867f-b94a4fcd7395" rendition="#size-1"><hi xml:id="id2da359ac-b76e-43c0-a839-42024158525f" rendition="#ant">I.</hi> Die Hermeneutik. 63<seg xml:id="idaca84580-1966-4326-a260-d823ab333770" type="leaders"/>– 124</hi></p>
+          <p xml:id="id8e71a5f6-da7c-4490-a5c6-bfb2ed525d1b">    <hi xml:id="id6a93dd69-af00-40f6-97f8-507c3ccd0aea" rendition="#size-1"><hi xml:id="id741aa6f1-7e47-408f-bbb0-7b5a807a7057" rendition="#ant">II.</hi> Die Exegese. 64<seg xml:id="id949c150b-89e4-4fc3-9576-03720f016379" type="leaders"/>131</hi></p>
+          <p xml:id="id65a07b33-86f5-425c-8265-06347046ba0f">    <hi xml:id="idf3ec2f44-0787-48f0-94f4-e6788b8ff16f" rendition="#size-1"><hi xml:id="id2725dfc8-90b5-4c08-aef6-f789d2317c61" rendition="#ant">III.</hi> Die biblische Dogmatik.</hi></p>
+          <p xml:id="id07e2864a-acaa-4279-8720-86edd640ad99">        <hi xml:id="idaf4b816d-64ee-4312-8fda-5041ecd274ae" rendition="#size-1">Uebersicht. 65<seg xml:id="id736abfea-8e7a-4b96-84ca-93334b03bc98" type="leaders"/>– 132</hi></p>
+          <p xml:id="idd460378e-ec9c-4c9c-b64a-fafad3b4c705">                    <hi xml:id="id4c128cfe-f7ae-492c-8946-dcd1c887daba" rendition="#size-1"><hi xml:id="idaedd8374-0d25-4fba-b6f5-6ec789dad4ab" rendition="#spa">Erstes Capitel.</hi></hi></p>
+          <p xml:id="id20c894a9-d66c-4d06-b610-b67a6abb8ee2">                    <hi xml:id="ida815c990-24a4-4b12-8cd6-49203fdcfb20" rendition="#spa">Die Dogmatik des Alten Testamentes. </hi><hi xml:id="id0d4edb86-bdc4-49da-bca7-a5fb30a0a45c" rendition="#size-1">66.<seg xml:id="idabfb44af-09ba-4d67-951e-66ce15aae5a2" type="leaders"/>– 136</hi></p>
+          <p xml:id="id64b8bcbe-d51c-4159-af39-c56c57823d49">                    <hi xml:id="id8576d3b3-626c-4bc2-a8a1-fb9d15bab883" rendition="#size-1"><hi xml:id="id23b93650-7a7e-4e21-b854-8cee4a951952" rendition="#spa">Zweites Capitel.</hi></hi></p>
+          <p xml:id="ida040540e-0a3e-4639-ace3-5c2ad5d59144">                    <hi xml:id="id18d667af-61b8-4058-9624-4320dd246a26" rendition="#spa">Die Dogmatik der Apokryphen. </hi><hi xml:id="id577e0ec3-e5d1-4e4a-b746-3968a6327404" rendition="#size-1">67.<seg xml:id="idb7cfe236-6b7f-4c0d-9120-ae4d6a845467" type="leaders"/>– 142</hi></p>
+          <p xml:id="id02d7edaf-6a3c-4da1-9e86-434e59202cde">                    <hi xml:id="id86418f15-a598-46b0-9769-9f5b7f1b62f0" rendition="#size-1"><hi xml:id="id5b4ba01b-1c18-4b25-8587-ba62162c3ccf" rendition="#spa">Drittes Capitel.</hi></hi></p>
+          <p xml:id="idf666ea16-85a9-4bbc-8225-b3e959e9417a">                    <hi xml:id="ida8708586-88c8-4214-aa35-2d719ac7004d" rendition="#spa">Die Dogmatik des Neuen Testamentes.</hi></p>
+          <p xml:id="idf2cd8a62-8393-477a-8bc1-79dfb9742342">
+            <hi xml:id="idbc5e81a9-d135-4cac-a9d7-17ea22aa893c" rendition="#size-1">Einleitung. 68<seg xml:id="id64567c0e-5b41-4866-8e60-8cc8dfffdc01" type="leaders"/>– 143</hi>
+          </p>
+          <p xml:id="idf5e46a75-55c9-4788-9079-01e1042ea505">    <hi xml:id="id550a8741-e29f-47ed-b578-72fb8ce1b951" rendition="#size-1"><hi xml:id="id460ace65-7120-43b3-a77b-4ae6e888cdcf" rendition="#ant">A.</hi> Die historischen Schriften des Neuen Testamentes.</hi></p>
+          <p xml:id="id1a934286-9beb-4b02-a0d7-a6054e041998">        <hi xml:id="id1d7146a3-2623-4baf-ae9f-fd6c4f5a1724" rendition="#size-1">Uebersicht. 69<seg xml:id="idcaa1624a-cd7a-466f-9e08-1260be730421" type="leaders"/>– 146</hi></p>
+          <p xml:id="id5c61c8c3-ffdf-4307-931c-50ccf24e2791">            <hi xml:id="id3ae3786c-fb91-47c9-bb3d-e11bab2686ea" rendition="#size-1"><hi xml:id="id3007adef-ef38-47b7-ae99-c05c276f5987" rendition="#ant">a.</hi> Die Geschichte Christi. 70.<seg xml:id="idb80458bf-807e-4592-bf49-8353d4db022d" type="leaders"/>– 149</hi></p>
+          <p xml:id="id3b172ae9-f071-48c5-8534-645688e339b3">                <hi xml:id="id3c93c9d4-5015-4fc6-a0b1-db8f6ed03216" rendition="#size-1">α. Christi Jugend. 71<seg xml:id="id8a100a23-23ba-4876-b7eb-ee14a5f78a7e" type="leaders"/>– 151</hi></p>
+          <p xml:id="ida324444d-674d-4fea-ac6d-a6ba91792af5">                <hi xml:id="idcf789d24-5d0d-4f8c-ab8b-ebdeca36236b" rendition="#size-1">β. Christi Lehre und Wunder. 72<seg xml:id="id3065ad5a-82d1-44ac-89f5-68ce83b9f946" type="leaders"/>– 152</hi></p>
+          <p xml:id="id3a092c2b-3ab4-4903-8fd0-e674935c2f45">                <hi xml:id="id1a187db7-d8dc-4129-a4aa-a3aa88e7a678" rendition="#size-1">γ. Christi Tod. 73<seg xml:id="idd0df55e7-b2f9-4abe-a201-2c3a32dbe1af" type="leaders"/>– 162</hi></p>
+          <p xml:id="id9f6e10fd-ad89-4c18-b2e4-128fd60ec7b9">            <hi xml:id="id9cd6b49a-c3d1-41f1-adc2-2e15ad3b55c9" rendition="#size-1"><hi xml:id="ide1c37d9e-1da8-46fa-8c27-de55b82ebede" rendition="#ant">b.</hi> Die Geschichte der Apostel. 74<seg xml:id="ide68c3898-670e-46ae-93ed-18a8f54307e4" type="leaders"/>– 167</hi></p>
+          <p xml:id="id96d73245-ce1d-4970-8c7c-48e16f593ccc">    <hi xml:id="id7f2309b2-a94d-4252-ad56-deeaf76ac315" rendition="#size-1"><hi xml:id="idbd4b31fa-bb1b-415e-a0ef-49ee1e847d9f" rendition="#ant">B.</hi> Die didaktischen Schriften des Neuen Testamentes. 75<seg xml:id="ideabf847f-fd13-416c-bbb6-c7f6e9763ab6" type="leaders"/>– 169</hi></p>
+          <p xml:id="id5351e372-8b79-4810-bf5e-91c9aa9b4e28">    <hi xml:id="id73ee7e67-b52b-431b-be91-d2f76c4f7cbe" rendition="#size-1"><hi xml:id="ida3dae2e2-9c8f-4f98-b5db-6f627ab9be1f" rendition="#ant">C.</hi> Die Weissagung des Neuen Testamentes. 76<seg xml:id="id9cfb2570-84d5-4cec-b2fb-354dbecdbe21" type="leaders"/>– 174</hi></p>
+          <p xml:id="id92997daa-a2c8-4f5f-9c7f-e4b1693820a9">          Zweite Abtheilung der historischen Theologie.</p>
+          <p xml:id="ide40dd247-d226-4c85-9154-62e326b4daca">          <hi xml:id="id25617c5e-ef4c-40e8-a5c0-466ee107293a" rendition="#spa">Die kirchenhistorische Theologie.</hi></p>
+          <p xml:id="id25d6b6a1-bd4f-4c8a-a7f6-f3e4194f2cc3">
+            <hi xml:id="ida600a4d9-801d-4d62-b2bd-67a3f77d77a4" rendition="#size-1">Eintheilung. 77<seg xml:id="id456843ee-7903-45c9-85f1-dc094cfcd29d" type="leaders"/>– 176</hi>
+          </p>
+          <p xml:id="id8027c8d2-2ac8-4233-a826-6ac515519297">               Erster Abschnitt.</p>
+          <p xml:id="id805a0a67-9dbb-4856-be5a-60900214e987">               <hi xml:id="id2d5a231d-2a56-4902-9d95-a113e5f113c2" rendition="#spa">Die politische Geschichte der Kirche.</hi></p>
+          <p xml:id="ide813d62c-908d-4a9e-b079-b127854f73d2">
+            <hi xml:id="id9c9a0410-8ef5-437c-a5cd-3254ba04076f" rendition="#size-1">Eintheilung. 78<seg xml:id="ida886ba82-2ea1-4f9c-b3b9-4af76d68a62e" type="leaders"/>– 177</hi>
+          </p>
+          <p xml:id="id3ed7d898-d62e-420e-935e-baf80a89f423">                    <hi xml:id="id701eb5f4-1894-4e14-8fda-41996bfdacc8" rendition="#size-1"><hi xml:id="id64453e93-28e9-4272-a8d3-ca56da8ea9a4" rendition="#spa">Erste Epoche.</hi></hi></p>
+          <p xml:id="id0d8b5e29-7bef-42b3-a8a6-47d6abfdf4df">                    <hi xml:id="id4616ae60-f3aa-4df4-ab8e-8d3f9a5d7638" rendition="#spa">Die Geschichte der Griechisch-Morgenländischen Kirche.</hi></p>
+          <p xml:id="idd02db27d-c1f5-4bd0-ba82-a2e2afc43de4">    <hi xml:id="idb13635e9-60e3-41c6-a2d1-48d0d4167d32" rendition="#size-1"><hi xml:id="idf09ec1be-4c6e-460b-9ab1-9320606e6b59" rendition="#ant">a.</hi> Kampf der Christlichen Kirche um ihre Anerkennung vom Römischen Staat. 79<seg xml:id="id45d70dfb-85bc-426d-9f4e-65a848b11aaf" type="leaders"/>– 179</hi></p>
+          <p xml:id="id327ec2c7-4629-43de-b644-ecdc7ad17e0c">    <hi xml:id="idaf41c15c-a32a-4b8d-a0ad-b3391218757d" rendition="#size-1"><hi xml:id="id05e693e7-9c04-48f3-97ec-87f077456dce" rendition="#ant">b.</hi> Entzweiung der Kirche in sich selbst durch den Gegensatz der Orthodoxie und Heterodoxie. 80<seg xml:id="id0fd68523-842a-4a60-bc6a-ab7f0d9d6a02" type="leaders"/>– 181</hi></p>
+          <p xml:id="idb33a4e87-6e3e-419d-9280-662ca28109bb">    <hi xml:id="ida25051bd-dd1c-45cd-a5e3-6794c77ec0b8" rendition="#size-1"><hi xml:id="id7c391964-3b07-40d4-a742-516984f756cd" rendition="#ant">c.</hi> Identität des Politischen und Kirchlichen. 81<seg xml:id="idf5e4ac67-9e55-4a41-9539-204be31b74c8" type="leaders"/>– 183</hi></p>
+          <p xml:id="idc221f985-3aaa-47e4-903a-1a43a31e1091">                    <hi xml:id="idc67f626c-5eeb-48ca-9acb-f8ad5b8b700e" rendition="#size-1"><hi xml:id="ide108a113-33fc-4c8b-95db-f3b1bd94e72a" rendition="#spa">Zweite Epoche.</hi></hi></p>
+          <p xml:id="id232938a2-cb7c-4b60-8176-d6748da1a775">                    <hi xml:id="id87129f30-48b7-415b-9bd1-4a7025b62a87" rendition="#spa">Die Geschichte der Römisch-Abendländischen Kirche.</hi></p>
+          <p xml:id="id0b090141-f699-454c-a6e1-5b82795dc321">
+            <hi xml:id="id25767fad-3a74-42f1-9704-d873b2dfd23e" rendition="#size-1">Uebersicht. 82<seg xml:id="id4c4e6b17-a5bc-4211-9c10-49658ab61636" type="leaders"/>– 186</hi>
+          </p>
+          <p xml:id="id7daf00ba-24f2-40be-a08a-269efe1ba69f">    <hi xml:id="idc2f1259b-382b-4c3d-af6b-63b9988f8172" rendition="#size-1"><hi xml:id="id8334ddf0-855d-441a-abf5-2ab6d4da2d24" rendition="#ant">a.</hi> Kampf der Römischen Kirche um die Hegemonie in der Kirche. 83<seg xml:id="id6d358462-3541-4059-a9f4-8a62b5caf007" type="leaders"/>– 187</hi></p>
+          <p xml:id="idafa095f1-8227-4e3b-ade0-7da40364cc41">        <hi xml:id="id68d75ee1-f4e9-4cbd-9a05-5d79b0db563d" rendition="#size-1">α. Roms unmittelbares Verhältniß zur Welt<seg xml:id="idec603344-5b31-46d8-aaff-f9cacdfbfca2" type="leaders"/>– 187</hi></p>
+          <p xml:id="id90d870cb-0210-4ca2-b23d-8bb4ac7cf890">        <hi xml:id="id1863d0aa-4366-49c1-9979-bfae2e38fc62" rendition="#size-1">β. Erwerbung des Kirchenstaates zum Grundbesitz<seg xml:id="id4e1ec1e7-a168-422f-80a2-7aa817c27e0e" type="leaders"/>– 191</hi></p>
+          <p xml:id="id5caeeb4a-a978-4db1-8ee7-064dbc87c2f4">        <hi xml:id="idf1d14640-abe1-4027-9dbf-76693e73b193" rendition="#size-1">γ. Tradition<seg xml:id="id74f58b74-71ef-4b62-8e19-cab4dd7f76a1" type="leaders"/>– 192</hi></p>
+          <p xml:id="id979aeea6-aff9-4e29-9d09-75001c684beb">    <hi xml:id="idf4415cc0-f36a-42e5-94ea-4bac48571847" rendition="#size-1"><hi xml:id="idc0b8f94d-10c8-4b46-8567-15b39275639d" rendition="#ant">b.</hi> Die Entzweiung der Römischen Kirche mit den germanischen Staaten. 84<seg xml:id="id3e7199be-390d-4451-ac96-0392990a5b63" type="leaders"/>– 194</hi></p>
+          <p xml:id="id945da809-5582-4da2-ab3f-8f58d3126634">        <hi xml:id="id630c0326-6ffb-42c5-b100-f712ca032612" rendition="#size-1">α. Das Kanonische Recht. 85<seg xml:id="id48ccaabd-bc31-4ebf-9bd8-c252b597e2de" type="leaders"/>– 194</hi></p>
+          <p xml:id="id07bdd2c2-a46d-4efb-914d-8d1f386ed6c4">        <hi xml:id="id62b8d811-c7b3-4893-85d2-996cbefd8640" rendition="#size-1">β. Der Kampf um die Investitur. 86<seg xml:id="idb6ef381d-12d4-4b58-80ae-55d884996451" type="leaders"/>– 197</hi></p>
+          <p xml:id="idca7c4bd6-775b-4969-83d8-88a67e03b958">        <hi xml:id="idc3ad613a-dbf2-4609-969a-1fbdc6265fc4" rendition="#size-1">γ. Das Uebergewicht der Hierarchie über den Staat. 87<seg xml:id="id42ff70a0-cfb9-4632-8ab7-18206e97fb80" type="leaders"/>– 200</hi></p>
+          <p xml:id="id6d331689-22b3-4847-8dd9-2372452f1ca9">    <hi xml:id="id01530dbe-0ef6-4438-a4da-33af46c019bb" rendition="#size-1"><hi xml:id="id271a3515-68ec-4845-a0f1-e3f574b25464" rendition="#ant">C.</hi> Die Entzweiung der Hierarchie mit sich selbst. 88<seg xml:id="id98946568-de7a-4285-acf1-07a114d6ed5e" type="leaders"/>– 202</hi></p>
+          <p xml:id="idf8ebafc2-2628-4be5-abad-11c40175ed28">        <hi xml:id="id97c17d59-ac0c-4c62-b43f-cede14501a9d" rendition="#size-1">α. Die Bettelmönche. 89<seg xml:id="id07e0821c-4535-45fb-b83c-bb411ed8753a" type="leaders"/>– 203</hi></p>
+          <p xml:id="id6530d7f8-86c8-473c-bd52-343e3fe72dd6">        <hi xml:id="idb2011bf5-e5d4-4a39-a71b-254022d136bf" rendition="#size-1">β. Das Schisma. 90<seg xml:id="id0580b1d7-2e5f-4846-80ee-bf1a577ab53d" type="leaders"/>– 206</hi></p>
+          <p xml:id="id9bdbf7d2-c427-4d37-a9a3-6c35fd973d61">        <hi xml:id="id2a8df2ad-460b-4697-af14-9e3a78e8f837" rendition="#size-1">γ. Auflösung der unbedingten päpstlichen Autorität durch die allgemeinen Kirchenversammlungen. 91<seg xml:id="id8f2c6629-1f9a-46cb-89af-ff7b99583904" type="leaders"/>– 207</hi></p>
+          <p xml:id="id4872b13b-7a3b-4a6d-9fcb-566df94a360c">                    <hi xml:id="id159d8b05-a563-487f-802e-4b1948c3ddf3" rendition="#size-1"><hi xml:id="id6924a08a-c4a9-4e2a-bdd2-32ac3ba284b5" rendition="#spa">Dritte Epoche.</hi></hi></p>
+          <p xml:id="id37399f04-49f6-4f17-9be6-a033f6de9cc9">                    <hi xml:id="id349f577f-74c5-4c20-9cc3-0c95eb100e89" rendition="#spa">Die Geschichte der Protestantischen Kirche.</hi></p>
+          <p xml:id="id037ac575-7c54-4ff4-a897-5fa2638cc6e1">
+            <hi xml:id="id2e04bbda-ec10-470f-b056-e0c833c41b35" rendition="#size-1">Uebersicht. 92<seg xml:id="ida3834216-70b2-46a6-b9de-20f329bf212f" type="leaders"/>– 209</hi>
+          </p>
+          <p xml:id="ide635ca5c-ed64-4414-baf2-84d2ef4c81f0">    <hi xml:id="ide9597ba2-93b3-4493-b864-2066209737dd" rendition="#size-1"><hi xml:id="id9d7aae0e-e5f7-4137-ad49-54965667a6ce" rendition="#ant">a.</hi> Begriff der Protestantischen Kirche. 93<seg xml:id="id7acfb3c6-eae1-4826-97b6-1a9acfd44cdc" type="leaders"/>– 212</hi></p>
+          <p xml:id="id940c7549-c9ed-4c02-89b4-d11d2b1591d3">    <hi xml:id="idf3216bc1-bc40-436e-beb3-3631dbe8ab7f" rendition="#size-1"><hi xml:id="id191753f9-ad4d-4652-af74-20426afc3bfc" rendition="#ant">b.</hi> Kampf des Protestantismus mit dem Katholicismus um seine politische Anerkennung. 94<seg xml:id="id685ca547-fe76-40ed-a63f-5e1101e18464" type="leaders"/>– 214</hi></p>
+          <p xml:id="idb1564ef0-db50-45ad-8816-5e421f591533">    <hi xml:id="idca8b9c07-c616-4eab-9199-a3168daa9d8a" rendition="#size-1"><hi xml:id="id51bb8603-22a5-4e52-a375-56bd0b65d33d" rendition="#ant">c.</hi> Neutralisirung des Gegensatzes in der Protestantischen Kirche als der Reformirten und Lutherschen zur Evangelischen. 95<seg xml:id="id046c75af-5ee1-4fe9-9d3d-e81ac86ddb53" type="leaders"/>– 219</hi></p>
+          <p xml:id="idd8588db3-59d7-4860-80ae-a481d40dbd82">               Zweiter Abschnitt.</p>
+          <p xml:id="id85462805-b499-4133-a473-c210195bb40b">               <hi xml:id="id040f9e96-0f1e-4c08-a1bc-5346454daeb0" rendition="#spa">Die kirchliche Archäologie.</hi></p>
+          <p xml:id="id00fe32da-9920-4f34-8c4a-d563d07cb95f">
+            <hi xml:id="id497fc180-4f5d-4241-96bc-92f0aaed1c24" rendition="#size-1">Eintheilung. 96<seg xml:id="id268b83f6-dbdc-4ca9-8676-a286bbb5bbde" type="leaders"/>– 221</hi>
+          </p>
+          <p xml:id="id2d70bb96-ccff-42b6-aaf9-2b408ffdc373">    <hi xml:id="ida1862385-6b05-46e5-b0ce-ca9b33594a64" rendition="#size-1"><hi xml:id="id79b68815-b8aa-413f-a641-032d248bb976" rendition="#ant">I.</hi> Die Epoche des substantiellen Gefühls. Begriff derselben. 97<seg xml:id="id6db5ce75-dd23-4829-9408-2a74ad181033" type="leaders"/>– 223</hi></p>
+          <p xml:id="id79b1b747-3b3b-4d3b-a3a3-0c483742185c">        <hi xml:id="idf87f1aed-0251-404b-a234-91f69500d17f" rendition="#size-1"><hi xml:id="id75260c89-dab3-46d1-86fb-9b0d2bd5e76a" rendition="#ant">a.</hi> Die heiligen Handlungen. 98<seg xml:id="id2023ec0c-3413-46e5-9e83-b70505f591bf" type="leaders"/>– 224</hi></p>
+          <p xml:id="idf258f20c-623d-4904-82c0-8b161dbb83b2">        <hi xml:id="id0c52581f-a145-4256-9b6a-467a1d5acafd" rendition="#size-1"><hi xml:id="iddd9f620a-7bfd-466c-b7a8-ff6a782e1df3" rendition="#ant">b.</hi> Die heiligen Zeiten. 99<seg xml:id="iddc0ea830-56a1-45af-af30-beef6ab1a568" type="leaders"/>– 225</hi></p>
+          <p xml:id="idf453c9c0-bdec-4cb6-add7-e43d72189d23">        <hi xml:id="idce26c514-3132-480e-9b8a-1a4e399b84c7" rendition="#size-1"><hi xml:id="idba09273c-4612-4ba1-a431-dc4305236d9c" rendition="#ant">c.</hi> Die heilige Kunst. 100<seg xml:id="id9ba8b853-ad32-4458-9d1c-edbc6378e8a4" type="leaders"/>– 226</hi></p>
+          <p xml:id="idd74aa4db-73a5-4bb5-8eb5-b1a7d7db4313">    <hi xml:id="idba0a78df-f5f2-46b1-8ac2-c1af990526c0" rendition="#size-1"><hi xml:id="id97be6ea3-370f-4edb-ab86-9e7cd5aebe8d" rendition="#ant">II.</hi> Die Epoche der reinen Objectivität. Begriff derselben. 101<seg xml:id="id4fb5a3be-1f64-4fb9-b973-504321d6af8b" type="leaders"/>– 230</hi></p>
+          <p xml:id="id37e372b4-33ed-47ad-8244-a254506b5af9">        <hi xml:id="id206fd9bb-321c-4a1b-8d8f-90ccfcf78c23" rendition="#size-1"><hi xml:id="id9f907724-da78-4fd4-80e2-e01052b802a2" rendition="#ant">a.</hi> Die heiligen Handlungen. 102<seg xml:id="id67d9664a-6416-4d6e-a06c-4b381de65f48" type="leaders"/>– 231</hi></p>
+          <p xml:id="id3f1eb85e-ef80-4014-9f97-72427c20e082">        <hi xml:id="id76039137-a41b-4c71-a70c-a5bbf93e945a" rendition="#size-1"><hi xml:id="id613fbdc4-fcc1-44c0-960f-14bdfc12b45b" rendition="#ant">b.</hi> Die heiligen Zeiten. 103<seg xml:id="idb93fb244-e9ef-4f42-8d95-c5349fc4b35e" type="leaders"/>– 235</hi></p>
+          <p xml:id="id6b809fd9-3976-463b-90fd-881c26ba5211">        <hi xml:id="id25a32834-da64-4039-af0b-3bb23940bd86" rendition="#size-1"><hi xml:id="id1539cf87-867a-455e-91db-d17d994112de" rendition="#ant">c.</hi> Die heilige Kunst. 104<seg xml:id="ida710d179-8bdd-44d8-afae-d927f99321e1" type="leaders"/>– 236</hi></p>
+          <p xml:id="idf7d6c08b-ae31-4b18-9b28-4baf1f82cbc6">    <hi xml:id="idc09d2edf-81a3-4be5-9a32-020b7e1f0c89" rendition="#size-1"><hi xml:id="ida550c667-7b7b-40af-988a-c999b50712a2" rendition="#ant">III.</hi> Die Epoche der ideellen Objectivität. Begriff derselben. 105<seg xml:id="idc93d1f86-0432-441b-a37a-754344a5ec9c" type="leaders"/>– 240</hi></p>
+          <p xml:id="iddef0d673-532e-48b6-a38e-ad5ec465b03f">        <hi xml:id="idce1a96ee-3860-450d-870c-e53b19031e7d" rendition="#size-1"><hi xml:id="id4ae21865-519a-4eb8-82a9-0fc7f615e372" rendition="#ant">a.</hi> Die heiligen Handlungen. 106<seg xml:id="id23df7d97-33aa-4f5a-9409-546231005433" type="leaders"/>– 241</hi></p>
+          <p xml:id="id6d358fcc-43fb-4d8b-831c-1254fb245e0d">        <hi xml:id="id309fdffb-34e6-489a-9ebe-7c662e8af4fb" rendition="#size-1"><hi xml:id="id603cbda8-c173-4692-8dd0-48beb64cda26" rendition="#ant">b.</hi> Die heiligen Zeiten. 107<seg xml:id="id47b74bcd-bf2a-42be-b6e2-29be3c44d00d" type="leaders"/>– 242</hi></p>
+          <p xml:id="id694e9809-3863-498e-b5cb-5375a97ee1ca">        <hi xml:id="id26483767-8a96-4256-941f-85f92972d986" rendition="#size-1"><hi xml:id="id43f137ef-83bb-42a0-9cdb-2481d6532f30" rendition="#ant">c.</hi> Die heilige Kunst. 108<seg xml:id="id5ee26412-54ab-4dfe-b25d-bbcb3d63dac1" type="leaders"/>– 243</hi></p>
+          <p xml:id="id444d5789-af44-45f0-a23e-ea3897795554">               Dritter Abschnitt.</p>
+          <p xml:id="id4fd7dbb6-513f-4d23-ad8b-8c8ddd3475bc">               <hi xml:id="id63699bc0-1055-4d51-b33e-67c01b775721" rendition="#spa">Die dogmatische Geschichte der Kirche.</hi></p>
+          <p xml:id="idb1a42f56-8707-493f-a872-27af28c986fd">
+            <hi xml:id="id1453d35c-37d2-4dc4-9e57-2e23eae78853" rendition="#size-1">Einleitung. 109<seg xml:id="id22c5781d-3a57-4910-9939-46c0d4ca2315" type="leaders"/>– 246</hi>
+          </p>
+          <p xml:id="id6d10e222-b550-4466-b1f0-b0e387d1dd38">                    <hi xml:id="id835703c2-d763-4cdd-ae89-bd90c571f6c8" rendition="#size-1"><hi xml:id="id81235adc-2727-4f10-89dc-7d8aa4aa3c0f" rendition="#spa">Erstes Capitel.</hi></hi></p>
+          <p xml:id="id091ed831-34ec-4f02-80d9-d477ae47130c">                    <hi xml:id="idae53a8e2-acd3-4c89-b134-af67eb6824e2" rendition="#spa">Die Periode der analytischen Erkenntniß.</hi></p>
+          <p xml:id="id4fb6dd32-4179-4db6-b219-fe8cadd052c0">
+            <hi xml:id="id125d1f7d-7993-4bd9-a207-abd9607548f6" rendition="#size-1">Uebersicht. 110<seg xml:id="idaf80deb3-c971-425e-9052-db1e84277738" type="leaders"/>– 250</hi>
+          </p>
+          <p xml:id="idecb26f05-cc6e-45ed-9a08-8b11739cc3b3">    <hi xml:id="ide063165f-30ae-4ed3-b3fc-f1ea54b8cea8" rendition="#size-1"><hi xml:id="ida8c0cc91-f227-42a9-b2fd-2dc30113159e" rendition="#ant">I.</hi> Die Trinität.</hi></p>
+          <p xml:id="id1c8b84e0-76c0-4f05-9dcc-7361dbc0aaf5">        <hi xml:id="ida08bd454-8e8b-4b2d-ac28-7fc58253337c" rendition="#size-1"><hi xml:id="idf1d5cf5d-b4db-4e7b-aff2-2bd68cea0c7a" rendition="#ant">a.</hi> Die Ueberwindung der Orientalischen Weltanschauung. 111<seg xml:id="idb63f5caf-44ef-4bb0-a11e-622559e04f17" type="leaders"/>– 251</hi></p>
+          <p xml:id="idd8bfbb5b-07d8-4c99-bc71-25c633935a97">        <hi xml:id="id3c2c169e-d45f-48c2-8754-ccd7e674c31d" rendition="#size-1"><hi xml:id="id563774ca-24da-43d3-a222-9c12dc3e66b8" rendition="#ant">b.</hi> Die Ueberwindung der Hellenischen Weltanschauung. 112<seg xml:id="id01745e02-fd82-462f-9f0c-e1fa24d2e10e" type="leaders"/>– 258</hi></p>
+          <p xml:id="idebbe5b4b-71e5-420b-8b32-bf3793ecfd02">        <hi xml:id="idcad8e911-a053-4cf6-a0b1-e1e6840790fa" rendition="#size-1"><hi xml:id="id36e3dc8c-0534-4089-9234-974070434529" rendition="#ant">c.</hi> Das Nicänische Symbolum. 113<seg xml:id="id1883caa1-5baf-496f-aa5a-702d8429f6db" type="leaders"/>– 263</hi></p>
+          <p xml:id="id37faeee4-aa6f-477b-8052-8e6498c3afee">    <hi xml:id="idd91fbfbf-e019-4218-9d61-77d03fede384" rendition="#size-1"><hi xml:id="id3f99af6d-4b48-4ed6-a4c4-bc98a9674104" rendition="#ant">II.</hi> Das Verhältniß der göttlichen und menschlichen Natur. Zusammenhang mit dem Vorigen. 114<seg xml:id="id8cfaa46f-70ed-4f3a-931a-8eb2f4aa2b8f" type="leaders"/>– 266</hi></p>
+          <p xml:id="idc77a7503-dc7a-4ea7-8d8e-c858ddb3c003">        <hi xml:id="id0cb1eddd-75be-415f-964f-203bf98b573f" rendition="#size-1"><hi xml:id="id07f050f1-17d9-472f-9630-b4123b7a5b6e" rendition="#ant">a.</hi> Der Nestorianismus. 115<seg xml:id="id793dc06c-51ff-4a5a-9550-c123b4915270" type="leaders"/>– 268</hi></p>
+          <p xml:id="idc2b79406-a38b-478d-9446-b7b6ace23bb8">        <hi xml:id="idbeab843d-4eb9-4a33-ab99-faf6d0c1469e" rendition="#size-1"><hi xml:id="id015d8789-88e3-4686-860c-06354c1eb17b" rendition="#ant">b.</hi> Der Monophysitismus. 116<seg xml:id="idba46dc19-2a62-4024-bb84-909969071ad3" type="leaders"/>– 269</hi></p>
+          <p xml:id="ida4631ba9-c42b-4a50-aab8-747c3e512def">        <hi xml:id="id19608a06-ae62-4c8b-b703-2f81d1f8cb64" rendition="#size-1"><hi xml:id="idf733cce1-edf6-4d6c-8938-956944d911a1" rendition="#ant">c.</hi> Die Synode von Chalcedon. 117<seg xml:id="idb6161255-bda3-4946-8c7c-e328fd17a0fa" type="leaders"/>– 269</hi></p>
+          <p xml:id="id04f1cd89-a722-43ec-9020-4f4774c85dd0">    <hi xml:id="idb2bf023e-d48e-4f56-94e9-338585fd15d6" rendition="#size-1"><hi xml:id="id175d908a-8689-48c1-95e5-50307e5e3946" rendition="#ant">III.</hi> Die Freiheit Gottes und die des Menschen. Uebergang. 118<seg xml:id="id8ff1752e-f47e-442e-b3ec-cceff7887472" type="leaders"/>– 270</hi></p>
+          <p xml:id="iddbc35777-63f2-4f3a-abac-844d575ae2b2">        <hi xml:id="id3ecd1814-7527-4530-ba2c-d1bbb01f51ee" rendition="#size-1"><hi xml:id="id93a65497-7254-4a21-bff6-84757ce375ff" rendition="#ant">a.</hi> Augustinus. 119<seg xml:id="idd7fbd71d-117d-464f-9d40-02b2996cf0f7" type="leaders"/>– 273</hi></p>
+          <p xml:id="idd06dc67b-c091-4946-aa70-4dafcb8e0126">        <hi xml:id="id5bf956ce-4112-44dc-99ac-989fe00b42ae" rendition="#size-1"><hi xml:id="idd2d29f7e-aa75-412a-9908-c282ab5e63f7" rendition="#ant">b.</hi> Pelagius. 120<seg xml:id="id2ce3f7b0-4511-461e-997c-8ebf132bd67b" type="leaders"/>– 275</hi></p>
+          <p xml:id="id5563d4de-6abe-4e2e-abaf-15fe5f78151c">        <hi xml:id="id397a5e1e-0ce3-4cbe-8724-1d0b73aa2bc5" rendition="#size-1"><hi xml:id="idf1880aca-a65e-4760-a792-a91fa1cc3049" rendition="#ant">c.</hi> Der Semipelagianismus. 121<seg xml:id="id0d122c03-2589-44e4-afda-3972e4725181" type="leaders"/>– 275</hi></p>
+          <p xml:id="idecde697d-1ae1-4df1-a957-d895ebe02f6d">                    <hi xml:id="id5b7c2cec-2b4c-4132-a534-33ef8f771623" rendition="#size-1"><hi xml:id="id4981c141-ebaa-489d-a2ae-c90ce45fe89a" rendition="#spa">Zweites Capitel.</hi></hi></p>
+          <p xml:id="idb923e716-cd66-4a6b-9bad-9d3d2f7d21b4">                    <hi xml:id="ida206c184-a264-4fbb-b2dc-052e18c525f0" rendition="#spa">Die Periode der synthetischen Erkenntniß.</hi></p>
+          <p xml:id="id04663a11-4a4b-4b3d-827e-90bd32d167fb">
+            <hi xml:id="id29a430d6-1f79-47bb-8008-096d8b2ee435" rendition="#size-1">Uebersicht. 122<seg xml:id="id60abe386-15b4-4e89-b140-1bb32c62f189" type="leaders"/>– 277</hi>
+          </p>
+          <p xml:id="id104a0122-8c52-4ea6-8918-5cc2a015dde6">    <hi xml:id="id4780f7d0-891f-4afd-aa32-919593be59f5" rendition="#size-1"><hi xml:id="id6c2e3824-24cd-48e7-a72c-a8baa3083d53" rendition="#ant">I.</hi> Der Begriff der theologischen Wissenschaft. Trennung der Lateinischen Theologie von der Griechischen. 123.<seg xml:id="id9f1bd673-4bd6-42d2-8c69-4fe28daf7a27" type="leaders"/>– 278</hi></p>
+          <p xml:id="id8f5d3338-24fb-4f3b-b0fc-d634e6c210aa">        <hi xml:id="id5c1f3b3a-730d-4d2f-8ae7-cc4359693470" rendition="#size-1"><hi xml:id="id79854165-9e99-42b4-ae69-c160214b1876" rendition="#ant">a.</hi> Die Opfertheorie des Abendmahls. 124<seg xml:id="id289917e7-22f2-4800-a38b-7643a02af11b" type="leaders"/>– 280</hi></p>
+          <p xml:id="ida6191b7f-7242-43f2-80b4-9de50137b4c4">        <hi xml:id="id49037c73-c3fc-4707-ba32-6b414ef022da" rendition="#size-1"><hi xml:id="idf9433e83-e6cb-4559-8215-9219971d5e5f" rendition="#ant">b.</hi> Glauben und Wissen. 125<seg xml:id="idf061d5db-c02a-4179-adea-6a3d56fc164f" type="leaders"/>– 282</hi></p>
+          <p xml:id="idfee30fde-80d9-4309-857a-00012b92c646">        <hi xml:id="idf05a0d33-5ad5-4cd8-bce9-dd12f1f28af7" rendition="#size-1"><hi xml:id="id2ebb657e-689e-4608-9626-18beca627196" rendition="#ant">c.</hi> Der Begriff. 126<seg xml:id="idde454180-7097-4ac3-bd9c-aff32f491a0b" type="leaders"/>– 286</hi></p>
+          <p xml:id="idc4ed1b64-ae78-4042-ac6f-7b90c93f0b3f">    <hi xml:id="id0d4f7612-79b0-48bf-8fc7-4da1347188cb" rendition="#size-1"><hi xml:id="ide2b41e1d-eed0-4bfc-bb81-43d2913745bd" rendition="#ant">II.</hi> Die kirchliche Dogmatik. Uebergang. 127<seg xml:id="id98a27422-3e20-4c46-998e-917f60b29743" type="leaders"/>– 288</hi></p>
+          <p xml:id="idc2ed6c88-37e0-4bfe-b570-915bc1a398ea">        <hi xml:id="id8dde9e0f-3407-483d-a2ac-7f70be4bee8c" rendition="#size-1"><hi xml:id="idbafa6251-43e2-488a-9e18-f6c436243923" rendition="#ant">a.</hi> Der <hi xml:id="id78cfa196-9922-4a94-94fe-5e61a880d6b3" rendition="#ant">Magister Sententiarum.</hi> 128<seg xml:id="id6aa67dcd-e645-48a7-836f-2294827dabf8" type="leaders"/>– 288</hi></p>
+          <p xml:id="id418b67fa-14f9-4df8-a910-f5fbf7a3e9b1">        <hi xml:id="idef16c542-3656-4fbe-9890-93f2fac3f7cb" rendition="#size-1"><hi xml:id="id5ff6c87a-62dd-4ae4-979f-bfd4f582854b" rendition="#ant">b.</hi> Der Islam und die Aristotelische Philosophie. 129<seg xml:id="idc860078b-9b79-4944-9031-eea00f59fec8" type="leaders"/>– 289</hi></p>
+          <p xml:id="id866389c2-1a13-4772-b027-ab06d4364cd3">        <hi xml:id="idb9779f12-cd57-40a6-87e0-d4f117a7f3f7" rendition="#size-1"><hi xml:id="idaa74de13-0d62-4738-ade9-43fbe66d4e3b" rendition="#ant">c.</hi> Die Schulen der Thomisten und Scotisten. 130<seg xml:id="id7665c112-ff7a-4b37-9366-32328347ca40" type="leaders"/>– 290</hi></p>
+          <p xml:id="iddb530b5c-cea0-4d4f-b17c-dea06ea4c3bb">    <hi xml:id="id20d40a0b-2abb-4905-9dbb-f0e91e7e55c7" rendition="#size-1"><hi xml:id="id3b7359e7-dde7-4669-8937-a5a8a1d218b1" rendition="#ant">III.</hi> Die Entzweiung der kirchlichen Dogmatik mit sich selbst. 131<seg xml:id="id1946f1ec-413e-40ff-9387-0ff5520ce7c9" type="leaders"/>– 292</hi></p>
+          <p xml:id="idaf5b415c-4ab1-4c81-bec6-9b8a4c2f3e2b">                    <hi xml:id="idcb775c41-8586-4f95-990a-9b8700c7e0f0" rendition="#size-1"><hi xml:id="id7819be12-54c7-4b8e-9cbc-cbce7f07017d" rendition="#spa">Drittes Capitel.</hi></hi></p>
+          <p xml:id="id6caea7db-ec36-41fd-a15e-4f4c15ed6a3e">                    <hi xml:id="id0a01c556-8ed9-4016-838c-8a20a400f359" rendition="#spa">Die Periode der systematischen Erkenntniß.</hi></p>
+          <p xml:id="ide0b60b62-7521-4386-b247-ee53d88b9c00">
+            <hi xml:id="ide54a28e4-e2bd-47de-bc18-5c5c90997b31" rendition="#size-1">Einleitung. 132<seg xml:id="id32868206-596a-4f87-98ce-fa4753d1c62d" type="leaders"/>– 296</hi>
+          </p>
+          <p xml:id="idfe6814d3-f652-4e9a-be8d-45cc5b796ffd">    <hi xml:id="ida5b2f348-b555-4173-bd65-c5fd238c3195" rendition="#size-1"><hi xml:id="idc6da54ad-ed5f-433e-a281-5cf5c7477ea5" rendition="#ant">I.</hi> Das Princip der symbolischen Orthodoxie.</hi></p>
+          <p xml:id="ida4c0209e-2cda-4924-a58a-5e79f365969c">        <hi xml:id="id914322a0-3f7e-4cfe-a44d-ac5f45edf4f7" rendition="#size-1"><hi xml:id="id4723497d-a125-46f7-baf1-fe9387c43da1" rendition="#ant">a.</hi> Der Katholicismus. 133<seg xml:id="idd681cdf9-6e2f-4042-ab89-ee0e9271ac3e" type="leaders"/>– 297</hi></p>
+          <p xml:id="id8f49bb03-35b2-4e1f-96ad-b0f13f367a6b">        <hi xml:id="id93967816-b9a9-429d-915c-ba1325b3d66e" rendition="#size-1"><hi xml:id="id4ec6d229-3a73-495b-baea-d7f856b91320" rendition="#ant">b.</hi> Die symbolischen Bücher des Protestantismus. 134<seg xml:id="id7875fdba-f506-4eab-a632-95805028c017" type="leaders"/>– 103 [fejl for 301]</hi></p>
+          <p xml:id="id10800c88-5b14-47af-83e9-b51fadd2806e">        <hi xml:id="id9bf3873a-313f-423a-9855-5b996ff18b65" rendition="#size-1"><hi xml:id="id3069bd3e-a044-4d04-a771-6e40d3ef50cb" rendition="#ant">c.</hi> Der Supernaturalismus. 135<seg xml:id="idcc61a063-9617-4bf1-a990-6fac7935e355" type="leaders"/>– 302</hi></p>
+          <p xml:id="id210072e0-f9d0-47ae-a1f3-ea3b98e2f87a">    <hi xml:id="id04218a2b-c803-47f1-98f1-599fb0c33e1e" rendition="#size-1"><hi xml:id="id2b111067-a15b-4440-9839-f814062b65f7" rendition="#ant">II.</hi> Das Princip des subjectiven Glaubens und Unglaubens. 136<seg xml:id="id75c2c958-fdea-4063-88f7-0e78aad8aff4" type="leaders"/>– 304</hi></p>
+          <p xml:id="id4bfcbc2c-711d-4568-a26a-f3fdee6c4395">    <hi xml:id="id92dfa3e7-070a-4876-a20f-a50ba3f13f44" rendition="#size-1"><hi xml:id="id5e230a73-eb53-4908-ba96-7c9f65ada9a4" rendition="#ant">III.</hi> Die Idee der speculativen Theologie. 137<seg xml:id="id27b1ff0b-d8c2-4078-a7b0-61cb8ad5a0e5" type="leaders"/>– 322</hi></p>
+          <p xml:id="id8e4f149b-564e-4513-8888-808dace558fb">     Dritter Theil.</p>
+          <p xml:id="id8f04a554-8e68-4009-81fa-4daef37b1a65">     <hi xml:id="idb7b2fc07-0f0d-455d-a77f-2cdb4a06b6c2" rendition="#spa">Die praktische Theologie.</hi></p>
+          <p xml:id="id82d4ff13-4ef2-43fb-b33d-a0aea8bf7acc">
+            <hi xml:id="id98c0f0f1-a4af-4a01-b1fe-1c2a42388af2" rendition="#size-1">Eintheilung. 138<seg xml:id="id98463891-2f6b-4d4b-ac02-058339fce233" type="leaders"/>– 329</hi>
+          </p>
+          <p xml:id="idd9baf057-6534-4403-900a-5c44f38cd8d5">          Erste Abtheilung der praktischen Theologie.</p>
+          <p xml:id="id82a7bd8f-efeb-4312-92e6-c600ac072044">          <hi xml:id="id7c661c2e-dbcd-4e14-8832-6c72451952f3" rendition="#spa">Der Kirchendienst.</hi></p>
+          <p xml:id="id49d01499-beef-41b1-b97d-91e7b33fdcf6">
+            <hi xml:id="id632d088f-3cdb-427e-a62f-ffb671dd452e" rendition="#size-1">Eintheilung. 139<seg xml:id="id4190b34b-a627-4ac6-8ae6-7a6f8988aafd" type="leaders"/>– 330</hi>
+          </p>
+          <p xml:id="id52a8b826-ef75-4af4-b860-3368061752ee">               Erster Abschnitt.</p>
+          <p xml:id="idfb448a22-c012-40e1-a942-c9844f7c57c2">               <hi xml:id="id2f09abae-d103-4485-ab03-f2337cb46f6b" rendition="#spa">Die Katechetik.</hi> 140<seg xml:id="idc5125c06-a00d-43e2-b925-504431c96c03" type="leaders"/><hi xml:id="id025e6cdc-59a5-4f70-99dd-681296d4ba04" rendition="#size-1">– 331</hi></p>
+          <p xml:id="id139e6e09-92ad-4df0-ae58-0e2679953ff8">               Zweiter Abschnitt.</p>
+          <p xml:id="id94bd6327-f12e-4fbb-be90-36cf6d1bb37d">               <hi xml:id="idf4fa82a1-8cea-41fb-a9b5-a9eada129aba" rendition="#spa">Die Liturgik.</hi> 141<seg xml:id="id3e4917d4-bce3-4f03-a8fb-90881dafa637" type="leaders"/><hi xml:id="idde9b6001-1bcf-49de-9064-97c6e9350630" rendition="#size-1">– 336</hi></p>
+          <p xml:id="id3bfe6ecf-3cfe-4d33-a0a2-a68dbb8b034a">               Dritter Abschnitt.</p>
+          <p xml:id="idac4b02e1-168f-414e-a9ef-2eb2241fa3c9">               <hi xml:id="idc7cd49e2-c119-4edc-9ec7-905767fb8521" rendition="#spa">Die Homiletik.</hi> 142<seg xml:id="id893337bd-3426-4410-a3a4-6e1aeaa33be9" type="leaders"/><hi xml:id="idd7774abc-d577-446c-9214-f263238126ff" rendition="#size-1">– 343</hi></p>
+          <p xml:id="idffda93d3-dd23-4bb5-b69c-496de5efc4c1">          Zweite Abtheilung der praktischen Theologie.</p>
+          <p xml:id="id3e019cd8-9c62-4deb-9777-785e9927dd00">          <hi xml:id="id51954e72-ee2e-46a9-9688-bfe3d5e4c185" rendition="#spa">Das Kirchenregiment.</hi></p>
+          <p xml:id="id2380a318-d9ae-44ee-a84b-c2454564d395">
+            <hi xml:id="idfd6dba76-10c9-451f-807b-5679e829197c" rendition="#size-1">Eintheilung. 143<seg xml:id="id8ff71049-837c-4d20-ae2f-3b7a03769aa2" type="leaders"/>– 355</hi>
+          </p>
+          <p xml:id="id7111f21e-31c9-4dce-a5c3-a6db583ff666">               Erster Abschnitt.</p>
+          <p xml:id="id4bd94518-ec86-419a-901f-9062c5af3b2c">               <hi xml:id="idb7bea72b-db6a-423b-9a11-da5fad24e132" rendition="#spa">Die symbolische Theologie.</hi> 144<seg xml:id="idc7aa8210-fef9-4d35-b7a2-f07cc7442ebe" type="leaders"/><hi xml:id="id316c3020-f681-486a-bed4-a2ca54cec6fd" rendition="#size-1">– 357</hi></p>
+          <p xml:id="id3d02af6c-8de4-45e9-9372-28d1154e9155">          Zweiter Abschnitt.</p>
+          <p xml:id="id29a5ff93-8774-43e0-ad31-eecd33f405ea">          <hi xml:id="id46d60057-d7c4-4d9e-b5c4-1b9d52fe78a9" rendition="#spa">Das Kirchenrecht.</hi> 145<seg xml:id="idd499faf6-37f4-44b9-a932-eb9a2836dd4d" type="leaders"/><hi xml:id="idde276692-7fc8-4629-9f9d-7c10845530a6" rendition="#size-1">– 359</hi></p>
+          <p xml:id="id38ce8cde-adc5-4f62-b17d-7812f55a5f6e">          Dritter Abschnitt.</p>
+          <p xml:id="id5e285ae6-abfe-4402-bdcf-71bfa0f162c3">          <hi xml:id="id621274d2-01a7-45fa-b747-da2788b10493" rendition="#spa">Die Theologie. 146</hi><seg xml:id="id314fe435-21ca-45ea-8fd0-d095b1b69c61" type="leaders"/><hi xml:id="idc1bd5c82-9d30-497c-8495-3fa41e5dbebd" rendition="#size-1">– 364</hi></p>
+        </note>
+        <note type="commentary" xml:id="kk-270-e" subtype="e" n="353,1">
+          <label xml:id="id3ea60710-66e8-42ae-97b5-d0536cf67d6a">
+            <hi xml:id="idb9e0e135-13c1-4419-8fc5-001182b62158" rendition="#bol"><hi xml:id="idc82b1245-9a6d-4187-ace7-3deadbeb645d" rendition="#ita">Athanasius der Grosse,</hi> indholdsoversigt, s. XI-XIV</hi>
+          </label>
+          <p xml:id="idcf0cfbc0-0176-47c0-8455-3f11c1ffbeec"/>
+          <p xml:id="id44141178-9b91-42f9-884b-a9e6a9ceffcd">
+            <hi xml:id="idce27106c-ab33-4f70-b9c8-08ff2dda63c4" rendition="#size1">
+              <hi xml:id="idf70b7bbc-ab10-42be-866a-c802eda4f8a0" rendition="#spa">Inhalt.</hi>
+            </hi>
+          </p>
+          <p xml:id="id832ab317-c2be-468c-ad01-4474a93aea52">
+            <hi xml:id="idedb71551-9476-4552-9f68-ba821807c7ce" rendition="#spa">Erstes Buch.</hi>
+          </p>
+          <p xml:id="idb88a40e0-c550-4eb8-aade-a3d566ffb6b5">
+            <hi xml:id="id3b1ea4e2-d138-412f-96e3-c65d2d7e2f3e" rendition="#size-1">Was die ältesten Kirchenväter, die ohne Polemik nach aussen geschrieben haben, oder was Clemens von Rom, Barnabas und Hermas vom Sohne Gottes und dem heil. Geiste lehrten. Lehre der ältesten Apologeten gegen Häretiker, oder des Ignatius und Irenäus, dann der ersten Apologeten gegen Heiden und Juden, oder des Verfassers des Briefes an Diognet, des Justin, Tatian, Athanagoras und Theophilus von Antiochien über die genannten Glaubenspuncte. Betrachtungen über die Distinction des λογος ἐνδιαϑετος und πϱοφοϱιϰος. Untersuchung und Widerlegung der Behauptung Münschers u. A., daß die bisher genannten Kirchenlehrer nur eine Fleischwerdung, nicht eine Menschwerdung des Sohnes Gottes angenommen haben. Betrachtung über die häretischen Systeme dieser Zeit: sie bestätigen die katholische Lehre vom Sohne Gottes. Der Glaube des Tertullian, des Clemens von Alexandrien, des Origenes und des Dionysius von Alexandrien an die Trinität. Ueberblick der öffentlichen und Privat-Symbole.</hi>
+          </p>
+          <p xml:id="id51969d24-d6a8-452e-86dc-035b8009cd85">
+            <hi xml:id="id04546df9-9c04-4c04-949c-8469c54753c9" rendition="#spa">Zweites Buch.</hi>
+          </p>
+          <p xml:id="idc61c4978-3a08-4cff-9a7b-4b228909f974">
+            <hi xml:id="id59eeac33-81b3-428f-a854-86f959615afc" rendition="#size-1">Anfänge des heil. Athanasius. Allgemeine Schilderung seines Charakters. Sein kirchlicher Charakter. Lehre von Kirche, Schrift und Tradition. Grundsätze, die daraus für seine schriftstellerische Thätigkeit folgten. Seine Schriften vor dem Ausbruche der arianischen Irrlehre: Widerlegung des Heidenthums und Vertheidigung des Christenthums. Ursprünglicher Zustand des Menschen. Sündenfall. Was das Böse sei. Möglichkeit des Bösen. Folgen der Sünde. Erbsünde. Deduction der Naturvergötterung aus der Sünde. Wie durch die Sünde das Bewußtsein eines über die Natur erhabenen Gottes sich verlor, so auch das Bewußtsein der Verschiedenheit der menschlichen Seele vom Leib. Beweis, daß Gott von der Welt verschieden sei (Einheit Gottes) und die Seele vom Leib (Unsterblichkeit des menschlichen Geistes). Beweis der Nothwendigkeit der Menschwerdung des Logos aus der Vernunft. Wie die Erlösung Aller in Christo bewirkt wurde. Möglichkeit einer unmittelbaren Offenbarung Gottes. Der Zweck der Wunder Christi ist Darstellung der Wahrheit, daß Gott über die Natur erhaben sei. Christus ist sittliches Vorbild. Zusammenhang des Todes Christi mit dem Zwecke der Menschwerdung. Abzweckung der Auferstehung Christi. Beweis, daß Christus auferstanden und lebt, weil er geheimnißvoll fortwährend in den Seinigen wirkt: die Gottheit Christi leuchtet aus seinen göttlichen Wirkungen in der Geschichte hervor: Umgestaltung der Welt durch ihn. Nothwendigkeit der eigenen innern Erfahrung, um an ihn zu glauben. – Auftritt des Arius. Sein Charakter. Aeußere Veranlassung des durch ihn erzeugten Streites. Innerer Grund der so schnellen Verbreitung seiner Lehre. Zusammenhang aller seiner Behauptungen: er vernichtet das Wesen des Christenthums. Entwickelung seiner dialektischen und biblischen Gründe für seine Irrlehre. Diese ist dem Glauben vom Sohne Gottes, wie er sich in den ältesten Kirchenvätern findet, innerlich und wesentlich entgegengesetzt.</hi>
+          </p>
+          <p xml:id="id50b23a1b-5aff-4d57-a544-c1858ffdd59b">
+            <hi xml:id="id1635127f-5adf-4b3d-9f9f-2e664477a4cc" rendition="#spa">Drittes Buch.</hi>
+          </p>
+          <p xml:id="id9b6e4e67-5aa1-42d4-8cbc-153d263f82f1">
+            <hi xml:id="id9c5bf6e2-ce14-422b-a2c5-a4f253c01ba6" rendition="#size-1">Constantin will den innern Streit zwischen der katholischen und arianischen Lehre auf eine äußerliche Weise beilegen. Synode von Nicäa. Geschichte derselben. Des Arius Lehre wird verworfen, und er von Constantin verbannt. Athanasius zeichnet sich vor Allen als scharfsinniger Gegner des Arius zu Nicäa aus. Vertheidigt den katholischen Glauben in mehreren Schriften. Widerlegung des Arianismus aus den Grundanschauungen des Christenthums. Seine bewunderungswürdigen philosophisch-biblisch-dialektischen Argumente gegen denselben. Auflösung der arianischen Schriftbeweise gegen die Lehre von der Gottheit Christi. Vertheidigung der Gottheit des heil. Geistes. Athanasius bestreitet den Sabellianismus. Betrachtungen über das Verhältniß der katholischen, zur arianischen und sabellianischen Trinitätslehre: die arianische trennt Gott von der Welt, die sabellianische vermischt Gott und Welt, die katholische unterscheidet Gott und Welt wie den Schöpfer von dem Geschöpfe ohne sie mechanisch zu trennen. Prüfung der Schleiermacher'schen Abhandlung »über den Gegensatz der athanasianischen und sabellianischen Trinitätslehre.«</hi>
+          </p>
+          <p xml:id="id34af08b4-95d5-4d54-b22b-703f2a957251">
+            <hi xml:id="idba45ed70-6370-4565-92d2-546ab560b20c" rendition="#spa">Viertes Buch.</hi>
+          </p>
+          <p xml:id="idc9669b3b-c7ba-4a44-bdca-26c670c668d7">
+            <hi xml:id="ide3ba224b-e240-475b-abbe-c7b3aa3920ce" rendition="#size-1">Athanasius wird Bischof von Alexandrien. Constantin nimmt den Arius wieder gnädig auf; auch Eusebius von Nikomedien und andere Anhänger des Arius werden vom Exil zurückberufen, und setzen bald mehrere katholische Bischöfe ab, die nicht widerstehen konnten. Nur Athanasius wagt Gegenbewegungen. Constantin befiehlt ihm wiederholt unter scharfen Drohungen dem Arius die Kirchengemeinschaft wiederzugeben. Er giebt sie ihm nicht. Die Meletianer und Eusebianer vereinigen sich gegen Athanasius. Dieser widerlegt ihre wiederholten Klagen bei Constantin, und versöhnt diesen mit sich. Abermalige Klagen gegen ihn. Die schmähliche Synode von Tyrus. Athanasius wird nach Trier verbannt. Marcellus von Ancyra will die Synodalbeschlüsse gegen Athanasius nicht unterschreiben und wird von den Eu[se]bianern der Ketzerei angeklagt und abgesetzt. Eusebius von Cäsarea schreibt fünf Bücher gegen Marcellus, den er nicht verstehet. Was Marcellus gelehrt hat. Sich selbst überall widersprechende Theorie des genannten Eusebius. Der Grund davon liegt in seiner äußerlichen Auffassung des Erlösungwerkes. Verhältniß des Athanasius zu, und Urtheil über Eusebius und Marcellus. Die Gemeinde des Athanasius nimmt auch in der Abwesenheit ihres Bischofs den Arius nicht auf. Tod des Arius. Constantin stirbt, und seine Söhne rufen den Athanasius zurück. Neue Klagen vor dem arianisch gesinnten Constantius gegen Athanasius, der von einer eusebianischen Synode zu Antiochien wieder abgesetzt, und mit Heeresmacht aus Alexandrien vertrieben wird. Verfolgung der alexandrinischen Kirche. Papst Julius nimmt den Athanasius, der nach Rom reiset, in Schutz. Herrlicher Brief des Julius für Athanasius. Die Synode von Sardika setzt den Athanasius wieder ein: ihre Geschichte, und Schreiben an Julius. Wie sich in den arianischen Streitigkeiten die Nothwendigkeit eines sichtbaren Oberhauptes der Kirche zeigte. Der bisherige Feind des Athanasius, der Kaiser Constantius, beruft den Athanasius zu sich und bewundert ihn. Erläßt mehrere Schreiben für ihn. Festlicher Empfang des Athanasius in Alexandrien. Wie Athanasius in seiner Gemeinde jetzt wirkte. Wirkungen seines Aufenthaltes im Occident. Bringt die Mönche dahin, und stellt dem Occident den Antonius als Ideal eines Mönchs auf. Großer Werth seiner Schrift über den heil. Antonius.</hi>
+          </p>
+          <p xml:id="id4f128f58-77fd-4fee-944b-1268e0646065">
+            <hi xml:id="id41c2b8c4-0e4b-4091-a1dd-2739b2539e04" rendition="#spa">Fünftes Buch.</hi>
+          </p>
+          <p xml:id="id3c2b2cd0-4c88-4709-b78e-3e91a71a1764">
+            <hi xml:id="idbb625f95-b7f0-40b1-bafd-34685e4b8701" rendition="#size-1">Magnentius empört sich und sucht die Gunst des Athanasius. Constantius versichert den Athanasius auch seiner Gewogenheit, um die des Athanasius sich zu erhalten. Schämt sich nachher seines Schrittes. Die Arianer benützen diese Stimmung des Kaisers und klagen den Athanasius wieder an. Die Synoden von Arles und Mailand gegen Athanasius. Fall des Dionysius von Capua. Eusebius von Vercelli, Dionysius von Mailand, Lucifer von Cagliari, der Papst Liberius, Hosius von Corduba und Hilarius von Poitiers nebst Andern werden als Vertheidiger des Athanasius, des kathol. Glaubens und der Selbstständigkeit der Kirche verbannt. Große Wahrheiten, die dem Kaiser über die Unabhängigkeit der Kirche vom Staate gesagt werden. Athanasius wird wieder vertrieben. Große Verfolgungen, die die Kirche erleidet. Constantius will den Arianismus allgemein machen. Allenthalben werden arianische Bischöfe eingesetzt. Die kathol. Kirche stehet am Rande des Verderbens. Hoffnungen der Kirche. Thätigkeit der vertriebenen Bischöfe; sie sind so ungebrochenen und freudigen Muthes, daß sie gerade jetzt die kathol. Wahrheit am scharfsinnigsten vertheidigen. Hilarius von Poitiers vertheidigt den Glauben als solchen gegen übermüthige Menschenweisheit, die katholische Kirche als solche gegen die Häretiker und die Trinitätslehre insbesondere. Die Arianer haben jetzt auch den Muth, zu sagen, was sie immer dachten, und trennen und vernichten sich dadurch selbst. Die arianischen Symbole. Furchtbarer Zwang des Kaisers gegen die katholische[n] Bischöfe. Heftige Schriften katholischer Bischöfe an und gegen Constantius und seine Tyrannei.</hi>
+          </p>
+          <p xml:id="id074bdbd7-c99c-43b8-97f2-037e6f7795ea">
+            <hi xml:id="idbd2a776e-0997-4f57-8315-e6a7fe1ea84d" rendition="#spa">Sechstes Buch.</hi>
+          </p>
+          <p xml:id="id567acf17-0f44-49d2-a362-01a7fe635b50">
+            <hi xml:id="iddc185b61-218c-40cd-bf7a-aa7520415371" rendition="#size-1">Constantius stirbt. Der Kaiser Julian ruft die kathol. Bischöfe zurück. Vereinigungsversuche. Grundsätze für die Vereinigung, die Athanasius und Hilarius aufstellen; die unirende Synode von Alexandrien. Julian verbannt den Athanasius, weil die Heiden der Kraft seiner Rede nicht widerstehen können. Briefe Julians gegen Athanasius. Jovian ruft den Athanasius, den er vor Allen ehrt, zurück, und der Kaiser Valens verbannt ihn wieder, fürchtet ihn aber und widerruft bald seinen gegebenen Befehl. Athanasius kann nach dem fünften Exil ruhig in Alex. bleiben. Sein jetziger großer Wirkungskreis, Einfluß und allgemeine Verehrung. Unter ihm noch wachsen die künftigen Stützen der kathol. Kirche heran; nimmt den heil. Basilius, in Betreff seiner Lehre vom heil. Geist, in Schutz, und genießt noch die Freude, in ihm einen großen Bekenner des kathol. Glauben zu erkennen. Athanasius hat in seinem höchsten Alter noch die frische jugendliche Kraft. Seine zwei Bücher gegen den Apollinarismus. Die Apollinaristen lehren eine blos imputative Gerechtigkeit, um ihren Hauptirrthum zu unterstützen. Athanasius widerlegt Beides. Sein Tod. Nachtrag: Er trägt die katholische Lehre von der Gnade vor, und lehrt die reelle Gegenwart Christi im heil. Abendmahl.</hi>
+          </p>
+        </note>
+      </div>
+    </body>
+  </text>
 </TEI>

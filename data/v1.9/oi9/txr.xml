@@ -1,160 +1,561 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Øieblikket Nr. 9</title>
-     
-     <title type="short">Oi9</title>
-  <author>
-   <name>Elise Iuul</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Niels Jørgen Cappelørn</name><name>Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2009</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K13</biblScope>
-     <biblScope unit="file">http://sks.dk/oi9/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition><rendition xml:id="cun" scheme="css">text-decoration: underline</rendition><!--curved underlining--><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition xml:id="sub" scheme="css">vertical-align: sub; font-size: 80%;</rendition><rendition xml:id="lth" scheme="css">text-decoration: line-through</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20120314">txr/XML, <bibl><idno type="version">1.6</idno>, <biblScope unit="file">http://sks.dk/oi9/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="idcb78972e-ca07-4412-a17f-cfdf8cab25d1">
+    <fileDesc xml:id="id38584e98-2a4c-4371-a99c-b0aa0f1f6ca3">
+      <titleStmt xml:id="idee408a9c-eded-44a0-91ba-5e2332b0c2ae">
+        <title xml:id="idcd872d54-0687-4bb8-be9b-afcc5828da6d" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="idcea3ef37-01ca-4bf2-9260-206c7246cb5c">Øieblikket Nr. 9</title>
+        <title xml:id="id73c62a04-d4b0-4fee-b5ef-1363cac5da2c" type="short">Oi9</title>
+        <author xml:id="idc1b11ee6-4eec-4488-9c45-c05767fa5994">
+          <name xml:id="id8617f3fa-b2e2-4ed1-bde9-f9167cee2b81">Elise Iuul</name>
+        </author>
+        <editor xml:id="id0b3f4f9a-b37e-4054-862e-a890a3ad8340">
+          <name xml:id="idb45c5e36-3af9-4948-9295-22401234ef48">Niels Jørgen Cappelørn</name>
+          <name xml:id="idbce2d4ee-1a05-457e-be61-ac3507e246a1">Joakim Garff</name>
+          <name xml:id="id90bdbab0-474d-4c45-9b62-d3080a533fc6">Johnny Kondrup</name>
+          <name xml:id="id347bff46-a148-4340-90a2-e13e4273bd53">Tonny Aagaard Olesen</name>
+          <name xml:id="id5d503366-e4d0-4f65-9b01-a57904dd889a">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="id1fb84b55-4aba-43d2-b30c-9a6c467bcb69">
+          <resp xml:id="id64d31c03-e58d-4bcb-8bab-beca391deb91">redigeret af</resp>
+          <name xml:id="id25ce5120-b044-42a1-967c-8d678d64bab6">Niels Jørgen Cappelørn</name>
+          <name xml:id="id986a17ef-9628-4ea0-ae21-d5a905304c3e">Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="idc1dcd0bf-3a77-438c-bf11-13584954a540">
+          <resp xml:id="id53d7bf0a-b663-4b2b-8cf6-142ad5300db3">elektronisk redigeret af</resp>
+          <name xml:id="idea927e59-2f19-40ae-95f1-22f6992feeb3">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="idb6bfbd28-26e8-4bf1-a05c-9352a564c64e">
+        <authority xml:id="id6daeace6-c200-4cb4-9c17-0624287abfc7">Søren Kierkegaard Forskningscenteret 2009</authority>
+        <availability xml:id="id409510b8-3d24-4a36-a4c4-fd8497562404" status="restricted">
+          <p xml:id="idb930379b-0b38-456e-a162-023d0e7d5142">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="idb9597647-8d10-41dd-b22b-769ed7290f68">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="idf5c15de7-7d25-4e61-a000-764ad587b090" unit="volume">K13</biblScope>
+        <biblScope xml:id="id3767babe-2990-49ae-b351-9d6fe167984a" unit="file">http://sks.dk/oi9/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id34ea00fe-3ca7-49fd-9e2e-3b8dd12bb751">
+        <bibl xml:id="idd41200dd-cd14-4d88-89d0-35070cf288c3" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id2df2fb68-fd74-49d9-ad15-a7fedc61e596">
+      <tagsDecl xml:id="idfd30ece5-7965-438c-b8ed-4ea7e0e51c5f">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition>
+        <rendition xml:id="cun" scheme="css">text-decoration: underline</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition xml:id="sub" scheme="css">vertical-align: sub; font-size: 80%;</rendition>
+        <rendition xml:id="lth" scheme="css">text-decoration: line-through</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="idd92cb4dc-b55c-40f4-846f-b6f775df167c">
+      <change xml:id="ida7323e44-f4c0-4ab2-a158-03266d6e7166">Transformed to TEI by style sheet <bibl xml:id="id4cec0da4-9831-41cc-9c8f-aacd1382dd93" type="file">txr2tei.xsl</bibl> version as of <date xml:id="idcb7ebdbf-17d0-4f20-9dff-ad448fd79fc9">2017-02-15</date> importing <bibl xml:id="idee9a1617-2f96-426b-b744-737b1e88f87e" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="ideb6c14a3-4898-49ce-889a-0eca981501cd">Transformed to TEI by style sheet <bibl xml:id="id0be94db2-945a-459b-804b-ab05374cf4be" type="file">kn12tei.xsl</bibl> version <idno xml:id="idee482a55-b494-40eb-b179-ae6aaba13100" type="version">1.9</idno> as of <date xml:id="idfeebeb93-4a7c-4d00-bae9-7c90b2bb1e59">2017-02-21</date> by <name xml:id="id3b2bbf24-ef97-4878-82be-8777e34de054">Karsten Kynde</name>, <orgName xml:id="ide2ae94dc-b4cf-49e5-84f9-a36269aa8c4e">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="ida662c1bc-a21e-43f3-b6ec-51fbf6a9e221">København</placeName></change>
+      <change xml:id="idc2a53e99-f927-4037-8e6d-90792e29b1fd" when="20120314">txr/XML, <bibl xml:id="idda743f83-0942-48cb-8fba-739dde4750af"><idno xml:id="id399c1a19-5701-416e-8383-360b27194ab8" type="version">1.6</idno>, <biblScope xml:id="idfcb9af44-61dc-4053-b92a-70480bbbecf0" unit="file">http://sks.dk/oi9/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="TextCriticalAccount" subtype="publishedWritings"><body><div><head type="topText" n="Tekstredegørelse"/>
-  <head><pb xml:id="ss569" n="569" edRef="#SKS"/>Tekstredegørelse</head>
-  <list type="TOC"> 
-   <item>1. Bibliografisk beskrivelse 
-    <ptr type="chapter" target="#k1" n="569"/>
+  <text xml:id="idd5150210-2944-4c6b-9783-9d0f14284b06" type="TextCriticalAccount" subtype="publishedWritings">
+    <body xml:id="ida32d7c40-74b5-481e-a99c-820efaf114c4">
+      <div xml:id="id310d4634-dd75-481b-a840-36417ec94db1">
+        <head xml:id="idee3cc301-11a8-450e-a848-1699b1bafd1c" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="id542edecc-fecc-476f-bc4e-93d74ee59334"><pb xml:id="ss569" n="569" edRef="#SKS"/>Tekstredegørelse</head>
+        <list xml:id="id5de83a82-3c4c-48dc-956d-f24109c60ddd" type="TOC">
+          <item xml:id="id91bd5cc5-5643-46c9-baee-195bec121c59">1. Bibliografisk beskrivelse 
+    <ptr xml:id="idd22c034b-5f6b-4198-9fce-7a9bd732c0b7" type="chapter" target="#k1" n="569"/>
    </item>
-   <item>2. Manuskriptbeskrivelse 
-    <ptr type="chapter" target="#k2" n="572"/>
+          <item xml:id="id39051989-951f-4610-8cb7-097a65e3b784">2. Manuskriptbeskrivelse 
+    <ptr xml:id="id456e5b30-f8fe-4527-b3f8-ee8bc76ce50e" type="chapter" target="#k2" n="572"/>
    </item>
-   <item>3. Tilblivelseshistorie 
-    <ptr type="chapter" target="#k3" n="580"/>
+          <item xml:id="id487972ae-a7c5-41bd-a19f-7c2b7ea90c85">3. Tilblivelseshistorie 
+    <ptr xml:id="ida21dd10f-ad90-46b5-9f0f-ba7d71b47f35" type="chapter" target="#k3" n="580"/>
    </item>
-   <item>4. Udgivelsesmåde 
-    <ptr type="chapter" target="#k4" n="582"/>
+          <item xml:id="idc4a9c478-df8d-4151-88b8-38aef26b408d">4. Udgivelsesmåde 
+    <ptr xml:id="id561da868-f56a-41d2-8a29-0e9222c7a406" type="chapter" target="#k4" n="582"/>
    </item>
-  </list>
-  <div type="level1" xml:id="k1">
-   <head>1. Bibliografisk beskrivelse</head>
-   <p><hi rendition="#ita">Øieblikket Nr. 9</hi> forelå færdigtrykt fra Bianco Lunos Bogtrykkeri den 24. sept. 1855.<note> <p><hi rendition="#ita">Bl. art.,</hi> s. 295.</p> </note> På titelbladet findes datoen »24 Septbr. 1855«.<note> <p>Datoen angiver måske den dag, hvor SK efter at have læst en førstekorrektur frigav teksten til trykning. Nr. 7 har dog på titelbladet datoen »30 August 1855«, men var if. <hi rendition="#ita">Bl.art.</hi> færdigtrykt allerede den 29. august. Den mulighed foreligger også, at datoen skulle betegne den dato, hvor skriftet var færdigt fra trykkeriet. Der er dog hverken i nr. 1, nr. 7 eller nr. 8 sammenfald mellem datoen på titelbladet og den dato, på hvilken det pågældende nummer af <hi rendition="#ita">Øieblikket</hi> if. <hi rendition="#ita">Bl.art.</hi> var færdigtrykt.</p> </note> Skriftet blev annonceret som udkommet i <hi rendition="#ita">Adresseavisen</hi> og <hi rendition="#ita">Fædrelandet,</hi> begge nr. 223, den 25. sept. 1855, samt i <hi rendition="#ita">Berlingske Tidende,</hi> nr. 224, den 26. sept. 1855.<note> <p>Annonceringen blev gentaget i <hi rendition="#ita">Adresseavisen,</hi> nr. 224, den 26. sept. 1855, <hi rendition="#ita">Fædrelandet,</hi> nr. 225, den 27. sept. 1855, og <hi rendition="#ita">Berlingske Tidende,</hi> nr. 226, den 28. sept. 1855.</p> </note> Det kostede 20 skilling og udkom på forlaget <persName key="Reitzel, Carl Andreas">C.A. Reitzel</persName>s Bo og Arvinger.</p>
-   <p>Tre eksemplarer af <hi rendition="#ita">Øieblikket Nr. 9</hi> er blevet kollationeret; de benyttede eksemplarer er:</p>
-   <list> 
-     
-     <label><pb xml:id="ss570" n="570" edRef="#SKS"/>A</label>
-     <item>Søren Kierkegaard Forskningscenterets arbejdseksemplar, privat indbundet og beskåret.<note> <p>Eksemplaret tilhører G.E.C. Gads Forlag (tidligere hos dr.phil. h.c. <persName key="Bernström, Gustaf">Gustaf Bernström</persName>, <placeName>Göteborg</placeName>; tidligere hos museumsdirektør <persName key="Madsen, Karl">Karl Madsen</persName>, <placeName>København</placeName>). På indersiden af forpermen findes <persName key="Madsen, Karl">Karl Madsen</persName>s ekslibris, tegnet af <persName key="Bindesbøll, Thorvald">Thorvald Bindesbøll</persName>. Eksemplaret indeholder <hi rendition="#ita">Øieblikket</hi> nr. 1-9; medindbundet er <hi rendition="#ita">Hvad Christus dømmer om officiel Christendom</hi> og <hi rendition="#ita">Dette skal siges; saa være det da sagt</hi> samt <hi rendition="#ita">Guds Uforanderlighed.</hi></p> </note></item>
-    
-     
-     <label>B</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret, katalogsignatur F, 2656 - 8<hi rendition="#sup">o</hi>, ex. 1.</item>
-    
-     
-     <label>C</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret, katalogsignatur F, 2656 - 8<hi rendition="#sup">o</hi>, ex. 2.</item>
-    
-   </list>
-   <p>Ved den interne kollation af de tre eksemplarer blev der ikke konstateret afvigelser. Eksemplar A danner grundlag for den følgende beskrivelse.</p>
-   <div type="level2">
-    <head>Kollationeringsformel</head>
-    <p>8<hi rendition="#sup">o</hi>. 1<hi rendition="#sup">8</hi> 2<hi rendition="#sup">4</hi>. $2 signeret (-1<hi rendition="#sub">1</hi>, 2<hi rendition="#sub">2</hi>). 12 blade. Paginering [1-3], 4-22, [23-24].<note> <p>Formlen er uddraget af de tre eksemplarer A, B og C. Der bruges arabertal om arknumre, og arkenes bladantal angives med hævet skrift. $ står for 'alle signerede ark'. »$2 signeret« betyder: I alle signerede ark har de to første blade signatur. Manglende signatur angives med sænket skrift. Upaginerede sider noteres i [      ].</p> </note></p>
-    <p>Formatet er oktav. Skriftet har et omfang på 24 sider, svarende til 12 blade fordelt på 1 ½ ark,<note> <p>I eksemplar A og B er bl. 12 bortskåret ved indbinding; i eksemplar B er bl. 11 limet på bl. 10.</p> </note> og er pagineret 4-22, idet bl. 1r-2r og bl. 12 er uden paginering.</p>
-    <p rendition="#ind">S. [1] udgør titelbladet med indholdsfortegnelsen, s. [3]-6 »Altsaa saaledes staaer Sagen.«, s. 7-9 »At Idealerne skulle forkyndes – ellers er Christen-|dommen i dybeste Grund forfalsket.«, s. 10-11 »En Dosis Livslede.«, s. 12-15 »Vær Piat – og Du skal see, alle Vanskeligheder | forsvinde!«, s. 16-19 »At Præsterne ere Menneske-Ædere, og paa den | afskyeligste Maade.« og s. 20-22 »Præsten ikke blot beviser Christendommens Sandhed, | men han modbeviser den med det Samme.«. Titelbladets bagside og s. [23] og [24] er blanke.</p>
-    <p rendition="#ind"><pb xml:id="ss571" n="571" edRef="#SKS"/>Ark 1 er uden primasignatur, men med sekundasignatur; ark 2 er med primasignatur, men uden sekundasignatur. Primasignaturen (arknummeret) er angivet med arabertal, sekundasignaturen med arabertal fulgt af asterisk.</p>
-   </div>
-   <div type="level2">
-    <head>Beskrivelse af Øieblikket Nr. 9 i eksemplar A</head>
-    <p>Det beskårne hæftes blade måler ca. 121 × 193 mm.<note> <p>Størrelsen måles som bredde × højde.</p> </note> Hæftets tykkelse er ca. 1 mm.</p>
-    <div type="level3">
-     <head>Papir</head>
-     <p>Der er benyttet almindeligt trykpapir af en ret kludeholdig kvalitet.</p>
-    </div>
-    <div type="level3">
-     <head>Typografi</head>
-     <p>Det fremherskende skriftsnit er fraktur; enkelte steder er benyttet tekstur (gotisk) og til titlen på forsiden skriften medolin. Til latinsk tekst er brugt antikva, og fremhævet tekst er sat med fed eller spatieret skrift.</p>
-     <p rendition="#ind">Titelbladet er med to skillestreger – den ene enkelt, den anden dobbelt – delt i tre felter. I det øverste felt er anført skriftets titel og nummer, i det mellemste en indholdsfortegnelse, datoen »24 Septbr. 1855.« samt forfatternavnet, i det nederste udgivelsessted, forlag og trykkeri. Titlen er spatieret og sat med medolin i skriftets største punktstørrelse, ca. 6 grader over brødteksten.<note> <p>Brødteksten er sat med punktstørrelse 10; tekst, der er 6 grader større, er sat med punktstørrelse 28, 5 grader større med punktstørrelse 24, 4 grader større med punktstørrelse 20, 3 grader større med punktstørrelse 16, 2 grader større med punktstørrelse 14, 1 grad større med punktstørrelse 12, mens tekst, der er 1 grad mindre, er sat med punktstørrelse 8, og 2 grader mindre sat med punktstørrelse 6.</p> </note> Nummerangivelsen er sat med mindre punktstørrelse, ca. 4 grader over brødteksten. Overskriften »Indhold:« er sat med spatieret, fed tekstur, mens forfatternavnet er sat med fed fraktur, begge i samme punktstørrelse som brødteksten. Indholdsfortegnelsen og datoangivelsen er ca. 1 grad mindre. Udgivelsesstedet er sat med fed, lang tekstur i samme punktstørrelse som brødteksten. Forlæggernavnet er spatieret og ca. 1 grad mindre end brødteksten, trykkeriangivelsen ca. 2 grader mindre. Titelbladet er gengivet som <ref target="../Oi9/txr.xml#ill_k27" type="figure">illustration 27</ref>.</p>
-     <p rendition="#ind">Overskrifterne til de forskellige artikler er sat med fed, ca. 1 grad større end brødteksten, og adskilt fra brødteksten med en tynd skillestreg. På <pb xml:id="ss572" n="572" edRef="#SKS"/>s. [3], indrykket fra venstre og adskilt fra overskriften med en tynd vandret streg, findes dateringen »Den 31 Mai 1855.«, sat med ca. 1 grad mindre punktstørrelse end brødteksten. I artiklerne »Altsaa saaledes staaer Sagen.« og »En Dosis Livslede.« markerer tre asterisker et større ophold i teksten ved nyt afsnit. På s. 8 er ordet »beroligende« som det eneste sat med fed i brødteksten. Alle artiklerne indledes med en uncial, der er ca. 2 grader større end brødteksten.</p>
-     <p rendition="#ind">En normalside har 32 linjer. Tekstkolumnen måler 88 × 158 mm. Brødteksten er sat i ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum. Artiklerne afsluttes med en enkelt finalestreg, den sidste artikel dog med en dobbelt. <figure xml:id="ill_k27" rend="recto"><graphic url="../Oi9/ill_k27.jpg"/> <head>27. Titelblad til <hi rendition="#ita">Øieblikket Nr. 9.</hi> Naturlig størrelse, beskåret</head> </figure> </p>
-     <p>Der er enkelte trykfejl i førstetrykket. Trykfejlene skyldes de fleste steder læderede typer.<note> <p>Eksempler på tegn, der er utydelige i trykket på grund af læderede typer, er: komma efter »Soldat« (<ref target="../Oi9/txt.xml#ss376" type="publishedWritings" n="376"><hi rendition="#ita">SKS</hi> 13, 376</ref>,6) samt 'g' i »sige« (380,9).</p> </note></p>
-    </div>
-   </div>
-  </div>
-  <div type="level1" xml:id="k2">
-   <head>2. Manuskriptbeskrivelse</head>
-   <p>Til <hi rendition="#ita">Øieblikket Nr. 9</hi> findes følgende manuskripter, alle i Kierkegaard Arkivet (KA) på <placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
-   <msDesc><msIdentifier><collection>Oi9</collection></msIdentifier> 
-    <msPart xml:id="physDesc.1" next="#additional.1"><msIdentifier><idno>1</idno></msIdentifier><physDesc><p>Kladder til <hi rendition="#ita">Øieblikket Nr. 9</hi> fordelt på 9 dobbeltblade og 1 løst blad, i alt 19 blade.</p></physDesc> 
-       <msPart xml:id="physDesc.1.1" next="#additional.1.1"><msIdentifier><idno>1.1</idno></msIdentifier><physDesc><p>Kladde til titelblad med indholdsfortegnelse (<ref target="../Oi9/txt.xml#ss371" type="publishedWritings" n="371"><hi rendition="#ita">SKS</hi> 13, 371</ref>).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.<note> <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p> </note></p><p>Ingen paginering.</p><p>Papir: gulligt velin, ribbet. Mål: 170 × 205 mm.<note> <p>Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p> </note></p><p>Bl. [1v]-[2v] er ubeskrevet.</p><p>På bl. [1r] findes følgende påskrifter: »Øieblikket. / <hi rendition="#bol">N<hi rendition="#sup">o</hi> 9.</hi> / Indhold. / 1) Altsaa saaledes staaer Sagen. / <del rendition="#lth">2) 'Sandhedsvid<pb xml:id="ss574" n="574" edRef="#SKS"/>nernes' Taktik.</del> / <del rendition="#lth">3) At jeg staaer bogstaveligt ene; og at man / ikke forstaaer Betydningen heraf.</del> / <del rendition="#lth">4) At det slaaer til for mig.</del> / 2 <del rendition="#lth">5</del>) At Idealerne skulle forkyndes – ellers / er Χstd. i dybeste Grund forfalsket. / 3 <del rendition="#lth">6</del>) En Dosis Livslede. / 4 <del rendition="#lth">7</del>) Vær Piat – og Du skal see, alle Van-/skeligheder forsvinde! / 5 <del rendition="#lth">8</del>) At Præsterne ere Menneske-Ædere, og paa / den afskyeligste Maade. / 6 <del rendition="#lth">9</del> Præsten ikke blot beviser Xstds Sandhed, / men han modbeviser den med det Samme.«. Herunder står en påbegyndt datering »d.«, forfatterinitialerne <hi rendition="#ant">»S.K.«</hi> og adskilt herfra med en tynd vandret streg navnet på forlaget »Reitzel.«. Skriftets nummer er dobbelt understreget med rødkridt. Dobbeltbladet har fungeret som omslag til mss. 1.2-1.7 samt oprindelig mss. 2.1, 3.1 og 4.1. Se <ref target="../Oi9/txr.xml#ill_k28" type="figure">illustration 28</ref>. <figure xml:id="ill_k28" rend="recto"><graphic url="../Oi9/ill_k28.jpg"/> <head>28. Ms. 1.1, kladde til titelblad til <hi rendition="#ita">Øieblikket Nr. 9</hi> med tre bortredigerede titler</head> </figure> </p><p>En del korrektioner. Sletningen af de tre titler samt ændringen i nummereringen er foretaget med blyant.</p></physDesc></msPart><msPart xml:id="additional.1.1" prev="#physDesc.1.1"><msIdentifier><idno>1.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 319)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.2" next="#additional.1.2"><msIdentifier><idno>1.2</idno></msIdentifier><physDesc><p>Kladde til den 1. artikel: »Altsaa saaledes staaer Sagen« (<ref target="../Oi9/txt.xml#ss373" type="publishedWritings" n="373"><hi rendition="#ita">SKS</hi> 13, 373</ref>-375).</p><p>2 dobbeltblade, i alt 4 blade i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt velin, ribbet. Mål: 168 × 205 mm.</p><p>Bladet er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. På bl. [2v] er et afsnit færdigskrevet på langs i marginalspalten, og en tilføjelse hertil, indvist med et blyantindvisningstegn, er skrevet på hovedet i marginalspalten. Af bl. [4r] er kun to tredjedele beskrevet, bl. [4v] er ubeskrevet.</p><p>Øverst på bl. [1r] findes artiklens overskrift og derunder dateringen »31 Mai 55.«. På bl. [2r] og [3r] markerer tre asterisker et større ophold i teksten ved nyt afsnit.</p><p>Mange korrektioner, bl.a. en del marginaltilføjelser og overstregninger. På bl. [2r] er tre ord og på bl. [4r] et ord, ni linjer og to marginaltilføjelser slettet med blyant. På bl. [4r] er et indvisningstegn (et kors) skrevet med blyant.</p></physDesc></msPart><msPart xml:id="additional.1.2" prev="#physDesc.1.2"><msIdentifier><idno>1.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 320)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.3" next="#additional.1.3"><msIdentifier><idno>1.3</idno></msIdentifier><physDesc><p>Kladde til den 2. artikel: »At Idealerne skulle forkyndes – ellers er Christendommen i dybeste Grund forfalsket« (<ref target="../Oi9/txt.xml#ss376" type="publishedWritings" n="376"><hi rendition="#ita">SKS</hi> 13, 376</ref>-377).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt velin, ribbet. Mål: 170 × 201 mm.</p><p><pb xml:id="ss576" n="576" edRef="#SKS"/>Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser.</p><p>Øverst på bl. [1r] findes artiklens overskrift, hvoraf » – ellers er Χstd. i dybeste Grund forfalsket.« er tilføjet. Derunder står dateringen »16. juli 55.«. På bl. [1v] forekommer redigeringsbemærkningen »Ny Udgang«, og i teksten er »<hi rendition="#bol">beroligende!</hi>« dobbelt understreget.</p><p>En del korrektioner, bl.a. flere marginaltilføjelser.</p></physDesc></msPart><msPart xml:id="additional.1.3" prev="#physDesc.1.3"><msIdentifier><idno>1.3</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 321)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.4" next="#additional.1.4"><msIdentifier><idno>1.4</idno></msIdentifier><physDesc><p>Kladde til den 3. artikel: »En Dosis Livslede« (<ref target="../Oi9/txt.xml#ss378" type="publishedWritings" n="378"><hi rendition="#ita">SKS</hi> 13, 378</ref>-379).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi>. Afrivningskant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 167 × 203 mm.</p><p>Bladet er beskrevet i hele sidens bredde, kun en smal margin rummer tilføjelser. Bladene har efter beskrivning været foldet en gang på tværs.</p><p>Øverst på bl. [1r] står artiklens oprindelige overskrift »En Dosis Livs-Lede«, og i marginen findes redigeringsbemærkningen »Ny Udgang« tre gange indvist i teksten med dobbeltkors. Øverst på bl. [1v] markerer to asterisker et større ophold i teksten ved nyt afsnit.</p><p>En del korrektioner, bl.a. flere tilføjelser. På bl. [1r] er et enkelt ord slettet med blyant.</p></physDesc></msPart><msPart xml:id="additional.1.4" prev="#physDesc.1.4"><msIdentifier><idno>1.4</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 322)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.5" next="#additional.1.5"><msIdentifier><idno>1.5</idno></msIdentifier><physDesc><p>Kladde til den 4. artikel: »Vær Piat – og Du skal see, alle Vanskeligheder forsvinde!« (<ref target="../Oi9/txt.xml#ss380" type="publishedWritings" n="380"><hi rendition="#ita">SKS</hi> 13, 380</ref>-382).</p><p>2 dobbeltblade, i alt 4 blade i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt velin, ribbet. Mål: 169 × 202 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. Øverst på bl. [3r] er en tilføjelse skrevet i hele sidens bredde og indvist i teksten vha. en krølleparentes. Af bl. [4r] er kun to tredjedele beskrevet, bl. [4v] er ubeskrevet.</p><p>Øverst på bl. [1r] findes artiklens overskrift og derunder dateringen »d. 3 Aug. 55.«.</p><p>Nogle korrektioner.</p></physDesc></msPart><msPart xml:id="additional.1.5" prev="#physDesc.1.5"><msIdentifier><idno>1.5</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 323)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.6" next="#additional.1.6"><msIdentifier><idno>1.6</idno></msIdentifier><physDesc><p>Kladde til det 5. stykke: »At Præsterne ere Menneske-Ædere, og paa den afskyeligste Maade.« (<ref target="../Oi9/txt.xml#ss383" type="publishedWritings" n="383"><hi rendition="#ita">SKS</hi> 13, 383</ref>-385).</p><p><pb xml:id="ss577" n="577" edRef="#SKS"/>2 dobbeltblade, i alt 4 blade i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt velin, ribbet. Det første dobbeltblad måler 169 × 202 mm, det andet 167 × 205 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. Af bl. [4v] er kun en fjerdedel beskrevet.</p><p>Øverst på bl. [1r] findes artiklens overskrift, hvoraf », og paa den afskyeligste Maade.« er tilføjet. Nedenfor står en slettet datering »25 Juli.« og derunder dateringen »23 Aug.«.</p><p>En del korrektioner. På bl. [1r] er en marginaltilføjelse samt syv linjer i inderspalten slettet med blyant, på bl. [2v] et overskydende 'd'.</p></physDesc></msPart><msPart xml:id="additional.1.6" prev="#physDesc.1.6"><msIdentifier><idno>1.6</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 324)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.7" next="#additional.1.7"><msIdentifier><idno>1.7</idno></msIdentifier><physDesc><p>Kladde til den 6. artikel: »Præsten ikke blot beviser Christendommens Sandhed, men han modbeviser den med det Samme.« (<ref target="../Oi9/txt.xml#ss386" type="publishedWritings" n="386"><hi rendition="#ita">SKS</hi> 13, 386</ref>-387).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt velin, ribbet. Mål: 168 × 205 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. Af bl. [2v] er kun to tredjedele beskrevet.</p><p>Øverst på bl. [1r] er artiklens oprindelige overskrift »Beviis og Modbeviis« ændret til »Præsten ikke blot beviser Xstds Sandhed, / men han modbeviser den med det Samme.«. Derunder findes dateringen »d. 8 Sept. 55.«.</p><p>Mange korrektioner, bl.a. en del marginaltilføjelser.</p></physDesc></msPart><msPart xml:id="additional.1.7" prev="#physDesc.1.7"><msIdentifier><idno>1.7</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 325)</p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.1" prev="#physDesc.1"><msIdentifier><idno>1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 155; KA, B pk. 52, læg 9; <hi rendition="#ita">Pap.</hi> XI 3 B 319-325)</p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.2" next="#additional.2"><msIdentifier><idno>2</idno></msIdentifier><physDesc><p>Kladde og renskrift til en ubenyttet artikel til <hi rendition="#ita">Øieblikket Nr. 9:</hi> »'Sandhedsvidnernes' Taktik.«.</p></physDesc> 
-       <msPart xml:id="physDesc.2.1" next="#additional.2.1"><msIdentifier><idno>2.1</idno></msIdentifier><physDesc><p>Kladde til en ubenyttet artikel: »'Sandhedsvidnernes' Taktik.«.</p><p>2 dobbeltblade, i alt 4 blade i 4<hi rendition="#sup">o</hi>.</p><p>Bl. [1r]-[4r] er med blyant litreret a-g.</p><p>Papir: gulligt velin, ribbet. Mål: 167-168 × 205 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. På bl. [1r] er en tilføjelse påbe<pb xml:id="ss578" n="578" edRef="#SKS"/>gyndt i inderspalten og fortsat i yderspalten. Af bl. [4r] er kun halvdelen beskrevet, bl. [4v] er ubeskrevet.</p><p>Øverst på side a findes artiklens overskrift og derunder dateringen »1 Juni 55.«. På side e markerer to asterisker et større ophold i teksten ved nyt afsnit.</p><p>Mange korrektioner. På side a er 4 linjer, på side b i alt 9 ord, på side c 6 linjer og et ord, på side d 3 linjer, side e 5 linjer og en marginaltilføjelse, side f 5 linjer og side g 3 linjer og 4 ord slettet med blyant.</p></physDesc></msPart><msPart xml:id="additional.2.1" prev="#physDesc.2.1"><msIdentifier><idno>2.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 137)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.2.2" next="#additional.2.2"><msIdentifier><idno>2.2</idno></msIdentifier><physDesc><p>Renskrift til en ubenyttet artikel: »'Sandhedsvidnernes' Taktik.«.</p><p>1 sammenhæftning på 2 dobbeltblade, i alt 4 blade i 4<hi rendition="#sup">o</hi>.</p><p>På bl. [1r]-[4r] er en blyantpaginering, 5-11 (på s. 11 med tilføjelsen »11-22«), slettet med blyant og erstattet af litreringen a-g.</p><p>Papir: gulligt velin, ribbet. Mål: 168 × 205 mm. Hæftetråd af rød silke.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. Af bl. [4r] er kun to tredjedele beskrevet, bl. [4v] er ubeskrevet.</p><p>Øverst på side a findes artiklens overskrift og derunder dateringen »d. 1 Juni 55.«. Oven for overskriften er romertallet <hi rendition="#ant">»II«</hi> skrevet og slettet med blyant. På side e markerer to asterisker et større ophold i teksten ved nyt afsnit.</p><p>Mange korrektioner. På side a er et ord, på side b 5 linjer og 9 ord, på side c et ord og et komma, på side d 2 linjer, 3 ord og 2 sæt anførselstegn, på side e 2 linjer, på side f 2 linjer og på side g en linje slettet med blyant. På side g er 7 linjer desuden slettet med blæk.</p></physDesc></msPart><msPart xml:id="additional.2.2" prev="#physDesc.2.2"><msIdentifier><idno>2.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 136)</p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.2" prev="#physDesc.2"><msIdentifier><idno>2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 178; KA, B pk. 51, læg 2 [I]; <hi rendition="#ita">Pap.</hi> XI 3 B 136-137)</p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.3" next="#additional.3"><msIdentifier><idno>3</idno></msIdentifier><physDesc><p>Kladde og renskrift til en ubenyttet artikel til <hi rendition="#ita">Øieblikket Nr. 9:</hi> »At jeg staaer bogstaveligt ene; og at man ikke forstaaer Betydningen heraf.«.</p></physDesc> 
-       <msPart xml:id="physDesc.3.1" next="#additional.3.1"><msIdentifier><idno>3.1</idno></msIdentifier><physDesc><p>Kladde til en ubenyttet artikel: »At jeg staaer bogstaveligt ene; og at man ikke forstaaer Betydningen heraf.«.</p><p>4 dobbeltblade, i alt 8 blade i 4<hi rendition="#sup">o</hi>.</p><p>Bladene er med blyant litreret a-q (j overspringes).</p><p><pb xml:id="ss579" n="579" edRef="#SKS"/>Papir: gulligt velin, ribbet. Mål: 167-169 × 202 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. På bl. [1r] breder teksten sig flere steder ud i yderspalten, og på bl. [8v] afsluttes teksten i yderspalten.</p><p>Øverst på side a findes artiklens overskrift og derunder dateringen »29 Juli 55.«. På side d og e forekommer redigeringsbemærkningen »Ny Udgang«, indvist i teksten med dobbeltkors.</p><p>Mange korrektioner. På side b, f, g, k og m er længere passager og marginaltilføjelser slettet, på side f, g og k med blyantkryds.</p></physDesc></msPart><msPart xml:id="additional.3.1" prev="#physDesc.3.1"><msIdentifier><idno>3.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 158)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.3.2" next="#additional.3.2"><msIdentifier><idno>3.2</idno></msIdentifier><physDesc><p>Renskrift til en ubenyttet artikel: »At jeg staaer bogstaveligt ene; og at man ikke forstaaer Betydningen heraf.«.</p><p>1 sammenhæftning på 3 dobbeltblade, i alt 6 blade i 4<hi rendition="#sup">o</hi>.</p><p>På bl. [1r]-[6r] er blyantpagineringen 12-22 slettet med blyant.</p><p>Papir: gulligt velin, ribbet. Mål: 167 × 205 mm. Hæftetråd af rød silke.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. Bl. [6v] er ubeskrevet.</p><p>Øverst på bl. [1r] findes artiklens overskrift. Derover er romertallet <hi rendition="#ant">»III«</hi> skrevet og slettet med blyant, og øverst i venstre hjørne er en cirkel tegnet med rødkridt.</p><p>Nogle korrektioner. På bl. [1r] er tre ord slettet med blyant, og på bl. [2r] er fem ord slettet med blyant og et indvisningstegn (kors) skrevet med blyant. På bl. [4v] er ti linjer slettet (med blæk), og på bl. [6r] tre linjer.</p></physDesc></msPart><msPart xml:id="additional.3.2" prev="#physDesc.3.2"><msIdentifier><idno>3.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 157)</p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.3" prev="#physDesc.3"><msIdentifier><idno>3</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 170; KA, B pk. 51, læg 2 [II]; <hi rendition="#ita">Pap.</hi> XI 3 B 157-158)</p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.4" next="#additional.4"><msIdentifier><idno>4</idno></msIdentifier><physDesc><p>Kladde og renskrift til en ubenyttet artikel til <hi rendition="#ita">Øieblikket Nr. 9:</hi> »At det slaaer til for mig.«.</p></physDesc> 
-       <msPart xml:id="physDesc.4.1" next="#additional.4.1"><msIdentifier><idno>4.1</idno></msIdentifier><physDesc><p>Kladde til en ubenyttet artikel: »At det slaaer til for mig.«.</p><p>1 dobbeltblad og 1 løst blad, i alt 3 blade i 4<hi rendition="#sup">o</hi>. Det løse blad har afrivningskant i venstre side.</p><p>Bladene er med blyant litreret a-f (side e rettet fra c).</p><p>Papir: gulligt velin, ribbet. Mål: 167 × 205 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, <pb xml:id="ss580" n="580" edRef="#SKS"/>en smal yderspalte tilføjelser. På bl. [1r] er en længere tilføjelse skrevet på langs i yderspalten og indvist i teksten med et dobbeltkors, og øverst på bl. [2v] breder en tilføjelse sig til inderspalten. Af bl. [3v] er kun halvdelen beskrevet.</p><p>Øverst på side a findes artiklens overskrift og derunder dateringen »11 Aug 55.«. Artiklen er delt op i tre: På side a findes »<hi rendition="#cun">1</hi>«, på side d »<hi rendition="#cun">2.</hi>« og side e »<hi rendition="#cun">3</hi>«.</p><p>Mange korrektioner, bl.a. en del marginaltilføjelser. På side d er en linje slettet med blyant. På side b er en længere passage slettet med blæk, på side f en hel marginaltilføjelse.</p></physDesc></msPart><msPart xml:id="additional.4.1" prev="#physDesc.4.1"><msIdentifier><idno>4.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 160)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.4.2" next="#additional.4.2"><msIdentifier><idno>4.2</idno></msIdentifier><physDesc><p>Renskrift til en ubenyttet artikel: »At det slaaer til for mig.«.</p><p>1 dobbeltblad og 1 løst blad, i alt 3 blade i 4<hi rendition="#sup">o</hi>. Det løse blad har afrivningskant i venstre side og bærer spor fra sammenhæftning med andre mss. i form af en lille perforering i øverste venstre hjørne.</p><p>Blyantpagineringen 23-28 er med blyant erstattet af litrering a-f.</p><p>Papir: gulligt velin, ribbet. Mål: 168 × 205 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. På bl. [3v] er kun skrevet to linjer.</p><p>Øverst på side a findes artiklens overskrift, og ovenfor er romertallet <hi rendition="#ant">»IV«</hi> med blyant skrevet og ændret til <hi rendition="#ant">»III«</hi>, som også er overstreget med blyant. Artiklen er delt op i tre: på side a findes »<hi rendition="#cun">1</hi>«, på side d »<hi rendition="#cun">2.</hi>« og på side e »<hi rendition="#cun">3.</hi>«</p><p>Enkelte korrektioner.</p></physDesc></msPart><msPart xml:id="additional.4.2" prev="#physDesc.4.2"><msIdentifier><idno>4.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 159)</p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.4" prev="#physDesc.4"><msIdentifier><idno>4</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 177; KA, B pk. 51, læg 2 [II]; <hi rendition="#ita">Pap.</hi> XI 3 B 159-160)</p></note></adminInfo></additional></msPart>
-   </msDesc>
-  </div>
-  <div type="level1" xml:id="k3">
-   <head>3. Tilblivelseshistorie</head>
-   <p>Som det sidste i rækken af <hi rendition="#ita">Øieblikket</hi>-skrifter udkom nr. 9 den 24. sept. 1855, kun 13 dage efter <hi rendition="#ita">Øieblikket Nr. 8.</hi> Artiklerne til nummeret var blevet udformet i løbet af maj-sept. og altså tæt på datoen for udgivelsen. Et par af kladderne til <hi rendition="#ita">Øieblikket Nr. 9</hi> er dateret: kladden til den 1. artikel »31 Mai 55« (ms. 1.2), den 2. artikel »16. juli 55« (ms. 1.3), den 4. artikel »d. 3 Aug. 55« (ms. 1.5) og den 6. artikel »d. 8 Sept. 55« (ms. 1.7). Kladden til den 5. artikel bærer datoen »23 Aug«, men var oprindelig dateret »25 <pb xml:id="ss581" n="581" edRef="#SKS"/>Juli«, hvilket peger på, at stykket var skrevet den 25. juli, men sandsynligvis først blev bestemt til at indgå i <hi rendition="#ita">Øieblikket Nr. 9</hi> den 23. aug. Dateringen i den 1. artikel har SK valgt at viderebringe i førstetrykket under overskriften »Altsaa saaledes staaer Sagen«.</p>
-   <p rendition="#ind">SK har altså arbejdet på materialet til <hi rendition="#ita">Øieblikket Nr. 9,</hi> samtidig med at han har arbejdet på de øvrige numre af <hi rendition="#ita">Øieblikket.</hi> Også i dette tilfælde fremgår det, at SK var i færd med en større produktion af mindre tekster, og at artiklerne i <hi rendition="#ita">Øieblikket Nr. 9</hi> var en del heraf. Kun kladden til den 3. artikel afviger fra de øvrige kladder ved ikke at være dateret og ved at være skrevet på konceptpapir uden den sædvanlige foldning af papiret til hoved- og marginalspalte. Det kunne derfor tyde på, at artiklen er blevet skrevet i en anden sammenhæng end de øvrige.</p>
-   <p rendition="#ind">I indholdsfortegnelsen har artiklerne fået den endelige rækkefølge, som kendes fra førstetrykket og nogenlunde stemmer overens med dateringerne. Dog optræder tre titler, som med blyant er blevet slettet fra listen, således at nummereringen har måttet ændres herefter. Til de tre ubenyttede artikler er overleveret både kladde og renskrift, og alle tre renskrifter bærer øverst på bl. [1r] et blyantskrevet romertal, som angiver den placering, den pågældende artikel havde i indholdsfortegnelsen, henholdsvis II, III og IV. Sidsnævnte er blevet ændret fra IV til III, hvilket viser, at artiklen formentlig var rykket et punkt op, før den blev udeladt og henlagt. De tre renskrifter peger på, at artiklerne er taget ud af en samlet renskrift til <hi rendition="#ita">Øieblikket Nr. 9,</hi> som ikke er overleveret (formentlig gået tabt i trykken). Dette er også tilfældet ved flere af de øvrige numre af <hi rendition="#ita">Øieblikket.</hi><note> <p>Se tekstredegørelserne til nr. 3, s. 342ff., nr. 6, s. 432ff., og nr. 8, s. 540ff.</p> </note></p>
-   <p rendition="#ind">Kladderne til de tre ubenyttede artikler: »'Sandhedsvidnernes' Taktik« (ms. 2.1), »At jeg staaer bogstaveligt ene; og at man ikke forstaaer Betydningen heraf« (ms. 3.1) og »At det slaaer til for mig« (ms. 4.1), er dateret henholdsvis »1 Juni 55«, »29 Juli 55« og »11 Aug 55«. Artiklerne er altså skrevet inden for samme tidsramme som de øvrige artikler i <hi rendition="#ita">Øieblikket Nr. 9.</hi> Til »'Sandhedsvidnernes' Taktik« er dateringen »1 Juni 55« undtagelsesvis blevet overført til renskriften (ms. 2.2). I artiklen reflekterer SK selvbevidst over kirkestriden, sådan som den er forløbet siden udgivelsen af avisartiklen »Var Biskop <persName key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – <hi rendition="#ita">er dette Sandhed?</hi>« i <hi rendition="#ita">Fædrelandet,</hi> nr. 295, den 18. dec. 1854. Det samme sker i »At jeg staaer bogstaveligt ene; og at man ikke forstaaer Betydningen heraf«, hvor SK redegør for overgangen fra at <pb xml:id="ss582" n="582" edRef="#SKS"/>skrive artikler i <hi rendition="#ita">Fædrelandet</hi> til udgivelsen af <hi rendition="#ita">Øieblikket.</hi><note> <p>Se Introduktion til <hi rendition="#ita">Øieblikket,</hi> s. 233ff.</p> </note> I »At det slaaer til for mig« diskuteres ordet sandhedsvidne endnu en gang og fremhæves som kirkestridens brændpunkt.</p>
-   <p>Der er som nævnt ikke overleveret renskrift (trykmanuskript) til <hi rendition="#ita">Øieblikket Nr. 9,</hi> ligesom der heller ikke er overleveret korrekturer.</p>
-  </div>
-  <div type="level1" xml:id="k4">
-   <head>4. Udgivelsesmåde</head>
-   <p><hi rendition="#ita">Øieblikket Nr. 9</hi> udkom hos forlagsboghandler <persName key="Reitzel, Carl Andreas">C.A. Reitzel</persName>s Bo og Arvinger. Skriftet optræder ikke i <persName key="Reitzel, Carl Andreas">Reitzel</persName>s protokol over <hi rendition="#ita">Forhandlinger med Forfattere, Redacteurer &amp;c: 1835-[1858],</hi><note> <p>I arkiv hos C.A. Reitzels Boghandel og Forlag, <placeName>København</placeName>.</p> </note> men if. <persName key="Brandt, Frithiof">Frithiof Brandt</persName> og <persName key="Thorkelin, Else">Else Thorkelin</persName>, der havde adgang til den nu tabte <hi rendition="#ita">Regnskabsprotokol for 1849-59,</hi> udgjorde SKs honorar for <hi rendition="#ita">Øieblikket</hi> nr. 1-9 i alt 411 rigsdaler, 4 mark og 15 skilling.<note> <p><persName key="Brandt, Frithiof">Frithiof Brandt</persName> og <persName key="Thorkelin, Else">Else Thorkelin</persName> <hi rendition="#ita"><persName key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName> og pengene,</hi> 2. udg., <placeName key="København">Kbh.</placeName> 1993 [1935], s. 35. Beløbet, der ikke er specificeret, omfatter indtægterne fra »No. 1. 1. udg. – 2. optr. – 2. udg.; no. 2. 1.-2. udg.; no. 3. 1.-2. udg.; no. 4. 1.-2. udg.; no. 5-9. 1. udg.«.</p> </note> Oplagets størrelse og trykkeomkostningerne hos <persName key="Luno, Bianco">Bianco Luno</persName> kendes ikke.<note> <p>If. <hi rendition="#ita">Bl.art.,</hi> s. 296, forelå andet oplag af <hi rendition="#ita">Øieblikket Nr. 9</hi> færdigtrykt fra Bianco Lunos Bogtrykkeri den 18. dec. 1855, dvs. efter SKs død, og blev annonceret som udkommet den 19. dec. 1855.</p> </note></p>
-   <p rendition="#ind"><hi rendition="#ita">Øieblikket Nr. 9</hi> blev måske allerede i SKs levetid oversat. I 1855 udkom i <placeName>Uppsala</placeName> <hi rendition="#ita">Ögonblikket. Nr. 9. Öfversättning från danskan</hi> i et særskilt hæfte på forlaget Wahlström &amp; C.<note> <p>If. <persName key="Himmelstrup, Jens">Jens Himmelstrup</persName> <hi rendition="#ita"><persName key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>. International Bibliografi,</hi> <placeName key="København">Kbh.</placeName> 1962, nr. 720, var oversætteren den samme som forlæggeren, dvs. J.G. Wahlström. Jf. <persName key="Linnström, Hjalmar">Hjalmar Linnström</persName> <hi rendition="#ita">Svenskt boklexikon. Åren 1830-1865,</hi> bd. 1, <placeName>Stockholm</placeName> 1883, s. 794-795.</p> </note></p>
-  </div>
- </div></body></text>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="id2e09f5ea-1583-4d17-9bc1-12adab4cc8bb">1. Bibliografisk beskrivelse</head>
+          <p xml:id="id2dde3084-f50e-4a8f-8766-4294795a1688"><hi xml:id="ide73c79b9-efba-434a-a67a-f68393a64e35" rendition="#ita">Øieblikket Nr. 9</hi> forelå færdigtrykt fra Bianco Lunos Bogtrykkeri den 24. sept. 1855.<note xml:id="id7b189571-f1dd-44d1-b657-45a74e874cb4"><p xml:id="id1396e0ff-a15d-4081-800c-ca450ab0119e"><hi xml:id="id6b7f64a7-cedb-4847-9efd-6ce5e8879287" rendition="#ita">Bl. art.,</hi> s. 295.</p></note> På titelbladet findes datoen »24 Septbr. 1855«.<note xml:id="id6e0d5566-515f-45f3-a89b-510f0ba772b1"><p xml:id="id1d09196d-6448-45ac-8f57-f47b76ff546d">Datoen angiver måske den dag, hvor SK efter at have læst en førstekorrektur frigav teksten til trykning. Nr. 7 har dog på titelbladet datoen »30 August 1855«, men var if. <hi xml:id="id83d4920c-9770-4264-a770-956438e395b1" rendition="#ita">Bl.art.</hi> færdigtrykt allerede den 29. august. Den mulighed foreligger også, at datoen skulle betegne den dato, hvor skriftet var færdigt fra trykkeriet. Der er dog hverken i nr. 1, nr. 7 eller nr. 8 sammenfald mellem datoen på titelbladet og den dato, på hvilken det pågældende nummer af <hi xml:id="id898e3d87-78ca-4650-8cd0-37b1e353eb38" rendition="#ita">Øieblikket</hi> if. <hi xml:id="ideed5b6b7-4a9a-4251-b4a2-ed5c9632acea" rendition="#ita">Bl.art.</hi> var færdigtrykt.</p></note> Skriftet blev annonceret som udkommet i <hi xml:id="id08c8dd20-16a7-4b34-ace4-d1a4a9a24a68" rendition="#ita">Adresseavisen</hi> og <hi xml:id="idb1553126-342a-4639-aec5-a3c82c6aafdd" rendition="#ita">Fædrelandet,</hi> begge nr. 223, den 25. sept. 1855, samt i <hi xml:id="id0aa95e38-14b2-4f5f-8970-7b1896128e4f" rendition="#ita">Berlingske Tidende,</hi> nr. 224, den 26. sept. 1855.<note xml:id="iddb81e839-0af6-474d-9c0a-20d0f34d6cef"><p xml:id="id612ba542-2eb6-40c4-a506-02d15a6384c8">Annonceringen blev gentaget i <hi xml:id="id587de595-b3d0-4850-a472-3d343c876082" rendition="#ita">Adresseavisen,</hi> nr. 224, den 26. sept. 1855, <hi xml:id="idc73c59cd-6116-4b2b-8090-2319669d1e71" rendition="#ita">Fædrelandet,</hi> nr. 225, den 27. sept. 1855, og <hi xml:id="ide0df0c37-81a9-47b1-95b8-eeb3a2a970d5" rendition="#ita">Berlingske Tidende,</hi> nr. 226, den 28. sept. 1855.</p></note> Det kostede 20 skilling og udkom på forlaget <persName xml:id="id9a2a5aca-e6f9-46a2-9d7b-3e92d7ed9e31" key="Reitzel, Carl Andreas">C.A. Reitzel</persName>s Bo og Arvinger.</p>
+          <p xml:id="id04d6cb4c-83f6-4dd1-b72e-163e377761d2">Tre eksemplarer af <hi xml:id="id1ff1935e-9f8d-444d-bab8-0cc6a93fb433" rendition="#ita">Øieblikket Nr. 9</hi> er blevet kollationeret; de benyttede eksemplarer er:</p>
+          <list xml:id="id756a398a-7d07-4184-959f-383d749e96c9">
+            <label xml:id="iddfd93326-e7c8-4cdc-af5b-bd72e9dfb039"><pb xml:id="ss570" n="570" edRef="#SKS"/>A</label>
+            <item xml:id="id6694473a-de57-4c91-82a6-e1a268d9469e">Søren Kierkegaard Forskningscenterets arbejdseksemplar, privat indbundet og beskåret.<note xml:id="idca85eba1-bad3-46e7-83df-a21a1102eea6"><p xml:id="id42ea3722-fe4d-4956-a6b7-94f9365ae348">Eksemplaret tilhører G.E.C. Gads Forlag (tidligere hos dr.phil. h.c. <persName xml:id="id606f404d-b6d3-49c4-926f-23536d39499f" key="Bernström, Gustaf">Gustaf Bernström</persName>, <placeName xml:id="idfa1d6960-b1de-401d-9cd6-f9437fea4d11">Göteborg</placeName>; tidligere hos museumsdirektør <persName xml:id="idb1d2e248-a1ca-4aca-ab48-52b812cefc96" key="Madsen, Karl">Karl Madsen</persName>, <placeName xml:id="idf91541a3-5f7c-43ea-a41f-1e4b59ed349b">København</placeName>). På indersiden af forpermen findes <persName xml:id="ided8968f6-a695-4e25-abb3-0d98fb0b74ce" key="Madsen, Karl">Karl Madsen</persName>s ekslibris, tegnet af <persName xml:id="id599d1a0c-89b3-4b81-983c-41b8e65004a4" key="Bindesbøll, Thorvald">Thorvald Bindesbøll</persName>. Eksemplaret indeholder <hi xml:id="idd4149a0d-e9b8-4b13-b509-52012329c5aa" rendition="#ita">Øieblikket</hi> nr. 1-9; medindbundet er <hi xml:id="id185fcb85-feb2-4140-9480-4d75a03098a5" rendition="#ita">Hvad Christus dømmer om officiel Christendom</hi> og <hi xml:id="idf8999a01-4c2c-459e-85f0-770351f44a46" rendition="#ita">Dette skal siges; saa være det da sagt</hi> samt <hi xml:id="ide9a03558-8a56-4be8-93a3-a02033f6377e" rendition="#ita">Guds Uforanderlighed.</hi></p></note></item>
+            <label xml:id="id36d5f190-5f12-411e-8e20-3da435ede6e4">B</label>
+            <item xml:id="id8b590ce6-3f67-4a28-9f88-4cd59a50aa10"><placeName xml:id="ideb2c483b-8232-4c3f-96c9-e33b0ae67783" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret, katalogsignatur F, 2656 - 8<hi xml:id="idee9a2d32-4d04-4db8-9351-b5b682cecfa9" rendition="#sup">o</hi>, ex. 1.</item>
+            <label xml:id="id8d4e54b2-d7b6-4abc-98d5-46c3d63207f3">C</label>
+            <item xml:id="idb47f9733-b97a-45ba-aacf-a20bf72af887"><placeName xml:id="id86463a91-9fa4-4328-8ece-147b312a48bc" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret, katalogsignatur F, 2656 - 8<hi xml:id="id4653401b-2963-432b-bc5e-978a8692a5c9" rendition="#sup">o</hi>, ex. 2.</item>
+          </list>
+          <p xml:id="idfae2b7d2-dc1f-492e-b9ef-1e8e904bb509">Ved den interne kollation af de tre eksemplarer blev der ikke konstateret afvigelser. Eksemplar A danner grundlag for den følgende beskrivelse.</p>
+          <div xml:id="id1fe30c78-b2c5-4c8a-bcec-d088547e0bd3" type="level2">
+            <head xml:id="id1b359246-9ef5-45b5-a05d-74358fa1e078">Kollationeringsformel</head>
+            <p xml:id="id50eb5c95-7c61-42de-9c5a-e2c7396ebc2f">8<hi xml:id="idda9f3a9d-8089-45e7-96c1-c090c989a167" rendition="#sup">o</hi>. 1<hi xml:id="id54251596-856b-48a1-b979-4e14747ba865" rendition="#sup">8</hi> 2<hi xml:id="id0c276a03-f802-4b76-9ce4-afbb2ace571d" rendition="#sup">4</hi>. $2 signeret (-1<hi xml:id="ide891c3f8-3e25-43df-821f-4e9ac611d3d1" rendition="#sub">1</hi>, 2<hi xml:id="ida391b3f6-2bc0-42b6-8110-98ef6bcf7729" rendition="#sub">2</hi>). 12 blade. Paginering [1-3], 4-22, [23-24].<note xml:id="id7ac74cef-3e78-4e79-b9d1-5a37630474dd"><p xml:id="id360db37f-843a-4e9c-8573-5876bdc094ea">Formlen er uddraget af de tre eksemplarer A, B og C. Der bruges arabertal om arknumre, og arkenes bladantal angives med hævet skrift. $ står for 'alle signerede ark'. »$2 signeret« betyder: I alle signerede ark har de to første blade signatur. Manglende signatur angives med sænket skrift. Upaginerede sider noteres i [      ].</p></note></p>
+            <p xml:id="idaee4c460-548a-4f0b-b00f-7ea6b2e2b9d2">Formatet er oktav. Skriftet har et omfang på 24 sider, svarende til 12 blade fordelt på 1 ½ ark,<note xml:id="id14e03c37-1c2d-40c5-ba7c-c4482fa29bd1"><p xml:id="idf44b3558-5185-4862-bc8c-1e6694920aab">I eksemplar A og B er bl. 12 bortskåret ved indbinding; i eksemplar B er bl. 11 limet på bl. 10.</p></note> og er pagineret 4-22, idet bl. 1r-2r og bl. 12 er uden paginering.</p>
+            <p xml:id="id44844451-f58b-4d9c-867f-7aa8bb96bec8" rendition="#ind">S. [1] udgør titelbladet med indholdsfortegnelsen, s. [3]-6 »Altsaa saaledes staaer Sagen.«, s. 7-9 »At Idealerne skulle forkyndes – ellers er Christen-|dommen i dybeste Grund forfalsket.«, s. 10-11 »En Dosis Livslede.«, s. 12-15 »Vær Piat – og Du skal see, alle Vanskeligheder | forsvinde!«, s. 16-19 »At Præsterne ere Menneske-Ædere, og paa den | afskyeligste Maade.« og s. 20-22 »Præsten ikke blot beviser Christendommens Sandhed, | men han modbeviser den med det Samme.«. Titelbladets bagside og s. [23] og [24] er blanke.</p>
+            <p xml:id="id4dd08344-99af-41c2-9bc2-a81bc3adf9f0" rendition="#ind"><pb xml:id="ss571" n="571" edRef="#SKS"/>Ark 1 er uden primasignatur, men med sekundasignatur; ark 2 er med primasignatur, men uden sekundasignatur. Primasignaturen (arknummeret) er angivet med arabertal, sekundasignaturen med arabertal fulgt af asterisk.</p>
+          </div>
+          <div xml:id="id1fb31bdb-20cd-4137-afb9-89b029e0ab8e" type="level2">
+            <head xml:id="id2a0df90c-f6ed-465f-a110-346edfbfdde1">Beskrivelse af Øieblikket Nr. 9 i eksemplar A</head>
+            <p xml:id="id621c4c6a-7371-4887-b3b4-c8a84fcb19b6">Det beskårne hæftes blade måler ca. 121 × 193 mm.<note xml:id="ide62d9b16-0b90-4a86-a2ba-c4273d353442"><p xml:id="idc25b5e6b-0cbd-470b-90a7-d421ed7dd807">Størrelsen måles som bredde × højde.</p></note> Hæftets tykkelse er ca. 1 mm.</p>
+            <div xml:id="id97ef9876-7f78-40aa-9842-26a024b9d0a7" type="level3">
+              <head xml:id="id37ebd68f-3070-4c4f-bd99-13d3b55afcfb">Papir</head>
+              <p xml:id="id37f66ebb-6cd5-4e3e-a9ba-b91d46ac135d">Der er benyttet almindeligt trykpapir af en ret kludeholdig kvalitet.</p>
+            </div>
+            <div xml:id="id9ca8ca6f-7f7b-4d44-849d-4d77839995c5" type="level3">
+              <head xml:id="id36c493c8-f152-4d67-a42f-6f9401b9fd24">Typografi</head>
+              <p xml:id="idfa9ff26d-3fa3-4393-8d71-454fef1d1b9c">Det fremherskende skriftsnit er fraktur; enkelte steder er benyttet tekstur (gotisk) og til titlen på forsiden skriften medolin. Til latinsk tekst er brugt antikva, og fremhævet tekst er sat med fed eller spatieret skrift.</p>
+              <p xml:id="id946fe87b-6d7d-4a78-a5b5-029dc69e81c8" rendition="#ind">Titelbladet er med to skillestreger – den ene enkelt, den anden dobbelt – delt i tre felter. I det øverste felt er anført skriftets titel og nummer, i det mellemste en indholdsfortegnelse, datoen »24 Septbr. 1855.« samt forfatternavnet, i det nederste udgivelsessted, forlag og trykkeri. Titlen er spatieret og sat med medolin i skriftets største punktstørrelse, ca. 6 grader over brødteksten.<note xml:id="id7b7a5525-0a13-42b4-b764-812c9cd2323f"><p xml:id="id7c2818a8-c9aa-4b8b-9f3c-2cbb06c8bad3">Brødteksten er sat med punktstørrelse 10; tekst, der er 6 grader større, er sat med punktstørrelse 28, 5 grader større med punktstørrelse 24, 4 grader større med punktstørrelse 20, 3 grader større med punktstørrelse 16, 2 grader større med punktstørrelse 14, 1 grad større med punktstørrelse 12, mens tekst, der er 1 grad mindre, er sat med punktstørrelse 8, og 2 grader mindre sat med punktstørrelse 6.</p></note> Nummerangivelsen er sat med mindre punktstørrelse, ca. 4 grader over brødteksten. Overskriften »Indhold:« er sat med spatieret, fed tekstur, mens forfatternavnet er sat med fed fraktur, begge i samme punktstørrelse som brødteksten. Indholdsfortegnelsen og datoangivelsen er ca. 1 grad mindre. Udgivelsesstedet er sat med fed, lang tekstur i samme punktstørrelse som brødteksten. Forlæggernavnet er spatieret og ca. 1 grad mindre end brødteksten, trykkeriangivelsen ca. 2 grader mindre. Titelbladet er gengivet som <ref xml:id="idcdadd9d6-ce77-4e90-80b7-363e3e7860e7" target="../Oi9/txr.xml#ill_k27" type="figure">illustration 27</ref>.</p>
+              <p xml:id="idfb588b2f-ee23-44e8-8a38-e98566059094" rendition="#ind">Overskrifterne til de forskellige artikler er sat med fed, ca. 1 grad større end brødteksten, og adskilt fra brødteksten med en tynd skillestreg. På <pb xml:id="ss572" n="572" edRef="#SKS"/>s. [3], indrykket fra venstre og adskilt fra overskriften med en tynd vandret streg, findes dateringen »Den 31 Mai 1855.«, sat med ca. 1 grad mindre punktstørrelse end brødteksten. I artiklerne »Altsaa saaledes staaer Sagen.« og »En Dosis Livslede.« markerer tre asterisker et større ophold i teksten ved nyt afsnit. På s. 8 er ordet »beroligende« som det eneste sat med fed i brødteksten. Alle artiklerne indledes med en uncial, der er ca. 2 grader større end brødteksten.</p>
+              <p xml:id="idd8b54e28-7ebf-4369-b52b-c4f3aea06a63" rendition="#ind">En normalside har 32 linjer. Tekstkolumnen måler 88 × 158 mm. Brødteksten er sat i ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum. Artiklerne afsluttes med en enkelt finalestreg, den sidste artikel dog med en dobbelt. <figure xml:id="ill_k27" rend="recto"><graphic xml:id="id0008e3d6-df43-441b-a96b-0a501e05adfa" url="../Oi9/ill_k27.jpg"/><head xml:id="id638f93d6-ab21-4c78-b9c9-eec7d3434ec0">27. Titelblad til <hi xml:id="id4030ebe2-9d5e-4b57-93ca-e5ffdadd88b2" rendition="#ita">Øieblikket Nr. 9.</hi> Naturlig størrelse, beskåret</head></figure> </p>
+              <p xml:id="id1f120979-bc4a-48f1-81fa-3782b5f0c58d">Der er enkelte trykfejl i førstetrykket. Trykfejlene skyldes de fleste steder læderede typer.<note xml:id="id12897955-8f57-4d7e-9deb-f86a99dfbac8"><p xml:id="id1f7e9490-d371-4af4-bc6b-06d1900ca8c7">Eksempler på tegn, der er utydelige i trykket på grund af læderede typer, er: komma efter »Soldat« (<ref xml:id="ide9689229-c24c-4414-9210-850ead1b88a4" target="../Oi9/txt.xml#ss376" type="publishedWritings" n="376"><hi xml:id="id591f4a18-a81c-4938-a04d-325bfb04db06" rendition="#ita">SKS</hi> 13, 376</ref>,6) samt 'g' i »sige« (380,9).</p></note></p>
+            </div>
+          </div>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="id376fdb3f-da75-480f-9e7b-0a7ac46099e3">2. Manuskriptbeskrivelse</head>
+          <p xml:id="idecd5c983-ee24-40c5-a496-f2277c4526d6">Til <hi xml:id="id7724b260-80e8-43ab-b270-d6f16f73b694" rendition="#ita">Øieblikket Nr. 9</hi> findes følgende manuskripter, alle i Kierkegaard Arkivet (KA) på <placeName xml:id="id5e902b17-4efc-4323-8a17-cd1968286916" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
+          <msDesc xml:id="id2c889f9a-b8b5-4f4d-863e-3e20003996b3">
+            <msIdentifier xml:id="idb379a0bf-913f-4ede-afe3-a0e4a02734e3">
+              <collection xml:id="ida4f90c6d-1df6-4033-9855-4a28841090c4">Oi9</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.1" next="#additional.1">
+              <msIdentifier xml:id="idd90e5985-092f-4d55-97a9-b3ae39d9d10c">
+                <idno xml:id="idc6ea5daf-110f-4769-bfe2-97ab4e951ded">1</idno>
+              </msIdentifier>
+              <physDesc xml:id="idd2348057-9547-4740-a223-0a3ab8d00058">
+                <p xml:id="id5a87e7b8-1d6b-498d-90d8-c60020405fb6">Kladder til <hi xml:id="id0ca8a3af-34db-4685-ae6c-499cf6fda626" rendition="#ita">Øieblikket Nr. 9</hi> fordelt på 9 dobbeltblade og 1 løst blad, i alt 19 blade.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.1.1" next="#additional.1.1">
+                <msIdentifier xml:id="id1ce7c343-b326-4f26-83f0-8d87c1ee3980">
+                  <idno xml:id="ide448e2ae-5c72-41c1-8190-ab1da75d0f6f">1.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="ida3d7f1ad-177c-4888-accb-3593d7ef40b7">
+                  <p xml:id="id70ee48f0-7204-4f1b-b337-1a81385a7022">Kladde til titelblad med indholdsfortegnelse (<ref xml:id="ide28f2e59-c822-49af-97f2-00615298d3fa" target="../Oi9/txt.xml#ss371" type="publishedWritings" n="371"><hi xml:id="id3311d9d5-3045-4a2d-8a99-653c7781a60b" rendition="#ita">SKS</hi> 13, 371</ref>).</p>
+                  <p xml:id="id6f707b05-3868-45dd-bb43-40e320f1df41">1 dobbeltblad i 4<hi xml:id="idaa06f439-5f14-467e-9c5b-635e0caf81ff" rendition="#sup">o</hi>.<note xml:id="idecd6ca6c-ee3e-4232-9906-8f19cc21b0db"><p xml:id="id450372d3-f9a1-4f04-b461-d934659795f8">Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p></note></p>
+                  <p xml:id="id2a307b90-bbc9-4efd-a934-c62833ee707f">Ingen paginering.</p>
+                  <p xml:id="id6d7a827e-93c5-48c3-81b1-6edb2f6b8f86">Papir: gulligt velin, ribbet. Mål: 170 × 205 mm.<note xml:id="id16fd89ba-8e53-408e-91d4-e3bf2b0c8a29"><p xml:id="id1df798ff-80e9-402e-a0ba-b2675a9b849b">Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p></note></p>
+                  <p xml:id="id0b3c7638-c272-48d2-96d5-0ffff7a71563">Bl. [1v]-[2v] er ubeskrevet.</p>
+                  <p xml:id="id33c701aa-3c94-46b7-935a-ee3437af6f08">På bl. [1r] findes følgende påskrifter: »Øieblikket. / <hi xml:id="idac0ffa72-3c11-4681-92fd-c8acb9ad902c" rendition="#bol">N<hi xml:id="id209131fe-3f0e-4c50-8d7e-c64601cfc3d2" rendition="#sup">o</hi> 9.</hi> / Indhold. / 1) Altsaa saaledes staaer Sagen. / <del xml:id="id0f51d6b6-187f-431c-9e0c-23e164995fc0" rendition="#lth">2) 'Sandhedsvid<pb xml:id="ss574" n="574" edRef="#SKS"/>nernes' Taktik.</del> / <del xml:id="idcfaea374-cb8e-46ab-8b65-cfd44197ace9" rendition="#lth">3) At jeg staaer bogstaveligt ene; og at man / ikke forstaaer Betydningen heraf.</del> / <del xml:id="id0696002b-ff51-4783-8409-d17dfac0a3c2" rendition="#lth">4) At det slaaer til for mig.</del> / 2 <del xml:id="ide3429670-7724-4d46-9f40-4fcacc73ef97" rendition="#lth">5</del>) At Idealerne skulle forkyndes – ellers / er Χstd. i dybeste Grund forfalsket. / 3 <del xml:id="id7b503362-ff16-4788-b690-368696ab3590" rendition="#lth">6</del>) En Dosis Livslede. / 4 <del xml:id="idc255bdb3-8a36-4ed1-baba-d82c06c15e9d" rendition="#lth">7</del>) Vær Piat – og Du skal see, alle Van-/skeligheder forsvinde! / 5 <del xml:id="id845428a7-a983-4794-ac61-852426ef3527" rendition="#lth">8</del>) At Præsterne ere Menneske-Ædere, og paa / den afskyeligste Maade. / 6 <del xml:id="id398cc786-a78c-4cc0-85e0-85c81fc30531" rendition="#lth">9</del> Præsten ikke blot beviser Xstds Sandhed, / men han modbeviser den med det Samme.«. Herunder står en påbegyndt datering »d.«, forfatterinitialerne <hi xml:id="idd9700b43-2cb0-4a45-9289-68c144b693f3" rendition="#ant">»S.K.«</hi> og adskilt herfra med en tynd vandret streg navnet på forlaget »Reitzel.«. Skriftets nummer er dobbelt understreget med rødkridt. Dobbeltbladet har fungeret som omslag til mss. 1.2-1.7 samt oprindelig mss. 2.1, 3.1 og 4.1. Se <ref xml:id="id227d5c88-4f96-491a-9620-eec0c0bcb8fc" target="../Oi9/txr.xml#ill_k28" type="figure">illustration 28</ref>. <figure xml:id="ill_k28" rend="recto"><graphic xml:id="id4085a6b9-164e-4dd6-9a3d-769087c84101" url="../Oi9/ill_k28.jpg"/><head xml:id="id786b79b5-3024-4b6c-b335-c4846c4e8c61">28. Ms. 1.1, kladde til titelblad til <hi xml:id="id2d60d5fb-307d-42f2-a419-30aab038f8f1" rendition="#ita">Øieblikket Nr. 9</hi> med tre bortredigerede titler</head></figure> </p>
+                  <p xml:id="id0a407980-81fc-46df-bd3f-0f7e3293f6cc">En del korrektioner. Sletningen af de tre titler samt ændringen i nummereringen er foretaget med blyant.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.1" prev="#physDesc.1.1">
+                <msIdentifier xml:id="id6c3eb5b4-ca04-4573-ac00-a14d6ea92835">
+                  <idno xml:id="id91c0fcb0-0af7-4d7d-8c31-14abfc4bbfea">1.1</idno>
+                </msIdentifier>
+                <additional xml:id="idbfa8932a-9e22-487f-9902-d642627d929a">
+                  <adminInfo xml:id="id882e4e73-722e-4ddd-bcff-fa704f1982e5">
+                    <note xml:id="idd24ee201-7cbb-4e78-bab3-40b1cb518246">
+                      <p xml:id="id38632c89-412d-432d-8c18-672a47187369">(<hi xml:id="idb7d99d76-286f-412a-9230-c50a784685b1" rendition="#ita">Pap.</hi> XI 3 B 319)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.2" next="#additional.1.2">
+                <msIdentifier xml:id="iddd83cfb5-499d-406a-bed7-c66a91235cf2">
+                  <idno xml:id="id18c685bc-442c-4fa1-a8c0-94b4888e2bc1">1.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="idbd8fa4c2-4d1e-4730-b44d-6ce2fffd1174">
+                  <p xml:id="id1910dea4-f604-456d-9a92-615039ce2cbe">Kladde til den 1. artikel: »Altsaa saaledes staaer Sagen« (<ref xml:id="id3d9b6ac9-d5a4-452e-8545-b1c99ad70d18" target="../Oi9/txt.xml#ss373" type="publishedWritings" n="373"><hi xml:id="id0c4f2e81-b79a-4e3f-afc3-4302c99b5a32" rendition="#ita">SKS</hi> 13, 373</ref>-375).</p>
+                  <p xml:id="id745a0ea6-c6af-49ee-a7bc-b5c4c411d7e5">2 dobbeltblade, i alt 4 blade i 4<hi xml:id="idc2a663d0-9a3c-4257-95b2-c09ffcd70ab1" rendition="#sup">o</hi>.</p>
+                  <p xml:id="idc28d37e5-d33e-4757-ab1b-816c88668f7b">Ingen paginering.</p>
+                  <p xml:id="idfe10bef0-164f-48a7-9b0f-ef4f8507d787">Papir: gulligt velin, ribbet. Mål: 168 × 205 mm.</p>
+                  <p xml:id="id19ed477e-b86a-4937-826b-a0b7605a991d">Bladet er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. På bl. [2v] er et afsnit færdigskrevet på langs i marginalspalten, og en tilføjelse hertil, indvist med et blyantindvisningstegn, er skrevet på hovedet i marginalspalten. Af bl. [4r] er kun to tredjedele beskrevet, bl. [4v] er ubeskrevet.</p>
+                  <p xml:id="idb6f514b0-7135-4006-9dbe-f0dda4860e25">Øverst på bl. [1r] findes artiklens overskrift og derunder dateringen »31 Mai 55.«. På bl. [2r] og [3r] markerer tre asterisker et større ophold i teksten ved nyt afsnit.</p>
+                  <p xml:id="id922cf8e4-40e3-4ba8-b8f3-21183eb466a3">Mange korrektioner, bl.a. en del marginaltilføjelser og overstregninger. På bl. [2r] er tre ord og på bl. [4r] et ord, ni linjer og to marginaltilføjelser slettet med blyant. På bl. [4r] er et indvisningstegn (et kors) skrevet med blyant.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.2" prev="#physDesc.1.2">
+                <msIdentifier xml:id="id0729403a-d707-4e0f-9985-2ad14cb6cbaf">
+                  <idno xml:id="idb6720da0-93b0-4b65-a053-50cb58f92753">1.2</idno>
+                </msIdentifier>
+                <additional xml:id="id1d437a73-5217-4d95-a6ed-cd5a9e4fa226">
+                  <adminInfo xml:id="idd302e11e-bcfc-4d57-beaf-e8596de7ccfc">
+                    <note xml:id="idb2768975-9458-4ced-81c5-836d775d78e7">
+                      <p xml:id="id25aaa2c1-fadd-4838-b5dc-5cf09809b25d">(<hi xml:id="idcbe349bf-fd84-471a-958c-c0b255da0178" rendition="#ita">Pap.</hi> XI 3 B 320)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.3" next="#additional.1.3">
+                <msIdentifier xml:id="ida1356c1b-e44e-41f0-a460-aceb153428f9">
+                  <idno xml:id="ide63da650-2ccb-42ff-b154-49a9da6bcfe9">1.3</idno>
+                </msIdentifier>
+                <physDesc xml:id="id7f8f8a1d-70e2-468d-bd96-d65fb68b4cbb">
+                  <p xml:id="idbfd45faa-8c0b-4de8-a580-64cfde1c21a9">Kladde til den 2. artikel: »At Idealerne skulle forkyndes – ellers er Christendommen i dybeste Grund forfalsket« (<ref xml:id="idece56a9b-de77-409f-9f79-6e7bb613302c" target="../Oi9/txt.xml#ss376" type="publishedWritings" n="376"><hi xml:id="idbac33a4e-2aaf-4c7c-8586-e9cc4391ef4b" rendition="#ita">SKS</hi> 13, 376</ref>-377).</p>
+                  <p xml:id="ida3045223-3f4d-4153-ad80-2450525f7477">1 dobbeltblad i 4<hi xml:id="ida7ae9789-9dff-4f29-9870-72739553fa2d" rendition="#sup">o</hi>.</p>
+                  <p xml:id="iddf11fbc7-b9b6-4fb9-8ff2-5525edcae1b7">Ingen paginering.</p>
+                  <p xml:id="id34cc4de6-05b2-4ed2-99a7-7a0059bc88ec">Papir: gulligt velin, ribbet. Mål: 170 × 201 mm.</p>
+                  <p xml:id="id35f90ec4-03f3-44e3-9035-3ea0a6407c6d"><pb xml:id="ss576" n="576" edRef="#SKS"/>Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser.</p>
+                  <p xml:id="id584c37c1-a7e1-409c-9c59-17c0d2ced661">Øverst på bl. [1r] findes artiklens overskrift, hvoraf » – ellers er Χstd. i dybeste Grund forfalsket.« er tilføjet. Derunder står dateringen »16. juli 55.«. På bl. [1v] forekommer redigeringsbemærkningen »Ny Udgang«, og i teksten er »<hi xml:id="iddc254a66-7371-4606-a487-15866bb7f05c" rendition="#bol">beroligende!</hi>« dobbelt understreget.</p>
+                  <p xml:id="id0b89bf8e-a77f-4bc9-bc51-a2c1af130e26">En del korrektioner, bl.a. flere marginaltilføjelser.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.3" prev="#physDesc.1.3">
+                <msIdentifier xml:id="id7117d0ad-771d-48bb-8516-ce58526fa22a">
+                  <idno xml:id="id880759b3-0b0b-4334-a2cd-3e25594ee939">1.3</idno>
+                </msIdentifier>
+                <additional xml:id="idf6035351-cf04-49b7-8338-256eec27ae91">
+                  <adminInfo xml:id="id56e9140d-421b-4066-9cb5-171523ee0303">
+                    <note xml:id="idd340ab41-0bf3-4d48-b253-ee8f17684bdb">
+                      <p xml:id="id4e3b17bf-4292-4b44-a852-b889d249236c">(<hi xml:id="idb162f914-4628-4e57-929b-cc5d8ba1829a" rendition="#ita">Pap.</hi> XI 3 B 321)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.4" next="#additional.1.4">
+                <msIdentifier xml:id="id19962fa8-2468-498e-a01d-fc280b27d19e">
+                  <idno xml:id="id5f5c77ce-e5ee-432f-8b79-8815e6214fba">1.4</idno>
+                </msIdentifier>
+                <physDesc xml:id="id9c4825f2-c64c-472d-bc27-88b42717aa2a">
+                  <p xml:id="idec08029e-e428-49d8-bb59-04ae492af029">Kladde til den 3. artikel: »En Dosis Livslede« (<ref xml:id="id30678f9b-e513-4e95-a89e-9047c925f51b" target="../Oi9/txt.xml#ss378" type="publishedWritings" n="378"><hi xml:id="id9ddcf63f-bbee-466b-ac4c-1bab7d2a6b1c" rendition="#ita">SKS</hi> 13, 378</ref>-379).</p>
+                  <p xml:id="id2d5c6137-b453-409a-a446-4c5361bc69d8">1 løst blad i 4<hi xml:id="id9db2bda6-6c5e-40fa-b7c0-97a405769645" rendition="#sup">o</hi>. Afrivningskant i venstre side.</p>
+                  <p xml:id="ide7d82457-fb4e-42a7-af55-8b92ade1b98a">Ingen paginering.</p>
+                  <p xml:id="id334abb12-f6f6-4beb-9723-7366a2434463">Papir: gulligt koncept, glat. Mål: 167 × 203 mm.</p>
+                  <p xml:id="id3d0451a9-2a15-4da2-bddc-d12c262f31fc">Bladet er beskrevet i hele sidens bredde, kun en smal margin rummer tilføjelser. Bladene har efter beskrivning været foldet en gang på tværs.</p>
+                  <p xml:id="id52de058d-dcc3-443c-90e8-d10190e60cb1">Øverst på bl. [1r] står artiklens oprindelige overskrift »En Dosis Livs-Lede«, og i marginen findes redigeringsbemærkningen »Ny Udgang« tre gange indvist i teksten med dobbeltkors. Øverst på bl. [1v] markerer to asterisker et større ophold i teksten ved nyt afsnit.</p>
+                  <p xml:id="id29f33427-a077-4fec-b5c6-55832e0facaa">En del korrektioner, bl.a. flere tilføjelser. På bl. [1r] er et enkelt ord slettet med blyant.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.4" prev="#physDesc.1.4">
+                <msIdentifier xml:id="id97c67e84-9a98-443b-8063-f9f4b4075f3e">
+                  <idno xml:id="idda6ebab4-5a96-4a78-b5fb-09e72a6076ba">1.4</idno>
+                </msIdentifier>
+                <additional xml:id="idc18ef6b5-8810-491a-9465-0a3294c777e8">
+                  <adminInfo xml:id="id4a74a464-0688-4bb1-9900-7b5024f9055f">
+                    <note xml:id="id8fc47ea3-eb08-426d-bfbe-ff0dde682f29">
+                      <p xml:id="idc207227d-986b-4cc7-a2fc-cc2ee1d458a5">(<hi xml:id="id10a833da-535d-4cf9-bb0f-dd8f9e5b4ab8" rendition="#ita">Pap.</hi> XI 3 B 322)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.5" next="#additional.1.5">
+                <msIdentifier xml:id="ida6c00630-aa1c-4be7-a9f2-e9847acc0c73">
+                  <idno xml:id="ided25c5a9-8429-4492-977f-a729cc448562">1.5</idno>
+                </msIdentifier>
+                <physDesc xml:id="id644c52dc-5255-48e7-aab7-65b596cd480a">
+                  <p xml:id="id1ef92188-493d-4ad8-8bcb-87a4b3a2b695">Kladde til den 4. artikel: »Vær Piat – og Du skal see, alle Vanskeligheder forsvinde!« (<ref xml:id="idd352842d-907a-431d-9820-53ee70fe9218" target="../Oi9/txt.xml#ss380" type="publishedWritings" n="380"><hi xml:id="id04e41509-53cc-4523-93f0-521abc7976af" rendition="#ita">SKS</hi> 13, 380</ref>-382).</p>
+                  <p xml:id="id96ca216a-fcd7-41fe-90d8-0bdd08e07a23">2 dobbeltblade, i alt 4 blade i 4<hi xml:id="id9c16f03e-923f-44f6-8a6a-6954ec14c216" rendition="#sup">o</hi>.</p>
+                  <p xml:id="idda148700-39d2-46ce-9c32-8a123493e585">Ingen paginering.</p>
+                  <p xml:id="id657ed38a-50a9-4c4e-8c60-76362a42908e">Papir: gulligt velin, ribbet. Mål: 169 × 202 mm.</p>
+                  <p xml:id="id889b35a8-b78e-405a-9140-aecb19300d45">Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. Øverst på bl. [3r] er en tilføjelse skrevet i hele sidens bredde og indvist i teksten vha. en krølleparentes. Af bl. [4r] er kun to tredjedele beskrevet, bl. [4v] er ubeskrevet.</p>
+                  <p xml:id="id5d64e0d4-d4c2-4137-8ab3-a318f3123334">Øverst på bl. [1r] findes artiklens overskrift og derunder dateringen »d. 3 Aug. 55.«.</p>
+                  <p xml:id="idab37284f-e823-4b62-9b8c-7fa8939d62f3">Nogle korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.5" prev="#physDesc.1.5">
+                <msIdentifier xml:id="id2abee589-7c5e-49c5-82d8-779ba021bfef">
+                  <idno xml:id="id51eb8556-7874-4fe6-bbb1-14d065e88943">1.5</idno>
+                </msIdentifier>
+                <additional xml:id="idee18ec35-4d29-4da2-a9e0-dcccd6b4ff7a">
+                  <adminInfo xml:id="id79de07d3-a3eb-4de7-ae8c-60327093a6d5">
+                    <note xml:id="id2af72d59-d9d2-4249-9356-edd9959fe58a">
+                      <p xml:id="idd6321096-7a4d-4901-980a-5b02f7985b7d">(<hi xml:id="id81c5e1d1-b681-4508-a360-804f0c4ac787" rendition="#ita">Pap.</hi> XI 3 B 323)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.6" next="#additional.1.6">
+                <msIdentifier xml:id="id2875f2f7-dee0-4156-85fe-24baae0d895d">
+                  <idno xml:id="id37d27ce7-08bd-4033-b892-c9f995eacd14">1.6</idno>
+                </msIdentifier>
+                <physDesc xml:id="ide8e81e6c-3d3b-4fcd-a315-63c1f2247935">
+                  <p xml:id="ided3a576a-de31-4a8a-8747-7b408e6cc073">Kladde til det 5. stykke: »At Præsterne ere Menneske-Ædere, og paa den afskyeligste Maade.« (<ref xml:id="id498d0c49-2d96-4ea8-bb2f-acc2ba1b599e" target="../Oi9/txt.xml#ss383" type="publishedWritings" n="383"><hi xml:id="idde716f86-cc38-4c78-b819-c8b6a69f87f2" rendition="#ita">SKS</hi> 13, 383</ref>-385).</p>
+                  <p xml:id="id3897e422-b429-4785-be32-656669af4c59"><pb xml:id="ss577" n="577" edRef="#SKS"/>2 dobbeltblade, i alt 4 blade i 4<hi xml:id="id85201cec-2fa7-4e00-b935-75559313ac65" rendition="#sup">o</hi>.</p>
+                  <p xml:id="id49f471d9-84d4-4405-ab7a-cc56fdedf3cc">Ingen paginering.</p>
+                  <p xml:id="id4e5fc760-1bc0-4bb4-a0da-23249568ec84">Papir: gulligt velin, ribbet. Det første dobbeltblad måler 169 × 202 mm, det andet 167 × 205 mm.</p>
+                  <p xml:id="id445a74e9-9674-4ef2-8d02-f4d4fc983592">Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. Af bl. [4v] er kun en fjerdedel beskrevet.</p>
+                  <p xml:id="idea3dea4b-3391-4834-8e72-dc3c3deaebe0">Øverst på bl. [1r] findes artiklens overskrift, hvoraf », og paa den afskyeligste Maade.« er tilføjet. Nedenfor står en slettet datering »25 Juli.« og derunder dateringen »23 Aug.«.</p>
+                  <p xml:id="idbb04e423-e073-4a96-90e1-8f2d8bdf7881">En del korrektioner. På bl. [1r] er en marginaltilføjelse samt syv linjer i inderspalten slettet med blyant, på bl. [2v] et overskydende 'd'.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.6" prev="#physDesc.1.6">
+                <msIdentifier xml:id="idfa70e29f-7811-4104-8168-5c2bbfe8b997">
+                  <idno xml:id="id64f3a63e-9052-437b-96f3-20680b18abd8">1.6</idno>
+                </msIdentifier>
+                <additional xml:id="id16af2b4e-f189-469d-b1a7-70f0770339e7">
+                  <adminInfo xml:id="id3fdb269c-9b0b-4d11-b90d-36aa76f5972a">
+                    <note xml:id="id011db87a-fe56-4d9e-80a5-2f4653038308">
+                      <p xml:id="id3910ac1a-aa6b-4c62-a306-05ac9b63981c">(<hi xml:id="id853eb7de-0dcd-40be-bc09-14107e5d24fc" rendition="#ita">Pap.</hi> XI 3 B 324)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.7" next="#additional.1.7">
+                <msIdentifier xml:id="id432689ff-85e9-4ed5-bdb5-ec39dcffc971">
+                  <idno xml:id="id6e7dd939-2af3-4fa0-ab64-b91a889c5d85">1.7</idno>
+                </msIdentifier>
+                <physDesc xml:id="ide83f5414-3c10-42ce-85b5-94c8d3bcc8c4">
+                  <p xml:id="idcff5b531-45d6-4dcf-9254-8fcc4c5613ff">Kladde til den 6. artikel: »Præsten ikke blot beviser Christendommens Sandhed, men han modbeviser den med det Samme.« (<ref xml:id="id0082e656-5b76-4346-912c-5a0204b54e0b" target="../Oi9/txt.xml#ss386" type="publishedWritings" n="386"><hi xml:id="id80dccb5e-3931-4257-8a2c-85ae278013ca" rendition="#ita">SKS</hi> 13, 386</ref>-387).</p>
+                  <p xml:id="idea440c18-aa86-4957-b250-10112217df7b">1 dobbeltblad i 4<hi xml:id="ida69426bf-dc88-499d-9546-e1c6378c5725" rendition="#sup">o</hi>.</p>
+                  <p xml:id="id58cbb082-53ac-463a-b620-6d853fa97d2f">Ingen paginering.</p>
+                  <p xml:id="id3240f7e4-61f0-421d-bb5e-76435ff920ae">Papir: gulligt velin, ribbet. Mål: 168 × 205 mm.</p>
+                  <p xml:id="id6a2abc67-0e1d-45e5-9866-1afea17cc9b1">Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. Af bl. [2v] er kun to tredjedele beskrevet.</p>
+                  <p xml:id="id73bc832d-95f6-4c42-832e-f0f539d0e47e">Øverst på bl. [1r] er artiklens oprindelige overskrift »Beviis og Modbeviis« ændret til »Præsten ikke blot beviser Xstds Sandhed, / men han modbeviser den med det Samme.«. Derunder findes dateringen »d. 8 Sept. 55.«.</p>
+                  <p xml:id="id1f86955b-bab5-42e7-9bb4-da197154df7b">Mange korrektioner, bl.a. en del marginaltilføjelser.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.7" prev="#physDesc.1.7">
+                <msIdentifier xml:id="ide1d4f95a-323d-4290-992d-df61e462c5dc">
+                  <idno xml:id="id214cca80-a379-46b1-9fbb-c940ead75b55">1.7</idno>
+                </msIdentifier>
+                <additional xml:id="ida8ed37c0-a475-4113-b2b6-6de19bdccbbf">
+                  <adminInfo xml:id="ida52369b4-0fd8-4ede-bcbf-c06a8f1d6eb9">
+                    <note xml:id="id15fbe372-1f2d-4717-9be2-3ccbe88013f1">
+                      <p xml:id="idc8995f6a-ea46-4088-804e-0c8a07f67fe0">(<hi xml:id="idb01a1fd1-6a96-49a1-8639-75402a2bfaab" rendition="#ita">Pap.</hi> XI 3 B 325)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.1" prev="#physDesc.1">
+              <msIdentifier xml:id="idbdc5f1c0-996a-463f-8198-11a1482f9ead">
+                <idno xml:id="id5392926f-37f9-4eea-8c8a-8caf04dbe7ac">1</idno>
+              </msIdentifier>
+              <additional xml:id="id6d9b0ae9-9ed6-446b-8c18-fe890b8d922a">
+                <adminInfo xml:id="id055f9abb-b332-47dc-9046-7b29102acfef">
+                  <note xml:id="id1846b197-9617-4731-9a6d-82d609736c6a">
+                    <p xml:id="idfaed9b38-82aa-4284-acd0-93bfd5e71204">(<hi xml:id="id668851c7-99c3-4dfe-9fba-39d7f66d3ce6" rendition="#ita">L-fort.</hi> + <hi xml:id="id40078ecd-4694-4b57-8a01-4ce010559dac" rendition="#ita">B-fort.</hi> 155; KA, B pk. 52, læg 9; <hi xml:id="id10edb4e7-2c12-450d-b6d8-bac6dd41fec9" rendition="#ita">Pap.</hi> XI 3 B 319-325)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.2" next="#additional.2">
+              <msIdentifier xml:id="id6a88b94d-7c9c-43ab-b3c0-4e85013553c9">
+                <idno xml:id="idc2f14e5b-8924-4a7a-8c49-e1f82bb3902a">2</idno>
+              </msIdentifier>
+              <physDesc xml:id="idcfbae9da-b1dc-4b92-abc8-71965702cdb1">
+                <p xml:id="ida77a0be0-dad8-4bed-9239-7ed1fb17adef">Kladde og renskrift til en ubenyttet artikel til <hi xml:id="id94b58850-f115-4e6c-8909-dc0a8e4fa40b" rendition="#ita">Øieblikket Nr. 9:</hi> »'Sandhedsvidnernes' Taktik.«.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.2.1" next="#additional.2.1">
+                <msIdentifier xml:id="idfc8b9b42-f185-4a73-aba3-0a23db19b750">
+                  <idno xml:id="id6df4ee97-3439-4b34-aee7-1b0d1416f6be">2.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id72a6edb6-f6f9-42a8-ab10-b0bb888c29bc">
+                  <p xml:id="id4e6b6fd9-dcd6-4ba6-bf55-c41a2087472b">Kladde til en ubenyttet artikel: »'Sandhedsvidnernes' Taktik.«.</p>
+                  <p xml:id="ideaf69fb0-25c1-4b92-9c9e-e97f91798cae">2 dobbeltblade, i alt 4 blade i 4<hi xml:id="id89338d77-d4e6-4fae-a3c4-3906f16e360a" rendition="#sup">o</hi>.</p>
+                  <p xml:id="idd5f2fe82-ee9a-4c4a-b946-608ff2fc62e7">Bl. [1r]-[4r] er med blyant litreret a-g.</p>
+                  <p xml:id="id9c374537-732f-4067-b0b2-fee4a7202ba1">Papir: gulligt velin, ribbet. Mål: 167-168 × 205 mm.</p>
+                  <p xml:id="id585688a6-9d32-4e21-8824-de4791309edd">Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. På bl. [1r] er en tilføjelse påbe<pb xml:id="ss578" n="578" edRef="#SKS"/>gyndt i inderspalten og fortsat i yderspalten. Af bl. [4r] er kun halvdelen beskrevet, bl. [4v] er ubeskrevet.</p>
+                  <p xml:id="id7b576dd0-6b77-41e9-9beb-7573eb2e7e30">Øverst på side a findes artiklens overskrift og derunder dateringen »1 Juni 55.«. På side e markerer to asterisker et større ophold i teksten ved nyt afsnit.</p>
+                  <p xml:id="id672240b1-43c1-4b2e-b1cd-db8a96ef2993">Mange korrektioner. På side a er 4 linjer, på side b i alt 9 ord, på side c 6 linjer og et ord, på side d 3 linjer, side e 5 linjer og en marginaltilføjelse, side f 5 linjer og side g 3 linjer og 4 ord slettet med blyant.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.2.1" prev="#physDesc.2.1">
+                <msIdentifier xml:id="id17165b7a-09bb-4c9e-bec5-5b0913652625">
+                  <idno xml:id="ide163324f-9122-4297-8fb6-ec3fcb88108d">2.1</idno>
+                </msIdentifier>
+                <additional xml:id="idbe448ba0-147c-4b7d-a875-9eca710fb295">
+                  <adminInfo xml:id="id8088aed0-21b9-4fe0-b88b-665bac94b674">
+                    <note xml:id="idc7ed0d5a-9301-4665-8d2d-70aa4ed91376">
+                      <p xml:id="idd99aa457-2679-451b-8806-ba3c17583c3b">(<hi xml:id="id92a102cf-8302-4033-8340-3b7bcc1d5eb1" rendition="#ita">Pap.</hi> XI 3 B 137)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.2.2" next="#additional.2.2">
+                <msIdentifier xml:id="idba3ddbe0-5089-4800-aed1-406c951b1d31">
+                  <idno xml:id="iddb506905-3d71-42a0-bccb-ddf3270a5cdb">2.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="id5a2106f2-9f83-4bed-9462-672f17eef39c">
+                  <p xml:id="id96236ee4-5674-4a3c-af11-04069df6715e">Renskrift til en ubenyttet artikel: »'Sandhedsvidnernes' Taktik.«.</p>
+                  <p xml:id="id03c722ff-0309-4c8e-92b9-a6750c2aded4">1 sammenhæftning på 2 dobbeltblade, i alt 4 blade i 4<hi xml:id="id15b29e8f-bda9-4726-ac99-2fdf5a7dc81c" rendition="#sup">o</hi>.</p>
+                  <p xml:id="id08d3c95c-2457-4d2d-9149-d0e9d996e561">På bl. [1r]-[4r] er en blyantpaginering, 5-11 (på s. 11 med tilføjelsen »11-22«), slettet med blyant og erstattet af litreringen a-g.</p>
+                  <p xml:id="idd0d5b1b1-66c5-47ad-bd38-4a9a3c264800">Papir: gulligt velin, ribbet. Mål: 168 × 205 mm. Hæftetråd af rød silke.</p>
+                  <p xml:id="idbcd4a52e-2e84-447a-9c79-ec5d68bea4a0">Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. Af bl. [4r] er kun to tredjedele beskrevet, bl. [4v] er ubeskrevet.</p>
+                  <p xml:id="id41645617-b34b-49b2-ac63-c1c1322846b7">Øverst på side a findes artiklens overskrift og derunder dateringen »d. 1 Juni 55.«. Oven for overskriften er romertallet <hi xml:id="id680744c3-b742-44dc-a830-c0416210386b" rendition="#ant">»II«</hi> skrevet og slettet med blyant. På side e markerer to asterisker et større ophold i teksten ved nyt afsnit.</p>
+                  <p xml:id="id8082710b-8c93-4bef-8351-a691a3596805">Mange korrektioner. På side a er et ord, på side b 5 linjer og 9 ord, på side c et ord og et komma, på side d 2 linjer, 3 ord og 2 sæt anførselstegn, på side e 2 linjer, på side f 2 linjer og på side g en linje slettet med blyant. På side g er 7 linjer desuden slettet med blæk.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.2.2" prev="#physDesc.2.2">
+                <msIdentifier xml:id="ide7bb16fa-ecf5-45f3-8ae5-06fa73d6896f">
+                  <idno xml:id="id970bc946-9ea9-43eb-942d-ad8faf5f90d6">2.2</idno>
+                </msIdentifier>
+                <additional xml:id="id67c6a718-c14a-4d15-a29f-441212b33c17">
+                  <adminInfo xml:id="idb37997a0-c881-4ae7-9690-37f6a6a19ad9">
+                    <note xml:id="id1fab2773-bf5f-4b6b-af98-a8d62e3f73cd">
+                      <p xml:id="id02d7c8ad-bcca-4bea-b5af-3cd542abfa14">(<hi xml:id="id17ad1bda-975c-4e35-a09c-46642d0dc5e4" rendition="#ita">Pap.</hi> XI 3 B 136)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.2" prev="#physDesc.2">
+              <msIdentifier xml:id="idc6e3e3fb-dc87-42de-a6f9-3433d2a4e5f0">
+                <idno xml:id="id0af33a94-0b52-46f2-bdfc-0ffc73465e80">2</idno>
+              </msIdentifier>
+              <additional xml:id="id1ca82e09-c28b-4943-98ba-97ec6c0a52a5">
+                <adminInfo xml:id="id13493246-3255-4ec4-9578-e0c99dce4adb">
+                  <note xml:id="idf4884d93-8074-4a8d-8170-aa07db9bfcdc">
+                    <p xml:id="idad0f2231-8e48-43ab-9989-ca47b0388936">(<hi xml:id="id1b46ec75-36e4-471b-bd4a-446925e832ad" rendition="#ita">L-fort.</hi> + <hi xml:id="idaeafd259-7616-4c67-bf90-f331283fa7ae" rendition="#ita">B-fort.</hi> 178; KA, B pk. 51, læg 2 [I]; <hi xml:id="id74d67ea4-e7f7-4192-bd31-219819270b0b" rendition="#ita">Pap.</hi> XI 3 B 136-137)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.3" next="#additional.3">
+              <msIdentifier xml:id="idbc27dfc6-fa8f-4091-9fce-6f78ea534350">
+                <idno xml:id="id34c035f1-0792-4739-813f-e9096220ab83">3</idno>
+              </msIdentifier>
+              <physDesc xml:id="idd57dc358-b99a-4e96-8dee-516e17c941cc">
+                <p xml:id="id242e943d-16b4-4028-941d-6b192a7cf347">Kladde og renskrift til en ubenyttet artikel til <hi xml:id="id1b5bec1e-c1f9-4f9f-9004-d5c81503da52" rendition="#ita">Øieblikket Nr. 9:</hi> »At jeg staaer bogstaveligt ene; og at man ikke forstaaer Betydningen heraf.«.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.3.1" next="#additional.3.1">
+                <msIdentifier xml:id="id82999e39-f0b9-44cd-8ff1-08d93780bcd6">
+                  <idno xml:id="id2f4ac306-4cee-4264-91cf-fd0161abe7c3">3.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id75801066-feed-4df5-b434-a847f2aa6277">
+                  <p xml:id="id30122607-8fdc-4da8-a1dc-b63f2b5f27bb">Kladde til en ubenyttet artikel: »At jeg staaer bogstaveligt ene; og at man ikke forstaaer Betydningen heraf.«.</p>
+                  <p xml:id="idd088653c-1a5d-426d-a2df-0e0d5b0bba34">4 dobbeltblade, i alt 8 blade i 4<hi xml:id="id4b437d50-589d-4c62-b6ca-76511c26595b" rendition="#sup">o</hi>.</p>
+                  <p xml:id="id46fec412-31fd-4b38-a3c3-ba69ff90ec8c">Bladene er med blyant litreret a-q (j overspringes).</p>
+                  <p xml:id="id2ca9f6c7-fa70-4b4e-9bf6-e500f3f82936"><pb xml:id="ss579" n="579" edRef="#SKS"/>Papir: gulligt velin, ribbet. Mål: 167-169 × 202 mm.</p>
+                  <p xml:id="id5e5cb36a-cc9a-4fd6-8dd0-a1089588e327">Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. På bl. [1r] breder teksten sig flere steder ud i yderspalten, og på bl. [8v] afsluttes teksten i yderspalten.</p>
+                  <p xml:id="ide4859eec-b48a-49c4-903a-988bee7a06a4">Øverst på side a findes artiklens overskrift og derunder dateringen »29 Juli 55.«. På side d og e forekommer redigeringsbemærkningen »Ny Udgang«, indvist i teksten med dobbeltkors.</p>
+                  <p xml:id="id3f4111d1-f6f5-4401-9fff-e56277ff7ab3">Mange korrektioner. På side b, f, g, k og m er længere passager og marginaltilføjelser slettet, på side f, g og k med blyantkryds.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.1" prev="#physDesc.3.1">
+                <msIdentifier xml:id="idf6a74f5b-5e08-4d6f-b97a-5db72399d9ba">
+                  <idno xml:id="idd7477702-cabb-4255-b5ca-ae86890905b7">3.1</idno>
+                </msIdentifier>
+                <additional xml:id="id84eee385-e370-42f4-ade3-4c3f83fd4d25">
+                  <adminInfo xml:id="id06a984da-3012-429a-840b-5fe7f5aa8377">
+                    <note xml:id="id666394fd-0414-4e88-b897-098f9fa2886d">
+                      <p xml:id="id9f4fb521-af81-4dc9-9e12-df5ea90d7b09">(<hi xml:id="id0c29c858-2efb-46e9-a9c1-f9bdfbcfea9b" rendition="#ita">Pap.</hi> XI 3 B 158)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.3.2" next="#additional.3.2">
+                <msIdentifier xml:id="id21b58986-39b9-4ced-b9ad-d862e8622f27">
+                  <idno xml:id="id974ea245-af9b-4b1b-93cd-6e2a6a90f5fd">3.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="id1fff2006-d74a-4ec7-b42e-f0935fb291b8">
+                  <p xml:id="idf2f670b1-08b0-464c-a08e-f94061549f9b">Renskrift til en ubenyttet artikel: »At jeg staaer bogstaveligt ene; og at man ikke forstaaer Betydningen heraf.«.</p>
+                  <p xml:id="idb4a43df5-e7d1-4eab-ac26-d58bc322e5cb">1 sammenhæftning på 3 dobbeltblade, i alt 6 blade i 4<hi xml:id="id50ffa564-5071-412d-9598-69dfc6342c7f" rendition="#sup">o</hi>.</p>
+                  <p xml:id="id64191add-d847-4d55-943c-ee281e7156bb">På bl. [1r]-[6r] er blyantpagineringen 12-22 slettet med blyant.</p>
+                  <p xml:id="idc2ce4496-d888-4dd9-92a7-958bf8150a00">Papir: gulligt velin, ribbet. Mål: 167 × 205 mm. Hæftetråd af rød silke.</p>
+                  <p xml:id="ide3564e3e-b3e2-46af-9961-a1084403efa3">Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. Bl. [6v] er ubeskrevet.</p>
+                  <p xml:id="id197c529d-0512-449a-a30d-abd4a51850d2">Øverst på bl. [1r] findes artiklens overskrift. Derover er romertallet <hi xml:id="idf6dee163-0d36-4cc3-baf8-dc46e31f2075" rendition="#ant">»III«</hi> skrevet og slettet med blyant, og øverst i venstre hjørne er en cirkel tegnet med rødkridt.</p>
+                  <p xml:id="id0c8d607c-0450-4e90-adcb-0d59b9d169a0">Nogle korrektioner. På bl. [1r] er tre ord slettet med blyant, og på bl. [2r] er fem ord slettet med blyant og et indvisningstegn (kors) skrevet med blyant. På bl. [4v] er ti linjer slettet (med blæk), og på bl. [6r] tre linjer.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.2" prev="#physDesc.3.2">
+                <msIdentifier xml:id="id3c772b62-1af3-4b8a-a8fc-efae7e70f0f7">
+                  <idno xml:id="idcd8e1713-f83a-4533-907d-a4fd41056a61">3.2</idno>
+                </msIdentifier>
+                <additional xml:id="id4d7ba7fe-54ac-4322-96e7-2e6ae22e1f4b">
+                  <adminInfo xml:id="id1bbce881-04dd-44d9-ab39-11bb782edd84">
+                    <note xml:id="id9ca86b72-0785-4a37-bce8-2d4f6505ee0d">
+                      <p xml:id="id2b6ed32b-8d40-429c-9ee2-e9b1f86d7334">(<hi xml:id="id026b908a-1066-4f25-aaa9-5d7dfb4a3ff8" rendition="#ita">Pap.</hi> XI 3 B 157)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.3" prev="#physDesc.3">
+              <msIdentifier xml:id="id185d62c0-998c-4f89-9368-00e649765f4d">
+                <idno xml:id="idc67db32d-e916-425b-b3ed-f744a440ee8b">3</idno>
+              </msIdentifier>
+              <additional xml:id="id02f2a6fd-117c-4f00-b5ef-e874b951f202">
+                <adminInfo xml:id="ida8a1527e-295b-425c-bd5c-393cd473ba99">
+                  <note xml:id="id2c0e78f2-3c33-412b-b508-9e9b607d83ab">
+                    <p xml:id="idee424123-a413-4539-9529-4e15706e38ff">(<hi xml:id="idc3b42172-8dfb-404d-8885-e475f11c3891" rendition="#ita">L-fort.</hi> + <hi xml:id="id53ff4334-f35f-42c1-9946-8554c5764507" rendition="#ita">B-fort.</hi> 170; KA, B pk. 51, læg 2 [II]; <hi xml:id="id5b104a3b-8b54-4ffc-bdde-696c7a9ebe3a" rendition="#ita">Pap.</hi> XI 3 B 157-158)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.4" next="#additional.4">
+              <msIdentifier xml:id="id0d55acb7-97b5-46db-b581-2dce888736ac">
+                <idno xml:id="id9203a17a-1462-4e0b-99e2-3f0346dafc09">4</idno>
+              </msIdentifier>
+              <physDesc xml:id="id91a5a0c4-087f-4b04-a071-b8af26efac71">
+                <p xml:id="id254d95d7-5d5b-4958-942a-b32e1beefb7e">Kladde og renskrift til en ubenyttet artikel til <hi xml:id="ida2c0b748-db68-4480-a01c-01ffa3b3d873" rendition="#ita">Øieblikket Nr. 9:</hi> »At det slaaer til for mig.«.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.4.1" next="#additional.4.1">
+                <msIdentifier xml:id="id6803b7bd-404e-4f5b-8c77-c3cefa70bfd9">
+                  <idno xml:id="ide5a449a4-5958-482a-9067-09ebab91a4de">4.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="idde51b03f-f246-451f-8317-6fa2a5bcd31f">
+                  <p xml:id="id0413f171-49a9-4c9b-acc4-5cab07d432ef">Kladde til en ubenyttet artikel: »At det slaaer til for mig.«.</p>
+                  <p xml:id="idf1dab168-bd61-4815-b572-8efda010ecc6">1 dobbeltblad og 1 løst blad, i alt 3 blade i 4<hi xml:id="id296e23a6-dc78-4688-a454-fb8c5b3955fa" rendition="#sup">o</hi>. Det løse blad har afrivningskant i venstre side.</p>
+                  <p xml:id="idb457f266-e15d-4380-a993-82b690e641ec">Bladene er med blyant litreret a-f (side e rettet fra c).</p>
+                  <p xml:id="idb2a60970-7f4e-4bcd-b6b3-1d1f66d16365">Papir: gulligt velin, ribbet. Mål: 167 × 205 mm.</p>
+                  <p xml:id="id17b7820c-c82a-4cf8-9388-3f87fc437274">Bladene er foldet på langs; en bred inderspalte rummer tekst, <pb xml:id="ss580" n="580" edRef="#SKS"/>en smal yderspalte tilføjelser. På bl. [1r] er en længere tilføjelse skrevet på langs i yderspalten og indvist i teksten med et dobbeltkors, og øverst på bl. [2v] breder en tilføjelse sig til inderspalten. Af bl. [3v] er kun halvdelen beskrevet.</p>
+                  <p xml:id="id935c66bd-3428-44ad-9698-04962e1b74ea">Øverst på side a findes artiklens overskrift og derunder dateringen »11 Aug 55.«. Artiklen er delt op i tre: På side a findes »<hi xml:id="id5ce2c533-7782-441d-b2ed-4c256e96da65" rendition="#cun">1</hi>«, på side d »<hi xml:id="idcbaecc6a-2e1d-499c-a9a5-9741e60a555b" rendition="#cun">2.</hi>« og side e »<hi xml:id="id701250e8-d282-4602-9017-d0584cc50df1" rendition="#cun">3</hi>«.</p>
+                  <p xml:id="id957ef971-ed80-44a0-bf0a-815d7dc2fb27">Mange korrektioner, bl.a. en del marginaltilføjelser. På side d er en linje slettet med blyant. På side b er en længere passage slettet med blæk, på side f en hel marginaltilføjelse.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.4.1" prev="#physDesc.4.1">
+                <msIdentifier xml:id="idfca48f7a-aab8-47de-be73-cf44df0671d5">
+                  <idno xml:id="id42d970d7-f9b6-4329-9f94-1b1a827ca595">4.1</idno>
+                </msIdentifier>
+                <additional xml:id="ideb2c30e4-9957-4e84-9d45-8bd960eb46cf">
+                  <adminInfo xml:id="idb1cf0b81-39f7-449d-b84b-5a1a5c0f2eda">
+                    <note xml:id="id397f9853-cf0c-4910-8917-956a0c3b920f">
+                      <p xml:id="idc65fc9b2-84a4-4bd5-a681-28fe5c3cc1de">(<hi xml:id="ide337d38e-b80d-4c29-a539-3b8134b89348" rendition="#ita">Pap.</hi> XI 3 B 160)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.4.2" next="#additional.4.2">
+                <msIdentifier xml:id="id86f6e135-fb00-4a14-9a58-f67c536fe0c4">
+                  <idno xml:id="id8064d48f-d9dc-4a6e-a9c1-7e7223a29253">4.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="id37734eaa-e811-467c-a16e-f0e751bb8b4d">
+                  <p xml:id="id0e88d06f-e8e8-4f45-8498-ff2af7e2d42d">Renskrift til en ubenyttet artikel: »At det slaaer til for mig.«.</p>
+                  <p xml:id="idc192d15d-ef0f-4994-84b2-984283c82b37">1 dobbeltblad og 1 løst blad, i alt 3 blade i 4<hi xml:id="id80a3ebf0-903c-4b71-a55e-865c3f951e49" rendition="#sup">o</hi>. Det løse blad har afrivningskant i venstre side og bærer spor fra sammenhæftning med andre mss. i form af en lille perforering i øverste venstre hjørne.</p>
+                  <p xml:id="id3327ec9a-bf3e-436a-9307-bd00cdd2ca70">Blyantpagineringen 23-28 er med blyant erstattet af litrering a-f.</p>
+                  <p xml:id="iddba81ee7-9dbd-4b51-8b18-cbffe5100d88">Papir: gulligt velin, ribbet. Mål: 168 × 205 mm.</p>
+                  <p xml:id="idad184154-6b0a-4454-9ce2-c43be10e9ced">Bladene er foldet på langs; en bred inderspalte rummer tekst, en smal yderspalte tilføjelser. På bl. [3v] er kun skrevet to linjer.</p>
+                  <p xml:id="id000f6178-2cc7-4205-bd0c-8c0afd7732c8">Øverst på side a findes artiklens overskrift, og ovenfor er romertallet <hi xml:id="idc60ee73d-5d77-46b5-a4c1-4275f6f239a7" rendition="#ant">»IV«</hi> med blyant skrevet og ændret til <hi xml:id="idd90cacc7-b35f-42ab-a843-07317e49b1ea" rendition="#ant">»III«</hi>, som også er overstreget med blyant. Artiklen er delt op i tre: på side a findes »<hi xml:id="id77b92993-b507-4dc1-81c8-7e2896b34800" rendition="#cun">1</hi>«, på side d »<hi xml:id="id6699931f-60dc-4641-ae70-ff3c2f2d3afc" rendition="#cun">2.</hi>« og på side e »<hi xml:id="id7870bda7-dd74-4038-b935-5247984c7ce1" rendition="#cun">3.</hi>«</p>
+                  <p xml:id="idbfcc1f32-c42b-429b-bb59-5e5542aa754a">Enkelte korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.4.2" prev="#physDesc.4.2">
+                <msIdentifier xml:id="id6d89f203-d116-4f7f-af7d-19dfb59b9c7d">
+                  <idno xml:id="ide0c5b59d-b363-4852-9b67-9d72778bc5ea">4.2</idno>
+                </msIdentifier>
+                <additional xml:id="idceffdb19-c138-4f3a-b6e8-93ec13b54a6d">
+                  <adminInfo xml:id="id1e70c551-17b6-42af-9b01-1bd40df8652a">
+                    <note xml:id="id91f455c0-8f69-4d80-8da1-a2f9885d3eae">
+                      <p xml:id="id7fe9d23d-a35e-4b18-873c-9f4806c3960b">(<hi xml:id="id14d97796-9ad1-4761-ae16-948d201ab1b1" rendition="#ita">Pap.</hi> XI 3 B 159)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.4" prev="#physDesc.4">
+              <msIdentifier xml:id="idb9dd121c-4abd-4b9b-8311-1df4e3e1ad2c">
+                <idno xml:id="id1b4a2981-03b0-48a4-8a48-61489c0e991f">4</idno>
+              </msIdentifier>
+              <additional xml:id="id88f82048-1f5a-4c17-9fef-e3a120c3899a">
+                <adminInfo xml:id="id169f7a20-2425-4172-b359-153b88bdb753">
+                  <note xml:id="idfd4de11a-fcba-4213-9bcf-9cc0f0784c75">
+                    <p xml:id="id507f1e44-205c-4f1a-bc90-b4f0d84923e7">(<hi xml:id="id0a2d72f1-a1af-4b73-9de0-81f235f8c72d" rendition="#ita">L-fort.</hi> + <hi xml:id="id4354a722-77bd-49ca-8911-3f4747bc2b79" rendition="#ita">B-fort.</hi> 177; KA, B pk. 51, læg 2 [II]; <hi xml:id="id2874fb19-70e7-4833-ab8a-db2f815d415e" rendition="#ita">Pap.</hi> XI 3 B 159-160)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+        </div>
+        <div type="level1" xml:id="k3">
+          <head xml:id="id17e3c8d0-e189-4ef8-a892-d804e1dc5bde">3. Tilblivelseshistorie</head>
+          <p xml:id="id6981b0f8-9dc7-4416-88d4-4e079153f2f9">Som det sidste i rækken af <hi xml:id="id3ebe5b5c-c351-4963-ba41-a44568619040" rendition="#ita">Øieblikket</hi>-skrifter udkom nr. 9 den 24. sept. 1855, kun 13 dage efter <hi xml:id="id8ebc7e84-5c76-4350-9fdc-44225b94ec20" rendition="#ita">Øieblikket Nr. 8.</hi> Artiklerne til nummeret var blevet udformet i løbet af maj-sept. og altså tæt på datoen for udgivelsen. Et par af kladderne til <hi xml:id="id5d751cb3-55f6-4e89-896e-114d6ae41684" rendition="#ita">Øieblikket Nr. 9</hi> er dateret: kladden til den 1. artikel »31 Mai 55« (ms. 1.2), den 2. artikel »16. juli 55« (ms. 1.3), den 4. artikel »d. 3 Aug. 55« (ms. 1.5) og den 6. artikel »d. 8 Sept. 55« (ms. 1.7). Kladden til den 5. artikel bærer datoen »23 Aug«, men var oprindelig dateret »25 <pb xml:id="ss581" n="581" edRef="#SKS"/>Juli«, hvilket peger på, at stykket var skrevet den 25. juli, men sandsynligvis først blev bestemt til at indgå i <hi xml:id="idd6a31067-7f0b-4a66-ba7f-fdb4c2fcde7c" rendition="#ita">Øieblikket Nr. 9</hi> den 23. aug. Dateringen i den 1. artikel har SK valgt at viderebringe i førstetrykket under overskriften »Altsaa saaledes staaer Sagen«.</p>
+          <p xml:id="id0939ae94-375c-4e36-8ae5-4cdd2a64e755" rendition="#ind">SK har altså arbejdet på materialet til <hi xml:id="id80d7dae7-47a9-45ac-9d6a-17e08a72bdd7" rendition="#ita">Øieblikket Nr. 9,</hi> samtidig med at han har arbejdet på de øvrige numre af <hi xml:id="id462d7adc-32fb-40f3-a5d3-e159ffb45cae" rendition="#ita">Øieblikket.</hi> Også i dette tilfælde fremgår det, at SK var i færd med en større produktion af mindre tekster, og at artiklerne i <hi xml:id="iddd5a830f-0b2a-42ff-bdf8-5de658a2a819" rendition="#ita">Øieblikket Nr. 9</hi> var en del heraf. Kun kladden til den 3. artikel afviger fra de øvrige kladder ved ikke at være dateret og ved at være skrevet på konceptpapir uden den sædvanlige foldning af papiret til hoved- og marginalspalte. Det kunne derfor tyde på, at artiklen er blevet skrevet i en anden sammenhæng end de øvrige.</p>
+          <p xml:id="idbb0dc66b-6c56-4595-aa9d-a2935a003d1a" rendition="#ind">I indholdsfortegnelsen har artiklerne fået den endelige rækkefølge, som kendes fra førstetrykket og nogenlunde stemmer overens med dateringerne. Dog optræder tre titler, som med blyant er blevet slettet fra listen, således at nummereringen har måttet ændres herefter. Til de tre ubenyttede artikler er overleveret både kladde og renskrift, og alle tre renskrifter bærer øverst på bl. [1r] et blyantskrevet romertal, som angiver den placering, den pågældende artikel havde i indholdsfortegnelsen, henholdsvis II, III og IV. Sidsnævnte er blevet ændret fra IV til III, hvilket viser, at artiklen formentlig var rykket et punkt op, før den blev udeladt og henlagt. De tre renskrifter peger på, at artiklerne er taget ud af en samlet renskrift til <hi xml:id="id73183acf-cbf5-41bc-a1a7-b3cbf9f3c26a" rendition="#ita">Øieblikket Nr. 9,</hi> som ikke er overleveret (formentlig gået tabt i trykken). Dette er også tilfældet ved flere af de øvrige numre af <hi xml:id="id792464ff-c076-4d66-84bd-06ba49e2247c" rendition="#ita">Øieblikket.</hi><note xml:id="id1f2fff0f-b660-4723-b3b8-508b9c225a29"><p xml:id="id1e69c210-6c4a-4544-b805-fdbae02ef929">Se tekstredegørelserne til nr. 3, s. 342ff., nr. 6, s. 432ff., og nr. 8, s. 540ff.</p></note></p>
+          <p xml:id="id7699380f-92e6-4cf0-bef8-40a3441b75fd" rendition="#ind">Kladderne til de tre ubenyttede artikler: »'Sandhedsvidnernes' Taktik« (ms. 2.1), »At jeg staaer bogstaveligt ene; og at man ikke forstaaer Betydningen heraf« (ms. 3.1) og »At det slaaer til for mig« (ms. 4.1), er dateret henholdsvis »1 Juni 55«, »29 Juli 55« og »11 Aug 55«. Artiklerne er altså skrevet inden for samme tidsramme som de øvrige artikler i <hi xml:id="id47142665-57cf-4a6f-a2ed-dfa39c394441" rendition="#ita">Øieblikket Nr. 9.</hi> Til »'Sandhedsvidnernes' Taktik« er dateringen »1 Juni 55« undtagelsesvis blevet overført til renskriften (ms. 2.2). I artiklen reflekterer SK selvbevidst over kirkestriden, sådan som den er forløbet siden udgivelsen af avisartiklen »Var Biskop <persName xml:id="id97ab56f9-2af0-4015-93fc-802ec38cd358" key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – <hi xml:id="idc4325c0b-f086-41a2-ab98-fc1297ba793c" rendition="#ita">er dette Sandhed?</hi>« i <hi xml:id="id02147dc8-b748-4826-9d29-95593231efaf" rendition="#ita">Fædrelandet,</hi> nr. 295, den 18. dec. 1854. Det samme sker i »At jeg staaer bogstaveligt ene; og at man ikke forstaaer Betydningen heraf«, hvor SK redegør for overgangen fra at <pb xml:id="ss582" n="582" edRef="#SKS"/>skrive artikler i <hi xml:id="id01e86381-21eb-4168-9a72-719ab1b0b0e0" rendition="#ita">Fædrelandet</hi> til udgivelsen af <hi xml:id="ide491d521-bdd5-4e01-9261-5759c03b1e11" rendition="#ita">Øieblikket.</hi><note xml:id="id72dffb67-9fe8-4a23-9dea-0e64c6eab32f"><p xml:id="idc5f8bd79-98b6-4719-a31a-a29449153e51">Se Introduktion til <hi xml:id="id023d7fd3-59f4-4ccf-a818-137285b31335" rendition="#ita">Øieblikket,</hi> s. 233ff.</p></note> I »At det slaaer til for mig« diskuteres ordet sandhedsvidne endnu en gang og fremhæves som kirkestridens brændpunkt.</p>
+          <p xml:id="id0dd4677a-61bf-4752-9fa8-fd8d38cbb48c">Der er som nævnt ikke overleveret renskrift (trykmanuskript) til <hi xml:id="ide0063b56-a29b-4484-80d2-87a1e8a8d304" rendition="#ita">Øieblikket Nr. 9,</hi> ligesom der heller ikke er overleveret korrekturer.</p>
+        </div>
+        <div type="level1" xml:id="k4">
+          <head xml:id="id6fcb07c7-5156-4cde-8268-fa4d7fe95a45">4. Udgivelsesmåde</head>
+          <p xml:id="idecf6cb18-df9a-4b3d-8013-52e39b9b8744"><hi xml:id="id42cd1b98-4359-4982-a28a-cb15d864249e" rendition="#ita">Øieblikket Nr. 9</hi> udkom hos forlagsboghandler <persName xml:id="id1e07cc16-161a-47a0-a15f-9bf784ec5fbc" key="Reitzel, Carl Andreas">C.A. Reitzel</persName>s Bo og Arvinger. Skriftet optræder ikke i <persName xml:id="idd333d8a3-9507-48bb-a920-6d4c7e6d6fd7" key="Reitzel, Carl Andreas">Reitzel</persName>s protokol over <hi xml:id="id5eaac345-edb3-49ef-b71d-646bccc47f3f" rendition="#ita">Forhandlinger med Forfattere, Redacteurer &amp;c: 1835-[1858],</hi><note xml:id="id9a6f36f5-cb88-4a75-804d-353af21bc069"><p xml:id="id59c24afa-1a42-4231-89f7-a60b7f10fdd1">I arkiv hos C.A. Reitzels Boghandel og Forlag, <placeName xml:id="idebd83298-d9c2-498c-a247-1f072d361fba">København</placeName>.</p></note> men if. <persName xml:id="id29fb7954-dc3a-4945-9f29-151e58f0de41" key="Brandt, Frithiof">Frithiof Brandt</persName> og <persName xml:id="id75338b15-75a6-41eb-acf9-d6779d9f7cab" key="Thorkelin, Else">Else Thorkelin</persName>, der havde adgang til den nu tabte <hi xml:id="ide8d8ee90-37db-4ba1-9bc2-fdc773745b5b" rendition="#ita">Regnskabsprotokol for 1849-59,</hi> udgjorde SKs honorar for <hi xml:id="idb8cc81d1-2c87-4dcb-a8dc-83fbf1581a34" rendition="#ita">Øieblikket</hi> nr. 1-9 i alt 411 rigsdaler, 4 mark og 15 skilling.<note xml:id="id68658ea8-9317-420c-ba8a-a5e8bdf3dabd"><p xml:id="id14fc67a9-7c72-44ad-8239-a0fcd7c3e90b"><persName xml:id="id7d6f6136-58be-426c-9b32-bb3260df9935" key="Brandt, Frithiof">Frithiof Brandt</persName> og <persName xml:id="idc0a32dad-44a9-4d1d-bccb-7c36765360fb" key="Thorkelin, Else">Else Thorkelin</persName> <hi xml:id="id8098774a-e99f-4d36-8db7-e3a4d0a325dc" rendition="#ita"><persName xml:id="id9788dbfa-5291-48f3-a2a1-df2c3bd67c18" key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName> og pengene,</hi> 2. udg., <placeName xml:id="iddf44694b-3ae7-47d9-ac53-1c0df1a1da9c" key="København">Kbh.</placeName> 1993 [1935], s. 35. Beløbet, der ikke er specificeret, omfatter indtægterne fra »No. 1. 1. udg. – 2. optr. – 2. udg.; no. 2. 1.-2. udg.; no. 3. 1.-2. udg.; no. 4. 1.-2. udg.; no. 5-9. 1. udg.«.</p></note> Oplagets størrelse og trykkeomkostningerne hos <persName xml:id="id740db064-3c37-4c35-bcf6-68ef2feb2cb5" key="Luno, Bianco">Bianco Luno</persName> kendes ikke.<note xml:id="idc2fe3f8b-ce6a-40fa-ac1b-c58aff12ae0b"><p xml:id="id266bae01-2bbc-4ece-a379-902574d90a85">If. <hi xml:id="ide010689c-ead5-4c3d-8833-3121b467de16" rendition="#ita">Bl.art.,</hi> s. 296, forelå andet oplag af <hi xml:id="id4e8ae544-9920-490e-b3f0-1c664289c8a5" rendition="#ita">Øieblikket Nr. 9</hi> færdigtrykt fra Bianco Lunos Bogtrykkeri den 18. dec. 1855, dvs. efter SKs død, og blev annonceret som udkommet den 19. dec. 1855.</p></note></p>
+          <p xml:id="id1540e03c-3889-419e-9dc7-cbee4f625af7" rendition="#ind"><hi xml:id="idaf7794cf-3d1f-483f-9ece-e6a7c5b4ab3a" rendition="#ita">Øieblikket Nr. 9</hi> blev måske allerede i SKs levetid oversat. I 1855 udkom i <placeName xml:id="id2ffe5512-4fb9-46dc-8475-99f9ae7fe407">Uppsala</placeName> <hi xml:id="id0a951905-6938-497b-b5a3-e20f7d517880" rendition="#ita">Ögonblikket. Nr. 9. Öfversättning från danskan</hi> i et særskilt hæfte på forlaget Wahlström &amp; C.<note xml:id="id12790eb7-2e84-4c91-93ce-a2a63f33d067"><p xml:id="ida342d671-9f46-4c5a-aa48-05e124bd7071">If. <persName xml:id="id65699f70-f225-4754-ab8a-406f6b54bb48" key="Himmelstrup, Jens">Jens Himmelstrup</persName> <hi xml:id="id27fd3f00-3d7e-4337-b6f7-73de1e2954ad" rendition="#ita"><persName xml:id="id52e4a0f8-f6b3-43ec-9db3-fd48e391d3b0" key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>. International Bibliografi,</hi> <placeName xml:id="id4a3a4ebd-c9d3-49f8-b833-0fd9a00d257c" key="København">Kbh.</placeName> 1962, nr. 720, var oversætteren den samme som forlæggeren, dvs. J.G. Wahlström. Jf. <persName xml:id="id7c09f02d-deca-4d4a-bd9e-59049ce7d0d2" key="Linnström, Hjalmar">Hjalmar Linnström</persName> <hi xml:id="idea5115a3-afd4-4bec-b199-9c7a3b5590b1" rendition="#ita">Svenskt boklexikon. Åren 1830-1865,</hi> bd. 1, <placeName xml:id="id5a4add7e-78ce-4452-b000-d0697368b032">Stockholm</placeName> 1883, s. 794-795.</p></note></p>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

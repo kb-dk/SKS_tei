@@ -1,129 +1,434 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE kn1 SYSTEM "http://sks.dk/kn1/kn1.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5">
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Notesbog 14</title>
-     
-     <title type="short">Not14</title>
-     
-  <author>
-   <name>Peter Tudvad</name>
-  </author>
- 
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Jette Knudsen</name><name>Alastair McKinnon</name>
-  </editor>
- 
-  <respStmt>
-   <resp>udgivet af</resp>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Jette Knudsen</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Joakim Garff</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name><name>Kim Ravn</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2001</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K19</biblScope>
-     <biblScope unit="file">http://sks.dk/not14/kom.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20111129">Kierkegaard Normalformat vers. 1, <bibl><idno type="version">1.6</idno>, <biblScope unit="file">http://sks.dk/not14/kom.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="idbd634cad-ee8d-4d3c-97c4-091bf4db0681">
+    <fileDesc xml:id="id1a4a457c-d780-4e1e-85f3-ebe05d7e0398">
+      <titleStmt xml:id="id1730db79-b266-4f49-91e3-900e821b4d3f">
+        <title xml:id="idacb12538-1453-40c4-903e-5760a5fb7b91" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id0ea8160c-cacf-4883-8a72-570e5c82fe8d">Notesbog 14</title>
+        <title xml:id="idd4e587d0-ea6a-47d0-bf2c-ed4439350165" type="short">Not14</title>
+        <author xml:id="id3259f274-1703-41a9-bd90-2357d3937897">
+          <name xml:id="ida8c0b819-28b0-4666-864c-da9754fbb5a5">Peter Tudvad</name>
+        </author>
+        <editor xml:id="ideb412794-83cf-4554-83e1-a77b16d9d03a">
+          <name xml:id="idcdc2d49b-232e-4d49-9571-9155fad14a21">Niels Jørgen Cappelørn</name>
+          <name xml:id="id904226bc-ad06-4f83-832e-508efde4849d">Joakim Garff</name>
+          <name xml:id="id0fe6be91-88db-4d2b-ba21-4e6d99619227">Johnny Kondrup</name>
+          <name xml:id="ide186761b-a650-4937-b7fb-e0c115ea8018">Jette Knudsen</name>
+          <name xml:id="id00c3e0a8-b866-4570-994c-7955a5f83525">Alastair McKinnon</name>
+        </editor>
+        <respStmt xml:id="id8571f3d8-6223-4dca-b0f9-a84b99dc62d4">
+          <resp xml:id="idc1525000-3575-46f1-89cb-3a89dfd40e9d">udgivet af</resp>
+          <name xml:id="id86715c94-30ec-4ff4-afd3-0ece02fd6545">Niels Jørgen Cappelørn</name>
+          <name xml:id="id70cd075a-c15b-4b58-85d4-061baf53471f">Joakim Garff</name>
+          <name xml:id="id400cff05-58f1-43b9-b3c8-5446f9d0bdc4">Johnny Kondrup</name>
+          <name xml:id="id83f73d1f-9238-44c5-833a-8dfba345f014">Jette Knudsen</name>
+        </respStmt>
+        <respStmt xml:id="idd2373bec-c5ff-41df-ae49-ddff8d760397">
+          <resp xml:id="id4f8ceb3f-0559-4651-9e1c-e6dc30a10477">redigeret af</resp>
+          <name xml:id="idb098f052-6b67-433c-95fc-b8dc251bb895">Joakim Garff</name>
+        </respStmt>
+        <respStmt xml:id="idc17e78e4-e10c-4364-be85-79071a4cf263">
+          <resp xml:id="id08a83420-ae9e-466d-be41-ab4cbe0827b6">elektronisk redigeret af</resp>
+          <name xml:id="id9d461994-d771-432c-968d-a80c17a53d7a">Karsten Kynde</name>
+          <name xml:id="iddae93282-9c73-4684-9388-9823c4e2bb93">Kim Ravn</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id671e03ee-1c58-4c23-b3d4-601f942c64ae">
+        <authority xml:id="id909cf56c-c5c7-486b-bce2-62e3e17c3fb1">Søren Kierkegaard Forskningscenteret 2001</authority>
+        <availability xml:id="ide48cf7bb-e05e-409b-a794-4106ea2e87c3" status="restricted">
+          <p xml:id="id1dadc0ad-8b39-47a6-958d-031f2720a58f">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id5c068efc-2e95-478a-a876-3b4a1d191884">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="id2d308c93-0919-4360-81d6-5e53fc298142" unit="volume">K19</biblScope>
+        <biblScope xml:id="ida6987dc3-bcd4-4c01-9009-cd5ce7eaa805" unit="file">http://sks.dk/not14/kom.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id5c6cc9fd-21f8-4794-83e3-4c2a7b8b0d53">
+        <bibl xml:id="id63dbf2cf-0633-487c-9c9e-26b1b2a70f89" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="ideb54f616-f1f5-4c54-a23b-a9071fbf1537">
+      <tagsDecl xml:id="id6e85da19-7aa8-4691-97f0-7897f4df5577">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="idc7c37567-cc92-490b-8288-73328fa8c106">
+      <change xml:id="ida68ac31a-4ec4-41ad-860f-3391c1c8d467">Transformed to TEI by style sheet <bibl xml:id="id83b7b2ea-2cfd-4cf0-bb98-cdbf916778df" type="file">kn12tei.xsl</bibl> version <idno xml:id="id2f61583f-2499-4cea-b17f-421ee62ca69f" type="version">1.9</idno> as of <date xml:id="idfa88a51f-c509-47d2-a722-8e6cd661ca17">2017-02-21</date> by <name xml:id="id5cd66c5d-9775-416a-9769-f4a04f1411cc">Karsten Kynde</name>, <orgName xml:id="ida98251ef-e963-469f-940a-4bea1326c700">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="id4ba3fb09-2666-49c0-a09f-866e07a845da">København</placeName></change>
+      <change xml:id="id574c4374-f013-4819-a23e-8a51e41c5103" when="20111129">Kierkegaard Normalformat vers. 1, <bibl xml:id="id24704def-fa17-47a8-936d-779d3db932e1"><idno xml:id="id0e3ddf64-d8c4-4da6-9577-09c869668930" type="version">1.6</idno>, <biblScope xml:id="id6dc462f1-fbc7-4488-82ff-b32de4aa0857" unit="file">http://sks.dk/not14/kom.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
-
- <text type="commentary" subtype="jp"><body><div>
-  <note type="commentary" xml:id="not14-1" n="425,1"><label><hi rendition="#bol">Tennemann</hi></label> <p><persName key="Tennemann, Wilhelm Gottlieb" n="*">Wilhelm Gottlieb Tennemann</persName> (1761-1819), ty. filosof, 1798 ekstraordinær prof. i <placeName>Jena</placeName>, 1804 ordinær prof. i <placeName>Marburg</placeName>, især kendt for sin filosofihistorie, <hi rendition="#ita">Geschichte der Philosophie</hi> bd. 1-11, <placeName>Leipzig</placeName> 1798-1819, ktl. 815-826. SK ejede dette værk og brugte det flittigt; her excerperer han 1. del (»Philosophie der Griechen«), 1. hovedstykke (»Erste Periode bis auf Sokrates«), afsnit 2-7, jf. bd. 1, s. 53-298.</p></note>
-  <note type="commentary" xml:id="not14-2" n="425,2"><label><hi rendition="#bol">Den joniske Skole</hi></label> <p>jf. afsnit 2, »Darstellung der Philosopheme der Jonier«, s. 53-74. Den joniske skole betegner en række førsokratiske naturfilosoffer fra <placeName>Ionien</placeName> på den lilleasiatiske V-kyst.</p></note>
-  <note type="commentary" xml:id="not14-3" n="425,3"><label><hi rendition="#bol">Thales; Anaximander; Anaximenes Alle fra Milet</hi></label> <p>SKs gengivelse af s. 53. <persName key="Thales fra Milet">Thales</persName> (o. 624 - o. 545 f.Kr.), <persName key="Anaximander">Anaximander</persName> (o. 610 - o. 546 f.Kr.) og <persName key="Anaximenes">Anaximenes</persName> (6. årh. f.Kr.), gr. filosoffer fra den joniske by <placeName>Milet</placeName>.</p></note>
-  <note type="commentary" xml:id="not14-4" n="425,4"><label><hi rendition="#bol">Anaximander antog ... det Uendelige</hi></label> <p>SKs gengivelse af s. 65.</p></note>
-  <note type="commentary" xml:id="not14-5" n="425,4"><label><hi rendition="#bol">»Det Uendelige ... grovere end Ild.«</hi></label> <p>overs. citat fra s. 68, hvor stedet er spatieret.</p></note>
-  <note type="commentary" xml:id="not14-6" n="425,6"><label><hi rendition="#bol">Han meente ... Msket maa opammes</hi></label> <p>SKs gengivelse af s. 71f.</p></note>
-  <note type="commentary" xml:id="not14-7" n="425,8"><label><hi rendition="#bol">Anaximenes antog ... var Luft</hi></label> <p>SKs gengivelse af s. 73.</p></note>
-  <note type="commentary" xml:id="not14-8" n="425,10"><label><hi rendition="#bol">Den pythagoræiske Skole</hi></label> <p>jf. afsnit 3, »Darstellung der Philosopheme der Pythagoräer«, s. 75-150. Den pythagoræiske skole betegner en filosofisk skole og et religiøst-kultisk fællesskab, der blev grundlagt af <persName key="Pythagoras">Pythagoras</persName> (<ptr type="commentary" target="#not14-12" n="425,16"/>) i <placeName>Syditalien</placeName>, og som blev opløst i det 4. årh.</p></note>
-  <note type="commentary" xml:id="not14-9" n="425,11"><label><hi rendition="#bol">Ocellus Lucanus, Timæus Locrus</hi></label> <p>jf. s. 76f. I neoplatonikeren <persName key="Iamblichos">Iamblichos</persName>' værk om pythagoræerne (o. 300) anføres <persName key="Okkelos fra Leukania">Okkelos fra Leukania</persName>, men ægtheden af dennes værker betvivles; i <persName key="Platon">Platon</persName>s dialog <hi rendition="#ita">Timaios</hi> optræder en pythagoræer, <persName key="Timaios fra Lokri">Timaios fra Lokri</persName>, men da han ikke kendes fra andre end Platon, kan han være en fiktiv karakter. Pga. denne tvivl vover <persName key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> ikke at benytte dem som kilder til den pythagoræiske filosofi.</p></note>
-  <note type="commentary" xml:id="not14-10" n="425,12"><label><hi rendition="#bol">I Archytas Skrift ... vel uægte</hi></label> <p>jf. s. 82f. <persName key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> oplyser her, at det nævnte skrift – πεϱι του παντος φυσιος (gr. 'om universets natur') – oprindeligt er tillagt den gr. matematiker og pythagoræiske filosof <persName key="Archytas">Archytas</persName> fra <placeName>Tarent</placeName> (4. årh. f.Kr.), men formentlig er et falsum, da dets kategorilære ikke væsentligt adskiller sig fra <persName key="Aristoteles">Aristoteles</persName>'. I dennes filosofi forstås kategorierne dels som logiske begreber (tænkningens grundlæggende prædikater), dels som ontologiske begreber (virkelighedens grundlæggende egenskaber). Aristoteles angiver ti kategorier – substans, kvantitet, kvalitet, relation, sted, tid, stilling, haven, handlen og liden (jf. <hi rendition="#ita">Kategorierne</hi>, kap. 4 (1b 25-27) og <hi rendition="#ita">Topikken</hi>, 1. bog, kap. 9 (103b 21-23)) – men hævder ikke, at denne kategoritavle nødvendigvis er udtømmende; før Aristoteles har nogle pythagoræere hævdet, at der måtte være netop ti kategorier (<ptr type="commentary" target="#not14-21" n="426,1"/>).</p></note>
-  <note type="commentary" xml:id="not14-11" n="425,13"><label><hi rendition="#bol">I dette Fragment ... ikke paa Noumena</hi></label> <p>SKs gengivelse af s. 84. – <hi rendition="#bol">Noumena</hi>: gr. 'tanker', 'ideer'.</p></note>
-  <note type="commentary" xml:id="not14-12" n="425,16"><label><hi rendition="#bol">født paa Samos – reiste</hi></label> <p>jf. s. 87. Der sigtes til den gr. matematiker og filosof <persName key="Pythagoras">Pythagoras</persName> (o. 570-497 f.Kr.), der grundlagde den pythagoræiske skole, og om hvem <persName key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> fortæller, at det måske var hans deltagelse i faderens handelsrejser, der vakte hans ånd og bevægede ham til at søge lærde mænds venskab.</p></note>
-  <note type="commentary" xml:id="not14-13" n="425,16"><label><hi rendition="#bol">gik til Croton ... bekjendte Institut</hi></label> <p>jf. s. 92-99. Efter at have forladt <placeName>Samos</placeName> og have rejst vidt omkring slog <persName key="Pythagoras">Pythagoras</persName> sig o. 530 f.Kr. ned i den lille, men stærke og velhavende gr. stat <placeName>Kroton</placeName> på den S-ital. kyst, hvor han grundlagde et borgerligt opdragelsesinstitut, som efterhånden fik karakter af et religiøst-kultisk fællesskab.</p></note>
-  <note type="commentary" xml:id="not14-14" n="425,18"><label><hi rendition="#bol">Alcmæon; Philolaus; Timæus; Archytas; Eudoxus</hi></label> <p>jf. s. 99. <persName key="Alkmaion fra Kroton">Alkmaion fra Kroton</persName> (o. 500 f.Kr.), <persName key="Philolaos">Philolaos</persName> fra <placeName>Kroton</placeName> (5. årh. f.Kr.), <persName key="Timaios fra Lokri">Timaios fra Lokri</persName> (<ptr type="commentary" target="#not14-9" n="425,11"/>), <persName key="Archytas">Archytas</persName> fra <placeName>Tarent</placeName> (<ptr type="commentary" target="#not14-10" n="425,12"/>) og <persName key="Eudoxos fra Knidos">Eudoxos fra Knidos</persName> (o. 408-355 f.Kr.) betegnes af <persName key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> som de berømteste pythagoræere.</p></note>
-  <note type="commentary" xml:id="not14-15" n="425,19"><label><hi rendition="#bol">»Tallene er Tingenes Princip.«</hi></label> <p>overs. citat fra s. 102, hvor stedet er spatieret.</p></note>
-  <note type="commentary" xml:id="not14-16" n="425,20"><label><hi rendition="#bol">Tingene selv ... sammenhængende Qvantum</hi></label> <p>SKs gengivelse af s. 104.</p></note>
-  <note type="commentary" xml:id="not14-17" n="425,22"><label><hi rendition="#bol">Tallets Element ... det Ulige</hi></label> <p>SKs gengivelse af s. 105.</p></note>
-  <note type="commentary" xml:id="not14-18" n="425,22"><label><hi rendition="#bol">Eet er intet Tal ... fuldkomne og fuldstændige</hi></label> <p>overs. citat fra s. 105.</p></note>
-  <note type="commentary" xml:id="not14-19" n="425,26"><label><hi rendition="#bol">det ulige Tal ... ingen Midte</hi></label> <p>jf. s. 106.</p></note>
-  <note type="commentary" xml:id="not14-20" n="425,28"><label><hi rendition="#bol">det Grændseløse ... Tingenes Principier</hi></label> <p>SK tilføjer de gr. ækvivalenter (i omvendt rækkefølge), men citerer i øvrigt ordret fra s. 108. – <hi rendition="#bol">το πεπεϱασμενον – το απειϱον</hi>: gr. (to peperasménon; to ápeiron), 'det begrænsede', 'det ubegrænsede', jf. <persName key="Aristoteles">Aristoteles</persName> <hi rendition="#ita">Metafysik</hi>, 1. bog, kap. 5 (987a 13-19), som <persName key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> citerer i note 12, s. 108f.</p></note>
-  <note type="commentary" xml:id="not14-21" n="426,1"><label><hi rendition="#bol">det Endelige ... den uligesidede Fiirkant (ἑτεϱομηϰες)</hi></label> <p>delvist overs. citat fra s. 115. <persName key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> forklarer, at nogle af pythagoræerne hævdede, at der måtte være netop ti kategorier, som de opstillede i en kategoritavle, hvor disse ti kategorier som det fuldkomne kontrasteres deres modsætninger som det ufuldkomne. – <hi rendition="#bol">πεϱας</hi>: gr. (péras) 'endeligt'. – <hi rendition="#bol">απειϱον</hi>: gr. (ápeiron) 'uendeligt'. – <hi rendition="#bol">εν</hi>: dvs. ἑν, gr. (hen) 'enhed'. – <hi rendition="#bol">πληϑος</hi>: gr. (plēthos) 'flerhed'. – <hi rendition="#bol">πεϱιττον</hi>: gr. (perittón) 'ulige'. – <hi rendition="#bol">αϱτιον</hi>: gr. (ártion) 'lige'. – <hi rendition="#bol">δεξιον</hi>: gr. (dexión) 'højre'. – <hi rendition="#bol">αϱιστεϱον</hi>: gr. (aristerón) 'venstre'. – <hi rendition="#bol">αϱϱεν</hi>: gr. (árren) 'mandligt'. – <hi rendition="#bol">ϑηλυ</hi>: gr. (thēly) 'kvindeligt'. – <hi rendition="#bol">ηϱεμουν</hi>: gr. (ēremoún) 'i hvile'. – <hi rendition="#bol">ϰινουμενον</hi>: gr. (kinoúmenon) 'i bevægelse'. – <hi rendition="#bol">ευϑυ</hi>: gr. (euthý) 'ret'. – <hi rendition="#bol">ϰαμπυλον</hi>: gr. (kampýlon) 'krum'. – <hi rendition="#bol">φως</hi>: gr. (phōs) 'lys'. – <hi rendition="#bol">σϰοτος</hi>: gr. (skótos) 'mørke'. – <hi rendition="#bol">αγαϑον</hi>: gr. (agathón) 'godt'. – <hi rendition="#bol">ϰαϰον</hi>: gr. (kakón) 'ondt'. – <hi rendition="#bol">τετϱαγωνον</hi>: gr. (tetrágōnon) 'kvadrat'. – <hi rendition="#bol">ἑτεϱομηϰες</hi>: gr. (heterómēkes) 'rektangel'.</p></note>
-  <note type="commentary" xml:id="not14-22" n="426,11"><label><hi rendition="#bol">Eenheden er Tingenes Princip ... αοϱιστος δυας</hi></label> <p>SKs gengivelse af s. 121. – <hi rendition="#bol">Monade</hi>: simpel, ikke-materiel substans. – <hi rendition="#bol">αοϱιστος δυας</hi>: gr. (aóristos dyás) 'ubestemt tohed'.</p></note>
-  <note type="commentary" xml:id="not14-23" n="426,15"><label><hi rendition="#bol">Tingene inddeles ... hine to Principer</hi></label> <p>jf. s. 122: »Einige Gegenstände lassen sich <hi rendition="#ita">für sich ohne Beziehung auf andere</hi> denken, als <hi rendition="#ita">Mensch, Pferd, Pflanze,</hi> Andere als <hi rendition="#ita">entgegengesetzt,</hi> z. B. <hi rendition="#ita">Gut, Böse, Gerecht, Ungerecht, Bewegt, Ruhig;</hi> andere endlich nur <hi rendition="#ita">in Beziehung auf andere,</hi> z. B. <hi rendition="#ita">Rechts, Links, Oben, Unten, Halb, Doppelt.</hi>« – <hi rendition="#bol">hine to Principer</hi>: <ptr type="commentary" target="#not14-21" n="426,1"/>.</p></note>
-  <note type="commentary" xml:id="not14-24" n="426,18"><label><hi rendition="#bol">ἡ διϰαιοσυνη αϱιϑμος ισαϰις ισος</hi></label> <p>gr. 'retfærdigheden er et tal, som taget lige mange gange er lige', jf. <persName key="Aristoteles">Aristoteles</persName> <hi rendition="#ita">Magna moralia</hi>, 1. bog, kap. 1, 1182a 14; SK citerer ordret fra s. 126, note 31.</p></note>
-  <note type="commentary" xml:id="not14-25" n="426,18"><label><hi rendition="#bol">Dyden er et Tal, der taget ligemange Gange bliver lige</hi></label> <p>sml. s. 126, hvor <persName key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> korrekt overs. ἡ διϰαιοσυνη med »die Gerechtigkeit«, der blot er én blandt andre dyder og ikke – som SK skriver – dyden som sådan.</p></note>
-  <note type="commentary" xml:id="not14-26" n="426,20"><label><hi rendition="#bol">Pythagoras vil ... ϰατα αϱιϑμον παντα γινεσϑαι</hi></label> <p>jf. s. 118, hvor <persName key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> refererer, at man har dadlet grækerne, »daß sie dem <persName key="Pythagoras">Pythagoras</persName> die Behauptung angedichtet haben, alles entstehe <hi rendition="#ita">aus Zahlen</hi>, da er doch nur behauptet habe, alles entstehe <hi rendition="#ita">nach Zahlen.</hi>« – <hi rendition="#bol">εξ αϱιϑμου <hi rendition="#ita">(...)</hi> ϰατα αϱιϑμον παντα γινεσϑαι</hi>: gr. 'af tal'; og gr. 'alt [universet] opstår efter tallet', jf. <persName key="Stobæus">Stobæus</persName> <hi rendition="#ita">Eclogarum physicarum</hi> (lat. <hi rendition="#ita">Fysiske udtog</hi>), kap. 10, 302. SK citerer løst fra s. 118, note 21, men skriver γινεσϑαι for γιγνεσϑαι.</p></note>
-  <note type="commentary" xml:id="not14-27" n="426,22"><label><hi rendition="#bol">Philolaus lærte ... begrændset og ubegrændset</hi></label> <p>jf. s. 146. – <hi rendition="#bol">Philolaus</hi>: <persName key="Philolaos">Philolaos</persName> fra <placeName>Kroton</placeName> (<ptr type="commentary" target="#not14-14" n="425,18"/>), om hvem <persName key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> her fejlagtigt oplyser, at han kom fra <placeName>Tarent</placeName>.</p></note>
-  <note type="commentary" xml:id="not14-28" n="426,26"><label><hi rendition="#bol">Eleaterne</hi></label> <p>jf. afsnit 4, »Darstellung der Eleatischen Philosopheme«, s. 150-209. Eleaterne – filosofferne fra den eleatiske skole – har sit navn fra den jonisk-gr. koloni <placeName key="Velia">Elea</placeName> (i dag <placeName>Velia</placeName>) på S-<placeName>Italien</placeName>s V-kyst; skolen var en af de ældste i det gr. storrige og grundlagt o. 540 f.Kr. af filosoffen <persName key="Xenofanes fra Kolofon">Xenofanes fra Kolofon</persName>, der ofte kaldes den første skeptiker, fordi han betvivlede gyldigheden af den menneskelige erkendelse. Den eleatiske skole førtes videre af <persName key="Parmenides">Parmenides</persName> og hans elever, især <persName key="Zenon fra Elea">Zenon</persName>, der i forlængelse af sin læremester formulerede sig i paradoksale påstande om det værendes udelelighed og umuligheden af enhver form for bevægelse.</p></note>
-  <note type="commentary" xml:id="not14-29" n="426,27"><label><hi rendition="#bol">Xenophanes ... Melissus</hi></label> <p>jf. s. 151-153.</p></note>
-  <note type="commentary" xml:id="not14-30" n="426,28"><label><hi rendition="#bol">de ældre Philosopher ... en Vordelse</hi></label> <p>jf. s. 154.</p></note>
-  <note type="commentary" xml:id="not14-31" n="426,29"><label><hi rendition="#bol">»I Verden er kun Væren ikke Vorden.«</hi></label> <p>overs. citat fra s. 155.</p></note>
-  <note type="commentary" xml:id="not14-32" n="426,31"><label><hi rendition="#bol">Parmenides</hi></label> <p>jf. s. 166-181.</p></note>
-  <note type="commentary" xml:id="not14-33" n="426,31"><label><hi rendition="#bol">Hvad er det er, hvad ikke er, det er ikke</hi></label> <p>overs. citat fra s. 169, hvor stedet er spatieret.</p></note>
-  <note type="commentary" xml:id="not14-34" n="426,32"><label><hi rendition="#bol">At tænke Intet ... ikke at tænke</hi></label> <p>overs. citat fra s. 169, hvor stedet er delvist spatieret.</p></note>
-  <note type="commentary" xml:id="not14-35" n="426,33"><label><hi rendition="#bol">Væren er identisk ... en Umulighed</hi></label> <p>SKs gengivelse af s. 169.</p></note>
-  <note type="commentary" xml:id="not14-36" n="426,36"><label><hi rendition="#bol">Hans Digt ... πεϱι νοητου – τα πϱος δοξαν</hi></label> <p>delvist overs. citat fra s. 168, note 28. <persName key="Parmenides">Parmenides</persName>' digt, der er overleveret i fragmenter, beskriver hans møde med en gudinde, der åbenbarer ham den evige sandhed (1. del), sådan som den adskiller sig fra de dødeliges meninger (2. del). – <hi rendition="#bol">πεϱι νοητου</hi>: gr. (peri noētoú) 'om det, der vedrører fornuften'. – <hi rendition="#bol">τα πϱος δοξαν</hi>: gr. (ta pros dóxan) 'om det, der vedrører forestilling, mening'.</p></note>
-  <note type="commentary" xml:id="not14-37" n="426,37"><label><hi rendition="#bol">Zeno</hi></label> <p><persName key="Zenon fra Elea">Zenon fra Elea</persName> (det 5. årh. f.Kr.), gr. filosof, jf. s. 191-209.</p></note>
-  <note type="commentary" xml:id="not14-38" n="426,37"><label><hi rendition="#bol">Uendeligheden af det Rum ... Tidens Endelighed</hi></label> <p>overs. citat fra s. 197.</p></note>
-  <note type="commentary" xml:id="not14-39" n="427,1"><label><hi rendition="#bol">de 4 Beviser mod Bevægelsen</hi></label> <p>jf. s. 197-200, hvor <persName key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> under punkt a-d refererer <persName key="Zenon fra Elea">Zenon</persName>s fire argumenter mod bevægelsens realitet.</p></note>
-  <note type="commentary" xml:id="not14-40" n="427,1"><label><hi rendition="#bol">Naar et Legeme ... det Uendelige</hi></label> <p>SKs gengivelse af s. 197.</p></note>
-  <note type="commentary" xml:id="not14-41" n="427,4"><label><hi rendition="#bol">Et Legeme ... har været</hi></label> <p>overs. citat fra s. 198.</p></note>
-  <note type="commentary" xml:id="not14-42" n="427,7"><label><hi rendition="#bol">naar et Legeme ... at være i Ro</hi></label> <p>overs. citat fra s. 198.</p></note>
-  <note type="commentary" xml:id="not14-43" n="427,10"><label><hi rendition="#bol">To Legemer ... en Modsigelse</hi></label> <p>SKs gengivelse af s. 199.</p></note>
-  <note type="commentary" xml:id="not14-44" n="427,12"><label><hi rendition="#bol">ει τις αυτῳ ... τα οντα</hi></label> <p>gr. 'hvis nogen ville forklare ham, hvad det ene er, vil han sige, hvad det værende er'; ordret citat fra s. 202, note 74, hvor den gr. filosof <persName key="Simplikios" n="*">Simplikios</persName> (6. årh.) angives som kilde. <persName key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> bruger ikke accenter i sine gr. citater; det anførte τι skal forstås interrogativt.</p></note>
-  <note type="commentary" xml:id="not14-45" n="427,13"><label><hi rendition="#bol">το ἑν</hi></label> <p>gr. (to hen) 'det ene', jf. næste kommentar.</p></note>
-  <note type="commentary" xml:id="not14-46" n="427,14"><label><hi rendition="#bol">μηδεν των οντων εστι το ἑν</hi></label> <p>gr. (mēden tōn óntōn estí to hen) 'det ene er intet af det værende'; ordret citat fra s. 202, note 75, hvor <persName key="Simplikios">Simplikios</persName> angives som kilde. Noten føjes til denne passage, s. 202: »Aeltere und neuere Schriftsteller haben behauptet, <hi rendition="#ita">Zeno habe die Existenz der einen Substanz nicht nur bezweifelt sondern ganz und gar geleugnet</hi>, und gesagt: <hi rendition="#ita">sie sey keins von den existierenden Dingen</hi>, er habe daraus gefolgert: <hi rendition="#ita">es existiere gar nichts</hi>.«</p></note>
-  <note type="commentary" xml:id="not14-48" n="427,15"><label><hi rendition="#bol">Heraklit</hi></label> <p>jf. afsnit 5, »Philosophie des Heraclits«, s. 209-239. Den gr. filosof <persName key="Heraklit">Heraklit</persName> (o. 540-480 f.Kr.) udmærker sig ved at udtrykke sine tanker i modsætninger; hans skrifter er kun overleveret i fragmenter.</p></note>
-  <note type="commentary" xml:id="not14-49" n="427,16"><label><hi rendition="#bol">Ild er ... blive virkelige</hi></label> <p>overs. citat fra s. 217, hvor stedet er spatieret.</p></note>
-  <note type="commentary" xml:id="not14-50" n="427,18"><label><hi rendition="#bol">Verdens oprindelige Tilstand har været Ild</hi></label> <p>overs. citat fra s. 218, hvor stedet er spatieret.</p></note>
-  <note type="commentary" xml:id="not14-51" n="427,19"><label><hi rendition="#bol">Alt er i bestandig Vexel og Forandring</hi></label> <p>SKs gengivelse af s. 219, hvor stedet er spatieret.</p></note>
-  <note type="commentary" xml:id="not14-52" n="427,20"><label><hi rendition="#bol">ἡ ϰατω ὁδος; ἡ ανω ὁδος</hi></label> <p>gr. (hē kátō hodós) 'vejen nedad' og gr. (hē ánō hodós) 'vejen opad', jf. s. 221: »Bei diesen Veränderungen findet ein beständiger <hi rendition="#ita">Naturgang</hi> statt. Das Feuer gehet in Luft, diese in Wasser und dieses endlich in Erde über. Umgekehrt löset sich die Erde in Wasser, dieses in Luft und diese endlich wieder in Feuer auf. <hi rendition="#ita">Heraclit</hi> nennte jenes den <hi rendition="#ita">Weg nach Unten</hi> (ἡ ϰατω ὁδος), den Weg der <hi rendition="#ita">Erzeugung</hi>, dieses den <hi rendition="#ita">Weg nach Oben</hi> (ἡ ανω ὁδος) den Weg der <hi rendition="#ita">Auflösung</hi>.« I note 19 til dette sted angiver <persName key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> som kilde <persName key="Diogenes Laertios">Diogenes Laertios</persName>' filosofihistorie, 9. bog, kap. 1, 8.</p></note>
-  <note type="commentary" xml:id="not14-53" n="427,21"><label><hi rendition="#bol">Alt er og Alt er ikke</hi></label> <p>overs. citat fra s. 237, hvor stedet er spatieret.</p></note>
-  <note type="commentary" xml:id="not14-54" n="427,22"><label><hi rendition="#bol">den Lov ... εναντιοτης; εναντιοδϱομια</hi></label> <p>overs. hhv. ordret citat fra s. 232, hvor stedet er spatieret. – <hi rendition="#bol">εναντιοτϱοπη; εναντιοτης; εναντιοδϱομια</hi>: gr. (enantiotrópē) 'venden modsat'; gr. (enantiótēs) 'modsætning', 'modstand', 'strid'; og gr. (enantiodromía) 'løben imod', 'løben modsat'. I note 40 til dette sted angiver <persName key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> som kilde <persName key="Diogenes Laertios">Diogenes Laertios</persName>' filosofihistorie, 9. bog, kap. 1, 7f.</p></note>
-  <note type="commentary" xml:id="not14-55" n="427,25"><label><hi rendition="#bol">Empedocles</hi></label> <p>jf. afsnit 6, »Philosophie des Empedocles«, s. 240-256. Den gr. filosof <persName key="Empedokles">Empedokles</persName> (o. 490-430 f.Kr.) har udtrykt sin kosmologi i læredigtet <hi rendition="#ita">Om naturen</hi>, som er overleveret i fragmenter.</p></note>
-  <note type="commentary" xml:id="not14-56" n="427,26"><label><hi rendition="#bol">Erkjenden beroer ... det Erkjendte</hi></label> <p>overs. citat fra s. 251, hvor stedet er spatieret.</p></note>
-  <note type="commentary" xml:id="not14-57" n="427,28"><label><hi rendition="#bol">Leucippus</hi></label> <p>jf. afsnit 7, »Philosophie des Leucippus und Demokritus«, s. 256-298; s. 256-271. Den gr. filosof <persName key="Leukippos">Leukippos</persName> fra <placeName>Milet</placeName> (5. årh. f.Kr.) menes at have skrevet <hi rendition="#ita">Megas Diakosmos</hi> (gr. <hi rendition="#ita">Det store Verdensbillede</hi>), hvoraf der kendes et fragment.</p></note>
-  <note type="commentary" xml:id="not14-58" n="427,29"><label><hi rendition="#bol">Det er umuligt ... en Eenhed</hi></label> <p>SKs gengivelse af s. 260, hvor stedet er spatieret.</p></note>
-  <note type="commentary" xml:id="not14-59" n="427,32"><label><hi rendition="#bol">Principierne for al Virkelighed ... το μη ον</hi></label> <p>SKs gengivelse af s. 262: »Die Principe alles Wirklichen sind also das <hi rendition="#ita">Reale in dem Raume</hi>, das <hi rendition="#ita">den Raum erfüllende</hi> (πληϱες) und der <hi rendition="#ita">leere Raum</hi>, das <hi rendition="#ita">Leere</hi> (το ϰενον). Beides ist das einzige Wirkliche in der Natur, das Eine als das <hi rendition="#ita">Positive</hi> (ον) das andere das <hi rendition="#ita">Privative</hi> (μη ον).« – <hi rendition="#bol">πληϱες</hi>: gr. (plēres) 'fuld'. – <hi rendition="#bol">το ϰενον</hi>: gr. (to kenón) 'det tomme'. – <hi rendition="#bol">το ον</hi>: gr. (to on) 'det værende'. – <hi rendition="#bol">το μη ον</hi>: gr. (to mē on) 'det ikke værende'.</p></note>
-  <note type="commentary" xml:id="not14-60" n="427,34"><label><hi rendition="#bol">Han er egl. Opfinder af Atom-Systemet</hi></label> <p>jf. s. 270. – <hi rendition="#bol">Atom-Systemet</hi>: den filosofiske lære, at virkeligheden består af atomer – evige og uforanderlige elementer – og det tomme rum, hvori de bevæger sig og sammensættes på forskellig vis.</p></note>
-  <note type="commentary" xml:id="not14-61" n="427,35"><label><hi rendition="#bol">Democrit</hi></label> <p>jf. afsnit 7, »Philosophie des Leucippus und Demokritus«, s. 256-298; s. 271-298. Den gr. filosof <persName key="Demokrit" n="*">Demokrit</persName> fra Abdera (o. 460 - o. 370) var elev af <persName key="Leukippos">Leukippos</persName> og som denne atomist.</p></note>
-  <note type="commentary" xml:id="not14-47" n="427,36"><label><hi rendition="#bol">dette Beviis kaldes Achilles</hi></label> <p>jf. s. 198, note 70: »Dieser Beweis hieß <hi rendition="#ita">Achilles</hi>, weil in demselben Achilles als das Schnellste und die Schildkröte als das langsamste aufgeführt waren.« – <hi rendition="#bol">Achilles</hi>: gr. sagnhelt, der kendes fra <persName key="Homer">Homer</persName>s <hi rendition="#ita">Iliaden</hi>, hvor han betegnes som 'den rapfodede <persName key="Achilleus">Achilleus</persName>'.</p></note>
- </div></body></text>
-
+  <text xml:id="id834f2831-8201-478a-a310-31ebe3606d03" type="commentary" subtype="jp">
+    <body xml:id="idace6d6b1-d342-4f93-b2c4-46bf5413d44b">
+      <div xml:id="id2f5a0d22-342c-4b52-91a5-5e9ea71f4e52">
+        <note type="commentary" xml:id="not14-1" n="425,1">
+          <label xml:id="id62683d92-13b4-426c-a020-103fe83db438">
+            <hi xml:id="id9ebaf491-781c-47ed-a53e-986fb839150c" rendition="#bol">Tennemann</hi>
+          </label>
+          <p xml:id="id227cea65-e5f4-4c65-9683-5e08b7ccc9f1"><persName xml:id="id86e025d9-59e6-4fc0-87e0-8c83b40756e9" key="Tennemann, Wilhelm Gottlieb" n="*">Wilhelm Gottlieb Tennemann</persName> (1761-1819), ty. filosof, 1798 ekstraordinær prof. i <placeName xml:id="idce586e9d-18b2-4c7f-9aed-1dc8b461e817">Jena</placeName>, 1804 ordinær prof. i <placeName xml:id="id0fd32dfc-9c3c-4eff-a7e3-668a2424b4ea">Marburg</placeName>, især kendt for sin filosofihistorie, <hi xml:id="id8cd3c5e7-cb16-447c-8b67-097f40a4b9de" rendition="#ita">Geschichte der Philosophie</hi> bd. 1-11, <placeName xml:id="id1b631063-e648-4c79-bd00-fd8c32475b38">Leipzig</placeName> 1798-1819, ktl. 815-826. SK ejede dette værk og brugte det flittigt; her excerperer han 1. del (»Philosophie der Griechen«), 1. hovedstykke (»Erste Periode bis auf Sokrates«), afsnit 2-7, jf. bd. 1, s. 53-298.</p>
+        </note>
+        <note type="commentary" xml:id="not14-2" n="425,2">
+          <label xml:id="idf49faf0f-b9c2-4a30-9a30-a1e4ba481e19">
+            <hi xml:id="id23b13deb-1b8a-4c29-ba31-7a9eef69f2e4" rendition="#bol">Den joniske Skole</hi>
+          </label>
+          <p xml:id="id8ca6bf4c-e23c-423d-bc2b-33cab8db5c70">jf. afsnit 2, »Darstellung der Philosopheme der Jonier«, s. 53-74. Den joniske skole betegner en række førsokratiske naturfilosoffer fra <placeName xml:id="id831302f5-c4b3-408b-81a1-0c00b3e49b59">Ionien</placeName> på den lilleasiatiske V-kyst.</p>
+        </note>
+        <note type="commentary" xml:id="not14-3" n="425,3">
+          <label xml:id="ida4c72aff-9f12-41e7-a88d-004d1caf7fe3">
+            <hi xml:id="id3bca7e31-acd0-4922-b917-5e0db70e4f3d" rendition="#bol">Thales; Anaximander; Anaximenes Alle fra Milet</hi>
+          </label>
+          <p xml:id="id1ab47b90-8333-4bb5-a22a-32e0659dcf15">SKs gengivelse af s. 53. <persName xml:id="idafc369f5-1fe3-423b-8768-870140adda5a" key="Thales fra Milet">Thales</persName> (o. 624 - o. 545 f.Kr.), <persName xml:id="idc76eb026-4cb8-4aa4-b7ab-ffe30e0f6dee" key="Anaximander">Anaximander</persName> (o. 610 - o. 546 f.Kr.) og <persName xml:id="id3ae802cb-5449-4bdd-bd41-3531c221a785" key="Anaximenes">Anaximenes</persName> (6. årh. f.Kr.), gr. filosoffer fra den joniske by <placeName xml:id="idc96962b7-83d0-43f8-ad18-ce5e301dff96">Milet</placeName>.</p>
+        </note>
+        <note type="commentary" xml:id="not14-4" n="425,4">
+          <label xml:id="idad10f378-b356-4477-8c60-790e699f8fa9">
+            <hi xml:id="id8bb0968d-c7af-4784-a646-c8d15b035b60" rendition="#bol">Anaximander antog ... det Uendelige</hi>
+          </label>
+          <p xml:id="id708005ae-f8da-4de2-99c2-bcc8ab425ce3">SKs gengivelse af s. 65.</p>
+        </note>
+        <note type="commentary" xml:id="not14-5" n="425,4">
+          <label xml:id="idaf6e38f8-0c4d-4282-a883-db762bd1bc39">
+            <hi xml:id="idc9067f06-a8d9-4346-9fb2-50e9ce7fa3f5" rendition="#bol">»Det Uendelige ... grovere end Ild.«</hi>
+          </label>
+          <p xml:id="idf0c6fa45-2809-4958-8478-afc8b694c36f">overs. citat fra s. 68, hvor stedet er spatieret.</p>
+        </note>
+        <note type="commentary" xml:id="not14-6" n="425,6">
+          <label xml:id="idf0a95458-786d-42c2-b29f-a99823736bc3">
+            <hi xml:id="idfd32e424-3911-447c-8aa5-5cc833172a9f" rendition="#bol">Han meente ... Msket maa opammes</hi>
+          </label>
+          <p xml:id="id9820c2b4-e910-4b50-850d-e34c8d967f7e">SKs gengivelse af s. 71f.</p>
+        </note>
+        <note type="commentary" xml:id="not14-7" n="425,8">
+          <label xml:id="idb8f99807-ea26-47e6-8a7b-3e95a27a6f7f">
+            <hi xml:id="id0c20a426-d251-4624-be1c-c68a12379b91" rendition="#bol">Anaximenes antog ... var Luft</hi>
+          </label>
+          <p xml:id="idedb6484f-6dd5-4750-85ac-94a1decc09a9">SKs gengivelse af s. 73.</p>
+        </note>
+        <note type="commentary" xml:id="not14-8" n="425,10">
+          <label xml:id="id77c308b7-76ca-4dd2-ae6a-697a37d69e4e">
+            <hi xml:id="id689c0c32-9bb4-4fc3-a5aa-c28da7db93a5" rendition="#bol">Den pythagoræiske Skole</hi>
+          </label>
+          <p xml:id="id6fab054f-1637-4937-9739-78e7aa9bed36">jf. afsnit 3, »Darstellung der Philosopheme der Pythagoräer«, s. 75-150. Den pythagoræiske skole betegner en filosofisk skole og et religiøst-kultisk fællesskab, der blev grundlagt af <persName xml:id="idbe2f54e0-60f4-4a3b-85ef-c764e47e5a22" key="Pythagoras">Pythagoras</persName> (<ptr xml:id="id545db0b9-6c82-4704-ba10-00b2aa04b55a" type="commentary" target="#not14-12" n="425,16"/>) i <placeName xml:id="id85bf019f-eed8-4c4a-bed1-7990acae4b48">Syditalien</placeName>, og som blev opløst i det 4. årh.</p>
+        </note>
+        <note type="commentary" xml:id="not14-9" n="425,11">
+          <label xml:id="id2c638bed-6a2f-469a-b764-d6beb322e528">
+            <hi xml:id="ida9d17067-9bec-4713-a2c9-f5c5d18076da" rendition="#bol">Ocellus Lucanus, Timæus Locrus</hi>
+          </label>
+          <p xml:id="id1a22ab4c-19fd-4bd2-a484-95f9c7dd6661">jf. s. 76f. I neoplatonikeren <persName xml:id="id08a56f7d-c965-47db-aac1-c1c6ca98a79a" key="Iamblichos">Iamblichos</persName>' værk om pythagoræerne (o. 300) anføres <persName xml:id="id8f1bc43e-9aec-4a7f-bb18-f889926bd46f" key="Okkelos fra Leukania">Okkelos fra Leukania</persName>, men ægtheden af dennes værker betvivles; i <persName xml:id="id58fa0dd0-05a0-436b-8536-d6a7e67f2b24" key="Platon">Platon</persName>s dialog <hi xml:id="idcc3da8b9-929d-4ec5-9ba3-a7ab90eca63e" rendition="#ita">Timaios</hi> optræder en pythagoræer, <persName xml:id="id54ae2452-8cfc-4b49-9535-8c55859e0d77" key="Timaios fra Lokri">Timaios fra Lokri</persName>, men da han ikke kendes fra andre end Platon, kan han være en fiktiv karakter. Pga. denne tvivl vover <persName xml:id="idde2b5469-7d54-4a2d-86f8-174b5ee24c30" key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> ikke at benytte dem som kilder til den pythagoræiske filosofi.</p>
+        </note>
+        <note type="commentary" xml:id="not14-10" n="425,12">
+          <label xml:id="id1a995208-11b0-4b3e-b0b0-5e08eab07a59">
+            <hi xml:id="id8d952c7d-0d94-4dee-9fb3-66a8af46c0c4" rendition="#bol">I Archytas Skrift ... vel uægte</hi>
+          </label>
+          <p xml:id="idd0fd2d19-884c-48dc-8391-0c07e23f2975">jf. s. 82f. <persName xml:id="id91bad8d6-8687-496b-8370-045067ee67a7" key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> oplyser her, at det nævnte skrift – πεϱι του παντος φυσιος (gr. 'om universets natur') – oprindeligt er tillagt den gr. matematiker og pythagoræiske filosof <persName xml:id="ideb78bd27-b0cb-4ad1-8894-0b32fc2b38d9" key="Archytas">Archytas</persName> fra <placeName xml:id="id3d989862-062a-4380-9020-e472fd18b3c0">Tarent</placeName> (4. årh. f.Kr.), men formentlig er et falsum, da dets kategorilære ikke væsentligt adskiller sig fra <persName xml:id="id5bd4ce74-e309-492c-9431-1b30cb3819a3" key="Aristoteles">Aristoteles</persName>'. I dennes filosofi forstås kategorierne dels som logiske begreber (tænkningens grundlæggende prædikater), dels som ontologiske begreber (virkelighedens grundlæggende egenskaber). Aristoteles angiver ti kategorier – substans, kvantitet, kvalitet, relation, sted, tid, stilling, haven, handlen og liden (jf. <hi xml:id="id16108cbc-443c-4e8d-bb91-5c9e0d0c4fd9" rendition="#ita">Kategorierne</hi>, kap. 4 (1b 25-27) og <hi xml:id="idc579eb0b-5e9f-4a19-b428-c40f8d3b7950" rendition="#ita">Topikken</hi>, 1. bog, kap. 9 (103b 21-23)) – men hævder ikke, at denne kategoritavle nødvendigvis er udtømmende; før Aristoteles har nogle pythagoræere hævdet, at der måtte være netop ti kategorier (<ptr xml:id="idef4d65d6-9d70-47d0-b621-24d6132cf6d9" type="commentary" target="#not14-21" n="426,1"/>).</p>
+        </note>
+        <note type="commentary" xml:id="not14-11" n="425,13">
+          <label xml:id="id77a1638a-9a07-4520-b847-ce6b5cb9305a">
+            <hi xml:id="id726262cc-632d-45f1-9ec9-26f06cf5898d" rendition="#bol">I dette Fragment ... ikke paa Noumena</hi>
+          </label>
+          <p xml:id="id1c0b2ff0-f2b6-4ff5-bb5f-e2dcc3416063">SKs gengivelse af s. 84. – <hi xml:id="id89d913f3-4c77-437e-99c2-086d7d445ee9" rendition="#bol">Noumena</hi>: gr. 'tanker', 'ideer'.</p>
+        </note>
+        <note type="commentary" xml:id="not14-12" n="425,16">
+          <label xml:id="id83a6600d-d088-4cd9-a8d1-cc8e3dddc568">
+            <hi xml:id="id3f5a5f74-f801-4e74-a0e5-60d4281abb6c" rendition="#bol">født paa Samos – reiste</hi>
+          </label>
+          <p xml:id="id00f543c6-6a16-4470-a91e-8679c3322f67">jf. s. 87. Der sigtes til den gr. matematiker og filosof <persName xml:id="id8fb8e9da-e1bf-492a-96f9-9f21bfe46be0" key="Pythagoras">Pythagoras</persName> (o. 570-497 f.Kr.), der grundlagde den pythagoræiske skole, og om hvem <persName xml:id="idc6b329e8-ee2e-4857-af3b-9217a4e7d435" key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> fortæller, at det måske var hans deltagelse i faderens handelsrejser, der vakte hans ånd og bevægede ham til at søge lærde mænds venskab.</p>
+        </note>
+        <note type="commentary" xml:id="not14-13" n="425,16">
+          <label xml:id="id4527e239-bb80-4aaa-83a8-4ab04626b867">
+            <hi xml:id="id9ccde689-2ec5-4450-b576-0b73f5798d44" rendition="#bol">gik til Croton ... bekjendte Institut</hi>
+          </label>
+          <p xml:id="idbc4ac00b-1386-4a27-b7ab-b306d007c8ca">jf. s. 92-99. Efter at have forladt <placeName xml:id="id0acef09c-9b2c-4b4f-a587-57c4ab5049e7">Samos</placeName> og have rejst vidt omkring slog <persName xml:id="idd39d03f3-a227-4c1b-8b80-236907a019ef" key="Pythagoras">Pythagoras</persName> sig o. 530 f.Kr. ned i den lille, men stærke og velhavende gr. stat <placeName xml:id="id05195f35-14c4-4401-9efb-a9bdd73b136c">Kroton</placeName> på den S-ital. kyst, hvor han grundlagde et borgerligt opdragelsesinstitut, som efterhånden fik karakter af et religiøst-kultisk fællesskab.</p>
+        </note>
+        <note type="commentary" xml:id="not14-14" n="425,18">
+          <label xml:id="idee46b8a9-fc96-402b-a462-50d3579a3d14">
+            <hi xml:id="ide1b8dc82-346c-4e8d-82a4-fbe8a7ebf83d" rendition="#bol">Alcmæon; Philolaus; Timæus; Archytas; Eudoxus</hi>
+          </label>
+          <p xml:id="idabcfb5e4-9d00-44b2-a392-e3a6dede6024">jf. s. 99. <persName xml:id="id396c2659-23fd-41d2-be40-84238d0a2cc0" key="Alkmaion fra Kroton">Alkmaion fra Kroton</persName> (o. 500 f.Kr.), <persName xml:id="idfdef89c1-8ee1-4cdb-9bf2-15de33d51d28" key="Philolaos">Philolaos</persName> fra <placeName xml:id="idf2799c21-9fb3-4c2e-bee2-fc97c081ce1e">Kroton</placeName> (5. årh. f.Kr.), <persName xml:id="idea29e65c-12cd-4031-8354-d0614bbc52b8" key="Timaios fra Lokri">Timaios fra Lokri</persName> (<ptr xml:id="ideca5c9ae-8215-42fc-aef0-eb34b3e1b041" type="commentary" target="#not14-9" n="425,11"/>), <persName xml:id="id41e008b2-655f-495b-977f-3447aca247fc" key="Archytas">Archytas</persName> fra <placeName xml:id="id77eb37db-2976-4eee-8ff6-ed4743c4d088">Tarent</placeName> (<ptr xml:id="ideca2dc06-3fd3-4802-b19f-2ed7937e963b" type="commentary" target="#not14-10" n="425,12"/>) og <persName xml:id="idccbd8efc-47a1-4679-9e7a-2bda2d516bd2" key="Eudoxos fra Knidos">Eudoxos fra Knidos</persName> (o. 408-355 f.Kr.) betegnes af <persName xml:id="ide2a11e26-bb25-4ec1-8241-f29366aa8cd9" key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> som de berømteste pythagoræere.</p>
+        </note>
+        <note type="commentary" xml:id="not14-15" n="425,19">
+          <label xml:id="ide56ca610-cafb-4f13-a924-bf06dc16957c">
+            <hi xml:id="id57731ec3-b8d5-4ac0-8fe6-cc5a7c17e4c4" rendition="#bol">»Tallene er Tingenes Princip.«</hi>
+          </label>
+          <p xml:id="id4931d151-7f34-489c-88dd-fd97988c2d99">overs. citat fra s. 102, hvor stedet er spatieret.</p>
+        </note>
+        <note type="commentary" xml:id="not14-16" n="425,20">
+          <label xml:id="id7438844d-4464-4688-9b0f-ecedf94f1ba5">
+            <hi xml:id="id6dcb2c12-f151-44d6-a8fe-b2ce40df9e41" rendition="#bol">Tingene selv ... sammenhængende Qvantum</hi>
+          </label>
+          <p xml:id="id1675d75c-1d19-4a28-a6b8-638e1962a8a4">SKs gengivelse af s. 104.</p>
+        </note>
+        <note type="commentary" xml:id="not14-17" n="425,22">
+          <label xml:id="idf4ad40cc-5a78-41d2-af93-ab543d620a46">
+            <hi xml:id="idc5c8dc53-6094-43ec-9f9e-5f8a3f9be046" rendition="#bol">Tallets Element ... det Ulige</hi>
+          </label>
+          <p xml:id="id037928fd-3b51-4257-958f-3e33e9d35cff">SKs gengivelse af s. 105.</p>
+        </note>
+        <note type="commentary" xml:id="not14-18" n="425,22">
+          <label xml:id="idf62630af-b4a5-41db-803b-1bf6eb869487">
+            <hi xml:id="id83c5975e-0af6-4704-9640-4c0f787ef444" rendition="#bol">Eet er intet Tal ... fuldkomne og fuldstændige</hi>
+          </label>
+          <p xml:id="idb8ee9395-7f4f-4323-8631-a0a3cebb073f">overs. citat fra s. 105.</p>
+        </note>
+        <note type="commentary" xml:id="not14-19" n="425,26">
+          <label xml:id="id331cc5dd-12ea-44f3-8788-ebc29c583cb8">
+            <hi xml:id="id3c95ec51-8850-4080-adc7-492a6e419df7" rendition="#bol">det ulige Tal ... ingen Midte</hi>
+          </label>
+          <p xml:id="id8f1d2213-49c2-40da-8526-0c382fc7e16c">jf. s. 106.</p>
+        </note>
+        <note type="commentary" xml:id="not14-20" n="425,28">
+          <label xml:id="id415fa893-d892-44ba-a8f6-1dd409a820ac">
+            <hi xml:id="id12b901a3-f041-4eb4-8c83-b3a25368c138" rendition="#bol">det Grændseløse ... Tingenes Principier</hi>
+          </label>
+          <p xml:id="id395be7aa-f7ce-49de-9e8c-fccb64ec1ed0">SK tilføjer de gr. ækvivalenter (i omvendt rækkefølge), men citerer i øvrigt ordret fra s. 108. – <hi xml:id="id1475bf3b-9870-40c8-82ce-0d81aa0f7c87" rendition="#bol">το πεπεϱασμενον – το απειϱον</hi>: gr. (to peperasménon; to ápeiron), 'det begrænsede', 'det ubegrænsede', jf. <persName xml:id="idc4fcf6fa-a355-4ad6-80d3-d745073d1da2" key="Aristoteles">Aristoteles</persName> <hi xml:id="id41f61099-2d92-48f9-acc0-cb1f425b141b" rendition="#ita">Metafysik</hi>, 1. bog, kap. 5 (987a 13-19), som <persName xml:id="id65881b3a-e432-499a-81d3-2eb7798a2d72" key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> citerer i note 12, s. 108f.</p>
+        </note>
+        <note type="commentary" xml:id="not14-21" n="426,1">
+          <label xml:id="id9f57fb33-54c3-4d84-a695-fcd3a45abf9b">
+            <hi xml:id="id166b43b3-1d18-47ea-8b1a-8db768148208" rendition="#bol">det Endelige ... den uligesidede Fiirkant (ἑτεϱομηϰες)</hi>
+          </label>
+          <p xml:id="id635c2bc7-29ad-4150-ac49-2a7585ddf0ca">delvist overs. citat fra s. 115. <persName xml:id="id535fcb26-c74a-4c4b-9fb8-20b0859faa22" key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> forklarer, at nogle af pythagoræerne hævdede, at der måtte være netop ti kategorier, som de opstillede i en kategoritavle, hvor disse ti kategorier som det fuldkomne kontrasteres deres modsætninger som det ufuldkomne. – <hi xml:id="idd7f5453f-c148-4a6c-800a-80056b117ff6" rendition="#bol">πεϱας</hi>: gr. (péras) 'endeligt'. – <hi xml:id="id5cfa7b16-d781-4f9c-9b17-dea56467183f" rendition="#bol">απειϱον</hi>: gr. (ápeiron) 'uendeligt'. – <hi xml:id="id714b1f31-1275-47ee-9c83-96164eaed8c4" rendition="#bol">εν</hi>: dvs. ἑν, gr. (hen) 'enhed'. – <hi xml:id="id3d376c11-67a9-47ca-ad00-6c52a52f9e65" rendition="#bol">πληϑος</hi>: gr. (plēthos) 'flerhed'. – <hi xml:id="id4c14eb47-42ed-4461-97ab-3be457bcf9bf" rendition="#bol">πεϱιττον</hi>: gr. (perittón) 'ulige'. – <hi xml:id="id62ac578e-ade8-404e-8ba0-f75dae7f4d08" rendition="#bol">αϱτιον</hi>: gr. (ártion) 'lige'. – <hi xml:id="idca398f19-fb49-4dc4-87e0-8c2137437910" rendition="#bol">δεξιον</hi>: gr. (dexión) 'højre'. – <hi xml:id="idffdace43-7b5c-4ebe-bef8-45171c3667f9" rendition="#bol">αϱιστεϱον</hi>: gr. (aristerón) 'venstre'. – <hi xml:id="idc9c61b0f-bc08-4a65-a710-1737e450ef98" rendition="#bol">αϱϱεν</hi>: gr. (árren) 'mandligt'. – <hi xml:id="id51df9f9e-874b-40f1-b580-f8036f026896" rendition="#bol">ϑηλυ</hi>: gr. (thēly) 'kvindeligt'. – <hi xml:id="id1a44b077-1857-44b0-b083-188693d92250" rendition="#bol">ηϱεμουν</hi>: gr. (ēremoún) 'i hvile'. – <hi xml:id="id1ac964d5-36c7-4e00-892b-6be0eeb97e14" rendition="#bol">ϰινουμενον</hi>: gr. (kinoúmenon) 'i bevægelse'. – <hi xml:id="id02192d1c-a48c-4829-82b1-4776b5a5064b" rendition="#bol">ευϑυ</hi>: gr. (euthý) 'ret'. – <hi xml:id="id0cce4426-cf84-4c62-bad5-b7c7d78af281" rendition="#bol">ϰαμπυλον</hi>: gr. (kampýlon) 'krum'. – <hi xml:id="id0b1fb49e-0053-40c8-b3b1-48b80041fbd5" rendition="#bol">φως</hi>: gr. (phōs) 'lys'. – <hi xml:id="id215d9b72-bb1d-43f6-8a50-a6f0387332e8" rendition="#bol">σϰοτος</hi>: gr. (skótos) 'mørke'. – <hi xml:id="idb39ecfee-60c9-4c8d-aefd-e912b41c0a06" rendition="#bol">αγαϑον</hi>: gr. (agathón) 'godt'. – <hi xml:id="idf4f57ca8-729f-405f-aa67-7af87b5371f0" rendition="#bol">ϰαϰον</hi>: gr. (kakón) 'ondt'. – <hi xml:id="idd5b9485b-5f52-4eb8-a89f-4dc03cf02998" rendition="#bol">τετϱαγωνον</hi>: gr. (tetrágōnon) 'kvadrat'. – <hi xml:id="id67ca584c-01c9-46b4-b3be-4d9c9e5cba1c" rendition="#bol">ἑτεϱομηϰες</hi>: gr. (heterómēkes) 'rektangel'.</p>
+        </note>
+        <note type="commentary" xml:id="not14-22" n="426,11">
+          <label xml:id="id67d16a72-4612-44c8-bb2a-ae90c39e9927">
+            <hi xml:id="id972ee98c-83d3-4f1c-adc6-ab105468bf0b" rendition="#bol">Eenheden er Tingenes Princip ... αοϱιστος δυας</hi>
+          </label>
+          <p xml:id="id03694a33-9d3c-4f68-97bc-dacca4438825">SKs gengivelse af s. 121. – <hi xml:id="id0188b295-b88d-4afe-9164-2f42b4fab62e" rendition="#bol">Monade</hi>: simpel, ikke-materiel substans. – <hi xml:id="idcddc5e32-80a0-4bcc-9bc4-3273c4ed2f1d" rendition="#bol">αοϱιστος δυας</hi>: gr. (aóristos dyás) 'ubestemt tohed'.</p>
+        </note>
+        <note type="commentary" xml:id="not14-23" n="426,15">
+          <label xml:id="id0379ed77-d8fe-423d-84ee-3a43f4097446">
+            <hi xml:id="id6324d290-c3e8-4270-87a0-cade2a38557f" rendition="#bol">Tingene inddeles ... hine to Principer</hi>
+          </label>
+          <p xml:id="id23438ee5-a4c6-4136-b2f1-7baec8044d97">jf. s. 122: »Einige Gegenstände lassen sich <hi xml:id="idbcd3150f-c341-4c8d-bdb8-ff63e575889b" rendition="#ita">für sich ohne Beziehung auf andere</hi> denken, als <hi xml:id="id6d69d0bb-40d0-460f-b326-081615e78db7" rendition="#ita">Mensch, Pferd, Pflanze,</hi> Andere als <hi xml:id="id7efa2ed1-296d-480f-b01a-7d5d26c33769" rendition="#ita">entgegengesetzt,</hi> z. B. <hi xml:id="id9c793db8-9daa-4293-a0da-fd9aa7ab7c2c" rendition="#ita">Gut, Böse, Gerecht, Ungerecht, Bewegt, Ruhig;</hi> andere endlich nur <hi xml:id="id08001881-3cc8-4f61-99ba-eb15d3bd84e9" rendition="#ita">in Beziehung auf andere,</hi> z. B. <hi xml:id="id313a9762-8976-42df-a6ae-088048c81ed2" rendition="#ita">Rechts, Links, Oben, Unten, Halb, Doppelt.</hi>« – <hi xml:id="idb11c022a-0e60-4f1f-8396-a4093be40585" rendition="#bol">hine to Principer</hi>: <ptr xml:id="id6e9d3897-5e4c-471e-a20e-03ce856abd35" type="commentary" target="#not14-21" n="426,1"/>.</p>
+        </note>
+        <note type="commentary" xml:id="not14-24" n="426,18">
+          <label xml:id="id86f80ebd-1edc-4dda-9314-88d9996c69ba">
+            <hi xml:id="idc013f950-6b2e-47a9-b885-480daf5e866f" rendition="#bol">ἡ διϰαιοσυνη αϱιϑμος ισαϰις ισος</hi>
+          </label>
+          <p xml:id="id87d29ced-f9c0-4ae8-8e18-ac21711d408b">gr. 'retfærdigheden er et tal, som taget lige mange gange er lige', jf. <persName xml:id="id522ece61-4859-4780-9494-a24060afbff1" key="Aristoteles">Aristoteles</persName> <hi xml:id="idc048bbb7-9ffe-432f-842a-c6d4f2919205" rendition="#ita">Magna moralia</hi>, 1. bog, kap. 1, 1182a 14; SK citerer ordret fra s. 126, note 31.</p>
+        </note>
+        <note type="commentary" xml:id="not14-25" n="426,18">
+          <label xml:id="id63e8f009-4550-4077-9147-b5813470fb1a">
+            <hi xml:id="id699a6292-d3ef-4ebf-85aa-b90a13eebfbb" rendition="#bol">Dyden er et Tal, der taget ligemange Gange bliver lige</hi>
+          </label>
+          <p xml:id="ida7052bd7-e47e-4493-a847-1060c4f7be6f">sml. s. 126, hvor <persName xml:id="id4d533d95-b0ab-4533-b110-577941c04737" key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> korrekt overs. ἡ διϰαιοσυνη med »die Gerechtigkeit«, der blot er én blandt andre dyder og ikke – som SK skriver – dyden som sådan.</p>
+        </note>
+        <note type="commentary" xml:id="not14-26" n="426,20">
+          <label xml:id="id0c7eda2a-8915-4298-963f-1b59001ef489">
+            <hi xml:id="idd7b58208-702a-45d9-bd67-73a19a594ebb" rendition="#bol">Pythagoras vil ... ϰατα αϱιϑμον παντα γινεσϑαι</hi>
+          </label>
+          <p xml:id="id9d49fd22-3301-453c-b3de-7cde798a2039">jf. s. 118, hvor <persName xml:id="id8b8829cd-e5e5-44ab-8acd-47525d57a2c7" key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> refererer, at man har dadlet grækerne, »daß sie dem <persName xml:id="idda86f644-102a-481c-906f-f94619e254f7" key="Pythagoras">Pythagoras</persName> die Behauptung angedichtet haben, alles entstehe <hi xml:id="id3c4331ef-c3da-4ded-95d5-1ce76c2a55d9" rendition="#ita">aus Zahlen</hi>, da er doch nur behauptet habe, alles entstehe <hi xml:id="iddef1e48f-03a0-495e-af19-c7a97f445f70" rendition="#ita">nach Zahlen.</hi>« – <hi xml:id="ida350ed11-6e8c-48a7-a646-d64ed6cc2124" rendition="#bol">εξ αϱιϑμου <hi xml:id="idfff80784-2916-4f77-b2aa-54d5cce43488" rendition="#ita">(...)</hi> ϰατα αϱιϑμον παντα γινεσϑαι</hi>: gr. 'af tal'; og gr. 'alt [universet] opstår efter tallet', jf. <persName xml:id="id158b96a0-8c44-4169-8acc-990de16e0119" key="Stobæus">Stobæus</persName> <hi xml:id="id2b8fe6ef-2fd3-42f3-a817-cdb1e2276297" rendition="#ita">Eclogarum physicarum</hi> (lat. <hi xml:id="id1bf29a3e-d8f8-4f91-aa13-726570b852b7" rendition="#ita">Fysiske udtog</hi>), kap. 10, 302. SK citerer løst fra s. 118, note 21, men skriver γινεσϑαι for γιγνεσϑαι.</p>
+        </note>
+        <note type="commentary" xml:id="not14-27" n="426,22">
+          <label xml:id="id916e172e-3c90-43e1-bacb-cea4bf28ed49">
+            <hi xml:id="id7556f474-99ab-4864-b8aa-38215dc3a0df" rendition="#bol">Philolaus lærte ... begrændset og ubegrændset</hi>
+          </label>
+          <p xml:id="id5ca7a78b-96b6-41b1-bca1-37114e047062">jf. s. 146. – <hi xml:id="id86e9e04f-1f97-44b1-b99d-fc78d6d8e319" rendition="#bol">Philolaus</hi>: <persName xml:id="idf3302131-34a6-4303-bef2-a4c534984892" key="Philolaos">Philolaos</persName> fra <placeName xml:id="id48c41a28-283f-47e1-98fe-936d8cc6b2fd">Kroton</placeName> (<ptr xml:id="id66c6ad7d-dcb5-42a8-8192-61063cec1fe5" type="commentary" target="#not14-14" n="425,18"/>), om hvem <persName xml:id="id59553fe2-5abb-4567-bbdc-f006878f2cb7" key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> her fejlagtigt oplyser, at han kom fra <placeName xml:id="id6e1e2db5-ba96-4a79-a81e-de9a213c6b8c">Tarent</placeName>.</p>
+        </note>
+        <note type="commentary" xml:id="not14-28" n="426,26">
+          <label xml:id="id7e780135-9159-4a55-830e-e095687e992f">
+            <hi xml:id="idd19ae5fc-550e-43e9-9d2b-1f4ca6cf1aa4" rendition="#bol">Eleaterne</hi>
+          </label>
+          <p xml:id="id5e041fa8-d38d-44c3-bbe7-e99a026a9cd0">jf. afsnit 4, »Darstellung der Eleatischen Philosopheme«, s. 150-209. Eleaterne – filosofferne fra den eleatiske skole – har sit navn fra den jonisk-gr. koloni <placeName xml:id="id1fa31647-dcec-4f4a-9e97-7c8642821fb7" key="Velia">Elea</placeName> (i dag <placeName xml:id="id327d5edb-1a4d-4103-b0ec-76e85037a5f6">Velia</placeName>) på S-<placeName xml:id="id33cfccaa-1a3c-45fc-910c-81002d9cecc7">Italien</placeName>s V-kyst; skolen var en af de ældste i det gr. storrige og grundlagt o. 540 f.Kr. af filosoffen <persName xml:id="id9134c712-b4a0-446e-916e-0e89a688e444" key="Xenofanes fra Kolofon">Xenofanes fra Kolofon</persName>, der ofte kaldes den første skeptiker, fordi han betvivlede gyldigheden af den menneskelige erkendelse. Den eleatiske skole førtes videre af <persName xml:id="id924cf536-9bf8-44e3-abf5-41d2c4053409" key="Parmenides">Parmenides</persName> og hans elever, især <persName xml:id="ide28f90e9-bca8-4110-ba72-0bb1a8e35eb3" key="Zenon fra Elea">Zenon</persName>, der i forlængelse af sin læremester formulerede sig i paradoksale påstande om det værendes udelelighed og umuligheden af enhver form for bevægelse.</p>
+        </note>
+        <note type="commentary" xml:id="not14-29" n="426,27">
+          <label xml:id="idebbe1447-b796-481f-951b-bb3fea377d95">
+            <hi xml:id="ided2efd02-06f9-475b-9f9c-9d1134a61ac9" rendition="#bol">Xenophanes ... Melissus</hi>
+          </label>
+          <p xml:id="id02ff5cf3-36cc-4f0d-9b37-9dd3277c28e6">jf. s. 151-153.</p>
+        </note>
+        <note type="commentary" xml:id="not14-30" n="426,28">
+          <label xml:id="idd8d51d81-3996-4096-8d1f-1e125c837a10">
+            <hi xml:id="id55688686-3195-4e38-9d72-8ff89230d47f" rendition="#bol">de ældre Philosopher ... en Vordelse</hi>
+          </label>
+          <p xml:id="id635dd003-68b7-4a58-8547-d31a3b9f11b7">jf. s. 154.</p>
+        </note>
+        <note type="commentary" xml:id="not14-31" n="426,29">
+          <label xml:id="idba521685-0d22-46c2-b30f-cc326d42b247">
+            <hi xml:id="id7c9238c1-23bc-458f-b32e-2468042a268d" rendition="#bol">»I Verden er kun Væren ikke Vorden.«</hi>
+          </label>
+          <p xml:id="id86fa2ebd-94e1-47f0-a8d8-d2e35ff5b4d5">overs. citat fra s. 155.</p>
+        </note>
+        <note type="commentary" xml:id="not14-32" n="426,31">
+          <label xml:id="id6d67a653-9000-4bf3-8554-61efbc3e98d4">
+            <hi xml:id="id44a51105-e666-497a-a5fe-eb217c9150a8" rendition="#bol">Parmenides</hi>
+          </label>
+          <p xml:id="ida67b0f61-8f65-4c90-962d-3f65007af45c">jf. s. 166-181.</p>
+        </note>
+        <note type="commentary" xml:id="not14-33" n="426,31">
+          <label xml:id="id66c37ebf-49f0-4384-ade5-8b4c0df0b5ea">
+            <hi xml:id="idff2ffbe4-6d01-4d5c-9ad6-6021e82eb27f" rendition="#bol">Hvad er det er, hvad ikke er, det er ikke</hi>
+          </label>
+          <p xml:id="id13441b92-bf5c-4797-ab92-06e9abb88846">overs. citat fra s. 169, hvor stedet er spatieret.</p>
+        </note>
+        <note type="commentary" xml:id="not14-34" n="426,32">
+          <label xml:id="id7e8313db-3e04-4749-890c-6efba51d3a80">
+            <hi xml:id="id6a864b07-4b1b-44e9-8d48-d263e26c3fd1" rendition="#bol">At tænke Intet ... ikke at tænke</hi>
+          </label>
+          <p xml:id="id9b709ab2-a45e-441a-9e8a-f499ea938da0">overs. citat fra s. 169, hvor stedet er delvist spatieret.</p>
+        </note>
+        <note type="commentary" xml:id="not14-35" n="426,33">
+          <label xml:id="id2c3f4005-6b11-41d2-9bb9-b6a0e97a9fa5">
+            <hi xml:id="id56987241-d44f-4575-97d9-4319db84e3b5" rendition="#bol">Væren er identisk ... en Umulighed</hi>
+          </label>
+          <p xml:id="id50aab2a2-62cb-4429-81ad-24338a0a4075">SKs gengivelse af s. 169.</p>
+        </note>
+        <note type="commentary" xml:id="not14-36" n="426,36">
+          <label xml:id="id42f8f79c-78a4-423e-b94d-6c496fd42627">
+            <hi xml:id="id40666081-14d5-489b-b56c-4f421c5fcc85" rendition="#bol">Hans Digt ... πεϱι νοητου – τα πϱος δοξαν</hi>
+          </label>
+          <p xml:id="id3b8a8679-9a17-49e9-88cd-3e13bb1422c4">delvist overs. citat fra s. 168, note 28. <persName xml:id="idbc6aa836-54b7-4bb0-8d6f-0c7509a723b7" key="Parmenides">Parmenides</persName>' digt, der er overleveret i fragmenter, beskriver hans møde med en gudinde, der åbenbarer ham den evige sandhed (1. del), sådan som den adskiller sig fra de dødeliges meninger (2. del). – <hi xml:id="ide5810e69-aad2-46b3-bd38-09813d12c3fa" rendition="#bol">πεϱι νοητου</hi>: gr. (peri noētoú) 'om det, der vedrører fornuften'. – <hi xml:id="id3e697982-ad92-4218-8ed3-b15ca7abfb5f" rendition="#bol">τα πϱος δοξαν</hi>: gr. (ta pros dóxan) 'om det, der vedrører forestilling, mening'.</p>
+        </note>
+        <note type="commentary" xml:id="not14-37" n="426,37">
+          <label xml:id="id577f0b18-8bcb-4999-a87a-9dd6173259f1">
+            <hi xml:id="id3bccf6ec-8f83-4590-86f2-2504e18ff36d" rendition="#bol">Zeno</hi>
+          </label>
+          <p xml:id="idc4b75b7e-dae6-4698-87d0-d941372c0349"><persName xml:id="idb00d0047-730d-4df3-87b2-c7459b8c71c8" key="Zenon fra Elea">Zenon fra Elea</persName> (det 5. årh. f.Kr.), gr. filosof, jf. s. 191-209.</p>
+        </note>
+        <note type="commentary" xml:id="not14-38" n="426,37">
+          <label xml:id="idc52ef10d-720c-497a-8225-8a8a4f40b609">
+            <hi xml:id="idd34e564f-4b21-41c3-b3f7-1312e9a47735" rendition="#bol">Uendeligheden af det Rum ... Tidens Endelighed</hi>
+          </label>
+          <p xml:id="id04b687c3-7624-4624-92e7-cc6f61e999c9">overs. citat fra s. 197.</p>
+        </note>
+        <note type="commentary" xml:id="not14-39" n="427,1">
+          <label xml:id="ide2dd32c1-eda8-4118-b794-ff5110f70fd6">
+            <hi xml:id="idb0933d81-9c8f-4f79-a3a0-80d625629945" rendition="#bol">de 4 Beviser mod Bevægelsen</hi>
+          </label>
+          <p xml:id="idd60f1261-4d92-4991-a357-dcc95ea3d241">jf. s. 197-200, hvor <persName xml:id="id85e85a69-0def-4675-8450-69efd9171ec0" key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> under punkt a-d refererer <persName xml:id="id8262ee57-d15d-43b9-9dcd-23d1f1a960d5" key="Zenon fra Elea">Zenon</persName>s fire argumenter mod bevægelsens realitet.</p>
+        </note>
+        <note type="commentary" xml:id="not14-40" n="427,1">
+          <label xml:id="idaae77e25-05ca-47d4-9e39-4c3c2458efcb">
+            <hi xml:id="id0abff794-9b6a-4b18-8d03-d47c5bb9c964" rendition="#bol">Naar et Legeme ... det Uendelige</hi>
+          </label>
+          <p xml:id="idec0c9b6c-95df-4e5e-80ad-ba0d6dc674ac">SKs gengivelse af s. 197.</p>
+        </note>
+        <note type="commentary" xml:id="not14-41" n="427,4">
+          <label xml:id="id80a1406f-3e94-4a64-80ae-8f4d37b46324">
+            <hi xml:id="id29374474-51bc-4f91-b6df-4244d0493416" rendition="#bol">Et Legeme ... har været</hi>
+          </label>
+          <p xml:id="idcab5d746-5cbe-4c96-9324-10d287eb1a76">overs. citat fra s. 198.</p>
+        </note>
+        <note type="commentary" xml:id="not14-42" n="427,7">
+          <label xml:id="id3d5b30f4-0669-4acb-8f42-8430a14805a3">
+            <hi xml:id="id81b974c5-2857-4965-9fcc-efb4babcd98f" rendition="#bol">naar et Legeme ... at være i Ro</hi>
+          </label>
+          <p xml:id="id0ca6ef18-8106-4e36-8698-917c61e21871">overs. citat fra s. 198.</p>
+        </note>
+        <note type="commentary" xml:id="not14-43" n="427,10">
+          <label xml:id="idce7fb021-586f-48ee-8ee6-8545d8e762bd">
+            <hi xml:id="idfd9d92e1-fbfc-4ba1-b2a7-ec39967918d1" rendition="#bol">To Legemer ... en Modsigelse</hi>
+          </label>
+          <p xml:id="idee933686-2418-4308-aa2b-e62afc3a1c77">SKs gengivelse af s. 199.</p>
+        </note>
+        <note type="commentary" xml:id="not14-44" n="427,12">
+          <label xml:id="iddfd9805c-6904-4b37-bb96-5a8659ff4909">
+            <hi xml:id="id894900a3-1302-461e-95f5-d81f16c423d2" rendition="#bol">ει τις αυτῳ ... τα οντα</hi>
+          </label>
+          <p xml:id="idd54270ce-85dd-4d06-9289-dddff093f910">gr. 'hvis nogen ville forklare ham, hvad det ene er, vil han sige, hvad det værende er'; ordret citat fra s. 202, note 74, hvor den gr. filosof <persName xml:id="idb3d06d5c-fa11-49ec-96ff-d2cd26ab42c5" key="Simplikios" n="*">Simplikios</persName> (6. årh.) angives som kilde. <persName xml:id="id2a836e63-82b2-4ccc-8c5d-ca325317776c" key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> bruger ikke accenter i sine gr. citater; det anførte τι skal forstås interrogativt.</p>
+        </note>
+        <note type="commentary" xml:id="not14-45" n="427,13">
+          <label xml:id="id9ba1c745-b2af-48a7-8a2d-95d1744e51c7">
+            <hi xml:id="id70d42220-e4b6-4ad3-b0ca-d8d3196fd745" rendition="#bol">το ἑν</hi>
+          </label>
+          <p xml:id="idca586829-24cc-416b-b33e-08e70bcdc47b">gr. (to hen) 'det ene', jf. næste kommentar.</p>
+        </note>
+        <note type="commentary" xml:id="not14-46" n="427,14">
+          <label xml:id="idbd598ca2-954b-439f-925c-961407d97efb">
+            <hi xml:id="id79538a8b-06ed-42e9-a4bd-8b0a866fc2ab" rendition="#bol">μηδεν των οντων εστι το ἑν</hi>
+          </label>
+          <p xml:id="id0e33f49c-6498-45c3-b878-88d9d2c5ea98">gr. (mēden tōn óntōn estí to hen) 'det ene er intet af det værende'; ordret citat fra s. 202, note 75, hvor <persName xml:id="iddf313724-b76c-42a5-aec0-d8b59f613ee5" key="Simplikios">Simplikios</persName> angives som kilde. Noten føjes til denne passage, s. 202: »Aeltere und neuere Schriftsteller haben behauptet, <hi xml:id="idc68041ee-b3b3-46a6-bba7-2fec0e2b79c5" rendition="#ita">Zeno habe die Existenz der einen Substanz nicht nur bezweifelt sondern ganz und gar geleugnet</hi>, und gesagt: <hi xml:id="id07e1821f-0f56-4b5d-8f57-9db8f0ebb443" rendition="#ita">sie sey keins von den existierenden Dingen</hi>, er habe daraus gefolgert: <hi xml:id="idf2b0c346-d95a-4352-8c84-10b0916eaca7" rendition="#ita">es existiere gar nichts</hi>.«</p>
+        </note>
+        <note type="commentary" xml:id="not14-48" n="427,15">
+          <label xml:id="id027470d4-5f3f-4541-8df8-584cda9b914d">
+            <hi xml:id="id80d985e3-81af-43cd-b3a1-bf8428550066" rendition="#bol">Heraklit</hi>
+          </label>
+          <p xml:id="id1cad486b-effa-4882-9289-18f1604c6a92">jf. afsnit 5, »Philosophie des Heraclits«, s. 209-239. Den gr. filosof <persName xml:id="idd92301ee-ef3d-4986-bc90-b412b8841fe1" key="Heraklit">Heraklit</persName> (o. 540-480 f.Kr.) udmærker sig ved at udtrykke sine tanker i modsætninger; hans skrifter er kun overleveret i fragmenter.</p>
+        </note>
+        <note type="commentary" xml:id="not14-49" n="427,16">
+          <label xml:id="id258bc9f3-0a58-4194-8340-681efda78753">
+            <hi xml:id="id5a74ba58-e62f-41ad-8ef6-e3cd28204120" rendition="#bol">Ild er ... blive virkelige</hi>
+          </label>
+          <p xml:id="idf72d6a0f-5d25-4f9b-acf4-4a49b132cdac">overs. citat fra s. 217, hvor stedet er spatieret.</p>
+        </note>
+        <note type="commentary" xml:id="not14-50" n="427,18">
+          <label xml:id="id98bab226-cfba-4a66-9f03-2710f842bdbe">
+            <hi xml:id="id8afc4b7f-703c-4f8d-bf2f-c84d458f9bf4" rendition="#bol">Verdens oprindelige Tilstand har været Ild</hi>
+          </label>
+          <p xml:id="id72c4aa50-1ddd-4a66-be1e-695e8c9e68a4">overs. citat fra s. 218, hvor stedet er spatieret.</p>
+        </note>
+        <note type="commentary" xml:id="not14-51" n="427,19">
+          <label xml:id="idf57b34a3-09fb-4415-b5e4-533fab41ec0c">
+            <hi xml:id="id4d7c5bba-d5c9-4e3f-99f9-c4261a03ed88" rendition="#bol">Alt er i bestandig Vexel og Forandring</hi>
+          </label>
+          <p xml:id="id44e6d052-9095-43b5-86b3-c65621912e38">SKs gengivelse af s. 219, hvor stedet er spatieret.</p>
+        </note>
+        <note type="commentary" xml:id="not14-52" n="427,20">
+          <label xml:id="id24a44ec2-d616-4ba4-9763-79fb9bb111d3">
+            <hi xml:id="idc8a8a6c7-ab0b-470b-a410-6af02342a5b0" rendition="#bol">ἡ ϰατω ὁδος; ἡ ανω ὁδος</hi>
+          </label>
+          <p xml:id="idefd12904-d86d-49f0-9556-f95319f5c08c">gr. (hē kátō hodós) 'vejen nedad' og gr. (hē ánō hodós) 'vejen opad', jf. s. 221: »Bei diesen Veränderungen findet ein beständiger <hi xml:id="id646dac24-2be3-4805-9ade-185bd7027542" rendition="#ita">Naturgang</hi> statt. Das Feuer gehet in Luft, diese in Wasser und dieses endlich in Erde über. Umgekehrt löset sich die Erde in Wasser, dieses in Luft und diese endlich wieder in Feuer auf. <hi xml:id="id50f36408-d416-41b3-9060-2ba3f853100e" rendition="#ita">Heraclit</hi> nennte jenes den <hi xml:id="id5112e36a-b6b2-4d37-a111-5df2bdddcaf6" rendition="#ita">Weg nach Unten</hi> (ἡ ϰατω ὁδος), den Weg der <hi xml:id="id5c34a741-5a35-4948-a889-0f8628cdbb7f" rendition="#ita">Erzeugung</hi>, dieses den <hi xml:id="idf123d8d2-7850-4b8b-8a1a-2c208a50f8ac" rendition="#ita">Weg nach Oben</hi> (ἡ ανω ὁδος) den Weg der <hi xml:id="id3e959853-506d-4494-b3d6-3cf338d4bf42" rendition="#ita">Auflösung</hi>.« I note 19 til dette sted angiver <persName xml:id="idae0083ba-414e-4ee0-a695-5b6af8e8f9cc" key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> som kilde <persName xml:id="id180afacb-4975-4ff7-9298-05d0725315d1" key="Diogenes Laertios">Diogenes Laertios</persName>' filosofihistorie, 9. bog, kap. 1, 8.</p>
+        </note>
+        <note type="commentary" xml:id="not14-53" n="427,21">
+          <label xml:id="idce163418-2ed6-4741-86b9-944bed244d45">
+            <hi xml:id="idf63e66d0-8b44-4535-8f15-888dd2d7ca50" rendition="#bol">Alt er og Alt er ikke</hi>
+          </label>
+          <p xml:id="id3c714ffa-ba3f-4a0f-8e25-fe385a62d2dd">overs. citat fra s. 237, hvor stedet er spatieret.</p>
+        </note>
+        <note type="commentary" xml:id="not14-54" n="427,22">
+          <label xml:id="idd88297da-8865-4c9f-8664-377bf67cf32d">
+            <hi xml:id="id1fe6af9c-ce69-4c97-90c3-1a66720dbdad" rendition="#bol">den Lov ... εναντιοτης; εναντιοδϱομια</hi>
+          </label>
+          <p xml:id="id3b1109ca-4b35-4e0f-a5d2-c9e5c71eb78e">overs. hhv. ordret citat fra s. 232, hvor stedet er spatieret. – <hi xml:id="id1ae1de32-52e6-4b79-acb1-4cbfef42808c" rendition="#bol">εναντιοτϱοπη; εναντιοτης; εναντιοδϱομια</hi>: gr. (enantiotrópē) 'venden modsat'; gr. (enantiótēs) 'modsætning', 'modstand', 'strid'; og gr. (enantiodromía) 'løben imod', 'løben modsat'. I note 40 til dette sted angiver <persName xml:id="id56fad3cd-e3a0-4081-ab09-55e50b85c748" key="Tennemann, Wilhelm Gottlieb">Tennemann</persName> som kilde <persName xml:id="id44aca8db-1f94-4ec3-8b8a-165b7e6d71f5" key="Diogenes Laertios">Diogenes Laertios</persName>' filosofihistorie, 9. bog, kap. 1, 7f.</p>
+        </note>
+        <note type="commentary" xml:id="not14-55" n="427,25">
+          <label xml:id="id27ce6719-55f1-415d-be85-6745834c0e4c">
+            <hi xml:id="idcbc7188a-79e8-495a-8230-8d5a80351f31" rendition="#bol">Empedocles</hi>
+          </label>
+          <p xml:id="iddf69b53c-24da-442b-8e01-a085ef0e0e94">jf. afsnit 6, »Philosophie des Empedocles«, s. 240-256. Den gr. filosof <persName xml:id="ida7ff4311-1dbe-400b-b9a7-0eb92a8a92ab" key="Empedokles">Empedokles</persName> (o. 490-430 f.Kr.) har udtrykt sin kosmologi i læredigtet <hi xml:id="id2b2ff532-e6e2-4dc9-afce-bceb156beb20" rendition="#ita">Om naturen</hi>, som er overleveret i fragmenter.</p>
+        </note>
+        <note type="commentary" xml:id="not14-56" n="427,26">
+          <label xml:id="id379076b2-c868-4ea6-98e7-a90c3997fe54">
+            <hi xml:id="idcaebed77-64da-4c6f-a1e3-5ff177c81842" rendition="#bol">Erkjenden beroer ... det Erkjendte</hi>
+          </label>
+          <p xml:id="id875d3969-754b-4fec-92a6-18c1a1ba1792">overs. citat fra s. 251, hvor stedet er spatieret.</p>
+        </note>
+        <note type="commentary" xml:id="not14-57" n="427,28">
+          <label xml:id="id35a62574-3127-481c-8ecf-cacc064c90cc">
+            <hi xml:id="id364bf514-0f85-4ad9-91c5-8e829caabf58" rendition="#bol">Leucippus</hi>
+          </label>
+          <p xml:id="idbaa51486-4841-42d6-a121-0be8d73ca19b">jf. afsnit 7, »Philosophie des Leucippus und Demokritus«, s. 256-298; s. 256-271. Den gr. filosof <persName xml:id="ideb1544e1-8f51-40f9-92c5-4f6261267898" key="Leukippos">Leukippos</persName> fra <placeName xml:id="id99235950-f156-4362-ad68-0c44d89fed62">Milet</placeName> (5. årh. f.Kr.) menes at have skrevet <hi xml:id="id870d8774-2965-4341-bcb4-676f6c539f59" rendition="#ita">Megas Diakosmos</hi> (gr. <hi xml:id="idbd072fe2-a7fb-4ce6-a28f-079824de1395" rendition="#ita">Det store Verdensbillede</hi>), hvoraf der kendes et fragment.</p>
+        </note>
+        <note type="commentary" xml:id="not14-58" n="427,29">
+          <label xml:id="id821f991c-e239-40da-9619-c4cbe5cc83eb">
+            <hi xml:id="id36cfe652-2117-4677-a6fd-4a86570b6bc8" rendition="#bol">Det er umuligt ... en Eenhed</hi>
+          </label>
+          <p xml:id="idd9da04f3-0683-40a0-b6a1-9491e2099e9e">SKs gengivelse af s. 260, hvor stedet er spatieret.</p>
+        </note>
+        <note type="commentary" xml:id="not14-59" n="427,32">
+          <label xml:id="id85a48e24-8f00-4189-b886-c52ee6b79b3a">
+            <hi xml:id="idf90298d7-7bde-4950-bf10-ccd1d9a76934" rendition="#bol">Principierne for al Virkelighed ... το μη ον</hi>
+          </label>
+          <p xml:id="id68169a97-6e1f-4a3e-ae63-6e4cb8c22377">SKs gengivelse af s. 262: »Die Principe alles Wirklichen sind also das <hi xml:id="ida8df4963-2175-479b-8c94-f94fd3706843" rendition="#ita">Reale in dem Raume</hi>, das <hi xml:id="id53701bd9-9349-40f6-abca-19d3c8af4b03" rendition="#ita">den Raum erfüllende</hi> (πληϱες) und der <hi xml:id="id2fd99f84-6e6d-47b1-8e38-3ec082436f33" rendition="#ita">leere Raum</hi>, das <hi xml:id="idbcaad14e-5840-42e4-a075-c172e06d5357" rendition="#ita">Leere</hi> (το ϰενον). Beides ist das einzige Wirkliche in der Natur, das Eine als das <hi xml:id="id22d2f2a0-3ce1-4b30-a89b-bd650a243d76" rendition="#ita">Positive</hi> (ον) das andere das <hi xml:id="id12fa7d0d-bd57-4854-8f61-caee71ebc9e4" rendition="#ita">Privative</hi> (μη ον).« – <hi xml:id="id955f440a-5a5e-4a6b-b0ee-6cf7485fb37f" rendition="#bol">πληϱες</hi>: gr. (plēres) 'fuld'. – <hi xml:id="id7d516964-88a6-4865-82ca-cd897947cb14" rendition="#bol">το ϰενον</hi>: gr. (to kenón) 'det tomme'. – <hi xml:id="id151a0bee-8f5e-49d4-b219-6be6585f7ec2" rendition="#bol">το ον</hi>: gr. (to on) 'det værende'. – <hi xml:id="id64c96043-5d74-498e-ae14-f53b85f98b19" rendition="#bol">το μη ον</hi>: gr. (to mē on) 'det ikke værende'.</p>
+        </note>
+        <note type="commentary" xml:id="not14-60" n="427,34">
+          <label xml:id="idd9884075-a903-4a66-a748-9c60ee85b5ca">
+            <hi xml:id="ided88ff6e-2943-4bfa-a80e-93a6d4da1976" rendition="#bol">Han er egl. Opfinder af Atom-Systemet</hi>
+          </label>
+          <p xml:id="idb999cb16-f520-4622-95ae-37bcc85e0aa6">jf. s. 270. – <hi xml:id="id8e4e394f-24b7-426e-a8a4-b0b77e574ecf" rendition="#bol">Atom-Systemet</hi>: den filosofiske lære, at virkeligheden består af atomer – evige og uforanderlige elementer – og det tomme rum, hvori de bevæger sig og sammensættes på forskellig vis.</p>
+        </note>
+        <note type="commentary" xml:id="not14-61" n="427,35">
+          <label xml:id="id21a9f937-27c3-4ae3-bf85-6de7eb4d7fa2">
+            <hi xml:id="id31bc8145-cff3-4e06-babb-363c26557691" rendition="#bol">Democrit</hi>
+          </label>
+          <p xml:id="id61cf0774-1c80-4ddb-bced-0a2032203436">jf. afsnit 7, »Philosophie des Leucippus und Demokritus«, s. 256-298; s. 271-298. Den gr. filosof <persName xml:id="id17e24b7e-d89d-446b-a31e-c65ed3b92143" key="Demokrit" n="*">Demokrit</persName> fra Abdera (o. 460 - o. 370) var elev af <persName xml:id="id44cd6de9-a69d-4a4c-b596-e13201452422" key="Leukippos">Leukippos</persName> og som denne atomist.</p>
+        </note>
+        <note type="commentary" xml:id="not14-47" n="427,36">
+          <label xml:id="idfd413b4a-241a-4a31-961d-62e180380046">
+            <hi xml:id="id20e8256c-5739-4165-acfe-8fe1b5df09a0" rendition="#bol">dette Beviis kaldes Achilles</hi>
+          </label>
+          <p xml:id="id436918cd-65de-4747-a5c6-969221b865e0">jf. s. 198, note 70: »Dieser Beweis hieß <hi xml:id="ide787c9b5-c217-4bfc-b84d-e3bcf5ba024a" rendition="#ita">Achilles</hi>, weil in demselben Achilles als das Schnellste und die Schildkröte als das langsamste aufgeführt waren.« – <hi xml:id="idc66b1a4d-6541-4fd8-99b3-01e619723412" rendition="#bol">Achilles</hi>: gr. sagnhelt, der kendes fra <persName xml:id="idae13ca5c-2483-4ac2-a86a-5ec8cb9d699a" key="Homer">Homer</persName>s <hi xml:id="id6c97d43b-823e-4b13-a19d-e2e4d52fa969" rendition="#ita">Iliaden</hi>, hvor han betegnes som 'den rapfodede <persName xml:id="ideb400234-25ff-4899-b228-1022a0adeea9" key="Achilleus">Achilleus</persName>'.</p>
+        </note>
+      </div>
+    </body>
+  </text>
 </TEI>

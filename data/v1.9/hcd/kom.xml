@@ -1,388 +1,549 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE kn1 SYSTEM "http://sks.dk/kn1/kn1.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Hvad Christus dømmer</title>
-     
-     <title type="short">HCD</title>
-     
-  <author>
-   <name>Tonny Aagaard Olesen</name>
-  </author>
- 
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2009</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K13</biblScope>
-     <biblScope unit="file">http://sks.dk/hcd/kom.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20120823">Kierkegaard Normalformat vers.1, <bibl><idno type="version">1.7</idno>, <biblScope unit="file">http://sks.dk/hcd/kom.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id107b5bbb-bf46-4a40-a6d1-2846e9293f39">
+    <fileDesc xml:id="id87f450b1-381d-4a43-a438-f8add4f37796">
+      <titleStmt xml:id="ideede0ef0-d375-4158-b595-b3d34d9cf5bd">
+        <title xml:id="id17b01870-518f-48e6-83cd-fdf2c38be875" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id863ba6b3-7162-4259-a536-c6e580c07237">Hvad Christus dømmer</title>
+        <title xml:id="id3a42531d-b822-485f-b906-499c16e12cc2" type="short">HCD</title>
+        <author xml:id="id7c2e6bdc-6469-4e17-aec3-e30076bc3aba">
+          <name xml:id="id18509485-c232-40b9-a469-e754611aefd8">Tonny Aagaard Olesen</name>
+        </author>
+        <editor xml:id="id5871b3c6-2161-44f1-8b86-285aa8166551">
+          <name xml:id="id9443aacb-bb31-486e-8284-b742d34385d8">Niels Jørgen Cappelørn</name>
+          <name xml:id="id9fafaac5-2424-4b5a-a55d-fce4db447d60">Joakim Garff</name>
+          <name xml:id="idee6592d3-1bc3-4319-bba6-a138e7bc9dc4">Johnny Kondrup</name>
+          <name xml:id="idf10728d8-f7f5-46f4-b579-1f9b93b0a6b7">Tonny Aagaard Olesen</name>
+          <name xml:id="idb946be40-c222-4c66-99e7-f31ae6ec4de3">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="id09eee1d2-84ea-4be0-84e2-2bf4df5dbf50">
+          <resp xml:id="ideec66815-95e7-4ad8-ac4a-a03687fd5bb4">elektronisk redigeret af</resp>
+          <name xml:id="id9ee46c0a-ffd2-4fab-9509-cccb7b3ce60d">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id1b37a580-df89-44f0-b1fe-20aaf9738a83">
+        <authority xml:id="idff967b5c-54a6-46de-adc1-ee83fa8ff933">Søren Kierkegaard Forskningscenteret 2009</authority>
+        <availability xml:id="idc9b4e605-95b2-4e44-bc8e-8e51a893bcbe" status="restricted">
+          <p xml:id="id4dcbb8e0-71c7-4472-aebf-16fb4c140c9b">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="idffe95074-96c9-47da-a899-dd9a6e71150c">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="idcac75a0b-4bd7-45be-924a-0e14d5707d1c" unit="volume">K13</biblScope>
+        <biblScope xml:id="id950ff4da-63a5-43bf-a0cc-808b3de6a09d" unit="file">http://sks.dk/hcd/kom.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id1c8f4221-62ff-4583-a1d4-c8bd00960f7c">
+        <bibl xml:id="id682eb7a8-90cd-4f77-89a5-43879bbf3d54" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id8674a02e-6b0b-47e0-a96a-063c997a44fa">
+      <tagsDecl xml:id="ide7a8cad0-2a2c-43f3-a8f6-d6c833c2b73c">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="idd16f2d08-f992-428c-a185-689480b97338">
+      <change xml:id="idb9969ab1-9555-45c6-aa5b-e362a8ff41f0">Transformed to TEI by style sheet <bibl xml:id="id35bb307d-cb9c-40b6-b8e7-5f3112787c4c" type="file">kn12tei.xsl</bibl> version <idno xml:id="id37053fbb-c0e8-4ff3-a50c-2af6816b64a2" type="version">1.9</idno> as of <date xml:id="id028d553a-505b-4956-b704-a6dc6c48b7a1">2017-02-21</date> by <name xml:id="id0699e032-5ba1-47a1-b6ac-66134f228a4e">Karsten Kynde</name>, <orgName xml:id="idb407de69-bea4-4ffe-9541-937ebbe0e59b">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="id0cbbc12d-51b0-4a76-b2fb-a870f1ff6b1a">København</placeName></change>
+      <change xml:id="id6557c8a4-b4e1-46d5-8e14-b82612f374a6" when="20120823">Kierkegaard Normalformat vers.1, <bibl xml:id="idacbf494e-66b3-4867-a4cc-a2c1e31d4ee0"><idno xml:id="id1d25631b-cfb0-45e6-a469-ffad1b07d05b" type="version">1.7</idno>, <biblScope xml:id="idf7c77b48-dd16-40df-a411-5cd912be19e3" unit="file">http://sks.dk/hcd/kom.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="commentary" subtype="ts"><body><div> 
-  <note type="commentary" xml:id="hcd-1" n="172,1">
-   <label><hi rendition="#bol">Juni 1855.</hi></label>
-   <p>I kladden (ms. 1; <ref type="preparatoryManuscript" n="pap:XI3B263" rend="HCD,ms.1"><hi rendition="#ita">Pap.</hi> XI 3 B 263</ref>,2) findes datoen 5. juni (1855), hvilket er årsdagen for <persName key="Martensen, Hans Lassen">H.L. Martensen</persName>s indsættelse som biskop over <placeName key="Sjællands Stift">Sjællands stift</placeName>. <hi rendition="#ita">Øieblikket</hi> nr. 2 er dateret 4. juni 1855.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-500" n="173,2">
-   <label><hi rendition="#bol">nu først</hi></label>
-   <p>dvs. først nu.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-3" n="173,4">
-   <label><hi rendition="#bol">Plattenslager-Laug</hi></label>
-   <p>forening af småsvindlende personer, der fusker sig til økonomisk vinding.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-4" n="173,4">
-   <label><hi rendition="#bol">Firmaet</hi></label>
-   <p>dels mærket, signaturen, dels navnet, under hvilket et handelshus driver sine forretninger.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-5" n="173,5">
-   <label><hi rendition="#bol">brillante</hi> Forretninger</label>
-   <p>gode, indbringende.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-6" n="173,10">
-   <label><hi rendition="#bol">hvad jeg siger, at det Hele med »Christenhed« er en Criminal-Sag</hi></label>
-   <p>Dette fremføres i avisartiklen »En Thesis – kun een eneste«, trykt i <hi rendition="#ita">Fædrelandet,</hi> nr. 74, den 28. marts 1855.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-7" n="173,13">
-   <label><hi rendition="#bol">at jeg virkelig er, som jeg siger det, et Politie-Talent</hi></label>
-   <p>hentyder til avisartiklen »En Thesis – kun een eneste« (<ptr type="commentary" target="#hcd-6" n="173,10"/>), hvori det hedder: »jeg er et i sjelden Grad afgjort Politi-Talent« (<ref target="../ET/txt.xml#ss169" type="publishedWritings" n="sv2:14" rend="ET, 169"><hi rendition="#ita">SV2</hi> 14, 49</ref>).</p>
-  </note>
-  <note type="commentary" xml:id="hcd-8" n="173,15">
-   <label><hi rendition="#bol">underfundigt</hi></label>
-   <p>med listige bagtanker.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-1001" n="173,17">
-   <label><hi rendition="#bol">Fritænkeren</hi></label>
-   <p>if. <persName key="Molbech, Christian">C. Molbech</persName> <hi rendition="#ita">Dansk Ordbog</hi> bd. 1-2, <placeName key="København">Kbh.</placeName> 1833, ktl. 1032; bd. 1, s. 319, sp. 2: »den, som tænker frit (især om den, der i Religionssager ikke antager Kirkens Lærdomme).«</p>
-  </note>
-  <note type="commentary" xml:id="hcd-9" n="173,18">
-   <label><hi rendition="#bol">Fritænkeren er en ærlig Mand, som ligefrem lærer, at Christendom er Digt, Poesie</hi></label>
-   <p>hentyder formentlig til den venstrehegelianske religionskritik, der med navne som <persName key="Strauß, David Friedrich" n="*">David Friedrich Strauß</persName> (1808-74), <persName key="Feuerbach, Ludwig" n="*">Ludwig Feuerbach</persName> (1804-72) og <persName key="Bauer, Bruno" n="*">Bruno Bauer</persName> (1809-82) fik stor udbredelse op gennem 1840'erne, især efter 1848 med fremvoksende socialisme. Den hævdede, at kristendommen var digtning og mytologi.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-502" n="173,19">
-   <label><hi rendition="#bol">en Falsknen</hi></label>
-   <p>et falskneri, bedrag.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-10" n="173,23">
-   <label><hi rendition="#bol">Indbildningskraften</hi></label>
-   <p>forestillingsevnen, fantasien.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-504" n="173,24">
-   <label><hi rendition="#bol">Forbilledet</hi></label>
-   <p>dvs. Kristus som forbillede for efterfølgelse.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-11" n="174,2">
-   <label><hi rendition="#bol">reent</hi></label>
-   <p>fuldstændigt, helt.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-1009" n="174,5">
-   <label><hi rendition="#bol">det som 1000 kongelige Embedsmænd ved Eed ere forpligtede paa</hi></label>
-   <p>Alle gejstlige var (statslige) embedsmænd, udnævnt af kongen. If. registrene i <hi rendition="#ita">Geistlig-statistisk Calender,</hi> udg. af Th. <persName key="Hertz, Henrik">Hertz</persName>, <placeName key="København">Kbh.</placeName> 1854 [afsluttet den 24. dec. 1853] (jf. ktl. 378, en udgave fra 1848), var der 987 hovedsogne i kongeriget <placeName>Danmark</placeName> (dvs. uden hertugdømmerne <placeName>Slesvig</placeName>, <placeName>Holsten</placeName> og <placeName>Lauenborg</placeName>) og 916 ansatte præster, herunder biskopper og provster; hertil kom 123 personlige kapellaner. Der sigtes her til præsteløftet, hvorved præsten lover at forkynde i overensstemmelse med NT samt at føre et kristeligt levnet (<ptr type="commentary" target="#hcd-20" n="174,23"/>).</p>
-  </note>
-  <note type="commentary" xml:id="hcd-15" n="174,16">
-   <label><hi rendition="#bol">Artiklen mod Biskop Martensen om Biskop Mynster</hi></label>
-   <p>sigter til den polemiske avisartikel »Var Biskop Mynster et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er <hi rendition="#ita">dette Sandhed?«</hi> i <hi rendition="#ita">Fædrelandet,</hi> nr. 295, den 18. dec. 1854. – <hi rendition="#bol">Biskop Martensen:</hi> <persName key="Martensen, Hans Lassen" n="*">Hans Lassen Martensen</persName> (1808-84), da. teolog og præst, fra 1840 ekstraordinær og fra 1. sept. 1850 ordinær prof. i teologi ved <placeName>Københavns Universitet</placeName>, fra 1845 tillige hofprædikant og i 1847 Ridder af Dannebrog. Han blev den 15. april 1854 udnævnt til J.P. Mynsters efterfølger som biskop over <placeName>Sjælland</placeName>s Stift og den 5. juni 1854 bispeviet af biskop <persName key="Brammer, Gerhard Peter">G.P. Brammer</persName> i <placeName>Vor Frue Kirke</placeName> i <placeName>København</placeName>. – <hi rendition="#bol">Biskop Mynster:</hi> <persName key="Mynster, Jakob Peter" n="*">Jakob Peter Mynster</persName> (1775-1854), da. teolog, præst, forf. og politiker; fra 1834 biskop over <placeName key="Sjællands Stift">Sjællands stift</placeName>. Han havde været sin tids store prædikant, havde et betydeligt videnskabeligt forfatterskab bag sig, og havde haft sæde i en lang række styrende organer. Efter 1848 klagede han dog ofte over, at positionen som kirkens øverste var blevet stækket, da han blev underlagt en minister. Han havde som en af landets højstrangerende borgere været placeret i 1. klasse, nr. 13 i den borgerlige rangforordning. Han døde den 30. jan. 1854.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-16" n="174,18">
-   <label><hi rendition="#bol">sloge de <hi rendition="#ita">(...)</hi> stort paa</hi></label>
-   <p>optrådte de hovmodige, førte de sig frem.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-505" n="174,18">
-   <label><hi rendition="#bol">det var »en meget for stor Maalestok her blev anlagt« o. s. v.</hi></label>
-   <p>sigter til <persName key="Paludan-Müller, Jens">Jens Paludan-Müller</persName>s kritiske skrift <hi rendition="#ita">Dr. <persName key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>s Angreb paa Biskop Mynsters Eftermæle,</hi> <placeName key="København">Kbh.</placeName> 1855, ktl. 2190; averteret som udkommet i <hi rendition="#ita">Adresseavisen,</hi> nr. 5, den 6. jan. 1855. Heri angribes gennemgående SKs fordrejede målestok, men det hedder også: »Det er ganske klart, at Dr. S. Kierkegaard mener at anlægge Maalestokken for sin Bedømmelse af den hedengangne Biskop saa høit, at han vil vide sin Kjendelse langt fjernet fra andre Smaafolks; hans Kjendelse er naturligvis en Høiesteretsdom. Men hvor megen Evne, Dr. S. Kierkegaard end i Retning af det Christelige har til at distingvere, og hvor megen Øvelse han end har deri, saa er dog ved denne Leilighed baade Maalestokken, han anlægger, og Dommen, han fælder, lige urigtige, hvad jeg haaber det Efterfølgende skal godtgjøre«, s. 4. <persName key="Martensen, Hans Lassen">Martensen</persName> havde i sin avisartikel sagt, at der til at bedømme en mand som <persName key="Mynster, Jakob Peter">J.P. Mynster</persName> »udfordres en heelt anden Maalestok end den, af hvilken Dr. S.K. er i Besiddelse«, og videre, at SK sikkert til bedømmelse af egen adfærd vil opfinde en moralsk målestok, som er »langt ophøiet over det almene«, <hi rendition="#ita">Berlingske Tidende,</hi> nr. 302, den 28. dec. 1854.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-18" n="174,21">
-   <label><hi rendition="#bol">»vor Herre og Frelsers Jesu Christi nye Testamente«</hi></label>
-   <p>jf. <hi rendition="#ita">Vor Herres og Frelsers <persName key="Jesus">Jesu</persName> Christi Nye Testament,</hi> <placeName key="København">Kbh.</placeName> 1819 (se ktl. 21-33).</p>
-  </note>
-  <note type="commentary" xml:id="hcd-20" n="174,23">
-   <label><hi rendition="#bol">eedfæstede Lærere</hi></label>
-   <p>Der hentydes til præsteløftet ved præstevielsen, som det beskrives i kap. 11, art. 2 i <hi rendition="#ita">Dannemarkes og <placeName>Norge</placeName>s Kirke-Ritual,</hi> <placeName key="København">Kbh.</placeName> 1762 [1685] (forkortet <hi rendition="#ita">Kirke-Ritualet</hi>), der endnu var gældende på SKs tid. I det fuldstændige præsteløfte, »<hi rendition="#ita">Juramentum, qvod in timore Domini præstabunt, qvi muneri Ecclesiastico initiabuntur</hi>« (lat. »<hi rendition="#ita">Eden, som i frygt for Herren skal aflægges af dem, der skal indvies til et kirkeligt embede</hi>«), hedder det bl.a.: »Ego N.N. juro &amp; in conspectu Dei sanctè testor. <hi rendition="#ita">(...)</hi> / Secundò promitto, me summâ diligentiâ allaboraturum, ut doctrina cœlestis comprehensa scriptis Propheticis &amp; Apostolicis &amp; libris Ecclesiarum Danicarum Symbolicis auditoribus fideliter instilletur, sacramenta ad normam â Christo præscriptam decenter ac devotè administrentur, Disciplina Ecclesiastica diligenter exerceatur, Catechetica doctrina urgeatur; Ceremoniæ in Ecclesia receptæ observentur, nec qvidqvam contra Constitutiones Ecclesiasticas admittatur« (»Jeg, N. N., sværger og bevidner helligt i ærefrygt for Guds åsyn. <hi rendition="#ita">(...)</hi> / For det andet lover jeg, at jeg med største omhu vil beflitte mig på, at den guddommelige lære, som er indeholdt i de profetiske og apostoliske skrifter og i den danske kirkes symbolske bøger, vil blive forkyndt rent og purt for menigheden, sakramenterne sømmeligt og andægtigt forvaltet efter den måde, Kristus har påbudt, den kirkelige formaning omhyggeligt udøvet og den kateketiske undervisning uafladeligt fastholdt; at de almindeligt antagne ritualer i kirken vil blive overholdt, og intet, der strider mod de kirkelige forordninger, tilladt«), s. 379f. Udtrykket 'de apostoliske skrifter' svarer til NT. Endvidere blev præsterne under ordinationen af biskoppen formanet til, at de »for alle <hi rendition="#ita">Ting</hi> beflitte sig paa at være gode Exempler for dennem [deres medkristen og næste] i Omgiængelse [omgang, adfærd, levemåde], i Kierlighed, i Aand, i Tro, i Kydskhed og alle Christelige Dyder«, s. 369.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-506" n="174,23">
-   <label><hi rendition="#bol">»Sandhedsvidner</hi></label>
-   <p>dvs. præsterne; SK hentyder ironisk til <persName key="Martensen, Hans Lassen">H.L. Martensen</persName>s brug af udtrykket 'sandhedsvidne', der if. SK er så bredt, at snart sagt enhver præst bliver sandhedsvidne. Jf. Martensen <hi rendition="#ita">Prædiken holdt i <placeName>Christiansborg</placeName>s Slotskirke paa 5te Søndag efter Hellig Tre Konger, Søndagen før Biskop Dr. <persName key="Mynster, Jakob Peter">Mynster</persName>s Jordefærd,</hi> <placeName key="København">Kbh.</placeName> 1854, hans artikel: »I Anledning af Dr. <persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>s Artikel i 'Fædrelandet' Nr. 295« i <hi rendition="#ita">Berlingske Tidende</hi> (<ptr type="commentary" target="#hcd-505" n="174,18"/>) og hans »Tale ved Biskopperne <persName key="Lautrup, Jørgen Hjorth">Jørgen Hjorth Lautrup</persName>'s og <persName key="Laub, Hardenach Otto Conrad">Hardenach Otto Conrad Laub</persName>'s Indvielse« i <hi rendition="#ita">Bispevielse i <placeName key="Vor Frue Kirke">Frue Kirke</placeName> paa anden Juledag, den 26</hi><hi rendition="#ita"><hi rendition="#sup">de</hi></hi> <hi rendition="#ita">December 1854,</hi> Kbh. 1855, der blev averteret som udkommet i <hi rendition="#ita">Adresseavisen,</hi> nr. 18, den 22. jan 1855.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-22" n="174,27">
-   <label><hi rendition="#bol">Fra det Øieblik indtraadte, som man veed, Taushed</hi></label>
-   <p>Biskop <persName key="Martensen, Hans Lassen">H.L. Martensen</persName> besvarede SKs angreb i avisartiklen »I Anledning af Dr. <persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>s Artikel i 'Fædrelandet' Nr. 295« i <hi rendition="#ita">Berlingske Tidende</hi> (<ptr type="commentary" target="#hcd-505" n="174,18"/>), men havde da besluttet ikke at svare mere, hvilket han heller ikke gjorde, jf. <hi rendition="#ita">Biskop H. Martensens Breve,</hi> udg. af <persName key="Kornerup, Bjørn">Bjørn Kornerup</persName>, bd. 1, <placeName key="København">Kbh.</placeName> 1955, hvor Martensen 2. jan. 1855 skriver til sin ven L. Gude: »Det glæder mig, at De finder, at min Artikel mod Kd var et velfortjent Ørefigen. <hi rendition="#ita">(...)</hi> Forresten følger det af sig selv, at jeg ikke skriver mere dennesinde [denne gang, ved denne lejlighed]«, s. 131f. SK havde dog endnu ikke spillet det kort ud, at præsterne var bundet til et løfte; det gjorde han først i avisartiklen »Er dette christelig Gudsdyrkelse eller er det at holde Gud for Nar?« i <hi rendition="#ita">Fædrelandet,</hi> nr. 68, den 21. marts 1855, og ofte siden hen.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-23" n="174,27">
-   <label><hi rendition="#bol">raske paa det</hi></label>
-   <p>fast udtryk: ivrige, fremfusende.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-24" n="174,28">
-   <label><hi rendition="#bol">flinke</hi></label>
-   <p>dygtige.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-25" n="174,30">
-   <label><hi rendition="#bol">det er Overspændthed med hans Idealer, Maalestokken er meget for stor</hi></label>
-   <p>hentyder til kritikken af SK for med sit begreb om sandhedsvidnet at anlægge en for høj og alt for ensidig målestok for den kristne (<ptr type="commentary" target="#hcd-505" n="174,18"/>). <persName key="Paludan-Müller, Jens">Jens Paludan-Müller</persName> bemærker i <hi rendition="#ita">Dr. <persName key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>s Angreb paa Biskop <persName key="Mynster, Jakob Peter">Mynster</persName>s Eftermæle</hi> mod SK: »Udvortes Lidelse er slet ikke Kjendemærke paa et Sandhedsvidne, naar Talen, som her, dreier sig om den Maalestok, der skal anlægges for at tage Mærke paa et saadant [dvs. for at forsyne et sådant med et kendetegn]. I den existerende Virkelighed, hos den lidende Person, kan der aldrig, uden efter Sandsynlighed, sluttes fra det Ydre til det Indre. Om den, der udvortes lider, lider for Sandhedens Skyld, kan aldrig afgjøres i Henhold til selve den udvortes Lidelse. <hi rendition="#ita">(...)</hi> i sin extreme Ilterhed for Indvorteshed og overspændt Idealitet i christelig Retning arbeider han [dvs. SK] en plump og uchristelig Udvorteshed i Hænderne. <hi rendition="#ita">(...)</hi> Man skulde ikke tale saa let om den udvortes Lidelse, ikke være saa hidsig til at paakalde den for Sandhedens Skyld. Det er ikke godt at anlægge Maalestokken høiere end den, der sender den udvortes Tilskikkelse, selv anlægger den«, s. 17f. Paludan-Müllers skrift blev anonymt anmeldt i <hi rendition="#ita">Berlingske Tidende,</hi> nr. 7, den 9. jan. 1855, hvor den begejstrede anmelder gentog ordene om SKs »extreme Ilterhed for Indvorteshed og overspændt Idealitet i christelig Retning«.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-26" n="174,31">
-   <label><hi rendition="#bol">saa tause bleve de fra det Øieblik denne Bog og Eeden kom med i Spillet</hi></label>
-   <p>I de 2½ mdr. ml. den 21. marts (<ptr type="commentary" target="#hcd-22" n="174,27"/>) og den 5. juni 1855 (<ptr type="commentary" target="#hcd-1" n="172,1"/>) udkom kun en mindre, ubetydelig pjece, nemlig H.N. Holtens prædiken: <hi rendition="#ita">»Det er fuldbragt,« Langfredagsprædiken. Dr. S. Kierkegaard helliget i Kjærlighed af N.H.;</hi> den blev averteret som udkommet i <hi rendition="#ita">Adresseavisen,</hi> nr. 95, den 25. april 1855. Derudover udkom enkelte artikler i aviser og tidsskrifter, hvoraf SK selv tog til genmæle mod nogle af dem. Se genmælet mod to anonyme forf. i artiklerne »I Anledning af et <hi rendition="#ita">anonymt</hi> Forslag til mig i dette Blads Nr. 79« i <hi rendition="#ita">Fædrelandet,</hi> nr. 81, den 7. april 1855, og »Var det rigtigst nu at 'standse med Klemtningen'?« i <hi rendition="#ita">Fædrelandet,</hi> nr. 83, den 11. april 1855. Dernæst svaret til provst J. Victor Bloch i »Hvilken grusom Straf!« i <hi rendition="#ita">Fædrelandet,</hi> nr. 97, den 27. april 1855; Bloch kunne i øvrigt være anledningen til SKs polemiske bemærkning her, idet han netop i <hi rendition="#ita">Berlingske Tidende,</hi> nr. 124, den 1. juni, nr. 125, den 2. juni og nr. 126, den 3. juni 1855, havde udsendt artikler mod SK. Se endelig artiklen »Angaaende en taabelig Vigtighed lige over for mig og den Opfattelse af Christendom, som jeg gjør kjendelig« i <hi rendition="#ita">Fædrelandet,</hi> nr. 111, den 15. maj 1855, hvori SK affejer præsten <persName key="Zeuthen, Frederik Ludvig Bang">F.L.B. Zeuthen</persName>, der i de udkomne artikler i afhandlingen »Aand og Bogstav« i <hi rendition="#ita">Ugeskrift for den evangeliske Kirke i <placeName>Danmark</placeName>,</hi> nr. 6-7, den 26. jan. 1855, bd. 5, s. 90 anm., og nr. 11-12 (16. feb.), især s. 177-183, havde indlagt passager om SK. Anledningen til at inddrage Zeuthen skyldtes dog en anonym forf. i <hi rendition="#ita">Kjøbenhavnsposten,</hi> nr. 109, den 12. maj 1855, der mener, at SK ikke skulle tale så meget om præsternes tavshed, når han end ikke selv havde besvaret fx Zeuthens indvendinger. Zeuthens <hi rendition="#ita">Polemiske Breve imod Dr. <persName key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>,</hi> nr. 1, <placeName key="København">Kbh.</placeName> 1855, ktl. 2190, blev averteret som udkommet i <hi rendition="#ita">Adresseavisen,</hi> nr. 134, den 13. juni 1855.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-27" n="174,32">
-   <label><hi rendition="#bol">i Politie-Forretninger</hi></label>
-   <p>i politiets arbejde.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-28" n="174,33">
-   <label><hi rendition="#bol">Politie-Agent</hi></label>
-   <p>spion for politiet (især det hemmelige politi); civil politibetjent, der tager sig af opdagelser.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-30" n="174,35">
-   <label><hi rendition="#bol">»afgjort Politie-Talent«</hi></label>
-   <p><ptr type="commentary" target="#hcd-7" n="173,13"/>.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-31" n="175,1">
-   <label><hi rendition="#bol">fast</hi></label>
-   <p>næsten, nærmest.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-37" n="175,18">
-   <label><hi rendition="#bol">tilsidst paatog jeg mig ... Det var i mit eget Navn</hi></label>
-   <p>sigter til SKs pjece <hi rendition="#ita">Dette skal siges; saa være det da sagt,</hi> der blev averteret som udkommet i <hi rendition="#ita">Adresseavisen,</hi> nr. 118, den 24. maj 1855. Hvad, der skal siges, er følgende: »<hi rendition="#ita">Hvo</hi> [hvem] <hi rendition="#ita">Du end er, hvilket Dit Liv for resten, min Ven, – ved (hvis Du ellers deeltager i den) at lade være at deeltage i den offentlige Gudsdyrkelse som den nu er (med Paastand paa at være det nye Testamentes Christendom) har Du bestandigt een og en stor Skyld mindre, Du deeltager ikke i at holde Gud for Nar ved at kalde det nye Testamentes Christendom hvad der ikke er det nye Testamentes Christendom</hi>«, <ref target="../DSS/txt.xml#ss115" type="publishedWritings" n="115"><hi rendition="#ita">SKS</hi> 13, 115</ref>.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-507" n="175,25">
-   <label><hi rendition="#bol">forhærde dem mod</hi></label>
-   <p>forhærde sig mod, trodse.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-38" n="175,26">
-   <label><hi rendition="#bol">vistnok</hi></label>
-   <p>sandelig, helt sikkert.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-39" n="175,26">
-   <label><hi rendition="#bol">de eedfæstede Mænd</hi></label>
-   <p><ptr type="commentary" target="#hcd-20" n="174,23"/>.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-41" n="175,31">
-   <label><hi rendition="#bol">er saa</hi></label>
-   <p>forholder sig således.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-42" n="175,36">
-   <label><hi rendition="#bol">det forstaaer sig</hi></label>
-   <p>indlysende nok.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-43" n="176,1">
-   <label><hi rendition="#bol">hvo</hi></label>
-   <p>hvem.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-44" n="176,3">
-   <label><hi rendition="#bol">»Sandhedsvidnernes«</hi></label>
-   <p>dvs. præsternes (<ptr type="commentary" target="#hcd-506" n="174,23"/>).</p>
-  </note>
-  <note type="commentary" xml:id="hcd-46" n="176,5">
-   <label><hi rendition="#bol">de kongelige Embedsmænd</hi></label>
-   <p>dvs. præsterne (<ptr type="commentary" target="#hcd-1009" n="174,5"/>).</p>
-  </note>
-  <note type="commentary" xml:id="hcd-47" n="176,7">
-   <label><hi rendition="#bol">Ordsproget siger »man skal ikke tale om Strikken i hængt Mands Huus«</hi></label>
-   <p>dvs. man skal passe på med at sige noget, der kan støde den, man taler med; ordsproget findes optegnet som nr. 4194 i <persName key="Mau, Edvard">E. Mau</persName> <hi rendition="#ita">Dansk Ordsprogs-Skat</hi> bd. 1-2, <placeName key="København">Kbh.</placeName> 1879; bd. 1, s. 466; sml. nr. 1291 i <persName key="Grundtvig, Nikolai Frederik Severin">N.F.S. Grundtvig</persName> <hi rendition="#ita">Danske Ordsprog og Mundheld,</hi> Kbh. 1845, ktl. 1549, s. 49.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-48" n="176,10">
-   <label><hi rendition="#bol">billig</hi></label>
-   <p>rimelig.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-49" n="176,15">
-   <label><hi rendition="#bol">forelæst</hi></label>
-   <p>oplæst (i andres påhør).</p>
-  </note>
-  <note type="commentary" xml:id="hcd-52" n="176,27">
-   <label><hi rendition="#bol">ret</hi></label>
-   <p>rigtigt, virkelig.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-508" n="177,3">
-   <label><hi rendition="#bol">Matth. 23, 29-33. 29) Vee Eder, I Skriftkloge ... undflye Helvedes Dom?</hi></label>
-   <p><persName key="Jesus">Jesu</persName> veråb over de skriftkloge og farisæerne er ordret citeret efter NT-1819. – <hi rendition="#bol">Øienskalke:</hi> hyklere. – <hi rendition="#bol">ihjelslaget:</hi> ihjelslået. – fylder <hi rendition="#bol">og:</hi> også. – <hi rendition="#bol">kunne</hi> I<hi rendition="#bol">:</hi> kan. – <hi rendition="#bol">undflye:</hi> undslippe, undgå.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-509" n="177,11">
-   <label><hi rendition="#bol">Luc. 11, 47. 48. 47) Vee Eder! at I bygge Propheternes Grave ... og I bygge deres Grave</hi></label>
-   <p><persName key="Jesus">Jesu</persName> veråb over de skriftkloge og farisæerne er ordret citeret efter NT-1819.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-510" n="177,21">
-   <label><hi rendition="#bol">Det er om denne Art Gudsdyrkelse ... er at lege Christendom</hi></label>
-   <p>sigter til SKs første avisartikel, »Var Biskop <persName key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er <hi rendition="#ita">dette Sandhed?«</hi> (<ptr type="commentary" target="#hcd-15" n="174,16"/>), hvor det hedder: »Er det Sandhed? Er det at tale saaledes, er det maaskee ogsaa at vidne for Sandhed, og <persName key="Martensen, Hans Lassen">Prof. Martensen</persName> ved denne Tale selv traadt i Charakter af Sandhedsvidne, et af de rette Sandhedsvidner? Sandeligen, der er det, som er Christendommen og Christendommens Væsen mere imod end ethvert Kjetteri, ethvert Schisma, mere imod end alle Kjetterier og Schismaer tilsammen, og det er det: at lege Christendom. Men det er – aldeles, aldeles i samme Forstand, som Barnet leger Soldat – at lege Christendom: at tage Farerne bort (christeligt svarer 'Vidne' og 'Fare' til hinanden), istedetfor disse at anbringe Magten (til at være Fare for Andre), Goderne, Fordelene, en yppig Nydelse selv af de fineste Raffinements – og saa at lege den Leg, at Biskop Mynster var Sandhedsvidne, et af de rette Sandhedsvidner, lege den saa frygtelig alvorligt, at man da slet ikke kan standse Legen, men leger den fort ind i Himlen, leger Biskop Mynster med ind i den hellige Kjæde af Sandhedsvidner, som fra Apostlenes Dage strækker sig til vore Tider« (<ref target="../BMS/txt.xml#ss125" type="publishedWritings" n="sv2:14" rend="BMS, 125"><hi rendition="#ita">SV2</hi> 14, 14f.</ref>).</p>
-  </note>
-  <note type="commentary" xml:id="hcd-57" n="177,27">
-   <label><hi rendition="#bol">skuffende</hi></label>
-   <p>illusorisk, bedragerisk.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-58" n="177,27">
-   <label><hi rendition="#bol">Saaledes leger Soldaterne Krig paa Fælleden</hi></label>
-   <p>sigter til græsningsarealerne <placeName>Nørre Fælled</placeName>, <placeName>Blegdams Fælled</placeName> og <placeName>Østre Fælled</placeName> (nuv. <placeName>Fælledparken</placeName>) NØ for <placeName key="Sortedams Sø">Sortedam Sø</placeName>, hvor både militæret og »Kjøbenhavns Borgervæbning« holdt parader og øvelser.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-60" n="178,1">
-   <label><hi rendition="#bol">Intet mindre</hi></label>
-   <p>aldeles ikke; lige det modsatte.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-61" n="178,1">
-   <label><hi rendition="#bol">Læreren</hi></label>
-   <p>dvs. præsten.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-1002" n="178,3">
-   <label><hi rendition="#bol">det om Forsagelse</hi></label>
-   <p>hentyder formentlig til <rs type="bible">Luk 14,33</rs>, hvor <persName key="Jesus">Jesus</persName> siger til skarerne: »Hver af Eder, som ikke forsager alt det, han haver, kan ikke være min Discipel« (NT-1819).</p>
-  </note>
-  <note type="commentary" xml:id="hcd-1003" n="178,4">
-   <label><hi rendition="#bol">det at foragte verdslig Titel og Rang</hi></label>
-   <p>se fx <rs type="bible">Jak 4,4</rs>: »I utro, ved I ikke, at venskab med verden er fjendskab med Gud? Den, der vil være ven med verden, står som en fjende af Gud.« Se også <rs type="bible">Matt 6,24</rs>, hvor <persName key="Jesus">Jesus</persName> siger: »Ingen kan tjene to herrer. Han vil enten hade den ene og elske den anden eller holde sig til den ene og ringeagte den anden. I kan ikke tjene både Gud og mammon.« Endvidere fx <rs type="bible">Joh 5,41-47</rs>; 12,43; <rs type="bible">1 Thess 2,6</rs>.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-1008" n="178,6">
-   <label><hi rendition="#bol">de Herlige (»Propheterne«) som bleve ihjelslagne</hi></label>
-   <p>Udtrykket 'de Herlige' bruges alm. om de martyrer, der i kristendommens første århundreder blev forfulgt og henrettet pga. af deres kristne tro og bekendelse. – <hi rendition="#bol">»Propheterne«:</hi> jf. <rs type="bible">Matt 23,29-33</rs> (<ptr type="commentary" target="#hcd-508" n="177,3"/>) og <rs type="bible">Luk 11,47</rs> (<ptr type="commentary" target="#hcd-509" n="177,11"/>).</p>
-  </note>
-  <note type="commentary" xml:id="hcd-66" n="178,7">
-   <label><hi rendition="#bol">dersom vi havde været i vore Fædres Tid ... pryde deres Gravsteder</hi></label>
-   <p>spiller på <rs type="bible">Matt 23,29-30</rs> (<ptr type="commentary" target="#hcd-508" n="177,3"/>).</p>
-  </note>
-  <note type="commentary" xml:id="hcd-511" n="178,10">
-   <label><hi rendition="#bol">som jeg bestandigt, indstændigt og bønligt har foreslaaet det</hi></label>
-   <p>SKs krav om, at kirkens øverste biskop på vegne af gejstligheden, men også hver enkelt for sig, må gøre den tilståelse el. indrømmelse, at nutidens kristendom er langt fra den ideale fordring, er fremsat i »Udgiverens Forord« til <hi rendition="#ita">Indøvelse i Christendom</hi> (1850), hvor det hedder: »I dette Skrift, hidrørende fra Aaret 1848, er Fordringen til at være Christen af Pseudonymen tvunget op til et Idealitetens Højeste. / Dog siges, fremstilles, høres bør jo Fordringen; der bør, christeligt, ikke slaaes af paa Fordringen, ei heller den forties – istedetfor at gjøre Indrømmelse og Tilstaaelse sig selv betræffende. / Høres bør Fordringen; og jeg forstaaer det Sagte som sagt alene til mig – at jeg maatte lære ikke blot at henflye til 'Naaden', men at henfly til den i Forhold til Benyttelsen af 'Naaden'«, <ref target="../IC/txt.xml#ss15" type="publishedWritings" n="15"><hi rendition="#ita">SKS</hi> 12, 15</ref>. Fordringen gentages i SKs avisartikler i <hi rendition="#ita">Fædrelandet</hi> under kirkestriden, nemlig i »Var Biskop Mynster et 'Sandhedsvidne' et af 'de rette Sandhedsvidner' <hi rendition="#ita">er dette Sandhed?</hi>« (18. dec. 1854), »Derved bliver det!« (30. dec. 1854) og »Ved Biskop Mynsters Død« (20. marts 1855), hvor anledningen er, at biskop <persName key="Mynster, Jakob Peter">Mynster</persName> (<ptr type="commentary" target="#hcd-15" n="174,16"/>) aldrig gjorde denne tilståelse, om end han godt kendte fordringen (jf. <ref target="../BMS/txt.xml#ss123" type="publishedWritings" n="sv2:14" rend="BMS, 123"><hi rendition="#ita">SV2</hi> 14, 12</ref>, 23 og 37); i »Den religieuse Tilstand« (26. marts) og »Hvad jeg vil?« hvor tilståelsen sættes alment frem (jf. <ref target="../DRT/txt.xml#ss165" type="publishedWritings" n="sv2:14" rend="DRT, 165"><hi rendition="#ita">SV2</hi> 14, 47</ref> og <ref target="../HJV/txt.xml#ss180" type="publishedWritings" n="sv2:14" rend="HJV, 180">58</ref>); og endelig i »Til det nye Oplag af 'Indøvelse i Christendom'« (16. maj), hvor SK tilbagekalder sin fordring – og dermed sin forsonende holdning (jf. <ref target="../OIC/txt.xml#ss213" type="publishedWritings" n="sv2:14" rend="OIC, 213"><hi rendition="#ita">SV2</hi> 14, 78</ref>f.). – <hi rendition="#bol">indstændigt:</hi> indtrængende, inderligt. <hi rendition="#bol"><hi rendition="#ita">–</hi> bønligt:</hi> indtrængende.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-70" n="178,18">
-   <label><hi rendition="#bol">den Myndige</hi></label>
-   <p>sigter til <persName key="Jesus">Jesus</persName>; sml. fx <rs type="bible">Matt 7,29</rs>, hvor det fortælles, at folket undrede sig, for Jesus havde undervist dem »som den, der havde Myndighed, og ikke som de Skriftkloge« (NT-1819).</p>
-  </note>
-  <note type="commentary" xml:id="hcd-71" n="178,20">
-   <label><hi rendition="#bol">han kalder det: Hyklerie</hi></label>
-   <p>se fx <rs type="bible">Matt 23,29</rs> (<ptr type="commentary" target="#hcd-508" n="177,3"/>). Se endvidere <rs type="bible">Matt 6,2</rs>.5.16, hvor <persName key="Jesus">Jesus</persName> advarer mod at gøre, som hyklerne gør; og <rs type="bible">Matt 7,5</rs>; 15,7; 22,18; 23,13.14.15.23.25.27 og <rs type="bible">Luk 12,56</rs>;13,15, hvor Jesus bruger den direkte tiltale 'I hyklere'. Se også <rs type="bible">Matt 23,28</rs>, hvor Jesus anklager farisæerne og de skriftkloge for indeni at være fulde af hykleri og lovløshed; og <rs type="bible">Mark 12,15</rs>, hvor han gennemskuer farisæernes og herodianernes hykleri; samt <rs type="bible">Luk 12,1</rs>, hvor han advarer folk mod farisæernes hykleri.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-72" n="178,21">
-   <label><hi rendition="#bol">han siger <hi rendition="#ita">(...)</hi> han siger ... altsaa: Blod-Skyld</hi></label>
-   <p>se <rs type="bible">Matt 23,29-33</rs> (<ptr type="commentary" target="#hcd-508" n="177,3"/>). – <hi rendition="#bol">Blod-Skyld:</hi> bibelsk udtryk: det at være skyldig i drab, også i alm. om en stor brøde, der medfører dødsstraf.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-74" n="178,29">
-   <label><hi rendition="#bol">skuffende</hi></label>
-   <p>svigefuldt, bedragerisk.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-75" n="178,34">
-   <label><hi rendition="#bol">give af vore Penge for at bygge Kirker</hi></label>
-   <p>hentydning til de mange indsamlinger – ikke mindst i aviserne – der siden 1853 var iværksat for at få opført en kirke uden for voldene. Grundstenen til <placeName key="Sankt Johannes Kirke">Sankt Johannes kirken</placeName> (ved <placeName key="Sankt Hans Torv">Sankt Hans torv</placeName>) blev lagt af kongen i 1856, men kirken åbnedes først i 1861. Fx blev <persName key="Trojel, F.W.">F.W. Trojel</persName>s pjece <hi rendition="#ita">Evigheden, ni Himmelbreve til Dr. <persName key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>,</hi> <placeName key="København">Kbh.</placeName> 1855, averteret i <hi rendition="#ita">Adresseavisen,</hi> nr. 272, den 21. nov. 1855, efter titelbladet solgt: »til fordel for Kirken paa Nørrebro«.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-76" n="178,34">
-   <label><hi rendition="#bol">ikke knibe paa Præsten</hi></label>
-   <p>dvs. ikke være 'fedtede' med at give pengebidrag til præsten.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-512" n="178,35">
-   <label><hi rendition="#bol">Det nye Testamente svarer: hvad Du skal, er, Du skal følge Christum efter</hi></label>
-   <p>se fx <rs type="bible">Matt 10,38</rs>, hvor <persName key="Jesus">Jesus</persName> i sin udsendelsestale til de tolv disciple siger: »hvo [den] som ikke tager sit Kors, og følger efter mig, er mig ikke værd« (NT-1819).</p>
-  </note>
-  <note type="commentary" xml:id="hcd-1005" n="178,36">
-   <label><hi rendition="#bol">lide for Læren</hi></label>
-   <p>se fx <rs type="bible">Matt 5,10-11</rs>, hvor <persName key="Jesus">Jesus</persName> siger: »Salige ere de, som lide Forfølgelse for Retfærdigheds Skyld, thi Himmeriges Rige er deres. Salige ere I, naar man bespotter og forfølger Eder, og taler allehaande [alskens] Ondt imod Eder for min Skyld, og lyver det [dvs. alt det onde, man siger, er løgn]« (NT-1819).</p>
-  </note>
-  <note type="commentary" xml:id="hcd-77" n="179,4">
-   <label><hi rendition="#bol">»Eders Fædre sloge dem ihjel ... og samtykke dem«. Luc. 11, 48</hi></label>
-   <p><ptr type="commentary" target="#hcd-509" n="177,11"/>.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-513" n="179,6">
-   <label><hi rendition="#bol">de næringsdrivende Præster</hi>s</label>
-   <p>En 'næringsdrivende' var i snæver forstand en, der havde taget borgerskab i en købstad for dér at kunne drive borgerlig næring, dvs. handel, manufaktur, befordring, gæstgiveri o.l. Som embedsmænd var præsterne i princippet lønnet af staten. De modtog dog i vid udstrækning 'accidenser', dvs. vederlag for at forrette kirkelige handlinger som brudevielse, barnedåb, konfirmation og begravelse. Desuden havde borgerne i købstæderne pligt til at yde præsten et pålignet beløb, kaldt 'præstepenge', mens bønderne i landsognene tilsvarende skulle betale præsten en vis procentdel af deres animalske produkter og især af deres korn, kaldt 'tiende'. Størrelsen af denne betaling blev fastsat af Kirke- og Undervisningsministeriet. På kirkens højtidsdage kunne menighedens medlemmer betale deres præst en frivillig pengegave, kaldt 'offer'. I øvrigt modtog præsterne i købstæderne en huslejegodtgørelse, mens præsterne på landet havde indtægter fra de dem tillagte jorder og gårde. Alt taget i betragtning havde de københavnske præster en større indtjening end præsterne i provinsen; men generelt set varierede indtægterne meget fra embede til embede, ligesom de jorder, der hørte til præstegårdene, varierede i omfang og bonitet fra sogn til sogn. En komplet oversigt findes i <persName key="Suhr, Johannes Søren Bloch">Bloch Suhr</persName> <hi rendition="#ita">Kaldslexicon, omfattende en Beskrivelse over alle danske geistlige Embeder i alphabetisk Orden,</hi> <placeName key="København">Kbh.</placeName> 1851, ktl. 379.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-78" n="179,12">
-   <label><hi rendition="#bol">det naturlige Menneske</hi></label>
-   <p>det blot jordiske, dvs. sanselige og fornuftige, men ikke åndelige menneske. Sml. <rs type="bible">1 Kor 2,14</rs>, hvor <persName key="Paulus">Paulus</persName> skriver: »Men det naturlige Menneske forstaaer intet af Guds Aand, det er ham en Daarlighed [tåbelighed], og han kan det ikke kiende, thi det skal dømmes aandeligen«, <hi rendition="#ita">Biblia, det er: den gandske Hellige Skriftes Bøger, efter den Aaret 1699 udgangne Huus- og Reyse-Bibel,</hi> <placeName key="København">Kbh.</placeName> 1802. Denne oversættelse følger Luthers, som gengiver udtrykket tilsvarende med »der natürliche Mensch«, se <hi rendition="#ita">Die Bibel, oder die ganze Heilige Schrift des alten und neuen Testaments, nach der deutschen Uebersetzung D. <persName key="Luther, Martin">Martin Luther</persName>s. Mit einer Vorrede vom Prälaten Dr. Hüffell,</hi> <placeName key="Karlsruhe">Carlsruhe</placeName> og <placeName>Leipzig</placeName> 1836, ktl. 3, hvorimod NT-1819 har »det sandselige Menneske«.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-79" n="179,13">
-   <label><hi rendition="#bol">ret</hi></label>
-   <p>fuldstændig, akkurat.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-80" n="179,14">
-   <label><hi rendition="#bol">er ikke saa</hi></label>
-   <p>forholder sig ikke således.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-1006" n="179,15">
-   <label><hi rendition="#bol">de Søgnedage</hi></label>
-   <p>hverdagene.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-86" n="180,2">
-   <label><hi rendition="#bol">Menigheden vilde han vel dømme om, som fordum: de ere vildledte</hi></label>
-   <p>hentyder formentlig til <rs type="bible">Matt 15,14</rs>, hvor <persName key="Jesus">Jesus</persName> siger om farisæerne: »Lader dem fare, Blinde ere Blindes Veiledere; men naar en Blind leder en Blind, da falde de begge i Graven« (NT-1819).</p>
-  </note>
-  <note type="commentary" xml:id="hcd-87" n="180,3">
-   <label><hi rendition="#bol">»i lange Klæder«</hi></label>
-   <p>sigter til <rs type="bible">Mark 12,38</rs>, hvor <persName key="Jesus">Jesus</persName> på tempelpladsen advarer den store folkeskare mod de skriftkloge: »Og han sagde til dem i sin Underviisning: tager Eder vare [i agt] for de Skriftkloge, som gierne gaae i lange Klæder og lade sig hilse paa Torvene« (NT-1819). Se også <rs type="bible">Luk 20,46</rs>, hvor det hedder: »Vogter Eder for de Skriftkloge, som gierne gaae omkring i lange Klæder, og lade sig gierne hilse paa Torvene, og ville [vil] gierne have de fornemmeste Sæder i Synagogerne, og sidde øverst tilbords ved Nadverne« (NT-1819).</p>
-  </note>
-  <note type="commentary" xml:id="hcd-88" n="180,4">
-   <label><hi rendition="#bol">Kjøbmændene ... der have forvandlet Guds Huus ... til en Fjællebod</hi></label>
-   <p>hentyder til beretningen om tempelrensningen i <rs type="bible">Matt 21,12-13</rs>: »Jesus gik ind i Guds Tempel, og uddrev alle dem, som solgte og kiøbte i Templet, og omstødte Vexelerernes Borde og Duekræmmernes Stole. Og han sagde til dem: der er skrevet: mit Huus skal kaldes et Bedehuus, men I have giort det til en Røverkule« (NT-1819). – <hi rendition="#bol">Røverkule:</hi> hule, hvori røvere holder til; tilholdssted for røvere. – <hi rendition="#bol">Fjællebod:</hi> bod af fjæle (brædder) opstillet på markeder o.l. til forevisning af gøgl.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-89" n="180,5">
-   <label><hi rendition="#bol">»I Hyklere, I Slanger, I Øgle-Unger«</hi></label>
-   <p>frit citat fra <rs type="bible">Matt 23,33</rs> (<ptr type="commentary" target="#hcd-508" n="177,3"/>); <persName key="Jesus">Jesus</persName> kalder også de skriftkloge for hyklere (<ptr type="commentary" target="#hcd-71" n="178,20"/>).</p>
-  </note>
-  <note type="commentary" xml:id="hcd-90" n="180,6">
-   <label><hi rendition="#bol">han vilde vel som fordum danne en Svøbe af Snorer, for at jage dem ud af Templet</hi></label>
-   <p>sigter til beretningen i <rs type="bible">Joh 2,13-17</rs> om tempelrensningen, hvor det fortælles, at <persName key="Jesus">Jesus</persName> »giorde en Svøbe af Snorer [piske af reb], og drev dem alle ud af Templet, tilligemed Faarene og Øxnene [okserne, kreaturerne], og spredte Vexelerernes Penninge, og omstødte Bordene«, v. 15 (NT-1819).</p>
-  </note>
-  <note type="commentary" xml:id="hcd-91" n="180,10">
-   <label><hi rendition="#bol">forskyldte jeg</hi></label>
-   <p>gjorde jeg mig skyldig i.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-515" n="180,10">
-   <label><hi rendition="#bol">grueligste</hi></label>
-   <p>dels: allerstørste, dels: mest rædsomme, frygteligste.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-516" n="180,14">
-   <label><hi rendition="#bol">simpelt</hi></label>
-   <p>tarveligt, 'lavt'.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-93" n="180,23">
-   <label>idel <hi rendition="#bol">Godmand</hi></label>
-   <p>egl. hovedpersonen i <persName key="Thieme, K.T.">K.T. Thieme</persName>s børnebog <hi rendition="#ita">Godmand eller den danske Børneven</hi> [ty. 1789, da. 1798 og flere gange senere]; en overdreven brav, hjertelig og tåbelig mand.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-94" n="180,23">
-   <label><hi rendition="#bol">at Tallerkenen kan gaae omkring under Talen</hi></label>
-   <p>formentlig allusion til de såkaldte tavlepenge, der blev indsamlet under gudstjenesten derved, at en tavle, dvs. en skuffeformet træplade på et skaft, blev båret rundt for at indsamle pengebidrag til de fattige og nødlidende. Denne aktivitet foregik altid under præstens prædiken, og da der ofte gik flere tavler rundt til forskellige formål, virkede det forstyrrende på den andagtssøgende. Alligevel blev tavleombæringen først afskaffet i 1877.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-95" n="180,25">
-   <label><hi rendition="#bol">spytte godt i Bøssen</hi></label>
-   <p>fast udtryk: punge ud.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-517" n="180,26">
-   <label><hi rendition="#bol">Menneske-Frygt</hi></label>
-   <p>frygt for de andre menneskers mening og dom.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-99" n="180,33">
-   <label><hi rendition="#bol">I havde, som det jo ogsaa skete, skjult ladet Folket gjøre det</hi></label>
-   <p>sigter til <rs type="bible">Matt 27,20</rs>, hvor ypperstepræsterne og de ældste overtaler folkeskarerne til at få <persName key="Jesus">Jesus</persName> henrettet; sml. <rs type="bible">Matt 27,25</rs>.</p>
-  </note>
-  <note type="commentary" xml:id="hcd-1007" n="180,35">
-   <label><hi rendition="#bol">hvad der er skjult bliver dog aabenbart</hi></label>
-   <p>spiller på <rs type="bible">Matt 10,26</rs>, hvor <persName key="Jesus">Jesus</persName> siger til disciplene: »Intet er skiult, som jo [ikke] skal aabenbares« (NT-1819).</p>
-  </note>
- </div></body></text>
+  <text xml:id="id27c0d710-3560-4c9b-a66c-dcbfb3d3dd99" type="commentary" subtype="ts">
+    <body xml:id="id3667a452-317b-49f0-b82a-9e6b128458e3">
+      <div xml:id="idec7641e1-58a6-4951-9a82-9ef5e95d2c4f">
+        <note type="commentary" xml:id="hcd-1" n="172,1">
+          <label xml:id="idc69dafdf-c93b-44f5-8f35-2837f6b48924">
+            <hi xml:id="idaa0d6729-da95-46c9-ad36-ca5cfc1bb7e8" rendition="#bol">Juni 1855.</hi>
+          </label>
+          <p xml:id="id7da0cc06-14ac-4eec-93c8-0d4e7e568419">I kladden (ms. 1; <ref xml:id="id1e2dfbec-81e5-44f0-9057-bd02161d94bc" type="preparatoryManuscript" n="pap:XI3B263" rend="HCD,ms.1"><hi xml:id="idd8d9a394-57a4-4e6d-8600-ae94c2f8087d" rendition="#ita">Pap.</hi> XI 3 B 263</ref>,2) findes datoen 5. juni (1855), hvilket er årsdagen for <persName xml:id="id238d1615-03a5-4ff6-adb3-7b28a34a22bc" key="Martensen, Hans Lassen">H.L. Martensen</persName>s indsættelse som biskop over <placeName xml:id="id7b4389cc-5d66-41f9-b572-cb072cd35570" key="Sjællands Stift">Sjællands stift</placeName>. <hi xml:id="id52e5f3d4-b47e-46cf-814c-fb3352a4067a" rendition="#ita">Øieblikket</hi> nr. 2 er dateret 4. juni 1855.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-500" n="173,2">
+          <label xml:id="idcb4c4988-0255-4ef2-8652-ef213e424867">
+            <hi xml:id="id30f9b70e-a94f-4246-82c7-fe4764306817" rendition="#bol">nu først</hi>
+          </label>
+          <p xml:id="idb6c4a664-1ee4-4cb1-ad29-2a06cb85c96f">dvs. først nu.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-3" n="173,4">
+          <label xml:id="idb561bda6-b07a-414a-b262-829a089d10b4">
+            <hi xml:id="idf484b80a-50aa-4415-b4e7-97f38dd18471" rendition="#bol">Plattenslager-Laug</hi>
+          </label>
+          <p xml:id="id3715cd5a-de69-45a5-a21a-d1ea90177e3b">forening af småsvindlende personer, der fusker sig til økonomisk vinding.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-4" n="173,4">
+          <label xml:id="ida1d3375a-c7f6-454e-b09b-e7f88f755fe9">
+            <hi xml:id="id194663d6-b3cc-4a2c-bc36-b14fb1464e12" rendition="#bol">Firmaet</hi>
+          </label>
+          <p xml:id="id6abf67cb-931c-4233-9009-499ea98f96bf">dels mærket, signaturen, dels navnet, under hvilket et handelshus driver sine forretninger.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-5" n="173,5">
+          <label xml:id="id08d10fff-a3a8-4f90-8e8d-697606726e0b"><hi xml:id="id3119fa44-da27-46e1-a789-be30de2e4fc8" rendition="#bol">brillante</hi> Forretninger</label>
+          <p xml:id="id51fee62c-f057-454f-8bb2-7995ae0c0a65">gode, indbringende.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-6" n="173,10">
+          <label xml:id="id79e409ba-b917-46ab-9f21-b6d5ae0d75e0">
+            <hi xml:id="ida93cd4b2-6010-4a47-92c6-32f0868b680b" rendition="#bol">hvad jeg siger, at det Hele med »Christenhed« er en Criminal-Sag</hi>
+          </label>
+          <p xml:id="id66df713a-de14-4b96-93b2-0d439cdb89a8">Dette fremføres i avisartiklen »En Thesis – kun een eneste«, trykt i <hi xml:id="id29dae872-847c-4155-adbc-7b82c7f0d946" rendition="#ita">Fædrelandet,</hi> nr. 74, den 28. marts 1855.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-7" n="173,13">
+          <label xml:id="id1418d912-d72f-4ce4-a97a-32eb8fdc80e8">
+            <hi xml:id="idf1ffb777-e4a7-4659-bf27-dfdcabc8d589" rendition="#bol">at jeg virkelig er, som jeg siger det, et Politie-Talent</hi>
+          </label>
+          <p xml:id="idbdaa20a3-787b-4639-8c6a-626c8d6261fc">hentyder til avisartiklen »En Thesis – kun een eneste« (<ptr xml:id="id4968406e-8ce0-4cf6-9cbd-d262e85484a4" type="commentary" target="#hcd-6" n="173,10"/>), hvori det hedder: »jeg er et i sjelden Grad afgjort Politi-Talent« (<ref xml:id="id369d9efd-4095-483a-b28d-373621562045" target="../ET/txt.xml#ss169" type="publishedWritings" n="sv2:14" rend="ET, 169"><hi xml:id="idc3816d04-de0b-484b-9694-b724523ec5a0" rendition="#ita">SV2</hi> 14, 49</ref>).</p>
+        </note>
+        <note type="commentary" xml:id="hcd-8" n="173,15">
+          <label xml:id="idf626096d-b72f-4445-9627-24cb9daa5766">
+            <hi xml:id="id716f58a3-93e8-4d03-b948-47b0bbf1bdd5" rendition="#bol">underfundigt</hi>
+          </label>
+          <p xml:id="idb94f8b36-4dd1-4aeb-9763-a26341a9bc9f">med listige bagtanker.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-1001" n="173,17">
+          <label xml:id="id46d0e2ab-b328-46e1-924f-58376ea945c7">
+            <hi xml:id="ide0de563a-fb1e-4b36-a29f-2b2ced8466ee" rendition="#bol">Fritænkeren</hi>
+          </label>
+          <p xml:id="idbdcb7a2f-ac5c-4018-a51a-2d6fb185482c">if. <persName xml:id="id201ceeaf-b5aa-47a3-b838-cc2e3e149d26" key="Molbech, Christian">C. Molbech</persName> <hi xml:id="iddf7047d2-cc51-4006-b046-0227dc3dc1e8" rendition="#ita">Dansk Ordbog</hi> bd. 1-2, <placeName xml:id="id91951073-ae4e-4dd4-ab81-f234907254b5" key="København">Kbh.</placeName> 1833, ktl. 1032; bd. 1, s. 319, sp. 2: »den, som tænker frit (især om den, der i Religionssager ikke antager Kirkens Lærdomme).«</p>
+        </note>
+        <note type="commentary" xml:id="hcd-9" n="173,18">
+          <label xml:id="id69f20e5e-2a80-47ab-9c09-68702a4748e4">
+            <hi xml:id="id907b497c-aa53-49c7-8879-1bf6b8daeeab" rendition="#bol">Fritænkeren er en ærlig Mand, som ligefrem lærer, at Christendom er Digt, Poesie</hi>
+          </label>
+          <p xml:id="idaa4ef499-45c2-41a4-aa4e-027c7d30ff89">hentyder formentlig til den venstrehegelianske religionskritik, der med navne som <persName xml:id="id31a30148-096d-4f1f-b026-0507f2f78bd3" key="Strauß, David Friedrich" n="*">David Friedrich Strauß</persName> (1808-74), <persName xml:id="idceec93a0-18b0-4f87-b55b-d482f436ab0c" key="Feuerbach, Ludwig" n="*">Ludwig Feuerbach</persName> (1804-72) og <persName xml:id="id80023046-90e3-4800-98f5-b179dab4b5c8" key="Bauer, Bruno" n="*">Bruno Bauer</persName> (1809-82) fik stor udbredelse op gennem 1840'erne, især efter 1848 med fremvoksende socialisme. Den hævdede, at kristendommen var digtning og mytologi.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-502" n="173,19">
+          <label xml:id="id4d8ccacf-4ba9-47e2-8d1f-79023cdb1573">
+            <hi xml:id="ide45c9b40-f376-4e17-ac2f-7efd230dc086" rendition="#bol">en Falsknen</hi>
+          </label>
+          <p xml:id="idafcdefa9-dec5-42f8-8859-f9ed9c8ee635">et falskneri, bedrag.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-10" n="173,23">
+          <label xml:id="id5aabad2e-14ec-4771-8f11-1998f73d3750">
+            <hi xml:id="ide3f83d66-37b6-44e7-b11b-0fb2a9d73292" rendition="#bol">Indbildningskraften</hi>
+          </label>
+          <p xml:id="id92416ac0-156b-4757-ac3e-18625bebca3f">forestillingsevnen, fantasien.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-504" n="173,24">
+          <label xml:id="ide0b7849c-04f4-49ff-a812-26094bcbb00d">
+            <hi xml:id="ide2ab80e1-deed-4762-973d-667b99d2c861" rendition="#bol">Forbilledet</hi>
+          </label>
+          <p xml:id="id521e8a5b-9a23-4172-b883-d4d7c77f1d89">dvs. Kristus som forbillede for efterfølgelse.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-11" n="174,2">
+          <label xml:id="id394e0011-077d-4111-b216-b53cf089292d">
+            <hi xml:id="idd58f0bef-c4e3-4e8e-a949-0b59e1cea27d" rendition="#bol">reent</hi>
+          </label>
+          <p xml:id="id6e507d30-0095-495e-8417-ce611352191a">fuldstændigt, helt.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-1009" n="174,5">
+          <label xml:id="ida963fdf8-a473-41ae-b939-cadd03d98b39">
+            <hi xml:id="idbe8f33a0-a7ec-4e2b-bb18-e7a3eb6fe127" rendition="#bol">det som 1000 kongelige Embedsmænd ved Eed ere forpligtede paa</hi>
+          </label>
+          <p xml:id="id6b3f901c-15dd-401a-a2b7-078b615c0dcb">Alle gejstlige var (statslige) embedsmænd, udnævnt af kongen. If. registrene i <hi xml:id="id1d3a719c-bba4-49be-a04f-3fa4297a1d89" rendition="#ita">Geistlig-statistisk Calender,</hi> udg. af Th. <persName xml:id="id313dbc8b-3066-4d44-8106-92b031e05962" key="Hertz, Henrik">Hertz</persName>, <placeName xml:id="id2118419b-a616-4c3a-acbe-ce9d2deac364" key="København">Kbh.</placeName> 1854 [afsluttet den 24. dec. 1853] (jf. ktl. 378, en udgave fra 1848), var der 987 hovedsogne i kongeriget <placeName xml:id="id3baea836-8683-4099-825e-f8005a4a0355">Danmark</placeName> (dvs. uden hertugdømmerne <placeName xml:id="id1c5f12a5-e984-463c-85fc-26bd9757f6a3">Slesvig</placeName>, <placeName xml:id="id5f7ae093-426b-4e15-8088-c622772eec33">Holsten</placeName> og <placeName xml:id="id8c6d8bb3-f853-446e-a030-62ede9122e40">Lauenborg</placeName>) og 916 ansatte præster, herunder biskopper og provster; hertil kom 123 personlige kapellaner. Der sigtes her til præsteløftet, hvorved præsten lover at forkynde i overensstemmelse med NT samt at føre et kristeligt levnet (<ptr xml:id="id71abe9a4-9e9b-4b11-ad0e-6e525efe3730" type="commentary" target="#hcd-20" n="174,23"/>).</p>
+        </note>
+        <note type="commentary" xml:id="hcd-15" n="174,16">
+          <label xml:id="id5b884f50-42c1-4908-b0b2-cd7b1ef11a5e">
+            <hi xml:id="id3b518962-3798-4679-9560-e156b78f554b" rendition="#bol">Artiklen mod Biskop Martensen om Biskop Mynster</hi>
+          </label>
+          <p xml:id="id1313c73c-5071-4971-9908-a15ef6086b40">sigter til den polemiske avisartikel »Var Biskop Mynster et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er <hi xml:id="id11642f9e-6036-4746-8bb6-0dc4c5034782" rendition="#ita">dette Sandhed?«</hi> i <hi xml:id="ida501d952-162c-4826-82b9-29a9191a61ea" rendition="#ita">Fædrelandet,</hi> nr. 295, den 18. dec. 1854. – <hi xml:id="id529408fb-5652-4a6b-bb96-42553f4990f5" rendition="#bol">Biskop Martensen:</hi> <persName xml:id="id17428bed-b560-4769-bd1f-a163b14abf28" key="Martensen, Hans Lassen" n="*">Hans Lassen Martensen</persName> (1808-84), da. teolog og præst, fra 1840 ekstraordinær og fra 1. sept. 1850 ordinær prof. i teologi ved <placeName xml:id="id21819988-9278-41a1-9a83-86de3529346e">Københavns Universitet</placeName>, fra 1845 tillige hofprædikant og i 1847 Ridder af Dannebrog. Han blev den 15. april 1854 udnævnt til J.P. Mynsters efterfølger som biskop over <placeName xml:id="idc2a09a82-83ba-42e4-be6b-96eefb2414fe">Sjælland</placeName>s Stift og den 5. juni 1854 bispeviet af biskop <persName xml:id="idbddcd414-ee79-43a3-a6cd-d7c765296ccf" key="Brammer, Gerhard Peter">G.P. Brammer</persName> i <placeName xml:id="id84ac6df4-6c67-4a2b-85fb-123cfae70062">Vor Frue Kirke</placeName> i <placeName xml:id="id5575d6cf-7549-447e-8c94-099e4b8e59ad">København</placeName>. – <hi xml:id="idc241fc87-ae66-40ad-a0dc-7ba9f49f522f" rendition="#bol">Biskop Mynster:</hi> <persName xml:id="id2055a6bd-9d5a-4b07-9b1a-715f97e3b881" key="Mynster, Jakob Peter" n="*">Jakob Peter Mynster</persName> (1775-1854), da. teolog, præst, forf. og politiker; fra 1834 biskop over <placeName xml:id="id54fa8d4c-ede0-47ce-b94f-8cbb0416aec8" key="Sjællands Stift">Sjællands stift</placeName>. Han havde været sin tids store prædikant, havde et betydeligt videnskabeligt forfatterskab bag sig, og havde haft sæde i en lang række styrende organer. Efter 1848 klagede han dog ofte over, at positionen som kirkens øverste var blevet stækket, da han blev underlagt en minister. Han havde som en af landets højstrangerende borgere været placeret i 1. klasse, nr. 13 i den borgerlige rangforordning. Han døde den 30. jan. 1854.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-16" n="174,18">
+          <label xml:id="idc6630aed-371b-4a6e-adb8-9d497dcc0084">
+            <hi xml:id="idf9509a0b-96a7-408f-9249-5b87a76459b2" rendition="#bol">sloge de <hi xml:id="idff7be199-7b8e-472e-8db3-bdd5493f180c" rendition="#ita">(...)</hi> stort paa</hi>
+          </label>
+          <p xml:id="id1787d9b0-0fc2-4feb-b129-cea6a25d9174">optrådte de hovmodige, førte de sig frem.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-505" n="174,18">
+          <label xml:id="id2ade5f66-6b38-4148-b638-4995ee945d52">
+            <hi xml:id="id7149f599-dd5b-4bb4-9889-660ff786669d" rendition="#bol">det var »en meget for stor Maalestok her blev anlagt« o. s. v.</hi>
+          </label>
+          <p xml:id="id4eedc302-390c-45ae-9ee4-6067502c4dfc">sigter til <persName xml:id="id2748a658-002e-40e4-865f-ce5b33b7332b" key="Paludan-Müller, Jens">Jens Paludan-Müller</persName>s kritiske skrift <hi xml:id="id00bdc175-d5eb-46e0-bcc0-a9b1295994c5" rendition="#ita">Dr. <persName xml:id="idbb7d4182-5ffa-422c-9a0d-537b4021fd47" key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>s Angreb paa Biskop Mynsters Eftermæle,</hi> <placeName xml:id="id5532bff3-5338-4cfa-bd71-9d76d8868192" key="København">Kbh.</placeName> 1855, ktl. 2190; averteret som udkommet i <hi xml:id="idd570b5d6-faa4-48ee-b478-74aa337d3d55" rendition="#ita">Adresseavisen,</hi> nr. 5, den 6. jan. 1855. Heri angribes gennemgående SKs fordrejede målestok, men det hedder også: »Det er ganske klart, at Dr. S. Kierkegaard mener at anlægge Maalestokken for sin Bedømmelse af den hedengangne Biskop saa høit, at han vil vide sin Kjendelse langt fjernet fra andre Smaafolks; hans Kjendelse er naturligvis en Høiesteretsdom. Men hvor megen Evne, Dr. S. Kierkegaard end i Retning af det Christelige har til at distingvere, og hvor megen Øvelse han end har deri, saa er dog ved denne Leilighed baade Maalestokken, han anlægger, og Dommen, han fælder, lige urigtige, hvad jeg haaber det Efterfølgende skal godtgjøre«, s. 4. <persName xml:id="id526cc88c-84db-44ba-8830-8943af348200" key="Martensen, Hans Lassen">Martensen</persName> havde i sin avisartikel sagt, at der til at bedømme en mand som <persName xml:id="idf8adb94e-5421-44bf-95d0-6dd4f6973054" key="Mynster, Jakob Peter">J.P. Mynster</persName> »udfordres en heelt anden Maalestok end den, af hvilken Dr. S.K. er i Besiddelse«, og videre, at SK sikkert til bedømmelse af egen adfærd vil opfinde en moralsk målestok, som er »langt ophøiet over det almene«, <hi xml:id="id136cffce-e305-4d00-a601-de03b49e2c33" rendition="#ita">Berlingske Tidende,</hi> nr. 302, den 28. dec. 1854.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-18" n="174,21">
+          <label xml:id="id3437c519-e856-4448-b27f-a96193ba8b99">
+            <hi xml:id="id128f1103-93d2-4404-812b-9a1033cb66b4" rendition="#bol">»vor Herre og Frelsers Jesu Christi nye Testamente«</hi>
+          </label>
+          <p xml:id="idcce6ddc2-bfa0-4569-ba43-d3d6dd877a99">jf. <hi xml:id="id3eedb5d2-7bd3-4cd3-86b4-193f9cd0fc47" rendition="#ita">Vor Herres og Frelsers <persName xml:id="id1761cf65-8d49-4bc7-959e-24d5096ac327" key="Jesus">Jesu</persName> Christi Nye Testament,</hi> <placeName xml:id="idca30c4b4-4ca9-46a0-9967-19f2449bc198" key="København">Kbh.</placeName> 1819 (se ktl. 21-33).</p>
+        </note>
+        <note type="commentary" xml:id="hcd-20" n="174,23">
+          <label xml:id="id21c40d3d-4770-4e72-ab2a-e347000ec50a">
+            <hi xml:id="idca1a136d-6f97-4794-9345-c64065a430f1" rendition="#bol">eedfæstede Lærere</hi>
+          </label>
+          <p xml:id="id10770fdd-1663-4a79-9a1e-550bd4cc29e4">Der hentydes til præsteløftet ved præstevielsen, som det beskrives i kap. 11, art. 2 i <hi xml:id="idad3af342-8732-46e7-bff5-6c29d81825ec" rendition="#ita">Dannemarkes og <placeName xml:id="idc6aa5285-c7e4-4524-a425-d7963ca4cd61">Norge</placeName>s Kirke-Ritual,</hi> <placeName xml:id="idd202fc0e-ba0c-45a3-9125-22f06b592542" key="København">Kbh.</placeName> 1762 [1685] (forkortet <hi xml:id="id6418bccc-706e-465d-9d0d-404850fa4fe9" rendition="#ita">Kirke-Ritualet</hi>), der endnu var gældende på SKs tid. I det fuldstændige præsteløfte, »<hi xml:id="id16046a10-6414-4d2f-83bf-06e0edeaad4c" rendition="#ita">Juramentum, qvod in timore Domini præstabunt, qvi muneri Ecclesiastico initiabuntur</hi>« (lat. »<hi xml:id="idd136ca19-ffae-4493-b59f-fc4c4da28171" rendition="#ita">Eden, som i frygt for Herren skal aflægges af dem, der skal indvies til et kirkeligt embede</hi>«), hedder det bl.a.: »Ego N.N. juro &amp; in conspectu Dei sanctè testor. <hi xml:id="idf3abe953-df97-41b3-9db9-3138c5132906" rendition="#ita">(...)</hi> / Secundò promitto, me summâ diligentiâ allaboraturum, ut doctrina cœlestis comprehensa scriptis Propheticis &amp; Apostolicis &amp; libris Ecclesiarum Danicarum Symbolicis auditoribus fideliter instilletur, sacramenta ad normam â Christo præscriptam decenter ac devotè administrentur, Disciplina Ecclesiastica diligenter exerceatur, Catechetica doctrina urgeatur; Ceremoniæ in Ecclesia receptæ observentur, nec qvidqvam contra Constitutiones Ecclesiasticas admittatur« (»Jeg, N. N., sværger og bevidner helligt i ærefrygt for Guds åsyn. <hi xml:id="ide579ae2e-2a97-457e-9241-4d1748605b16" rendition="#ita">(...)</hi> / For det andet lover jeg, at jeg med største omhu vil beflitte mig på, at den guddommelige lære, som er indeholdt i de profetiske og apostoliske skrifter og i den danske kirkes symbolske bøger, vil blive forkyndt rent og purt for menigheden, sakramenterne sømmeligt og andægtigt forvaltet efter den måde, Kristus har påbudt, den kirkelige formaning omhyggeligt udøvet og den kateketiske undervisning uafladeligt fastholdt; at de almindeligt antagne ritualer i kirken vil blive overholdt, og intet, der strider mod de kirkelige forordninger, tilladt«), s. 379f. Udtrykket 'de apostoliske skrifter' svarer til NT. Endvidere blev præsterne under ordinationen af biskoppen formanet til, at de »for alle <hi xml:id="id03bc7a8c-f2f7-4783-93c5-63adb97736f0" rendition="#ita">Ting</hi> beflitte sig paa at være gode Exempler for dennem [deres medkristen og næste] i Omgiængelse [omgang, adfærd, levemåde], i Kierlighed, i Aand, i Tro, i Kydskhed og alle Christelige Dyder«, s. 369.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-506" n="174,23">
+          <label xml:id="id53535a1f-9f62-4df6-94a6-e4808b8c9009">
+            <hi xml:id="id3ec1bacb-680d-42f0-bfc5-ad62c98f0691" rendition="#bol">»Sandhedsvidner</hi>
+          </label>
+          <p xml:id="id0e8ecbb2-214d-47fd-9e1a-f4a8627d7e1a">dvs. præsterne; SK hentyder ironisk til <persName xml:id="id8c506f52-3eca-49b8-bd7e-dbcea7e74149" key="Martensen, Hans Lassen">H.L. Martensen</persName>s brug af udtrykket 'sandhedsvidne', der if. SK er så bredt, at snart sagt enhver præst bliver sandhedsvidne. Jf. Martensen <hi xml:id="id142223e4-cce0-4a3a-b74a-f34b8875cb7f" rendition="#ita">Prædiken holdt i <placeName xml:id="id585b9707-a753-4da2-bc23-d23c88ca73d9">Christiansborg</placeName>s Slotskirke paa 5te Søndag efter Hellig Tre Konger, Søndagen før Biskop Dr. <persName xml:id="id624dcb75-646e-4bcf-91b5-1a56de4632df" key="Mynster, Jakob Peter">Mynster</persName>s Jordefærd,</hi> <placeName xml:id="ide9bcb5ac-9087-4d05-89ce-4c33a143e636" key="København">Kbh.</placeName> 1854, hans artikel: »I Anledning af Dr. <persName xml:id="id176c7f5c-1e53-45c1-a7cf-05181d1c6f49" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>s Artikel i 'Fædrelandet' Nr. 295« i <hi xml:id="id2b5d775c-ba90-4678-92e7-d9059d3a3299" rendition="#ita">Berlingske Tidende</hi> (<ptr xml:id="id40b66693-802a-45df-bc83-3742639632f5" type="commentary" target="#hcd-505" n="174,18"/>) og hans »Tale ved Biskopperne <persName xml:id="id2ac55768-af3b-45bf-8d06-d0c8bd203c26" key="Lautrup, Jørgen Hjorth">Jørgen Hjorth Lautrup</persName>'s og <persName xml:id="id026a9edd-1489-4b83-820c-cc7915a73a93" key="Laub, Hardenach Otto Conrad">Hardenach Otto Conrad Laub</persName>'s Indvielse« i <hi xml:id="id11f34fa2-fd2b-48cb-8f84-3e21510b3f5c" rendition="#ita">Bispevielse i <placeName xml:id="id7345e3d0-57b9-495f-9405-bf90f2214d41" key="Vor Frue Kirke">Frue Kirke</placeName> paa anden Juledag, den 26</hi><hi xml:id="id91fa6256-2eb9-43c5-b39b-6f21ff49f9ac" rendition="#ita"><hi xml:id="id9fcb3063-b96f-42fd-a233-4ebbed20fbb5" rendition="#sup">de</hi></hi> <hi xml:id="id15031d3f-8326-470f-a108-cd30f0b969fa" rendition="#ita">December 1854,</hi> Kbh. 1855, der blev averteret som udkommet i <hi xml:id="id8a06c9ec-4aef-410f-a86c-075e5654b5c9" rendition="#ita">Adresseavisen,</hi> nr. 18, den 22. jan 1855.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-22" n="174,27">
+          <label xml:id="iddf0bc941-057a-4ae5-a790-e8f69db714f3">
+            <hi xml:id="idd9cf71ad-875f-4fa5-8e02-01991f4354e3" rendition="#bol">Fra det Øieblik indtraadte, som man veed, Taushed</hi>
+          </label>
+          <p xml:id="ide172a46e-bdfd-4103-a22e-a1caf54801a4">Biskop <persName xml:id="id1c04698c-0a47-4607-820a-541082d4ea96" key="Martensen, Hans Lassen">H.L. Martensen</persName> besvarede SKs angreb i avisartiklen »I Anledning af Dr. <persName xml:id="idd0c154ae-18a6-4e8b-b4aa-9abf7a43cd81" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>s Artikel i 'Fædrelandet' Nr. 295« i <hi xml:id="idb80172fd-889b-4da8-a35d-aa23d0d86d5a" rendition="#ita">Berlingske Tidende</hi> (<ptr xml:id="id2f16da53-fab3-4c6f-863a-04b823b5a4c6" type="commentary" target="#hcd-505" n="174,18"/>), men havde da besluttet ikke at svare mere, hvilket han heller ikke gjorde, jf. <hi xml:id="ida6d8ef14-d39e-47cb-b112-7d17c2d02cb0" rendition="#ita">Biskop H. Martensens Breve,</hi> udg. af <persName xml:id="idbf98ab1e-3177-47b2-8a59-a5b93d1ce018" key="Kornerup, Bjørn">Bjørn Kornerup</persName>, bd. 1, <placeName xml:id="id81926dff-fd37-42fe-8474-8428fb072168" key="København">Kbh.</placeName> 1955, hvor Martensen 2. jan. 1855 skriver til sin ven L. Gude: »Det glæder mig, at De finder, at min Artikel mod Kd var et velfortjent Ørefigen. <hi xml:id="id5de1855b-13f4-475b-bb91-dfd503931e5a" rendition="#ita">(...)</hi> Forresten følger det af sig selv, at jeg ikke skriver mere dennesinde [denne gang, ved denne lejlighed]«, s. 131f. SK havde dog endnu ikke spillet det kort ud, at præsterne var bundet til et løfte; det gjorde han først i avisartiklen »Er dette christelig Gudsdyrkelse eller er det at holde Gud for Nar?« i <hi xml:id="id6da703ca-4855-433f-b9d5-c2e911b3aa71" rendition="#ita">Fædrelandet,</hi> nr. 68, den 21. marts 1855, og ofte siden hen.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-23" n="174,27">
+          <label xml:id="ida7ba5880-9371-4673-a790-fd4e4140d254">
+            <hi xml:id="ida5fcc522-7c66-4b5f-8e33-c8a6b28c2032" rendition="#bol">raske paa det</hi>
+          </label>
+          <p xml:id="id6bee9019-5501-4cc8-8a9a-a5e40d9ba86b">fast udtryk: ivrige, fremfusende.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-24" n="174,28">
+          <label xml:id="ida964f219-e23b-4a77-bd5e-41fb442fcda7">
+            <hi xml:id="idab62783c-252a-4525-a11d-3e80e44f6438" rendition="#bol">flinke</hi>
+          </label>
+          <p xml:id="id2da0ad2a-a782-4831-96a8-49d359db60e0">dygtige.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-25" n="174,30">
+          <label xml:id="idea9b3c77-ec99-483a-bdea-c9bbe4b9d4f2">
+            <hi xml:id="id7c6f6c7e-e208-47cc-a17d-9c2e28b71364" rendition="#bol">det er Overspændthed med hans Idealer, Maalestokken er meget for stor</hi>
+          </label>
+          <p xml:id="idd18bcbfa-4394-482e-aae1-8f876be654e9">hentyder til kritikken af SK for med sit begreb om sandhedsvidnet at anlægge en for høj og alt for ensidig målestok for den kristne (<ptr xml:id="id15d79156-cf1a-4344-9559-d69775829fe2" type="commentary" target="#hcd-505" n="174,18"/>). <persName xml:id="ida9831ab7-8193-4c6d-87bb-7f2381bd6187" key="Paludan-Müller, Jens">Jens Paludan-Müller</persName> bemærker i <hi xml:id="ida5c261cc-336d-46d0-bb7f-4bcdc6313ea4" rendition="#ita">Dr. <persName xml:id="id9456c4fd-7643-4be1-b475-defe39066a19" key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>s Angreb paa Biskop <persName xml:id="id07376335-bbfa-4916-95dd-af72dde79306" key="Mynster, Jakob Peter">Mynster</persName>s Eftermæle</hi> mod SK: »Udvortes Lidelse er slet ikke Kjendemærke paa et Sandhedsvidne, naar Talen, som her, dreier sig om den Maalestok, der skal anlægges for at tage Mærke paa et saadant [dvs. for at forsyne et sådant med et kendetegn]. I den existerende Virkelighed, hos den lidende Person, kan der aldrig, uden efter Sandsynlighed, sluttes fra det Ydre til det Indre. Om den, der udvortes lider, lider for Sandhedens Skyld, kan aldrig afgjøres i Henhold til selve den udvortes Lidelse. <hi xml:id="ide3003e52-4c66-4987-a579-6ca8b3427ca4" rendition="#ita">(...)</hi> i sin extreme Ilterhed for Indvorteshed og overspændt Idealitet i christelig Retning arbeider han [dvs. SK] en plump og uchristelig Udvorteshed i Hænderne. <hi xml:id="id1532ba49-0e39-4ad7-bfee-28c7671f320b" rendition="#ita">(...)</hi> Man skulde ikke tale saa let om den udvortes Lidelse, ikke være saa hidsig til at paakalde den for Sandhedens Skyld. Det er ikke godt at anlægge Maalestokken høiere end den, der sender den udvortes Tilskikkelse, selv anlægger den«, s. 17f. Paludan-Müllers skrift blev anonymt anmeldt i <hi xml:id="id63d6c24f-1743-4b5c-a9bc-0a750244458b" rendition="#ita">Berlingske Tidende,</hi> nr. 7, den 9. jan. 1855, hvor den begejstrede anmelder gentog ordene om SKs »extreme Ilterhed for Indvorteshed og overspændt Idealitet i christelig Retning«.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-26" n="174,31">
+          <label xml:id="ide6fcc888-46fb-4630-95c9-2ac08c689942">
+            <hi xml:id="id8206eebb-11d4-4c61-b07e-167fc30c6d0d" rendition="#bol">saa tause bleve de fra det Øieblik denne Bog og Eeden kom med i Spillet</hi>
+          </label>
+          <p xml:id="idb69facb6-8fda-402f-ac9f-efcb0b5276bb">I de 2½ mdr. ml. den 21. marts (<ptr xml:id="idc1a98cc5-008c-45ef-b684-fc36d95e3140" type="commentary" target="#hcd-22" n="174,27"/>) og den 5. juni 1855 (<ptr xml:id="idefd5d4a2-13bb-4814-89ac-d3d2807dfd0a" type="commentary" target="#hcd-1" n="172,1"/>) udkom kun en mindre, ubetydelig pjece, nemlig H.N. Holtens prædiken: <hi xml:id="idfe92f16e-dead-4d62-9fea-3b1d24a69d9d" rendition="#ita">»Det er fuldbragt,« Langfredagsprædiken. Dr. S. Kierkegaard helliget i Kjærlighed af N.H.;</hi> den blev averteret som udkommet i <hi xml:id="id012995f0-2a06-41c6-b822-72ef01846c59" rendition="#ita">Adresseavisen,</hi> nr. 95, den 25. april 1855. Derudover udkom enkelte artikler i aviser og tidsskrifter, hvoraf SK selv tog til genmæle mod nogle af dem. Se genmælet mod to anonyme forf. i artiklerne »I Anledning af et <hi xml:id="id7234a4cc-7f73-49b1-88c8-7dcb9a13fd67" rendition="#ita">anonymt</hi> Forslag til mig i dette Blads Nr. 79« i <hi xml:id="idb8928df1-06b7-4d57-8e88-720478e5b3ae" rendition="#ita">Fædrelandet,</hi> nr. 81, den 7. april 1855, og »Var det rigtigst nu at 'standse med Klemtningen'?« i <hi xml:id="idcb993640-9e31-438f-9fe3-b0079978cfc8" rendition="#ita">Fædrelandet,</hi> nr. 83, den 11. april 1855. Dernæst svaret til provst J. Victor Bloch i »Hvilken grusom Straf!« i <hi xml:id="idd386e3bf-0ae3-47eb-9ce4-e27ab446e4f1" rendition="#ita">Fædrelandet,</hi> nr. 97, den 27. april 1855; Bloch kunne i øvrigt være anledningen til SKs polemiske bemærkning her, idet han netop i <hi xml:id="id3aee7bf6-bb2d-4048-97fd-6f7f065bc570" rendition="#ita">Berlingske Tidende,</hi> nr. 124, den 1. juni, nr. 125, den 2. juni og nr. 126, den 3. juni 1855, havde udsendt artikler mod SK. Se endelig artiklen »Angaaende en taabelig Vigtighed lige over for mig og den Opfattelse af Christendom, som jeg gjør kjendelig« i <hi xml:id="idc327c3ff-e646-4284-a342-43058d2643a6" rendition="#ita">Fædrelandet,</hi> nr. 111, den 15. maj 1855, hvori SK affejer præsten <persName xml:id="id91f2e5ee-54df-46b8-a5cd-ecba2d19fedb" key="Zeuthen, Frederik Ludvig Bang">F.L.B. Zeuthen</persName>, der i de udkomne artikler i afhandlingen »Aand og Bogstav« i <hi xml:id="id3da41807-6df0-4ce1-a1f0-560a60db131d" rendition="#ita">Ugeskrift for den evangeliske Kirke i <placeName xml:id="id84de9543-b6af-44ee-9314-8106284e27b2">Danmark</placeName>,</hi> nr. 6-7, den 26. jan. 1855, bd. 5, s. 90 anm., og nr. 11-12 (16. feb.), især s. 177-183, havde indlagt passager om SK. Anledningen til at inddrage Zeuthen skyldtes dog en anonym forf. i <hi xml:id="id157f91db-a89a-41d0-a6b6-41e9df39ecb1" rendition="#ita">Kjøbenhavnsposten,</hi> nr. 109, den 12. maj 1855, der mener, at SK ikke skulle tale så meget om præsternes tavshed, når han end ikke selv havde besvaret fx Zeuthens indvendinger. Zeuthens <hi xml:id="id961d90d1-f426-4710-881c-29b29b263953" rendition="#ita">Polemiske Breve imod Dr. <persName xml:id="idbb12f4ce-ccf9-4269-b010-5aa1e1cf5731" key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>,</hi> nr. 1, <placeName xml:id="id1ea022c3-1186-4dd3-bf4a-54297a9c5533" key="København">Kbh.</placeName> 1855, ktl. 2190, blev averteret som udkommet i <hi xml:id="idb89830e7-a0d0-42a6-9e3e-d4484a326a2b" rendition="#ita">Adresseavisen,</hi> nr. 134, den 13. juni 1855.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-27" n="174,32">
+          <label xml:id="ida8abe2a7-117e-49dc-a3d1-a9f04b0a648e">
+            <hi xml:id="idbcfa1504-2aff-4d23-b000-b5e15db5946d" rendition="#bol">i Politie-Forretninger</hi>
+          </label>
+          <p xml:id="ida8ebea22-700e-4cc0-a522-0c0b02595a1b">i politiets arbejde.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-28" n="174,33">
+          <label xml:id="id5f0d3f25-fcfb-4997-ab2c-f83a1340133d">
+            <hi xml:id="ide9201bc8-3046-419f-9dcb-d1f46c082e55" rendition="#bol">Politie-Agent</hi>
+          </label>
+          <p xml:id="id53e47882-5a8a-4992-9d8b-a50e4ab3df8f">spion for politiet (især det hemmelige politi); civil politibetjent, der tager sig af opdagelser.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-30" n="174,35">
+          <label xml:id="idd9d21e77-e288-4f02-b3f9-a7a10e5e9f1f">
+            <hi xml:id="id0f76104d-3646-4e5d-ba64-d6c4be907591" rendition="#bol">»afgjort Politie-Talent«</hi>
+          </label>
+          <p xml:id="idb6237285-8b52-41ac-acb7-e3b43beef44d"><ptr xml:id="id8b2ecd3e-31d6-4c30-bed8-3d6320461be8" type="commentary" target="#hcd-7" n="173,13"/>.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-31" n="175,1">
+          <label xml:id="id2e275482-cce9-4f2c-822f-ac10918a55a9">
+            <hi xml:id="id3c827541-afe2-46e0-9ac7-85e8b20d752a" rendition="#bol">fast</hi>
+          </label>
+          <p xml:id="idafe83a13-ef2c-481d-9970-7ff95be29af6">næsten, nærmest.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-37" n="175,18">
+          <label xml:id="id6d9059b0-3453-419c-af2c-742b0e0eb5a8">
+            <hi xml:id="id7a54c463-a4b3-4749-83fc-2d0cdbf7e85c" rendition="#bol">tilsidst paatog jeg mig ... Det var i mit eget Navn</hi>
+          </label>
+          <p xml:id="idec765b0d-9182-4fad-ab11-13523f2281b0">sigter til SKs pjece <hi xml:id="id9b17d8cd-1866-4dc0-94d2-14514ed24e88" rendition="#ita">Dette skal siges; saa være det da sagt,</hi> der blev averteret som udkommet i <hi xml:id="id4377e3fa-27eb-41b5-9026-9baacdf90f0b" rendition="#ita">Adresseavisen,</hi> nr. 118, den 24. maj 1855. Hvad, der skal siges, er følgende: »<hi xml:id="id7d52ab33-9eb7-4d03-b63d-a61e259246d5" rendition="#ita">Hvo</hi> [hvem] <hi xml:id="idc767beb5-3cff-43bb-8248-6f5ad5a4d4c1" rendition="#ita">Du end er, hvilket Dit Liv for resten, min Ven, – ved (hvis Du ellers deeltager i den) at lade være at deeltage i den offentlige Gudsdyrkelse som den nu er (med Paastand paa at være det nye Testamentes Christendom) har Du bestandigt een og en stor Skyld mindre, Du deeltager ikke i at holde Gud for Nar ved at kalde det nye Testamentes Christendom hvad der ikke er det nye Testamentes Christendom</hi>«, <ref xml:id="ideadfa42a-8eab-4a47-9da9-9e546ab6bac4" target="../DSS/txt.xml#ss115" type="publishedWritings" n="115"><hi xml:id="id3ec3a34f-6ad0-4601-b333-2948b149f0d8" rendition="#ita">SKS</hi> 13, 115</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-507" n="175,25">
+          <label xml:id="idda00fbe0-da19-4e2c-9bb3-ed86c05e90a6">
+            <hi xml:id="id59c4ebf3-6d52-4351-9377-1f3fe9592acb" rendition="#bol">forhærde dem mod</hi>
+          </label>
+          <p xml:id="ide39bf797-3c7d-4824-90a1-3b4e3e859db6">forhærde sig mod, trodse.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-38" n="175,26">
+          <label xml:id="id06b836c7-85ba-4daf-8a48-68d3bf14a89f">
+            <hi xml:id="id704d4256-1ba1-4a1e-8f4b-49d38d343acf" rendition="#bol">vistnok</hi>
+          </label>
+          <p xml:id="id1caa49fa-3a91-4bb8-a60d-3030409b140b">sandelig, helt sikkert.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-39" n="175,26">
+          <label xml:id="id73f0214e-5f29-42bc-afbb-6e36154f6384">
+            <hi xml:id="idf0709e9d-6f28-47c7-9f90-da96e57e19d1" rendition="#bol">de eedfæstede Mænd</hi>
+          </label>
+          <p xml:id="id009de795-8bf6-4032-b8f8-092eaaa3d43a"><ptr xml:id="id627d9d64-3e17-4729-9c35-4c105f5ed5c8" type="commentary" target="#hcd-20" n="174,23"/>.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-41" n="175,31">
+          <label xml:id="id25ff3589-26f3-42b7-a6c3-26b05ac5db15">
+            <hi xml:id="idaaccbc99-c455-4e17-bcbe-72ac1b7e5357" rendition="#bol">er saa</hi>
+          </label>
+          <p xml:id="id1988376d-9f60-4104-ae8e-d25f539d57be">forholder sig således.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-42" n="175,36">
+          <label xml:id="id48cac08b-b028-4d12-95b5-65c85e5de546">
+            <hi xml:id="ide4a7f015-ff30-41c2-9cdb-e627469b3902" rendition="#bol">det forstaaer sig</hi>
+          </label>
+          <p xml:id="id3bbb4a41-6bcb-4bf1-b77f-3f10867b316c">indlysende nok.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-43" n="176,1">
+          <label xml:id="id707d2200-9578-448d-905d-0e657416fb61">
+            <hi xml:id="id523b3ce2-94de-4dab-9774-7863aad279a3" rendition="#bol">hvo</hi>
+          </label>
+          <p xml:id="id029712c7-a02f-4383-936b-e0a06b728894">hvem.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-44" n="176,3">
+          <label xml:id="idad33906f-117d-46fc-b69c-34d87af86f71">
+            <hi xml:id="idd39a5afa-5d53-4e61-bf6f-d94689a5ad78" rendition="#bol">»Sandhedsvidnernes«</hi>
+          </label>
+          <p xml:id="id620ae5ab-7185-4324-bc1c-a70527f0fbd7">dvs. præsternes (<ptr xml:id="ide4e3afca-9fd3-4526-9380-fe7e17a77200" type="commentary" target="#hcd-506" n="174,23"/>).</p>
+        </note>
+        <note type="commentary" xml:id="hcd-46" n="176,5">
+          <label xml:id="id47fd58af-e036-4fde-9236-84a3eb79c9b9">
+            <hi xml:id="idfd9658a0-8390-4efd-8949-8a0ca81693c6" rendition="#bol">de kongelige Embedsmænd</hi>
+          </label>
+          <p xml:id="id5468bdf7-b7b5-458f-8e03-d3c2296b8daa">dvs. præsterne (<ptr xml:id="ida954c560-3de2-4287-bfa5-35aa2fc8f0bc" type="commentary" target="#hcd-1009" n="174,5"/>).</p>
+        </note>
+        <note type="commentary" xml:id="hcd-47" n="176,7">
+          <label xml:id="id7c565b62-8c8c-48fc-aee6-64523b9f0ea3">
+            <hi xml:id="id5b74fbe4-e623-4fcc-b686-c3644bb83fcc" rendition="#bol">Ordsproget siger »man skal ikke tale om Strikken i hængt Mands Huus«</hi>
+          </label>
+          <p xml:id="idc2e5d848-fabb-415d-a08d-7a4174ee0439">dvs. man skal passe på med at sige noget, der kan støde den, man taler med; ordsproget findes optegnet som nr. 4194 i <persName xml:id="idc2a74de2-e218-415e-aa73-5409718bc1c9" key="Mau, Edvard">E. Mau</persName> <hi xml:id="id9c496510-aa10-4524-9b0c-f03fa157b8b6" rendition="#ita">Dansk Ordsprogs-Skat</hi> bd. 1-2, <placeName xml:id="id2ebe3da6-c3d2-48a9-bebd-d84b50f8327c" key="København">Kbh.</placeName> 1879; bd. 1, s. 466; sml. nr. 1291 i <persName xml:id="idf8a8398b-cb6c-444c-8d18-9e3b69d4434c" key="Grundtvig, Nikolai Frederik Severin">N.F.S. Grundtvig</persName> <hi xml:id="ided1bd71b-7f72-49b8-a78d-0f1a778d3720" rendition="#ita">Danske Ordsprog og Mundheld,</hi> Kbh. 1845, ktl. 1549, s. 49.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-48" n="176,10">
+          <label xml:id="id62f83d38-38ab-472c-97d4-38dddca9e88c">
+            <hi xml:id="id191a734d-5343-4401-a040-ef3978ef8a30" rendition="#bol">billig</hi>
+          </label>
+          <p xml:id="id28c67a10-d9d8-4cc0-8e80-1eb860ff59c2">rimelig.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-49" n="176,15">
+          <label xml:id="id5abe6585-8e15-4b6a-9c5d-4e1d0a5da72f">
+            <hi xml:id="id64a71bc9-7ab5-4e70-a057-885a688c3aa7" rendition="#bol">forelæst</hi>
+          </label>
+          <p xml:id="id668bee2e-4e10-4be3-b8d6-70934bd23e3f">oplæst (i andres påhør).</p>
+        </note>
+        <note type="commentary" xml:id="hcd-52" n="176,27">
+          <label xml:id="idd379edb5-935f-4f8c-bc47-a724a825f9d8">
+            <hi xml:id="id73714f9d-c2ed-47bf-832d-22722941db46" rendition="#bol">ret</hi>
+          </label>
+          <p xml:id="id8bd01bf2-d08e-4a20-8449-72f126c46556">rigtigt, virkelig.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-508" n="177,3">
+          <label xml:id="ida2e57963-7dae-42a0-b744-0b2c03b930f1">
+            <hi xml:id="idbf5817ed-87f1-46a3-9e65-9618ccb64218" rendition="#bol">Matth. 23, 29-33. 29) Vee Eder, I Skriftkloge ... undflye Helvedes Dom?</hi>
+          </label>
+          <p xml:id="idb57ed335-b3b2-4f5a-98bc-7479c0a7e863"><persName xml:id="id30bccfde-75f2-4a7c-83f4-c6c40aef03b3" key="Jesus">Jesu</persName> veråb over de skriftkloge og farisæerne er ordret citeret efter NT-1819. – <hi xml:id="id22599eab-5a63-4c6c-a512-d448280ce2cb" rendition="#bol">Øienskalke:</hi> hyklere. – <hi xml:id="id484c4c43-41b9-4c44-bfce-8e87fbb1e86b" rendition="#bol">ihjelslaget:</hi> ihjelslået. – fylder <hi xml:id="id10516a0a-6961-4387-aaef-f24b4247442c" rendition="#bol">og:</hi> også. – <hi xml:id="id577cfd91-60c9-41fc-9f72-74e0bf1c4940" rendition="#bol">kunne</hi> I<hi xml:id="id67c52e84-ad0b-498a-90e0-5035364c2680" rendition="#bol">:</hi> kan. – <hi xml:id="id7e6484fb-958c-4b76-94cb-36ecc292dce8" rendition="#bol">undflye:</hi> undslippe, undgå.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-509" n="177,11">
+          <label xml:id="ida400cdd4-3974-4bc0-baf8-3f3540172b23">
+            <hi xml:id="id9d888d8d-e518-4208-9ca8-53d4f593a598" rendition="#bol">Luc. 11, 47. 48. 47) Vee Eder! at I bygge Propheternes Grave ... og I bygge deres Grave</hi>
+          </label>
+          <p xml:id="id3b5ce0ac-780d-4b6b-8146-7666b8fd9961"><persName xml:id="id5c97f68d-631a-4480-a4fd-0befc035b39c" key="Jesus">Jesu</persName> veråb over de skriftkloge og farisæerne er ordret citeret efter NT-1819.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-510" n="177,21">
+          <label xml:id="ide8d4e969-09f7-45bd-9701-a67f63367aac">
+            <hi xml:id="id2a2d6efb-41d9-486d-9f46-1177d5dd3bda" rendition="#bol">Det er om denne Art Gudsdyrkelse ... er at lege Christendom</hi>
+          </label>
+          <p xml:id="ide5a1068f-1f41-4eeb-b6d7-a22a86259d2f">sigter til SKs første avisartikel, »Var Biskop <persName xml:id="id2a75ae4b-fe4b-42bd-a4a7-f684c8ca1617" key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er <hi xml:id="id4682bb07-e875-4406-999b-4fa93ba6db2b" rendition="#ita">dette Sandhed?«</hi> (<ptr xml:id="id07182fcf-5f03-4b3e-9cd8-f7e44e274d8e" type="commentary" target="#hcd-15" n="174,16"/>), hvor det hedder: »Er det Sandhed? Er det at tale saaledes, er det maaskee ogsaa at vidne for Sandhed, og <persName xml:id="id83aa3c41-4d0e-4927-aac4-d4fb1a1ec9af" key="Martensen, Hans Lassen">Prof. Martensen</persName> ved denne Tale selv traadt i Charakter af Sandhedsvidne, et af de rette Sandhedsvidner? Sandeligen, der er det, som er Christendommen og Christendommens Væsen mere imod end ethvert Kjetteri, ethvert Schisma, mere imod end alle Kjetterier og Schismaer tilsammen, og det er det: at lege Christendom. Men det er – aldeles, aldeles i samme Forstand, som Barnet leger Soldat – at lege Christendom: at tage Farerne bort (christeligt svarer 'Vidne' og 'Fare' til hinanden), istedetfor disse at anbringe Magten (til at være Fare for Andre), Goderne, Fordelene, en yppig Nydelse selv af de fineste Raffinements – og saa at lege den Leg, at Biskop Mynster var Sandhedsvidne, et af de rette Sandhedsvidner, lege den saa frygtelig alvorligt, at man da slet ikke kan standse Legen, men leger den fort ind i Himlen, leger Biskop Mynster med ind i den hellige Kjæde af Sandhedsvidner, som fra Apostlenes Dage strækker sig til vore Tider« (<ref xml:id="id645b7f5e-b6f0-4cea-8522-cb8fa73cb4b5" target="../BMS/txt.xml#ss125" type="publishedWritings" n="sv2:14" rend="BMS, 125"><hi xml:id="id72962db8-5357-48e0-a741-3b26f17c6926" rendition="#ita">SV2</hi> 14, 14f.</ref>).</p>
+        </note>
+        <note type="commentary" xml:id="hcd-57" n="177,27">
+          <label xml:id="ide8af6790-39c9-4d52-a4d7-06861c39ef0b">
+            <hi xml:id="idd2e3ceda-e23e-4776-9f8b-0dac15246f48" rendition="#bol">skuffende</hi>
+          </label>
+          <p xml:id="id6db6c480-2dca-4b93-b5fc-6daf5cdaf35a">illusorisk, bedragerisk.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-58" n="177,27">
+          <label xml:id="id8cb83b94-6d11-46ba-a7cc-c5d897858da7">
+            <hi xml:id="id723b95b0-332e-47c3-963a-02bb53a5156f" rendition="#bol">Saaledes leger Soldaterne Krig paa Fælleden</hi>
+          </label>
+          <p xml:id="id125ca7ea-fd65-4446-be3b-15207fc70546">sigter til græsningsarealerne <placeName xml:id="id833097b4-5d49-48f6-bea0-3e0358d50256">Nørre Fælled</placeName>, <placeName xml:id="id3e61079a-f88a-40a5-8567-1f9cf943542a">Blegdams Fælled</placeName> og <placeName xml:id="id02416768-22b4-4c60-a9da-32de70f4d6d8">Østre Fælled</placeName> (nuv. <placeName xml:id="idc51c51ba-d502-473d-a397-f8a0e3e35387">Fælledparken</placeName>) NØ for <placeName xml:id="idecc8d8a0-8bae-445b-abc4-4f801864fdae" key="Sortedams Sø">Sortedam Sø</placeName>, hvor både militæret og »Kjøbenhavns Borgervæbning« holdt parader og øvelser.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-60" n="178,1">
+          <label xml:id="id0585a32d-49e2-4eec-89d5-e9384efde99d">
+            <hi xml:id="idce5dee46-e906-4e20-893f-f00e90f918cd" rendition="#bol">Intet mindre</hi>
+          </label>
+          <p xml:id="id190da967-74a6-44fd-8117-bb8ed004c5f8">aldeles ikke; lige det modsatte.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-61" n="178,1">
+          <label xml:id="ida766c585-fecd-40f9-a68b-2b7af917bd96">
+            <hi xml:id="id8efcb6ec-f4ed-4da7-a23a-a8259e5305fb" rendition="#bol">Læreren</hi>
+          </label>
+          <p xml:id="id91872905-19e6-4218-83ef-ba93c0ddabb6">dvs. præsten.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-1002" n="178,3">
+          <label xml:id="idfb0f7341-0917-4014-9d5f-3cd3503255e5">
+            <hi xml:id="id65897f61-2fef-43a0-9829-456ad55576a4" rendition="#bol">det om Forsagelse</hi>
+          </label>
+          <p xml:id="id0d3a9786-7329-4cc5-a4d7-1d9f8a5a4d5e">hentyder formentlig til <rs xml:id="id0dace2cb-fd5d-4b2a-af16-f80b6ec35f61" type="bible">Luk 14,33</rs>, hvor <persName xml:id="idedbe1d4f-b2da-4a80-ae6a-deddb77458e5" key="Jesus">Jesus</persName> siger til skarerne: »Hver af Eder, som ikke forsager alt det, han haver, kan ikke være min Discipel« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hcd-1003" n="178,4">
+          <label xml:id="id1d1a318f-62d8-4a3c-9e3f-86fdfb325a9d">
+            <hi xml:id="id2e056b06-1fdb-4a6e-93c4-b804338eed40" rendition="#bol">det at foragte verdslig Titel og Rang</hi>
+          </label>
+          <p xml:id="id1bf97794-31db-452c-91d5-6df202598f2f">se fx <rs xml:id="ide07e3ccb-8de4-4ebf-be79-afd604e20222" type="bible">Jak 4,4</rs>: »I utro, ved I ikke, at venskab med verden er fjendskab med Gud? Den, der vil være ven med verden, står som en fjende af Gud.« Se også <rs xml:id="id122e2fe9-8008-4114-8da3-7881459d43d0" type="bible">Matt 6,24</rs>, hvor <persName xml:id="id64f31107-d5a8-4d29-a3c5-f5a48d30d170" key="Jesus">Jesus</persName> siger: »Ingen kan tjene to herrer. Han vil enten hade den ene og elske den anden eller holde sig til den ene og ringeagte den anden. I kan ikke tjene både Gud og mammon.« Endvidere fx <rs xml:id="id8d5d65a7-c648-475a-8861-b3f8687a9abe" type="bible">Joh 5,41-47</rs>; 12,43; <rs xml:id="ide71108db-40cd-4cc8-a055-85dbc1048827" type="bible">1 Thess 2,6</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-1008" n="178,6">
+          <label xml:id="id96e5b68a-4b1f-4fea-a4b4-c9eed1c367f8">
+            <hi xml:id="id7b51030e-d5ca-4d7a-956a-0330b441e8bd" rendition="#bol">de Herlige (»Propheterne«) som bleve ihjelslagne</hi>
+          </label>
+          <p xml:id="id86c19acf-3102-4417-8d13-3c7a6e43984f">Udtrykket 'de Herlige' bruges alm. om de martyrer, der i kristendommens første århundreder blev forfulgt og henrettet pga. af deres kristne tro og bekendelse. – <hi xml:id="idff915275-cc27-4bf8-8250-609b4c42ce79" rendition="#bol">»Propheterne«:</hi> jf. <rs xml:id="id4913b969-60e0-4221-8821-4b061c3470e4" type="bible">Matt 23,29-33</rs> (<ptr xml:id="idb5481a15-20c1-48bf-b8fc-707ac654efcf" type="commentary" target="#hcd-508" n="177,3"/>) og <rs xml:id="id775f141f-f1cf-4ba6-bdbc-8a0e87fec37e" type="bible">Luk 11,47</rs> (<ptr xml:id="idb4dcf71d-c0c2-42af-9604-f07bcfb3b9c3" type="commentary" target="#hcd-509" n="177,11"/>).</p>
+        </note>
+        <note type="commentary" xml:id="hcd-66" n="178,7">
+          <label xml:id="idf93d4691-0198-4937-87d2-8606dd0a85ad">
+            <hi xml:id="id02808592-961b-430b-82b5-4dea4fb3b7df" rendition="#bol">dersom vi havde været i vore Fædres Tid ... pryde deres Gravsteder</hi>
+          </label>
+          <p xml:id="id5f37eade-5499-478c-bc1d-72028625b953">spiller på <rs xml:id="id83ce574a-a3e7-4fc4-97d8-5acbdceccec7" type="bible">Matt 23,29-30</rs> (<ptr xml:id="id0fc7d059-1458-47c9-8e5c-bce3748fbd2c" type="commentary" target="#hcd-508" n="177,3"/>).</p>
+        </note>
+        <note type="commentary" xml:id="hcd-511" n="178,10">
+          <label xml:id="ide323db16-6aac-44e1-a1b0-bdf3bcb183bb">
+            <hi xml:id="idc4dbbb5a-5664-4491-8a56-451d55c22f3d" rendition="#bol">som jeg bestandigt, indstændigt og bønligt har foreslaaet det</hi>
+          </label>
+          <p xml:id="id6286f548-23a8-4861-80f9-ab2529b91ce9">SKs krav om, at kirkens øverste biskop på vegne af gejstligheden, men også hver enkelt for sig, må gøre den tilståelse el. indrømmelse, at nutidens kristendom er langt fra den ideale fordring, er fremsat i »Udgiverens Forord« til <hi xml:id="id2ae76e9a-9425-4eb6-80ca-6bcbd562922b" rendition="#ita">Indøvelse i Christendom</hi> (1850), hvor det hedder: »I dette Skrift, hidrørende fra Aaret 1848, er Fordringen til at være Christen af Pseudonymen tvunget op til et Idealitetens Højeste. / Dog siges, fremstilles, høres bør jo Fordringen; der bør, christeligt, ikke slaaes af paa Fordringen, ei heller den forties – istedetfor at gjøre Indrømmelse og Tilstaaelse sig selv betræffende. / Høres bør Fordringen; og jeg forstaaer det Sagte som sagt alene til mig – at jeg maatte lære ikke blot at henflye til 'Naaden', men at henfly til den i Forhold til Benyttelsen af 'Naaden'«, <ref xml:id="id0e47c835-50c3-41b1-937a-91b5154f4083" target="../IC/txt.xml#ss15" type="publishedWritings" n="15"><hi xml:id="id579b52b2-ddaa-450f-9fe7-3069d690aca3" rendition="#ita">SKS</hi> 12, 15</ref>. Fordringen gentages i SKs avisartikler i <hi xml:id="id4986d27c-794c-4742-9b17-63e166ba88ac" rendition="#ita">Fædrelandet</hi> under kirkestriden, nemlig i »Var Biskop Mynster et 'Sandhedsvidne' et af 'de rette Sandhedsvidner' <hi xml:id="id3f704d7a-5206-4108-8752-f6af9b1a0f59" rendition="#ita">er dette Sandhed?</hi>« (18. dec. 1854), »Derved bliver det!« (30. dec. 1854) og »Ved Biskop Mynsters Død« (20. marts 1855), hvor anledningen er, at biskop <persName xml:id="id0578c197-33db-4632-8ed9-fe155c8849bb" key="Mynster, Jakob Peter">Mynster</persName> (<ptr xml:id="idfc60458a-7834-4d8b-93b2-5441926e6808" type="commentary" target="#hcd-15" n="174,16"/>) aldrig gjorde denne tilståelse, om end han godt kendte fordringen (jf. <ref xml:id="id5f310042-1ed6-43a4-a84c-eab8ffc12c5d" target="../BMS/txt.xml#ss123" type="publishedWritings" n="sv2:14" rend="BMS, 123"><hi xml:id="id36b35c43-73fe-4599-ade0-dcf1f6f5e98f" rendition="#ita">SV2</hi> 14, 12</ref>, 23 og 37); i »Den religieuse Tilstand« (26. marts) og »Hvad jeg vil?« hvor tilståelsen sættes alment frem (jf. <ref xml:id="id6e38b6dd-172a-4031-85c8-77692c6d1f21" target="../DRT/txt.xml#ss165" type="publishedWritings" n="sv2:14" rend="DRT, 165"><hi xml:id="idb5b14d49-9cc8-4fe2-878c-6af78bda7768" rendition="#ita">SV2</hi> 14, 47</ref> og <ref xml:id="id147df49d-39ae-4955-92f1-4b275dddc0f8" target="../HJV/txt.xml#ss180" type="publishedWritings" n="sv2:14" rend="HJV, 180">58</ref>); og endelig i »Til det nye Oplag af 'Indøvelse i Christendom'« (16. maj), hvor SK tilbagekalder sin fordring – og dermed sin forsonende holdning (jf. <ref xml:id="ida48a3053-117c-44c8-bcce-c24a1a2301eb" target="../OIC/txt.xml#ss213" type="publishedWritings" n="sv2:14" rend="OIC, 213"><hi xml:id="iddc125a81-183d-49f1-8796-b2b94f22ef54" rendition="#ita">SV2</hi> 14, 78</ref>f.). – <hi xml:id="ide31b0c5a-70fd-4b58-ad63-fea899ebc71c" rendition="#bol">indstændigt:</hi> indtrængende, inderligt. <hi xml:id="idffd38002-2633-4fa6-bd9a-947ea4a48366" rendition="#bol"><hi xml:id="ida9c342db-dca0-4dde-9d6e-95af6ae3c3ee" rendition="#ita">–</hi> bønligt:</hi> indtrængende.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-70" n="178,18">
+          <label xml:id="iddf22715d-25cf-4390-ad86-51435c49b1e5">
+            <hi xml:id="idafba36fe-e026-4a1c-bf5a-edb06980b8a3" rendition="#bol">den Myndige</hi>
+          </label>
+          <p xml:id="id92ec7c7c-d1a7-46ab-a4fc-a2d69b3f157c">sigter til <persName xml:id="id14039c67-ea57-4cd2-8189-0137f34b89fd" key="Jesus">Jesus</persName>; sml. fx <rs xml:id="id8f0f2d6c-a5c3-465b-bf52-a00536e168fd" type="bible">Matt 7,29</rs>, hvor det fortælles, at folket undrede sig, for Jesus havde undervist dem »som den, der havde Myndighed, og ikke som de Skriftkloge« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hcd-71" n="178,20">
+          <label xml:id="id5fcbdc0e-1166-458e-bff5-094aad4352b7">
+            <hi xml:id="ide9ff2b23-611c-43b5-b0bc-51667063675c" rendition="#bol">han kalder det: Hyklerie</hi>
+          </label>
+          <p xml:id="idc17debc2-5e11-441f-a944-f5741d43fa9a">se fx <rs xml:id="id5f9f442c-71f3-4299-a77a-994a30d2e178" type="bible">Matt 23,29</rs> (<ptr xml:id="id723d2c4b-4c26-4a6c-ace1-33507884de57" type="commentary" target="#hcd-508" n="177,3"/>). Se endvidere <rs xml:id="id92f41335-9d61-4cb4-933d-7fe33c9c1eb6" type="bible">Matt 6,2</rs>.5.16, hvor <persName xml:id="idb50403fe-a454-4822-aa44-1f1ed1ac71ae" key="Jesus">Jesus</persName> advarer mod at gøre, som hyklerne gør; og <rs xml:id="idc7e3ea20-30eb-4282-a034-0b88c780883b" type="bible">Matt 7,5</rs>; 15,7; 22,18; 23,13.14.15.23.25.27 og <rs xml:id="id1417c170-e2d5-466e-8f93-9f1740a78a1b" type="bible">Luk 12,56</rs>;13,15, hvor Jesus bruger den direkte tiltale 'I hyklere'. Se også <rs xml:id="idec8c2ea5-211e-4a96-8b8d-8f2e218a9ae3" type="bible">Matt 23,28</rs>, hvor Jesus anklager farisæerne og de skriftkloge for indeni at være fulde af hykleri og lovløshed; og <rs xml:id="id45e4f8e3-a481-4e13-8a78-211011aa8e98" type="bible">Mark 12,15</rs>, hvor han gennemskuer farisæernes og herodianernes hykleri; samt <rs xml:id="ide2c32544-4f72-4d47-a4e1-1fa671de7abe" type="bible">Luk 12,1</rs>, hvor han advarer folk mod farisæernes hykleri.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-72" n="178,21">
+          <label xml:id="idb8cca15f-4a74-40cd-9217-bfccd593f6ed">
+            <hi xml:id="idf8594a7f-0157-46ab-a421-d3cce20e3ae0" rendition="#bol">han siger <hi xml:id="idb55e49e4-d66f-45e8-aa46-28ffbbfb8328" rendition="#ita">(...)</hi> han siger ... altsaa: Blod-Skyld</hi>
+          </label>
+          <p xml:id="id38f9f63b-4d60-4353-a85c-79a079c4fd5d">se <rs xml:id="idf75d777a-218e-42bf-8ebb-4d624c8d7161" type="bible">Matt 23,29-33</rs> (<ptr xml:id="idb54a2870-c00d-4532-9bec-ef72128c4980" type="commentary" target="#hcd-508" n="177,3"/>). – <hi xml:id="idde6413be-540a-4d99-ae6a-51736fe3a0b4" rendition="#bol">Blod-Skyld:</hi> bibelsk udtryk: det at være skyldig i drab, også i alm. om en stor brøde, der medfører dødsstraf.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-74" n="178,29">
+          <label xml:id="id2d35424b-949c-4652-888a-2ef92c206698">
+            <hi xml:id="ida3cce623-7b51-420f-9aff-a6493e2c3448" rendition="#bol">skuffende</hi>
+          </label>
+          <p xml:id="ida484c6cf-10e5-4873-8890-a48dde311168">svigefuldt, bedragerisk.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-75" n="178,34">
+          <label xml:id="id6fe5a35e-f1e6-4d78-83d2-26cbed240b9b">
+            <hi xml:id="id8fa7ff3b-9db1-4847-a49a-d171f289531f" rendition="#bol">give af vore Penge for at bygge Kirker</hi>
+          </label>
+          <p xml:id="id56b495dc-61e7-4807-b179-632440207247">hentydning til de mange indsamlinger – ikke mindst i aviserne – der siden 1853 var iværksat for at få opført en kirke uden for voldene. Grundstenen til <placeName xml:id="id1ee69907-37d5-43fb-abb4-94f0b6730c31" key="Sankt Johannes Kirke">Sankt Johannes kirken</placeName> (ved <placeName xml:id="ide1650a4c-d427-4ed1-bdca-fb9015b0aa9e" key="Sankt Hans Torv">Sankt Hans torv</placeName>) blev lagt af kongen i 1856, men kirken åbnedes først i 1861. Fx blev <persName xml:id="iddf2b03c7-d8cc-47cc-b918-65116ed161fc" key="Trojel, F.W.">F.W. Trojel</persName>s pjece <hi xml:id="id48ec0a47-8271-44ab-8dce-8d4a185ae83b" rendition="#ita">Evigheden, ni Himmelbreve til Dr. <persName xml:id="id496288a3-e255-4945-ac35-e04b21c6a178" key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>,</hi> <placeName xml:id="ida8f52d4b-519d-4131-8ed4-a48907a6a0ec" key="København">Kbh.</placeName> 1855, averteret i <hi xml:id="id51359c51-8607-404f-bcb4-d89667142b87" rendition="#ita">Adresseavisen,</hi> nr. 272, den 21. nov. 1855, efter titelbladet solgt: »til fordel for Kirken paa Nørrebro«.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-76" n="178,34">
+          <label xml:id="id4285b187-16b0-45ca-954f-452430bff098">
+            <hi xml:id="id7480f3fb-de68-4ee0-9f86-93d04ad380fc" rendition="#bol">ikke knibe paa Præsten</hi>
+          </label>
+          <p xml:id="id841306fd-d41b-48e4-8517-f1a7458da5ac">dvs. ikke være 'fedtede' med at give pengebidrag til præsten.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-512" n="178,35">
+          <label xml:id="id110c0b75-f022-4af0-a49d-eb1c04745521">
+            <hi xml:id="id1ac9387e-2fae-4918-9970-78c8fa462dc6" rendition="#bol">Det nye Testamente svarer: hvad Du skal, er, Du skal følge Christum efter</hi>
+          </label>
+          <p xml:id="id67058ca5-6b99-4783-abb7-36e66d5b43dc">se fx <rs xml:id="ide33eefde-c1cc-40c3-86e0-576024de938f" type="bible">Matt 10,38</rs>, hvor <persName xml:id="id4233bdc0-d2bb-4c05-bf63-9c6bbf7ce653" key="Jesus">Jesus</persName> i sin udsendelsestale til de tolv disciple siger: »hvo [den] som ikke tager sit Kors, og følger efter mig, er mig ikke værd« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hcd-1005" n="178,36">
+          <label xml:id="id3645f09b-bde3-4f8a-bd81-1ed3b869d1f7">
+            <hi xml:id="id8bc7c86e-caee-48bf-bed3-7b8482d97bde" rendition="#bol">lide for Læren</hi>
+          </label>
+          <p xml:id="id241e4809-2f46-4fe2-a8b3-e5747f34bde7">se fx <rs xml:id="idd21c44bc-8740-4acd-b99f-826e2f40e0a8" type="bible">Matt 5,10-11</rs>, hvor <persName xml:id="idd293734f-0ac9-4f47-8b68-1351fc5dd56a" key="Jesus">Jesus</persName> siger: »Salige ere de, som lide Forfølgelse for Retfærdigheds Skyld, thi Himmeriges Rige er deres. Salige ere I, naar man bespotter og forfølger Eder, og taler allehaande [alskens] Ondt imod Eder for min Skyld, og lyver det [dvs. alt det onde, man siger, er løgn]« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hcd-77" n="179,4">
+          <label xml:id="id8e30cf66-e8d1-40b7-bffe-757134d50b4b">
+            <hi xml:id="idc8d44bfc-4a96-4f29-8ea7-e37e80449952" rendition="#bol">»Eders Fædre sloge dem ihjel ... og samtykke dem«. Luc. 11, 48</hi>
+          </label>
+          <p xml:id="idc081103a-0d5c-44ae-b18f-fefd4515573e"><ptr xml:id="ida76475d1-7929-4598-b352-18c0844e6f9f" type="commentary" target="#hcd-509" n="177,11"/>.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-513" n="179,6">
+          <label xml:id="idf14feccb-1979-4fdf-baab-2398f82842c1"><hi xml:id="idefc11661-eb35-40ae-9514-926cda2b6635" rendition="#bol">de næringsdrivende Præster</hi>s</label>
+          <p xml:id="id5e394454-1615-4d7b-88d3-e3ab79eb27dc">En 'næringsdrivende' var i snæver forstand en, der havde taget borgerskab i en købstad for dér at kunne drive borgerlig næring, dvs. handel, manufaktur, befordring, gæstgiveri o.l. Som embedsmænd var præsterne i princippet lønnet af staten. De modtog dog i vid udstrækning 'accidenser', dvs. vederlag for at forrette kirkelige handlinger som brudevielse, barnedåb, konfirmation og begravelse. Desuden havde borgerne i købstæderne pligt til at yde præsten et pålignet beløb, kaldt 'præstepenge', mens bønderne i landsognene tilsvarende skulle betale præsten en vis procentdel af deres animalske produkter og især af deres korn, kaldt 'tiende'. Størrelsen af denne betaling blev fastsat af Kirke- og Undervisningsministeriet. På kirkens højtidsdage kunne menighedens medlemmer betale deres præst en frivillig pengegave, kaldt 'offer'. I øvrigt modtog præsterne i købstæderne en huslejegodtgørelse, mens præsterne på landet havde indtægter fra de dem tillagte jorder og gårde. Alt taget i betragtning havde de københavnske præster en større indtjening end præsterne i provinsen; men generelt set varierede indtægterne meget fra embede til embede, ligesom de jorder, der hørte til præstegårdene, varierede i omfang og bonitet fra sogn til sogn. En komplet oversigt findes i <persName xml:id="id1fbf194b-68ea-41d5-81db-a21d45a43307" key="Suhr, Johannes Søren Bloch">Bloch Suhr</persName> <hi xml:id="ida77e227c-c451-4806-9387-04195c067448" rendition="#ita">Kaldslexicon, omfattende en Beskrivelse over alle danske geistlige Embeder i alphabetisk Orden,</hi> <placeName xml:id="id72eeba7e-06f0-4de8-bcd4-93dadc662ded" key="København">Kbh.</placeName> 1851, ktl. 379.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-78" n="179,12">
+          <label xml:id="idc2266ff9-79ff-4614-b681-17a7012ab5b2">
+            <hi xml:id="id83c8ff25-f791-4d2a-b83c-81a0620335dc" rendition="#bol">det naturlige Menneske</hi>
+          </label>
+          <p xml:id="id30da3e49-bad2-4108-ae20-a888692e9428">det blot jordiske, dvs. sanselige og fornuftige, men ikke åndelige menneske. Sml. <rs xml:id="id429e4bd6-6676-4f8c-abed-42ee4ee60030" type="bible">1 Kor 2,14</rs>, hvor <persName xml:id="ida9e21712-6497-4ef5-bbf7-091922901f00" key="Paulus">Paulus</persName> skriver: »Men det naturlige Menneske forstaaer intet af Guds Aand, det er ham en Daarlighed [tåbelighed], og han kan det ikke kiende, thi det skal dømmes aandeligen«, <hi xml:id="id8bbb7556-c146-4191-b6db-5ba94c7be552" rendition="#ita">Biblia, det er: den gandske Hellige Skriftes Bøger, efter den Aaret 1699 udgangne Huus- og Reyse-Bibel,</hi> <placeName xml:id="id9a3410c4-db7f-4043-9871-a07fd39dce34" key="København">Kbh.</placeName> 1802. Denne oversættelse følger Luthers, som gengiver udtrykket tilsvarende med »der natürliche Mensch«, se <hi xml:id="id1f1ae504-a23b-4b76-bfa5-fdea4df78906" rendition="#ita">Die Bibel, oder die ganze Heilige Schrift des alten und neuen Testaments, nach der deutschen Uebersetzung D. <persName xml:id="id14bb4816-2a80-489c-be99-40d9b9e4d0b7" key="Luther, Martin">Martin Luther</persName>s. Mit einer Vorrede vom Prälaten Dr. Hüffell,</hi> <placeName xml:id="id9f7ec76b-ea3e-4e3c-8e47-d07e100f7636" key="Karlsruhe">Carlsruhe</placeName> og <placeName xml:id="idd538e794-d0e3-40cb-b163-98672a3fe4da">Leipzig</placeName> 1836, ktl. 3, hvorimod NT-1819 har »det sandselige Menneske«.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-79" n="179,13">
+          <label xml:id="id2e2152b0-1a28-4571-8683-1e326a54d934">
+            <hi xml:id="idc65171ea-3f66-4e50-8d81-07bde1cb4ebf" rendition="#bol">ret</hi>
+          </label>
+          <p xml:id="id05e26fc7-afb1-4bd8-afc5-eb1b446b36a6">fuldstændig, akkurat.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-80" n="179,14">
+          <label xml:id="idd11cf030-5f8a-48b0-a908-da6b27a4bd1c">
+            <hi xml:id="idaabe34e2-faf4-47db-bfb3-cc30e31a304c" rendition="#bol">er ikke saa</hi>
+          </label>
+          <p xml:id="idb3f270a7-4778-478c-8fa5-32eb22305ca7">forholder sig ikke således.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-1006" n="179,15">
+          <label xml:id="id2d3a10a0-f983-419f-b669-901b4c04aba0">
+            <hi xml:id="id8c0596ad-743f-4bf8-b4ee-a52f35cc3bd9" rendition="#bol">de Søgnedage</hi>
+          </label>
+          <p xml:id="id76f9e6cf-7641-4470-a2a4-3bfc641f6bce">hverdagene.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-86" n="180,2">
+          <label xml:id="id26241473-46e8-42cd-a792-896c668f830d">
+            <hi xml:id="idc2007dd2-57d5-4112-be19-e39449c7364c" rendition="#bol">Menigheden vilde han vel dømme om, som fordum: de ere vildledte</hi>
+          </label>
+          <p xml:id="id47c3edcb-fd74-4933-9e5e-88cd0443f5f7">hentyder formentlig til <rs xml:id="id7975565b-916a-449c-86be-498257fce775" type="bible">Matt 15,14</rs>, hvor <persName xml:id="id7a3b0d6e-f6e5-4792-9f0a-e92d332ab3be" key="Jesus">Jesus</persName> siger om farisæerne: »Lader dem fare, Blinde ere Blindes Veiledere; men naar en Blind leder en Blind, da falde de begge i Graven« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hcd-87" n="180,3">
+          <label xml:id="id30b5ba4c-278a-45dd-9374-e6d58016759a">
+            <hi xml:id="id682febdc-cbd9-41f7-ba1e-bb6621773768" rendition="#bol">»i lange Klæder«</hi>
+          </label>
+          <p xml:id="idd363da2e-3216-4fe0-907d-8652241f5d12">sigter til <rs xml:id="id35aa20dd-e879-450e-8a6f-8f6d9b8edd75" type="bible">Mark 12,38</rs>, hvor <persName xml:id="idf7cd8166-b5d5-449b-9456-297ae05f251a" key="Jesus">Jesus</persName> på tempelpladsen advarer den store folkeskare mod de skriftkloge: »Og han sagde til dem i sin Underviisning: tager Eder vare [i agt] for de Skriftkloge, som gierne gaae i lange Klæder og lade sig hilse paa Torvene« (NT-1819). Se også <rs xml:id="id90fff8ab-f381-436e-95a9-0e21cc8f3e1a" type="bible">Luk 20,46</rs>, hvor det hedder: »Vogter Eder for de Skriftkloge, som gierne gaae omkring i lange Klæder, og lade sig gierne hilse paa Torvene, og ville [vil] gierne have de fornemmeste Sæder i Synagogerne, og sidde øverst tilbords ved Nadverne« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hcd-88" n="180,4">
+          <label xml:id="id944a06e0-de31-4f11-af8a-eec171791b2e">
+            <hi xml:id="id87d775ae-c971-4ab3-adb2-0c5b32a4b1f4" rendition="#bol">Kjøbmændene ... der have forvandlet Guds Huus ... til en Fjællebod</hi>
+          </label>
+          <p xml:id="idef3375d8-1aed-45f2-ab8e-6ad80530e1eb">hentyder til beretningen om tempelrensningen i <rs xml:id="ide81f4140-bb10-4668-bcc2-86486ae22cf8" type="bible">Matt 21,12-13</rs>: »Jesus gik ind i Guds Tempel, og uddrev alle dem, som solgte og kiøbte i Templet, og omstødte Vexelerernes Borde og Duekræmmernes Stole. Og han sagde til dem: der er skrevet: mit Huus skal kaldes et Bedehuus, men I have giort det til en Røverkule« (NT-1819). – <hi xml:id="id93d16afc-4e14-468a-ac44-333b0f4ddf80" rendition="#bol">Røverkule:</hi> hule, hvori røvere holder til; tilholdssted for røvere. – <hi xml:id="id90688a0f-adba-4d49-a074-c4e1a709bd9a" rendition="#bol">Fjællebod:</hi> bod af fjæle (brædder) opstillet på markeder o.l. til forevisning af gøgl.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-89" n="180,5">
+          <label xml:id="id89a2b1dc-fb6b-49f6-a38e-123d70b8666d">
+            <hi xml:id="id95f9f71a-49f1-4177-bf63-72e3f3359f90" rendition="#bol">»I Hyklere, I Slanger, I Øgle-Unger«</hi>
+          </label>
+          <p xml:id="id2265c6fc-e99a-4fb2-9234-2c41f3d7ed22">frit citat fra <rs xml:id="idb7d1822d-6614-436c-9a63-e6a5da70d85f" type="bible">Matt 23,33</rs> (<ptr xml:id="id973e9a90-2ca5-4aed-b75d-11e78c2b78ae" type="commentary" target="#hcd-508" n="177,3"/>); <persName xml:id="id678ac3c4-7cb4-472b-846c-8b1206ae7f93" key="Jesus">Jesus</persName> kalder også de skriftkloge for hyklere (<ptr xml:id="idd187bf3e-0bb5-4436-96ca-9437b0d115ba" type="commentary" target="#hcd-71" n="178,20"/>).</p>
+        </note>
+        <note type="commentary" xml:id="hcd-90" n="180,6">
+          <label xml:id="id9afbf166-da0a-4196-8dec-88b7c858944d">
+            <hi xml:id="id770c94b9-a288-4289-a251-c262ee17fcd2" rendition="#bol">han vilde vel som fordum danne en Svøbe af Snorer, for at jage dem ud af Templet</hi>
+          </label>
+          <p xml:id="id6f197185-6e45-4ceb-a7d7-ff48315c76d1">sigter til beretningen i <rs xml:id="id89dc039f-923d-496e-af07-d0f1a7fac490" type="bible">Joh 2,13-17</rs> om tempelrensningen, hvor det fortælles, at <persName xml:id="ida9fc9799-d7e0-4612-9a51-9ba41fe495f6" key="Jesus">Jesus</persName> »giorde en Svøbe af Snorer [piske af reb], og drev dem alle ud af Templet, tilligemed Faarene og Øxnene [okserne, kreaturerne], og spredte Vexelerernes Penninge, og omstødte Bordene«, v. 15 (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="hcd-91" n="180,10">
+          <label xml:id="ida1d88902-e739-4216-b76a-3f4317dba52a">
+            <hi xml:id="id3a0ab576-148d-4f84-b9ea-99313a2c1ca9" rendition="#bol">forskyldte jeg</hi>
+          </label>
+          <p xml:id="ida22d0a94-6613-4065-a126-af7a513b481e">gjorde jeg mig skyldig i.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-515" n="180,10">
+          <label xml:id="id8d2e75d5-0fe1-4bec-b1c3-0b81268e38cf">
+            <hi xml:id="id756724b0-d5ea-4735-ba98-8da5175916ff" rendition="#bol">grueligste</hi>
+          </label>
+          <p xml:id="idbb8dd3df-08da-4757-8446-6c8c89d1127b">dels: allerstørste, dels: mest rædsomme, frygteligste.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-516" n="180,14">
+          <label xml:id="idd925d4ae-59f9-42c8-bb6f-60822a93f972">
+            <hi xml:id="id31a1640a-0ae0-4521-aa01-c01ae6185801" rendition="#bol">simpelt</hi>
+          </label>
+          <p xml:id="idf7f3ba0b-35a1-499d-8326-c345d9808a06">tarveligt, 'lavt'.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-93" n="180,23">
+          <label xml:id="id1a69c6db-c31b-4782-80a4-edde0b962bef">idel <hi xml:id="id62ce2369-8b93-4fd5-9f60-3eb29c3b9de9" rendition="#bol">Godmand</hi></label>
+          <p xml:id="idd718ccbd-0e76-4917-857a-20a88b0f6fc9">egl. hovedpersonen i <persName xml:id="idc1b6a618-7d42-4037-8d99-1345ce290ebc" key="Thieme, K.T.">K.T. Thieme</persName>s børnebog <hi xml:id="id2de23b9b-0dfd-4a12-9d9f-8bc3409a9829" rendition="#ita">Godmand eller den danske Børneven</hi> [ty. 1789, da. 1798 og flere gange senere]; en overdreven brav, hjertelig og tåbelig mand.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-94" n="180,23">
+          <label xml:id="idc4fb4897-ccda-463d-aaf8-0785e2490fa1">
+            <hi xml:id="id3f0bf11a-816f-4798-a28a-6845b56172a1" rendition="#bol">at Tallerkenen kan gaae omkring under Talen</hi>
+          </label>
+          <p xml:id="id68de8ab5-a092-4a9b-b4ea-4ac24b23fb83">formentlig allusion til de såkaldte tavlepenge, der blev indsamlet under gudstjenesten derved, at en tavle, dvs. en skuffeformet træplade på et skaft, blev båret rundt for at indsamle pengebidrag til de fattige og nødlidende. Denne aktivitet foregik altid under præstens prædiken, og da der ofte gik flere tavler rundt til forskellige formål, virkede det forstyrrende på den andagtssøgende. Alligevel blev tavleombæringen først afskaffet i 1877.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-95" n="180,25">
+          <label xml:id="id6145a1e4-b4fa-4658-84a0-634eee299185">
+            <hi xml:id="idffa2a891-11c4-4fd3-bb39-8d1a719e2ed1" rendition="#bol">spytte godt i Bøssen</hi>
+          </label>
+          <p xml:id="idf36e7ba4-c9d5-44f9-8db5-b979e9cea8b4">fast udtryk: punge ud.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-517" n="180,26">
+          <label xml:id="idf7555ed4-a4e5-440e-8cab-b697693d0ef0">
+            <hi xml:id="idddbfd325-2550-4dd2-beb9-32f9d78aea9a" rendition="#bol">Menneske-Frygt</hi>
+          </label>
+          <p xml:id="idab2c15f0-2d19-4404-9a16-95996f46f276">frygt for de andre menneskers mening og dom.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-99" n="180,33">
+          <label xml:id="id8a53adeb-4590-451c-8c73-b81ac234ab0d">
+            <hi xml:id="id0b66148e-eef2-4ac3-a29f-6400b18af869" rendition="#bol">I havde, som det jo ogsaa skete, skjult ladet Folket gjøre det</hi>
+          </label>
+          <p xml:id="id2568e4b9-17e5-40ea-a1a8-41aa3d5dcdaf">sigter til <rs xml:id="id90e57e17-bc0a-4e8e-801f-d7178a562e31" type="bible">Matt 27,20</rs>, hvor ypperstepræsterne og de ældste overtaler folkeskarerne til at få <persName xml:id="id1061c22a-80fd-41ef-8182-8142fa7fcdf0" key="Jesus">Jesus</persName> henrettet; sml. <rs xml:id="idcfb7a01f-d64d-4932-95c0-13f6ca443a91" type="bible">Matt 27,25</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="hcd-1007" n="180,35">
+          <label xml:id="id62b77e8f-d082-4c42-82dc-ff5c25ffd2e7">
+            <hi xml:id="idd4937e3a-dcc9-4459-b233-2e02d311d7a4" rendition="#bol">hvad der er skjult bliver dog aabenbart</hi>
+          </label>
+          <p xml:id="id21c8794b-08ff-4f49-8939-a418a677c399">spiller på <rs xml:id="id5a1abcd1-eb6e-4304-aec3-ee7c3180111e" type="bible">Matt 10,26</rs>, hvor <persName xml:id="idee714bd4-c299-4d3a-a30b-56a91aa6ba10" key="Jesus">Jesus</persName> siger til disciplene: »Intet er skiult, som jo [ikke] skal aabenbares« (NT-1819).</p>
+        </note>
+      </div>
+    </body>
+  </text>
 </TEI>

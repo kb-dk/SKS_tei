@@ -1,127 +1,574 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>J.L.A. Kolderup-Rosenvinge</title>
-     
-     <title type="short">B259</title>
-  <author>
-   <name>Jon Tafdrup</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Johnny Kondrup. Citater</name><name>henvisninger kontrolleret af Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2012</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K28</biblScope>
-     <biblScope unit="file">http://sks.dk/b259/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition xml:id="lineHight1" scheme="css">line-height:150%</rendition><rendition xml:id="lineHight2" scheme="css">line-height:200%</rendition><rendition xml:id="size-1" scheme="css">font-size: 83%</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20130220">txr/XML, <bibl><idno type="version">1.8</idno>, <biblScope unit="file">http://sks.dk/b259/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="idaa4b95dd-4a04-4cdb-8427-4014e12b43cd">
+    <fileDesc xml:id="id6f7c9013-ed32-4f15-9d6a-96ef8c4bafde">
+      <titleStmt xml:id="id47cea659-4034-4327-9911-cab27d79c88f">
+        <title xml:id="id3a8dc133-7fae-4089-82bd-d4bc88ab8550" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id1bfea6ec-2aac-420c-a1d4-d96137bcd609">J.L.A. Kolderup-Rosenvinge</title>
+        <title xml:id="id9d784c1a-aaf3-4a4b-9e0c-4b7bfe6a9fdd" type="short">B259</title>
+        <author xml:id="id29276a37-79b5-4ad2-8064-4a1ee7011f54">
+          <name xml:id="id77b6357c-3d50-481e-a270-9f35fe813913">Jon Tafdrup</name>
+        </author>
+        <editor xml:id="id1a27a9ca-c4cc-4206-aef3-d0f819d47cd2">
+          <name xml:id="ide510af91-836e-476b-bb3a-1477827d01c5">Niels Jørgen Cappelørn</name>
+          <name xml:id="id9bbbe541-18cb-4565-845c-36f07f02e579">Joakim Garff</name>
+          <name xml:id="idae664935-7537-4733-8416-0de25070507e">Johnny Kondrup</name>
+          <name xml:id="id462d50df-8873-410a-b684-adf4862ea954">Tonny Aagaard Olesen</name>
+          <name xml:id="id4ef29667-3eaa-4203-9558-a15feb764390">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="ide81eb29f-ea9f-4687-9682-e8cc8ec5e4ef">
+          <resp xml:id="ida1a94d71-0707-432b-a1c4-22a3f77ada52">redigeret af</resp>
+          <name xml:id="id6ce79c85-7b2c-4968-b42c-1e97bef03124">Johnny Kondrup. Citater</name>
+          <name xml:id="id446e9464-915c-4fbe-af65-5e6c79659fd3">henvisninger kontrolleret af Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="id493cc1ce-ea4f-49d0-8fa1-e6cafc27bed4">
+          <resp xml:id="id4f5743cf-1006-4d08-b395-813fefaf75f4">elektronisk redigeret af</resp>
+          <name xml:id="id4ec3c363-0cff-47d6-9536-82495c8b0698">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id814cc1ba-df30-4c6e-8636-b05b0f49d9f1">
+        <authority xml:id="id63aacfaa-de9e-4c3e-aa23-af8a89e15627">Søren Kierkegaard Forskningscenteret 2012</authority>
+        <availability xml:id="id2947b812-7c2f-4046-ab60-9cc653abb21e" status="restricted">
+          <p xml:id="id6f5e1ca2-228c-450c-b0cc-38c3a8ce33f9">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id2559e5a9-70c5-43ab-85b1-00c58add3283">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="idcda585f1-e1e8-48be-880c-82289f2ddb7d" unit="volume">K28</biblScope>
+        <biblScope xml:id="id92b86ca7-97cd-43cb-8087-14f259a5fd20" unit="file">http://sks.dk/b259/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="idbbe39c63-1334-4b0d-8203-a27f4e0cc5f5">
+        <bibl xml:id="id825ee036-32fd-454c-aefd-37d4e413c64f" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id84302f63-b3a9-4ff2-971d-f9174c705330">
+      <tagsDecl xml:id="id7e7e5ad8-2d8d-4c42-98a7-85cb559325b3">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition xml:id="lineHight1" scheme="css">line-height:150%</rendition>
+        <rendition xml:id="lineHight2" scheme="css">line-height:200%</rendition>
+        <rendition xml:id="size-1" scheme="css">font-size: 83%</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id08eb1332-abbc-4fe3-bae4-14d45fa512d5">
+      <change xml:id="id6198b2b3-b1dd-4b13-bba5-fee5afb6bb1e">Transformed to TEI by style sheet <bibl xml:id="id708df877-5490-40b7-a73b-cd146a09f076" type="file">txr2tei.xsl</bibl> version as of <date xml:id="id599bf72d-7e14-432d-9e6a-3b72176ac940">2017-02-15</date> importing <bibl xml:id="idedb9e0dd-061d-45cc-9048-463fd051a891" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="id09aff7b2-3ddf-473d-afed-236822adafe0">Transformed to TEI by style sheet <bibl xml:id="id759116e2-bf6e-4589-939e-b990e4c6cb27" type="file">kn12tei.xsl</bibl> version <idno xml:id="id2922d0b4-1b8c-4e7c-90ed-ded6bcb74632" type="version">1.9</idno> as of <date xml:id="idb08236b4-3b77-4750-ace5-f016cd135a3f">2017-02-21</date> by <name xml:id="id976b84b9-6c79-4f02-aa3a-bce73621f34d">Karsten Kynde</name>, <orgName xml:id="idbf94aaeb-1a9f-4c4d-a794-33fe4b2d19a4">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="id0d0aabca-48dc-4dc0-9278-72f6c81b119f">København</placeName></change>
+      <change xml:id="id2957bd16-44f0-421c-ab9f-f898d5a725ad" when="20130220">txr/XML, <bibl xml:id="id2c73cc88-e53d-4cb3-a2f2-d52807534a60"><idno xml:id="idf376d4b5-3e08-4ef5-b74c-4c90c775675e" type="version">1.8</idno>, <biblScope xml:id="idc4659f74-070e-4c7c-95cd-410a3d41b662" unit="file">http://sks.dk/b259/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
-
-<text type="TextCriticalAccount" subtype="lettersAndDedications"><body><div><head type="topText" n="Tekstredegørelse"/>
-    <head>Tekstredegørelse</head>
-    <list type="TOC">
-      <item>1. Manuskriptbeskrivelse<ptr type="chapter" target="#k1" n=""/></item>
-      <item>2. Datering og kronologi<ptr type="chapter" target="#k2" n="528"/></item>
-    </list>
-    <div type="level1" xml:id="k1">
-      <head>1. Manuskriptbeskrivelse</head>
-      <p>Til brevene i gruppen »Kolderup-Rosenvinge« findes følgende manuskripter, hvoraf <ref target="../B259/txt.xml#n259" type="lettersAndDedications" n="259">Brev 259</ref>-261, 263, 265, 267, 271, 273 og 275 befinder sig i Kierkegaard Arkivet (KA) og <ref target="../B259/txt.xml#n262" type="lettersAndDedications" n="262">Brev 262</ref>, <ref target="../B259/txt.xml#n264" type="lettersAndDedications" n="264">264</ref>, <ref target="../B259/txt.xml#n266" type="lettersAndDedications" n="266">266</ref>, <ref target="../B259/txt.xml#n268" type="lettersAndDedications" n="268">268</ref>-269, 272 og 274 i Ny Kongelig Samling (NKS) på <placeName key="Kongelige Bibliotek, Det">Det Kongelige Bibliotek</placeName> (KB). <ref target="../B259/txt.xml#n270" type="lettersAndDedications" n="270">Brev 270</ref> befinder sig i Sammlung Darmstaedter på Staatsbibliothek zu <placeName>Berlin</placeName>.<note> <p><ref target="../B259/txt.xml#n262" type="lettersAndDedications" n="262">Brev 262</ref>-268 og 272-274 er første gang trykt i <persName key="Lange, Hans Ostenfeld">H.O. Lange</persName> »<persName key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>s og <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup Rosenvinge</persName>s Spasereture« i <hi rendition="#ita">Dansk Tidsskrift,</hi> feb. 1898, <placeName key="København">Kbh.</placeName> 1898. De øvrige breve er trykt første gang i <hi rendition="#ita">EP</hi> eller <hi rendition="#ita">B&amp;A.</hi></p>
-        </note></p>
-      <msDesc><msIdentifier><collection>B259</collection></msIdentifier>
-        <msPart xml:id="physDesc.259" next="#additional.259"><msIdentifier><idno>259</idno></msIdentifier><physDesc><p><ref target="../B259/txt.xml#n259" type="lettersAndDedications" n="259">Brev 259</ref>. Fra <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 387).</p><p>1 dobbeltblad i 8<hi rendition="#sup">o</hi>.<note>
-                <p>Udgangspunktet for formatbetegnelsen er plane helark, som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Irregulære, fx afrevne, enheder betegnes som lapper. Dobbeltblad betegner et stykke papir, der er ombøjet (foldet) til blade.</p>
-              </note></p><p>Ingen paginering.</p><p>Papir: gråligt postvelin, glat; blindtryk af en krone i en oval. Mål: 135 × 208 mm.<note>
-                <p>Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p>
-              </note></p><p>Bladene har efter beskrivning været foldet to gange på tværs til konvolut (mål: 135 × 75 mm<note>
-                <p>Oplysningen om konvoluttens mål gælder det foldede brev, alternativt den separate konvolut. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant); øverste kant bestemmes af udskriftens skriveretning.</p>
-              </note>); rest af rød oblat.<note>
-                <p>Det gælder for alle breve, der har været foldet til konvolut og forseglet, at brevmodtagerens brud på forseglingen har forårsaget en mindre beskadigelse af ms.</p>
-              </note></p><p><pb xml:id="ss524" n="524" edRef="#SKS"/>Bl. [1v]-[2r] er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.259" prev="#physDesc.259"><msIdentifier><idno>259</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 1 læg 11; <hi rendition="#ita">B&amp;A</hi> 160)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.260" next="#additional.260"><msIdentifier><idno>260</idno></msIdentifier><physDesc><p><ref target="../B259/txt.xml#n260" type="lettersAndDedications" n="260">Brev 260</ref>. Fra <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 387-388).</p><p>1 dobbeltblad i 8<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gråligt postvelin, glat; blindtryk af en krone i en oval. Mål: 135 × 208 mm.</p><p>Bladene har efter beskrivning været foldet to gange på tværs til konvolut (mål: 135 × 73 mm); rest af oblat.</p><p>Bl. [1v]-[2r] er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.260" prev="#physDesc.260"><msIdentifier><idno>260</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 1 læg 11; <hi rendition="#ita">B&amp;A</hi> 172)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.261" next="#additional.261"><msIdentifier><idno>261</idno></msIdentifier><physDesc><p><ref target="../B259/txt.xml#n261" type="lettersAndDedications" n="261">Brev 261</ref>. Fra <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 388).</p><p>1 dobbeltblad i 8<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gråligt postvelin, glat; blindtryk af en krone i en oval. Mål: 135 × 208 mm.</p><p>Bladene har efter beskrivning været foldet to gange på tværs til konvolut (mål: 135 × 76 mm); rest af rød oblat.</p><p>Bl. [1v]-[2r] er ubeskrevet.</p><p>En enkelt korrektion.</p></physDesc></msPart><msPart xml:id="additional.261" prev="#physDesc.261"><msIdentifier><idno>261</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 1 læg 11; <hi rendition="#ita">B&amp;A</hi> 173)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.262" next="#additional.262"><msIdentifier><idno>262</idno></msIdentifier><physDesc><p><ref target="../B259/txt.xml#n262" type="lettersAndDedications" n="262">Brev 262</ref>. Fra SK til <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi rendition="#ita">SKS</hi> 28, 389-390).</p><p>1 dobbeltblad i 8<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt velin, glat. Mål: 124 × 200 mm.</p><p>Bladene har efter beskrivning været foldet en gang på langs og en gang på tværs.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.262" prev="#physDesc.262"><msIdentifier><idno>262</idno></msIdentifier><additional><adminInfo><note><p>(NKS 3101 4<hi rendition="#sup">o</hi>; <hi rendition="#ita">B&amp;A</hi> 180)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.263" next="#additional.263"><msIdentifier><idno>263</idno></msIdentifier><physDesc><p><ref target="../B259/txt.xml#n263" type="lettersAndDedications" n="263">Brev 263</ref>. Fra <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 390-391).</p><p>1 dobbeltblad i 8<hi rendition="#sup">o</hi> med tresidet guldsnit.</p><p>Ingen paginering.</p><p>Papir: gulligt postvelin, glat. Mål: 122 × 189 mm.</p><p>Bladene har efter beskrivning været foldet en gang på langs ved højre kant og to gange på tværs.</p><p>Bl. [2r]-[2v] er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.263" prev="#physDesc.263"><msIdentifier><idno>263</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 1 læg 11; <hi rendition="#ita">B&amp;A</hi> 181)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.264" next="#additional.264"><msIdentifier><idno>264</idno></msIdentifier><physDesc><p><pb xml:id="ss525" n="525" edRef="#SKS"/><ref target="../B259/txt.xml#n264" type="lettersAndDedications" n="264">Brev 264</ref>. Fra SK til <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi rendition="#ita">SKS</hi> 28, 391-394).</p><p>1 dobbeltblad + 1 løst blad, i alt 3 blade i 8<hi rendition="#sup">o</hi> med tresidet guldsnit.</p><p>Ingen paginering.</p><p>Papir: gråligt velin, glat. Mål: 125 × 200 mm.</p><p>Bladene har efter beskrivning været foldet to gange på tværs.</p><p>Bl. [3v] er ubeskrevet.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.264" prev="#physDesc.264"><msIdentifier><idno>264</idno></msIdentifier><additional><adminInfo><note><p>(NKS 3101 4<hi rendition="#sup">o</hi>; <hi rendition="#ita">B&amp;A</hi> 184)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.265" next="#additional.265"><msIdentifier><idno>265</idno></msIdentifier><physDesc><p><ref target="../B259/txt.xml#n265" type="lettersAndDedications" n="265">Brev 265</ref>. Fra <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 394-397).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt postvelin, glat. Mål: 215 × 275 mm.</p><p>Bladene har efter beskrivning været foldet to gange på langs og tre gange på tværs til konvolut (mål: 147 × 90 mm); rødt laksegl med motiv af <persName key="Herkules">Herakles</persName>. Konvolutten har desuden været foldet en gang på langs.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.265" prev="#physDesc.265"><msIdentifier><idno>265</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 1 læg 11; <hi rendition="#ita">B&amp;A</hi> 185)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.266" next="#additional.266"><msIdentifier><idno>266</idno></msIdentifier><physDesc><p><ref target="../B259/txt.xml#n266" type="lettersAndDedications" n="266">Brev 266</ref>. Fra SK til <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi rendition="#ita">SKS</hi> 28, 397-402).</p><p>4 løse blade i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 170 × 208 mm.</p><p>Bladene har efter beskrivning været foldet to gange på langs og en gang på tværs.</p><p>Bl. [4v] er ubeskrevet.</p><p>Få korrektioner. På bl. [3v] findes en tilføjelse skrevet på langs i randen af papiret. Nederst på bl. [3v] er en linje slettet, og årsagen er formentlig følgende: efter »fra det faste Punkt bag ved.« (<hi rendition="#ita">SKS</hi> 28, 401,20-21) er SK ved en fejl begyndt på brevets sidste afsnit (<hi rendition="#ita">SKS</hi> 28, 401, 35), dvs. på en ny linje med indryk. Han har skrevet en linje af afsnittet, før han har streget ud og fortsat det afbrudte afsnit.</p></physDesc></msPart><msPart xml:id="additional.266" prev="#physDesc.266"><msIdentifier><idno>266</idno></msIdentifier><additional><adminInfo><note><p>(NKS 3101 4<hi rendition="#sup">o</hi>; <hi rendition="#ita">B&amp;A</hi> 186)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.267" next="#additional.267"><msIdentifier><idno>267</idno></msIdentifier><physDesc><p><ref target="../B259/txt.xml#n267" type="lettersAndDedications" n="267">Brev 267</ref>. Fra <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 402-406).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt postvelin, glat. Mål: 215 × 275 mm.</p><p>Bladene har efter beskrivning været foldet to gange på langs og tre gange på tværs til konvolut (mål: 155 × 90 mm); spor efter forsegling. Konvolutten har desuden været foldet en gang på langs.</p><p>Brud på forseglingen har gjort dele af teksten ulæselig på bl. [2r] (se <ref target="../B259/txt.xml#ill_21" type="figure" n="405">illustration 21</ref>, <hi rendition="#ita">SKS</hi> 28, 405).</p><p><pb xml:id="ss526" n="526" edRef="#SKS"/>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.267" prev="#physDesc.267"><msIdentifier><idno>267</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 1 læg 11; <hi rendition="#ita">B&amp;A</hi> 187)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.268" next="#additional.268"><msIdentifier><idno>268</idno></msIdentifier><physDesc><p><ref target="../B259/txt.xml#n268" type="lettersAndDedications" n="268">Brev 268</ref>. Fra SK til <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi rendition="#ita">SKS</hi> 28, 406-410).</p><p>1 dobbeltblad + 1 løst blad, i alt 3 blade i 4<hi rendition="#sup">o</hi>. Det løse blad har afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: blåligt koncept, groft. Mål: 169 × 205 mm.</p><p>Bladene har efter beskrivning været foldet en gang på langs og en gang på tværs.</p><p>Få korrektioner. Nederst på bl. [2v] findes en længere tilføjelse.</p></physDesc></msPart><msPart xml:id="additional.268" prev="#physDesc.268"><msIdentifier><idno>268</idno></msIdentifier><additional><adminInfo><note><p>(NkS 3101 4<hi rendition="#sup">o</hi>; <hi rendition="#ita">B&amp;A</hi> 188)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.269" next="#additional.269"><msIdentifier><idno>269</idno></msIdentifier><physDesc><p><ref target="../B259/txt.xml#n269" type="lettersAndDedications" n="269">Brev 269</ref>. Fra SK til <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi rendition="#ita">SKS</hi> 28, 410-412).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: blåligt koncept, groft. Mål: 170 × 205 mm.</p><p>Bladene har efter beskrivning været foldet en gang på langs og en gang på tværs.</p><p>Få korrektioner. På bl. [2r] findes en tilføjelse skrevet på langs i randen af papiret. På bl. [2v] findes en længere tilføjelse øverst på bladet; tilføjelsen er fortsat på langs i randen af papiret.</p></physDesc></msPart><msPart xml:id="additional.269" prev="#physDesc.269"><msIdentifier><idno>269</idno></msIdentifier><additional><adminInfo><note><p>(NKS 3101 4<hi rendition="#sup">o</hi>; <hi rendition="#ita">B&amp;A</hi> 189)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.270" next="#additional.270"><msIdentifier><idno>270</idno></msIdentifier><physDesc><p><ref target="../B259/txt.xml#n270" type="lettersAndDedications" n="270">Brev 270</ref>. Fra SK til <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi rendition="#ita">SKS</hi> 28, 413).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afklippet kant i venstre side og øverst.</p><p>Ingen paginering.</p><p>Papir: blåligt koncept, groft. Mål: 214 × 165 mm.</p><p>Bladet har været foldet to gange på langs og to gange på tværs til konvolut (mål: ca. 148 × 99 mm). Konvolutten har desuden været foldet en gang på langs. Bladet bærer yderligere præg af at have været foldet en gang på tværs efter beskrivning.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.270" prev="#physDesc.270"><msIdentifier><idno>270</idno></msIdentifier><additional><adminInfo><note><p>(Sammlung Darmstaedter 2a 1845: <persName key="Kierkegaard, Søren Aabye">Kierkegaard, Sören</persName>, Staatsbibliothek zu <placeName>Berlin</placeName>; KB, Fot. br.; <hi rendition="#ita">B&amp;A</hi> 190)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.271" next="#additional.271"><msIdentifier><idno>271</idno></msIdentifier><physDesc><p><ref target="../B259/txt.xml#n271" type="lettersAndDedications" n="271">Brev 271</ref>. Fra SK til <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi rendition="#ita">SKS</hi> 28, 414-419); består af et brev og en efterskrift foldet til konvolut.</p></physDesc>
-              <msPart xml:id="physDesc.271.1" next="#additional.271.1"><msIdentifier><idno>271.1</idno></msIdentifier><physDesc><p>Brev.</p><p>2 dobbeltblade + 1 løst blad, i alt 5 blade i 4<hi rendition="#sup">o</hi>. Det løse blad har afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 170 × 206 mm.</p><p><pb xml:id="ss527" n="527" edRef="#SKS"/>Bladene har efter beskrivning været foldet en gang på langs og en gang på tværs til indstik i konvolut (ms. 271.2).</p><p>Bl. [5v] er halvt beskrevet.</p><p>Få korrektioner. På bl. [2r] har SK midt i en sætning efter linjeskift ved en fejl påbegyndt det efterfølgende afsnit og skrevet to linjer deraf; linjerne er overstreget, og nedenunder er den afbrudte sætning genoptaget (<hi rendition="#ita">SKS</hi> 28, 415,16).</p></physDesc></msPart><msPart xml:id="additional.271.1" prev="#physDesc.271.1"><msIdentifier><idno>271.1</idno></msIdentifier><additional><adminInfo><note/></adminInfo></additional></msPart>
-              <msPart xml:id="physDesc.271.2" next="#additional.271.2"><msIdentifier><idno>271.2</idno></msIdentifier><physDesc><p>Efterskrift foldet til konvolut.</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med uregelmæssigt afrevet kant øverst og nederst.</p><p>Ingen paginering.</p><p>Papir: gulligt velin, glat. Mål: 206 × 245 mm.</p><p>Bladet har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 115 × 102 mm); rødt laksegl med signeten »SAK«. Konvolutten har desuden været foldet en gang på tværs.</p></physDesc></msPart><msPart xml:id="additional.271.2" prev="#physDesc.271.2"><msIdentifier><idno>271.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> og <hi rendition="#ita">B-fort.</hi> 315; KA, D pk. 1 læg 11; <hi rendition="#ita">B&amp;A</hi> 211)</p></note></adminInfo></additional></msPart>
-            </msPart><msPart xml:id="additional.271" prev="#physDesc.271"><msIdentifier><idno>271</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> og <hi rendition="#ita">B-fort.</hi> 315; KA, D pk. 1 læg 11; <hi rendition="#ita">B&amp;A</hi> 211)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.272" next="#additional.272"><msIdentifier><idno>272</idno></msIdentifier><physDesc><p><ref target="../B259/txt.xml#n272" type="lettersAndDedications" n="272">Brev 272</ref>. Fra SK til <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi rendition="#ita">SKS</hi> 28, 419-422).</p><p>2 dobbeltblade, i alt 4 blade i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 170 × 204 mm.</p><p>Bladene har efter beskrivning været foldet en gang på langs og en gang på tværs.</p><p>Få korrektioner. På bl. [3v] findes en tilføjelse på langs i randen af papiret. Brevets slutning mangler.</p></physDesc></msPart><msPart xml:id="additional.272" prev="#physDesc.272"><msIdentifier><idno>272</idno></msIdentifier><additional><adminInfo><note><p>(NKS 3101 4<hi rendition="#sup">o</hi>; <hi rendition="#ita">B&amp;A</hi> 214)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.273" next="#additional.273"><msIdentifier><idno>273</idno></msIdentifier><physDesc><p><ref target="../B259/txt.xml#n273" type="lettersAndDedications" n="273">Brev 273</ref>. Fra <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 423-426).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt postvelin, glat. Mål: 215 × 275 mm.</p><p>Bladene har efter beskrivning været foldet to gange på langs og tre gange på tværs til konvolut (mål: 155 × 88 mm); rest af oblat. Konvolutten har desuden været foldet to gange på langs.</p><p>Oblaten har visse steder beskadiget ms. og gjort teksten ulæselig (fx <hi rendition="#ita">SKS</hi> 28, 426,1).</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.273" prev="#physDesc.273"><msIdentifier><idno>273</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 1 læg 11; <hi rendition="#ita">B&amp;A</hi> 216)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.274" next="#additional.274"><msIdentifier><idno>274</idno></msIdentifier><physDesc><p><ref target="../B259/txt.xml#n274" type="lettersAndDedications" n="274">Brev 274</ref>. Fra SK til <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi rendition="#ita">SKS</hi> 28, 426-427).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrevet kant i venstre side.</p><p>Ingen paginering.</p><p><pb xml:id="ss528" n="528" edRef="#SKS"/>Papir: gulligt koncept, glat. Mål: 169 × 204 mm.</p><p>Bladet har efter beskrivning været foldet en gang på langs og en gang på tværs.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.274" prev="#physDesc.274"><msIdentifier><idno>274</idno></msIdentifier><additional><adminInfo><note><p>(NKS 3101 4<hi rendition="#sup">o</hi>; <hi rendition="#ita">B&amp;A</hi> 217)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.275" next="#additional.275"><msIdentifier><idno>275</idno></msIdentifier><physDesc><p><ref target="../B259/txt.xml#n275" type="lettersAndDedications" n="275">Brev 275</ref>. Fra <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 427-428).</p><p>1 dobbeltblad i 8<hi rendition="#sup">o</hi> med afrundede hjørner.</p><p>Ingen paginering.</p><p>Papir: gulligt velin, glat. Mål: 120 × 185 mm.</p><p>Bl. [2r]-[2v] er ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.275" prev="#physDesc.275"><msIdentifier><idno>275</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 1 læg 11; <hi rendition="#ita">B&amp;A</hi> 264)</p></note></adminInfo></additional></msPart>
-      </msDesc>
-      <p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 315, 316, <hi rendition="#ita">L-fort.</hi> 322, <hi rendition="#ita">B-fort.</hi> 322.2;<note> <p>De otte breve fra <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> til SK fandtes alle blandt SKs papirer ved hans død, jf. <hi rendition="#ita">B-fort.</hi> 315, 316 og 322.2. Det er ikke muligt ud fra oplysningerne i <hi rendition="#ita">B-fort.</hi> at placere dem mere præcist. I <hi rendition="#ita">B-fort.</hi> 315 angiver <persName key="Barfod, Hans Peter">Barfod</persName> desuden et brev til <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>; det må dreje sig om <ref target="../B259/txt.xml#n271" type="lettersAndDedications" n="271">Brev 271</ref>.</p> </note> KA, D pk. 1 læg 11; NKS 3101 4<hi rendition="#sup">o</hi>; Sammlung Darmstaedter 2a 1845: <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>, Sören, Staatsbibliothek zu <placeName>Berlin</placeName>; KB, Fot. br.; <hi rendition="#ita">B&amp;A</hi> 160, 172-173, 180-181, 184-190, 211, 214, 216-217 og 264)</p>
-    </div>
-    <div type="level1" xml:id="k2">
-      <head>2. Datering og kronologi</head>
-      <p>Den bevarede brevveksling mellem SK og <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> forløber i perioden fra den 30. sept. 1847 til den 28. april 1850. 17 breve findes, hvoraf ni er skrevet af SK og otte af <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>. Sidstnævnte er alle dateret, mens kun ét af SKs er det; de øvrige kan dog dateres præcist eller omtrentligt ud fra indholdet.</p>
-      <p rendition="#ind">De første tre, <ref target="../B259/txt.xml#n259" type="lettersAndDedications" n="259">Brev 259</ref>-261, er alle skrevet af <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>; SKs mulige svar findes ikke. I <ref target="../B259/txt.xml#n259" type="lettersAndDedications" n="259">Brev 259</ref> takker <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> i et brev dateret »d 30 Sept. 1847« for <hi rendition="#ita">Kjerlighedens Gjerninger,</hi> som SK har sendt ham. Bogen blev annonceret som udkommet den 29. sept. 1847,<note> <p>Jf. <hi rendition="#ita">Adresseavisen,</hi> nr. 229, den 29. sept. 1847.</p> </note> så SK har altså straks ved udgivelsen sendt et gaveeksemplar. <ref target="../B259/txt.xml#n260" type="lettersAndDedications" n="260">Brev 260</ref> er dateret »d 18 Febr 1848« og <ref target="../B259/txt.xml#n261" type="lettersAndDedications" n="261">Brev 261</ref> »d. 6 Marts 1848«.</p>
-      <p rendition="#ind">Herefter følger en korrespondance fra sommeren 1848, <ref target="../B259/txt.xml#n262" type="lettersAndDedications" n="262">Brev 262</ref>-270. I brevene udfoldes en samtale på skrift, og SKs udaterede breve lader sig let <pb xml:id="ss529" n="529" edRef="#SKS"/>indplacere mellem <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>s daterede breve. I det følgende fremdrages enkelte passager i hvert brev som belæg for rækkefølgen.</p>
-      <p rendition="#ind"><ref target="../B259/txt.xml#n262" type="lettersAndDedications" n="262">Brev 262</ref> fra SK kan dateres til juli 1848 ud fra bemærkninger i <ref target="../B259/txt.xml#n263" type="lettersAndDedications" n="263">Brev 263</ref>. SK nævner i <ref target="../B259/txt.xml#n262" type="lettersAndDedications" n="262">Brev 262</ref> <persName key="Holberg, Ludvig">Holberg</persName>s <hi rendition="#ita">Mester <persName key="Gert Westphaler">Gert Westphaler</persName></hi> (1724), og han noterer desuden, idet <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> ligger på landet og derfor er forhindret i at spadsere, at han nu må lære »at spadsere med Dem paa Prent« (<hi rendition="#ita">SKS</hi> 28, 389,28). Af <ref target="../B259/txt.xml#n263" type="lettersAndDedications" n="263">Brev 263</ref> fra <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> dateret »Ordrupshøj d. 26<hi rendition="#sup">de</hi> Jul. 1848« fremgår det, at han er med på spøgen om at spadsere pr. brev. Yderligere beklager han, at han har fået brevet »otte Dage for silde, da jeg netop for en 8<hi rendition="#sup">te</hi> Dages Tid siden forelæste <persName key="Gert Westphaler">Gert W.</persName> her en Aften« (<hi rendition="#ita">SKS</hi> 28, 391,6-7). <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> meddeler yderligere, at han i de sidste otte dage har været bortrejst (jf. <hi rendition="#ita">SKS</hi> 28, 390,30-32). <ref target="../B259/txt.xml#n262" type="lettersAndDedications" n="262">Brev 262</ref> kan derfor tidligst have været afsendt otte dage før den 26. juli 1848, idet <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> ellers havde været hjemme til at modtage det.</p>
-      <p rendition="#ind">Som afslutning skriver <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> i <ref target="../B259/txt.xml#n263" type="lettersAndDedications" n="263">Brev 263</ref>: »Om Politik have vi slet ikke talt« (<hi rendition="#ita">SKS</hi> 28, 391,24). Denne bemærkning er grundlag for at tidsfæste SKs næste brev, <ref target="../B259/txt.xml#n264" type="lettersAndDedications" n="264">Brev 264</ref>. Hans første linje er en respons derpå: »'Vi fik ikke talt om Politik' siger De« (<hi rendition="#ita">SKS</hi> 28, 391,31). Brevet må være skrevet sidst i juli eller i begyndelsen af aug. 1848 inden <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>s næste brev.</p>
-      <p rendition="#ind"><ref target="../B259/txt.xml#n265" type="lettersAndDedications" n="265">Brev 265</ref> fra <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> er dateret »Ordrupshøj d. 8<hi rendition="#sup">de</hi> August 1848«. Han kommenterer indholdet af <ref target="../B259/txt.xml#n264" type="lettersAndDedications" n="264">Brev 264</ref>, idet han ironisk udnævner SK til tilhænger af Bevægelsespartiet og skriver: »Deres evige Lovtale over Spadseren, som De har bragt i et formeligt System, hvis Culminationspunkt er, at man kan <hi rendition="#ita">gaae</hi> fra det altsammen, viser mig tydeligt hvad Klokken er slaaet; thi ogsaa de øvrige Bevægelsesfolk ansee Bevægelsen selv for Hovedsagen, og har tilsidst ikke andet Maal end at gaae fra det altsammen« (<hi rendition="#ita">SKS</hi> 28, 394,22-27). I <ref target="../B259/txt.xml#n266" type="lettersAndDedications" n="266">Brev 266</ref> svarer SK: »Har jeg, som De sidst bemærkede, bragt det at spadsere i System, saa lad mig da her forsøge en lille Theorie af 'Bevægelsen', under hvilken Categorie igjen Standsningen hører« (<hi rendition="#ita">SKS</hi> 28, 400,14-17). Han omtaler tillige en artikel i <hi rendition="#ita">Berlingske Tidende</hi> fra den 9. aug. 1848 om en togulykke, hvori manglende færdigheder i at anvende en togvogns bremse spiller en central rolle.<note>
-          <p>Jf. <hi rendition="#ita">Berlingske Tidende,</hi> nr. 198, den 9. aug. 1848. Se også kommentaren til Brev 266, <ref target="../B259/kom.xml#b-1403" type="commentary">397,<hi rendition="#size-1"><hi rendition="#ita">23</hi></hi></ref>.</p>
-        </note> SK causerer over en bremses funktion, idet han inddrager ordets anden betydning, et insekt.</p>
-      <p rendition="#ind"><ref target="../B259/txt.xml#n266" type="lettersAndDedications" n="266">Brev 266</ref> er udateret, men er skrevet i midten af aug. 1848, idet <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>s næste brev, <ref target="../B259/txt.xml#n267" type="lettersAndDedications" n="267">Brev 267</ref>, er dateret »Ordrupshøj d. 20 Aug 1848« og indholder en bemærkning til SKs udvikling af bremsens funktion: »Ja, naar de Gale og de Blinde saaledes skulle vedblive at være Vejvisere for Folket, for at dette paa den folkeligste Maade kan løbe gal, er jeg nær ved at gaae over til Deres og Jeronymi Mening, at Verden neppe staaer til Paaske, om man <pb xml:id="ss530" n="530" edRef="#SKS"/>endogsaa sætter nok saa mange Bremser paa Galskabens Dampvogn!« (<hi rendition="#ita">SKS</hi> 28, 403,1-5). <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> henviser desuden til en artikel af <persName key="Christensen, Peter Vilhelm">P.W. Christensen</persName> i tidsskriftet <hi rendition="#ita">For Literatur og Kritik</hi><note> <p>Jf. <persName key="Christensen, Peter Vilhelm">P.W. Christensen</persName>
-          »De fem Verdensaldre« i <hi rendition="#ita">For Literatur og Kritik</hi> bd. 6, 2. hæfte, s. 146-190.</p>
-        </note> og afslutter sit brev med et ønske til SK: »har De seet Gjengangeren af den politiske Kandestøber? Det er en politisk Jernstøber, som hedder <persName key="Lunde, jernstøber">Lunde</persName> cfr. Hexeri og blind Allarm 4<hi rendition="#sup">de</hi> Act. 4 Scene. – Spørgsmaal, hvorledes forholder Jern sig til Kobber og især i Politiken? ønskes besvaret paa næste Spadseretour« (<hi rendition="#ita">SKS</hi> 28, 406,2-5).</p>
-      <p rendition="#ind">I <ref target="../B259/txt.xml#n268" type="lettersAndDedications" n="268">Brev 268</ref> reagerer SK på <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>s omtale af <persName key="Christensen, Peter Vilhelm">P.W. Christensen</persName>, SKs sekretær i årene 1842-43,<note> <p>Se kommentaren til Brev 268, <ref target="../B259/kom.xml#b-1456" type="commentary">402,<hi rendition="#size-1"><hi rendition="#ita">25</hi></hi></ref>.</p> </note> og opfylder ligeledes det afsluttende ønske i <ref target="../B259/txt.xml#n267" type="lettersAndDedications" n="267">Brev 267</ref>: »Dog det er sandt, inden vi gaae videre, ell. maaskee rigtigere idet vi nu gaae videre thi vi spadsere jo: da vi sidst talte sammen var der Noget, De forlangte jeg næste Gang skulde oplyse: hvilken er Forskjellen mellem en Jernstøber og Kandestøber« (<hi rendition="#ita">SKS</hi> 28, 408,20-23). SK har formentlig skrevet <ref target="../B259/txt.xml#n268" type="lettersAndDedications" n="268">Brev 268</ref> i slutningen af aug. 1848.</p>
-      <p rendition="#ind">Fra året 1848 findes endnu et par breve fra SK til <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>, <ref target="../B259/txt.xml#n269" type="lettersAndDedications" n="269">Brev 269</ref> og <ref target="../B259/txt.xml#n270" type="lettersAndDedications" n="270">270</ref>. I <ref target="../B259/txt.xml#n270" type="lettersAndDedications" n="270">Brev 270</ref> skriver SK: »Ved at søge efter i Papirer fra den allersidste Tid fandt jeg saa ogsaa et Brev til Dem, convoluteret og med Udskrift: Ordrupshøi. Det maa altsaa være skrevet, medens De endnu laae paa Landet« (<hi rendition="#ita">SKS</hi> 28, 413,7-9). Der er muligvis tale om <ref target="../B259/txt.xml#n269" type="lettersAndDedications" n="269">Brev 269</ref>; udskriften til dette brev er dog ikke bevaret, så det kan ikke bestemmes med sikkerhed. <ref target="../B259/txt.xml#n269" type="lettersAndDedications" n="269">Brev 269</ref> kan under alle omstændigheder tidsfæstes til sidste halvdel af sept. 1848. I brevet henviser SK til en artikel fra den 14. sept. i <hi rendition="#ita">Berlingske Tidende,</hi> hvor urtekræmmeren <persName key="Melbye, Christian F.">C.F. Melbye</persName> opstiller et politisk program i håb om at blive valgt til Den Grundlovgivende Rigsforsamling ved valget den 5. okt. 1848.<note> <p>Jf. <hi rendition="#ita">Berlingske Tidende,</hi> nr. 230, den 14. sept. 1848.</p> </note> <ref target="../B259/txt.xml#n270" type="lettersAndDedications" n="270">Brev 270</ref> må derfor være skrevet herefter, formentlig i løbet af sept.-okt. 1848.</p>
-      <p rendition="#ind">Herefter følger fire breve fra 1849. Hovedparten af <ref target="../B259/txt.xml#n271" type="lettersAndDedications" n="271">Brev 271</ref> fra SK til <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> er antagelig skrevet den 11. juli 1849; kun efterskriften på konvoluttens inderside er skrevet noget senere, idet SK her noterer, at indlagte »er skrevet allerede for nogen Tid siden« (<hi rendition="#ita">SKS</hi> 28, 418,31-32). I det indlagte henviser SK til en annonce i <hi rendition="#ita">Adresseavisen:</hi>
-        »Idag seer jeg saaledes igjen et Avertissement fra Hesteslagteren paa <placeName>Christianshavn</placeName>, at han har faaet noget 'særdeles meget fedt Kjød'. Dog det var ikke det, jeg vil fortælle, derimod er det hans Vignet, jeg vil tale om« (<hi rendition="#ita">SKS</hi> 28, 414,7-10); annoncen findes i avisen fra den 11. juli 1849.<note>
-          <p>Jf. tillægget til <hi rendition="#ita">Adresseavisen,</hi> nr. 160, den 11. juli 1849. Se også kommentaren til Brev 271, <ref target="../B259/kom.xml#b-1589" type="commentary">414,<hi rendition="#size-1"><hi rendition="#ita">7</hi></hi></ref><hi rendition="#size-1"><hi rendition="#ita"> -<ref target="../B259/kom.xml#b-1590" type="commentary">10</ref></hi></hi> og <ref target="../B259/txr.xml#ill_k10" type="figure" n="559">illustration 10</ref>, s. 559.</p> </note> Selv om brevet er konvolutteret og forseglet, er <pb xml:id="ss531" n="531" edRef="#SKS"/>det ikke sikkert, at det overhovedet har været afsendt. Ved SKs død blev det fundet blandt hans øvrige papirer.</p>
-      <p rendition="#ind">De to følgende breve er begge dateret. <ref target="../B259/txt.xml#n272" type="lettersAndDedications" n="272">Brev 272</ref>, hvis afslutning ikke er overleveret, er således af SK dateret »d. 28. Juli. 49«. <ref target="../B259/txt.xml#n273" type="lettersAndDedications" n="273">Brev 273</ref>, fra <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>, er dateret »Bakkehuset d. 1<hi rendition="#sup">ste</hi> August 1849«. Han nævner heri en nært forestående rejse til <placeName>Stockholm</placeName>, som »skal tiltrædes Søndag eller Mandag« (<hi rendition="#ita">SKS</hi> 28, 425,12). Denne oplysning kan anvendes til at datere SKs svar, <ref target="../B259/txt.xml#n274" type="lettersAndDedications" n="274">Brev 274</ref>. Den 1. aug. 1849 var en onsdag, og SKs svar må være skrevet i dagene efter modtagelsen, dvs. endnu inden <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> er rejst; SK skriver således: »jeg tvivler intet Øieblik paa, at det vil blive Dem en behagelig Tour« (<hi rendition="#ita">SKS</hi> 28, 427,14-15). <ref target="../B259/txt.xml#n274" type="lettersAndDedications" n="274">Brev 274</ref> er altså skrevet i begyndelsen af måneden, før søndag den 5. aug.</p>
-      <p rendition="#ind">Korrespondancens sidste brev, <ref target="../B259/txt.xml#n275" type="lettersAndDedications" n="275">Brev 275</ref>, er fra <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> og dateret »d. 28 Apr 1850«. Han undskylder for at måtte udsætte deres spadsereture og klager i øvrigt over et skrantende helbred. Han døde senere på
-        året den 4. aug. 1850 i <placeName>Frankrig</placeName> under et kurophold i <placeName>Nantes</placeName>.</p>
-      <p rendition="#ind">SK sendte senere et dedikeret eksemplar af <hi rendition="#ita">Indøvelse i Christendom,</hi> der udkom den 25. sept. 1850, til <persName key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>s ene datter <persName key="Kolderup-Rosenvinge, Wilhelmine Susanne">Wilhelmine Susanne Rothe</persName> og senere på
-        året et dedikeret eksemplar af <hi rendition="#ita">En opbyggelig Tale,</hi> der udkom den 20. dec. 1850, til den anden datter, <persName key="Kolderup-Rosenvinge, Sophie">Sophie</persName>. I begge gaveeksemplarer har SK ladet dedikationen følge af en sjælden personlig hilsen, hvori han giver udtryk for sin sorg over faderens bortgang (se <ref target="../Ded/txt.xml#n101" type="lettersAndDedications" n="101">Dedikation 101</ref> og <ref target="../Ded/txt.xml#n111" type="lettersAndDedications" n="111">111</ref>).</p>
-    </div>
-  </div></body></text></TEI>
+  <text xml:id="idbcfdf90b-f27f-419a-a8e0-a1a385165863" type="TextCriticalAccount" subtype="lettersAndDedications">
+    <body xml:id="idcb29cf67-d4db-49a7-9f06-733c8198a1f2">
+      <div xml:id="ide826ff68-6c33-404f-afcf-6c72d735330e">
+        <head xml:id="ida15cf771-47bf-467d-945c-b8330da8ac19" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="id9dda8c0b-45a6-4c61-bf05-f210499f2f42">Tekstredegørelse</head>
+        <list xml:id="id0978c865-d314-428d-8a9b-a888fd8761a3" type="TOC">
+          <item xml:id="ida89a989a-e91c-4c5d-a664-c3a451c6fdb5">1. Manuskriptbeskrivelse<ptr xml:id="id7748eeb2-dd63-48ae-ba0b-b86322d79ee8" type="chapter" target="#k1" n=""/></item>
+          <item xml:id="id3b8ccaef-d4de-48f8-8cd6-b646f89643f0">2. Datering og kronologi<ptr xml:id="id4ab0edb0-dc4e-4388-b627-00e3d62bde96" type="chapter" target="#k2" n="528"/></item>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="id37de8762-e487-4717-9f8a-4e78145bf29e">1. Manuskriptbeskrivelse</head>
+          <p xml:id="id277a80a1-024f-435d-85c6-9c2b18468b7d">Til brevene i gruppen »Kolderup-Rosenvinge« findes følgende manuskripter, hvoraf <ref xml:id="idb2f4a2c8-85c2-41fb-acd3-a4f8ed436069" target="../B259/txt.xml#n259" type="lettersAndDedications" n="259">Brev 259</ref>-261, 263, 265, 267, 271, 273 og 275 befinder sig i Kierkegaard Arkivet (KA) og <ref xml:id="id303780aa-a362-4f77-a37b-94a8f362c8e0" target="../B259/txt.xml#n262" type="lettersAndDedications" n="262">Brev 262</ref>, <ref xml:id="idcf163420-8329-4567-82f1-611a00fefc66" target="../B259/txt.xml#n264" type="lettersAndDedications" n="264">264</ref>, <ref xml:id="idc09979df-6a42-45fb-a57e-d0752eb774e7" target="../B259/txt.xml#n266" type="lettersAndDedications" n="266">266</ref>, <ref xml:id="id9cbaf50a-6e3a-4ddf-8f11-db292040116d" target="../B259/txt.xml#n268" type="lettersAndDedications" n="268">268</ref>-269, 272 og 274 i Ny Kongelig Samling (NKS) på <placeName xml:id="idfa828dfd-ad9f-48e9-b662-3af5bbfc9b92" key="Kongelige Bibliotek, Det">Det Kongelige Bibliotek</placeName> (KB). <ref xml:id="ida05cbe5a-9066-47de-a716-1f8bdbb81aed" target="../B259/txt.xml#n270" type="lettersAndDedications" n="270">Brev 270</ref> befinder sig i Sammlung Darmstaedter på Staatsbibliothek zu <placeName xml:id="ide25c7388-ce48-4045-96db-1a86ae4cd177">Berlin</placeName>.<note xml:id="ida8644b9c-cd91-4d17-b383-e1cc4db0d23b"><p xml:id="id4dff5e7e-7878-473f-b41a-1f1784bb3562"><ref xml:id="idc9a5b18d-162c-41cd-9e13-d23a07a024d7" target="../B259/txt.xml#n262" type="lettersAndDedications" n="262">Brev 262</ref>-268 og 272-274 er første gang trykt i <persName xml:id="id8a21612a-3c05-426f-80ca-56ba9ddebdd8" key="Lange, Hans Ostenfeld">H.O. Lange</persName> »<persName xml:id="id3d483615-cede-483a-a7bf-9a829e727c41" key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>s og <persName xml:id="id6c6b8804-bd83-4dd9-8820-8386460e6bb8" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup Rosenvinge</persName>s Spasereture« i <hi xml:id="id0dacfdd8-6888-44a5-b136-8c8b360b8367" rendition="#ita">Dansk Tidsskrift,</hi> feb. 1898, <placeName xml:id="idcfb8aee7-64c4-4de5-961f-c02e31f9cb29" key="København">Kbh.</placeName> 1898. De øvrige breve er trykt første gang i <hi xml:id="id19a8a5a7-94e0-471c-9222-f835cc3282d0" rendition="#ita">EP</hi> eller <hi xml:id="id49aec37f-8434-4bd5-aedf-e6fed08d1580" rendition="#ita">B&amp;A.</hi></p></note></p>
+          <msDesc xml:id="ida47f7d47-ce42-4b80-84cb-df63053af9b5">
+            <msIdentifier xml:id="id60fd3aee-c975-479a-b63c-d3f6488edc91">
+              <collection xml:id="id2f2a56f9-a743-41b5-806c-60ba9ecd432c">B259</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.259" next="#additional.259">
+              <msIdentifier xml:id="idc5be8f64-0085-48a4-8522-6861467ab46c">
+                <idno xml:id="ideda32ad7-2ed1-4c33-9934-fb0ceaed2323">259</idno>
+              </msIdentifier>
+              <physDesc xml:id="idaf24b957-aadb-4107-90dc-d91e5084a833">
+                <p xml:id="id9bafb0e2-86c0-493d-b0be-0a98a92fba71"><ref xml:id="id70473977-466a-4305-badb-245a5380e172" target="../B259/txt.xml#n259" type="lettersAndDedications" n="259">Brev 259</ref>. Fra <persName xml:id="idf0d29946-bf07-441b-a409-eb3368d7bd44" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> til SK (<hi xml:id="id9bcccc4d-5f9d-48cd-a6e7-dfeb5bec09aa" rendition="#ita">SKS</hi> 28, 387).</p>
+                <p xml:id="id075e3e22-234a-4e27-a661-485867984932">1 dobbeltblad i 8<hi xml:id="id0299664e-1f28-400a-800d-c070ef7cefbb" rendition="#sup">o</hi>.<note xml:id="ide6338bfa-01ea-48d0-a6e2-054f1d465693"><p xml:id="id6372f05e-65b0-4c35-9373-5b4717505466">Udgangspunktet for formatbetegnelsen er plane helark, som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Irregulære, fx afrevne, enheder betegnes som lapper. Dobbeltblad betegner et stykke papir, der er ombøjet (foldet) til blade.</p></note></p>
+                <p xml:id="id0a76c6c2-03ad-4660-afa4-5ed8cac87403">Ingen paginering.</p>
+                <p xml:id="id683a21d4-161e-485d-b812-5c647edc5cb1">Papir: gråligt postvelin, glat; blindtryk af en krone i en oval. Mål: 135 × 208 mm.<note xml:id="id15a33bf7-f4c0-44c9-80ee-2e2212100e8b"><p xml:id="ida2ee36e1-1790-4628-a1de-99dc5e0da342">Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p></note></p>
+                <p xml:id="id15dc6992-0f88-4473-bab5-d7ae4bc479b0">Bladene har efter beskrivning været foldet to gange på tværs til konvolut (mål: 135 × 75 mm<note xml:id="id8ca416de-ca92-485b-a702-e98c3ffc1891"><p xml:id="idac007044-b2ea-41c6-b0e4-e16da7821138">Oplysningen om konvoluttens mål gælder det foldede brev, alternativt den separate konvolut. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant); øverste kant bestemmes af udskriftens skriveretning.</p></note>); rest af rød oblat.<note xml:id="idc310ea13-ebc9-4a17-b3d3-f886f645d712"><p xml:id="id8a7c6572-d28d-4993-8eaf-4e666eb67a82">Det gælder for alle breve, der har været foldet til konvolut og forseglet, at brevmodtagerens brud på forseglingen har forårsaget en mindre beskadigelse af ms.</p></note></p>
+                <p xml:id="id1173bd8d-6323-4456-8014-9596c6a6823d"><pb xml:id="ss524" n="524" edRef="#SKS"/>Bl. [1v]-[2r] er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.259" prev="#physDesc.259">
+              <msIdentifier xml:id="ide628cc83-f93a-41fc-9ee1-7fa5fd76fc4b">
+                <idno xml:id="id5e2032dc-259a-48f2-92fa-47b046f47fdc">259</idno>
+              </msIdentifier>
+              <additional xml:id="id93decc46-500a-4f5d-bf0e-68147bf87db7">
+                <adminInfo xml:id="ide6d5d19d-70b1-4357-bc6c-ca289060c8d9">
+                  <note xml:id="id3802d3ea-5696-4aeb-8278-da1fb6b596ed">
+                    <p xml:id="id8ed7ecb6-c76f-40cc-aa56-d4c7ff398cf9">(KA, D pk. 1 læg 11; <hi xml:id="id6d35058c-f13c-4326-ab25-2ba22bc5bfc8" rendition="#ita">B&amp;A</hi> 160)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.260" next="#additional.260">
+              <msIdentifier xml:id="id8ff354f2-c7de-4c4d-bbac-f9ab9ed1df48">
+                <idno xml:id="id20cf5c2c-f0ee-4d04-a3ea-a078532f5b0a">260</idno>
+              </msIdentifier>
+              <physDesc xml:id="idee3edd7a-a405-40f9-a4a1-be68657a5a49">
+                <p xml:id="idb39fc672-4828-419c-9423-5d9d58a84f7b"><ref xml:id="id7d8b5e13-5045-4556-bb45-4ca2121b1d22" target="../B259/txt.xml#n260" type="lettersAndDedications" n="260">Brev 260</ref>. Fra <persName xml:id="idbd569660-7f34-4821-b933-cf68ee190242" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> til SK (<hi xml:id="idbcaa8859-a686-46b6-92f6-f76a80dd9653" rendition="#ita">SKS</hi> 28, 387-388).</p>
+                <p xml:id="idc9b50edb-f9c5-4a60-817a-5350a8a81658">1 dobbeltblad i 8<hi xml:id="id9cdecd0a-375c-4cb9-aa75-af3c5629f079" rendition="#sup">o</hi>.</p>
+                <p xml:id="id43c171eb-eb6d-424f-b4ab-bf9e3ddcfcc2">Ingen paginering.</p>
+                <p xml:id="id6b4ac1bf-5065-4c3f-ba99-6d14627ba30d">Papir: gråligt postvelin, glat; blindtryk af en krone i en oval. Mål: 135 × 208 mm.</p>
+                <p xml:id="id4e2301be-0edd-4b9c-b326-5d2905b702ca">Bladene har efter beskrivning været foldet to gange på tværs til konvolut (mål: 135 × 73 mm); rest af oblat.</p>
+                <p xml:id="idc83de407-7ee2-45d6-b995-75acd85f172d">Bl. [1v]-[2r] er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.260" prev="#physDesc.260">
+              <msIdentifier xml:id="id819163ad-d5bf-4b58-afff-4b4dbc3b3e6b">
+                <idno xml:id="id63e341cd-49c6-42c7-aa72-99ada4a9aa81">260</idno>
+              </msIdentifier>
+              <additional xml:id="idc8757aac-8ac6-4888-aa54-0a3fe4e7b29c">
+                <adminInfo xml:id="idc8908f42-bd6a-4dd5-bb41-0699b7a81d51">
+                  <note xml:id="id6af3ec5f-3a5e-4ea2-8cba-dd627e9220df">
+                    <p xml:id="id7b9623e4-34c4-4dfc-b2f2-b47600164ee6">(KA, D pk. 1 læg 11; <hi xml:id="idf146365d-b422-4ca4-af9b-7b6a41ff837a" rendition="#ita">B&amp;A</hi> 172)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.261" next="#additional.261">
+              <msIdentifier xml:id="idd28765c8-5c5b-4780-a0ee-d5edfb572f7f">
+                <idno xml:id="id142d7cf8-6337-4931-b8dd-0cc6427a61e8">261</idno>
+              </msIdentifier>
+              <physDesc xml:id="id3f92bdda-71b2-4d8e-a894-e4e7305bd563">
+                <p xml:id="idd8e83191-4bed-498f-8347-f99912d5cef6"><ref xml:id="ida4b3acf6-87df-409d-959b-65b99be6b18b" target="../B259/txt.xml#n261" type="lettersAndDedications" n="261">Brev 261</ref>. Fra <persName xml:id="ide9018b8c-a1c2-4744-94d8-603e7793898d" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> til SK (<hi xml:id="idcd0abe84-7be4-43b3-bcc0-9226e2a1b57e" rendition="#ita">SKS</hi> 28, 388).</p>
+                <p xml:id="ide58a13e7-8ede-4ca0-84a9-4800b8a806f7">1 dobbeltblad i 8<hi xml:id="ida21f408f-fad3-43bb-bbd1-707324d860fe" rendition="#sup">o</hi>.</p>
+                <p xml:id="id4c365be7-14ac-44af-a34f-61e22ce35c82">Ingen paginering.</p>
+                <p xml:id="ida931c37f-646d-4f76-be00-eea8192c5cc4">Papir: gråligt postvelin, glat; blindtryk af en krone i en oval. Mål: 135 × 208 mm.</p>
+                <p xml:id="idd6ef0df2-7a25-4c87-98b3-e7336e1c7222">Bladene har efter beskrivning været foldet to gange på tværs til konvolut (mål: 135 × 76 mm); rest af rød oblat.</p>
+                <p xml:id="idbfba66f9-9134-419e-885f-41d9ac56178e">Bl. [1v]-[2r] er ubeskrevet.</p>
+                <p xml:id="id4a9738eb-19a2-4489-814f-68922e30c0c5">En enkelt korrektion.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.261" prev="#physDesc.261">
+              <msIdentifier xml:id="id7cac46ed-6ea6-4501-a984-6d2c852bf805">
+                <idno xml:id="id3d9602ff-427d-4c70-97c5-ce074b484b16">261</idno>
+              </msIdentifier>
+              <additional xml:id="idbce52583-cb65-45d6-b9bc-4a1b4e4e2c10">
+                <adminInfo xml:id="id9ac29ba5-7c55-4ff4-8eff-9c327bc4f7ac">
+                  <note xml:id="idf6b9a485-de9d-4004-a1d9-41b5ca8b6c51">
+                    <p xml:id="idc6589925-fad7-4186-8462-f10ea7476f30">(KA, D pk. 1 læg 11; <hi xml:id="id2346fe9e-453a-40a0-9848-6930dc3a89ba" rendition="#ita">B&amp;A</hi> 173)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.262" next="#additional.262">
+              <msIdentifier xml:id="idf27f14fc-6238-4dd3-83b9-634d74d9275d">
+                <idno xml:id="id57b41196-e605-4ee4-80b6-ee218ef40b69">262</idno>
+              </msIdentifier>
+              <physDesc xml:id="id43cf65a2-b932-4e75-b62a-4180a883980d">
+                <p xml:id="id8d05045a-b06d-47f2-b6fd-0de8256efbfc"><ref xml:id="idb8b4dd81-8116-4086-bdfc-39770a31253e" target="../B259/txt.xml#n262" type="lettersAndDedications" n="262">Brev 262</ref>. Fra SK til <persName xml:id="id1ff73e34-3cd8-4232-8d0e-0058ae4043b4" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi xml:id="id5868cd0c-37c8-4747-9ae1-7bea4ff3e715" rendition="#ita">SKS</hi> 28, 389-390).</p>
+                <p xml:id="id3940d320-75b0-4a89-a6e6-afaefd6dc4d5">1 dobbeltblad i 8<hi xml:id="idc539205b-2eae-4178-bf95-749c903e904b" rendition="#sup">o</hi>.</p>
+                <p xml:id="id89bd379e-26da-476b-a858-73d88e89dda4">Ingen paginering.</p>
+                <p xml:id="id5a0a2ccd-acad-4c5d-9ecf-2d89dbc1ab6b">Papir: gulligt velin, glat. Mål: 124 × 200 mm.</p>
+                <p xml:id="id2a7e7e28-cfe5-4614-b170-29e90de25228">Bladene har efter beskrivning været foldet en gang på langs og en gang på tværs.</p>
+                <p xml:id="id56950bbb-9507-4809-9c60-456b2574e6fa">Få korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.262" prev="#physDesc.262">
+              <msIdentifier xml:id="id69d10735-73d6-494e-8231-49143cbc1698">
+                <idno xml:id="idd1f6ac74-870e-4398-94de-8ad9d9186d36">262</idno>
+              </msIdentifier>
+              <additional xml:id="idb3ecc495-56af-43ff-98f5-e7ac3bae07e6">
+                <adminInfo xml:id="id484f12a6-d45c-4690-80b1-3a87abd9b65a">
+                  <note xml:id="id068d06f8-5008-4212-a7ec-623975d14cb1">
+                    <p xml:id="id100b8a3e-76e2-41bf-8329-97b30d682c6e">(NKS 3101 4<hi xml:id="idc5cc8bdd-1e95-4675-b0a2-6d53a3b18aca" rendition="#sup">o</hi>; <hi xml:id="idabf3ab23-978e-4f6f-b12e-89474cfcf9bf" rendition="#ita">B&amp;A</hi> 180)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.263" next="#additional.263">
+              <msIdentifier xml:id="idb8893381-52a9-41d0-ac07-8fccce1bebd5">
+                <idno xml:id="id9b8bcdd5-7582-4ba9-844d-e34a12933941">263</idno>
+              </msIdentifier>
+              <physDesc xml:id="iddf6f4cc6-2a9a-4767-9084-b265b481ac49">
+                <p xml:id="id74f3001c-12ce-4e61-8087-11464a2875b5"><ref xml:id="id4ee55dc2-a934-4e99-89a5-0b9a990818d6" target="../B259/txt.xml#n263" type="lettersAndDedications" n="263">Brev 263</ref>. Fra <persName xml:id="idf04d3193-71a9-4811-a567-3e5d456fd611" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> til SK (<hi xml:id="id2298dc35-668a-4d46-92d3-121bb7910cda" rendition="#ita">SKS</hi> 28, 390-391).</p>
+                <p xml:id="id425e36ed-a31c-4c35-8c33-5bd0ecefea67">1 dobbeltblad i 8<hi xml:id="id4d4008f4-d6bd-4062-8163-f8727eb0fc44" rendition="#sup">o</hi> med tresidet guldsnit.</p>
+                <p xml:id="id5984b1b7-b1d9-40f0-8b38-23d7b03d4d47">Ingen paginering.</p>
+                <p xml:id="idb11da2c0-8ae5-4a20-be99-208c0f38a747">Papir: gulligt postvelin, glat. Mål: 122 × 189 mm.</p>
+                <p xml:id="idc2b8338c-2ed1-4dad-addd-5784a33070aa">Bladene har efter beskrivning været foldet en gang på langs ved højre kant og to gange på tværs.</p>
+                <p xml:id="idd34d816a-5064-4c1b-8459-164956ae9801">Bl. [2r]-[2v] er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.263" prev="#physDesc.263">
+              <msIdentifier xml:id="id1be06294-cdad-48bd-bed7-ee12a8c2bc37">
+                <idno xml:id="id15cf416b-c01c-4750-9ad9-424d2490c29e">263</idno>
+              </msIdentifier>
+              <additional xml:id="id6bfa9ca1-2dca-42d0-9b1a-f897860b757d">
+                <adminInfo xml:id="id0a712571-a733-403e-8cd0-815f59cee2c9">
+                  <note xml:id="id43e6fc0e-0189-4759-9046-09fde154141b">
+                    <p xml:id="id17be9dc7-02f8-45a1-ac6c-6eead11bd2a1">(KA, D pk. 1 læg 11; <hi xml:id="id0c1ba02b-4596-46f2-9a76-f9b1b33dce95" rendition="#ita">B&amp;A</hi> 181)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.264" next="#additional.264">
+              <msIdentifier xml:id="id501f986a-d75a-4c82-bb92-4c8517f6f0fe">
+                <idno xml:id="ideaccf5c9-d726-4e07-8861-c09c95b96839">264</idno>
+              </msIdentifier>
+              <physDesc xml:id="ide10c88e5-797e-42d6-9080-2089113e683a">
+                <p xml:id="id635c1259-aafb-4ff2-b020-b9d80a21abc2"><pb xml:id="ss525" n="525" edRef="#SKS"/><ref xml:id="id297eb244-e091-456f-9d8d-153ef02c9a3d" target="../B259/txt.xml#n264" type="lettersAndDedications" n="264">Brev 264</ref>. Fra SK til <persName xml:id="ide82234c2-e13c-4bfb-a5a2-d5e6546d1d34" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi xml:id="id38f4d20d-3e24-4326-be91-9098452afa08" rendition="#ita">SKS</hi> 28, 391-394).</p>
+                <p xml:id="id96e0e84c-98f1-4238-86a1-69dc61666dea">1 dobbeltblad + 1 løst blad, i alt 3 blade i 8<hi xml:id="id74f56fac-0abe-4053-89a7-2aa73e6b7485" rendition="#sup">o</hi> med tresidet guldsnit.</p>
+                <p xml:id="id41ba98a4-faa5-4857-b685-a5d47a5630a4">Ingen paginering.</p>
+                <p xml:id="idac74c423-54ef-4a5b-bfc2-f62956ca91a9">Papir: gråligt velin, glat. Mål: 125 × 200 mm.</p>
+                <p xml:id="id00d07789-0adb-4474-b464-7e6e60874543">Bladene har efter beskrivning været foldet to gange på tværs.</p>
+                <p xml:id="ide817f75a-78fc-4178-aa30-4dbb737360f0">Bl. [3v] er ubeskrevet.</p>
+                <p xml:id="id77478198-e3c5-41ad-b09d-c39610e38b24">Få korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.264" prev="#physDesc.264">
+              <msIdentifier xml:id="id5e6474f5-2ace-436a-8eb5-aa937eeb1ae9">
+                <idno xml:id="idce903c59-281d-46ca-a2ea-8459c0af9954">264</idno>
+              </msIdentifier>
+              <additional xml:id="id371620de-e62a-4e94-bfd3-41c4bc5872e8">
+                <adminInfo xml:id="idec17981a-ecd1-4f95-9666-ffa0ee0409ce">
+                  <note xml:id="id1224a2d2-37df-4723-8343-22f1a5eb6166">
+                    <p xml:id="id890d2686-2af7-4692-9875-494c3d032db9">(NKS 3101 4<hi xml:id="id7ddea124-262b-44d1-ae76-7bad3e17c460" rendition="#sup">o</hi>; <hi xml:id="idde4e2e69-fe77-4bd6-a2a6-fb7e2326403f" rendition="#ita">B&amp;A</hi> 184)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.265" next="#additional.265">
+              <msIdentifier xml:id="id27c7169d-ef38-461e-bfa5-9212042a5f89">
+                <idno xml:id="idc2fc6f86-b61e-4dd4-9a2a-25dfe00c196a">265</idno>
+              </msIdentifier>
+              <physDesc xml:id="ide873cd44-067e-4ada-946e-d3a514ca432f">
+                <p xml:id="id0f7a4476-64e6-4d2a-ba7e-a5a54b5c5415"><ref xml:id="idf8b9b9ec-e189-4cb3-934a-2c3224b7b112" target="../B259/txt.xml#n265" type="lettersAndDedications" n="265">Brev 265</ref>. Fra <persName xml:id="idb6120934-743b-49e1-9430-c23cf970a857" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> til SK (<hi xml:id="id83fad6b9-7650-412b-8d42-a1a019f3d3cf" rendition="#ita">SKS</hi> 28, 394-397).</p>
+                <p xml:id="idc9180771-8a97-4811-8171-72fd26033270">1 dobbeltblad i 4<hi xml:id="id3c4d95f3-c0c6-46ca-8678-a9adffc640a5" rendition="#sup">o</hi>.</p>
+                <p xml:id="ideae34d4e-cfcd-4d52-9234-6bd5e97f6375">Ingen paginering.</p>
+                <p xml:id="ida501b56a-5abb-42a2-be39-cd65c8aff1d8">Papir: gulligt postvelin, glat. Mål: 215 × 275 mm.</p>
+                <p xml:id="ida278fb78-8e52-49a3-9f51-30d5df48d99c">Bladene har efter beskrivning været foldet to gange på langs og tre gange på tværs til konvolut (mål: 147 × 90 mm); rødt laksegl med motiv af <persName xml:id="id5370b13c-44b5-4c9c-96b7-1484820ffd43" key="Herkules">Herakles</persName>. Konvolutten har desuden været foldet en gang på langs.</p>
+                <p xml:id="id92628b79-9c31-4faa-9584-210a1564114c">Få korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.265" prev="#physDesc.265">
+              <msIdentifier xml:id="id741cada8-ab08-401d-be04-fefacc26e4a1">
+                <idno xml:id="idf01df348-1896-488f-aafc-2cced1472809">265</idno>
+              </msIdentifier>
+              <additional xml:id="idec3c6ee5-6951-459c-8667-0dd7f4750564">
+                <adminInfo xml:id="ida01c5115-209e-49cb-8992-0e49204e9f57">
+                  <note xml:id="id172d7d0f-398b-41c9-b1ba-dd3981a30be1">
+                    <p xml:id="idd628d144-fe88-401b-b96e-2318b627cf5d">(KA, D pk. 1 læg 11; <hi xml:id="id35292ec6-1d03-45df-981c-6a61a6859461" rendition="#ita">B&amp;A</hi> 185)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.266" next="#additional.266">
+              <msIdentifier xml:id="idaca6d946-6af6-4b70-94f6-3203f0a72264">
+                <idno xml:id="id07993cb1-ee3d-4804-87a6-f9de6a192c2c">266</idno>
+              </msIdentifier>
+              <physDesc xml:id="id91683fff-686c-40ff-b362-54cf9b77c5e5">
+                <p xml:id="id84d4d241-462b-4d5b-91dc-70605f6cfbe8"><ref xml:id="id0340c13d-99da-4d90-8c66-68b8f5675099" target="../B259/txt.xml#n266" type="lettersAndDedications" n="266">Brev 266</ref>. Fra SK til <persName xml:id="idbc7ede36-1b72-4928-88f9-a36baa1715f2" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi xml:id="id45f0f35c-06b6-4995-a3da-657c25c690e8" rendition="#ita">SKS</hi> 28, 397-402).</p>
+                <p xml:id="id18575368-45bd-4944-abcd-dcaaa8f21a22">4 løse blade i 4<hi xml:id="idd068e0c8-99ca-44dd-9f90-951d9b232590" rendition="#sup">o</hi>.</p>
+                <p xml:id="id672af367-97ec-45ca-9f19-16636db9619b">Ingen paginering.</p>
+                <p xml:id="idcca81461-2f0c-413b-b738-748837eef770">Papir: gulligt koncept, glat. Mål: 170 × 208 mm.</p>
+                <p xml:id="id4d6b03a1-5a8c-4845-9e7a-29aadac3e27e">Bladene har efter beskrivning været foldet to gange på langs og en gang på tværs.</p>
+                <p xml:id="id17677c45-7457-47ab-9d7e-cd8263f851ee">Bl. [4v] er ubeskrevet.</p>
+                <p xml:id="idd2fc6245-7026-45a0-9ff5-a9f848e08921">Få korrektioner. På bl. [3v] findes en tilføjelse skrevet på langs i randen af papiret. Nederst på bl. [3v] er en linje slettet, og årsagen er formentlig følgende: efter »fra det faste Punkt bag ved.« (<hi xml:id="iddc62dfee-6fc1-4c65-b8ad-f0f65867edbd" rendition="#ita">SKS</hi> 28, 401,20-21) er SK ved en fejl begyndt på brevets sidste afsnit (<hi xml:id="idedc393ce-21b7-4417-b2fe-33572720d058" rendition="#ita">SKS</hi> 28, 401, 35), dvs. på en ny linje med indryk. Han har skrevet en linje af afsnittet, før han har streget ud og fortsat det afbrudte afsnit.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.266" prev="#physDesc.266">
+              <msIdentifier xml:id="id7609a591-8aaa-458b-aef4-d620f0dc4504">
+                <idno xml:id="idd344bed8-89ef-4413-927c-01ff52d1137c">266</idno>
+              </msIdentifier>
+              <additional xml:id="id36987468-8961-412f-ba9d-b4cb816860f4">
+                <adminInfo xml:id="id7b815d11-d5e3-4054-9c3f-58b9c02a2b24">
+                  <note xml:id="id5b479926-3f0b-449b-828c-0a75da53eaf1">
+                    <p xml:id="id787a0a69-e9da-4754-8073-b1446ccb2044">(NKS 3101 4<hi xml:id="id7ed25f89-0833-4c51-bbf7-43a5c8663e9f" rendition="#sup">o</hi>; <hi xml:id="id0973fd7b-44f5-4c8a-b4d4-25d85942ae11" rendition="#ita">B&amp;A</hi> 186)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.267" next="#additional.267">
+              <msIdentifier xml:id="id35f0b271-57f0-42f1-bc5b-4e28e1427037">
+                <idno xml:id="idf1b3b41f-c6c9-4d1f-b720-261fcc2531ad">267</idno>
+              </msIdentifier>
+              <physDesc xml:id="id741145e0-8d4c-4bc2-a6dd-7920bacf8450">
+                <p xml:id="id5ec7a77f-c253-40a9-96c7-e378f3dcc7b4"><ref xml:id="id056ef1ce-1bfa-4276-97fc-041aac7babf8" target="../B259/txt.xml#n267" type="lettersAndDedications" n="267">Brev 267</ref>. Fra <persName xml:id="id9e19c228-4ee4-4c79-98da-34b4ea7c73e5" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> til SK (<hi xml:id="id379e0a74-5ebb-47b5-9c39-7e6cb7f2cf07" rendition="#ita">SKS</hi> 28, 402-406).</p>
+                <p xml:id="idfcf9a4e6-ac57-479d-b2e5-a407c838c7b9">1 dobbeltblad i 4<hi xml:id="id0cc379be-4271-4398-9a16-c2e604be2871" rendition="#sup">o</hi>.</p>
+                <p xml:id="id29c196c7-eacd-4386-995f-518c61ad7c93">Ingen paginering.</p>
+                <p xml:id="id806c712c-d75c-45af-927b-b5f621863ba7">Papir: gulligt postvelin, glat. Mål: 215 × 275 mm.</p>
+                <p xml:id="idb9b6a71a-ea4d-4c64-92a9-c3fcf3a29e43">Bladene har efter beskrivning været foldet to gange på langs og tre gange på tværs til konvolut (mål: 155 × 90 mm); spor efter forsegling. Konvolutten har desuden været foldet en gang på langs.</p>
+                <p xml:id="idbe9d2aee-f044-4e5b-b4e6-1628f037550a">Brud på forseglingen har gjort dele af teksten ulæselig på bl. [2r] (se <ref xml:id="id203ac54c-f3d5-49f5-b1a9-aeb1c934ec40" target="../B259/txt.xml#ill_21" type="figure" n="405">illustration 21</ref>, <hi xml:id="id1e7682ab-deed-4341-be6c-89b3d5fc0cef" rendition="#ita">SKS</hi> 28, 405).</p>
+                <p xml:id="ida22789d2-d30d-4688-a306-d36ed80b41b7"><pb xml:id="ss526" n="526" edRef="#SKS"/>Få korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.267" prev="#physDesc.267">
+              <msIdentifier xml:id="idd5dbf4f8-366c-42b7-99eb-31bd977446e2">
+                <idno xml:id="id8077a453-fa1f-4c78-a991-817d4fc94658">267</idno>
+              </msIdentifier>
+              <additional xml:id="id7e028157-a3ed-4217-863a-d53eeb5aaa56">
+                <adminInfo xml:id="id60031542-7645-41ca-9343-500012ede856">
+                  <note xml:id="ide3c5c947-1131-43ac-8e84-64a491971e63">
+                    <p xml:id="id8d382492-6eac-4e6e-9226-fc5cc44e1f1b">(KA, D pk. 1 læg 11; <hi xml:id="idbf16d74e-8e92-4345-81fa-b3542b5e817c" rendition="#ita">B&amp;A</hi> 187)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.268" next="#additional.268">
+              <msIdentifier xml:id="id01e0d590-5beb-48cc-bf77-5220c4f0e690">
+                <idno xml:id="ida6d128a5-0755-4819-aa1b-5a11343027ea">268</idno>
+              </msIdentifier>
+              <physDesc xml:id="id7b9e99cc-5e37-4ca3-8542-3726de2c3fb2">
+                <p xml:id="id41312b17-bc54-482b-9818-e1f534cc35a6"><ref xml:id="id16d2bc81-d792-4b60-822b-d2017d5e8a31" target="../B259/txt.xml#n268" type="lettersAndDedications" n="268">Brev 268</ref>. Fra SK til <persName xml:id="id72c9f528-c04b-4bb1-9fff-1ac24c101402" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi xml:id="id8b130ce1-38b4-44fe-b8b7-2a3dd432ddef" rendition="#ita">SKS</hi> 28, 406-410).</p>
+                <p xml:id="idf54409e3-9100-4df3-aa8b-d1584bb0fe98">1 dobbeltblad + 1 løst blad, i alt 3 blade i 4<hi xml:id="id7d5783b3-e0d2-4ffa-875e-c8c4b5ee994e" rendition="#sup">o</hi>. Det løse blad har afrevet kant i venstre side.</p>
+                <p xml:id="id2ead375b-2b4c-4906-85e0-879ab64d402a">Ingen paginering.</p>
+                <p xml:id="id27ee52cd-dc90-4434-b293-b3a52eeb2147">Papir: blåligt koncept, groft. Mål: 169 × 205 mm.</p>
+                <p xml:id="idaf91005d-cc88-4a55-b3f0-4c5c2c72e925">Bladene har efter beskrivning været foldet en gang på langs og en gang på tværs.</p>
+                <p xml:id="ide3af4b54-70d9-4a94-847d-611fd7eb1315">Få korrektioner. Nederst på bl. [2v] findes en længere tilføjelse.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.268" prev="#physDesc.268">
+              <msIdentifier xml:id="idd4ae3e0a-b19f-4e19-8a6b-065fe3022e11">
+                <idno xml:id="id966319cb-20c9-4114-a44d-5e771eeee115">268</idno>
+              </msIdentifier>
+              <additional xml:id="idfacd6f34-195e-45b8-bca0-ad6356188409">
+                <adminInfo xml:id="id98e4a2f9-1f81-4326-880a-84a95ff52d99">
+                  <note xml:id="id0e592c71-d0de-4f69-a82c-131df472b593">
+                    <p xml:id="idecb15bda-b3c4-43d7-9b52-d22cc6987c79">(NkS 3101 4<hi xml:id="idca268c7b-4629-4ce1-bbdb-15777d1f8996" rendition="#sup">o</hi>; <hi xml:id="id03ce4281-1383-4c59-9396-e0044b73056b" rendition="#ita">B&amp;A</hi> 188)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.269" next="#additional.269">
+              <msIdentifier xml:id="id0550cc8f-8a4b-47ec-81d8-461c5eaf2aee">
+                <idno xml:id="id78c38314-3975-4c22-976d-748337fd7a55">269</idno>
+              </msIdentifier>
+              <physDesc xml:id="id181c322c-9543-4c3b-8db6-70410ac871e0">
+                <p xml:id="id2ff765a3-40f2-4756-9280-b4b9d7d66c89"><ref xml:id="idb74aba67-5812-4eca-b347-a8c158ab79eb" target="../B259/txt.xml#n269" type="lettersAndDedications" n="269">Brev 269</ref>. Fra SK til <persName xml:id="ida32dc540-0904-4e87-8aac-0f4abc895cda" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi xml:id="id0f25e257-1040-43d3-afd1-68f14a0ad1e3" rendition="#ita">SKS</hi> 28, 410-412).</p>
+                <p xml:id="id28bea47c-c520-4236-8c85-110b9c1e9430">1 dobbeltblad i 4<hi xml:id="id79b496a6-31aa-45a9-ba5e-1c3a9ab03cb4" rendition="#sup">o</hi>.</p>
+                <p xml:id="idd4de42ee-d076-4f17-8a8b-4224bbd3607b">Ingen paginering.</p>
+                <p xml:id="id2294953a-b1ae-4f96-918d-a6f1ae9ccb5c">Papir: blåligt koncept, groft. Mål: 170 × 205 mm.</p>
+                <p xml:id="id6c2c0b34-e9ae-4987-b817-27f20d630952">Bladene har efter beskrivning været foldet en gang på langs og en gang på tværs.</p>
+                <p xml:id="idafe3cd95-d61a-44ea-b998-12cd76d16805">Få korrektioner. På bl. [2r] findes en tilføjelse skrevet på langs i randen af papiret. På bl. [2v] findes en længere tilføjelse øverst på bladet; tilføjelsen er fortsat på langs i randen af papiret.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.269" prev="#physDesc.269">
+              <msIdentifier xml:id="id8204cbb1-2ab4-47c0-86ae-015b2067811b">
+                <idno xml:id="idb0d65702-a30d-42e2-985f-f1a533cef763">269</idno>
+              </msIdentifier>
+              <additional xml:id="ide5943f97-4610-4b4d-aaab-48a1d6f77e3b">
+                <adminInfo xml:id="id1c4c0a49-c2c8-45d7-8736-2be802bab0df">
+                  <note xml:id="id71800b2b-3a98-4ef7-a48a-7f79fa0b0ed3">
+                    <p xml:id="id8d0500b4-05b5-4236-aa13-9b6f3b05d203">(NKS 3101 4<hi xml:id="idedb365b8-c367-4645-a82b-a365cce55b80" rendition="#sup">o</hi>; <hi xml:id="id3de72757-3be5-47f6-82ad-5c47a17d6a95" rendition="#ita">B&amp;A</hi> 189)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.270" next="#additional.270">
+              <msIdentifier xml:id="idaae22214-88a4-4da6-852b-c3595c9d2c0b">
+                <idno xml:id="id0a89496a-e609-4777-9fc0-4df0faa036e6">270</idno>
+              </msIdentifier>
+              <physDesc xml:id="id8a9bf2cd-e634-44d8-806e-7e66f8eee1b1">
+                <p xml:id="id3c65e38c-60ee-43c6-9af0-0b8631ec3663"><ref xml:id="id465e88db-6dbe-481b-8a02-2e439750e6ae" target="../B259/txt.xml#n270" type="lettersAndDedications" n="270">Brev 270</ref>. Fra SK til <persName xml:id="id0d047cc5-19e4-4623-91d6-f32c041ba3b9" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi xml:id="idf861346c-7a43-4c9e-97f2-204a8cc482c1" rendition="#ita">SKS</hi> 28, 413).</p>
+                <p xml:id="ida1627fa9-465e-4786-872b-aae9b625c5c8">1 løst blad i 4<hi xml:id="idce75b134-0548-4924-8df9-05d1c5cf3b30" rendition="#sup">o</hi> med afklippet kant i venstre side og øverst.</p>
+                <p xml:id="idf0075d24-dde9-49f2-aad6-fdf2fe649f21">Ingen paginering.</p>
+                <p xml:id="id61e3730e-e7f7-4579-b495-6d3ec8c95e40">Papir: blåligt koncept, groft. Mål: 214 × 165 mm.</p>
+                <p xml:id="id1f0d44f8-f867-4fe5-9f4c-1bd6c2b65633">Bladet har været foldet to gange på langs og to gange på tværs til konvolut (mål: ca. 148 × 99 mm). Konvolutten har desuden været foldet en gang på langs. Bladet bærer yderligere præg af at have været foldet en gang på tværs efter beskrivning.</p>
+                <p xml:id="id32208af6-0a14-4e44-a280-b0b8414e3491">Få korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.270" prev="#physDesc.270">
+              <msIdentifier xml:id="idf0e6a3a4-f2cd-40b1-9963-9662753b7136">
+                <idno xml:id="id27e08225-56ee-426e-a7e3-997983b0f9c3">270</idno>
+              </msIdentifier>
+              <additional xml:id="id587657c1-3544-449a-85c1-acd2d23131ec">
+                <adminInfo xml:id="id021f86f3-ade1-4afa-b95b-5f4c0d963112">
+                  <note xml:id="id0cd2180d-2f17-4a06-9db9-32dbdf72b9e7">
+                    <p xml:id="id3e60f245-5f66-4bc0-a534-2476689c5336">(Sammlung Darmstaedter 2a 1845: <persName xml:id="id9ff2c1c4-96b0-44af-a903-9bbd41ecb6ff" key="Kierkegaard, Søren Aabye">Kierkegaard, Sören</persName>, Staatsbibliothek zu <placeName xml:id="id73ab6aa3-6002-42e2-be18-54fe0edf2aac">Berlin</placeName>; KB, Fot. br.; <hi xml:id="id21dcfd4d-4a93-45c1-bf39-c3acd3172282" rendition="#ita">B&amp;A</hi> 190)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.271" next="#additional.271">
+              <msIdentifier xml:id="id507edf31-bb9b-4e76-8f66-2fa86cf3df39">
+                <idno xml:id="id7281afd5-6282-4f6c-865d-e3ef2d8c4fe0">271</idno>
+              </msIdentifier>
+              <physDesc xml:id="id3aef18db-fd4e-4491-bef6-257e563c2981">
+                <p xml:id="id90d03253-6d1a-4c8e-ae2d-99d77d9b116c"><ref xml:id="id94905a55-c9e0-444e-80d8-4281331e14cc" target="../B259/txt.xml#n271" type="lettersAndDedications" n="271">Brev 271</ref>. Fra SK til <persName xml:id="id050e68c5-21a7-463a-8a5d-252ca1717c1e" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi xml:id="id57e5297a-331f-4ac0-9cc5-723b6fa8f8b8" rendition="#ita">SKS</hi> 28, 414-419); består af et brev og en efterskrift foldet til konvolut.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.271.1" next="#additional.271.1">
+                <msIdentifier xml:id="idd9fe58c5-4ca7-4456-ae19-88d0c123fec5">
+                  <idno xml:id="idedec5f8d-ff02-4e5c-852d-0c533f0dcda0">271.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id8e7bc927-0a19-447a-9d0e-793666e3f02b">
+                  <p xml:id="id65da0948-d4b7-45fc-a3ed-42fd3787e926">Brev.</p>
+                  <p xml:id="idfbfe36a6-094e-477a-8cee-e0dfa58eace7">2 dobbeltblade + 1 løst blad, i alt 5 blade i 4<hi xml:id="id0699f0ab-15b6-40a2-aee7-709f8c6066fc" rendition="#sup">o</hi>. Det løse blad har afrevet kant i venstre side.</p>
+                  <p xml:id="id88efda54-69da-4b6b-b606-5240885dcf84">Ingen paginering.</p>
+                  <p xml:id="id8c2f0718-3313-42da-acbc-f29b9d5ed171">Papir: gulligt koncept, glat. Mål: 170 × 206 mm.</p>
+                  <p xml:id="ida811cbfa-03c1-4594-8afb-9ef7937124fe"><pb xml:id="ss527" n="527" edRef="#SKS"/>Bladene har efter beskrivning været foldet en gang på langs og en gang på tværs til indstik i konvolut (ms. 271.2).</p>
+                  <p xml:id="idd04023a3-8a3e-4dda-abd5-d481def4625b">Bl. [5v] er halvt beskrevet.</p>
+                  <p xml:id="idcc2a4d2b-cbfc-4afd-8f0d-d49c062b786e">Få korrektioner. På bl. [2r] har SK midt i en sætning efter linjeskift ved en fejl påbegyndt det efterfølgende afsnit og skrevet to linjer deraf; linjerne er overstreget, og nedenunder er den afbrudte sætning genoptaget (<hi xml:id="id039979a3-7b9b-4f3f-8d34-1429e5079902" rendition="#ita">SKS</hi> 28, 415,16).</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.271.1" prev="#physDesc.271.1">
+                <msIdentifier xml:id="ide1efd894-d72d-4da5-857d-b77a55ed33e9">
+                  <idno xml:id="id74c1cbc6-36ed-436a-87fb-173b04f76760">271.1</idno>
+                </msIdentifier>
+                <additional xml:id="iddbfac642-f794-498d-be20-b5af67fa90e8">
+                  <adminInfo xml:id="id8136e947-357f-44a0-b1f5-fcab5d28e3c7">
+                    <note xml:id="id6a01b7fe-a970-402f-bf2e-b4e19381616b"/>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.271.2" next="#additional.271.2">
+                <msIdentifier xml:id="id113528db-1000-49b2-81ba-60eda1990523">
+                  <idno xml:id="id2cdc52e5-2b5c-4b4b-b0fe-24f602faf362">271.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="id59cee325-bd03-4b09-b643-4d24faf22112">
+                  <p xml:id="id5533699d-f8ff-4585-a81c-6990299a4791">Efterskrift foldet til konvolut.</p>
+                  <p xml:id="id7b389c57-8f9c-4402-8b7a-cca3a1c250a5">1 løst blad i 4<hi xml:id="id8811b4dd-bf7b-4ed1-a722-fb3ae3bd780b" rendition="#sup">o</hi> med uregelmæssigt afrevet kant øverst og nederst.</p>
+                  <p xml:id="id41d5fdc2-969b-411e-84bf-9eb34f474c51">Ingen paginering.</p>
+                  <p xml:id="id8b28ed35-3572-45cd-bc41-6291715b32be">Papir: gulligt velin, glat. Mål: 206 × 245 mm.</p>
+                  <p xml:id="id5b7e0594-77c2-40f5-aa0f-7876d9ef1f0b">Bladet har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 115 × 102 mm); rødt laksegl med signeten »SAK«. Konvolutten har desuden været foldet en gang på tværs.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.271.2" prev="#physDesc.271.2">
+                <msIdentifier xml:id="ida50c06b8-0002-4ab6-8d27-d578f1221971">
+                  <idno xml:id="id5b4c2f86-05ea-4a8b-a416-582740eef6b8">271.2</idno>
+                </msIdentifier>
+                <additional xml:id="id9441b90b-46d4-4d34-abb3-1af03570138b">
+                  <adminInfo xml:id="idd224bc26-6446-4e14-84c5-7be452137a13">
+                    <note xml:id="idad1a6d54-d322-4274-b150-7654e8f95e12">
+                      <p xml:id="id159e87b7-b290-45f8-80e8-f1dd8115e48c">(<hi xml:id="iddc2ed718-68bb-4504-b92c-16b3ca94c11e" rendition="#ita">L-fort.</hi> og <hi xml:id="id54e8be90-297f-4201-8a2f-14dcd2ec4a28" rendition="#ita">B-fort.</hi> 315; KA, D pk. 1 læg 11; <hi xml:id="id642aea06-fd23-473a-a3e0-cd27a3836e5d" rendition="#ita">B&amp;A</hi> 211)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.271" prev="#physDesc.271">
+              <msIdentifier xml:id="id07d397b1-2351-411e-95bb-0b6825a09bf0">
+                <idno xml:id="id403f0fd3-26f2-4d87-afc9-c07e134613a5">271</idno>
+              </msIdentifier>
+              <additional xml:id="id9838f189-7e81-4fbd-8b32-2e26187ab7a0">
+                <adminInfo xml:id="id053dfe44-7318-4e4b-b018-00dfc9b4c1d7">
+                  <note xml:id="id88ed27d5-e909-40f8-8bab-92cbede7dc21">
+                    <p xml:id="id4ee3b863-9960-4207-b00d-cc2ef34512cc">(<hi xml:id="id0fc42f98-d74f-461e-8a3b-7789e0ec0b49" rendition="#ita">L-fort.</hi> og <hi xml:id="iddd150fc0-36fe-4d55-8332-d8056c9025ea" rendition="#ita">B-fort.</hi> 315; KA, D pk. 1 læg 11; <hi xml:id="ida2b32590-baff-4709-96d3-61fe741ee278" rendition="#ita">B&amp;A</hi> 211)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.272" next="#additional.272">
+              <msIdentifier xml:id="id7518e031-eaa7-4d33-8339-72c0e057426f">
+                <idno xml:id="idee9c9acf-f4ec-4b3d-b7eb-f44fbae54b95">272</idno>
+              </msIdentifier>
+              <physDesc xml:id="id417381d2-358d-44d7-ad2f-21e4070a044d">
+                <p xml:id="id30f1d5a3-8a82-4dbd-8f86-1c1b3402a4f1"><ref xml:id="id389a15d5-589b-4e91-9c63-e359e8939d36" target="../B259/txt.xml#n272" type="lettersAndDedications" n="272">Brev 272</ref>. Fra SK til <persName xml:id="idb3f9d547-06d6-45d1-8543-c4d8754e3dce" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi xml:id="id50869ef6-38fd-48de-936f-075419d577da" rendition="#ita">SKS</hi> 28, 419-422).</p>
+                <p xml:id="id044c63b6-b443-479c-b2c6-63de2218fa37">2 dobbeltblade, i alt 4 blade i 4<hi xml:id="id0c2497a1-8ea8-4be1-88e7-f991baea5c88" rendition="#sup">o</hi>.</p>
+                <p xml:id="id4b20da5f-1c0b-401a-974a-4f2bfcebae4c">Ingen paginering.</p>
+                <p xml:id="id088e83d9-047c-4f2b-ad00-c4ca2900c1cb">Papir: gulligt koncept, glat. Mål: 170 × 204 mm.</p>
+                <p xml:id="ide5af8975-b7e8-4d87-aa74-46c2d53aeb9f">Bladene har efter beskrivning været foldet en gang på langs og en gang på tværs.</p>
+                <p xml:id="idb185b657-af7a-4744-aecd-67e4f018d50e">Få korrektioner. På bl. [3v] findes en tilføjelse på langs i randen af papiret. Brevets slutning mangler.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.272" prev="#physDesc.272">
+              <msIdentifier xml:id="id26b0461d-44f8-44d6-bd3e-1e8289ae82c5">
+                <idno xml:id="ida489ec2b-3534-4886-90f0-ad1558c9e625">272</idno>
+              </msIdentifier>
+              <additional xml:id="id5301b449-ae4b-4b77-9e65-de5529dfe479">
+                <adminInfo xml:id="idbcc0965c-cb1d-4cba-85af-4fb9e21c8db1">
+                  <note xml:id="ide4c6292c-3464-416b-b7b1-552669787668">
+                    <p xml:id="idfca842bf-c6c0-4631-a4c3-90d142a38654">(NKS 3101 4<hi xml:id="id69708d68-931e-42fb-a96a-d98f0587bf5d" rendition="#sup">o</hi>; <hi xml:id="id9964b530-3b3c-4fc6-8180-e170d499c771" rendition="#ita">B&amp;A</hi> 214)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.273" next="#additional.273">
+              <msIdentifier xml:id="id8a06522e-dc85-46b1-bd7b-2ba39dbc5c3c">
+                <idno xml:id="iddd0c5355-c3ea-458e-b7f4-be21d3a51844">273</idno>
+              </msIdentifier>
+              <physDesc xml:id="ida6326ebf-ef48-41e2-b3d4-8b9c59814f9c">
+                <p xml:id="id90ba8300-9b3f-4915-a669-beb685db15b0"><ref xml:id="id68d4113a-52a6-4f80-acb2-45cdea18f9db" target="../B259/txt.xml#n273" type="lettersAndDedications" n="273">Brev 273</ref>. Fra <persName xml:id="id63c50adc-c4d2-42cd-ad26-ddd0a333be48" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> til SK (<hi xml:id="idda137242-bb3d-4d8d-af61-e5b1d04e230d" rendition="#ita">SKS</hi> 28, 423-426).</p>
+                <p xml:id="iddecc52b5-7966-45f2-8318-898aa976e390">1 dobbeltblad i 4<hi xml:id="id0847f6c7-d8b4-41bf-8e55-813eb30f4589" rendition="#sup">o</hi>.</p>
+                <p xml:id="id47b13254-fc51-412d-92ee-b818717f44b4">Ingen paginering.</p>
+                <p xml:id="id0a046f85-c1fe-4fc1-9923-22ef23ac1e42">Papir: gulligt postvelin, glat. Mål: 215 × 275 mm.</p>
+                <p xml:id="id1f529bc6-7dec-4283-8145-de4519106ffb">Bladene har efter beskrivning været foldet to gange på langs og tre gange på tværs til konvolut (mål: 155 × 88 mm); rest af oblat. Konvolutten har desuden været foldet to gange på langs.</p>
+                <p xml:id="ida0b2493c-5efc-4bf0-9329-1a970ea7c664">Oblaten har visse steder beskadiget ms. og gjort teksten ulæselig (fx <hi xml:id="idc4a13de4-1c78-4e55-9935-6cc1efc7921c" rendition="#ita">SKS</hi> 28, 426,1).</p>
+                <p xml:id="id1e84b98c-435d-4a52-a9af-d5f807a63a17">Få korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.273" prev="#physDesc.273">
+              <msIdentifier xml:id="id4c684a9e-68c3-4f96-8445-5d4276b7a36d">
+                <idno xml:id="idc7419d1b-1bb3-4ab8-805f-5296ca85807d">273</idno>
+              </msIdentifier>
+              <additional xml:id="id969256aa-d139-4dbe-909f-45696f9b929a">
+                <adminInfo xml:id="id00945748-e69e-4112-9fe3-3c8e2c760862">
+                  <note xml:id="id92876c0f-c5d9-4f07-9190-86d29f0e8cd9">
+                    <p xml:id="id1b413fa2-07fb-4b76-bcb6-a0af725c7bcd">(KA, D pk. 1 læg 11; <hi xml:id="id0e768253-7ea5-4a38-9565-2635f850130d" rendition="#ita">B&amp;A</hi> 216)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.274" next="#additional.274">
+              <msIdentifier xml:id="id82a78805-c27b-423d-b449-95b37e26edf4">
+                <idno xml:id="ida9fcfebb-01b3-4c20-8eef-71809a644646">274</idno>
+              </msIdentifier>
+              <physDesc xml:id="id57992524-baf2-4ed0-b45e-21e9ecc53293">
+                <p xml:id="idde5c49b7-d3e5-497f-b13d-300494a94686"><ref xml:id="id2920fd23-149f-4468-8f5b-e742774ff6aa" target="../B259/txt.xml#n274" type="lettersAndDedications" n="274">Brev 274</ref>. Fra SK til <persName xml:id="id98dc4d12-0799-4b8a-903c-06a4ae9f0edd" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> (<hi xml:id="ideefc0d45-e2f8-4e1a-a9d4-a47c928d5631" rendition="#ita">SKS</hi> 28, 426-427).</p>
+                <p xml:id="id25b3be5a-d9af-4251-8c88-ee20d5e06f2c">1 løst blad i 4<hi xml:id="id9cb09cd5-fcc2-4ea5-b3c5-d530135ed094" rendition="#sup">o</hi> med afrevet kant i venstre side.</p>
+                <p xml:id="id557a089d-d341-4335-8779-2a75cdd656fb">Ingen paginering.</p>
+                <p xml:id="id824418d7-702e-4c31-826e-4cb8a20dbec2"><pb xml:id="ss528" n="528" edRef="#SKS"/>Papir: gulligt koncept, glat. Mål: 169 × 204 mm.</p>
+                <p xml:id="id5026f4fb-6506-40ba-b1c8-0b520fc407a5">Bladet har efter beskrivning været foldet en gang på langs og en gang på tværs.</p>
+                <p xml:id="id922324e3-3619-4c32-96e7-2eca67343fb6">Få korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.274" prev="#physDesc.274">
+              <msIdentifier xml:id="id427c9d97-477d-4f76-919f-4ca0ca660474">
+                <idno xml:id="id11c1a8dd-c6ab-498c-9576-d342f56b690c">274</idno>
+              </msIdentifier>
+              <additional xml:id="idfec04bff-d464-4f45-9e61-8a4b270edfa6">
+                <adminInfo xml:id="id85362595-78dd-4a1b-9338-1de49941c4ce">
+                  <note xml:id="idb3e7d673-ecb4-42ff-b172-efede0f5af97">
+                    <p xml:id="idb5aa60ce-6f48-49d3-bf20-e329ec4ec4a5">(NKS 3101 4<hi xml:id="idf523c5f1-fc70-4c50-9532-96c5cb326713" rendition="#sup">o</hi>; <hi xml:id="idef210d7b-d999-4b03-ac85-f3c0d57de920" rendition="#ita">B&amp;A</hi> 217)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.275" next="#additional.275">
+              <msIdentifier xml:id="id760d494d-1cc2-4c65-b97d-b5283249a825">
+                <idno xml:id="id3ca1b417-1d76-4c52-bdc6-90eb3381a947">275</idno>
+              </msIdentifier>
+              <physDesc xml:id="ida972504a-224f-41f3-ac7c-f06b561870cd">
+                <p xml:id="idd76f1ed5-c367-47d4-9b15-f016bd70a170"><ref xml:id="id21a57aa9-b14b-44bf-a1af-c1044031498a" target="../B259/txt.xml#n275" type="lettersAndDedications" n="275">Brev 275</ref>. Fra <persName xml:id="id731c1c32-9fcf-4d16-8580-141c4e7db61c" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> til SK (<hi xml:id="id453c04d9-ac50-4012-bbcc-8389e247846f" rendition="#ita">SKS</hi> 28, 427-428).</p>
+                <p xml:id="idd68abe28-87ca-4dfe-b966-0f4bc1d6f62b">1 dobbeltblad i 8<hi xml:id="id3aa3255c-a384-4095-a7f2-8ac3c94f65d5" rendition="#sup">o</hi> med afrundede hjørner.</p>
+                <p xml:id="idcf5f92c8-5f76-4ff0-a990-5da9b6017998">Ingen paginering.</p>
+                <p xml:id="idcd5632e0-ea87-4bad-a37d-4aaeabcf73d8">Papir: gulligt velin, glat. Mål: 120 × 185 mm.</p>
+                <p xml:id="ideba3d63a-823b-45b9-8f82-4c963af7834d">Bl. [2r]-[2v] er ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.275" prev="#physDesc.275">
+              <msIdentifier xml:id="idef7ea7b5-6809-4411-844f-323b43aeee4c">
+                <idno xml:id="id017e5291-c5a7-43cd-ba3d-c0e82fb10505">275</idno>
+              </msIdentifier>
+              <additional xml:id="ide807863b-4ae0-4535-8bc0-10615d0aa9f9">
+                <adminInfo xml:id="ide91d161c-d29c-47e5-a9a7-b2d2ae6f7f33">
+                  <note xml:id="id2de2f19d-010c-4ebc-8833-57fd2b47ff22">
+                    <p xml:id="id6d2dc77b-0fc5-4a26-b109-053abb4dfb6f">(KA, D pk. 1 læg 11; <hi xml:id="id2aad9380-0b70-4ebc-88b4-6a1f1cc4c163" rendition="#ita">B&amp;A</hi> 264)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+          <p xml:id="ide3890e64-03fa-4428-8815-0bd4f594c4bc">(<hi xml:id="ida3cb854c-bc71-4886-8edc-2fb4ba13e9da" rendition="#ita">L-fort.</hi> + <hi xml:id="id396a71e1-88a2-41e1-a946-a0dba5105d7a" rendition="#ita">B-fort.</hi> 315, 316, <hi xml:id="ide8ffb000-edd6-43a7-afc4-e098925e6af2" rendition="#ita">L-fort.</hi> 322, <hi xml:id="id91436c8a-c6d1-4451-8198-12afb5203ed9" rendition="#ita">B-fort.</hi> 322.2;<note xml:id="id831419b0-d221-4463-8835-5c7bd5dc9942"><p xml:id="idfc2cdbcf-eb69-47ba-95e8-06fb01136045">De otte breve fra <persName xml:id="idc57e0789-d4ac-4699-bda3-d7dd312db430" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> til SK fandtes alle blandt SKs papirer ved hans død, jf. <hi xml:id="id8001d4c3-cffa-47bd-9667-5efb6c8bc36d" rendition="#ita">B-fort.</hi> 315, 316 og 322.2. Det er ikke muligt ud fra oplysningerne i <hi xml:id="iddf7105d8-c769-45e4-8757-d1d5d33c84ae" rendition="#ita">B-fort.</hi> at placere dem mere præcist. I <hi xml:id="idd9499b87-2529-438c-b9ee-9d00f5fe3fe9" rendition="#ita">B-fort.</hi> 315 angiver <persName xml:id="id56f8912f-4aa5-45ff-8761-2c30e3c03c16" key="Barfod, Hans Peter">Barfod</persName> desuden et brev til <persName xml:id="id1534b01f-dfd5-4338-8f31-02b9e2ea4d64" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>; det må dreje sig om <ref xml:id="idf4187ec3-4bef-4371-8df5-2804d2f133ee" target="../B259/txt.xml#n271" type="lettersAndDedications" n="271">Brev 271</ref>.</p></note> KA, D pk. 1 læg 11; NKS 3101 4<hi xml:id="idb48da9cb-6f52-4fbd-a4d2-cb17bd00675c" rendition="#sup">o</hi>; Sammlung Darmstaedter 2a 1845: <persName xml:id="id5a01eb38-14dd-4e57-aaca-e057e91dc398" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>, Sören, Staatsbibliothek zu <placeName xml:id="id18880c1d-76fb-4f20-b85f-d24a4d81bcc1">Berlin</placeName>; KB, Fot. br.; <hi xml:id="id8aae5f58-4d12-44fa-b2f5-3bc4ea224d86" rendition="#ita">B&amp;A</hi> 160, 172-173, 180-181, 184-190, 211, 214, 216-217 og 264)</p>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="id06a96fb6-e3e3-4213-b621-3ef6fff242b7">2. Datering og kronologi</head>
+          <p xml:id="id8156a2aa-c1ad-4683-a3dd-de56bb213a16">Den bevarede brevveksling mellem SK og <persName xml:id="id4be2d83f-bc75-43c4-a68c-4ce13b813bb8" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">J.L.A. Kolderup-Rosenvinge</persName> forløber i perioden fra den 30. sept. 1847 til den 28. april 1850. 17 breve findes, hvoraf ni er skrevet af SK og otte af <persName xml:id="id24495364-9a18-4722-aeda-32fd46c2af00" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>. Sidstnævnte er alle dateret, mens kun ét af SKs er det; de øvrige kan dog dateres præcist eller omtrentligt ud fra indholdet.</p>
+          <p xml:id="ided63761d-fbab-4f20-82eb-9c4e1de59e91" rendition="#ind">De første tre, <ref xml:id="id93577577-2f18-4403-aac3-7e7915d42907" target="../B259/txt.xml#n259" type="lettersAndDedications" n="259">Brev 259</ref>-261, er alle skrevet af <persName xml:id="id1a1bb42a-95f6-479f-9ad9-c30d044f1fbf" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>; SKs mulige svar findes ikke. I <ref xml:id="idafcbec7f-e7c7-41c3-8210-b7dec64c9df8" target="../B259/txt.xml#n259" type="lettersAndDedications" n="259">Brev 259</ref> takker <persName xml:id="id5f79b6aa-3803-4485-a581-6f216d5d825c" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> i et brev dateret »d 30 Sept. 1847« for <hi xml:id="idb1b5434f-e447-4092-b1de-4220ce38e546" rendition="#ita">Kjerlighedens Gjerninger,</hi> som SK har sendt ham. Bogen blev annonceret som udkommet den 29. sept. 1847,<note xml:id="id2a7042da-33a0-4327-a765-e94b6f69b790"><p xml:id="id48bed309-2820-4829-94b2-1c46ab816f6f">Jf. <hi xml:id="id2638852c-6e8c-4de1-a055-ce6531b02df9" rendition="#ita">Adresseavisen,</hi> nr. 229, den 29. sept. 1847.</p></note> så SK har altså straks ved udgivelsen sendt et gaveeksemplar. <ref xml:id="id9a8a70d6-6c6b-44ca-a70c-f9030eda91db" target="../B259/txt.xml#n260" type="lettersAndDedications" n="260">Brev 260</ref> er dateret »d 18 Febr 1848« og <ref xml:id="id9ebef560-a1ca-483e-9fa1-60ad0420cb3f" target="../B259/txt.xml#n261" type="lettersAndDedications" n="261">Brev 261</ref> »d. 6 Marts 1848«.</p>
+          <p xml:id="id65269db5-f2af-4927-a5f9-041fb0132fab" rendition="#ind">Herefter følger en korrespondance fra sommeren 1848, <ref xml:id="id5c3b6485-fea8-4aae-b24d-3a3b28b5c0c0" target="../B259/txt.xml#n262" type="lettersAndDedications" n="262">Brev 262</ref>-270. I brevene udfoldes en samtale på skrift, og SKs udaterede breve lader sig let <pb xml:id="ss529" n="529" edRef="#SKS"/>indplacere mellem <persName xml:id="id2ff97f89-478a-4529-957f-0b2df821160a" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>s daterede breve. I det følgende fremdrages enkelte passager i hvert brev som belæg for rækkefølgen.</p>
+          <p xml:id="id230e23c5-3072-47c6-8b42-f6c7cd70e567" rendition="#ind"><ref xml:id="idceb13a2f-ad46-4693-8f00-3f036a25e658" target="../B259/txt.xml#n262" type="lettersAndDedications" n="262">Brev 262</ref> fra SK kan dateres til juli 1848 ud fra bemærkninger i <ref xml:id="idca089148-832f-4e90-a5aa-04e1fcc6a502" target="../B259/txt.xml#n263" type="lettersAndDedications" n="263">Brev 263</ref>. SK nævner i <ref xml:id="id322b04ca-3b7e-4209-92e2-520f62139ad0" target="../B259/txt.xml#n262" type="lettersAndDedications" n="262">Brev 262</ref> <persName xml:id="idb537f1bd-3d3f-43b6-af33-dc839a604a86" key="Holberg, Ludvig">Holberg</persName>s <hi xml:id="id0b38a7be-b3f9-46d1-a0eb-7e884ffd63c6" rendition="#ita">Mester <persName xml:id="id4e2a10ea-d55f-4489-a8d3-349e028acc4a" key="Gert Westphaler">Gert Westphaler</persName></hi> (1724), og han noterer desuden, idet <persName xml:id="id956ca3b8-5770-44ed-bd2c-7e5ccf904cdd" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> ligger på landet og derfor er forhindret i at spadsere, at han nu må lære »at spadsere med Dem paa Prent« (<hi xml:id="id4694325b-1254-4eaf-a056-a17d58ceff39" rendition="#ita">SKS</hi> 28, 389,28). Af <ref xml:id="id100de90a-7aa1-42c7-acea-f411414cdff8" target="../B259/txt.xml#n263" type="lettersAndDedications" n="263">Brev 263</ref> fra <persName xml:id="idb87104de-4ff0-4f94-be54-d95bcd8e8177" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> dateret »Ordrupshøj d. 26<hi xml:id="ide8bd6209-757d-4bfc-a2f8-7f5af3343fe8" rendition="#sup">de</hi> Jul. 1848« fremgår det, at han er med på spøgen om at spadsere pr. brev. Yderligere beklager han, at han har fået brevet »otte Dage for silde, da jeg netop for en 8<hi xml:id="idd4010960-d2f4-4908-bd50-9b31a8e06b49" rendition="#sup">te</hi> Dages Tid siden forelæste <persName xml:id="idde38836d-dd1c-452e-b428-d66b02559013" key="Gert Westphaler">Gert W.</persName> her en Aften« (<hi xml:id="ide5a3a988-fbbc-4200-94a8-3fead25a8e10" rendition="#ita">SKS</hi> 28, 391,6-7). <persName xml:id="id5fda089c-4ff8-4b9d-8726-3859eb9afeda" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> meddeler yderligere, at han i de sidste otte dage har været bortrejst (jf. <hi xml:id="iddf1574f2-2ae7-494e-bcd4-1185185f0d0c" rendition="#ita">SKS</hi> 28, 390,30-32). <ref xml:id="idfc306f25-1cdd-476f-8a5e-e935ffa55d01" target="../B259/txt.xml#n262" type="lettersAndDedications" n="262">Brev 262</ref> kan derfor tidligst have været afsendt otte dage før den 26. juli 1848, idet <persName xml:id="ida0134b57-c2d6-421c-b062-9ebe0c41f54a" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> ellers havde været hjemme til at modtage det.</p>
+          <p xml:id="idb683d99e-1ef7-449e-854c-c48db9a2aa2d" rendition="#ind">Som afslutning skriver <persName xml:id="id45d84998-7ffd-4bef-95ce-c8166b3f633e" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> i <ref xml:id="id963082b3-6ba6-443b-ba5d-ae6c42394b58" target="../B259/txt.xml#n263" type="lettersAndDedications" n="263">Brev 263</ref>: »Om Politik have vi slet ikke talt« (<hi xml:id="id67a012ef-f08d-44d5-bdb0-b2e6228b8232" rendition="#ita">SKS</hi> 28, 391,24). Denne bemærkning er grundlag for at tidsfæste SKs næste brev, <ref xml:id="id1d22bd30-4dd3-400b-95c2-bdb1f2aa7d68" target="../B259/txt.xml#n264" type="lettersAndDedications" n="264">Brev 264</ref>. Hans første linje er en respons derpå: »'Vi fik ikke talt om Politik' siger De« (<hi xml:id="idcebeb997-e500-4e88-85e4-a6e8cf5bd060" rendition="#ita">SKS</hi> 28, 391,31). Brevet må være skrevet sidst i juli eller i begyndelsen af aug. 1848 inden <persName xml:id="id943a288e-6d08-4786-a68c-191c9c199aaf" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>s næste brev.</p>
+          <p xml:id="id8b874a25-cfa7-42e4-9b47-0bff452ff55e" rendition="#ind"><ref xml:id="idabc85e2b-2a5d-4658-b248-88ca8c049127" target="../B259/txt.xml#n265" type="lettersAndDedications" n="265">Brev 265</ref> fra <persName xml:id="id7c92948b-b130-451d-b64f-94eb3402920d" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> er dateret »Ordrupshøj d. 8<hi xml:id="idd935e1b8-c9ae-40ac-ab4e-4977af31b5c1" rendition="#sup">de</hi> August 1848«. Han kommenterer indholdet af <ref xml:id="id43420a89-7724-40b3-8b63-47fa779f81f4" target="../B259/txt.xml#n264" type="lettersAndDedications" n="264">Brev 264</ref>, idet han ironisk udnævner SK til tilhænger af Bevægelsespartiet og skriver: »Deres evige Lovtale over Spadseren, som De har bragt i et formeligt System, hvis Culminationspunkt er, at man kan <hi xml:id="id4a140b43-a1d1-4353-b71b-cbae9f84b2e3" rendition="#ita">gaae</hi> fra det altsammen, viser mig tydeligt hvad Klokken er slaaet; thi ogsaa de øvrige Bevægelsesfolk ansee Bevægelsen selv for Hovedsagen, og har tilsidst ikke andet Maal end at gaae fra det altsammen« (<hi xml:id="id80817817-b277-4829-835b-1467bcab9c24" rendition="#ita">SKS</hi> 28, 394,22-27). I <ref xml:id="id4c271dbc-0d21-4ced-aa49-41ebdc0617ed" target="../B259/txt.xml#n266" type="lettersAndDedications" n="266">Brev 266</ref> svarer SK: »Har jeg, som De sidst bemærkede, bragt det at spadsere i System, saa lad mig da her forsøge en lille Theorie af 'Bevægelsen', under hvilken Categorie igjen Standsningen hører« (<hi xml:id="id96773e3d-e13d-46ae-ad20-75e217e95433" rendition="#ita">SKS</hi> 28, 400,14-17). Han omtaler tillige en artikel i <hi xml:id="idf040d460-b668-40a1-b70b-845469cde371" rendition="#ita">Berlingske Tidende</hi> fra den 9. aug. 1848 om en togulykke, hvori manglende færdigheder i at anvende en togvogns bremse spiller en central rolle.<note xml:id="idcdcf6ff4-0309-40ed-9e86-86f33d6a2481"><p xml:id="idf1e8ad34-6880-4a15-b54c-d7f6bd237785">Jf. <hi xml:id="idde4f4155-84dd-42bf-ba87-95b6a587d905" rendition="#ita">Berlingske Tidende,</hi> nr. 198, den 9. aug. 1848. Se også kommentaren til Brev 266, <ref xml:id="id83e37ea5-a81a-4c0e-bdb9-c14eb2e52064" target="../B259/kom.xml#b-1403" type="commentary">397,<hi xml:id="id0c76466a-859d-4e4f-a879-cabd22a8cdff" rendition="#size-1"><hi xml:id="id1938382e-5245-4f53-95a2-4a6db46458e7" rendition="#ita">23</hi></hi></ref>.</p></note> SK causerer over en bremses funktion, idet han inddrager ordets anden betydning, et insekt.</p>
+          <p xml:id="id32a69e81-1190-4eee-8a8e-0ba4eed58972" rendition="#ind"><ref xml:id="id0234f2dc-57a4-4ca7-a07f-0f9fa6c7c005" target="../B259/txt.xml#n266" type="lettersAndDedications" n="266">Brev 266</ref> er udateret, men er skrevet i midten af aug. 1848, idet <persName xml:id="id2b4dbeae-e770-4b6e-a46a-8125e364349e" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>s næste brev, <ref xml:id="idf34b5483-bb6c-4c36-a08b-f161bebafa66" target="../B259/txt.xml#n267" type="lettersAndDedications" n="267">Brev 267</ref>, er dateret »Ordrupshøj d. 20 Aug 1848« og indholder en bemærkning til SKs udvikling af bremsens funktion: »Ja, naar de Gale og de Blinde saaledes skulle vedblive at være Vejvisere for Folket, for at dette paa den folkeligste Maade kan løbe gal, er jeg nær ved at gaae over til Deres og Jeronymi Mening, at Verden neppe staaer til Paaske, om man <pb xml:id="ss530" n="530" edRef="#SKS"/>endogsaa sætter nok saa mange Bremser paa Galskabens Dampvogn!« (<hi xml:id="idfbb70688-596e-46e0-a57f-9a5d76b3bfff" rendition="#ita">SKS</hi> 28, 403,1-5). <persName xml:id="id586edad3-ca0e-433e-a1c0-3f813894d28b" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> henviser desuden til en artikel af <persName xml:id="id765cee6e-ee93-4d1e-9d28-d5aa7e1282cb" key="Christensen, Peter Vilhelm">P.W. Christensen</persName> i tidsskriftet <hi xml:id="idb56c983d-f9f1-4449-b114-003581fdba06" rendition="#ita">For Literatur og Kritik</hi><note xml:id="id4f0ba321-1c6e-4387-8826-facf23346329"><p xml:id="id40db8344-0a3f-45e5-aaf8-b4fe6fd9373e">Jf. <persName xml:id="idc051297d-4ef4-44ff-a693-d5c128d67f13" key="Christensen, Peter Vilhelm">P.W. Christensen</persName>
+          »De fem Verdensaldre« i <hi xml:id="idfe938827-75e6-4a47-9a5c-b5e6ec2d297b" rendition="#ita">For Literatur og Kritik</hi> bd. 6, 2. hæfte, s. 146-190.</p></note> og afslutter sit brev med et ønske til SK: »har De seet Gjengangeren af den politiske Kandestøber? Det er en politisk Jernstøber, som hedder <persName xml:id="id4fe73871-6e47-46e5-8a4e-34739c1d2e21" key="Lunde, jernstøber">Lunde</persName> cfr. Hexeri og blind Allarm 4<hi xml:id="id17d322bb-9dcc-4fd4-b6f1-80914c223bed" rendition="#sup">de</hi> Act. 4 Scene. – Spørgsmaal, hvorledes forholder Jern sig til Kobber og især i Politiken? ønskes besvaret paa næste Spadseretour« (<hi xml:id="id77e068a0-34bb-44cc-b23e-22f316669370" rendition="#ita">SKS</hi> 28, 406,2-5).</p>
+          <p xml:id="id06893d42-fb86-470d-9055-dcc3265cd828" rendition="#ind">I <ref xml:id="id4e94eb5b-863a-4340-94f7-2fbf2b42c526" target="../B259/txt.xml#n268" type="lettersAndDedications" n="268">Brev 268</ref> reagerer SK på <persName xml:id="idc0b459c9-ac15-48b2-b20b-debe42de824c" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>s omtale af <persName xml:id="id2fc6ae11-afdb-4d1f-9d54-58070062d852" key="Christensen, Peter Vilhelm">P.W. Christensen</persName>, SKs sekretær i årene 1842-43,<note xml:id="idefd6d4be-8caf-4653-8752-3fa1fa2da878"><p xml:id="id7448c2c1-9070-447e-b498-315f5a4599a4">Se kommentaren til Brev 268, <ref xml:id="ida0d36961-58b7-41ad-b1a0-b983ed5149c5" target="../B259/kom.xml#b-1456" type="commentary">402,<hi xml:id="id57310905-be74-4dc5-8194-c02e75f64ca4" rendition="#size-1"><hi xml:id="iddc948504-cad7-4387-a075-21f964617878" rendition="#ita">25</hi></hi></ref>.</p></note> og opfylder ligeledes det afsluttende ønske i <ref xml:id="id08cf5f60-0500-43c0-9f08-a537e86260cc" target="../B259/txt.xml#n267" type="lettersAndDedications" n="267">Brev 267</ref>: »Dog det er sandt, inden vi gaae videre, ell. maaskee rigtigere idet vi nu gaae videre thi vi spadsere jo: da vi sidst talte sammen var der Noget, De forlangte jeg næste Gang skulde oplyse: hvilken er Forskjellen mellem en Jernstøber og Kandestøber« (<hi xml:id="ida0438b50-a88a-4135-9d73-96865653fe6d" rendition="#ita">SKS</hi> 28, 408,20-23). SK har formentlig skrevet <ref xml:id="id79f527d7-a1f8-4e35-a729-76620dd690e9" target="../B259/txt.xml#n268" type="lettersAndDedications" n="268">Brev 268</ref> i slutningen af aug. 1848.</p>
+          <p xml:id="idf828636f-b4f3-4d5c-946c-7fad97629abf" rendition="#ind">Fra året 1848 findes endnu et par breve fra SK til <persName xml:id="idf816b898-4370-4a22-a85e-28f967adea99" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>, <ref xml:id="id7f2c6413-937f-4c6c-9b16-fa4364ed177d" target="../B259/txt.xml#n269" type="lettersAndDedications" n="269">Brev 269</ref> og <ref xml:id="id6fa0c907-ee0d-4eff-91cc-0302a6272689" target="../B259/txt.xml#n270" type="lettersAndDedications" n="270">270</ref>. I <ref xml:id="id8bf697e7-455d-4d32-9c43-cea545db2d4b" target="../B259/txt.xml#n270" type="lettersAndDedications" n="270">Brev 270</ref> skriver SK: »Ved at søge efter i Papirer fra den allersidste Tid fandt jeg saa ogsaa et Brev til Dem, convoluteret og med Udskrift: Ordrupshøi. Det maa altsaa være skrevet, medens De endnu laae paa Landet« (<hi xml:id="idb0eb46dd-f0f3-4739-aa10-d3562c095cbc" rendition="#ita">SKS</hi> 28, 413,7-9). Der er muligvis tale om <ref xml:id="idc708fc55-6ebd-4474-b107-61bb730c05fa" target="../B259/txt.xml#n269" type="lettersAndDedications" n="269">Brev 269</ref>; udskriften til dette brev er dog ikke bevaret, så det kan ikke bestemmes med sikkerhed. <ref xml:id="iddeaddf13-c2a1-4fff-8cb0-f42750e90510" target="../B259/txt.xml#n269" type="lettersAndDedications" n="269">Brev 269</ref> kan under alle omstændigheder tidsfæstes til sidste halvdel af sept. 1848. I brevet henviser SK til en artikel fra den 14. sept. i <hi xml:id="idfcc3cb24-3a51-494a-b889-e678cc4f02c7" rendition="#ita">Berlingske Tidende,</hi> hvor urtekræmmeren <persName xml:id="id54dc0d46-33b4-427b-8c5d-8aed10463e29" key="Melbye, Christian F.">C.F. Melbye</persName> opstiller et politisk program i håb om at blive valgt til Den Grundlovgivende Rigsforsamling ved valget den 5. okt. 1848.<note xml:id="idda74ae63-543d-4e41-82a3-d23f788d4b98"><p xml:id="idc50f7794-e716-43cb-a511-c7d049c1e340">Jf. <hi xml:id="idc1ded5e3-39bc-4aad-843c-da7b9b2de2ba" rendition="#ita">Berlingske Tidende,</hi> nr. 230, den 14. sept. 1848.</p></note> <ref xml:id="idb6b87062-5a76-4039-b59a-8744336a08be" target="../B259/txt.xml#n270" type="lettersAndDedications" n="270">Brev 270</ref> må derfor være skrevet herefter, formentlig i løbet af sept.-okt. 1848.</p>
+          <p xml:id="id25fe11fa-d594-42c3-91ae-95c848d09945" rendition="#ind">Herefter følger fire breve fra 1849. Hovedparten af <ref xml:id="id3be69f5c-f460-454a-879e-eb857b4c4c4f" target="../B259/txt.xml#n271" type="lettersAndDedications" n="271">Brev 271</ref> fra SK til <persName xml:id="id552bcea4-2f59-4989-9275-811b0a294df0" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> er antagelig skrevet den 11. juli 1849; kun efterskriften på konvoluttens inderside er skrevet noget senere, idet SK her noterer, at indlagte »er skrevet allerede for nogen Tid siden« (<hi xml:id="id4dab2da1-40de-45b0-a410-4f4cbe35e238" rendition="#ita">SKS</hi> 28, 418,31-32). I det indlagte henviser SK til en annonce i <hi xml:id="id2a63e7b8-cc38-46d6-89ce-a7106534085b" rendition="#ita">Adresseavisen:</hi>
+        »Idag seer jeg saaledes igjen et Avertissement fra Hesteslagteren paa <placeName xml:id="id7c8ade69-cc86-4776-b010-c979cbf74766">Christianshavn</placeName>, at han har faaet noget 'særdeles meget fedt Kjød'. Dog det var ikke det, jeg vil fortælle, derimod er det hans Vignet, jeg vil tale om« (<hi xml:id="ideb1f60f1-a761-4ee4-a9b5-ed4b2e10dc83" rendition="#ita">SKS</hi> 28, 414,7-10); annoncen findes i avisen fra den 11. juli 1849.<note xml:id="id4043f5c3-525b-4940-b1ae-26f3c9e42391"><p xml:id="ida25084a4-4f72-43b2-b5ba-17cdcb09eb76">Jf. tillægget til <hi xml:id="ide744fde5-ca70-49cd-81d0-2bdf6d4b918c" rendition="#ita">Adresseavisen,</hi> nr. 160, den 11. juli 1849. Se også kommentaren til Brev 271, <ref xml:id="id737b409b-f7e8-4d66-b757-7d1be7005085" target="../B259/kom.xml#b-1589" type="commentary">414,<hi xml:id="id99e27a4e-7f78-4084-a222-eea2f814454f" rendition="#size-1"><hi xml:id="id1d3890d1-817e-4126-85f3-c716ed120c98" rendition="#ita">7</hi></hi></ref><hi xml:id="id1d8bd546-643b-490f-861e-b47c264b4abe" rendition="#size-1"><hi xml:id="id11d3a00e-edd5-4bb8-9433-124c9aa02846" rendition="#ita"> -<ref xml:id="idd66aed99-5857-4378-af7b-a57c5b90cc27" target="../B259/kom.xml#b-1590" type="commentary">10</ref></hi></hi> og <ref xml:id="id39782ca1-e1c6-4584-8e27-277e8f287c3d" target="../B259/txr.xml#ill_k10" type="figure" n="559">illustration 10</ref>, s. 559.</p></note> Selv om brevet er konvolutteret og forseglet, er <pb xml:id="ss531" n="531" edRef="#SKS"/>det ikke sikkert, at det overhovedet har været afsendt. Ved SKs død blev det fundet blandt hans øvrige papirer.</p>
+          <p xml:id="idfde4bee1-5fb5-4a4d-a2ab-fe2fd15c85c2" rendition="#ind">De to følgende breve er begge dateret. <ref xml:id="id5a5a58cd-b33b-4666-9720-7721afe9a707" target="../B259/txt.xml#n272" type="lettersAndDedications" n="272">Brev 272</ref>, hvis afslutning ikke er overleveret, er således af SK dateret »d. 28. Juli. 49«. <ref xml:id="id409d9237-c0fc-427d-b017-6f40962d233d" target="../B259/txt.xml#n273" type="lettersAndDedications" n="273">Brev 273</ref>, fra <persName xml:id="id93268f4d-a2f0-4184-a51b-ab94cb4759ec" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>, er dateret »Bakkehuset d. 1<hi xml:id="id2cadb269-d130-4d62-9276-19c4e1cf9e91" rendition="#sup">ste</hi> August 1849«. Han nævner heri en nært forestående rejse til <placeName xml:id="id97c5b268-8fad-4985-af66-e1cc96a8ba09">Stockholm</placeName>, som »skal tiltrædes Søndag eller Mandag« (<hi xml:id="idfd0cd50e-e5f5-4344-8aa3-ff6588eaa1ba" rendition="#ita">SKS</hi> 28, 425,12). Denne oplysning kan anvendes til at datere SKs svar, <ref xml:id="id689fa60c-5134-484f-81e9-6d6b102b3815" target="../B259/txt.xml#n274" type="lettersAndDedications" n="274">Brev 274</ref>. Den 1. aug. 1849 var en onsdag, og SKs svar må være skrevet i dagene efter modtagelsen, dvs. endnu inden <persName xml:id="id00a8b166-72d0-4020-aa17-ad535f40e3c6" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> er rejst; SK skriver således: »jeg tvivler intet Øieblik paa, at det vil blive Dem en behagelig Tour« (<hi xml:id="id374dff6a-9348-4175-9367-27b5a1e155ce" rendition="#ita">SKS</hi> 28, 427,14-15). <ref xml:id="ide8a47eef-f5f3-4c8e-bb88-6c671588925c" target="../B259/txt.xml#n274" type="lettersAndDedications" n="274">Brev 274</ref> er altså skrevet i begyndelsen af måneden, før søndag den 5. aug.</p>
+          <p xml:id="id14ba8614-71f4-4b3b-967e-fa69896982cd" rendition="#ind">Korrespondancens sidste brev, <ref xml:id="id04ef8995-9abb-4355-bff5-3cc32bf09df6" target="../B259/txt.xml#n275" type="lettersAndDedications" n="275">Brev 275</ref>, er fra <persName xml:id="idd3eb7e4d-d4cf-4a99-9b48-3552ebe5aaeb" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName> og dateret »d. 28 Apr 1850«. Han undskylder for at måtte udsætte deres spadsereture og klager i øvrigt over et skrantende helbred. Han døde senere på
+        året den 4. aug. 1850 i <placeName xml:id="ideb88a136-0abb-4924-bccd-4a47ac5bd0c0">Frankrig</placeName> under et kurophold i <placeName xml:id="idd2b5f13f-f4ef-47e8-8f15-cac1a688fefc">Nantes</placeName>.</p>
+          <p xml:id="id9805fa1c-c99e-49ea-8c30-836273e1c070" rendition="#ind">SK sendte senere et dedikeret eksemplar af <hi xml:id="id70876521-f4e7-4be7-b709-576e76911ed7" rendition="#ita">Indøvelse i Christendom,</hi> der udkom den 25. sept. 1850, til <persName xml:id="id9c0f29af-9ec8-4754-9576-9b48b994407f" key="Kolderup-Rosenvinge, Janus Lauritz Andreas">Kolderup-Rosenvinge</persName>s ene datter <persName xml:id="id4db00c74-e4c0-4498-a096-85200f3a74d4" key="Kolderup-Rosenvinge, Wilhelmine Susanne">Wilhelmine Susanne Rothe</persName> og senere på
+        året et dedikeret eksemplar af <hi xml:id="idb7386751-4952-44e8-aeff-06d209d32d32" rendition="#ita">En opbyggelig Tale,</hi> der udkom den 20. dec. 1850, til den anden datter, <persName xml:id="idb37f5d0c-4e1f-4990-8c65-3a293b73b5c7" key="Kolderup-Rosenvinge, Sophie">Sophie</persName>. I begge gaveeksemplarer har SK ladet dedikationen følge af en sjælden personlig hilsen, hvori han giver udtryk for sin sorg over faderens bortgang (se <ref xml:id="id87152d11-a36f-418a-bca9-45d8abc63e77" target="../Ded/txt.xml#n101" type="lettersAndDedications" n="101">Dedikation 101</ref> og <ref xml:id="iddc4133e0-b0b6-4c7f-981c-da28c1e320b9" target="../Ded/txt.xml#n111" type="lettersAndDedications" n="111">111</ref>).</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,178 +1,618 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Var Biskop Mynster et »Sandhedsvidne«, et af »de rette Sandhedsvidner« – er dette Sandhed?</title>
-     
-     <title type="short">BMS</title>
-  <author>
-   <name>Lena Wienecke Andersen</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Niels Jørgen Cappelørn</name><name>Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2010</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K14</biblScope>
-     <biblScope unit="file">http://sks.dk/bms/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition><!--spaced out, in SKS rendered italic--><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition xml:id="lineHight1" scheme="css">line-height:150%</rendition><rendition xml:id="lineHight2" scheme="css">line-height:200%</rendition><rendition xml:id="size-1" scheme="css">font-size: 83%</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20120823">txr/XML, <bibl><idno type="version">1.7</idno>, <biblScope unit="file">http://sks.dk/bms/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id2bd7cbfa-809e-4115-926b-7a265dcd9a57">
+    <fileDesc xml:id="idb2542167-70f4-467f-962e-8c69d0b8672f">
+      <titleStmt xml:id="idd6d0e7dc-4ca4-4310-a954-60ac2daf076a">
+        <title xml:id="id39870dac-9ff7-407e-897e-cc298b900666" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="iddf7b3a8f-e8d2-4b83-86ba-6ad154b21bf1">Var Biskop Mynster et »Sandhedsvidne«, et af »de rette Sandhedsvidner« – er dette Sandhed?</title>
+        <title xml:id="id3477b9b5-1022-475b-b0d6-f80c609bc788" type="short">BMS</title>
+        <author xml:id="id65a15aa6-e4e2-4aeb-80a9-7a36abfd5700">
+          <name xml:id="id5ed29309-7c81-420a-aa01-a2e7847fa92a">Lena Wienecke Andersen</name>
+        </author>
+        <editor xml:id="id8f5ba795-8116-44af-8f76-9e1e4a385b8d">
+          <name xml:id="ided31de9c-bef3-4cc3-8274-011920ff3647">Niels Jørgen Cappelørn</name>
+          <name xml:id="id1a4d40af-8033-49df-bad2-a7840ed977db">Joakim Garff</name>
+          <name xml:id="id284e02ef-3fb9-4174-ad58-e19dda2d4e2c">Johnny Kondrup</name>
+          <name xml:id="id57e3ba93-6f1f-481f-8f23-ce3099b313d8">Tonny Aagaard Olesen</name>
+          <name xml:id="id0ea18c7e-7010-4e9a-a0d6-ad6fcc048f60">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="id4f4f0d84-db36-4711-a737-0cb5e7a402c3">
+          <resp xml:id="id086ea9cc-9f9a-4090-a040-0cdf4c60a2f1">redigeret af</resp>
+          <name xml:id="idf98ae5aa-236c-4ea1-9743-c382a40c1aae">Niels Jørgen Cappelørn</name>
+          <name xml:id="idceee8d55-508e-41d8-ba1f-6d3ed7748d5c">Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="idd52739a4-cd7c-4a50-aee6-ef7f693b19dd">
+          <resp xml:id="idc0b974ec-06d9-439a-8378-8d0ae11f1447">elektronisk redigeret af</resp>
+          <name xml:id="id6e4618be-066c-4007-b0e5-79b11a335446">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id7c8ce091-ab03-4784-8bb9-64d95fed8786">
+        <authority xml:id="id714960f6-fb7a-43c0-9aa7-51575b2f98e2">Søren Kierkegaard Forskningscenteret 2010</authority>
+        <availability xml:id="id4eb03427-2657-4f50-8dca-d2df8c6b720f" status="restricted">
+          <p xml:id="id383e4f53-5c03-4391-843e-11e3812fae2e">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id234405bf-f605-4c69-961d-64c20e6296e9">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="id9bc698f3-df67-41c1-8bd4-c6e6c1054677" unit="volume">K14</biblScope>
+        <biblScope xml:id="ide8df59dc-1502-4a86-9bd9-02dddcb7b128" unit="file">http://sks.dk/bms/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id621fd182-b5f6-45a7-942a-0e153fba2186">
+        <bibl xml:id="idcd35d8ce-d750-4aef-b361-e7fedca01e77" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="idd7f7b3c5-8183-4cd3-a317-0268e2a3f1af">
+      <tagsDecl xml:id="id3ba78355-f93c-4276-8992-63f0121fbf4a">
+        <rendition scheme="css" xml:id="spa">letter-spacing: 0.2em</rendition>
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition xml:id="lineHight1" scheme="css">line-height:150%</rendition>
+        <rendition xml:id="lineHight2" scheme="css">line-height:200%</rendition>
+        <rendition xml:id="size-1" scheme="css">font-size: 83%</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id2a070362-455e-40c4-adba-ce4b2e1ca8d3">
+      <change xml:id="id50b7d850-589a-4c8c-ade8-c4fa2f2b2e07">Transformed to TEI by style sheet <bibl xml:id="id12c44ff0-22a0-4019-934b-5e4bcc8df77b" type="file">txr2tei.xsl</bibl> version as of <date xml:id="id346bb39e-60fd-4d71-bd64-7ce9eeb1eb76">2017-02-15</date> importing <bibl xml:id="id91f9adb7-c63d-4cca-8876-2022fc36abcb" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="id7c9c5fc8-b085-4e38-a408-e1892ee38487">Transformed to TEI by style sheet <bibl xml:id="id33f623c7-58a5-4936-a032-cc5b51c77317" type="file">kn12tei.xsl</bibl> version <idno xml:id="id702ba609-8389-44be-9f55-268961113757" type="version">1.9</idno> as of <date xml:id="id97b11362-217f-4ab6-b725-10a978660abf">2017-02-21</date> by <name xml:id="idbe152f5d-5590-42f5-a8d1-17d64c6e220a">Karsten Kynde</name>, <orgName xml:id="id118e2ab4-cc8a-4e62-bab0-cf4b3d8cb034">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="id8cb7766d-70dd-4dfa-9341-d246b58194ea">København</placeName></change>
+      <change xml:id="id043922f9-409e-4827-ad6e-85a4a2367690" when="20120823">txr/XML, <bibl xml:id="id88f6abd1-278f-478c-9e14-6cebe6f6ea20"><idno xml:id="ida3f77e1c-e9d7-44c4-95f2-23d82ba5e972" type="version">1.7</idno>, <biblScope xml:id="idf35fe7c0-165a-4a19-9061-3925c97c84b9" unit="file">http://sks.dk/bms/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="TextCriticalAccount" subtype="publishedWritings"><body><div><head type="topText" n="Tekstredegørelse"/>
-  <head><pb xml:id="ss339" n="339" edRef="#SKS"/>Tekstredegørelse</head>
-  <list type="TOC"> 
-   <item>1. Bibliografisk beskrivelse
-    <ptr type="chapter" target="#k1" n="339"/>
+  <text xml:id="ide99498d4-f233-4ef5-9387-4c894c4d6dc6" type="TextCriticalAccount" subtype="publishedWritings">
+    <body xml:id="ide31d1b63-9530-4e20-a463-73eb115c0b8a">
+      <div xml:id="id9b05e332-711d-4b4e-b7d8-f1cbbb430db0">
+        <head xml:id="idf07e0826-0897-493d-a13a-a12d1e23fd43" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="id4f70b9e0-2758-4083-8df6-7aa48bd2f66c"><pb xml:id="ss339" n="339" edRef="#SKS"/>Tekstredegørelse</head>
+        <list xml:id="id17d8b689-b4a0-466a-8822-201143a31be1" type="TOC">
+          <item xml:id="id15bf753f-d50a-4ed1-91a8-12d2dea620c7">1. Bibliografisk beskrivelse
+    <ptr xml:id="idd1b51625-8c28-4da5-b131-b7cef84f6987" type="chapter" target="#k1" n="339"/>
    </item>
-   <item>2. Manuskriptbeskrivelse
-    <ptr type="chapter" target="#k2" n="343"/>
+          <item xml:id="id1b11c66c-dce0-43ca-aed1-c4c459556726">2. Manuskriptbeskrivelse
+    <ptr xml:id="id9d3d5113-612d-4f8f-ba25-2fc001592464" type="chapter" target="#k2" n="343"/>
    </item>
-   <item>3. Tilblivelseshistorie
-    <ptr type="chapter" target="#k3" n="352"/>
+          <item xml:id="id11b610b4-235b-4528-8c43-d18846cf5b5d">3. Tilblivelseshistorie
+    <ptr xml:id="id1772c151-067c-43b4-9e9d-eb9a718801a8" type="chapter" target="#k3" n="352"/>
    </item>
-   <item>4. Udgivelsesmåde
-    <ptr type="chapter" target="#k4" n="355"/>
+          <item xml:id="id02112fad-ffc8-43de-8b08-3e1007cb4b86">4. Udgivelsesmåde
+    <ptr xml:id="id2fd46b4e-ed8e-413d-8568-ac75a51857f9" type="chapter" target="#k4" n="355"/>
    </item>
-  </list>
-  <div type="level1" xml:id="k1">
-   <head>1. Bibliografisk beskrivelse</head>
-   <p>»Var Biskop <persName key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?« blev trykt i <hi rendition="#ita">Fædrelandet,</hi> 15. årgang, nr. 295, mandag den 18. dec. 1854. Artiklen er signeret »S. <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>«. <hi rendition="#ita">Fædrelandet</hi> blev udgivet af <persName key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName key="Ploug, Carl">C. Ploug</persName>; sidstnævnte fungerede også som ansvarlig redaktør. Avisen blev trykt hos <persName key="Klein, Louis">Louis Klein</persName> i <placeName>København</placeName> og lå færdig fra trykkeriet kl. 20.30. Prisen var 6 skilling i løssalg, 5 mark pr. måned, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName>København</placeName>.</p>
-   <p>Artiklen er blevet kollationeret i tre eksemplarer af <hi rendition="#ita">Fædrelandet,</hi> nr. 295, den 18. dec. 1854:</p>
-   <list> 
-     
-     <label>A</label>
-     <item>SKs eget eksemplar, uindbundet og ubeskåret, KA, D pk. 17.</item>
-    
-     
-     <label>B</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>Eksemplar B er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 2. halvår, 15. årgang, 1854.</p> </note></item>
-    
-     
-     <label>C</label>
-     <item><placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note> <p>Eksemplar C er indbundet sammen med resten af <hi rendition="#ita">Fædrelandet,</hi> 2. halvår, 15. årgang, 1854.</p> </note></item>
-    
-   </list>
-   <p>Ved den interne kollation af de tre eksemplarer blev der ikke konstateret afvigelser.<note> <p>Da <hi rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes i tekstredegørelsen.</p> </note> Eksemplar A danner grundlag for den følgende beskrivelse.</p>
-   <div type="level2">
-    <head><pb xml:id="ss340" n="340" edRef="#SKS"/>Format og paginering</head>
-    <p>Formatet er folio.<note> <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p> </note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet ark. Avisen er trespaltet; midtersiderne er yderligere opdelt af en tværgående fed-fin dobbeltskillestreg trykt ca. to tredjedele nede på hver side. Pagineringen 1181-1184 er på forsiden angivet under spalterne, på avisens øvrige sider over. Spalterne er unummereret.<note> <p>I <ref target="../BMS/txt.xml#ss123" type="publishedWritings" n="123"><hi rendition="#ita">SKS</hi> 14, 123</ref>-126, angives sidetallet i marginen; de følgende spalteskift angives med en lodret streg i teksten og et suppleret spaltetal i kantet parentes i marginen.</p> </note> </p>
-    <p rendition="#ind">SKs artikel fylder det meste af forsiden (s. 1181); artiklen begynder øverst i første spalte, dens »Efterskrift« nederst i anden spalte, og den afsluttes tre fjerdedele nede i tredje spalte. Se <ref target="../BMS/txr.xml#ill_k16" type="figure">illustration 16</ref>. <figure xml:id="ill_k16" rend="recto"><graphic url="../BMS/ill_k16.jpg"/> <head>16. SKs eksemplar af <hi rendition="#ita">Fædrelandet,</hi> nr. 295, den 18. december 1854, udsnit</head> </figure>  Avisen indeholder i øvrigt nyheder fra ind- og udland, en føljeton<note> <p>I ordet »føljeton«s oprindelige betydning, »bilag«, betegnede det artikler vedlagt en avis. Siden brugtes det om artikler på den nederste del af en avisside, dvs. under tværstregen; disse kaldtes føljetoner eller føljetonartikler. Sidenhen udvidedes betydningen til en tekst, der var opdelt og udkom over flere numre af en avis. I <hi rendition="#ita">Fædrelandet,</hi> nr. 295, fra den 18. dec. 1854 ses således en føljeton i to betydninger: Den er placeret nederst på avisens sider, og den løber over flere numre af avisen.</p> </note> samt notitser.</p>
-   </div>
-   <div type="level2">
-    <head>Beskrivelse af eksemplar A</head>
-    <p>Avisen måler ca. 349 × 517 mm.<note> <p>Størrelsen måles som bredde (øverste kant) × højde (venstre kant).</p> </note></p>
-    <div type="level3">
-     <head>Papir</head>
-     <p>Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
-    </div>
-    <div type="level3">
-     <head><pb xml:id="ss342" n="342" edRef="#SKS"/>Typografi</head>
-     <p>Det fremherskende skriftsnit i avisen er antikva. Fremhævet tekst er sat med fed eller spatieret skrift.</p>
-     <p rendition="#ind">På forsiden findes avisens hoved adskilt fra den øvrige tekst af en datolinje. Hovedet, der står centreret, har ordlyden:</p>
-     <quote><p><hi rendition="#bol">Fædrelandet.</hi> | <hi rendition="#bol"><hi rendition="#ita">1854.</hi></hi> | Abonnementspris i <placeName key="København">Kjøbenhavn</placeName> 15 Mk. pr. Qvartal, 5 Mk. pr. Maaned; enkelte Nr. 6 Sk.; udenfor <placeName key="København">Kjøbenhavn</placeName> 3 Rdl. pr. Qvartal frit i Huset. Hver Søgne-Aften udgaaer et Numer | Bladets Comptoir, store <placeName key="Købmagergade">Kjøbmagergade</placeName> Nr. 54, er aabent om Formiddagen Kl. 11–1.<note> <p>Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p> </note></p></quote>
-     <p>Derunder følger datolinjen indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Datolinjen har ordlyden:</p>
-     <quote><p><hi rendition="#bol">15</hi><hi rendition="#sup">de</hi> <hi rendition="#bol">Aarg.</hi> <hi rendition="#bol">Mandagen den 18. December.</hi> <hi rendition="#bol">Nr. 295.</hi></p></quote>
-     <p>Oplysningen om årgang er venstrestillet, dateringen centreret, og avisnummeret højrestillet.<note> <p>En uddybende beskrivelse af avishovedet kan ses i <ref target="../YDR/txr.xml#ss309" type="textCriticalAccount" n="309">tekstredegørelsen til »Foranlediget af en Yttring af Dr. <persName key="Rudelbach, Andreas Gottlob">Rudelbach</persName> mig betræffende«, s. 309</ref>.</p> </note></p>
-     <p rendition="#ind">Nederst i bagsidens sidste spalte, adskilt fra en foregående notits af en skillestreg i hele spaltens bredde, er trykketidspunktet angivet:</p>
-     <quote><p>Færdigt fra Trykkeriet Kl. 8½.</p></quote>
-     <p>Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående, fed-fin dobbeltskillestreg og har ordlyden:</p>
-     <quote><p>Udgivere: <hi rendition="#bol">J.F.Giødwad</hi> og <hi rendition="#bol">C.Ploug;</hi> ansvarlig: <hi rendition="#bol">C.Ploug.</hi> | [Skillestreg] | Trykt med Hurtigpresse hos <hi rendition="#spa"><persName key="Klein, Louis">Louis Klein</persName>.</hi></p></quote>
-     <p>Artiklens overskrift »Var Biskop <persName key="Mynster, Jakob Peter">Mynster</persName> et 'Sandheds-|vidne', et af 'de rette Sandhedsvidner' | – er dette Sandhed?«, der er fed og centreret i spalten, er sat med en punktstørrelse ca. 1 grad større end brødteksten;<note> <p>Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 10; tekst, der er 1 grad større, er sat med punktstørrelse 12, og 2 grader større med punktstørrelse 14, mens tekst, der er 1 grad mindre, er sat med punktstørrelse 8, og 2 grader mindre med punktstørrelse 6.</p> </note> <pb xml:id="ss343" n="343" edRef="#SKS"/>sidste del af overskriften, »er dette Sandhed?«, er endvidere spatieret. Under en kort, centreret skillestreg følger dateringen »i Febr. 1854.« og den spatierede signatur »S. <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.« indrykket fra hhv. for- og bagkant på samme linje.</p>
-     <p rendition="#ind">Artiklen indledes med en uncial, der er fed og sat med en punktstørrelse ca. 2 grader større end brødteksten. Efter 17 linjers brødtekst følger en kort, centreret skillestreg. Nederst i artiklens første spalte ses, under en kort, venstrestillet streg, en fodnote til artiklen; noten er sat med en punktstørrelse ca. 2 grader mindre end brødteksten. Fodnoten fortsættes nederst i anden spalte. Mellemrubrikken »Efterskrift.« nederst i anden spalte er fed og centreret i spalten. Første del af efterskriften afsluttes med dateringen »I Efteraaret 1854.«, rykket langt ind fra forkant. Under dateringen er teksten delt med tre asterisker. Anden og sidste del af efterskriften afsluttes med dateringen »I December 1854.«, rykket ind fra forkant. Efter artiklen er trykt en længere skillestreg, der afgrænser SKs tekst fra den øvrige tekst i spalten.</p>
-     <p rendition="#ind">Spaltekolumnen måler ca. 88 mm i bredden, og der er op til 86 linjer i hver af artiklens spalter. Mellem spalterne er sat en fed, lodret skillestreg. Brødteksten er sat med en skriftstørrelse svarende til ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum.</p>
-     <p>Der er få sætter- og trykfejl i artiklen. Der er sat et 's' for meget i »Biskops« (<ref target="../BMS/txt.xml#ss123" type="publishedWritings" n="123"><hi rendition="#ita">SKS</hi> 14, 123</ref>,35); ligeledes er der sat et 'e' for meget i »Christendoms-Forkyndelese« (123,68). Et 'u' er blevet sat omvendt i »Monument« (124,7). I ordet »sjeldnere« (124,51) er der større mellemrum mellem 'l' og 'd' end mellem de øvrige typer. Derudover skyldes trykfejl læderede typer.<note> <p>Et eksempel på en læderet type: 't' i »Declamator« (<ref target="../BMS/txt.xml#ss126" type="publishedWritings" n="126"><hi rendition="#ita">SKS</hi> 14, 126</ref>,18).</p> </note></p>
-    </div>
-   </div>
-  </div>
-  <div type="level1" xml:id="k2">
-   <head>2. Manuskriptbeskrivelse</head>
-   <p>Til »Var Biskop <persName key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?« findes følgende manuskripter i Kierkegaard Arkivet (KA) på <placeName key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
-   <msDesc><msIdentifier><collection>BMS</collection></msIdentifier> 
-    <msPart xml:id="physDesc.1" next="#additional.1"><msIdentifier><idno>1</idno></msIdentifier><physDesc><p><pb xml:id="ss344" n="344" edRef="#SKS"/>Kladde og renskrift til et forlæg for »Var Biskop <persName key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?«, fordelt på 7 dobbeltblade og 1 løst blad.</p></physDesc> 
-       <msPart xml:id="physDesc.1.1" next="#additional.1.1"><msIdentifier><idno>1.1</idno></msIdentifier><physDesc><p>Kladde til første del af forlægget.</p><p>3 dobbeltblade, i alt 6 blade i 4<hi rendition="#sup">o</hi>.<note> <p>Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p> </note></p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 169 × 206 mm.<note> <p>Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p> </note></p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. To tredjedele af bl. [6v] er ubeskrevet.</p><p>På bl. [1r] findes overskriften »Var Biskop <persName key="Mynster, Jakob Peter">M.</persName> 'et Sandheds-Vidne', 'et / af de rette Sandheds-Vidner' – er / dette Sandhed?«.</p><p>En del korrektioner. Gennemgående ses sletninger af enkelte ord og passager i både inder- og yderspalte. Nederste halvdel af bl. [4r] er overstreget på skrå med blyant; hele bl. [4v] er overstreget med et stort blyantkryds. Fem linjer på bl. [4r], al tekst på bl. [5] og de tre første linjer på bl. [6r] er indrammet af en blyantstreg på langs i marginen.</p></physDesc></msPart><msPart xml:id="additional.1.1" prev="#physDesc.1.1"><msIdentifier><idno>1.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 203)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.2" next="#additional.1.2"><msIdentifier><idno>1.2</idno></msIdentifier><physDesc><p>Kladde til anden del af forlægget.</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, groft. Mål: 167 × 203 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. På nær tre linjer er bl. [2v] ubeskrevet.</p><p>På bl. [1v] afsluttes teksten i marginen med dateringen <hi rendition="#ant">»i Febr. 1854.«</hi> og signaturen <hi rendition="#ant">»S. <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.«.</hi> Slutningen indvises med indvisningstegn i blyant.</p><p>En del korrektioner, heraf en del marginaltilføjelser. I marginen på bl. [1r] er en indvist passage slettet med tætte blyantløkker. Den oprindelige slutning af teksten, fra nederst på bl. <pb xml:id="ss345" n="345" edRef="#SKS"/>[1v] til øverst på bl. [2v], er slettet med blyantkryds og -streg på langs i marginen.</p></physDesc></msPart><msPart xml:id="additional.1.2" prev="#physDesc.1.2"><msIdentifier><idno>1.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 204)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.3" next="#additional.1.3"><msIdentifier><idno>1.3</idno></msIdentifier><physDesc><p>Renskrift af begyndelsen af forlægget.</p><p>2 dobbeltblade og 1 løst blad, i alt 5 blade i 4<hi rendition="#sup">o</hi>. Det løse blad har afrivningskant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 169 × 206 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bl. [5v] er ubeskrevet.</p><p>På bl. [1r] står overskriften »<hi rendition="#bol">Var Biskop <persName key="Mynster, Jakob Peter">Mynster</persName> 'et Sandhedsvidne', et / af 'de rette <hi rendition="#spa">Sandhedsvidner</hi>' – <hi rendition="#spa">er dette Sandhed?</hi></hi>«, dobbelt og tredobbelt understreget.</p><p>Få korrektioner. Teksten fra bl. [3v] nederst til bl. [4v] midtpå er rammet ind af en blyantstreg på langs i marginen.</p></physDesc></msPart><msPart xml:id="additional.1.3" prev="#physDesc.1.3"><msIdentifier><idno>1.3</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 201)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.1.4" next="#additional.1.4"><msIdentifier><idno>1.4</idno></msIdentifier><physDesc><p>Renskrift af slutningen af forlægget.</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, groft. Mål: 165 × 203 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Halvdelen af bl. [2r] er beskrevet; bl. [2v] er ubeskrevet.</p><p>På bl. [1v] afsluttes teksten i marginen med dateringen <hi rendition="#ant">»i Febr. 1854.«</hi> og signaturen <hi rendition="#ant">»S. <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.«.</hi></p><p>En del korrektioner. Marginen på bl. [1r] er tæt beskrevet. Teksten på nederste halvdel af bl. [1v] og på bl. [2r] er slettet med blyantkryds og indrammet af en blyantstreg på langs i marginen. En ny afslutning på teksten er indvist fra marginen på bl. [1v] med et blyantkors.</p></physDesc></msPart><msPart xml:id="additional.1.4" prev="#physDesc.1.4"><msIdentifier><idno>1.4</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 202)</p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.1" prev="#physDesc.1"><msIdentifier><idno>1</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 52, læg 1; <hi rendition="#ita">Pap.</hi> XI 3 B 201-204)<note> <p>I KA, B pk. 52, læg 1, findes to omslag, som ikke beskrives af <hi rendition="#ita">Pap.,</hi> men som <hi rendition="#ita">Pap.</hi> har mærket hhv. »Ad. XI 3 B 201-210« og »[XI 3 B 201-210]«. Førstnævnte er et stykke af <hi rendition="#ita">Berlingske Tidende</hi> fra mandag morgen den 18. dec. 1854, der er foldet til konvolut. Det andet er et stykke groft, blåt konceptpapir, der er foldet til konvolut og bærer påskriften »<hi rendition="#ita">N<hi rendition="#sup">o</hi> 6.</hi> / Vedkommende <persName key="Martensen, Hans Lassen">Martensen</persName>s Tale over / <persName key="Mynster, Jakob Peter">Mynster</persName> / (med Efterskrift.) / [15 Pag.]« med rødt blæk, skrevet med fremmed hånd, formentlig af <persName key="Barfod, Hans Peter">H.P. Barfod</persName>. De »15 Pag.« svarer til, at der er 15 blade.</p> </note></p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.2" next="#additional.2"><msIdentifier><idno>2</idno></msIdentifier><physDesc><p><pb xml:id="ss346" n="346" edRef="#SKS"/>Kladde til »Var Biskop <persName key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?«, fordelt på 1 dobbeltblad og 6 løse blade.</p></physDesc> 
-       <msPart xml:id="physDesc.2.1" next="#additional.2.1"><msIdentifier><idno>2.1</idno></msIdentifier><physDesc><p>Kladde til artiklens hovedtekst (<ref target="../BMS/txt.xml#ss123" type="publishedWritings" n="123"><hi rendition="#ita">SKS</hi> 14, 123</ref>-125,43).</p><p>1 dobbeltblad og 1 løst blad, i alt 3 blade i 4<hi rendition="#sup">o</hi>. Det løse blad har afrivningskant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 169 × 206 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, en yderspalte tilføjelser.</p><p>På bl. [1r] står overskriften <hi rendition="#spa">»Var Biskop <persName key="Mynster, Jakob Peter">M.</persName> et 'Sandhedsvidne', et af 'de / rette Sandheds-Vidner' – er dette Sandhed?«.</hi> Derefter følger et indvisningstegn og en redigeringsbemærkning i marginen: »den første Passus / af det Tidligere om / <persName key="Martensen, Hans Lassen">Martensen</persName>s Prædiken / paa 5<hi rendition="#sup">te</hi> Søndag e: h.t.K.«. Længere nede i marginen følger endnu en redigeringsbemærkning: <hi rendition="#ant">»cfr Hoslagte«,</hi> skrevet med blyant; henvisningen gælder ms. 2.1.1. På bl. [3r] findes i marginen redigeringsbemærkningen <hi rendition="#ant">»cfr Hos-/lagte <hi rendition="#spa">Anm</hi>«,</hi> skrevet med blyant; denne henvisning gælder ms. 2.1.2. Hovedteksten på bl. [3r] afsluttes med bemærkningen »Saa den Passus om et Sandheds-/vidne, som findes i det Tidligere«. I marginen på bl. [3v] findes redigeringsbemærkningen <hi rendition="#ant">»cfr Hoslagte.«,</hi> indvist med et dobbeltkors i rødkridt; henvisningen gælder ms. 2.1.3. Derefter markeres et nyt afsnit i hovedteksten med en vandret streg.</p><p>En del korrektioner. På bl. [1r] er først otte linjer, siden godt fire linjer overstreget med blyant. Størstedelen af bl. [2r] og [2v] er markeret med en blyantstreg på langs i marginen. En marginaltilføjelse på fire linjer på bl. [2r] er slettet med streger på skrå; ligeledes er en marginaltilføjelse på otte linjer på bl. [3r] slettet med blyantstreger på skrå. Afslutningen på bl. [3v] er slettet med et blyantkryds og markeret med en blyantstreg på langs i marginen.</p><p>Hertil hører følgende:</p></physDesc> 
-          <msPart xml:id="physDesc.2.1.1" next="#additional.2.1.1"><msIdentifier><idno>2.1.1</idno></msIdentifier><physDesc><p><pb xml:id="ss347" n="347" edRef="#SKS"/>Kladde til en mindre passage (<ref target="../BMS/txt.xml#ss123" type="publishedWritings" n="123"><hi rendition="#ita">SKS</hi> 14, 123</ref>,42-45 fra »behøver man« til »Mynsters Prædiken.«).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrivningskant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 168 × 206 mm.</p><p>Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten er ubeskrevet. Versosiden er ubeskrevet. Teksten er indvist på bl. [1r] i ms. 2.1 med et kors i blyant.</p><p>På nær de fire sidste linjer er al tekst slettet med et stort blyantkryds.</p></physDesc></msPart><msPart xml:id="additional.2.1.1" prev="#physDesc.2.1.1"><msIdentifier><idno>2.1.1</idno></msIdentifier><additional><adminInfo><note/></adminInfo></additional></msPart>
-          <msPart xml:id="physDesc.2.1.2" next="#additional.2.1.2"><msIdentifier><idno>2.1.2</idno></msIdentifier><physDesc><p>Kladde til artiklens fodnote (<ref target="../BMS/txt.xml#ss124" type="publishedWritings" n="124"><hi rendition="#ita">SKS</hi> 14, 124</ref>).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrivningskant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 167 × 206 mm.</p><p>Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Teksten er indvist på bl. [3r] i ms. 2.1 med indvisningstegn i blyant.</p><p>Bladet indledes med en henvisning til ms. 2.1: »Til det Sted: Du veed vel, hvad / der forstaaes ved et Sandhedsvidne«, hvorefter den tekst, der skal indvises, indledes med <hi rendition="#spa">»Anm«.</hi></p><p>En del korrektioner, både sletninger og marginaltilføjelser. På rectosiden er to linjer overstreget med blyant. På versosiden er størstedelen af teksten slettet ad flere omgange: Enkeltord og korte passager er slettet med vandrette, skrå og bølgestreger. Enkeltord samt korte og lange passager er endvidere slettet med blyant med streger på skrå og udtværede løkker. Se <ref target="../BMS/txr.xml#ill_k17" type="figure">illustration 17</ref>. <figure xml:id="ill_k17" rend="recto"><graphic url="../BMS/ill_k17.jpg"/> <head>17. Ms. 2.1.2, bl. [1v], kladde med sletninger</head> </figure> </p></physDesc></msPart><msPart xml:id="additional.2.1.2" prev="#physDesc.2.1.2"><msIdentifier><idno>2.1.2</idno></msIdentifier><additional><adminInfo><note/></adminInfo></additional></msPart>
-          <msPart xml:id="physDesc.2.1.3" next="#additional.2.1.3"><msIdentifier><idno>2.1.3</idno></msIdentifier><physDesc><p>Kladde til artiklens afslutning (<ref target="../BMS/txt.xml#ss125" type="publishedWritings" n="125"><hi rendition="#ita">SKS</hi> 14, 125</ref>,24-43 fra »Sandeligen« til »vore Tider.«).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrivningskant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, groft. Mål: 165 × 204 mm.</p><p>Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Versosiden er ubeskrevet. Teksten er indvist på bl. [3v] i ms. 2.1 med et dobbeltkors skrevet med rødkridt.</p><p>Enkelte korrektioner, både sletninger og tilføjelser.</p></physDesc></msPart><msPart xml:id="additional.2.1.3" prev="#physDesc.2.1.3"><msIdentifier><idno>2.1.3</idno></msIdentifier><additional><adminInfo><note/></adminInfo></additional></msPart>
-         </msPart><msPart xml:id="additional.2.1" prev="#physDesc.2.1"><msIdentifier><idno>2.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 208)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.2.2" next="#additional.2.2"><msIdentifier><idno>2.2</idno></msIdentifier><physDesc><p><pb xml:id="ss349" n="349" edRef="#SKS"/>Kladde til første del af artiklens efterskrift (<ref target="../BMS/txt.xml#ss125" type="publishedWritings" n="125"><hi rendition="#ita">SKS</hi> 14, 125</ref>,44-71).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrivningskant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, groft. Mål: 165 × 198 mm.</p><p>Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Versosiden er ubeskrevet.</p><p>Rectosiden indledes med overskriften »<hi rendition="#spa">Efterskrift.</hi>« og afsluttes med dateringen <hi rendition="#ant">»i Efteraaret 1854.«.</hi></p><p>Enkelte korrektioner i form af en marginaltilføjelse samt sletninger af enkeltord og (med gnidrede blyantløkker) halvanden linje.</p></physDesc></msPart><msPart xml:id="additional.2.2" prev="#physDesc.2.2"><msIdentifier><idno>2.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 209)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.2.3" next="#additional.2.3"><msIdentifier><idno>2.3</idno></msIdentifier><physDesc><p>Kladde til anden del af artiklens efterskrift (<ref target="../BMS/txt.xml#ss125" type="publishedWritings" n="125"><hi rendition="#ita">SKS</hi> 14, 125</ref>,72-126,47).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrivningskant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 165 × 198 mm.</p><p>Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Den nederste halvdel af versosidens inderspalte er ubeskrevet.</p><p>Rectosiden bærer øverst påskriften »Til Efterskriften.«, påbegyndt i inderspalten og afsluttet i marginen. Inderspalten indledes med to asterisker. Øverst på versosiden står redigeringsbemærkningen »Ny Udgang«; lidt under midten står dateringen <hi rendition="#ant">»i Dec: 1854.«.</hi></p><p>En del korrektioner. På begge sider er marginen næsten fyldt ud med tilføjelser, heri ses sletninger med blæk og med blyant. På versosiden er fem linjer i inderspalten slettet med blyantløkker.</p></physDesc></msPart><msPart xml:id="additional.2.3" prev="#physDesc.2.3"><msIdentifier><idno>2.3</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 210)</p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.2" prev="#physDesc.2"><msIdentifier><idno>2</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 52, læg 1; <hi rendition="#ita">Pap.</hi> XI 3 B 208-210)</p></note></adminInfo></additional></msPart>
-    <msPart xml:id="physDesc.3" next="#additional.3"><msIdentifier><idno>3</idno></msIdentifier><physDesc><p><pb xml:id="ss350" n="350" edRef="#SKS"/>Renskrift af »Var Biskop <persName key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?«. Renskriften, der har været benyttet som trykmanuskript,<note> <p>Der ses enkelte sættermarkeringer i SKs renskrift. De er indført med blyant og angiver øverst på s. 1, hvornår arbejdet i sætteriet skulle være færdiggjort, og at navne skulle sættes fuldt ud: »færdig til Kl 12. Navnene skulle sættes fuldt ud«. To navneforkortelser er skrevet ud: »artensen« og »ynster«, flere steder i teksten. I øverste venstre hjørne på s. 1 ses endvidere påskriften »gl B.«, uvist i hvis hånd. Lignende påskrifter ses i enkelte andre af SKs renskrifter; fælles er, at der til de pågældende renskrifter hører mindst én indvist passage. Det kan betyde, at SK først har indleveret en renskrift og siden noget mere i form af en eller flere indviste passager. Det først indleverede har så muligvis fået påskriften »gl B.« for »gammelt Blad«.</p> </note> består af 2 dobbeltblade og 4 løse blade.</p></physDesc> 
-       <msPart xml:id="physDesc.3.1" next="#additional.3.1"><msIdentifier><idno>3.1</idno></msIdentifier><physDesc><p>Renskrift af artiklens hovedtekst (<ref target="../BMS/txt.xml#ss123" type="publishedWritings" n="123"><hi rendition="#ita">SKS</hi> 14, 123</ref>-125,43).</p><p>2 dobbeltblade, i alt 4 blade i 4<hi rendition="#sup">o</hi>.</p><p>Bladene er pagineret 1 og 3-8 med blyant; bl. [1v] er upagineret.</p><p>Papir: gulligt koncept, groft. Mål: 166 × 203 mm.</p><p>Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladene er efter beskrivning blevet foldet endnu en gang på langs og en gang på tværs.</p><p>På s. 1 står overskriften »<hi rendition="#bol">Var Biskop <persName key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af / 'de rette Sandhedsvidner' – <hi rendition="#spa">er dette Sandhed?</hi></hi>«, dobbelt og tredobbelt understreget. Herefter følger dateringen <hi rendition="#ant">»i Febr. 1854.«</hi> og signaturen <hi rendition="#ant">»S. <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.«.</hi> Længere nede på s. 1 markeres et nyt afsnit i teksten med en vandret streg. På s. 5 findes i marginen redigeringsbemærkningen <hi rendition="#ant">»cfr Hoslagte / <hi rendition="#spa">Anm</hi>«</hi> skrevet med blyant; henvisningen gælder ms. 3.1.1. På s. 8 findes et dobbeltkors i rødkridt med den tilhørende bemærkning i blæk: <hi rendition="#ant">»cfr Hoslagte.«;</hi> denne henvisning gælder ms. 3.1.2.</p><p>En del korrektioner, både sletninger og marginaltilføjelser. Nederst på s. 1 og øverst på s. [2] er et afsnit på otte linjer slettet med blyant. En kort passage på s. [2] er slettet med en bølgestreg i blyant. To afsnit nederst på s. [2] og øverst på s. 3, i alt 18 linjer, er slettet med to store blyantkryds. På midten af s. 4 er 12 linjer slettet med et blyantkryds og markeret med en <pb xml:id="ss351" n="351" edRef="#SKS"/>blyantstreg på langs i marginen; efterfølgende er knap tre linjer slettet med en vandret blækstreg. To linjer er slettet med blækløkker på s. 5. Endelig er nederste halvdel af s. 8 slettet med et blyantkryds og markeret med en blyantstreg på langs i marginen.</p><p>Hertil hører følgende:</p></physDesc> 
-          <msPart xml:id="physDesc.3.1.1" next="#additional.3.1.1"><msIdentifier><idno>3.1.1</idno></msIdentifier><physDesc><p>Renskrift af artiklens fodnote (<ref target="../BMS/txt.xml#ss124" type="publishedWritings" n="124"><hi rendition="#ita">SKS</hi> 14, 124</ref>).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrivningskant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, groft. Mål: 166 × 203 mm.</p><p>Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladet er efter beskrivning blevet foldet en gang på tværs. Halvdelen af versosiden er ubeskrevet.</p><p>Rectosiden indledes med et indvisningsmærke og bemærkningen »ad pag 5«, begge i blyant; henvisningen gælder ms. 3.1. Teksten indledes »<hi rendition="#spa">Anm.</hi>«.</p><p>En del korrektioner, herunder sletninger og marginaltilføjelser. Enkelte ord er slettet med løkker eller bølgestreger. På rectosiden er to linjer slettet med blyantoverstregning, nedenfor er tre linjer og derefter fem linjer overstreget med blæk. Teksten på versosiden er slettet ad flere omgange; der ses både bølgestreger i blæk og vandrette streger, bølgestreger, udtværede løkker og streger på skrå med blyant.</p></physDesc></msPart><msPart xml:id="additional.3.1.1" prev="#physDesc.3.1.1"><msIdentifier><idno>3.1.1</idno></msIdentifier><additional><adminInfo><note/></adminInfo></additional></msPart>
-          <msPart xml:id="physDesc.3.1.2" next="#additional.3.1.2"><msIdentifier><idno>3.1.2</idno></msIdentifier><physDesc><p>Renskrift af artiklens afslutning (<ref target="../BMS/txt.xml#ss125" type="publishedWritings" n="125"><hi rendition="#ita">SKS</hi> 14, 125</ref>,24-43 fra »Sandeligen« til »vore Tider.«).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrivningskant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, groft. Mål: 165 × 203 mm.</p><p>Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladet er efter beskrivning blevet foldet en gang på tværs. Versosiden er ubeskrevet.</p><p>Bladet indledes med et dobbeltkors skrevet med rødkridt og bemærkningen »ad pag 8.« i blyant; henvisningen gælder ms. 3.1.</p><p>Få korrektioner. En enkelt tilføjelse i marginen. Tre ord og halvanden linje er slettet.</p></physDesc></msPart><msPart xml:id="additional.3.1.2" prev="#physDesc.3.1.2"><msIdentifier><idno>3.1.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 205)</p></note></adminInfo></additional></msPart>
-         </msPart><msPart xml:id="additional.3.1" prev="#physDesc.3.1"><msIdentifier><idno>3.1</idno></msIdentifier><additional><adminInfo><note/></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.3.2" next="#additional.3.2"><msIdentifier><idno>3.2</idno></msIdentifier><physDesc><p><pb xml:id="ss352" n="352" edRef="#SKS"/>Renskrift af første del af artiklens efterskrift (<ref target="../BMS/txt.xml#ss125" type="publishedWritings" n="125"><hi rendition="#ita">SKS</hi> 14, 125</ref>,44-71).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrivningskant i venstre side.</p><p>Bladet er pagineret fortløbende fra ms. 3.1, dvs. 9-10.</p><p>Papir: gulligt koncept, groft. Mål: 164 × 198 mm.</p><p>Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten er ubeskrevet. Bladet er efter beskrivning blevet foldet endnu en gang på langs og en gang på tværs. To tredjedele af s. 10 er ubeskrevet.</p><p>S. 9 indledes med overskriften »<hi rendition="#spa">Efterskrift.</hi>«. S. 10 afsluttes lige over midten med dateringen <hi rendition="#ant">»i Efteraaret 1854.«.</hi></p><p>Få korrektioner. På s. 10 er knap to linjer slettet med tætte blyantløkker.</p></physDesc></msPart><msPart xml:id="additional.3.2" prev="#physDesc.3.2"><msIdentifier><idno>3.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 206)</p></note></adminInfo></additional></msPart>
-       <msPart xml:id="physDesc.3.3" next="#additional.3.3"><msIdentifier><idno>3.3</idno></msIdentifier><physDesc><p>Renskrift af anden del af artiklens efterskrift (<ref target="../BMS/txt.xml#ss125" type="publishedWritings" n="125"><hi rendition="#ita">SKS</hi> 14, 125</ref>,72-126,47).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrivningskant i venstre side.</p><p>Bladet er pagineret fortløbende fra ms. 3.2, dvs. 11-12.</p><p>Papir: gulligt koncept, groft. Mål: 164 × 198 mm.</p><p>Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladet er efter beskrivning blevet foldet endnu en gang på langs og en gang på tværs. Teksten afsluttes på langs i marginen på s. 12.</p><p>S. 11 indledes med to asterisker efterfulgt af det med blyantløkker overstregede »Til Efterskriften.«. S. 12 afsluttes med dateringen <hi rendition="#ant">»i Dec: 1854.«.</hi></p><p>Få korrektioner, herunder en blyantsletning øverst på s. 12.</p></physDesc></msPart><msPart xml:id="additional.3.3" prev="#physDesc.3.3"><msIdentifier><idno>3.3</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">Pap.</hi> XI 3 B 207)</p></note></adminInfo></additional></msPart>
-      </msPart><msPart xml:id="additional.3" prev="#physDesc.3"><msIdentifier><idno>3</idno></msIdentifier><additional><adminInfo><note><p>(KA, B pk. 52, læg 1; <hi rendition="#ita">Pap.</hi> XI 3 B 205-207)<note> <p>I KA, B pk. 52, læg 1, findes et omslag, som ikke beskrives af <hi rendition="#ita">Pap.,</hi> men som <hi rendition="#ita">Pap.</hi> har mærket »[XI 3 B 205-207]«. Det er et stykke groft, blåt konceptpapir, der er foldet til konvolut og bærer påskrifterne »<hi rendition="#ita">1.</hi>« skrevet med rødkridt, formentlig af <persName key="Lund, Henrik">H. Lund</persName>, og <hi rendition="#spa">»Febr. Dcbr. 54«,</hi> »<hi rendition="#spa">Concept</hi> / til / <hi rendition="#spa">Var Biskop <persName key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandheds-/vidner' – er dette Sandhed?</hi>« og »'<hi rendition="#spa">Fædrelandet'</hi> <hi rendition="#bol">8/12-54</hi>«, formentlig skrevet af <persName key="Barfod, Hans Peter">H.P. Barfod</persName>.</p> </note></p></note></adminInfo></additional></msPart>
-   </msDesc>
-   <p>(<hi rendition="#ita">L-fort. + B-fort.</hi> 6; KA, B pk. 52, læg 1; <hi rendition="#ita">Pap.</hi> XI 3 B 201-210)</p>
-  </div>
-  <div type="level1" xml:id="k3">
-   <head><pb xml:id="ss353" n="353" edRef="#SKS"/>3. Tilblivelseshistorie</head>
-   <p>Artiklen »Var Biskop <persName key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?« var startskuddet til SKs strid mod den officielle kristendomsforkyndelse i <placeName>Danmark</placeName>; en strid, der strakte sig over 21 artikler i <hi rendition="#ita">Fædrelandet</hi> (fra den 18. dec. 1854 til den 26. maj 1855) og derpå i SKs eget tidsskrift <hi rendition="#ita">Øieblikket.</hi><note> <p>Se <hi rendition="#ita">SKS</hi> 13.</p> </note></p>
-   <p rendition="#ind">I en udateret journaloptegnelse (<ref target="../NB36/txt.xml#n26" type="journalsAndPapers" n="26">NB36:26</ref>) skrevet efter den 18. dec. 1854 bemærker SK, at han havde tænkt sig at indlede kirkestriden »katastrofisk« med artiklen »Anskriget«:</p>
-   <quote><p>Men førend jeg endnu ret her var klar, kom jeg allerede til at gjøre noget Andet nemlig at sætte Artiklen mod <persName key="Martensen, Hans Lassen">Martensen</persName> om <persName key="Mynster, Jakob Peter">Mynster</persName> ud. Allerede derved var der svækket i Retning af det Katastrophiske.<note> <p><ref target="../NB36/txt.xml#ss424" type="journalsAndPapers" n="424"><hi rendition="#ita">SKS</hi> 26, 424</ref>,25-28.</p> </note></p></quote>
-   <p>Ikke desto mindre var striden indledt.</p>
-   <p rendition="#ind">Udgangspunktet for artiklen var biskop <persName key="Mynster, Jakob Peter">J.P. Mynster</persName>s død den 30. jan. 1854 og <persName key="Martensen, Hans Lassen">H.L. Martensen</persName>s mindeprædiken over <persName key="Mynster, Jakob Peter">Mynster</persName> afholdt søndag den 5. feb. 1854, hvori afdøde blev betegnet som et sandhedsvidne.<note> <p><persName key="Martensen, Hans Lassen">H.L. Martensen</persName> <hi rendition="#ita">Prædiken holdt i <placeName key="Christiansborg Slotskirke">Christiansborgs Slotskirke</placeName> paa 5te Søndag efter Hellig Tre Konger, Søndagen før Biskop Dr. <persName key="Mynster, Jakob Peter">Mynster</persName>s Jordefærd,</hi> <placeName key="København">Kbh.</placeName> 1854; annonceret som udkommet i <hi rendition="#ita">Adresseavisen,</hi> nr. 34, den 9. feb. 1854. Uddrag af prædikenen er gengivet i kommentaren til 123,<hi rendition="#size-1">14</hi>, 123,<hi rendition="#size-1">19</hi> og 123,<hi rendition="#size-1">22</hi>.</p> </note> Manuskriptmaterialet afspejler, at artiklen er blevet til ad flere omgange over længere tid. Ligesom artiklen kan manuskriptmaterialet inddeles i tre: hovedtekst (mss. 1.1-1.4, 2.1 og 3.1), efterskriftens første del (mss. 2.2 og 3.2) og efterskriftens anden del (mss. 2.3 og 3.3); disse dele er dateret hhv. februar, efteråret og december 1854.<note> <p>Manuskriptet dateret februar 1854 er det tætteste, man kommer på en umiddelbar reaktion på <persName key="Mynster, Jakob Peter">Mynster</persName>s død fra SKs side. SK skriver intet i sin journal fra den 2. nov. 1853, før han den 1. marts 1854 tager pennen op igen og konstaterer, at <persName key="Mynster, Jakob Peter">Mynster</persName> er død. I de løse papirer, trykt i <hi rendition="#ita">Pap.,</hi> fra 1853-54 skriver han først om <persName key="Mynster, Jakob Peter">Mynster</persName>s død, efter at <persName key="Martensen, Hans Lassen">Martensen</persName> er blevet biskop.</p> </note></p>
-   <p rendition="#ind"><pb xml:id="ss354" n="354" edRef="#SKS"/>SK har først skrevet én kladde (mss. 1.1-1.2) med tilhørende renskrift (mss. 1.3-1.4): Ms. 1.1 indeholder overskriften, mens ms. 1.2 indeholder datering og signatur; disse betragtes derfor som en samlet kladde. Noget tilsvarende gælder renskriften, mss. 1.3-1.4. Ms. 1.1 indeholder bl.a. passagen:</p>
-   <quote><p>i Egenskab af Sandheds-Vidne lader Biskop <persName key="Mynster, Jakob Peter">M.</persName> sig snarest erstatte og (for at jeg dog ogsaa skal sige Prof. <persName key="Martensen, Hans Lassen">M.</persName> en Høflighed) af Dem selv Hr. Prof. <persName key="Martensen, Hans Lassen">M.</persName>!, vær ganske ubekymret, De kan i denne Henseende meget godt erstatte ham.<note> <p>Trykt som <ref type="preparatoryManuscript" n="pap:XI3B203" rend="BMS,ms.1.1"><hi rendition="#ita">Pap.</hi> XI 3 B 203</ref>, s. 343.</p> </note></p></quote>
-   <p>Dvs. at ms. 1.1 formentlig er skrevet, efter at <persName key="Martensen, Hans Lassen">Martensen</persName> blev udnævnt til biskop den 15. april 1854, måske først efter han blev bispeviet den 5. juni 1854. Da ms. 1.2 er dateret i februar 1854, må ms. 1.2 således være skrevet før ms. 1.1.</p>
-   <p rendition="#ind">Disse forarbejder er langt mere omfattende end den trykte artikel; en del afsnit og passager kan spores i artiklens hovedtekst, men langtfra alle.<note> <p>Følgende passager i den trykte artikel figurerer allerede i mss. 1.1-1.4: »I den Tale <hi rendition="#ita">(...)</hi> 'den hellige Kjæde af Sandhedsvidner, som strækker sig gjennem Tiderne fra Apostlernes Dage' osv.«, »Biskop <persName key="Mynster, Jakob Peter">Mynster</persName> et Sandhedsvidne!«, »Du som læser dette, Du veed vel, hvad der christeligt forstaaes ved et Sandhedsvidne«, og »gjøre Dig det nærværende. Et Sandhedsvidne, det er en Mand <hi rendition="#ita">(...)</hi> Dette er et Sandhedsvidne«.</p> </note> SK arbejdede altså siden videre på teksten: Ms. 2.1 er en bearbejdet version af mss. 1.3-1.4; teksten er både blevet beskåret og har fået tilføjet nye passager. I renskriften (ms. 3.1) ses i øvrigt to lange passager tilføjet og en del rettelser, som siden er indført det tilsvarende sted i kladden. Tilbageførslen af ændringer fra renskrift til kladde har formentlig skullet sikre, at ændringerne blev bevaret, hvis renskriften skulle blive beskadiget eller gå tabt.</p>
-   <p rendition="#ind">Hvornår kladden til artiklens hovedtekst (ms. 2.1) er blevet til, vides ikke med sikkerhed. På renskriften (ms. 3.1) ses igen dateringen <hi rendition="#ant">»i Febr. 1854«,</hi> den samme som på forlæggets anden del (mss. 1.2 og 1.4). Da forlæggets første del (mss. 1.1 og 1.3) sandsynligvis er blevet til senere end februar 1854, kan det tænkes, at dateringen af ms. 3.1 er sket på baggrund af mss. 1.2 og 1.4, og ikke fordi ms. 3.1 rent faktisk er blevet skrevet i februar.</p>
-   <p rendition="#ind"><pb xml:id="ss355" n="355" edRef="#SKS"/>SK havde dog ingen intentioner om at blande sig i debatten om bispevalget i foråret 1854. I stedet blev der arbejdet videre på teksten. Efterskriftens første del (ms. 2.2) blev til <hi rendition="#ant">»i Efteraaret 1854«,</hi> efterskriftens anden del (ms. 2.3) <hi rendition="#ant">»i Dec: 1854«.</hi></p>
-   <p rendition="#ind">SK indleverede renskriften (mss. 3.1-3.3) til sætteriet, senest den 18. dec., hvor det til sætter blev tilføjet, at artiklen skulle være klar kl. 12.</p>
-  </div>
-  <div type="level1" xml:id="k4">
-   <head>4. Udgivelsesmåde</head>
-   <p>»Var Biskop <persName key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?« blev som nævnt trykt i <hi rendition="#ita">Fædrelandet.</hi><note> <p>En nærmere redegørelse for <hi rendition="#ita">Fædrelandets</hi> redaktionelle forhold, periodicitet og oplagstal findes i <ref target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til »Aabenbart Skriftemaal«, s. 112</ref>f.</p> </note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
-   <p rendition="#ind">Dele af artiklen blev frit oversat til svensk allerede i SKs levetid; bogen <hi rendition="#ita">Den officiella kristendomen är icke det nya testamentets kristendom. Framställning af dr. <persName key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>'s polemik mot statskyrkan i <placeName>Danmark</placeName>,</hi> hvori de fleste af SKs artikler fra kirkestriden er blevet oversat i uddrag, udkom i <placeName>København</placeName> i 1855.<note> <p>Et dedikationseksemplar fastslår, at det var den svenske journalist O.P. Sturzen-Becker, på det tidspunkt bosiddende i <placeName>København</placeName>, der anonymt udgav bogen. Dedikationseksemplaret findes på Kungl. biblioteket i <placeName>Stockholm</placeName> med signaturen <persName key="Rar">Rar</persName>. 726. Eksemplaret var ikke blandt SKs efterladte bøger, og det formodes derfor, at SK har sendt det retur til forfatteren, jf. Aage Kabell <hi rendition="#ita">Kierkegaardstudiet i <placeName>Norden</placeName>,</hi> <placeName key="København">Kbh.</placeName> 1948, s. 73.</p> </note> De fragmentariske oversættelser strækker sig til og med artiklen »Et Resultat«, trykt i <hi rendition="#ita">Fædrelandet,</hi> nr. 107, den 10. maj 1855; den anonyme redaktør har sandsynligvis antaget, at SK under denne overskrift afsluttede sit angreb på kirken, og har herefter ladet bogen trykke.</p>
-   <p rendition="#ind">Af stor betydning for receptionen i SKs umiddelbare eftertid var <persName key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi rendition="#ita"><persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 <hi rendition="#ita">(Bl.art.).</hi> Heri indgår størstedelen af SKs artikler, også »Var Biskop <persName key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?«.<note> <p>Artiklen er trykt i <hi rendition="#ita">Bl.art.,</hi> s. 57-62. SK havde selv planer om, men fik ikke realiseret, en samlet udgivelse af kirkestridsartiklerne, jf. <ref type="preparatoryManuscript" n="pap:XI3B128-135"><hi rendition="#ita">Pap.</hi> XI 3 B 128-135</ref>.</p> </note></p>
-  </div>
- </div></body></text>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="ide30743a2-9696-44a9-b79f-5edb716076cc">1. Bibliografisk beskrivelse</head>
+          <p xml:id="idb35b4bdb-640a-4336-b27b-d98fc599e55f">»Var Biskop <persName xml:id="ida7abc7ec-472d-4928-8b35-0495fcbf16d9" key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?« blev trykt i <hi xml:id="idb869c8dd-f73b-4e1d-816f-839fe7aed7ec" rendition="#ita">Fædrelandet,</hi> 15. årgang, nr. 295, mandag den 18. dec. 1854. Artiklen er signeret »S. <persName xml:id="idf0757339-d6d8-49b1-b39c-1b0e955041ff" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>«. <hi xml:id="idddced16e-72de-458b-817d-e468ef26711d" rendition="#ita">Fædrelandet</hi> blev udgivet af <persName xml:id="id11385af8-abd7-4c14-be43-08c9f899553d" key="Giødwad, Jens Finsteen">J.F. Giødwad</persName> og <persName xml:id="ide9d11ed0-3d3a-40e4-ab37-ae7e5f73cced" key="Ploug, Carl">C. Ploug</persName>; sidstnævnte fungerede også som ansvarlig redaktør. Avisen blev trykt hos <persName xml:id="idcf00cd3a-5c70-417f-8abd-3922aadec86f" key="Klein, Louis">Louis Klein</persName> i <placeName xml:id="id306338aa-dc6d-48ac-8275-33e72ba12e2f">København</placeName> og lå færdig fra trykkeriet kl. 20.30. Prisen var 6 skilling i løssalg, 5 mark pr. måned, 15 mark pr. kvartal og 3 rigsdaler pr. kvartal leveret uden for <placeName xml:id="id8a5b1cda-eb41-469e-b387-fa26f30949b9">København</placeName>.</p>
+          <p xml:id="id2e773173-5c76-4faa-a27c-f120fde3495c">Artiklen er blevet kollationeret i tre eksemplarer af <hi xml:id="id82ee4ae8-cf0b-4cf8-97ba-43d802833885" rendition="#ita">Fædrelandet,</hi> nr. 295, den 18. dec. 1854:</p>
+          <list xml:id="id7f1bd07f-9a47-4502-8051-4223052730e6">
+            <label xml:id="id8f09aa1e-ffd6-40ec-a2ab-6d3f7cf716d0">A</label>
+            <item xml:id="idde724b2f-c1e1-4522-a63f-dcf489620182">SKs eget eksemplar, uindbundet og ubeskåret, KA, D pk. 17.</item>
+            <label xml:id="id62a8fc75-a163-457d-be11-c65723146f8b">B</label>
+            <item xml:id="id04c4fe22-b504-4b51-a2f4-4f2b468bb3f3"><placeName xml:id="id662958ca-f9bb-44fb-bfe3-c8e143f983dc" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="id5e1a4432-178a-45ba-90cf-dd540848ee3d"><p xml:id="id36f634c6-5525-405a-bcde-5bca73f5a99b">Eksemplar B er indbundet sammen med resten af <hi xml:id="id27c27310-df1d-4854-a376-24c48b52c007" rendition="#ita">Fædrelandet,</hi> 2. halvår, 15. årgang, 1854.</p></note></item>
+            <label xml:id="idb4243306-311d-4bf7-a04f-caedca73dbc9">C</label>
+            <item xml:id="id962379f9-14dc-493a-aac7-ab1526c1a754"><placeName xml:id="id125014bb-1f43-483b-a1ae-7caf1d0c8502" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>s eksemplar, indbundet og beskåret.<note xml:id="idce3b7bfa-9977-46ce-84c9-0644d7c0b35d"><p xml:id="id57f7f890-3e52-4e5e-ba48-3171084be8b0">Eksemplar C er indbundet sammen med resten af <hi xml:id="id0650841a-db32-4dec-a638-188625125b78" rendition="#ita">Fædrelandet,</hi> 2. halvår, 15. årgang, 1854.</p></note></item>
+          </list>
+          <p xml:id="idd9563830-4d55-4196-9ed0-00b06f357104">Ved den interne kollation af de tre eksemplarer blev der ikke konstateret afvigelser.<note xml:id="id9853c088-bc8b-46a3-a42a-2f3f8ce6d620"><p xml:id="id8f071adc-52fe-44b3-ada4-6c835b6d622e">Da <hi xml:id="id4dbe4af8-bd19-4658-813a-dc17efc92730" rendition="#ita">Fædrelandet</hi> er en avis, kan kvaliteten af selve trykket ikke sammenlignes med SKs bøger. Således kan der være forskelle i antallet af læderede og tryksvage typer i de kollationerede eksemplarer, som ikke nævnes i tekstredegørelsen.</p></note> Eksemplar A danner grundlag for den følgende beskrivelse.</p>
+          <div xml:id="idee634ddc-1791-48d2-abd4-aa0803122e3a" type="level2">
+            <head xml:id="id3e8e6ffe-1e80-4ad2-9123-5d246810ea24"><pb xml:id="ss340" n="340" edRef="#SKS"/>Format og paginering</head>
+            <p xml:id="id6bdfff09-a466-4106-86ee-d24aceb09651">Formatet er folio.<note xml:id="id9daa64f9-b097-4c9d-b43c-4e19e03674a6"><p xml:id="id212a322e-ad72-488f-8b13-3cb9b7d73f79">Udgangspunktet for formatbetegnelsen er plane helark (ca. 520 × 695 mm), som ved fortsat halvering (ombøjning) giver formaterne folio og kvart.</p></note> Avisen har et omfang på fire sider, svarende til to blade dannet af et enkelt foldet ark. Avisen er trespaltet; midtersiderne er yderligere opdelt af en tværgående fed-fin dobbeltskillestreg trykt ca. to tredjedele nede på hver side. Pagineringen 1181-1184 er på forsiden angivet under spalterne, på avisens øvrige sider over. Spalterne er unummereret.<note xml:id="id40d4c0b9-795e-4151-85d7-ae47eb8fae4d"><p xml:id="id3510e45c-c0da-4d85-8610-1181b1379906">I <ref xml:id="id3c647ee2-2436-4d9d-bf74-2b2dce6f5ba8" target="../BMS/txt.xml#ss123" type="publishedWritings" n="123"><hi xml:id="id8ec8c3c2-3868-4e5a-bca9-796c7a613588" rendition="#ita">SKS</hi> 14, 123</ref>-126, angives sidetallet i marginen; de følgende spalteskift angives med en lodret streg i teksten og et suppleret spaltetal i kantet parentes i marginen.</p></note> </p>
+            <p xml:id="ida7ae102a-1245-4669-9fc8-ca8d72be4d08" rendition="#ind">SKs artikel fylder det meste af forsiden (s. 1181); artiklen begynder øverst i første spalte, dens »Efterskrift« nederst i anden spalte, og den afsluttes tre fjerdedele nede i tredje spalte. Se <ref xml:id="ida06efa1f-fea3-4c9d-941c-ebd01e43d289" target="../BMS/txr.xml#ill_k16" type="figure">illustration 16</ref>. <figure xml:id="ill_k16" rend="recto"><graphic xml:id="idb521b756-35b0-4056-9b9b-dc8071d3dcc9" url="../BMS/ill_k16.jpg"/><head xml:id="idfa73c2ee-3b1f-42f5-bb4f-4cba40c05b93">16. SKs eksemplar af <hi xml:id="id806bc829-99a7-4c96-ad45-80f52ed97a8a" rendition="#ita">Fædrelandet,</hi> nr. 295, den 18. december 1854, udsnit</head></figure>  Avisen indeholder i øvrigt nyheder fra ind- og udland, en føljeton<note xml:id="id8b22bb22-388b-4f08-9a8a-a9d0159fc012"><p xml:id="id00616a6c-b1d7-4e1f-9c22-f4ac4c9de65d">I ordet »føljeton«s oprindelige betydning, »bilag«, betegnede det artikler vedlagt en avis. Siden brugtes det om artikler på den nederste del af en avisside, dvs. under tværstregen; disse kaldtes føljetoner eller føljetonartikler. Sidenhen udvidedes betydningen til en tekst, der var opdelt og udkom over flere numre af en avis. I <hi xml:id="idb0ef6579-09a2-4e4e-a6f5-87457ad620b2" rendition="#ita">Fædrelandet,</hi> nr. 295, fra den 18. dec. 1854 ses således en føljeton i to betydninger: Den er placeret nederst på avisens sider, og den løber over flere numre af avisen.</p></note> samt notitser.</p>
+          </div>
+          <div xml:id="id871785c5-8520-45d5-b6da-f7b72b0a86f7" type="level2">
+            <head xml:id="id352fb938-4265-475b-a9cf-cd9943be6844">Beskrivelse af eksemplar A</head>
+            <p xml:id="idd350538c-a4d7-4a41-a208-3c10137cfbdf">Avisen måler ca. 349 × 517 mm.<note xml:id="id4cf1e511-3468-45d4-86af-a3f3b566efeb"><p xml:id="ide864ec83-3fd0-4e9a-99a7-e56693d37c0f">Størrelsen måles som bredde (øverste kant) × højde (venstre kant).</p></note></p>
+            <div xml:id="idb079d750-3b7b-46e9-91f1-e02df0166f2f" type="level3">
+              <head xml:id="id6c64f68f-75ba-4a70-8d3b-67c702ecf781">Papir</head>
+              <p xml:id="id65b7b880-74d8-46d1-a552-ea17cdccfe46">Der er benyttet almindeligt trykpapir af en træholdig kvalitet.</p>
+            </div>
+            <div xml:id="idb92b35b4-e8c6-427a-9a6b-91e3bbbf3f4a" type="level3">
+              <head xml:id="id3c24ff39-c29e-40ec-8ea2-9654b5df959d"><pb xml:id="ss342" n="342" edRef="#SKS"/>Typografi</head>
+              <p xml:id="id327905e4-2a91-4e8a-90e0-61f2af1f7ec9">Det fremherskende skriftsnit i avisen er antikva. Fremhævet tekst er sat med fed eller spatieret skrift.</p>
+              <p xml:id="id1590c6b2-9c47-49c3-9c73-f1d64bd6652c" rendition="#ind">På forsiden findes avisens hoved adskilt fra den øvrige tekst af en datolinje. Hovedet, der står centreret, har ordlyden:</p>
+              <quote xml:id="idc4f912e9-168c-4419-b48a-804cbc959ddd">
+                <p xml:id="ida657fa89-7ea8-446f-9138-95dbe85c1f59"><hi xml:id="id492bd7c0-5d87-4c76-9040-94440dc6bac5" rendition="#bol">Fædrelandet.</hi> | <hi xml:id="idd8080c72-680d-46a1-a292-35c6ff561bce" rendition="#bol"><hi xml:id="id3079d1bc-33fb-4309-ab34-b880e08af6f8" rendition="#ita">1854.</hi></hi> | Abonnementspris i <placeName xml:id="id32cbca19-e94c-4377-b524-6c1c8a53710b" key="København">Kjøbenhavn</placeName> 15 Mk. pr. Qvartal, 5 Mk. pr. Maaned; enkelte Nr. 6 Sk.; udenfor <placeName xml:id="ide275c89a-3018-4028-acbf-5fd5c49bca1b" key="København">Kjøbenhavn</placeName> 3 Rdl. pr. Qvartal frit i Huset. Hver Søgne-Aften udgaaer et Numer | Bladets Comptoir, store <placeName xml:id="idd65a6079-16f1-41f1-8f46-bc83955b4790" key="Købmagergade">Kjøbmagergade</placeName> Nr. 54, er aabent om Formiddagen Kl. 11–1.<note xml:id="id37a9d069-daf5-47ce-87ea-a0ccaa940517"><p xml:id="id4c8be203-0344-4b4d-bfdb-f9bbbdf20e65">Udtrykket »frit i Huset« angiver, at porto er inkluderet.</p></note></p>
+              </quote>
+              <p xml:id="id2b5874da-9752-44de-bad8-a01142860b06">Derunder følger datolinjen indrammet af to tværgående dobbeltstreger; den øverste er fed-fin, den nederste fin-fed. Datolinjen har ordlyden:</p>
+              <quote xml:id="id69ee7b37-0541-4318-bfc2-b5ad5207c41d">
+                <p xml:id="id6dd5844b-de64-4ef7-a1f7-a8e9f858afe9">
+                  <hi xml:id="id310a1bf5-7c70-40cc-926b-8b74c4255c89" rendition="#bol">15</hi>
+                  <hi xml:id="id81f3f937-796f-4dce-b6a5-1a98b1154c46" rendition="#sup">de</hi>
+                  <hi xml:id="id6732962a-7753-4b7f-9019-63481443f8f7" rendition="#bol">Aarg.</hi>
+                  <hi xml:id="ide5cb8735-d14a-4ae8-b9aa-e6ea9e81a99f" rendition="#bol">Mandagen den 18. December.</hi>
+                  <hi xml:id="idb291ec99-cbb7-4e41-bae5-200bdb8863a9" rendition="#bol">Nr. 295.</hi>
+                </p>
+              </quote>
+              <p xml:id="id70b7a68f-b8ca-43c7-b0b7-df37a1dbbbee">Oplysningen om årgang er venstrestillet, dateringen centreret, og avisnummeret højrestillet.<note xml:id="id048d6d38-81e0-4f2a-bf22-26ed10da176c"><p xml:id="id2c592853-f0c8-4893-bb56-f31c746b2d54">En uddybende beskrivelse af avishovedet kan ses i <ref xml:id="idf0fe80fd-b50c-4e98-87f9-80ebd5df34d8" target="../YDR/txr.xml#ss309" type="textCriticalAccount" n="309">tekstredegørelsen til »Foranlediget af en Yttring af Dr. <persName xml:id="iddac141c8-6d65-428c-822c-d5a7f56dca85" key="Rudelbach, Andreas Gottlob">Rudelbach</persName> mig betræffende«, s. 309</ref>.</p></note></p>
+              <p xml:id="id60058f17-0903-40cf-b0fe-0f1d51eb14c5" rendition="#ind">Nederst i bagsidens sidste spalte, adskilt fra en foregående notits af en skillestreg i hele spaltens bredde, er trykketidspunktet angivet:</p>
+              <quote xml:id="id50e6d2ad-99e0-4220-9613-d3dd34a342e7">
+                <p xml:id="id4dc19b7c-0be3-4b60-bc8a-4f043b4f7396">Færdigt fra Trykkeriet Kl. 8½.</p>
+              </quote>
+              <p xml:id="ided3f5756-db74-4d33-a515-03ac2dff1a07">Bagsidens fod er adskilt fra avisens øvrige tekst af en tværgående, fed-fin dobbeltskillestreg og har ordlyden:</p>
+              <quote xml:id="idd5e21973-afd1-4f5a-af91-10737f569c4f">
+                <p xml:id="id77edddd7-52b5-43cc-833a-68b47e3a0d41">Udgivere: <hi xml:id="id6f43c950-466d-42eb-9753-6345e0933555" rendition="#bol">J.F.Giødwad</hi> og <hi xml:id="id9eb0150c-6708-441e-98ab-054e7e7e9294" rendition="#bol">C.Ploug;</hi> ansvarlig: <hi xml:id="idd7c678bc-8e7c-4806-97fd-7b274b7b5f7b" rendition="#bol">C.Ploug.</hi> | [Skillestreg] | Trykt med Hurtigpresse hos <hi xml:id="ida3900600-9895-45aa-b8a0-db19a1563639" rendition="#spa"><persName xml:id="ide41151bb-d8c4-4cc2-80df-1f59b95069a5" key="Klein, Louis">Louis Klein</persName>.</hi></p>
+              </quote>
+              <p xml:id="idfbf3d2d5-86b0-491f-bd25-fa40d1d25082">Artiklens overskrift »Var Biskop <persName xml:id="id3885b352-2cde-4479-afcb-0ef9bc3ed053" key="Mynster, Jakob Peter">Mynster</persName> et 'Sandheds-|vidne', et af 'de rette Sandhedsvidner' | – er dette Sandhed?«, der er fed og centreret i spalten, er sat med en punktstørrelse ca. 1 grad større end brødteksten;<note xml:id="id990d4a02-9154-4402-9009-55942080013d"><p xml:id="iddf3a40e5-7039-49e6-b707-2f91b6a54332">Artiklens brødtekst er sat med en punktstørrelse svarende til ca. 10; tekst, der er 1 grad større, er sat med punktstørrelse 12, og 2 grader større med punktstørrelse 14, mens tekst, der er 1 grad mindre, er sat med punktstørrelse 8, og 2 grader mindre med punktstørrelse 6.</p></note> <pb xml:id="ss343" n="343" edRef="#SKS"/>sidste del af overskriften, »er dette Sandhed?«, er endvidere spatieret. Under en kort, centreret skillestreg følger dateringen »i Febr. 1854.« og den spatierede signatur »S. <persName xml:id="id6db97cff-18b8-4177-8f68-43a195739484" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.« indrykket fra hhv. for- og bagkant på samme linje.</p>
+              <p xml:id="id4ce5d072-6124-47bf-8668-9d72bbb461a2" rendition="#ind">Artiklen indledes med en uncial, der er fed og sat med en punktstørrelse ca. 2 grader større end brødteksten. Efter 17 linjers brødtekst følger en kort, centreret skillestreg. Nederst i artiklens første spalte ses, under en kort, venstrestillet streg, en fodnote til artiklen; noten er sat med en punktstørrelse ca. 2 grader mindre end brødteksten. Fodnoten fortsættes nederst i anden spalte. Mellemrubrikken »Efterskrift.« nederst i anden spalte er fed og centreret i spalten. Første del af efterskriften afsluttes med dateringen »I Efteraaret 1854.«, rykket langt ind fra forkant. Under dateringen er teksten delt med tre asterisker. Anden og sidste del af efterskriften afsluttes med dateringen »I December 1854.«, rykket ind fra forkant. Efter artiklen er trykt en længere skillestreg, der afgrænser SKs tekst fra den øvrige tekst i spalten.</p>
+              <p xml:id="idd00f2c31-4261-4d9d-bda8-28ec8f37dfc5" rendition="#ind">Spaltekolumnen måler ca. 88 mm i bredden, og der er op til 86 linjer i hver af artiklens spalter. Mellem spalterne er sat en fed, lodret skillestreg. Brødteksten er sat med en skriftstørrelse svarende til ca. 10 punkt (korpus). Der er dobbelt ordmellemrum efter punktum.</p>
+              <p xml:id="idf92947e0-8a50-4f30-94c7-f05486ac5c06">Der er få sætter- og trykfejl i artiklen. Der er sat et 's' for meget i »Biskops« (<ref xml:id="id009a1f31-16c7-4968-878b-d49e298709f8" target="../BMS/txt.xml#ss123" type="publishedWritings" n="123"><hi xml:id="idaaf912d9-32e3-4f6c-b034-70c2097c907c" rendition="#ita">SKS</hi> 14, 123</ref>,35); ligeledes er der sat et 'e' for meget i »Christendoms-Forkyndelese« (123,68). Et 'u' er blevet sat omvendt i »Monument« (124,7). I ordet »sjeldnere« (124,51) er der større mellemrum mellem 'l' og 'd' end mellem de øvrige typer. Derudover skyldes trykfejl læderede typer.<note xml:id="id1333de76-ea5b-4c62-b218-3cef6a01ca77"><p xml:id="id103500a7-51bc-46a8-bbcc-ebd6dc83b8d9">Et eksempel på en læderet type: 't' i »Declamator« (<ref xml:id="id4c4b8375-2c59-4d2f-81a2-c213d5afdf14" target="../BMS/txt.xml#ss126" type="publishedWritings" n="126"><hi xml:id="ide8fa4d67-63b8-4161-82a3-4de97618d525" rendition="#ita">SKS</hi> 14, 126</ref>,18).</p></note></p>
+            </div>
+          </div>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="id25a4c9e6-eb95-4550-a110-4a6110e98abd">2. Manuskriptbeskrivelse</head>
+          <p xml:id="idd9022a84-5a63-4b10-a241-994ba79b5e52">Til »Var Biskop <persName xml:id="id598fdb9a-1e8d-4dbc-a18e-e011b538563c" key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?« findes følgende manuskripter i Kierkegaard Arkivet (KA) på <placeName xml:id="id2e8f4247-b081-4723-a751-93afd7396944" key="Kongelige Bibliotek, Det">Det Kgl. Bibliotek</placeName>.</p>
+          <msDesc xml:id="ide9a6024c-634e-4554-91b2-c8dd1403bbde">
+            <msIdentifier xml:id="id9b107b6c-783e-4555-b69d-04d8b6a3c17a">
+              <collection xml:id="id1e2efd0a-0c32-4897-9291-bcfc3465aaf4">BMS</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.1" next="#additional.1">
+              <msIdentifier xml:id="ide3140be2-e686-49dd-99fd-864ac588069f">
+                <idno xml:id="idc16af29c-d33d-4ce5-80bd-4be4eff38d5c">1</idno>
+              </msIdentifier>
+              <physDesc xml:id="id83d711de-edd8-4841-bb64-cba97bb33cda">
+                <p xml:id="idc368f267-2a1a-4fc4-a13d-df68d001416a"><pb xml:id="ss344" n="344" edRef="#SKS"/>Kladde og renskrift til et forlæg for »Var Biskop <persName xml:id="idcd53c6da-5190-4c66-a919-09ffa9986b12" key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?«, fordelt på 7 dobbeltblade og 1 løst blad.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.1.1" next="#additional.1.1">
+                <msIdentifier xml:id="idf7c4d50c-be24-4fa6-a892-ebe834bb155d">
+                  <idno xml:id="id1872afef-e620-448a-b33b-8c9d8e4c5ef4">1.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="idf9ec5aea-32a3-4c64-8b5c-8f33fde35f40">
+                  <p xml:id="id476c359b-71de-4420-b22f-54ef122e6781">Kladde til første del af forlægget.</p>
+                  <p xml:id="idf3d187ac-58d8-4f30-b9a0-10c3da155e38">3 dobbeltblade, i alt 6 blade i 4<hi xml:id="id31c0637d-4359-433e-bf19-fe95749127ce" rendition="#sup">o</hi>.<note xml:id="idc982bde9-224f-4209-a056-f6bd70fb0573"><p xml:id="id3759b33b-bd8c-4d66-b132-a38f121e390e">Udgangspunktet for formatbetegnelsen er plane helark (ca. 440 × 560 mm), som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Dobbeltblad betegner et stykke papir, ombøjet (foldet) til blade.</p></note></p>
+                  <p xml:id="id759b1164-bec5-4b3f-9c5b-36472f6f1fb2">Ingen paginering.</p>
+                  <p xml:id="idc8c3ecef-8e92-4ebe-9591-0786b54c835a">Papir: gulligt koncept, glat. Mål: 169 × 206 mm.<note xml:id="iddcf4b525-f68d-41fd-8501-85a28fd4061c"><p xml:id="id5ac86a9c-2a05-43a8-be31-fc9bfa0534c2">Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p></note></p>
+                  <p xml:id="iddcd8a03c-a7db-495f-a24a-eec7b39972c3">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. To tredjedele af bl. [6v] er ubeskrevet.</p>
+                  <p xml:id="id2755cf42-5ee8-4665-8666-c471c3493915">På bl. [1r] findes overskriften »Var Biskop <persName xml:id="id4ebba2e1-29ae-462a-8237-97ba9c19bf6b" key="Mynster, Jakob Peter">M.</persName> 'et Sandheds-Vidne', 'et / af de rette Sandheds-Vidner' – er / dette Sandhed?«.</p>
+                  <p xml:id="id0171f746-3c25-4088-89e7-03d2cb451b3a">En del korrektioner. Gennemgående ses sletninger af enkelte ord og passager i både inder- og yderspalte. Nederste halvdel af bl. [4r] er overstreget på skrå med blyant; hele bl. [4v] er overstreget med et stort blyantkryds. Fem linjer på bl. [4r], al tekst på bl. [5] og de tre første linjer på bl. [6r] er indrammet af en blyantstreg på langs i marginen.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.1" prev="#physDesc.1.1">
+                <msIdentifier xml:id="id6499e6a2-8f24-444f-a14e-7a4d5d0327b4">
+                  <idno xml:id="idc729bd24-0d83-4e8c-bbcf-7ad67a5f5fc2">1.1</idno>
+                </msIdentifier>
+                <additional xml:id="id5fba8d89-ed05-42f2-8f7b-db289c2f8857">
+                  <adminInfo xml:id="id3d745092-bccc-4425-8c12-bc7cfc9b8f6a">
+                    <note xml:id="idbb099b01-300b-4f71-a4d0-b78051562280">
+                      <p xml:id="id70a82a78-1b0c-4894-80b9-541b4a323f0d">(<hi xml:id="id2f05fe78-0cbb-4572-bad9-34c8a3162940" rendition="#ita">Pap.</hi> XI 3 B 203)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.2" next="#additional.1.2">
+                <msIdentifier xml:id="id478829c1-675a-4868-a96d-f149b130fbf5">
+                  <idno xml:id="idb749e416-4224-45f1-93df-a3f2b93950ad">1.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="id31930106-ae36-47fc-9480-04e8fc509cd3">
+                  <p xml:id="id6ce1ebdb-56ca-47cd-a85a-d7357c343f57">Kladde til anden del af forlægget.</p>
+                  <p xml:id="idd33bca52-1ae8-4c06-beae-af40b02aa0ad">1 dobbeltblad i 4<hi xml:id="idbe89273f-6ac8-46a1-8917-48eb79d1846e" rendition="#sup">o</hi>.</p>
+                  <p xml:id="ida23bae29-09bd-45bb-93ca-51796e44d412">Ingen paginering.</p>
+                  <p xml:id="id0086d3c8-7238-43f5-b663-1775dde4aa6f">Papir: gulligt koncept, groft. Mål: 167 × 203 mm.</p>
+                  <p xml:id="id7ced442d-0cfd-4656-a4a5-1ce427ab84d8">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. På nær tre linjer er bl. [2v] ubeskrevet.</p>
+                  <p xml:id="id6f91ec99-3e3d-4fec-903d-92bb66b9e115">På bl. [1v] afsluttes teksten i marginen med dateringen <hi xml:id="id6d2b161c-ff8e-4754-a620-95a57f46ee6b" rendition="#ant">»i Febr. 1854.«</hi> og signaturen <hi xml:id="idf2bde5b9-04e1-4002-b662-bb937e0a98aa" rendition="#ant">»S. <persName xml:id="id54bd1f7d-290e-4702-bd45-ec2daaa964d2" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.«.</hi> Slutningen indvises med indvisningstegn i blyant.</p>
+                  <p xml:id="ide3857548-f5b0-491b-be81-7d5a459b1629">En del korrektioner, heraf en del marginaltilføjelser. I marginen på bl. [1r] er en indvist passage slettet med tætte blyantløkker. Den oprindelige slutning af teksten, fra nederst på bl. <pb xml:id="ss345" n="345" edRef="#SKS"/>[1v] til øverst på bl. [2v], er slettet med blyantkryds og -streg på langs i marginen.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.2" prev="#physDesc.1.2">
+                <msIdentifier xml:id="id3837df7f-c523-4ce9-9f9a-9222b20b5c41">
+                  <idno xml:id="id7618df06-dfe5-4d49-bcf0-8fb808c94084">1.2</idno>
+                </msIdentifier>
+                <additional xml:id="id8d9ec494-1493-431a-9d48-dbdbbcfd44b8">
+                  <adminInfo xml:id="idee3bad6d-1510-47f6-8283-04b315115a1b">
+                    <note xml:id="id3c0fdde2-3768-4fe2-bc5d-e088652462f9">
+                      <p xml:id="idf9fd4bcb-90fd-43a2-929d-0df5e18dd944">(<hi xml:id="id15cde13c-494e-43cd-a6da-a1a66da4f4fc" rendition="#ita">Pap.</hi> XI 3 B 204)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.3" next="#additional.1.3">
+                <msIdentifier xml:id="id1b3467af-f9d3-44bd-a2d4-d966a5c48a1e">
+                  <idno xml:id="id99890f5b-0c77-4b8d-a561-8dce900e6ff8">1.3</idno>
+                </msIdentifier>
+                <physDesc xml:id="id8e318cbd-ca55-4854-b14f-670e45b9234d">
+                  <p xml:id="id1bc8c795-d8f9-454d-b103-22e211d03efe">Renskrift af begyndelsen af forlægget.</p>
+                  <p xml:id="id2bf7bab9-f6af-4255-b82e-3f57835132c0">2 dobbeltblade og 1 løst blad, i alt 5 blade i 4<hi xml:id="idd5d4a1d7-d830-41e4-a65a-8283bc0b0f8d" rendition="#sup">o</hi>. Det løse blad har afrivningskant i venstre side.</p>
+                  <p xml:id="idedab7307-e22a-4e60-8981-59ac41457983">Ingen paginering.</p>
+                  <p xml:id="id4cc05b65-0cfb-48a9-94f5-638cdffe0629">Papir: gulligt koncept, glat. Mål: 169 × 206 mm.</p>
+                  <p xml:id="id434889ee-27e6-4dec-bd9e-a6f94eda9ea2">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bl. [5v] er ubeskrevet.</p>
+                  <p xml:id="idc6e1dc3e-1b1b-41b2-bb24-50bbfa45013c">På bl. [1r] står overskriften »<hi xml:id="ide4b4e29e-2e03-4af5-939c-8cb7a910dd84" rendition="#bol">Var Biskop <persName xml:id="idfcdf9d59-7ae8-4490-a366-b73677158c76" key="Mynster, Jakob Peter">Mynster</persName> 'et Sandhedsvidne', et / af 'de rette <hi xml:id="id1d2f7926-4a71-42bd-9c0f-0d8b0b8c451b" rendition="#spa">Sandhedsvidner</hi>' – <hi xml:id="ida3a66548-4aaa-42ce-9d8b-4f607a015a8f" rendition="#spa">er dette Sandhed?</hi></hi>«, dobbelt og tredobbelt understreget.</p>
+                  <p xml:id="id04a85b23-be1c-410c-8e08-348ec3142bbe">Få korrektioner. Teksten fra bl. [3v] nederst til bl. [4v] midtpå er rammet ind af en blyantstreg på langs i marginen.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.3" prev="#physDesc.1.3">
+                <msIdentifier xml:id="id869b9561-8c34-44b6-90fc-560d1fabb479">
+                  <idno xml:id="id56ac2bd0-2485-4e85-a1ad-646b3e70f782">1.3</idno>
+                </msIdentifier>
+                <additional xml:id="id9deaee14-e868-429a-86dd-ecc0b0ba762c">
+                  <adminInfo xml:id="idfc8e0d11-6529-4039-9c1f-5eb25d709776">
+                    <note xml:id="id742bc15f-6aa8-487e-a678-4a42521fe245">
+                      <p xml:id="id0c2d4d29-c241-4dbd-b278-4a7007888fe9">(<hi xml:id="id988096bf-f85c-454d-b47e-36f7b06f2a94" rendition="#ita">Pap.</hi> XI 3 B 201)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.1.4" next="#additional.1.4">
+                <msIdentifier xml:id="idbe28c34c-62c8-4c85-9cd7-8b8b447ab1cf">
+                  <idno xml:id="id977f324d-7ea2-42e7-863b-ec4979823cef">1.4</idno>
+                </msIdentifier>
+                <physDesc xml:id="idcfd1706b-0545-43cd-8ab3-f39bbff5293f">
+                  <p xml:id="id5467edd3-21c8-4824-861c-b1cbbc8164a3">Renskrift af slutningen af forlægget.</p>
+                  <p xml:id="id616c6812-de35-4137-a27d-70a8349bd126">1 dobbeltblad i 4<hi xml:id="idbc61936d-99f9-4a17-9d17-7e66aa9e6586" rendition="#sup">o</hi>.</p>
+                  <p xml:id="id800c5010-1b84-4445-ae95-e62058dd1947">Ingen paginering.</p>
+                  <p xml:id="id67792238-ab56-4c1a-8b3b-239e7df44715">Papir: gulligt koncept, groft. Mål: 165 × 203 mm.</p>
+                  <p xml:id="id64e1058c-ec64-4ef9-9814-51f9d71690d0">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Halvdelen af bl. [2r] er beskrevet; bl. [2v] er ubeskrevet.</p>
+                  <p xml:id="idae169178-fd0d-45e5-a6cd-16816682468b">På bl. [1v] afsluttes teksten i marginen med dateringen <hi xml:id="id996beb89-cea9-4641-810c-10cfdfe3f7fc" rendition="#ant">»i Febr. 1854.«</hi> og signaturen <hi xml:id="id3f55d879-a03c-42cb-b7a1-88b7197366d2" rendition="#ant">»S. <persName xml:id="id6965d3ba-f0d0-4471-abb6-7c88a3ccc305" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.«.</hi></p>
+                  <p xml:id="id94847e96-0697-4d98-b8ed-7b109bf4d131">En del korrektioner. Marginen på bl. [1r] er tæt beskrevet. Teksten på nederste halvdel af bl. [1v] og på bl. [2r] er slettet med blyantkryds og indrammet af en blyantstreg på langs i marginen. En ny afslutning på teksten er indvist fra marginen på bl. [1v] med et blyantkors.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.1.4" prev="#physDesc.1.4">
+                <msIdentifier xml:id="id2e2b4140-782a-45dc-bef7-296b735d45ed">
+                  <idno xml:id="id69a86dae-cbbc-4a6d-bde1-40bfdbfb401d">1.4</idno>
+                </msIdentifier>
+                <additional xml:id="iddb1782cd-a4e8-4418-b419-a8bdf5d62298">
+                  <adminInfo xml:id="id42ea8cd9-f068-474f-9c8e-14fcd9bcbed8">
+                    <note xml:id="id1485b658-2593-4f32-87df-4a4f202fc83a">
+                      <p xml:id="id3f26495c-2287-4499-9100-538d0faee18b">(<hi xml:id="id5e8a295b-f966-4989-aeaf-9137970d1ab6" rendition="#ita">Pap.</hi> XI 3 B 202)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.1" prev="#physDesc.1">
+              <msIdentifier xml:id="idc8761275-5795-47be-8ed2-95aed93381a8">
+                <idno xml:id="id4ed67e26-0842-45f3-bc5f-a73d53f79471">1</idno>
+              </msIdentifier>
+              <additional xml:id="idb4d84277-42a9-467c-8503-77461ccca32b">
+                <adminInfo xml:id="id6c3bae33-66d3-45c9-9c26-ccdd2139e60b">
+                  <note xml:id="id897dc5cb-9e4d-4449-b9e1-100832347bd9">
+                    <p xml:id="id5f52dab5-64b4-493b-b97e-2d57f0b21420">(KA, B pk. 52, læg 1; <hi xml:id="id60b42689-406f-4d9f-907d-d273b3bfb9e0" rendition="#ita">Pap.</hi> XI 3 B 201-204)<note xml:id="id78e6e779-8226-425f-bea1-9d293c789c51"><p xml:id="id532837e6-2fef-49e9-a9fc-c43487ad507d">I KA, B pk. 52, læg 1, findes to omslag, som ikke beskrives af <hi xml:id="id86cb14d6-9c9e-44eb-83d9-072133722b4a" rendition="#ita">Pap.,</hi> men som <hi xml:id="ided459e3e-3bec-438e-bfc8-fc99a37f5fce" rendition="#ita">Pap.</hi> har mærket hhv. »Ad. XI 3 B 201-210« og »[XI 3 B 201-210]«. Førstnævnte er et stykke af <hi xml:id="id0e4cf912-c850-4c4c-8e6b-b65aea9eb046" rendition="#ita">Berlingske Tidende</hi> fra mandag morgen den 18. dec. 1854, der er foldet til konvolut. Det andet er et stykke groft, blåt konceptpapir, der er foldet til konvolut og bærer påskriften »<hi xml:id="id202257c5-a06d-4cd4-936b-abe97490696c" rendition="#ita">N<hi xml:id="id187fe9df-4e9e-4763-af17-cae20f175d92" rendition="#sup">o</hi> 6.</hi> / Vedkommende <persName xml:id="id6b2f528f-bf2f-428b-9719-eb9e090e35e8" key="Martensen, Hans Lassen">Martensen</persName>s Tale over / <persName xml:id="idd6639e31-eedc-4fe9-b8e8-76756ecb298e" key="Mynster, Jakob Peter">Mynster</persName> / (med Efterskrift.) / [15 Pag.]« med rødt blæk, skrevet med fremmed hånd, formentlig af <persName xml:id="idd955f524-db80-41e5-a1c1-22cef05781b8" key="Barfod, Hans Peter">H.P. Barfod</persName>. De »15 Pag.« svarer til, at der er 15 blade.</p></note></p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.2" next="#additional.2">
+              <msIdentifier xml:id="id5f20b0c7-dfab-4b72-bf7d-e7a3549265d3">
+                <idno xml:id="id045de86b-fdb5-4fef-a3c5-0c65aeb3edb7">2</idno>
+              </msIdentifier>
+              <physDesc xml:id="id0c1ce42f-f65f-49f0-a2f2-0282e3ada6ba">
+                <p xml:id="id8b6c5aec-a694-485d-8751-d0d465203f3a"><pb xml:id="ss346" n="346" edRef="#SKS"/>Kladde til »Var Biskop <persName xml:id="id8f78d4c3-ddaa-45ec-ba12-8803956a2571" key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?«, fordelt på 1 dobbeltblad og 6 løse blade.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.2.1" next="#additional.2.1">
+                <msIdentifier xml:id="id65490c45-9e8a-4e22-8e4f-38935ab2ee82">
+                  <idno xml:id="idfa607f80-f7e8-426b-9a54-6aa9c5a4ec63">2.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="idd61de2a0-bec8-447c-955c-b5b2813e846b">
+                  <p xml:id="ida228cb66-3b13-455e-a5df-a511722bf330">Kladde til artiklens hovedtekst (<ref xml:id="idcfad8475-dd38-4a3a-a572-4311b6e88a53" target="../BMS/txt.xml#ss123" type="publishedWritings" n="123"><hi xml:id="ide5ab8459-c11a-4b8d-b5a0-33bb408c4644" rendition="#ita">SKS</hi> 14, 123</ref>-125,43).</p>
+                  <p xml:id="id8ead6f58-ba94-43ed-ad5a-5e096e7d699e">1 dobbeltblad og 1 løst blad, i alt 3 blade i 4<hi xml:id="id6f700693-43b5-42fe-b4c0-3c7dba49003a" rendition="#sup">o</hi>. Det løse blad har afrivningskant i venstre side.</p>
+                  <p xml:id="id917751f7-9523-4298-8c25-62091858328a">Ingen paginering.</p>
+                  <p xml:id="iddd874895-d466-4fc1-9721-adda786785c3">Papir: gulligt koncept, glat. Mål: 169 × 206 mm.</p>
+                  <p xml:id="ide8ffe978-8ce3-4d8f-b66c-1d75537eccc0">Bladene er foldet på langs; en bred inderspalte rummer tekst, en yderspalte tilføjelser.</p>
+                  <p xml:id="id5be06f4d-f538-42e4-9926-a162c6564542">På bl. [1r] står overskriften <hi xml:id="id8ec19e2c-054d-4f34-b6a1-1380b98c9dd1" rendition="#spa">»Var Biskop <persName xml:id="id76ba32d3-58bc-48f1-8167-75a748feb59f" key="Mynster, Jakob Peter">M.</persName> et 'Sandhedsvidne', et af 'de / rette Sandheds-Vidner' – er dette Sandhed?«.</hi> Derefter følger et indvisningstegn og en redigeringsbemærkning i marginen: »den første Passus / af det Tidligere om / <persName xml:id="id30e9e414-1ed0-4bfc-a353-453213f5acc7" key="Martensen, Hans Lassen">Martensen</persName>s Prædiken / paa 5<hi xml:id="id34786268-aff5-4f70-a0ef-c46044f5476e" rendition="#sup">te</hi> Søndag e: h.t.K.«. Længere nede i marginen følger endnu en redigeringsbemærkning: <hi xml:id="idc8267e34-43d0-48f0-bcdc-8eaed1e2a95f" rendition="#ant">»cfr Hoslagte«,</hi> skrevet med blyant; henvisningen gælder ms. 2.1.1. På bl. [3r] findes i marginen redigeringsbemærkningen <hi xml:id="id8759383b-b6c9-49d0-b34a-f55b43b44fc5" rendition="#ant">»cfr Hos-/lagte <hi xml:id="idaa2316a2-f26c-47b9-bd10-8c1f4fa84423" rendition="#spa">Anm</hi>«,</hi> skrevet med blyant; denne henvisning gælder ms. 2.1.2. Hovedteksten på bl. [3r] afsluttes med bemærkningen »Saa den Passus om et Sandheds-/vidne, som findes i det Tidligere«. I marginen på bl. [3v] findes redigeringsbemærkningen <hi xml:id="idba42f4f7-9a4a-4eef-9647-25e815c251e4" rendition="#ant">»cfr Hoslagte.«,</hi> indvist med et dobbeltkors i rødkridt; henvisningen gælder ms. 2.1.3. Derefter markeres et nyt afsnit i hovedteksten med en vandret streg.</p>
+                  <p xml:id="id6c6de415-a104-4444-86bf-d52c90f60d91">En del korrektioner. På bl. [1r] er først otte linjer, siden godt fire linjer overstreget med blyant. Størstedelen af bl. [2r] og [2v] er markeret med en blyantstreg på langs i marginen. En marginaltilføjelse på fire linjer på bl. [2r] er slettet med streger på skrå; ligeledes er en marginaltilføjelse på otte linjer på bl. [3r] slettet med blyantstreger på skrå. Afslutningen på bl. [3v] er slettet med et blyantkryds og markeret med en blyantstreg på langs i marginen.</p>
+                  <p xml:id="id4adb451b-e66a-422a-a2a2-0703122e8242">Hertil hører følgende:</p>
+                </physDesc>
+                <msPart xml:id="physDesc.2.1.1" next="#additional.2.1.1">
+                  <msIdentifier xml:id="id207c51ec-eecc-4cfb-9fba-a0945ab533a0">
+                    <idno xml:id="id3b6f702b-9de6-4a70-89d5-a6ef9bfc3b55">2.1.1</idno>
+                  </msIdentifier>
+                  <physDesc xml:id="id4e6761cb-02b0-4a19-a77c-7223cde60517">
+                    <p xml:id="idf38b36ea-5cf9-4063-b7a2-a016da39b59f"><pb xml:id="ss347" n="347" edRef="#SKS"/>Kladde til en mindre passage (<ref xml:id="idbda9134c-bd39-46ab-bee6-dc393df636d1" target="../BMS/txt.xml#ss123" type="publishedWritings" n="123"><hi xml:id="idc66c3987-c196-4a07-8f76-7dd12a12f227" rendition="#ita">SKS</hi> 14, 123</ref>,42-45 fra »behøver man« til »Mynsters Prædiken.«).</p>
+                    <p xml:id="idd1f5ee39-389c-42ae-a945-53828e50cdb5">1 løst blad i 4<hi xml:id="id3a083b87-d54c-4876-bd6f-a32387877b13" rendition="#sup">o</hi> med afrivningskant i venstre side.</p>
+                    <p xml:id="id90ee72f6-672a-4165-a7f0-fb664c2d2729">Ingen paginering.</p>
+                    <p xml:id="id3a6601b9-4ab3-482c-aef3-eaed5107460f">Papir: gulligt koncept, glat. Mål: 168 × 206 mm.</p>
+                    <p xml:id="id6d44668a-5142-4b64-896f-1633641947b8">Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten er ubeskrevet. Versosiden er ubeskrevet. Teksten er indvist på bl. [1r] i ms. 2.1 med et kors i blyant.</p>
+                    <p xml:id="id002bc235-5ac1-4f6f-b2f6-508bc9c4d8ad">På nær de fire sidste linjer er al tekst slettet med et stort blyantkryds.</p>
+                  </physDesc>
+                </msPart>
+                <msPart xml:id="additional.2.1.1" prev="#physDesc.2.1.1">
+                  <msIdentifier xml:id="id17bda3b8-88a9-4fc1-a563-9b7e1ed6c299">
+                    <idno xml:id="id27012574-d951-41a8-9e69-5c34446739a0">2.1.1</idno>
+                  </msIdentifier>
+                  <additional xml:id="idfeff04c6-428f-4c85-b2bc-53a3fbc6a7f7">
+                    <adminInfo xml:id="id4ddbe091-0b4a-427e-bda2-6367fd313f13">
+                      <note xml:id="idb763326b-5076-4c2d-b83a-e04da22d9ef3"/>
+                    </adminInfo>
+                  </additional>
+                </msPart>
+                <msPart xml:id="physDesc.2.1.2" next="#additional.2.1.2">
+                  <msIdentifier xml:id="id1bc546b4-ace6-4f3d-94e2-cc2853cabfa5">
+                    <idno xml:id="ideee124b7-4496-4789-9807-2bc780c7afbf">2.1.2</idno>
+                  </msIdentifier>
+                  <physDesc xml:id="ide76bfe0e-4d01-49ce-b09b-d590d4f52b70">
+                    <p xml:id="ida191c5b3-107f-413a-bc54-b31e9606a96b">Kladde til artiklens fodnote (<ref xml:id="idcb5f8010-f2d2-44cd-a5fe-24482e5c1c46" target="../BMS/txt.xml#ss124" type="publishedWritings" n="124"><hi xml:id="idaea9f32d-c172-4ce7-b7ed-19f04673ddfd" rendition="#ita">SKS</hi> 14, 124</ref>).</p>
+                    <p xml:id="ideaff5ee8-cad6-4b1c-a151-7ba5beed0d12">1 løst blad i 4<hi xml:id="iddd533c7a-9779-45b3-889f-4c9bc21546b3" rendition="#sup">o</hi> med afrivningskant i venstre side.</p>
+                    <p xml:id="ideb306402-66a6-4e11-8bf5-866f3271b125">Ingen paginering.</p>
+                    <p xml:id="idcc3389fb-4f36-43db-9c87-70101bc9b8c2">Papir: gulligt koncept, glat. Mål: 167 × 206 mm.</p>
+                    <p xml:id="id16481adf-5147-49c3-a47c-17dc76914ab0">Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Teksten er indvist på bl. [3r] i ms. 2.1 med indvisningstegn i blyant.</p>
+                    <p xml:id="id6faa6153-0874-434f-812d-1d86f54c6fdb">Bladet indledes med en henvisning til ms. 2.1: »Til det Sted: Du veed vel, hvad / der forstaaes ved et Sandhedsvidne«, hvorefter den tekst, der skal indvises, indledes med <hi xml:id="idec3a13f2-983e-406f-ab42-dda8c3e8de13" rendition="#spa">»Anm«.</hi></p>
+                    <p xml:id="id4a17c3db-6b92-48f0-93a1-eae07c8d2f8b">En del korrektioner, både sletninger og marginaltilføjelser. På rectosiden er to linjer overstreget med blyant. På versosiden er størstedelen af teksten slettet ad flere omgange: Enkeltord og korte passager er slettet med vandrette, skrå og bølgestreger. Enkeltord samt korte og lange passager er endvidere slettet med blyant med streger på skrå og udtværede løkker. Se <ref xml:id="id668d51ad-eaae-4e9e-b689-35c5746f752b" target="../BMS/txr.xml#ill_k17" type="figure">illustration 17</ref>. <figure xml:id="ill_k17" rend="recto"><graphic xml:id="id270b1ad1-99de-4569-a990-cc144b185792" url="../BMS/ill_k17.jpg"/><head xml:id="id7fc43a8c-1fed-4fca-8a3b-eda72b986f8b">17. Ms. 2.1.2, bl. [1v], kladde med sletninger</head></figure> </p>
+                  </physDesc>
+                </msPart>
+                <msPart xml:id="additional.2.1.2" prev="#physDesc.2.1.2">
+                  <msIdentifier xml:id="idd216b463-2ace-419c-b228-ccd3acf46cd8">
+                    <idno xml:id="id1a36dddb-82c8-4ae0-8389-8c90f74c6dda">2.1.2</idno>
+                  </msIdentifier>
+                  <additional xml:id="id0e52f28d-9beb-4533-8d1d-6268c7ac11a6">
+                    <adminInfo xml:id="id653d78fb-74f3-448d-b16d-2f0fc9ed72f7">
+                      <note xml:id="id698c27be-227c-4a79-9ea5-00c93cb9634b"/>
+                    </adminInfo>
+                  </additional>
+                </msPart>
+                <msPart xml:id="physDesc.2.1.3" next="#additional.2.1.3">
+                  <msIdentifier xml:id="id76d70171-bb6d-4273-958a-4237dd2733a1">
+                    <idno xml:id="id2c93465a-d2cf-408d-a76a-1fa679485479">2.1.3</idno>
+                  </msIdentifier>
+                  <physDesc xml:id="ida29f1dfa-34a2-45fe-b9c0-2db72c7235f6">
+                    <p xml:id="idfc4b5293-75c1-4360-bc3b-443ce582adef">Kladde til artiklens afslutning (<ref xml:id="idec16ec93-1cd6-436a-82c4-31cf04e0b9ed" target="../BMS/txt.xml#ss125" type="publishedWritings" n="125"><hi xml:id="idd42ed022-3948-4bd2-bc15-93e00129e99e" rendition="#ita">SKS</hi> 14, 125</ref>,24-43 fra »Sandeligen« til »vore Tider.«).</p>
+                    <p xml:id="id582bfd61-10dd-4b17-99c2-ebe091d6acb6">1 løst blad i 4<hi xml:id="idec0af705-b0be-42a9-8310-a5555ea75aeb" rendition="#sup">o</hi> med afrivningskant i venstre side.</p>
+                    <p xml:id="id3f24b461-5e3a-49e2-9e44-764438cd4a0a">Ingen paginering.</p>
+                    <p xml:id="id1143148c-bd11-439a-9aa5-d8f6ff2ad8e4">Papir: gulligt koncept, groft. Mål: 165 × 204 mm.</p>
+                    <p xml:id="id776c1dc3-25ee-45ec-b962-1b5bd05bcc9b">Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Versosiden er ubeskrevet. Teksten er indvist på bl. [3v] i ms. 2.1 med et dobbeltkors skrevet med rødkridt.</p>
+                    <p xml:id="idd551c0a5-b6e2-4e75-a139-aee00ab16e05">Enkelte korrektioner, både sletninger og tilføjelser.</p>
+                  </physDesc>
+                </msPart>
+                <msPart xml:id="additional.2.1.3" prev="#physDesc.2.1.3">
+                  <msIdentifier xml:id="id77d7ba0d-6e67-481e-a054-08ae2238a8d0">
+                    <idno xml:id="id28c940d0-2939-4028-83ff-f26033c6277a">2.1.3</idno>
+                  </msIdentifier>
+                  <additional xml:id="id77057fa5-cfe1-4270-b43b-ce25cb731f34">
+                    <adminInfo xml:id="id35769863-de04-425b-8ddd-386f28a01957">
+                      <note xml:id="idaf35691e-b117-4cd5-9a7e-fc1c669665a6"/>
+                    </adminInfo>
+                  </additional>
+                </msPart>
+              </msPart>
+              <msPart xml:id="additional.2.1" prev="#physDesc.2.1">
+                <msIdentifier xml:id="id2b257931-1da1-4f44-86a8-30b319f3175c">
+                  <idno xml:id="idd0146fed-69bf-4f7e-aec6-d8d8b3200c09">2.1</idno>
+                </msIdentifier>
+                <additional xml:id="idd0c48bd3-9a81-460e-8dd9-65d07ab25751">
+                  <adminInfo xml:id="id9b43b7d6-f593-444f-ba38-4a81e2fc57b9">
+                    <note xml:id="id888d3668-8c59-4163-b5d0-1351cf541f03">
+                      <p xml:id="id22a2a0c6-993b-43e4-b4c0-5f2a4a777f22">(<hi xml:id="idef030e98-acb8-468a-83a5-683d99f06eb9" rendition="#ita">Pap.</hi> XI 3 B 208)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.2.2" next="#additional.2.2">
+                <msIdentifier xml:id="id61e15ae8-b1ed-45b6-bcd5-81808fb79bec">
+                  <idno xml:id="id5acc7926-2db3-4a12-897c-5b5ebd242b1b">2.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="id36363f42-73c4-40d3-b41a-6e05281ab3f1">
+                  <p xml:id="id065eb798-7683-4527-be2d-99ae52bca4a6"><pb xml:id="ss349" n="349" edRef="#SKS"/>Kladde til første del af artiklens efterskrift (<ref xml:id="id6218e4e9-bf06-49c0-ba44-06a5cb10264d" target="../BMS/txt.xml#ss125" type="publishedWritings" n="125"><hi xml:id="id278c015b-6d0b-425e-8818-952a65c93fc7" rendition="#ita">SKS</hi> 14, 125</ref>,44-71).</p>
+                  <p xml:id="idd2638c34-b40b-4be4-afbe-c8138b83fbfa">1 løst blad i 4<hi xml:id="id91db2f0d-d4fe-4f7d-8a1d-a6a6b8f81927" rendition="#sup">o</hi> med afrivningskant i venstre side.</p>
+                  <p xml:id="id8658ec7b-f7a5-4985-8477-258ec00b5a1a">Ingen paginering.</p>
+                  <p xml:id="id8760c221-989c-4f11-af78-761506c17704">Papir: gulligt koncept, groft. Mål: 165 × 198 mm.</p>
+                  <p xml:id="idefd75aca-fb15-4658-95a8-9e4987e9eb0c">Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Versosiden er ubeskrevet.</p>
+                  <p xml:id="idd0e52618-0e6f-45b2-a556-5d430f7d94a2">Rectosiden indledes med overskriften »<hi xml:id="id4e4f658a-70ed-4846-a92a-4ea34f1b00d2" rendition="#spa">Efterskrift.</hi>« og afsluttes med dateringen <hi xml:id="id86983bb6-d3a6-4fb4-9ef9-0a92f7344b18" rendition="#ant">»i Efteraaret 1854.«.</hi></p>
+                  <p xml:id="id6f0d42b0-5a64-4b41-b17f-fe178ff694d0">Enkelte korrektioner i form af en marginaltilføjelse samt sletninger af enkeltord og (med gnidrede blyantløkker) halvanden linje.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.2.2" prev="#physDesc.2.2">
+                <msIdentifier xml:id="id37131eb9-02ad-4a5b-b469-8d080972d9d0">
+                  <idno xml:id="ide4a1dd7e-9be0-4acf-b81c-400c7fcb4b81">2.2</idno>
+                </msIdentifier>
+                <additional xml:id="idc63aad41-b0c8-4274-b2f8-ad9ac7b56a92">
+                  <adminInfo xml:id="id8516434a-10c6-4b64-90b8-00253400b3fc">
+                    <note xml:id="ide7879695-cc71-40ab-b554-5e850e4df9e0">
+                      <p xml:id="idea80c67a-3850-439c-a6c3-9786b4911a34">(<hi xml:id="id91645db1-5637-4166-b3bc-13ae293d347f" rendition="#ita">Pap.</hi> XI 3 B 209)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.2.3" next="#additional.2.3">
+                <msIdentifier xml:id="id968f6a29-422f-4b68-a42e-d8908b817d08">
+                  <idno xml:id="id0c378462-c160-442f-af78-091fcae2827f">2.3</idno>
+                </msIdentifier>
+                <physDesc xml:id="id3cd187fd-9706-471f-8311-fca146aea3bc">
+                  <p xml:id="id597c9289-ada2-4771-9c17-9e634dad17f1">Kladde til anden del af artiklens efterskrift (<ref xml:id="ida0c7b4ac-683e-4454-b62c-c84bdf18bf1c" target="../BMS/txt.xml#ss125" type="publishedWritings" n="125"><hi xml:id="ida1c559c7-f069-48a7-8a21-9d897e55bd44" rendition="#ita">SKS</hi> 14, 125</ref>,72-126,47).</p>
+                  <p xml:id="id06d727a8-3340-4661-a331-9165912f0aa8">1 løst blad i 4<hi xml:id="id355b1537-c4e4-4f3e-b03e-bd6f365fc685" rendition="#sup">o</hi> med afrivningskant i venstre side.</p>
+                  <p xml:id="idf867e531-a40e-41f1-a720-fbc5fdd0cfe5">Ingen paginering.</p>
+                  <p xml:id="id9c22ab6e-5694-4ee0-bb44-3da756f795e7">Papir: gulligt koncept, glat. Mål: 165 × 198 mm.</p>
+                  <p xml:id="id44ec6825-dcb8-4411-845a-149e92bbc49f">Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Den nederste halvdel af versosidens inderspalte er ubeskrevet.</p>
+                  <p xml:id="id8971950e-0feb-476b-89db-6819306893d4">Rectosiden bærer øverst påskriften »Til Efterskriften.«, påbegyndt i inderspalten og afsluttet i marginen. Inderspalten indledes med to asterisker. Øverst på versosiden står redigeringsbemærkningen »Ny Udgang«; lidt under midten står dateringen <hi xml:id="id010293ce-98ea-4868-a3fc-23e04a831534" rendition="#ant">»i Dec: 1854.«.</hi></p>
+                  <p xml:id="id15a27c22-0961-4eb7-9eb5-7bdbc7f0b4ce">En del korrektioner. På begge sider er marginen næsten fyldt ud med tilføjelser, heri ses sletninger med blæk og med blyant. På versosiden er fem linjer i inderspalten slettet med blyantløkker.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.2.3" prev="#physDesc.2.3">
+                <msIdentifier xml:id="idd0c3d462-72d0-4ff8-9030-76834b69e711">
+                  <idno xml:id="id41f39301-70b2-4887-b06f-a9a28743b3b0">2.3</idno>
+                </msIdentifier>
+                <additional xml:id="id24939e0b-52e1-4f3e-bebd-0bb8a0231dc8">
+                  <adminInfo xml:id="id964b8c7d-3867-4b61-b835-c6668c8d65fc">
+                    <note xml:id="idadb9b1bd-0ab3-4888-a761-0cfe7e26e7a1">
+                      <p xml:id="id879a7f49-1aeb-4051-928f-df5de6d4d86c">(<hi xml:id="id09f93b93-d001-467d-a121-14ce459fd30e" rendition="#ita">Pap.</hi> XI 3 B 210)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.2" prev="#physDesc.2">
+              <msIdentifier xml:id="id26730574-fcb6-4a37-844e-e2b020e6a6eb">
+                <idno xml:id="ida5802ae3-1791-40b2-a11a-45ad21089d4a">2</idno>
+              </msIdentifier>
+              <additional xml:id="idcbb2efce-bfce-4ae7-9e2d-487a4cf36e7c">
+                <adminInfo xml:id="idafba44d3-f855-41a9-a612-acf3a8ad9f47">
+                  <note xml:id="idaee7ff7a-ea1f-44a3-819a-709f7ba8ace7">
+                    <p xml:id="idfb00843e-4f58-464f-86f5-4898af22d592">(KA, B pk. 52, læg 1; <hi xml:id="ida14d9342-8911-4d4f-b958-c7183bda2e97" rendition="#ita">Pap.</hi> XI 3 B 208-210)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.3" next="#additional.3">
+              <msIdentifier xml:id="id6156ac03-5b7a-44cc-94ba-762e7923703d">
+                <idno xml:id="id0aed823d-4e24-4351-93e8-a10338584722">3</idno>
+              </msIdentifier>
+              <physDesc xml:id="ide37cac28-2b4e-4970-9bdc-eac7e07b8250">
+                <p xml:id="id2c25f4b6-e08f-4217-8255-53ae72ef830a"><pb xml:id="ss350" n="350" edRef="#SKS"/>Renskrift af »Var Biskop <persName xml:id="idcd7b5f85-d0a9-4d9e-82e8-3459250967e6" key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?«. Renskriften, der har været benyttet som trykmanuskript,<note xml:id="id54a306a1-0a95-4a77-98bd-5910e22b01e3"><p xml:id="id680a8da9-2ead-45a6-81d2-82727bc60008">Der ses enkelte sættermarkeringer i SKs renskrift. De er indført med blyant og angiver øverst på s. 1, hvornår arbejdet i sætteriet skulle være færdiggjort, og at navne skulle sættes fuldt ud: »færdig til Kl 12. Navnene skulle sættes fuldt ud«. To navneforkortelser er skrevet ud: »artensen« og »ynster«, flere steder i teksten. I øverste venstre hjørne på s. 1 ses endvidere påskriften »gl B.«, uvist i hvis hånd. Lignende påskrifter ses i enkelte andre af SKs renskrifter; fælles er, at der til de pågældende renskrifter hører mindst én indvist passage. Det kan betyde, at SK først har indleveret en renskrift og siden noget mere i form af en eller flere indviste passager. Det først indleverede har så muligvis fået påskriften »gl B.« for »gammelt Blad«.</p></note> består af 2 dobbeltblade og 4 løse blade.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.3.1" next="#additional.3.1">
+                <msIdentifier xml:id="id52dd0e3a-5ec1-4fa2-9c12-48cd2d8c3192">
+                  <idno xml:id="id41e646b8-c2fd-4cd1-a8f0-18f5555c92e0">3.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id7fd689d1-4b8a-48d2-a9b2-b4390f16a33a">
+                  <p xml:id="id77fe26d2-9915-4dc6-9bf9-35768515e77c">Renskrift af artiklens hovedtekst (<ref xml:id="id2c3aeeca-8c65-46af-83f1-02b7a30a8612" target="../BMS/txt.xml#ss123" type="publishedWritings" n="123"><hi xml:id="id2b8eba73-ed2f-441a-ae0a-6bf037224e8d" rendition="#ita">SKS</hi> 14, 123</ref>-125,43).</p>
+                  <p xml:id="id039a0134-204f-4109-869c-55407d739fc0">2 dobbeltblade, i alt 4 blade i 4<hi xml:id="ide78e075c-d022-49f1-90e9-5d07722a2fed" rendition="#sup">o</hi>.</p>
+                  <p xml:id="id5a97f03c-55ce-402d-a681-db5f9a531a41">Bladene er pagineret 1 og 3-8 med blyant; bl. [1v] er upagineret.</p>
+                  <p xml:id="id7c5ba498-7d86-4ec5-a378-6ad8385377a1">Papir: gulligt koncept, groft. Mål: 166 × 203 mm.</p>
+                  <p xml:id="idcf425f97-4f1a-48c6-b15a-8009a3158ccb">Bladene er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladene er efter beskrivning blevet foldet endnu en gang på langs og en gang på tværs.</p>
+                  <p xml:id="id989bdb4d-d75c-4074-a640-c1e5059c74bb">På s. 1 står overskriften »<hi xml:id="id4c19db72-c9a6-4172-adcd-365f4d52a132" rendition="#bol">Var Biskop <persName xml:id="idb1f72269-393b-4251-9e1b-39f59d185f59" key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af / 'de rette Sandhedsvidner' – <hi xml:id="id52e4593f-2f3c-415a-b339-623836bfe714" rendition="#spa">er dette Sandhed?</hi></hi>«, dobbelt og tredobbelt understreget. Herefter følger dateringen <hi xml:id="idcabafd6a-230c-4be1-a52a-7bbbfc9e2c45" rendition="#ant">»i Febr. 1854.«</hi> og signaturen <hi xml:id="id47354ac3-a789-4d89-9a95-8b0f55a536e7" rendition="#ant">»S. <persName xml:id="idb3037982-f177-4488-894a-22589dea0170" key="Kierkegaard, Søren Aabye">Kierkegaard</persName>.«.</hi> Længere nede på s. 1 markeres et nyt afsnit i teksten med en vandret streg. På s. 5 findes i marginen redigeringsbemærkningen <hi xml:id="id2de7b4c8-d0d2-4e4c-a2bf-e611290b766c" rendition="#ant">»cfr Hoslagte / <hi xml:id="id0f6a7f70-220f-47da-af69-c8ffbe321afd" rendition="#spa">Anm</hi>«</hi> skrevet med blyant; henvisningen gælder ms. 3.1.1. På s. 8 findes et dobbeltkors i rødkridt med den tilhørende bemærkning i blæk: <hi xml:id="ide64ff60a-80e5-40b4-b8da-1863a20452dd" rendition="#ant">»cfr Hoslagte.«;</hi> denne henvisning gælder ms. 3.1.2.</p>
+                  <p xml:id="idaa22bf57-6b68-403e-a8c6-1d1533ac9140">En del korrektioner, både sletninger og marginaltilføjelser. Nederst på s. 1 og øverst på s. [2] er et afsnit på otte linjer slettet med blyant. En kort passage på s. [2] er slettet med en bølgestreg i blyant. To afsnit nederst på s. [2] og øverst på s. 3, i alt 18 linjer, er slettet med to store blyantkryds. På midten af s. 4 er 12 linjer slettet med et blyantkryds og markeret med en <pb xml:id="ss351" n="351" edRef="#SKS"/>blyantstreg på langs i marginen; efterfølgende er knap tre linjer slettet med en vandret blækstreg. To linjer er slettet med blækløkker på s. 5. Endelig er nederste halvdel af s. 8 slettet med et blyantkryds og markeret med en blyantstreg på langs i marginen.</p>
+                  <p xml:id="id18a96cae-2934-47c4-ae7b-fde9aaac2d5b">Hertil hører følgende:</p>
+                </physDesc>
+                <msPart xml:id="physDesc.3.1.1" next="#additional.3.1.1">
+                  <msIdentifier xml:id="idb9da701e-47d5-474f-8c3f-8e74eb70d887">
+                    <idno xml:id="id4bdc6c33-d230-48cf-9d7c-9e978d77f03e">3.1.1</idno>
+                  </msIdentifier>
+                  <physDesc xml:id="id702aa952-1be9-4b62-a1bd-77014ccc43d7">
+                    <p xml:id="idc5810907-760f-47f9-869a-f73dde90ecdd">Renskrift af artiklens fodnote (<ref xml:id="id2d7b8c28-5264-4685-b710-9407fa6a671d" target="../BMS/txt.xml#ss124" type="publishedWritings" n="124"><hi xml:id="iddebe377c-f28d-4bcd-9073-085ac9f7c87f" rendition="#ita">SKS</hi> 14, 124</ref>).</p>
+                    <p xml:id="idcbe4ff63-70b9-4b75-8306-e971f9406a59">1 løst blad i 4<hi xml:id="id07582fb8-987c-42ee-b7b1-4d1bf0228092" rendition="#sup">o</hi> med afrivningskant i venstre side.</p>
+                    <p xml:id="id5a8ee733-1659-4a54-8807-515f3ac11181">Ingen paginering.</p>
+                    <p xml:id="ida0fbae43-caf1-41e5-8f23-c56c21923486">Papir: gulligt koncept, groft. Mål: 166 × 203 mm.</p>
+                    <p xml:id="id065ee337-5013-40c8-8385-0a61481683d0">Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladet er efter beskrivning blevet foldet en gang på tværs. Halvdelen af versosiden er ubeskrevet.</p>
+                    <p xml:id="id945836df-0828-4f18-a72f-3052a18c55aa">Rectosiden indledes med et indvisningsmærke og bemærkningen »ad pag 5«, begge i blyant; henvisningen gælder ms. 3.1. Teksten indledes »<hi xml:id="id2bae3c27-2c2b-4fdf-aee5-5899da12baa1" rendition="#spa">Anm.</hi>«.</p>
+                    <p xml:id="idde02de84-b60e-45ad-9541-2bbbdd415515">En del korrektioner, herunder sletninger og marginaltilføjelser. Enkelte ord er slettet med løkker eller bølgestreger. På rectosiden er to linjer slettet med blyantoverstregning, nedenfor er tre linjer og derefter fem linjer overstreget med blæk. Teksten på versosiden er slettet ad flere omgange; der ses både bølgestreger i blæk og vandrette streger, bølgestreger, udtværede løkker og streger på skrå med blyant.</p>
+                  </physDesc>
+                </msPart>
+                <msPart xml:id="additional.3.1.1" prev="#physDesc.3.1.1">
+                  <msIdentifier xml:id="idbe1c1f13-c976-4377-8eb9-9736b9ee72e1">
+                    <idno xml:id="idceded899-a696-49c1-8dca-79e771b7c81d">3.1.1</idno>
+                  </msIdentifier>
+                  <additional xml:id="ide8d7aacf-c182-463e-86e1-1e440a881a7b">
+                    <adminInfo xml:id="id2957b2f6-98c1-482c-9f10-3bc680aa292d">
+                      <note xml:id="id1ff5d2a2-79b6-4eb7-be86-3585882cca5a"/>
+                    </adminInfo>
+                  </additional>
+                </msPart>
+                <msPart xml:id="physDesc.3.1.2" next="#additional.3.1.2">
+                  <msIdentifier xml:id="id76e1ff53-4b72-43de-a002-e6159afc0476">
+                    <idno xml:id="idbb73e49c-2d73-4f15-8521-d9cbedf819c8">3.1.2</idno>
+                  </msIdentifier>
+                  <physDesc xml:id="idbe6da5a8-ff3e-47df-8bec-42f3f8d1f56f">
+                    <p xml:id="id8ef0774e-e862-4cf8-95f9-18f0ea0bea6d">Renskrift af artiklens afslutning (<ref xml:id="id7e52b046-3652-4920-88c2-7fbdacd31302" target="../BMS/txt.xml#ss125" type="publishedWritings" n="125"><hi xml:id="id4c299ef6-467f-4814-b647-3bc169739054" rendition="#ita">SKS</hi> 14, 125</ref>,24-43 fra »Sandeligen« til »vore Tider.«).</p>
+                    <p xml:id="ide2df8346-bbd8-4c13-83e5-54672e47ef24">1 løst blad i 4<hi xml:id="id2153e6a3-a0fa-4977-bf0f-0580b0e2a365" rendition="#sup">o</hi> med afrivningskant i venstre side.</p>
+                    <p xml:id="idcd012d24-9bd6-40ff-bf3c-ae3ae0c7eea1">Ingen paginering.</p>
+                    <p xml:id="ideabed8ce-691a-479f-ad75-fdca870e2f10">Papir: gulligt koncept, groft. Mål: 165 × 203 mm.</p>
+                    <p xml:id="id7eb5521f-399f-4cdc-8d2a-094e55f57d52">Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladet er efter beskrivning blevet foldet en gang på tværs. Versosiden er ubeskrevet.</p>
+                    <p xml:id="idaca3db72-b12e-41cf-9ce5-c44318a7f153">Bladet indledes med et dobbeltkors skrevet med rødkridt og bemærkningen »ad pag 8.« i blyant; henvisningen gælder ms. 3.1.</p>
+                    <p xml:id="ide1096425-5497-4979-9948-6cb4b7248721">Få korrektioner. En enkelt tilføjelse i marginen. Tre ord og halvanden linje er slettet.</p>
+                  </physDesc>
+                </msPart>
+                <msPart xml:id="additional.3.1.2" prev="#physDesc.3.1.2">
+                  <msIdentifier xml:id="id5d33b581-7027-47ba-bc4f-ae9396cdb195">
+                    <idno xml:id="idfa08c1fe-2ea7-4a50-9297-2033916470d5">3.1.2</idno>
+                  </msIdentifier>
+                  <additional xml:id="id9a08ab66-f2ef-4422-bb7f-b82e5359db1f">
+                    <adminInfo xml:id="id7cc38d3b-978c-4c2a-be7d-80fcbc1ce332">
+                      <note xml:id="id32e6404e-7a1c-4946-a264-928b8577f5b3">
+                        <p xml:id="id0910ef7d-4c1a-4070-af14-fa1154ec1c0c">(<hi xml:id="id828708ea-84a1-48c2-9549-7389730279fe" rendition="#ita">Pap.</hi> XI 3 B 205)</p>
+                      </note>
+                    </adminInfo>
+                  </additional>
+                </msPart>
+              </msPart>
+              <msPart xml:id="additional.3.1" prev="#physDesc.3.1">
+                <msIdentifier xml:id="id3969cb96-ee41-4bff-93d6-f05d9322eb8d">
+                  <idno xml:id="id04bca49a-318e-403c-9d2d-47d574dec280">3.1</idno>
+                </msIdentifier>
+                <additional xml:id="id6d00f9bc-58d0-442c-b124-623dedfe40cf">
+                  <adminInfo xml:id="idea432e4c-c5c7-42f4-9a18-94b661846864">
+                    <note xml:id="ide815950b-3124-4f10-b699-16c9cc340f8b"/>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.3.2" next="#additional.3.2">
+                <msIdentifier xml:id="idf82f8d8a-d3e7-477d-9620-006870b6ab97">
+                  <idno xml:id="idc820a58e-9b50-4445-b8d0-eea5b088248a">3.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="id0a76d02a-cb49-41ee-b902-81e3d3d9dc16">
+                  <p xml:id="id167eef29-5201-4546-ad34-17fb9b6c949f"><pb xml:id="ss352" n="352" edRef="#SKS"/>Renskrift af første del af artiklens efterskrift (<ref xml:id="idb000c6a8-7d4e-4600-89f2-31c25378d62b" target="../BMS/txt.xml#ss125" type="publishedWritings" n="125"><hi xml:id="id778ec23b-2d0d-4859-a281-f386c8d70c8e" rendition="#ita">SKS</hi> 14, 125</ref>,44-71).</p>
+                  <p xml:id="idbd486495-d145-43de-8e97-1ea445c19a5c">1 løst blad i 4<hi xml:id="id6febe2ec-b5a1-49b6-9e97-c1c69a4203e6" rendition="#sup">o</hi> med afrivningskant i venstre side.</p>
+                  <p xml:id="idb529a22e-8ed9-4334-a27b-2a2d998ca449">Bladet er pagineret fortløbende fra ms. 3.1, dvs. 9-10.</p>
+                  <p xml:id="idc770beed-ecb2-4a5c-92f3-5a0a8a3af8c6">Papir: gulligt koncept, groft. Mål: 164 × 198 mm.</p>
+                  <p xml:id="id04193ede-9252-4c10-a22a-c217acc459f5">Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten er ubeskrevet. Bladet er efter beskrivning blevet foldet endnu en gang på langs og en gang på tværs. To tredjedele af s. 10 er ubeskrevet.</p>
+                  <p xml:id="id7b2fa495-9efe-4d20-94e3-cd102b54c449">S. 9 indledes med overskriften »<hi xml:id="id62a558d2-6fad-4524-84d1-cf1c022d2557" rendition="#spa">Efterskrift.</hi>«. S. 10 afsluttes lige over midten med dateringen <hi xml:id="id0bd8da3b-7656-4f3a-845a-40fad4d8721d" rendition="#ant">»i Efteraaret 1854.«.</hi></p>
+                  <p xml:id="id958be4bb-dc89-4362-bc69-d58a1b140048">Få korrektioner. På s. 10 er knap to linjer slettet med tætte blyantløkker.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.2" prev="#physDesc.3.2">
+                <msIdentifier xml:id="idc43ef366-5864-474e-b7b1-396d2fc1e5c0">
+                  <idno xml:id="ida95f3a1d-473d-4aec-a043-58a75425a032">3.2</idno>
+                </msIdentifier>
+                <additional xml:id="id20104068-52c8-4c5e-9619-50942ca004e5">
+                  <adminInfo xml:id="id673c5a20-2bc9-4491-b157-8378017328f0">
+                    <note xml:id="id61a7c22a-0bc2-4c9c-bcc9-51791d570876">
+                      <p xml:id="id5d5337ef-d92e-4288-baef-613c0b4d9f3b">(<hi xml:id="ide6398973-5bf3-47a1-b065-c7640fbf0cd0" rendition="#ita">Pap.</hi> XI 3 B 206)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.3.3" next="#additional.3.3">
+                <msIdentifier xml:id="idf3999300-ceae-4b71-8234-8482058774b9">
+                  <idno xml:id="id4a1ca945-da91-4718-aca5-3be5333d5e51">3.3</idno>
+                </msIdentifier>
+                <physDesc xml:id="id326de526-fb72-43a7-86b0-fd9ad7c653e3">
+                  <p xml:id="id74c12008-8a1e-4b3b-a85f-2385156a3a85">Renskrift af anden del af artiklens efterskrift (<ref xml:id="id8380e67b-6201-4e2f-89af-3b7eae8400c4" target="../BMS/txt.xml#ss125" type="publishedWritings" n="125"><hi xml:id="ide71d98a8-3f44-492e-9f27-ba9f44d9fd16" rendition="#ita">SKS</hi> 14, 125</ref>,72-126,47).</p>
+                  <p xml:id="idf9c4ca80-8bf9-4a8b-990c-c3c68207548a">1 løst blad i 4<hi xml:id="idb6f60db6-1bd9-4ed3-85de-c26cfbb3585d" rendition="#sup">o</hi> med afrivningskant i venstre side.</p>
+                  <p xml:id="id1f088a33-34be-471c-87fd-a105d760f104">Bladet er pagineret fortløbende fra ms. 3.2, dvs. 11-12.</p>
+                  <p xml:id="id1fe1a2e4-ab8f-41ce-9b56-cedb8e2aed89">Papir: gulligt koncept, groft. Mål: 164 × 198 mm.</p>
+                  <p xml:id="idd478db05-6c8f-4f0d-891a-2d817398231b">Bladet er foldet på langs; en bred inderspalte rummer tekst, yderspalten tilføjelser. Bladet er efter beskrivning blevet foldet endnu en gang på langs og en gang på tværs. Teksten afsluttes på langs i marginen på s. 12.</p>
+                  <p xml:id="iddf27ec84-b3d6-4d7c-b2b3-6d62476c0a04">S. 11 indledes med to asterisker efterfulgt af det med blyantløkker overstregede »Til Efterskriften.«. S. 12 afsluttes med dateringen <hi xml:id="id41f88f27-13b9-4701-85ba-18a9ed9431ff" rendition="#ant">»i Dec: 1854.«.</hi></p>
+                  <p xml:id="id135b5a04-9bd5-4774-8973-4e0124dcae30">Få korrektioner, herunder en blyantsletning øverst på s. 12.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.3.3" prev="#physDesc.3.3">
+                <msIdentifier xml:id="iddd7a9b78-3bab-40e7-a0df-d789d8a6659f">
+                  <idno xml:id="idfd87490a-8f7d-4d42-8fc5-d625c444235f">3.3</idno>
+                </msIdentifier>
+                <additional xml:id="id372561ab-374e-44b7-a2ef-b502a4450398">
+                  <adminInfo xml:id="id8d7da8fc-4983-48a5-ae4d-670c74a31645">
+                    <note xml:id="id0ad5c9a5-b6af-4630-a52b-b3ff355f825c">
+                      <p xml:id="id8920b507-4329-41ff-9e52-5f58a07af19e">(<hi xml:id="id94553dfd-3265-4ddd-a788-7a1fbe039b25" rendition="#ita">Pap.</hi> XI 3 B 207)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.3" prev="#physDesc.3">
+              <msIdentifier xml:id="id8bd0f89e-17b9-4612-8ce6-418768b2de6d">
+                <idno xml:id="id550829dc-6445-4eec-b8c4-3d738a188738">3</idno>
+              </msIdentifier>
+              <additional xml:id="id509c7719-dd87-45fa-917a-74983f327f01">
+                <adminInfo xml:id="id1daee791-1b90-444e-8f25-f8cad7e47e87">
+                  <note xml:id="id0ad97c44-cc45-41ed-8d2f-0e2db9c27206">
+                    <p xml:id="ide10e2847-8147-4fe4-b944-f3dac44958ea">(KA, B pk. 52, læg 1; <hi xml:id="idb0c15cfe-e075-4171-bf18-cb5c440fff2f" rendition="#ita">Pap.</hi> XI 3 B 205-207)<note xml:id="id0594d4ab-bf89-4bca-95d0-5a8dea429538"><p xml:id="ida6cd6599-61b4-46f5-9808-5a6668596f71">I KA, B pk. 52, læg 1, findes et omslag, som ikke beskrives af <hi xml:id="idcbc4cfc8-09e4-4e5e-afa6-99cf5a9fe9fd" rendition="#ita">Pap.,</hi> men som <hi xml:id="idc2bfff62-5b04-4085-a575-e31de2eb34c0" rendition="#ita">Pap.</hi> har mærket »[XI 3 B 205-207]«. Det er et stykke groft, blåt konceptpapir, der er foldet til konvolut og bærer påskrifterne »<hi xml:id="ideb28f262-31c7-4b12-bdec-1b27e73e3fda" rendition="#ita">1.</hi>« skrevet med rødkridt, formentlig af <persName xml:id="ide9cc6c58-aea9-412d-ad89-baabf2bd7338" key="Lund, Henrik">H. Lund</persName>, og <hi xml:id="ide7b5b09a-4de6-43d6-badb-39395c61639e" rendition="#spa">»Febr. Dcbr. 54«,</hi> »<hi xml:id="id1b5b8699-0a04-41c1-a0c3-d5d7c2c637bb" rendition="#spa">Concept</hi> / til / <hi xml:id="id38996fd5-b04a-4ac5-8c21-eb62130a5a4b" rendition="#spa">Var Biskop <persName xml:id="id4ac2d291-66a3-4c28-98f4-02a02bc6f3d2" key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandheds-/vidner' – er dette Sandhed?</hi>« og »'<hi xml:id="id1afb9ab8-f901-4c62-a6ff-a6f4a5fb1575" rendition="#spa">Fædrelandet'</hi> <hi xml:id="iddaebfff8-7861-4ea8-9b1c-a5c5871944d4" rendition="#bol">8/12-54</hi>«, formentlig skrevet af <persName xml:id="id8d3bbb20-ee8d-479d-a4d8-6efa1de87f54" key="Barfod, Hans Peter">H.P. Barfod</persName>.</p></note></p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+          <p xml:id="idb8ce6796-aead-44aa-85bb-7f121a897e8d">(<hi xml:id="id4f1e57c2-9ec0-48fa-b25f-b73664f855d0" rendition="#ita">L-fort. + B-fort.</hi> 6; KA, B pk. 52, læg 1; <hi xml:id="id486a0c24-9c7e-4b48-be7b-7c522e5fd9ba" rendition="#ita">Pap.</hi> XI 3 B 201-210)</p>
+        </div>
+        <div type="level1" xml:id="k3">
+          <head xml:id="idfda6676d-aca9-44a5-b6a9-34e4f85652c6"><pb xml:id="ss353" n="353" edRef="#SKS"/>3. Tilblivelseshistorie</head>
+          <p xml:id="idf7710b40-abe4-48d9-a500-a94065b1d10a">Artiklen »Var Biskop <persName xml:id="id6c628bb0-125d-494e-b54f-6d0f00ffa5ee" key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?« var startskuddet til SKs strid mod den officielle kristendomsforkyndelse i <placeName xml:id="idef92ab96-4626-4b5f-9dcc-139f8a340c2f">Danmark</placeName>; en strid, der strakte sig over 21 artikler i <hi xml:id="id2c57427c-aa76-43f0-9c9e-c2015fdd3c92" rendition="#ita">Fædrelandet</hi> (fra den 18. dec. 1854 til den 26. maj 1855) og derpå i SKs eget tidsskrift <hi xml:id="id65d207d7-c4f2-4eb3-8acc-936324ebda7c" rendition="#ita">Øieblikket.</hi><note xml:id="id6ac5dd30-63d2-482e-b4f4-560b54cdf79e"><p xml:id="iddf64b1da-71c2-41d2-a468-94480b3a5641">Se <hi xml:id="id4880f0f7-69dc-497f-9f0f-bca1ee412548" rendition="#ita">SKS</hi> 13.</p></note></p>
+          <p xml:id="id8cb3fecf-4357-4146-abbe-2ab8a37835d0" rendition="#ind">I en udateret journaloptegnelse (<ref xml:id="idbdd48494-549d-4e3d-977a-1effc16995b0" target="../NB36/txt.xml#n26" type="journalsAndPapers" n="26">NB36:26</ref>) skrevet efter den 18. dec. 1854 bemærker SK, at han havde tænkt sig at indlede kirkestriden »katastrofisk« med artiklen »Anskriget«:</p>
+          <quote xml:id="id82f2184e-ee6a-44a4-bce6-a335e007a739">
+            <p xml:id="idc61689cb-b3f4-4beb-ad71-50e9451bff87">Men førend jeg endnu ret her var klar, kom jeg allerede til at gjøre noget Andet nemlig at sætte Artiklen mod <persName xml:id="id3d9ac221-040a-42b9-a393-157c8d99fa87" key="Martensen, Hans Lassen">Martensen</persName> om <persName xml:id="idcda9ca94-8a42-4865-866a-d60350e552f0" key="Mynster, Jakob Peter">Mynster</persName> ud. Allerede derved var der svækket i Retning af det Katastrophiske.<note xml:id="id692f6367-6b9b-4a44-accb-76e05b694d10"><p xml:id="id60ef6bac-7aeb-43e0-9dc6-e1de2a6af012"><ref xml:id="id3036d0c7-abe2-4677-890c-8a0a367aa612" target="../NB36/txt.xml#ss424" type="journalsAndPapers" n="424"><hi xml:id="id8e426642-f395-4320-9a08-42b3672b3077" rendition="#ita">SKS</hi> 26, 424</ref>,25-28.</p></note></p>
+          </quote>
+          <p xml:id="id5320e158-2d69-4e58-9f30-902d613a5c06">Ikke desto mindre var striden indledt.</p>
+          <p xml:id="id60f474e9-ae11-4d5c-a009-0123d76a8a5d" rendition="#ind">Udgangspunktet for artiklen var biskop <persName xml:id="id474ef6de-d7ef-4598-9680-aa0952259af2" key="Mynster, Jakob Peter">J.P. Mynster</persName>s død den 30. jan. 1854 og <persName xml:id="id89be954f-a729-4ff1-9729-abad4fc56513" key="Martensen, Hans Lassen">H.L. Martensen</persName>s mindeprædiken over <persName xml:id="id0fdeff15-38eb-4373-b92e-00298b2f0952" key="Mynster, Jakob Peter">Mynster</persName> afholdt søndag den 5. feb. 1854, hvori afdøde blev betegnet som et sandhedsvidne.<note xml:id="id0a43a8df-79c5-4605-bb1c-9dadeb8fdee0"><p xml:id="idc2fdf007-5caf-44a6-9bc4-4a3818aaf570"><persName xml:id="id03e4a6f4-eca3-466e-a541-4929d0721d84" key="Martensen, Hans Lassen">H.L. Martensen</persName><hi xml:id="id5ad72cbe-4218-40be-b21b-f6a5c5b533b6" rendition="#ita">Prædiken holdt i <placeName xml:id="id51995f7e-a874-4bb0-bd9c-bd2946dd1b4e" key="Christiansborg Slotskirke">Christiansborgs Slotskirke</placeName> paa 5te Søndag efter Hellig Tre Konger, Søndagen før Biskop Dr. <persName xml:id="idf7ca2f7a-7463-4308-bc87-51f31e007573" key="Mynster, Jakob Peter">Mynster</persName>s Jordefærd,</hi><placeName xml:id="iddb318a5a-6550-4bf0-b4fd-8b0f4fd7c7d7" key="København">Kbh.</placeName> 1854; annonceret som udkommet i <hi xml:id="id981e939b-c592-4e88-98c0-fea09bd3f8f8" rendition="#ita">Adresseavisen,</hi> nr. 34, den 9. feb. 1854. Uddrag af prædikenen er gengivet i kommentaren til 123,<hi xml:id="id955ff58b-c5d5-4ecc-8238-14e1c3fc4418" rendition="#size-1">14</hi>, 123,<hi xml:id="id59804430-b6bb-498a-a7eb-1c29a5719efd" rendition="#size-1">19</hi> og 123,<hi xml:id="idd682cd6f-c359-4571-b668-853db1398714" rendition="#size-1">22</hi>.</p></note> Manuskriptmaterialet afspejler, at artiklen er blevet til ad flere omgange over længere tid. Ligesom artiklen kan manuskriptmaterialet inddeles i tre: hovedtekst (mss. 1.1-1.4, 2.1 og 3.1), efterskriftens første del (mss. 2.2 og 3.2) og efterskriftens anden del (mss. 2.3 og 3.3); disse dele er dateret hhv. februar, efteråret og december 1854.<note xml:id="idb4a8612b-4544-4b5c-b5f0-183741b1ec94"><p xml:id="idc2374f31-40cd-425c-8c72-aa4b4d6aeff8">Manuskriptet dateret februar 1854 er det tætteste, man kommer på en umiddelbar reaktion på <persName xml:id="ideca8e92a-6b65-48ca-9936-eb55800e64e7" key="Mynster, Jakob Peter">Mynster</persName>s død fra SKs side. SK skriver intet i sin journal fra den 2. nov. 1853, før han den 1. marts 1854 tager pennen op igen og konstaterer, at <persName xml:id="idd552b69c-0c55-4f42-9a85-d167be52d49b" key="Mynster, Jakob Peter">Mynster</persName> er død. I de løse papirer, trykt i <hi xml:id="id3da88937-0bde-44d5-a608-534a508c1106" rendition="#ita">Pap.,</hi> fra 1853-54 skriver han først om <persName xml:id="id890dc8c3-cf47-4afa-8d73-7b8911c50981" key="Mynster, Jakob Peter">Mynster</persName>s død, efter at <persName xml:id="id427c8d3f-98bb-4795-9cb7-c3309d6c2331" key="Martensen, Hans Lassen">Martensen</persName> er blevet biskop.</p></note></p>
+          <p xml:id="id11530584-cb10-4ed7-98ba-23393ccc9a12" rendition="#ind"><pb xml:id="ss354" n="354" edRef="#SKS"/>SK har først skrevet én kladde (mss. 1.1-1.2) med tilhørende renskrift (mss. 1.3-1.4): Ms. 1.1 indeholder overskriften, mens ms. 1.2 indeholder datering og signatur; disse betragtes derfor som en samlet kladde. Noget tilsvarende gælder renskriften, mss. 1.3-1.4. Ms. 1.1 indeholder bl.a. passagen:</p>
+          <quote xml:id="id3996fad6-7698-461e-9203-d3c3f691d0b6">
+            <p xml:id="id402572bb-011e-4751-a9f4-6c20959d2a6f">i Egenskab af Sandheds-Vidne lader Biskop <persName xml:id="id76c5569e-06a8-4438-8f24-037b6a166fab" key="Mynster, Jakob Peter">M.</persName> sig snarest erstatte og (for at jeg dog ogsaa skal sige Prof. <persName xml:id="id01ad9ca4-cedb-4d7d-ac13-3acdd006c22d" key="Martensen, Hans Lassen">M.</persName> en Høflighed) af Dem selv Hr. Prof. <persName xml:id="idc6f2cd9e-1ac8-4f18-857d-24229c71fdaa" key="Martensen, Hans Lassen">M.</persName>!, vær ganske ubekymret, De kan i denne Henseende meget godt erstatte ham.<note xml:id="id1808faf5-5e1d-40e7-837d-b7bd0dc41272"><p xml:id="id37fe5bb1-80b6-457b-8bd4-1706bca72584">Trykt som <ref xml:id="id355d210d-12e6-4be4-938f-4da12a88cf60" type="preparatoryManuscript" n="pap:XI3B203" rend="BMS,ms.1.1"><hi xml:id="idd4789b09-608b-4de1-85ec-8c235c6b0b51" rendition="#ita">Pap.</hi> XI 3 B 203</ref>, s. 343.</p></note></p>
+          </quote>
+          <p xml:id="id5ac1cd1c-7357-437b-b119-098e5ca89946">Dvs. at ms. 1.1 formentlig er skrevet, efter at <persName xml:id="ida22ffb98-f2ac-43e8-a215-f37b8edbf045" key="Martensen, Hans Lassen">Martensen</persName> blev udnævnt til biskop den 15. april 1854, måske først efter han blev bispeviet den 5. juni 1854. Da ms. 1.2 er dateret i februar 1854, må ms. 1.2 således være skrevet før ms. 1.1.</p>
+          <p xml:id="idbaec1b69-cc58-4972-9b85-4be0272fbc01" rendition="#ind">Disse forarbejder er langt mere omfattende end den trykte artikel; en del afsnit og passager kan spores i artiklens hovedtekst, men langtfra alle.<note xml:id="id3a62fec6-8c83-4bea-b7c9-7982e42897e4"><p xml:id="idda71cbe6-33af-4c49-abc5-aa52f82ae965">Følgende passager i den trykte artikel figurerer allerede i mss. 1.1-1.4: »I den Tale <hi xml:id="id12b90224-5106-4fb7-945a-012c2113f668" rendition="#ita">(...)</hi> 'den hellige Kjæde af Sandhedsvidner, som strækker sig gjennem Tiderne fra Apostlernes Dage' osv.«, »Biskop <persName xml:id="id1ead2e41-531f-4337-b358-a2fa53bb01c8" key="Mynster, Jakob Peter">Mynster</persName> et Sandhedsvidne!«, »Du som læser dette, Du veed vel, hvad der christeligt forstaaes ved et Sandhedsvidne«, og »gjøre Dig det nærværende. Et Sandhedsvidne, det er en Mand <hi xml:id="idd2c53c39-66c7-40df-9d3e-804a4826ae60" rendition="#ita">(...)</hi> Dette er et Sandhedsvidne«.</p></note> SK arbejdede altså siden videre på teksten: Ms. 2.1 er en bearbejdet version af mss. 1.3-1.4; teksten er både blevet beskåret og har fået tilføjet nye passager. I renskriften (ms. 3.1) ses i øvrigt to lange passager tilføjet og en del rettelser, som siden er indført det tilsvarende sted i kladden. Tilbageførslen af ændringer fra renskrift til kladde har formentlig skullet sikre, at ændringerne blev bevaret, hvis renskriften skulle blive beskadiget eller gå tabt.</p>
+          <p xml:id="id05ecc84d-2fe6-4686-ade2-aad24e62d2c3" rendition="#ind">Hvornår kladden til artiklens hovedtekst (ms. 2.1) er blevet til, vides ikke med sikkerhed. På renskriften (ms. 3.1) ses igen dateringen <hi xml:id="id312cb00f-205d-4c96-a996-ce8f8042deb7" rendition="#ant">»i Febr. 1854«,</hi> den samme som på forlæggets anden del (mss. 1.2 og 1.4). Da forlæggets første del (mss. 1.1 og 1.3) sandsynligvis er blevet til senere end februar 1854, kan det tænkes, at dateringen af ms. 3.1 er sket på baggrund af mss. 1.2 og 1.4, og ikke fordi ms. 3.1 rent faktisk er blevet skrevet i februar.</p>
+          <p xml:id="id3e00d096-b4da-4249-88d7-4d3a86cf614e" rendition="#ind"><pb xml:id="ss355" n="355" edRef="#SKS"/>SK havde dog ingen intentioner om at blande sig i debatten om bispevalget i foråret 1854. I stedet blev der arbejdet videre på teksten. Efterskriftens første del (ms. 2.2) blev til <hi xml:id="id76bd2645-1c54-4a05-9548-dea736d6c942" rendition="#ant">»i Efteraaret 1854«,</hi> efterskriftens anden del (ms. 2.3) <hi xml:id="id05f2d817-de51-4f71-8979-39837361db92" rendition="#ant">»i Dec: 1854«.</hi></p>
+          <p xml:id="idb0a7a41a-ac8b-42d9-b9f0-a5f77937c1bb" rendition="#ind">SK indleverede renskriften (mss. 3.1-3.3) til sætteriet, senest den 18. dec., hvor det til sætter blev tilføjet, at artiklen skulle være klar kl. 12.</p>
+        </div>
+        <div type="level1" xml:id="k4">
+          <head xml:id="idaf32cbe5-eab6-4579-83c8-1b7e603a42e2">4. Udgivelsesmåde</head>
+          <p xml:id="id63567199-0b40-4456-99e0-ba5ec861fd1f">»Var Biskop <persName xml:id="idec734eb8-aed3-44f4-8fbb-1e893393f2b2" key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?« blev som nævnt trykt i <hi xml:id="id688904b1-9674-45aa-9244-96b27824d3e5" rendition="#ita">Fædrelandet.</hi><note xml:id="id70fc0744-5e07-49fd-94c0-5184dbbeb1c7"><p xml:id="idac280407-a1f7-4a4a-84f5-4df11fb86b7f">En nærmere redegørelse for <hi xml:id="id07da8a66-94f6-4658-99ad-c7e59e28f14a" rendition="#ita">Fædrelandets</hi> redaktionelle forhold, periodicitet og oplagstal findes i <ref xml:id="idfb43f26f-8795-412c-bd42-629383e259b0" target="../AaS/txr.xml#ss112" type="textCriticalAccount" n="112">tekstredegørelsen til »Aabenbart Skriftemaal«, s. 112</ref>f.</p></note> Det har ikke været muligt at efterspore, om SK modtog honorar for artiklen.</p>
+          <p xml:id="idbcebae4c-d417-4b1d-b357-19282f584338" rendition="#ind">Dele af artiklen blev frit oversat til svensk allerede i SKs levetid; bogen <hi xml:id="id4f5d8449-70b9-48d1-bc66-247fa9133afc" rendition="#ita">Den officiella kristendomen är icke det nya testamentets kristendom. Framställning af dr. <persName xml:id="id8a1d257b-4737-42df-a4ba-580c6346ca38" key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>'s polemik mot statskyrkan i <placeName xml:id="id9eec25ec-d8be-48f0-b15d-43ad6c24b269">Danmark</placeName>,</hi> hvori de fleste af SKs artikler fra kirkestriden er blevet oversat i uddrag, udkom i <placeName xml:id="ide86aed1e-81ed-4e18-8bae-3ac879eeded8">København</placeName> i 1855.<note xml:id="id0f48fc72-bc5c-4d81-aaaa-da8b908d6a32"><p xml:id="id9258d41e-6529-44bc-9762-219380f5d4af">Et dedikationseksemplar fastslår, at det var den svenske journalist O.P. Sturzen-Becker, på det tidspunkt bosiddende i <placeName xml:id="id33299384-9255-4e2b-9777-6d00b319ba54">København</placeName>, der anonymt udgav bogen. Dedikationseksemplaret findes på Kungl. biblioteket i <placeName xml:id="id38986e29-7b66-4249-a1ca-e6beb088d5ed">Stockholm</placeName> med signaturen <persName xml:id="id8050bdd4-89d0-4581-84d7-c749673acf55" key="Rar">Rar</persName>. 726. Eksemplaret var ikke blandt SKs efterladte bøger, og det formodes derfor, at SK har sendt det retur til forfatteren, jf. Aage Kabell <hi xml:id="id73ecba8f-5329-40c0-88af-82c7c605eb9c" rendition="#ita">Kierkegaardstudiet i <placeName xml:id="id89e9bd88-fc55-4cf6-afe8-d5f14d242023">Norden</placeName>,</hi> <placeName xml:id="id5ad8cde6-76ca-4d81-8c84-0fa5841091cd" key="København">Kbh.</placeName> 1948, s. 73.</p></note> De fragmentariske oversættelser strækker sig til og med artiklen »Et Resultat«, trykt i <hi xml:id="idb0ab336a-2486-4518-9074-6d9d01f7ec63" rendition="#ita">Fædrelandet,</hi> nr. 107, den 10. maj 1855; den anonyme redaktør har sandsynligvis antaget, at SK under denne overskrift afsluttede sit angreb på kirken, og har herefter ladet bogen trykke.</p>
+          <p xml:id="id46ab2be8-25b8-4ce2-8240-ad125ab37e41" rendition="#ind">Af stor betydning for receptionen i SKs umiddelbare eftertid var <persName xml:id="id3ccf3c04-068a-4232-94d8-c8d4c2473a96" key="Nielsen, Rasmus">Rasmus Nielsen</persName>s udgivelse af <hi xml:id="idda52f67e-b13f-47cb-afd4-df48040bb0ad" rendition="#ita"><persName xml:id="id890f7a22-d5be-4dcd-bcee-cac7b88275a7" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>'s Bladartikler</hi> i 1857 <hi xml:id="id92d9aa41-75a4-48ac-b8ba-a37132b2d205" rendition="#ita">(Bl.art.).</hi> Heri indgår størstedelen af SKs artikler, også »Var Biskop <persName xml:id="idf7bb0fb1-825d-4c93-b1c6-799f3b8c52e2" key="Mynster, Jakob Peter">Mynster</persName> et 'Sandhedsvidne', et af 'de rette Sandhedsvidner' – er dette Sandhed?«.<note xml:id="id0c35e8a1-d216-4def-8da0-637fb8db182a"><p xml:id="idcf5b058e-feba-4347-a9c1-e59bc4309241">Artiklen er trykt i <hi xml:id="id495b86ae-d0f2-48e4-89bf-5b9ad7bfc023" rendition="#ita">Bl.art.,</hi> s. 57-62. SK havde selv planer om, men fik ikke realiseret, en samlet udgivelse af kirkestridsartiklerne, jf. <ref xml:id="id6c9d33dc-b5af-4274-bad1-bff0678c3e04" type="preparatoryManuscript" n="pap:XI3B128-135"><hi xml:id="id65d93b54-6bfb-4a43-813d-0972b7dfab40" rendition="#ita">Pap.</hi> XI 3 B 128-135</ref>.</p></note></p>
+        </div>
+      </div>
+    </body>
+  </text>
 </TEI>

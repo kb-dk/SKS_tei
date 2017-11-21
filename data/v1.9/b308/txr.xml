@@ -1,121 +1,470 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model 
-   href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_allPlus.rng"
-   type="application/xml"
-   schematypens="http://relaxng.org/ns/structure/1.0"
-  ?><!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Læserinder</title>
-     
-     <title type="short">B308</title>
-  <author>
-   <name>Elise Iuul</name><name>Thomas Eske Rasmussen</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Thomas Eske Rasmussen. Citater</name><name>henvisninger kontrolleret af Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2012</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K28</biblScope>
-     <biblScope unit="file">http://sks.dk/b308/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition xml:id="sub" scheme="css">vertical-align: sub; font-size: 80%;</rendition><rendition xml:id="lineHight1" scheme="css">line-height:150%</rendition><rendition xml:id="lineHight2" scheme="css">line-height:200%</rendition><rendition xml:id="capiTyp" scheme="free">Some spectacular type setting, in SKS rendered in small caps</rendition><rendition xml:id="size-1" scheme="css">font-size: 83%</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20130220">txr/XML, <bibl><idno type="version">1.8</idno>, <biblScope unit="file">http://sks.dk/b308/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id6db8bc53-4234-4c90-901c-b505662b6405">
+    <fileDesc xml:id="id64ba37c6-73a6-4493-88bc-8a5171766039">
+      <titleStmt xml:id="idf891b3e7-76c0-4b92-a762-65620b11c878">
+        <title xml:id="id354706bf-32dd-4f29-b4af-8545ec9af73a" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="idabbb7809-3044-457c-a8a8-0028881e3157">Læserinder</title>
+        <title xml:id="id81fb8021-e7df-41c4-a7ef-99899ad96f40" type="short">B308</title>
+        <author xml:id="id8f318d5d-ab62-42c9-9ad0-7743829691ce">
+          <name xml:id="id2aaedee8-a4b3-48ec-999c-5fbb5d53d442">Elise Iuul</name>
+          <name xml:id="id7573ea4c-7ca0-402d-b47d-11467496ed8e">Thomas Eske Rasmussen</name>
+        </author>
+        <editor xml:id="id68e01f8c-30fe-4b12-a859-8fc9615cc5ef">
+          <name xml:id="idc9694046-1486-4b4a-8125-ca25b1d41f06">Niels Jørgen Cappelørn</name>
+          <name xml:id="ide969ccbb-78d9-4707-a3d0-f1862403987e">Joakim Garff</name>
+          <name xml:id="id5866df80-1b51-4f6d-9b20-d7e8b9bcbef5">Johnny Kondrup</name>
+          <name xml:id="id173a3f96-d9f8-4c82-add8-9d59b6575966">Tonny Aagaard Olesen</name>
+          <name xml:id="idad3ede4f-e821-4eae-b49d-a8339cf75ca6">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="idd75ce2ec-ee18-4e61-a74e-ddc285b51ac4">
+          <resp xml:id="ida48b3fe0-5a25-465e-b8a0-90c81c593cc8">redigeret af</resp>
+          <name xml:id="idedca955b-1f7e-4f7b-9086-0feee72c0a5f">Thomas Eske Rasmussen. Citater</name>
+          <name xml:id="id697e80cc-e227-47c5-adb9-c747b1f2534d">henvisninger kontrolleret af Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="ide285b388-b4d5-4ea9-baf7-71d31b94e761">
+          <resp xml:id="id2158e276-f50f-4000-a854-2b330c631cad">elektronisk redigeret af</resp>
+          <name xml:id="id42cc643a-4aea-4b54-9355-d8d15449a05b">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="iddecf0a73-3695-4f96-84e3-4eec88b7478f">
+        <authority xml:id="id36d14731-12b9-4d97-bb8e-935a22bfa686">Søren Kierkegaard Forskningscenteret 2012</authority>
+        <availability xml:id="id28a05905-33af-474e-acd0-2d7ecf80f204" status="restricted">
+          <p xml:id="idfe370946-b18e-4257-a994-fcecc4631663">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id9f8c0edf-58bd-4ad7-9ed8-7dcd1640024f">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="idcdf8fa3b-f30c-4f6c-981a-530536a2ce30" unit="volume">K28</biblScope>
+        <biblScope xml:id="ide8ced4a7-3107-4d35-be98-40024d87087e" unit="file">http://sks.dk/b308/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id94619497-7ab9-4109-a39f-375cd6e42608">
+        <bibl xml:id="id43afd2b7-b585-4202-bbb3-a1118615a538" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id781ca291-3ea3-4007-9f31-4f0e52ad8604">
+      <tagsDecl xml:id="id4111daa6-21c8-4053-b3d6-3825915d2660">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="free" xml:id="ant">antiqua typeface, in SKS rendered sans-serif</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition xml:id="sub" scheme="css">vertical-align: sub; font-size: 80%;</rendition>
+        <rendition xml:id="lineHight1" scheme="css">line-height:150%</rendition>
+        <rendition xml:id="lineHight2" scheme="css">line-height:200%</rendition>
+        <rendition xml:id="capiTyp" scheme="free">Some spectacular type setting, in SKS rendered in small caps</rendition>
+        <rendition xml:id="size-1" scheme="css">font-size: 83%</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="iddc20063b-a11c-46db-80be-051fcc8527dd">
+      <change xml:id="idc87f88cc-8188-46ae-95dc-0d8b305d9ffd">Transformed to TEI by style sheet <bibl xml:id="idbd619991-0aa5-4180-9b64-2de84605c4f0" type="file">txr2tei.xsl</bibl> version as of <date xml:id="id0e10966b-13f3-4879-83b4-f6dc0a11c0e8">2017-02-15</date> importing <bibl xml:id="idf837b3e5-5a27-4494-8b97-c40d6fe127e8" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="id1dcb40c4-45ac-467c-94df-dd8747b16e50">Transformed to TEI by style sheet <bibl xml:id="ida4512ce8-1235-4641-abde-5744a362235a" type="file">kn12tei.xsl</bibl> version <idno xml:id="id667ab064-aa87-483b-a864-3f6ba2143d30" type="version">1.9</idno> as of <date xml:id="id6a16ff12-a783-4641-ada6-7bb5c480fbf3">2017-02-21</date> by <name xml:id="idab841f6a-dd65-44bf-abed-7c56155c7a65">Karsten Kynde</name>, <orgName xml:id="id9b268c91-7ad8-4989-922c-2d2ac415f20b">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="id408cb562-e53e-4538-bf77-5ca4d0d6a1f1">København</placeName></change>
+      <change xml:id="id50890078-d5c5-4e27-81d4-4f10d9647b00" when="20130220">txr/XML, <bibl xml:id="id2a9e46f4-6388-4ef9-bf91-9d1deadfc690"><idno xml:id="id9aba3461-8f3b-4aa6-82cc-f534b16394b9" type="version">1.8</idno>, <biblScope xml:id="id9900369d-ce32-470b-aa96-dd286f47fd98" unit="file">http://sks.dk/b308/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
-
-<text type="TextCriticalAccount" subtype="lettersAndDedications"><body><div><head type="topText" n="Tekstredegørelse"/>
-    <head>Tekstredegørelse</head>
-    <list type="TOC">
-      <item>1. Manuskriptbeskrivelse<ptr type="chapter" target="#k1" n=""/></item>
-      <item>2. Datering og kronologi<ptr type="chapter" target="#k2" n="621"/></item>
-    </list>
-    <div type="level1" xml:id="k1">
-      <head>1. Manuskriptbeskrivelse</head>
-      <p>Til brevene i gruppen »Læserinder« findes følgende manuskripter, hvoraf <ref target="../B308/txt.xml#n308" type="lettersAndDedications" n="308">Brev 308</ref>-310 og 312-317 befinder sig i Kierkegaard Arkivet (KA) og 311 befinder sig i Ny Kongelig Samling (NKS) på
-        <placeName key="Kongelige Bibliotek, Det">Det Kongelige Bibliotek</placeName>. <ref target="../B308/txt.xml#n318" type="lettersAndDedications" n="318">Brev 318</ref> er gået tabt, men findes i en afskrift af <persName key="Barfod, Hans Peter">H.P. Barfod</persName>.<note> <p>Brevene er første gang trykt i <hi rendition="#ita">EP</hi> eller <hi rendition="#ita">B&amp;A</hi>.</p>
-        </note></p>
-      <msDesc><msIdentifier><collection>B308</collection></msIdentifier>
-        <msPart xml:id="physDesc.308" next="#additional.308"><msIdentifier><idno>308</idno></msIdentifier><physDesc><p><ref target="../B308/txt.xml#n308" type="lettersAndDedications" n="308">Brev 308</ref>. Fra <persName key="Bremer, Fredrika">Fredrika Bremer</persName> til <persName key="Victor Eremita">Victor Eremita</persName> (<hi rendition="#ita">SKS</hi> 28, 467).</p><p>1 dobbeltblad i 8<hi rendition="#sup">o</hi> med afrevet kant øverst.<note>
-                <p>Udgangspunktet for formatbetegnelsen er plane helark, som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Irregulære, fx afrevne, enheder betegnes som lapper. Dobbeltblad betegner et stykke papir, der er ombøjet (foldet) til blade.</p>
-              </note></p><p>Ingen paginering.</p><p>Papir: gulligt velin, glat. Mål: ca. 135 × 215 mm.<note>
-                <p>Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p>
-              </note></p><p>Bladene har været foldet to gange på langs og to gange på tværs til konvolut (mål: 125 × 65 mm<note>
-                <p>Oplysningen om konvoluttens mål gælder det foldede brev, alternativt den separate konvolut. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant); øverste kant bestemmes af udskriftens skriveretning.</p>
-              </note>); rest af rødlig oblat.<note>
-                <p>Det gælder for alle breve, der har været foldet til konvolut og forseglet, at brevmodtagerens brud på forseglingen har forårsaget en mindre beskadigelse af ms.</p>
-              </note> Bladene bærer spor efter endnu en foldning på langs.</p><p>Bl. [1v] er to tredjedele beskrevet, bl. [2r] ubeskrevet.</p><p>En enkelt korrektion.</p></physDesc></msPart><msPart xml:id="additional.308" prev="#physDesc.308"><msIdentifier><idno>308</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 316; KA, D pk. 2 læg 3; <hi rendition="#ita">B&amp;A</hi> 201)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.309" next="#additional.309"><msIdentifier><idno>309</idno></msIdentifier><physDesc><p><pb xml:id="ss618" n="618" edRef="#SKS"/><ref target="../B308/txt.xml#n309" type="lettersAndDedications" n="309">Brev 309</ref>. Fra <persName key="Bremer, Fredrika">Fredrika Bremer</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 468).</p><p>1 løst blad i stor 4<hi rendition="#sup">o</hi> med afrevet kant øverst.</p><p>Ingen paginering.</p><p>Papir: gulligt postvelin, glat; i øverste venstre hjørne et blindtryk: <hi rendition="#capiTyp">bath</hi> i rektangulær ramme omkranset af bladløv. Mål: 275 × 215 mm.</p><p>Bladet har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 138 × 83 mm).</p><p>En enkelt korrektion.</p></physDesc></msPart><msPart xml:id="additional.309" prev="#physDesc.309"><msIdentifier><idno>309</idno></msIdentifier><additional><adminInfo><note><p>([<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 316]<note> <p>I <hi rendition="#ita">B-fort.</hi> er kun anført et enkelt brev fra <persName key="Bremer, Fredrika">Fredrika Bremer</persName>, jf. <ref target="../B308/txt.xml#n308" type="lettersAndDedications" n="308">Brev 308</ref>.</p> </note>; KA, D pk. 2 læg 3; <hi rendition="#ita">B&amp;A</hi> 203)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.310" next="#additional.310"><msIdentifier><idno>310</idno></msIdentifier><physDesc><p><ref target="../B308/txt.xml#n310" type="lettersAndDedications" n="310">Brev 310</ref>. Fra SK til <persName key="Bremer, Fredrika">Fredrika Bremer</persName>, kladde (<hi rendition="#ita">SKS</hi> 28, 468-469).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med uregelmæssigt afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 160-171 × 206 mm.</p><p>Bladet har før beskrivning været foldet en gang på langs til en bred inderspalte og en smal yderspalte.</p><p>Rectosiden er beskrevet i hele sidens bredde, versosiden i en enkelt linje. Bladet har efter beskrivning været foldet tre gange på tværs.</p><p>Mange korrektioner. En enkelt sletning foretaget med blyant.</p></physDesc></msPart><msPart xml:id="additional.310" prev="#physDesc.310"><msIdentifier><idno>310</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 316; KA, D pk. 2 læg 3; <hi rendition="#ita">B&amp;A</hi> 204)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.311" next="#additional.311"><msIdentifier><idno>311</idno></msIdentifier><physDesc><p><ref target="../B308/txt.xml#n311" type="lettersAndDedications" n="311">Brev 311</ref>. Fra <persName key="Bretteville, Fanny Lodovica de">Fanny Lodovica de Bretteville</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 469-473); består af et manuskript og en renskrift. Tekstgrundlaget i <hi rendition="#ita">SKS</hi> 28 er ms. 311.2:</p></physDesc>
-              <msPart xml:id="physDesc.311.1" next="#additional.311.1"><msIdentifier><idno>311.1</idno></msIdentifier><physDesc><p>Manuskriptet »Nogle Bemærkninger over <persName key="Mynster, Jakob Peter">Mynster</persName>s Gjensvar paa <persName key="Ørsted, Hans Christian">Ørsted</persName>s 'Aanden i Naturen.'«</p><p>1 sammenhæftning af 4 dobbeltblade i 8<hi rendition="#sup">o</hi>; hæftetråd af hvid silke.</p><p>Bladene er pagineret 1-14, bl. [8] er upagineret.</p><p>Papir: blåligt postvelin, glat; i bladenes øverste højre hjørne findes et blindtryk med våbenskjoldsmotiv. Mål: 135 × 208 mm.</p><p>Bladene har efter beskrivning været foldet en gang på langs og tre gange på tværs.</p><p>Bl. [7v] er halvt beskrevet, bl. [8r]-[8v] ubeskrevet.</p><p>S. 1 har overskriften: »Nogle Bemærkninger over <persName key="Mynster, Jakob Peter">Mynster</persName>s Gjensvar paa <persName key="Ørsted, Hans Christian">Ørsted</persName>s 'Aanden i Naturen.'«</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.311.1" prev="#physDesc.311.1"><msIdentifier><idno>311.1</idno></msIdentifier><additional><adminInfo><note/></adminInfo></additional></msPart>
-              <msPart xml:id="physDesc.311.2" next="#additional.311.2"><msIdentifier><idno>311.2</idno></msIdentifier><physDesc><p>Renskrift.</p><p>2 dobbeltblade i 8<hi rendition="#sup">o</hi>. Spor efter sammenhæftning.</p><p>Bladene er pagineret fortløbende 1-7, bl. [4v] er upagineret.</p><p><pb xml:id="ss619" n="619" edRef="#SKS"/>Papir: blåligt postvelin, glat; øverst i højre hjørne på bl. [1] og nederst i højre hjørne på bl. [4] findes et blindtryk med våbenskjoldsmotiv. Mål: 135 × 208 mm.</p><p>Bladene har efter beskrivning været foldet en gang på langs og tre gange på tværs.</p><p>Bl. [4v] er ubeskrevet.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.311.2" prev="#physDesc.311.2"><msIdentifier><idno>311.2</idno></msIdentifier><additional><adminInfo><note><p>(NKS 1994 2<hi rendition="#sup">o</hi>;<note> <p>Ms. er tilgået <placeName key="Kongelige Bibliotek, Det">Det Kongelige Bibliotek</placeName> fra en slægtning af afsenderen, jf. omslagsteksten: »<persName key="Bretteville, Fanny Lodovica de">Ludovica de Bretteville</persName> til <persName key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>« og »Gave fra Landinspektør Skjold Simesen 31/3 1931.«</p>
-                    </note> <hi rendition="#ita">B&amp;A</hi> 270)</p></note></adminInfo></additional></msPart>
-            </msPart><msPart xml:id="additional.311" prev="#physDesc.311"><msIdentifier><idno>311</idno></msIdentifier><additional><adminInfo><note><p>(NKS 1994 2<hi rendition="#sup">o</hi>;<note> <p>Ms. er tilgået <placeName key="Kongelige Bibliotek, Det">Det Kongelige Bibliotek</placeName> fra en slægtning af afsenderen, jf. omslagsteksten: »<persName key="Bretteville, Fanny Lodovica de">Ludovica de Bretteville</persName> til <persName key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>« og »Gave fra Landinspektør Skjold Simesen 31/3 1931.«</p>
-              </note> <hi rendition="#ita">B&amp;A</hi> 270)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.312" next="#additional.312"><msIdentifier><idno>312</idno></msIdentifier><physDesc><p><ref target="../B308/txt.xml#n312" type="lettersAndDedications" n="312">Brev 312</ref>. Fra SK til Fanny <persName key="Bretteville, Fanny Lodovica de">Lodovica de Bretteville</persName>, kladde (<hi rendition="#ita">SKS</hi> 28, 473-475).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 168 × 207 mm.</p><p>Bladet har efter beskrivning været foldet en gang på tværs. Rest af rødt, stumt laksegl, muligvis anbragt af <persName key="Barfod, Hans Peter">H.P. Barfod</persName> under arbejdet med ms.</p><p>Mange korrektioner. Ud for versosidens afsnit »Deres Skrivelser <hi rendition="#ita">(...)</hi> hvad jeg ikke er.« (<hi rendition="#ita">SKS</hi> 28, 474,15-20) er skrevet »1.« med blæk ud for rectosidens afsnit »Blot Eet <hi rendition="#ita">(...)</hi> at jeg er ingen ingen Skriftefader.« (<hi rendition="#ita">SKS</hi> 28, 474,22-28) er skrevet »2« med blæk. Begge afsnit er slettet med blyant. Desuden findes to tilføjelser i randen af papiret, hvoraf »i den emanciperede Tænkning,« (<hi rendition="#ita">SKS</hi> 28, 474,11-12) er indvist i teksten med blåkridt, muligvis af <persName key="Barfod, Hans Peter">Barfod</persName>. I rectosidens nederste højre hjørne er med blyant skrevet: »<hi rendition="#ant">verte</hi>«. Hele tekststykket er indrammet med en blyantparentes på nær de nederste tre linjer på versosiden, »Papirerne bleve <hi rendition="#ita">(...)</hi> indlade mig.« (<hi rendition="#ita">SKS</hi> 28, 475,11-12).</p></physDesc></msPart><msPart xml:id="additional.312" prev="#physDesc.312"><msIdentifier><idno>312</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> 319, <hi rendition="#ita">B-fort.</hi> 319.44; KA, D pk. 2 læg 34; <hi rendition="#ita">B&amp;A</hi> 271)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.313" next="#additional.313"><msIdentifier><idno>313</idno></msIdentifier><physDesc><p><ref target="../B308/txt.xml#n313" type="lettersAndDedications" n="313">Brev 313</ref>. Fra <persName key="e – e">e – e</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 475-477).</p><p>1 dobbeltblad i høj 8<hi rendition="#sup">o</hi> med afrevet kant nederst.</p><p>Ingen paginering.</p><p>Papir: gråligt velin, glat. Mål: 134 × 214 mm.</p><p>Bladene har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 116 × 53 mm); brunligt, stumt laksegl. Bladet bærer præg af yderligere en foldning på tværs.</p><p>Bl. [2r] er ubeskrevet.</p><p>En enkelt korrektion.</p><p>På konvoluttens forside findes et grønligt, ellipseformet poststempel: <pb xml:id="ss620" n="620" edRef="#SKS"/>»F: 9 <formula xmlns:m="http://www.w3.org/1998/Math/MathML" notation="mathml"><m:math><m:mfrac bevelled="true"><m:mi>23</m:mi><m:mi>5</m:mi></m:mfrac></m:math></formula> 51 P:«. Der findes spor efter et frimærke annulleret med stumt ringstempel. Med blyant er under udskriften skrevet »Østerbroe –« og i øverste venstre hjørne »10« med fremmed hånd.</p></physDesc></msPart><msPart xml:id="additional.313" prev="#physDesc.313"><msIdentifier><idno>313</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 239; KA, D pk. 2 læg 18; <hi rendition="#ita">B&amp;A</hi> 277)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.314" next="#additional.314"><msIdentifier><idno>314</idno></msIdentifier><physDesc><p><ref target="../B308/txt.xml#n314" type="lettersAndDedications" n="314">Brev 314</ref>. Fra <persName key="S: F:">S: F:</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 477-480); består af en renskrift og en konvolut.</p></physDesc>
-              <msPart xml:id="physDesc.314.1" next="#additional.314.1"><msIdentifier><idno>314.1</idno></msIdentifier><physDesc><p>Renskrift.</p><p>1 dobbeltblad i stor 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt velin, glat; blindtryk midt på bl. [1]: våbentelt med to vildmænd omkring et skjold. Mål: 205 × 255 mm.</p><p>Bladene har været foldet to gange på langs og to gange på tværs til indstik i konvolut. Bladene bærer præg af yderligere foldning.</p><p>Bl. [2v] er halvt beskrevet.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.314.1" prev="#physDesc.314.1"><msIdentifier><idno>314.1</idno></msIdentifier><additional><adminInfo><note/></adminInfo></additional></msPart>
-              <msPart xml:id="physDesc.314.2" next="#additional.314.2"><msIdentifier><idno>314.2</idno></msIdentifier><physDesc><p>Konvolut.</p><p>1 løst blad i stor 4<hi rendition="#sup">o</hi> med afrevet kant i højre side.</p><p>Ingen paginering. Konvolutten er folieret særskilt af <hi rendition="#ita">SKS.</hi></p><p>Papir: gulligt velin, glat; blindtryk midt på bladet: våbentelt med to vildmænd omkring et skjold. Mål: 205 × 255 mm.</p><p>Bladet har været foldet to gange på langs og to gange på tværs til konvolut (mål: 131 × 90 mm); to limoblater.</p><p>Versosiden er ubeskrevet.</p><p>Ingen korrektioner.</p><p>På konvoluttens forside findes et grønligt ellipseformet poststempel: »F: 6 <formula xmlns:m="http://www.w3.org/1998/Math/MathML" notation="mathml"><m:math><m:mfrac bevelled="true"><m:mi>[2]3</m:mi><m:mi>5</m:mi></m:mfrac></m:math></formula> 51 P:«; desuden spor efter et frimærke annulleret med stumt ringstempel.</p></physDesc></msPart><msPart xml:id="additional.314.2" prev="#physDesc.314.2"><msIdentifier><idno>314.2</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 239; KA, D pk. 2 læg 30; <hi rendition="#ita">B&amp;A</hi> 278)</p></note></adminInfo></additional></msPart>
-            </msPart><msPart xml:id="additional.314" prev="#physDesc.314"><msIdentifier><idno>314</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 239; KA, D pk. 2 læg 30; <hi rendition="#ita">B&amp;A</hi> 278)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.315" next="#additional.315"><msIdentifier><idno>315</idno></msIdentifier><physDesc><p><ref target="../B308/txt.xml#n315" type="lettersAndDedications" n="315">Brev 315</ref>. Fra <persName key="Ross, Petronella von">Petronella Ross</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 481-482).</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt velin, glat. Mål: 171 × 204 mm.</p><p>Bladene har efter beskrivning været foldet tre gange på langs og tre gange på tværs.</p><p>Bl. [1v] er to tredjedele beskrevet, bl. [2r] i en enkelt linje.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.315" prev="#physDesc.315"><msIdentifier><idno>315</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 239; KA, D pk. 2 læg 25; <hi rendition="#ita">B&amp;A</hi> 280)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.316" next="#additional.316"><msIdentifier><idno>316</idno></msIdentifier><physDesc><p><pb xml:id="ss621" n="621" edRef="#SKS"/><ref target="../B308/txt.xml#n316" type="lettersAndDedications" n="316">Brev 316</ref>. Fra <persName key="Fibiger, Ilia">Ilia Fibiger</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 482-485).</p><p>1 dobbeltblad i stor 8<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: blåligt post-velin, ribbet. Mål: ca. 140 × 218 mm.</p><p>Bladene har været foldet to gange på tværs.</p><p>En enkelt korrektion.</p></physDesc></msPart><msPart xml:id="additional.316" prev="#physDesc.316"><msIdentifier><idno>316</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 239; KA, D pk. 2 læg 31; <hi rendition="#ita">B&amp;A</hi> 289)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.317" next="#additional.317"><msIdentifier><idno>317</idno></msIdentifier><physDesc><p><ref target="../B308/txt.xml#n317" type="lettersAndDedications" n="317">Brev 317</ref>. Fra <persName key="L.H.">L.H.</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 485-488).</p><p>1 dobbeltblad + 1 løst blad i 8<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt postvelin, glat. Mål: 135 × 206 mm.</p><p>Bladene har været foldet tre gange på tværs; det løse blad har været foldet to gange på langs og to gange på tværs til konvolut (mål: 138 × 55 mm); sort laksegl med signeten: »H H«. Bladene bærer præg af yderligere foldning på tværs.</p><p>Bl. [3v] er beskrevet i syv linjer, dog uden at dække konvoluttens udskrift (<hi rendition="#ita">SKS</hi> 28, 488,20-26).</p><p>Få korrektioner.</p><p>På konvolutten, bl. [3v], findes et ellipseformet poststempel: »F: 9 <formula xmlns:m="http://www.w3.org/1998/Math/MathML" notation="mathml"><m:math><m:mfrac bevelled="true"><m:mi>31</m:mi><m:mi>3</m:mi></m:mfrac></m:math></formula> 52 P:« og et frimærke pålydende <hi rendition="#capiTyp">fire r.b.s.,</hi> annulleret med stumt ringstempel. Der er desuden en postal påtegning (se <ref target="../B308/txt.xml#ill_24" type="figure" n="484">illustration 24</ref> i <hi rendition="#ita">SKS</hi> 28, 484).</p></physDesc></msPart><msPart xml:id="additional.317" prev="#physDesc.317"><msIdentifier><idno>317</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort.</hi> + <hi rendition="#ita">B-fort.</hi> 239; KA, D pk. 2 læg 17; <hi rendition="#ita">B&amp;A</hi> 292)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.318" next="#additional.318"><msIdentifier><idno>318</idno></msIdentifier><physDesc><p><ref target="../B308/txt.xml#n318" type="lettersAndDedications" n="318">Brev 318</ref>. Fra en ukendt til SK (<hi rendition="#ita">SKS</hi> 28, 489).</p><p>Ms. er gået tabt, men findes i afskrift af <persName key="Barfod, Hans Peter">H.P. Barfod</persName>, som indledningsvis skriver: »S.K. opbevarede blandt sine Papirer følgende af en meget uøvet <hi rendition="#ita">Kvinde</hi>haand skrevne <hi rendition="#ita">Billet</hi>, der har nogen Interesse ved det Vidnesbyrd, den indeholder om <persName key="Kierkegaard, Søren Aabye">S.K.</persName>s Indflydelse selv paa Steder, hvor man ikke skulde vente at finde hans Skrifter læste og paaskjønnede.«<note> <p>Det er uvist, hvorfor <persName key="Barfod, Hans Peter">Barfod</persName> foretog en afskrift af ms., som han tilsyneladende selv havde fundet blandt papirerne, og hvordan det efterfølgende er forsvundet. <persName key="Barfod, Hans Peter">Barfod</persName> bragte end ikke afskriften i <hi rendition="#ita">EP.</hi></p> </note></p></physDesc></msPart><msPart xml:id="additional.318" prev="#physDesc.318"><msIdentifier><idno>318</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 2 læg 40; <hi rendition="#ita">B&amp;A</hi> 311)</p></note></adminInfo></additional></msPart>
-      </msDesc>
-      <p>(<hi rendition="#ita">L-fort.</hi> 239, 316 og 319 + <hi rendition="#ita">B-fort.</hi> 239, 316 og 319.44; KA, D pk. 2 læg 3, 17, 18, 25, 30, 31, 34 og 40; NKS 1994 2<hi rendition="#sup">o</hi>; <hi rendition="#ita">B&amp;A</hi> 201, 203, 204, 270, 271, 277, 278, 280, 289, 292 og 311)</p>
-    </div>
-    <div type="level1" xml:id="k2">
-      <head><pb xml:id="ss622" n="622" edRef="#SKS"/>2. Datering og kronologi</head>
-      <p>Gruppen indeholder brevvekslingen mellem SK og nogle af hans kvindelige læsere, i alt 11 breve. <ref target="../B308/txt.xml#n308" type="lettersAndDedications" n="308">Brev 308</ref> er stilet til SKs forfatterpseudonym <persName key="Victor Eremita">Victor Eremita</persName>. Seks breve er fra anonyme eller pseudonyme afsendere, hvoraf to er identificeret: »Et Skriftebarn«, afsenderen af <ref target="../B308/txt.xml#n311" type="lettersAndDedications" n="311">Brev 311</ref>, er kvindesagsdebattøren Fanny <persName key="Bretteville, Fanny Lodovica de">Lodovica de Bretteville</persName> (1827-59). Mærket »Frøken F:L:«, som benyttes af afsenderen i brevet, synes at bekræfte dette. <ref target="../B308/txt.xml#n316" type="lettersAndDedications" n="316">Brev 316</ref> er ikke underskrevet, men brevskriverens reference til sine indsendte arbejder til Det Kongelige Teater godtgør, at der er tale om forfatterinden <persName key="Fibiger, Ilia">Ilia Fibiger</persName> (1817-76).<note> <p><persName key="Fibiger, Ilia">Ilia Fibiger</persName>s tidlige forfatterskab og forbindelsen til SK er behandlet i niecen <persName key="Aasen, Margrethe Cecilia Nielsen">Margrethe Fibiger</persName>s biografi <hi rendition="#ita">Et Kvindeliv – <persName key="Fibiger, Ilia">Ilia Fibiger</persName>,</hi> <placeName key="København">Kbh.</placeName> 1894, s. 60-71. Se også kommentarene til <ref target="../B308/txt.xml#n316" type="lettersAndDedications" n="316">Brev 316</ref>.</p> </note> Personerne bag brevskriverne <persName key="e – e">e – e</persName> (<ref target="../B308/txt.xml#n313" type="lettersAndDedications" n="313">Brev 313</ref>), <persName key="S: F:">S: F:</persName>, (<ref target="../B308/txt.xml#n314" type="lettersAndDedications" n="314">Brev 314</ref>) og <persName key="L.H.">L.H.</persName> (<ref target="../B308/txt.xml#n317" type="lettersAndDedications" n="317">Brev 317</ref>) samt afsenderen af <ref target="../B308/txt.xml#n318" type="lettersAndDedications" n="318">Brev 318</ref> kendes ikke.<note> <p>Se kommentaren til de enkelte breve. Om muligheden for, at <persName key="L.H.">L.H.</persName> dækker over grevinde <persName key="Gjertrud Lovise Christiane Fransisca Hage" sameAs="Schmettau, Louise">Louise Schmettau, f. Hage</persName> (1823-1907), se kommentarene til Brev 317, <ref target="../B308/kom.xml#b-5409" type="commentary">488,<hi rendition="#size-1"><hi rendition="#ita">19</hi></hi></ref> og <ref target="../B308/kom.xml#b-3272" type="commentary">488,<hi rendition="#size-1"><hi rendition="#ita">26</hi></hi></ref>.</p>
-        </note></p>
-      <p rendition="#ind">Seks breve er dateret. <ref target="../B308/txt.xml#n310" type="lettersAndDedications" n="310">Brev 310</ref> (fra et Skriftebarn) er dateret den 10. dec. 1850, <ref target="../B308/txt.xml#n313" type="lettersAndDedications" n="313">Brev 313</ref> (fra <persName key="e – e">e – e</persName>) og 314 (fra <persName key="S: F:">S: F:</persName>) er begge dateret den 21. maj 1851, <ref target="../B308/txt.xml#n315" type="lettersAndDedications" n="315">Brev 315</ref> (fra <persName key="Ross, Petronella von">Petronella Ross</persName>) er dateret den 12. juli 1851, <ref target="../B308/txt.xml#n316" type="lettersAndDedications" n="316">Brev 316</ref> (fra den anonyme <persName key="Fibiger, Ilia">Ilia Fibiger</persName>) er dateret den 21. nov 1851 og <ref target="../B308/txt.xml#n317" type="lettersAndDedications" n="317">Brev 317</ref> (fra <persName key="L.H.">L.H.</persName>) den 19. marts 1852. De udaterede lader sig tilnærmelsesvis datere med undtagelse af <ref target="../B308/txt.xml#n318" type="lettersAndDedications" n="318">Brev 318</ref>. Ingen breve synes tidligere end 1849.</p>
-      <p rendition="#ind"><ref target="../B308/txt.xml#n308" type="lettersAndDedications" n="308">Brev 308</ref> er skrevet af den svenske forfatterinde <persName key="Bremer, Fredrika">Fredrika Bremer</persName> under hendes ophold i <placeName>København</placeName> 1848-49.<note> <p>Se kommentaren til Brev 308, <ref target="../B308/kom.xml#b-5239" type="commentary">467,<hi rendition="#size-1"><hi rendition="#ita">4</hi></hi></ref>.</p> </note> Det er en invitation til <persName key="Victor Eremita">Victor Eremita</persName> om at aflægge besøg på hendes bopæl den nærmeste torsdag, Kristi Himmelfartsdag (<hi rendition="#ita">SKS</hi> 28, 467,13). Det placerer brevets tilblivelse i dagene op til torsdag d. 17. maj 1849. <ref target="../B308/txt.xml#n309" type="lettersAndDedications" n="309">Brev 309</ref>, stilet til SK, er en opfølgning på invitationen i <ref target="../B308/txt.xml#n308" type="lettersAndDedications" n="308">Brev 308</ref>, dateret »Tisdag afton«, formentlig den 15. maj. Kladden til SKs svar på
-        <persName key="Bremer, Fredrika">Fredrika Bremer</persName>s invitation er <ref target="../B308/txt.xml#n310" type="lettersAndDedications" n="310">Brev 310</ref>, der bl.a. med passagen »De taler om Deres Indbydelse som var næsten dumdristigt vovet« (<hi rendition="#ita">SKS</hi> 28, 468,23-24) refererer til <ref target="../B308/txt.xml#n308" type="lettersAndDedications" n="308">Brev 308</ref>. Om den kortvarige kontakt til <persName key="Bremer, Fredrika">Fredrika Bremer</persName> skrev SK nogle måneder senere i journalen:</p>
-      <quote>
-        <p>Hun var saa artig ved en meget forbindtlig Billet at invitere mig til en Samtale. Nu fortryder jeg næsten, at jeg ikke svarede, som jeg først havde <pb xml:id="ss623" n="623" edRef="#SKS"/>paatænkt, blot disse Ord: nei, mange Tak jeg dandser ikke. Men i ethvert Fald jeg refuserede hendes Indbydelse og kom ikke.<note> <p><ref target="../NB12/txt.xml#n115" type="journalsAndPapers" n="115">NB12:115</ref>, <hi rendition="#ita">SKS</hi> 22, 209,10-15, også citeret i uddrag i kommentaren til Brev 308, <ref target="../B308/kom.xml#b-5252" type="commentary">468,<hi rendition="#size-1"><hi rendition="#ita">13</hi></hi></ref>. Optegnelsen er skrevet i sidste halvdel af aug. 1849, se <ref target="../NB12/txr.xml" type="textCriticalAccount">tekstredegørelsen til journalen NB12</ref> i <hi rendition="#ita">SKS</hi> K22, 168.</p> </note></p>
-      </quote>
-      <p>Selv om SK i tilbageblik var utilfreds med sit endelige svar, tyder det dog på, at <ref target="../B308/txt.xml#n310" type="lettersAndDedications" n="310">Brev 310</ref> blev afsendt i en renskrevet eller omarbejdet version.</p>
-      <p rendition="#ind"><ref target="../B308/txt.xml#n312" type="lettersAndDedications" n="312">Brev 312</ref> er SKs kladde til et svar på <persName key="Bretteville, Fanny Lodovica de">Lodovica de Bretteville</persName>s pseudonyme brev dateret 10. dec. 1850 (<ref target="../B308/txt.xml#n311" type="lettersAndDedications" n="311">Brev 311</ref>) og næppe skrevet mange dage efter. SK sendte dog aldrig et svarbrev med den i <ref target="../B308/txt.xml#n312" type="lettersAndDedications" n="312">Brev 312</ref> bevarede ordlyd; nederst på ms. har han noteret, hvordan han returnerede brevet med det vedlagte manuskript: »Papirerne bleve blot convoluterede, og i Convoluten skrevet: / Herpaa kan jeg ikke indlade mig« (<hi rendition="#ita">SKS</hi> 28, 475,11-12). <persName key="Bretteville, Fanny Lodovica de">Lodovica de Bretteville</persName> beholdt det returnerede brev og manuskript, men den omtalte konvolut er formentlig gået tabt.</p>
-      <p rendition="#ind"><ref target="../B308/txt.xml#n318" type="lettersAndDedications" n="318">Brev 318</ref> er indirekte overleveret og udateret. Den anonyme afsender er ifølge brevet »skenkedt den Gave at kunde opfatte og modtage Deres Skrefter« (<hi rendition="#ita">SKS</hi> 28, 489,4-5). Referencen til SKs 'skrifter' antyder, at SK på modtagelsestidspunktet er en etableret forfatter. Brevet stammer således formentlig fra årene omkring modtagelsen af de øvrige breve fra læserinderne.</p>
-    </div>
-  </div></body></text></TEI>
+  <text xml:id="id68cbb6c4-3f28-408a-8b42-da77238c15a2" type="TextCriticalAccount" subtype="lettersAndDedications">
+    <body xml:id="idfbbfab2c-18b6-44cb-a89c-fe881bea4543">
+      <div xml:id="id759fdb36-0f06-4b60-8021-5317d54bf585">
+        <head xml:id="id4ff169b7-080b-46a8-bd08-6c037b3d10da" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="id8584a158-5dcf-485a-a51f-a52028af9db2">Tekstredegørelse</head>
+        <list xml:id="ida3c8bb13-8a97-444f-95f0-80320695d53f" type="TOC">
+          <item xml:id="id88d07639-2f46-4117-81b6-83d133943963">1. Manuskriptbeskrivelse<ptr xml:id="id87500ec2-7407-4f34-b27c-57f790121650" type="chapter" target="#k1" n=""/></item>
+          <item xml:id="idd27fafb9-5466-40cc-9d14-f49e414c17d4">2. Datering og kronologi<ptr xml:id="ida347611e-bba6-4b46-8f83-7677b296bf54" type="chapter" target="#k2" n="621"/></item>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="id3ffa4161-ed71-4ecd-a938-fc36a7ec4517">1. Manuskriptbeskrivelse</head>
+          <p xml:id="id90e33454-8c66-4505-a2b8-5ae090163c8d">Til brevene i gruppen »Læserinder« findes følgende manuskripter, hvoraf <ref xml:id="id7d81ba60-bfd3-41af-81e8-65f52a64190f" target="../B308/txt.xml#n308" type="lettersAndDedications" n="308">Brev 308</ref>-310 og 312-317 befinder sig i Kierkegaard Arkivet (KA) og 311 befinder sig i Ny Kongelig Samling (NKS) på
+        <placeName xml:id="id99b0bb71-030b-4033-9d36-79a53d379583" key="Kongelige Bibliotek, Det">Det Kongelige Bibliotek</placeName>. <ref xml:id="idec933073-2111-468f-8e26-430bcc62df20" target="../B308/txt.xml#n318" type="lettersAndDedications" n="318">Brev 318</ref> er gået tabt, men findes i en afskrift af <persName xml:id="idb1f9518e-2f76-45ea-9bcc-23417678c709" key="Barfod, Hans Peter">H.P. Barfod</persName>.<note xml:id="id2aae1673-8f9d-464d-afcf-ed7fdbdfdc17"><p xml:id="id63ca8b3b-61d9-4d90-96bd-f22e85b97240">Brevene er første gang trykt i <hi xml:id="idfaafaaae-bb72-445a-9e16-cf6ccb3ff59c" rendition="#ita">EP</hi> eller <hi xml:id="id3ada0b5e-db65-4477-a723-857cacfd622a" rendition="#ita">B&amp;A</hi>.</p></note></p>
+          <msDesc xml:id="id4b169ec5-18e2-4295-8a46-0ead8d49e970">
+            <msIdentifier xml:id="iddd2d36e4-1dc0-4e79-8c3a-6243fa5d5e8f">
+              <collection xml:id="idafd46792-0104-4792-b35f-fa6f4607091a">B308</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.308" next="#additional.308">
+              <msIdentifier xml:id="id013f8559-3107-4a29-a36e-0a8712b07d4b">
+                <idno xml:id="id4f366e11-9ed3-4920-9827-acf94b5a67c5">308</idno>
+              </msIdentifier>
+              <physDesc xml:id="id331ec301-f48b-452d-825b-6890397753cd">
+                <p xml:id="id01700b50-bb4e-4cee-a58c-09172b2c56ca"><ref xml:id="id65b9f10e-5c5b-4f73-8322-f421ef20e1a5" target="../B308/txt.xml#n308" type="lettersAndDedications" n="308">Brev 308</ref>. Fra <persName xml:id="ida46e8c7c-b689-4e66-924a-15e244500de7" key="Bremer, Fredrika">Fredrika Bremer</persName> til <persName xml:id="id7da75467-40d0-48e9-874a-445f963fa141" key="Victor Eremita">Victor Eremita</persName> (<hi xml:id="idfea29946-3f8b-44ea-9850-9bea271d8720" rendition="#ita">SKS</hi> 28, 467).</p>
+                <p xml:id="id43ab169b-dc8d-4bd2-9981-2cf740ee925a">1 dobbeltblad i 8<hi xml:id="id22eec2e2-562c-4241-babb-b6d27853eacc" rendition="#sup">o</hi> med afrevet kant øverst.<note xml:id="id8e4c2ed2-1316-4c4d-b27e-c5fbeba1f3cf"><p xml:id="id541a2e86-d290-4c01-8c00-7e0a12e48f39">Udgangspunktet for formatbetegnelsen er plane helark, som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Irregulære, fx afrevne, enheder betegnes som lapper. Dobbeltblad betegner et stykke papir, der er ombøjet (foldet) til blade.</p></note></p>
+                <p xml:id="id3454c6ad-a4c2-4984-8691-3d7fe3697a98">Ingen paginering.</p>
+                <p xml:id="id1339e5fc-9e55-449f-8507-6c111ebdf020">Papir: gulligt velin, glat. Mål: ca. 135 × 215 mm.<note xml:id="id9e6e393b-ae83-4644-a2b1-34c07347912b"><p xml:id="id75565075-22ea-4539-bd3f-87d061faa790">Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p></note></p>
+                <p xml:id="id8b368e29-68de-42e1-a9a8-755c3e553f66">Bladene har været foldet to gange på langs og to gange på tværs til konvolut (mål: 125 × 65 mm<note xml:id="idd5e99aad-eb9f-4db7-bfaa-3d7c88407013"><p xml:id="id1ad68aaf-abf6-491e-8837-70d70d39ff5a">Oplysningen om konvoluttens mål gælder det foldede brev, alternativt den separate konvolut. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant); øverste kant bestemmes af udskriftens skriveretning.</p></note>); rest af rødlig oblat.<note xml:id="id68611f9f-b431-4fcd-a0ca-16c7ebee43aa"><p xml:id="id0cfef0e3-52d9-4a06-8016-a63b187694ef">Det gælder for alle breve, der har været foldet til konvolut og forseglet, at brevmodtagerens brud på forseglingen har forårsaget en mindre beskadigelse af ms.</p></note> Bladene bærer spor efter endnu en foldning på langs.</p>
+                <p xml:id="id9835dd99-ffd6-4759-8e7a-02605264d643">Bl. [1v] er to tredjedele beskrevet, bl. [2r] ubeskrevet.</p>
+                <p xml:id="id904121ff-e044-4f2c-b851-6d8758b53dfb">En enkelt korrektion.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.308" prev="#physDesc.308">
+              <msIdentifier xml:id="idc8f71b1b-0906-429b-8b50-0bff68fc7561">
+                <idno xml:id="id1fa89efe-cd6c-4d44-b778-372661832ff9">308</idno>
+              </msIdentifier>
+              <additional xml:id="id3cc90300-8780-4c44-b3ba-568cb677aaa9">
+                <adminInfo xml:id="id3214a65e-ab6a-4497-b7f7-81ab8aa27015">
+                  <note xml:id="ide446641b-b4e3-4cb3-8ef2-a6b203d8fc66">
+                    <p xml:id="id42361b98-c357-4098-8ae8-392b91edac27">(<hi xml:id="id1df28d3b-5076-4cd0-8536-53a9f5fdf99f" rendition="#ita">L-fort.</hi> + <hi xml:id="id0e155d7a-5885-4a8e-9c10-4ba8ae016269" rendition="#ita">B-fort.</hi> 316; KA, D pk. 2 læg 3; <hi xml:id="ideeb02a73-4fff-4dcf-a2c8-5bf7f495a5a0" rendition="#ita">B&amp;A</hi> 201)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.309" next="#additional.309">
+              <msIdentifier xml:id="id72a2ba50-f7c7-491c-b40a-5b60499c1f7f">
+                <idno xml:id="id7cdb58b8-6fb7-499f-830b-46d58cca2360">309</idno>
+              </msIdentifier>
+              <physDesc xml:id="ida0756fb3-784e-4279-8734-055c45e26ddb">
+                <p xml:id="id5e6195b0-74ba-4e3f-ba4d-fb604d757c81"><pb xml:id="ss618" n="618" edRef="#SKS"/><ref xml:id="id1d06b073-0eb1-4198-9794-d0903c3701f6" target="../B308/txt.xml#n309" type="lettersAndDedications" n="309">Brev 309</ref>. Fra <persName xml:id="ida028b7fe-8b71-465c-93ea-3bbba32bf740" key="Bremer, Fredrika">Fredrika Bremer</persName> til SK (<hi xml:id="idabfd2ff3-89e5-4794-9d84-ba6ef2d46e37" rendition="#ita">SKS</hi> 28, 468).</p>
+                <p xml:id="id85f939c4-c188-488d-8cc3-85a55fa4fd04">1 løst blad i stor 4<hi xml:id="id98bf6b54-94ec-4bc8-b67d-2183e99a5e5d" rendition="#sup">o</hi> med afrevet kant øverst.</p>
+                <p xml:id="id6773b85a-9193-413c-b000-9f32960ef7c3">Ingen paginering.</p>
+                <p xml:id="id2d0d65dd-1549-4402-beba-2f263f427c8f">Papir: gulligt postvelin, glat; i øverste venstre hjørne et blindtryk: <hi xml:id="ida5d120b6-7246-4111-be2a-2d6fbda87516" rendition="#capiTyp">bath</hi> i rektangulær ramme omkranset af bladløv. Mål: 275 × 215 mm.</p>
+                <p xml:id="id35d9b4f5-8704-44b5-ae2d-1a4970631ce3">Bladet har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 138 × 83 mm).</p>
+                <p xml:id="id31a8fea8-ac42-4693-9236-af4afeafb2d9">En enkelt korrektion.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.309" prev="#physDesc.309">
+              <msIdentifier xml:id="id9fa86446-001c-43e6-9530-faf51ed81c78">
+                <idno xml:id="id2b0a802f-2553-4a4d-a953-87eb5a6b3a50">309</idno>
+              </msIdentifier>
+              <additional xml:id="id07705235-8384-46cb-b6c9-b16a373d9855">
+                <adminInfo xml:id="id06e5ed13-2240-4961-89f8-655d8ffd7ff5">
+                  <note xml:id="id3aa1e12c-aa94-4334-b80e-c0d9efb32440">
+                    <p xml:id="idd3a3d91f-b2e0-47c7-80a3-8899a2aecf9a">([<hi xml:id="id85b1cc42-516b-48fc-90cb-67e9893a26e4" rendition="#ita">L-fort.</hi> + <hi xml:id="id4dc56ce8-b021-449c-a979-2fd3dc8805d1" rendition="#ita">B-fort.</hi> 316]<note xml:id="id2db5996c-5937-478f-a8b4-1f808b7b2e32"><p xml:id="id95c7c95c-cc2d-449b-8505-35be946eac14">I <hi xml:id="id96468f52-945b-4d99-9987-4e7f85b81f40" rendition="#ita">B-fort.</hi> er kun anført et enkelt brev fra <persName xml:id="id9b865bbb-aa5a-4e7e-bb96-6b9cecd40fd3" key="Bremer, Fredrika">Fredrika Bremer</persName>, jf. <ref xml:id="idc760e7c9-cc21-4b87-97be-12d7a22575b6" target="../B308/txt.xml#n308" type="lettersAndDedications" n="308">Brev 308</ref>.</p></note>; KA, D pk. 2 læg 3; <hi xml:id="id5103c559-a6e2-44f1-a27f-f9d81f074967" rendition="#ita">B&amp;A</hi> 203)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.310" next="#additional.310">
+              <msIdentifier xml:id="id62a7611d-361c-4b90-9ecc-6c51f1d8ab4d">
+                <idno xml:id="id3298170a-26aa-479b-854a-ec2432f22003">310</idno>
+              </msIdentifier>
+              <physDesc xml:id="id5523e2f3-25c6-44bb-b4e4-89f5b747c394">
+                <p xml:id="id0b16e027-27bd-42e8-a794-b931d010761b"><ref xml:id="id6e381e80-5a7a-44ad-a70f-8da939159344" target="../B308/txt.xml#n310" type="lettersAndDedications" n="310">Brev 310</ref>. Fra SK til <persName xml:id="id9f6a126c-90d8-4f10-9e34-d495e042f406" key="Bremer, Fredrika">Fredrika Bremer</persName>, kladde (<hi xml:id="id1e1df7b0-3bfa-4d09-a7fc-491fdbe7b929" rendition="#ita">SKS</hi> 28, 468-469).</p>
+                <p xml:id="ide49b2e6e-81d3-4646-81b4-96419434c045">1 løst blad i 4<hi xml:id="id3e431ac1-6d6a-4416-afcf-b3b66467ca50" rendition="#sup">o</hi> med uregelmæssigt afrevet kant i venstre side.</p>
+                <p xml:id="id56a4083f-2a62-480f-a51e-446367c74a3c">Ingen paginering.</p>
+                <p xml:id="id3da72d63-d94d-4a38-b431-7fe054e27fc5">Papir: gulligt koncept, glat. Mål: 160-171 × 206 mm.</p>
+                <p xml:id="id098b6979-6642-49ca-906f-1de6ac9f0895">Bladet har før beskrivning været foldet en gang på langs til en bred inderspalte og en smal yderspalte.</p>
+                <p xml:id="id1dd98b10-bf7b-4997-95ac-c6954fe14148">Rectosiden er beskrevet i hele sidens bredde, versosiden i en enkelt linje. Bladet har efter beskrivning været foldet tre gange på tværs.</p>
+                <p xml:id="id8b9f337a-876b-4e3b-8dae-05e6db20df77">Mange korrektioner. En enkelt sletning foretaget med blyant.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.310" prev="#physDesc.310">
+              <msIdentifier xml:id="id34d9b5b1-a799-461e-8d8b-eae230ca7964">
+                <idno xml:id="id89136b6e-c33e-430d-b8d7-6380dbb394f9">310</idno>
+              </msIdentifier>
+              <additional xml:id="id78869117-5841-4f2b-bf45-f0aaee337f9c">
+                <adminInfo xml:id="idd6259580-d76d-4fc3-a55b-a01ca4a7f4ea">
+                  <note xml:id="id7de56ea5-cd89-46b7-a110-0777ddeee4fe">
+                    <p xml:id="ideb08effa-1ede-46af-839f-5362a5907db5">(<hi xml:id="idf438ccb0-f485-45ab-afce-a57ec22f547f" rendition="#ita">L-fort.</hi> + <hi xml:id="ide099a17e-273a-4fef-8dd2-24c45a2e13da" rendition="#ita">B-fort.</hi> 316; KA, D pk. 2 læg 3; <hi xml:id="id39f00cc7-4d59-4e72-a999-cc0f1684b0db" rendition="#ita">B&amp;A</hi> 204)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.311" next="#additional.311">
+              <msIdentifier xml:id="id1b305669-1b62-4283-a8be-dc05685a8e24">
+                <idno xml:id="id5c8a2a93-f6b1-4bc1-82b1-b319f6f5aae9">311</idno>
+              </msIdentifier>
+              <physDesc xml:id="id4a5a31be-2f2f-4833-bad0-6702be5a8781">
+                <p xml:id="id5fb10f81-1550-4981-bef2-9ebf9c0ddf24"><ref xml:id="id7b6fa7cb-5758-4012-889a-8f3897296546" target="../B308/txt.xml#n311" type="lettersAndDedications" n="311">Brev 311</ref>. Fra <persName xml:id="id9c58c6ec-663a-4f0f-a3f1-3decca1f894c" key="Bretteville, Fanny Lodovica de">Fanny Lodovica de Bretteville</persName> til SK (<hi xml:id="iddcb9bc61-7a0a-485b-bd31-e982bb3502f6" rendition="#ita">SKS</hi> 28, 469-473); består af et manuskript og en renskrift. Tekstgrundlaget i <hi xml:id="ide8c093ad-48ab-41fa-98d2-f0d0f28e0f98" rendition="#ita">SKS</hi> 28 er ms. 311.2:</p>
+              </physDesc>
+              <msPart xml:id="physDesc.311.1" next="#additional.311.1">
+                <msIdentifier xml:id="id0a4b0698-7e96-4e1d-92c4-ed5f0bee67c2">
+                  <idno xml:id="idbf52013b-9e77-413e-974a-51ed361fe47c">311.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id5ed1fd58-7350-4b05-ace9-bd2f72625344">
+                  <p xml:id="id2f9864be-393f-4770-8ee6-eb56d20cec88">Manuskriptet »Nogle Bemærkninger over <persName xml:id="id69286919-96d7-48ba-a6ad-1ea699415ebe" key="Mynster, Jakob Peter">Mynster</persName>s Gjensvar paa <persName xml:id="idcdf73804-2316-493b-bfe6-e1dece925b0c" key="Ørsted, Hans Christian">Ørsted</persName>s 'Aanden i Naturen.'«</p>
+                  <p xml:id="idf61c2be3-de59-4ac8-9579-4fd044f085c6">1 sammenhæftning af 4 dobbeltblade i 8<hi xml:id="id9f888223-30e8-4b05-ab50-ef2fc317ce54" rendition="#sup">o</hi>; hæftetråd af hvid silke.</p>
+                  <p xml:id="id9aff8c1c-8cca-411d-b291-f2a2a4d2bea8">Bladene er pagineret 1-14, bl. [8] er upagineret.</p>
+                  <p xml:id="idb53ce77d-6e41-415a-94ed-55d434cfe961">Papir: blåligt postvelin, glat; i bladenes øverste højre hjørne findes et blindtryk med våbenskjoldsmotiv. Mål: 135 × 208 mm.</p>
+                  <p xml:id="idf705c41a-a8a1-4ddb-be01-21d4eeb4abda">Bladene har efter beskrivning været foldet en gang på langs og tre gange på tværs.</p>
+                  <p xml:id="id7bd0f266-92dc-4a9f-8fdb-fddca17c0923">Bl. [7v] er halvt beskrevet, bl. [8r]-[8v] ubeskrevet.</p>
+                  <p xml:id="idcb5a3f6e-c140-4901-825e-2389d44cb6d7">S. 1 har overskriften: »Nogle Bemærkninger over <persName xml:id="id40cdeeca-a272-46c4-84ed-af1fb1397ab3" key="Mynster, Jakob Peter">Mynster</persName>s Gjensvar paa <persName xml:id="idcc2e9229-b500-4669-869f-250b1ba9c3c8" key="Ørsted, Hans Christian">Ørsted</persName>s 'Aanden i Naturen.'«</p>
+                  <p xml:id="id13810fdb-1fb3-47ae-86f8-fe79e648b49a">Få korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.311.1" prev="#physDesc.311.1">
+                <msIdentifier xml:id="idc431693c-de6d-473d-a859-11066575065d">
+                  <idno xml:id="idf8b8833f-3a59-4aba-87e4-89bdd93ec67b">311.1</idno>
+                </msIdentifier>
+                <additional xml:id="idbfd07eb5-fc77-4f7b-821a-58d0629c401c">
+                  <adminInfo xml:id="id46b49a9b-eb95-4b20-ad38-af940d8b3c46">
+                    <note xml:id="idfd8b45a2-88f2-454f-a60f-10ff5e81b772"/>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.311.2" next="#additional.311.2">
+                <msIdentifier xml:id="ide21af6a9-7a70-4c7e-93ab-ba83831be440">
+                  <idno xml:id="ide1a765ce-a304-4fb6-abea-3c5b0d91b613">311.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="ida215c31c-0520-41b9-9663-6fcfc829fa91">
+                  <p xml:id="id88603256-a7f7-4a88-a567-551bb9f9a6db">Renskrift.</p>
+                  <p xml:id="id3497d911-b8bd-404d-85b9-e619fe433c7c">2 dobbeltblade i 8<hi xml:id="id886fbf6a-9083-40bf-9ca4-9a931a88dbb1" rendition="#sup">o</hi>. Spor efter sammenhæftning.</p>
+                  <p xml:id="id4f801fc2-3055-4fbf-bda2-abea30c067ed">Bladene er pagineret fortløbende 1-7, bl. [4v] er upagineret.</p>
+                  <p xml:id="ida773d84f-84b3-4baa-8a0c-079d9db8a93b"><pb xml:id="ss619" n="619" edRef="#SKS"/>Papir: blåligt postvelin, glat; øverst i højre hjørne på bl. [1] og nederst i højre hjørne på bl. [4] findes et blindtryk med våbenskjoldsmotiv. Mål: 135 × 208 mm.</p>
+                  <p xml:id="iddf786934-284a-4d48-bc7d-018cd2748e1d">Bladene har efter beskrivning været foldet en gang på langs og tre gange på tværs.</p>
+                  <p xml:id="id8af50078-8b8e-402f-bcf0-95f0510f4fb2">Bl. [4v] er ubeskrevet.</p>
+                  <p xml:id="id9fc41b4e-4134-425e-844e-f490c400d001">Få korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.311.2" prev="#physDesc.311.2">
+                <msIdentifier xml:id="id453c2471-266a-4408-a4db-6409eace9b96">
+                  <idno xml:id="id9fe9b84b-eb39-4a67-8cfe-1a24b85d8498">311.2</idno>
+                </msIdentifier>
+                <additional xml:id="id92e45b9b-fbcf-459b-a544-4b670651ac7a">
+                  <adminInfo xml:id="id04d8cbfe-a12e-42ea-b92b-b3a69f62820f">
+                    <note xml:id="id1f5851ed-92fe-49ad-8207-9b450037d9a4">
+                      <p xml:id="idfef3375d-0bca-4f1f-9859-0e5e26a91b65">(NKS 1994 2<hi xml:id="id402385ea-82f3-4fd1-b122-982e0a16dfe8" rendition="#sup">o</hi>;<note xml:id="id7dd381d4-2fdd-4897-8e09-6cf6e38078ab"><p xml:id="idc1f7775b-fa32-481d-bd91-92c6d3269b07">Ms. er tilgået <placeName xml:id="id1ad11ba2-cd6d-4116-b9ba-d44f4a7db903" key="Kongelige Bibliotek, Det">Det Kongelige Bibliotek</placeName> fra en slægtning af afsenderen, jf. omslagsteksten: »<persName xml:id="idf17bcbe5-fdd2-474c-bc3b-791267c094c1" key="Bretteville, Fanny Lodovica de">Ludovica de Bretteville</persName> til <persName xml:id="id3e4e10bc-33e6-467a-82ad-be86836dc769" key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>« og »Gave fra Landinspektør Skjold Simesen 31/3 1931.«</p></note> <hi xml:id="id807272a6-6e2f-4c0c-a0e3-f919339d509b" rendition="#ita">B&amp;A</hi> 270)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.311" prev="#physDesc.311">
+              <msIdentifier xml:id="ide3e1652a-c1b7-452d-90d6-0bca47f14e8d">
+                <idno xml:id="id0d473f3b-0d0d-44dc-8f7b-5f4b6bec1da4">311</idno>
+              </msIdentifier>
+              <additional xml:id="ida5d59150-a319-43ac-8df0-83bd6a36f918">
+                <adminInfo xml:id="id34f22bb3-5dd6-432d-94a1-059c94483b44">
+                  <note xml:id="id3b394f3a-0049-4ed0-9635-a479a449c872">
+                    <p xml:id="id1ada53de-fd1b-41d8-b896-f66a81180ef8">(NKS 1994 2<hi xml:id="idbbca7b43-4bcc-4b08-b83f-23ff275059a9" rendition="#sup">o</hi>;<note xml:id="id3c17341e-2c59-443b-8863-bece3848cafe"><p xml:id="id13946400-bd97-4f84-8e7f-5dde466221c8">Ms. er tilgået <placeName xml:id="idb270d1fa-e743-4982-8b99-e0e8339af1f3" key="Kongelige Bibliotek, Det">Det Kongelige Bibliotek</placeName> fra en slægtning af afsenderen, jf. omslagsteksten: »<persName xml:id="id1e321ef9-0210-48a6-a209-11a51785b5ef" key="Bretteville, Fanny Lodovica de">Ludovica de Bretteville</persName> til <persName xml:id="id9dcf3a2e-1307-4847-b599-4ecd0ea59201" key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName>« og »Gave fra Landinspektør Skjold Simesen 31/3 1931.«</p></note> <hi xml:id="id5915f7cf-382f-4000-8866-3d58bcdc5dc1" rendition="#ita">B&amp;A</hi> 270)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.312" next="#additional.312">
+              <msIdentifier xml:id="id249d4959-c046-4537-908d-b3b492160f14">
+                <idno xml:id="id5b72594d-67e6-47ae-8560-ae513825d459">312</idno>
+              </msIdentifier>
+              <physDesc xml:id="id709733dd-f7f7-49c1-807b-4e7fcd68bf27">
+                <p xml:id="idae0b6816-bce9-4071-a038-d50270ad5a2f"><ref xml:id="id6dc67668-150a-4b18-a9c3-015751690bd2" target="../B308/txt.xml#n312" type="lettersAndDedications" n="312">Brev 312</ref>. Fra SK til Fanny <persName xml:id="idf643b006-c8b8-4ee8-88e8-71c4ade5a882" key="Bretteville, Fanny Lodovica de">Lodovica de Bretteville</persName>, kladde (<hi xml:id="id27047279-d9d5-4ace-b59d-e361165539b4" rendition="#ita">SKS</hi> 28, 473-475).</p>
+                <p xml:id="id04a7e16a-1b8b-4e3a-88a3-9cf630c7881c">1 løst blad i 4<hi xml:id="id6efffee3-96df-4765-9ca0-f025e324abeb" rendition="#sup">o</hi> med afrevet kant i venstre side.</p>
+                <p xml:id="idf6c9c632-7ff3-45aa-b149-f33d61046e5f">Ingen paginering.</p>
+                <p xml:id="id86c47eea-d64f-4ff3-be12-d3833f6e1399">Papir: gulligt koncept, glat. Mål: 168 × 207 mm.</p>
+                <p xml:id="id864d37e5-de12-4657-8a13-d1af28b4bf52">Bladet har efter beskrivning været foldet en gang på tværs. Rest af rødt, stumt laksegl, muligvis anbragt af <persName xml:id="id0fab6ea3-c710-4eaa-a8d5-534a40e53726" key="Barfod, Hans Peter">H.P. Barfod</persName> under arbejdet med ms.</p>
+                <p xml:id="idd0461916-8565-488f-804b-20272d06c47f">Mange korrektioner. Ud for versosidens afsnit »Deres Skrivelser <hi xml:id="id95f5093d-d1c2-45de-903e-45b9c6bcf203" rendition="#ita">(...)</hi> hvad jeg ikke er.« (<hi xml:id="ida59b75c4-38d6-4572-a151-4c942cc35dac" rendition="#ita">SKS</hi> 28, 474,15-20) er skrevet »1.« med blæk ud for rectosidens afsnit »Blot Eet <hi xml:id="id123ecf17-f3fe-42dd-8285-a80a6df838fa" rendition="#ita">(...)</hi> at jeg er ingen ingen Skriftefader.« (<hi xml:id="id37252013-47b7-494d-8db1-da65507839a3" rendition="#ita">SKS</hi> 28, 474,22-28) er skrevet »2« med blæk. Begge afsnit er slettet med blyant. Desuden findes to tilføjelser i randen af papiret, hvoraf »i den emanciperede Tænkning,« (<hi xml:id="id2c7109de-6d63-4d9a-b691-6f1bc60d1e75" rendition="#ita">SKS</hi> 28, 474,11-12) er indvist i teksten med blåkridt, muligvis af <persName xml:id="idff9a0806-8d72-44cd-a8b1-fae39a09654f" key="Barfod, Hans Peter">Barfod</persName>. I rectosidens nederste højre hjørne er med blyant skrevet: »<hi xml:id="ida4fbc1f3-aae6-45e7-b933-011a70e99a5f" rendition="#ant">verte</hi>«. Hele tekststykket er indrammet med en blyantparentes på nær de nederste tre linjer på versosiden, »Papirerne bleve <hi xml:id="id541f0227-8de4-4367-8e49-2a41a3e6ac96" rendition="#ita">(...)</hi> indlade mig.« (<hi xml:id="id0431eb5b-b2c1-42b8-b744-c5418bfd3871" rendition="#ita">SKS</hi> 28, 475,11-12).</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.312" prev="#physDesc.312">
+              <msIdentifier xml:id="ide4dfd86e-08bd-4d67-b2df-94860889a8b7">
+                <idno xml:id="id67cda90d-799a-4a09-b482-0b0a05ddddf7">312</idno>
+              </msIdentifier>
+              <additional xml:id="id5960c95e-04c5-4cf2-b97a-64a482c1509f">
+                <adminInfo xml:id="id97f5cc5e-69b2-4368-a75b-b89d9ae813cd">
+                  <note xml:id="iddd7c6ccb-3aa8-4e9c-b00f-9560b242970f">
+                    <p xml:id="id796968df-ba76-4681-bb23-ed4c13f81ae9">(<hi xml:id="idd07888e0-d508-4e2d-8084-e92327324602" rendition="#ita">L-fort.</hi> 319, <hi xml:id="id57e4ffda-e93a-447f-b7e5-03d03ceb6b4a" rendition="#ita">B-fort.</hi> 319.44; KA, D pk. 2 læg 34; <hi xml:id="ide958e27a-91dc-403f-9f1a-e90089dec3cf" rendition="#ita">B&amp;A</hi> 271)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.313" next="#additional.313">
+              <msIdentifier xml:id="idd7f208c4-ed46-4060-9bbb-2f3d257d450f">
+                <idno xml:id="id833422b8-228b-4d84-bd86-c8e6b4cafdb0">313</idno>
+              </msIdentifier>
+              <physDesc xml:id="id728fd6a4-36d0-477c-bbca-445c6ce55cbc">
+                <p xml:id="id0d434347-2c91-4d31-9002-20af63988449"><ref xml:id="id5fe2a610-e6b8-4bae-b757-f74e569069df" target="../B308/txt.xml#n313" type="lettersAndDedications" n="313">Brev 313</ref>. Fra <persName xml:id="id8578b9b0-db75-44b8-9048-ff8aee4f8de5" key="e – e">e – e</persName> til SK (<hi xml:id="id53eb664a-d841-4b60-be61-7df19fdc739d" rendition="#ita">SKS</hi> 28, 475-477).</p>
+                <p xml:id="idd3a758b7-59c1-46a0-912a-05ed0d6cdc9a">1 dobbeltblad i høj 8<hi xml:id="id3bf00342-ba0f-4924-8d59-84d1300a29bb" rendition="#sup">o</hi> med afrevet kant nederst.</p>
+                <p xml:id="idb189fc93-6f29-40e8-be31-b9d0dc839378">Ingen paginering.</p>
+                <p xml:id="id3384fe50-60bb-4a32-82a5-7b4656c25341">Papir: gråligt velin, glat. Mål: 134 × 214 mm.</p>
+                <p xml:id="id883b9ad9-3927-4979-a6b8-9bc48d38e78d">Bladene har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 116 × 53 mm); brunligt, stumt laksegl. Bladet bærer præg af yderligere en foldning på tværs.</p>
+                <p xml:id="idd15f5f00-1fe2-49ea-af28-9030ba35b803">Bl. [2r] er ubeskrevet.</p>
+                <p xml:id="id5fc8de61-9c11-4a76-a56b-3dada4054c17">En enkelt korrektion.</p>
+                <p xml:id="id74c396df-4d57-40bc-a0e3-a74f7d64eb3d">På konvoluttens forside findes et grønligt, ellipseformet poststempel: <pb xml:id="ss620" n="620" edRef="#SKS"/>»F: 9 <formula xml:id="ide0ba85bb-cea6-43af-a321-540bd7b9ecb5" notation="mathml">235</formula> 51 P:«. Der findes spor efter et frimærke annulleret med stumt ringstempel. Med blyant er under udskriften skrevet »Østerbroe –« og i øverste venstre hjørne »10« med fremmed hånd.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.313" prev="#physDesc.313">
+              <msIdentifier xml:id="idf346f11a-a465-4835-b682-90e310efebea">
+                <idno xml:id="id97c81b34-21b4-4f3a-8151-12d0cab50959">313</idno>
+              </msIdentifier>
+              <additional xml:id="id88e402b4-6c56-47d7-ba82-fc87ed0f0cfd">
+                <adminInfo xml:id="id4faf8b18-4ee6-430e-b324-24752c449f77">
+                  <note xml:id="id454fdad0-d0f0-4dc8-8463-172999fceec6">
+                    <p xml:id="id242ee683-83bb-4aa6-a097-c24541a1368d">(<hi xml:id="id66f30254-930c-4d9c-ad5b-aba96bc00c2a" rendition="#ita">L-fort.</hi> + <hi xml:id="idab6acfe4-4222-42c7-9075-731fd8b892a0" rendition="#ita">B-fort.</hi> 239; KA, D pk. 2 læg 18; <hi xml:id="idc55e8728-b70f-4007-8b51-d548655f5df6" rendition="#ita">B&amp;A</hi> 277)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.314" next="#additional.314">
+              <msIdentifier xml:id="idabd48a1f-3ab6-482e-9dc5-2102b1e87c0b">
+                <idno xml:id="idc55664a9-a127-495b-b911-724a797b3e6e">314</idno>
+              </msIdentifier>
+              <physDesc xml:id="id7bc25edf-3dfd-4002-b9fa-629d48572d56">
+                <p xml:id="id131cc38a-054f-4ac1-b072-5f3f70a5f5e9"><ref xml:id="id20729c00-432a-49db-a6b4-b98a79b5e85b" target="../B308/txt.xml#n314" type="lettersAndDedications" n="314">Brev 314</ref>. Fra <persName xml:id="idcef538a9-043f-43bd-8dc5-df9ee4708bcd" key="S: F:">S: F:</persName> til SK (<hi xml:id="idbfdbce0f-9da7-4e41-abb0-4beaefe652a8" rendition="#ita">SKS</hi> 28, 477-480); består af en renskrift og en konvolut.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.314.1" next="#additional.314.1">
+                <msIdentifier xml:id="id5b02edfc-79b7-4d4a-9315-beb25fca67ca">
+                  <idno xml:id="id4f422e70-f393-4d3e-b236-70df08117c28">314.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id7faeb4e1-c04c-422b-9d31-a27261a94bce">
+                  <p xml:id="idb51eb26e-bd99-4ca7-b4b8-741a90c06f61">Renskrift.</p>
+                  <p xml:id="id57244aaa-0191-40f9-a093-8cacbc869900">1 dobbeltblad i stor 4<hi xml:id="id3f5a2361-ab0d-4a16-8b76-8620614c4dbb" rendition="#sup">o</hi>.</p>
+                  <p xml:id="id38a0222e-e4a0-4e96-a871-26414aed6808">Ingen paginering.</p>
+                  <p xml:id="id01034c76-3baf-439b-9d6e-6726faf1936c">Papir: gulligt velin, glat; blindtryk midt på bl. [1]: våbentelt med to vildmænd omkring et skjold. Mål: 205 × 255 mm.</p>
+                  <p xml:id="id24bd1ece-6854-4ded-aad1-e67013dc2318">Bladene har været foldet to gange på langs og to gange på tværs til indstik i konvolut. Bladene bærer præg af yderligere foldning.</p>
+                  <p xml:id="id9d7dc171-1887-4dce-bc56-7e893bb3d2a5">Bl. [2v] er halvt beskrevet.</p>
+                  <p xml:id="id12558784-3a58-4f06-8eaf-b7d9fd8038d0">Få korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.314.1" prev="#physDesc.314.1">
+                <msIdentifier xml:id="id6dc9324a-e556-4dd8-9a8a-b50e35ead64f">
+                  <idno xml:id="idd7b4b7c5-d5f8-4ae9-9db5-6bafd12dcaec">314.1</idno>
+                </msIdentifier>
+                <additional xml:id="idf37c26b1-28b7-45ae-a301-0da81ff9d1c6">
+                  <adminInfo xml:id="id3eff3c33-4ce5-4121-92a2-a49d813524f9">
+                    <note xml:id="id8dd6c425-afd2-40e4-88d0-cc6b67fda4d7"/>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.314.2" next="#additional.314.2">
+                <msIdentifier xml:id="id5457a5d3-f8c8-4e4f-bb99-099019d9fd29">
+                  <idno xml:id="id3559d5d2-0b9e-4422-b6c3-5e9c7bd928a4">314.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="idf6c89cda-3bd8-4b00-a149-8601ec3ff3b2">
+                  <p xml:id="idf4a318ca-965e-4048-a9ab-e441e32c10d3">Konvolut.</p>
+                  <p xml:id="idd1812038-5452-4707-9afb-a74d5df3df7c">1 løst blad i stor 4<hi xml:id="ide462346b-d182-4d85-abbc-193b3e8d4037" rendition="#sup">o</hi> med afrevet kant i højre side.</p>
+                  <p xml:id="idb0569970-a3b9-4ea0-ae86-af248a67d065">Ingen paginering. Konvolutten er folieret særskilt af <hi xml:id="id0710aa2a-abde-403e-991d-573a437bb8d2" rendition="#ita">SKS.</hi></p>
+                  <p xml:id="id676a36f8-f45a-4ba1-8a70-380a7e34247f">Papir: gulligt velin, glat; blindtryk midt på bladet: våbentelt med to vildmænd omkring et skjold. Mål: 205 × 255 mm.</p>
+                  <p xml:id="id33864cc0-c88a-4a75-8e05-17fbe5c00b2c">Bladet har været foldet to gange på langs og to gange på tværs til konvolut (mål: 131 × 90 mm); to limoblater.</p>
+                  <p xml:id="idd7653d5b-124d-4198-ad45-2d7c9442b2e7">Versosiden er ubeskrevet.</p>
+                  <p xml:id="id7727df1e-e9fc-4d96-a5dc-b70f75ccc5bd">Ingen korrektioner.</p>
+                  <p xml:id="id8be77aec-2e1e-4172-bf73-b2a4328035a8">På konvoluttens forside findes et grønligt ellipseformet poststempel: »F: 6 <formula xml:id="id12f6e2e5-cecf-4d3e-833f-c296a5b10865" notation="mathml">[2]35</formula> 51 P:«; desuden spor efter et frimærke annulleret med stumt ringstempel.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.314.2" prev="#physDesc.314.2">
+                <msIdentifier xml:id="idf0e651dc-8667-418e-90cf-6b726c68899f">
+                  <idno xml:id="id86088867-e4d0-48c8-9acd-0ecc7909db00">314.2</idno>
+                </msIdentifier>
+                <additional xml:id="id0c39b671-6658-4c3a-9689-ee4cff2b2c1d">
+                  <adminInfo xml:id="id5807ed81-3817-4ff0-b932-61a8a26c61d3">
+                    <note xml:id="idb2442ab2-df8f-4d89-b71a-89f49b5202a7">
+                      <p xml:id="id78654de7-b14f-4778-9642-04881f460659">(<hi xml:id="id14c35e01-9a53-4828-98b8-47c1a7942100" rendition="#ita">L-fort.</hi> + <hi xml:id="id6c044636-1e53-4f91-86e7-64b41474c548" rendition="#ita">B-fort.</hi> 239; KA, D pk. 2 læg 30; <hi xml:id="id58e2cde6-6275-424b-ba7c-6a300ab27ffa" rendition="#ita">B&amp;A</hi> 278)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.314" prev="#physDesc.314">
+              <msIdentifier xml:id="id667970fa-39ef-47f3-aa73-18a1009342fe">
+                <idno xml:id="idab454619-7e56-4d5f-aca4-568b55b6dc9a">314</idno>
+              </msIdentifier>
+              <additional xml:id="idefc1d4f1-977d-4714-8463-dc99e1ba583c">
+                <adminInfo xml:id="idd3588408-e7df-4aa5-aef2-fd15f67881cd">
+                  <note xml:id="id07449ec1-8f6e-4aaf-b540-db1f6e0d80b3">
+                    <p xml:id="id95e8af1e-1ff0-4b8f-ac1e-de40de53fc55">(<hi xml:id="id7985a14e-684b-42bc-ae1b-e948a7b645bd" rendition="#ita">L-fort.</hi> + <hi xml:id="id28270999-a269-46cb-a273-d74580877007" rendition="#ita">B-fort.</hi> 239; KA, D pk. 2 læg 30; <hi xml:id="idb04f0abc-3ae3-45e9-9d97-f9542004bcbf" rendition="#ita">B&amp;A</hi> 278)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.315" next="#additional.315">
+              <msIdentifier xml:id="id965bed8f-564e-46bb-8bf5-b69bb7e146df">
+                <idno xml:id="id3311f6b6-150d-4515-8591-5a7570bbaa8c">315</idno>
+              </msIdentifier>
+              <physDesc xml:id="id8e795e71-0c08-4688-a482-32835f5d5a38">
+                <p xml:id="id031988f7-b00e-403e-9f8a-462b10b972d1"><ref xml:id="id12b35c64-c49a-4b18-bf6f-e84eea5f1568" target="../B308/txt.xml#n315" type="lettersAndDedications" n="315">Brev 315</ref>. Fra <persName xml:id="idc7a32dec-df1e-4f6f-a5d6-520c12208017" key="Ross, Petronella von">Petronella Ross</persName> til SK (<hi xml:id="id012f44f2-7298-4a37-8969-a2ea03b3be15" rendition="#ita">SKS</hi> 28, 481-482).</p>
+                <p xml:id="idf957a28f-ab22-41ed-af43-71cbd604de4e">1 dobbeltblad i 4<hi xml:id="ide575e7d7-dc0e-412c-bc2a-9110fd6d84fc" rendition="#sup">o</hi>.</p>
+                <p xml:id="idf74df0f1-ce3f-4a0c-9732-5fda80f66dbb">Ingen paginering.</p>
+                <p xml:id="id950c3a82-c53b-40ca-9f15-8d959a458234">Papir: gulligt velin, glat. Mål: 171 × 204 mm.</p>
+                <p xml:id="idc6baaeba-855d-4c77-a1b1-f8210a0fb46d">Bladene har efter beskrivning været foldet tre gange på langs og tre gange på tværs.</p>
+                <p xml:id="id89e76585-a66f-4f10-abe3-f2932b4e387d">Bl. [1v] er to tredjedele beskrevet, bl. [2r] i en enkelt linje.</p>
+                <p xml:id="id3ae37fea-6187-4bae-9bc9-ad779bda569a">Få korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.315" prev="#physDesc.315">
+              <msIdentifier xml:id="idc9efb42a-b218-4b37-88ad-494a4847d55f">
+                <idno xml:id="ide11dabda-4fb0-4787-9cc8-207925d6f93b">315</idno>
+              </msIdentifier>
+              <additional xml:id="idb49eca9e-125f-4a06-95bf-5f010fdcef74">
+                <adminInfo xml:id="ideee36dca-a97d-4897-93b8-c239b456674c">
+                  <note xml:id="id5b5a5477-6206-4ef2-bdbf-f38dbd0de114">
+                    <p xml:id="id91d1a72a-745c-4ecc-8869-e7976cf83a4c">(<hi xml:id="id0114f4f4-afd9-4166-bc98-b764ccab2ec9" rendition="#ita">L-fort.</hi> + <hi xml:id="id92246d57-b59b-4811-af17-29b3e8a5ad02" rendition="#ita">B-fort.</hi> 239; KA, D pk. 2 læg 25; <hi xml:id="id8b2f280f-2a62-4a20-8ddb-48692b38a14f" rendition="#ita">B&amp;A</hi> 280)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.316" next="#additional.316">
+              <msIdentifier xml:id="id0bd6814c-9819-4d32-9e7d-6a2ec93ab165">
+                <idno xml:id="id83f3ce5b-74b4-43e1-85d3-ea7cb2f117ae">316</idno>
+              </msIdentifier>
+              <physDesc xml:id="id7cdbadd0-8699-48c8-a786-914f9a80dc0e">
+                <p xml:id="id91f360c8-9d5b-472b-8647-610bd95f1748"><pb xml:id="ss621" n="621" edRef="#SKS"/><ref xml:id="id3ae58d56-d339-4678-a5c4-ceef2dd77559" target="../B308/txt.xml#n316" type="lettersAndDedications" n="316">Brev 316</ref>. Fra <persName xml:id="id24891694-abea-4d4a-b70e-a4aa9a66ede2" key="Fibiger, Ilia">Ilia Fibiger</persName> til SK (<hi xml:id="id6837380f-cdaf-4043-b34e-3b8de034639c" rendition="#ita">SKS</hi> 28, 482-485).</p>
+                <p xml:id="id67c7b730-35a7-4a38-822a-23ccdbd98048">1 dobbeltblad i stor 8<hi xml:id="ida2f3b2f6-a5b9-4ebc-bd9c-c91dcde37f42" rendition="#sup">o</hi>.</p>
+                <p xml:id="id3542b6e8-e107-4cfa-b139-af41e6251de0">Ingen paginering.</p>
+                <p xml:id="idc456f617-432f-497b-a70c-d18b9d70b60a">Papir: blåligt post-velin, ribbet. Mål: ca. 140 × 218 mm.</p>
+                <p xml:id="id3a135d93-d05c-468a-865a-c83ea3eb0037">Bladene har været foldet to gange på tværs.</p>
+                <p xml:id="id2658cc73-b65e-4afb-82ed-82206ee4f483">En enkelt korrektion.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.316" prev="#physDesc.316">
+              <msIdentifier xml:id="idc38326ed-84b3-4b78-bc58-bb03cea5915d">
+                <idno xml:id="id1822bab8-9af4-42f7-b350-3b37d1d98059">316</idno>
+              </msIdentifier>
+              <additional xml:id="id29097458-dbbd-4618-80f3-c8b9e00d8b14">
+                <adminInfo xml:id="id3faef528-9a30-4761-9a3d-5cd1f824aaa0">
+                  <note xml:id="id9908419d-c52c-4d23-a7f6-2736f548a112">
+                    <p xml:id="ide8682127-2e29-4cb4-a73d-1e0944320c3f">(<hi xml:id="id54c4d7ce-8186-492e-9ed8-2a2910495f56" rendition="#ita">L-fort.</hi> + <hi xml:id="id1d28df14-ca05-4014-9891-c2fa9c74bdb1" rendition="#ita">B-fort.</hi> 239; KA, D pk. 2 læg 31; <hi xml:id="idbbb5bc7f-15e0-448e-801d-847d47b9be3e" rendition="#ita">B&amp;A</hi> 289)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.317" next="#additional.317">
+              <msIdentifier xml:id="ide042aea5-b1de-4433-821c-69bf3144c587">
+                <idno xml:id="id3ee77cd2-59e6-4d5d-bf7d-8586e39f5e79">317</idno>
+              </msIdentifier>
+              <physDesc xml:id="id016d54e3-0959-4dd3-8399-75984a9dedd6">
+                <p xml:id="id3e817e9e-058d-4e8f-8049-ab043e1a04f5"><ref xml:id="id6bb1392d-0305-4724-8510-32adc3198f00" target="../B308/txt.xml#n317" type="lettersAndDedications" n="317">Brev 317</ref>. Fra <persName xml:id="id6c3b9747-7513-466a-93c1-9116e2f5f2bd" key="L.H.">L.H.</persName> til SK (<hi xml:id="idf8cdcdfb-22ca-4709-bfb1-3482daf2b32c" rendition="#ita">SKS</hi> 28, 485-488).</p>
+                <p xml:id="id88232936-5446-4655-b0be-9548e79ad6b4">1 dobbeltblad + 1 løst blad i 8<hi xml:id="id958534e2-18cf-401b-a9df-7b44bc0f0f39" rendition="#sup">o</hi>.</p>
+                <p xml:id="idb751cf47-8291-4e84-88e0-6942b52bff49">Ingen paginering.</p>
+                <p xml:id="idb23825c1-6f95-4d20-96c0-a53742b64910">Papir: gulligt postvelin, glat. Mål: 135 × 206 mm.</p>
+                <p xml:id="id79b9c869-8a3f-4cd5-aa42-4195037dbe36">Bladene har været foldet tre gange på tværs; det løse blad har været foldet to gange på langs og to gange på tværs til konvolut (mål: 138 × 55 mm); sort laksegl med signeten: »H H«. Bladene bærer præg af yderligere foldning på tværs.</p>
+                <p xml:id="ide6f5b261-c10e-4552-8be0-2f8521bc67d2">Bl. [3v] er beskrevet i syv linjer, dog uden at dække konvoluttens udskrift (<hi xml:id="id49927a4e-f2db-4088-b8f2-2c31ca57ecf6" rendition="#ita">SKS</hi> 28, 488,20-26).</p>
+                <p xml:id="id678586c7-4bab-45ee-94d3-4a31a560d004">Få korrektioner.</p>
+                <p xml:id="ida62c699e-0bf3-41c6-af25-533a9e9affb1">På konvolutten, bl. [3v], findes et ellipseformet poststempel: »F: 9 <formula xml:id="ide134856d-bf0b-48df-9a39-6c1d365c5b51" notation="mathml">313</formula> 52 P:« og et frimærke pålydende <hi xml:id="id9acbfd9c-5335-491c-9856-cef4a8de858a" rendition="#capiTyp">fire r.b.s.,</hi> annulleret med stumt ringstempel. Der er desuden en postal påtegning (se <ref xml:id="ida1f32e64-acb7-4bc5-ac70-9c0cd976bc6e" target="../B308/txt.xml#ill_24" type="figure" n="484">illustration 24</ref> i <hi xml:id="id097fbc52-5bca-4705-922b-c810ffba89b7" rendition="#ita">SKS</hi> 28, 484).</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.317" prev="#physDesc.317">
+              <msIdentifier xml:id="id7c936fe3-6f4a-4cf5-a0fa-634b842df7cf">
+                <idno xml:id="id8a50afbe-4a2e-4088-ac28-020ec241f1bd">317</idno>
+              </msIdentifier>
+              <additional xml:id="idf8b20df4-8939-4cfb-83fd-2485dd65a29a">
+                <adminInfo xml:id="idd8d20785-3839-470d-986f-2f329f9e5bd6">
+                  <note xml:id="id14a8b7dd-6697-4c18-b810-81a08f436fb4">
+                    <p xml:id="id9710f9e4-1188-4ade-b379-36a42eb5b02b">(<hi xml:id="id112fe87d-a44e-4f60-be35-e46b1ac5c382" rendition="#ita">L-fort.</hi> + <hi xml:id="idbb4dcfb5-7608-4d73-9f2a-29de55617a6b" rendition="#ita">B-fort.</hi> 239; KA, D pk. 2 læg 17; <hi xml:id="idb303a2a6-b5a0-4d01-803b-6d58608670c9" rendition="#ita">B&amp;A</hi> 292)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.318" next="#additional.318">
+              <msIdentifier xml:id="id21b4ddf9-5a96-480e-a0d9-021329d2f2e7">
+                <idno xml:id="id7eb17c87-211a-47f4-bb32-88f085a760ff">318</idno>
+              </msIdentifier>
+              <physDesc xml:id="id9d27ae19-15dc-4904-bfce-2fbcc0a6ca35">
+                <p xml:id="idbc1f1d4c-2216-4120-ab9e-f429b9fa6342"><ref xml:id="idea0d7686-0224-4ea8-b94a-a56b94eb7664" target="../B308/txt.xml#n318" type="lettersAndDedications" n="318">Brev 318</ref>. Fra en ukendt til SK (<hi xml:id="idb9b9b1e1-6225-4326-b1c6-3139b03d4c53" rendition="#ita">SKS</hi> 28, 489).</p>
+                <p xml:id="id947c1d32-ab0d-48fb-908f-7149b7837a79">Ms. er gået tabt, men findes i afskrift af <persName xml:id="id8b1fb84d-bd25-47cb-9e9c-7906993d880d" key="Barfod, Hans Peter">H.P. Barfod</persName>, som indledningsvis skriver: »S.K. opbevarede blandt sine Papirer følgende af en meget uøvet <hi xml:id="id60f0709b-433c-447e-b69a-705c711ee919" rendition="#ita">Kvinde</hi>haand skrevne <hi xml:id="id98f0ee9c-948b-489c-a78d-720f176b9fcf" rendition="#ita">Billet</hi>, der har nogen Interesse ved det Vidnesbyrd, den indeholder om <persName xml:id="id278b5867-6c4f-4f92-a3e0-0b527bfbd4d5" key="Kierkegaard, Søren Aabye">S.K.</persName>s Indflydelse selv paa Steder, hvor man ikke skulde vente at finde hans Skrifter læste og paaskjønnede.«<note xml:id="id071fb05d-2cf6-44d9-afc5-5ce93ca6a78a"><p xml:id="idc2d13e43-6326-4aba-bb56-026f01d81f3c">Det er uvist, hvorfor <persName xml:id="idb56ee513-6376-477a-b17d-16df6e78af7f" key="Barfod, Hans Peter">Barfod</persName> foretog en afskrift af ms., som han tilsyneladende selv havde fundet blandt papirerne, og hvordan det efterfølgende er forsvundet. <persName xml:id="id57d8ca85-91ae-4aec-bb5d-1e4097d6ed11" key="Barfod, Hans Peter">Barfod</persName> bragte end ikke afskriften i <hi xml:id="id9ebb5b23-79ea-46fa-a40e-d6507ed5edf3" rendition="#ita">EP.</hi></p></note></p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.318" prev="#physDesc.318">
+              <msIdentifier xml:id="id943a6653-265a-4d66-81b3-afe97da0c965">
+                <idno xml:id="id623edca4-47aa-472e-9531-f997f056b9e9">318</idno>
+              </msIdentifier>
+              <additional xml:id="ida22d3ce4-efa5-497a-868b-93fd6758ae3f">
+                <adminInfo xml:id="idd1ebf455-889e-4055-b521-55b428e31205">
+                  <note xml:id="id8a5e20f7-9a98-4407-bced-5d9e3c8ac44b">
+                    <p xml:id="id087b6901-1085-488d-9114-52fe02af7f94">(KA, D pk. 2 læg 40; <hi xml:id="id64390a06-ec18-40df-84c5-64c43c4d2b6f" rendition="#ita">B&amp;A</hi> 311)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+          <p xml:id="idcc508efe-a4a6-47fe-a24d-1cf037f58a90">(<hi xml:id="id4a92fb92-61dd-4e20-8b0e-22850fd5c00e" rendition="#ita">L-fort.</hi> 239, 316 og 319 + <hi xml:id="id581e6a59-f866-4338-b11b-cd34ebd25ffe" rendition="#ita">B-fort.</hi> 239, 316 og 319.44; KA, D pk. 2 læg 3, 17, 18, 25, 30, 31, 34 og 40; NKS 1994 2<hi xml:id="id2c7ec4df-2154-4f75-a38d-dcfb90516d54" rendition="#sup">o</hi>; <hi xml:id="idf253bb76-1271-4223-b745-3ebd4333397b" rendition="#ita">B&amp;A</hi> 201, 203, 204, 270, 271, 277, 278, 280, 289, 292 og 311)</p>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="id36fc0911-1fd5-4652-8966-d4f9c7d13ec9"><pb xml:id="ss622" n="622" edRef="#SKS"/>2. Datering og kronologi</head>
+          <p xml:id="id9fc9df05-7df4-487b-ae3a-057d39abca5e">Gruppen indeholder brevvekslingen mellem SK og nogle af hans kvindelige læsere, i alt 11 breve. <ref xml:id="id6fa2f958-ce58-4be4-b073-7ade4b008da1" target="../B308/txt.xml#n308" type="lettersAndDedications" n="308">Brev 308</ref> er stilet til SKs forfatterpseudonym <persName xml:id="id33127813-485d-498f-919b-d69eaac263dc" key="Victor Eremita">Victor Eremita</persName>. Seks breve er fra anonyme eller pseudonyme afsendere, hvoraf to er identificeret: »Et Skriftebarn«, afsenderen af <ref xml:id="id4e496b1c-8938-4948-9c75-95197e0b2a1d" target="../B308/txt.xml#n311" type="lettersAndDedications" n="311">Brev 311</ref>, er kvindesagsdebattøren Fanny <persName xml:id="id3ea005bf-8f65-4136-9fd1-dda1512c1223" key="Bretteville, Fanny Lodovica de">Lodovica de Bretteville</persName> (1827-59). Mærket »Frøken F:L:«, som benyttes af afsenderen i brevet, synes at bekræfte dette. <ref xml:id="id112fcb84-0336-4771-8b1d-8d0ab82b02fd" target="../B308/txt.xml#n316" type="lettersAndDedications" n="316">Brev 316</ref> er ikke underskrevet, men brevskriverens reference til sine indsendte arbejder til Det Kongelige Teater godtgør, at der er tale om forfatterinden <persName xml:id="id3850426b-0ccb-4640-8af0-5a4fce86e780" key="Fibiger, Ilia">Ilia Fibiger</persName> (1817-76).<note xml:id="id48ba9def-fe79-4e66-90ae-fa85ccb1490a"><p xml:id="idbbc1dfd1-65a8-4aff-9b6a-03661520086b"><persName xml:id="id93e96a40-84e4-4f25-bdec-5f30c624e546" key="Fibiger, Ilia">Ilia Fibiger</persName>s tidlige forfatterskab og forbindelsen til SK er behandlet i niecen <persName xml:id="idbf1d2139-b433-4861-b7e8-6e138e84de5c" key="Aasen, Margrethe Cecilia Nielsen">Margrethe Fibiger</persName>s biografi <hi xml:id="id5ae42549-e2c6-4f48-ae7b-a8b05ce9e757" rendition="#ita">Et Kvindeliv – <persName xml:id="idcb22318d-6768-4de8-a5e5-bbec8a738685" key="Fibiger, Ilia">Ilia Fibiger</persName>,</hi><placeName xml:id="id79603a9c-3f3a-4fb9-b40e-60cf5fc86849" key="København">Kbh.</placeName> 1894, s. 60-71. Se også kommentarene til <ref xml:id="id6db616fd-90b0-497c-b11a-dc5aad673c80" target="../B308/txt.xml#n316" type="lettersAndDedications" n="316">Brev 316</ref>.</p></note> Personerne bag brevskriverne <persName xml:id="id96e65607-b531-4f1e-9f8b-cdf2ff817d7f" key="e – e">e – e</persName> (<ref xml:id="id398e4828-a0fd-4b60-abb9-e7b513a684ef" target="../B308/txt.xml#n313" type="lettersAndDedications" n="313">Brev 313</ref>), <persName xml:id="id3a358dd3-6e4f-4597-96bf-8c1d5549abbd" key="S: F:">S: F:</persName>, (<ref xml:id="idea01c0cb-f403-45f1-be71-8ab01cd6ddd0" target="../B308/txt.xml#n314" type="lettersAndDedications" n="314">Brev 314</ref>) og <persName xml:id="idb7b3eea3-bb34-4b17-9b7b-de20108d11ae" key="L.H.">L.H.</persName> (<ref xml:id="id106fec68-9cdc-4947-8e95-afa861e1f9a9" target="../B308/txt.xml#n317" type="lettersAndDedications" n="317">Brev 317</ref>) samt afsenderen af <ref xml:id="id88e470c8-bf55-4e44-9135-99560678b44e" target="../B308/txt.xml#n318" type="lettersAndDedications" n="318">Brev 318</ref> kendes ikke.<note xml:id="idf72f4f1b-959b-4f2a-bb6f-72913493766b"><p xml:id="idf913d806-0bdc-469a-bc7e-5bc96a5c703a">Se kommentaren til de enkelte breve. Om muligheden for, at <persName xml:id="id3fddccda-b24b-447d-92b4-1faf1e9e412d" key="L.H.">L.H.</persName> dækker over grevinde <persName xml:id="idf26f1f16-8406-4f2d-954d-e5ec618f88e3" key="Gjertrud Lovise Christiane Fransisca Hage" sameAs="Schmettau, Louise">Louise Schmettau, f. Hage</persName> (1823-1907), se kommentarene til Brev 317, <ref xml:id="ided27ea2a-48b4-4b0e-80a9-32d1541f9aaa" target="../B308/kom.xml#b-5409" type="commentary">488,<hi xml:id="idf3c46ad3-4598-4658-9612-aacdb96b1caa" rendition="#size-1"><hi xml:id="id679a7744-06a2-4a90-b44c-077eb9a7ae4d" rendition="#ita">19</hi></hi></ref> og <ref xml:id="idf1433ccd-9481-4a10-88b8-b729033e066a" target="../B308/kom.xml#b-3272" type="commentary">488,<hi xml:id="idbee1883d-d7ed-49d6-a2e1-8840d18f6991" rendition="#size-1"><hi xml:id="idcdd47c56-0d51-41b2-af59-ca85191362e2" rendition="#ita">26</hi></hi></ref>.</p></note></p>
+          <p xml:id="id8b2c320f-af04-46af-af1f-7e82d8cca37c" rendition="#ind">Seks breve er dateret. <ref xml:id="id90705285-0d07-4920-b88b-f1a4103c1460" target="../B308/txt.xml#n310" type="lettersAndDedications" n="310">Brev 310</ref> (fra et Skriftebarn) er dateret den 10. dec. 1850, <ref xml:id="id70e04dd7-e7e3-4240-9cac-0768f533d974" target="../B308/txt.xml#n313" type="lettersAndDedications" n="313">Brev 313</ref> (fra <persName xml:id="id878a84c5-55c8-4fb5-b136-8a9a041dd9ef" key="e – e">e – e</persName>) og 314 (fra <persName xml:id="id52716b29-90e4-42a1-873e-89f60e27ecd5" key="S: F:">S: F:</persName>) er begge dateret den 21. maj 1851, <ref xml:id="idecd826bb-1877-46c0-ada3-ff1aa7865019" target="../B308/txt.xml#n315" type="lettersAndDedications" n="315">Brev 315</ref> (fra <persName xml:id="ida8587fd8-f0a8-4405-ab41-029bcbd0f3cc" key="Ross, Petronella von">Petronella Ross</persName>) er dateret den 12. juli 1851, <ref xml:id="idbd791c90-3d79-4ac6-a770-dd49c8e15b4f" target="../B308/txt.xml#n316" type="lettersAndDedications" n="316">Brev 316</ref> (fra den anonyme <persName xml:id="id2877f374-6146-46fb-92a5-88bc8ea7b01f" key="Fibiger, Ilia">Ilia Fibiger</persName>) er dateret den 21. nov 1851 og <ref xml:id="idb8f7dd64-e13e-4f40-8ed8-2970c3713180" target="../B308/txt.xml#n317" type="lettersAndDedications" n="317">Brev 317</ref> (fra <persName xml:id="id3049ba70-dda6-4ca8-8429-c55395cbc23c" key="L.H.">L.H.</persName>) den 19. marts 1852. De udaterede lader sig tilnærmelsesvis datere med undtagelse af <ref xml:id="ida8a8b57f-d7ef-4563-92b5-b25190840959" target="../B308/txt.xml#n318" type="lettersAndDedications" n="318">Brev 318</ref>. Ingen breve synes tidligere end 1849.</p>
+          <p xml:id="id24ef193d-26e4-4107-aead-052104fd158a" rendition="#ind"><ref xml:id="ide50fcf07-ffec-4b8b-be26-ac1b5f8fbae1" target="../B308/txt.xml#n308" type="lettersAndDedications" n="308">Brev 308</ref> er skrevet af den svenske forfatterinde <persName xml:id="id48fd49c9-6dd0-49ec-9c3d-541ddb3987e8" key="Bremer, Fredrika">Fredrika Bremer</persName> under hendes ophold i <placeName xml:id="idda85ba34-ee1e-4885-b670-6dd9a35c60b9">København</placeName> 1848-49.<note xml:id="id465c5e9f-72f5-4a42-b271-dcf2777e79e9"><p xml:id="id03642688-deeb-4bad-a24b-4cd59748c0aa">Se kommentaren til Brev 308, <ref xml:id="id291e8045-11ab-4f0d-890a-25b0e7d3efde" target="../B308/kom.xml#b-5239" type="commentary">467,<hi xml:id="id59e38781-5f47-42fb-8d8f-f47562482499" rendition="#size-1"><hi xml:id="ida84cf7d2-d4d8-4386-8cc6-ff64ebe68966" rendition="#ita">4</hi></hi></ref>.</p></note> Det er en invitation til <persName xml:id="id802591c5-922c-42da-a0e1-dfa8f2b4ea5d" key="Victor Eremita">Victor Eremita</persName> om at aflægge besøg på hendes bopæl den nærmeste torsdag, Kristi Himmelfartsdag (<hi xml:id="id5e64343c-1dbe-4d50-823f-fa67c5827bc4" rendition="#ita">SKS</hi> 28, 467,13). Det placerer brevets tilblivelse i dagene op til torsdag d. 17. maj 1849. <ref xml:id="id6995828c-70f7-4f21-b579-98c9d69c2161" target="../B308/txt.xml#n309" type="lettersAndDedications" n="309">Brev 309</ref>, stilet til SK, er en opfølgning på invitationen i <ref xml:id="id83431807-44f4-4510-b841-aa30d853197a" target="../B308/txt.xml#n308" type="lettersAndDedications" n="308">Brev 308</ref>, dateret »Tisdag afton«, formentlig den 15. maj. Kladden til SKs svar på
+        <persName xml:id="idad27d9b5-756a-4568-b1e0-e9319d41ad76" key="Bremer, Fredrika">Fredrika Bremer</persName>s invitation er <ref xml:id="id8cb36620-907a-4b1b-a260-5ef78019a7d1" target="../B308/txt.xml#n310" type="lettersAndDedications" n="310">Brev 310</ref>, der bl.a. med passagen »De taler om Deres Indbydelse som var næsten dumdristigt vovet« (<hi xml:id="idf529f564-b3d8-47b8-899f-47b71dc1a903" rendition="#ita">SKS</hi> 28, 468,23-24) refererer til <ref xml:id="id66fa6883-4cbe-4cbf-8f91-da8d78d1227c" target="../B308/txt.xml#n308" type="lettersAndDedications" n="308">Brev 308</ref>. Om den kortvarige kontakt til <persName xml:id="id69c3d37c-b5e2-48a0-843b-a879bc965aef" key="Bremer, Fredrika">Fredrika Bremer</persName> skrev SK nogle måneder senere i journalen:</p>
+          <quote xml:id="id6a5c5171-8d0b-4638-b5da-c7b9ec99bda3">
+            <p xml:id="idadff2546-f03c-48f2-bc0c-a151acfdbb69">Hun var saa artig ved en meget forbindtlig Billet at invitere mig til en Samtale. Nu fortryder jeg næsten, at jeg ikke svarede, som jeg først havde <pb xml:id="ss623" n="623" edRef="#SKS"/>paatænkt, blot disse Ord: nei, mange Tak jeg dandser ikke. Men i ethvert Fald jeg refuserede hendes Indbydelse og kom ikke.<note xml:id="id71565a23-f419-4632-8909-34cb706f6469"><p xml:id="idf4e3070b-abb1-487a-be7e-5f03492c882d"><ref xml:id="id9dca7c60-b0ab-4a2b-a057-400c69aa0cac" target="../NB12/txt.xml#n115" type="journalsAndPapers" n="115">NB12:115</ref>, <hi xml:id="id3bed5146-31c2-4063-a83b-5d486d0dbcb7" rendition="#ita">SKS</hi> 22, 209,10-15, også citeret i uddrag i kommentaren til Brev 308, <ref xml:id="id297c8447-c692-456e-ba41-c93185433877" target="../B308/kom.xml#b-5252" type="commentary">468,<hi xml:id="idc0f139a1-3d38-4824-a605-f8612bd13299" rendition="#size-1"><hi xml:id="id27f1f6e8-3d8b-4e0a-b80e-86dc7645972d" rendition="#ita">13</hi></hi></ref>. Optegnelsen er skrevet i sidste halvdel af aug. 1849, se <ref xml:id="id2603c471-f5b8-466b-8ae2-427103242c91" target="../NB12/txr.xml" type="textCriticalAccount">tekstredegørelsen til journalen NB12</ref> i <hi xml:id="idfcdd20e6-17fe-4ccc-876b-5e1b13e919f7" rendition="#ita">SKS</hi> K22, 168.</p></note></p>
+          </quote>
+          <p xml:id="id852770a4-b44a-4ab3-ab31-1c02e0f03cd4">Selv om SK i tilbageblik var utilfreds med sit endelige svar, tyder det dog på, at <ref xml:id="id4e909e97-0342-435d-8e68-e89f4da2a322" target="../B308/txt.xml#n310" type="lettersAndDedications" n="310">Brev 310</ref> blev afsendt i en renskrevet eller omarbejdet version.</p>
+          <p xml:id="ida091c16d-ba75-4db8-9332-266964845d97" rendition="#ind"><ref xml:id="id8e975a6f-ec92-485d-bc5b-cb009bda7b6b" target="../B308/txt.xml#n312" type="lettersAndDedications" n="312">Brev 312</ref> er SKs kladde til et svar på <persName xml:id="id90c72ad1-6e85-43d7-a1a4-170a0f0cfc7b" key="Bretteville, Fanny Lodovica de">Lodovica de Bretteville</persName>s pseudonyme brev dateret 10. dec. 1850 (<ref xml:id="idaaf90fd0-911b-41f0-8084-1bc6881a6e98" target="../B308/txt.xml#n311" type="lettersAndDedications" n="311">Brev 311</ref>) og næppe skrevet mange dage efter. SK sendte dog aldrig et svarbrev med den i <ref xml:id="idd5629a34-8e9f-463f-9243-23854e4e3b92" target="../B308/txt.xml#n312" type="lettersAndDedications" n="312">Brev 312</ref> bevarede ordlyd; nederst på ms. har han noteret, hvordan han returnerede brevet med det vedlagte manuskript: »Papirerne bleve blot convoluterede, og i Convoluten skrevet: / Herpaa kan jeg ikke indlade mig« (<hi xml:id="idac53df06-349d-4351-8b6c-b2f9ebe29611" rendition="#ita">SKS</hi> 28, 475,11-12). <persName xml:id="idb2386da2-9107-4f12-b1a6-5f0bc9386dec" key="Bretteville, Fanny Lodovica de">Lodovica de Bretteville</persName> beholdt det returnerede brev og manuskript, men den omtalte konvolut er formentlig gået tabt.</p>
+          <p xml:id="idd69bb861-66cd-4ed5-9456-a0dbf9524687" rendition="#ind"><ref xml:id="id39917c8c-ad18-4f44-9f6d-488c2794c48e" target="../B308/txt.xml#n318" type="lettersAndDedications" n="318">Brev 318</ref> er indirekte overleveret og udateret. Den anonyme afsender er ifølge brevet »skenkedt den Gave at kunde opfatte og modtage Deres Skrefter« (<hi xml:id="id51e738fb-36db-4f1f-8e35-d8ffe302c5d1" rendition="#ita">SKS</hi> 28, 489,4-5). Referencen til SKs 'skrifter' antyder, at SK på modtagelsestidspunktet er en etableret forfatter. Brevet stammer således formentlig fra årene omkring modtagelsen af de øvrige breve fra læserinderne.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

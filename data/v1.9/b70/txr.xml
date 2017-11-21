@@ -1,116 +1,515 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE txr SYSTEM "http://sks.dk/kn1/txr.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Familien Heiberg</title>
-     
-     <title type="short">B70</title>
-  <author>
-   <name>Rasmus Sevelsted</name>
-  </author>
- 
-     
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>redigeret af</resp>
-   <name>Redigeret af Johnny Kondrup. Citater</name><name>henvisninger kontrolleret af Irene Ring</name>
-  </respStmt>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2012</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K28</biblScope>
-     <biblScope unit="file">http://sks.dk/b70/txr.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition><rendition xml:id="capiTyp" scheme="free">Some spectacular type setting, in SKS rendered in small caps</rendition><rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">txr2tei.xsl</bibl> version as of <date>2017-02-15</date> importing <bibl type="file">kn12tei.xsl</bibl></change>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20130220">txr/XML, <bibl><idno type="version">1.8</idno>, <biblScope unit="file">http://sks.dk/b70/txr.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id1c349c5b-ddcd-488c-95ab-815435f9ac60">
+    <fileDesc xml:id="id45b98272-ee23-4fbf-9792-760444c63f31">
+      <titleStmt xml:id="id9aab8b24-2b37-4f88-be3c-56496f61f8f6">
+        <title xml:id="id1f1db229-3a2d-403f-9678-1659f70b187b" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id422c135e-407c-4300-9094-15fe9011c206">Familien Heiberg</title>
+        <title xml:id="ida3b02b89-1338-4482-86cb-6324c12e318c" type="short">B70</title>
+        <author xml:id="id9cf75877-1c53-444b-9546-4ec947f75221">
+          <name xml:id="idd946fec7-5d22-4706-830e-ee8bc092f183">Rasmus Sevelsted</name>
+        </author>
+        <editor xml:id="id89cd3dd1-17c2-4ae7-8eb2-d7f9d124c198">
+          <name xml:id="id42fb7f3b-b2eb-4af3-a495-1164102402e5">Niels Jørgen Cappelørn</name>
+          <name xml:id="id13653da4-176c-407f-9688-161b699019ee">Joakim Garff</name>
+          <name xml:id="ide3a6b1ab-1dcc-44d3-8ec8-c03a9a2c06ad">Johnny Kondrup</name>
+          <name xml:id="id4f1701e2-1199-47e5-a47e-65b74e50f182">Tonny Aagaard Olesen</name>
+          <name xml:id="idb26ccb12-8420-4ce4-9f30-e728370ae97c">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="id7c99effe-136f-4121-8817-46d2a82a8216">
+          <resp xml:id="idf0a9c579-6220-4d04-81ea-921058686a79">redigeret af</resp>
+          <name xml:id="id7f0794b6-bc47-4ca2-987d-242c6b29cf93">Redigeret af Johnny Kondrup. Citater</name>
+          <name xml:id="id24d01079-cc65-43d6-93f8-bb8843cf7d1b">henvisninger kontrolleret af Irene Ring</name>
+        </respStmt>
+        <respStmt xml:id="id9dc812e8-0d47-4dae-978f-b418f0cee111">
+          <resp xml:id="ide1fd4294-a1f3-4b5a-872c-377739aad131">elektronisk redigeret af</resp>
+          <name xml:id="ida3cfaaf7-3654-47cd-b3a8-6750b86b5f05">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id120b0417-bb9f-4a79-9e80-2b66f87984a6">
+        <authority xml:id="id05a85db1-f50c-400e-825c-b049975d0356">Søren Kierkegaard Forskningscenteret 2012</authority>
+        <availability xml:id="idb4d125ca-0f2c-474f-9484-3deca7e37e82" status="restricted">
+          <p xml:id="ide196c1ed-23aa-40bd-978c-207896fa7add">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id2e7756b3-d718-496b-af6d-34ed5c60063e">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="id33cb463a-c282-45e4-b80b-8263b930b1dd" unit="volume">K28</biblScope>
+        <biblScope xml:id="id38be54be-6e59-4eb2-8c26-8fba44d448c8" unit="file">http://sks.dk/b70/txr.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="idc5066786-1531-40fe-8f24-a7a175f0eb12">
+        <bibl xml:id="id3ff03583-79c6-4b9a-a1ce-d0e0ded2eed6" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="idc9b1088d-0426-4b9e-aa7d-c5f74f076c13">
+      <tagsDecl xml:id="ide22b38aa-bd45-47cd-9fab-6600ba626428">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+        <rendition xml:id="capiTyp" scheme="free">Some spectacular type setting, in SKS rendered in small caps</rendition>
+        <rendition selector="p,l,cell" scheme="css" xml:id="ind">text-indent: 1em</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id6b0c650d-34fd-4a17-9e70-8b691dcd93ca">
+      <change xml:id="idee7c6af0-be87-4e98-995b-6942e1f00f08">Transformed to TEI by style sheet <bibl xml:id="idedcb9b36-eb64-4549-963c-16cb8b74718d" type="file">txr2tei.xsl</bibl> version as of <date xml:id="iddfcb7991-8cd8-434c-a14f-44fb014285ec">2017-02-15</date> importing <bibl xml:id="idac61d663-c8af-48d1-9b9f-44cca0e45dc2" type="file">kn12tei.xsl</bibl></change>
+      <change xml:id="id30624b93-9517-47b4-9a28-b00917ff8f29">Transformed to TEI by style sheet <bibl xml:id="id4aa77f1f-9f11-4824-a519-7d821d95f90f" type="file">kn12tei.xsl</bibl> version <idno xml:id="idac450665-6bf2-46da-bb20-40f98fa94a2a" type="version">1.9</idno> as of <date xml:id="id0b834e93-0347-49a1-b46f-497e5b65ab6f">2017-02-21</date> by <name xml:id="id72521cf6-c690-433a-bef3-52f31f3fdb40">Karsten Kynde</name>, <orgName xml:id="id3c1488e2-908e-4b0c-9dc3-08ec3f4a9279">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="idc243fb66-5cee-457d-b370-a94dc8654dd2">København</placeName></change>
+      <change xml:id="id2f801c43-e207-4afb-b0bb-411cb05fcb34" when="20130220">txr/XML, <bibl xml:id="id016d0a4c-f183-44b8-bec3-4b434c904e4a"><idno xml:id="id2983d5e6-6700-4692-951e-b6461e14abf0" type="version">1.8</idno>, <biblScope xml:id="id0a239c5f-c8c1-45c0-b757-2813cb967860" unit="file">http://sks.dk/b70/txr.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
-
-<text type="TextCriticalAccount" subtype="lettersAndDedications"><body><div><head type="topText" n="Tekstredegørelse"/>
-    <head>Tekstredegørelse</head>
-    <list type="TOC">
-      <item>1. Manuskriptbeskrivelse<ptr type="chapter" target="#k1" n=""/></item>
-      <item>2. Datering og kronologi<ptr type="chapter" target="#k2" n="197"/></item>
-    </list>
-    <div type="level1" xml:id="k1">
-      <head>1. Manuskriptbeskrivelse</head>
-      <p>Til brevene i gruppen »Familien Heiberg« findes følgende manuskripter, hvoraf <ref target="../B70/txt.xml#n70" type="lettersAndDedications" n="70">Brev 70</ref>, <ref target="../B70/txt.xml#n72" type="lettersAndDedications" n="72">72</ref>.1, 72.3, 73, 74.1 og 75-78.1 befinder sig i Kierkegaard Arkivet (KA) og <ref target="../B70/txt.xml#n71" type="lettersAndDedications" n="71">Brev 71</ref>, <ref target="../B70/txt.xml#n72" type="lettersAndDedications" n="72">72</ref>.2 og 74.2 befinder sig i <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv på Rigsarkivet (RA); <ref target="../B70/txt.xml#n78" type="lettersAndDedications" n="78">Brev 78</ref>.2 og 78.3 befinder sig i <persName key="Heiberg, Johanne Luise">Johanne Luise Heiberg</persName>s Arkiv på Rigsarkivet.<note> <p><ref target="../B70/txt.xml#n70" type="lettersAndDedications" n="70">Brev 70</ref>-74 og 77 er tidligere trykt i <persName key="Kühle, Sejer">Sejer Kühle</persName>
-          »Søren Kierkegaard og den Heibergske Kreds« i <hi rendition="#ita">Personalhistorisk Tidsskrift,</hi> rk. 12, bd. 2, <placeName key="København">Kbh.</placeName> 1947, s. 1-13, og i <persName key="Borup, Morten">Morten Borup</persName> <hi rendition="#ita">Breve og Aktstykker vedrørende <persName key="Heiberg, Johan Ludvig">Johan Ludvig Heiberg</persName></hi> bd. 2-3, <placeName key="København">Kbh.</placeName> 1948-49; <ref target="../B70/txt.xml#n70" type="lettersAndDedications" n="70">Brev 70</ref> er desuden trykt i <persName key="Brandt, Frithiof">Frithiof Brandt</persName>
-          <hi rendition="#ita">Den unge S.K.</hi>, <placeName key="København">Kbh.</placeName> 1929; de øvrige breve er trykt første gang i <hi rendition="#ita">EP</hi> eller <hi rendition="#ita">B&amp;A.</hi></p>
-        </note></p>
-      <msDesc><msIdentifier><collection>B70</collection></msIdentifier>
-        <msPart xml:id="physDesc.70" next="#additional.70"><msIdentifier><idno>70</idno></msIdentifier><physDesc><p><ref target="../B70/txt.xml#n70" type="lettersAndDedications" n="70">Brev 70</ref>. Fra <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 125).</p><p>1 blad i 4<hi rendition="#sup">o</hi> med afklippet kant nederst og i venstre side.<note>
-                <p>Udgangspunktet for formatbetegnelsen er plane helark, som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Irregulære, fx afrevne, enheder betegnes som lapper. Dobbeltblad betegner et stykke papir, der er ombøjet (foldet) til blade.</p>
-              </note></p><p>Ingen paginering.</p><p><pb xml:id="ss194" n="194" edRef="#SKS"/>Papir: gulligt koncept, glat. Mål: 206 × 177 mm.<note>
-                <p>Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p>
-              </note></p><p>Bladet har efter beskrivning været foldet en gang på langs.</p><p>Rectosiden er beskrevet i seks linjer, versosiden ubeskrevet.</p></physDesc></msPart><msPart xml:id="additional.70" prev="#physDesc.70"><msIdentifier><idno>70</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 2 læg 12; <hi rendition="#ita">B&amp;A</hi> 6)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.71" next="#additional.71"><msIdentifier><idno>71</idno></msIdentifier><physDesc><p><ref target="../B70/txt.xml#n71" type="lettersAndDedications" n="71">Brev 71</ref>. Fra SK til <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> (<hi rendition="#ita">SKS</hi> 28, 125-126).</p><p>1 dobbeltblad i stor 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt skrivepapir, ribbet. Vandmærke: <hi rendition="#capiTyp">E &amp; R</hi>. Mål: 216 × 255 mm.</p><p>Bladene har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 103 × 99 mm<note>
-                <p>Oplysningen om konvoluttens mål gælder det foldede brev, alternativt den separate konvolut. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant); øverste kant bestemmes af udskriftens skriveretning.</p>
-              </note>); rød oblat.<note>
-                <p>Det gælder for alle breve, der har været foldet til konvolut og forseglet, at brevmodtagerens brud på forseglingen har forårsaget en mindre beskadigelse af ms.</p>
-              </note> Konvolutten har desuden været foldet en gang på tværs.</p><p>Bl. [1r] er to tredjedele beskrevet, bl. [1v]-[2r] ubeskrevet.</p><p>En enkelt korrektion.</p></physDesc></msPart><msPart xml:id="additional.71" prev="#physDesc.71"><msIdentifier><idno>71</idno></msIdentifier><additional><adminInfo><note><p>(RA, <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv A 2, korrespondance 1815-1862, breve fra andre, Chieviz-Søtoft; <hi rendition="#ita">B&amp;A</hi> 9)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.72" next="#additional.72"><msIdentifier><idno>72</idno></msIdentifier><physDesc><p><ref target="../B70/txt.xml#n72" type="lettersAndDedications" n="72">Brev 72</ref>. Fra SK til <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> (<hi rendition="#ita">SKS</hi> 28, 126-128). Tekstgrundlaget i <hi rendition="#ita">SKS</hi> 28 er ms. 72.2 (se <ref target="../B70/txt.xml#ill_7" type="figure">illustration 7, <hi rendition="#ita">SKS</hi> 28, 127</ref>).</p></physDesc>
-              <msPart xml:id="physDesc.72.1" next="#additional.72.1"><msIdentifier><idno>72.1</idno></msIdentifier><physDesc><p>Kladde.</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afklippet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt skrivepapir, glat. Mål: 169 × 204 mm.</p><p>Bladet har efter beskrivning været foldet tre gange på tværs.</p><p>Versosiden er ubeskrevet.</p><p>Få korrektioner. Nederst på siden findes en tilføjelse, der er indvist i teksten med rødkridt. Øverst er påskriften »Blev ikke brugt« tilføjet med blyant. Herunder ses dateringen »d. 29 Martz 1846.«.</p></physDesc></msPart><msPart xml:id="additional.72.1" prev="#physDesc.72.1"><msIdentifier><idno>72.1</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 2 læg 12)</p></note></adminInfo></additional></msPart>
-              <msPart xml:id="physDesc.72.2" next="#additional.72.2"><msIdentifier><idno>72.2</idno></msIdentifier><physDesc><p>Renskrift.</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med uregelmæssigt afrevet kant nederst og afklippet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt skrivepapir, glat. Mål: 169 × 204 mm.</p><p>Bladet har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 98 × 66 mm); rødt laksegl med signeten »SK«. Konvolutten har været foldet en gang på tværs.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.72.2" prev="#physDesc.72.2"><msIdentifier><idno>72.2</idno></msIdentifier><additional><adminInfo><note><p>(RA, <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv A 2, korrespondance 1815-1862, breve fra andre, Chieviz-Søtoft; <hi rendition="#ita">B&amp;A</hi> 134)</p></note></adminInfo></additional></msPart>
-              <msPart xml:id="physDesc.72.3" next="#additional.72.3"><msIdentifier><idno>72.3</idno></msIdentifier><physDesc><p><pb xml:id="ss195" n="195" edRef="#SKS"/>Kopi.</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrivningskant i højre side.</p><p>Ingen paginering.</p><p>Papir: gulligt skrivepapir, glat. Mål: 169 × 204 mm.</p><p>Bladet har efter beskrivning været foldet en gang på tværs.</p><p>Versosiden er ubeskrevet.</p><p>Øverst på rectosiden, med blyant og større skrift end det øvrige, findes tilføjelsen »<hi rendition="#ita">Copie</hi>«, og herunder tiltalen »Høistærede Hr Prof.« Midt i teksten den overstregede linje: »Det for Dem bestemte Exemplar«. Linjen er skrevet som begyndelsen af brevets andet og sidste afsnit. Den erstattende variant er skrevet på en ny linje nedenunder og stemmer overens med ordlyden i ms. 72.2.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.72.3" prev="#physDesc.72.3"><msIdentifier><idno>72.3</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 2 læg 12)</p><p>(KA, D pk. 2 læg 12; RA, <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv A 2, korrespondance 1815-1862, breve fra andre, Chieviz-Søtoft; <hi rendition="#ita">B&amp;A</hi> 134)</p></note></adminInfo></additional></msPart>
-            </msPart><msPart xml:id="additional.72" prev="#physDesc.72"><msIdentifier><idno>72</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 2 læg 12; RA, <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv A 2, korrespondance 1815-1862, breve fra andre, Chieviz-Søtoft; <hi rendition="#ita">B&amp;A</hi> 134)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.73" next="#additional.73"><msIdentifier><idno>73</idno></msIdentifier><physDesc><p><ref target="../B70/txt.xml#n73" type="lettersAndDedications" n="73">Brev 73</ref>. Fra <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> til SK (<hi rendition="#ita">SKS</hi> 28, 128-129).</p><p>1 dobbeltblad i 8<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: hvidligt brevpapir, glat, med præget bort. Mål: 134 × 204 mm.</p><p>Bladene har efter beskrivning været foldet tre gange på tværs.</p><p>En enkelt korrektion.</p></physDesc></msPart><msPart xml:id="additional.73" prev="#physDesc.73"><msIdentifier><idno>73</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 2 læg 12; <hi rendition="#ita">B&amp;A</hi> 135)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.74" next="#additional.74"><msIdentifier><idno>74</idno></msIdentifier><physDesc><p><ref target="../B70/txt.xml#n74" type="lettersAndDedications" n="74">Brev 74</ref>. Fra SK til <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> (<hi rendition="#ita">SKS</hi> 28, 129-131). Tekstgrundlaget i <hi rendition="#ita">SKS</hi> 28 er ms. 74.2.</p></physDesc>
-              <msPart xml:id="physDesc.74.1" next="#additional.74.1"><msIdentifier><idno>74.1</idno></msIdentifier><physDesc><p>Kladde.</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afklippet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt skrivepapir, glat. Mål: 169 × 204 mm.</p><p>Bladet har efter beskrivning været foldet en gang på tværs.</p><p>Versosiden er kun halvt beskrevet.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.74.1" prev="#physDesc.74.1"><msIdentifier><idno>74.1</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 2 læg 12)</p></note></adminInfo></additional></msPart>
-              <msPart xml:id="physDesc.74.2" next="#additional.74.2"><msIdentifier><idno>74.2</idno></msIdentifier><physDesc><p>Renskrift.</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gulligt skrivepapir, glat. Mål: 166 × 203 mm.</p><p>Bladet har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 98 × 67 mm); rødt laksegl med signeten »SK«.</p><p><pb xml:id="ss196" n="196" edRef="#SKS"/>Bl. [2v] er ubeskrevet.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.74.2" prev="#physDesc.74.2"><msIdentifier><idno>74.2</idno></msIdentifier><additional><adminInfo><note><p>(RA, <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv A 2, korrespondance 1815-1862, breve fra andre, Chieviz-Søtoft; <hi rendition="#ita">B&amp;A</hi> 136)</p><p>(KA, D pk. 2 læg 12; RA, <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv A 2, korrespondance 1815-1862, breve fra andre, Chieviz-Søtoft; <hi rendition="#ita">B&amp;A</hi> 136)</p></note></adminInfo></additional></msPart>
-            </msPart><msPart xml:id="additional.74" prev="#physDesc.74"><msIdentifier><idno>74</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 2 læg 12; RA, <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv A 2, korrespondance 1815-1862, breve fra andre, Chieviz-Søtoft; <hi rendition="#ita">B&amp;A</hi> 136)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.75" next="#additional.75"><msIdentifier><idno>75</idno></msIdentifier><physDesc><p><ref target="../B70/txt.xml#n75" type="lettersAndDedications" n="75">Brev 75</ref>. Fra <persName key="Gyllembourg, Thomasine">Thomasine Gyllembourg</persName> til SK. Kopi i <persName key="Heiberg, Johan Ludvig">J. L. Heiberg</persName>s hånd (<hi rendition="#ita">SKS</hi> 28, 131-134).</p><p>1 dobbeltblad i 2<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: gråligt skrivepapir, glat. Mål: 216 × 268 mm.</p><p>Bladet har efter beskrivning været foldet en gang på langs og en gang på tværs.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.75" prev="#physDesc.75"><msIdentifier><idno>75</idno></msIdentifier><additional><adminInfo><note><p>(KA, D pk. 2 læg 10; <hi rendition="#ita">B&amp;A</hi> 138)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.76" next="#additional.76"><msIdentifier><idno>76</idno></msIdentifier><physDesc><p><ref target="../B70/txt.xml#n76" type="lettersAndDedications" n="76">Brev 76</ref>. Fra SK til <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>, kladde (<hi rendition="#ita">SKS</hi> 28, 134).</p><p>1 løst blad i 2<hi rendition="#sup">o</hi> med afrevet kant i højre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 210 × 345 mm.</p><p>Bladet har efter beskrivning været foldet en gang på tværs, en gang på langs og derpå endnu en gang på tværs.</p><p>Rectosiden er godt halvt beskrevet, versosiden ubeskrevet.</p><p>Få korrektioner.</p></physDesc></msPart><msPart xml:id="additional.76" prev="#physDesc.76"><msIdentifier><idno>76</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort</hi> 235, <hi rendition="#ita">B-fort.</hi> 235.2; KA, D pk. 2, læg 12; <hi rendition="#ita">B&amp;A</hi> 281)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.77" next="#additional.77"><msIdentifier><idno>77</idno></msIdentifier><physDesc><p><ref target="../B70/txt.xml#n77" type="lettersAndDedications" n="77">Brev 77</ref>. Fra SK til <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> (<hi rendition="#ita">SKS</hi> 28, 135).</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrivningskant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 170 × 205 mm.</p><p>Bladet har efter beskrivning været foldet en gang på tværs.</p><p>Versosiden er ubeskrevet.</p><p>En del korrektioner.</p></physDesc></msPart><msPart xml:id="additional.77" prev="#physDesc.77"><msIdentifier><idno>77</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort</hi> 235, <hi rendition="#ita">B-fort.</hi> 235.2; KA, D pk. 2, læg 12; <hi rendition="#ita">B&amp;A</hi> 282)</p></note></adminInfo></additional></msPart>
-        <msPart xml:id="physDesc.78" next="#additional.78"><msIdentifier><idno>78</idno></msIdentifier><physDesc><p><ref target="../B70/txt.xml#n78" type="lettersAndDedications" n="78">Brev 78</ref>. Fra SK til <persName key="Heiberg, Johanne Luise">Johanne Luise Heiberg</persName> (<hi rendition="#ita">SKS</hi> 28, 135-136). Tekstgrundlaget for <hi rendition="#ita">SKS</hi> 28 er mss. 78.2 og 78.3 (se <ref target="../B70/txt.xml#ill_8" type="figure" n="137">illustration 8, <hi rendition="#ita">SKS</hi> 28, 137</ref>).</p></physDesc>
-              <msPart xml:id="physDesc.78.1" next="#additional.78.1"><msIdentifier><idno>78.1</idno></msIdentifier><physDesc><p>Kladde.</p><p>1 løst blad i 4<hi rendition="#sup">o</hi> med afrevet kant i venstre side.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, glat. Mål: 168 × 206 mm.</p><p><pb xml:id="ss197" n="197" edRef="#SKS"/>Bladet har efter beskrivning været foldet en gang på langs og en gang på tværs.</p><p>Versosiden er ubeskrevet.</p><p>Øverst på rectosiden findes påskriften »<hi rendition="#ita">Brugt</hi>« med blyant. Hele teksten er desuden overstreget med en enkelt blyantstreg på tværs, fra øverste venstre til nederste højre hjørne.</p><p>En del korrektioner.</p></physDesc></msPart><msPart xml:id="additional.78.1" prev="#physDesc.78.1"><msIdentifier><idno>78.1</idno></msIdentifier><additional><adminInfo><note><p>(<hi rendition="#ita">L-fort</hi> 235, <hi rendition="#ita">B-fort.</hi> 235.3; KA, D pk. 2 læg 12)</p></note></adminInfo></additional></msPart>
-              <msPart xml:id="physDesc.78.2" next="#additional.78.2"><msIdentifier><idno>78.2</idno></msIdentifier><physDesc><p>Renskrift.</p><p>1 dobbeltblad i 4<hi rendition="#sup">o</hi>.</p><p>Ingen paginering.</p><p>Papir: blåligt velin, glat. Mål: 135 × 209 mm.</p><p>Bladet har efter beskrivning været foldet en gang på tværs.</p><p>Bl. [1v]-[2v] er ubeskrevet.</p><p>En enkelt korrektion.</p></physDesc></msPart><msPart xml:id="additional.78.2" prev="#physDesc.78.2"><msIdentifier><idno>78.2</idno></msIdentifier><additional><adminInfo><note><p>(RA, <persName key="Heiberg, Johanne Luise">Johanne Luise Heiberg</persName>s Arkiv, korrespondance 1825-1890, breve fra andre, Ibsen-Mønster; <hi rendition="#ita">B&amp;A</hi> 283)</p></note></adminInfo></additional></msPart>
-              <msPart xml:id="physDesc.78.3" next="#additional.78.3"><msIdentifier><idno>78.3</idno></msIdentifier><physDesc><p>Konvolut med dedikation.</p><p>1 helark.</p><p>Ingen paginering.</p><p>Papir: gulligt koncept, groft. Mål: 344 × 421 mm.</p><p>Arket er foldet to gange på langs og to gange på tværs til konvolut (mål: 155 × 226 mm); rest af rød oblat.</p><p>På arkets rectoside findes dedikationen til Fru <persName key="Heiberg, Johanne Luise">Heiberg</persName> (<ref target="../B70/txt.xml#n78" type="lettersAndDedications" n="136"><hi rendition="#ita">SKS</hi> 28, 136</ref>,12-20), skrevet på den foldede konvoluts inderside. På arkets versoside og den foldede konvoluts yderside findes udskriften (<ref target="../B70/txt.xml#n78" type="lettersAndDedications" n="136"><hi rendition="#ita">SKS</hi> 28, 136</ref>,21-22).</p></physDesc></msPart><msPart xml:id="additional.78.3" prev="#physDesc.78.3"><msIdentifier><idno>78.3</idno></msIdentifier><additional><adminInfo><note><p>(RA, <persName key="Heiberg, Johanne Luise">Johanne Luise Heiberg</persName>s Arkiv, korrespondance 1825-1890, breve fra andre, Ibsen-Mønster; <hi rendition="#ita">B&amp;A</hi> 283)</p><p>(<hi rendition="#ita">L-fort.</hi> 235, <hi rendition="#ita">B-fort.</hi> 235.3; KA, D pk. 2 læg 12; RA, <persName key="Heiberg, Johanne Luise">Johanne Luise Heiberg</persName>s Arkiv, korrespondance 1825-1890, breve fra andre, Ibsen-Mønster; <hi rendition="#ita">B&amp;A</hi> 283)</p><p>(<hi rendition="#ita">L-fort.</hi> 235, <hi rendition="#ita">B-fort.</hi> 235.2-3; KA, D pk. 2 læg 10 og 12; RA, <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv A 2 og <persName key="Heiberg, Johanne Luise">Johanne Luise Heiberg</persName>s Arkiv, korrespondance 1825-1890, nr. 3; <hi rendition="#ita">B&amp;A</hi> 6, 9, 134-136, 138, 281-283)</p></note></adminInfo></additional></msPart>
-            </msPart><msPart xml:id="additional.78" prev="#physDesc.78"><msIdentifier><idno>78</idno></msIdentifier><additional><adminInfo><note/></adminInfo></additional></msPart>
-      </msDesc>
-    </div>
-    <div type="level1" xml:id="k2">
-      <head>2. Datering og kronologi</head>
-      <p>Brevvekslingen med <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> selv og (gennem ham) hans kone <persName key="Heiberg, Johanne Luise">Johanne Luise Heiberg</persName> og hans mor <persName key="Gyllembourg, Thomasine">Thomasine Gyllembourg</persName> er direkte knyttet til SKs <pb xml:id="ss198" n="198" edRef="#SKS"/>egen litterære produktion og kan på baggrund af deres anledning og tilblivelsestidspunkt inddeles i fire sammenhængende brevvekslinger.</p>
-      <p rendition="#ind">Den første brevveksling består kun af et enkelt brev (<ref target="../B70/txt.xml#n70" type="lettersAndDedications" n="70">Brev 70</ref>) fra <persName key="Heiberg, Johan Ludvig">Heiberg</persName>. Det er en følgeskrivelse af 16. marts 1836 til tre eksemplarer af hhv. nr. 82 og nr. 83 af <hi rendition="#ita">Kjøbenhavns flyvende Post. Interimsblad,</hi> som <persName key="Heiberg, Johan Ludvig">Heiberg</persName> var redaktør af. De udkom hhv. den 12. og den 15. marts 1836, og her havde SK fået trykt »Om Fædrelandets Polemik« I og II.<note> <p>Se <ref target="../FP/txr.xml#ss53" type="textCriticalAccount" n="53">tekstredegørelsen i <hi rendition="#ita">SKS</hi> K14, 53-59</ref>.</p> </note></p>
-      <p rendition="#ind">Den anden brevveksling omfatter ligeledes kun et enkelt brev, nemlig <ref target="../B70/txt.xml#n71" type="lettersAndDedications" n="71">Brev 71</ref> fra SK, dateret den 28. juli 1838. Brevet drejer sig om afhandlingen <hi rendition="#ita">Af en endnu Levendes Papirer</hi> (1838), som SK forsøgte at få trykt i <persName key="Heiberg, Johan Ludvig">Heiberg</persName>s tidsskrift <hi rendition="#ita">Perseus, Journal for den speculative Idee.</hi><note> <p>Se <ref target="../LP/txr.xml" type="textCriticalAccount">tekstredegørelsen til <hi rendition="#ita">Af en endnu Levendes Papirer</hi></ref> i <hi rendition="#ita">SKS</hi> K1, 68-72.</p>
-        </note> Det fremgår af brevet, at SK tidligere har modtaget i hvert fald to breve fra <persName key="Heiberg, Johan Ludvig">Heiberg</persName> bl.a. om stilen i afhandlingen, men ingen af dem er bevarede.</p>
-      <p rendition="#ind">Den tredje brevveksling, der omfatter de følgende fire breve (<ref target="../B70/txt.xml#n72" type="lettersAndDedications" n="72">Brev 72</ref>-75), tager udgangspunkt i SKs <hi rendition="#ita">En literair Anmeldelse.</hi> Alle breve er daterede (fra 29. marts til 26. april 1846). Den anmeldte novelle <hi rendition="#ita">To Tidsaldre</hi> var forfattet af <persName key="Gyllembourg, Thomasine">Thomasine Gyllembourg</persName>, men offentliggjort under hendes sædvanlige pseudonym »Forfatteren til En 'Hverdags-Historie'«. Derfor henvendte SK sig til udgiveren, hendes søn <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>, i det lille følgebrev af 29. marts 1846 med to eksemplarer af anmeldelsen, dagen inden den officielt udkom (<ref target="../B70/txt.xml#n72" type="lettersAndDedications" n="72">Brev 72</ref>). Til dette brev findes der både en kladde og en kopi. Det ses af rettelser foretaget i kopien (se ms. 72.3), at den oprindelig har været en renskrift af kladden. Den er så igen blevet renskrevet (ms. 72.2), og den tidligere renskrift har derpå (med blyant) fået påskriften »<hi rendition="#ita">Copie</hi>«. Der er på baggrund af de bevarede breve ingen grund til at antage, at SK har korresponderet yderligere med hverken <persName key="Heiberg, Johan Ludvig">Heiberg</persName> eller <persName key="Gyllembourg, Thomasine">Gyllembourg</persName> i forbindelse med <hi rendition="#ita">En literair Anmeldelse</hi>.</p>
-      <p rendition="#ind">Den interne sammenhæng i den fjerde brevveksling er noget vanskeligere at bestemme. Den omfatter <ref target="../B70/txt.xml#n76" type="lettersAndDedications" n="76">Brev 76</ref>-78, og vanskeligheden skyldes først og fremmest den lille kladde, der udgør <ref target="../B70/txt.xml#n76" type="lettersAndDedications" n="76">Brev 76</ref>. Det fremgår af ordlyden, at det er et følgebrev, som SK har villet sende med en af sine bøger, men det fremgår ikke, hvilken bog der er tale om. Bogen omtales blot som et »lille Skrift«, og en »lille, ubetydelig Gave«. Hvis ordene er mere end blot høflighedsfraser, er der tale om et kort skrift, hvilket passer på
-        <hi rendition="#ita">Om min Forfatter-Virksomhed,</hi> og brevet er tidligere blevet opfattet som en kladde til et brev sendt med den bog.<note> <p><hi rendition="#ita">B&amp;A</hi>, bd. 2, s. 116.</p> </note> Det kan imidlertid med stor sandsynlighed udelukkes, da <ref target="../B70/txt.xml#n77" type="lettersAndDedications" n="77">Brev 77</ref> er et følgebrev til <persName key="Heiberg, Johan Ludvig">Heiberg</persName>, sendt med <hi rendition="#ita">Om min Forfattervirksomhed.</hi> Mere sandsynligt er det, at <ref target="../B70/txt.xml#n76" type="lettersAndDedications" n="76">Brev 76</ref> er en kladde. Der findes ikke nogen renskrift af det i Heibergs arkiv <pb xml:id="ss199" n="199" edRef="#SKS"/>på Rigsarkivet, og <persName key="Heiberg, Johan Ludvig">Heiberg</persName> synes ellers at have gemt korrespondancer og følgebreve fra SK.<note> <p>Samme antagelse må <persName key="Borup, Morten">Morten Borup</persName> have haft, da han udelod brevet fra <hi rendition="#ita">Breve og Aktstykker vedrørende Johan Ludvig Heiberg</hi>, <placeName key="København">Kbh.</placeName> 1946-50, og <persName key="Kühle, Sejer">Sejer Kühle</persName>, da han ikke nævner det i »Søren Kierkegaard og den Heibergske Kreds« i <hi rendition="#ita">Personalhistorisk Tidsskrift</hi>, 12. rk., bd. 2, <placeName key="København">Kbh.</placeName> 1947, I-IV, s. 1-13.</p> </note> Brevet fandtes ved SKs død i et omslag sammen med kladden til dedikationsbrevet til <persName key="Heiberg, Johanne Luise">Johanne Luise Heiberg</persName> og brevet til <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> (hhv. <ref target="../B70/txt.xml#n78" type="lettersAndDedications" n="78">Brev 78</ref> og <ref target="../B70/txt.xml#n77" type="lettersAndDedications" n="77">77</ref>). Derfor kunne man tro, at brevet er et udkast til <ref target="../B70/txt.xml#n77" type="lettersAndDedications" n="77">Brev 77</ref>. Imidlertid er <ref target="../B70/txt.xml#n77" type="lettersAndDedications" n="77">Brev 77</ref> et følgebrev til de to bøger <hi rendition="#ita">To Taler ved Altergangen om Fredagen</hi> og <hi rendition="#ita">Om min Forfatter-Virksomhed,</hi> der udkom samtidig, mens <ref target="../B70/txt.xml#n76" type="lettersAndDedications" n="76">Brev 76</ref> kun omtaler en enkelt bog. Samtidig er der en forskel i tiltalen af <persName key="Heiberg, Johan Ludvig">Heiberg</persName> i de to breve, der tyder på forskelligt affattelsestidspunkt. Hvor det afsendte <ref target="../B70/txt.xml#n77" type="lettersAndDedications" n="77">Brev 77</ref> har tiltalen »Høivelbaarne Hr. Etatsraad«, har <ref target="../B70/txt.xml#n76" type="lettersAndDedications" n="76">Brev 76</ref> tiltalen »Høistærede!«. Da <persName key="Heiberg, Johan Ludvig">Heiberg</persName> i begyndelsen af 1850 var blevet udnævnt til etatsråd skulle han fra dette tidspunkt formelt tituleres »Høivelbaarne Hr. Etatsraad«, som det gøres i <ref target="../B70/txt.xml#n77" type="lettersAndDedications" n="77">Brev 77</ref>. Dermed synes det mest sandsynligt, at <ref target="../B70/txt.xml#n76" type="lettersAndDedications" n="76">Brev 76</ref> er affattet inden 1850 og er tænkt som et følgebrev til en tidligere bog. Da kladden må være skrevet efter korrespondancen om <hi rendition="#ita">En literair Anmeldelse,</hi> og det desuden må være tænkt som følgebrev til et mindre skrift, er mulighederne begrænset til <hi rendition="#ita">Lilien paa Marken og Fuglen under Himlen</hi>, der udkom den 14. maj 1849, og <hi rendition="#ita">»Ypperstepræsten«
+  <text xml:id="id3477fea3-da1a-48a3-bde3-d7ab2c6848d3" type="TextCriticalAccount" subtype="lettersAndDedications">
+    <body xml:id="id65621fcd-7d7d-4836-8d39-30b1a3e03119">
+      <div xml:id="id56b2836f-6a65-4263-bd9f-e1dd9fd0c922">
+        <head xml:id="id48c19f1c-cf33-4504-898a-7b514f056023" type="topText" n="Tekstredegørelse"/>
+        <head xml:id="id89c8d4e9-ed5a-419b-a7be-4a8c8a349e52">Tekstredegørelse</head>
+        <list xml:id="id6d6c618f-f732-4ea5-b05e-c9860a5ce435" type="TOC">
+          <item xml:id="idc3be0c5b-95b4-4bbc-9681-95ade8354a7b">1. Manuskriptbeskrivelse<ptr xml:id="ide6cd94cf-a787-4eb7-b97b-44dbaa928d03" type="chapter" target="#k1" n=""/></item>
+          <item xml:id="idabcfdb53-8d20-4433-b6fe-85048fd950b4">2. Datering og kronologi<ptr xml:id="idf61187a4-9a7c-43da-ab5a-a442c4d23a0f" type="chapter" target="#k2" n="197"/></item>
+        </list>
+        <div type="level1" xml:id="k1">
+          <head xml:id="idc324c72f-163a-45e2-8fac-1b2663874681">1. Manuskriptbeskrivelse</head>
+          <p xml:id="idb99bd449-505f-4f84-8842-273ef35162f6">Til brevene i gruppen »Familien Heiberg« findes følgende manuskripter, hvoraf <ref xml:id="id1b1e117d-cadc-403f-bc7c-11f5d3360fc2" target="../B70/txt.xml#n70" type="lettersAndDedications" n="70">Brev 70</ref>, <ref xml:id="id0839b84e-5bf8-4e07-8685-87976347805d" target="../B70/txt.xml#n72" type="lettersAndDedications" n="72">72</ref>.1, 72.3, 73, 74.1 og 75-78.1 befinder sig i Kierkegaard Arkivet (KA) og <ref xml:id="ide0d4f534-8dac-4cad-9f86-a0720d3a426b" target="../B70/txt.xml#n71" type="lettersAndDedications" n="71">Brev 71</ref>, <ref xml:id="id0144c544-3d0d-4f4e-bbc6-cde13815b4b4" target="../B70/txt.xml#n72" type="lettersAndDedications" n="72">72</ref>.2 og 74.2 befinder sig i <persName xml:id="ida8e259b9-d570-4c7a-b7c3-8dc511116f5e" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv på Rigsarkivet (RA); <ref xml:id="id1503ba7c-a3bd-499e-944b-41f1ea1eb2a0" target="../B70/txt.xml#n78" type="lettersAndDedications" n="78">Brev 78</ref>.2 og 78.3 befinder sig i <persName xml:id="idc9430dcf-83be-4ef6-81c5-a8afbc3364cf" key="Heiberg, Johanne Luise">Johanne Luise Heiberg</persName>s Arkiv på Rigsarkivet.<note xml:id="id80710742-606f-440a-b315-4f861771e804"><p xml:id="id86328ce4-7d9f-4df3-b61c-9b4795f8ba4b"><ref xml:id="idf81f6b89-0bfd-4dcf-9f7c-4e446470c38d" target="../B70/txt.xml#n70" type="lettersAndDedications" n="70">Brev 70</ref>-74 og 77 er tidligere trykt i <persName xml:id="id6f557d8d-b1c5-4d9f-afbf-c015efcf92a8" key="Kühle, Sejer">Sejer Kühle</persName>
+          »Søren Kierkegaard og den Heibergske Kreds« i <hi xml:id="idc6f3d6bf-96b4-457b-81d9-3d58e06ab0a0" rendition="#ita">Personalhistorisk Tidsskrift,</hi> rk. 12, bd. 2, <placeName xml:id="id7bd401c3-0295-418f-a75b-e14dc4eba6e6" key="København">Kbh.</placeName> 1947, s. 1-13, og i <persName xml:id="ide42d98e2-abbb-4062-af8c-bbfe74523e84" key="Borup, Morten">Morten Borup</persName> <hi xml:id="id71375c1f-3447-4ee8-9ad7-6b30be3c6743" rendition="#ita">Breve og Aktstykker vedrørende <persName xml:id="idaa50641d-a719-4f8d-88c5-5b295665d795" key="Heiberg, Johan Ludvig">Johan Ludvig Heiberg</persName></hi> bd. 2-3, <placeName xml:id="id26d85515-5900-414c-a6f3-2c8d10a4cb78" key="København">Kbh.</placeName> 1948-49; <ref xml:id="ide7c4719d-de87-4c2d-b4e0-b1b899476f2f" target="../B70/txt.xml#n70" type="lettersAndDedications" n="70">Brev 70</ref> er desuden trykt i <persName xml:id="id99160788-8538-4eae-bf06-d8bab258cc26" key="Brandt, Frithiof">Frithiof Brandt</persName>
+          <hi xml:id="idc8d7d0d0-5122-4c86-8c17-29d9fabbc37d" rendition="#ita">Den unge S.K.</hi>, <placeName xml:id="idc8d969bd-2cca-4fa4-a36e-6e0192d90c8d" key="København">Kbh.</placeName> 1929; de øvrige breve er trykt første gang i <hi xml:id="id74a11efb-983e-49e9-8773-00a2009f2580" rendition="#ita">EP</hi> eller <hi xml:id="ide8deb8b3-0cdc-4a54-b517-e193ecb5294b" rendition="#ita">B&amp;A.</hi></p></note></p>
+          <msDesc xml:id="idbdcbd6bc-5aac-46f6-9232-2a9d45ce1b61">
+            <msIdentifier xml:id="idc03e728f-70eb-432a-808a-192ade19dbe7">
+              <collection xml:id="idaab4efdc-c078-4f08-b8e6-40d0a2ab0f64">B70</collection>
+            </msIdentifier>
+            <msPart xml:id="physDesc.70" next="#additional.70">
+              <msIdentifier xml:id="id03e97a40-7857-40c6-b216-162c507f7bf2">
+                <idno xml:id="id05ab14b9-7cdd-4a91-9b32-9d63283a79c1">70</idno>
+              </msIdentifier>
+              <physDesc xml:id="id9d243ef9-49d8-4d96-8a59-c122d79e142d">
+                <p xml:id="id27e49250-2693-4022-984f-823c80c829bc"><ref xml:id="id4fa1997f-f54f-4256-9e89-dc9d80d3d80a" target="../B70/txt.xml#n70" type="lettersAndDedications" n="70">Brev 70</ref>. Fra <persName xml:id="id40744f34-03ef-4316-ba1f-177170e5a35c" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> til SK (<hi xml:id="idee2eecc7-a0f8-4caa-a2a5-58db0c400ade" rendition="#ita">SKS</hi> 28, 125).</p>
+                <p xml:id="id1f8fdbe5-4d61-4d9f-acff-15f7bcf39384">1 blad i 4<hi xml:id="id37306d04-d7a9-40b6-84c7-be59c65260bf" rendition="#sup">o</hi> med afklippet kant nederst og i venstre side.<note xml:id="id70a49feb-943f-442b-be17-6529dae825f7"><p xml:id="id22dd2a8e-9c44-453f-be04-0449401c5b46">Udgangspunktet for formatbetegnelsen er plane helark, som ved fortsat halvering (ombøjning) giver formaterne folio, kvart og oktav. Irregulære, fx afrevne, enheder betegnes som lapper. Dobbeltblad betegner et stykke papir, der er ombøjet (foldet) til blade.</p></note></p>
+                <p xml:id="id47e86165-82c4-48e4-8142-d7f1b41d2aec">Ingen paginering.</p>
+                <p xml:id="id3aaed8b8-1c34-448b-b67d-60b44571f16c"><pb xml:id="ss194" n="194" edRef="#SKS"/>Papir: gulligt koncept, glat. Mål: 206 × 177 mm.<note xml:id="id81077ee9-ce91-47c7-8a27-b68bc3f646ef"><p xml:id="id33fa95e0-b7e5-41d9-828c-ee2a89fa2ee3">Oplysningen gælder bladenes mål, dvs. i foldet stand. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant).</p></note></p>
+                <p xml:id="id5fc762c8-43b1-4513-97a2-6c3c1ffd5961">Bladet har efter beskrivning været foldet en gang på langs.</p>
+                <p xml:id="idc765e76e-60fb-4ec8-9d4c-e3c3561b9718">Rectosiden er beskrevet i seks linjer, versosiden ubeskrevet.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.70" prev="#physDesc.70">
+              <msIdentifier xml:id="id9795a19c-28f8-4953-8235-2c9a353e2aea">
+                <idno xml:id="id93f3923f-d3bb-448e-8b08-a2bbc6d4f593">70</idno>
+              </msIdentifier>
+              <additional xml:id="id5510ad89-5b94-4b4c-bc17-d44fd709c700">
+                <adminInfo xml:id="id1406c61e-9ea1-4331-a744-142a2e7e0b00">
+                  <note xml:id="id7de34251-2116-44b6-8d5b-d38e4ed4280a">
+                    <p xml:id="ida4b5f38e-f4ff-4870-a753-819466da2720">(KA, D pk. 2 læg 12; <hi xml:id="id8a71e801-7644-4000-9cbd-3fb732723bc5" rendition="#ita">B&amp;A</hi> 6)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.71" next="#additional.71">
+              <msIdentifier xml:id="id0292a0e3-07be-46a7-9b6a-2b4b641bfcd9">
+                <idno xml:id="id6091f09b-2103-4b7b-b0c9-094f1d5522eb">71</idno>
+              </msIdentifier>
+              <physDesc xml:id="idee705eec-0dec-4239-9cd9-09cb7f4beff9">
+                <p xml:id="id90966ccf-953e-462c-aae4-dfcefdece082"><ref xml:id="idca505491-5c69-4b3a-a282-6c623db95705" target="../B70/txt.xml#n71" type="lettersAndDedications" n="71">Brev 71</ref>. Fra SK til <persName xml:id="id9c9dc7dc-b9f8-4ea4-88d9-f5745c3abb7c" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> (<hi xml:id="id40d7909e-8daf-4d8f-9d9e-ef4decc6f158" rendition="#ita">SKS</hi> 28, 125-126).</p>
+                <p xml:id="idef9c8ed4-358c-4fd7-866d-f16a6289565b">1 dobbeltblad i stor 4<hi xml:id="id992758f4-7b78-47b3-9f18-68283e83f765" rendition="#sup">o</hi>.</p>
+                <p xml:id="id5b042c4a-be14-4410-b8f0-21c0debc1d63">Ingen paginering.</p>
+                <p xml:id="idb1b8752e-44f4-4a87-ab97-405f72d8840a">Papir: gulligt skrivepapir, ribbet. Vandmærke: <hi xml:id="id2872a7fc-1feb-4a07-bb3d-ce03ce43ca37" rendition="#capiTyp">E &amp; R</hi>. Mål: 216 × 255 mm.</p>
+                <p xml:id="idd8eceb07-a291-4fb5-8ebd-814805a1826f">Bladene har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 103 × 99 mm<note xml:id="ide6769709-dc83-43a4-9652-ee9f2cb8235d"><p xml:id="id58bc33f1-b8de-4dc1-a746-1dc7b8980385">Oplysningen om konvoluttens mål gælder det foldede brev, alternativt den separate konvolut. Der måles så vidt muligt bredde (øverste kant) × højde (venstre kant); øverste kant bestemmes af udskriftens skriveretning.</p></note>); rød oblat.<note xml:id="idfb2df91d-1dc6-4c1d-94c1-0a7b645e7191"><p xml:id="id4a7b40a3-f5db-44aa-9b7f-0408d189ddd5">Det gælder for alle breve, der har været foldet til konvolut og forseglet, at brevmodtagerens brud på forseglingen har forårsaget en mindre beskadigelse af ms.</p></note> Konvolutten har desuden været foldet en gang på tværs.</p>
+                <p xml:id="idd83b0cfd-5fba-4d7d-9f2e-407a26cb6bcc">Bl. [1r] er to tredjedele beskrevet, bl. [1v]-[2r] ubeskrevet.</p>
+                <p xml:id="idb9bc613d-9413-4660-ac7e-64d5e2ae28c5">En enkelt korrektion.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.71" prev="#physDesc.71">
+              <msIdentifier xml:id="idb11de540-491e-4078-9169-1f5bcb57803a">
+                <idno xml:id="idf9088531-7b27-4c54-bcf9-c2825049c9f8">71</idno>
+              </msIdentifier>
+              <additional xml:id="idfb50f72c-bf25-4368-bf29-f69e7a5c9f10">
+                <adminInfo xml:id="id44403fce-6401-4bef-8826-ed1b73fd612a">
+                  <note xml:id="id7d7c994f-9162-4695-89c7-be48b3fa5ee0">
+                    <p xml:id="id5993a2a1-c182-4f34-be0c-95fa1866a287">(RA, <persName xml:id="id93e1718a-fae0-403c-a23c-d771be27441f" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv A 2, korrespondance 1815-1862, breve fra andre, Chieviz-Søtoft; <hi xml:id="id17212ea6-9be4-421c-867a-94b3b409690a" rendition="#ita">B&amp;A</hi> 9)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.72" next="#additional.72">
+              <msIdentifier xml:id="id71062b20-ce73-4235-8e60-9073d75db826">
+                <idno xml:id="idc5493b52-0a5b-44cd-b9f5-bb3608428dbf">72</idno>
+              </msIdentifier>
+              <physDesc xml:id="id1af4d329-f618-461f-b4a6-d29948b3af54">
+                <p xml:id="id6f5cb2bb-2e52-4d5f-901e-356720772a56"><ref xml:id="iddd0e0a93-5eaf-42e7-a942-472f862d982b" target="../B70/txt.xml#n72" type="lettersAndDedications" n="72">Brev 72</ref>. Fra SK til <persName xml:id="idc83958b1-9df4-46d9-8d4d-46b1ec2dd5f7" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> (<hi xml:id="id54c7bef7-80ed-4b16-90e0-e2575925e44f" rendition="#ita">SKS</hi> 28, 126-128). Tekstgrundlaget i <hi xml:id="idfbf637d5-5872-4ac0-bf03-702adf1034f1" rendition="#ita">SKS</hi> 28 er ms. 72.2 (se <ref xml:id="id4ab8069c-b768-4a94-8eac-ae63246631e1" target="../B70/txt.xml#ill_7" type="figure">illustration 7, <hi xml:id="id698e7800-c592-4e49-9ec8-701afb08b4bc" rendition="#ita">SKS</hi> 28, 127</ref>).</p>
+              </physDesc>
+              <msPart xml:id="physDesc.72.1" next="#additional.72.1">
+                <msIdentifier xml:id="id3f148a61-8277-4ee2-a0cf-62bce1aa4236">
+                  <idno xml:id="ide597b12d-08a2-45a9-8993-9b8dcab96b37">72.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="ideba81aa6-0471-4a8c-8c78-539222fb8171">
+                  <p xml:id="id03400002-39ed-4f1f-8e97-a08a269d38f0">Kladde.</p>
+                  <p xml:id="id028d1295-6527-458e-b4fc-8c831befa86a">1 løst blad i 4<hi xml:id="ide56836a8-670d-4294-836f-361fe01a1077" rendition="#sup">o</hi> med afklippet kant i venstre side.</p>
+                  <p xml:id="id548874d8-469a-4c91-a09d-e771f81e8d07">Ingen paginering.</p>
+                  <p xml:id="id03d79cd8-946e-4d37-b145-baff85fd1cf9">Papir: gulligt skrivepapir, glat. Mål: 169 × 204 mm.</p>
+                  <p xml:id="id95915f06-0a79-4768-83cc-2e7a18c5dcec">Bladet har efter beskrivning været foldet tre gange på tværs.</p>
+                  <p xml:id="id15a18156-b6db-4874-99c7-c2b6b66a163f">Versosiden er ubeskrevet.</p>
+                  <p xml:id="idc9cc17f1-a4b7-4daf-88e7-a995262c1996">Få korrektioner. Nederst på siden findes en tilføjelse, der er indvist i teksten med rødkridt. Øverst er påskriften »Blev ikke brugt« tilføjet med blyant. Herunder ses dateringen »d. 29 Martz 1846.«.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.72.1" prev="#physDesc.72.1">
+                <msIdentifier xml:id="idf371c6a2-c2b4-4035-9c20-98861d0843a9">
+                  <idno xml:id="id26307dd2-9c34-4e22-b875-35039f69aeab">72.1</idno>
+                </msIdentifier>
+                <additional xml:id="idd47e3f8d-92fe-4ecc-a70f-c9bd36093177">
+                  <adminInfo xml:id="idc2fbecb1-79c4-4c56-97d0-ac12fbe9879e">
+                    <note xml:id="id187c898f-ccae-46d6-9635-f6bfdb53855b">
+                      <p xml:id="id569e3ed1-6649-47b0-a39d-475a8402fcd7">(KA, D pk. 2 læg 12)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.72.2" next="#additional.72.2">
+                <msIdentifier xml:id="idcdeeac50-3cfc-4d9d-bee9-201566823be1">
+                  <idno xml:id="id94fb7010-cbf5-4dcc-a044-253597f4ba7f">72.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="idb7154c0d-d83b-4a1b-901a-17f6d6d72dbf">
+                  <p xml:id="ideaf3643b-437e-4e9e-a69c-02c3143452ee">Renskrift.</p>
+                  <p xml:id="id364ddca1-8149-44b2-9d92-2a6324180bd4">1 løst blad i 4<hi xml:id="id72398f3f-613c-47e4-8d8f-ff50969dc0fa" rendition="#sup">o</hi> med uregelmæssigt afrevet kant nederst og afklippet kant i venstre side.</p>
+                  <p xml:id="id19af6eba-7179-4ded-99df-c26ef4446872">Ingen paginering.</p>
+                  <p xml:id="id8e124e66-8d25-4c9b-9b0b-e2da276c8165">Papir: gulligt skrivepapir, glat. Mål: 169 × 204 mm.</p>
+                  <p xml:id="id5b774e7f-5f9e-473a-a317-fb16e367b883">Bladet har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 98 × 66 mm); rødt laksegl med signeten »SK«. Konvolutten har været foldet en gang på tværs.</p>
+                  <p xml:id="id8f7b17f8-2c86-45bb-ac5f-570a7f317d62">Få korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.72.2" prev="#physDesc.72.2">
+                <msIdentifier xml:id="id58e45a87-5e81-4854-bc8a-f7f402ab04c4">
+                  <idno xml:id="idb9b08ddd-4ec3-4a51-9689-87fa6fd5ab6d">72.2</idno>
+                </msIdentifier>
+                <additional xml:id="idbaefe4dd-ff09-447e-859d-f9a83d65d151">
+                  <adminInfo xml:id="id633296d4-4b7a-4909-b9f5-e7a03c5714dd">
+                    <note xml:id="id056cdfd3-6801-4718-8ebd-ccf8399c543b">
+                      <p xml:id="idfc616bf9-b459-4a01-9227-b29cb706e632">(RA, <persName xml:id="iddb32bdb8-dfac-45f4-86cc-f82c002246a8" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv A 2, korrespondance 1815-1862, breve fra andre, Chieviz-Søtoft; <hi xml:id="ideff1b3b9-de22-4ed9-a285-235930112558" rendition="#ita">B&amp;A</hi> 134)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.72.3" next="#additional.72.3">
+                <msIdentifier xml:id="id247ecff1-7d84-4bb6-b180-cdbf79728f28">
+                  <idno xml:id="id5b59a5f1-5b75-451a-8f01-99af48751ecd">72.3</idno>
+                </msIdentifier>
+                <physDesc xml:id="id9b7cd2d4-7b7b-45f8-a7a5-8a1caa982e6b">
+                  <p xml:id="id189521a1-89e4-4279-b42a-d1d0abce4a95"><pb xml:id="ss195" n="195" edRef="#SKS"/>Kopi.</p>
+                  <p xml:id="idba08b807-82d9-436e-b5ea-c2cbbc641743">1 løst blad i 4<hi xml:id="idafdf23af-b82f-41a9-8d7e-08845258d8b5" rendition="#sup">o</hi> med afrivningskant i højre side.</p>
+                  <p xml:id="id686c7ba1-4796-4d76-a2ec-8a04310390ae">Ingen paginering.</p>
+                  <p xml:id="id8dc1a3e3-56aa-40fc-8df9-15df245b7bdc">Papir: gulligt skrivepapir, glat. Mål: 169 × 204 mm.</p>
+                  <p xml:id="id203afe4a-8a0d-4248-ab66-4d997097be94">Bladet har efter beskrivning været foldet en gang på tværs.</p>
+                  <p xml:id="id2a3bb493-82d4-408e-9343-e79c16a7443c">Versosiden er ubeskrevet.</p>
+                  <p xml:id="id9039443c-5722-4557-b3bc-e1585d6cbb6a">Øverst på rectosiden, med blyant og større skrift end det øvrige, findes tilføjelsen »<hi xml:id="id1a39641a-587d-426c-a212-b40d643b9251" rendition="#ita">Copie</hi>«, og herunder tiltalen »Høistærede Hr Prof.« Midt i teksten den overstregede linje: »Det for Dem bestemte Exemplar«. Linjen er skrevet som begyndelsen af brevets andet og sidste afsnit. Den erstattende variant er skrevet på en ny linje nedenunder og stemmer overens med ordlyden i ms. 72.2.</p>
+                  <p xml:id="id0c95f725-b088-4f9b-8a0c-46a06197efb6">Få korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.72.3" prev="#physDesc.72.3">
+                <msIdentifier xml:id="id6e075b1c-96f4-45f9-93ce-56e4d9a68c90">
+                  <idno xml:id="id326e9bf1-56e9-422c-8ea0-31e1fd411e7f">72.3</idno>
+                </msIdentifier>
+                <additional xml:id="id5d52ad57-cfc9-4192-83ff-271c26d44576">
+                  <adminInfo xml:id="id2c5fd947-64d4-4667-a4b2-ad74c32b02be">
+                    <note xml:id="id85d83055-739a-4b27-8744-e15a43be1d6c">
+                      <p xml:id="id5870768a-2dae-408f-9d68-833d0ad3b4c0">(KA, D pk. 2 læg 12)</p>
+                      <p xml:id="idbad1d03e-789a-489d-b45e-66a1c3903e99">(KA, D pk. 2 læg 12; RA, <persName xml:id="id34e45309-a27f-4577-be2e-776e0665b083" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv A 2, korrespondance 1815-1862, breve fra andre, Chieviz-Søtoft; <hi xml:id="ida687f9dc-4fe2-429f-8e74-727261d50b51" rendition="#ita">B&amp;A</hi> 134)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.72" prev="#physDesc.72">
+              <msIdentifier xml:id="idcd7af462-2555-4f42-8f18-8f20043facee">
+                <idno xml:id="id4b0ff012-794d-43a6-8503-25263fc22d05">72</idno>
+              </msIdentifier>
+              <additional xml:id="id82eef5d5-16f6-4c91-b3ba-155b956d70e6">
+                <adminInfo xml:id="id1fd42217-6ab3-4420-b6dd-8dbe9f5f6b8d">
+                  <note xml:id="id77361c0d-6c28-4b6f-80fa-251482ec6059">
+                    <p xml:id="id950c93a5-171c-48ae-8144-0771a54afcdf">(KA, D pk. 2 læg 12; RA, <persName xml:id="id17371ce1-d4b5-4307-811b-fe25f27745a4" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv A 2, korrespondance 1815-1862, breve fra andre, Chieviz-Søtoft; <hi xml:id="idb6ba50bc-dabe-4165-858c-4f0c296da910" rendition="#ita">B&amp;A</hi> 134)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.73" next="#additional.73">
+              <msIdentifier xml:id="id178b9827-47b5-4017-af2a-e662fca2be2d">
+                <idno xml:id="id69311aa4-8b1a-4c02-ad03-b4e76c67efbd">73</idno>
+              </msIdentifier>
+              <physDesc xml:id="id69916c90-6ebd-49fc-a2e8-3c52c2f38c44">
+                <p xml:id="id79a2bd63-93ff-4dda-92fb-2d47a4d6eb9c"><ref xml:id="idccc878c6-6e7e-4013-a22b-f3e0783fe384" target="../B70/txt.xml#n73" type="lettersAndDedications" n="73">Brev 73</ref>. Fra <persName xml:id="id0a3cc0f4-644d-453a-9f94-0efea7e4e94a" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> til SK (<hi xml:id="idbbf5dd5d-816f-43f2-8259-0f143f596046" rendition="#ita">SKS</hi> 28, 128-129).</p>
+                <p xml:id="id6fb0dd5f-56c5-4311-affb-6d6b8b5e2251">1 dobbeltblad i 8<hi xml:id="id9a8688e6-8ea7-4400-976f-e43669e586bc" rendition="#sup">o</hi>.</p>
+                <p xml:id="id3bc7ac7f-8620-4b43-8f42-fad2522c207c">Ingen paginering.</p>
+                <p xml:id="id16be0eb8-5f62-4587-af15-caee3318a4c0">Papir: hvidligt brevpapir, glat, med præget bort. Mål: 134 × 204 mm.</p>
+                <p xml:id="ide2b3d402-e1d6-4307-99a7-31f17f5be89d">Bladene har efter beskrivning været foldet tre gange på tværs.</p>
+                <p xml:id="id0a1dc8ff-598d-4d09-b91a-33df193683df">En enkelt korrektion.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.73" prev="#physDesc.73">
+              <msIdentifier xml:id="id6cd38a71-098d-47b9-b134-b2b72b41d820">
+                <idno xml:id="ide08fa687-f853-4046-9a27-7d1be5d4dbfd">73</idno>
+              </msIdentifier>
+              <additional xml:id="ida55392c0-18e3-45a8-95e5-7d0caa454b8c">
+                <adminInfo xml:id="id5afae494-8d2a-4afa-a314-3ee38ecd9b04">
+                  <note xml:id="id59b1d6dd-6246-4586-a7e2-4a2f9e2eb93e">
+                    <p xml:id="idee69db82-cc94-4ce9-a101-131a0bcc8d7d">(KA, D pk. 2 læg 12; <hi xml:id="idef9713da-a076-4383-b82a-f90cc113715d" rendition="#ita">B&amp;A</hi> 135)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.74" next="#additional.74">
+              <msIdentifier xml:id="id939e6eec-8b5a-499f-b62a-a7c376913f60">
+                <idno xml:id="id2226b73b-ec37-4672-901a-0fae2534eeb1">74</idno>
+              </msIdentifier>
+              <physDesc xml:id="id90913737-0190-4109-8ec3-0902b15a3a3b">
+                <p xml:id="id5cd399fa-266e-487f-87e1-6f3061ffcf80"><ref xml:id="ide02636c4-813a-4296-aa6c-73d6fa3c9782" target="../B70/txt.xml#n74" type="lettersAndDedications" n="74">Brev 74</ref>. Fra SK til <persName xml:id="id600ec90c-323a-4ca3-a500-8b7ee4f5528b" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> (<hi xml:id="idec43ce1e-7254-41af-950a-66fbefe269d1" rendition="#ita">SKS</hi> 28, 129-131). Tekstgrundlaget i <hi xml:id="id7d79195b-2b20-4796-b125-67851c6f5a6a" rendition="#ita">SKS</hi> 28 er ms. 74.2.</p>
+              </physDesc>
+              <msPart xml:id="physDesc.74.1" next="#additional.74.1">
+                <msIdentifier xml:id="id0db79dcd-5732-4b0e-883c-c3e97d112e7b">
+                  <idno xml:id="id1d2867d5-d363-4940-bac8-239ee10b4c1a">74.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id0ae08b07-518a-400e-910e-3c897249e469">
+                  <p xml:id="id4a2fb7ff-3d5f-48bf-9982-e694daa4f066">Kladde.</p>
+                  <p xml:id="id8208be7a-0010-41ed-8613-b7a1dda7fad6">1 løst blad i 4<hi xml:id="ide4d29409-3ad4-4e90-bab5-18d241de1745" rendition="#sup">o</hi> med afklippet kant i venstre side.</p>
+                  <p xml:id="id48004211-20d6-483e-bc92-98da7629ace2">Ingen paginering.</p>
+                  <p xml:id="id5a8016f7-5413-4fcb-90a0-cdeb39a63fe8">Papir: gulligt skrivepapir, glat. Mål: 169 × 204 mm.</p>
+                  <p xml:id="id7c6c317a-64f9-4223-aa31-e618dbf22a04">Bladet har efter beskrivning været foldet en gang på tværs.</p>
+                  <p xml:id="idf2d9f0de-55c7-461a-b527-a48e31734879">Versosiden er kun halvt beskrevet.</p>
+                  <p xml:id="id875c796e-0567-42d6-8c95-d4ffa62ec6bf">Få korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.74.1" prev="#physDesc.74.1">
+                <msIdentifier xml:id="idb0f2559b-1e19-4e97-a8da-c156a452b985">
+                  <idno xml:id="ided76f92b-fd05-4147-bf75-a8d2c1c3142e">74.1</idno>
+                </msIdentifier>
+                <additional xml:id="id7217d48a-b3bc-4db1-99e5-7b1cf14d4910">
+                  <adminInfo xml:id="id50b9ff55-bd59-4a29-9a31-5ddb3aedd918">
+                    <note xml:id="idac2fb0a2-b333-4e8e-b368-afc1c65ea5fe">
+                      <p xml:id="id6eb6b747-9d1b-48ef-9bc2-e0c96c9cd1ed">(KA, D pk. 2 læg 12)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.74.2" next="#additional.74.2">
+                <msIdentifier xml:id="id13f6a385-098e-451a-b29e-46441d320d91">
+                  <idno xml:id="id151991c1-d66a-4dee-a084-4a9920f475ad">74.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="ida45a4486-a3ff-4a29-90e7-5ddb0e7889cd">
+                  <p xml:id="id56966485-11c1-4862-bf55-7e63ccd00dea">Renskrift.</p>
+                  <p xml:id="id7ffc8bb1-9f8f-4f9d-84fe-b91122e8d351">1 dobbeltblad i 4<hi xml:id="id4052c210-425f-4522-9f1c-9b8b08f6c6ca" rendition="#sup">o</hi>.</p>
+                  <p xml:id="id8ed492c1-410e-49f3-9185-73f8178a54da">Ingen paginering.</p>
+                  <p xml:id="id6bf52318-0477-4f02-8dd6-10df6c112c27">Papir: gulligt skrivepapir, glat. Mål: 166 × 203 mm.</p>
+                  <p xml:id="idabe94348-0aa5-4686-bc4d-a33496a12798">Bladet har efter beskrivning været foldet to gange på langs og to gange på tværs til konvolut (mål: 98 × 67 mm); rødt laksegl med signeten »SK«.</p>
+                  <p xml:id="idc49e9821-b264-41c1-9e29-7a00bf795018"><pb xml:id="ss196" n="196" edRef="#SKS"/>Bl. [2v] er ubeskrevet.</p>
+                  <p xml:id="ide8bffa14-9a88-428e-8fe6-5aa2fa4e0820">Få korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.74.2" prev="#physDesc.74.2">
+                <msIdentifier xml:id="id217ddd65-4d21-4364-b5c9-370c262a0caf">
+                  <idno xml:id="idcd08bc0e-ebca-4ab2-ab20-9265aa1d38a0">74.2</idno>
+                </msIdentifier>
+                <additional xml:id="id3f5a1452-ef34-4fd7-92e7-a3d68f0f8f7d">
+                  <adminInfo xml:id="idbd6718e8-38f1-4c97-9a53-33b5cacb6f0f">
+                    <note xml:id="id75021a04-8264-4d1e-bea1-1355350830b3">
+                      <p xml:id="id8241f7b2-c059-4099-8621-2bf8c8c0c73b">(RA, <persName xml:id="id4856c348-1160-4920-825b-4804dda33779" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv A 2, korrespondance 1815-1862, breve fra andre, Chieviz-Søtoft; <hi xml:id="iddf970337-595e-41a7-ab01-e78ce6f8df9e" rendition="#ita">B&amp;A</hi> 136)</p>
+                      <p xml:id="idfb0d65d0-54d6-46e2-aba2-87d16f9bfba9">(KA, D pk. 2 læg 12; RA, <persName xml:id="iddc7fd62d-7e8a-4771-b133-c19bbb030ad7" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv A 2, korrespondance 1815-1862, breve fra andre, Chieviz-Søtoft; <hi xml:id="id2d5925dc-3e23-4ebd-9c67-c02dd02ada7a" rendition="#ita">B&amp;A</hi> 136)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.74" prev="#physDesc.74">
+              <msIdentifier xml:id="id56d60142-7b81-45da-81e6-520f7fb414e1">
+                <idno xml:id="id13ecbd27-3a2f-4777-8ee9-fc3f00e86a06">74</idno>
+              </msIdentifier>
+              <additional xml:id="idacd28536-a4b5-4431-aac5-d8f66e1966b7">
+                <adminInfo xml:id="id4103d323-33f1-45d3-a645-227eb29f619c">
+                  <note xml:id="idcce634e0-48ed-4395-9612-391623677b24">
+                    <p xml:id="idea02ba23-3546-4497-a1e2-9263cdccf636">(KA, D pk. 2 læg 12; RA, <persName xml:id="id8b7e8128-632a-403d-b0ef-150fb3ff62fa" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv A 2, korrespondance 1815-1862, breve fra andre, Chieviz-Søtoft; <hi xml:id="id12e1b84c-7713-4264-8aa3-12d22597bc8f" rendition="#ita">B&amp;A</hi> 136)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.75" next="#additional.75">
+              <msIdentifier xml:id="idbb4f3754-a7fd-4ba3-adc1-c3d45a490564">
+                <idno xml:id="idb6ad55bb-0a4f-464d-8b80-2b1c816f8691">75</idno>
+              </msIdentifier>
+              <physDesc xml:id="ide5f9872a-7efe-42ca-91bf-42ec756dc853">
+                <p xml:id="idae447bf1-6bcd-44da-9748-4467101a8928"><ref xml:id="id3c80749a-0d6f-4218-9848-782015ce0b6d" target="../B70/txt.xml#n75" type="lettersAndDedications" n="75">Brev 75</ref>. Fra <persName xml:id="id81046349-ddf1-4325-8c20-9dd7e4917bb5" key="Gyllembourg, Thomasine">Thomasine Gyllembourg</persName> til SK. Kopi i <persName xml:id="id874816ee-aee2-4fc6-a118-8417d1f31c39" key="Heiberg, Johan Ludvig">J. L. Heiberg</persName>s hånd (<hi xml:id="id32d68c92-fca1-4d43-89e7-dfda366e204b" rendition="#ita">SKS</hi> 28, 131-134).</p>
+                <p xml:id="idc4bd43bb-922f-4044-bd1f-f7bbc3ac4102">1 dobbeltblad i 2<hi xml:id="idbc4b499f-1b15-42af-a2aa-e78179b94428" rendition="#sup">o</hi>.</p>
+                <p xml:id="id574c35e2-cce8-49de-9ecf-d6437bbdde5d">Ingen paginering.</p>
+                <p xml:id="id4f80ce2f-3590-4322-864d-15128ccbf8ee">Papir: gråligt skrivepapir, glat. Mål: 216 × 268 mm.</p>
+                <p xml:id="ide797ea6d-9732-4d7b-9491-37a3f8a85fc4">Bladet har efter beskrivning været foldet en gang på langs og en gang på tværs.</p>
+                <p xml:id="id236fec06-929d-4753-8226-4714f092bf80">Få korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.75" prev="#physDesc.75">
+              <msIdentifier xml:id="id03858b16-bd10-4cfb-9b4d-9a3d84625c87">
+                <idno xml:id="idd79b69b1-36eb-4664-8ccf-c247349a2375">75</idno>
+              </msIdentifier>
+              <additional xml:id="id6527da74-0ca8-40b9-9c5c-1b743f9ac117">
+                <adminInfo xml:id="ide9f52496-149f-4f7f-9a3e-3bf296e0c033">
+                  <note xml:id="idcdd90da2-e90a-4fd1-b0e0-f8ad93159c61">
+                    <p xml:id="id34d7b72a-ca9f-4bbd-936c-9bf03d0790e9">(KA, D pk. 2 læg 10; <hi xml:id="id6231c9cc-6d66-4b71-bb20-10c318dfea41" rendition="#ita">B&amp;A</hi> 138)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.76" next="#additional.76">
+              <msIdentifier xml:id="id7a01884b-8a57-426d-bf05-3014ba22d3e0">
+                <idno xml:id="id43932726-42e4-4eaa-b15c-d886a1de3e49">76</idno>
+              </msIdentifier>
+              <physDesc xml:id="id1bd1f473-9339-4acf-a97e-1532995cc6c4">
+                <p xml:id="id091d41af-7398-4623-b290-74dc3023596a"><ref xml:id="id77d1f8ca-ed9b-4233-84da-e3f4b288e643" target="../B70/txt.xml#n76" type="lettersAndDedications" n="76">Brev 76</ref>. Fra SK til <persName xml:id="id45cd6e02-6885-46aa-8f15-638b68138481" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>, kladde (<hi xml:id="idea2ea7cd-59ef-4c12-9e9e-a36135f532b6" rendition="#ita">SKS</hi> 28, 134).</p>
+                <p xml:id="id1ca95c6a-ef9a-4bf1-9869-f4e4c581a1e3">1 løst blad i 2<hi xml:id="id12f15c09-e9e7-42d1-bea9-af26e37d48de" rendition="#sup">o</hi> med afrevet kant i højre side.</p>
+                <p xml:id="ide895a073-cf30-407c-85c7-5fd5041aae1b">Ingen paginering.</p>
+                <p xml:id="id4ec2c272-d803-4f05-8e96-249abe8471f9">Papir: gulligt koncept, glat. Mål: 210 × 345 mm.</p>
+                <p xml:id="idb0a740c4-a10b-46c8-8238-d6720ed9d5b2">Bladet har efter beskrivning været foldet en gang på tværs, en gang på langs og derpå endnu en gang på tværs.</p>
+                <p xml:id="ida03e45cf-475e-48c4-960f-89e8bdd1effc">Rectosiden er godt halvt beskrevet, versosiden ubeskrevet.</p>
+                <p xml:id="ida5dd4be2-5bf5-4c15-89fa-ebb2f80a1845">Få korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.76" prev="#physDesc.76">
+              <msIdentifier xml:id="id0da7994f-603d-4b77-99f2-5e1226cb7ee5">
+                <idno xml:id="idb7fcb2c7-5290-4e70-8f72-02be0979697b">76</idno>
+              </msIdentifier>
+              <additional xml:id="id6e024976-939e-4da0-aace-2093ce2dc7a9">
+                <adminInfo xml:id="idac89b5d5-3750-46d9-9384-f3a2743f3314">
+                  <note xml:id="id26de9d0e-a41b-4056-9a6b-148a8ec35914">
+                    <p xml:id="idf7dba5c8-5214-4f31-940f-b60cb9913f43">(<hi xml:id="id0bebe7a9-e2c3-42f4-b9c1-28c0c7f3d983" rendition="#ita">L-fort</hi> 235, <hi xml:id="id224a1192-6970-4382-8748-b349978bed23" rendition="#ita">B-fort.</hi> 235.2; KA, D pk. 2, læg 12; <hi xml:id="id718c3379-c61e-43fc-bde5-f8ea92d61173" rendition="#ita">B&amp;A</hi> 281)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.77" next="#additional.77">
+              <msIdentifier xml:id="idb07eb7a0-ce92-43c8-9224-849ebf9f97c5">
+                <idno xml:id="id53100484-eeaf-49ef-87f6-c04a2ef57e07">77</idno>
+              </msIdentifier>
+              <physDesc xml:id="id016a99ac-a807-464f-ad4d-9e0d76b13bd1">
+                <p xml:id="ide46cc5a8-6bdd-442b-9dbc-850c5a3ed1bf"><ref xml:id="idd6aa4ce0-acad-465f-8aec-f62c83abacb4" target="../B70/txt.xml#n77" type="lettersAndDedications" n="77">Brev 77</ref>. Fra SK til <persName xml:id="id41c797bf-36d4-4ed2-ba6e-af9bd0e2f7d0" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> (<hi xml:id="idb2eb5298-11eb-427e-b177-c4a6484e9611" rendition="#ita">SKS</hi> 28, 135).</p>
+                <p xml:id="id0c66a1d1-66d5-4484-bb80-4991fb8741df">1 løst blad i 4<hi xml:id="id070b4410-c601-4734-9f92-c5cd4414ae24" rendition="#sup">o</hi> med afrivningskant i venstre side.</p>
+                <p xml:id="id4fa7923c-6ee7-46e2-a029-69eb9661bc05">Ingen paginering.</p>
+                <p xml:id="idf39d0762-80c6-4b4e-ae54-427fc61e2c30">Papir: gulligt koncept, glat. Mål: 170 × 205 mm.</p>
+                <p xml:id="id95d9c273-d863-4d95-906d-a41ee5d7b8d2">Bladet har efter beskrivning været foldet en gang på tværs.</p>
+                <p xml:id="ideb72f4ab-37ae-4b07-a470-c50aca273696">Versosiden er ubeskrevet.</p>
+                <p xml:id="id33fa40eb-29c6-49ed-ae59-ce09f697e2e4">En del korrektioner.</p>
+              </physDesc>
+            </msPart>
+            <msPart xml:id="additional.77" prev="#physDesc.77">
+              <msIdentifier xml:id="idea5f05f1-a640-4511-a15c-17d8e2a1444f">
+                <idno xml:id="id7e67532a-a8ac-4459-b5cc-bc6d1212d208">77</idno>
+              </msIdentifier>
+              <additional xml:id="id325fce4d-7453-4388-ab18-5b6af3db529b">
+                <adminInfo xml:id="id8da523d3-bb86-4689-b02a-1f6f9d74ad18">
+                  <note xml:id="id246c96b0-d1c1-433b-8517-a6b3fe0bd863">
+                    <p xml:id="id3f370420-da75-457a-96f5-5c3cb6e4ee99">(<hi xml:id="idb7ca2bae-e15b-414e-869e-7e5d80db808f" rendition="#ita">L-fort</hi> 235, <hi xml:id="ide581e9ae-e578-4b25-99e8-92ac4fc2f307" rendition="#ita">B-fort.</hi> 235.2; KA, D pk. 2, læg 12; <hi xml:id="id3ee22e09-f7c0-49a7-8fc8-5d36274945ff" rendition="#ita">B&amp;A</hi> 282)</p>
+                  </note>
+                </adminInfo>
+              </additional>
+            </msPart>
+            <msPart xml:id="physDesc.78" next="#additional.78">
+              <msIdentifier xml:id="iddf5b7f46-2ee3-482a-b74f-e4c1a5bd5045">
+                <idno xml:id="idfb67eaab-3b2c-44ae-9c6a-642452f4dbab">78</idno>
+              </msIdentifier>
+              <physDesc xml:id="idbe16857b-d875-4b42-a894-273d0f08a3ce">
+                <p xml:id="ide2e9f261-9f82-48c9-baed-1d29d50b5c2f"><ref xml:id="id6c6543ca-50d1-4ecf-ba5e-3e579ce5b583" target="../B70/txt.xml#n78" type="lettersAndDedications" n="78">Brev 78</ref>. Fra SK til <persName xml:id="ide907578b-3efa-49c5-be54-d03439bd7869" key="Heiberg, Johanne Luise">Johanne Luise Heiberg</persName> (<hi xml:id="id51b0db6d-eb65-44cc-a631-0a025ad2e69f" rendition="#ita">SKS</hi> 28, 135-136). Tekstgrundlaget for <hi xml:id="id175d9e1f-ade1-4f89-a29f-c9c97a3d2274" rendition="#ita">SKS</hi> 28 er mss. 78.2 og 78.3 (se <ref xml:id="idfdee636c-27d3-4329-a893-abb86ff9b943" target="../B70/txt.xml#ill_8" type="figure" n="137">illustration 8, <hi xml:id="idcb5b121c-410a-40a7-90d1-da190cb68b3a" rendition="#ita">SKS</hi> 28, 137</ref>).</p>
+              </physDesc>
+              <msPart xml:id="physDesc.78.1" next="#additional.78.1">
+                <msIdentifier xml:id="idc69389d2-2ece-416f-a226-fe28bba92e2e">
+                  <idno xml:id="id00a2906b-0677-4ff0-bf26-e876cc93f49c">78.1</idno>
+                </msIdentifier>
+                <physDesc xml:id="id5f30403d-a737-4424-a748-c326e5406c6b">
+                  <p xml:id="id66d9a054-e6b0-4e27-b8e4-f8e2423caedf">Kladde.</p>
+                  <p xml:id="idab0df652-46ee-4b5b-b1d5-26c8fadd6899">1 løst blad i 4<hi xml:id="id0bd35d76-ad43-49ce-a478-6806ff0eecf7" rendition="#sup">o</hi> med afrevet kant i venstre side.</p>
+                  <p xml:id="idf9cf8dff-d4d8-47a3-818f-1f8590339b26">Ingen paginering.</p>
+                  <p xml:id="id2cbe95ab-ea7a-4529-879e-bfb395de2317">Papir: gulligt koncept, glat. Mål: 168 × 206 mm.</p>
+                  <p xml:id="id01be9b34-023d-4d22-90a8-b746f45bcc12"><pb xml:id="ss197" n="197" edRef="#SKS"/>Bladet har efter beskrivning været foldet en gang på langs og en gang på tværs.</p>
+                  <p xml:id="id54228a51-0239-4ab3-aa8a-830babf28cc2">Versosiden er ubeskrevet.</p>
+                  <p xml:id="ide23c625a-f24e-4931-8396-abaf64272b34">Øverst på rectosiden findes påskriften »<hi xml:id="id4544fd0b-70f0-4e8c-ba4f-335cc15eda17" rendition="#ita">Brugt</hi>« med blyant. Hele teksten er desuden overstreget med en enkelt blyantstreg på tværs, fra øverste venstre til nederste højre hjørne.</p>
+                  <p xml:id="id7461f031-a22f-40a5-b048-1048db21bf26">En del korrektioner.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.78.1" prev="#physDesc.78.1">
+                <msIdentifier xml:id="id9d18adc6-9c1e-4d6b-883e-c1c036b41fc5">
+                  <idno xml:id="ideccfdaca-77ff-401e-818e-c342314029d9">78.1</idno>
+                </msIdentifier>
+                <additional xml:id="id10c27911-2169-4202-bcb8-10582bec724d">
+                  <adminInfo xml:id="id2305e8ce-8180-4212-87cb-08cdeeecbbd4">
+                    <note xml:id="id94a695d9-994b-44f3-bc51-818211937ad5">
+                      <p xml:id="id7fd19349-2890-41cb-9d88-907315c8ac9d">(<hi xml:id="id2c5a71d1-3894-4c39-8d03-0195c63b47fe" rendition="#ita">L-fort</hi> 235, <hi xml:id="id1ffa122a-f41e-4c5e-b6ab-915037af9287" rendition="#ita">B-fort.</hi> 235.3; KA, D pk. 2 læg 12)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.78.2" next="#additional.78.2">
+                <msIdentifier xml:id="id2ba4b6fa-e3bd-4226-8ccc-7e5ae44fbaa4">
+                  <idno xml:id="id5be48da4-d795-4c31-9a98-198061293af1">78.2</idno>
+                </msIdentifier>
+                <physDesc xml:id="id8692033a-b411-4cfc-b035-0df3b5899207">
+                  <p xml:id="id8576be8e-b54c-4893-9d09-442de0d0aee7">Renskrift.</p>
+                  <p xml:id="id8fabe78a-65c6-4fe6-8fa5-cf9e624ed6a8">1 dobbeltblad i 4<hi xml:id="id027f9068-e04a-4525-bb26-71391d1bb88e" rendition="#sup">o</hi>.</p>
+                  <p xml:id="id70d71d59-b032-4924-ad81-7d0ed6f68f7b">Ingen paginering.</p>
+                  <p xml:id="ida4bb573a-0dd9-4f77-a821-3dd82541bdab">Papir: blåligt velin, glat. Mål: 135 × 209 mm.</p>
+                  <p xml:id="id1bcd90ad-599e-4ba0-a2a7-43306013114d">Bladet har efter beskrivning været foldet en gang på tværs.</p>
+                  <p xml:id="ide7f4dec1-7502-4fc1-8a3e-abef1d849c1e">Bl. [1v]-[2v] er ubeskrevet.</p>
+                  <p xml:id="id9d74a3f0-e441-43a2-bfcb-fcf1693c44ad">En enkelt korrektion.</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.78.2" prev="#physDesc.78.2">
+                <msIdentifier xml:id="id891ce10b-6283-4cd9-a97a-8db68292221e">
+                  <idno xml:id="idf3d4f0f8-5074-4615-88f9-096c8e0ef5b9">78.2</idno>
+                </msIdentifier>
+                <additional xml:id="id11a17154-b644-43ad-bc77-e8635f135968">
+                  <adminInfo xml:id="id9e41a680-3291-46d2-aa04-18ebca89428a">
+                    <note xml:id="idea0954d3-8843-4f40-9aab-9ee742ff7c10">
+                      <p xml:id="id701800a8-0752-4a71-b4cf-8ac56d80509b">(RA, <persName xml:id="id16320db8-350c-428d-baef-d51d60b624c2" key="Heiberg, Johanne Luise">Johanne Luise Heiberg</persName>s Arkiv, korrespondance 1825-1890, breve fra andre, Ibsen-Mønster; <hi xml:id="id572891ea-5863-425f-9576-87efbc4a17f2" rendition="#ita">B&amp;A</hi> 283)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+              <msPart xml:id="physDesc.78.3" next="#additional.78.3">
+                <msIdentifier xml:id="id54d02be1-7c33-4503-af99-50e645f52288">
+                  <idno xml:id="id4e7283bb-baa1-4884-9a0e-66cb15f0bc6e">78.3</idno>
+                </msIdentifier>
+                <physDesc xml:id="idfcb2d7e6-4547-4374-a1d4-6923d2ecec41">
+                  <p xml:id="id527e1b4b-a9a6-4f71-a3cb-350f8b480242">Konvolut med dedikation.</p>
+                  <p xml:id="id92d9377c-18e9-45cb-a567-ac44484bc470">1 helark.</p>
+                  <p xml:id="id5743700c-7fe4-4bb8-82e5-8123dbe1a997">Ingen paginering.</p>
+                  <p xml:id="iddf2429b1-13a3-4bc0-a9d0-ecca77096ddc">Papir: gulligt koncept, groft. Mål: 344 × 421 mm.</p>
+                  <p xml:id="idb8574a13-750c-497f-b0eb-ae1d18eb7fd7">Arket er foldet to gange på langs og to gange på tværs til konvolut (mål: 155 × 226 mm); rest af rød oblat.</p>
+                  <p xml:id="idc2657446-f933-4a5c-87bb-97630db1fa41">På arkets rectoside findes dedikationen til Fru <persName xml:id="idd7dbfdaf-7c83-4e13-a68e-ce846b34008a" key="Heiberg, Johanne Luise">Heiberg</persName> (<ref xml:id="ida06b0ef1-e56f-4345-ad8a-f6754de10784" target="../B70/txt.xml#n78" type="lettersAndDedications" n="136"><hi xml:id="id6317692a-c558-4ef8-97c3-c8e55c30115c" rendition="#ita">SKS</hi> 28, 136</ref>,12-20), skrevet på den foldede konvoluts inderside. På arkets versoside og den foldede konvoluts yderside findes udskriften (<ref xml:id="id06aca435-417c-42ca-92ef-54e57fcaae8d" target="../B70/txt.xml#n78" type="lettersAndDedications" n="136"><hi xml:id="id1c91929f-963e-47fd-a964-cadf163af1f7" rendition="#ita">SKS</hi> 28, 136</ref>,21-22).</p>
+                </physDesc>
+              </msPart>
+              <msPart xml:id="additional.78.3" prev="#physDesc.78.3">
+                <msIdentifier xml:id="id69260f3d-e6c3-424c-9c73-044f90f3e61e">
+                  <idno xml:id="id08f693e8-5301-4963-8672-29e9842fab3f">78.3</idno>
+                </msIdentifier>
+                <additional xml:id="id35de7167-14a3-4836-a0cb-58ace48509c0">
+                  <adminInfo xml:id="id0d6595c7-3806-448f-8449-30f7f00993d1">
+                    <note xml:id="id04e6a400-e327-4b36-8fc4-ceb4f7aa87b3">
+                      <p xml:id="id71c14efd-67e6-4e4d-a742-43d89fc5617c">(RA, <persName xml:id="id37fc677b-ce7c-41d7-a212-f802b6e33afb" key="Heiberg, Johanne Luise">Johanne Luise Heiberg</persName>s Arkiv, korrespondance 1825-1890, breve fra andre, Ibsen-Mønster; <hi xml:id="id41452340-df52-44b0-bede-8a34a123c502" rendition="#ita">B&amp;A</hi> 283)</p>
+                      <p xml:id="id13cc277a-2a65-4a82-a0da-622a9f37fc86">(<hi xml:id="idf189fd12-45c1-4be6-86cc-d9a3c88d3275" rendition="#ita">L-fort.</hi> 235, <hi xml:id="idfd8d21ae-a4c3-4c94-8118-48a6dca3ba27" rendition="#ita">B-fort.</hi> 235.3; KA, D pk. 2 læg 12; RA, <persName xml:id="id320999fd-13aa-4007-a45d-242f09c52128" key="Heiberg, Johanne Luise">Johanne Luise Heiberg</persName>s Arkiv, korrespondance 1825-1890, breve fra andre, Ibsen-Mønster; <hi xml:id="idab6d15d5-e9cd-4dac-a955-505fe2dd726f" rendition="#ita">B&amp;A</hi> 283)</p>
+                      <p xml:id="ide59af033-af08-4a62-913f-ab770b080290">(<hi xml:id="id6d956804-e50e-4a51-9af1-32eb92a8fa1e" rendition="#ita">L-fort.</hi> 235, <hi xml:id="id8f50bf9c-9107-48f5-ac75-8d8bb40763f9" rendition="#ita">B-fort.</hi> 235.2-3; KA, D pk. 2 læg 10 og 12; RA, <persName xml:id="id6aee396c-163f-47bd-9511-70a91cc1bf57" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>s Arkiv A 2 og <persName xml:id="id30e27602-6e27-4d39-ae5e-c38b26feabaf" key="Heiberg, Johanne Luise">Johanne Luise Heiberg</persName>s Arkiv, korrespondance 1825-1890, nr. 3; <hi xml:id="id80b766f2-78c3-4ac6-b404-a8b2bab5fb64" rendition="#ita">B&amp;A</hi> 6, 9, 134-136, 138, 281-283)</p>
+                    </note>
+                  </adminInfo>
+                </additional>
+              </msPart>
+            </msPart>
+            <msPart xml:id="additional.78" prev="#physDesc.78">
+              <msIdentifier xml:id="id67ca2252-00bf-457b-aa3c-88ca1e6f2d89">
+                <idno xml:id="idc1ad7686-c3af-4abb-b646-27eed3b7db5c">78</idno>
+              </msIdentifier>
+              <additional xml:id="id68dda60b-3ac3-4cbc-8fdf-cba3f9b0223c">
+                <adminInfo xml:id="idb2f46419-b801-46a7-ae60-9ae4ecb0fda3">
+                  <note xml:id="idf72f6567-4d82-40a2-8917-5f3fabf39f8e"/>
+                </adminInfo>
+              </additional>
+            </msPart>
+          </msDesc>
+        </div>
+        <div type="level1" xml:id="k2">
+          <head xml:id="id1c124f54-7e14-463a-ae1b-03835df28720">2. Datering og kronologi</head>
+          <p xml:id="idec60c2cd-ea3f-468b-8802-694c1527b763">Brevvekslingen med <persName xml:id="id7d0da9cd-376d-499e-9b22-84961f4bcf41" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> selv og (gennem ham) hans kone <persName xml:id="idd33adbc6-27fc-4eb9-a26a-2b21a6cd840e" key="Heiberg, Johanne Luise">Johanne Luise Heiberg</persName> og hans mor <persName xml:id="id74ef7097-daef-4f47-b657-ea887de14ad0" key="Gyllembourg, Thomasine">Thomasine Gyllembourg</persName> er direkte knyttet til SKs <pb xml:id="ss198" n="198" edRef="#SKS"/>egen litterære produktion og kan på baggrund af deres anledning og tilblivelsestidspunkt inddeles i fire sammenhængende brevvekslinger.</p>
+          <p xml:id="id4bc78f27-ea8b-470d-abce-3dd340d65a9e" rendition="#ind">Den første brevveksling består kun af et enkelt brev (<ref xml:id="id2d36f070-b50c-4705-957c-bee43fea864a" target="../B70/txt.xml#n70" type="lettersAndDedications" n="70">Brev 70</ref>) fra <persName xml:id="id279bec33-20ed-4fe6-8f8a-e0a57ff14f32" key="Heiberg, Johan Ludvig">Heiberg</persName>. Det er en følgeskrivelse af 16. marts 1836 til tre eksemplarer af hhv. nr. 82 og nr. 83 af <hi xml:id="ide6f9d5a7-4e56-4faf-947e-1e574b16010c" rendition="#ita">Kjøbenhavns flyvende Post. Interimsblad,</hi> som <persName xml:id="id003ae2de-b28a-422b-8149-4e6993e2c548" key="Heiberg, Johan Ludvig">Heiberg</persName> var redaktør af. De udkom hhv. den 12. og den 15. marts 1836, og her havde SK fået trykt »Om Fædrelandets Polemik« I og II.<note xml:id="idae450f07-5576-4f5e-8bb1-6558025dbdca"><p xml:id="id31bf4651-3321-4e0e-a3ca-5bf6dcfb53b9">Se <ref xml:id="idf62625e0-9b3f-4858-8cc7-fa05910e521d" target="../FP/txr.xml#ss53" type="textCriticalAccount" n="53">tekstredegørelsen i <hi xml:id="ida7e5b469-1128-4a66-a5dc-100495462252" rendition="#ita">SKS</hi> K14, 53-59</ref>.</p></note></p>
+          <p xml:id="id4f5f0863-93d7-4f10-8081-26f72235e521" rendition="#ind">Den anden brevveksling omfatter ligeledes kun et enkelt brev, nemlig <ref xml:id="id785b1803-0d47-457e-8995-04229b730f66" target="../B70/txt.xml#n71" type="lettersAndDedications" n="71">Brev 71</ref> fra SK, dateret den 28. juli 1838. Brevet drejer sig om afhandlingen <hi xml:id="id8b7700b9-ea53-4cf5-bd3a-bc875c60d3d6" rendition="#ita">Af en endnu Levendes Papirer</hi> (1838), som SK forsøgte at få trykt i <persName xml:id="id8fc662e8-5dff-48ba-b6bc-bd1266c653b3" key="Heiberg, Johan Ludvig">Heiberg</persName>s tidsskrift <hi xml:id="idad81698c-5352-4dc9-9660-6d5df24b551e" rendition="#ita">Perseus, Journal for den speculative Idee.</hi><note xml:id="id418bdef3-b545-45e2-9d86-3ada45a016c6"><p xml:id="id599e2529-71a8-4b1d-a818-4dd8b098c456">Se <ref xml:id="id5f3fbb88-0441-4d94-b52e-18f0d0ed10bd" target="../LP/txr.xml" type="textCriticalAccount">tekstredegørelsen til <hi xml:id="ida57cf754-5cb6-4efd-ac37-52ae85ebc437" rendition="#ita">Af en endnu Levendes Papirer</hi></ref> i <hi xml:id="id24ccc2c7-57b4-4b5d-80f6-2cba477c67f6" rendition="#ita">SKS</hi> K1, 68-72.</p></note> Det fremgår af brevet, at SK tidligere har modtaget i hvert fald to breve fra <persName xml:id="id236ffd92-f352-4394-94b7-f98d62ef395c" key="Heiberg, Johan Ludvig">Heiberg</persName> bl.a. om stilen i afhandlingen, men ingen af dem er bevarede.</p>
+          <p xml:id="iddc4c515e-09d3-470d-a03e-3b5429ba2e25" rendition="#ind">Den tredje brevveksling, der omfatter de følgende fire breve (<ref xml:id="id054eff63-69ba-4749-a130-8c65b81c604d" target="../B70/txt.xml#n72" type="lettersAndDedications" n="72">Brev 72</ref>-75), tager udgangspunkt i SKs <hi xml:id="idd8d1a593-78fa-4afc-b32c-074476025c2a" rendition="#ita">En literair Anmeldelse.</hi> Alle breve er daterede (fra 29. marts til 26. april 1846). Den anmeldte novelle <hi xml:id="id490e6c17-b229-4423-818c-9e096f74a349" rendition="#ita">To Tidsaldre</hi> var forfattet af <persName xml:id="id3ab05753-2e70-415d-9ee4-d97967f4fd47" key="Gyllembourg, Thomasine">Thomasine Gyllembourg</persName>, men offentliggjort under hendes sædvanlige pseudonym »Forfatteren til En 'Hverdags-Historie'«. Derfor henvendte SK sig til udgiveren, hendes søn <persName xml:id="ide0a15f1d-e68f-4cc7-9d8c-2933c8a47c5b" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>, i det lille følgebrev af 29. marts 1846 med to eksemplarer af anmeldelsen, dagen inden den officielt udkom (<ref xml:id="id7782b26b-be28-4b06-8ad6-0898884f7315" target="../B70/txt.xml#n72" type="lettersAndDedications" n="72">Brev 72</ref>). Til dette brev findes der både en kladde og en kopi. Det ses af rettelser foretaget i kopien (se ms. 72.3), at den oprindelig har været en renskrift af kladden. Den er så igen blevet renskrevet (ms. 72.2), og den tidligere renskrift har derpå (med blyant) fået påskriften »<hi xml:id="id508e2623-5006-40a1-acbf-d95b011cd018" rendition="#ita">Copie</hi>«. Der er på baggrund af de bevarede breve ingen grund til at antage, at SK har korresponderet yderligere med hverken <persName xml:id="id8f9652c6-d7f7-49db-800d-55515cd1bde5" key="Heiberg, Johan Ludvig">Heiberg</persName> eller <persName xml:id="id6ce48f4b-3d99-4fc2-b2df-5f6f50feb5b7" key="Gyllembourg, Thomasine">Gyllembourg</persName> i forbindelse med <hi xml:id="idb81e7670-17ea-4f3a-9fbf-8f7bbb303106" rendition="#ita">En literair Anmeldelse</hi>.</p>
+          <p xml:id="id4d3f4eb5-8f39-43d7-9a93-507c4efa9b57" rendition="#ind">Den interne sammenhæng i den fjerde brevveksling er noget vanskeligere at bestemme. Den omfatter <ref xml:id="idad768da6-a4c8-47c4-9c3d-74e147d878c0" target="../B70/txt.xml#n76" type="lettersAndDedications" n="76">Brev 76</ref>-78, og vanskeligheden skyldes først og fremmest den lille kladde, der udgør <ref xml:id="id7fb43ae5-875d-48bd-b2b8-14b9799b86c3" target="../B70/txt.xml#n76" type="lettersAndDedications" n="76">Brev 76</ref>. Det fremgår af ordlyden, at det er et følgebrev, som SK har villet sende med en af sine bøger, men det fremgår ikke, hvilken bog der er tale om. Bogen omtales blot som et »lille Skrift«, og en »lille, ubetydelig Gave«. Hvis ordene er mere end blot høflighedsfraser, er der tale om et kort skrift, hvilket passer på
+        <hi xml:id="ida2faae93-5a60-439f-82e3-94cb21104b09" rendition="#ita">Om min Forfatter-Virksomhed,</hi> og brevet er tidligere blevet opfattet som en kladde til et brev sendt med den bog.<note xml:id="id842eaf34-1ed2-457f-a479-d646f227b3f9"><p xml:id="idea205dc7-c272-447f-a85e-d918947be5cb"><hi xml:id="ida8432e6a-8901-4afa-91d3-c464b65c9c94" rendition="#ita">B&amp;A</hi>, bd. 2, s. 116.</p></note> Det kan imidlertid med stor sandsynlighed udelukkes, da <ref xml:id="id4244e706-87f9-4abd-841e-c4f5bddf06d3" target="../B70/txt.xml#n77" type="lettersAndDedications" n="77">Brev 77</ref> er et følgebrev til <persName xml:id="idf3c48fff-31c7-4446-a377-de8c5230ed24" key="Heiberg, Johan Ludvig">Heiberg</persName>, sendt med <hi xml:id="id4c5ff912-7ae2-4244-b0bb-c410bc699c5e" rendition="#ita">Om min Forfattervirksomhed.</hi> Mere sandsynligt er det, at <ref xml:id="id51aa9e2d-e849-4dc7-bf42-47633bce3580" target="../B70/txt.xml#n76" type="lettersAndDedications" n="76">Brev 76</ref> er en kladde. Der findes ikke nogen renskrift af det i Heibergs arkiv <pb xml:id="ss199" n="199" edRef="#SKS"/>på Rigsarkivet, og <persName xml:id="id41f7f092-1175-41f3-ab5e-64a23ec5afef" key="Heiberg, Johan Ludvig">Heiberg</persName> synes ellers at have gemt korrespondancer og følgebreve fra SK.<note xml:id="idc4d13cc8-8f6c-474b-be61-f77956c0f47b"><p xml:id="id049194e5-03a8-4e9d-afd5-0fd241c47de0">Samme antagelse må <persName xml:id="id8d3b65b4-9f51-4151-8ec5-5387662e4ef3" key="Borup, Morten">Morten Borup</persName> have haft, da han udelod brevet fra <hi xml:id="id8c1e25f5-e038-44d3-996a-1ef116ee47a7" rendition="#ita">Breve og Aktstykker vedrørende Johan Ludvig Heiberg</hi>, <placeName xml:id="id44a9ed40-395c-419f-acd4-fdbad8d57370" key="København">Kbh.</placeName> 1946-50, og <persName xml:id="id9d30dcdb-9fd0-488a-a827-927c5b2d5f67" key="Kühle, Sejer">Sejer Kühle</persName>, da han ikke nævner det i »Søren Kierkegaard og den Heibergske Kreds« i <hi xml:id="id6ee0ea17-8fc8-455f-8b47-be3c06ff695b" rendition="#ita">Personalhistorisk Tidsskrift</hi>, 12. rk., bd. 2, <placeName xml:id="idae822bc7-58b3-4450-8e36-c2e6404ffe79" key="København">Kbh.</placeName> 1947, I-IV, s. 1-13.</p></note> Brevet fandtes ved SKs død i et omslag sammen med kladden til dedikationsbrevet til <persName xml:id="idd1b23e1b-10be-4ce4-ae1b-9f8707a41da1" key="Heiberg, Johanne Luise">Johanne Luise Heiberg</persName> og brevet til <persName xml:id="idba206498-67fd-47ac-be56-2fd3673e0377" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> (hhv. <ref xml:id="idddec67a9-28d3-408e-a143-e1dc7a133a7d" target="../B70/txt.xml#n78" type="lettersAndDedications" n="78">Brev 78</ref> og <ref xml:id="id2ac27505-8d3f-4f41-9305-299fca1b292c" target="../B70/txt.xml#n77" type="lettersAndDedications" n="77">77</ref>). Derfor kunne man tro, at brevet er et udkast til <ref xml:id="id303dce81-4d72-46d8-9293-422e7de02be6" target="../B70/txt.xml#n77" type="lettersAndDedications" n="77">Brev 77</ref>. Imidlertid er <ref xml:id="id502bc174-aed9-4272-903a-6dd6f9c4bfd2" target="../B70/txt.xml#n77" type="lettersAndDedications" n="77">Brev 77</ref> et følgebrev til de to bøger <hi xml:id="id2f223806-7e11-413e-acb5-3750edf2342a" rendition="#ita">To Taler ved Altergangen om Fredagen</hi> og <hi xml:id="idc067706c-3fa7-43c3-8f13-6ec0aa71355b" rendition="#ita">Om min Forfatter-Virksomhed,</hi> der udkom samtidig, mens <ref xml:id="id2d9d37e1-99fb-4b62-acb4-0f74ae98b13e" target="../B70/txt.xml#n76" type="lettersAndDedications" n="76">Brev 76</ref> kun omtaler en enkelt bog. Samtidig er der en forskel i tiltalen af <persName xml:id="idb1a59836-f7c5-4769-b7e8-0ea99c1353f4" key="Heiberg, Johan Ludvig">Heiberg</persName> i de to breve, der tyder på forskelligt affattelsestidspunkt. Hvor det afsendte <ref xml:id="idd4e14f54-9287-410b-949d-c4ebd5f358eb" target="../B70/txt.xml#n77" type="lettersAndDedications" n="77">Brev 77</ref> har tiltalen »Høivelbaarne Hr. Etatsraad«, har <ref xml:id="ida28a769c-3e46-4365-a451-0e7c098b36ca" target="../B70/txt.xml#n76" type="lettersAndDedications" n="76">Brev 76</ref> tiltalen »Høistærede!«. Da <persName xml:id="id7005de07-5054-45bd-90c2-407f6b1efef2" key="Heiberg, Johan Ludvig">Heiberg</persName> i begyndelsen af 1850 var blevet udnævnt til etatsråd skulle han fra dette tidspunkt formelt tituleres »Høivelbaarne Hr. Etatsraad«, som det gøres i <ref xml:id="id3981790e-6506-47b8-bd84-979b1e32b80f" target="../B70/txt.xml#n77" type="lettersAndDedications" n="77">Brev 77</ref>. Dermed synes det mest sandsynligt, at <ref xml:id="id533a6657-294c-4182-be6b-15194e6d3006" target="../B70/txt.xml#n76" type="lettersAndDedications" n="76">Brev 76</ref> er affattet inden 1850 og er tænkt som et følgebrev til en tidligere bog. Da kladden må være skrevet efter korrespondancen om <hi xml:id="id569090a5-57d9-44f3-b4a8-45d9ff33e3a1" rendition="#ita">En literair Anmeldelse,</hi> og det desuden må være tænkt som følgebrev til et mindre skrift, er mulighederne begrænset til <hi xml:id="id6da09321-9a36-4797-8c08-4f3af987235c" rendition="#ita">Lilien paa Marken og Fuglen under Himlen</hi>, der udkom den 14. maj 1849, og <hi xml:id="id1b027287-dcbe-4073-bba1-cb4e6dfed5c4" rendition="#ita">»Ypperstepræsten«
         – »Tolderen« –
         »Synderinden«,</hi> der udkom den 14. november 1849.</p>
-    </div>
-  </div></body></text></TEI>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,452 +1,627 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE kn1 SYSTEM "http://sks.dk/kn1/kn1.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Guds Uforanderlighed</title>
-     
-     <title type="short">GU</title>
-     
-  <author>
-   <name>Niels Jørgen Cappelørn</name>
-  </author>
- 
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2009</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K13</biblScope>
-     <biblScope unit="file">http://sks.dk/gu/kom.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition><rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20121211">Kierkegaard Normalformat vers.1, <bibl><idno type="version">1.8</idno>, <biblScope unit="file">http://sks.dk/gu/kom.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id31fcf90b-7541-408c-9c0e-b668dcbb9a76">
+    <fileDesc xml:id="id2b296605-8120-49ea-9cf2-24917b7add3a">
+      <titleStmt xml:id="id293b828a-a059-430c-802d-1f163333132c">
+        <title xml:id="idbd74dd90-0be6-4998-a1ac-10447c362906" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id951230cf-04d8-4291-9696-4f02e605861b">Guds Uforanderlighed</title>
+        <title xml:id="id6c7b13be-1ec0-4ac1-80a6-3c3a5faa5d4c" type="short">GU</title>
+        <author xml:id="id8a3a7d22-dcbf-4194-abd8-70d922ba5aef">
+          <name xml:id="id673d3dec-f4c2-4a13-92d1-fa839c14aa05">Niels Jørgen Cappelørn</name>
+        </author>
+        <editor xml:id="id70000a5a-b7a4-465c-a6fa-a5013cec6c51">
+          <name xml:id="id1d4d5b25-ba1a-4964-b2ed-5275818c96ed">Niels Jørgen Cappelørn</name>
+          <name xml:id="id9ba35d09-b2db-44bd-8756-bab281c19cd8">Joakim Garff</name>
+          <name xml:id="id397acd59-f2ac-49ca-b577-42d53a4f7e0c">Johnny Kondrup</name>
+          <name xml:id="id577ddc59-d675-484f-80dc-910c7fea0574">Tonny Aagaard Olesen</name>
+          <name xml:id="id35f9dcaa-727a-45f7-a992-a7faffaf861e">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="idfe158a8e-56b4-4e21-9929-de1c457d28be">
+          <resp xml:id="idc1eab7b2-4ef2-4279-890e-f36c883abe59">elektronisk redigeret af</resp>
+          <name xml:id="id4ca4368c-9a8a-40fc-85f6-5bf2c1492763">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="id93cdd977-1aaa-4e68-9ec9-4fd9ed956ff2">
+        <authority xml:id="id2ed18d9d-35dc-4fc7-9c8e-b1082c88f8ac">Søren Kierkegaard Forskningscenteret 2009</authority>
+        <availability xml:id="id46b14ba7-2825-4dd5-a671-460a8a9c37f3" status="restricted">
+          <p xml:id="idc7ce6348-b370-4655-afc6-b922e78a269e">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="idf8c2dc63-cf2c-4917-85f6-1682371db583">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="idd0d77bd5-9df6-4f94-9093-611bf00c14ca" unit="volume">K13</biblScope>
+        <biblScope xml:id="id81a0ab18-776c-43a2-bec6-fb8473480d1d" unit="file">http://sks.dk/gu/kom.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id8d7bc726-4cd5-4920-a787-cec0f7e227a8">
+        <bibl xml:id="ida19f90e4-021b-44af-988d-39e4ba954bbd" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="idd439e1c6-8d55-41ad-9fe7-9abe6f6ca85b">
+      <tagsDecl xml:id="id76ce6679-2dca-4ed2-a892-8842b5738006">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+        <rendition xml:id="sup" scheme="css">vertical-align: super; font-size:      80%;</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id4ab5bb1d-41fc-46ba-b0a4-2f746305148a">
+      <change xml:id="ida700a37d-f8ab-4f14-8c91-cb6d7706e1b8">Transformed to TEI by style sheet <bibl xml:id="ida97b25a8-5091-4092-90b4-f39482024483" type="file">kn12tei.xsl</bibl> version <idno xml:id="id6262ff96-0427-41a7-a930-de3368d4babf" type="version">1.9</idno> as of <date xml:id="idb9b13078-681a-4910-bbd5-e7b8271a008b">2017-02-21</date> by <name xml:id="id39d04f61-95c2-4e12-83bc-92e70a7ea340">Karsten Kynde</name>, <orgName xml:id="iddf3b748c-bd4e-4445-8a71-b1530de08d37">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="idccd91020-fb76-4a0d-8fc7-16ae06874cce">København</placeName></change>
+      <change xml:id="id330fd78e-ca24-4ea1-84be-c151cf0ad068" when="20121211">Kierkegaard Normalformat vers.1, <bibl xml:id="idea2fd3a6-460e-49cf-9b1c-46a518b1daec"><idno xml:id="idfa78aec5-f893-4fb9-9805-53de502e777d" type="version">1.8</idno>, <biblScope xml:id="id9ef3a0da-4bce-4502-8f9f-e7eae8d0e1bb" unit="file">http://sks.dk/gu/kom.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="commentary" subtype="ts"><body><div> 
-  <note type="commentary" xml:id="gu-1" n="321,1">
-   <label><hi rendition="#bol">Guds Uforanderlighed En Tale</hi></label>
-   <p>sml. omslaget til kladden (ms. 1.3), hvor SK har skrevet: »Guds Uforanderlighed / Prædiken« (<ptr type="commentary" target="#gu-4" n="325,2"/>), og renskriften (ms. 3.3), hvor han har slettet »Prædiken«, se <ref target="../GU/txr.xml#ss515" type="textCriticalAccount" n="515">tekstredegørelsen, s. 515</ref> og s. 517. Sml. desuden renskriften til titelbladet (ms. 3.4), hvor SK under »En Tale« har slettet »Tale holden i Citadellets Kirke søndag den 18. maj 1851« (<ptr type="commentary" target="#gu-4" n="325,2"/>), se <ref target="../GU/txr.xml#ss518" type="textCriticalAccount" n="518">tekstredegørelsen, s. 518</ref>.</p>
-  </note>
-  <note type="commentary" xml:id="gu-2" n="323,1">
-   <label><hi rendition="#bol">Mindet om ... Michael Pedersen Kierkegaard ... helliget</hi></label>
-   <p><persName key="Kierkegaard, Michael Pedersen" n="*">Michael Pedersen Kierkegaard</persName>, f. 1756, kom i 1768 i lære hos sin morbror hosekræmmer <persName key="Andersen, Niels">Niels Andersen</persName>, og uddannet i faget løste han i dec. 1780 borgerskab som hosekræmmer i <placeName>København</placeName>; trak sig i en alder af 40 år tilbage fra sin forretning med en betragtelig formue, som han i tiden efter forøgede; giftede sig i 1797 med <persName key="Lund, Anne Sørensdatter">Ane Lund</persName>, med hvem han fik syv børn, hvoraf SK var det yngste; købte i 1808 huset <placeName>Nytorv</placeName> 2, i dag <placeName>Frederiksberggade</placeName>, hvor han boede til sin død, 81 år gammel, den 9. aug. 1838. – <hi rendition="#bol">helliget:</hi> dediceret, tilegnet. Sml. den enslydende tilegnelse i <hi rendition="#ita">To opbyggelige Taler</hi> (1843), <hi rendition="#ita">Tre opbyggelige Taler</hi> (1843) og <hi rendition="#ita">Fire opbyggelige Taler</hi> (1843) samt <hi rendition="#ita">Tre opbyggelige Taler</hi> (1844) og <hi rendition="#ita">Fire opbyggelige Taler</hi> (1844): »Afdøde / Michael Pedersen Kierkegaard, / forhen Hosekræmmer her i Byen / min Fader / helliges disse Taler«, <ref target="../2T43/txt.xml#ss11" type="publishedWritings" n="11"><hi rendition="#ita">SKS</hi> 5, 11</ref>, 61, 111, 229 og 287 (se kommentarerne dertil). Sml. også tilegnelsen i <hi rendition="#ita">Tre Taler ved tænkte Leiligheder</hi> (1845): »Mindet / om / min afdøde Fader / Michael Pedersen Kierkegaard / helliget«, <ref target="../TTL/txt.xml#ss387" type="publishedWritings" n="387"><hi rendition="#ita">SKS</hi> 5, 387</ref>. Sml. endelig tilegnelsen i <hi rendition="#ita">En opbyggelig Tale</hi> (1850): »Mindet / om / afdøde / Michael Pedersen Kierkegaard, / min Fader, helliges / dette lille Skrift«, <ref target="../EOT/txt.xml#ss259" type="publishedWritings" n="259"><hi rendition="#ita">SKS</hi> 12, 259</ref>.</p>
-  </note>
-  <note type="commentary" xml:id="gu-3" n="323,7">
-   <label><hi rendition="#bol">I Aug. 1855</hi></label>
-   <p>se <ref target="../GU/txr.xml#ss515" type="textCriticalAccount" n="515">tekstredegørelsen, s. 515</ref> og s. 521.</p>
-  </note>
-  <note type="commentary" xml:id="gu-4" n="325,2">
-   <label><hi rendition="#bol">Denne Tale er holdet i Citadellets Kirke den 18de Mai 1851</hi></label>
-   <p>se prædikantlisten i <hi rendition="#ita">Adresseavisen,</hi> nr. 115, den 17. maj 1851: »Citadellets, Hr. Mag. <persName key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>, Kl. 9½.« – Den 21. maj modtog SK to breve fra kvindelige tilhørere. Den ene, der kalder sig 'e – e', skriver bl.a.: »I Søndags stod De anmeldt som Prædikant i Citadellet. Hvor kunde jeg andet end gaae derud og jeg blev ikke skuffet. Det var ikke een af de Prædikener jeg saatidt har hørt og glemt før den var ude. Nei, fra det rige, varme Hjerte strømmede Talen, forfærdende, men tillige opbyggelig og beroligende, og trængte ind i Hjertet for aldrig at glemmes, men for at bære evige, velsignelsesrige Frugter« (<ref target="../b308/txt.xml#n313" type="lettersAndDedications" n="ba:277" rend="Brev 313"><hi rendition="#ita">B&amp;A,</hi> nr. 277, bd. 1, s. 298f.</ref>). Den anden, der kalder sig 'S: F:', skriver med henvisning til SKs prædiken i Citadelskirken: »For mig var den Dag en Festdag til Opbyggelse og jeg troer, det er gaaet Flere som mig« (<ref target="../b308/txt.xml#n314" type="lettersAndDedications" n="ba:278" rend="Brev 314"><hi rendition="#ita">B&amp;A,</hi> nr. 278, bd. 1, 301</ref>). Sml. i øvrigt journaloptegnelsen <ref target="../NB24/txt.xml#n74" type="journalsAndPapers" n="74">NB24:74</ref>, fra slutningen af maj el. begyndelsen af juni 1851, hvor SK skriver: »Søndagen d. 18 Mai prædikede jeg i Citadellet. Det var min første, min kjere Text <rs type="bible" key="Jak 1">Jacob 1</rs> [se følgende kommentar]. Ogsaa, jeg tilstaaer det, med Tanken om 'hende' [SKs tidligere forlovede <persName key="Olsen, Regine">Regine Olsen</persName>, gift Schlegel], item [lat., fremdeles, ligeledes], hvis det skulde kunne glæde hende at høre mig. / Jeg leed saare meget iforveien af al mulig Anstrengelse, som altid naar jeg skal bruge min legemlige Personlighed. / Jeg holdt den. Det gik da ret taaleligt, men jeg talte da saa svagt, at man klagede over ikke at kunne høre. / Da jeg gik hjem befandt jeg mig endog vel, animeret. Min Tanke havde det været, i Sommerens Løb at holde nogle saadanne Prædikener naturligviis efter Udarbeidelsen. / Nu blev det mig imidlertid klart, at der gaaer altfor abnorm Tid med og at det dog tager for meget paa mig. / Saa faldt det mig paa Sinde: Du kan jo prædike ex tempore [lat., på stedet, uden forberedelse]. / Det slog mig. Jeg vilde da have vovet det Yderste. / Men hvad skeer? Om Mandagen var jeg saa afmægtig og mat, at det var frygteligt. / Saa gik flere Dage. Tanken om at prædike ex tempore opgav jeg vel ikke, og saa at marquere det Christelige existentielt saa langt ud som muligt. / Dog jeg følte, at det var mit hele Væsen imod. / Jeg blev mattere og mattere. Dog opgav jeg ikke den Tanke ganske. / Imidlertid maatte jeg dog opgive den for næste Gang. / Saa blev jeg reent syg. Den ulykkelige qvalfulde Smerte, som er min Personligheds Grændse begyndte at røre sig frygteligt, Noget, der nu ikke var hændt mig i lang, lang Tid. / Jeg forstod dette et Øieblik som Straf, at jeg ikke havde grebet raskt nok til. / Jeg blev elendigere. / <hi rendition="#ita">(...)</hi> Saa forstod jeg det anderledes. At jeg dog atter har villet ud over min Grændse, og hviler nu i: lad Dig nøies med min Naade. Inderliggjørelse er min Opgave, og meget af en Digter er jeg. / Søndagen d. 18<hi rendition="#sup">de</hi> om Morgenen havde jeg bedet til Gud: at der maatte fødes noget Nyt i mig (jeg veed ikke selv, hvor dette faldt mig ind) fremdeles paanødte den Tanke sig mig: at som Forældre opdrage deres Børn og tilsidst føre dem til Confirmation saaledes var dette nu min Confirmation, som Gud førte mig til. / Ogsaa dette er paa en Maade skeet. Der er født noget Nyt i mig; thi jeg forstaaer min Forfatter-Opgave anderledes, den er nu ganske anderledes indviet til ligefrem at udbrede Religieusitet. Og Confirmation har jeg ogsaa faaet derpaa, saaledes er det for mig.« <hi rendition="#ita">SKS</hi> 24, 365-367; se kommentarerne dertil. – <hi rendition="#bol">Citadellets Kirke:</hi> Kastelskirken (<hi rendition="#ita"><ref target="../kort/kbh_G2.htm" type="map" n="kbh">se kort 2, G2</ref></hi>). – <hi rendition="#bol">den 18de Mai 1851:</hi> Søndag den 18. maj 1851 var 4. søndag efter påske.</p>
-  </note>
-  <note type="commentary" xml:id="gu-5" n="325,2">
-   <label><hi rendition="#bol">Texten er den første jeg har benyttet</hi></label>
-   <p>sigter til, at <rs type="bible">Jak 1,17-21</rs> udgør det bibelske tekstgrundlag for den anden tale »Al god og al fuldkommen Gave er ovenfra« i <hi rendition="#ita">To opbyggelige Taler</hi> (1843), i <ref target="../2T43/txt.xml#ss39" type="publishedWritings" n="39"><hi rendition="#ita">SKS</hi> 5, 39</ref>-56.</p>
-  </note>
-  <note type="commentary" xml:id="gu-6" n="325,3">
-   <label><hi rendition="#bol">senere er den oftere blevet fremdraget</hi></label>
-   <p>sigter til, at <rs type="bible">Jak 1,17-21</rs> udgør det bibelske tekstgrundlag både for den anden tale »Al god Gave og al fuldkommen Gave er ovenfra« og for den tredje tale »Al god Gave og al fuldkommen Gave er ovenfra« i <hi rendition="#ita">Fire opbyggelige Taler</hi> (1843), i <ref target="../4T43/txt.xml#ss129" type="publishedWritings" n="129"><hi rendition="#ita">SKS</hi> 5, 129</ref>-142 og 143-158.</p>
-  </note>
-  <note type="commentary" xml:id="gu-7" n="325,5">
-   <label><hi rendition="#bol">D. 5te Mai 1854</hi></label>
-   <p>SKs 41-års fødselsdag.</p>
-  </note>
-  <note type="commentary" xml:id="gu-100" n="327,2">
-   <label><hi rendition="#bol">Du Uforanderlige, hvem Intet forandrer! <hi rendition="#ita">(...)</hi> Dig derimod bevæger <hi rendition="#ita">(...)</hi> Alt</hi></label>
-   <p>sml. journaloptegnelsen <ref target="../NB24/txt.xml#n56" type="journalsAndPapers" n="56">NB24:56</ref>, fra maj 1851, hvor SK under overskriften »Nye Themaer til Prædikener over Guds Uforanderlighed« skriver: »Alt bevæger ham – Intet forandrer ham.« <hi rendition="#ita">SKS</hi> 24, 358,3.</p>
-  </note>
-  <note type="commentary" xml:id="gu-10" n="327,10">
-   <label><hi rendition="#bol">Spurvens Trang, den bevæger Dig</hi></label>
-   <p>allusion til <rs type="bible">Matt 10,29</rs>, hvor <persName key="Jesus">Jesus</persName> siger: »Sælges ikke to Spurve for een Penning? og ikke een af dem falder paa Jorden uden Eders Faders Villie« (NT-1819); til <rs type="bible">Luk 12,6</rs>, hvor Jesus siger: »Sælges ikke fem Spurve for to Penninge? og ikke een af dem er glemt af Gud« (NT-1819); og til <rs type="bible">Matt 6,26</rs>, hvor Jesus siger: »Seer til Himmelens Fugle; de saae ikke, og høste ikke, og sanke ikke i Lader, og Eders himmelske Fader føder dem; ere I ikke meget Mere end de?« (NT-1819). Sml. også følgende passage i bønnen til nr. VI i »Taler ved Altergang om Fredagen«, fjerde afdeling af <hi rendition="#ita">Christelige Taler</hi> (1848): »Naar jeg under Himmelens Hvælving staaer omgiven af Skabningens Under, da priser jeg rørt og tilbedende Din Storhed, Du, som let bærer Stjernerne i det Uendelige, og faderligt bekymrer Dig om Spurven.« <ref target="../CT/txt.xml#ss311" type="publishedWritings" n="311"><hi rendition="#ita">SKS</hi> 10, 311</ref>,4-7.</p>
-  </note>
-  <note type="commentary" xml:id="gu-11" n="327,18">
-   <label><hi rendition="#bol">Jacob 1, 17–21 Al god Gave ... at gjøre Eders Sjele salige</hi></label>
-   <p>epistlen til 4. søndag efter påske, se <hi rendition="#ita">Forordnet Alter-Bog for <placeName>Danmark</placeName>,</hi> <placeName key="København">Kbh.</placeName> 1830 [1688], ktl. 381 (forkortet <hi rendition="#ita">Forordnet Alter-Bog</hi>), s. 87f., hvorfra citatet formentlig er taget, jf. renskriften (ms. 3.3), hvor SK skriver: »Jacob. / Epistelen paa 4<hi rendition="#sup">de</hi> Søndag efter Paaske / trykkes som i Alterbogen.« Se <ref target="../GU/txr.xml#ss517" type="textCriticalAccount" n="517">tekstredegørelsen, s. 517</ref>. – <hi rendition="#bol">Omskiftelse:</hi> brat, gennemgribende forandring. – <hi rendition="#bol">Raad:</hi> bestemmelse, beslutning, vilje. – <hi rendition="#bol">snar:</hi> (meget) hurtig. – <hi rendition="#bol">Skidenhed:</hi> urenhed, smudsighed. – <hi rendition="#bol">al Levning:</hi> alt, hvad der er blevet tilbage, enhver rest. – <hi rendition="#bol">er mægtigt til:</hi> er i stand til, formår.</p>
-  </note>
-  <note type="commentary" xml:id="gu-12" n="328,6">
-   <label><hi rendition="#bol">M. T.</hi></label>
-   <p>min tilhører.</p>
-  </note>
-  <note type="commentary" xml:id="gu-13" n="328,6">
-   <label><hi rendition="#bol">forelæse</hi></label>
-   <p>oplæse.</p>
-  </note>
-  <note type="commentary" xml:id="gu-14" n="328,8">
-   <label><hi rendition="#bol">Trættende</hi></label>
-   <p>udmattende.</p>
-  </note>
-  <note type="commentary" xml:id="gu-15" n="328,8">
-   <label><hi rendition="#bol">Alt er Forkrænkelighed</hi></label>
-   <p>spiller på <rs type="bible">Præd 1,2</rs>: »Det er idel Forfængelighed, sagde Prædikeren, idel Forfængelighed, det er altsammen Forfængelighed« (GT-1740). 'Forfængelighed' er her brugt i betydningen tomhed.</p>
-  </note>
-  <note type="commentary" xml:id="gu-16" n="328,15">
-   <label><hi rendition="#bol">»den menneskelige Ustadighed«</hi></label>
-   <p>Udtrykket »menneskelig Ustadighed« forekommer i den anden tale »Forventningen af en evig Salighed« i <hi rendition="#ita">Tre opbyggelige Taler</hi> (1844), i <ref target="../3T44/txt.xml#ss258" type="publishedWritings" n="258"><hi rendition="#ita">SKS</hi> 5, 258</ref>,30. Se også <rs type="bible">Jak 1,6-8</rs>: »den, som tvivler, er ligesom en Havs-Bølge, der røres og drives af Veiret. Ikke tænke det Menneske, at han skal faae Noget af Herren: en tvesindet Mand er han, ustadig i alle sine Veie« (NT-1819).</p>
-  </note>
-  <note type="commentary" xml:id="gu-19" n="328,18">
-   <label><hi rendition="#bol">Apostelen</hi>s</label>
-   <p>If. den oldkirkelige tradition er forfatteren af Jakobsbrevet en af <persName key="Jesus">Jesu</persName> tolv apostle, og endnu på SKs tid var det en udbredt opfattelse, at denne apostel var <persName key="Jakob, Alfæus' søn" n="*">Jakob den Yngre</persName> el. Jakob den Mindre (se <rs type="bible">Mark 15,40</rs>), Alfæus' søn (se <rs type="bible">Matt 10,3</rs>), jf. fx <hi rendition="#ita"><persName key="Büchner, M. Gottfried">M. Gottfried Büchner</persName>'s biblische Real- und Verbal-Hand-Concordanz oder Exegetisch-homiletisches Lexicon,</hi> 6. udg., forøget og udg. af <persName key="Heubner, Heinrich Leonhard">H.L. Heubner</persName>, <placeName>Halle</placeName> 1840 [1740], ktl. 79, s. 781, § 5, d, i artiklen »Jacob, Jacobus«. If. <persName key="Hieronymus, Eusebius Sophronius">Hieronymus</persName>, en af de rom.-katolske kirkelærere, var denne Jakob imidlertid identisk med Jesu bror Jakob, også kaldt <persName key="Jakob, Herrens bror">Jakob Herrens bror</persName>; denne opfattelse, der medfører, at Jesu bror Jakob også var en af hans apostle, blev endnu på SKs tid livligt diskuteret, jf. <persName key="Winer, Johann Georg Benedikt">G.B. Winer</persName> <hi rendition="#ita">Biblisches Realwörterbuch zum Handgebrauch für Studirende, Kandidaten, Gymnasiallehrer und Prediger,</hi> 2. udg., bd. 1-2, <placeName>Leipzig</placeName> 1833-38 [1820], ktl. 70-71; bd. 1, s. 620-623; <persName key="Wette, Wilhelm Martin Leberecht de">W.M.L. de Wette</persName> <hi rendition="#ita">Lehrbuch der historisch-kritischen Einleitung in die Bibel Alten und Neuen Testamentes</hi> bd. 1-2, 4. udg., <placeName>Berlin</placeName> 1833-42 [1817-26], ktl. 80; bd. 2, <hi rendition="#ita">Lehrbuch der historisch-kritischen Einleitung in die kanonischen Bücher des Neuen Testaments,</hi> § 167, s. 302-306; og <persName key="Schaf, P.">Ph. Schaf</persName> <hi rendition="#ita">Das Verhältniss des Jakobus, Bruders des Herrn, zu Jakobus Alphäi,</hi> Berlin 1842, ktl. U 94.</p>
-  </note>
-  <note type="commentary" xml:id="gu-20" n="328,28">
-   <label><hi rendition="#bol">spørges</hi></label>
-   <p>erfares, høres.</p>
-  </note>
-  <note type="commentary" xml:id="gu-21" n="329,5">
-   <label><hi rendition="#bol">værdigen</hi></label>
-   <p>på en værdig måde.</p>
-  </note>
-  <note type="commentary" xml:id="gu-23" n="329,14">
-   <label>stod en Anden <hi rendition="#bol">hos</hi></label>
-   <p>ved siden af.</p>
-  </note>
-  <note type="commentary" xml:id="gu-25" n="329,22">
-   <label><hi rendition="#bol">den eenfoldige Vise i Oldtiden</hi></label>
-   <p>en af SK ofte anvendt betegnelse for <persName key="Sokrates">Sokrates</persName>, der selv taler om sin enfoldighed, se fx <persName key="Platon">Platon</persName>s dialog <hi rendition="#ita">Symposion</hi> (198a), hvor Sokrates siger: »I min Eenfoldighed troede jeg, man burde fremføre det Sande om enhver Gjenstand, man vilde prise«, jf. <hi rendition="#ita">Udvalgte Dialoger af Platon,</hi> overs. af <persName key="Heise, Carl Johan">C.J. Heise</persName>, bd. 1-6, <placeName key="København">Kbh.</placeName> 1830-51, ktl. 1164-1167; bd. 2, 1831, s. 55 (<hi rendition="#ita">Platons Skrifter,</hi> udg. af <persName key="Høeg, Carsten">Carsten Høeg</persName> og <persName key="Ræder, Hans">Hans Ræder</persName>, bd. 1-10, Kbh. 1992 [1932-41]; bd. 3, s. 119). – Sokrates (o. 470-399 f.Kr.), gr. filosof; udviklede sin tænkning i dialog med sine samtidige; søgte gennem sin majeutiske metode (sin jordemoderkunst) at forløse andre, der i forvejen var svangre med viden, og at hjælpe dem af med deres vrangforestillinger, hvilket altid skete i samtalens form. Han blev anklaget for at antage andre guder end dem, staten anerkendte, og for at fordærve <placeName>Athen</placeName>s ungdom; en folkedomstol i Athen kendte ham skyldig, og han blev henrettet med et bæger gift, som han tømte med sindsro. Han har intet skriftligt efterladt sig; hans karakter, samtalekunst og lære er hovedsagelig blevet skildret af tre samtidige forfattere, nemlig af <persName key="Aristofanes">Aristofanes</persName> i komedien <hi rendition="#ita">Skyerne</hi>, af <persName key="Xenofon">Xenofon</persName> i de fire 'sokratiske' skrifter, herunder mindeskriftet om Sokrates <hi rendition="#ita">Memorabilia</hi>, og af Platon i dialogerne.</p>
-  </note>
-  <note type="commentary" xml:id="gu-26" n="329,22">
-   <label><hi rendition="#bol">klager over ... at den Anden da kunde blive saa vred, at han ... gjerne vilde bide ham</hi></label>
-   <p>sigter til <persName key="Platon">Platon</persName>s dialog <hi rendition="#ita"><persName key="Theaitetos">Theaitetos</persName></hi> (151c), hvor <persName key="Sokrates">Sokrates</persName> siger: »jeg har ofte været ude for, at Mennesker er blevet saa vrede paa mig, at de var lige ved at bide mig, naar jeg vilde skaffe et vrøvlet Tankebarn af Vejen; de forstaar slet ikke, at jeg mener det godt med dem, naar jeg gør det« (<hi rendition="#ita">Platons Skrifter</hi> bd. 6, s. 105f.). Jf. <hi rendition="#ita">Platonis opera quae extant,</hi> udg. af <persName key="Ast, Friedrich">Fr. Ast</persName>, bd. 1-11, <placeName>Leipzig</placeName> 1819-32, ktl. 1144-1154; bd. 2, 1820, s. 30f.</p>
-  </note>
-  <note type="commentary" xml:id="gu-27" n="329,27">
-   <label><hi rendition="#bol">de 6000 Aar</hi></label>
-   <p>Bl.a. med udgangspunkt i forskellige steder i GT har man siden den kristne oldtid ment, at verden var skabt o. 4000 år f.Kr. Dette blev fx hævdet af den irsk-anglikanske ærkebiskop <persName key="Ussher, James">James Ussher</persName>, der i <hi rendition="#ita">Annales Veteris Testamenti</hi> (1659) nåede frem til, at verden blev skabt 4004 f.Kr. Endnu langt op i det 19. årh. blev disse og lignende beregninger af mange betragtet som autoritative, så de på daværende tidspunkt anslog verdens historiske alder til ca. 6000 år. Se fx den officielle <hi rendition="#ita">Almanak eller Huuskalender for det Aar efter Christi Fødsel, 1851,</hi> <placeName key="København">Kbh.</placeName>, upagineret, s. [3], hvor det oplyses: »Nærværende Aar, som er <hi rendition="#ita">tredie</hi> Aar efter Skudaar, regnes efter Christi Fødsel 1851. / Efter Verdens Skabelse 5818.«</p>
-  </note>
-  <note type="commentary" xml:id="gu-28" n="329,32">
-   <label><hi rendition="#bol">hvo</hi></label>
-   <p>hvem.</p>
-  </note>
-  <note type="commentary" xml:id="gu-29" n="330,7">
-   <label><hi rendition="#bol">det er saa</hi></label>
-   <p>det forholder sig således.</p>
-  </note>
-  <note type="commentary" xml:id="gu-101" n="330,8">
-   <label><hi rendition="#bol">længst</hi></label>
-   <p>for længst.</p>
-  </note>
-  <note type="commentary" xml:id="gu-30" n="330,10">
-   <label><hi rendition="#bol">Veien, den trange</hi></label>
-   <p>hentyder til <rs type="bible">Matt 7,13-14</rs>, hvor <persName key="Jesus">Jesus</persName> siger: »Gaaer ind ad den snevre Port! thi den Port er viid, og den Vei er breed, som fører til Fordærvelsen, og de ere mange, som gaae ind igiennem den; thi den Port er snever, og den Vei er trang, som fører til Livet, og de ere faa, som finde den« (NT-1819).</p>
-  </note>
-  <note type="commentary" xml:id="gu-31" n="330,12">
-   <label><hi rendition="#bol">uden at see sig tilbage</hi></label>
-   <p>hentyder til <rs type="bible">Luk 9,61-62</rs>: »Men og [også] en Anden sagde: Herre! jeg vil følge dig; men tilsted mig først, at tage Afskeed fra dem, som ere i mit Huus. Men <persName key="Jesus">Jesus</persName> sagde til ham: Ingen, som lægger sin Haand paa Ploven, og seer tilbage, er vel skikket til Guds Rige« (NT-1819).</p>
-  </note>
-  <note type="commentary" xml:id="gu-33" n="330,17">
-   <label><hi rendition="#bol">Saa ville vi da tale</hi></label>
-   <p>En lignende formulering i forskellige variationer anvendes gang på gang af <persName key="Mynster, Jakob Peter">J.P. Mynster</persName> som introduktion af temaet for en prædiken, jf. især <hi rendition="#ita">Prædikener paa alle Søn- og Hellig-Dage i Aaret,</hi> 3. opl., bd. 1-2, <placeName key="København">Kbh.</placeName> 1837 [1823], ktl. 229-230 og ktl. 2191; fx bd. 1, s. 59: »vi ville [vil] denne Gang tale med hverandre / <hi rendition="#ita">om det store Gode, at være en Christen</hi>«; s. 132: »men denne Gang ville vi med hinanden ret betragte / <hi rendition="#ita">den christelige Taalmodighed</hi>«; s. 207: »i det jeg denne Gang taler / <hi rendition="#ita">om vor Daabs Pagt</hi>«; bd. 2, s. 95: »vi maae paaminde om, / <hi rendition="#ita">at ogsaa Gienvordigheder kunne</hi> [kan] <hi rendition="#ita">vorde Fristelser</hi>«; s. 340: »Lader os derfor nu overveie, / <hi rendition="#ita">hvorledes vi skulle</hi> [skal] <hi rendition="#ita">fortsætte de hellige Mænds Værk, som have bevirket vor Kirkes Forbedring</hi>«; s. 382: »naar vi tale om / <hi rendition="#ita">Døden som en Søvn.</hi>« SK anvender en lignende introduktion af temaet for en række af sine taler i <hi rendition="#ita">Christelige Taler</hi> (1848), i <ref target="../CT/txt.xml#ss109" type="publishedWritings" n="109"><hi rendition="#ita">SKS</hi> 10, 109</ref>, <ref target="../CT/txt.xml#ss118" type="publishedWritings" n="118">118</ref>, <ref target="../CT/txt.xml#ss126" type="publishedWritings" n="126">126</ref>, <ref target="../CT/txt.xml#ss137" type="publishedWritings" n="137">137</ref>, <ref target="../CT/txt.xml#ss146" type="publishedWritings" n="146">146</ref>, <ref target="../CT/txt.xml#ss154" type="publishedWritings" n="154">154</ref>, <ref target="../CT/txt.xml#ss159" type="publishedWritings" n="159">159</ref>, <ref target="../CT/txt.xml#ss178" type="publishedWritings" n="178">178</ref>, <ref target="../CT/txt.xml#ss200" type="publishedWritings" n="200">200</ref>, <ref target="../CT/txt.xml#ss214" type="publishedWritings" n="214">214</ref>, <ref target="../CT/txt.xml#ss223" type="publishedWritings" n="223">223</ref>, <ref target="../CT/txt.xml#ss231" type="publishedWritings" n="231">231</ref>, <ref target="../CT/txt.xml#ss242" type="publishedWritings" n="242">242</ref> og <ref target="../CT/txt.xml#ss226" type="publishedWritings" n="226">266</ref>; i <hi rendition="#ita">Lilien paa Marken og Fuglen under Himlen. Tre gudelige Taler</hi> (1849), i <ref target="../LF/txt.xml#ss16" type="publishedWritings" n="16">SKS 11, 16</ref>, <ref target="../LF/txt.xml#ss29" type="publishedWritings" n="29">29</ref> og <ref target="../LF/txt.xml#ss40" type="publishedWritings" n="40">40</ref>; i <hi rendition="#ita">»Ypperstepræsten« – »Tolderen« – »Synderinden«, tre Taler ved Altergangen om Fredagen</hi> (1849), i <ref target="../YTS/txt.xml#ss252" type="publishedWritings" n="252"><hi rendition="#ita">SKS</hi> 11, 252</ref> og <ref target="../YTS/txt.xml#ss264" type="publishedWritings" n="264">264</ref>; i <hi rendition="#ita">En opbyggelig Tale</hi> (1850), i <ref target="../EOT/txt.xml#ss264" type="publishedWritings" n="264"><hi rendition="#ita">SKS</hi> 12, 264</ref>; og i <hi rendition="#ita">To Taler ved Altergangen om Fredagen</hi> (1851), i <ref target="../TAF/txt.xml#ss287" type="publishedWritings" n="287"><hi rendition="#ita">SKS</hi> 12, 287</ref> og <ref target="../TAF/txt.xml#ss296" type="publishedWritings" n="296">296</ref>. – <hi rendition="#bol">ville</hi> vi: vil.</p>
-  </note>
-  <note type="commentary" xml:id="gu-34" n="330,19">
-   <label><hi rendition="#bol">Almægtig skabte han denne synlige Verden</hi></label>
-   <p>se fx den første artikel i Den apostolske Trosbekendelse: »Jeg troer paa Gud Fader, Himmelens og Jordens almægtige Skaber«, her citeret efter »Catechismus« i <hi rendition="#ita">Forordnet Alter-Bog</hi> (<ptr type="commentary" target="#gu-11" n="327,17"/>), s. 289.</p>
-  </note>
-  <note type="commentary" xml:id="gu-35" n="330,20">
-   <label><hi rendition="#bol">gjorde sig usynlig</hi></label>
-   <p>Om Gud som usynlig, se fx <rs type="bible">Rom 1,20</rs>; <rs type="bible">Kol 1,15</rs>; og <rs type="bible">1 Tim 1,17</rs>.</p>
-  </note>
-  <note type="commentary" xml:id="gu-36" n="330,20">
-   <label><hi rendition="#bol">iførte sig den synlige Verden som en Klædning</hi></label>
-   <p>sml. <rs type="bible">Sl 104,2</rs>: »Han [Gud] ifører sig Lys som et Klædebon; han udbreder Himmelen som et Gardin« (GT-1740).</p>
-  </note>
-  <note type="commentary" xml:id="gu-37" n="330,21">
-   <label><hi rendition="#bol">han forandrer den som man omskifter en Klædning – selv uforandret</hi></label>
-   <p>hentyder til <rs type="bible">Hebr 1,10-12</rs>: »Og: du, Herre, grundfæstede Jorden af Begyndelsen, og Himlene ere dine Hænders Gierninger. De skulle [skal] forgaae, men du bliver ved; de skulle tilhobe ældes, som et Klædebon; ja, som et Klæde skal du sammenrulle dem, og de skulle omskiftes [forandres]; men du, du er den Samme, og dine Aar skulle ikke aflade [ophøre]« (NT-1819). Se også <rs type="bible">Sl 102,26-28</rs>.</p>
-  </note>
-  <note type="commentary" xml:id="gu-38" n="330,22">
-   <label><hi rendition="#bol">den sandselige Verden</hi></label>
-   <p>den verden, der kan opfattes med sanserne.</p>
-  </note>
-  <note type="commentary" xml:id="gu-39" n="330,22">
-   <label><hi rendition="#bol">er han overalt tilstede i ethvert Øieblik <hi rendition="#ita">(...)</hi> allestedsnærværende, overalt tilstede</hi></label>
-   <p>sml. kap. 1, III »Hvad Skriften lærer om Guds Væsen og Egenskaber«, § 6, i <hi rendition="#ita">Lærebog i den Evangelisk-christelige Religion, indrettet til Brug i de danske Skoler</hi> (af <persName key="Balle, Nicolaj Edinger">N.E. Balle</persName> og <persName key="Bastholm, Christian">C.B. Bastholm</persName>, gerne omtalt som <hi rendition="#ita">Balles Lærebog</hi>), <placeName key="København">Kbh.</placeName> 1824 [1791], ktl. 183, s. 14: »Gud er <hi rendition="#ita">allestedsnærværende,</hi> og virker med sin Kraft i alle Ting allevegne. Han er ingensteds borte fra sine Skabninger.«</p>
-  </note>
-  <note type="commentary" xml:id="gu-42" n="330,28">
-   <label><hi rendition="#bol">naar en Spurv døer</hi></label>
-   <p><ptr type="commentary" target="#gu-10" n="327,10"/>.</p>
-  </note>
-  <note type="commentary" xml:id="gu-43" n="330,28">
-   <label><hi rendition="#bol">naar Menneske-Slægtens Frelser fødes</hi></label>
-   <p>se beretningen i <rs type="bible">Luk 2,1-20</rs> om <persName key="Jesus">Jesu</persName> fødsel; se også <rs type="bible">Gal 4,4-5</rs>.</p>
-  </note>
-  <note type="commentary" xml:id="gu-44" n="330,29">
-   <label><hi rendition="#bol">alt Virkeligt som Mulighed</hi></label>
-   <p>hentyder formentlig til <rs type="bible">Matt 19,26</rs>, hvor <persName key="Jesus">Jesus</persName> siger: »for Gud ere alle Ting muelige« (NT-1819). Se også <rs type="bible">Luk 1,37</rs>.</p>
-  </note>
-  <note type="commentary" xml:id="gu-45" n="330,29">
-   <label><hi rendition="#bol">sin almægtige Haand</hi></label>
-   <p>Om Gud som almægtig, sml. kap. 1, III »Hvad Skriften lærer om Guds Væsen og Egenskaber«, § 3, i <hi rendition="#ita">Balles Lærebog</hi> (<ptr type="commentary" target="#gu-39" n="330,22"/>), s. 13: »Gud er <hi rendition="#ita">almægtig,</hi> og kan giøre alt, hvad han vil, uden Møie. Men han giør ikkun [alene] det, som er viist og godt, fordi han ikke vil andet, end det allene.«</p>
-  </note>
-  <note type="commentary" xml:id="gu-102" n="330,31">
-   <label><hi rendition="#bol">menneskelig Høihed og end Ringhed, han forandrer Alt</hi></label>
-   <p>allusion til <rs type="bible">Luk 1,52</rs>: »Han [Gud] haver nedstødt de Mægtige af Thronerne og ophøiet de Ringe« (NT-1819). – <hi rendition="#bol">end:</hi> endog, selv.</p>
-  </note>
-  <note type="commentary" xml:id="gu-48" n="331,12">
-   <label><hi rendition="#bol">Frygt og Bæven</hi></label>
-   <p>allusion til <rs type="bible">Fil 2,12</rs>, hvor <persName key="Paulus">Paulus</persName> skriver til filipperne: »Derfor, mine Elskelige, ligesom I altid have været lydige, saaledes, ikke alene som ved min Nærværelse, men nu meget mere i min Fraværelse, arbeider paa Eders egen Saliggiørelse med Frygt og Bæven« (NT-1819).</p>
-  </note>
-  <note type="commentary" xml:id="gu-49" n="331,17">
-   <label><hi rendition="#bol">ret</hi> alvorligt</label>
-   <p>virkelig.</p>
-  </note>
-  <note type="commentary" xml:id="gu-50" n="331,20">
-   <label><hi rendition="#bol">lever <hi rendition="#ita">(...)</hi> hen</hi></label>
-   <p>henlever, tilbringer livet.</p>
-  </note>
-  <note type="commentary" xml:id="gu-103" n="331,28">
-   <label><hi rendition="#bol">hvert dit Ønske</hi></label>
-   <p>ethvert af dine ønsker.</p>
-  </note>
-  <note type="commentary" xml:id="gu-51" n="331,30">
-   <label><hi rendition="#bol">ueens</hi> med</label>
-   <p>uenig.</p>
-  </note>
-  <note type="commentary" xml:id="gu-52" n="331,34">
-   <label><hi rendition="#bol">70 Aar er da ingen Evighed</hi></label>
-   <p>allusion til den traditionelle opfattelse, at et menneskes alm. levetid er 70 år, en opfattelse, der går tilbage til <rs type="bible">Sl 90,10</rs>: »Vore leveår kan være halvfjerds, eller firs, hvis kræfterne slår til.«</p>
-  </note>
-  <note type="commentary" xml:id="gu-53" n="332,10">
-   <label><hi rendition="#bol">Slægt</hi></label>
-   <p>generation.</p>
-  </note>
-  <note type="commentary" xml:id="gu-54" n="332,15">
-   <label><hi rendition="#bol">for hvem 1000 Aar ere som en Dag</hi></label>
-   <p>hentyder til <rs type="bible">2 Pet 3,8</rs>: »Dette ene må I ikke glemme, mine kære, at for Herren er én dag som tusind år, og tusind år som én dag.« Se også <rs type="bible">Sl 90,4</rs>.</p>
-  </note>
-  <note type="commentary" xml:id="gu-55" n="332,22">
-   <label><hi rendition="#bol">er det <hi rendition="#ita">(...)</hi> saa</hi></label>
-   <p>forholder det sig således.</p>
-  </note>
-  <note type="commentary" xml:id="gu-56" n="332,23">
-   <label><hi rendition="#bol">hvis der var en Retfærdig</hi></label>
-   <p>allusion til beretningen i <rs type="bible">1 Mos 18,16-33</rs> om den lange samtale mellem Gud og <persName key="Abraham">Abraham</persName>, hvor Gud fortæller ham, at han agter at ødelægge <placeName>Sodoma</placeName> og <placeName>Gomorra</placeName>, og hvor Abraham i flere omgange går i forbøn for Sodoma og beder Gud skåne den, hvis der er 50 retfærdige i byen, derpå hvis der er 45 retfærdige, så hvis der er 40, så 30 osv., indtil han til sidst beder Gud skåne byen, hvis der blot er ti retfærdige; dette lover Gud. Efter denne samtale gik Gud, og Abraham vendte hjem. Gud ødelagde Sodoma og Gomorra, fordi synden var meget stor i de to byer, jf. <rs type="bible">1 Mos 19,23-25</rs>.</p>
-  </note>
-  <note type="commentary" xml:id="gu-57" n="332,24">
-   <label><hi rendition="#bol">en Verden, der, som Skriften siger, ligger i det Onde</hi></label>
-   <p>sigter til <rs type="bible">1 Joh 5,19</rs>: »Vi vide, at vi ere af Gud, og den ganske Verden ligger i det Onde« (NT-1819).</p>
-  </note>
-  <note type="commentary" xml:id="gu-58" n="332,32">
-   <label><hi rendition="#bol">tales om, at Gud ikke lader sig spotte</hi></label>
-   <p>hentyder til <rs type="bible">Gal 6,7</rs>, hvor <persName key="Paulus">Paulus</persName> skriver: »Farer ikke vild; Gud lader sig ikke spotte; thi hvad et Menneske saaer, dette skal han og [også] høste« (NT-1819).</p>
-  </note>
-  <note type="commentary" xml:id="gu-59" n="332,33">
-   <label><hi rendition="#bol">Tider, hvor hans Straffedomme tilintetgjørende gik over Slægten</hi></label>
-   <p>hentyder formentlig til beretningen i <rs type="bible">1 Mos 6</rs> om den store vandflod, også kaldt syndfloden, som Gud besluttede at sende, da han så menneskenes store ondskab, for at udslette alle levende væsner på jorden.</p>
-  </note>
-  <note type="commentary" xml:id="gu-60" n="333,1">
-   <label><hi rendition="#bol">saa</hi> maatte</label>
-   <p>således.</p>
-  </note>
-  <note type="commentary" xml:id="gu-61" n="333,13">
-   <label><hi rendition="#bol">et Evighedens Regnskab</hi></label>
-   <p>Forestillingen om, at Gud gør regnskabet op, og at mennesker skal stå til regnskab for ham på dommens dag, findes flere steder i NT, fx i <rs type="bible">Matt 12,36</rs> (se følgende kommentar); <rs type="bible">Rom 9,28</rs>; <rs type="bible">1 Pet 4,5</rs>. Jf. også <persName key="Jesus">Jesu</persName> beskrivelse af verdensdommen i <rs type="bible">Matt 25,31-46</rs>.</p>
-  </note>
-  <note type="commentary" xml:id="gu-62" n="333,14">
-   <label><hi rendition="#bol">ikke eet eneste af de utilbørlige Ord, der bleve talte</hi></label>
-   <p>hentyder til <rs type="bible">Matt 12,36</rs>, hvor <persName key="Jesus">Jesus</persName> siger: »at Menneskene skulle [skal] giøre Regnskab paa Dommens Dag for hvert utilbørligt Ord, som de have talet« (NT-1819).</p>
-  </note>
-  <note type="commentary" xml:id="gu-63" n="333,17">
-   <label><hi rendition="#bol">Daarligheden</hi></label>
-   <p>tåbeligheden.</p>
-  </note>
-  <note type="commentary" xml:id="gu-64" n="333,22">
-   <label><hi rendition="#bol">idetmindste een Gang været vildfarende</hi></label>
-   <p>sigter til det enkelte menneskes syndefald el. 'første synd'.</p>
-  </note>
-  <note type="commentary" xml:id="gu-104" n="333,26">
-   <label><hi rendition="#bol">hvo</hi></label>
-   <p>hvem.</p>
-  </note>
-  <note type="commentary" xml:id="gu-66" n="333,30">
-   <label><hi rendition="#bol">et dobbeltløbet Skydevaaben</hi></label>
-   <p>sigter formentlig til et dobbeltløbet jagtgevær, der kan være indrettet på to forskellige måder, dels med to glatte løb til hagl, dels med ét glat løb til hagl og ét riflet løb til kugler.</p>
-  </note>
-  <note type="commentary" xml:id="gu-105" n="333,31">
-   <label><hi rendition="#bol">greb det forbudne Lystelige</hi></label>
-   <p>allusion til syndefaldsberetningen i <rs type="bible">1 Mos 3</rs>. Efter at slangen havde fristet kvinden til at spise af træet til kundskab om godt og ondt, som Gud havde forbudt mennesket at spise af, fortælles det, v. 6: »Og Qvinden saae, at Træet var godt at æde [spise] af, og at det var heel lysteligt at see til, og et ønskeligt Træe til at faae Forstand af, saa tog hun af dets Frugt, og aad; og hun gav sin Mand ogsaa med sig, og han aad« (GT-1740).</p>
-  </note>
-  <note type="commentary" xml:id="gu-106" n="333,31">
-   <label><hi rendition="#bol">forskyldte</hi></label>
-   <p>gjorde sig skyldig i.</p>
-  </note>
-  <note type="commentary" xml:id="gu-67" n="334,5">
-   <label><hi rendition="#bol">drister den</hi></label>
-   <p>har den mod el. dristighed til, tør den, vover den.</p>
-  </note>
-  <note type="commentary" xml:id="gu-68" n="334,8">
-   <label><hi rendition="#bol">slutter <hi rendition="#ita">(...)</hi> af</hi></label>
-   <p>dels: bringer (det hele) til ophør, dels: kommer som det sidste.</p>
-  </note>
-  <note type="commentary" xml:id="gu-69" n="334,10">
-   <label><hi rendition="#bol">gjøre Regnskabet op</hi></label>
-   <p><ptr type="commentary" target="#gu-61" n="333,13"/> og <ptr type="commentary" target="#gu-62" n="333,14"/>.</p>
-  </note>
-  <note type="commentary" xml:id="gu-107" n="334,12">
-   <label><hi rendition="#bol">viste 70 Aar</hi></label>
-   <p><ptr type="commentary" target="#gu-52" n="331,34"/>.</p>
-  </note>
-  <note type="commentary" xml:id="gu-70" n="334,23">
-   <label><hi rendition="#bol">trodser paa</hi></label>
-   <p>påberåber sig, hævder, insisterer på.</p>
-  </note>
-  <note type="commentary" xml:id="gu-71" n="334,26">
-   <label>han seer <hi rendition="#bol">end</hi></label>
-   <p>selv.</p>
-  </note>
-  <note type="commentary" xml:id="gu-108" n="335,14">
-   <label><hi rendition="#bol">daarlige</hi></label>
-   <p>tåbelige.</p>
-  </note>
-  <note type="commentary" xml:id="gu-109" n="335,18">
-   <label><hi rendition="#bol">gik <hi rendition="#ita">(...)</hi> hen</hi></label>
-   <p>hengik, forløb, gik.</p>
-  </note>
-  <note type="commentary" xml:id="gu-73" n="335,19">
-   <label><hi rendition="#bol">længst</hi></label>
-   <p>for længst.</p>
-  </note>
-  <note type="commentary" xml:id="gu-74" n="335,20">
-   <label><hi rendition="#bol">Besynderligere</hi></label>
-   <p>bemærkelsesværdigere.</p>
-  </note>
-  <note type="commentary" xml:id="gu-110" n="335,21">
-   <label>havde <hi rendition="#ita">(...)</hi> <hi rendition="#bol">givet fra sig</hi></label>
-   <p>lagt bag sig.</p>
-  </note>
-  <note type="commentary" xml:id="gu-111" n="335,29">
-   <label><hi rendition="#bol">Fast</hi></label>
-   <p>næsten, omtrent.</p>
-  </note>
-  <note type="commentary" xml:id="gu-75" n="335,34">
-   <label><hi rendition="#bol">tænke <hi rendition="#ita">(...)</hi> ved</hi></label>
-   <p>tænker på el. over.</p>
-  </note>
-  <note type="commentary" xml:id="gu-77" n="336,7">
-   <label><hi rendition="#bol">tilforladelig</hi></label>
-   <p>(ubetinget) pålidelig, til at stole på.</p>
-  </note>
-  <note type="commentary" xml:id="gu-78" n="336,9">
-   <label><hi rendition="#bol">en Alvidende</hi></label>
-   <p>Om Gud som alvidende, sml. kap. 1, III »Hvad Skriften lærer om Guds Væsen og Egenskaber«, § 4, i <hi rendition="#ita">Balles Lærebog</hi> (<ptr type="commentary" target="#gu-39" n="330,22"/>), s. 13f.: »Gud er <hi rendition="#ita">alvidende,</hi> og kiender [ved] paa eengang, hvadsomhelst der er skeet, eller nu skeer, eller skal skee i al Eftertiden. Vore hemmeligste Tanker ere ikke skiulte for ham.«</p>
-  </note>
-  <note type="commentary" xml:id="gu-112" n="336,14">
-   <label><hi rendition="#bol">omskiftende Skygge</hi></label>
-   <p>spiller på udtrykket »Skygge af Omskiftelse« i <rs type="bible">Jak 1,17</rs> (<ptr type="commentary" target="#gu-11" n="327,18"/>).</p>
-  </note>
-  <note type="commentary" xml:id="gu-79" n="336,14">
-   <label><hi rendition="#bol">omskifter</hi></label>
-   <p>forandrer.</p>
-  </note>
-  <note type="commentary" xml:id="gu-80" n="336,15">
-   <label><hi rendition="#bol">ere vi, som det hedder, Skygger</hi></label>
-   <p>formentlig allusion til <rs type="bible">Job 8,9</rs>: »vore Dage ere en Skygge paa Jorden« og 14,2: »han [mennesket] flyer som en Skygge, og bestaaer ikke«; til <rs type="bible">Sl 102,12</rs>: »Mine dage ere som en Skygge, der helder, og jeg tørres som en Urt«, jf. <rs type="bible">Sl 109,23</rs>; og til <rs type="bible">Sl 144,4</rs>: »Et Menneske er lig Forfængeligheden [tomheden], hans Dage ere som en Skygge, der farer forbi« (GT-1740). Se endvidere <rs type="bible">1 Krøn 29,15</rs>; <rs type="bible">Præd 6,12</rs>; <rs type="bible">Visd 2,5</rs> og <rs type="bible" key="Visd 5,9">5,9</rs>.</p>
-  </note>
-  <note type="commentary" xml:id="gu-81" n="336,16">
-   <label><hi rendition="#bol">ile hen</hi></label>
-   <p>farer af sted.</p>
-  </note>
-  <note type="commentary" xml:id="gu-82" n="336,19">
-   <label><hi rendition="#bol">hedder, vi Mennesker skulle giøre Regnskab</hi></label>
-   <p><ptr type="commentary" target="#gu-61" n="333,13"/> og <ptr type="commentary" target="#gu-62" n="333,14"/>. – <hi rendition="#bol">skulle:</hi> skal.</p>
-  </note>
-  <note type="commentary" xml:id="gu-113" n="336,21">
-   <label><hi rendition="#bol">Vidtløftigheder</hi></label>
-   <p>store anstalter, besværligheder, kvaler.</p>
-  </note>
-  <note type="commentary" xml:id="gu-84" n="336,30">
-   <label><hi rendition="#bol">indtil at fortvivle</hi></label>
-   <p>der grænser el. fører til, ender i el. fremkalder fortvivlelse.</p>
-  </note>
-  <note type="commentary" xml:id="gu-114" n="336,32">
-   <label><hi rendition="#bol">det er <hi rendition="#ita">(...)</hi> saa</hi></label>
-   <p>det forholder sig således.</p>
-  </note>
-  <note type="commentary" xml:id="gu-115" n="336,32">
-   <label><hi rendition="#bol">trættet</hi></label>
-   <p>udmattet.</p>
-  </note>
-  <note type="commentary" xml:id="gu-116" n="336,33">
-   <label><hi rendition="#bol">Omvexling</hi></label>
-   <p>vekslende tilskikkelse, omskiftelse, forandring.</p>
-  </note>
-  <note type="commentary" xml:id="gu-86" n="337,7">
-   <label><hi rendition="#bol">ret</hi> dybt</label>
-   <p>virkelig, for alvor.</p>
-  </note>
-  <note type="commentary" xml:id="gu-88" n="337,12">
-   <label><hi rendition="#bol">hvo</hi></label>
-   <p>hvem.</p>
-  </note>
-  <note type="commentary" xml:id="gu-89" n="337,15">
-   <label><hi rendition="#bol">betrygget</hi></label>
-   <p>gjort trygt, sikret.</p>
-  </note>
-  <note type="commentary" xml:id="gu-118" n="337,16">
-   <label><hi rendition="#bol">uden</hi> Du selv</label>
-   <p>undtagen.</p>
-  </note>
-  <note type="commentary" xml:id="gu-119" n="337,21">
-   <label><hi rendition="#bol">Alt forresten</hi></label>
-   <p>hvad alt det øvrige angår.</p>
-  </note>
-  <note type="commentary" xml:id="gu-91" n="337,29">
-   <label><hi rendition="#bol">ville</hi> vi</label>
-   <p>vil.</p>
-  </note>
-  <note type="commentary" xml:id="gu-92" n="337,33">
-   <label><hi rendition="#bol">Ordet: Forandring behager</hi></label>
-   <p>Fyndord el. sentens, der kendes i forskellige variationer, og som kan føres tilbage til den gr. litteratur. Se fx den gr. digter <persName key="Euripides">Euripides</persName>' tragedie <hi rendition="#ita"><persName key="Orestes">Orestes</persName>,</hi> v. 234, som <persName key="Aristoteles">Aristoteles</persName> henviser til i 7. bog, kap. 14, af <hi rendition="#ita">Den Nikomachæiske Etik</hi> (1154 b28-29): »Daß nach dem Dichter, im Menschen nichts süßer ist, als die Veränderung: das kommt von einer Unvollkommenheit desselben.« <hi rendition="#ita">Die Ethik des Aristoteles,</hi> overs. og kommenteret af <persName key="Garve, Christian">C. Garve</persName>, bd. 1-2, <placeName>Breslau</placeName> 1798-1801, ktl. 1082-1083; bd. 2, s. 423; Garve opdeler 7. bog således, at det, der traditionelt tælles som kap. 14, i hans oversættelse er kap. 15. Denne passage oversætter SK i journaloptegnelsen <ref target="../NB27/txt.xml#n32" type="journalsAndPapers" n="32">NB27:32</ref>, fra okt. 1852, i <hi rendition="#ita">SKS</hi> 25, 148,15-16: »At efter Digterens Ord Intet er Msket [mennesket] behageligere end Forandring, det kommer af hans Ufuldkommenhed.« Udtrykket er især blevet udbredt gennem den lat. oversættelse af <persName key="Æsop">Æsop</persName>s fabler, hvor det i v. 10 i prologen til 2. bog forekommer i formen 'varietas delectat' ('afveksling, forandring fryder'), se <hi rendition="#ita">Phaedri Augusti Liberti Fabularum Aesopiarum Libri quinque,</hi> udg. af <persName key="Lindberg, Jacob Christian">J.C. Lindberg</persName>, <placeName key="København">Kbh.</placeName> 1823, s. 19. Jf. også ordsproget »'Forandring fornøjer' <hi rendition="#ita">(...),</hi> sagde <persName key="Fanden">Fanden</persName>, han tog Glasbuxer paa« el. »'Forandring fryder,' sagde Fanden, han bed i en Snebold«, optegnet som nr. 2259 i <persName key="Mau, Edvard">E. Mau</persName> <hi rendition="#ita">Dansk Ordsprogs-Skat</hi> bd. 1-2, Kbh. 1879; bd. 1, s. 238.</p>
-  </note>
-  <note type="commentary" xml:id="gu-93" n="338,1">
-   <label>Naar <hi rendition="#bol">saa er</hi></label>
-   <p>det forholder sig således.</p>
-  </note>
-  <note type="commentary" xml:id="gu-94" n="338,4">
-   <label><hi rendition="#bol">denne Time</hi></label>
-   <p>På SKs tid varede en prædiken ofte en times tid, jf. § 15 i »Forslag til et: Kirke-Ritual for Danmark«, s. 11, i <persName key="Mynster, Jakob Peter">J.P. Mynster</persName>s <hi rendition="#ita">Udkast til en Alterbog og et Kirke-Ritual for <placeName>Danmark</placeName>,</hi> <placeName key="København">Kbh.</placeName> 1839, hvor det fastsættes: »Prædikenen bør ikke vare længere end i det Høieste en Time, men ingenlunde kortere end en halv Time.«</p>
-  </note>
-  <note type="commentary" xml:id="gu-95" n="338,8">
-   <label><hi rendition="#bol">forskylder Du</hi></label>
-   <p>er du årsag til.</p>
-  </note>
-  <note type="commentary" xml:id="gu-97" n="338,29">
-   <label>til Din <hi rendition="#bol">Lov</hi></label>
-   <p>berømmelse, ros, lovprisning.</p>
-  </note>
-  <note type="commentary" xml:id="gu-98" n="338,30">
-   <label><hi rendition="#bol">prisede</hi></label>
-   <p>berømmede, lovpriste.</p>
-  </note>
-  <note type="commentary" xml:id="gu-99" n="339,7">
-   <label><hi rendition="#bol">Du, der er som en Kilde, der selv søger <hi rendition="#ita">(...)</hi> den Forvildede</hi></label>
-   <p>formentlig allusion til <persName key="Jesus">Jesu</persName> lignelse i <rs type="bible">Matt 18,12-13</rs> om det vildfarne får: »Om et Menneske havde hundrede Faar, og eet af dem foer vild, forlader han ikke de ni og halvfemsindstyve, og gaaer paa Biergene, og leder efter det, som var faret vild? Og hænder det sig, at han finder det, sandelig siger jeg Eder, at han glæder sig mere over det, end over de ni og halvfemsindstyve, som ikke fore vild« (NT-1819).</p>
-  </note>
- </div></body></text>
+  <text xml:id="idc34cc84b-58d9-4e49-8173-a2f03dd2c7d7" type="commentary" subtype="ts">
+    <body xml:id="idd3e03778-45c3-436c-954f-d8ff9df997dc">
+      <div xml:id="id575a03a1-d7b3-46b4-955c-9e23d8060a21">
+        <note type="commentary" xml:id="gu-1" n="321,1">
+          <label xml:id="idcfa1d229-51c1-49f0-8151-0077540be542">
+            <hi xml:id="id709fb864-c0d8-4851-995b-36ed3569d076" rendition="#bol">Guds Uforanderlighed En Tale</hi>
+          </label>
+          <p xml:id="id0882f53e-c0db-4216-8c2e-ad5efd2c4ff1">sml. omslaget til kladden (ms. 1.3), hvor SK har skrevet: »Guds Uforanderlighed / Prædiken« (<ptr xml:id="id20afed8b-730e-4e32-9d3f-2bdc720bdc19" type="commentary" target="#gu-4" n="325,2"/>), og renskriften (ms. 3.3), hvor han har slettet »Prædiken«, se <ref xml:id="id446475ca-2b3c-4c5b-97a0-f722edacf05c" target="../GU/txr.xml#ss515" type="textCriticalAccount" n="515">tekstredegørelsen, s. 515</ref> og s. 517. Sml. desuden renskriften til titelbladet (ms. 3.4), hvor SK under »En Tale« har slettet »Tale holden i Citadellets Kirke søndag den 18. maj 1851« (<ptr xml:id="id53c759da-f632-46f5-b643-d2e79c7f525f" type="commentary" target="#gu-4" n="325,2"/>), se <ref xml:id="id43c43632-7cba-4b7d-abf8-5a6b720e5da6" target="../GU/txr.xml#ss518" type="textCriticalAccount" n="518">tekstredegørelsen, s. 518</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="gu-2" n="323,1">
+          <label xml:id="id9118c00c-a872-4dc2-a9f5-a366f49925aa">
+            <hi xml:id="idf2de7425-3375-4505-ab45-3ec838265508" rendition="#bol">Mindet om ... Michael Pedersen Kierkegaard ... helliget</hi>
+          </label>
+          <p xml:id="idc65dc923-eb03-4261-8ae7-ae776741f9b9"><persName xml:id="idf09c4a50-5d9b-487a-934c-55fe014081aa" key="Kierkegaard, Michael Pedersen" n="*">Michael Pedersen Kierkegaard</persName>, f. 1756, kom i 1768 i lære hos sin morbror hosekræmmer <persName xml:id="idaf72427e-2585-4de6-ae0f-1490c8c5f0c5" key="Andersen, Niels">Niels Andersen</persName>, og uddannet i faget løste han i dec. 1780 borgerskab som hosekræmmer i <placeName xml:id="idef9f243d-b35a-418d-8552-79b9cd0ef0cb">København</placeName>; trak sig i en alder af 40 år tilbage fra sin forretning med en betragtelig formue, som han i tiden efter forøgede; giftede sig i 1797 med <persName xml:id="id4840ee8e-9707-42c9-aa0c-8981e50c81d6" key="Lund, Anne Sørensdatter">Ane Lund</persName>, med hvem han fik syv børn, hvoraf SK var det yngste; købte i 1808 huset <placeName xml:id="id6928eb5e-8dd2-4ef9-b627-d914b42f4892">Nytorv</placeName> 2, i dag <placeName xml:id="idd97c51b9-56f0-4863-b049-3755f8138f94">Frederiksberggade</placeName>, hvor han boede til sin død, 81 år gammel, den 9. aug. 1838. – <hi xml:id="id6b30bb7c-3d9e-48b9-a82b-40263f4b5d78" rendition="#bol">helliget:</hi> dediceret, tilegnet. Sml. den enslydende tilegnelse i <hi xml:id="id39786d23-9266-4ba3-a92e-e08bed1f6a99" rendition="#ita">To opbyggelige Taler</hi> (1843), <hi xml:id="id88a02e68-ef9f-42a5-b9eb-6c4423cbd1da" rendition="#ita">Tre opbyggelige Taler</hi> (1843) og <hi xml:id="id3b7c033c-8539-4fe2-8033-ff8ca62b48e1" rendition="#ita">Fire opbyggelige Taler</hi> (1843) samt <hi xml:id="iddeb15a1c-e2aa-468e-b9b8-7bb838e1edd7" rendition="#ita">Tre opbyggelige Taler</hi> (1844) og <hi xml:id="id7aeab151-c89d-427e-af02-b8cdad31a0d0" rendition="#ita">Fire opbyggelige Taler</hi> (1844): »Afdøde / Michael Pedersen Kierkegaard, / forhen Hosekræmmer her i Byen / min Fader / helliges disse Taler«, <ref xml:id="ida75c0897-5899-4c74-82fc-aa1465912afc" target="../2T43/txt.xml#ss11" type="publishedWritings" n="11"><hi xml:id="id71c6d92e-ecb8-4bf3-bfdf-41c8de6b722e" rendition="#ita">SKS</hi> 5, 11</ref>, 61, 111, 229 og 287 (se kommentarerne dertil). Sml. også tilegnelsen i <hi xml:id="idcb520956-3f30-41c0-9155-f9c87b0f1261" rendition="#ita">Tre Taler ved tænkte Leiligheder</hi> (1845): »Mindet / om / min afdøde Fader / Michael Pedersen Kierkegaard / helliget«, <ref xml:id="id6f98cda3-9591-4823-964f-ec4cce20d60f" target="../TTL/txt.xml#ss387" type="publishedWritings" n="387"><hi xml:id="id8df77fdc-a7bc-4ed7-b462-0157d79b8d69" rendition="#ita">SKS</hi> 5, 387</ref>. Sml. endelig tilegnelsen i <hi xml:id="ida29ea712-60f0-4fc9-acb2-926db924908d" rendition="#ita">En opbyggelig Tale</hi> (1850): »Mindet / om / afdøde / Michael Pedersen Kierkegaard, / min Fader, helliges / dette lille Skrift«, <ref xml:id="id61b18fe7-66fe-42a5-a2d6-2aff4c19d5b0" target="../EOT/txt.xml#ss259" type="publishedWritings" n="259"><hi xml:id="id1f76a46c-46c0-4319-a4d8-546cfc0bf1ca" rendition="#ita">SKS</hi> 12, 259</ref>.</p>
+        </note>
+        <note type="commentary" xml:id="gu-3" n="323,7">
+          <label xml:id="idc5681c0b-b9b7-436a-90a8-c38fa8ab4c67">
+            <hi xml:id="idec21dd66-c8c9-4da1-95e8-251ba4e122ca" rendition="#bol">I Aug. 1855</hi>
+          </label>
+          <p xml:id="id6974631b-d4e6-4526-bb21-46ebdfe882c1">se <ref xml:id="id7dcb2356-a343-41eb-8093-c3730e667dec" target="../GU/txr.xml#ss515" type="textCriticalAccount" n="515">tekstredegørelsen, s. 515</ref> og s. 521.</p>
+        </note>
+        <note type="commentary" xml:id="gu-4" n="325,2">
+          <label xml:id="idf16699e4-8c3f-4d40-a68f-9de01d792e5c">
+            <hi xml:id="idc1f996e7-ba97-4c3d-a4f0-5bdacf6a2dea" rendition="#bol">Denne Tale er holdet i Citadellets Kirke den 18de Mai 1851</hi>
+          </label>
+          <p xml:id="id8e51ec23-a5e8-4bc5-b2a4-ea42fabf0ce8">se prædikantlisten i <hi xml:id="id73da45e8-4ad7-4fb9-8679-d04031028aa7" rendition="#ita">Adresseavisen,</hi> nr. 115, den 17. maj 1851: »Citadellets, Hr. Mag. <persName xml:id="id6cc28ee0-02c1-431c-a68e-15c298cb93e8" key="Kierkegaard, Søren Aabye">S. Kierkegaard</persName>, Kl. 9½.« – Den 21. maj modtog SK to breve fra kvindelige tilhørere. Den ene, der kalder sig 'e – e', skriver bl.a.: »I Søndags stod De anmeldt som Prædikant i Citadellet. Hvor kunde jeg andet end gaae derud og jeg blev ikke skuffet. Det var ikke een af de Prædikener jeg saatidt har hørt og glemt før den var ude. Nei, fra det rige, varme Hjerte strømmede Talen, forfærdende, men tillige opbyggelig og beroligende, og trængte ind i Hjertet for aldrig at glemmes, men for at bære evige, velsignelsesrige Frugter« (<ref xml:id="id33a01cc2-c868-47eb-9a92-5213f89f5975" target="../b308/txt.xml#n313" type="lettersAndDedications" n="ba:277" rend="Brev 313"><hi xml:id="idf4c52274-4acc-4207-adda-915bcf414afe" rendition="#ita">B&amp;A,</hi> nr. 277, bd. 1, s. 298f.</ref>). Den anden, der kalder sig 'S: F:', skriver med henvisning til SKs prædiken i Citadelskirken: »For mig var den Dag en Festdag til Opbyggelse og jeg troer, det er gaaet Flere som mig« (<ref xml:id="ide9d96b8b-fe81-4cfa-b53c-7413b509c690" target="../b308/txt.xml#n314" type="lettersAndDedications" n="ba:278" rend="Brev 314"><hi xml:id="idbcf54c48-c61a-409d-bbe5-1db6733d5ab7" rendition="#ita">B&amp;A,</hi> nr. 278, bd. 1, 301</ref>). Sml. i øvrigt journaloptegnelsen <ref xml:id="id5c67a674-d598-49df-8d3a-bb39bf099e0c" target="../NB24/txt.xml#n74" type="journalsAndPapers" n="74">NB24:74</ref>, fra slutningen af maj el. begyndelsen af juni 1851, hvor SK skriver: »Søndagen d. 18 Mai prædikede jeg i Citadellet. Det var min første, min kjere Text <rs xml:id="id940e4182-7dcb-4c88-923f-4011036356a1" type="bible" key="Jak 1">Jacob 1</rs> [se følgende kommentar]. Ogsaa, jeg tilstaaer det, med Tanken om 'hende' [SKs tidligere forlovede <persName xml:id="id978ce5fe-d8c8-4b4c-9a4f-11c81c64f125" key="Olsen, Regine">Regine Olsen</persName>, gift Schlegel], item [lat., fremdeles, ligeledes], hvis det skulde kunne glæde hende at høre mig. / Jeg leed saare meget iforveien af al mulig Anstrengelse, som altid naar jeg skal bruge min legemlige Personlighed. / Jeg holdt den. Det gik da ret taaleligt, men jeg talte da saa svagt, at man klagede over ikke at kunne høre. / Da jeg gik hjem befandt jeg mig endog vel, animeret. Min Tanke havde det været, i Sommerens Løb at holde nogle saadanne Prædikener naturligviis efter Udarbeidelsen. / Nu blev det mig imidlertid klart, at der gaaer altfor abnorm Tid med og at det dog tager for meget paa mig. / Saa faldt det mig paa Sinde: Du kan jo prædike ex tempore [lat., på stedet, uden forberedelse]. / Det slog mig. Jeg vilde da have vovet det Yderste. / Men hvad skeer? Om Mandagen var jeg saa afmægtig og mat, at det var frygteligt. / Saa gik flere Dage. Tanken om at prædike ex tempore opgav jeg vel ikke, og saa at marquere det Christelige existentielt saa langt ud som muligt. / Dog jeg følte, at det var mit hele Væsen imod. / Jeg blev mattere og mattere. Dog opgav jeg ikke den Tanke ganske. / Imidlertid maatte jeg dog opgive den for næste Gang. / Saa blev jeg reent syg. Den ulykkelige qvalfulde Smerte, som er min Personligheds Grændse begyndte at røre sig frygteligt, Noget, der nu ikke var hændt mig i lang, lang Tid. / Jeg forstod dette et Øieblik som Straf, at jeg ikke havde grebet raskt nok til. / Jeg blev elendigere. / <hi xml:id="id35c4ed09-bfe7-4361-84ef-1827779b9f9c" rendition="#ita">(...)</hi> Saa forstod jeg det anderledes. At jeg dog atter har villet ud over min Grændse, og hviler nu i: lad Dig nøies med min Naade. Inderliggjørelse er min Opgave, og meget af en Digter er jeg. / Søndagen d. 18<hi xml:id="id0e8ef55b-9f86-4edf-813f-ccbc8291a796" rendition="#sup">de</hi> om Morgenen havde jeg bedet til Gud: at der maatte fødes noget Nyt i mig (jeg veed ikke selv, hvor dette faldt mig ind) fremdeles paanødte den Tanke sig mig: at som Forældre opdrage deres Børn og tilsidst føre dem til Confirmation saaledes var dette nu min Confirmation, som Gud førte mig til. / Ogsaa dette er paa en Maade skeet. Der er født noget Nyt i mig; thi jeg forstaaer min Forfatter-Opgave anderledes, den er nu ganske anderledes indviet til ligefrem at udbrede Religieusitet. Og Confirmation har jeg ogsaa faaet derpaa, saaledes er det for mig.« <hi xml:id="id55a48cf8-028a-4872-90a1-5ca3c77a5b82" rendition="#ita">SKS</hi> 24, 365-367; se kommentarerne dertil. – <hi xml:id="idf70da6a2-253f-403c-adf0-9c4b6832e6a1" rendition="#bol">Citadellets Kirke:</hi> Kastelskirken (<hi xml:id="id19650ffa-0b60-4d4c-9089-19b31eebb056" rendition="#ita"><ref xml:id="id216acbbb-cdd7-4aca-8c6d-e9abcde60cdc" target="../kort/kbh_G2.htm" type="map" n="kbh">se kort 2, G2</ref></hi>). – <hi xml:id="idb3f5bc8b-59a3-4def-8ee9-c3db1ba0fd4b" rendition="#bol">den 18de Mai 1851:</hi> Søndag den 18. maj 1851 var 4. søndag efter påske.</p>
+        </note>
+        <note type="commentary" xml:id="gu-5" n="325,2">
+          <label xml:id="id063c58ef-bc31-42c7-b3e7-8e7a8ab708bc">
+            <hi xml:id="id22d9aabc-ed4c-4132-a92b-e4e2b9d22b3a" rendition="#bol">Texten er den første jeg har benyttet</hi>
+          </label>
+          <p xml:id="id25f5afd6-dcc8-49a6-ab7b-62d1811b83c5">sigter til, at <rs xml:id="id3636348f-182d-4dba-90be-69e86d4bc664" type="bible">Jak 1,17-21</rs> udgør det bibelske tekstgrundlag for den anden tale »Al god og al fuldkommen Gave er ovenfra« i <hi xml:id="id371f4674-6405-43d4-b0fa-57aec0f977f2" rendition="#ita">To opbyggelige Taler</hi> (1843), i <ref xml:id="id924ddb09-d3b1-4c18-b695-62c5886bdb01" target="../2T43/txt.xml#ss39" type="publishedWritings" n="39"><hi xml:id="id06db51c7-220d-489c-9de0-4f9484268816" rendition="#ita">SKS</hi> 5, 39</ref>-56.</p>
+        </note>
+        <note type="commentary" xml:id="gu-6" n="325,3">
+          <label xml:id="id0edfb4b9-948e-4fee-a4a2-7fa27b3d0729">
+            <hi xml:id="id77678889-5c73-41a5-9e74-3c624ec1d9bb" rendition="#bol">senere er den oftere blevet fremdraget</hi>
+          </label>
+          <p xml:id="id368fc765-a007-4229-aa5e-0ed490366153">sigter til, at <rs xml:id="id4e7926df-262f-4bc2-9622-8e1be6e891bf" type="bible">Jak 1,17-21</rs> udgør det bibelske tekstgrundlag både for den anden tale »Al god Gave og al fuldkommen Gave er ovenfra« og for den tredje tale »Al god Gave og al fuldkommen Gave er ovenfra« i <hi xml:id="id5b89fb97-b367-4a45-ba41-45ab89295190" rendition="#ita">Fire opbyggelige Taler</hi> (1843), i <ref xml:id="id29ffaa51-82cc-4c07-9dc9-28c1e8042b47" target="../4T43/txt.xml#ss129" type="publishedWritings" n="129"><hi xml:id="idd5a025d1-4ab3-4bde-a62a-74ebaf0f4eda" rendition="#ita">SKS</hi> 5, 129</ref>-142 og 143-158.</p>
+        </note>
+        <note type="commentary" xml:id="gu-7" n="325,5">
+          <label xml:id="id6935752e-537b-43d2-90ab-b7664cc86fd2">
+            <hi xml:id="id2de643a3-314d-4c56-892c-cda3e7af8097" rendition="#bol">D. 5te Mai 1854</hi>
+          </label>
+          <p xml:id="id7b85079d-d64b-4f22-ad5f-59820e04e01b">SKs 41-års fødselsdag.</p>
+        </note>
+        <note type="commentary" xml:id="gu-100" n="327,2">
+          <label xml:id="id9389478c-1708-489c-ac06-28bfac574a5b">
+            <hi xml:id="idffc482c2-38b7-452c-a1d3-0613b2d9354f" rendition="#bol">Du Uforanderlige, hvem Intet forandrer! <hi xml:id="id6e35df2a-17a5-4bd7-8eed-7201ea19701d" rendition="#ita">(...)</hi> Dig derimod bevæger <hi xml:id="id694722dd-a0e5-436a-aa36-64103fdc89e1" rendition="#ita">(...)</hi> Alt</hi>
+          </label>
+          <p xml:id="ida1610c10-9f29-4b74-a765-822bda27e88a">sml. journaloptegnelsen <ref xml:id="id62d2c218-e0bc-4ffb-9c8a-3fd1808d480d" target="../NB24/txt.xml#n56" type="journalsAndPapers" n="56">NB24:56</ref>, fra maj 1851, hvor SK under overskriften »Nye Themaer til Prædikener over Guds Uforanderlighed« skriver: »Alt bevæger ham – Intet forandrer ham.« <hi xml:id="id7311fad0-80a6-48d7-98dc-dbcec8b7fa61" rendition="#ita">SKS</hi> 24, 358,3.</p>
+        </note>
+        <note type="commentary" xml:id="gu-10" n="327,10">
+          <label xml:id="id3f8f363d-4ad0-4e99-b2f1-30cab190a510">
+            <hi xml:id="id9020ec93-e328-4134-b652-16eb362ada63" rendition="#bol">Spurvens Trang, den bevæger Dig</hi>
+          </label>
+          <p xml:id="id6244b39e-451a-408e-a57f-48795f07fc56">allusion til <rs xml:id="id75d55af9-82ec-4306-8c49-deb68a9bbefa" type="bible">Matt 10,29</rs>, hvor <persName xml:id="id981649b0-0eb5-4f90-b6b8-b863ef9be06f" key="Jesus">Jesus</persName> siger: »Sælges ikke to Spurve for een Penning? og ikke een af dem falder paa Jorden uden Eders Faders Villie« (NT-1819); til <rs xml:id="id5e4db3fc-f736-41da-9c28-94a7e0006518" type="bible">Luk 12,6</rs>, hvor Jesus siger: »Sælges ikke fem Spurve for to Penninge? og ikke een af dem er glemt af Gud« (NT-1819); og til <rs xml:id="idea523530-b982-4454-b74e-c183304b1a46" type="bible">Matt 6,26</rs>, hvor Jesus siger: »Seer til Himmelens Fugle; de saae ikke, og høste ikke, og sanke ikke i Lader, og Eders himmelske Fader føder dem; ere I ikke meget Mere end de?« (NT-1819). Sml. også følgende passage i bønnen til nr. VI i »Taler ved Altergang om Fredagen«, fjerde afdeling af <hi xml:id="idcb356f81-8ab4-4117-a69a-940468e49a78" rendition="#ita">Christelige Taler</hi> (1848): »Naar jeg under Himmelens Hvælving staaer omgiven af Skabningens Under, da priser jeg rørt og tilbedende Din Storhed, Du, som let bærer Stjernerne i det Uendelige, og faderligt bekymrer Dig om Spurven.« <ref xml:id="id498d5aff-2fb7-4d7d-98ec-e9372418afe9" target="../CT/txt.xml#ss311" type="publishedWritings" n="311"><hi xml:id="id0fce600c-7330-4316-9dc9-fd743826b356" rendition="#ita">SKS</hi> 10, 311</ref>,4-7.</p>
+        </note>
+        <note type="commentary" xml:id="gu-11" n="327,18">
+          <label xml:id="idcbc9f89a-79af-4ade-a565-391d5035c695">
+            <hi xml:id="idc32bb5ee-edaf-45a7-b980-660af207364a" rendition="#bol">Jacob 1, 17–21 Al god Gave ... at gjøre Eders Sjele salige</hi>
+          </label>
+          <p xml:id="id3c50a0a3-72cd-422e-aba0-e651bd5f870b">epistlen til 4. søndag efter påske, se <hi xml:id="id0eabb28a-81c5-43e5-aa02-e9665173d80b" rendition="#ita">Forordnet Alter-Bog for <placeName xml:id="id2a989a4d-77e7-468d-b7cf-18f19bdb7455">Danmark</placeName>,</hi> <placeName xml:id="id866eb825-80d2-4261-8300-d01602901a61" key="København">Kbh.</placeName> 1830 [1688], ktl. 381 (forkortet <hi xml:id="id8fe3915d-ee13-4ee7-bdc6-6e86dff018f1" rendition="#ita">Forordnet Alter-Bog</hi>), s. 87f., hvorfra citatet formentlig er taget, jf. renskriften (ms. 3.3), hvor SK skriver: »Jacob. / Epistelen paa 4<hi xml:id="ida79ead8f-25a3-4e16-977d-a869b4b5721c" rendition="#sup">de</hi> Søndag efter Paaske / trykkes som i Alterbogen.« Se <ref xml:id="id3cb7cd2d-80f7-49da-b1b8-c30a111326b0" target="../GU/txr.xml#ss517" type="textCriticalAccount" n="517">tekstredegørelsen, s. 517</ref>. – <hi xml:id="id93772f7c-81cf-454e-92ba-97d21a48d71f" rendition="#bol">Omskiftelse:</hi> brat, gennemgribende forandring. – <hi xml:id="id23a89623-1af4-4042-92b1-89e71fe45691" rendition="#bol">Raad:</hi> bestemmelse, beslutning, vilje. – <hi xml:id="id2e347e1c-53fd-484a-b032-f394e220042b" rendition="#bol">snar:</hi> (meget) hurtig. – <hi xml:id="id14cb7a9d-f4d2-4ebd-bc18-b2040c2c676f" rendition="#bol">Skidenhed:</hi> urenhed, smudsighed. – <hi xml:id="id75177b10-b088-441b-883d-9f26a9f9df48" rendition="#bol">al Levning:</hi> alt, hvad der er blevet tilbage, enhver rest. – <hi xml:id="idd88c629d-90e4-47ba-a585-dd1035230041" rendition="#bol">er mægtigt til:</hi> er i stand til, formår.</p>
+        </note>
+        <note type="commentary" xml:id="gu-12" n="328,6">
+          <label xml:id="idc61976f3-c09a-4094-b375-39e69c02fa11">
+            <hi xml:id="idf8c8626c-7e13-4306-9514-d5d58847aa78" rendition="#bol">M. T.</hi>
+          </label>
+          <p xml:id="idbf5ff2eb-e1a5-4807-829b-59f77379cdd8">min tilhører.</p>
+        </note>
+        <note type="commentary" xml:id="gu-13" n="328,6">
+          <label xml:id="id18550e90-c990-4728-ac7d-2fcc772539f0">
+            <hi xml:id="idf0c7eca8-1b4f-41e6-83b1-20405063e947" rendition="#bol">forelæse</hi>
+          </label>
+          <p xml:id="id8802de27-4f10-4384-aeaf-12568da14b08">oplæse.</p>
+        </note>
+        <note type="commentary" xml:id="gu-14" n="328,8">
+          <label xml:id="idef32877c-26c5-4ee1-8b92-ecbf8a822627">
+            <hi xml:id="id1841c63c-80a8-4ec6-9a6f-9b94fdfa40d4" rendition="#bol">Trættende</hi>
+          </label>
+          <p xml:id="id094ae199-0fa5-42cf-9867-1ebc7f2b2576">udmattende.</p>
+        </note>
+        <note type="commentary" xml:id="gu-15" n="328,8">
+          <label xml:id="id176197ce-0fb4-4ad2-af92-ce36e427349a">
+            <hi xml:id="ide95acbbb-0b2d-4926-ad82-3318d6a5bc96" rendition="#bol">Alt er Forkrænkelighed</hi>
+          </label>
+          <p xml:id="id1ad8371e-a4da-4395-9f79-ece2eab6c46e">spiller på <rs xml:id="id19c33417-9572-4774-979b-c40c632d7ce9" type="bible">Præd 1,2</rs>: »Det er idel Forfængelighed, sagde Prædikeren, idel Forfængelighed, det er altsammen Forfængelighed« (GT-1740). 'Forfængelighed' er her brugt i betydningen tomhed.</p>
+        </note>
+        <note type="commentary" xml:id="gu-16" n="328,15">
+          <label xml:id="idbe5cd961-bb04-4901-bcdb-7e2cc82b53d7">
+            <hi xml:id="idad7eb4ce-d912-4879-9b57-9268e249c743" rendition="#bol">»den menneskelige Ustadighed«</hi>
+          </label>
+          <p xml:id="ide0f7bdf6-207f-42af-880e-5a90a9f1172c">Udtrykket »menneskelig Ustadighed« forekommer i den anden tale »Forventningen af en evig Salighed« i <hi xml:id="id7e247f4d-70cf-4fd2-8d70-13a171eb3956" rendition="#ita">Tre opbyggelige Taler</hi> (1844), i <ref xml:id="id6bf32240-8192-45a5-86da-810fdc637169" target="../3T44/txt.xml#ss258" type="publishedWritings" n="258"><hi xml:id="idcc6ea8f8-814e-461b-883e-adb2bbade95d" rendition="#ita">SKS</hi> 5, 258</ref>,30. Se også <rs xml:id="id034bb17e-0028-4339-967c-98764242dc26" type="bible">Jak 1,6-8</rs>: »den, som tvivler, er ligesom en Havs-Bølge, der røres og drives af Veiret. Ikke tænke det Menneske, at han skal faae Noget af Herren: en tvesindet Mand er han, ustadig i alle sine Veie« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="gu-19" n="328,18">
+          <label xml:id="id3e993fba-f431-47c0-9bfb-5be052da3794"><hi xml:id="id3e7910aa-e219-4bd0-9a06-711c18e836d4" rendition="#bol">Apostelen</hi>s</label>
+          <p xml:id="idc5ec5468-34bc-43fc-a7ef-6e59e3b393ac">If. den oldkirkelige tradition er forfatteren af Jakobsbrevet en af <persName xml:id="id52ab8cb4-46db-4492-8fec-a4ee0477b9d2" key="Jesus">Jesu</persName> tolv apostle, og endnu på SKs tid var det en udbredt opfattelse, at denne apostel var <persName xml:id="idc1c37137-941c-423c-ba1b-89b7bbd40e95" key="Jakob, Alfæus' søn" n="*">Jakob den Yngre</persName> el. Jakob den Mindre (se <rs xml:id="id88890454-befa-4cda-bdec-dab99e091d77" type="bible">Mark 15,40</rs>), Alfæus' søn (se <rs xml:id="id0c04930b-7847-4388-9024-844033cd2508" type="bible">Matt 10,3</rs>), jf. fx <hi xml:id="ide4cc15e9-da57-49fe-b6dd-f4e6c49961cc" rendition="#ita"><persName xml:id="idfddf4c05-db84-4932-95ce-570ffae93014" key="Büchner, M. Gottfried">M. Gottfried Büchner</persName>'s biblische Real- und Verbal-Hand-Concordanz oder Exegetisch-homiletisches Lexicon,</hi> 6. udg., forøget og udg. af <persName xml:id="idb02f5d47-21c1-46b6-942e-e78c396aa2b5" key="Heubner, Heinrich Leonhard">H.L. Heubner</persName>, <placeName xml:id="id6367581f-5765-461c-b116-5c1cec81ab74">Halle</placeName> 1840 [1740], ktl. 79, s. 781, § 5, d, i artiklen »Jacob, Jacobus«. If. <persName xml:id="idec8bf7cd-d359-471c-a327-3b162fb20602" key="Hieronymus, Eusebius Sophronius">Hieronymus</persName>, en af de rom.-katolske kirkelærere, var denne Jakob imidlertid identisk med Jesu bror Jakob, også kaldt <persName xml:id="id71b6bd01-e033-490e-b634-8796d5f650b6" key="Jakob, Herrens bror">Jakob Herrens bror</persName>; denne opfattelse, der medfører, at Jesu bror Jakob også var en af hans apostle, blev endnu på SKs tid livligt diskuteret, jf. <persName xml:id="id6ff897d5-4e8e-421f-91f8-53cd5cb90978" key="Winer, Johann Georg Benedikt">G.B. Winer</persName> <hi xml:id="id4ebbf32e-3112-41f9-a872-43f7f4797daf" rendition="#ita">Biblisches Realwörterbuch zum Handgebrauch für Studirende, Kandidaten, Gymnasiallehrer und Prediger,</hi> 2. udg., bd. 1-2, <placeName xml:id="id33776fae-4f87-4d6b-9d15-420f785e856e">Leipzig</placeName> 1833-38 [1820], ktl. 70-71; bd. 1, s. 620-623; <persName xml:id="id73f8fd25-0e91-400a-9a6d-aafd3eee7cf1" key="Wette, Wilhelm Martin Leberecht de">W.M.L. de Wette</persName> <hi xml:id="id05fc0824-338b-42a6-aef5-6dbcc9cbb4ed" rendition="#ita">Lehrbuch der historisch-kritischen Einleitung in die Bibel Alten und Neuen Testamentes</hi> bd. 1-2, 4. udg., <placeName xml:id="idc771ffb3-fa3b-4d29-b3a8-aedd139ba15e">Berlin</placeName> 1833-42 [1817-26], ktl. 80; bd. 2, <hi xml:id="idd475fa0a-5076-4ea6-97de-6c58160c0ac3" rendition="#ita">Lehrbuch der historisch-kritischen Einleitung in die kanonischen Bücher des Neuen Testaments,</hi> § 167, s. 302-306; og <persName xml:id="id5ae1bf8b-e242-40fa-8aa4-74eee59d3cca" key="Schaf, P.">Ph. Schaf</persName> <hi xml:id="id7d2b3138-5708-4cc8-807f-839c36bb345f" rendition="#ita">Das Verhältniss des Jakobus, Bruders des Herrn, zu Jakobus Alphäi,</hi> Berlin 1842, ktl. U 94.</p>
+        </note>
+        <note type="commentary" xml:id="gu-20" n="328,28">
+          <label xml:id="id23fb84c2-40d9-4319-b1a8-7b9610c26378">
+            <hi xml:id="id10121c06-2dd5-4ec4-98b6-264268fc4408" rendition="#bol">spørges</hi>
+          </label>
+          <p xml:id="id73cf24a5-101f-4fd6-a137-a928ce706160">erfares, høres.</p>
+        </note>
+        <note type="commentary" xml:id="gu-21" n="329,5">
+          <label xml:id="id63630e34-2cce-4aa7-a3f3-b85afc1b2853">
+            <hi xml:id="idb0711e4b-c754-40e8-84d4-a24ad8c99251" rendition="#bol">værdigen</hi>
+          </label>
+          <p xml:id="idbbe50ef0-95d2-4765-bfe3-e3003b456a9a">på en værdig måde.</p>
+        </note>
+        <note type="commentary" xml:id="gu-23" n="329,14">
+          <label xml:id="id4d561253-675e-44eb-9bd7-ee2b76b3ccbe">stod en Anden <hi xml:id="id7d0030b7-10e6-4ff8-9e91-2a134d10143e" rendition="#bol">hos</hi></label>
+          <p xml:id="id4de69460-7cd4-4e70-aaec-28786dedde37">ved siden af.</p>
+        </note>
+        <note type="commentary" xml:id="gu-25" n="329,22">
+          <label xml:id="ida2b0bb9f-366b-4b89-a942-267f5c96c7ae">
+            <hi xml:id="ida252ba45-0367-46a3-b41c-167fb474e55b" rendition="#bol">den eenfoldige Vise i Oldtiden</hi>
+          </label>
+          <p xml:id="ida2e39bc0-7941-4fe3-a8aa-6bff0bf2649e">en af SK ofte anvendt betegnelse for <persName xml:id="id7095c907-a092-4d77-aaf0-610530b9885e" key="Sokrates">Sokrates</persName>, der selv taler om sin enfoldighed, se fx <persName xml:id="id6f00763e-cc54-463b-bf31-9197b4b0b21e" key="Platon">Platon</persName>s dialog <hi xml:id="id0a239597-f903-4668-b4db-b02921d954c1" rendition="#ita">Symposion</hi> (198a), hvor Sokrates siger: »I min Eenfoldighed troede jeg, man burde fremføre det Sande om enhver Gjenstand, man vilde prise«, jf. <hi xml:id="idb2cef3b4-7065-4c64-a92a-39e1b8d3226d" rendition="#ita">Udvalgte Dialoger af Platon,</hi> overs. af <persName xml:id="id1ac9d97c-2bfa-41ef-8a16-37783f645dea" key="Heise, Carl Johan">C.J. Heise</persName>, bd. 1-6, <placeName xml:id="id636df8d0-bf08-4482-a058-cd28bd939086" key="København">Kbh.</placeName> 1830-51, ktl. 1164-1167; bd. 2, 1831, s. 55 (<hi xml:id="idb74e3a57-6ec7-4298-a245-7a6c9ef3a90a" rendition="#ita">Platons Skrifter,</hi> udg. af <persName xml:id="id914b664b-4a33-497f-842a-908405d69cc7" key="Høeg, Carsten">Carsten Høeg</persName> og <persName xml:id="id37ccdbb3-81f6-415e-a1e4-e285b2ee2e06" key="Ræder, Hans">Hans Ræder</persName>, bd. 1-10, Kbh. 1992 [1932-41]; bd. 3, s. 119). – Sokrates (o. 470-399 f.Kr.), gr. filosof; udviklede sin tænkning i dialog med sine samtidige; søgte gennem sin majeutiske metode (sin jordemoderkunst) at forløse andre, der i forvejen var svangre med viden, og at hjælpe dem af med deres vrangforestillinger, hvilket altid skete i samtalens form. Han blev anklaget for at antage andre guder end dem, staten anerkendte, og for at fordærve <placeName xml:id="ida01f44c7-0a88-41f6-a584-f41c4a658a47">Athen</placeName>s ungdom; en folkedomstol i Athen kendte ham skyldig, og han blev henrettet med et bæger gift, som han tømte med sindsro. Han har intet skriftligt efterladt sig; hans karakter, samtalekunst og lære er hovedsagelig blevet skildret af tre samtidige forfattere, nemlig af <persName xml:id="id24de3904-d23d-43a4-834d-15d0e5741e7c" key="Aristofanes">Aristofanes</persName> i komedien <hi xml:id="id047f4071-c80a-4be6-805b-f1e0d534a098" rendition="#ita">Skyerne</hi>, af <persName xml:id="id5c0736fb-f7eb-44d0-98f0-8fab190ee407" key="Xenofon">Xenofon</persName> i de fire 'sokratiske' skrifter, herunder mindeskriftet om Sokrates <hi xml:id="idd02502cd-cbfc-43d6-9c70-336010cae506" rendition="#ita">Memorabilia</hi>, og af Platon i dialogerne.</p>
+        </note>
+        <note type="commentary" xml:id="gu-26" n="329,22">
+          <label xml:id="idc91647fd-88b8-44b1-9884-26c942d8921e">
+            <hi xml:id="idb9e30443-fb6d-4abc-8cec-df1db3e8a2f5" rendition="#bol">klager over ... at den Anden da kunde blive saa vred, at han ... gjerne vilde bide ham</hi>
+          </label>
+          <p xml:id="ide78ff07e-a50a-4ee8-93f8-92dd2fce1fa6">sigter til <persName xml:id="id6c6341bf-ad8a-4f25-95bb-72c8f41b2ab8" key="Platon">Platon</persName>s dialog <hi xml:id="idf7be03a1-fcee-4600-b755-545e011769fd" rendition="#ita"><persName xml:id="id3a57317b-c714-4baa-b91b-0705048c366f" key="Theaitetos">Theaitetos</persName></hi> (151c), hvor <persName xml:id="id2e48c2cb-6ecb-4c43-b79f-2ad8235f458f" key="Sokrates">Sokrates</persName> siger: »jeg har ofte været ude for, at Mennesker er blevet saa vrede paa mig, at de var lige ved at bide mig, naar jeg vilde skaffe et vrøvlet Tankebarn af Vejen; de forstaar slet ikke, at jeg mener det godt med dem, naar jeg gør det« (<hi xml:id="ide16a6796-1a2c-4368-95c6-4defd6a7abc8" rendition="#ita">Platons Skrifter</hi> bd. 6, s. 105f.). Jf. <hi xml:id="id95fea077-03ab-4dbd-b30d-e13ce048a4a6" rendition="#ita">Platonis opera quae extant,</hi> udg. af <persName xml:id="id87edc1e0-cfe9-49ad-8dae-1d2da901e30b" key="Ast, Friedrich">Fr. Ast</persName>, bd. 1-11, <placeName xml:id="id1e5bd176-d3c2-4525-80a4-a29526b215d2">Leipzig</placeName> 1819-32, ktl. 1144-1154; bd. 2, 1820, s. 30f.</p>
+        </note>
+        <note type="commentary" xml:id="gu-27" n="329,27">
+          <label xml:id="idc4708f75-caad-4969-ae14-d286373208ee">
+            <hi xml:id="id3c0e3bf7-96e4-4d76-9aff-05b8c5b2983e" rendition="#bol">de 6000 Aar</hi>
+          </label>
+          <p xml:id="idc00876cc-1890-4df4-8954-ea6832c06d40">Bl.a. med udgangspunkt i forskellige steder i GT har man siden den kristne oldtid ment, at verden var skabt o. 4000 år f.Kr. Dette blev fx hævdet af den irsk-anglikanske ærkebiskop <persName xml:id="id34aa097b-6654-4dbe-92bf-288ba4f50f43" key="Ussher, James">James Ussher</persName>, der i <hi xml:id="id1224ea06-3040-4a85-870b-c85855133ac2" rendition="#ita">Annales Veteris Testamenti</hi> (1659) nåede frem til, at verden blev skabt 4004 f.Kr. Endnu langt op i det 19. årh. blev disse og lignende beregninger af mange betragtet som autoritative, så de på daværende tidspunkt anslog verdens historiske alder til ca. 6000 år. Se fx den officielle <hi xml:id="id33eb7b69-2991-4173-b0c4-62886e227b32" rendition="#ita">Almanak eller Huuskalender for det Aar efter Christi Fødsel, 1851,</hi> <placeName xml:id="id9a8d316b-dbf1-4c66-82cd-ebad700843ea" key="København">Kbh.</placeName>, upagineret, s. [3], hvor det oplyses: »Nærværende Aar, som er <hi xml:id="idcef1afcd-36ce-4494-801a-4d42a2ff8088" rendition="#ita">tredie</hi> Aar efter Skudaar, regnes efter Christi Fødsel 1851. / Efter Verdens Skabelse 5818.«</p>
+        </note>
+        <note type="commentary" xml:id="gu-28" n="329,32">
+          <label xml:id="id88cb36fe-1d9e-449b-92e0-4a917feef55c">
+            <hi xml:id="idd52cf2ea-29eb-4803-8177-384b8cb8ab05" rendition="#bol">hvo</hi>
+          </label>
+          <p xml:id="id24179b4a-9f4f-499a-b101-8c84627b9efb">hvem.</p>
+        </note>
+        <note type="commentary" xml:id="gu-29" n="330,7">
+          <label xml:id="ida1389ffe-c944-4f75-a846-2b414c69eeea">
+            <hi xml:id="id9f1434a3-0ade-410e-be7f-70a2694f619e" rendition="#bol">det er saa</hi>
+          </label>
+          <p xml:id="idc54fa140-3201-4d07-8e3b-4575a210925e">det forholder sig således.</p>
+        </note>
+        <note type="commentary" xml:id="gu-101" n="330,8">
+          <label xml:id="id857c40e5-38ff-4743-8fb1-771ea8ed58ec">
+            <hi xml:id="idb66d0ec5-0477-4828-806f-940c258a8ffa" rendition="#bol">længst</hi>
+          </label>
+          <p xml:id="id470a2b12-c679-4671-a68b-1b9da9890958">for længst.</p>
+        </note>
+        <note type="commentary" xml:id="gu-30" n="330,10">
+          <label xml:id="id6503e79e-4539-4638-bf01-86dbe284bb9f">
+            <hi xml:id="id6e1b26de-eea1-49b9-866a-1c5a3c0b8783" rendition="#bol">Veien, den trange</hi>
+          </label>
+          <p xml:id="idd0297afd-1738-4302-b6f6-d35daca34cf5">hentyder til <rs xml:id="id439b6bcb-a3b9-43c3-8977-de6109cbe2e2" type="bible">Matt 7,13-14</rs>, hvor <persName xml:id="id344319a6-c9b5-45ed-84b7-2aaff58c957d" key="Jesus">Jesus</persName> siger: »Gaaer ind ad den snevre Port! thi den Port er viid, og den Vei er breed, som fører til Fordærvelsen, og de ere mange, som gaae ind igiennem den; thi den Port er snever, og den Vei er trang, som fører til Livet, og de ere faa, som finde den« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="gu-31" n="330,12">
+          <label xml:id="id2727a16d-5faf-4a76-b4fb-f98ff9df831c">
+            <hi xml:id="id0dcd93e6-1f42-499c-b1c6-cdf8cbd42c7e" rendition="#bol">uden at see sig tilbage</hi>
+          </label>
+          <p xml:id="idf9392606-9fbd-4893-be0f-3c8a6885a821">hentyder til <rs xml:id="id007844bb-973c-4fd1-ac82-bce09635b4f8" type="bible">Luk 9,61-62</rs>: »Men og [også] en Anden sagde: Herre! jeg vil følge dig; men tilsted mig først, at tage Afskeed fra dem, som ere i mit Huus. Men <persName xml:id="id2beae564-00fe-47ae-8d24-61eedd90c86c" key="Jesus">Jesus</persName> sagde til ham: Ingen, som lægger sin Haand paa Ploven, og seer tilbage, er vel skikket til Guds Rige« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="gu-33" n="330,17">
+          <label xml:id="id709cec49-f28a-40d3-9750-6b3b8f6b90c6">
+            <hi xml:id="id3119367d-4afb-4796-bda4-d209b69d1e08" rendition="#bol">Saa ville vi da tale</hi>
+          </label>
+          <p xml:id="ide5e2dc9b-1d73-4c6b-883d-468928776c96">En lignende formulering i forskellige variationer anvendes gang på gang af <persName xml:id="idda7a0b59-e116-40a5-ba1c-574b1a65472f" key="Mynster, Jakob Peter">J.P. Mynster</persName> som introduktion af temaet for en prædiken, jf. især <hi xml:id="id186ecf3f-11b9-4d5d-80d1-eb800f35e727" rendition="#ita">Prædikener paa alle Søn- og Hellig-Dage i Aaret,</hi> 3. opl., bd. 1-2, <placeName xml:id="id37515e61-51e6-4d9a-a48c-f967279df1c4" key="København">Kbh.</placeName> 1837 [1823], ktl. 229-230 og ktl. 2191; fx bd. 1, s. 59: »vi ville [vil] denne Gang tale med hverandre / <hi xml:id="id127fb5fb-0ab3-409b-bf6f-eb5cf0c03621" rendition="#ita">om det store Gode, at være en Christen</hi>«; s. 132: »men denne Gang ville vi med hinanden ret betragte / <hi xml:id="id84d6d954-40ca-42b9-992d-d5684c7cc852" rendition="#ita">den christelige Taalmodighed</hi>«; s. 207: »i det jeg denne Gang taler / <hi xml:id="idfb73dd9a-dfaf-419a-ac61-3d2a8a51928e" rendition="#ita">om vor Daabs Pagt</hi>«; bd. 2, s. 95: »vi maae paaminde om, / <hi xml:id="id00287957-4287-43d8-a7db-7b9e8d9a9ac4" rendition="#ita">at ogsaa Gienvordigheder kunne</hi> [kan] <hi xml:id="id20101f59-0ea7-45c9-b2be-f8b6b23176a8" rendition="#ita">vorde Fristelser</hi>«; s. 340: »Lader os derfor nu overveie, / <hi xml:id="id00b55cab-3a59-40b5-8782-54fc45c7f768" rendition="#ita">hvorledes vi skulle</hi> [skal] <hi xml:id="id406e05d6-8141-4a4f-920f-a51b0d556c4a" rendition="#ita">fortsætte de hellige Mænds Værk, som have bevirket vor Kirkes Forbedring</hi>«; s. 382: »naar vi tale om / <hi xml:id="ide8f41a04-1337-4d6a-90a9-09459493ec77" rendition="#ita">Døden som en Søvn.</hi>« SK anvender en lignende introduktion af temaet for en række af sine taler i <hi xml:id="id245b7f02-08e0-4300-8b55-e7194f171bb3" rendition="#ita">Christelige Taler</hi> (1848), i <ref xml:id="id76ec1c20-06ab-4959-9924-26f4a8d838d4" target="../CT/txt.xml#ss109" type="publishedWritings" n="109"><hi xml:id="id07da42e0-a27a-4935-b0c1-fb1e8968c003" rendition="#ita">SKS</hi> 10, 109</ref>, <ref xml:id="idd9bdb39c-5a4e-4632-90c9-1a31d25966cf" target="../CT/txt.xml#ss118" type="publishedWritings" n="118">118</ref>, <ref xml:id="id882480cb-3873-46b1-93ba-fe4cb916b2b6" target="../CT/txt.xml#ss126" type="publishedWritings" n="126">126</ref>, <ref xml:id="idbe6924dd-51ef-4948-8cce-10840a676e70" target="../CT/txt.xml#ss137" type="publishedWritings" n="137">137</ref>, <ref xml:id="ida3d24f92-d7ce-471a-b388-01b42c3bd0df" target="../CT/txt.xml#ss146" type="publishedWritings" n="146">146</ref>, <ref xml:id="id3f6c046d-23d3-467f-8077-c4a723b2f095" target="../CT/txt.xml#ss154" type="publishedWritings" n="154">154</ref>, <ref xml:id="id7eb039cc-96f7-423e-a324-5a510aae68a3" target="../CT/txt.xml#ss159" type="publishedWritings" n="159">159</ref>, <ref xml:id="idaa448bd5-8cdf-4626-b793-0660a3f76b33" target="../CT/txt.xml#ss178" type="publishedWritings" n="178">178</ref>, <ref xml:id="id700d2a66-9d18-40c8-87b3-dd91cf5b9580" target="../CT/txt.xml#ss200" type="publishedWritings" n="200">200</ref>, <ref xml:id="id31816055-c4b7-437a-9e6f-2a05a0eaf7a4" target="../CT/txt.xml#ss214" type="publishedWritings" n="214">214</ref>, <ref xml:id="id393c1b12-b3e1-42c7-b48c-33eaa0a0d2e9" target="../CT/txt.xml#ss223" type="publishedWritings" n="223">223</ref>, <ref xml:id="idc12cbfe8-e08f-4f24-a590-26eb9d37eb94" target="../CT/txt.xml#ss231" type="publishedWritings" n="231">231</ref>, <ref xml:id="idf4163406-515d-4acd-b53a-82c3eee9082a" target="../CT/txt.xml#ss242" type="publishedWritings" n="242">242</ref> og <ref xml:id="id6a492bcb-02b2-4a2d-90be-45111e55112f" target="../CT/txt.xml#ss226" type="publishedWritings" n="226">266</ref>; i <hi xml:id="id578826be-fa35-4106-a28b-95a81d68707d" rendition="#ita">Lilien paa Marken og Fuglen under Himlen. Tre gudelige Taler</hi> (1849), i <ref xml:id="id48743920-ed26-43a1-a104-d87791df2d9e" target="../LF/txt.xml#ss16" type="publishedWritings" n="16">SKS 11, 16</ref>, <ref xml:id="id307faca5-d465-4f39-b3b0-dfd4e398ded0" target="../LF/txt.xml#ss29" type="publishedWritings" n="29">29</ref> og <ref xml:id="ida9ace5ca-8f1c-47f0-984e-6b788c17f370" target="../LF/txt.xml#ss40" type="publishedWritings" n="40">40</ref>; i <hi xml:id="id1b3335e7-e457-40d0-aeea-017e705d65cd" rendition="#ita">»Ypperstepræsten« – »Tolderen« – »Synderinden«, tre Taler ved Altergangen om Fredagen</hi> (1849), i <ref xml:id="idcc927c20-2954-4724-8e07-c739bccbdb50" target="../YTS/txt.xml#ss252" type="publishedWritings" n="252"><hi xml:id="id87c63572-118b-43eb-a0e6-d6e7a40c30c8" rendition="#ita">SKS</hi> 11, 252</ref> og <ref xml:id="id15f681a9-e326-4bb4-bd76-18cf6bf4bc4c" target="../YTS/txt.xml#ss264" type="publishedWritings" n="264">264</ref>; i <hi xml:id="ida3be70e4-1b27-441b-8bee-d9d6d6c28872" rendition="#ita">En opbyggelig Tale</hi> (1850), i <ref xml:id="id73fdb34a-01b1-456d-b7cb-9e14472e8cca" target="../EOT/txt.xml#ss264" type="publishedWritings" n="264"><hi xml:id="id358731cc-3a20-4011-aad7-3e1b01adf64c" rendition="#ita">SKS</hi> 12, 264</ref>; og i <hi xml:id="id6034fba5-3aeb-450b-be78-7f475bdffe01" rendition="#ita">To Taler ved Altergangen om Fredagen</hi> (1851), i <ref xml:id="idd9ef5c06-7733-4b70-91bd-5930a4bc8818" target="../TAF/txt.xml#ss287" type="publishedWritings" n="287"><hi xml:id="id49309f9d-2dea-43e9-9159-cc9484115256" rendition="#ita">SKS</hi> 12, 287</ref> og <ref xml:id="idb8cf5ae9-3470-4134-b3e1-3a4d7d2bd197" target="../TAF/txt.xml#ss296" type="publishedWritings" n="296">296</ref>. – <hi xml:id="id19a65511-3d40-4524-b387-03dc0499eaab" rendition="#bol">ville</hi> vi: vil.</p>
+        </note>
+        <note type="commentary" xml:id="gu-34" n="330,19">
+          <label xml:id="ide9fc51e9-a844-4fd1-92c9-a63c26459537">
+            <hi xml:id="id6ef67f73-55e7-4976-b749-59e608586cb6" rendition="#bol">Almægtig skabte han denne synlige Verden</hi>
+          </label>
+          <p xml:id="id679105af-951f-43f7-a46f-98a7f1438c88">se fx den første artikel i Den apostolske Trosbekendelse: »Jeg troer paa Gud Fader, Himmelens og Jordens almægtige Skaber«, her citeret efter »Catechismus« i <hi xml:id="id1b21814c-4c6b-441f-8ca4-05377e77e87f" rendition="#ita">Forordnet Alter-Bog</hi> (<ptr xml:id="id2f91e5c6-9a0e-4bb0-9071-866ec45e8da3" type="commentary" target="#gu-11" n="327,17"/>), s. 289.</p>
+        </note>
+        <note type="commentary" xml:id="gu-35" n="330,20">
+          <label xml:id="idfd431d8f-b70a-47b4-9302-28d902715882">
+            <hi xml:id="idaf500fc9-4c6b-4b2b-bff4-69e3c7b42741" rendition="#bol">gjorde sig usynlig</hi>
+          </label>
+          <p xml:id="id9c5afd4a-11a8-4143-a939-32fc3d942ca4">Om Gud som usynlig, se fx <rs xml:id="id43fd96ee-9b26-4535-a8d8-5faffccdc5a5" type="bible">Rom 1,20</rs>; <rs xml:id="id2a4ba405-8ccb-40cb-b796-e7673009fb2d" type="bible">Kol 1,15</rs>; og <rs xml:id="id105e3d06-41be-47f8-b193-b9377256f21e" type="bible">1 Tim 1,17</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="gu-36" n="330,20">
+          <label xml:id="idd5c368c6-b3cf-4a0d-9d28-642eb681dd38">
+            <hi xml:id="id56dddccf-dfa6-4da0-8fb9-d8c676d383fd" rendition="#bol">iførte sig den synlige Verden som en Klædning</hi>
+          </label>
+          <p xml:id="id100b4811-364e-440d-87ea-99cf3cb5b065">sml. <rs xml:id="id2724cdd9-6f6e-48cf-bdbf-9e4b4492111d" type="bible">Sl 104,2</rs>: »Han [Gud] ifører sig Lys som et Klædebon; han udbreder Himmelen som et Gardin« (GT-1740).</p>
+        </note>
+        <note type="commentary" xml:id="gu-37" n="330,21">
+          <label xml:id="id4191da4b-b01f-43ce-83e7-70675a7f0343">
+            <hi xml:id="id1924c8af-cc77-45e9-81ca-5a10bfa276ac" rendition="#bol">han forandrer den som man omskifter en Klædning – selv uforandret</hi>
+          </label>
+          <p xml:id="id21db0259-fe4f-432b-a828-c8b473620b98">hentyder til <rs xml:id="id01f6678e-94e1-4ed2-a334-fcaad3f3ad98" type="bible">Hebr 1,10-12</rs>: »Og: du, Herre, grundfæstede Jorden af Begyndelsen, og Himlene ere dine Hænders Gierninger. De skulle [skal] forgaae, men du bliver ved; de skulle tilhobe ældes, som et Klædebon; ja, som et Klæde skal du sammenrulle dem, og de skulle omskiftes [forandres]; men du, du er den Samme, og dine Aar skulle ikke aflade [ophøre]« (NT-1819). Se også <rs xml:id="ida3ea9bc8-31c2-43ab-83ac-b16722c1de34" type="bible">Sl 102,26-28</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="gu-38" n="330,22">
+          <label xml:id="idf4129cc4-b733-43c9-a8f5-17d37edc68db">
+            <hi xml:id="id09adcbc8-fe8d-4411-87cb-617d44f318f6" rendition="#bol">den sandselige Verden</hi>
+          </label>
+          <p xml:id="id9718a73e-a1ed-48e8-8e4f-c30a0c384eea">den verden, der kan opfattes med sanserne.</p>
+        </note>
+        <note type="commentary" xml:id="gu-39" n="330,22">
+          <label xml:id="id07e78393-601e-4863-afac-295d9881cabb">
+            <hi xml:id="id6ac76890-b815-4999-8ec8-afcf3e7e0518" rendition="#bol">er han overalt tilstede i ethvert Øieblik <hi xml:id="id82cabb9f-6d37-4164-82f1-e76400fbf71d" rendition="#ita">(...)</hi> allestedsnærværende, overalt tilstede</hi>
+          </label>
+          <p xml:id="idb5a418fc-2f64-4d3e-ba14-78cc3780a54b">sml. kap. 1, III »Hvad Skriften lærer om Guds Væsen og Egenskaber«, § 6, i <hi xml:id="id8ff921c2-ef62-4ee0-86c9-11b9a2cf59cd" rendition="#ita">Lærebog i den Evangelisk-christelige Religion, indrettet til Brug i de danske Skoler</hi> (af <persName xml:id="iddce6cea7-d6aa-4882-aeb8-eb4d9856bb51" key="Balle, Nicolaj Edinger">N.E. Balle</persName> og <persName xml:id="idf6c02cee-cc93-4cf4-9bd6-5b500a7ca78a" key="Bastholm, Christian">C.B. Bastholm</persName>, gerne omtalt som <hi xml:id="id6b704d83-55bd-4eda-accd-80b6341aa1cc" rendition="#ita">Balles Lærebog</hi>), <placeName xml:id="id2fdb0ab6-2200-4e6b-9186-d3e04cd9b3e2" key="København">Kbh.</placeName> 1824 [1791], ktl. 183, s. 14: »Gud er <hi xml:id="id940c9a89-08d5-447e-8734-3fbbd5069543" rendition="#ita">allestedsnærværende,</hi> og virker med sin Kraft i alle Ting allevegne. Han er ingensteds borte fra sine Skabninger.«</p>
+        </note>
+        <note type="commentary" xml:id="gu-42" n="330,28">
+          <label xml:id="id76ac63ba-512a-4a55-8f41-0b09ce745d17">
+            <hi xml:id="idc1ed90d9-6962-4f09-ac6b-171857446bfe" rendition="#bol">naar en Spurv døer</hi>
+          </label>
+          <p xml:id="id8e2ba963-8350-47ba-ab5b-dd8e1c675e2f"><ptr xml:id="idddbb5759-aa23-4865-8ef0-6972311508ff" type="commentary" target="#gu-10" n="327,10"/>.</p>
+        </note>
+        <note type="commentary" xml:id="gu-43" n="330,28">
+          <label xml:id="idb3dd2e5c-7c1d-4b95-9ad5-7a0738ded6e2">
+            <hi xml:id="id24258a4d-8794-4c01-8d46-59d081f629b1" rendition="#bol">naar Menneske-Slægtens Frelser fødes</hi>
+          </label>
+          <p xml:id="id6d736040-df82-4341-aa96-b2ae3d2ee0d3">se beretningen i <rs xml:id="id31c6cd55-8984-426a-8dd4-42701f674ae6" type="bible">Luk 2,1-20</rs> om <persName xml:id="id7637e16a-64bf-430e-985e-d042edc1f2ef" key="Jesus">Jesu</persName> fødsel; se også <rs xml:id="idf706909e-e631-405a-99e9-445b147bc4e1" type="bible">Gal 4,4-5</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="gu-44" n="330,29">
+          <label xml:id="id4413cc34-216d-49a6-baf6-2c2c64d99ee9">
+            <hi xml:id="id9959c153-53a5-4ff2-88ac-b4b43bb9039e" rendition="#bol">alt Virkeligt som Mulighed</hi>
+          </label>
+          <p xml:id="id67e8804e-69be-4050-a797-609bc57bf133">hentyder formentlig til <rs xml:id="ida4231f84-d603-440e-9524-abd67123cec8" type="bible">Matt 19,26</rs>, hvor <persName xml:id="id543e9605-bc78-4700-b2bb-92b6b7aa85cd" key="Jesus">Jesus</persName> siger: »for Gud ere alle Ting muelige« (NT-1819). Se også <rs xml:id="id44ccc61c-128b-411c-b5ed-b009b1ebca11" type="bible">Luk 1,37</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="gu-45" n="330,29">
+          <label xml:id="id634df43b-596e-4328-a6dd-3b398d030496">
+            <hi xml:id="id5c4d2e96-82d7-440f-9a57-4743c44f3e57" rendition="#bol">sin almægtige Haand</hi>
+          </label>
+          <p xml:id="ida4b91dcb-bd61-442f-87fa-4beb65fc690f">Om Gud som almægtig, sml. kap. 1, III »Hvad Skriften lærer om Guds Væsen og Egenskaber«, § 3, i <hi xml:id="id6feb0f56-60ce-4cc6-ac9c-a427d4859c61" rendition="#ita">Balles Lærebog</hi> (<ptr xml:id="id66302afe-d0f9-4bb4-a141-13cd6e589378" type="commentary" target="#gu-39" n="330,22"/>), s. 13: »Gud er <hi xml:id="id946df523-0165-4740-82fe-c850c57e4dfc" rendition="#ita">almægtig,</hi> og kan giøre alt, hvad han vil, uden Møie. Men han giør ikkun [alene] det, som er viist og godt, fordi han ikke vil andet, end det allene.«</p>
+        </note>
+        <note type="commentary" xml:id="gu-102" n="330,31">
+          <label xml:id="id96797c8a-0fda-4674-93a9-2fa575506678">
+            <hi xml:id="id083e4e24-3339-465b-b0a7-7a98425147dc" rendition="#bol">menneskelig Høihed og end Ringhed, han forandrer Alt</hi>
+          </label>
+          <p xml:id="id86e13c6e-df36-458b-bbbc-e24254d9a8d0">allusion til <rs xml:id="idb0ca68c0-0af4-4a59-a260-aee95e71ef97" type="bible">Luk 1,52</rs>: »Han [Gud] haver nedstødt de Mægtige af Thronerne og ophøiet de Ringe« (NT-1819). – <hi xml:id="id0779089e-c1e0-4f2f-a288-fac7666615ba" rendition="#bol">end:</hi> endog, selv.</p>
+        </note>
+        <note type="commentary" xml:id="gu-48" n="331,12">
+          <label xml:id="id3539c103-18d8-4466-b7a5-7e4bb71af201">
+            <hi xml:id="idd781e62f-6fb8-4edc-9c81-ea0aa3d2f98f" rendition="#bol">Frygt og Bæven</hi>
+          </label>
+          <p xml:id="id63b5bc27-b11b-4293-b550-77e9378915cf">allusion til <rs xml:id="idac642307-ac9a-41c9-9898-6d49848292dc" type="bible">Fil 2,12</rs>, hvor <persName xml:id="idf003de8f-4741-476c-83e6-4dca6d7a104a" key="Paulus">Paulus</persName> skriver til filipperne: »Derfor, mine Elskelige, ligesom I altid have været lydige, saaledes, ikke alene som ved min Nærværelse, men nu meget mere i min Fraværelse, arbeider paa Eders egen Saliggiørelse med Frygt og Bæven« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="gu-49" n="331,17">
+          <label xml:id="id4125b254-b9ea-418d-b3d3-68626f1207b9"><hi xml:id="id9d36c0c1-0aa1-4bf1-a848-1ad76b664615" rendition="#bol">ret</hi> alvorligt</label>
+          <p xml:id="id50ff71ff-8a60-49ca-8a45-4d224c6a1329">virkelig.</p>
+        </note>
+        <note type="commentary" xml:id="gu-50" n="331,20">
+          <label xml:id="id8672ad3d-0e2d-4761-8763-ad1719788fe3">
+            <hi xml:id="idd427d0f8-4069-4091-9f20-bb14a6926695" rendition="#bol">lever <hi xml:id="idf84ed583-7e99-4e60-9b73-83787709b744" rendition="#ita">(...)</hi> hen</hi>
+          </label>
+          <p xml:id="id5d959350-7bb0-4263-8a43-6f4bb8bbea51">henlever, tilbringer livet.</p>
+        </note>
+        <note type="commentary" xml:id="gu-103" n="331,28">
+          <label xml:id="id1907befc-ca6f-4425-be26-54f7b62e149d">
+            <hi xml:id="id47dd6085-503c-4970-8e8b-e6c7a74fea0a" rendition="#bol">hvert dit Ønske</hi>
+          </label>
+          <p xml:id="id4abb30ae-2797-4648-8f73-1d4e4d0e75e0">ethvert af dine ønsker.</p>
+        </note>
+        <note type="commentary" xml:id="gu-51" n="331,30">
+          <label xml:id="id64e0239f-54a3-4fb5-a8fc-71198a237668"><hi xml:id="idec80726f-00e6-418a-bbde-a73615afcd3c" rendition="#bol">ueens</hi> med</label>
+          <p xml:id="ida47b2461-7e4f-4d33-89c6-9a92cedd4975">uenig.</p>
+        </note>
+        <note type="commentary" xml:id="gu-52" n="331,34">
+          <label xml:id="idc1b1fe03-c767-40f1-a2ae-9017820ce119">
+            <hi xml:id="idbf72596e-9a1c-42f4-98bc-16815efbf6a9" rendition="#bol">70 Aar er da ingen Evighed</hi>
+          </label>
+          <p xml:id="id16bd3f4e-cfee-4f0e-8105-65c57d3c83c3">allusion til den traditionelle opfattelse, at et menneskes alm. levetid er 70 år, en opfattelse, der går tilbage til <rs xml:id="ide8fa3d87-30aa-4630-a9ec-90e915ae44e2" type="bible">Sl 90,10</rs>: »Vore leveår kan være halvfjerds, eller firs, hvis kræfterne slår til.«</p>
+        </note>
+        <note type="commentary" xml:id="gu-53" n="332,10">
+          <label xml:id="id79d31ad4-d544-41ec-8ee8-bf515bed7744">
+            <hi xml:id="id6b2d16cf-1016-476b-83d4-0bbd52083b32" rendition="#bol">Slægt</hi>
+          </label>
+          <p xml:id="id340a7653-86bc-4321-8e6e-b7da960c36eb">generation.</p>
+        </note>
+        <note type="commentary" xml:id="gu-54" n="332,15">
+          <label xml:id="id20f8bbfe-f11b-4d4b-84db-ee7fcb27dbb5">
+            <hi xml:id="idf544a550-78da-4542-9953-22250223a577" rendition="#bol">for hvem 1000 Aar ere som en Dag</hi>
+          </label>
+          <p xml:id="ida01daeca-0ac4-44f1-84ba-1957e2f83781">hentyder til <rs xml:id="id480805ee-03a6-4f35-a95f-389a027091a0" type="bible">2 Pet 3,8</rs>: »Dette ene må I ikke glemme, mine kære, at for Herren er én dag som tusind år, og tusind år som én dag.« Se også <rs xml:id="id9518c402-d3c2-46f9-bd48-e4548ffffdf4" type="bible">Sl 90,4</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="gu-55" n="332,22">
+          <label xml:id="idf072073e-f571-432c-b36d-4ec777467d89">
+            <hi xml:id="id83593143-44ec-45a8-a7cb-c3a3944dc30c" rendition="#bol">er det <hi xml:id="idafc79b25-d615-4781-890b-f575651b9a1b" rendition="#ita">(...)</hi> saa</hi>
+          </label>
+          <p xml:id="idb05eae94-2146-41ab-9d85-7ae0d7ee6c56">forholder det sig således.</p>
+        </note>
+        <note type="commentary" xml:id="gu-56" n="332,23">
+          <label xml:id="id0273e748-15c1-4e97-b513-81f683042732">
+            <hi xml:id="id97e7fa0c-0888-4d80-bb77-1f265096184e" rendition="#bol">hvis der var en Retfærdig</hi>
+          </label>
+          <p xml:id="id31f958a8-1975-40e6-94cb-7866eddb1b76">allusion til beretningen i <rs xml:id="id898327e7-6cb9-4a96-a98a-a37182d07663" type="bible">1 Mos 18,16-33</rs> om den lange samtale mellem Gud og <persName xml:id="idc9960436-8450-495a-b483-ceb8916ab600" key="Abraham">Abraham</persName>, hvor Gud fortæller ham, at han agter at ødelægge <placeName xml:id="idefbd7138-d3d6-4e14-9053-01c5570cff87">Sodoma</placeName> og <placeName xml:id="id30e14666-96cc-407f-a0ab-e1bcf618ff56">Gomorra</placeName>, og hvor Abraham i flere omgange går i forbøn for Sodoma og beder Gud skåne den, hvis der er 50 retfærdige i byen, derpå hvis der er 45 retfærdige, så hvis der er 40, så 30 osv., indtil han til sidst beder Gud skåne byen, hvis der blot er ti retfærdige; dette lover Gud. Efter denne samtale gik Gud, og Abraham vendte hjem. Gud ødelagde Sodoma og Gomorra, fordi synden var meget stor i de to byer, jf. <rs xml:id="id936b9b0b-af26-4df3-a880-6c026ef0b05d" type="bible">1 Mos 19,23-25</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="gu-57" n="332,24">
+          <label xml:id="id30cf50a2-62fc-4d3b-801a-ae7481c109ff">
+            <hi xml:id="id5d332c4b-bbd0-4996-bc16-7de621d7a020" rendition="#bol">en Verden, der, som Skriften siger, ligger i det Onde</hi>
+          </label>
+          <p xml:id="idc6f54d1e-fcf5-4ba7-8b30-dd733b340c67">sigter til <rs xml:id="ide7396345-2bb9-4d0d-acd3-623739c0d853" type="bible">1 Joh 5,19</rs>: »Vi vide, at vi ere af Gud, og den ganske Verden ligger i det Onde« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="gu-58" n="332,32">
+          <label xml:id="idf99dec74-3a82-4302-9a8b-63e4db5380ea">
+            <hi xml:id="id6b50cebe-9a37-4f69-a819-7fede408945b" rendition="#bol">tales om, at Gud ikke lader sig spotte</hi>
+          </label>
+          <p xml:id="ideeee9507-97f5-485b-a838-031f0bfd1fca">hentyder til <rs xml:id="idd1a5b2af-896d-43db-b46d-5be28579f9bc" type="bible">Gal 6,7</rs>, hvor <persName xml:id="id6d7aacca-ca16-4536-a74a-baa69bf4128f" key="Paulus">Paulus</persName> skriver: »Farer ikke vild; Gud lader sig ikke spotte; thi hvad et Menneske saaer, dette skal han og [også] høste« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="gu-59" n="332,33">
+          <label xml:id="id6c356756-4473-4f16-9bd3-9b6ebcb997d2">
+            <hi xml:id="id118dcc69-fbb5-49c0-bfdb-b59de75d953a" rendition="#bol">Tider, hvor hans Straffedomme tilintetgjørende gik over Slægten</hi>
+          </label>
+          <p xml:id="id2aa4ff70-dc30-44cb-bbea-d1f06d0949fe">hentyder formentlig til beretningen i <rs xml:id="idd88e3d01-0bdd-4c22-8458-afcec0647b4e" type="bible">1 Mos 6</rs> om den store vandflod, også kaldt syndfloden, som Gud besluttede at sende, da han så menneskenes store ondskab, for at udslette alle levende væsner på jorden.</p>
+        </note>
+        <note type="commentary" xml:id="gu-60" n="333,1">
+          <label xml:id="idcad47eeb-d64f-4108-a2fb-55312c3f9627"><hi xml:id="id97f2b958-aaa0-4b7a-a7f5-425df485c2e7" rendition="#bol">saa</hi> maatte</label>
+          <p xml:id="id810a2984-0d01-48d8-a28a-3638be857428">således.</p>
+        </note>
+        <note type="commentary" xml:id="gu-61" n="333,13">
+          <label xml:id="idf79de44a-b60b-4331-8640-a57dea1a041d">
+            <hi xml:id="id7fc86741-4787-4e4d-b3ce-8963515d3e84" rendition="#bol">et Evighedens Regnskab</hi>
+          </label>
+          <p xml:id="idffd4e365-fbcb-4da2-b78f-df4ec8f81d9c">Forestillingen om, at Gud gør regnskabet op, og at mennesker skal stå til regnskab for ham på dommens dag, findes flere steder i NT, fx i <rs xml:id="id49b33994-4ade-4816-a649-5eb3bdfe4f4f" type="bible">Matt 12,36</rs> (se følgende kommentar); <rs xml:id="id7603b20f-d52a-4dca-aac2-5cd1c88cfc09" type="bible">Rom 9,28</rs>; <rs xml:id="idc7b59262-6015-4a4c-bd50-0407768453b7" type="bible">1 Pet 4,5</rs>. Jf. også <persName xml:id="id346ec04e-b357-432b-bf4d-9900a448ae6a" key="Jesus">Jesu</persName> beskrivelse af verdensdommen i <rs xml:id="id4ba52f3a-5963-41a2-9e9d-c2a9c35464e1" type="bible">Matt 25,31-46</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="gu-62" n="333,14">
+          <label xml:id="idadbc2915-9083-4362-9623-4f3e25022103">
+            <hi xml:id="id6a9b648a-88b2-4bb0-a2dc-536d76539a7d" rendition="#bol">ikke eet eneste af de utilbørlige Ord, der bleve talte</hi>
+          </label>
+          <p xml:id="idfcc204d3-2c6a-46b2-b036-6b56de8cf810">hentyder til <rs xml:id="id41512674-b0d6-4df2-9a56-ef441d0c69b0" type="bible">Matt 12,36</rs>, hvor <persName xml:id="id0e435b85-844c-4ca3-98b1-b8f10dc66161" key="Jesus">Jesus</persName> siger: »at Menneskene skulle [skal] giøre Regnskab paa Dommens Dag for hvert utilbørligt Ord, som de have talet« (NT-1819).</p>
+        </note>
+        <note type="commentary" xml:id="gu-63" n="333,17">
+          <label xml:id="id65d7d665-105c-4203-a454-fdcf65a75360">
+            <hi xml:id="id03037b66-de22-4455-92b7-73082a1590d4" rendition="#bol">Daarligheden</hi>
+          </label>
+          <p xml:id="ide0a08d59-c9be-401f-af3d-a46d14f99034">tåbeligheden.</p>
+        </note>
+        <note type="commentary" xml:id="gu-64" n="333,22">
+          <label xml:id="id02e086d5-a9de-4679-bc32-7d4343d90da0">
+            <hi xml:id="id2b69627c-7fd6-4cf8-b0cf-b413fe8f3fab" rendition="#bol">idetmindste een Gang været vildfarende</hi>
+          </label>
+          <p xml:id="id5983ef68-a29a-4424-b1fc-bb97ab812c56">sigter til det enkelte menneskes syndefald el. 'første synd'.</p>
+        </note>
+        <note type="commentary" xml:id="gu-104" n="333,26">
+          <label xml:id="id3bb5c3e8-c011-4825-9300-bfb16e47b27e">
+            <hi xml:id="id1f250b28-108e-427c-a918-cdfafdc5e524" rendition="#bol">hvo</hi>
+          </label>
+          <p xml:id="id0c4614c6-5fac-444a-b031-41eec13e4cbe">hvem.</p>
+        </note>
+        <note type="commentary" xml:id="gu-66" n="333,30">
+          <label xml:id="id87e485f3-cd65-4d38-a9c6-39958255b478">
+            <hi xml:id="idc79443b3-1df3-46ee-af07-760c8846dcbb" rendition="#bol">et dobbeltløbet Skydevaaben</hi>
+          </label>
+          <p xml:id="id9c08d26f-1932-4ade-a272-9d08748303aa">sigter formentlig til et dobbeltløbet jagtgevær, der kan være indrettet på to forskellige måder, dels med to glatte løb til hagl, dels med ét glat løb til hagl og ét riflet løb til kugler.</p>
+        </note>
+        <note type="commentary" xml:id="gu-105" n="333,31">
+          <label xml:id="id3a690669-f50d-4022-b27c-2fdfda6f54fe">
+            <hi xml:id="id4292e98b-5fb8-4762-82b9-e4206318649a" rendition="#bol">greb det forbudne Lystelige</hi>
+          </label>
+          <p xml:id="id7d661a0c-1b71-46e4-bd73-1d26afc2cfab">allusion til syndefaldsberetningen i <rs xml:id="id46a58287-0d8c-41c7-ab2e-1b388ff11fbc" type="bible">1 Mos 3</rs>. Efter at slangen havde fristet kvinden til at spise af træet til kundskab om godt og ondt, som Gud havde forbudt mennesket at spise af, fortælles det, v. 6: »Og Qvinden saae, at Træet var godt at æde [spise] af, og at det var heel lysteligt at see til, og et ønskeligt Træe til at faae Forstand af, saa tog hun af dets Frugt, og aad; og hun gav sin Mand ogsaa med sig, og han aad« (GT-1740).</p>
+        </note>
+        <note type="commentary" xml:id="gu-106" n="333,31">
+          <label xml:id="ide2eb9400-09a0-4d5f-a4d4-b62d70b5a140">
+            <hi xml:id="idd8fd4fc5-9ae0-4c78-bbf3-0ca8f60712ad" rendition="#bol">forskyldte</hi>
+          </label>
+          <p xml:id="id8c2facac-8037-4830-a3b9-4c66165e6f10">gjorde sig skyldig i.</p>
+        </note>
+        <note type="commentary" xml:id="gu-67" n="334,5">
+          <label xml:id="idf4cc38fc-0c8d-4e66-940d-1447da0255aa">
+            <hi xml:id="idfd934ea9-1959-40b7-bff9-4c81abd8717a" rendition="#bol">drister den</hi>
+          </label>
+          <p xml:id="idb2b0b965-47fa-46de-a885-4e1d589ad7f0">har den mod el. dristighed til, tør den, vover den.</p>
+        </note>
+        <note type="commentary" xml:id="gu-68" n="334,8">
+          <label xml:id="idb4b221d2-22bd-45d6-ad01-caec39d69ab4">
+            <hi xml:id="id54ca96b7-ab52-47e9-9b59-402380c72989" rendition="#bol">slutter <hi xml:id="idd7d2b925-9619-4228-bc41-43797cb8aedc" rendition="#ita">(...)</hi> af</hi>
+          </label>
+          <p xml:id="id865316d6-82ce-42c0-b3ce-b75242cd6a39">dels: bringer (det hele) til ophør, dels: kommer som det sidste.</p>
+        </note>
+        <note type="commentary" xml:id="gu-69" n="334,10">
+          <label xml:id="idcf574c6f-6b31-4c66-a3e4-6d6f7f9d87fb">
+            <hi xml:id="id36f1adee-7c78-4ca9-a135-5dc4bcbfef4e" rendition="#bol">gjøre Regnskabet op</hi>
+          </label>
+          <p xml:id="id9283c37b-a4d5-47d1-b336-e91dc31864ee"><ptr xml:id="idb88f8744-efd2-4f5f-95bb-ec019b2289ed" type="commentary" target="#gu-61" n="333,13"/> og <ptr xml:id="id18bb1830-bebc-495f-92c7-42357130304b" type="commentary" target="#gu-62" n="333,14"/>.</p>
+        </note>
+        <note type="commentary" xml:id="gu-107" n="334,12">
+          <label xml:id="ida501834d-c359-427e-818b-e0b340777da5">
+            <hi xml:id="idc4ccb166-f83f-4b6f-802f-f10f17e50ce8" rendition="#bol">viste 70 Aar</hi>
+          </label>
+          <p xml:id="id1d76969c-87a0-4f45-aa87-c42be502683f"><ptr xml:id="id3ccb3ab7-eb8e-45b4-879d-fec993c213a8" type="commentary" target="#gu-52" n="331,34"/>.</p>
+        </note>
+        <note type="commentary" xml:id="gu-70" n="334,23">
+          <label xml:id="id6890a37d-ad27-4510-90a0-a11588c67f72">
+            <hi xml:id="idec5092bb-fa6b-4e23-a10a-e61d5e15fca9" rendition="#bol">trodser paa</hi>
+          </label>
+          <p xml:id="id2fef47f7-a3cc-45b2-baaf-a1a6f3313305">påberåber sig, hævder, insisterer på.</p>
+        </note>
+        <note type="commentary" xml:id="gu-71" n="334,26">
+          <label xml:id="ida44badfd-79cc-451c-9132-4287d1728675">han seer <hi xml:id="id2a3af3bd-ab12-48df-8b36-e74aca5b8147" rendition="#bol">end</hi></label>
+          <p xml:id="ida15d32fb-85d9-4e2e-92d1-ce5893ac70a7">selv.</p>
+        </note>
+        <note type="commentary" xml:id="gu-108" n="335,14">
+          <label xml:id="id9183a80e-4425-46bf-ab47-fe3609d3a262">
+            <hi xml:id="id2a6e22dc-7d48-42a6-9ddd-aa34551a9290" rendition="#bol">daarlige</hi>
+          </label>
+          <p xml:id="id152ebec0-639c-4bb2-ba4b-4872ce052467">tåbelige.</p>
+        </note>
+        <note type="commentary" xml:id="gu-109" n="335,18">
+          <label xml:id="id2d48f710-24be-44ba-ad64-842f9c276b7a">
+            <hi xml:id="id317fafc3-05e2-4528-a109-fd806ab3f9cb" rendition="#bol">gik <hi xml:id="ide8b941fe-7c52-481f-ba8f-5022802fec61" rendition="#ita">(...)</hi> hen</hi>
+          </label>
+          <p xml:id="id32d394d9-3139-4e69-a1a5-487a46b5c5d9">hengik, forløb, gik.</p>
+        </note>
+        <note type="commentary" xml:id="gu-73" n="335,19">
+          <label xml:id="idae05b398-3a7b-43fe-99b5-a482312a8e78">
+            <hi xml:id="id10b79c6e-a0ee-4ed9-8c3c-add810f746c5" rendition="#bol">længst</hi>
+          </label>
+          <p xml:id="id30f40659-8337-4c3b-8b9c-0e1cd7955d3d">for længst.</p>
+        </note>
+        <note type="commentary" xml:id="gu-74" n="335,20">
+          <label xml:id="idfcea54f2-fad3-4a76-8059-3050728b13ca">
+            <hi xml:id="idbff1a28f-689e-4fbe-9989-58d0000df716" rendition="#bol">Besynderligere</hi>
+          </label>
+          <p xml:id="idbd82f4a4-5929-4c6d-bd3e-71541354772c">bemærkelsesværdigere.</p>
+        </note>
+        <note type="commentary" xml:id="gu-110" n="335,21">
+          <label xml:id="idf8352a39-c604-40ab-87de-164e35f8ccb6">havde <hi xml:id="id7eb989d0-52ea-4ef6-b92d-1bc9159b9100" rendition="#ita">(...)</hi> <hi xml:id="id37d7ecbd-5335-4990-b41b-7b75282b4a94" rendition="#bol">givet fra sig</hi></label>
+          <p xml:id="id0d75223b-011d-45e6-bc81-0a00b6fd1801">lagt bag sig.</p>
+        </note>
+        <note type="commentary" xml:id="gu-111" n="335,29">
+          <label xml:id="id61077820-5e08-4783-9476-86acd7b71a9a">
+            <hi xml:id="id7c8df3fa-7eeb-4a12-aaac-efb1aac1c481" rendition="#bol">Fast</hi>
+          </label>
+          <p xml:id="id4cae563c-f389-4291-a209-9c0ee8e7578e">næsten, omtrent.</p>
+        </note>
+        <note type="commentary" xml:id="gu-75" n="335,34">
+          <label xml:id="idfd38b1af-e35b-494d-98f3-a81f62e35a70">
+            <hi xml:id="ida3b01929-d1f1-47a8-a488-945eb4c0e308" rendition="#bol">tænke <hi xml:id="id7300baa7-d985-43c0-807c-451936b08201" rendition="#ita">(...)</hi> ved</hi>
+          </label>
+          <p xml:id="id5ba8d860-838b-45c3-a040-cb7dfb7d4de7">tænker på el. over.</p>
+        </note>
+        <note type="commentary" xml:id="gu-77" n="336,7">
+          <label xml:id="iddf9abe9b-258f-4469-8ad6-01a253d57068">
+            <hi xml:id="id8d713ac7-0f2a-4613-a65b-61569d74b3dc" rendition="#bol">tilforladelig</hi>
+          </label>
+          <p xml:id="id3fb679a7-9b1a-465e-8b8b-8f06fa5ced4b">(ubetinget) pålidelig, til at stole på.</p>
+        </note>
+        <note type="commentary" xml:id="gu-78" n="336,9">
+          <label xml:id="id2a8fbe77-dd39-4851-99f5-cc9d4bef6b12">
+            <hi xml:id="id087031df-d938-4f9a-a4e7-a7fa8cdfad5a" rendition="#bol">en Alvidende</hi>
+          </label>
+          <p xml:id="ide2b34c23-b4ac-4282-b49d-515a75265fa1">Om Gud som alvidende, sml. kap. 1, III »Hvad Skriften lærer om Guds Væsen og Egenskaber«, § 4, i <hi xml:id="id519b3b64-20a0-40e1-a1bf-12158e545b51" rendition="#ita">Balles Lærebog</hi> (<ptr xml:id="id34da0087-49b7-440a-8d67-e2a2fea75e53" type="commentary" target="#gu-39" n="330,22"/>), s. 13f.: »Gud er <hi xml:id="idc44f12f1-0973-4d86-841b-73e5f0a9b741" rendition="#ita">alvidende,</hi> og kiender [ved] paa eengang, hvadsomhelst der er skeet, eller nu skeer, eller skal skee i al Eftertiden. Vore hemmeligste Tanker ere ikke skiulte for ham.«</p>
+        </note>
+        <note type="commentary" xml:id="gu-112" n="336,14">
+          <label xml:id="idb7cf89a4-1467-4630-8999-19ae01b6084f">
+            <hi xml:id="id91484907-1d2f-4f1d-8005-6d5d2223d8b3" rendition="#bol">omskiftende Skygge</hi>
+          </label>
+          <p xml:id="id3b7ac286-e35a-4df0-b334-8e8e6daa32a9">spiller på udtrykket »Skygge af Omskiftelse« i <rs xml:id="id19817d5b-4a88-4e96-b61d-80f407137762" type="bible">Jak 1,17</rs> (<ptr xml:id="id5b955683-7b04-4044-940f-0bbb6d700da6" type="commentary" target="#gu-11" n="327,18"/>).</p>
+        </note>
+        <note type="commentary" xml:id="gu-79" n="336,14">
+          <label xml:id="idc38e099b-6cc5-418e-9e03-df69c8106a15">
+            <hi xml:id="id72d52f5e-28c7-4738-89fd-39cd2b160020" rendition="#bol">omskifter</hi>
+          </label>
+          <p xml:id="ida41d4d44-03f8-4ba5-bc3b-0e671e9ae126">forandrer.</p>
+        </note>
+        <note type="commentary" xml:id="gu-80" n="336,15">
+          <label xml:id="ideb071d42-578d-4445-ae53-66c170d5d112">
+            <hi xml:id="idd538aff5-8924-4a84-81bb-02f938275cdd" rendition="#bol">ere vi, som det hedder, Skygger</hi>
+          </label>
+          <p xml:id="idfb4542ff-f63e-48ab-b526-844d4b60043b">formentlig allusion til <rs xml:id="id97364822-7b60-4b0e-84c1-5138ae25383b" type="bible">Job 8,9</rs>: »vore Dage ere en Skygge paa Jorden« og 14,2: »han [mennesket] flyer som en Skygge, og bestaaer ikke«; til <rs xml:id="id03913f94-7027-433a-a668-6d528a2df2ba" type="bible">Sl 102,12</rs>: »Mine dage ere som en Skygge, der helder, og jeg tørres som en Urt«, jf. <rs xml:id="id371f2f46-acc8-4196-b3eb-b66e28d7206b" type="bible">Sl 109,23</rs>; og til <rs xml:id="id7040f920-c20e-4505-87df-a649cfa28484" type="bible">Sl 144,4</rs>: »Et Menneske er lig Forfængeligheden [tomheden], hans Dage ere som en Skygge, der farer forbi« (GT-1740). Se endvidere <rs xml:id="idf2c5036f-74e8-4616-bd1e-c60689f0f7a6" type="bible">1 Krøn 29,15</rs>; <rs xml:id="id874d6abf-90a9-4100-a505-bf428b2ce34e" type="bible">Præd 6,12</rs>; <rs xml:id="id83d16269-348d-426a-b7ca-659eed2b32dc" type="bible">Visd 2,5</rs> og <rs xml:id="id490cf49c-1961-4197-b5d5-d42d2f41733b" type="bible" key="Visd 5,9">5,9</rs>.</p>
+        </note>
+        <note type="commentary" xml:id="gu-81" n="336,16">
+          <label xml:id="idb272910d-00ce-4e55-a361-f04a90fea63b">
+            <hi xml:id="id2c9cbf79-9fd4-4ef2-b2f9-c352dc468247" rendition="#bol">ile hen</hi>
+          </label>
+          <p xml:id="id593dbdbc-6215-4e3c-8bec-0605dad6e8a4">farer af sted.</p>
+        </note>
+        <note type="commentary" xml:id="gu-82" n="336,19">
+          <label xml:id="id6b9c5ac0-fc95-4c07-b67c-e5ca392c8c25">
+            <hi xml:id="ida35bee6e-5846-4924-8b09-6a94d3eb3ec1" rendition="#bol">hedder, vi Mennesker skulle giøre Regnskab</hi>
+          </label>
+          <p xml:id="id95377d8f-931c-4851-a453-4057ec1e0a2b"><ptr xml:id="idccf6bb05-4533-4020-85d9-797b7910ebae" type="commentary" target="#gu-61" n="333,13"/> og <ptr xml:id="id7daaefcb-31cf-489e-9898-68b10d0a6a3e" type="commentary" target="#gu-62" n="333,14"/>. – <hi xml:id="id3d5813ff-4f67-4e55-b0a6-5b9407344d3d" rendition="#bol">skulle:</hi> skal.</p>
+        </note>
+        <note type="commentary" xml:id="gu-113" n="336,21">
+          <label xml:id="ida1c241ae-d8f6-4ea8-96d2-69dda0e47f37">
+            <hi xml:id="idb8f93829-6edd-45f2-b1ed-d0908c54d08f" rendition="#bol">Vidtløftigheder</hi>
+          </label>
+          <p xml:id="idbf7a6412-8170-41aa-843b-f58f391388e5">store anstalter, besværligheder, kvaler.</p>
+        </note>
+        <note type="commentary" xml:id="gu-84" n="336,30">
+          <label xml:id="id510eed94-4665-46f6-b9a2-136c95c347e1">
+            <hi xml:id="idd15a266a-b099-4fb6-80e9-c448b4aec83e" rendition="#bol">indtil at fortvivle</hi>
+          </label>
+          <p xml:id="idc76ffc28-b7af-4e5d-ac3d-20291c6a450c">der grænser el. fører til, ender i el. fremkalder fortvivlelse.</p>
+        </note>
+        <note type="commentary" xml:id="gu-114" n="336,32">
+          <label xml:id="id389e3134-6a58-4258-a706-5ff01d7d5e7a">
+            <hi xml:id="idf0599039-1df8-4afe-8e0b-615621efaabb" rendition="#bol">det er <hi xml:id="id9b77be2d-395e-4809-969c-10407cf3e2a7" rendition="#ita">(...)</hi> saa</hi>
+          </label>
+          <p xml:id="idadf7d26c-1647-45ba-a1e7-2013b76e68b0">det forholder sig således.</p>
+        </note>
+        <note type="commentary" xml:id="gu-115" n="336,32">
+          <label xml:id="id5032af2c-fc93-467c-8035-a46098b53249">
+            <hi xml:id="id70bc910c-b6b7-486c-91cc-6a0049b1c14d" rendition="#bol">trættet</hi>
+          </label>
+          <p xml:id="id61b6ea6b-7d2e-4a6f-9144-342a2a7fed32">udmattet.</p>
+        </note>
+        <note type="commentary" xml:id="gu-116" n="336,33">
+          <label xml:id="ide708954f-0c1c-49e6-b662-84ad4e3773e2">
+            <hi xml:id="id116ba953-d57d-4db3-a269-9a7d2bd966f2" rendition="#bol">Omvexling</hi>
+          </label>
+          <p xml:id="id8946e272-387a-4bb2-b26f-ca797d5c5911">vekslende tilskikkelse, omskiftelse, forandring.</p>
+        </note>
+        <note type="commentary" xml:id="gu-86" n="337,7">
+          <label xml:id="ide2679325-7cb1-4496-aec8-dde1fad6a9c0"><hi xml:id="id1bea1bde-6483-4061-8eab-48b84d51c637" rendition="#bol">ret</hi> dybt</label>
+          <p xml:id="id764acaa3-1577-440a-8c82-189e71dc9f06">virkelig, for alvor.</p>
+        </note>
+        <note type="commentary" xml:id="gu-88" n="337,12">
+          <label xml:id="ide88ba194-9302-4623-8d79-22b449b96995">
+            <hi xml:id="id8bb8bee0-dcf5-4fc7-a531-d5bf1cd89249" rendition="#bol">hvo</hi>
+          </label>
+          <p xml:id="id501aba86-3a7c-4258-b0ef-af06494ddf2e">hvem.</p>
+        </note>
+        <note type="commentary" xml:id="gu-89" n="337,15">
+          <label xml:id="id565f6abd-16a4-41b9-99f0-5f6c71fc9952">
+            <hi xml:id="idf1c05c68-61c0-41dd-99ce-6b1b68e36d9a" rendition="#bol">betrygget</hi>
+          </label>
+          <p xml:id="idb22860a4-246c-4d38-9ed5-a3e9c35738f1">gjort trygt, sikret.</p>
+        </note>
+        <note type="commentary" xml:id="gu-118" n="337,16">
+          <label xml:id="id96b54d55-905f-421a-a62c-72faa20932ec"><hi xml:id="id48d64a5a-a6d0-4fbd-852f-78902e0f30c8" rendition="#bol">uden</hi> Du selv</label>
+          <p xml:id="ida1c69e5d-d5f5-4f20-b48d-a1d537bb08e1">undtagen.</p>
+        </note>
+        <note type="commentary" xml:id="gu-119" n="337,21">
+          <label xml:id="idcc264951-df67-4d0e-8b0f-b2e736f66ca1">
+            <hi xml:id="iddbcfdf42-6cde-4a21-9656-a28c9ff46a20" rendition="#bol">Alt forresten</hi>
+          </label>
+          <p xml:id="id29619107-1791-4a32-b5a9-895fef1ae342">hvad alt det øvrige angår.</p>
+        </note>
+        <note type="commentary" xml:id="gu-91" n="337,29">
+          <label xml:id="idab1d5c6f-0464-444b-96da-32263d4d5c3b"><hi xml:id="id2700d9c1-e559-4ed3-9b52-958bb746ca57" rendition="#bol">ville</hi> vi</label>
+          <p xml:id="id84bae000-8812-445b-80e7-e52513a97bcf">vil.</p>
+        </note>
+        <note type="commentary" xml:id="gu-92" n="337,33">
+          <label xml:id="id0e9a87e8-98af-495a-ab24-7441b7d8db7d">
+            <hi xml:id="id2d8c39f9-f84b-402f-9005-4a59c5d68e9f" rendition="#bol">Ordet: Forandring behager</hi>
+          </label>
+          <p xml:id="idf4775aef-36ce-4597-9516-56804da3507f">Fyndord el. sentens, der kendes i forskellige variationer, og som kan føres tilbage til den gr. litteratur. Se fx den gr. digter <persName xml:id="id9e538e1a-9a92-4346-a7b7-0acbad2b8bba" key="Euripides">Euripides</persName>' tragedie <hi xml:id="id3c07fe14-6311-4ae9-8a07-86f6f024baab" rendition="#ita"><persName xml:id="idc2ae9783-f7e1-4aa4-8026-a643dca47983" key="Orestes">Orestes</persName>,</hi> v. 234, som <persName xml:id="id3f70f073-570e-4163-83bb-0cc90b84f35f" key="Aristoteles">Aristoteles</persName> henviser til i 7. bog, kap. 14, af <hi xml:id="idcb7ffb92-d211-4566-ba57-727ae6fb83dd" rendition="#ita">Den Nikomachæiske Etik</hi> (1154 b28-29): »Daß nach dem Dichter, im Menschen nichts süßer ist, als die Veränderung: das kommt von einer Unvollkommenheit desselben.« <hi xml:id="idb49a7055-3f4b-4215-8893-2bdedb013996" rendition="#ita">Die Ethik des Aristoteles,</hi> overs. og kommenteret af <persName xml:id="id3d531652-0f2c-4f6b-938a-9d5fb59eb922" key="Garve, Christian">C. Garve</persName>, bd. 1-2, <placeName xml:id="id2643a047-f5d9-446c-b455-fe32b55c49ff">Breslau</placeName> 1798-1801, ktl. 1082-1083; bd. 2, s. 423; Garve opdeler 7. bog således, at det, der traditionelt tælles som kap. 14, i hans oversættelse er kap. 15. Denne passage oversætter SK i journaloptegnelsen <ref xml:id="idee88050b-1146-41c5-9b14-dcd0b90b9923" target="../NB27/txt.xml#n32" type="journalsAndPapers" n="32">NB27:32</ref>, fra okt. 1852, i <hi xml:id="id1a870b77-8b37-4f2a-8bde-ffd35f257b27" rendition="#ita">SKS</hi> 25, 148,15-16: »At efter Digterens Ord Intet er Msket [mennesket] behageligere end Forandring, det kommer af hans Ufuldkommenhed.« Udtrykket er især blevet udbredt gennem den lat. oversættelse af <persName xml:id="idca3727aa-b312-4640-bf93-2fa1462bc1f8" key="Æsop">Æsop</persName>s fabler, hvor det i v. 10 i prologen til 2. bog forekommer i formen 'varietas delectat' ('afveksling, forandring fryder'), se <hi xml:id="id3f92cda0-d69f-4fbc-b95b-b42007862fc6" rendition="#ita">Phaedri Augusti Liberti Fabularum Aesopiarum Libri quinque,</hi> udg. af <persName xml:id="idd5b016ef-5779-4f8b-a281-3a44872657fc" key="Lindberg, Jacob Christian">J.C. Lindberg</persName>, <placeName xml:id="ida1a63090-cf37-4ac1-af93-3b96baa75f6e" key="København">Kbh.</placeName> 1823, s. 19. Jf. også ordsproget »'Forandring fornøjer' <hi xml:id="id4b11b228-a370-45d1-a911-e75c5e88b8c5" rendition="#ita">(...),</hi> sagde <persName xml:id="id4d917fa5-3084-4865-91a9-3b98f7715578" key="Fanden">Fanden</persName>, han tog Glasbuxer paa« el. »'Forandring fryder,' sagde Fanden, han bed i en Snebold«, optegnet som nr. 2259 i <persName xml:id="id71caf63b-42ea-4ef2-8546-7ad5e17d9af9" key="Mau, Edvard">E. Mau</persName> <hi xml:id="id3bffd408-e085-4d38-933d-b491fdb2200f" rendition="#ita">Dansk Ordsprogs-Skat</hi> bd. 1-2, Kbh. 1879; bd. 1, s. 238.</p>
+        </note>
+        <note type="commentary" xml:id="gu-93" n="338,1">
+          <label xml:id="id8981414b-f08e-46be-a5c4-e08897fe17fa">Naar <hi xml:id="idfcc8e3f4-4144-469d-a9a0-15e014f82581" rendition="#bol">saa er</hi></label>
+          <p xml:id="id901ccbd0-85ba-4b59-ace3-7e8b66eb5a3e">det forholder sig således.</p>
+        </note>
+        <note type="commentary" xml:id="gu-94" n="338,4">
+          <label xml:id="id092b08ca-87d7-4dd1-bddc-fb53a2d0b7b0">
+            <hi xml:id="idc207c42e-8bb1-405b-b4e0-ee71d90e7cb2" rendition="#bol">denne Time</hi>
+          </label>
+          <p xml:id="id0117e6be-6220-45a8-a177-0a7356de116c">På SKs tid varede en prædiken ofte en times tid, jf. § 15 i »Forslag til et: Kirke-Ritual for Danmark«, s. 11, i <persName xml:id="id9332dcdc-e135-48bc-99d2-a41858cb66a4" key="Mynster, Jakob Peter">J.P. Mynster</persName>s <hi xml:id="id5514ed68-5eb4-4c7d-9bfe-416b5ad743e6" rendition="#ita">Udkast til en Alterbog og et Kirke-Ritual for <placeName xml:id="id7d6f87a3-25db-4fe1-aebe-255bab90a8e4">Danmark</placeName>,</hi> <placeName xml:id="id809ff06e-6b48-42e5-9356-11a4d7c83a75" key="København">Kbh.</placeName> 1839, hvor det fastsættes: »Prædikenen bør ikke vare længere end i det Høieste en Time, men ingenlunde kortere end en halv Time.«</p>
+        </note>
+        <note type="commentary" xml:id="gu-95" n="338,8">
+          <label xml:id="idda653b8c-dcd7-40a4-a00b-9b16a287ddc4">
+            <hi xml:id="ida30af387-30b8-4d59-a421-f4d3b88799e6" rendition="#bol">forskylder Du</hi>
+          </label>
+          <p xml:id="id61b03a09-f239-44c5-845b-1eea8d51cda5">er du årsag til.</p>
+        </note>
+        <note type="commentary" xml:id="gu-97" n="338,29">
+          <label xml:id="idaebf0d6b-9fa0-4e2e-aa85-2e1a492d47ea">til Din <hi xml:id="idcbebd346-df89-4ecb-bf56-5b9507afdf71" rendition="#bol">Lov</hi></label>
+          <p xml:id="id9fef7216-ba88-4e4b-8a64-10a0599e9a27">berømmelse, ros, lovprisning.</p>
+        </note>
+        <note type="commentary" xml:id="gu-98" n="338,30">
+          <label xml:id="idd29d6930-b75b-4b8f-a6fa-674625a2ce85">
+            <hi xml:id="id22d11a94-4438-4feb-93fb-489a612e169f" rendition="#bol">prisede</hi>
+          </label>
+          <p xml:id="idcf97ca2d-5338-47ad-b6a5-0a5dee4d1193">berømmede, lovpriste.</p>
+        </note>
+        <note type="commentary" xml:id="gu-99" n="339,7">
+          <label xml:id="id4ecfd456-4307-44f6-aea2-280daf1dbef7">
+            <hi xml:id="ida6ff40d4-183c-413d-bedf-2a70deaaa7f6" rendition="#bol">Du, der er som en Kilde, der selv søger <hi xml:id="id79eb0a35-3833-4ab2-98c1-095a9226dc69" rendition="#ita">(...)</hi> den Forvildede</hi>
+          </label>
+          <p xml:id="ided26f43b-6b67-48f1-bb27-128deb3c89eb">formentlig allusion til <persName xml:id="id466f212b-b095-42e5-a83a-6e91b06bd511" key="Jesus">Jesu</persName> lignelse i <rs xml:id="id9fb6c3ea-9f23-4b89-a189-16a64a2d7e88" type="bible">Matt 18,12-13</rs> om det vildfarne får: »Om et Menneske havde hundrede Faar, og eet af dem foer vild, forlader han ikke de ni og halvfemsindstyve, og gaaer paa Biergene, og leder efter det, som var faret vild? Og hænder det sig, at han finder det, sandelig siger jeg Eder, at han glæder sig mere over det, end over de ni og halvfemsindstyve, som ikke fore vild« (NT-1819).</p>
+        </note>
+      </div>
+    </body>
+  </text>
 </TEI>

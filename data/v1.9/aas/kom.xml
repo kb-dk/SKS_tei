@@ -1,400 +1,561 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--DOCTYPE kn1 SYSTEM "http://sks.dk/kn1/kn1.dtd"-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" version="5"> 
- 
-  <teiHeader>
-   <fileDesc>
-    <titleStmt>
-     <title level="s">Søren Kierkegaards Skrifter</title>
-     <title>Aabenbart Skriftemaal</title>
-     
-     <title type="short">AAS</title>
-     
-  <author>
-   <name>Knud Bjarne Gjesing</name><name>Richard Purkarthofer</name>
-  </author>
- 
-  <editor>
-   <name>Niels Jørgen Cappelørn</name><name>Joakim Garff</name><name>Johnny Kondrup</name><name>Tonny Aagaard Olesen</name><name>Steen Tullberg</name>
-  </editor>
- 
-  <respStmt>
-   <resp>elektronisk redigeret af</resp>
-   <name>Karsten Kynde</name>
-  </respStmt>
- 
-    </titleStmt>
-    <publicationStmt>
-     <authority>Søren Kierkegaard Forskningscenteret 2010</authority>
-     <availability status="restricted"><p>copyright</p></availability>
-    </publicationStmt>
-    <seriesStmt>
-     <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
-     <biblScope unit="volume">K14</biblScope>
-     <biblScope unit="file">http://sks.dk/aas/kom.xml</biblScope>
-    </seriesStmt>
-    <sourceDesc>
-      
-      
-       <bibl copyOf="#SKS"/>
-      
-    </sourceDesc>
-   </fileDesc>
-   
-   <encodingDesc>
-    
-    <tagsDecl><rendition xml:id="ita" scheme="css">font-style: italic</rendition><rendition scheme="css" xml:id="bol">font-weight: bold</rendition></tagsDecl>
-   </encodingDesc>
-   <revisionDesc>
-    <change>Transformed to TEI by style sheet <bibl type="file">kn12tei.xsl</bibl> version <idno type="version">1.9</idno> as of <date>2017-02-21</date> by <name>Karsten Kynde</name>, <orgName>Det Kongelige Bibiliotek</orgName>, <placeName>København</placeName></change>
-    <change when="20120309">Kierkegaard Normalformat vers.1, <bibl><idno type="version">1.6</idno>, <biblScope unit="file">http://sks.dk/aas/kom.xml</biblScope></bibl></change>
-   </revisionDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="root">
+  <teiHeader xml:id="id10f7d304-0db2-4058-b608-85e50fd3d942">
+    <fileDesc xml:id="id2cc7e445-beb3-4aea-b796-77b661f69192">
+      <titleStmt xml:id="ide3c59b3a-f197-48f3-8407-37d83f55b3bc">
+        <title xml:id="id4f393eee-a16c-4441-ae16-4b902fe92541" level="s">Søren Kierkegaards Skrifter</title>
+        <title xml:id="id0af93d53-3fe8-4ac6-a8e9-d54f3d921001">Aabenbart Skriftemaal</title>
+        <title xml:id="ide6c4baab-eaba-4a78-805d-052b48092b44" type="short">AAS</title>
+        <author xml:id="id55884feb-36d1-46be-aecb-0a61cb632ff8">
+          <name xml:id="idff9919eb-2243-4c6b-bb3d-919a3932bdfb">Knud Bjarne Gjesing</name>
+          <name xml:id="id97627481-9209-4213-b4e2-6a4de69f595b">Richard Purkarthofer</name>
+        </author>
+        <editor xml:id="id9ddf871a-8b1e-4ec5-901f-db357184a058">
+          <name xml:id="id4f6aac61-c2e6-4925-9d93-412967ea7a36">Niels Jørgen Cappelørn</name>
+          <name xml:id="id4e9e0b44-9187-47f8-91f4-e5ff69780757">Joakim Garff</name>
+          <name xml:id="idc330e922-ef04-4961-823e-911c4c1c86d9">Johnny Kondrup</name>
+          <name xml:id="id86bf2bae-20c5-4597-8222-84c52a9f73ba">Tonny Aagaard Olesen</name>
+          <name xml:id="id88f846a4-61ef-4050-9120-f4c8f0881aa8">Steen Tullberg</name>
+        </editor>
+        <respStmt xml:id="idcb632c37-b9d1-442f-9dc0-dba2bae48396">
+          <resp xml:id="id51206c73-ea01-44f8-ade6-ce41648ad4ab">elektronisk redigeret af</resp>
+          <name xml:id="id3217bde5-d844-4de7-852a-a89829dbb95a">Karsten Kynde</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt xml:id="idbad764c8-2987-479c-8772-cef476d34a37">
+        <authority xml:id="id809ead61-0672-454e-8500-e27bd9d29fe0">Søren Kierkegaard Forskningscenteret 2010</authority>
+        <availability xml:id="id925dc442-fdeb-4f16-89a6-554b19f88e50" status="restricted">
+          <p xml:id="id0c57ef34-62f0-4f8e-a388-55e12782eb8c">copyright</p>
+        </availability>
+      </publicationStmt>
+      <seriesStmt xml:id="id746c816b-51c6-49d4-b8f8-33ec63d9b75e">
+        <title xml:id="SKS">Søren Kierkegaards Skrifter</title>
+        <biblScope xml:id="id141e5003-d197-4f1a-b686-5ba4ccda5614" unit="volume">K14</biblScope>
+        <biblScope xml:id="id867ab6f2-d851-410b-86a4-7385c5080d5c" unit="file">http://sks.dk/aas/kom.xml</biblScope>
+      </seriesStmt>
+      <sourceDesc xml:id="id865aff73-9c24-45b9-bdb9-dfdf157d3097">
+        <bibl xml:id="idc507e7de-6d18-4f99-9eb6-195e2565cfe2" copyOf="#SKS"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc xml:id="id4359a636-2b68-46fd-9485-9fb6c2b7357c">
+      <tagsDecl xml:id="id1205648b-8df9-4553-9449-2e9a751a0405">
+        <rendition xml:id="ita" scheme="css">font-style: italic</rendition>
+        <rendition scheme="css" xml:id="bol">font-weight: bold</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc xml:id="id2862284b-2339-4194-bb69-8a72aa337157">
+      <change xml:id="id89823c21-5fec-4bf7-97ce-60f2891c43f8">Transformed to TEI by style sheet <bibl xml:id="id38260468-c971-4dc3-b3bd-6969ac93341c" type="file">kn12tei.xsl</bibl> version <idno xml:id="id20563101-d1ef-4ef2-aa66-6c762ef8b4cc" type="version">1.9</idno> as of <date xml:id="idf3cb3688-0a60-4b78-b353-e43dc3167efa">2017-02-21</date> by <name xml:id="id8c09a4bd-100e-4685-be9b-7f91f4a565bf">Karsten Kynde</name>, <orgName xml:id="idb422ee08-736b-4982-8ea1-a2004e473d54">Det Kongelige Bibiliotek</orgName>, <placeName xml:id="id8a78ed2f-7d5a-442c-a7d9-fbaca8b09607">København</placeName></change>
+      <change xml:id="id4af4e0f1-02d8-4855-81d4-0fe09d7899d8" when="20120309">Kierkegaard Normalformat vers.1, <bibl xml:id="idbd32f325-4cf5-4def-9f08-57ce8d87b01b"><idno xml:id="idc71140ac-ef3f-4747-a6e2-3b63d5d449fe" type="version">1.6</idno>, <biblScope xml:id="idd0c45095-6fe0-47d4-9469-970ef03a38ac" unit="file">http://sks.dk/aas/kom.xml</biblScope></bibl></change>
+    </revisionDesc>
   </teiHeader>
- 
- <text type="commentary" subtype="ts"><body><div> 
-  <note type="commentary" xml:id="aas-1" n="41,1">
-   <label><hi rendition="#bol">Aabenbart Skriftemaal</hi></label>
-   <p>I <hi rendition="#ita">Dannemarkes og <placeName>Norge</placeName>s Kirke-Ritual,</hi> <placeName key="København">Kbh.</placeName> 1762 [1685], som stadig var gældende på SKs tid, er der et særligt ritual »Om aabenbare Skriftemaal og Afløsning«, s. 150-159. Det fastsætter, at en person, der har forbrudt sig mod et af de ti bud (det betød i praksis kriminelle forbrydelser og seksuelle forseelser), kunne anmode præsten om lov til at træde frem i kordøren, påhøre en formaningstale og på knæ bekende sine synder i menighedens nærværelse, hvorefter præsten kunne tilsige vedkommende syndernes forladelse (afløsning). Efter at åbenbart skriftemål var blevet mildnet i 1767, gik det efterhånden af brug (jf. »Forslag til et: Kirke-Ritual«, s. 46f., i <persName key="Mynster, Jakob Peter">J.P. Mynster</persName> <hi rendition="#ita">Udkast til en Alterbog og et Kirke-Ritual for <placeName>Danmark</placeName>,</hi> Kbh. 1839); det blev officielt ophævet i 1866.</p>
-  </note>
-  <note type="commentary" xml:id="aas-2" n="41,2">
-   <label><hi rendition="#bol">nedsat</hi></label>
-   <p>omtalt nedsættende, nedvurderet.</p>
-  </note>
-  <note type="commentary" xml:id="aas-5" n="41,31">
-   <label><hi rendition="#bol">afgiver</hi> den Text</label>
-   <p>tjener som.</p>
-  </note>
-  <note type="commentary" xml:id="aas-6" n="41,34">
-   <label><hi rendition="#bol">anseet og udlagt som Forfatter</hi></label>
-   <p>If. SKs senere oplysninger i journalerne var der faktisk ingen, der havde udlagt ham som forf. af de pågældende artikler; se journaloptegnelsen <ref target="../NB6/txt.xml#n16" type="journalsAndPapers" n="16">NB6:16</ref>, fra juli 1848, hvor han kalder artiklen »Aabenbart Skriftemaal« et »Signalskud« og tilføjer: »jeg var den Gang færdig med Manuscriptet til Enten – Eller, og umidd. paa den fulgte Enten – Eller; Artiklen var tillige en Mystifikation: efterat have fralagt mig Forfatterskabet til de mange Avisartikler – som rigtignok Ingen havde tillagt mig – endte jeg med at bede Folk aldrig at ansee Noget for at være af mig, hvorpaa mit Navn ikke stod. Og da var det netop jeg agtede at begynde at være Pseudonym«, <hi rendition="#ita">SKS</hi> 21, 17,24-30.</p>
-  </note>
-  <note type="commentary" xml:id="aas-7" n="41,36">
-   <label><hi rendition="#bol">Flyveskrifter</hi></label>
-   <p>små trykte skrifter el. pjecer, hvis indhold er afpasset efter tid og lejlighed.</p>
-  </note>
-  <note type="commentary" xml:id="aas-8" n="41,38">
-   <label><hi rendition="#bol">gediegne</hi></label>
-   <p>ældre form for: gedigne.</p>
-  </note>
-  <note type="commentary" xml:id="aas-9" n="41,40">
-   <label><hi rendition="#bol">ephemer</hi></label>
-   <p>af gr. 'ephēmeros', 'for en dag'; flygtig, kun dagsaktuel.</p>
-  </note>
-  <note type="commentary" xml:id="aas-107" n="41,46">
-   <label><hi rendition="#bol">Straffedom</hi></label>
-   <p>dom, hvorved en straf tilkendes den, der har begået en forbrydelse el. (i religiøs sprogbrug) synd.</p>
-  </note>
-  <note type="commentary" xml:id="aas-100" n="41,58">
-   <label><hi rendition="#bol">vilde <hi rendition="#ita">(...)</hi> virket</hi></label>
-   <p>ville have virket.</p>
-  </note>
-  <note type="commentary" xml:id="aas-11" n="41,65">
-   <label><hi rendition="#bol">»Folkebladet«</hi></label>
-   <p><hi rendition="#ita">Dansk Folkeblad,</hi> udg. af Selskabet for Trykkefrihedens rette Brug, redigeret af dets skriftkomité, Kbh. 1835-48. Bladet var et medlemsblad for »Selskabet for Trykkefrihedens rette Brug«, som blev stiftet i 1835. I 1841 havde bladet 668 abonnenter i <placeName>København</placeName> og 4390 udenbys, jf. <persName key="Søllinge, Jette Drachmann">Jette D. Søllinge</persName> og <persName key="Thomsen, Niels">Niels Thomsen</persName> <hi rendition="#ita">De danske aviser 1634-1989</hi> bd. 1, 1989, s. 160f.</p>
-  </note>
-  <note type="commentary" xml:id="aas-12" n="41,65">
-   <label><hi rendition="#bol">»Naturen, Mennesket og Borgeren;«</hi></label>
-   <p><hi rendition="#ita">Naturen, Mennesket og Borgeren. Forsøg til en Læsebog for Almueskolernes øverste Klasse,</hi> udg. af <persName key="Birch, David Seidelin">David Seidelin Birch</persName>, <placeName key="København">Kbh.</placeName> 1821, som var meget udbredt og løbende udkom i nye udgaver, 10. udg. kom i 1842.</p>
-  </note>
-  <note type="commentary" xml:id="aas-101" n="41,69">
-   <label><hi rendition="#bol">utrættede</hi></label>
-   <p>uden at blive træt, utrættelige.</p>
-  </note>
-  <note type="commentary" xml:id="aas-108" n="42,30">
-   <label><hi rendition="#bol">aldrig at ansee mig for Forfatter af Noget, hvorpaa mit Navn ei staaer</hi></label>
-   <p><ptr type="commentary" target="#aas-6" n="41,34"/>.</p>
-  </note>
-  <note type="commentary" xml:id="aas-16" n="42,39">
-   <label><hi rendition="#bol">mærkværdig</hi></label>
-   <p>bemærkelsesværdig.</p>
-  </note>
-  <note type="commentary" xml:id="aas-109" n="42,64">
-   <label><hi rendition="#bol">tyde hen paa</hi></label>
-   <p>henviser til, peger på.</p>
-  </note>
-  <note type="commentary" xml:id="aas-19" n="42,64">
-   <label><hi rendition="#bol">Tidens Fylde</hi></label>
-   <p>hentyder til Gal. 4,4-5: »Men da tidens fylde kom, sendte Gud sin søn, født af en kvinde, født under loven, for at han skulle løskøbe dem, der var under loven, for at vi skulle få barnekår.«</p>
-  </note>
-  <note type="commentary" xml:id="aas-20" n="42,65">
-   <label><hi rendition="#bol">Systemet, Tidsalderen arbeider hen til</hi></label>
-   <p>Der hentydes især til de da. hegelianere, som gjorde forsøg på at udarbejde et spekulativt system. <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> (1791-1860) havde tidligt udskudt sin plan om at udføre en samlet æstetik, idet han først ville give en fremstilling af den hegelske, spekulative logik, som skulle danne æstetikkens grund. I begyndelsen af 1830'erne forelæste han som docent ved Den kgl. militaire Høiskole over den spekulative logik, som han også gav en skriftlig fremstilling af til brug for tilhørerne. Senere udgav han afhandlingen »Det logiske System«, indeholdende de første 23 paragraffer. Her hedder det: »Forfatteren tillader sig herved at meddele det første Bidrag til Udførelsen af en længe næret Plan, nemlig at fremstille det logiske System«, <hi rendition="#ita">Perseus, Journal for den speculative Idee,</hi> udg. af J.L. Heiberg, nr. 1, juni 1837, nr. 2, aug. 1838, ktl. 569; nr. 2, s. 7. Denne afhandling blev dog ikke fulgt op, ligesom det æstetiske system aldrig blev færdiggjort. I sidste halvdel af 1830'erne holdt <persName key="Martensen, Hans Lassen" n="*">H.L. Martensen</persName> (1808-84) en række forelæsninger ved <placeName>Københavns Universitet</placeName>; resultatet af disse forelæsninger, der især tog afsæt i <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName> (<ptr type="commentary" target="#aas-35" n="43,37"/>), blev ikke den forventede spekulative dogmatik, kun den mindre anlagte <hi rendition="#ita">Grundrids til Moralphilosophiens System,</hi> <placeName key="København">Kbh.</placeName> 1841, ktl. 650. I fortalen hedder det om skriftet: »Skjøndt nærmest bestemt for det philosophiske Cursus, vil det, som jeg haaber, tillige foreløbigt kunne benyttes af mine theologiske Tilhørere, indtil jeg seer mig istand til at forelægge disse en Lærebog, udarbeidet efter en større Maalestok, med bestemt Hensyn til Moralens theologiske Momenter. Da min theologiske Moral er den positive Udførelse af det her fremstillede, almindelige Schema, da altsaa Systemets almindelige Structur og Grundbegrebernes Stilling til hinanden er den samme, vil jeg herved kunne fritage saavel mine Tilhørere som mig selv, idetmindste for en Deel af den baade trættende og tidsspildende Dicteren. Det vil ogsaa væsentligt blive mine theologiske Forelæsninger, i hvilke jeg nu vil kunne gjøre Brug af denne Ledetraad«, s. III. Den bebudede lærebog blev imidlertid ikke udarbejdet i SKs levetid. Ved siden af Heiberg og Martensen hentydes der til <persName key="Nielsen, Rasmus">Rasmus Nielsen</persName> (<ptr type="commentary" target="#aas-21" n="42,66"/>) og <persName key="Stilling, Peter Michael">P.M. Stilling</persName> (<ptr type="commentary" target="#aas-62" n="44,30"/>).</p>
-  </note>
-  <note type="commentary" xml:id="aas-21" n="42,66">
-   <label><hi rendition="#bol">Prof. R. Nielsen udgivet 21 logiske §§</hi></label>
-   <p><persName key="Nielsen, Rasmus" n="*">Rasmus Nielsen</persName> (1809-84), da. teolog og filosof; lic. theol. i 1840, fra 1841 ekstraordinær prof. i moralfilosofi ved <placeName>Københavns Universitet</placeName>. I begyndelsen af sin karriere var han stærk inspireret af <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName> (<ptr type="commentary" target="#aas-35" n="43,37"/>) og udgav <hi rendition="#ita">Den speculative Logik i dens Grundtræk,</hi> hæfte 1-4, <placeName key="København">Kbh.</placeName> 1841-44, hvis første hæfte udkom 1841 og indeholdt §§ 11-21, s. 1-112.</p>
-  </note>
-  <note type="commentary" xml:id="aas-22" n="42,69">
-   <label><hi rendition="#bol">antydet paa Omslaget</hi></label>
-   <p>Der sigtes muligvis til forsatsbladet i første hæfte (dateret 10. nov. 1841) i <persName key="Nielsen, Rasmus">Rasmus Nielsen</persName>s <hi rendition="#ita">Den speculative Logik i dens Grundtræk</hi> (<ptr type="commentary" target="#aas-21" n="42,66"/>), hvor det hedder: »Disse Grundtræk ere at betragte som Fragment af en philosophisk Methodologi, hvis første Del skulde indeholde Logiken med en forudskikket Indledning«. Værket blev aldrig fuldført.</p>
-  </note>
-  <note type="commentary" xml:id="aas-23" n="42,73">
-   <label><hi rendition="#bol">Jeg eier tilfældigvis Diderots og d'Alemberts Encyklopædi ... kun 28 Foliobind</hi></label>
-   <p>Der sigtes til de fr. filosoffer m.m. <persName key="Diderot, Denis" n="*">Denis Diderot</persName> (1713-84) og <persName key="d'Alembert, Jean le Rond" n="*">Jean le Rond d'Alembert</persName> (1717-83), som var de vigtigste drivkræfter bag <hi rendition="#ita">Encyclopédie ou Dictionnaire raisonné des sciences, des arts et des métiers.</hi> Værket udkom i perioden 1751-72 i 28 bind i folioformat, hvorefter fulgte fem supplementsbind (1776-77) samt to registerbind (1780). Værket er ikke registreret i auktionsprotokollen over den bogsamling (ktl.), der blev solgt efter SKs død 8.-10. april 1856.</p>
-  </note>
-  <note type="commentary" xml:id="aas-96" n="42,77">
-   <label><hi rendition="#bol">ei fulde 21, da de 10 første mangle</hi></label>
-   <p><ptr type="commentary" target="#aas-21" n="42,66"/>.</p>
-  </note>
-  <note type="commentary" xml:id="aas-97" n="42,78">
-   <label><hi rendition="#bol">til Vederlag</hi></label>
-   <p>til gengæld, som kompensation.</p>
-  </note>
-  <note type="commentary" xml:id="aas-24" n="43,3">
-   <label><hi rendition="#bol">Subscriptionsplan paa et Moralsystem ... bliver 24 Ark</hi></label>
-   <p>Der sigtes til, at <persName key="Nielsen, Rasmus">Rasmus Nielsen</persName> i <hi rendition="#ita">Kjøbenhavnsposten,</hi> nr. 229, den 21. aug. 1839, s. 920, indbød til subskription på <hi rendition="#ita">Grundtræk til en christelig Moral</hi> i to dele. Værket agtede han at udgive, som det hedder: »I Løbet af Vinteren«. Om fremstillingen oplyses følgende: »Da Udarbeidelsen nærmest er foranlediget ved et mundligt Foredrag, som Undertegnede har havt den Ære at holde for en Deel Studerende i Auditoriet paa Collegium Medicæum [Borchs Kollegium], saa vil Fremstillingen i flere Henseende <hi rendition="#ita">(...)</hi> bære Spor heraf.« Under indbydelsen oplyser Rasmus Nielsens forlægger <persName key="Klein, H.C.">H.C. Klein</persName>: »Ovennævnte Bog, som vil udgjøre 20 à 24 Ark, leveres Subscribenterne for 8 ß [skilling] Arket.« Bogen udkom aldrig. – <hi rendition="#bol">Subscriptionsplan:</hi> plan for et større værk el. tidsskrift, der skal udgives bind- eller hæftevis, og som publikum forud forpligter sig til at aftage.</p>
-  </note>
-  <note type="commentary" xml:id="aas-120" n="43,9">
-   <label><hi rendition="#bol">Hvo</hi></label>
-   <p>hvem.</p>
-  </note>
-  <note type="commentary" xml:id="aas-25" n="43,9">
-   <label><hi rendition="#bol">det Meget, Bastholm har liggende i sin Pult</hi></label>
-   <p>sigter til <persName key="Bastholm, Hans" n="*">Hans Bastholm</persName> (1774-1856), da. præst, forf. og bladudgiver; cand.theol. 1793, fra 1799 residerende kapellan ved <placeName key="Sankt Mikkels Kirke">St. Mikkels Kirke</placeName> i <placeName>Slagelse</placeName> og fra 1801 sognepræst ved <placeName key="Sankt Peders Kirke, Slagelse">St. Peders Kirke</placeName>, ligeledes i Slagelse. Her tænkes på <hi rendition="#ita">Sophrosyne. Et Tidsskrift for den populaire Philosophie,</hi> udg. af H. Bastholm, bd. 1-2, Slagelse 1830-31, hvor han i »Slutningsord«, bd. 2, sp. 295, skriver: »Jeg har endnu et Par Ord at tale med Publikum efterat jeg har sluttet dette Værk: For det første at forsikkre, at Gud er mit Vidne til, at jeg ikke har skrevet det i nogen ærgiærrig Hensigt, eller for nogen timelig Fordeels Skyld; men at jeg meget gierne kunde have beholdt det i min Pult, ligesom saa mange andre Udarbeidelser, naar ikke en Pligtfølelse havde drevet mig til at udgive det«.</p>
-  </note>
-  <note type="commentary" xml:id="aas-26" n="43,11">
-   <label><hi rendition="#bol">Dr. Beck har afskaffet Religionen ... for Systemet</hi></label>
-   <p>sigter til <persName key="Beck, Andreas Frederik" n="*">Andreas Frederik Beck</persName> (1816-61), da. teolog; 1838 cand.theol., 1839 dr.phil. og 1840 lic.theol., forelæste herefter som privatdocent ved <placeName>Københavns Universitet</placeName>. Her tænkes på hans afhandling <hi rendition="#ita">Begrebet Mythus eller den religiøse Aands Form,</hi> <placeName key="København">Kbh.</placeName> 1842, ktl. 424, der er påvirket af den mytologiske tolkning af NT, der blev indledt med <persName key="Strauß, David Friedrich">David Friedrich Strauß</persName> <hi rendition="#ita">Das Leben <persName key="Jesus">Jesu</persName>, kritisch bearbeitet</hi> (<ptr type="commentary" target="#aas-84" n="45,81"/>), og videreført af bl.a. <persName key="Bauer, Bruno">Bruno Bauer</persName> (<ptr type="commentary" target="#aas-84" n="45,81"/>) og <persName key="Feuerbach, Ludwig">Ludwig Feuerbach</persName> (<ptr type="commentary" target="#aas-84" n="45,81"/>). I den upaginerede »Fortale« til afhandlingen skriver Beck bl.a.: »Det forstaaer sig, at det herved ikke har været mig om at gjøre at faae min subjektive Anskuelse ud i Publikum, som hvilken ikke engang denne Fremstilling vil gjelde. Videnskaben er autonomisk, dens Princip har en saadan Selvstændighed og Objektivitet, at den kan udvikles uafhængig og uforstyrret af det kun Partikulære, den Enkelte som saadan Tilhørende. Saaledes er Standpunktet ogsaa i denne Afhandling et reen objektivt, i Sagen selv taget, med Nødvendighed sat i Videnskabens nærværende Udvikling, ligeover for hvilket Forfatterens subjektive Mening slet ikke kan komme i Betragtning. Det er altsaa kun mod denne objektive Side, at et muligt Angreb maatte foretages, hvorimod alle Anmasselser af en hierarchisk Christelighed som kun rettede mod den formentlig subjektive Baggrund i et saadant System, mod Forfatterens Person, hermed engang for alle ere afviiste. Hvis den virkelige Fromhed skulde tage Anstød af dette Skrift, da skulde det smerte mig meget; de Svagere ville imidlertid gjøre bedst i helst at lade saadanne Skrifter være ulæste, de Stærkere ville derimod indsee, at Religionens evige Sandhed, dens substantielle Indhold staaer ligesaa fast i den kritiske Behandling som i den fromme Bevidsthed; det er kun <hi rendition="#ita">Formen,</hi> Religionens specifiske Form, som Kritiken træffer, og selv denne frakjender den ikke en om end kun relativ Berettigelse.« Senere i fortalen retter Beck sin kritik mod »dem, som prætendere fra et philosophisk Standpunkt, navnlig det hegelske, at have erkjendt den religiøse, kirkelige Forestillings Sandhed ikke blot efter dens substantielle Indhold, men med dens specifiske Form, som skal være Indholdet absolut adæqvat, hvorved Religion og Philosophie falde umiddelbar sammen, og desuagtet ikke have Andet at stille mod Virkelighedens (ɔ: det hegelske Systems nærværende Stilling til Religionen) skrigende Modsigelse end et Par sletforstaaede Kategorier, eller vel endog i ægte borneret Selvtilfredshed (som man fortæller mig) et <hi rendition="#ita">Smiil</hi>«.</p>
-  </note>
-  <note type="commentary" xml:id="aas-27" n="43,15">
-   <label><hi rendition="#bol">en ung Lærd ... nedlagt i dets Archiv</hi></label>
-   <p>sigter til den da. naturforsker (især zoolog) <persName key="Steenstrup, Johannes Japetus Smith" n="*">Johannes Japetus Smith Steenstrup</persName> (1813-97), fra aug. 1841 lektor i mineralogi og botanik ved <placeName>Sorø Akademi</placeName>; havde i 1837 vundet en præmie udsat af Videnskabernes Selskab for en afhandling om de forhold, hvorunder nåletræstammer forekommer i de da. moser. Steenstrup havde til Videnskabernes Selskab sendt et forseglet brev indeholdende undersøgelser og resultater, som han for tiden ikke så sig i stand til at offentliggøre, med anmodning om at få det henlagt i selskabets arkiv. På sit møde den 4. feb. 1842 vedtog Videnskabernes Selskab at forsyne brevet med selskabets segl og lade det opbevare i selskabets kasse; jf. nr. 2 i <persName key="Ørsted, Hans Christian">H.C. Ørsted</persName> <hi rendition="#ita">Oversigt over det Kongelige danske Videnskabernes Selskabs Forhandlinger og dets Medlemmers Arbeider i Aaret 1842,</hi> <placeName key="København">Kbh.</placeName> 1842, s. 15f. – <hi rendition="#bol">Videnskabernes Selskab:</hi> Det kgl. danske Videnskabernes Selskab, som blev stiftet i 1742, forestod en række videnskabelige opgaver, herunder udgivelsen af en ordbog, ligesom det hvert år udskrev prisopgaver. Selskabet eksisterer endnu.</p>
-  </note>
-  <note type="commentary" xml:id="aas-28" n="43,24">
-   <label><hi rendition="#bol">blive til Vind</hi></label>
-   <p>mislykkes, blive til intet.</p>
-  </note>
-  <note type="commentary" xml:id="aas-30" n="43,32">
-   <label><hi rendition="#bol">juste-milieu</hi></label>
-   <p>fr., 'den rigtige midte, den rette middelvej'. I politik blev udtrykket spottende brugt om kong <persName key="Ludvig Filip">Louis-Philippe</persName>s balancepolitik, der efter den fr. julirevolution 1830 videreførte det konstitutionelle monarki, men udvidede stemmeretten til at omfatte den rigeste del af middelstanden.</p>
-  </note>
-  <note type="commentary" xml:id="aas-31" n="43,34">
-   <label><hi rendition="#bol">Boniteter</hi></label>
-   <p>kvaliteter (med hensyn til udbud af varer).</p>
-  </note>
-  <note type="commentary" xml:id="aas-32" n="43,34">
-   <label><hi rendition="#bol">Kantianere</hi></label>
-   <p>elever el. tilhængere af den ty. filosof <persName key="Kant, Immanuel" n="*">Immanuel Kant</persName> (1724-1804).</p>
-  </note>
-  <note type="commentary" xml:id="aas-33" n="43,34">
-   <label><hi rendition="#bol">Schleiermacherianere</hi></label>
-   <p>elever el. tilhængere af den ty. teolog og filolog <persName key="Schleiermacher, Friedrich" n="*">Friedrich Daniel Ernst Schleiermacher</persName> (1768-1834).</p>
-  </note>
-  <note type="commentary" xml:id="aas-34" n="43,35">
-   <label><hi rendition="#bol">Hegelianere</hi></label>
-   <p>elever el. tilhængere af den ty. filosof <persName key="Hegel, Georg Wilhelm Friedrich">G.W.F. Hegel</persName> (<ptr type="commentary" target="#aas-35" n="43,37"/>).</p>
-  </note>
-  <note type="commentary" xml:id="aas-35" n="43,37">
-   <label><hi rendition="#bol">Hegel</hi></label>
-   <p><persName key="Hegel, Georg Wilhelm Friedrich" n="*">Georg Wilhelm Friedrich Hegel</persName> (1770-1831), ty. filosof, 1801-06 privatdocent (ekstraordinær prof.) i <placeName>Jena</placeName>, 1816-18 prof. i <placeName>Heidelberg</placeName> og fra 1818 til sin død prof. i <placeName>Berlin</placeName>.</p>
-  </note>
-  <note type="commentary" xml:id="aas-36" n="43,39">
-   <label><hi rendition="#bol">som ere komne ud over Hegel</hi></label>
-   <p>Efter <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>s død i 1831 opstod en række bestræbelser på at ville 'komme ud over' eller 'gå ud over' Hegel, jf. fx <persName key="Sibbern, Frederik Christian">F.C. Sibbern</persName>s anmeldelse af tidsskriftet <hi rendition="#ita"><persName key="Perseus">Perseus</persName>, Journal for den speculative Idee,</hi> udg. af <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>, nr. 1, <placeName key="København">Kbh.</placeName> 1837 (<ptr type="commentary" target="#aas-20" n="42,65"/>), i <hi rendition="#ita">Maanedsskrift for Litteratur</hi> bd. 19, Kbh. 1838, s. 283-360, hvor Sibbern udtrykker sin anerkendelse af, at Heiberg »kan baade bevæge sig nogenlunde frit i de hegelske Anskuelser, saa og [også] begynde at <hi rendition="#ita">gaae ud over</hi> Hegel«, s. 291f.</p>
-  </note>
-  <note type="commentary" xml:id="aas-37" n="43,42">
-   <label><hi rendition="#bol">Antipædobaptister</hi></label>
-   <p>modstandere af barnedåb.</p>
-  </note>
-  <note type="commentary" xml:id="aas-38" n="43,42">
-   <label><hi rendition="#bol">Baptister</hi></label>
-   <p><placeName>Norden</placeName>s første baptistmenighed blev stiftet i <placeName>København</placeName> 1839. Og da de baptistiske familier nægtede at lade deres børn døbe, gav det i perioden 1840-45 anledning til en omfattende diskussion om barnedåb, herunder tidspunktet for den, og om baptismens negative betydning for det statskirkelige princip. Se fx <persName key="Faber, Nikolaj">N. Faber</persName> <hi rendition="#ita">De anabaptistiske Bevægelser i <placeName>Danmark</placeName> betragtede fra det christelige og kirkelige Standpunct,</hi> <placeName>Odense</placeName> 1842, og <persName key="Martensen, Hans Lassen">H.L. Martensen</persName> »Nutidens religiøse Crisis« i <hi rendition="#ita">Intelligensblade,</hi> udg. af <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>, bd. 1-4, Kbh. 1842-44 (jf. ktl. U 56); bd. 1, nr. 3, den 15. april 1842, s. 53-73, især s. 57-61, s. 67 og s. 71-73; Martensen kalder gennemgående baptisterne for 'gendøbere'.</p>
-  </note>
-  <note type="commentary" xml:id="aas-39" n="43,42">
-   <label><hi rendition="#bol">Anabaptister</hi></label>
-   <p>tilhængere af gendåb, gendøbere, se foregående kommentar.</p>
-  </note>
-  <note type="commentary" xml:id="aas-40" n="43,46">
-   <label><hi rendition="#bol">Mediationen</hi></label>
-   <p>de da. hegelianeres gengivelse af <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>s (<ptr type="commentary" target="#aas-35" n="43,37"/>) begreb 'Vermittlung', dvs. formidling (el. forsoning) af modsatte begreber i en højere enhed, hvor begreberne består som ophævede momenter.</p>
-  </note>
-  <note type="commentary" xml:id="aas-110" n="43,47">
-   <label><hi rendition="#bol">Strauszianere</hi></label>
-   <p>elever el. tilhængere af den ty. protestantiske teolog og filosof <persName key="Strauß, David Friedrich">D.F. Strauß</persName> (<ptr type="commentary" target="#aas-84" n="45,81"/>).</p>
-  </note>
-  <note type="commentary" xml:id="aas-106" n="43,48">
-   <label><hi rendition="#bol">Utterslev Mark</hi></label>
-   <p>på SKs tid betegnelsen for de jorder, der hørte til gårdene i skolebyen Utterslev i Brønshøj sogn, beliggende NV for <placeName>København</placeName>. I 1901 blev Utterslev Mark indlemmet i Københavns kommune</p>
-  </note>
-  <note type="commentary" xml:id="aas-42" n="43,49">
-   <label><hi rendition="#bol">Sect</hi></label>
-   <p>hentyder formentlig til en af de gudelige forsamlinger, der hørte til den pietistiske vækkelsesbevægelse. På SKs tid var det alm. at betragte både de gudelige forsamlinger og den baptistiske bevægelse som sekter; se fx <persName key="Martensen, Hans Lassen">H.L. Martensen</persName> »Nutidens religiøse Crisis« i <hi rendition="#ita">Intelligensblade,</hi> udg. af <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>, bd. 1, nr. 3, den 15. april 1842 (<ptr type="commentary" target="#aas-38" n="43,42"/>).</p>
-  </note>
-  <note type="commentary" xml:id="aas-43" n="43,54">
-   <label><hi rendition="#bol">Neophyt</hi>en</label>
-   <p>af sengræsk 'neóphytos', der betegner en nyomvendt el. nyindviet i mysterierne, kristendommen e.l.</p>
-  </note>
-  <note type="commentary" xml:id="aas-45" n="43,58">
-   <label><hi rendition="#bol">Pistolstrædet</hi></label>
-   <p>lille gade med indgang fra <placeName key="Pedermadsensgang">Peder Madsens Gang</placeName> (<ptr type="commentary" target="#aas-47" n="43,62"/>) og gennemgang til Store <placeName>Grønnegade</placeName>, nuværende Grønnegade (<hi rendition="#ita">se kort 2 D2</hi>).</p>
-  </note>
-  <note type="commentary" xml:id="aas-46" n="43,62">
-   <label><hi rendition="#bol">Christenbernikovstræde</hi></label>
-   <p>nuværende <placeName key="Kristen Bernikows Gade">Kristen Bernikovs Gade</placeName>, dengang en meget smal gade mellem <placeName>Østergade</placeName> og Gammelmynt (nuværende <placeName>Gammel Mønt</placeName>), som løb parallelt med <placeName key="Pedermadsensgang">Peder Madsens Gang</placeName> (<hi rendition="#ita"><ref target="../kort/kbh_C2.htm" type="map" n="kbh">se kort 2, C2</ref></hi>).</p>
-  </note>
-  <note type="commentary" xml:id="aas-47" n="43,62">
-   <label><hi rendition="#bol">Peder Madsens Gang</hi></label>
-   <p>nuværende <placeName>Ny Østergade</placeName>, dengang et smalt stræde med boliger for almuen, søgt af prostituerede og deres kunder. Strædet var åben mod Store <placeName>Grønnegade</placeName> og havde gennem en port adgang til <placeName>Østergade</placeName> el. 'Routen', som <placeName>Strøget</placeName> dengang kaldtes (<hi rendition="#ita"><ref target="../kort/kbh_D2.htm" type="map" n="kbh">se kort 2, D2</ref></hi>).</p>
-  </note>
-  <note type="commentary" xml:id="aas-49" n="43,71">
-   <label><hi rendition="#bol">een Gang om Maaneden ... høiærværdig Stemme</hi></label>
-   <p>sigter til <persName key="Mynster, Jakob Peter" n="*">Jakob Peter Mynster</persName> (1775-1854), da. præst, forf., politiker; fra 1802 sognepræst i <placeName>Spjellerup</placeName> og <placeName>Smerup</placeName>, indtil han i 1811 blev residerende kapellan ved <placeName>Vor Frue Kirke</placeName> i <placeName>København</placeName> og fra 1826 tillige hofprædikant; fra 1828 kgl. konfessionarius samt hof- og slotspræst ved <placeName>Christiansborg Slotskirke</placeName>, og fra 1834 biskop over <placeName key="Sjællands Stift">Sjællands stift</placeName>. Han blev Dannebrogsmand i 1826 og fik i 1836 tildelt Storkors af Dannebrog. Han prædikede hyppigt i de københavnske kirker, især i Vor Frue Kirke og i Slotskirken. If. de offentliggjorte prædikantlister prædikede biskop Mynster i denne periode stort set én gang om måneden i Slotskirken (<hi rendition="#ita"><ref target="../kort/kbh_B2.htm" type="map" n="kbh">se kort 2, B2</ref></hi>), nemlig 10. jan., 7. feb., 7. marts, 4. april, 13. juni, 11. juli, 15. aug. 12. sept., 17. okt., 14. nov. og 12. dec. 1841 samt 23. jan., 20. feb., 20. marts, 8. maj, 14. maj og 19. juni 1842. – <hi rendition="#bol">høiærværdig:</hi> If. rangforordningen af 14. okt. 1746 (med ændringer ved bekendtgørelse af 12. aug. 1808) indgik 'højærværdig' i titulaturen for den højere og højeste gejstlighed, placeret i 2. til 6. klasse, således både landets biskopper og Københavns sognepræster, hofprædikanterne og de teologiske doktorer m.fl.</p>
-  </note>
-  <note type="commentary" xml:id="aas-52" n="43,77">
-   <label><hi rendition="#bol">et Analogon</hi></label>
-   <p>af gr. ana logon, 'i samme forhold'; noget tilsvarende, et sidestykke.</p>
-  </note>
-  <note type="commentary" xml:id="aas-53" n="43,78">
-   <label><hi rendition="#bol">den Politirets-Assessor ... tillige var Commission</hi></label>
-   <p>Om der sigtes til noget historisk konkret, er ikke opklaret. En politiretsassessor (el. blot politiassessor) var en dommer ved en politiret, der havde til opgave at undersøge i mindre omfang at dømme i indkomne sager, idet egentlige kriminalsager blev henvist til dom i Hof- og Stadsretten. Den assessor, der her tales om, var åbenbart både den undersøgende dommer og hele undersøgelseskommissionen.</p>
-  </note>
-  <note type="commentary" xml:id="aas-56" n="43,82">
-   <label><hi rendition="#bol">hin mærkværdige Mand, Lippe-Detmold og Schaumburg-Lippe ... Contingent</hi></label>
-   <p>Den anekdote, der formentlig hentydes til, har ikke ladet sig verificere. Men bagved ligger formentlig det historiske forhold, at de små nordvesttyske fyrstedømmer Lippe-Detmold og Schaumburg-Lippe i april 1807 sluttede sig til Rhinforbundet, der på <persName key="Napoleon Bonaparte">Napoleon</persName>s initiativ og med ham som protektor var blevet stiftet i <placeName>Paris</placeName> i juli 1806 af 16 syd- og vesttyske fyrstedømmer, som således løsrev sig fra det ty.-rom. kejserrige. Rhinforbundet var stiftet som en militæralliance med <placeName>Frankrig</placeName> efter princippet 'én for alle og alle for én', alle forbundets medlemmer forpligtede sig til at stille store kontingenter soldater til rådighed for Frankrig. Dette medførte et nært samarbejde ml. Lippe-Detmold og Schaumburg-Lippe, der stillede hhv. 3½ og 1½ kompagni, tilsammen kaldt »Bataillon Lippe«; antallet af soldater ændrede sig dog en del frem til Napoleons nederlag ved <placeName>Leipzig</placeName> i okt. 1813, hvormed forbundet opløstes. Herefter sluttede både Lippe-Detmold og Schaumburg-Lippe sig til alliancen ml. <placeName>Preussen</placeName>, <placeName>Østrig</placeName> og <placeName>Rusland</placeName> mod Frankrig. Se <persName key="Dewall, H. v.">H. v. Dewall</persName> »Kurzer Abriß der Lippischen Militärgeschichte« i <hi rendition="#ita">Lippische Mitteilungen aus Geschichte und Landeskunde</hi> bd. 31, Detmold 1962, s. 81-112; s. 90-95. – De to fyrstedømmer har fælles historisk baggrund; da grev <persName key="Simon VI">Simon VI</persName> inden sin død i 1613 delte sit fyrstedømme Lippe mellem sine tre sønner, blev den ældste, <persName key="Simon VI">Simon VII</persName>, greve af fyrstedømmet Lippe med hovedstaden <placeName>Detmold</placeName>, derfor ofte kaldt <placeName>Lippe-Detmold</placeName>, og den yngste, <persName key="Philipp af Schaumburg">Philipp</persName>, greve af fyrstedømmet Bückeburg el. Schaumburg, også kaldt <placeName>Schaumburg-Lippe</placeName>, beliggende NØ for Lippe-Detmold. Se fx <hi rendition="#ita">Allgemeine deutsche Real-Encyklopädie für die gebildeten Stände. (Conversations-Lexikon),</hi> 8. udg., bd. 1-12, Leipzig 1833-37, ktl. 1299-1310; bd. 8, 1835, s. 658f. – <hi rendition="#bol">stillede i Marken:</hi> militært udtryk: sætter i felten.</p>
-  </note>
-  <note type="commentary" xml:id="aas-57" n="44,11">
-   <label><hi rendition="#bol">Carstensen</hi></label>
-   <p><persName key="Carstensen, Georg Johan Bernhard" n="*">Georg Johan Bernhard Carstensen</persName> (1812-57), da. officer, bladudgiver, stifter af <placeName>Tivoli</placeName> og andre forlystelsessteder. Fra jan. 1839 til juni 1841 udgav han ugebladet <hi rendition="#ita">Portefeuillen. Et literairt-artistisk Skrivt</hi> og en tilhørende kvartalsbog. Fra juli 1841 til juni 1842 udgav han ugebladet <hi rendition="#ita"><persName key="Figaro">Figaro</persName>. Journal for Literatur, Kunst og Musik,</hi> som ledsagedes af <hi rendition="#ita">Figaros Supplementsblade for Literatur-, Kunst- og Musiknyheder</hi> og fire kvartalsbind indeholdende skønlitteratur. Desuden blev <hi rendition="#ita">Figaro</hi> fra 3. april til 25. dec. 1842 suppleret med <hi rendition="#ita">Nye Intelligensblade,</hi> der udkom i kvartformat; heri polemiseredes der mod <persName key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> (<ptr type="commentary" target="#aas-58" n="44,14"/>) og hans tidsskrift <hi rendition="#ita">Intelligensblade,</hi> der udkom fra 15. marts 1842 til 1. marts 1844. For abonnenterne af <hi rendition="#ita">Figaro</hi> arrangerede Carstensen illuminerede friluftsfester med fyrværkeri i Rosenborg Have, og den 4. april 1842 fik han et femårigt kgl. privilegium til at oprette et sommertivoli, der i august 1843 åbnede på glaciset uden for <placeName>Vesterport</placeName>. Carstensen var kendt for sin bohemeagtige fremtræden.</p>
-  </note>
-  <note type="commentary" xml:id="aas-58" n="44,14">
-   <label><hi rendition="#bol">Professor Heiberg</hi></label>
-   <p><persName key="Heiberg, Johan Ludvig" n="*">Johan Ludvig Heiberg</persName> (1791-1860) var da. digter, redaktør og kritiker. Han blev student 1809, foretog derefter rejser til <placeName>Paris</placeName> og <placeName>London</placeName>, var 1822-25 da. lektor i <placeName>Kiel</placeName>, 1828-39 ansat som teaterdigter og oversætter ved <placeName key="Kongelige Teater, Det">Det kgl. Teater</placeName>. I 1829 blev han titulær prof.; 1830-36 var han docent i logik, æstetik og da. litteratur ved Den kgl. militære Høiskole. Heiberg var tidens førende æstetiske smagsdommer.</p>
-  </note>
-  <note type="commentary" xml:id="aas-59" n="44,24">
-   <label><hi rendition="#bol">den udygtigste i Troja</hi></label>
-   <p>Hvad der hentydes til, er ikke identificeret. Med <placeName>Troja</placeName> sigtes til oldtidsbyen i det nordvestlige <placeName>Lilleasien</placeName>. – <hi rendition="#bol">udygtigste:</hi> udueligste.</p>
-  </note>
-  <note type="commentary" xml:id="aas-60" n="44,26">
-   <label><hi rendition="#bol">Bastholms Strøtanker</hi></label>
-   <p>hentyder til <hi rendition="#ita">Sophrosyne. Et Tidsskrift for den populaire Philosophie,</hi> udg. af <persName key="Bastholm, Hans">H. Bastholm</persName> (<ptr type="commentary" target="#aas-25" n="43,9"/>), hvor det bd. 1, s. 1, hedder: »Den aphoristiske Form vil ofte blive valgt, da den meest tiener til at lette og til at befordre Tænksomhed.«</p>
-  </note>
-  <note type="commentary" xml:id="aas-61" n="44,27">
-   <label><hi rendition="#bol">Hegels Logik</hi></label>
-   <p>G.W.F. Hegel (<ptr type="commentary" target="#aas-35" n="43,37"/>) <hi rendition="#ita">Wissenschaft der Logik,</hi> udg. af <persName key="Henning, L. von">L. von Henning</persName>, bd. 1,1-1,2 og bd. 2, <placeName>Berlin</placeName> 1833-34 [1812-16], ktl. 552-554; bd. 3-5 i <hi rendition="#ita"><persName key="Hegel, Georg Wilhelm Friedrich">Georg Wilhelm Friedrich Hegel</persName>'s Werke. Vollständige Ausgabe</hi> bd. 1-18, Berlin 1832-45 (<hi rendition="#ita">Jub.</hi> bd. 4-5).</p>
-  </note>
-  <note type="commentary" xml:id="aas-62" n="44,30">
-   <label><hi rendition="#bol">Stilling</hi></label>
-   <p><persName key="Stilling, Peter Michael" n="*">Peter Michael Stilling</persName> (1812-69), da. filosof; opgav teologistudiet kort før eksamen, men fik i 1844 dispensation til at disputere for magistergraden. Han var i begyndelsen af 1840'erne tilhænger af <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName> (<ptr type="commentary" target="#aas-35" n="43,37"/>) og gjorde sig til talsmand for de konservative, højrehegelianske forsøg på at forene filosofi og teologi. Her sigtes til Stillings skrift <hi rendition="#ita">Philosophiske Betragtninger over den speculative Logiks Betydning for Videnskaben, i Anledning af Professor <persName key="Nielsen, Rasmus">R. Nielsen</persName>s: »den speculative Logik i dens Grundtræk«</hi> [<ptr type="commentary" target="#aas-21" n="42,66"/>], <placeName key="København">Kbh.</placeName> 1842. I forordet skriver Stilling: »Det vil udentvivl letteligen indrømmes, at man under vore nærværende Forhold, ved at anstille Betragtninger, der sigte til at eftervise det Logiskes Betydning for Videnskaben, er udsat for at falde snart i Scylla snart i Charybdis, eftersom vi nemlig befinde os i en videnskabelig Overgangsperiode. Og ligesom man derfor, ved at anbefale det Logiske, paa den ene Side vil staae i Fare for at anprise det, der ingen Anpriisning behøver, eftersom det alt af Flere er anerkjendt for at være ligesaa nødvendigt for Livet i Videnskaben, som det daglige Brød er uundværligt for det physiske Liv: saaledes vil man paa den anden Side være udsat for at tilbageholde Betragtninger, der dog maaskee paa dette eller hiint Punkt kunne være fornødne og veiledende. / Muligviis vil derfor en eller anden Læser – der eensidigen holder fast paa dette Skifts introducerende Bestemmelse og seer bort fra de litteraire Forholdes Beskaffenhed – finde, at vi alt paa Afhandlingens første Blade ikke ere gaaede indledende nok tilværks. Men, selv om saa skulde være, hvilket vi dog ikke troe, maa Læseren ikke lade sig afskrække fra at gaae videre; og den introducerende Charakteer han søger, vil han maaskee da bedre finde«, s. 3f. På s. 6 skriver Stilling: »Det er udentvivl saa langt fra, at en speculativ Logik nu kommer uindbuden, at den tvertimod maa betragtes som forlængesiden inviteret og med Længsel oppebiet.« Og på s. 7 udtrykker han »den Formening, at Vigtigheden, ja Uundværligheden af den speculative Logiks Studium for Enhver, der vil forholde sig enten receptiv eller productiv med Hensyn til Philosophiens reale Videnskaber, hos os endnu neppe tilfulde er fattet. Skulde denne vor Formening være rigtig <hi rendition="#ita">(...)</hi> saa ville nogle Betragtninger, med Hensyn til den Rolle, det Logiske spiller, ikke kunne siges at komme post festum.«</p>
-  </note>
-  <note type="commentary" xml:id="aas-63" n="44,30">
-   <label><hi rendition="#bol">meddele os den sidste Olie</hi></label>
-   <p>berede os til døden; give os den sidste behandling. I Den rom.-katolske Kirke salves den døende med indviet olie eller salve efter skriftemål og altergang.</p>
-  </note>
-  <note type="commentary" xml:id="aas-65" n="44,39">
-   <label><hi rendition="#bol">Efterslægten</hi></label>
-   <p>de kommende slægtled, efterverdenen.</p>
-  </note>
-  <note type="commentary" xml:id="aas-102" n="44,57">
-   <label><hi rendition="#bol">I yngre Aar</hi></label>
-   <p><ptr type="commentary" target="#aas-103" n="44,64"/>.</p>
-  </note>
-  <note type="commentary" xml:id="aas-67" n="44,58">
-   <label><hi rendition="#bol">Borgervæbningens Maneuvrer paa Fælleden</hi></label>
-   <p>sigter til »Kjøbenhavns Borgervæbning«, et værn, i hvilket våbenføre mænd af borgerstanden skulle indrulleres, så snart de var fyldt 18 år. Borgervæbningen holdt parader og øvelser på græsningsarealerne <placeName>Nørre Fælled</placeName>, <placeName>Blegdams Fælled</placeName> og <placeName>Østre Fælled</placeName> (nuværende <placeName>Fælledparken</placeName>) NØ for <placeName key="Sortedams Sø">Sortedam Sø</placeName>.</p>
-  </note>
-  <note type="commentary" xml:id="aas-68" n="44,59">
-   <label><hi rendition="#bol">Konge-Revue</hi></label>
-   <p>kongelig inspektion af tropper.</p>
-  </note>
-  <note type="commentary" xml:id="aas-103" n="44,64">
-   <label><hi rendition="#bol">rider hen til ham ... »Hele Bataillonen omkring!«</hi></label>
-   <p>sml. journaloptegnelsen <ref target="../EE/txt.xml#n32" type="journalsAndPapers" n="32">EE:32</ref>, dateret 3. marts 1839: »idet han reed hen til ham, hvidskede han: 'Hr. Major, De kommer til at gjøre omkring'; hvorpaa Majoren med høi Komandostemme raabte: 'Hele Bataillonen omkring' og kom derved til at holde igjen ligesaa forkeert ikke at tale om at hele Bataillonen kommer til at staae forkeert. See det er Ulykken med Politikerne, altid hedder det 'hele Bataillonen', uagtet det kun er dem selv, der skulle gjøre omkring.« <hi rendition="#ita">SKS</hi> 18, 16.</p>
-  </note>
-  <note type="commentary" xml:id="aas-69" n="44,63">
-   <label><hi rendition="#bol">den afdøde Konge</hi>s</label>
-   <p><persName key="Frederik VI">Frederik VI</persName> (1768 - 3. dec. 1839), fra 1808 konge over <placeName>Danmark</placeName> og <placeName>Norge</placeName>, efter afståelsen af Norge ved freden i <placeName>Kiel</placeName> 1814 kun over Danmark.</p>
-  </note>
-  <note type="commentary" xml:id="aas-112" n="44,77">
-   <label><hi rendition="#bol">vedbliver <hi rendition="#ita">(...)</hi> i Marschen</hi></label>
-   <p>el. vedbliver i marchen, dvs. fortsætter med at marchere.</p>
-  </note>
-  <note type="commentary" xml:id="aas-73" n="45,13">
-   <label><hi rendition="#bol">Dr. Beck ... uddrevet min Disputats af Læseverdenens Glemsel</hi></label>
-   <p>sigter til <persName key="Beck, Andreas Frederik">A.F. Beck</persName>s (<ptr type="commentary" target="#aas-26" n="43,11"/>) anmeldelse af SKs magisterafhandling <hi rendition="#ita">Om Begrebet Ironi med stadigt Hensyn til <persName key="Sokrates">Socrates</persName></hi> (1841), nr. I og nr. II i <hi rendition="#ita">Fædrelandet,</hi> nr. 890, den 29. maj, sp. 7133-7140, og nr. 897, den 5. juni 1842, sp. 7189-7191. If. den indstilling, som de officielle opponenter ved disputatshandlingen den 29. sept. 1841, <persName key="Sibbern, Frederik Christian">F.C. Sibbern</persName> og <persName key="Brøndsted, Peter Oluf">P.O. Brøndsted</persName>, to dage senere sendte til Direktionen for <placeName key="København Universitet">Universitetet</placeName> og de lærde Skoler, havde Beck opponeret ex auditorio, se <ref target="../BI/txr.xml#ss144" type="textCriticalAccount" n="144">tekstredegørelsen til <hi rendition="#ita">Om Begrebet Ironi</hi> i <hi rendition="#ita">SKS</hi> K1, 144</ref>f.</p>
-  </note>
-  <note type="commentary" xml:id="aas-74" n="45,16">
-   <label><hi rendition="#bol">Recensent</hi></label>
-   <p>anmelder.</p>
-  </note>
-  <note type="commentary" xml:id="aas-75" n="45,16">
-   <label><hi rendition="#bol">Oversigt over Bogens Indhold</hi></label>
-   <p>se især første del af <persName key="Beck, Andreas Frederik">Beck</persName>s anmeldelse i <hi rendition="#ita">Fædrelandet,</hi> nr. 890 (<ptr type="commentary" target="#aas-73" n="45,13"/>), sp. 7136-7140, og anden del i <hi rendition="#ita">Fædrelandet,</hi> nr. 897, sp. 7189-7191.</p>
-  </note>
-  <note type="commentary" xml:id="aas-113" n="45,18">
-   <label><hi rendition="#bol">Til Slutning ... jeg fortjener at dadles ... Allusioner, han ikke forstaaer</hi></label>
-   <p>sigter til slutningen af anden del af <persName key="Beck, Andreas Frederik">Beck</persName>s anmeldelse i <hi rendition="#ita">Fædrelandet,</hi> nr. 897 (<ptr type="commentary" target="#aas-73" n="45,13"/>), sp. 7191, hvor han efter at have rost sproget og fremstillingen skriver: »Derimod maa det dadles, at der findes en Deel Allusioner og Hentydninger i Bogen, som vistnok [helt sikkert] de Færreste forstaae, og i hvilke navnlig Referenten ikke kan have den Ære at følge Hr. Forfatteren«.</p>
-  </note>
-  <note type="commentary" xml:id="aas-78" n="45,45">
-   <label><hi rendition="#bol">proprio motu</hi></label>
-   <p>lat., 'af egen drift el. tilskyndelse'. Udtrykket 'motu proprio' bliver særlig brugt i sammenhæng med visse pavelige reskripter.</p>
-  </note>
-  <note type="commentary" xml:id="aas-118" n="45,57">
-   <label><hi rendition="#bol">at Dr. B. ikke har forstaaet ... hvad Dr. B. har forstaaet</hi></label>
-   <p>hentyder til en anekdote om <persName key="Sokrates">Sokrates</persName>, som er overleveret i 2. bog, kap. 5, afsnit 22, i <persName key="Diogenes Laertios">Diogenes Laertios</persName>' filosofihistorie: »Euripid havde leveret ham <persName key="Heraklit">Heraklit</persName>s Skrift, og spurgde, hvad han syntes derom? Da, siger man, han svarede: det jeg har forstaaet deraf, er retskaffen godt; jeg mener, at det, jeg ikke har forstaaet, er det ligeledes«, <hi rendition="#ita">Diogen Laërtses filosofiske Historie, eller: navnkundige Filosofers Levnet, Meninger og sindrige Udsagn, i ti Bøger,</hi> overs. af <persName key="Riisbrigh, Børge">B. Riisbrigh</persName>, udg. af <persName key="Thorlacius, Børge">B. Thorlacius</persName>, bd. 1-2, <placeName key="København">Kbh.</placeName> 1812, ktl. 1110-1111; bd. 1, s. 66. SKs umiddelbare kilde er <persName key="Hamann, Johann Georg" n="*">J.G. Hamann</persName> (1730-88), der i den anden dedikation af skriftet <hi rendition="#ita">Sokratische Denkwürdigkeiten</hi> (1759) siger: »Sokrates war, meine Herren, kein gemeiner Kunstrichter. Er unterschied in den Schriften des Heraklitus dasjenige, was er nicht verstand, von dem, was er darin verstand, und that eine sehr billige und bescheidene Vermuthung von dem Verständlichen auf das Unverständliche«, <hi rendition="#ita">Hamann's Schriften,</hi> udg. af <persName key="Roth, Friedrich">F. Roth</persName>, bd. 1-7, <placeName>Berlin</placeName> 1821-25, og bd. 8,1-2, udg. af <persName key="Wiener, Gustav Adolph">G.A. Wiener</persName>, Berlin 1842-43, ktl. 536-544; bd. 2, 1821, s. 12.</p>
-  </note>
-  <note type="commentary" xml:id="aas-80" n="45,72">
-   <label><hi rendition="#bol">Politidirecteuren</hi></label>
-   <p>efter 1814 chefen for politiet i <placeName>København</placeName>.</p>
-  </note>
-  <note type="commentary" xml:id="aas-81" n="45,73">
-   <label><hi rendition="#bol">Consistorium</hi></label>
-   <p>kollegialt råd af professorer, som styrede universitetet under rektors ledelse.</p>
-  </note>
-  <note type="commentary" xml:id="aas-82" n="45,78">
-   <label><hi rendition="#bol">den Bog, som Hr. Dr. i disse Dage har udgivet</hi></label>
-   <p>sigter til <persName key="Beck, Andreas Frederik">A.F. Beck</persName>s <hi rendition="#ita">Begrebet Mythus eller den religiøse Aands Form</hi> (<ptr type="commentary" target="#aas-26" n="43,11"/>), hvis upaginerede »Fortale« er dateret »Kjøbenhavn den 29de April 1842«. Bogen blev averteret i <hi rendition="#ita">Adresseavisen,</hi> nr. 124, den 31. maj 1842, som »idag udkommet«.</p>
-  </note>
-  <note type="commentary" xml:id="aas-114" n="45,79">
-   <label><hi rendition="#bol">seer jeg mig ... stukket ind mellem Straußianerne</hi></label>
-   <p>sigter formentlig til § 5 »Bevidstløsheden i Mythedannelsen. Denne viser sig som Tro« i første del af <persName key="Beck, Andreas Frederik">Beck</persName>s <hi rendition="#ita">Begrebet Mythus eller den religiøse Aands Form</hi> (<ptr type="commentary" target="#aas-26" n="43,11"/>), især s. 31, hvor Beck i en note skriver: »Ogsaa <persName key="Kierkegaard, Søren Aabye">Kierkegaard</persName> (Om Begrebet Ironie p. 104 [i <ref target="../BI/txt.xml#ss154" type="publishedWritings" n="154"><hi rendition="#ita">SKS</hi> 1, 154</ref>f., inklusive noten, s. <ref target="../BI/txt.xml#ss155" type="publishedWritings" n="155">155</ref>]) erkjender i Reflexionens Opgang Mythens Undergang.« Herefter diskuterer Beck »den af Strauß paastaaede vel at mærke kun <hi rendition="#ita">paastaaede</hi> ikke beviiste Bevidstløshed om den fingerede Objektivitet i Mythen« og inddrager <persName key="Bauer, Bruno">Bruno Bauer</persName> i sin argumentation, s. 32. Se også § 9 »Den Kunstart, hvortil Mythen svarer, er Poesie«, hvor Beck, s. 53, i en note ligeledes henviser til »om Begrebet Ironie. p. 104 not. [i <ref target="../BI/txt.xml#ss155" type="publishedWritings" n="155"><hi rendition="#ita">SKS</hi> 1, 155</ref>, noten]«. Se desuden følgende kommentar. – <hi rendition="#bol">Straußianerne:</hi> <ptr type="commentary" target="#aas-110" n="43,47"/>.</p>
-  </note>
-  <note type="commentary" xml:id="aas-84" n="45,81">
-   <label><hi rendition="#bol">I Geled med Strausz, Feuerbach, Vatke, Bruno Bauer</hi></label>
-   <p>sigter til § 12 »De i forskjellige videnskabelige Standpunkter grundede Bestemmelser af Mythens Begreb« i første del af <persName key="Beck, Andreas Frederik">Beck</persName>s <hi rendition="#ita">Begrebet Mythus eller den religiøse Aands Form</hi> (<ptr type="commentary" target="#aas-26" n="43,11"/>). Efter at have berørt <persName key="Bauer, Bruno" n="*">Bruno Bauer</persName>s og Strauß's mytebegreb skriver Beck, s. 77: »Kierkegaard giver den træffende Bestemmelse af Begrebet Mythus som Ideens Udlændighedstilstand, dens Timelighed og Rummelighed umiddelbar som saadan. Det forstaaer sig imidlertid, at der ved den blot foreløbige Omtale af dette Begreb tilmed i dets Forhold til det Spekulative i <persName key="Platon">Plato</persName>s Dialoger ikke kan være Tale om en Efterviisning af dens nøiere Forhold til Bevidstheden i Almindelighed, eller om dens Nødvendighed, hvoraf dens fulde Erkjendelse afhænger.« I en note henviser Beck til »Begrebet Ironi. <placeName key="København">Kbhvn</placeName>. 1841 p. 163 [fejl for p. 103, i <ref target="../BI/txt.xml#ss154" type="publishedWritings" n="154"><hi rendition="#ita">SKS</hi> 1, 154</ref>]«. Herefter gennemgår Beck først J.K.W. Vatkes myteforståelse, s. 77f., og derpå Bruno Bauers mytebestemmelse, s. 78-80, bl.a. set i forhold til Strauß' mytebegreb, s. 78f., og under inddragelse af <persName key="Feuerbach, Ludwig">Ludwig Feuerbach</persName>s religionsbegreb, s. 79f. – <hi rendition="#bol">Strausz:</hi> <persName key="Strauß, David Friedrich" n="*">David Friedrich Strauß</persName> (1808-74), ty. evangelisk teolog og filosof; påvirket af <persName key="Schleiermacher, Friedrich">Schleiermacher</persName>s (<ptr type="commentary" target="#aas-33" n="43,34"/>) troslære og tilhænger af <persName key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>s (<ptr type="commentary" target="#aas-35" n="43,37"/>) religionsfilosofi. Fra 1832 var Strauß repetent i <placeName>Tübingen</placeName>, men måtte opgive sin stilling efter udgivelsen af 1. bd. af <hi rendition="#ita">Das Leben <persName key="Jesus">Jesu</persName>, kritisch bearbeitet</hi> bd. 1-2, Tübingen 1835-36. Han blev i 1839 udnævnt til prof. i teologi i <placeName>Zürich</placeName>, men pga. modstand fra kirkelige kredse afskediget inden tiltrædelsen. – <hi rendition="#bol">Feuerbach:</hi> Ludwig Feuerbach (1804-72), ty. venstrehegeliansk filosof og religionskritiker; mest kendt pga. sit angreb på kristendommen i det filosofiske hovedværk <hi rendition="#ita">Das Wesen des Christenthums,</hi> <placeName>Leipzig</placeName> 1841 (jf. ktl. 488, der er en 2. udg., Leipzig 1843). – <hi rendition="#bol">Vatke:</hi> <persName key="Vatke, Johann Karl Wilhelm" n="*">Johann Karl Wilhelm Vatke</persName> (1806-82), ty. evangelisk teolog; elev af bl.a. <persName key="Gesenius, Wilhelm">W. Gesenius</persName>, <persName key="Neander, Johann Wilhelm August">A. Neander</persName> og Hegel. Vatke var 1837-75 prof. i bibelvidenskab og religionsfilosofi i <placeName>Berlin</placeName>, på daværende tidspunkt mest kendt pga. sit hovedværk <hi rendition="#ita">Die Religion des Alten Testamentes nach den kanonischen Büchern entwickelt</hi> bd. 1, Berlin 1835. – <hi rendition="#bol">Bruno Bauer</hi> (1809-82), ty. evangelisk teolog og religionskritiker; elev af Hegel, først højre-, senere venstrehegelianer. Bauer var privatdocent i Berlin, 1839-42 prof. i <placeName>Bonn</placeName>, blev i 1843 pga. sine religiøse anskuelser frakendt retten til at fungere som præst. Han udg. bl.a. <hi rendition="#ita">Kritik der evangelischen Geschichte des <persName key="Johannes">Johannes</persName>,</hi> <placeName>Bremen</placeName> 1840, og <hi rendition="#ita">Kritik der evangelischen Geschichte der Synoptiker</hi> bd. 1-3, Leipzig 1841-42. SK havde <hi rendition="#ita">Zeitschrift für spekulative Theologie,</hi> udg. af Bruno Bauer, bd. 1-3, Berlin 1836-38, ktl. 354-357.</p>
-  </note>
-  <note type="commentary" xml:id="aas-117" n="46,1">
-   <label>holde <hi rendition="#bol">Skridt</hi></label>
-   <p>trit.</p>
-  </note>
-  <note type="commentary" xml:id="aas-85" n="46,2">
-   <label><hi rendition="#bol">ein, zwei, drei</hi></label>
-   <p>dvs. 'eins, zwei, drei', ty., 'en, to, tre'.</p>
-  </note>
-  <note type="commentary" xml:id="aas-86" n="46,4">
-   <label>systematisk-<hi rendition="#bol">geworbne</hi></label>
-   <p>el. gevorbne, af ty. 'geworben', perfektum participium af ty. 'werben', 'hverve'. Udtrykket brugtes især om udenlandske lejesoldater.</p>
-  </note>
-  <note type="commentary" xml:id="aas-87" n="46,5">
-   <label><hi rendition="#bol">»seer flinkt op til Høire, hvor jeg gaaer«</hi></label>
-   <p>militær kommando om at se (op) til højre mod den befalingsmand, der leder marchen som fløjmand.</p>
-  </note>
-  <note type="commentary" xml:id="aas-119" n="46,11">
-   <label><hi rendition="#bol">Husmand</hi></label>
-   <p>mand af landarbejderklassen, der som ejer el. lejer bebor et hus med lidt tilhørende jord.</p>
-  </note>
-  <note type="commentary" xml:id="aas-89" n="46,17">
-   <label><hi rendition="#bol">der er Adskilligt han har moret sig over, men ikke til min Fordeel</hi></label>
-   <p>sigter til slutningen af anden del af <persName key="Beck, Andreas Frederik">Beck</persName>s anmeldelse i <hi rendition="#ita">Fædrelandet,</hi> nr. 897 (<ptr type="commentary" target="#aas-73" n="45,13"/>), sp. 7191, hvor han efter at have kritiseret SK for de uforståelige allusioner (<ptr type="commentary" target="#aas-113" n="45,18"/>) fortsætter: »ligeledes synes Forfatteren ofte at være mindre heldig, hvor han paa en meer positiv Maade har villet glimre med sin Vid; thi hvad der kan behage og passere i en Gade- eller Slaabrokspassiar, det gjør et ganske andet Indtryk ved den Prætension, hvormed det optræder i det trykte Skrift; vistnok [rigtignok, sandt nok] kan det more, det ville vi ikke negte, det har virkelig moret Referenten, men – ikke til Forfatterens Fordeel.«</p>
-  </note>
-  <note type="commentary" xml:id="aas-115" n="46,25">
-   <label><hi rendition="#bol">Rec.</hi></label>
-   <p>recensenten (<ptr type="commentary" target="#aas-74" n="45,16"/>).</p>
-  </note>
-  <note type="commentary" xml:id="aas-91" n="46,31">
-   <label><hi rendition="#bol">Bogen har kostet mig 182 Rbd. 4 Mk. 8 Sk.</hi></label>
-   <p><hi rendition="#ita">Om Begrebet Ironi</hi> (1841) udkom på <persName key="Philipsen, Philip Gerson">P.G. Philipsen</persName>s forlag, men Philipsen fungerede kun som kommissionær. SK skulle altså selv indgå kontrakt med bogtrykkeren og betale direkte for papir og tryk; han bar således den økonomiske risiko. Udover denne bemærkning om SKs udgifter og bogens salgspris (<ptr type="commentary" target="#aas-94" n="46,56"/>) vides intet om udgivelsens økonomiske forhold; jf. <ref target="../BI/txr.xml#ss145" type="textCriticalAccount" n="145">tekstredegørelsen til <hi rendition="#ita">Om Begrebet Ironi</hi> i <hi rendition="#ita">SKS</hi> K1, 145</ref>f., samt <persName key="Brandt, Frithiof">F. Brandt</persName> og <persName key="Thorkelin, Else">E. Thorkelin</persName> <hi rendition="#ita"><persName key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName> og pengene,</hi> 2. udg., <placeName key="København">Kbh.</placeName> 1993 [1935], s. 41-43. – <hi rendition="#bol">182 Rbd. 4 Mk. 8 Sk.:</hi> Den da. møntfod var ved forordning af 31. juli 1818 delt i rigsbankdaler (oftest forkortet Rbd.), mark (Mk.) og skilling (Sk.); der gik således 6 mk. på 1 rbd., 16 sk. på 1 mk. og 96 sk. på 1 rbd. I Hof- og Stadsretten havde en dommer 1.200-1.800 og en fuldmægtig 400-500 rbd. i årsløn. En håndværkssvend tjente almindeligvis 200 rbd. om året, men havde til gengæld fri kost og logi hos mesteren. En pige i huset fik højst 30 rbd. om året foruden kost og logi. Samtidig kostede et par sko o. 3 rbd.</p>
-  </note>
-  <note type="commentary" xml:id="aas-116" n="46,55">
-   <label>hvis <hi rendition="#bol">saa er</hi></label>
-   <p>det forholder sig således.</p>
-  </note>
-  <note type="commentary" xml:id="aas-94" n="46,56">
-   <label><hi rendition="#bol">et Tab af 9 Mk.</hi></label>
-   <p>dvs. salgsprisen for <hi rendition="#ita">Om Begrebet Ironi</hi> (1841) if. <hi rendition="#ita">Bl.art.,</hi> s. 274. Beløbet svarer til 1 rbd. og 48 sk. (<ptr type="commentary" target="#aas-91" n="46,31"/>).</p>
-  </note>
-  <note type="commentary" xml:id="aas-105" n="46,57">
-   <label><hi rendition="#bol">dog ikke fulde 9 Mk.</hi></label>
-   <p>sigter til, at <persName key="Philipsen, Philip Gerson">P.G. Philipsen</persName>s forlag (<ptr type="commentary" target="#aas-91" n="46,31"/>) sandsynligvis beregnede sig en avance på 25% af salgsprisen, så SK kun fik 6 mk. og 12 sk. pr. eksemplar. Jf. <ref target="../BI/txr.xml#ss146" type="textCriticalAccount" n="146"><hi rendition="#ita">SKS</hi> K1, 146</ref>.</p>
-  </note>
- </div></body></text>
+  <text xml:id="id318f113f-f8bb-454f-ae13-c1e682dae928" type="commentary" subtype="ts">
+    <body xml:id="idd43ef3aa-f004-4815-811d-2657fe3ac522">
+      <div xml:id="id16bb5f1c-514b-45a6-9a62-a7f23dad5892">
+        <note type="commentary" xml:id="aas-1" n="41,1">
+          <label xml:id="id2cd7a354-e9ba-45db-99f9-2e497cf8b20d">
+            <hi xml:id="id71062fb5-325f-4b34-8e5c-1c9d9cffd6a2" rendition="#bol">Aabenbart Skriftemaal</hi>
+          </label>
+          <p xml:id="id50278c65-6274-4e29-b22c-b6000d71400e">I <hi xml:id="ida5fc1f74-3413-428a-baf0-5daa70566205" rendition="#ita">Dannemarkes og <placeName xml:id="ide0f39dfb-36f9-4d23-8496-c8649025de47">Norge</placeName>s Kirke-Ritual,</hi> <placeName xml:id="id67f701bd-152e-4ce9-9e72-00cfc610123f" key="København">Kbh.</placeName> 1762 [1685], som stadig var gældende på SKs tid, er der et særligt ritual »Om aabenbare Skriftemaal og Afløsning«, s. 150-159. Det fastsætter, at en person, der har forbrudt sig mod et af de ti bud (det betød i praksis kriminelle forbrydelser og seksuelle forseelser), kunne anmode præsten om lov til at træde frem i kordøren, påhøre en formaningstale og på knæ bekende sine synder i menighedens nærværelse, hvorefter præsten kunne tilsige vedkommende syndernes forladelse (afløsning). Efter at åbenbart skriftemål var blevet mildnet i 1767, gik det efterhånden af brug (jf. »Forslag til et: Kirke-Ritual«, s. 46f., i <persName xml:id="id7e3b3969-40ac-4dd1-892f-5874b157c90c" key="Mynster, Jakob Peter">J.P. Mynster</persName> <hi xml:id="idd0c4bc28-ae4a-4e5b-a797-dcc7421b198f" rendition="#ita">Udkast til en Alterbog og et Kirke-Ritual for <placeName xml:id="idd0bb4e70-9c4e-4d2e-a44f-ebc666db4ac0">Danmark</placeName>,</hi> Kbh. 1839); det blev officielt ophævet i 1866.</p>
+        </note>
+        <note type="commentary" xml:id="aas-2" n="41,2">
+          <label xml:id="id0a67de15-1b0a-4df4-b03b-fa19cf72773f">
+            <hi xml:id="idd236cd71-14ea-44b6-9cda-3230da52396b" rendition="#bol">nedsat</hi>
+          </label>
+          <p xml:id="id0c20e34d-d7b7-438b-9ae3-4910fb7af215">omtalt nedsættende, nedvurderet.</p>
+        </note>
+        <note type="commentary" xml:id="aas-5" n="41,31">
+          <label xml:id="id257109ec-1aa3-493d-ac27-ea1bc4d6f683"><hi xml:id="idd87fc66b-448d-41fc-9fd9-5d2eea077be5" rendition="#bol">afgiver</hi> den Text</label>
+          <p xml:id="id9c871077-6b11-4775-988f-e9e76ba6c007">tjener som.</p>
+        </note>
+        <note type="commentary" xml:id="aas-6" n="41,34">
+          <label xml:id="idf9203dfa-eff2-4bbd-b572-94dc29a77d27">
+            <hi xml:id="id8d83996b-8ac8-4ad2-83b0-731ae6afbfc5" rendition="#bol">anseet og udlagt som Forfatter</hi>
+          </label>
+          <p xml:id="id40713cc4-9051-4f89-83a1-8fd4a97d86be">If. SKs senere oplysninger i journalerne var der faktisk ingen, der havde udlagt ham som forf. af de pågældende artikler; se journaloptegnelsen <ref xml:id="ida5747cae-6c7f-4d1e-8193-d0f27ef5727a" target="../NB6/txt.xml#n16" type="journalsAndPapers" n="16">NB6:16</ref>, fra juli 1848, hvor han kalder artiklen »Aabenbart Skriftemaal« et »Signalskud« og tilføjer: »jeg var den Gang færdig med Manuscriptet til Enten – Eller, og umidd. paa den fulgte Enten – Eller; Artiklen var tillige en Mystifikation: efterat have fralagt mig Forfatterskabet til de mange Avisartikler – som rigtignok Ingen havde tillagt mig – endte jeg med at bede Folk aldrig at ansee Noget for at være af mig, hvorpaa mit Navn ikke stod. Og da var det netop jeg agtede at begynde at være Pseudonym«, <hi xml:id="idfa4af740-7058-4771-a06f-ca4c9f04248e" rendition="#ita">SKS</hi> 21, 17,24-30.</p>
+        </note>
+        <note type="commentary" xml:id="aas-7" n="41,36">
+          <label xml:id="id9ba4b4b4-25be-40c1-be82-2f6c677a28e5">
+            <hi xml:id="id88001ac3-dda9-4dc3-98c8-e4bc1a491ed5" rendition="#bol">Flyveskrifter</hi>
+          </label>
+          <p xml:id="id3cbd0acd-14d8-4a09-83f2-ce7e4914a8be">små trykte skrifter el. pjecer, hvis indhold er afpasset efter tid og lejlighed.</p>
+        </note>
+        <note type="commentary" xml:id="aas-8" n="41,38">
+          <label xml:id="idb26ccaff-24d9-40e4-821d-0b7e6078f6d1">
+            <hi xml:id="idbff580bc-e0b5-499e-9d96-081862ef8957" rendition="#bol">gediegne</hi>
+          </label>
+          <p xml:id="id57ae5bd1-da88-4035-963b-42f6a11b5d7c">ældre form for: gedigne.</p>
+        </note>
+        <note type="commentary" xml:id="aas-9" n="41,40">
+          <label xml:id="id3fd49def-5197-4d83-a3b5-49a1d335716b">
+            <hi xml:id="ide516cd46-082f-48c2-a25c-d281a20d8e5b" rendition="#bol">ephemer</hi>
+          </label>
+          <p xml:id="id0378d846-cd70-4fc4-8fc5-2f0f8ebd28bb">af gr. 'ephēmeros', 'for en dag'; flygtig, kun dagsaktuel.</p>
+        </note>
+        <note type="commentary" xml:id="aas-107" n="41,46">
+          <label xml:id="ide83761c9-144e-4cc7-8894-d6180c870bee">
+            <hi xml:id="id447f9f1b-6d65-426a-8782-771af631bb75" rendition="#bol">Straffedom</hi>
+          </label>
+          <p xml:id="id4580e10b-f459-4e9d-ba87-1fa940c7652a">dom, hvorved en straf tilkendes den, der har begået en forbrydelse el. (i religiøs sprogbrug) synd.</p>
+        </note>
+        <note type="commentary" xml:id="aas-100" n="41,58">
+          <label xml:id="id17bec877-9fd8-4fad-b254-016a8ac95239">
+            <hi xml:id="id661d970c-8e66-42ed-9a42-e3bd61dcff45" rendition="#bol">vilde <hi xml:id="id8ce248cd-a6ad-420a-98e8-903f981c5f9b" rendition="#ita">(...)</hi> virket</hi>
+          </label>
+          <p xml:id="id16c65a2d-4952-4708-afae-799f849d101d">ville have virket.</p>
+        </note>
+        <note type="commentary" xml:id="aas-11" n="41,65">
+          <label xml:id="id78b2ef63-efb1-48d3-b2be-e66b16eae5d8">
+            <hi xml:id="id89920dfb-aabf-47a4-b703-653a7c08fd4e" rendition="#bol">»Folkebladet«</hi>
+          </label>
+          <p xml:id="id68f7bfc1-8758-4768-90df-841933423adf"><hi xml:id="ided4ab87b-612a-4226-b3d1-a5a31ea8d2cd" rendition="#ita">Dansk Folkeblad,</hi> udg. af Selskabet for Trykkefrihedens rette Brug, redigeret af dets skriftkomité, Kbh. 1835-48. Bladet var et medlemsblad for »Selskabet for Trykkefrihedens rette Brug«, som blev stiftet i 1835. I 1841 havde bladet 668 abonnenter i <placeName xml:id="id4033c332-b5d0-4690-942b-d2a18edc9e10">København</placeName> og 4390 udenbys, jf. <persName xml:id="id51e82269-8c0f-4b7b-8c81-4ed1c949060b" key="Søllinge, Jette Drachmann">Jette D. Søllinge</persName> og <persName xml:id="id8140eeee-a4c6-4658-a958-ad63b1aa9230" key="Thomsen, Niels">Niels Thomsen</persName> <hi xml:id="id56548f43-6080-4e82-aa12-919c14d9bdd3" rendition="#ita">De danske aviser 1634-1989</hi> bd. 1, 1989, s. 160f.</p>
+        </note>
+        <note type="commentary" xml:id="aas-12" n="41,65">
+          <label xml:id="id25234093-cd2b-42db-8c44-1f1a5b5dd498">
+            <hi xml:id="id94424ebe-d882-4b5f-bcc2-f874f64479ac" rendition="#bol">»Naturen, Mennesket og Borgeren;«</hi>
+          </label>
+          <p xml:id="id42bc04da-38ff-495c-ae96-fc8299ad5905"><hi xml:id="id7d8e8183-a95c-4c46-8443-d86d652f6664" rendition="#ita">Naturen, Mennesket og Borgeren. Forsøg til en Læsebog for Almueskolernes øverste Klasse,</hi> udg. af <persName xml:id="idce73e0cf-2d11-4d28-970f-5ae715c5815a" key="Birch, David Seidelin">David Seidelin Birch</persName>, <placeName xml:id="idc3625bf1-2f5b-4386-b1db-f7a7d1916808" key="København">Kbh.</placeName> 1821, som var meget udbredt og løbende udkom i nye udgaver, 10. udg. kom i 1842.</p>
+        </note>
+        <note type="commentary" xml:id="aas-101" n="41,69">
+          <label xml:id="id4aa47db1-8415-4860-a800-54653893bb1c">
+            <hi xml:id="id591d2bdb-9438-49d6-817c-a18488affd8e" rendition="#bol">utrættede</hi>
+          </label>
+          <p xml:id="ida00e7b80-bf5d-4559-8769-b165d81dedee">uden at blive træt, utrættelige.</p>
+        </note>
+        <note type="commentary" xml:id="aas-108" n="42,30">
+          <label xml:id="id2444982c-7e83-44d5-82d7-efe9054093ed">
+            <hi xml:id="id37aa7d09-9676-48b1-8937-8886ca9c8bd5" rendition="#bol">aldrig at ansee mig for Forfatter af Noget, hvorpaa mit Navn ei staaer</hi>
+          </label>
+          <p xml:id="id1d49809f-310f-46b9-b7d6-ce25d469fc33"><ptr xml:id="idceb67e1c-8c00-4afb-8294-2ac7087d4140" type="commentary" target="#aas-6" n="41,34"/>.</p>
+        </note>
+        <note type="commentary" xml:id="aas-16" n="42,39">
+          <label xml:id="id5c804d59-ba48-405b-8803-3bd57a97a10a">
+            <hi xml:id="id0adf0f94-844b-46e7-80a9-da3486fae04b" rendition="#bol">mærkværdig</hi>
+          </label>
+          <p xml:id="ide7cc91c1-76a2-47e3-92cb-fa1541b9ff84">bemærkelsesværdig.</p>
+        </note>
+        <note type="commentary" xml:id="aas-109" n="42,64">
+          <label xml:id="id257db47a-6672-45ed-adc6-f2f932fd659d">
+            <hi xml:id="idbe8dbb98-846a-402c-9891-4a0b097dd9c4" rendition="#bol">tyde hen paa</hi>
+          </label>
+          <p xml:id="idfb09dbee-7569-4256-a3ae-250024a73e03">henviser til, peger på.</p>
+        </note>
+        <note type="commentary" xml:id="aas-19" n="42,64">
+          <label xml:id="id205acea5-ca5e-4328-95b4-122005c52846">
+            <hi xml:id="id6f7f8d92-3037-4830-90f4-3299536f0004" rendition="#bol">Tidens Fylde</hi>
+          </label>
+          <p xml:id="id6a9a2e2a-a357-4617-8e94-0f5ffa5ac683">hentyder til Gal. 4,4-5: »Men da tidens fylde kom, sendte Gud sin søn, født af en kvinde, født under loven, for at han skulle løskøbe dem, der var under loven, for at vi skulle få barnekår.«</p>
+        </note>
+        <note type="commentary" xml:id="aas-20" n="42,65">
+          <label xml:id="ide7ed4abd-dc99-452a-8705-8bbd4713f3cc">
+            <hi xml:id="id3732c03b-1b43-4f1e-ae2a-f831ce19ba98" rendition="#bol">Systemet, Tidsalderen arbeider hen til</hi>
+          </label>
+          <p xml:id="idee0f14d4-edfb-49bb-b3a0-cc5cffd8db13">Der hentydes især til de da. hegelianere, som gjorde forsøg på at udarbejde et spekulativt system. <persName xml:id="id81e8afd9-5360-4f52-a055-8257e851eba9" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> (1791-1860) havde tidligt udskudt sin plan om at udføre en samlet æstetik, idet han først ville give en fremstilling af den hegelske, spekulative logik, som skulle danne æstetikkens grund. I begyndelsen af 1830'erne forelæste han som docent ved Den kgl. militaire Høiskole over den spekulative logik, som han også gav en skriftlig fremstilling af til brug for tilhørerne. Senere udgav han afhandlingen »Det logiske System«, indeholdende de første 23 paragraffer. Her hedder det: »Forfatteren tillader sig herved at meddele det første Bidrag til Udførelsen af en længe næret Plan, nemlig at fremstille det logiske System«, <hi xml:id="id2549c053-770b-49ae-ae0c-d915cdc76443" rendition="#ita">Perseus, Journal for den speculative Idee,</hi> udg. af J.L. Heiberg, nr. 1, juni 1837, nr. 2, aug. 1838, ktl. 569; nr. 2, s. 7. Denne afhandling blev dog ikke fulgt op, ligesom det æstetiske system aldrig blev færdiggjort. I sidste halvdel af 1830'erne holdt <persName xml:id="id63135d72-7134-47eb-ad1e-5d0df5f9de30" key="Martensen, Hans Lassen" n="*">H.L. Martensen</persName> (1808-84) en række forelæsninger ved <placeName xml:id="id564e824d-cbdb-45b8-b419-f2834af06ab9">Københavns Universitet</placeName>; resultatet af disse forelæsninger, der især tog afsæt i <persName xml:id="ideaad8e8d-8dbd-4a5d-a3f3-9479a855bebb" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName> (<ptr xml:id="id3a72d006-b6ac-4f11-9ebe-271d4a88150e" type="commentary" target="#aas-35" n="43,37"/>), blev ikke den forventede spekulative dogmatik, kun den mindre anlagte <hi xml:id="id82dd9c2b-7bdb-42a4-a1e3-0db5f1a8acb3" rendition="#ita">Grundrids til Moralphilosophiens System,</hi> <placeName xml:id="idef6d0b58-d53d-47a4-b8fa-0fa0bfd6a431" key="København">Kbh.</placeName> 1841, ktl. 650. I fortalen hedder det om skriftet: »Skjøndt nærmest bestemt for det philosophiske Cursus, vil det, som jeg haaber, tillige foreløbigt kunne benyttes af mine theologiske Tilhørere, indtil jeg seer mig istand til at forelægge disse en Lærebog, udarbeidet efter en større Maalestok, med bestemt Hensyn til Moralens theologiske Momenter. Da min theologiske Moral er den positive Udførelse af det her fremstillede, almindelige Schema, da altsaa Systemets almindelige Structur og Grundbegrebernes Stilling til hinanden er den samme, vil jeg herved kunne fritage saavel mine Tilhørere som mig selv, idetmindste for en Deel af den baade trættende og tidsspildende Dicteren. Det vil ogsaa væsentligt blive mine theologiske Forelæsninger, i hvilke jeg nu vil kunne gjøre Brug af denne Ledetraad«, s. III. Den bebudede lærebog blev imidlertid ikke udarbejdet i SKs levetid. Ved siden af Heiberg og Martensen hentydes der til <persName xml:id="id2297efdc-07a8-4d16-bcb0-32e505832d84" key="Nielsen, Rasmus">Rasmus Nielsen</persName> (<ptr xml:id="ided637839-1e77-40fa-92c5-a2af0e34da2a" type="commentary" target="#aas-21" n="42,66"/>) og <persName xml:id="ida401e52d-f34a-4590-83c4-bdaaf051db93" key="Stilling, Peter Michael">P.M. Stilling</persName> (<ptr xml:id="id6b5ec9f2-e673-44ec-af81-053c1d79ec46" type="commentary" target="#aas-62" n="44,30"/>).</p>
+        </note>
+        <note type="commentary" xml:id="aas-21" n="42,66">
+          <label xml:id="id0cb23f36-3cf9-4a64-bcbd-469f8827c8bd">
+            <hi xml:id="idfea60a43-5330-4b33-a548-2deff44d6b39" rendition="#bol">Prof. R. Nielsen udgivet 21 logiske §§</hi>
+          </label>
+          <p xml:id="id1b4e5829-cd98-441f-868c-695fbe21bacf"><persName xml:id="id32e21bde-95de-40cb-849c-1e7df2ebe369" key="Nielsen, Rasmus" n="*">Rasmus Nielsen</persName> (1809-84), da. teolog og filosof; lic. theol. i 1840, fra 1841 ekstraordinær prof. i moralfilosofi ved <placeName xml:id="idc26e9845-e2ca-422a-b930-a0fbe6c34846">Københavns Universitet</placeName>. I begyndelsen af sin karriere var han stærk inspireret af <persName xml:id="id388120c6-f3eb-4388-8431-869156e6577b" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName> (<ptr xml:id="idbdc813b8-1c9e-4889-9ffd-f70e05c8ff3e" type="commentary" target="#aas-35" n="43,37"/>) og udgav <hi xml:id="idaafd26d7-bceb-4073-a766-ddec99498802" rendition="#ita">Den speculative Logik i dens Grundtræk,</hi> hæfte 1-4, <placeName xml:id="id0f48f577-c01e-4174-bc08-fd6136c6df08" key="København">Kbh.</placeName> 1841-44, hvis første hæfte udkom 1841 og indeholdt §§ 11-21, s. 1-112.</p>
+        </note>
+        <note type="commentary" xml:id="aas-22" n="42,69">
+          <label xml:id="idc1551718-803f-4f91-915b-cca4f7aad333">
+            <hi xml:id="idefa97466-820c-4748-b5f5-69d59bbd2b1e" rendition="#bol">antydet paa Omslaget</hi>
+          </label>
+          <p xml:id="idbf094265-4508-4d9b-97c1-be9cb6f7b265">Der sigtes muligvis til forsatsbladet i første hæfte (dateret 10. nov. 1841) i <persName xml:id="id8fbe6c42-0e96-44d3-ae0a-ecd6b271ae8e" key="Nielsen, Rasmus">Rasmus Nielsen</persName>s <hi xml:id="idbe928458-e5bc-446e-ae80-16b9d3a5f3e9" rendition="#ita">Den speculative Logik i dens Grundtræk</hi> (<ptr xml:id="id8e3a2080-48dd-4873-8171-950f064b0bbc" type="commentary" target="#aas-21" n="42,66"/>), hvor det hedder: »Disse Grundtræk ere at betragte som Fragment af en philosophisk Methodologi, hvis første Del skulde indeholde Logiken med en forudskikket Indledning«. Værket blev aldrig fuldført.</p>
+        </note>
+        <note type="commentary" xml:id="aas-23" n="42,73">
+          <label xml:id="idb01ee8e3-9d18-4b99-93c2-57da5fdcfab6">
+            <hi xml:id="id408143cc-62f8-4f1f-9efd-bccffaf53484" rendition="#bol">Jeg eier tilfældigvis Diderots og d'Alemberts Encyklopædi ... kun 28 Foliobind</hi>
+          </label>
+          <p xml:id="id221b52c6-12af-44ba-afb7-0d9fc6bbc116">Der sigtes til de fr. filosoffer m.m. <persName xml:id="id25b5ed76-30cb-401b-8a1e-edd612f2b5c4" key="Diderot, Denis" n="*">Denis Diderot</persName> (1713-84) og <persName xml:id="iddda635ad-f934-4fb2-af5d-1f2b24b6cefb" key="d'Alembert, Jean le Rond" n="*">Jean le Rond d'Alembert</persName> (1717-83), som var de vigtigste drivkræfter bag <hi xml:id="id8f6050bf-5a7e-4b98-b066-d8b3d729b6e8" rendition="#ita">Encyclopédie ou Dictionnaire raisonné des sciences, des arts et des métiers.</hi> Værket udkom i perioden 1751-72 i 28 bind i folioformat, hvorefter fulgte fem supplementsbind (1776-77) samt to registerbind (1780). Værket er ikke registreret i auktionsprotokollen over den bogsamling (ktl.), der blev solgt efter SKs død 8.-10. april 1856.</p>
+        </note>
+        <note type="commentary" xml:id="aas-96" n="42,77">
+          <label xml:id="id4c9cdda9-7152-41f2-9acc-50ee75f24df2">
+            <hi xml:id="ide414d58d-99a7-4e48-8c09-19528407874a" rendition="#bol">ei fulde 21, da de 10 første mangle</hi>
+          </label>
+          <p xml:id="id5ac4f593-d36c-4525-9ebf-248f572d6d85"><ptr xml:id="id53dba03f-8079-4637-8520-9e5263625612" type="commentary" target="#aas-21" n="42,66"/>.</p>
+        </note>
+        <note type="commentary" xml:id="aas-97" n="42,78">
+          <label xml:id="idd923ade5-ec1d-4249-a717-8b5b303cc4b0">
+            <hi xml:id="id7ed3b638-9011-478e-8947-3b341a863078" rendition="#bol">til Vederlag</hi>
+          </label>
+          <p xml:id="ide9600555-6f68-4707-8bbb-98578fa30716">til gengæld, som kompensation.</p>
+        </note>
+        <note type="commentary" xml:id="aas-24" n="43,3">
+          <label xml:id="id3c36121f-7a35-4de7-b791-d3604c4f249e">
+            <hi xml:id="id586a8a0c-8deb-4da0-ab38-571d30477bc7" rendition="#bol">Subscriptionsplan paa et Moralsystem ... bliver 24 Ark</hi>
+          </label>
+          <p xml:id="idda5c3af4-d36e-4c9b-b16a-3874bc5449e2">Der sigtes til, at <persName xml:id="id723169a9-e0dd-4fbc-a285-3334e5278bd8" key="Nielsen, Rasmus">Rasmus Nielsen</persName> i <hi xml:id="idfab1c4b2-f388-4757-9865-b9346d8c67cc" rendition="#ita">Kjøbenhavnsposten,</hi> nr. 229, den 21. aug. 1839, s. 920, indbød til subskription på <hi xml:id="id0a4ac3d3-01f5-4e0c-a7cc-93a947f46955" rendition="#ita">Grundtræk til en christelig Moral</hi> i to dele. Værket agtede han at udgive, som det hedder: »I Løbet af Vinteren«. Om fremstillingen oplyses følgende: »Da Udarbeidelsen nærmest er foranlediget ved et mundligt Foredrag, som Undertegnede har havt den Ære at holde for en Deel Studerende i Auditoriet paa Collegium Medicæum [Borchs Kollegium], saa vil Fremstillingen i flere Henseende <hi xml:id="id813145a8-2472-40f9-879b-33505a340d94" rendition="#ita">(...)</hi> bære Spor heraf.« Under indbydelsen oplyser Rasmus Nielsens forlægger <persName xml:id="id072561da-9150-49a3-9ee9-77532b26101d" key="Klein, H.C.">H.C. Klein</persName>: »Ovennævnte Bog, som vil udgjøre 20 à 24 Ark, leveres Subscribenterne for 8 ß [skilling] Arket.« Bogen udkom aldrig. – <hi xml:id="id86872b21-c9ed-427b-8ed7-e07cb44cb40f" rendition="#bol">Subscriptionsplan:</hi> plan for et større værk el. tidsskrift, der skal udgives bind- eller hæftevis, og som publikum forud forpligter sig til at aftage.</p>
+        </note>
+        <note type="commentary" xml:id="aas-120" n="43,9">
+          <label xml:id="id9eb00961-ab96-4b3c-ac62-644ecba4e683">
+            <hi xml:id="iddfc9a13d-2790-4877-808b-f82ac6fb6c53" rendition="#bol">Hvo</hi>
+          </label>
+          <p xml:id="id2170119b-e634-4ffb-98f7-3a437f6a7e7c">hvem.</p>
+        </note>
+        <note type="commentary" xml:id="aas-25" n="43,9">
+          <label xml:id="id5534bcd2-bec1-4315-b33b-11d3ed6ca1df">
+            <hi xml:id="idd2c72d44-4c18-44de-a9aa-c95771a53b97" rendition="#bol">det Meget, Bastholm har liggende i sin Pult</hi>
+          </label>
+          <p xml:id="id0afe6a04-754b-4306-8348-fa00e0a4f606">sigter til <persName xml:id="id83664535-7978-4c0d-b184-e8931e5ea8bb" key="Bastholm, Hans" n="*">Hans Bastholm</persName> (1774-1856), da. præst, forf. og bladudgiver; cand.theol. 1793, fra 1799 residerende kapellan ved <placeName xml:id="id46e807f4-2a82-4a2f-b09d-3ecbb0290752" key="Sankt Mikkels Kirke">St. Mikkels Kirke</placeName> i <placeName xml:id="id3ae04b8d-aaa2-41ad-a447-0b0a49b08503">Slagelse</placeName> og fra 1801 sognepræst ved <placeName xml:id="id2357f50b-ca80-4683-9597-40e8b629dcc8" key="Sankt Peders Kirke, Slagelse">St. Peders Kirke</placeName>, ligeledes i Slagelse. Her tænkes på <hi xml:id="id8335bdba-b583-4391-8b73-9844c08bd940" rendition="#ita">Sophrosyne. Et Tidsskrift for den populaire Philosophie,</hi> udg. af H. Bastholm, bd. 1-2, Slagelse 1830-31, hvor han i »Slutningsord«, bd. 2, sp. 295, skriver: »Jeg har endnu et Par Ord at tale med Publikum efterat jeg har sluttet dette Værk: For det første at forsikkre, at Gud er mit Vidne til, at jeg ikke har skrevet det i nogen ærgiærrig Hensigt, eller for nogen timelig Fordeels Skyld; men at jeg meget gierne kunde have beholdt det i min Pult, ligesom saa mange andre Udarbeidelser, naar ikke en Pligtfølelse havde drevet mig til at udgive det«.</p>
+        </note>
+        <note type="commentary" xml:id="aas-26" n="43,11">
+          <label xml:id="id941c1f02-4333-465b-8bc4-c922fe364dd8">
+            <hi xml:id="ide684bc5a-ac9d-42ad-94ce-918c7bf8cf42" rendition="#bol">Dr. Beck har afskaffet Religionen ... for Systemet</hi>
+          </label>
+          <p xml:id="ide430208b-912d-4b99-9696-e55e48ccb819">sigter til <persName xml:id="idd044fcba-fba1-4a33-b52c-e7a6fa9a074d" key="Beck, Andreas Frederik" n="*">Andreas Frederik Beck</persName> (1816-61), da. teolog; 1838 cand.theol., 1839 dr.phil. og 1840 lic.theol., forelæste herefter som privatdocent ved <placeName xml:id="id97e4f147-9495-4a34-96de-070b9eaaf3e0">Københavns Universitet</placeName>. Her tænkes på hans afhandling <hi xml:id="idfc8f407a-3d31-407b-8a82-aff60f216791" rendition="#ita">Begrebet Mythus eller den religiøse Aands Form,</hi> <placeName xml:id="idf75af8e8-a701-4925-ae63-8e2e0d8b4ba6" key="København">Kbh.</placeName> 1842, ktl. 424, der er påvirket af den mytologiske tolkning af NT, der blev indledt med <persName xml:id="ida90b38d4-b456-4666-824b-9bccfff60ac2" key="Strauß, David Friedrich">David Friedrich Strauß</persName> <hi xml:id="ide887e6b6-2559-4785-9ac7-debcd70722c2" rendition="#ita">Das Leben <persName xml:id="id2572a0b4-cf01-44a6-b46a-a2c6356f92bc" key="Jesus">Jesu</persName>, kritisch bearbeitet</hi> (<ptr xml:id="idfb22b1af-b10f-45cf-a9ae-68d0e6cbe09e" type="commentary" target="#aas-84" n="45,81"/>), og videreført af bl.a. <persName xml:id="id19c29a46-e9f6-4bc9-83c0-cd8b00846dc8" key="Bauer, Bruno">Bruno Bauer</persName> (<ptr xml:id="ideec4e707-dbcf-4f67-b988-f7f88e2f4dcb" type="commentary" target="#aas-84" n="45,81"/>) og <persName xml:id="id5bba8191-1ac8-476f-acaa-f36fbe526a2c" key="Feuerbach, Ludwig">Ludwig Feuerbach</persName> (<ptr xml:id="id78083441-20fa-41d7-9447-02130929e334" type="commentary" target="#aas-84" n="45,81"/>). I den upaginerede »Fortale« til afhandlingen skriver Beck bl.a.: »Det forstaaer sig, at det herved ikke har været mig om at gjøre at faae min subjektive Anskuelse ud i Publikum, som hvilken ikke engang denne Fremstilling vil gjelde. Videnskaben er autonomisk, dens Princip har en saadan Selvstændighed og Objektivitet, at den kan udvikles uafhængig og uforstyrret af det kun Partikulære, den Enkelte som saadan Tilhørende. Saaledes er Standpunktet ogsaa i denne Afhandling et reen objektivt, i Sagen selv taget, med Nødvendighed sat i Videnskabens nærværende Udvikling, ligeover for hvilket Forfatterens subjektive Mening slet ikke kan komme i Betragtning. Det er altsaa kun mod denne objektive Side, at et muligt Angreb maatte foretages, hvorimod alle Anmasselser af en hierarchisk Christelighed som kun rettede mod den formentlig subjektive Baggrund i et saadant System, mod Forfatterens Person, hermed engang for alle ere afviiste. Hvis den virkelige Fromhed skulde tage Anstød af dette Skrift, da skulde det smerte mig meget; de Svagere ville imidlertid gjøre bedst i helst at lade saadanne Skrifter være ulæste, de Stærkere ville derimod indsee, at Religionens evige Sandhed, dens substantielle Indhold staaer ligesaa fast i den kritiske Behandling som i den fromme Bevidsthed; det er kun <hi xml:id="idf8ec88e8-6cb5-428c-bfe2-203d90f94f42" rendition="#ita">Formen,</hi> Religionens specifiske Form, som Kritiken træffer, og selv denne frakjender den ikke en om end kun relativ Berettigelse.« Senere i fortalen retter Beck sin kritik mod »dem, som prætendere fra et philosophisk Standpunkt, navnlig det hegelske, at have erkjendt den religiøse, kirkelige Forestillings Sandhed ikke blot efter dens substantielle Indhold, men med dens specifiske Form, som skal være Indholdet absolut adæqvat, hvorved Religion og Philosophie falde umiddelbar sammen, og desuagtet ikke have Andet at stille mod Virkelighedens (ɔ: det hegelske Systems nærværende Stilling til Religionen) skrigende Modsigelse end et Par sletforstaaede Kategorier, eller vel endog i ægte borneret Selvtilfredshed (som man fortæller mig) et <hi xml:id="idfeba0af8-561f-4d13-9844-d4fb9d15cfb3" rendition="#ita">Smiil</hi>«.</p>
+        </note>
+        <note type="commentary" xml:id="aas-27" n="43,15">
+          <label xml:id="id2c579bd8-f465-4523-9d5e-706161d426fc">
+            <hi xml:id="ide6fc07a1-5e7e-40db-b094-6e5bc9f7ccde" rendition="#bol">en ung Lærd ... nedlagt i dets Archiv</hi>
+          </label>
+          <p xml:id="id2ae69c83-9bda-41e8-ad1d-120e0a7a51ec">sigter til den da. naturforsker (især zoolog) <persName xml:id="id64b52688-f45d-4383-a1d1-6c97953053a3" key="Steenstrup, Johannes Japetus Smith" n="*">Johannes Japetus Smith Steenstrup</persName> (1813-97), fra aug. 1841 lektor i mineralogi og botanik ved <placeName xml:id="idde3157cc-3b61-46e0-8ac9-bfbc831be1fe">Sorø Akademi</placeName>; havde i 1837 vundet en præmie udsat af Videnskabernes Selskab for en afhandling om de forhold, hvorunder nåletræstammer forekommer i de da. moser. Steenstrup havde til Videnskabernes Selskab sendt et forseglet brev indeholdende undersøgelser og resultater, som han for tiden ikke så sig i stand til at offentliggøre, med anmodning om at få det henlagt i selskabets arkiv. På sit møde den 4. feb. 1842 vedtog Videnskabernes Selskab at forsyne brevet med selskabets segl og lade det opbevare i selskabets kasse; jf. nr. 2 i <persName xml:id="id3e0da805-55d9-4ff9-b1b7-89f623633c58" key="Ørsted, Hans Christian">H.C. Ørsted</persName> <hi xml:id="id83bf18c4-5c36-4a9b-9262-df5bf21377c8" rendition="#ita">Oversigt over det Kongelige danske Videnskabernes Selskabs Forhandlinger og dets Medlemmers Arbeider i Aaret 1842,</hi> <placeName xml:id="idaded300d-eef5-450e-97f1-5fda36dc387d" key="København">Kbh.</placeName> 1842, s. 15f. – <hi xml:id="idf72c65b2-9ed6-467f-b1df-b29b4fb343e3" rendition="#bol">Videnskabernes Selskab:</hi> Det kgl. danske Videnskabernes Selskab, som blev stiftet i 1742, forestod en række videnskabelige opgaver, herunder udgivelsen af en ordbog, ligesom det hvert år udskrev prisopgaver. Selskabet eksisterer endnu.</p>
+        </note>
+        <note type="commentary" xml:id="aas-28" n="43,24">
+          <label xml:id="id6475d0b7-6b7b-4328-a89f-f3845e072e6f">
+            <hi xml:id="id05224a75-e99e-49a9-86f6-d1b6875f430c" rendition="#bol">blive til Vind</hi>
+          </label>
+          <p xml:id="id579d8524-5dab-4291-bd51-9e8fc30473f8">mislykkes, blive til intet.</p>
+        </note>
+        <note type="commentary" xml:id="aas-30" n="43,32">
+          <label xml:id="ide9db76ec-a7a5-475a-bd30-0baff9d48dde">
+            <hi xml:id="id9f298613-15c8-4d8d-999f-061b0e7efd41" rendition="#bol">juste-milieu</hi>
+          </label>
+          <p xml:id="idd898cee6-f759-4e18-b025-d28fa017d13a">fr., 'den rigtige midte, den rette middelvej'. I politik blev udtrykket spottende brugt om kong <persName xml:id="id8123e762-f79b-49ca-a584-2b28d3fce406" key="Ludvig Filip">Louis-Philippe</persName>s balancepolitik, der efter den fr. julirevolution 1830 videreførte det konstitutionelle monarki, men udvidede stemmeretten til at omfatte den rigeste del af middelstanden.</p>
+        </note>
+        <note type="commentary" xml:id="aas-31" n="43,34">
+          <label xml:id="id3aefdff0-20e9-4ce9-95a7-d65a7c10f106">
+            <hi xml:id="id89eceb70-3aa8-4885-ade7-502b01fbdccc" rendition="#bol">Boniteter</hi>
+          </label>
+          <p xml:id="id781d973b-e65f-42ff-a1eb-38252b55d7b9">kvaliteter (med hensyn til udbud af varer).</p>
+        </note>
+        <note type="commentary" xml:id="aas-32" n="43,34">
+          <label xml:id="id2fd4ea2c-6275-4346-aaec-21420570d9ff">
+            <hi xml:id="id1943523a-3fe9-4384-98c2-a90c9128b7d4" rendition="#bol">Kantianere</hi>
+          </label>
+          <p xml:id="idd285091d-7071-442c-baae-cd72bd62302d">elever el. tilhængere af den ty. filosof <persName xml:id="id4244ee58-b9bb-4999-9c09-1396217cc4cf" key="Kant, Immanuel" n="*">Immanuel Kant</persName> (1724-1804).</p>
+        </note>
+        <note type="commentary" xml:id="aas-33" n="43,34">
+          <label xml:id="id0696aca6-b853-45de-85c7-0c547a3bb54c">
+            <hi xml:id="id1b8b1ecd-2bb9-4119-aceb-a1eb71572fc8" rendition="#bol">Schleiermacherianere</hi>
+          </label>
+          <p xml:id="idbb49cef6-dba2-4adc-9e76-4e1b1bb6657d">elever el. tilhængere af den ty. teolog og filolog <persName xml:id="id4db122f4-68a1-4092-8cfa-54ca239dbb62" key="Schleiermacher, Friedrich" n="*">Friedrich Daniel Ernst Schleiermacher</persName> (1768-1834).</p>
+        </note>
+        <note type="commentary" xml:id="aas-34" n="43,35">
+          <label xml:id="id858aeb84-9575-4fc1-ae06-588db3ef5546">
+            <hi xml:id="id340a0b40-4382-403a-a5e2-ed6fc94150af" rendition="#bol">Hegelianere</hi>
+          </label>
+          <p xml:id="id40c853e6-bead-4b6d-bd10-8bea7b50ab51">elever el. tilhængere af den ty. filosof <persName xml:id="id87939d23-af1a-443f-b44c-7198b399479f" key="Hegel, Georg Wilhelm Friedrich">G.W.F. Hegel</persName> (<ptr xml:id="id90018495-3a25-4882-be02-6c274e06b412" type="commentary" target="#aas-35" n="43,37"/>).</p>
+        </note>
+        <note type="commentary" xml:id="aas-35" n="43,37">
+          <label xml:id="id810d2098-376e-4ebc-b079-ece2cfdb203c">
+            <hi xml:id="id8a8e8ae8-74f5-459f-be31-0499864a0572" rendition="#bol">Hegel</hi>
+          </label>
+          <p xml:id="id10dad810-210f-443a-874b-b24cc4088f7f"><persName xml:id="ida8c0bed2-700d-4888-81f0-8216bf188e01" key="Hegel, Georg Wilhelm Friedrich" n="*">Georg Wilhelm Friedrich Hegel</persName> (1770-1831), ty. filosof, 1801-06 privatdocent (ekstraordinær prof.) i <placeName xml:id="id3c5d24c4-eaed-4133-9694-74c5ed3523c5">Jena</placeName>, 1816-18 prof. i <placeName xml:id="idb99e78fe-36f6-49d4-9622-d8ff477b36ae">Heidelberg</placeName> og fra 1818 til sin død prof. i <placeName xml:id="idd341d396-d135-419a-8871-442e935e5c1b">Berlin</placeName>.</p>
+        </note>
+        <note type="commentary" xml:id="aas-36" n="43,39">
+          <label xml:id="idca7ef6ff-4ee5-4da5-9676-8b3ce01ae94c">
+            <hi xml:id="id25257981-f752-4433-9c3c-cc6513a81f5c" rendition="#bol">som ere komne ud over Hegel</hi>
+          </label>
+          <p xml:id="idb43b3819-199c-444e-b865-544fa86393f2">Efter <persName xml:id="id82471c19-c1f0-4b1c-9907-555d629ad501" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>s død i 1831 opstod en række bestræbelser på at ville 'komme ud over' eller 'gå ud over' Hegel, jf. fx <persName xml:id="id5fe52db9-f8f3-4d83-8b04-634680d8d3e3" key="Sibbern, Frederik Christian">F.C. Sibbern</persName>s anmeldelse af tidsskriftet <hi xml:id="idcef82f9d-10c7-49a4-aac9-814315791388" rendition="#ita"><persName xml:id="idf6ed9fcd-b3c6-4db8-9873-5da177ac268a" key="Perseus">Perseus</persName>, Journal for den speculative Idee,</hi> udg. af <persName xml:id="id385fc501-b70f-4412-a44d-63e6e30658e4" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>, nr. 1, <placeName xml:id="idfbc40b39-5ff2-4688-9182-295951cac890" key="København">Kbh.</placeName> 1837 (<ptr xml:id="idc4b54109-70ad-4fda-8da8-e45e3d9af6a9" type="commentary" target="#aas-20" n="42,65"/>), i <hi xml:id="id36ea0f81-230e-4a24-a308-eefc17895341" rendition="#ita">Maanedsskrift for Litteratur</hi> bd. 19, Kbh. 1838, s. 283-360, hvor Sibbern udtrykker sin anerkendelse af, at Heiberg »kan baade bevæge sig nogenlunde frit i de hegelske Anskuelser, saa og [også] begynde at <hi xml:id="id8871b4ca-63fa-4347-86cd-5513c5701354" rendition="#ita">gaae ud over</hi> Hegel«, s. 291f.</p>
+        </note>
+        <note type="commentary" xml:id="aas-37" n="43,42">
+          <label xml:id="id2756efbc-a0db-4b29-8166-1d922bb172ca">
+            <hi xml:id="idf735c9b6-92e8-42af-b34b-6b6c582070ef" rendition="#bol">Antipædobaptister</hi>
+          </label>
+          <p xml:id="ided0389e5-8c51-45d9-b50d-ce8ef242602c">modstandere af barnedåb.</p>
+        </note>
+        <note type="commentary" xml:id="aas-38" n="43,42">
+          <label xml:id="id20ebd00f-8ea8-495b-95d6-43a0d31dac5a">
+            <hi xml:id="id7851e375-9327-48e3-8c26-fdcf4f38e06f" rendition="#bol">Baptister</hi>
+          </label>
+          <p xml:id="idd88141eb-7d60-4fdb-8327-63675335e9f4"><placeName xml:id="id9b02187e-bb19-47af-8c56-c95da6fce79c">Norden</placeName>s første baptistmenighed blev stiftet i <placeName xml:id="id42a74429-408a-4eb5-9234-32954886dd94">København</placeName> 1839. Og da de baptistiske familier nægtede at lade deres børn døbe, gav det i perioden 1840-45 anledning til en omfattende diskussion om barnedåb, herunder tidspunktet for den, og om baptismens negative betydning for det statskirkelige princip. Se fx <persName xml:id="id77ac00d2-3931-4484-9215-3465367b1367" key="Faber, Nikolaj">N. Faber</persName> <hi xml:id="id15d8c215-b222-451e-9b6f-0fbeb3748937" rendition="#ita">De anabaptistiske Bevægelser i <placeName xml:id="id36c5f3d1-6b3e-4afe-a930-dcddf2371fa8">Danmark</placeName> betragtede fra det christelige og kirkelige Standpunct,</hi> <placeName xml:id="id20b002b5-9873-4ba6-b762-b2620bb4eea1">Odense</placeName> 1842, og <persName xml:id="id4f9ee601-0512-4a86-95bf-a475c24f8b61" key="Martensen, Hans Lassen">H.L. Martensen</persName> »Nutidens religiøse Crisis« i <hi xml:id="idbc9c6d88-9222-4777-b55b-584996c8d0a8" rendition="#ita">Intelligensblade,</hi> udg. af <persName xml:id="id027dff15-1e42-4c17-b786-c67bc7bed323" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>, bd. 1-4, Kbh. 1842-44 (jf. ktl. U 56); bd. 1, nr. 3, den 15. april 1842, s. 53-73, især s. 57-61, s. 67 og s. 71-73; Martensen kalder gennemgående baptisterne for 'gendøbere'.</p>
+        </note>
+        <note type="commentary" xml:id="aas-39" n="43,42">
+          <label xml:id="idc856ce9e-c2b5-40e8-9c91-4c28844aab3d">
+            <hi xml:id="idc991279d-9a34-4653-b63a-79fc22890559" rendition="#bol">Anabaptister</hi>
+          </label>
+          <p xml:id="id3e4b7b2e-f667-41ab-b96e-7fc1ba4a5134">tilhængere af gendåb, gendøbere, se foregående kommentar.</p>
+        </note>
+        <note type="commentary" xml:id="aas-40" n="43,46">
+          <label xml:id="id2dd34775-b708-43eb-80b0-d969ee6b426c">
+            <hi xml:id="iddfb040fd-f2c3-47c8-a322-9a8c31162db0" rendition="#bol">Mediationen</hi>
+          </label>
+          <p xml:id="id0e6ef6f3-be29-4fe0-a461-e79ce1fc4f2f">de da. hegelianeres gengivelse af <persName xml:id="id3a0e13e7-c113-4057-a75b-2c5349529742" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>s (<ptr xml:id="id8c2cfcd5-1a06-46ee-a544-cf2e1e69694b" type="commentary" target="#aas-35" n="43,37"/>) begreb 'Vermittlung', dvs. formidling (el. forsoning) af modsatte begreber i en højere enhed, hvor begreberne består som ophævede momenter.</p>
+        </note>
+        <note type="commentary" xml:id="aas-110" n="43,47">
+          <label xml:id="id48c63af3-7904-4dce-ac15-e41ce57c79b7">
+            <hi xml:id="id25cc254a-9f74-4599-a3ba-c651aec0189a" rendition="#bol">Strauszianere</hi>
+          </label>
+          <p xml:id="id04041cf6-8313-4e23-a215-61af4901e8f0">elever el. tilhængere af den ty. protestantiske teolog og filosof <persName xml:id="idedc09bf5-a47e-43af-acfe-95626b7bb4d0" key="Strauß, David Friedrich">D.F. Strauß</persName> (<ptr xml:id="id01ad2d3f-9ad9-4846-a561-942b446c8e9c" type="commentary" target="#aas-84" n="45,81"/>).</p>
+        </note>
+        <note type="commentary" xml:id="aas-106" n="43,48">
+          <label xml:id="id16469467-f3e4-4812-a6cd-a07e1c4a65c1">
+            <hi xml:id="id68076509-ed66-4fa9-a424-6551ef459d5a" rendition="#bol">Utterslev Mark</hi>
+          </label>
+          <p xml:id="ida882d3bb-5826-44a2-8586-a7e91be7cd4a">på SKs tid betegnelsen for de jorder, der hørte til gårdene i skolebyen Utterslev i Brønshøj sogn, beliggende NV for <placeName xml:id="id7ea37b36-d3af-4de4-85d7-c31621298e0b">København</placeName>. I 1901 blev Utterslev Mark indlemmet i Københavns kommune</p>
+        </note>
+        <note type="commentary" xml:id="aas-42" n="43,49">
+          <label xml:id="idc3188525-60b3-4449-b280-95c96b747049">
+            <hi xml:id="id016241ee-03e4-435e-b630-5b2046798eb9" rendition="#bol">Sect</hi>
+          </label>
+          <p xml:id="idfca98da3-d8d5-4ed9-9777-a42776131831">hentyder formentlig til en af de gudelige forsamlinger, der hørte til den pietistiske vækkelsesbevægelse. På SKs tid var det alm. at betragte både de gudelige forsamlinger og den baptistiske bevægelse som sekter; se fx <persName xml:id="idefa08351-1205-4072-a742-b665e085134a" key="Martensen, Hans Lassen">H.L. Martensen</persName> »Nutidens religiøse Crisis« i <hi xml:id="id7759d5c6-2f49-4bef-bec4-77bd7de54163" rendition="#ita">Intelligensblade,</hi> udg. af <persName xml:id="ide2ae3908-90d1-41cf-b86d-ecfedfdd41b6" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName>, bd. 1, nr. 3, den 15. april 1842 (<ptr xml:id="id6a63856d-222f-4926-919f-b934b6a68668" type="commentary" target="#aas-38" n="43,42"/>).</p>
+        </note>
+        <note type="commentary" xml:id="aas-43" n="43,54">
+          <label xml:id="id0f54eb35-6223-4dc0-b419-0eb45a18a4a5"><hi xml:id="id069995aa-c9ed-47fb-b73a-986dc7c92bb0" rendition="#bol">Neophyt</hi>en</label>
+          <p xml:id="id193151a6-8290-4f5a-9de9-5cdc2bcba3b8">af sengræsk 'neóphytos', der betegner en nyomvendt el. nyindviet i mysterierne, kristendommen e.l.</p>
+        </note>
+        <note type="commentary" xml:id="aas-45" n="43,58">
+          <label xml:id="id9e37049a-bb90-4bce-b484-56c50652eba6">
+            <hi xml:id="idc71770e9-64dd-4494-b834-9d9a252be093" rendition="#bol">Pistolstrædet</hi>
+          </label>
+          <p xml:id="iddda5c169-151c-44cf-ad37-2026eb245355">lille gade med indgang fra <placeName xml:id="id9977fd6e-68e6-4163-bbdb-d801a0e9be59" key="Pedermadsensgang">Peder Madsens Gang</placeName> (<ptr xml:id="id1a3621e7-5f5e-44f6-b278-196f275fde3c" type="commentary" target="#aas-47" n="43,62"/>) og gennemgang til Store <placeName xml:id="id85493455-307f-49b5-ac8d-82848a799f9f">Grønnegade</placeName>, nuværende Grønnegade (<hi xml:id="iddc1ffa68-fd44-4468-b289-35e866d474f5" rendition="#ita">se kort 2 D2</hi>).</p>
+        </note>
+        <note type="commentary" xml:id="aas-46" n="43,62">
+          <label xml:id="id4c942784-b108-4332-af37-8ea9379016a9">
+            <hi xml:id="id59302a54-9ed6-492d-876d-b7bc38bea698" rendition="#bol">Christenbernikovstræde</hi>
+          </label>
+          <p xml:id="idde7428fa-3c54-4a94-b465-a9ce72047c7e">nuværende <placeName xml:id="id2f41b6ab-fe40-4c9b-8017-c2b0ef949a65" key="Kristen Bernikows Gade">Kristen Bernikovs Gade</placeName>, dengang en meget smal gade mellem <placeName xml:id="id7792bf00-d550-4491-af32-31606a1deb98">Østergade</placeName> og Gammelmynt (nuværende <placeName xml:id="id22bf5910-49d2-4b13-aac9-e960a4f967d8">Gammel Mønt</placeName>), som løb parallelt med <placeName xml:id="id2b4b2997-3126-49dc-a08b-7e08c0ca062f" key="Pedermadsensgang">Peder Madsens Gang</placeName> (<hi xml:id="id8f218216-2397-4563-849c-ebcdd477373f" rendition="#ita"><ref xml:id="id081da44e-305c-4779-af15-e33dc8070fd0" target="../kort/kbh_C2.htm" type="map" n="kbh">se kort 2, C2</ref></hi>).</p>
+        </note>
+        <note type="commentary" xml:id="aas-47" n="43,62">
+          <label xml:id="id5a77f58b-58b2-4bb3-b296-75c28c7f4b4c">
+            <hi xml:id="idb1c61cc7-016e-4043-aae5-e6c6666057ce" rendition="#bol">Peder Madsens Gang</hi>
+          </label>
+          <p xml:id="id659ea761-c0c6-420d-8f17-fc4ac24f3f17">nuværende <placeName xml:id="id3ea660df-55b2-4dac-b24b-515bca8e8f74">Ny Østergade</placeName>, dengang et smalt stræde med boliger for almuen, søgt af prostituerede og deres kunder. Strædet var åben mod Store <placeName xml:id="ida0704662-52d9-41e9-841c-3dc21c7491df">Grønnegade</placeName> og havde gennem en port adgang til <placeName xml:id="idbd89f561-1a4f-4ba5-925b-5ef56bb49222">Østergade</placeName> el. 'Routen', som <placeName xml:id="idb69f5383-f16e-40fb-a70d-a7e690029ea6">Strøget</placeName> dengang kaldtes (<hi xml:id="idcaad80a1-44d7-459b-b716-895f820f4d9f" rendition="#ita"><ref xml:id="id06df6619-74a7-4e79-8374-5e7e69dd2833" target="../kort/kbh_D2.htm" type="map" n="kbh">se kort 2, D2</ref></hi>).</p>
+        </note>
+        <note type="commentary" xml:id="aas-49" n="43,71">
+          <label xml:id="id933f039d-741c-40be-a69e-6dc1dbf1f211">
+            <hi xml:id="id60fab80f-5981-4f3e-a4d2-97d32f0731ea" rendition="#bol">een Gang om Maaneden ... høiærværdig Stemme</hi>
+          </label>
+          <p xml:id="id0fab894b-5b0e-4d34-a0d3-81b96a7d7f83">sigter til <persName xml:id="id05ccc720-e2dd-405b-8705-530cde44e665" key="Mynster, Jakob Peter" n="*">Jakob Peter Mynster</persName> (1775-1854), da. præst, forf., politiker; fra 1802 sognepræst i <placeName xml:id="idfd7a3f2b-ece2-4d57-9980-29f8d8e84606">Spjellerup</placeName> og <placeName xml:id="id2bb7242a-2ad7-44fb-a131-1aeba3728e56">Smerup</placeName>, indtil han i 1811 blev residerende kapellan ved <placeName xml:id="id09fe1b11-edca-4a1a-a1e6-30fe0837cead">Vor Frue Kirke</placeName> i <placeName xml:id="iddad0602e-19ea-4a00-88e6-f9e5c54275f1">København</placeName> og fra 1826 tillige hofprædikant; fra 1828 kgl. konfessionarius samt hof- og slotspræst ved <placeName xml:id="id3b76c8da-525f-40b3-a0c2-d6ed6ae2bc54">Christiansborg Slotskirke</placeName>, og fra 1834 biskop over <placeName xml:id="id5419f862-42ab-4d62-8a08-766f42bc1148" key="Sjællands Stift">Sjællands stift</placeName>. Han blev Dannebrogsmand i 1826 og fik i 1836 tildelt Storkors af Dannebrog. Han prædikede hyppigt i de københavnske kirker, især i Vor Frue Kirke og i Slotskirken. If. de offentliggjorte prædikantlister prædikede biskop Mynster i denne periode stort set én gang om måneden i Slotskirken (<hi xml:id="id931c269c-8db8-490b-a9ac-54476c36dc7d" rendition="#ita"><ref xml:id="ida0ca0646-d30e-44de-951d-eb9461a0b4eb" target="../kort/kbh_B2.htm" type="map" n="kbh">se kort 2, B2</ref></hi>), nemlig 10. jan., 7. feb., 7. marts, 4. april, 13. juni, 11. juli, 15. aug. 12. sept., 17. okt., 14. nov. og 12. dec. 1841 samt 23. jan., 20. feb., 20. marts, 8. maj, 14. maj og 19. juni 1842. – <hi xml:id="ide5b685c9-09de-4384-8425-76390280fc4a" rendition="#bol">høiærværdig:</hi> If. rangforordningen af 14. okt. 1746 (med ændringer ved bekendtgørelse af 12. aug. 1808) indgik 'højærværdig' i titulaturen for den højere og højeste gejstlighed, placeret i 2. til 6. klasse, således både landets biskopper og Københavns sognepræster, hofprædikanterne og de teologiske doktorer m.fl.</p>
+        </note>
+        <note type="commentary" xml:id="aas-52" n="43,77">
+          <label xml:id="id193159ef-924b-4d53-a81c-5eee22500065">
+            <hi xml:id="id928b5cfc-d8c9-415a-bbfd-9cd55923184e" rendition="#bol">et Analogon</hi>
+          </label>
+          <p xml:id="id8c9d239b-d689-409e-8cf7-f95cf19c679e">af gr. ana logon, 'i samme forhold'; noget tilsvarende, et sidestykke.</p>
+        </note>
+        <note type="commentary" xml:id="aas-53" n="43,78">
+          <label xml:id="id50aabfcf-4659-458b-b4f1-4ae9f7dcdb16">
+            <hi xml:id="id5d362aeb-b5e9-45a6-9b48-2354683b8514" rendition="#bol">den Politirets-Assessor ... tillige var Commission</hi>
+          </label>
+          <p xml:id="ideb811dce-fdb5-4337-88a4-b8acced12fa8">Om der sigtes til noget historisk konkret, er ikke opklaret. En politiretsassessor (el. blot politiassessor) var en dommer ved en politiret, der havde til opgave at undersøge i mindre omfang at dømme i indkomne sager, idet egentlige kriminalsager blev henvist til dom i Hof- og Stadsretten. Den assessor, der her tales om, var åbenbart både den undersøgende dommer og hele undersøgelseskommissionen.</p>
+        </note>
+        <note type="commentary" xml:id="aas-56" n="43,82">
+          <label xml:id="id288723a0-4e41-4c08-a6e7-bc59fd125023">
+            <hi xml:id="id7ea0a59f-496d-4432-85bd-82186b16d014" rendition="#bol">hin mærkværdige Mand, Lippe-Detmold og Schaumburg-Lippe ... Contingent</hi>
+          </label>
+          <p xml:id="idf1f11fa9-c818-4f42-924f-2b21ee4717e8">Den anekdote, der formentlig hentydes til, har ikke ladet sig verificere. Men bagved ligger formentlig det historiske forhold, at de små nordvesttyske fyrstedømmer Lippe-Detmold og Schaumburg-Lippe i april 1807 sluttede sig til Rhinforbundet, der på <persName xml:id="id8be2c446-661a-426d-9892-3d7c66662e5b" key="Napoleon Bonaparte">Napoleon</persName>s initiativ og med ham som protektor var blevet stiftet i <placeName xml:id="id9bd00aee-f060-4127-97b4-68ada9725ca8">Paris</placeName> i juli 1806 af 16 syd- og vesttyske fyrstedømmer, som således løsrev sig fra det ty.-rom. kejserrige. Rhinforbundet var stiftet som en militæralliance med <placeName xml:id="idf674f29b-0d16-45d7-80af-118d588e32b3">Frankrig</placeName> efter princippet 'én for alle og alle for én', alle forbundets medlemmer forpligtede sig til at stille store kontingenter soldater til rådighed for Frankrig. Dette medførte et nært samarbejde ml. Lippe-Detmold og Schaumburg-Lippe, der stillede hhv. 3½ og 1½ kompagni, tilsammen kaldt »Bataillon Lippe«; antallet af soldater ændrede sig dog en del frem til Napoleons nederlag ved <placeName xml:id="id3a7e8781-e93c-4256-9b77-c9ba4314c8c4">Leipzig</placeName> i okt. 1813, hvormed forbundet opløstes. Herefter sluttede både Lippe-Detmold og Schaumburg-Lippe sig til alliancen ml. <placeName xml:id="id5ec9d529-5420-4a54-9471-bc7c0d821b5c">Preussen</placeName>, <placeName xml:id="idb011e231-bfee-4204-9348-88de39586ec6">Østrig</placeName> og <placeName xml:id="idd612a82e-f43a-422e-857d-770981cdc28c">Rusland</placeName> mod Frankrig. Se <persName xml:id="id03afe9dc-2048-4761-9d4a-f2201802427b" key="Dewall, H. v.">H. v. Dewall</persName> »Kurzer Abriß der Lippischen Militärgeschichte« i <hi xml:id="id5b2174a8-c850-41bd-9244-801343e5b4d5" rendition="#ita">Lippische Mitteilungen aus Geschichte und Landeskunde</hi> bd. 31, Detmold 1962, s. 81-112; s. 90-95. – De to fyrstedømmer har fælles historisk baggrund; da grev <persName xml:id="id41c8a027-e31e-49e7-b7e2-4f30ae75f788" key="Simon VI">Simon VI</persName> inden sin død i 1613 delte sit fyrstedømme Lippe mellem sine tre sønner, blev den ældste, <persName xml:id="idbe651888-d021-4abb-893a-c26022ea77f9" key="Simon VI">Simon VII</persName>, greve af fyrstedømmet Lippe med hovedstaden <placeName xml:id="id5ed8d596-76a9-41b5-baca-1754fbc39e71">Detmold</placeName>, derfor ofte kaldt <placeName xml:id="ida2699f18-9e6c-4d41-9e2a-b78aee4fe576">Lippe-Detmold</placeName>, og den yngste, <persName xml:id="ida008fd59-5c36-4da5-9d47-0853da8c762e" key="Philipp af Schaumburg">Philipp</persName>, greve af fyrstedømmet Bückeburg el. Schaumburg, også kaldt <placeName xml:id="id60cdd41e-6ddd-4641-82fb-6c7b6e93070e">Schaumburg-Lippe</placeName>, beliggende NØ for Lippe-Detmold. Se fx <hi xml:id="idb0d6d59f-f389-4707-b8d4-8062deef7760" rendition="#ita">Allgemeine deutsche Real-Encyklopädie für die gebildeten Stände. (Conversations-Lexikon),</hi> 8. udg., bd. 1-12, Leipzig 1833-37, ktl. 1299-1310; bd. 8, 1835, s. 658f. – <hi xml:id="id0402582e-82c0-4458-b8c8-ed22b359ee48" rendition="#bol">stillede i Marken:</hi> militært udtryk: sætter i felten.</p>
+        </note>
+        <note type="commentary" xml:id="aas-57" n="44,11">
+          <label xml:id="idbf06d410-d3dd-4e9f-91ff-b5be9210d8e6">
+            <hi xml:id="ide9c15d66-1740-4782-839e-bf57ab43a55e" rendition="#bol">Carstensen</hi>
+          </label>
+          <p xml:id="id61c8f408-c8c8-463c-b1de-f6d8f220e5af"><persName xml:id="id156191a0-7c72-47a8-b680-54d0f852082d" key="Carstensen, Georg Johan Bernhard" n="*">Georg Johan Bernhard Carstensen</persName> (1812-57), da. officer, bladudgiver, stifter af <placeName xml:id="id2e3140ea-69b0-425b-8038-8ba52d4e3778">Tivoli</placeName> og andre forlystelsessteder. Fra jan. 1839 til juni 1841 udgav han ugebladet <hi xml:id="id929f1e2f-2bee-41b7-bb01-cf83bdef89f4" rendition="#ita">Portefeuillen. Et literairt-artistisk Skrivt</hi> og en tilhørende kvartalsbog. Fra juli 1841 til juni 1842 udgav han ugebladet <hi xml:id="ida6df4bad-793f-43ae-9c4e-b1dd91ec27a6" rendition="#ita"><persName xml:id="idcf2b7ab0-fe5e-4094-9aef-f35eb00ac896" key="Figaro">Figaro</persName>. Journal for Literatur, Kunst og Musik,</hi> som ledsagedes af <hi xml:id="id705d7d0e-3a6c-499f-9f6b-3efcf971d954" rendition="#ita">Figaros Supplementsblade for Literatur-, Kunst- og Musiknyheder</hi> og fire kvartalsbind indeholdende skønlitteratur. Desuden blev <hi xml:id="id21830f14-e6fe-49b0-a65a-67328578dd6d" rendition="#ita">Figaro</hi> fra 3. april til 25. dec. 1842 suppleret med <hi xml:id="idb2d374d7-2755-479c-8c27-980020d6a25f" rendition="#ita">Nye Intelligensblade,</hi> der udkom i kvartformat; heri polemiseredes der mod <persName xml:id="idf3076c4f-ca56-4580-b37c-a023625eab8e" key="Heiberg, Johan Ludvig">J.L. Heiberg</persName> (<ptr xml:id="idf901420a-a170-4260-b9f9-10745bb41e71" type="commentary" target="#aas-58" n="44,14"/>) og hans tidsskrift <hi xml:id="ida4a24ae7-5ec9-4f0f-bf41-b5e71778b6bb" rendition="#ita">Intelligensblade,</hi> der udkom fra 15. marts 1842 til 1. marts 1844. For abonnenterne af <hi xml:id="id3be8012c-4d65-484d-9bbd-0b96716a6046" rendition="#ita">Figaro</hi> arrangerede Carstensen illuminerede friluftsfester med fyrværkeri i Rosenborg Have, og den 4. april 1842 fik han et femårigt kgl. privilegium til at oprette et sommertivoli, der i august 1843 åbnede på glaciset uden for <placeName xml:id="idbfa1f798-c757-427d-8f63-3dd272890f9e">Vesterport</placeName>. Carstensen var kendt for sin bohemeagtige fremtræden.</p>
+        </note>
+        <note type="commentary" xml:id="aas-58" n="44,14">
+          <label xml:id="idd68a5303-1a2b-4eca-ab6e-6b3318590579">
+            <hi xml:id="idf8464c05-b414-4be4-9b11-13403594d7e3" rendition="#bol">Professor Heiberg</hi>
+          </label>
+          <p xml:id="idaca81b53-dafa-4040-96b8-a0f4bd263c93"><persName xml:id="idfdcb969f-eedb-4c76-b423-f3ead44b0b44" key="Heiberg, Johan Ludvig" n="*">Johan Ludvig Heiberg</persName> (1791-1860) var da. digter, redaktør og kritiker. Han blev student 1809, foretog derefter rejser til <placeName xml:id="idc9a1a8ed-f769-4d90-be5b-98bd18964eee">Paris</placeName> og <placeName xml:id="ideb11e8be-e6d2-4d57-9a49-65ac64750ff8">London</placeName>, var 1822-25 da. lektor i <placeName xml:id="id51b72534-bedd-4611-9183-4e1249965123">Kiel</placeName>, 1828-39 ansat som teaterdigter og oversætter ved <placeName xml:id="ide615ff8f-3ce0-43fe-9129-2aab298ef8c6" key="Kongelige Teater, Det">Det kgl. Teater</placeName>. I 1829 blev han titulær prof.; 1830-36 var han docent i logik, æstetik og da. litteratur ved Den kgl. militære Høiskole. Heiberg var tidens førende æstetiske smagsdommer.</p>
+        </note>
+        <note type="commentary" xml:id="aas-59" n="44,24">
+          <label xml:id="id6702c498-0a95-4043-a088-539122997fd5">
+            <hi xml:id="idca3beda1-2aaa-4263-9b37-3b8944d57636" rendition="#bol">den udygtigste i Troja</hi>
+          </label>
+          <p xml:id="id26e2dc54-5207-478c-82f9-ec8fd4c0af6f">Hvad der hentydes til, er ikke identificeret. Med <placeName xml:id="id706a59c2-937b-4fdd-a0f7-b8ea23686c71">Troja</placeName> sigtes til oldtidsbyen i det nordvestlige <placeName xml:id="id67bf7155-906a-43e9-aae2-32a971b2ae23">Lilleasien</placeName>. – <hi xml:id="idccd3e583-c6c1-4e34-a3f6-1d52c3523dc7" rendition="#bol">udygtigste:</hi> udueligste.</p>
+        </note>
+        <note type="commentary" xml:id="aas-60" n="44,26">
+          <label xml:id="id2f7c25c6-2656-4d86-9fec-e2f47293b0e3">
+            <hi xml:id="id1a05fb7d-7a24-4813-a75c-e0c02cb4c530" rendition="#bol">Bastholms Strøtanker</hi>
+          </label>
+          <p xml:id="ida5285a92-dddb-4f0e-b071-4728163af994">hentyder til <hi xml:id="id4ccad2cd-b2ac-4eff-8274-64b61836c229" rendition="#ita">Sophrosyne. Et Tidsskrift for den populaire Philosophie,</hi> udg. af <persName xml:id="id9bbd4fff-755e-4b23-b54d-bf381761f566" key="Bastholm, Hans">H. Bastholm</persName> (<ptr xml:id="id0782b769-fec2-497a-827c-153c04287074" type="commentary" target="#aas-25" n="43,9"/>), hvor det bd. 1, s. 1, hedder: »Den aphoristiske Form vil ofte blive valgt, da den meest tiener til at lette og til at befordre Tænksomhed.«</p>
+        </note>
+        <note type="commentary" xml:id="aas-61" n="44,27">
+          <label xml:id="id35956a13-a63c-45d3-8c72-0eba374011bb">
+            <hi xml:id="id8abc4b55-2a54-4221-9e98-eaec9070dd87" rendition="#bol">Hegels Logik</hi>
+          </label>
+          <p xml:id="id216ee133-fc18-43ea-8488-8661f8bf2f17">G.W.F. Hegel (<ptr xml:id="id7f90831f-926a-45c7-be41-d3ab33a1da4a" type="commentary" target="#aas-35" n="43,37"/>) <hi xml:id="id3a1c999b-3ad9-4a45-aace-ee018c2c3ac8" rendition="#ita">Wissenschaft der Logik,</hi> udg. af <persName xml:id="id6c1ea3ce-8ea2-43c9-aa47-e7cc094f62e0" key="Henning, L. von">L. von Henning</persName>, bd. 1,1-1,2 og bd. 2, <placeName xml:id="idf0800ffe-f945-4b71-a69b-a718c54b8e5b">Berlin</placeName> 1833-34 [1812-16], ktl. 552-554; bd. 3-5 i <hi xml:id="id7a74d0df-e344-4371-a3b4-fadd5690c4c3" rendition="#ita"><persName xml:id="idb270dbc5-4dbb-415f-b28f-781d5e3801c7" key="Hegel, Georg Wilhelm Friedrich">Georg Wilhelm Friedrich Hegel</persName>'s Werke. Vollständige Ausgabe</hi> bd. 1-18, Berlin 1832-45 (<hi xml:id="id4d611b9e-1c80-4ef6-b2b7-0db7161ed103" rendition="#ita">Jub.</hi> bd. 4-5).</p>
+        </note>
+        <note type="commentary" xml:id="aas-62" n="44,30">
+          <label xml:id="ide83253a6-d66d-4b01-9c0b-dd13ba8301aa">
+            <hi xml:id="id7b9d8251-1787-4aec-93e0-a9eb18941fd9" rendition="#bol">Stilling</hi>
+          </label>
+          <p xml:id="id4fa32f0d-f4d1-44c9-bf95-403d1235dd0e"><persName xml:id="id91e0792f-0e23-419d-b8a9-fe5714b60819" key="Stilling, Peter Michael" n="*">Peter Michael Stilling</persName> (1812-69), da. filosof; opgav teologistudiet kort før eksamen, men fik i 1844 dispensation til at disputere for magistergraden. Han var i begyndelsen af 1840'erne tilhænger af <persName xml:id="ida440d704-ddc0-4bfe-b607-1b078ccf675b" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName> (<ptr xml:id="id16669ba4-2567-4d4f-b4d2-22d02e4a16ed" type="commentary" target="#aas-35" n="43,37"/>) og gjorde sig til talsmand for de konservative, højrehegelianske forsøg på at forene filosofi og teologi. Her sigtes til Stillings skrift <hi xml:id="id19380b1f-f1a1-4258-9ff0-3b6652bfbe6c" rendition="#ita">Philosophiske Betragtninger over den speculative Logiks Betydning for Videnskaben, i Anledning af Professor <persName xml:id="id2252a54b-c7ac-4cbd-af83-30b7547b0d0b" key="Nielsen, Rasmus">R. Nielsen</persName>s: »den speculative Logik i dens Grundtræk«</hi> [<ptr xml:id="id7a1c1e3c-eaf3-4f20-bae5-0faf0fb8a9be" type="commentary" target="#aas-21" n="42,66"/>], <placeName xml:id="id633bc7d3-4276-4a47-98fe-f02413c05dc2" key="København">Kbh.</placeName> 1842. I forordet skriver Stilling: »Det vil udentvivl letteligen indrømmes, at man under vore nærværende Forhold, ved at anstille Betragtninger, der sigte til at eftervise det Logiskes Betydning for Videnskaben, er udsat for at falde snart i Scylla snart i Charybdis, eftersom vi nemlig befinde os i en videnskabelig Overgangsperiode. Og ligesom man derfor, ved at anbefale det Logiske, paa den ene Side vil staae i Fare for at anprise det, der ingen Anpriisning behøver, eftersom det alt af Flere er anerkjendt for at være ligesaa nødvendigt for Livet i Videnskaben, som det daglige Brød er uundværligt for det physiske Liv: saaledes vil man paa den anden Side være udsat for at tilbageholde Betragtninger, der dog maaskee paa dette eller hiint Punkt kunne være fornødne og veiledende. / Muligviis vil derfor en eller anden Læser – der eensidigen holder fast paa dette Skifts introducerende Bestemmelse og seer bort fra de litteraire Forholdes Beskaffenhed – finde, at vi alt paa Afhandlingens første Blade ikke ere gaaede indledende nok tilværks. Men, selv om saa skulde være, hvilket vi dog ikke troe, maa Læseren ikke lade sig afskrække fra at gaae videre; og den introducerende Charakteer han søger, vil han maaskee da bedre finde«, s. 3f. På s. 6 skriver Stilling: »Det er udentvivl saa langt fra, at en speculativ Logik nu kommer uindbuden, at den tvertimod maa betragtes som forlængesiden inviteret og med Længsel oppebiet.« Og på s. 7 udtrykker han »den Formening, at Vigtigheden, ja Uundværligheden af den speculative Logiks Studium for Enhver, der vil forholde sig enten receptiv eller productiv med Hensyn til Philosophiens reale Videnskaber, hos os endnu neppe tilfulde er fattet. Skulde denne vor Formening være rigtig <hi xml:id="id793d0c83-d18b-4ad4-8899-dbc01174231a" rendition="#ita">(...)</hi> saa ville nogle Betragtninger, med Hensyn til den Rolle, det Logiske spiller, ikke kunne siges at komme post festum.«</p>
+        </note>
+        <note type="commentary" xml:id="aas-63" n="44,30">
+          <label xml:id="id9d2bc44d-9c6f-42e0-a234-d4626d52ba4b">
+            <hi xml:id="id30fb46bd-8ca3-4e5a-9a7d-79429947514d" rendition="#bol">meddele os den sidste Olie</hi>
+          </label>
+          <p xml:id="id67af8546-6a58-4e25-bedc-8f18ea3409d2">berede os til døden; give os den sidste behandling. I Den rom.-katolske Kirke salves den døende med indviet olie eller salve efter skriftemål og altergang.</p>
+        </note>
+        <note type="commentary" xml:id="aas-65" n="44,39">
+          <label xml:id="id98f806c9-bf8a-4f05-9eb6-ae576ac3f9da">
+            <hi xml:id="id8ecd722a-667d-43f3-8909-a3595f94d3c1" rendition="#bol">Efterslægten</hi>
+          </label>
+          <p xml:id="idca3b8110-aea0-4885-9094-88517c9a8ed4">de kommende slægtled, efterverdenen.</p>
+        </note>
+        <note type="commentary" xml:id="aas-102" n="44,57">
+          <label xml:id="id1ebf96f3-49e0-4325-a483-506dfafedcd2">
+            <hi xml:id="id84cd90aa-9625-4458-9f81-c259783e66b6" rendition="#bol">I yngre Aar</hi>
+          </label>
+          <p xml:id="id4c80fb8c-0a9b-4bd9-b1b0-8c830eec2685"><ptr xml:id="id0ec07a64-9d79-4082-b227-5b9db7002af4" type="commentary" target="#aas-103" n="44,64"/>.</p>
+        </note>
+        <note type="commentary" xml:id="aas-67" n="44,58">
+          <label xml:id="idbc94c771-f6d7-4e67-913a-ae1a2e427a2c">
+            <hi xml:id="id55aee024-cd0a-4192-a014-dee7f43b170f" rendition="#bol">Borgervæbningens Maneuvrer paa Fælleden</hi>
+          </label>
+          <p xml:id="id632f5aba-ba23-496c-9727-5a04fd858629">sigter til »Kjøbenhavns Borgervæbning«, et værn, i hvilket våbenføre mænd af borgerstanden skulle indrulleres, så snart de var fyldt 18 år. Borgervæbningen holdt parader og øvelser på græsningsarealerne <placeName xml:id="id17e7ad4b-5116-4926-99ba-eba3b1e71c93">Nørre Fælled</placeName>, <placeName xml:id="ida0215813-36ce-475b-ac2f-f7e4843e1437">Blegdams Fælled</placeName> og <placeName xml:id="id5d690b65-7952-4a4c-9645-6c007a0e150f">Østre Fælled</placeName> (nuværende <placeName xml:id="idd069df65-1721-4c0b-ac35-7ae8f5f3b58b">Fælledparken</placeName>) NØ for <placeName xml:id="id19406e50-d0e6-4a19-aa4c-ca4bbbae4837" key="Sortedams Sø">Sortedam Sø</placeName>.</p>
+        </note>
+        <note type="commentary" xml:id="aas-68" n="44,59">
+          <label xml:id="idca985d97-d767-4abe-ba0e-cc6cda1635a4">
+            <hi xml:id="id8fd77b7b-2db0-4a17-ac16-3c6e4c296259" rendition="#bol">Konge-Revue</hi>
+          </label>
+          <p xml:id="id00f4a333-daf2-4999-86dd-bf757c10acd8">kongelig inspektion af tropper.</p>
+        </note>
+        <note type="commentary" xml:id="aas-103" n="44,64">
+          <label xml:id="id4e8d6fbc-ee42-4a96-9d59-0f551ce4c15a">
+            <hi xml:id="id78f25eb7-612c-4772-a35c-516503e5c889" rendition="#bol">rider hen til ham ... »Hele Bataillonen omkring!«</hi>
+          </label>
+          <p xml:id="id196d0d93-87db-45f7-82e0-0638a95776cc">sml. journaloptegnelsen <ref xml:id="idad533198-9568-4837-a6ee-e21d5547543a" target="../EE/txt.xml#n32" type="journalsAndPapers" n="32">EE:32</ref>, dateret 3. marts 1839: »idet han reed hen til ham, hvidskede han: 'Hr. Major, De kommer til at gjøre omkring'; hvorpaa Majoren med høi Komandostemme raabte: 'Hele Bataillonen omkring' og kom derved til at holde igjen ligesaa forkeert ikke at tale om at hele Bataillonen kommer til at staae forkeert. See det er Ulykken med Politikerne, altid hedder det 'hele Bataillonen', uagtet det kun er dem selv, der skulle gjøre omkring.« <hi xml:id="idbf58cc18-3ee8-4ace-90da-7bc05a8021dc" rendition="#ita">SKS</hi> 18, 16.</p>
+        </note>
+        <note type="commentary" xml:id="aas-69" n="44,63">
+          <label xml:id="id5902a985-9191-4a59-9ff9-f1d0a421e5f0"><hi xml:id="idc2469ef4-24d2-4199-abd3-929590d4ee89" rendition="#bol">den afdøde Konge</hi>s</label>
+          <p xml:id="id89ff20d0-82ce-4dec-bffb-47d3ec27dd35"><persName xml:id="ida8f79c65-5009-46b2-8f06-f5574086bed5" key="Frederik VI">Frederik VI</persName> (1768 - 3. dec. 1839), fra 1808 konge over <placeName xml:id="ide153999c-b451-417a-82f0-e2453853de35">Danmark</placeName> og <placeName xml:id="id490fe2ec-6c0c-43af-8d67-677b03c8104c">Norge</placeName>, efter afståelsen af Norge ved freden i <placeName xml:id="id99ca0f2c-c3be-4dd2-b5df-09f7aa791750">Kiel</placeName> 1814 kun over Danmark.</p>
+        </note>
+        <note type="commentary" xml:id="aas-112" n="44,77">
+          <label xml:id="idc1c8e6c7-6759-4d0f-a199-2b1ead479598">
+            <hi xml:id="id0b2cc4e0-8ae2-4ecd-a668-935cf711060b" rendition="#bol">vedbliver <hi xml:id="id346ed8e4-c1b9-4147-9955-38a4389f77e9" rendition="#ita">(...)</hi> i Marschen</hi>
+          </label>
+          <p xml:id="id19da3339-7c93-48e4-8628-0319a808f139">el. vedbliver i marchen, dvs. fortsætter med at marchere.</p>
+        </note>
+        <note type="commentary" xml:id="aas-73" n="45,13">
+          <label xml:id="iddad1c4f2-06a9-4af4-95b9-207d905b0211">
+            <hi xml:id="id1e33b064-4981-4033-9d29-41426acfcee2" rendition="#bol">Dr. Beck ... uddrevet min Disputats af Læseverdenens Glemsel</hi>
+          </label>
+          <p xml:id="id03672be3-853b-4b43-a529-d40a95399243">sigter til <persName xml:id="idf5fce0ac-5f82-4da4-8377-125506d3d5ca" key="Beck, Andreas Frederik">A.F. Beck</persName>s (<ptr xml:id="id535914fb-0b65-4200-8086-94f10869f704" type="commentary" target="#aas-26" n="43,11"/>) anmeldelse af SKs magisterafhandling <hi xml:id="id316671c2-5361-4f66-8748-f948479aa2f5" rendition="#ita">Om Begrebet Ironi med stadigt Hensyn til <persName xml:id="id57e70d69-beb6-436d-ae2a-c0c055fd4744" key="Sokrates">Socrates</persName></hi> (1841), nr. I og nr. II i <hi xml:id="idf544a7db-fd88-440e-920a-42aa9a8414e3" rendition="#ita">Fædrelandet,</hi> nr. 890, den 29. maj, sp. 7133-7140, og nr. 897, den 5. juni 1842, sp. 7189-7191. If. den indstilling, som de officielle opponenter ved disputatshandlingen den 29. sept. 1841, <persName xml:id="idadaea01b-0f60-4b4f-927d-ef7e6b1dc353" key="Sibbern, Frederik Christian">F.C. Sibbern</persName> og <persName xml:id="idd46749d4-3793-4340-a357-0a04c501a4eb" key="Brøndsted, Peter Oluf">P.O. Brøndsted</persName>, to dage senere sendte til Direktionen for <placeName xml:id="idb8092790-5737-4994-8b11-50bdf59d83f3" key="København Universitet">Universitetet</placeName> og de lærde Skoler, havde Beck opponeret ex auditorio, se <ref xml:id="idff339c39-fc37-426d-a074-65e74ffc8589" target="../BI/txr.xml#ss144" type="textCriticalAccount" n="144">tekstredegørelsen til <hi xml:id="idaeabe77a-9a9d-4651-a848-53578ec7f496" rendition="#ita">Om Begrebet Ironi</hi> i <hi xml:id="id2e69815a-7f64-4fc5-9624-00f7fdfd0068" rendition="#ita">SKS</hi> K1, 144</ref>f.</p>
+        </note>
+        <note type="commentary" xml:id="aas-74" n="45,16">
+          <label xml:id="id6167c778-e4bf-4823-a905-038b989cd92d">
+            <hi xml:id="id88a49e9a-d4fe-4b95-8b36-c4017ec4e4ac" rendition="#bol">Recensent</hi>
+          </label>
+          <p xml:id="id6c19db4e-ff2b-4bca-87af-16b73642b790">anmelder.</p>
+        </note>
+        <note type="commentary" xml:id="aas-75" n="45,16">
+          <label xml:id="id091a30b2-9c46-4238-9aca-37986d539a1a">
+            <hi xml:id="id5b0926cb-548e-42b2-a337-ed70f71bdc33" rendition="#bol">Oversigt over Bogens Indhold</hi>
+          </label>
+          <p xml:id="id26d02588-aede-4755-a5ec-f43ca393e962">se især første del af <persName xml:id="idd57c6a4b-2ec1-44d7-9237-b58c202980ec" key="Beck, Andreas Frederik">Beck</persName>s anmeldelse i <hi xml:id="idcfbb4916-e586-49bf-99e4-25ad0e1696d4" rendition="#ita">Fædrelandet,</hi> nr. 890 (<ptr xml:id="id70c9497f-2112-4d5f-bad1-0c90cf06e97c" type="commentary" target="#aas-73" n="45,13"/>), sp. 7136-7140, og anden del i <hi xml:id="ida69213db-e4d7-42fb-8f37-712b10ce8c3d" rendition="#ita">Fædrelandet,</hi> nr. 897, sp. 7189-7191.</p>
+        </note>
+        <note type="commentary" xml:id="aas-113" n="45,18">
+          <label xml:id="id3c17e0c9-553e-491d-a373-7cd0217e3008">
+            <hi xml:id="ide2c28ee8-0655-4c6c-bb22-91709a09bc5f" rendition="#bol">Til Slutning ... jeg fortjener at dadles ... Allusioner, han ikke forstaaer</hi>
+          </label>
+          <p xml:id="id3a623c68-3667-43ee-81d9-aa4c102fa307">sigter til slutningen af anden del af <persName xml:id="id92985f49-d594-4630-877a-56bfc2bb6e7e" key="Beck, Andreas Frederik">Beck</persName>s anmeldelse i <hi xml:id="iddcad89ac-221a-4dc4-a5bb-920a5315c725" rendition="#ita">Fædrelandet,</hi> nr. 897 (<ptr xml:id="id5061aa53-3615-4e7c-a62f-3d5fe2954504" type="commentary" target="#aas-73" n="45,13"/>), sp. 7191, hvor han efter at have rost sproget og fremstillingen skriver: »Derimod maa det dadles, at der findes en Deel Allusioner og Hentydninger i Bogen, som vistnok [helt sikkert] de Færreste forstaae, og i hvilke navnlig Referenten ikke kan have den Ære at følge Hr. Forfatteren«.</p>
+        </note>
+        <note type="commentary" xml:id="aas-78" n="45,45">
+          <label xml:id="id259db112-14a2-4f60-8e3b-f883c09088fe">
+            <hi xml:id="idad68c269-4dff-4d46-bce0-4c153a16d523" rendition="#bol">proprio motu</hi>
+          </label>
+          <p xml:id="ide6b17565-e88a-4fe7-8a1e-1556d58bcae8">lat., 'af egen drift el. tilskyndelse'. Udtrykket 'motu proprio' bliver særlig brugt i sammenhæng med visse pavelige reskripter.</p>
+        </note>
+        <note type="commentary" xml:id="aas-118" n="45,57">
+          <label xml:id="id141a4c91-dea9-4477-aebb-0bc301a4c483">
+            <hi xml:id="id35b58810-02a9-4981-bbae-c7408d312443" rendition="#bol">at Dr. B. ikke har forstaaet ... hvad Dr. B. har forstaaet</hi>
+          </label>
+          <p xml:id="id337428fc-af56-41c0-82e7-b7e8d09b918f">hentyder til en anekdote om <persName xml:id="id7ba633fc-632f-458f-9398-b975d14b36e2" key="Sokrates">Sokrates</persName>, som er overleveret i 2. bog, kap. 5, afsnit 22, i <persName xml:id="idf1aa1913-0d8c-41f0-a661-f20490a27165" key="Diogenes Laertios">Diogenes Laertios</persName>' filosofihistorie: »Euripid havde leveret ham <persName xml:id="id594f6cff-3d1e-4663-9ba6-98dc2ac5a5d2" key="Heraklit">Heraklit</persName>s Skrift, og spurgde, hvad han syntes derom? Da, siger man, han svarede: det jeg har forstaaet deraf, er retskaffen godt; jeg mener, at det, jeg ikke har forstaaet, er det ligeledes«, <hi xml:id="idce5ebc27-7b4d-44e6-83ac-4219382ac99f" rendition="#ita">Diogen Laërtses filosofiske Historie, eller: navnkundige Filosofers Levnet, Meninger og sindrige Udsagn, i ti Bøger,</hi> overs. af <persName xml:id="idef9ab235-e011-4d53-b6ab-ebfce2eb489a" key="Riisbrigh, Børge">B. Riisbrigh</persName>, udg. af <persName xml:id="id4defd840-0e86-4845-87dd-1dc536b80d77" key="Thorlacius, Børge">B. Thorlacius</persName>, bd. 1-2, <placeName xml:id="id558fbb9b-4449-4f7d-9499-9d73898671ed" key="København">Kbh.</placeName> 1812, ktl. 1110-1111; bd. 1, s. 66. SKs umiddelbare kilde er <persName xml:id="id7a3c94fc-f8dd-45d5-904f-8b7d9e5d4caf" key="Hamann, Johann Georg" n="*">J.G. Hamann</persName> (1730-88), der i den anden dedikation af skriftet <hi xml:id="id1ff62c43-71bd-4ba1-8795-3164c7daf20e" rendition="#ita">Sokratische Denkwürdigkeiten</hi> (1759) siger: »Sokrates war, meine Herren, kein gemeiner Kunstrichter. Er unterschied in den Schriften des Heraklitus dasjenige, was er nicht verstand, von dem, was er darin verstand, und that eine sehr billige und bescheidene Vermuthung von dem Verständlichen auf das Unverständliche«, <hi xml:id="id0d1e9489-960c-4b11-9a3a-85a531f62e37" rendition="#ita">Hamann's Schriften,</hi> udg. af <persName xml:id="idb40f502d-10ef-4232-97cb-3ac5efa6c5d3" key="Roth, Friedrich">F. Roth</persName>, bd. 1-7, <placeName xml:id="id182de35d-819d-423c-b47c-de56ea6f6007">Berlin</placeName> 1821-25, og bd. 8,1-2, udg. af <persName xml:id="idf90156ef-cf85-4125-9650-a257cf1a3865" key="Wiener, Gustav Adolph">G.A. Wiener</persName>, Berlin 1842-43, ktl. 536-544; bd. 2, 1821, s. 12.</p>
+        </note>
+        <note type="commentary" xml:id="aas-80" n="45,72">
+          <label xml:id="id03f28aac-760c-4167-bb8b-d69e4b37ff0d">
+            <hi xml:id="id7f10d1e9-c416-4c5a-b4b3-a016a65313a4" rendition="#bol">Politidirecteuren</hi>
+          </label>
+          <p xml:id="id7d5b237f-901e-4373-a281-56f5d6e893dd">efter 1814 chefen for politiet i <placeName xml:id="ida9b8e332-56d1-48cc-a9a0-ed4d09d0e1a3">København</placeName>.</p>
+        </note>
+        <note type="commentary" xml:id="aas-81" n="45,73">
+          <label xml:id="id6a556756-da3d-4393-bad2-e603ee83a171">
+            <hi xml:id="id5ac3d325-ed3e-4e6c-96e7-d948a283b635" rendition="#bol">Consistorium</hi>
+          </label>
+          <p xml:id="id2a30a242-f558-4741-a879-23c7d87aebc0">kollegialt råd af professorer, som styrede universitetet under rektors ledelse.</p>
+        </note>
+        <note type="commentary" xml:id="aas-82" n="45,78">
+          <label xml:id="idd3524ba4-7379-433a-a252-b1c7a2fd7d9c">
+            <hi xml:id="id112141e6-fef8-4681-97d5-20f81a30908e" rendition="#bol">den Bog, som Hr. Dr. i disse Dage har udgivet</hi>
+          </label>
+          <p xml:id="idc0b5dbfe-4dc3-4ad4-ae7b-782dace08c30">sigter til <persName xml:id="id5130b14c-3f30-4235-8327-f6de9bc4bdf2" key="Beck, Andreas Frederik">A.F. Beck</persName>s <hi xml:id="id6c0e8820-e8f3-42bb-9f9f-5de170186d27" rendition="#ita">Begrebet Mythus eller den religiøse Aands Form</hi> (<ptr xml:id="id575181b1-5ede-46cc-83d2-ae219cc51a54" type="commentary" target="#aas-26" n="43,11"/>), hvis upaginerede »Fortale« er dateret »Kjøbenhavn den 29de April 1842«. Bogen blev averteret i <hi xml:id="idc0c000de-051c-44b8-9acd-c92f1dcd4e7b" rendition="#ita">Adresseavisen,</hi> nr. 124, den 31. maj 1842, som »idag udkommet«.</p>
+        </note>
+        <note type="commentary" xml:id="aas-114" n="45,79">
+          <label xml:id="ide5b56eb3-63d1-4ce7-af18-aae01fefbeb5">
+            <hi xml:id="idc7db6edc-4827-47bb-be0f-fc31085049d0" rendition="#bol">seer jeg mig ... stukket ind mellem Straußianerne</hi>
+          </label>
+          <p xml:id="id0c3ccf92-9cfc-4d04-99f2-133e2b326aad">sigter formentlig til § 5 »Bevidstløsheden i Mythedannelsen. Denne viser sig som Tro« i første del af <persName xml:id="idca88d7c8-86a6-4bc7-9894-3b60e280eb1b" key="Beck, Andreas Frederik">Beck</persName>s <hi xml:id="ide2fc697a-d61c-4f84-abe5-03c0c0440738" rendition="#ita">Begrebet Mythus eller den religiøse Aands Form</hi> (<ptr xml:id="id1534df7c-98cb-4d28-94d1-408ae1ac0c7d" type="commentary" target="#aas-26" n="43,11"/>), især s. 31, hvor Beck i en note skriver: »Ogsaa <persName xml:id="ide5b7a8a0-4f92-44d7-af89-7b460a361ede" key="Kierkegaard, Søren Aabye">Kierkegaard</persName> (Om Begrebet Ironie p. 104 [i <ref xml:id="id6d1877da-66b8-4a23-b30d-fd7ec213f4cb" target="../BI/txt.xml#ss154" type="publishedWritings" n="154"><hi xml:id="idb65eeae1-116a-4bec-accf-fa50fda9144c" rendition="#ita">SKS</hi> 1, 154</ref>f., inklusive noten, s. <ref xml:id="id3ec8053c-a502-428e-8b4e-62d83935dd32" target="../BI/txt.xml#ss155" type="publishedWritings" n="155">155</ref>]) erkjender i Reflexionens Opgang Mythens Undergang.« Herefter diskuterer Beck »den af Strauß paastaaede vel at mærke kun <hi xml:id="idf6bb4bda-a0b6-46e0-88b5-d84a287439a5" rendition="#ita">paastaaede</hi> ikke beviiste Bevidstløshed om den fingerede Objektivitet i Mythen« og inddrager <persName xml:id="idbe312474-3db8-4571-8145-0afcf0fa34fa" key="Bauer, Bruno">Bruno Bauer</persName> i sin argumentation, s. 32. Se også § 9 »Den Kunstart, hvortil Mythen svarer, er Poesie«, hvor Beck, s. 53, i en note ligeledes henviser til »om Begrebet Ironie. p. 104 not. [i <ref xml:id="id5d1230da-10a6-4eb2-9042-c10102cb2d68" target="../BI/txt.xml#ss155" type="publishedWritings" n="155"><hi xml:id="id76d629ce-6794-4228-9f13-870d2a854fd8" rendition="#ita">SKS</hi> 1, 155</ref>, noten]«. Se desuden følgende kommentar. – <hi xml:id="iddfb213dc-9394-4be6-a7f6-6ff89701afe8" rendition="#bol">Straußianerne:</hi> <ptr xml:id="id21e8bfd0-9e9c-4b26-af55-3f78781d8c69" type="commentary" target="#aas-110" n="43,47"/>.</p>
+        </note>
+        <note type="commentary" xml:id="aas-84" n="45,81">
+          <label xml:id="idf58a31b1-24fc-444a-a019-da63a0fd3cdd">
+            <hi xml:id="idc3bdfb3f-803a-4c56-a815-bd5e61bd217d" rendition="#bol">I Geled med Strausz, Feuerbach, Vatke, Bruno Bauer</hi>
+          </label>
+          <p xml:id="id9244bce8-05d5-4404-ac33-f9136c47b396">sigter til § 12 »De i forskjellige videnskabelige Standpunkter grundede Bestemmelser af Mythens Begreb« i første del af <persName xml:id="idd6b852e2-3f3a-48bf-9ab2-7f354a8d81a9" key="Beck, Andreas Frederik">Beck</persName>s <hi xml:id="id4835ff46-645a-4702-a363-75922148b831" rendition="#ita">Begrebet Mythus eller den religiøse Aands Form</hi> (<ptr xml:id="idfdccc25b-4a82-46c4-8052-b099931035d4" type="commentary" target="#aas-26" n="43,11"/>). Efter at have berørt <persName xml:id="id127ee76c-9000-4f11-ad9d-ff021685f4a0" key="Bauer, Bruno" n="*">Bruno Bauer</persName>s og Strauß's mytebegreb skriver Beck, s. 77: »Kierkegaard giver den træffende Bestemmelse af Begrebet Mythus som Ideens Udlændighedstilstand, dens Timelighed og Rummelighed umiddelbar som saadan. Det forstaaer sig imidlertid, at der ved den blot foreløbige Omtale af dette Begreb tilmed i dets Forhold til det Spekulative i <persName xml:id="id73343c08-c71c-4823-8feb-a7b87c0867bd" key="Platon">Plato</persName>s Dialoger ikke kan være Tale om en Efterviisning af dens nøiere Forhold til Bevidstheden i Almindelighed, eller om dens Nødvendighed, hvoraf dens fulde Erkjendelse afhænger.« I en note henviser Beck til »Begrebet Ironi. <placeName xml:id="id19677003-9ca1-42a4-809f-7a92935064bf" key="København">Kbhvn</placeName>. 1841 p. 163 [fejl for p. 103, i <ref xml:id="idf6c71fb3-c455-4a1f-b1e9-e8574b808a92" target="../BI/txt.xml#ss154" type="publishedWritings" n="154"><hi xml:id="id42439ab7-a451-4271-9847-d1a24f68af39" rendition="#ita">SKS</hi> 1, 154</ref>]«. Herefter gennemgår Beck først J.K.W. Vatkes myteforståelse, s. 77f., og derpå Bruno Bauers mytebestemmelse, s. 78-80, bl.a. set i forhold til Strauß' mytebegreb, s. 78f., og under inddragelse af <persName xml:id="id83a5f440-e85e-428c-97d8-9b94537c1348" key="Feuerbach, Ludwig">Ludwig Feuerbach</persName>s religionsbegreb, s. 79f. – <hi xml:id="id956298e9-dd4a-4ac6-9a2f-14b70a4d0d7c" rendition="#bol">Strausz:</hi> <persName xml:id="id3d48a3fd-d890-4c23-8e6c-0343a86a2b2f" key="Strauß, David Friedrich" n="*">David Friedrich Strauß</persName> (1808-74), ty. evangelisk teolog og filosof; påvirket af <persName xml:id="id8923f4de-1778-4637-9ff3-ffe72c4e166f" key="Schleiermacher, Friedrich">Schleiermacher</persName>s (<ptr xml:id="idcc900d45-c88d-4352-b45b-e034bac8f912" type="commentary" target="#aas-33" n="43,34"/>) troslære og tilhænger af <persName xml:id="id806cefd4-459f-4a18-b07c-a4f36e68f5b9" key="Hegel, Georg Wilhelm Friedrich">Hegel</persName>s (<ptr xml:id="id20ba35c6-84e9-4c45-82aa-f4462ba8e2e0" type="commentary" target="#aas-35" n="43,37"/>) religionsfilosofi. Fra 1832 var Strauß repetent i <placeName xml:id="id0d7e1688-d384-41c5-b026-e8d4a9a6d406">Tübingen</placeName>, men måtte opgive sin stilling efter udgivelsen af 1. bd. af <hi xml:id="idd0a1c62c-422f-4ed9-b501-028869c58686" rendition="#ita">Das Leben <persName xml:id="id57a42666-ddac-4529-ae14-8d84128a43ed" key="Jesus">Jesu</persName>, kritisch bearbeitet</hi> bd. 1-2, Tübingen 1835-36. Han blev i 1839 udnævnt til prof. i teologi i <placeName xml:id="idc87d4cc0-0710-4e2b-ac64-987bdc608d34">Zürich</placeName>, men pga. modstand fra kirkelige kredse afskediget inden tiltrædelsen. – <hi xml:id="id543f6718-c780-4de1-81a9-9d85825d2b1a" rendition="#bol">Feuerbach:</hi> Ludwig Feuerbach (1804-72), ty. venstrehegeliansk filosof og religionskritiker; mest kendt pga. sit angreb på kristendommen i det filosofiske hovedværk <hi xml:id="id7326a1ab-70ab-4c01-866f-c18cb0d1873f" rendition="#ita">Das Wesen des Christenthums,</hi> <placeName xml:id="ida10254d3-4e1a-40bd-a66d-7c0d4a175e64">Leipzig</placeName> 1841 (jf. ktl. 488, der er en 2. udg., Leipzig 1843). – <hi xml:id="idcb12b062-2f03-4322-b042-0c3d0ca48a73" rendition="#bol">Vatke:</hi> <persName xml:id="idfbecd885-0fbf-49b9-bab6-70f19e4a3487" key="Vatke, Johann Karl Wilhelm" n="*">Johann Karl Wilhelm Vatke</persName> (1806-82), ty. evangelisk teolog; elev af bl.a. <persName xml:id="idabdd23c6-0b24-4851-8714-d8588a82a74c" key="Gesenius, Wilhelm">W. Gesenius</persName>, <persName xml:id="id94b45dea-aa3c-4305-9056-328bb0155c80" key="Neander, Johann Wilhelm August">A. Neander</persName> og Hegel. Vatke var 1837-75 prof. i bibelvidenskab og religionsfilosofi i <placeName xml:id="id4e5191c9-b402-43a6-b9ee-594f42802d47">Berlin</placeName>, på daværende tidspunkt mest kendt pga. sit hovedværk <hi xml:id="id6051423f-1b56-4e01-bae0-b8c7907f0833" rendition="#ita">Die Religion des Alten Testamentes nach den kanonischen Büchern entwickelt</hi> bd. 1, Berlin 1835. – <hi xml:id="idea7041e7-f256-4b00-ac35-b3bbf1d7c5d1" rendition="#bol">Bruno Bauer</hi> (1809-82), ty. evangelisk teolog og religionskritiker; elev af Hegel, først højre-, senere venstrehegelianer. Bauer var privatdocent i Berlin, 1839-42 prof. i <placeName xml:id="id1adb4226-d5ab-42a5-aa23-0f1226438645">Bonn</placeName>, blev i 1843 pga. sine religiøse anskuelser frakendt retten til at fungere som præst. Han udg. bl.a. <hi xml:id="idfbbdb2d7-18e6-415b-8b55-b9d0f172dd07" rendition="#ita">Kritik der evangelischen Geschichte des <persName xml:id="idcd650b24-5a46-4116-9803-a9860bc72318" key="Johannes">Johannes</persName>,</hi> <placeName xml:id="id33e28501-14c7-45ed-a5ab-618b8fdda6fc">Bremen</placeName> 1840, og <hi xml:id="id9839f692-d57a-4a3d-b4c6-af1bbfaad46e" rendition="#ita">Kritik der evangelischen Geschichte der Synoptiker</hi> bd. 1-3, Leipzig 1841-42. SK havde <hi xml:id="id127ff745-e5e9-4b7c-b867-6c9194a6e738" rendition="#ita">Zeitschrift für spekulative Theologie,</hi> udg. af Bruno Bauer, bd. 1-3, Berlin 1836-38, ktl. 354-357.</p>
+        </note>
+        <note type="commentary" xml:id="aas-117" n="46,1">
+          <label xml:id="id7a5085a7-99e9-4c95-88e1-8493d46461e0">holde <hi xml:id="id216cb86a-6fb9-4f32-b074-c371e831eda8" rendition="#bol">Skridt</hi></label>
+          <p xml:id="id2ee6e3cd-36ca-4e7b-881f-5e99c341a30f">trit.</p>
+        </note>
+        <note type="commentary" xml:id="aas-85" n="46,2">
+          <label xml:id="id5783f714-fdbd-4b3c-8ebe-f90e4c61ae20">
+            <hi xml:id="idf2cac719-5a1b-4b23-b489-8ac9946456d2" rendition="#bol">ein, zwei, drei</hi>
+          </label>
+          <p xml:id="id5112dce8-032a-49e3-98a6-dd12220a7bad">dvs. 'eins, zwei, drei', ty., 'en, to, tre'.</p>
+        </note>
+        <note type="commentary" xml:id="aas-86" n="46,4">
+          <label xml:id="id4ad8a916-66e2-4d78-afc3-070249775d6e">systematisk-<hi xml:id="idfc140db0-1cb2-4016-8caf-0289524ccc42" rendition="#bol">geworbne</hi></label>
+          <p xml:id="id0aff45a2-7ffd-4eb6-8325-31c6bdf556ea">el. gevorbne, af ty. 'geworben', perfektum participium af ty. 'werben', 'hverve'. Udtrykket brugtes især om udenlandske lejesoldater.</p>
+        </note>
+        <note type="commentary" xml:id="aas-87" n="46,5">
+          <label xml:id="idb256f983-d91a-49fc-b6cb-bd6cc16fb9d6">
+            <hi xml:id="id0dc820c0-81fb-42d2-80ee-f4d3c8583427" rendition="#bol">»seer flinkt op til Høire, hvor jeg gaaer«</hi>
+          </label>
+          <p xml:id="idb8e1e1ca-aa77-463c-8896-e92b09a369f6">militær kommando om at se (op) til højre mod den befalingsmand, der leder marchen som fløjmand.</p>
+        </note>
+        <note type="commentary" xml:id="aas-119" n="46,11">
+          <label xml:id="id4d39c37b-64fe-448c-9e89-15cb825d1a06">
+            <hi xml:id="id25d2879f-4d26-4161-a7d8-aa6119086d06" rendition="#bol">Husmand</hi>
+          </label>
+          <p xml:id="id06c1bf77-b9e6-450e-9f22-0cfbeef21bf4">mand af landarbejderklassen, der som ejer el. lejer bebor et hus med lidt tilhørende jord.</p>
+        </note>
+        <note type="commentary" xml:id="aas-89" n="46,17">
+          <label xml:id="id1308b13b-fb7e-4154-a469-4322b2885843">
+            <hi xml:id="id712a978b-813d-4ced-8bea-e50cff182db7" rendition="#bol">der er Adskilligt han har moret sig over, men ikke til min Fordeel</hi>
+          </label>
+          <p xml:id="id795066eb-7d2b-4e6a-9154-2181237650c5">sigter til slutningen af anden del af <persName xml:id="idc8ab8cbc-c9f6-4253-a1e5-e14d324d13e1" key="Beck, Andreas Frederik">Beck</persName>s anmeldelse i <hi xml:id="id61fe7239-85ac-40cd-91de-8ed54407e320" rendition="#ita">Fædrelandet,</hi> nr. 897 (<ptr xml:id="id25abffd8-20cd-4888-a222-ab3b2f4b4bcd" type="commentary" target="#aas-73" n="45,13"/>), sp. 7191, hvor han efter at have kritiseret SK for de uforståelige allusioner (<ptr xml:id="id06346364-cad1-4066-a3c8-5f45cda44830" type="commentary" target="#aas-113" n="45,18"/>) fortsætter: »ligeledes synes Forfatteren ofte at være mindre heldig, hvor han paa en meer positiv Maade har villet glimre med sin Vid; thi hvad der kan behage og passere i en Gade- eller Slaabrokspassiar, det gjør et ganske andet Indtryk ved den Prætension, hvormed det optræder i det trykte Skrift; vistnok [rigtignok, sandt nok] kan det more, det ville vi ikke negte, det har virkelig moret Referenten, men – ikke til Forfatterens Fordeel.«</p>
+        </note>
+        <note type="commentary" xml:id="aas-115" n="46,25">
+          <label xml:id="iddf879cb8-eb27-4807-8d02-18ca0a0647d7">
+            <hi xml:id="ided716e3f-776e-4966-8e6e-09b3031de0e6" rendition="#bol">Rec.</hi>
+          </label>
+          <p xml:id="id0941ed3c-1b91-4948-a526-0d6c4f120dcc">recensenten (<ptr xml:id="ida75e08eb-1e79-4d48-aa26-575c8b1e9fc8" type="commentary" target="#aas-74" n="45,16"/>).</p>
+        </note>
+        <note type="commentary" xml:id="aas-91" n="46,31">
+          <label xml:id="id9b0cb4fa-a554-4d44-ac7a-a962ef525bee">
+            <hi xml:id="id60e7aab0-8b31-4473-bb32-e68ca7fd3c3d" rendition="#bol">Bogen har kostet mig 182 Rbd. 4 Mk. 8 Sk.</hi>
+          </label>
+          <p xml:id="id386b3a01-a2f3-449a-9dfe-fdcc0b7dbbb4"><hi xml:id="ide5c8557b-b49e-469b-95e0-03be732a9c70" rendition="#ita">Om Begrebet Ironi</hi> (1841) udkom på <persName xml:id="id172897b0-aa1a-461b-8e75-4fa3cd7da506" key="Philipsen, Philip Gerson">P.G. Philipsen</persName>s forlag, men Philipsen fungerede kun som kommissionær. SK skulle altså selv indgå kontrakt med bogtrykkeren og betale direkte for papir og tryk; han bar således den økonomiske risiko. Udover denne bemærkning om SKs udgifter og bogens salgspris (<ptr xml:id="idbccd238f-cfa2-4b39-bd07-8fde58dd71a1" type="commentary" target="#aas-94" n="46,56"/>) vides intet om udgivelsens økonomiske forhold; jf. <ref xml:id="idd0809841-8426-45d6-9589-6ff4d9304691" target="../BI/txr.xml#ss145" type="textCriticalAccount" n="145">tekstredegørelsen til <hi xml:id="idcf3518ca-7b55-4547-8f39-f6f80948504d" rendition="#ita">Om Begrebet Ironi</hi> i <hi xml:id="id469a1e6c-d648-43bb-b85b-4120787aa93f" rendition="#ita">SKS</hi> K1, 145</ref>f., samt <persName xml:id="ide9c4cbfb-f4ea-4034-b93e-ea6f0af9c45a" key="Brandt, Frithiof">F. Brandt</persName> og <persName xml:id="idb6a0b24d-c4fa-4db3-9001-aa47e487b6dd" key="Thorkelin, Else">E. Thorkelin</persName> <hi xml:id="id9853efd7-9b0f-487b-ac1d-90a9362c03ce" rendition="#ita"><persName xml:id="id2afbdc79-6777-481c-b85f-00515e914ccc" key="Kierkegaard, Søren Aabye">Søren Kierkegaard</persName> og pengene,</hi> 2. udg., <placeName xml:id="ide12df355-9b93-4d68-bdb8-dc7cece471b6" key="København">Kbh.</placeName> 1993 [1935], s. 41-43. – <hi xml:id="ida2cec9dd-0c05-489c-bb81-3ed90b78f934" rendition="#bol">182 Rbd. 4 Mk. 8 Sk.:</hi> Den da. møntfod var ved forordning af 31. juli 1818 delt i rigsbankdaler (oftest forkortet Rbd.), mark (Mk.) og skilling (Sk.); der gik således 6 mk. på 1 rbd., 16 sk. på 1 mk. og 96 sk. på 1 rbd. I Hof- og Stadsretten havde en dommer 1.200-1.800 og en fuldmægtig 400-500 rbd. i årsløn. En håndværkssvend tjente almindeligvis 200 rbd. om året, men havde til gengæld fri kost og logi hos mesteren. En pige i huset fik højst 30 rbd. om året foruden kost og logi. Samtidig kostede et par sko o. 3 rbd.</p>
+        </note>
+        <note type="commentary" xml:id="aas-116" n="46,55">
+          <label xml:id="id3a6df1da-fcc0-4c8b-b43f-70d7ce7243c4">hvis <hi xml:id="id01356c5b-a18a-44ab-8027-81c6dde3938e" rendition="#bol">saa er</hi></label>
+          <p xml:id="id7d8aef72-b32d-4b98-9891-4b88ef714155">det forholder sig således.</p>
+        </note>
+        <note type="commentary" xml:id="aas-94" n="46,56">
+          <label xml:id="idc66f78ac-d09a-4f62-943c-daccaad75655">
+            <hi xml:id="idbde0c5af-bfd6-4411-b43a-32d8d657e26e" rendition="#bol">et Tab af 9 Mk.</hi>
+          </label>
+          <p xml:id="idaa330d8c-a6d0-42a5-b9ba-a937a0f0552d">dvs. salgsprisen for <hi xml:id="id07dd1a11-47a7-4bc0-bd71-c19c421d6cf2" rendition="#ita">Om Begrebet Ironi</hi> (1841) if. <hi xml:id="id48c80a1c-dce9-426f-a9a0-c063664a9ac5" rendition="#ita">Bl.art.,</hi> s. 274. Beløbet svarer til 1 rbd. og 48 sk. (<ptr xml:id="id14844a5a-2864-4499-a063-6b2a0043d594" type="commentary" target="#aas-91" n="46,31"/>).</p>
+        </note>
+        <note type="commentary" xml:id="aas-105" n="46,57">
+          <label xml:id="idaf2f9d66-78b8-467c-98be-a655b9ee1983">
+            <hi xml:id="idf19a4588-5621-4de4-a39b-5d851301892c" rendition="#bol">dog ikke fulde 9 Mk.</hi>
+          </label>
+          <p xml:id="id0b22b717-14d2-4094-bee6-6c09fd6815c6">sigter til, at <persName xml:id="idea8e7d8f-c424-4d41-a013-2c6a2bc9c668" key="Philipsen, Philip Gerson">P.G. Philipsen</persName>s forlag (<ptr xml:id="idad952848-b49e-4c0e-af59-6373a3c28a8a" type="commentary" target="#aas-91" n="46,31"/>) sandsynligvis beregnede sig en avance på 25% af salgsprisen, så SK kun fik 6 mk. og 12 sk. pr. eksemplar. Jf. <ref xml:id="ida98c1a99-51aa-4a7b-b7cc-8274c0c8e9c8" target="../BI/txr.xml#ss146" type="textCriticalAccount" n="146"><hi xml:id="idf61a0dfe-e2f3-4da9-a28f-a239276f2161" rendition="#ita">SKS</hi> K1, 146</ref>.</p>
+        </note>
+      </div>
+    </body>
+  </text>
 </TEI>
