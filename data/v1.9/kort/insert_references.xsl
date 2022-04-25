@@ -5,7 +5,7 @@
                xmlns="http://www.tei-c.org/ns/1.0"
 	       exclude-result-prefixes="t">
 
-  <xsl:template match="t:p[t:figure]">
+  <xsl:template match="t:div[t:figure]">
     <div>
       <xsl:copy-of select="@*"/>
       <figure>
