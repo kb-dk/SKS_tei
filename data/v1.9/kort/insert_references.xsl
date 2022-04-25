@@ -6,7 +6,7 @@
 	       exclude-result-prefixes="t">
 
   <xsl:template match="t:p[t:figure]">
-    <p>
+    <div>
       <xsl:copy-of select="@*"/>
       <figure>
         <head>
@@ -21,7 +21,7 @@
         </head>
         <xsl:copy-of select="t:figure/t:graphic"/>
       </figure>
-    </p>
+    </div>
   </xsl:template>
   
    <xsl:template match="@*|node()">
