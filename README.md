@@ -15,6 +15,23 @@ There are some ruby tools in
 https://github.com/Det-Kongelige-Bibliotek/solr-and-snippets/utilities
 for validating and creating bagit manifests.
 
-# Merging different kinds of comments
+# Modifications made to the TEI source
 
+## Merging different kinds of comments
 
+Originally this edition contained two kinds of comments stored under
+different file names. Hence, there where many files called `kom.xml`
+but then also files called `ekom.xml`. Both types where comments, but
+the latter type where typically longer and contained comments to
+information referenced in the `kom.xml` files. The main difference was
+that the `ekom.xml` files never appeared in the printed version of the
+data.
+
+We felt that these two kinds were confusing for the users, and
+therefore we manually merged the `ekom.xml` information into the
+corresponding `kom.xml` and updated the references.
+
+## Migrating map files to jp2000
+
+The original service at http://sks.dk/ contained maps in `djvu`
+format. We migrated those maps to `jp2000` in our image service. 
