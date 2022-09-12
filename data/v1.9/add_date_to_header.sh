@@ -15,6 +15,7 @@ for file in ${FILES[@]}; do
 
     if [[ $date == 18* ]]; then
 	xsltproc --seed-rand `rand` --stringparam published_date $date   edit_header.xsl $file | xmllint --format - > $lctitle/shit.xml
+	mv  $lctitle/shit.xml $file
     fi
     
 done
