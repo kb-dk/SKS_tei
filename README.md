@@ -48,4 +48,21 @@ http://text-test-02.kb.dk/text/sks-kort-kom-shoot-kbh_f2
 We have added xml:id attributes to all elements that didn't have
 that to begin with. Makes indexing, searching and navigation easier.
 
+## Adding metadata to <sourceDesc> ... </sourceDesc>
 
+We added a brief record to printed documents, containing a creation date:
+
+
+```
+ <bibl xml:id="sourceidm41">
+    <title xml:id="sourceidm45399668669584" level="s">Søren Kierkegaards Skrifter</title>
+    <title xml:id="sourceidm45399668668432">Enten – Eller. Første del</title>
+    <title xml:id="sourceidm45399668667568" type="short">EE1</title>
+    <author xml:id="sourceidm45399668666544">
+         <name xml:id="sourceidm45399668665840">Søren Kierkegaard</name>
+    </author>
+    <date when="1843-02-20" xml:id="dateidm41">1843</date>
+ </bibl>
+```
+
+That was necessary, since these files had no machine-readable dates.
