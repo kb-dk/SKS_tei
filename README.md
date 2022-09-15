@@ -79,5 +79,6 @@ We added a brief record to printed documents, containing a creation date:
  </bibl>
 ```
 
-That was necessary, since these files had no machine-readable dates.
-
+That was necessary, since these files had no machine-readable
+dates. The data was picked up from the current http://sks.dk/, c.f.,
+[data/v1.9/ATTIC/toc.xml}(data/v1.9/ATTIC/toc.xml)
