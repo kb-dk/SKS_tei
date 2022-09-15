@@ -28,6 +28,20 @@ We felt that these two kinds were confusing for the users, and
 therefore we manually merged the `ekom.xml` information into the
 corresponding `kom.xml` and updated the references.
 
+The following works included such `ekom.xml` files.
+
+* [data/v1.9/jj](data/v1.9/jj)
+* [data/v1.9/kk](data/v1.9/kk)
+* [data/v1.9/bb](data/v1.9/bb)
+* [data/v1.9/not13](data/v1.9/not13)
+* [data/v1.9/not12](data/v1.9/not12)
+* [data/v1.9/nb11](data/v1.9/nb11)
+* [data/v1.9/not9](data/v1.9/not9)
+
+The status of the first of these as of
+[https://github.com/kb-dk/SKS_tei/tree/e29d5b9ea97109179c6d5205fb44ddc4e6fa3a83/data/v1.9/jj](April
+22, 2022).
+
 ## Migrating map files to jp2000
 
 The original service at http://sks.dk/ contained maps in `djvu`
@@ -66,3 +80,4 @@ We added a brief record to printed documents, containing a creation date:
 ```
 
 That was necessary, since these files had no machine-readable dates.
+
