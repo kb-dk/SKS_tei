@@ -3,7 +3,7 @@ CC0 1.0 Universal
 
 The materiel is dedicated to the public domain. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. Always remember to credit the author or copyright holder.
 
-![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)
+![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png) [CC0](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Statement of Purpose
 
