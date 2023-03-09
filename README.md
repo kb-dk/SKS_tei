@@ -54,7 +54,7 @@ data/v1.9/kort/kom.xml
 ```
 
 which is transformed similarly to all other texts. Here is an example
-http://text-test-02.kb.dk/text/sks-kort-kom-shoot-kbh_f2
+http://tekster.kb.dk/text/sks-kort-kom-shoot-kbh_f2
 
 
 ## xml:id attributes on all elements 
